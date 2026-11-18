@@ -1,6 +1,6 @@
 # EnergyBrew — broad discovery leads
 
-Run UTC: 2026-11-18T18:43:28.613007+00:00
+Run UTC: 2026-11-18T18:44:01.913351+00:00
 GDELT status: **provider_cooldown**
 Topics attempted/succeeded: **0/0**
 New URL leads: **0**

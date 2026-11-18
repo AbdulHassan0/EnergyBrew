@@ -1,0 +1,19 @@
+{
+  "run_utc": "2026-11-18T18:44:07.573392+00:00",
+  "status": "ok",
+  "provider": "Press Release Feed",
+  "raw_feed_entries": 100,
+  "high_signal_company_releases": 6,
+  "new_unique_links": 6,
+  "error": null,
+  "skipped": {
+    "missing_original_source_url": 0,
+    "missing_feed_timestamp": 0,
+    "outside_window": 0,
+    "off_topic": 94,
+    "non_article": 0
+  },
+  "http_status": 200,
+  "company_release_leads_24h": 6,
+  "company_release_leads_7d": 6
+}
