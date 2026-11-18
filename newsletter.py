@@ -215,7 +215,8 @@ def _esc(value: object) -> str:
 
 
 def _date_label(raw: str) -> str:
-    return datetime.strptime(raw, "%Y-%m-%d").strftime("%B %-d, %Y")
+    day = datetime.strptime(raw, "%Y-%m-%d")
+    return f"{day.strftime('%B')} {day.day}, {day.year}"
 
 
 def render_html(edition: dict, *, preview: bool = False) -> str:
@@ -304,7 +305,7 @@ def archive(edition_dir: Path, output_dir: Path, email_out: Path) -> int:
         filename = item["edition_date"] + ".html"
         (output_dir / filename).write_text(render_html(item), encoding="utf-8")
         entries.append(f'<li><a href="./{_esc(filename)}">{_esc(_date_label(item["edition_date"]))}</a> — five-minute energy brief</li>')
-    latest = editions[-1] if editions else None
+    latest = max(editions, key=lambda x: x["edition_date"]) if editions else None
     if latest:
         (email_out / "newsletter_email.html").write_text(render_html(latest), encoding="utf-8")
         (email_out / "newsletter_email.txt").write_text(render_text(latest), encoding="utf-8")
