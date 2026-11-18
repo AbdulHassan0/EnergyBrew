@@ -139,6 +139,13 @@
       "raw_feed_entries": 100,
       "high_signal_company_releases": 5,
       "new_unique_links": 0
+    },
+    {
+      "run_utc": "2026-11-18T19:06:29.530667+00:00",
+      "status": "ok",
+      "raw_feed_entries": 100,
+      "high_signal_company_releases": 5,
+      "new_unique_links": 0
     }
   ]
 }
