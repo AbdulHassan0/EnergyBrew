@@ -1,9 +1,9 @@
 {
-  "audit_utc": "2026-11-18T18:47:10.660618+00:00",
+  "audit_utc": "2026-11-18T18:47:33.422259+00:00",
   "status": "degraded",
   "official_feeds_connected": 11,
   "official_feeds_checked": 11,
-  "official_rss_last_run_utc": "2026-11-18T18:47:01.684441+00:00",
+  "official_rss_last_run_utc": "2026-11-18T18:47:24.464790+00:00",
   "timestamped_editorial_leads_24h": 1,
   "editorial_target_24h": 12,
   "observed_beat_counts_24h": {
@@ -24,7 +24,7 @@
   "company_announcement_feed_status": "ok",
   "company_announcement_publisher_dates_verified": 0,
   "discovery_latest_status": "provider_cooldown",
-  "discovery_latest_run_utc": "2026-11-18T18:47:03.965121+00:00",
+  "discovery_latest_run_utc": "2026-11-18T18:47:26.503584+00:00",
   "critical": [],
   "warnings": [
     "Only 1 editorial leads within 24h; target 12",

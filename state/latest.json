@@ -1,5 +1,5 @@
 {
-  "run_utc": "2026-11-18T18:47:01.684441+00:00",
+  "run_utc": "2026-11-18T18:47:24.464790+00:00",
   "feeds_connected": 11,
   "feeds_checked": 11,
   "fresh_entries": 10,
@@ -118,7 +118,7 @@
       "source": "US NRC Nuclear News",
       "url": "https://www.nrc.gov/public-involve/rss?feed=news",
       "connected": true,
-      "items_seen": 167,
+      "items_seen": 164,
       "fresh": 0,
       "new": 0,
       "http_status": 200,
@@ -126,7 +126,7 @@
       "relevant": 0,
       "rejected": {
         "undated": 0,
-        "old": 167,
+        "old": 164,
         "future": 0,
         "invalid_link": 0
       }
