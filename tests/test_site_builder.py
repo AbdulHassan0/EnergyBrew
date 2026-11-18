@@ -57,5 +57,31 @@ class SiteBuilderTests(unittest.TestCase):
             self.assertTrue((folder/"dist/index.html").exists())
             self.assertIn("Disallow: /",(folder/"dist/robots.txt").read_text())
 
+class FrontendContractTests(unittest.TestCase):
+    """Keep the newsletter promise, live controls and editorial caveats visible."""
+
+    def test_newsletter_brand_and_reading_views(self):
+        root = Path(__file__).resolve().parent.parent / "frontend"
+        html = (root / "index.html").read_text(encoding="utf-8")
+        js = (root / "app.js").read_text(encoding="utf-8")
+        css = (root / "styles.css").read_text(encoding="utf-8")
+        for phrase in ("EnergyBrew", "Your daily shot", "morning brew",
+                       "data-view=\"morning\"", "data-view=\"desk\"",
+                       "research preview", "id=\"progress-track\"",
+                       "id=\"search\"", "id=\"saved-filter\""):
+            self.assertIn(phrase, html)
+        self.assertIn("editorial review", html)
+        self.assertIn("morningCut", js)
+        self.assertIn("timeText", js)
+        self.assertIn("readKey", js)
+        self.assertIn("@media(max-width:600px)", css)
+        self.assertIn("prefers-reduced-motion:reduce", css)
+
+    def test_site_never_misrepresents_email_signup(self):
+        root = Path(__file__).resolve().parent.parent / "frontend"
+        html = (root / "index.html").read_text(encoding="utf-8")
+        self.assertIn("email newsletter is in development", html)
+        self.assertNotIn('type="email"', html)
+
 if __name__=="__main__":
     unittest.main()
