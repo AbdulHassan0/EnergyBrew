@@ -86,6 +86,27 @@ class NewsroomHealthTests(unittest.TestCase):
                 broad_discovery(),now=NOW)
         self.assertEqual(h["research_first_seen_links_24h"],0)
 
+    def test_press_release_claims_count_separately_from_verified_stories(self):
+        state={"articles":[rss_record(i,REQUIRED_BEATS[i%4]) for i in range(12)]}
+        releases={"leads":[{"url":"https://example.com/company-announcement",
+                            "feed_published_utc":NOW.isoformat(),
+                            "published_time_verified":False,
+                            "named_issuer_verified":False}]}
+        x=audit(state,rss_report(),{"leads":[discovery_lead(1)]},broad_discovery(),
+                release_state=releases,
+                release_report={"status":"ok","run_utc":NOW.isoformat()},now=NOW)
+        self.assertEqual(x["company_announcement_links_24h"],1)
+        self.assertEqual(x["company_announcement_publisher_dates_verified"],0)
+        self.assertEqual(x["timestamped_editorial_leads_24h"],12)
+        self.assertEqual(x["status"],"operational_coverage_target_met")
+
+    def test_press_release_provider_failure_is_reported(self):
+        state={"articles":[rss_record(i,REQUIRED_BEATS[i%4]) for i in range(12)]}
+        x=audit(state,rss_report(),{"leads":[discovery_lead(1)]},broad_discovery(),
+                release_state={"leads":[]},release_report={"status":"degraded"},now=NOW)
+        self.assertEqual(x["status"],"degraded")
+        self.assertTrue(any("announcement feed" in w for w in x["warnings"]))
+
     def test_persists_report_even_when_critical(self):
         with tempfile.TemporaryDirectory() as d:
             out=Path(d)/"out"
