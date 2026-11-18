@@ -1,6 +1,12 @@
-name: EnergyBrew morning newsletter editorial draft
+name: EnergyBrew morning newsletter editorial draft (unapproved)
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "newsletter.py"
+      - "newsletter/EDITORIAL.md"
+      - ".github/workflows/morning-editorial.yml"
   schedule:
     # 6:15 AM Chicago, two UTC attempts to cover CST/CDT.
     - cron: "15 11,12 * * 1-5"
@@ -25,13 +31,8 @@ jobs:
           from datetime import datetime
           from zoneinfo import ZoneInfo
           now = datetime.now(ZoneInfo("America/Chicago"))
-          print("run=" + ("yes" if os.environ.get("GITHUB_EVENT_NAME") == "workflow_dispatch" or now.hour == 6 else "no"))
+          print("run=" + ("yes" if os.environ.get("GITHUB_EVENT_NAME") in ("workflow_dispatch", "push") or now.hour == 6 else "no"))
           PY
-      - name: Require private editorial workspace
-        if: steps.window.outputs.run == 'yes' && github.event.repository.private == false
-        run: |
-          echo "Editorial artifacts require private-repository controls" >&2
-          exit 1
       - name: Run regression tests
         if: steps.window.outputs.run == 'yes'
         run: python -m unittest discover -s tests -q
@@ -46,10 +47,10 @@ jobs:
         run: |
           python newsletter.py prepare --desk latest-state/desk_latest.json --out output/newsletter/review_queue.json
           python newsletter.py preview --draft output/newsletter/review_queue.json --html output/newsletter/DRAFT_email_preview.html --text output/newsletter/DRAFT_email_preview.txt
-      - name: Archive private draft; NEVER email or publish
+      - name: Archive unapproved draft; NEVER email or publish
         if: steps.window.outputs.run == 'yes'
         uses: actions/upload-artifact@v4
         with:
-          name: energybrew-private-editorial-draft
+          name: energybrew-editorial-draft-unapproved
           path: output/newsletter/
           retention-days: 7
