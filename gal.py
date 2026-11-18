@@ -118,6 +118,8 @@ def collect_gal(state_path, outdir, *, now=None, fetcher=None):
               (_datetime(v.get("gdelt_first_seen_utc")) or datetime.min.replace(tzinfo=timezone.utc))>=cutoff]
     retained.sort(key=lambda x:(x.get("relevance_score",0),x["gdelt_first_seen_utc"]),reverse=True)
     retained=retained[:4000]
+    recent=[x for x in retained if (_datetime(x.get("gdelt_first_seen_utc")) or cutoff) >= now-timedelta(hours=24)]
+    summary["combined_research_leads_24h"]=len(recent)
     state["leads"]=retained
     state.setdefault("gal_runs",[]).append({k:summary[k] for k in
         ("run_utc","status","raw_feed_items","high_signal_items","new_unique_links")})
@@ -131,6 +133,7 @@ def collect_gal(state_path, outdir, *, now=None, fetcher=None):
     temp.replace(state_path)
     (outdir/"latest.json").write_text(json.dumps(summary,indent=2)+"\n",encoding="utf-8")
     (outdir/"leads_7d.json").write_text(json.dumps(retained,indent=2)+"\n",encoding="utf-8")
+    (outdir/"leads_24h.json").write_text(json.dumps(recent,indent=2)+"\n",encoding="utf-8")
     lines=[
         "# GDELT Global Article List — sampled backup", "",
         f"Run: {summary['run_utc']}",
