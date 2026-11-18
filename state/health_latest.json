@@ -1,9 +1,9 @@
 {
-  "audit_utc": "2026-11-18T18:36:23.549483+00:00",
+  "audit_utc": "2026-11-18T18:37:04.693223+00:00",
   "status": "degraded",
   "official_feeds_connected": 11,
   "official_feeds_checked": 11,
-  "official_rss_last_run_utc": "2026-11-18T18:36:18.296924+00:00",
+  "official_rss_last_run_utc": "2026-11-18T18:37:00.342669+00:00",
   "timestamped_editorial_leads_24h": 1,
   "editorial_target_24h": 12,
   "observed_beat_counts_24h": {
@@ -21,7 +21,7 @@
   "research_high_signal_links_24h": 24,
   "research_publisher_dates_verified": 0,
   "discovery_latest_status": "provider_cooldown",
-  "discovery_latest_run_utc": "2026-11-18T18:36:19.963370+00:00",
+  "discovery_latest_run_utc": "2026-11-18T18:37:01.046268+00:00",
   "critical": [],
   "warnings": [
     "Only 1 editorial leads within 24h; target 12",
