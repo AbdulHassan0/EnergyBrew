@@ -24,7 +24,7 @@ def discovery_lead(index, *, date=None, score=50):
             "relevance_score":score}
 
 
-def rss_report(*, date=None, connected=10):
+def rss_report(*, date=None, connected=11):
     return {"run_utc":(date or NOW).isoformat(),
             "feeds_connected":connected,"feeds_checked":11}
 
