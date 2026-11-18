@@ -1,5 +1,6 @@
 """Offline regression checks; no live network or commercial publisher access."""
 import json
+import hashlib
 import tempfile
 import unittest
 from datetime import datetime, timezone, timedelta
@@ -14,6 +15,10 @@ def sample(title="LNG terminal expansion approved", when="Wed, 18 Nov 2026 10:00
     return (f"<rss version='2.0'><channel><item><title>{title}</title><link>{url}</link>"
             f"<pubDate>{when}</pubDate><guid>unique-guid-1</guid>"
             "<description>Natural gas LNG market project</description></item></channel></rss>").encode()
+
+def fixture_fetch(url):
+    unique = hashlib.sha256(url.encode("utf-8")).hexdigest()[:12]
+    return sample(url=f"https://example.gov/unique-story/{unique}"), 200
 
 class CollectorTests(unittest.TestCase):
     def test_rss_dates_links(self):
@@ -40,7 +45,7 @@ class CollectorTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as d:
             state = Path(d) / "state.json"
             out = Path(d) / "out"
-            fetch = lambda url: (sample(), 200)
+            fetch = fixture_fetch
             first = collect(state, out, now=NOW, fetcher=fetch)
             self.assertEqual(first["feeds_connected"], 9)
             self.assertEqual(first["relevant_fresh_entries"], 8)
@@ -68,7 +73,7 @@ class CollectorTests(unittest.TestCase):
     def test_daily_volume_separates_regulatory_notices(self):
         with tempfile.TemporaryDirectory() as d:
             state, out = Path(d)/"state.json", Path(d)/"out"
-            report = collect(state, out, now=NOW, fetcher=lambda url: (sample(), 200))
+            report = collect(state, out, now=NOW, fetcher=fixture_fetch)
             volumes = json.loads((out/"volume_7d.json").read_text())
             self.assertEqual(report["relevant_fresh_entries"], 8)
             self.assertEqual(report["date_only_entries"], 1)
@@ -82,7 +87,7 @@ class CollectorTests(unittest.TestCase):
             old_a = parse_feed(sample(url="https://example.gov/fed-notice"), "Federal Register FERC notices", NOW, 48, date_precision="day")[0][0]
             old_b = parse_feed(sample(url="https://example.gov/fed-notice"), "Federal Register DOE notices", NOW, 48, date_precision="day")[0][0]
             state.write_text(json.dumps({"articles":[old_a,old_b],"runs":[]}))
-            report=collect(state,out,now=NOW,fetcher=lambda url: (sample(),200))
+            report=collect(state,out,now=NOW,fetcher=fixture_fetch)
             data=json.loads(state.read_text())["articles"]
             duplicated=[x for x in data if x["url"]=="https://example.gov/fed-notice"]
             self.assertEqual(len(duplicated),1)
