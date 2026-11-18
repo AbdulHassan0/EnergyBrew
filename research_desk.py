@@ -49,7 +49,7 @@ def load(path, key):
 
 def is_english_script(title):
     letters=[c for c in (title or "") if c.isalpha()]
-    return bool(letters) and sum("LATIN" in unicodedata.name(c,"") for c in letters)/len(letters)>=.8
+    return bool(letters) and sum("LATIN" in unicodedata.name(c,"") for c in letters)/len(letters)>=.9
 
 def marketing_signal(title):
     s = (title or "").lower()
