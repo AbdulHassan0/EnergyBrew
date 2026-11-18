@@ -28,6 +28,24 @@ class EventDedupTests(unittest.TestCase):
         a=item("FERC approves natural gas pipeline project in Alabama","https://a.test/a")
         b=item("FERC approves natural gas pipeline project in Texas","https://a.test/b")
         self.assertFalse(same_event(a,b))
+    def test_different_contract_amounts_do_not_merge(self):
+        a=item("Venture Global and China Gas announce 1 million tpy LNG supply agreement",
+               "https://a.test/contract1")
+        b=item("China Gas and Venture Global sign 2 million tpy LNG supply contract",
+               "https://b.test/contract2")
+        self.assertFalse(same_event(a,b))
+
+    def test_separate_2026_and_2027_contract_coverage_does_not_merge(self):
+        a=item("Venture Global and China Gas 2026 LNG supply contract","https://a.test/a")
+        b=item("China Gas and Venture Global 2027 LNG supply deal","https://b.test/b")
+        self.assertFalse(same_event(a,b))
+
+    def test_same_parties_new_deal_after_60_hours_is_not_suppressed(self):
+        a=item("Venture Global signs LNG agreement with China Gas","https://a.test/a")
+        b=item("China Gas signs LNG agreement with Venture Global",
+               "https://b.test/b","2026-11-21T02:00:00Z")
+        self.assertFalse(same_event(a,b))
+
     def test_markers(self):
         self.assertIn("venture global",entities("Venture Global shipping LNG"))
         self.assertEqual(family("Venture Global LNG supply agreement"),"lng_contract")

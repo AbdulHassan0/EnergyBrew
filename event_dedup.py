@@ -58,7 +58,7 @@ def same_event(a, b):
         dt_b=datetime.fromisoformat(b["observed_time_utc"].replace("Z","+00:00"))
         if dt_a.tzinfo is None or dt_b.tzinfo is None:
             return False
-        if abs((dt_a-dt_b).total_seconds())>72*3600:
+        if abs((dt_a-dt_b).total_seconds())>48*3600:
             return False
     except (KeyError,ValueError,TypeError):
         return False
@@ -66,6 +66,13 @@ def same_event(a, b):
     name_b=entities(b.get("title",""))
     fam_a=family(a.get("title",""))
     fam_b=family(b.get("title",""))
+    # Two contracts between the same counterparties are not necessarily the
+    # same event. Different explicit transaction figures or years protect
+    # distinct developments from a false merge, even on the entity shortcut.
+    numbers_a=set(re.findall(r"\d+(?:\.\d+)?",a.get("title","")))
+    numbers_b=set(re.findall(r"\d+(?:\.\d+)?",b.get("title","")))
+    if numbers_a and numbers_b and numbers_a!=numbers_b:
+        return False
     if fam_a and fam_a==fam_b and len(name_a & name_b)>=2:
         return True
     x,y=words(a.get("title","")),words(b.get("title",""))
@@ -73,10 +80,6 @@ def same_event(a, b):
     if len(common)<6:
         return False
     # Different numbers often distinguish projects or individual transactions.
-    nums_a=set(re.findall(r"\d+(?:\.\d+)?",a.get("title","")))
-    nums_b=set(re.findall(r"\d+(?:\.\d+)?",b.get("title","")))
-    if nums_a and nums_b and nums_a!=nums_b:
-        return False
     return len(common)/len(x|y)>=.78
 
 
