@@ -12,10 +12,10 @@ from pathlib import Path
 
 from research_desk import as_time
 
-EXPECTED_GAL_MINUTES = 15
-MAX_GAL_GAP_MINUTES = 20
+EXPECTED_GAL_MINUTES = 10
+MAX_GAL_GAP_MINUTES = 15
 MAX_RSS_AGE_HOURS = 12
-MAX_GAL_AGE_MINUTES = 35
+MAX_GAL_AGE_MINUTES = 25
 MIN_FEED_RATIO = 0.8
 
 def read_state(path):
@@ -35,10 +35,12 @@ def create(rss, discovery, releases=None, *, now=None):
     discovery=discovery if isinstance(discovery,dict) else {}
     releases=releases if isinstance(releases,dict) else {}
     cutoff=now-timedelta(days=7)
+    history_cutoff=now-timedelta(days=8)
     recent=lambda d: d is not None and cutoff<=d<=now+timedelta(minutes=5)
-    r_runs=sorted((a for a in rss.get("runs",[]) if isinstance(a,dict) and recent(as_time(a.get("run_utc")))),
+    recent_run=lambda d: d is not None and history_cutoff<=d<=now+timedelta(minutes=5)
+    r_runs=sorted((a for a in rss.get("runs",[]) if isinstance(a,dict) and recent_run(as_time(a.get("run_utc")))),
                   key=lambda a:a["run_utc"])
-    g_runs=sorted((a for a in discovery.get("gal_runs",[]) if isinstance(a,dict) and recent(as_time(a.get("run_utc")))),
+    g_runs=sorted((a for a in discovery.get("gal_runs",[]) if isinstance(a,dict) and recent_run(as_time(a.get("run_utc")))),
                   key=lambda a:a["run_utc"])
     def rss_above_quorum(run):
         connected=int(run.get("feeds_connected",0) or 0)
@@ -57,7 +59,7 @@ def create(rss, discovery, releases=None, *, now=None):
         if a is None or b is None:
             continue
         minutes=round((b-a).total_seconds()/60,1)
-        if minutes > MAX_GAL_GAP_MINUTES:
+        if minutes > MAX_GAL_GAP_MINUTES and b >= cutoff:
             gal_gaps.append({"from_utc":a.isoformat(),"to_utc":b.isoformat(),"minutes":minutes})
     articles=[x for x in rss.get("articles",[]) if isinstance(x,dict)]
     leads=[x for x in discovery.get("leads",[]) if isinstance(x,dict)]
@@ -115,12 +117,24 @@ def create(rss, discovery, releases=None, *, now=None):
     if not latest_g or now-latest_g>timedelta(minutes=MAX_GAL_AGE_MINUTES):
         warnings.append("GDELT rolling-feed sample missing or older than 35 minutes")
     if gal_gaps:
-        warnings.append(f"{len(gal_gaps)} observed GAL intervals exceeded 20 minutes")
+        warnings.append(f"{len(gal_gaps)} observed GAL intervals exceeded {MAX_GAL_GAP_MINUTES} minutes")
     if len(fully_connected_r_runs)<len(r_runs):
         warnings.append(f"{len(r_runs)-len(fully_connected_r_runs)} RSS scans had incomplete source connectivity")
+    successful_g_in_window=[as_time(r["run_utc"]) for r in successful_g_runs
+                            if as_time(r["run_utc"]) and as_time(r["run_utc"])>=cutoff]
+    start_gap=round((successful_g_in_window[0]-cutoff).total_seconds()/60,1) if successful_g_in_window else None
+    tail_gap=round((now-successful_g_in_window[-1]).total_seconds()/60,1) if successful_g_in_window else None
     first_observed=min(([as_time(x["run_utc"]) for x in r_runs+g_runs if as_time(x["run_utc"])]),default=None)
     history_days=((now-first_observed).total_seconds()/86400) if first_observed else 0
-    pilot_complete=history_days>=7 and all(x["successful_scanning_observed"] for x in data) and not gal_gaps and len(fully_connected_r_runs)==len(r_runs)
+    pilot_complete=(history_days>=7
+                    and all(x["successful_scanning_observed"] for x in data)
+                    and not gal_gaps and len(fully_connected_r_runs)==len(r_runs)
+                    and start_gap is not None and start_gap<=MAX_GAL_GAP_MINUTES
+                    and tail_gap is not None and tail_gap<=MAX_GAL_GAP_MINUTES)
+    if history_days>=7 and (start_gap is None or start_gap>MAX_GAL_GAP_MINUTES):
+        warnings.append("Seven-day GAL pilot start has an unobserved index window")
+    if tail_gap is not None and tail_gap>MAX_GAL_GAP_MINUTES:
+        warnings.append("Latest GAL successful sample exceeds rolling index window")
     if not pilot_complete:
         warnings.append("Seven-day operating pilot is not yet complete")
     source_health=rss.get("source_health",{})
@@ -133,7 +147,7 @@ def create(rss, discovery, releases=None, *, now=None):
     ], key=lambda x:(-x["consecutive_failures"],x["source"]))
     return {
         "generated_utc":now.isoformat(),
-        "status":"degraded" if any(("missing" in x.lower() or "incomplete source" in x.lower()) for x in warnings) or gal_gaps else "incomplete_pilot" if not pilot_complete else "observations_available",
+        "status":"degraded" if any(("missing" in x.lower() or "incomplete source" in x.lower() or "unobserved index" in x.lower() or "exceeds rolling" in x.lower()) for x in warnings) or gal_gaps else "incomplete_pilot" if not pilot_complete else "observations_available",
         "seven_day_pilot_complete":pilot_complete,
         "history_span_days":round(history_days,2),
         "official_scan_runs":len(r_runs),"official_successful_scans":len(successful_r_runs),
@@ -144,6 +158,9 @@ def create(rss, discovery, releases=None, *, now=None):
         "gal_successful_samples":sum(x.get("status")=="ok" for x in g_runs),
         "gal_failed_samples":sum(x.get("status")!="ok" for x in g_runs),
         "observed_sampling_gaps":gal_gaps[-30:],
+        "seven_day_start_gap_minutes":start_gap,
+        "latest_gal_age_minutes":tail_gap,
+        "expected_gal_interval_minutes":EXPECTED_GAL_MINUTES,
         "latest_official_scan_utc":latest_r.isoformat() if latest_r else None,
         "latest_official_attempt_utc":as_time(r_runs[-1]["run_utc"]).isoformat() if r_runs else None,
         "latest_gal_attempt_utc":as_time(g_runs[-1]["run_utc"]).isoformat() if g_runs else None,
@@ -165,7 +182,9 @@ def report(rss_path, discovery_path, releases_path, outdir, *, now=None):
            f"Observed history span: **{r['history_span_days']} days**",
            f"RSS scans: **{r['official_scan_runs']}** (above 80% feed quorum: {r['official_successful_scans']}, all feeds connected: {r['official_fully_connected_scans']}, below quorum: {r['official_failed_scans']})",
            f"GDELT GAL samples: **{r['gal_sample_runs']}** (successful: {r['gal_successful_samples']}, degraded: {r['gal_failed_samples']})",
-           f"Observed sampling gaps over 20 minutes: **{len(r['observed_sampling_gaps'])}**","",
+           f"GDELT intervals longer than {MAX_GAL_GAP_MINUTES} minutes: **{len(r['observed_sampling_gaps'])}**",
+           f"Gap from seven-day window start to first GAL sample: **{r['seven_day_start_gap_minutes']} min**",
+           f"Age of latest successful GAL sample: **{r['latest_gal_age_minutes']} min**","",
            "| UTC day | Official scans | GAL samples | Timestamped agency | Specialist RSS | Grid operator | High-signal agency | GDELT first-seen URLs | Release-feed URLs |",
            "|---|---:|---:|---:|---:|---:|---:|---:|---:|"]
     for x in r["daily"]:

@@ -87,6 +87,29 @@ class MetricsTests(unittest.TestCase):
         self.assertEqual(result["failing_sources"][0]["consecutive_failures"],3)
         self.assertEqual(result["status"],"degraded")
 
+    def test_complete_seven_day_pilot_is_reachable(self):
+        rss={"runs":[{"run_utc":(NOW-timedelta(hours=12*i)).isoformat(),
+                      "feeds_checked":15,"feeds_connected":15,"scan_state":"healthy"}
+                     for i in range(15)]}
+        gal={"gal_runs":[{"run_utc":(NOW-timedelta(minutes=10*i)).isoformat(),"status":"ok"}
+                         for i in range(1010)]}
+        r=create(rss,gal,now=NOW)
+        self.assertGreaterEqual(r["history_span_days"],7)
+        self.assertEqual(r["observed_sampling_gaps"],[])
+        self.assertEqual(r["seven_day_start_gap_minutes"],0)
+        self.assertEqual(r["latest_gal_age_minutes"],0)
+        self.assertTrue(r["seven_day_pilot_complete"])
+
+    def test_start_of_seven_day_sampling_window_cannot_be_unobserved(self):
+        rss={"runs":[{"run_utc":(NOW-timedelta(hours=12*i)).isoformat(),
+                      "feeds_checked":15,"feeds_connected":15,"scan_state":"healthy"}
+                     for i in range(15)]}
+        gal={"gal_runs":[{"run_utc":(NOW-timedelta(minutes=10*i)).isoformat(),"status":"ok"}
+                         for i in range(900)]}
+        r=create(rss,gal,now=NOW)
+        self.assertGreater(r["seven_day_start_gap_minutes"],15)
+        self.assertFalse(r["seven_day_pilot_complete"])
+
     def test_report_outputs_readable_files(self):
         with tempfile.TemporaryDirectory() as d:
             root=Path(d)
