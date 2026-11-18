@@ -62,6 +62,13 @@ class CollectorTests(unittest.TestCase):
         self.assertFalse(evaluate("Company announces a new project and commission approval")["editorial_candidate"])
         self.assertFalse(evaluate("Spoiled ingredients and boiler maintenance project")["editorial_candidate"])
 
+    def test_named_energy_developments_do_not_disappear(self):
+        self.assertTrue(evaluate("Venture Global signs LNG supply agreement with buyer")["editorial_candidate"])
+        self.assertTrue(evaluate("Chevron nears major Beacon Offshore acquisition")["editorial_candidate"])
+        self.assertTrue(evaluate("Cheniere approves new Corpus Christi expansion")["editorial_candidate"])
+        self.assertTrue(evaluate("Calpine advances power generation project")["editorial_candidate"])
+        self.assertFalse(evaluate("City approves new hotel and restaurant")["editorial_candidate"])
+
     def test_date_only_regulatory_leads_are_not_fresh_editorial_headlines(self):
         items, rejected, seen = parse_feed(sample(), "Federal Register FERC notices", NOW, 48, date_precision="day")
         self.assertEqual(seen, 1)
