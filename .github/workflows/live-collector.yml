@@ -74,7 +74,7 @@ jobs:
       - name: Audit news coverage and collection gaps
         if: always()
         run: |
-          python newsroom_health.py --rss-state state/articles.json --rss-run output/collector/latest.json --discovery-state state/discovery.json --discovery-run output/discovery/latest.json --output output/health
+          python newsroom_health.py --rss-state state/articles.json --rss-run output/collector/latest.json --discovery-state state/discovery.json --discovery-run output/discovery/latest.json --releases-state state/press_releases.json --releases-run output/releases/latest.json --output output/health
       - name: Publish run summary and artifact
         if: always()
         run: |
