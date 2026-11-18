@@ -98,6 +98,14 @@ def collect_gal(state_path, outdir, *, now=None, fetcher=None):
             historical_noise_removed+=1
             continue
         quality=evaluate(item.get("title",""))
+        # GAL's high-signal queue must not retain entries that the current
+        # classifier no longer considers articles or sector-relevant.
+        # DOC search leads stay in its broader research queue even if low score.
+        if (item.get("discovery_provider") == "GDELT GAL RSS" and
+                not quality["editorial_candidate"] and
+                "GDELT DOC 2.0" not in item.get("discovery_providers", [])):
+            historical_noise_removed+=1
+            continue
         if item.get("relevance_score") != quality["relevance_score"]:
             historical_rescored+=1
         item["category"]=quality["category"]
