@@ -1,15 +1,15 @@
 {
-  "generated_utc": "2026-11-18T19:12:42.132285+00:00",
+  "generated_utc": "2026-11-18T19:13:02.215288+00:00",
   "status": "incomplete_pilot",
   "seven_day_pilot_complete": false,
   "history_span_days": 0.32,
-  "official_scan_runs": 31,
-  "gal_sample_runs": 24,
-  "gal_successful_samples": 24,
+  "official_scan_runs": 32,
+  "gal_sample_runs": 25,
+  "gal_successful_samples": 25,
   "gal_failed_samples": 0,
   "observed_sampling_gaps": [],
-  "latest_official_scan_utc": "2026-11-18T19:12:34.784515+00:00",
-  "latest_gal_sample_utc": "2026-11-18T19:12:36.283026+00:00",
+  "latest_official_scan_utc": "2026-11-18T19:12:56.048998+00:00",
+  "latest_gal_sample_utc": "2026-11-18T19:12:58.126745+00:00",
   "daily": [
     {
       "date_utc": "2026-11-12",
@@ -73,8 +73,8 @@
     },
     {
       "date_utc": "2026-11-18",
-      "official_scans": 31,
-      "gal_samples": 24,
+      "official_scans": 32,
+      "gal_samples": 25,
       "publisher_timestamped_official_links": 2,
       "high_signal_official_links": 1,
       "gdelt_index_first_seen_urls": 72,
