@@ -24,6 +24,46 @@
     ]
   },
   {
+    "url": "https://financialpost.com/category/energy/lng",
+    "title": "LNG News, Stories and Headlines on the Financial Post",
+    "domain": "financialpost.com",
+    "gdelt_first_seen_utc": "2026-11-18T21:17:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 39,
+    "category": "Natural Gas & LNG",
+    "relevance_evidence": [
+      "lng"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Mozambique-Approves-Exxons-Redesigned-30-Billion-Rovuma-LNG-Plan.html",
+    "title": "Mozambique Approves Exxon\u2019s Redesigned $30 Billion Rovuma LNG Plan | OilPrice.com",
+    "domain": "oilprice.com",
+    "gdelt_first_seen_utc": "2026-11-18T21:17:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 39,
+    "category": "Natural Gas & LNG",
+    "relevance_evidence": [
+      "lng"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
     "url": "https://www.skaikritis.gr/tsechia-oloklirose-ti-synapsi-symfonias-me-tis-ipa-gia-tin-promitheia-lng",
     "title": "\u03a4\u03c3\u03b5\u03c7\u03af\u03b1: \u039f\u03bb\u03bf\u03ba\u03bb\u03ae\u03c1\u03c9\u03c3\u03b5 \u03c4\u03b7 \u03c3\u03cd\u03bd\u03b1\u03c8\u03b7 \u03c3\u03c5\u03bc\u03c6\u03c9\u03bd\u03af\u03b1\u03c2 \u03bc\u03b5 \u03c4\u03b9\u03c2 \u0397\u03a0\u0391 \u03b3\u03b9\u03b1 \u03c4\u03b7\u03bd \u03c0\u03c1\u03bf\u03bc\u03ae\u03b8\u03b5\u03b9\u03b1 LNG",
     "domain": "www.skaikritis.gr",
@@ -258,6 +298,26 @@
     "category": "Natural Gas & LNG",
     "relevance_evidence": [
       "natural gas"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.winnipegfreepress.com/business/2026/11/18/feds-back-4b-project-to-connect-eastern-and-western-electricity-grids",
+    "title": "Feds back $4B project to connect eastern and western electricity grids",
+    "domain": "www.winnipegfreepress.com",
+    "gdelt_first_seen_utc": "2026-11-18T21:17:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity"
     ],
     "status": "discovery_only_requires_publisher_verification"
   },
@@ -559,6 +619,86 @@
     "category": "Oil & Energy",
     "relevance_evidence": [
       "brent"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.ksje.com/podcasts/the-scott-michlin-morning-program/episode/san-juan-county-data-center-dissent-coalition-with-judith-johnson-matt-dodson",
+    "title": "San Juan County \"Data Center Dissent Coalition\" : With Judith Johnson, Matt Dodson, - The Scott Michlin Morning Program",
+    "domain": "www.ksje.com",
+    "gdelt_first_seen_utc": "2026-11-18T21:17:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.delcotimes.com/2026/11/18/we-came-to-fight-bid-to-quash-trainer-data-center-zoning-appeal-is-nixed",
+    "title": "\u2018We came to fight\u2019: Bid to quash Trainer data center zoning appeal on hold",
+    "domain": "www.delcotimes.com",
+    "gdelt_first_seen_utc": "2026-11-18T21:17:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.clubic.com/actualite-639937-des-riverains-s-opposent-a-un-projet-de-data-center-en-savoie.html",
+    "title": "Des riverains s\u2019opposent \u00e0 un projet de data center en Savoie",
+    "domain": "www.clubic.com",
+    "gdelt_first_seen_utc": "2026-11-18T21:17:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://financialpost.com/category/energy/oil-gas",
+    "title": "Oil and Gas",
+    "domain": "financialpost.com",
+    "gdelt_first_seen_utc": "2026-11-18T21:16:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "oil and gas"
     ],
     "status": "discovery_only_requires_publisher_verification"
   },
@@ -1386,6 +1526,26 @@
     "status": "discovery_only_requires_publisher_verification"
   },
   {
+    "url": "https://www.oedigital.com/news/544359-venezuela-plans-colombia-gas-exports-from-perla-offshore-field",
+    "title": "Venezuela Plans Colombia Gas Exports from Perla Offshore Field",
+    "domain": "www.oedigital.com",
+    "gdelt_first_seen_utc": "2026-11-18T21:17:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Natural Gas & LNG",
+    "relevance_evidence": [
+      "gas exports"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
     "url": "https://seekingalpha.com/article/4969757-energy-transfer-rare-second-chance-to-get-in",
     "title": "Energy Transfer: A Rare Second Chance To Get In",
     "domain": "seekingalpha.com",
@@ -1577,6 +1737,26 @@
     "category": "Natural Gas & LNG",
     "relevance_evidence": [
       "gas supply"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://financialpost.com/economy/higher-gasoline-prices-keep-canada-inflation-rate-october",
+    "title": "Higher gasoline prices keep Canada's inflation rate at 3.1% in October",
+    "domain": "financialpost.com",
+    "gdelt_first_seen_utc": "2026-11-18T21:17:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 24,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "gasoline"
     ],
     "status": "discovery_only_requires_publisher_verification"
   },
