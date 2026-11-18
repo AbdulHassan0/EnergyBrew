@@ -1,0 +1,178 @@
+"""Audit news-collection coverage without confusing connectivity with editorial readiness.
+
+All thresholds are operational heuristics, not proof of complete news coverage.
+Discovery API first-seen times are never treated as article publication times.
+"""
+from __future__ import annotations
+import argparse
+import json
+from collections import Counter
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
+
+
+REQUIRED_BEATS = (
+    "Natural Gas & LNG",
+    "Power & Electricity",
+    "Oil & Energy",
+    "Infrastructure & Investment",
+)
+TARGET_CANDIDATES_24H = 12
+MAX_RUN_AGE_HOURS = 12
+
+
+def dt(value):
+    if not isinstance(value, str):
+        return None
+    try:
+        stamp = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    return stamp.astimezone(timezone.utc) if stamp.tzinfo else None
+
+
+def load_json(path, *, default=None):
+    if not path or not Path(path).exists():
+        return default
+    try:
+        return json.loads(Path(path).read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return default
+
+
+def audit(rss_state, rss_report, discovery_state=None, discovery_report=None, *, now=None):
+    now = now or datetime.now(timezone.utc)
+    if now.tzinfo is None:
+        raise ValueError("now must be timezone aware")
+    rss_state = rss_state if isinstance(rss_state, dict) else {}
+    rss_report = rss_report if isinstance(rss_report, dict) else {}
+    discovery_state = discovery_state if isinstance(discovery_state, dict) else {}
+    discovery_report = discovery_report if isinstance(discovery_report, dict) else {}
+    cutoff = now-timedelta(hours=24)
+    articles = rss_state.get("articles") if isinstance(rss_state.get("articles"),list) else []
+    discovery = discovery_state.get("leads") if isinstance(discovery_state.get("leads"),list) else []
+    candidates = {}
+    for article in articles:
+        if not isinstance(article, dict):
+            continue
+        published = dt(article.get("published_utc"))
+        if not published or published < cutoff or published > now+timedelta(minutes=10):
+            continue
+        if article.get("published_precision","timestamp")!="timestamp":
+            continue
+        if article.get("editorial_candidate") is not True:
+            continue
+        url=article.get("url")
+        if url:
+            candidates[url] = article
+    beats = Counter(a.get("category","Cross-sector") for a in candidates.values())
+    missing = [topic for topic in REQUIRED_BEATS if not beats[topic]]
+    research_24 = {}
+    research_high = {}
+    for lead in discovery:
+        if not isinstance(lead,dict):
+            continue
+        index_time = dt(lead.get("gdelt_first_seen_utc"))
+        if not index_time or index_time < cutoff or index_time > now+timedelta(hours=1):
+            continue
+        url=lead.get("url")
+        if not url:
+            continue
+        research_24[url] = lead
+        if lead.get("relevance_score",0)>=22:
+            research_high[url] = lead
+    last_rss = dt(rss_report.get("run_utc"))
+    last_discovery = dt(discovery_report.get("run_utc"))
+    connected = int(rss_report.get("feeds_connected",0) or 0)
+    checked = int(rss_report.get("feeds_checked",0) or 0)
+    warnings=[]
+    critical=[]
+    if not last_rss or now-last_rss > timedelta(hours=MAX_RUN_AGE_HOURS):
+        critical.append("Official RSS collection has no recent verified run (12h threshold)")
+    if connected == 0:
+        critical.append("No official RSS feed successfully parsed in latest run")
+    if len(candidates)==0:
+        critical.append("No high-signal timestamped editorial candidates within 24 hours")
+    if 0 < len(candidates) < TARGET_CANDIDATES_24H:
+        warnings.append(f"Only {len(candidates)} editorial leads within 24h; target {TARGET_CANDIDATES_24H}")
+    if missing:
+        warnings.append("No observed high-signal stories in: " + ", ".join(missing))
+    if not last_discovery:
+        warnings.append("No recorded global news discovery run")
+    elif now-last_discovery > timedelta(hours=MAX_RUN_AGE_HOURS):
+        warnings.append("Global discovery report is older than 12h")
+    elif discovery_report.get("status") not in ("ok","attempted"):
+        warnings.append("Global discovery is degraded or rate limited")
+    if not research_high:
+        warnings.append("No high-signal global research leads first seen within 24h")
+    summary={
+        "audit_utc":now.isoformat(),
+        "status":"critical" if critical else "degraded" if warnings else "operational_coverage_target_met",
+        "official_feeds_connected":connected,
+        "official_feeds_checked":checked,
+        "official_rss_last_run_utc":rss_report.get("run_utc"),
+        "timestamped_editorial_leads_24h":len(candidates),
+        "editorial_target_24h":TARGET_CANDIDATES_24H,
+        "observed_beat_counts_24h":{b:beats[b] for b in REQUIRED_BEATS},
+        "unobserved_beats":missing,
+        "research_first_seen_links_24h":len(research_24),
+        "research_high_signal_links_24h":len(research_high),
+        "research_publisher_dates_verified":0,
+        "discovery_latest_status":discovery_report.get("status","not_run"),
+        "discovery_latest_run_utc":discovery_report.get("run_utc"),
+        "critical":critical,
+        "warnings":warnings,
+        "limitations":[
+            "No result proves zero market stories or comprehensive industry coverage.",
+            "Editorial lead counts are distinct links, not independently verified events.",
+            "GDELT first-seen times cannot establish original publisher dates.",
+            "Only editorial review and independent publisher verification can approve a story.",
+        ],
+    }
+    return summary
+
+
+def report(rss_state_path, rss_report_path, discovery_state_path, discovery_report_path, output_dir, *, now=None):
+    result=audit(load_json(rss_state_path),
+                 load_json(rss_report_path),
+                 load_json(discovery_state_path),
+                 load_json(discovery_report_path),now=now)
+    output_dir=Path(output_dir)
+    output_dir.mkdir(parents=True,exist_ok=True)
+    (output_dir/"health.json").write_text(json.dumps(result,indent=2)+"\n",encoding="utf-8")
+    lines=["# EnergyBrew Newsroom Collection Health","",
+           f"Audit time: {result['audit_utc']}",
+           f"Status: **{result['status']}**",
+           f"Official feeds connected: **{result['official_feeds_connected']}/{result['official_feeds_checked']}**",
+           f"Timestamped high-signal editorial leads (24h): **{result['timestamped_editorial_leads_24h']}** / target {TARGET_CANDIDATES_24H}",
+           f"GDELT links first seen (24h): **{result['research_first_seen_links_24h']}**, of which **{result['research_high_signal_links_24h']}** headline-score as high signal",
+           "GDELT publisher-verified times: **0** (requires a separate check)",
+           "", "## Missing coverage"]
+    lines += [f"- {b}: {result['observed_beat_counts_24h'][b]} verified-source editorial leads" for b in REQUIRED_BEATS]
+    lines += ["", "## Critical problems"]
+    lines += ["- "+s for s in result["critical"]] or ["- None detected"]
+    lines += ["", "## Warnings"]
+    lines += ["- "+s for s in result["warnings"]] or ["- None detected"]
+    lines += ["", "These are coverage observations, not proof of article correctness or licensing."]
+    (output_dir/"health.md").write_text("\n".join(lines)+"\n",encoding="utf-8")
+    return result
+
+
+def main(argv=None):
+    p=argparse.ArgumentParser()
+    p.add_argument("--rss-state",default="state/articles.json")
+    p.add_argument("--rss-run",default="output/collector/latest.json")
+    p.add_argument("--discovery-state",default="state/discovery.json")
+    p.add_argument("--discovery-run",default="output/discovery/latest.json")
+    p.add_argument("--output",default="output/health")
+    args=p.parse_args(argv)
+    r=report(args.rss_state,args.rss_run,args.discovery_state,args.discovery_run,args.output)
+    print(json.dumps({k:r[k] for k in ("status","official_feeds_connected",
+        "timestamped_editorial_leads_24h","research_first_seen_links_24h",
+        "research_high_signal_links_24h","critical","warnings")},indent=2))
+    # Do not prevent ingestion or state persistence because editorial coverage is thin.
+    return 0
+
+
+if __name__=="__main__":
+    raise SystemExit(main())
