@@ -38,14 +38,20 @@ jobs:
           mkdir -p state
           if git ls-remote --exit-code --heads origin collector-state >/dev/null 2>&1; then
             git fetch --no-tags origin collector-state
-            if git cat-file -e FETCH_HEAD:state/discovery.json 2>/dev/null; then
-              git show FETCH_HEAD:state/discovery.json > state/discovery.json
-            fi
+            for prior in discovery.json articles.json latest.json discovery_latest.json; do
+              if git cat-file -e "FETCH_HEAD:state/$prior" 2>/dev/null; then
+                git show "FETCH_HEAD:state/$prior" > "state/$prior"
+              fi
+            done
           fi
       - name: Sample live GAL publisher-link index
         id: sample
         continue-on-error: true
         run: python gal.py --state state/discovery.json --output output/gal
+      - name: Audit live coverage after the new sample
+        if: always()
+        run: |
+          python newsroom_health.py --rss-state state/articles.json --rss-run state/latest.json --discovery-state state/discovery.json --discovery-run state/discovery_latest.json --output output/health
       - name: Report result
         if: always()
         run: |
@@ -53,6 +59,10 @@ jobs:
             cat output/gal/latest.md >> "$GITHUB_STEP_SUMMARY"
           else
             echo "No GAL report generated; check job logs" >> "$GITHUB_STEP_SUMMARY"
+          fi
+          if test -s output/health/health.md; then
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            cat output/health/health.md >> "$GITHUB_STEP_SUMMARY"
           fi
       - name: Persist hourly discovery history
         if: always()
@@ -80,6 +90,10 @@ jobs:
             cp "$GITHUB_WORKSPACE/output/gal/latest.md" state/gal_latest.md
             cp "$GITHUB_WORKSPACE/output/gal/leads_24h.json" state/research_leads_24h.json
             cp "$GITHUB_WORKSPACE/output/gal/leads_7d.json" state/research_leads_7d.json
+          fi
+          if test -s "$GITHUB_WORKSPACE/output/health/health.json"; then
+            cp "$GITHUB_WORKSPACE/output/health/health.json" state/health_latest.json
+            cp "$GITHUB_WORKSPACE/output/health/health.md" state/health_latest.md
           fi
           git config user.name "EnergyBrew discovery"
           git config user.email "energybrew-bot@users.noreply.github.com"
