@@ -25,6 +25,8 @@ BEATS = {
         "freeport lng": 11, "cameron lng": 11, "woodside energy": 10,
         "commonwealth lng": 11, "sempra infrastructure": 10,
         "lng tanker": 10, "lng feedgas": 13, "gas basis": 10,
+        "gas deal": 9, "gas deals": 9, "gas pacts": 9,
+        "gas project": 8, "gas fields": 8, "gas field": 8, "shale gas": 9,
     },
     "Power & Electricity": {
         "electricity": 11, "power grid": 11, "grid reliability": 11,
@@ -37,6 +39,13 @@ BEATS = {
         "nuclear plant": 9, "utility rates": 7, "power prices": 10,
         "vistra": 10, "calpine": 10, "nrg energy": 10,
         "southwest power pool": 10, "iso new england": 10,
+        "grid": 8, "power needs": 9, "transmission projects": 9,
+        "grid operator": 9, "grid operators": 9, "energy bills": 9,
+        "gas turbines": 9, "gas turbine": 9, "battery storage": 9,
+        "virtual power plant": 9, "vpps": 9, "large load": 9,
+        "nextera": 9, "eversource": 9, "national grid": 9,
+        "siemens energy": 9, "ge vernova": 9, "renewables": 8,
+        "energy storage": 9, "capacity auction": 10,
     },
     "Oil & Energy": {
         "crude oil": 12, "brent": 11, "wti": 11, "oil prices": 11,
@@ -46,6 +55,11 @@ BEATS = {
         "upstream": 7, "offshore production": 10,
         "chevron": 11, "exxonmobil": 11, "exxon mobil": 11,
         "conocophillips": 11, "diamondback energy": 9,
+        "oil inventories": 12, "oil inventory": 12, "crude inventories": 12,
+        "oil imports": 9, "oil import": 9, "vaca muerta": 9,
+        "fracking": 9, "enquest": 9, "adnoc": 9,
+        "supertanker": 9, "supertankers": 9, "bpd": 9,
+        "petrobras": 9, "refining": 8,
     },
     "Infrastructure & Investment": {
         "pipeline project": 10, "pipeline expansion": 12,
@@ -85,6 +99,14 @@ def non_article_reason(title, url=""):
     return None
 
 
+LOW_VALUE_PATTERNS = (
+    r"\bhow to save (?:electricity|energy) at home\b",
+    r"\benergy.saving tips\b",
+    r"\b(?:students?|schoolchildren)\b.{0,60}\b(?:conserve|saving|awareness)\b.{0,40}\b(?:electricity|energy)\b",
+    r"\b(?:schools?|students?)\b.{0,60}\benergy awareness\b",
+)
+
+
 def evaluate(title, excerpt=""):
     title = (title or "").lower()
     excerpt = (excerpt or "").lower()[:900]
@@ -94,6 +116,16 @@ def evaluate(title, excerpt=""):
         for phrase, weight in terms.items():
             title_hit = occurrences(title, phrase)
             excerpt_hit = occurrences(excerpt, phrase)
+            if phrase == "grid":
+                # "grid" by itself could be a spreadsheet or puzzle. Require
+                # an explicit electricity/energy-system clue in title or feed context.
+                context=title+" "+excerpt
+                if not any(occurrences(context, clue) for clue in (
+                    "power","energy","electricity","utility","utilities",
+                    "transmission","pjm","ercot","miso","generation","data center",
+                    "nuclear","substation","renewable","gas turbine","interconnection"
+                )):
+                    continue
             if phrase == "brent":
                 # Brent Cross and other proper names are not crude benchmarks.
                 # Require explicit price/oil context even for a lone "Brent".
@@ -111,6 +143,8 @@ def evaluate(title, excerpt=""):
         return {"category":"Cross-sector", "relevance_score":0, "editorial_candidate":False, "evidence":[]}
     best = max(BEATS, key=lambda category: contributions[category])
     score = min(100, contributions[best])
+    if any(re.search(pattern, title) for pattern in LOW_VALUE_PATTERNS):
+        score = min(score, 20)  # Keep low-market-impact items out of top candidate feeds.
     # Only use high-confidence sector signals as a shortlist threshold;
     # single weak observations are still saved as research data.
     return {"category":best, "relevance_score":score,

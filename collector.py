@@ -163,8 +163,7 @@ def parse_feed(xml_bytes, source_name, now, hours, date_precision="timestamp"):
         if dt < now - timedelta(hours=hours):
             rejected["old"] += 1
             continue
-        summary = child_text(node, ("description", "summary", "content"))[:700]
-        quality = evaluate(title, summary)
+        quality = evaluate(title)  # stable title-only scoring: no transient excerpt dependence
         is_precise = date_precision == "timestamp"
         category, score = quality["category"], quality["relevance_score"]
         identity = link.encode("utf-8")  # URL is stable even when publisher GUID or feed changes
