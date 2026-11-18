@@ -1,14 +1,15 @@
 # EnergyBrew — live RSS collection
 
-Run: 2026-11-18T21:11:32.523235+00:00
+Run: 2026-11-18T21:26:33.762851+00:00
 Successfully parsed feeds: **15/15**
-Fresh timestamped entries: **55**
+Source connectivity: **healthy** (0 feeds failed)
+Fresh timestamped entries: **57**
 Editorial candidates (in collection window): **15**
 Editorial candidates (last 24h): **6**
 Regulatory date-only feed entries: **12**
 Regulatory watchlist links (7 days): **4**
-New unique links (all precision levels): **11**
-Distinct article links in 7-day state: **68**
+New unique links (all precision levels): **2**
+Distinct article links in 7-day state: **70**
 
 | Source | Connected | Timestamped | Date-only | Candidates | New | Error |
 |---|---|---:|---:|---:|---:|---|
@@ -25,8 +26,8 @@ Distinct article links in 7-day state: **68**
 | Federal Register notices | True | 0 | 12 | 0 | 0 |  |
 | Offshore Energy News | True | 19 | 0 | 5 | 0 |  |
 | OilPrice.com News | True | 15 | 0 | 2 | 0 |  |
-| Utility Dive News | True | 8 | 0 | 2 | 8 |  |
-| PJM Inside Lines | True | 3 | 0 | 3 | 3 |  |
+| Utility Dive News | True | 10 | 0 | 2 | 2 |  |
+| PJM Inside Lines | True | 3 | 0 | 3 | 0 |  |
 
 Source-linked metadata only (no publisher article text). Dates come from publishers' publication fields, not HTTP crawl times.
 No newsletter publication or subscriber email occurs.

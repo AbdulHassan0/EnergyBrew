@@ -2,8 +2,8 @@
 
 **Research links only. Not fact-checked, approved, or ready for publication.**
 
-Generated (UTC): 2026-11-18T21:11:40.631970+00:00
-Distinct relevant URLs in retained data: **97**
+Generated (UTC): 2026-11-18T21:26:40.443418+00:00
+Distinct relevant URLs in retained data: **105**
 Selected diverse research leads: **26**
 Publisher-timestamped official leads within 24h: **1**
 Specialist-publisher timestamped links within 24h: **4**
@@ -30,6 +30,7 @@ Discovery publisher dates verified: **0**
    - Timestamp basis: official_publication_date_only (2026-11-18T05:00:00+00:00). Editorial status: **unapproved**.
 8. **[Mozambique Approves Exxon’s Redesigned $30 Billion Rovuma LNG Plan](https://oilprice.com/Latest-Energy-News/World-News/Mozambique-Approves-Exxons-Redesigned-30-Billion-Rovuma-LNG-Plan.html)** — Natural Gas & LNG | official_rss | score 39
    - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-18T17:30:00+00:00). Editorial status: **unapproved**.
+   - Also discovered by: global_discovery
 9. **[Woodside and Trafigura sign off on decade-long LNG deal](https://www.offshore-energy.biz/2026/11/18/woodside-and-trafigura-sign-off-on-decade-long-lng-deal)** — Natural Gas & LNG | official_rss | score 39
    - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-18T09:16:02+00:00). Editorial status: **unapproved**.
 10. **[Energy Department Announces $2.8 Billion Loan to Strengthen Grid Reliability and Help Lower Costs in Wyoming](https://www.energy.gov/articles/energy-department-announces-28-billion-loan-strengthen-grid-reliability-and-help-lower)** — Power & Electricity | official_rss | score 33
@@ -48,19 +49,19 @@ Discovery publisher dates verified: **0**
    - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-17T14:28:30+00:00). Editorial status: **unapproved**.
 17. **[Crude Oil Plummeting As Inventories Increase More Than Expected](https://www.rttnews.com/story.aspx?Id=3716011)** — Oil & Energy | global_discovery | score 36
    - Timestamp basis: discovery_index_first_seen_only (2026-11-18T20:47:00+00:00). Editorial status: **unapproved**.
-18. **[Reps move to probe NERC electricity band tariff system, seek suspension of policy](https://thenationonlineng.net/reps-move-to-probe-nerc-electricity-band-tariff-system-seek-suspension-of-policy)** — Power & Electricity | global_discovery | score 33
-   - Timestamp basis: discovery_index_first_seen_only (2026-11-18T21:02:00+00:00). Editorial status: **unapproved**.
+18. **[Feds back $4B project to connect eastern and western electricity grids](https://www.winnipegfreepress.com/business/2026/11/18/feds-back-4b-project-to-connect-eastern-and-western-electricity-grids)** — Power & Electricity | global_discovery | score 33
+   - Timestamp basis: discovery_index_first_seen_only (2026-11-18T21:17:00+00:00). Editorial status: **unapproved**.
 19. **[Enterprise Products Partners: Oil Prices Are Noisy, Dividend Is The Signal](https://seekingalpha.com/article/4969737-enterprise-products-partners-oil-prices-are-noisy-dividend-is-the-signal)** — Oil & Energy | global_discovery | score 33
    - Timestamp basis: discovery_index_first_seen_only (2026-11-18T21:01:00+00:00). Editorial status: **unapproved**.
 20. **[Why Iraq Just Fast-Tracked Chevron's Takeover Of A 14-Billion-Barrel Supergiant](http://www.zerohedge.com/markets/why-iraq-just-fast-tracked-chevrons-takeover-14-billion-barrel-supergiant)** — Oil & Energy | global_discovery | score 33
    - Timestamp basis: discovery_index_first_seen_only (2026-11-18T19:31:00+00:00). Editorial status: **unapproved**.
 21. **[Brent cede de barrera de US$93 el barril ante mayores inventarios en EE.UU.](https://www.larepublica.co/globoeconomia/brent-cede-de-barrera-de-us-93-el-barril-ante-mayores-inventarios-en-ee-uu-4527313)** — Oil & Energy | global_discovery | score 33
    - Timestamp basis: discovery_index_first_seen_only (2026-11-18T18:16:00+00:00). Editorial status: **unapproved**.
-22. **[Uganda builds local oil and gas skills](https://ntv.co.ug/business/uganda-builds-local-oil-and-gas-skills)** — Oil & Energy | global_discovery | score 30
+22. **[Oil and Gas](https://financialpost.com/category/energy/oil-gas)** — Oil & Energy | global_discovery | score 30
+   - Timestamp basis: discovery_index_first_seen_only (2026-11-18T21:16:00+00:00). Editorial status: **unapproved**.
+23. **[Uganda builds local oil and gas skills](https://ntv.co.ug/business/uganda-builds-local-oil-and-gas-skills)** — Oil & Energy | global_discovery | score 30
    - Timestamp basis: discovery_index_first_seen_only (2026-11-18T21:02:00+00:00). Editorial status: **unapproved**.
-23. **[Tunisia olive oil exports jump nearly 50% on bumper harvest / Africanews](https://www.africanews.com/2026/11/18/tunisia-olive-oil-exports-jump-nearly-50-on-bumper-harvest)** — Oil & Energy | global_discovery | score 30
-   - Timestamp basis: discovery_index_first_seen_only (2026-11-18T21:02:00+00:00). Editorial status: **unapproved**.
-24. **[Eyesan seeks greater opportunities for women in oil and gas](https://thenationonlineng.net/eyesan-seeks-greater-opportunities-for-women-in-oil-and-gas)** — Oil & Energy | global_discovery | score 30
+24. **[Tunisia olive oil exports jump nearly 50% on bumper harvest / Africanews](https://www.africanews.com/2026/11/18/tunisia-olive-oil-exports-jump-nearly-50-on-bumper-harvest)** — Oil & Energy | global_discovery | score 30
    - Timestamp basis: discovery_index_first_seen_only (2026-11-18T21:02:00+00:00). Editorial status: **unapproved**.
 25. **[Gas Infrastructure Offers Africa’s Best Energy Investment In 2027 – WEC](https://leadership.ng/gas-infrastructure-offers-africas-best-energy-investment-in-2027-wec)** — Infrastructure & Investment | global_discovery | score 30
    - Timestamp basis: discovery_index_first_seen_only (2026-11-18T19:32:00+00:00). Editorial status: **unapproved**.

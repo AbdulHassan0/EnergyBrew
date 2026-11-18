@@ -1,9 +1,9 @@
 {
-  "generated_utc": "2026-11-18T21:11:40.631970+00:00",
+  "generated_utc": "2026-11-18T21:26:40.443418+00:00",
   "status": "research_only_not_approved",
-  "unique_relevant_urls_7d": 97,
+  "unique_relevant_urls_7d": 105,
   "selected_research_links": 26,
-  "unique_domains_in_selection": 16,
+  "unique_domains_in_selection": 17,
   "queue_counts": {
     "older_official_context": 9,
     "system_operator_primary_24h": 1,
@@ -11,7 +11,7 @@
     "timestamped_official": 1,
     "regulatory_date_only": 4,
     "company_release_unverified": 5,
-    "discovery_unverified": 73
+    "discovery_unverified": 81
   },
   "selected_category_counts": {
     "Natural Gas & LNG": 8,
@@ -23,7 +23,7 @@
     "Natural Gas & LNG": 8,
     "Power & Electricity": 8,
     "Oil & Energy": 8,
-    "Infrastructure & Investment": 12
+    "Infrastructure & Investment": 13
   },
   "missing_categories": [],
   "publisher_timestamped_official_24h": 1,
@@ -271,7 +271,9 @@
       "within_24h_on_own_time_basis": true,
       "needs_editor_review": [],
       "editorial_status": "research_only_not_approved",
-      "other_origins": [],
+      "other_origins": [
+        "global_discovery"
+      ],
       "independent_corroboration_verified": false,
       "queue": "specialist_publisher_24h",
       "rank": 94
@@ -526,14 +528,15 @@
       "rank": 48
     },
     {
-      "title": "Reps move to probe NERC electricity band tariff system, seek suspension of policy",
-      "url": "https://thenationonlineng.net/reps-move-to-probe-nerc-electricity-band-tariff-system-seek-suspension-of-policy",
-      "domain": "thenationonlineng.net",
+      "title": "Feds back $4B project to connect eastern and western electricity grids",
+      "url": "https://www.winnipegfreepress.com/business/2026/11/18/feds-back-4b-project-to-connect-eastern-and-western-electricity-grids",
+      "domain": "www.winnipegfreepress.com",
       "source": "GDELT GAL RSS",
       "source_class": "unclassified",
       "category": "Power & Electricity",
       "coverage_themes": [
-        "Power & Electricity"
+        "Power & Electricity",
+        "Infrastructure & Investment"
       ],
       "relevance_score": 33,
       "relevance_evidence": [
@@ -541,7 +544,7 @@
       ],
       "origin": "global_discovery",
       "time_basis": "discovery_index_first_seen_only",
-      "observed_time_utc": "2026-11-18T21:02:00+00:00",
+      "observed_time_utc": "2026-11-18T21:17:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
@@ -634,6 +637,33 @@
       "rank": 45
     },
     {
+      "title": "Oil and Gas",
+      "url": "https://financialpost.com/category/energy/oil-gas",
+      "domain": "financialpost.com",
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Oil & Energy",
+      "coverage_themes": [
+        "Oil & Energy"
+      ],
+      "relevance_score": 30,
+      "relevance_evidence": [
+        "oil and gas"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "discovery_index_first_seen_only",
+      "observed_time_utc": "2026-11-18T21:16:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 42
+    },
+    {
       "title": "Uganda builds local oil and gas skills",
       "url": "https://ntv.co.ug/business/uganda-builds-local-oil-and-gas-skills",
       "domain": "ntv.co.ug",
@@ -673,33 +703,6 @@
       "relevance_score": 30,
       "relevance_evidence": [
         "oil exports"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "discovery_index_first_seen_only",
-      "observed_time_utc": "2026-11-18T21:02:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 42
-    },
-    {
-      "title": "Eyesan seeks greater opportunities for women in oil and gas",
-      "url": "https://thenationonlineng.net/eyesan-seeks-greater-opportunities-for-women-in-oil-and-gas",
-      "domain": "thenationonlineng.net",
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Oil & Energy",
-      "coverage_themes": [
-        "Oil & Energy"
-      ],
-      "relevance_score": 30,
-      "relevance_evidence": [
-        "oil and gas"
       ],
       "origin": "global_discovery",
       "time_basis": "discovery_index_first_seen_only",
