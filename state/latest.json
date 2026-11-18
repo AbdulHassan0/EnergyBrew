@@ -1,5 +1,5 @@
 {
-  "run_utc": "2026-11-18T12:30:09.743585+00:00",
+  "run_utc": "2026-11-18T12:30:38.665509+00:00",
   "feeds_connected": 10,
   "feeds_checked": 10,
   "fresh_entries": 6,
@@ -9,6 +9,7 @@
   "approx_distinct_titles_7d": 16,
   "date_only_entries": 12,
   "editorial_candidate_links_7d": 2,
+  "editorial_candidates_24h": 1,
   "regulatory_watch_links_7d": 4,
   "sources": [
     {

@@ -1,9 +1,10 @@
 # EnergyBrew — live RSS collection
 
-Run: 2026-11-18T12:30:09.743585+00:00
+Run: 2026-11-18T12:30:38.665509+00:00
 Successfully parsed feeds: **10/10**
 Fresh timestamped entries: **6**
-Editorial candidates (timestamped): **2**
+Editorial candidates (in collection window): **2**
+Editorial candidates (last 24h): **1**
 Regulatory date-only feed entries: **12**
 Regulatory watchlist links (7 days): **4**
 New unique links (all precision levels): **0**
