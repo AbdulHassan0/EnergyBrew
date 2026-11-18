@@ -39,12 +39,14 @@
       "source": "OilPrice.com News",
       "source_class": "specialist_publisher",
       "published_utc": "2026-11-18T19:00:00+00:00",
-      "category": "Cross-sector",
+      "category": "Natural Gas & LNG",
       "published_precision": "timestamp",
-      "relevance_score": 0,
-      "keyword_matches": 0,
-      "editorial_candidate": false,
-      "relevance_evidence": [],
+      "relevance_score": 27,
+      "keyword_matches": 1,
+      "editorial_candidate": true,
+      "relevance_evidence": [
+        "gas deal"
+      ],
       "status": "research_only_unverified",
       "also_seen_in": []
     },
@@ -57,10 +59,11 @@
       "published_utc": "2026-11-18T18:56:18+00:00",
       "category": "Power & Electricity",
       "published_precision": "timestamp",
-      "relevance_score": 63,
-      "keyword_matches": 2,
+      "relevance_score": 87,
+      "keyword_matches": 3,
       "editorial_candidate": true,
       "relevance_evidence": [
+        "grid",
         "grid reliability",
         "pjm"
       ],
@@ -74,12 +77,14 @@
       "source": "DOE Energy News",
       "source_class": "official_agency",
       "published_utc": "2026-11-18T18:06:31+00:00",
-      "category": "Cross-sector",
+      "category": "Power & Electricity",
       "published_precision": "timestamp",
-      "relevance_score": 0,
-      "keyword_matches": 0,
-      "editorial_candidate": false,
-      "relevance_evidence": [],
+      "relevance_score": 24,
+      "keyword_matches": 1,
+      "editorial_candidate": true,
+      "relevance_evidence": [
+        "grid"
+      ],
       "status": "research_only_unverified",
       "also_seen_in": []
     },
@@ -106,12 +111,14 @@
       "source": "OilPrice.com News",
       "source_class": "specialist_publisher",
       "published_utc": "2026-11-18T17:30:00+00:00",
-      "category": "Cross-sector",
+      "category": "Oil & Energy",
       "published_precision": "timestamp",
-      "relevance_score": 0,
-      "keyword_matches": 0,
-      "editorial_candidate": false,
-      "relevance_evidence": [],
+      "relevance_score": 27,
+      "keyword_matches": 1,
+      "editorial_candidate": true,
+      "relevance_evidence": [
+        "vaca muerta"
+      ],
       "status": "research_only_unverified",
       "also_seen_in": []
     },
@@ -124,13 +131,11 @@
       "published_utc": "2026-11-18T17:30:00+00:00",
       "category": "Natural Gas & LNG",
       "published_precision": "timestamp",
-      "relevance_score": 61,
-      "keyword_matches": 3,
+      "relevance_score": 39,
+      "keyword_matches": 1,
       "editorial_candidate": true,
       "relevance_evidence": [
-        "liquefied",
-        "lng",
-        "natural gas"
+        "lng"
       ],
       "status": "research_only_unverified",
       "also_seen_in": []
@@ -142,12 +147,14 @@
       "source": "OilPrice.com News",
       "source_class": "specialist_publisher",
       "published_utc": "2026-11-18T17:00:00+00:00",
-      "category": "Cross-sector",
+      "category": "Oil & Energy",
       "published_precision": "timestamp",
-      "relevance_score": 0,
-      "keyword_matches": 0,
-      "editorial_candidate": false,
-      "relevance_evidence": [],
+      "relevance_score": 27,
+      "keyword_matches": 1,
+      "editorial_candidate": true,
+      "relevance_evidence": [
+        "bpd"
+      ],
       "status": "research_only_unverified",
       "also_seen_in": []
     },
@@ -160,11 +167,11 @@
       "published_utc": "2026-11-18T16:30:00+00:00",
       "category": "Power & Electricity",
       "published_precision": "timestamp",
-      "relevance_score": 11,
+      "relevance_score": 27,
       "keyword_matches": 1,
-      "editorial_candidate": false,
+      "editorial_candidate": true,
       "relevance_evidence": [
-        "electricity"
+        "energy bills"
       ],
       "status": "research_only_unverified",
       "also_seen_in": []
@@ -176,12 +183,15 @@
       "source": "Utility Dive News",
       "source_class": "specialist_publisher",
       "published_utc": "2026-11-18T15:57:17+00:00",
-      "category": "Cross-sector",
+      "category": "Power & Electricity",
       "published_precision": "timestamp",
-      "relevance_score": 0,
-      "keyword_matches": 0,
-      "editorial_candidate": false,
-      "relevance_evidence": [],
+      "relevance_score": 51,
+      "keyword_matches": 2,
+      "editorial_candidate": true,
+      "relevance_evidence": [
+        "grid",
+        "power needs"
+      ],
       "status": "research_only_unverified",
       "also_seen_in": []
     },
@@ -192,12 +202,14 @@
       "source": "Utility Dive News",
       "source_class": "specialist_publisher",
       "published_utc": "2026-11-18T15:50:14+00:00",
-      "category": "Cross-sector",
+      "category": "Power & Electricity",
       "published_precision": "timestamp",
-      "relevance_score": 0,
+      "relevance_score": 27,
       "keyword_matches": 0,
-      "editorial_candidate": false,
-      "relevance_evidence": [],
+      "editorial_candidate": true,
+      "relevance_evidence": [
+        "nextera"
+      ],
       "status": "research_only_unverified"
     },
     {
@@ -209,12 +221,11 @@
       "published_utc": "2026-11-18T15:39:53+00:00",
       "category": "Oil & Energy",
       "published_precision": "timestamp",
-      "relevance_score": 21,
-      "keyword_matches": 2,
-      "editorial_candidate": false,
+      "relevance_score": 36,
+      "keyword_matches": 1,
+      "editorial_candidate": true,
       "relevance_evidence": [
-        "crude oil",
-        "petroleum"
+        "oil inventories"
       ],
       "status": "research_only_unverified",
       "also_seen_in": []
@@ -228,11 +239,13 @@
       "published_utc": "2026-11-18T15:31:06+00:00",
       "category": "Power & Electricity",
       "published_precision": "timestamp",
-      "relevance_score": 10,
-      "keyword_matches": 1,
-      "editorial_candidate": false,
+      "relevance_score": 81,
+      "keyword_matches": 3,
+      "editorial_candidate": true,
       "relevance_evidence": [
-        "power plant"
+        "eversource",
+        "national grid",
+        "vpps"
       ],
       "status": "research_only_unverified",
       "also_seen_in": []
@@ -246,12 +259,11 @@
       "published_utc": "2026-11-18T15:30:00+00:00",
       "category": "Natural Gas & LNG",
       "published_precision": "timestamp",
-      "relevance_score": 90,
-      "keyword_matches": 3,
+      "relevance_score": 78,
+      "keyword_matches": 2,
       "editorial_candidate": true,
       "relevance_evidence": [
         "lng",
-        "natural gas",
         "venture global"
       ],
       "status": "research_only_unverified",
@@ -266,11 +278,11 @@
       "published_utc": "2026-11-18T15:07:53+00:00",
       "category": "Natural Gas & LNG",
       "published_precision": "timestamp",
-      "relevance_score": 13,
+      "relevance_score": 27,
       "keyword_matches": 1,
-      "editorial_candidate": false,
+      "editorial_candidate": true,
       "relevance_evidence": [
-        "lng"
+        "gas pacts"
       ],
       "status": "research_only_unverified",
       "also_seen_in": []
@@ -314,12 +326,14 @@
       "source": "Utility Dive News",
       "source_class": "specialist_publisher",
       "published_utc": "2026-11-18T14:23:48+00:00",
-      "category": "Cross-sector",
+      "category": "Power & Electricity",
       "published_precision": "timestamp",
-      "relevance_score": 0,
+      "relevance_score": 27,
       "keyword_matches": 1,
-      "editorial_candidate": false,
-      "relevance_evidence": [],
+      "editorial_candidate": true,
+      "relevance_evidence": [
+        "transmission projects"
+      ],
       "status": "research_only_unverified"
     },
     {
@@ -331,12 +345,10 @@
       "published_utc": "2026-11-18T14:00:00+00:00",
       "category": "Natural Gas & LNG",
       "published_precision": "timestamp",
-      "relevance_score": 54,
-      "keyword_matches": 3,
+      "relevance_score": 36,
+      "keyword_matches": 1,
       "editorial_candidate": true,
       "relevance_evidence": [
-        "gas demand",
-        "gas storage",
         "natural gas"
       ],
       "status": "research_only_unverified",
@@ -351,11 +363,11 @@
       "published_utc": "2026-11-18T13:30:00+00:00",
       "category": "Oil & Energy",
       "published_precision": "timestamp",
-      "relevance_score": 7,
+      "relevance_score": 27,
       "keyword_matches": 1,
-      "editorial_candidate": false,
+      "editorial_candidate": true,
       "relevance_evidence": [
-        "drilling"
+        "fracking"
       ],
       "status": "research_only_unverified",
       "also_seen_in": []
@@ -388,11 +400,11 @@
       "published_utc": "2026-11-18T12:30:00+00:00",
       "category": "Oil & Energy",
       "published_precision": "timestamp",
-      "relevance_score": 7,
+      "relevance_score": 27,
       "keyword_matches": 1,
-      "editorial_candidate": false,
+      "editorial_candidate": true,
       "relevance_evidence": [
-        "upstream"
+        "enquest"
       ],
       "status": "research_only_unverified",
       "also_seen_in": []
@@ -406,11 +418,11 @@
       "published_utc": "2026-11-18T11:30:00+00:00",
       "category": "Oil & Energy",
       "published_precision": "timestamp",
-      "relevance_score": 12,
+      "relevance_score": 27,
       "keyword_matches": 1,
-      "editorial_candidate": false,
+      "editorial_candidate": true,
       "relevance_evidence": [
-        "crude oil"
+        "supertankers"
       ],
       "status": "research_only_unverified",
       "also_seen_in": []
@@ -422,14 +434,12 @@
       "source": "Offshore Energy News",
       "source_class": "specialist_publisher",
       "published_utc": "2026-11-18T11:29:40+00:00",
-      "category": "Power & Electricity",
+      "category": "Cross-sector",
       "published_precision": "timestamp",
-      "relevance_score": 11,
-      "keyword_matches": 1,
+      "relevance_score": 0,
+      "keyword_matches": 0,
       "editorial_candidate": false,
-      "relevance_evidence": [
-        "electricity"
-      ],
+      "relevance_evidence": [],
       "status": "research_only_unverified",
       "also_seen_in": []
     },
@@ -456,12 +466,14 @@
       "source": "OilPrice.com News",
       "source_class": "specialist_publisher",
       "published_utc": "2026-11-18T10:00:00+00:00",
-      "category": "Cross-sector",
+      "category": "Oil & Energy",
       "published_precision": "timestamp",
-      "relevance_score": 0,
-      "keyword_matches": 0,
-      "editorial_candidate": false,
-      "relevance_evidence": [],
+      "relevance_score": 27,
+      "keyword_matches": 1,
+      "editorial_candidate": true,
+      "relevance_evidence": [
+        "adnoc"
+      ],
       "status": "research_only_unverified",
       "also_seen_in": []
     },
@@ -472,12 +484,14 @@
       "source": "Offshore Energy News",
       "source_class": "specialist_publisher",
       "published_utc": "2026-11-18T09:26:31+00:00",
-      "category": "Cross-sector",
+      "category": "Oil & Energy",
       "published_precision": "timestamp",
-      "relevance_score": 0,
-      "keyword_matches": 0,
-      "editorial_candidate": false,
-      "relevance_evidence": [],
+      "relevance_score": 27,
+      "keyword_matches": 1,
+      "editorial_candidate": true,
+      "relevance_evidence": [
+        "petrobras"
+      ],
       "status": "research_only_unverified",
       "also_seen_in": []
     },
@@ -490,13 +504,11 @@
       "published_utc": "2026-11-18T09:16:02+00:00",
       "category": "Natural Gas & LNG",
       "published_precision": "timestamp",
-      "relevance_score": 61,
-      "keyword_matches": 3,
+      "relevance_score": 39,
+      "keyword_matches": 1,
       "editorial_candidate": true,
       "relevance_evidence": [
-        "liquefied",
-        "lng",
-        "natural gas"
+        "lng"
       ],
       "status": "research_only_unverified",
       "also_seen_in": []
@@ -508,12 +520,14 @@
       "source": "OilPrice.com News",
       "source_class": "specialist_publisher",
       "published_utc": "2026-11-18T08:45:00+00:00",
-      "category": "Cross-sector",
+      "category": "Oil & Energy",
       "published_precision": "timestamp",
-      "relevance_score": 0,
+      "relevance_score": 27,
       "keyword_matches": 0,
-      "editorial_candidate": false,
-      "relevance_evidence": [],
+      "editorial_candidate": true,
+      "relevance_evidence": [
+        "oil import"
+      ],
       "status": "research_only_unverified"
     },
     {
@@ -539,14 +553,12 @@
       "source": "Offshore Energy News",
       "source_class": "specialist_publisher",
       "published_utc": "2026-11-18T08:01:28+00:00",
-      "category": "Oil & Energy",
+      "category": "Cross-sector",
       "published_precision": "timestamp",
-      "relevance_score": 7,
-      "keyword_matches": 1,
+      "relevance_score": 0,
+      "keyword_matches": 0,
       "editorial_candidate": false,
-      "relevance_evidence": [
-        "drilling"
-      ],
+      "relevance_evidence": [],
       "status": "research_only_unverified",
       "also_seen_in": []
     },
@@ -763,11 +775,11 @@
       "published_utc": "2026-11-17T18:10:03+00:00",
       "category": "Power & Electricity",
       "published_precision": "timestamp",
-      "relevance_score": 44,
+      "relevance_score": 57,
       "keyword_matches": 2,
       "editorial_candidate": true,
       "relevance_evidence": [
-        "electricity",
+        "grid",
         "grid reliability"
       ],
       "status": "research_only_unverified",
@@ -864,12 +876,14 @@
       "published_utc": "2026-11-17T14:28:30+00:00",
       "category": "Power & Electricity",
       "published_precision": "timestamp",
-      "relevance_score": 37,
-      "keyword_matches": 2,
+      "relevance_score": 100,
+      "keyword_matches": 4,
       "editorial_candidate": true,
       "relevance_evidence": [
+        "grid",
+        "grid operators",
         "interconnection",
-        "pjm"
+        "large load"
       ],
       "status": "research_only_unverified",
       "also_seen_in": []
@@ -897,14 +911,12 @@
       "source": "Offshore Energy News",
       "source_class": "specialist_publisher",
       "published_utc": "2026-11-17T13:14:12+00:00",
-      "category": "Power & Electricity",
+      "category": "Cross-sector",
       "published_precision": "timestamp",
-      "relevance_score": 11,
-      "keyword_matches": 1,
+      "relevance_score": 0,
+      "keyword_matches": 0,
       "editorial_candidate": false,
-      "relevance_evidence": [
-        "electricity"
-      ],
+      "relevance_evidence": [],
       "status": "research_only_unverified",
       "also_seen_in": []
     },
@@ -915,12 +927,15 @@
       "source": "Utility Dive News",
       "source_class": "specialist_publisher",
       "published_utc": "2026-11-17T13:00:00+00:00",
-      "category": "Cross-sector",
+      "category": "Power & Electricity",
       "published_precision": "timestamp",
-      "relevance_score": 0,
-      "keyword_matches": 0,
-      "editorial_candidate": false,
-      "relevance_evidence": [],
+      "relevance_score": 54,
+      "keyword_matches": 2,
+      "editorial_candidate": true,
+      "relevance_evidence": [
+        "gas turbines",
+        "siemens energy"
+      ],
       "status": "research_only_unverified",
       "also_seen_in": []
     },
@@ -1015,12 +1030,11 @@
       "published_utc": "2026-11-17T08:53:26+00:00",
       "category": "Natural Gas & LNG",
       "published_precision": "timestamp",
-      "relevance_score": 42,
-      "keyword_matches": 2,
+      "relevance_score": 30,
+      "keyword_matches": 1,
       "editorial_candidate": true,
       "relevance_evidence": [
-        "gas production",
-        "natural gas"
+        "gas production"
       ],
       "status": "research_only_unverified",
       "also_seen_in": []
@@ -1132,14 +1146,12 @@
       "source": "European Commission DG Energy",
       "source_class": "official_agency",
       "published_utc": "2026-11-16T23:00:00+00:00",
-      "category": "Power & Electricity",
+      "category": "Cross-sector",
       "published_precision": "timestamp",
-      "relevance_score": 11,
-      "keyword_matches": 1,
+      "relevance_score": 0,
+      "keyword_matches": 0,
       "editorial_candidate": false,
-      "relevance_evidence": [
-        "electricity"
-      ],
+      "relevance_evidence": [],
       "status": "research_only_unverified",
       "also_seen_in": []
     },
@@ -1152,11 +1164,10 @@
       "published_utc": "2026-11-16T23:00:00+00:00",
       "category": "Power & Electricity",
       "published_precision": "timestamp",
-      "relevance_score": 38,
-      "keyword_matches": 2,
+      "relevance_score": 27,
+      "keyword_matches": 1,
       "editorial_candidate": true,
       "relevance_evidence": [
-        "electricity",
         "offshore wind"
       ],
       "status": "research_only_unverified",
@@ -1171,14 +1182,12 @@
       "published_utc": "2026-11-16T22:24:16+00:00",
       "category": "Power & Electricity",
       "published_precision": "timestamp",
-      "relevance_score": 77,
-      "keyword_matches": 4,
+      "relevance_score": 57,
+      "keyword_matches": 2,
       "editorial_candidate": true,
       "relevance_evidence": [
-        "electricity",
         "interconnection",
-        "pjm",
-        "power generation"
+        "pjm"
       ],
       "status": "research_only_unverified",
       "also_seen_in": []
@@ -1192,11 +1201,12 @@
       "published_utc": "2026-11-16T21:31:15+00:00",
       "category": "Power & Electricity",
       "published_precision": "timestamp",
-      "relevance_score": 93,
+      "relevance_score": 100,
       "keyword_matches": 3,
       "editorial_candidate": true,
       "relevance_evidence": [
         "data center",
+        "grid",
         "grid reliability",
         "pjm"
       ],
@@ -1522,155 +1532,164 @@
       "scan_state": "healthy",
       "fresh_entries": 54,
       "new_article_links": 0
+    },
+    {
+      "run_utc": "2026-11-18T21:39:44.101099+00:00",
+      "feeds_connected": 15,
+      "feeds_checked": 15,
+      "feeds_failed": 0,
+      "scan_state": "healthy",
+      "fresh_entries": 54,
+      "new_article_links": 0
     }
   ],
   "source_health": {
     "EIA Today in Energy": {
-      "last_attempt_utc": "2026-11-18T21:35:47.426545+00:00",
-      "last_success_utc": "2026-11-18T21:35:47.426545+00:00",
+      "last_attempt_utc": "2026-11-18T21:39:44.101099+00:00",
+      "last_success_utc": "2026-11-18T21:39:44.101099+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 5,
+      "consecutive_successes": 6,
       "last_items_seen": 29,
       "newest_feed_published_utc": "2026-11-18T14:00:00+00:00",
       "last_error_type": null
     },
     "EIA Press Releases": {
-      "last_attempt_utc": "2026-11-18T21:35:47.426545+00:00",
-      "last_success_utc": "2026-11-18T21:35:47.426545+00:00",
+      "last_attempt_utc": "2026-11-18T21:39:44.101099+00:00",
+      "last_success_utc": "2026-11-18T21:39:44.101099+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 5,
+      "consecutive_successes": 6,
       "last_items_seen": 13,
       "newest_feed_published_utc": "2026-11-10T17:00:00+00:00",
       "last_error_type": null
     },
     "EIA Congressional Testimony": {
-      "last_attempt_utc": "2026-11-18T21:35:47.426545+00:00",
-      "last_success_utc": "2026-11-18T21:35:47.426545+00:00",
+      "last_attempt_utc": "2026-11-18T21:39:44.101099+00:00",
+      "last_success_utc": "2026-11-18T21:39:44.101099+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 5,
+      "consecutive_successes": 6,
       "last_items_seen": 1,
       "newest_feed_published_utc": "2021-11-16T14:00:00+00:00",
       "last_error_type": null
     },
     "EIA Presentations": {
-      "last_attempt_utc": "2026-11-18T21:35:47.426545+00:00",
-      "last_success_utc": "2026-11-18T21:35:47.426545+00:00",
+      "last_attempt_utc": "2026-11-18T21:39:44.101099+00:00",
+      "last_success_utc": "2026-11-18T21:39:44.101099+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 5,
+      "consecutive_successes": 6,
       "last_items_seen": 1,
       "newest_feed_published_utc": "2026-03-04T14:00:00+00:00",
       "last_error_type": null
     },
     "DOE Energy News": {
-      "last_attempt_utc": "2026-11-18T21:35:47.426545+00:00",
-      "last_success_utc": "2026-11-18T21:35:47.426545+00:00",
+      "last_attempt_utc": "2026-11-18T21:39:44.101099+00:00",
+      "last_success_utc": "2026-11-18T21:39:44.101099+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 5,
+      "consecutive_successes": 6,
       "last_items_seen": 10,
       "newest_feed_published_utc": "2026-11-18T18:06:31+00:00",
       "last_error_type": null
     },
     "DOE Grid Deployment": {
-      "last_attempt_utc": "2026-11-18T21:35:47.426545+00:00",
-      "last_success_utc": "2026-11-18T21:35:47.426545+00:00",
+      "last_attempt_utc": "2026-11-18T21:39:44.101099+00:00",
+      "last_success_utc": "2026-11-18T21:39:44.101099+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 5,
+      "consecutive_successes": 6,
       "last_items_seen": 10,
       "newest_feed_published_utc": "2026-10-30T14:42:15+00:00",
       "last_error_type": null
     },
     "US NRC Nuclear News": {
-      "last_attempt_utc": "2026-11-18T21:35:47.426545+00:00",
-      "last_success_utc": "2026-11-18T21:35:47.426545+00:00",
+      "last_attempt_utc": "2026-11-18T21:39:44.101099+00:00",
+      "last_success_utc": "2026-11-18T21:39:44.101099+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 5,
+      "consecutive_successes": 6,
       "last_items_seen": 164,
       "newest_feed_published_utc": "2026-09-14T08:00:00+00:00",
       "last_error_type": null
     },
     "DOE Hydrocarbons Releases": {
-      "last_attempt_utc": "2026-11-18T21:35:47.426545+00:00",
-      "last_success_utc": "2026-11-18T21:35:47.426545+00:00",
+      "last_attempt_utc": "2026-11-18T21:39:44.101099+00:00",
+      "last_success_utc": "2026-11-18T21:39:44.101099+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 5,
+      "consecutive_successes": 6,
       "last_items_seen": 10,
       "newest_feed_published_utc": "2026-11-04T05:00:00+00:00",
       "last_error_type": null
     },
     "DOE Hydrocarbons Blog": {
-      "last_attempt_utc": "2026-11-18T21:35:47.426545+00:00",
-      "last_success_utc": "2026-11-18T21:35:47.426545+00:00",
+      "last_attempt_utc": "2026-11-18T21:39:44.101099+00:00",
+      "last_success_utc": "2026-11-18T21:39:44.101099+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 5,
+      "consecutive_successes": 6,
       "last_items_seen": 10,
       "newest_feed_published_utc": "2026-10-29T20:16:57+00:00",
       "last_error_type": null
     },
     "European Commission DG Energy": {
-      "last_attempt_utc": "2026-11-18T21:35:47.426545+00:00",
-      "last_success_utc": "2026-11-18T21:35:47.426545+00:00",
+      "last_attempt_utc": "2026-11-18T21:39:44.101099+00:00",
+      "last_success_utc": "2026-11-18T21:39:44.101099+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 5,
+      "consecutive_successes": 6,
       "last_items_seen": 30,
       "newest_feed_published_utc": "2026-11-17T23:00:00+00:00",
       "last_error_type": null
     },
     "Federal Register notices": {
-      "last_attempt_utc": "2026-11-18T21:35:47.426545+00:00",
-      "last_success_utc": "2026-11-18T21:35:47.426545+00:00",
+      "last_attempt_utc": "2026-11-18T21:39:44.101099+00:00",
+      "last_success_utc": "2026-11-18T21:39:44.101099+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 5,
+      "consecutive_successes": 6,
       "last_items_seen": 136,
       "newest_feed_published_utc": "2026-11-18T05:00:00+00:00",
       "last_error_type": null
     },
     "Offshore Energy News": {
-      "last_attempt_utc": "2026-11-18T21:35:47.426545+00:00",
-      "last_success_utc": "2026-11-18T21:35:47.426545+00:00",
+      "last_attempt_utc": "2026-11-18T21:39:44.101099+00:00",
+      "last_success_utc": "2026-11-18T21:39:44.101099+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 5,
+      "consecutive_successes": 6,
       "last_items_seen": 50,
       "newest_feed_published_utc": "2026-11-18T15:07:53+00:00",
       "last_error_type": null
     },
     "OilPrice.com News": {
-      "last_attempt_utc": "2026-11-18T21:35:47.426545+00:00",
-      "last_success_utc": "2026-11-18T21:35:47.426545+00:00",
+      "last_attempt_utc": "2026-11-18T21:39:44.101099+00:00",
+      "last_success_utc": "2026-11-18T21:39:44.101099+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 5,
+      "consecutive_successes": 6,
       "last_items_seen": 15,
       "newest_feed_published_utc": "2026-11-18T21:00:00+00:00",
       "last_error_type": null
     },
     "Utility Dive News": {
-      "last_attempt_utc": "2026-11-18T21:35:47.426545+00:00",
-      "last_success_utc": "2026-11-18T21:35:47.426545+00:00",
+      "last_attempt_utc": "2026-11-18T21:39:44.101099+00:00",
+      "last_success_utc": "2026-11-18T21:39:44.101099+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 5,
+      "consecutive_successes": 6,
       "last_items_seen": 10,
       "newest_feed_published_utc": "2026-11-18T15:57:17+00:00",
       "last_error_type": null
     },
     "PJM Inside Lines": {
-      "last_attempt_utc": "2026-11-18T21:35:47.426545+00:00",
-      "last_success_utc": "2026-11-18T21:35:47.426545+00:00",
+      "last_attempt_utc": "2026-11-18T21:39:44.101099+00:00",
+      "last_success_utc": "2026-11-18T21:39:44.101099+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 5,
+      "consecutive_successes": 6,
       "last_items_seen": 10,
       "newest_feed_published_utc": "2026-11-18T18:56:18+00:00",
       "last_error_type": null

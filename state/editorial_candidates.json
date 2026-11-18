@@ -1,5 +1,26 @@
 [
   {
+    "id": "99d43497f540f0f48306e53b",
+    "title": "Grid operators file closely watched large load interconnection reforms at FERC",
+    "url": "https://www.utilitydive.com/news/pjm-rto-large-load-interconnection-ferc-show-cause/874872",
+    "source": "Utility Dive News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-17T14:28:30+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 100,
+    "keyword_matches": 4,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "grid",
+      "grid operators",
+      "interconnection",
+      "large load"
+    ],
+    "status": "research_only_unverified",
+    "also_seen_in": []
+  },
+  {
     "id": "4ab08cf5edc2645191ac619c",
     "title": "PJM Proposes New Rules to Protect Grid Reliability as Data Center Demand Grows",
     "url": "https://insidelines.pjm.com/pjm-proposes-new-rules-to-protect-grid-reliability-as-data-center-demand-grows",
@@ -8,13 +29,54 @@
     "published_utc": "2026-11-16T21:31:15+00:00",
     "category": "Power & Electricity",
     "published_precision": "timestamp",
-    "relevance_score": 93,
+    "relevance_score": 100,
     "keyword_matches": 3,
     "editorial_candidate": true,
     "relevance_evidence": [
       "data center",
+      "grid",
       "grid reliability",
       "pjm"
+    ],
+    "status": "research_only_unverified",
+    "also_seen_in": []
+  },
+  {
+    "id": "6c922e4edba15f1f787245dd",
+    "title": "PJM Board Approves Transmission Project Changes to Support Grid Reliability",
+    "url": "https://insidelines.pjm.com/pjm-board-approves-transmission-project-changes-to-support-grid-reliability-2",
+    "source": "PJM Inside Lines",
+    "source_class": "system_operator_primary",
+    "published_utc": "2026-11-18T18:56:18+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 87,
+    "keyword_matches": 3,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "grid",
+      "grid reliability",
+      "pjm"
+    ],
+    "status": "research_only_unverified",
+    "also_seen_in": []
+  },
+  {
+    "id": "68f2f4fe9ba50ace39b28345",
+    "title": "How National Grid, Eversource are using VPPs to solve local-level constraints",
+    "url": "https://www.utilitydive.com/news/national-grid-eversource-vpp-demand-response/875039",
+    "source": "Utility Dive News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-18T15:31:06+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 81,
+    "keyword_matches": 3,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "eversource",
+      "national grid",
+      "vpps"
     ],
     "status": "research_only_unverified",
     "also_seen_in": []
@@ -28,12 +90,11 @@
     "published_utc": "2026-11-18T15:30:00+00:00",
     "category": "Natural Gas & LNG",
     "published_precision": "timestamp",
-    "relevance_score": 90,
-    "keyword_matches": 3,
+    "relevance_score": 78,
+    "keyword_matches": 2,
     "editorial_candidate": true,
     "relevance_evidence": [
       "lng",
-      "natural gas",
       "venture global"
     ],
     "status": "research_only_unverified",
@@ -59,6 +120,25 @@
     "also_seen_in": []
   },
   {
+    "id": "a86b6bed4d391a5877a630e8",
+    "title": "Energy Department Announces $2.8 Billion Loan to Strengthen Grid Reliability and Help Lower Costs in Wyoming",
+    "url": "https://www.energy.gov/articles/energy-department-announces-28-billion-loan-strengthen-grid-reliability-and-help-lower",
+    "source": "DOE Energy News",
+    "source_class": "official_agency",
+    "published_utc": "2026-11-17T18:10:03+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 57,
+    "keyword_matches": 2,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "grid",
+      "grid reliability"
+    ],
+    "status": "research_only_unverified",
+    "also_seen_in": []
+  },
+  {
     "id": "9ac450c745073b19124309ac",
     "title": "PJM Plan Would Cut Interconnection Process Time in Half",
     "url": "https://insidelines.pjm.com/pjm-proposal-would-cut-interconnection-process-time-in-half",
@@ -67,33 +147,50 @@
     "published_utc": "2026-11-16T22:24:16+00:00",
     "category": "Power & Electricity",
     "published_precision": "timestamp",
-    "relevance_score": 77,
-    "keyword_matches": 4,
+    "relevance_score": 57,
+    "keyword_matches": 2,
     "editorial_candidate": true,
     "relevance_evidence": [
-      "electricity",
       "interconnection",
-      "pjm",
-      "power generation"
+      "pjm"
     ],
     "status": "research_only_unverified",
     "also_seen_in": []
   },
   {
-    "id": "6c922e4edba15f1f787245dd",
-    "title": "PJM Board Approves Transmission Project Changes to Support Grid Reliability",
-    "url": "https://insidelines.pjm.com/pjm-board-approves-transmission-project-changes-to-support-grid-reliability-2",
-    "source": "PJM Inside Lines",
-    "source_class": "system_operator_primary",
-    "published_utc": "2026-11-18T18:56:18+00:00",
+    "id": "b9e6a8db6369cf68072d7131",
+    "title": "Elevated demand for gas turbines could persist through 2035: Siemens Energy",
+    "url": "https://www.utilitydive.com/news/elevated-demand-for-gas-turbines-could-persist-through-2035-siemens-energy/874839",
+    "source": "Utility Dive News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-17T13:00:00+00:00",
     "category": "Power & Electricity",
     "published_precision": "timestamp",
-    "relevance_score": 63,
+    "relevance_score": 54,
     "keyword_matches": 2,
     "editorial_candidate": true,
     "relevance_evidence": [
-      "grid reliability",
-      "pjm"
+      "gas turbines",
+      "siemens energy"
+    ],
+    "status": "research_only_unverified",
+    "also_seen_in": []
+  },
+  {
+    "id": "3bd4f9b4ba7eab7921694801",
+    "title": "The grid will fall short of AI\u2019s power needs. These 6 resources can close the gap.",
+    "url": "https://www.utilitydive.com/news/the-grid-will-fall-short-of-ais-power-needs-6-resources-close-the-gap/874125",
+    "source": "Utility Dive News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-18T15:57:17+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 51,
+    "keyword_matches": 2,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "grid",
+      "power needs"
     ],
     "status": "research_only_unverified",
     "also_seen_in": []
@@ -107,13 +204,11 @@
     "published_utc": "2026-11-18T17:30:00+00:00",
     "category": "Natural Gas & LNG",
     "published_precision": "timestamp",
-    "relevance_score": 61,
-    "keyword_matches": 3,
+    "relevance_score": 39,
+    "keyword_matches": 1,
     "editorial_candidate": true,
     "relevance_evidence": [
-      "liquefied",
-      "lng",
-      "natural gas"
+      "lng"
     ],
     "status": "research_only_unverified",
     "also_seen_in": []
@@ -127,71 +222,11 @@
     "published_utc": "2026-11-18T09:16:02+00:00",
     "category": "Natural Gas & LNG",
     "published_precision": "timestamp",
-    "relevance_score": 61,
-    "keyword_matches": 3,
+    "relevance_score": 39,
+    "keyword_matches": 1,
     "editorial_candidate": true,
     "relevance_evidence": [
-      "liquefied",
-      "lng",
-      "natural gas"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": []
-  },
-  {
-    "id": "a4c390e9c48b4825355d9bf6",
-    "title": "U.S. natural gas inventories end injection season above normal levels",
-    "url": "https://www.eia.gov/todayinenergy/detail.php?id=68484",
-    "source": "EIA Today in Energy",
-    "source_class": "official_agency",
-    "published_utc": "2026-11-18T14:00:00+00:00",
-    "category": "Natural Gas & LNG",
-    "published_precision": "timestamp",
-    "relevance_score": 54,
-    "keyword_matches": 3,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "gas demand",
-      "gas storage",
-      "natural gas"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": []
-  },
-  {
-    "id": "a86b6bed4d391a5877a630e8",
-    "title": "Energy Department Announces $2.8 Billion Loan to Strengthen Grid Reliability and Help Lower Costs in Wyoming",
-    "url": "https://www.energy.gov/articles/energy-department-announces-28-billion-loan-strengthen-grid-reliability-and-help-lower",
-    "source": "DOE Energy News",
-    "source_class": "official_agency",
-    "published_utc": "2026-11-17T18:10:03+00:00",
-    "category": "Power & Electricity",
-    "published_precision": "timestamp",
-    "relevance_score": 44,
-    "keyword_matches": 2,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "electricity",
-      "grid reliability"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": []
-  },
-  {
-    "id": "ffeaf298774a3406bb15a015",
-    "title": "Shell kicks off gas production from its deepwater project in Southeast Asia",
-    "url": "https://www.offshore-energy.biz/2026/11/17/shell-kicks-off-gas-production-from-its-deepwater-project-in-southeast-asia",
-    "source": "Offshore Energy News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-17T08:53:26+00:00",
-    "category": "Natural Gas & LNG",
-    "published_precision": "timestamp",
-    "relevance_score": 42,
-    "keyword_matches": 2,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "gas production",
-      "natural gas"
+      "lng"
     ],
     "status": "research_only_unverified",
     "also_seen_in": []
@@ -215,39 +250,37 @@
     "also_seen_in": []
   },
   {
-    "id": "341efc196ccfef7af0271025",
-    "title": "Commission approves \u20ac9.5 billion Dutch State aid to support offshore wind energy",
-    "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2457",
-    "source": "European Commission DG Energy",
-    "source_class": "official_agency",
-    "published_utc": "2026-11-16T23:00:00+00:00",
-    "category": "Power & Electricity",
+    "id": "12c9ad8c1b37d3c4d5621721",
+    "title": "US Oil Inventories On the Rise",
+    "url": "https://oilprice.com/Energy/Crude-Oil/US-Oil-Inventories-On-the-Rise.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-18T15:39:53+00:00",
+    "category": "Oil & Energy",
     "published_precision": "timestamp",
-    "relevance_score": 38,
-    "keyword_matches": 2,
+    "relevance_score": 36,
+    "keyword_matches": 1,
     "editorial_candidate": true,
     "relevance_evidence": [
-      "electricity",
-      "offshore wind"
+      "oil inventories"
     ],
     "status": "research_only_unverified",
     "also_seen_in": []
   },
   {
-    "id": "99d43497f540f0f48306e53b",
-    "title": "Grid operators file closely watched large load interconnection reforms at FERC",
-    "url": "https://www.utilitydive.com/news/pjm-rto-large-load-interconnection-ferc-show-cause/874872",
-    "source": "Utility Dive News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-17T14:28:30+00:00",
-    "category": "Power & Electricity",
+    "id": "a4c390e9c48b4825355d9bf6",
+    "title": "U.S. natural gas inventories end injection season above normal levels",
+    "url": "https://www.eia.gov/todayinenergy/detail.php?id=68484",
+    "source": "EIA Today in Energy",
+    "source_class": "official_agency",
+    "published_utc": "2026-11-18T14:00:00+00:00",
+    "category": "Natural Gas & LNG",
     "published_precision": "timestamp",
-    "relevance_score": 37,
-    "keyword_matches": 2,
+    "relevance_score": 36,
+    "keyword_matches": 1,
     "editorial_candidate": true,
     "relevance_evidence": [
-      "interconnection",
-      "pjm"
+      "natural gas"
     ],
     "status": "research_only_unverified",
     "also_seen_in": []
@@ -284,6 +317,291 @@
     "editorial_candidate": true,
     "relevance_evidence": [
       "data center"
+    ],
+    "status": "research_only_unverified",
+    "also_seen_in": []
+  },
+  {
+    "id": "ffeaf298774a3406bb15a015",
+    "title": "Shell kicks off gas production from its deepwater project in Southeast Asia",
+    "url": "https://www.offshore-energy.biz/2026/11/17/shell-kicks-off-gas-production-from-its-deepwater-project-in-southeast-asia",
+    "source": "Offshore Energy News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-17T08:53:26+00:00",
+    "category": "Natural Gas & LNG",
+    "published_precision": "timestamp",
+    "relevance_score": 30,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "gas production"
+    ],
+    "status": "research_only_unverified",
+    "also_seen_in": []
+  },
+  {
+    "id": "3e03c81f3a66fa9866b99bd4",
+    "title": "China Secures Major Gas Deal as Its Influence Grows Across Central Asia",
+    "url": "https://oilprice.com/Energy/Energy-General/China-Secures-Major-Gas-Deal-as-Its-Influence-Grows-Across-Central-Asia.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-18T19:00:00+00:00",
+    "category": "Natural Gas & LNG",
+    "published_precision": "timestamp",
+    "relevance_score": 27,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "gas deal"
+    ],
+    "status": "research_only_unverified",
+    "also_seen_in": []
+  },
+  {
+    "id": "0dad76f8aa1370117b07fc49",
+    "title": "Thiel Doubles Down on Vaca Muerta as Trump Calls Venezuela an \u201cAcquisition\u201d",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Thiel-Doubles-Down-on-Vaca-Muerta-as-Trump-Calls-Venezuela-an-Acquisition.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-18T17:30:00+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 27,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "vaca muerta"
+    ],
+    "status": "research_only_unverified",
+    "also_seen_in": []
+  },
+  {
+    "id": "d4fe066912643785ea2ffd16",
+    "title": "Democrats Could Slow Venezuela\u2019s Push Toward 3 Million Bpd",
+    "url": "https://oilprice.com/Energy/Energy-General/Democrats-Could-Slow-Venezuelas-Push-Toward-3-Million-Bpd.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-18T17:00:00+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 27,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "bpd"
+    ],
+    "status": "research_only_unverified",
+    "also_seen_in": []
+  },
+  {
+    "id": "b5493c2967d5c68d6c2f94b5",
+    "title": "Iran War Set to Hike 2027 UK Energy Bills to Four-Year High",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-War-Set-to-Hike-2027-UK-Energy-Bills-to-Four-Year-High.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-18T16:30:00+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 27,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "energy bills"
+    ],
+    "status": "research_only_unverified",
+    "also_seen_in": []
+  },
+  {
+    "id": "7de2ab9619d2f9b5ce722f10",
+    "title": "NextEra-Dominion merger hearings kick off with focus on scope",
+    "url": "https://www.utilitydive.com/news/nextera-dominion-merger-virginia-scc-hearing/875046",
+    "source": "Utility Dive News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-18T15:50:14+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 27,
+    "keyword_matches": 0,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "nextera"
+    ],
+    "status": "research_only_unverified"
+  },
+  {
+    "id": "9b59cf44df724a0879698bfa",
+    "title": "Orlen spreads its wings across Central and Eastern Europe with new gas pacts",
+    "url": "https://www.offshore-energy.biz/2026/11/18/orlen-spreads-its-wings-across-central-and-eastern-europe-with-new-gas-pacts",
+    "source": "Offshore Energy News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-18T15:07:53+00:00",
+    "category": "Natural Gas & LNG",
+    "published_precision": "timestamp",
+    "relevance_score": 27,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "gas pacts"
+    ],
+    "status": "research_only_unverified",
+    "also_seen_in": []
+  },
+  {
+    "id": "86772b4f506d95c18071e2c0",
+    "title": "DOE-funded transmission projects could boost East-West transfer capacity 440%",
+    "url": "https://www.utilitydive.com/news/doe-funded-transmission-projects-could-boost-east-west-transfer-capacity-40/875021",
+    "source": "Utility Dive News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-18T14:23:48+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 27,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "transmission projects"
+    ],
+    "status": "research_only_unverified"
+  },
+  {
+    "id": "6e8bef55b58dac69c9908e52",
+    "title": "Fracking Giants Tapped to Drill Gas Project in Western Australia",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Fracking-Giants-Tapped-to-Drill-Gas-Project-in-Western-Australia.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-18T13:30:00+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 27,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "fracking"
+    ],
+    "status": "research_only_unverified",
+    "also_seen_in": []
+  },
+  {
+    "id": "3b0edb75f4c14407fb406a2d",
+    "title": "EnQuest Exits UK North Sea in $960 Million Deal",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/EnQuest-Exits-UK-North-Sea-in-960-Million-Deal.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-18T12:30:00+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 27,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "enquest"
+    ],
+    "status": "research_only_unverified",
+    "also_seen_in": []
+  },
+  {
+    "id": "fdd2223f847233e1029794d6",
+    "title": "Small Vessel Trade Thrives in Hormuz as Iran Targets Supertankers",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Small-Vessel-Trade-Thrives-in-Hormuz-as-Iran-Targets-Supertankers.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-18T11:30:00+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 27,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "supertankers"
+    ],
+    "status": "research_only_unverified",
+    "also_seen_in": []
+  },
+  {
+    "id": "0e60962e4349037dfa1fbcfd",
+    "title": "ADNOC Ship Attacked in Hormuz as Maritime Security Risks Rise",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/ADNOC-Ship-Attacked-in-Hormuz-as-Maritime-Security-Risks-Rise.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-18T10:00:00+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 27,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "adnoc"
+    ],
+    "status": "research_only_unverified",
+    "also_seen_in": []
+  },
+  {
+    "id": "18df0d39e9013d6b917315a6",
+    "title": "PLSV under construction to work for Petrobras from end of 2028",
+    "url": "https://www.offshore-energy.biz/2026/11/18/plsv-under-construction-to-work-for-petrobras-from-end-of-2028",
+    "source": "Offshore Energy News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-18T09:26:31+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 27,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "petrobras"
+    ],
+    "status": "research_only_unverified",
+    "also_seen_in": []
+  },
+  {
+    "id": "5579e2a2230c578d14ebd744",
+    "title": "EU Moves to Fast-Track Renewables as Oil Import Costs Soar",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/EU-Moves-to-Fast-Track-Renewables-as-Oil-Import-Costs-Soar.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-18T08:45:00+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 27,
+    "keyword_matches": 0,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "oil import"
+    ],
+    "status": "research_only_unverified"
+  },
+  {
+    "id": "341efc196ccfef7af0271025",
+    "title": "Commission approves \u20ac9.5 billion Dutch State aid to support offshore wind energy",
+    "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2457",
+    "source": "European Commission DG Energy",
+    "source_class": "official_agency",
+    "published_utc": "2026-11-16T23:00:00+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 27,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "offshore wind"
+    ],
+    "status": "research_only_unverified",
+    "also_seen_in": []
+  },
+  {
+    "id": "08c2f3b512606a6b7a68c0c7",
+    "title": "Energy Secretary Acts to Protect Mid-Atlantic Grid",
+    "url": "https://www.energy.gov/articles/energy-secretary-acts-protect-mid-atlantic-grid-0",
+    "source": "DOE Energy News",
+    "source_class": "official_agency",
+    "published_utc": "2026-11-18T18:06:31+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 24,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "grid"
     ],
     "status": "research_only_unverified",
     "also_seen_in": []

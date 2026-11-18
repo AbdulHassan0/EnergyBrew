@@ -25,6 +25,30 @@
       ]
     },
     {
+      "url": "https://www.malawivoice.com/2026/11/18/malawi-needs-13600-mini-grid-connections-annually-to-meet-2030-electricity-target-mathanga",
+      "title": "Malawi needs 13,600 mini-grid connections annually to meet 2030 electricity target-Mathanga",
+      "domain": "www.malawivoice.com",
+      "gdelt_first_seen_utc": "2026-11-18T21:31:00+00:00",
+      "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 57,
+      "category": "Power & Electricity",
+      "relevance_evidence": [
+        "electricity",
+        "grid"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
+    },
+    {
       "url": "https://az.trend.az/other/world/4248094.html",
       "title": "\u00c7exiya AB\u015e-d\u0259n 15-20 il m\u00fcdd\u0259tin\u0259 LNG t\u0259dar\u00fck\u00fc bar\u0259d\u0259 raz\u0131la\u015fma \u0259ld\u0259 edib",
       "domain": "az.trend.az",
@@ -42,7 +66,10 @@
       "relevance_evidence": [
         "lng"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://financialpost.com/category/energy/lng",
@@ -346,27 +373,10 @@
       "relevance_evidence": [
         "electricity"
       ],
-      "status": "discovery_only_requires_publisher_verification"
-    },
-    {
-      "url": "https://www.malawivoice.com/2026/11/18/malawi-needs-13600-mini-grid-connections-annually-to-meet-2030-electricity-target-mathanga",
-      "title": "Malawi needs 13,600 mini-grid connections annually to meet 2030 electricity target-Mathanga",
-      "domain": "www.malawivoice.com",
-      "gdelt_first_seen_utc": "2026-11-18T21:31:00+00:00",
-      "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT GAL RSS",
-      "discovery_topic": "gal_rolling_sample",
-      "topics": [
-        "gal_rolling_sample"
-      ],
-      "relevance_score": 33,
-      "category": "Power & Electricity",
-      "relevance_evidence": [
-        "electricity"
-      ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.fool.com/investing/2026/11/18/exxonmobil-xom-achieved-something-95-of-sp-50-gspc?source=iedfolrf0000001",
@@ -386,7 +396,10 @@
       "relevance_evidence": [
         "exxonmobil"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://en.shafaqna.com/491262/data-centre-power-demand-iea-quantum",
@@ -406,7 +419,10 @@
       "relevance_evidence": [
         "power demand"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.winnipegfreepress.com/business/2026/11/18/feds-back-4b-project-to-connect-eastern-and-western-electricity-grids",
@@ -501,26 +517,6 @@
       ]
     },
     {
-      "url": "https://www.westernpeople.ie/news/students-empowered-to-conserve-electricity-during-green-schools-energy-workshop_arid-20333572.html",
-      "title": "Students empowered to conserve electricity during Green Schools Energy Workshop - news - Western People",
-      "domain": "www.westernpeople.ie",
-      "gdelt_first_seen_utc": "2026-11-18T19:32:00+00:00",
-      "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT GAL RSS",
-      "discovery_topic": "gal_rolling_sample",
-      "topics": [
-        "gal_rolling_sample"
-      ],
-      "relevance_score": 33,
-      "category": "Power & Electricity",
-      "relevance_evidence": [
-        "electricity"
-      ],
-      "status": "discovery_only_requires_publisher_verification"
-    },
-    {
       "url": "http://www.zerohedge.com/markets/why-iraq-just-fast-tracked-chevrons-takeover-14-billion-barrel-supergiant",
       "title": "Why Iraq Just Fast-Tracked Chevron's Takeover Of A 14-Billion-Barrel Supergiant",
       "domain": "www.zerohedge.com",
@@ -579,29 +575,6 @@
         "chevron"
       ],
       "status": "discovery_only_requires_publisher_verification"
-    },
-    {
-      "url": "https://www.roscommonherald.ie/news/students-in-roscommon-empowered-to-conserve-electricity_arid-20333568.html",
-      "title": "Students in Roscommon empowered to conserve electricity - News - Roscommon Herald",
-      "domain": "www.roscommonherald.ie",
-      "gdelt_first_seen_utc": "2026-11-18T18:32:00+00:00",
-      "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT GAL RSS",
-      "discovery_topic": "gal_rolling_sample",
-      "topics": [
-        "gal_rolling_sample"
-      ],
-      "relevance_score": 33,
-      "category": "Power & Electricity",
-      "relevance_evidence": [
-        "electricity"
-      ],
-      "status": "discovery_only_requires_publisher_verification",
-      "discovery_providers": [
-        "GDELT GAL RSS"
-      ]
     },
     {
       "url": "https://peakoil.com/consumption/over-400-american-ai-data-centers-use-as-much-electricity-as-wisconsin-michigan-or-indiana",
@@ -750,7 +723,10 @@
       "relevance_evidence": [
         "oil and gas"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "http://www.southernminn.com/owatonna_peoples_press/news/local/residents-call-on-council-for-data-center-moratorium/article_64baa3fc-833d-422d-9607-545a31668d6d.html",
@@ -770,7 +746,10 @@
       "relevance_evidence": [
         "data center"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.weau.com/2026/11/18/wis360-top-stories-eau-claire-co-data-center-moratorium-expected-january",
@@ -790,7 +769,10 @@
       "relevance_evidence": [
         "data center"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.ksje.com/podcasts/the-scott-michlin-morning-program/episode/san-juan-county-data-center-dissent-coalition-with-judith-johnson-matt-dodson",
@@ -1725,7 +1707,10 @@
       "relevance_evidence": [
         "gas prices"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.manilatimes.net/2026/11/19/business/top-business/transco-moves-to-stabilize-supply-in-mindoro-palawan/2473533",
@@ -1745,7 +1730,10 @@
       "relevance_evidence": [
         "transco"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.radio.gov.pk/18-11-2026/govt-revises-prices-of-petroleum-products-for-thursday",
@@ -1765,7 +1753,10 @@
       "relevance_evidence": [
         "petroleum"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://mynewsla.com/riverside/2026/11/18/riverside-county-gas-prices-at-lowest-amounts-since-july-17",
@@ -1785,7 +1776,10 @@
       "relevance_evidence": [
         "gas prices"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.oedigital.com/news/544359-venezuela-plans-colombia-gas-exports-from-perla-offshore-field",
@@ -2029,6 +2023,25 @@
       ]
     },
     {
+      "url": "https://www.jpost.com/international/internationalrussia-ukraine-war/article-915337",
+      "title": "Drone attacks nearly halve Russia November oil refining , sources say",
+      "domain": "www.jpost.com",
+      "gdelt_first_seen_utc": "2026-11-18T17:30:00+00:00",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT DOC 2.0",
+      "discovery_topic": "energy_investment",
+      "topics": [
+        "energy_investment"
+      ],
+      "relevance_score": 24,
+      "category": "Oil & Energy",
+      "relevance_evidence": [
+        "refining"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
       "url": "https://hpr1.com/diesel-the-fuel-that-affects-everything",
       "title": "Diesel : The fuel that affects everything",
       "domain": "hpr1.com",
@@ -2137,23 +2150,6 @@
       "url": "https://fas.org/publication/steal-this-to-make-government-work-better",
       "title": "How to Government Better : Free Ideas You Should Steal",
       "domain": "fas.org",
-      "gdelt_first_seen_utc": "2026-11-18T17:30:00+00:00",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT DOC 2.0",
-      "discovery_topic": "energy_investment",
-      "topics": [
-        "energy_investment"
-      ],
-      "relevance_score": 0,
-      "category": "Cross-sector",
-      "relevance_evidence": [],
-      "status": "discovery_only_requires_publisher_verification"
-    },
-    {
-      "url": "https://www.jpost.com/international/internationalrussia-ukraine-war/article-915337",
-      "title": "Drone attacks nearly halve Russia November oil refining , sources say",
-      "domain": "www.jpost.com",
       "gdelt_first_seen_utc": "2026-11-18T17:30:00+00:00",
       "publisher_published_utc": null,
       "published_time_verified": false,
@@ -2822,6 +2818,14 @@
       "topics_succeeded": 0,
       "new_discovered_urls": 0,
       "leads_in_last_24h_first_seen": 111
+    },
+    {
+      "run_utc": "2026-11-18T21:39:47.855018+00:00",
+      "status": "provider_cooldown",
+      "topics_attempted": 0,
+      "topics_succeeded": 0,
+      "new_discovered_urls": 0,
+      "leads_in_last_24h_first_seen": 123
     }
   ],
   "provider_cooldown_until_utc": "2026-11-18T22:24:53.912907+00:00",
@@ -3084,6 +3088,13 @@
       "raw_feed_items": 4479,
       "high_signal_items": 12,
       "new_unique_links": 12
+    },
+    {
+      "run_utc": "2026-11-18T21:39:47.915565+00:00",
+      "status": "ok",
+      "raw_feed_items": 4479,
+      "high_signal_items": 12,
+      "new_unique_links": 0
     }
   ]
 }

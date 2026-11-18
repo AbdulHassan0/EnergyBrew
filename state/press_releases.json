@@ -1,6 +1,44 @@
 {
   "leads": [
     {
+      "url": "https://www.globenewswire.com/news-release/2026/11/18/3406111/0/en/cmblu-and-imperial-irrigation-district-announce-10-mw-100-mwh-echo-sands-solidflow-energy-storage-project.html",
+      "title": "CMBLU and Imperial Irrigation District Announce 10 MW / 100 MWh Echo Sands SolidFlow Energy Storage Project",
+      "feed_creator_label": "CMBlu Energy, Inc.",
+      "named_issuer_verified": false,
+      "feed_source_url": "https://www.globenewswire.com/news-release/2026/11/18/3406111/0/en/cmblu-and-imperial-irrigation-district-announce-10-mw-100-mwh-echo-sands-solidflow-energy-storage-project.html",
+      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+      "feed_published_utc": "2026-11-18T19:03:00+00:00",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "category": "Power & Electricity",
+      "relevance_score": 27,
+      "relevance_evidence": [
+        "energy storage"
+      ],
+      "provider": "Press Release Feed",
+      "content_kind": "company_or_newswire_press_release",
+      "status": "promotional_issuer_claim_requires_editorial_verification"
+    },
+    {
+      "url": "https://icrowdnewswire.com/2026/11/18/water-tower-research-publishes-initiation-of-coverage-report-on-neovolta-inc-us-battery-storage-platform-with-massive-growth-potential",
+      "title": "Water Tower Research Publishes Initiation of Coverage Report on NeoVolta, Inc., \u201cUS Battery Storage Platform with Massive Growth Potential\u201d",
+      "feed_creator_label": "iCrowdNewswire",
+      "named_issuer_verified": false,
+      "feed_source_url": "https://icrowdnewswire.com/2026/11/18/water-tower-research-publishes-initiation-of-coverage-report-on-neovolta-inc-us-battery-storage-platform-with-massive-growth-potential",
+      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+      "feed_published_utc": "2026-11-18T19:00:00+00:00",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "category": "Power & Electricity",
+      "relevance_score": 27,
+      "relevance_evidence": [
+        "battery storage"
+      ],
+      "provider": "Press Release Feed",
+      "content_kind": "company_or_newswire_press_release",
+      "status": "promotional_issuer_claim_requires_editorial_verification"
+    },
+    {
       "url": "https://www.globenewswire.com/news-release/2026/11/18/3406044/0/en/solutions30-strengthens-its-position-in-the-power-grid-and-electric-mobility-markets-with-new-contracts-in-belgium-and-poland.html",
       "title": "Solutions30 strengthens its position in the power grid and electric mobility markets with new contracts in Belgium and Poland",
       "feed_creator_label": "GlobeNewswire",
@@ -11,9 +49,48 @@
       "publisher_published_utc": null,
       "published_time_verified": false,
       "category": "Power & Electricity",
-      "relevance_score": 33,
+      "relevance_score": 57,
       "relevance_evidence": [
+        "grid",
         "power grid"
+      ],
+      "provider": "Press Release Feed",
+      "content_kind": "company_or_newswire_press_release",
+      "status": "promotional_issuer_claim_requires_editorial_verification"
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/11/18/3406019/0/en/trident-signs-mou-to-acquire-51-controlling-stake-in-malaysia-s-guang-yao-development-entering-hydrogen-power-and-battery-energy-storage-for-data-centres.html",
+      "title": "Trident Signs MOU to Acquire 51% Controlling Stake in Malaysia\u2019s Guang Yao Development, Entering Hydrogen Power and Battery Energy Storage for Data Centres",
+      "feed_creator_label": "GlobeNewswire",
+      "named_issuer_verified": false,
+      "feed_source_url": "https://www.globenewswire.com/news-release/2026/11/18/3406019/0/en/trident-signs-mou-to-acquire-51-controlling-stake-in-malaysia-s-guang-yao-development-entering-hydrogen-power-and-battery-energy-storage-for-data-centres.html",
+      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+      "feed_published_utc": "2026-11-18T16:30:00+00:00",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "category": "Power & Electricity",
+      "relevance_score": 27,
+      "relevance_evidence": [
+        "energy storage"
+      ],
+      "provider": "Press Release Feed",
+      "content_kind": "company_or_newswire_press_release",
+      "status": "promotional_issuer_claim_requires_editorial_verification"
+    },
+    {
+      "url": "https://www.newmediawire.com/news/angkor-resources-enercam-completes-its-final-hosting-of-potential-drilling-contractors-on-block-viii-oil-gas-field-7091402",
+      "title": "Angkor Resources' Enercam Completes Its Final Hosting of Potential Drilling Contractors on Block VIII Oil & Gas Field",
+      "feed_creator_label": "NewMediaWire",
+      "named_issuer_verified": false,
+      "feed_source_url": "https://www.newmediawire.com/news/angkor-resources-enercam-completes-its-final-hosting-of-potential-drilling-contractors-on-block-viii-oil-gas-field-7091402",
+      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+      "feed_published_utc": "2026-11-18T14:00:00+00:00",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "category": "Natural Gas & LNG",
+      "relevance_score": 24,
+      "relevance_evidence": [
+        "gas field"
       ],
       "provider": "Press Release Feed",
       "content_kind": "company_or_newswire_press_release",
@@ -39,6 +116,25 @@
       "status": "promotional_issuer_claim_requires_editorial_verification"
     },
     {
+      "url": "https://www.globenewswire.com/news-release/2026/11/18/3405465/0/en/first-atlantic-s-awaruite-concentrate-achieves-98-nickel-and-82-cobalt-extraction-in-20-minutes-using-new-cerium-refining-technology-outperforming-u-s-tamarack-nickel-sulfide-conce.html",
+      "title": "First Atlantic\u2019s Awaruite Concentrate Achieves 98% Nickel and 82% Cobalt Extraction in 20 Minutes Using New Cerium Refining Technology, Outperforming U.S. Tamarack Nickel Sulfide Concentrate in Peer-Reviewed Columbia University Research Funded by the U.S. Department of Energy ARPA-E MINER Program",
+      "feed_creator_label": "GlobeNewswire",
+      "named_issuer_verified": false,
+      "feed_source_url": "https://www.globenewswire.com/news-release/2026/11/18/3405465/0/en/first-atlantic-s-awaruite-concentrate-achieves-98-nickel-and-82-cobalt-extraction-in-20-minutes-using-new-cerium-refining-technology-outperforming-u-s-tamarack-nickel-sulfide-conce.html",
+      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+      "feed_published_utc": "2026-11-18T11:00:00+00:00",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "category": "Oil & Energy",
+      "relevance_score": 24,
+      "relevance_evidence": [
+        "refining"
+      ],
+      "provider": "Press Release Feed",
+      "content_kind": "company_or_newswire_press_release",
+      "status": "promotional_issuer_claim_requires_editorial_verification"
+    },
+    {
       "url": "https://www.webwire.com/ViewPressRel.asp?aId=364352",
       "title": "ACCIONA Energ\ufffda to supply electricity to universities and research centers in Catalonia and Madrid",
       "feed_creator_label": "WebWire",
@@ -58,6 +154,25 @@
       "status": "promotional_issuer_claim_requires_editorial_verification"
     },
     {
+      "url": "https://www.webwire.com/ViewPressRel.asp?aId=364349",
+      "title": "LEGO Manufacturing Vietnam powers on battery energy storage system",
+      "feed_creator_label": "WebWire",
+      "named_issuer_verified": false,
+      "feed_source_url": "https://www.webwire.com/ViewPressRel.asp?aId=364349",
+      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+      "feed_published_utc": "2026-11-18T10:05:40+00:00",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "category": "Power & Electricity",
+      "relevance_score": 27,
+      "relevance_evidence": [
+        "energy storage"
+      ],
+      "provider": "Press Release Feed",
+      "content_kind": "company_or_newswire_press_release",
+      "status": "promotional_issuer_claim_requires_editorial_verification"
+    },
+    {
       "url": "https://financewire.com/2026/11/18/vestafund-releases-sector-analysis-examining-physical-infrastructure-power-grid-constraints",
       "title": "VestaFund Releases Sector Analysis Examining Physical Infrastructure, Power Grid Constraints",
       "feed_creator_label": "FinanceWire",
@@ -68,8 +183,9 @@
       "publisher_published_utc": null,
       "published_time_verified": false,
       "category": "Power & Electricity",
-      "relevance_score": 33,
+      "relevance_score": 57,
       "relevance_evidence": [
+        "grid",
         "power grid"
       ],
       "provider": "Press Release Feed",
@@ -265,6 +381,13 @@
       "raw_feed_entries": 100,
       "high_signal_company_releases": 3,
       "new_unique_links": 0
+    },
+    {
+      "run_utc": "2026-11-18T21:39:50.995901+00:00",
+      "status": "ok",
+      "raw_feed_entries": 100,
+      "high_signal_company_releases": 9,
+      "new_unique_links": 6
     }
   ]
 }
