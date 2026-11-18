@@ -1,6 +1,6 @@
 # EnergyBrew — Five-minute morning energy newsletter (research preview)
 
-**Status (November 18, 2026):** The frontend and newsletter editorial-draft pipeline deploy successfully. **However, this repository is now PUBLIC, so the original RSS and GAL collectors deliberately fail their private-repository safety checks. Their last retained research snapshot is real but new collection is BLOCKED until the hosting/privacy architecture is resolved.** GitHub Pages public hosting and a confidential collector/editorial backend should be separated.
+**News-collection status (November 18, 2026): LIVE, WITH GAPS.** Public-source metadata collection has resumed. The last verified hosted run connected 15 of 15 RSS feeds, including Offshore Energy, OilPrice.com, Utility Dive and PJM Inside Lines. GDELT DOC can throttle; earlier GAL sampling gaps remain; the seven-day pilot is incomplete. A public-state safety gate rejects copyrighted text and sensitive fields.
 
 This repository contains both **energy news collection infrastructure** and the [EnergyBrew website preview](https://abdulhassan0.github.io/EnergyBrew/). The web experience is built around **five minutes of energy news with your morning coffee**. It does not yet send subscriber emails or publish independently fact-checked, editorially approved summaries.
 
@@ -23,7 +23,7 @@ This repository contains both **energy news collection infrastructure** and the 
 - [Newsletter renderer and publisher](newsletter.py) — fails closed for unapproved editions, generates responsive email HTML/plain text and an issue archive
 - [Manual one-mailbox email test](https://github.com/AbdulHassan0/EnergyBrew/actions/workflows/newsletter-test-send.yml) — requires an approved issue, configured SMTP secrets, and explicit test-send permission; **no subscriber mailing is enabled**
 
-**Critical hosting gap:** A public GitHub repo cannot double as a private editorial and restricted-source research workspace. The collector remains intentionally guarded. For durable development, keep the website in a public repo and use a separate private collector/editorial repository with a controlled, sanitized export into Pages. Until configured, newsletter drafting from the historic desk may eventually fail its 24-hour freshness gate rather than claim stale news is current.
+**Hosting boundary:** GitHub and the collector-state branch are PUBLIC. The running collector stores public-source links/headlines only, with a metadata guard before persistence. Restricted feeds, credentials, confidential editorial material and subscriber data require a separate private workspace and appropriate rights.
 
 ## Live services
 
@@ -32,7 +32,7 @@ This repository contains both **energy news collection infrastructure** and the 
 | [Main official RSS + research pipeline](https://github.com/AbdulHassan0/EnergyBrew/actions/workflows/live-collector.yml) | EIA/DOE/NRC/EU/Federal Register feeds; GDELT DOC queries; GAL sample; press releases; merged research desk; newsroom health and volume reports | Four times daily |
 | [Frequent global discovery](https://github.com/AbdulHassan0/EnergyBrew/actions/workflows/frequent-gal.yml) | GDELT rolling Global Article List; preserve discoveries; refresh ranked research desk and reliability scorecard | Every 15 minutes, subject to GitHub delays |
 
-Both were configured to use the same GitHub Actions concurrency group when writing historical state. Collection is currently stopped by public-repository guards; no new freshness should be inferred from this historic state branch.
+Collector jobs share one GitHub Actions state-writer concurrency group. Writes require a successful metadata safety gate. Staggered schedules help avoid collisions but cannot guarantee complete GDELT rolling-sample coverage.
 
 **Provenance rules:** Original official publisher RSS timestamps, Federal Register publication dates, GDELT index-first-seen timestamps, and press-release feed dates are labeled **differently**. None guarantees truth or publication rights.
 
@@ -68,4 +68,4 @@ See [OPERATIONS.md](OPERATIONS.md) for incident response, sampling-gap diagnosti
 - Move high-volume state from Git commits to a durable database before scale.
 - Build editorially verified five-minute summaries, approved newsletter editions, archives, subscriber signup and email delivery. The website *preview* has already been deployed.
 
-**Current state: the saved research links are real and the newsletter pipeline is implemented, but live collection is currently blocked by the public repository setting. Automatic publication-grade and subscriber-delivered coverage is not yet established.**
+**Current state: public-source RSS and discovery collection is working again, with conservative event deduplication and separate source provenance. Seven-day reliability and publication-grade coverage are not yet established. Engineering work is strictly limited to news collection and logic until the user approves a change.**
