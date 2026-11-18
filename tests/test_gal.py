@@ -101,6 +101,19 @@ class GalTests(unittest.TestCase):
             self.assertEqual(len(saved["leads"]),1)
             self.assertEqual(len(saved["gal_runs"]),2)
 
+    def test_sampling_gap_is_visible(self):
+        with tempfile.TemporaryDirectory() as d:
+            state,out=Path(d)/"discovery.json",Path(d)/"out"
+            fake=lambda url:(feed(),200)
+            first=collect_gal(state,out,now=NOW,fetcher=fake)
+            self.assertIsNone(first["minutes_since_previous_sample"])
+            second=collect_gal(state,out,now=NOW+timedelta(minutes=15),fetcher=fake)
+            self.assertFalse(second["potential_sampling_gap"])
+            self.assertEqual(second["minutes_since_previous_sample"],15.0)
+            third=collect_gal(state,out,now=NOW+timedelta(minutes=48),fetcher=fake)
+            self.assertTrue(third["potential_sampling_gap"])
+            self.assertEqual(third["minutes_since_previous_sample"],33.0)
+
     def test_cross_provider_merge_preserves_other_topic(self):
         with tempfile.TemporaryDirectory() as d:
             state, out=Path(d)/"discovery.json",Path(d)/"out"
