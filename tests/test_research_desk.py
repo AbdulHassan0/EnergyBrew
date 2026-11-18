@@ -31,6 +31,14 @@ class DeskTests(unittest.TestCase):
         self.assertEqual(result["likely_same_event_links_suppressed"],1)
         self.assertEqual(len(result["stories"][0]["related_reports"]),1)
 
+    def test_grid_operator_provenance(self):
+        a = dict(official(url="https://insidelines.pjm.com/a",title="PJM grid reliability transmission expansion"),source_class="system_operator_primary")
+        r = assemble([a],[],[],now=NOW)
+        self.assertEqual(r["stories"][0]["queue"],"system_operator_primary_24h")
+        self.assertEqual(r["stories"][0]["time_basis"],"system_operator_rss_timestamp")
+        self.assertEqual(r["system_operator_primary_24h"],1)
+        self.assertEqual(r["publisher_timestamped_official_24h"],0)
+
     def test_specialist_publisher_provenance(self):
         article=official()
         article["source_class"]="specialist_publisher"

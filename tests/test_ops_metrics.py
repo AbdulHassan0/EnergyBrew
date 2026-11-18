@@ -43,6 +43,16 @@ class MetricsTests(unittest.TestCase):
         self.assertEqual(r["gal_successful_samples"],2)
         self.assertEqual(r["gal_failed_samples"],0)
 
+    def test_grid_operator_is_neither_agency_nor_independent_publisher(self):
+        rss={"runs":[{"run_utc":stamp(5),"feeds_connected":1}],
+             "articles":[{"url":"https://pjm.test/1","published_utc":stamp(10),
+                         "published_precision":"timestamp","source_class":"system_operator_primary",
+                         "editorial_candidate":True}]}
+        d=create(rss,{},now=NOW)["daily"][-1]
+        self.assertEqual(d["publisher_timestamped_official_links"],0)
+        self.assertEqual(d["specialist_publisher_timestamped_links"],0)
+        self.assertEqual(d["grid_operator_primary_timestamped_links"],1)
+
     def test_source_class_counts_do_not_mislabel_specialist_as_official(self):
         rss={"runs":[{"run_utc":stamp(5),"feeds_connected":2}],
              "articles":[{"url":"https://publisher.test/1","published_utc":stamp(10),

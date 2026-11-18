@@ -94,6 +94,7 @@ def entry(record, kind, now):
         stamp = as_time(record.get("published_utc"))
         is_specialist = record.get("source_class") == "specialist_publisher"
         time_basis = ("specialist_publisher_rss_timestamp" if is_specialist
+                      else "system_operator_rss_timestamp" if record.get("source_class") == "system_operator_primary"
                       else "publisher_feed_publication_time")
         date_verification = "publisher_rss_timestamp"
         has_publisher_date = True
@@ -185,7 +186,8 @@ def assemble(rss, discovered, releases, now=None, max_stories=32):
     all_rows = list(index.values())
     for x in all_rows:
         x["queue"] = (
-            "specialist_publisher_24h" if x["origin"] == "official_rss" and x.get("source_class") == "specialist_publisher" and x["within_24h_on_own_time_basis"]
+            "system_operator_primary_24h" if x["origin"] == "official_rss" and x.get("source_class") == "system_operator_primary" and x["within_24h_on_own_time_basis"]
+            else "specialist_publisher_24h" if x["origin"] == "official_rss" and x.get("source_class") == "specialist_publisher" and x["within_24h_on_own_time_basis"]
             else "timestamped_official" if x["origin"] == "official_rss" and x["within_24h_on_own_time_basis"]
             else "regulatory_date_only" if x["origin"] == "regulatory_notice"
             else "company_release_unverified" if x["origin"] == "company_announcement"
@@ -246,6 +248,7 @@ def assemble(rss, discovered, releases, now=None, max_stories=32):
         "missing_categories": [name for name in CATEGORY_ORDER if not themes[name]],
         "publisher_timestamped_official_24h": queue_count["timestamped_official"],
         "publisher_timestamped_specialist_24h": queue_count["specialist_publisher_24h"],
+        "system_operator_primary_24h": queue_count["system_operator_primary_24h"],
         "likely_same_event_links_suppressed":duplicate_links_suppressed,
         "discovery_publisher_dates_verified": 0,
         "promotional_or_language_review_count": sum(bool(x["needs_editor_review"]) for x in selected),
@@ -253,6 +256,7 @@ def assemble(rss, discovered, releases, now=None, max_stories=32):
         "definitions": {
             "timestamped_official": "Publisher-supplied publication datetime on original feeds (official agencies and specialist publishers); content not independently fact-checked",
             "specialist_publisher_24h": "Specialist publisher RSS timestamp, NOT official government news or independently verified content",
+            "system_operator_primary_24h": "Original electric-grid system operator RSS timestamp, not a government agency or independent editorial fact check",
             "regulatory_date_only": "Government record with publication DATE, no reliable intraday release timestamp",
             "discovery_unverified": "GDELT index observed a linked article; neither publisher publication date nor facts verified",
             "company_release_unverified": "Third-party press-release aggregator feed date and issuer claims, not independent reporting",
@@ -273,6 +277,7 @@ def generate(rss_file, discovered_file, release_file, output_dir, now=None):
             f"Selected diverse research leads: **{result['selected_research_links']}**",
             f"Publisher-timestamped official leads within 24h: **{result['publisher_timestamped_official_24h']}**",
             f"Specialist-publisher timestamped links within 24h: **{result['publisher_timestamped_specialist_24h']}**",
+            f"Grid-operator original timestamped links within 24h: **{result['system_operator_primary_24h']}**",
             f"Likely duplicate links suppressed in the selection: **{result['likely_same_event_links_suppressed']}**",
             f"Discovery publisher dates verified: **0**", "",
             "## Candidate list", ""]

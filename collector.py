@@ -32,6 +32,8 @@ SOURCES = [
     # Independent publisher RSS metadata only; no article bodies or reprint permission.
     ("Offshore Energy News", "https://www.offshore-energy.biz/feed"),
     ("OilPrice.com News", "https://oilprice.com/rss.xml"),
+    ("Utility Dive News", "https://www.utilitydive.com/feeds/news/"),
+    ("PJM Inside Lines", "https://insidelines.pjm.com/feed/"),
 ]
 KEYWORDS = {
     "Natural Gas & LNG": ("natural gas", "lng", "liquefied", "gas pipeline", "gas storage", "haynesville", "henry hub", "methane", "gas export"),
@@ -45,7 +47,8 @@ MAX_BYTES = 2_000_000
 # Federal Register is an official daily publication: the date is meaningful,
 # but its feed clock is NOT evidence of an intraday publication timestamp.
 DAY_PRECISION_SOURCES = {"Federal Register notices"}
-SPECIALIST_NEWS_SOURCES = {"Offshore Energy News", "OilPrice.com News"}
+SPECIALIST_NEWS_SOURCES = {"Offshore Energy News", "OilPrice.com News", "Utility Dive News"}
+SYSTEM_OPERATOR_SOURCES = {"PJM Inside Lines"}
 FORMER_FEDERAL_REGISTER_LABELS = {"Federal Register FERC notices", "Federal Register DOE notices"}
 
 def local(tag: str) -> str:
@@ -137,7 +140,9 @@ def parse_feed(xml_bytes, source_name, now, hours, date_precision="timestamp"):
         accepted.append({
             "id": hashlib.sha256(identity).hexdigest()[:24],
             "title": title[:300], "url": link, "source": source_name,
-            "source_class": "specialist_publisher" if source_name in SPECIALIST_NEWS_SOURCES else "official_agency",
+            "source_class": ("specialist_publisher" if source_name in SPECIALIST_NEWS_SOURCES
+                             else "system_operator_primary" if source_name in SYSTEM_OPERATOR_SOURCES
+                             else "official_agency"),
             "published_utc": dt.isoformat(), "category": category,
             "published_precision": date_precision,
             "relevance_score": score, "keyword_matches": len(quality["evidence"]),

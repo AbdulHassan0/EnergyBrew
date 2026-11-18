@@ -5,7 +5,7 @@ import tempfile
 import unittest
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
-from collector import clean_url, collect, parse_feed, published_date, SOURCES, DAY_PRECISION_SOURCES, SPECIALIST_NEWS_SOURCES
+from collector import clean_url, collect, parse_feed, published_date, SOURCES, DAY_PRECISION_SOURCES, SPECIALIST_NEWS_SOURCES, SYSTEM_OPERATOR_SOURCES
 from editorial import evaluate
 from xml.etree import ElementTree as ET
 
@@ -32,6 +32,11 @@ class CollectorTests(unittest.TestCase):
         items,_,_ = parse_feed(sample(title="LNG export shipping supply agreement"),"Offshore Energy News",NOW,48)
         self.assertEqual(items[0]["source_class"],"specialist_publisher")
         self.assertIn("Offshore Energy News",SPECIALIST_NEWS_SOURCES)
+
+    def test_pjm_is_original_grid_operator_not_a_government_agency(self):
+        items,_,_ = parse_feed(sample(title="PJM power grid reliability updates"),"PJM Inside Lines",NOW,48)
+        self.assertIn("PJM Inside Lines", SYSTEM_OPERATOR_SOURCES)
+        self.assertEqual(items[0]["source_class"],"system_operator_primary")
 
     def test_updated_is_not_published(self):
         xml = b'<feed xmlns="http://www.w3.org/2005/Atom"><entry><title>Gas LNG</title><link href="https://example.gov/x"/><updated>2026-11-18T10:00:00Z</updated></entry></feed>'

@@ -17,6 +17,7 @@ PUBLIC_FEED_HOSTS = frozenset({
     "www.eia.gov", "www.energy.gov", "www.nrc.gov", "energy.ec.europa.eu",
     "www.federalregister.gov",
     "www.offshore-energy.biz", "oilprice.com", "www.utilitydive.com",
+    "insidelines.pjm.com",
 })
 RESERVED_KEYS = frozenset({
     "summary_excerpt", "article_body", "full_text", "content", "description",
