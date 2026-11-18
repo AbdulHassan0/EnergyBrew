@@ -9,6 +9,7 @@ on:
       - "discovery.py"
       - "newsroom_health.py"
       - "gal.py"
+      - "press_releases.py"
       - "tests/**"
       - ".github/workflows/live-collector.yml"
   schedule:
@@ -50,6 +51,9 @@ jobs:
             if git cat-file -e FETCH_HEAD:state/discovery.json 2>/dev/null; then
               git show FETCH_HEAD:state/discovery.json > state/discovery.json
             fi
+            if git cat-file -e FETCH_HEAD:state/press_releases.json 2>/dev/null; then
+              git show FETCH_HEAD:state/press_releases.json > state/press_releases.json
+            fi
           fi
       - name: Fetch actual publisher-dated RSS stories
         id: ingest
@@ -63,6 +67,10 @@ jobs:
         id: gal
         continue-on-error: true
         run: python gal.py --state state/discovery.json --output output/gal
+      - name: Collect energy company announcement leads (not independent reporting)
+        id: releasefeed
+        continue-on-error: true
+        run: python press_releases.py --state state/press_releases.json --output output/releases
       - name: Audit news coverage and collection gaps
         if: always()
         run: |
@@ -87,6 +95,11 @@ jobs:
             echo "" >> "$GITHUB_STEP_SUMMARY"
             cat output/gal/latest.md >> "$GITHUB_STEP_SUMMARY"
           fi
+          echo "Company-announcement feed outcome: ${{ steps.releasefeed.outcome }}" >> "$GITHUB_STEP_SUMMARY"
+          if test -f output/releases/latest.md; then
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            cat output/releases/latest.md >> "$GITHUB_STEP_SUMMARY"
+          fi
           if test -f output/health/health.md; then
             echo "" >> "$GITHUB_STEP_SUMMARY"
             cat output/health/health.md >> "$GITHUB_STEP_SUMMARY"
@@ -100,6 +113,7 @@ jobs:
             output/discovery/
             output/health/
             output/gal/
+            output/releases/
           if-no-files-found: warn
           retention-days: 30
       - name: Save collector state in isolated branch
@@ -156,6 +170,15 @@ jobs:
           if test -f "$GITHUB_WORKSPACE/output/health/health.json"; then
             cp "$GITHUB_WORKSPACE/output/health/health.json" state/health_latest.json
             cp "$GITHUB_WORKSPACE/output/health/health.md" state/health_latest.md
+          fi
+          if test -s "$GITHUB_WORKSPACE/state/press_releases.json"; then
+            cp "$GITHUB_WORKSPACE/state/press_releases.json" state/press_releases.json
+          fi
+          if test -f "$GITHUB_WORKSPACE/output/releases/latest.json"; then
+            cp "$GITHUB_WORKSPACE/output/releases/latest.json" state/releases_latest.json
+            cp "$GITHUB_WORKSPACE/output/releases/latest.md" state/releases_latest.md
+            cp "$GITHUB_WORKSPACE/output/releases/leads_24h.json" state/releases_leads_24h.json
+            cp "$GITHUB_WORKSPACE/output/releases/leads_7d.json" state/releases_leads_7d.json
           fi
           git config user.name "EnergyBrew collector"
           git config user.email "energybrew-bot@users.noreply.github.com"
