@@ -5,7 +5,7 @@ import tempfile
 import unittest
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
-from collector import collect, parse_feed, published_date
+from collector import collect, parse_feed, published_date, SOURCES, DAY_PRECISION_SOURCES
 from editorial import evaluate
 from xml.etree import ElementTree as ET
 
@@ -47,13 +47,13 @@ class CollectorTests(unittest.TestCase):
             out = Path(d) / "out"
             fetch = fixture_fetch
             first = collect(state, out, now=NOW, fetcher=fetch)
-            self.assertEqual(first["feeds_connected"], 10)
-            self.assertEqual(first["relevant_fresh_entries"], 9)
-            self.assertEqual(len(json.loads((out/"editorial_candidates.json").read_text())), 9)
-            self.assertEqual(first["new_article_links"], 10)  # source identities are independent
+            self.assertEqual(first["feeds_connected"], len(SOURCES))
+            self.assertEqual(first["relevant_fresh_entries"], len(SOURCES)-len(DAY_PRECISION_SOURCES))
+            self.assertEqual(len(json.loads((out/"editorial_candidates.json").read_text())), len(SOURCES)-len(DAY_PRECISION_SOURCES))
+            self.assertEqual(first["new_article_links"], len(SOURCES))  # source identities are independent
             second = collect(state, out, now=NOW + timedelta(hours=1), fetcher=fetch)
             self.assertEqual(second["new_article_links"], 0)
-            self.assertEqual(len(json.loads(state.read_text())["articles"]), 10)
+            self.assertEqual(len(json.loads(state.read_text())["articles"]), len(SOURCES))
             self.assertEqual(len(json.loads(state.read_text())["runs"]), 2)
 
     def test_relevance_requires_sector_context(self):
@@ -75,11 +75,11 @@ class CollectorTests(unittest.TestCase):
             state, out = Path(d)/"state.json", Path(d)/"out"
             report = collect(state, out, now=NOW, fetcher=fixture_fetch)
             volumes = json.loads((out/"volume_7d.json").read_text())
-            self.assertEqual(report["relevant_fresh_entries"], 9)
+            self.assertEqual(report["relevant_fresh_entries"], len(SOURCES)-len(DAY_PRECISION_SOURCES))
             self.assertEqual(report["date_only_entries"], 1)
-            self.assertEqual(report["editorial_candidates_24h"], 9)
-            self.assertEqual(len(json.loads((out/"editorial_candidates_24h.json").read_text())), 9)
-            self.assertEqual(volumes["days"][0]["editorial_candidates"], 9)
+            self.assertEqual(report["editorial_candidates_24h"], len(SOURCES)-len(DAY_PRECISION_SOURCES))
+            self.assertEqual(len(json.loads((out/"editorial_candidates_24h.json").read_text())), len(SOURCES)-len(DAY_PRECISION_SOURCES))
+            self.assertEqual(volumes["days"][0]["editorial_candidates"], len(SOURCES)-len(DAY_PRECISION_SOURCES))
             self.assertEqual(volumes["days"][0]["regulatory_date_only_leads"], 1)
             self.assertEqual(len(json.loads((out/"editorial_candidates.json").read_text())), 9)
 
@@ -95,7 +95,7 @@ class CollectorTests(unittest.TestCase):
             self.assertEqual(len(duplicated),1)
             self.assertEqual(duplicated[0]["source"],"Federal Register notices")
             self.assertFalse(duplicated[0]["editorial_candidate"])
-            self.assertEqual(report["distinct_article_links_7d"],11)
+            self.assertEqual(report["distinct_article_links_7d"],len(SOURCES)+1)
 
     def test_failure_is_visible(self):
         with tempfile.TemporaryDirectory() as d:
@@ -103,7 +103,7 @@ class CollectorTests(unittest.TestCase):
                 raise OSError("offline")
             report = collect(Path(d)/"db.json", Path(d)/"out", now=NOW, fetcher=fail)
             self.assertEqual(report["feeds_connected"], 0)
-            self.assertEqual(len(report["sources"]), 10)
+            self.assertEqual(len(report["sources"]), len(SOURCES))
             self.assertIn("offline", (Path(d)/"out/latest.md").read_text())
 
     def test_invalid_existing_state_is_not_overwritten(self):
