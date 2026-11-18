@@ -18,6 +18,9 @@ from editorial import evaluate, non_article_reason
 
 LIMIT_PER_DOMAIN = 4
 TOP_PER_CATEGORY = 8
+MAX_COMPANY_RELEASES = 2
+ORIGIN_RANK_BOOST = {"official_rss": 75, "regulatory_notice": 40,
+                     "global_discovery": 12, "company_announcement": 0}
 CATEGORY_ORDER = ("Natural Gas & LNG", "Power & Electricity",
                   "Oil & Energy", "Infrastructure & Investment")
 ORIGIN_PRIORITY = {"official_rss": 4, "regulatory_notice": 3,
@@ -53,6 +56,26 @@ def marketing_signal(title):
         "marketing agency", "social media marketing", "press release distribution",
         "launches new website", "sector analysis examining",
     ))
+
+def low_market_impact_signal(title):
+    s = (title or "").lower()
+    return any(re.search(pat, s) for pat in (
+        r"students?.*(?:conserve|learn|saving).*(?:electricity|energy)",
+        r"(?:school|students?).*(?:energy|electricity) awareness",
+        r"how to save (?:electricity|energy) at home",
+        r"energy-saving tips",
+    ))
+
+def coverage_themes(title, primary):
+    # Secondary topic labels indicate subject overlap, not independent news events.
+    themes = [primary]
+    s = (title or "").lower()
+    infrastructure = ("pipeline", "terminal", "expansion", "construction",
+                      "interconnection", "infrastructure", "acquisition",
+                      "investment", "project", "grid reliability", "capital expenditure")
+    if any(k in s for k in infrastructure) and "Infrastructure & Investment" not in themes:
+        themes.append("Infrastructure & Investment")
+    return themes
 
 def entry(record, kind, now):
     if not isinstance(record, dict):
@@ -93,6 +116,8 @@ def entry(record, kind, now):
     flagged = []
     if marketing_signal(title):
         flagged.append("promotional_or_generic_marketing")
+    if low_market_impact_signal(title):
+        flagged.append("low_commercial_impact")
     if not is_english_script(title):
         flagged.append("translation_and_source_review")
     # Index first-seen cannot stand in for original publication freshness.
@@ -104,6 +129,7 @@ def entry(record, kind, now):
     return {
         "title": title, "url": url, "domain": domain.lower(),
         "source": str(source), "category": quality["category"],
+        "coverage_themes": coverage_themes(title, quality["category"]),
         "relevance_score": quality["relevance_score"],
         "relevance_evidence": quality["evidence"],
         "origin": kind, "time_basis": time_basis,
@@ -158,27 +184,40 @@ def assemble(rss, discovered, releases, now=None, max_stories=32):
             else "discovery_unverified" if x["origin"] == "global_discovery"
             else "older_official_context"
         )
-        x["rank"] = (x["relevance_score"] +
-                     25 if x["queue"] == "timestamped_official" else
-                     x["relevance_score"] + 8 if x["queue"] == "regulatory_date_only" else
-                     x["relevance_score"])
-        if x["needs_editor_review"]:
-            x["rank"] -= 20
+        x["rank"] = x["relevance_score"] + ORIGIN_RANK_BOOST[x["origin"]]
+        if x["queue"] == "older_official_context":
+            x["rank"] -= 25
+        if "translation_and_source_review" in x["needs_editor_review"]:
+            x["rank"] -= 25
+        if "promotional_or_generic_marketing" in x["needs_editor_review"]:
+            x["rank"] -= 45
+        if "low_commercial_impact" in x["needs_editor_review"]:
+            x["rank"] -= 40
     all_rows.sort(key=lambda x: (x["rank"], x["observed_time_utc"]), reverse=True)
     # Balance beats and publishers without pretending different sites independently confirm an event.
     counts = Counter()
     domains = Counter()
     selected = []
+    release_selected = 0
     for x in all_rows:
         if counts[x["category"]] >= TOP_PER_CATEGORY or domains[x["domain"]] >= LIMIT_PER_DOMAIN:
             continue
+        if x["origin"] == "company_announcement" and release_selected >= MAX_COMPANY_RELEASES:
+            continue
+        # Obvious promotional announcements are retained in raw research data
+        # but must not crowd out industry headlines in the curated view.
+        if "promotional_or_generic_marketing" in x["needs_editor_review"]:
+            continue
         selected.append(x)
+        if x["origin"] == "company_announcement":
+            release_selected += 1
         counts[x["category"]] += 1
         domains[x["domain"]] += 1
         if len(selected) >= max_stories:
             break
     queue_count = Counter(x["queue"] for x in all_rows)
     beats = Counter(x["category"] for x in selected)
+    themes = Counter(t for x in selected for t in x["coverage_themes"])
     return {
         "generated_utc": now.isoformat(),
         "status": "research_only_not_approved",
@@ -187,7 +226,8 @@ def assemble(rss, discovered, releases, now=None, max_stories=32):
         "unique_domains_in_selection": len({x["domain"] for x in selected}),
         "queue_counts": dict(queue_count),
         "selected_category_counts": {name: beats[name] for name in CATEGORY_ORDER},
-        "missing_categories": [name for name in CATEGORY_ORDER if not beats[name]],
+        "selected_topic_coverage_counts": {name: themes[name] for name in CATEGORY_ORDER},
+        "missing_categories": [name for name in CATEGORY_ORDER if not themes[name]],
         "publisher_timestamped_official_24h": queue_count["timestamped_official"],
         "discovery_publisher_dates_verified": 0,
         "promotional_or_language_review_count": sum(bool(x["needs_editor_review"]) for x in selected),
