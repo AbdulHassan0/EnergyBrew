@@ -1,0 +1,98 @@
+name: EnergyBrew live RSS collection
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "collector.py"
+      - "tests/**"
+      - ".github/workflows/live-collector.yml"
+  schedule:
+    - cron: "17 4,10,16,22 * * *"
+permissions:
+  contents: write
+concurrency:
+  group: energybrew-live-collector
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Ensure collector state remains private
+        env:
+          REPO_PRIVATE: ${{ github.event.repository.private }}
+        run: |
+          test "$REPO_PRIVATE" = "true" || { echo "Pilot requires a private repository"; exit 1; }
+      - name: Run regression tests before live collection
+        run: python -m unittest discover -s tests -v
+      - name: Restore state from dedicated branch
+        run: |
+          mkdir -p state
+          if git ls-remote --exit-code --heads origin collector-state >/dev/null 2>&1; then
+            git fetch --no-tags origin collector-state
+            git show FETCH_HEAD:state/articles.json > state/articles.json || true
+          fi
+      - name: Fetch actual publisher-dated RSS stories
+        id: ingest
+        continue-on-error: true
+        run: python collector.py --state state/articles.json --output output/collector --hours 48
+      - name: Publish run summary and artifact
+        if: always()
+        run: |
+          if test -f output/collector/latest.md; then
+            cat output/collector/latest.md >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Collection report was not produced" >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: energybrew-news-${{ github.run_id }}-${{ github.run_attempt }}
+          path: output/collector/
+          if-no-files-found: warn
+          retention-days: 30
+      - name: Save collector state in isolated branch
+        if: always()
+        run: |
+          if test ! -s state/articles.json; then
+            echo "No state file to persist."
+            exit 0
+          fi
+          export STATE_DIR="$RUNNER_TEMP/energybrew-state"
+          if git ls-remote --exit-code --heads origin collector-state >/dev/null 2>&1; then
+            git fetch --no-tags origin collector-state
+            git worktree add --detach "$STATE_DIR" FETCH_HEAD
+            cd "$STATE_DIR"
+            git switch -c "update-${GITHUB_RUN_ID}"
+          else
+            git worktree add --detach "$STATE_DIR" HEAD
+            cd "$STATE_DIR"
+            git switch --orphan collector-state
+            git rm -rf . >/dev/null 2>&1 || true
+          fi
+          mkdir -p state
+          cp "$GITHUB_WORKSPACE/state/articles.json" state/articles.json
+          if test -f "$GITHUB_WORKSPACE/output/collector/latest.json"; then
+            cp "$GITHUB_WORKSPACE/output/collector/latest.json" state/latest.json
+            cp "$GITHUB_WORKSPACE/output/collector/latest.md" state/latest.md
+          fi
+          git config user.name "EnergyBrew collector"
+          git config user.email "energybrew-bot@users.noreply.github.com"
+          git add -f state/
+          git diff --cached --quiet || {
+            git commit -m "Record independent live collection ${GITHUB_RUN_ID}"
+            git push origin HEAD:collector-state
+          }
+      - name: Mark absence of live source connection as a failure
+        if: steps.ingest.outcome == 'failure'
+        run: |
+          echo "No successful live RSS response; see run artifact for diagnostics." >&2
+          exit 1
