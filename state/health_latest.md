@@ -1,10 +1,10 @@
 # EnergyBrew Newsroom Collection Health
 
-Audit time: 2026-11-18T19:13:02.261769+00:00
+Audit time: 2026-11-18T19:37:26.679025+00:00
 Status: **degraded**
 Official feeds connected: **11/11**
 Timestamped high-signal editorial leads (24h): **1** / target 12
-GDELT links first seen (24h): **72**, of which **43** headline-score as high signal
+GDELT links first seen (24h): **79**, of which **50** headline-score as high signal
 GDELT publisher-verified times: **0** (requires a separate check)
 Company/newswire release leads (last 24h feed date): **5**
 Company release provider status: **ok**
@@ -24,5 +24,6 @@ Company release publication times and issuer claims independently verified: **0*
 - Only 1 editorial leads within 24h; target 12
 - No observed high-signal stories in: Power & Electricity, Oil & Energy, Infrastructure & Investment
 - GDELT DOC query API is degraded or rate limited; rolling GAL backup is healthy
+- A missed rolling GAL sample interval was observed
 
 These are coverage observations, not proof of article correctness or licensing.

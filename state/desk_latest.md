@@ -2,9 +2,9 @@
 
 **Research links only. Not fact-checked, approved, or ready for publication.**
 
-Generated (UTC): 2026-11-18T19:13:02.074974+00:00
-Distinct relevant URLs in retained data: **55**
-Selected diverse research leads: **24**
+Generated (UTC): 2026-11-18T19:37:26.450903+00:00
+Distinct relevant URLs in retained data: **62**
+Selected diverse research leads: **25**
 Publisher-timestamped official leads within 24h: **1**
 Discovery publisher dates verified: **0**
 
@@ -30,34 +30,36 @@ Discovery publisher dates verified: **0**
    - Timestamp basis: discovery_index_first_seen_only (2026-11-18T18:47:00+00:00). Editorial status: **unapproved**.
 10. **[Nasi sąsiedzi dogadali się z USA. Wielki kontrakt na LNG](https://www.money.pl/gospodarka/czesi-stawiaja-na-usa-wielki-kontrakt-na-lng-7352418180843520a.html)** — Natural Gas & LNG | global_discovery | score 39
    - Timestamp basis: discovery_index_first_seen_only (2026-11-18T18:32:00+00:00). Editorial status: **unapproved**.
-11. **[Over 400 American AI Data Centers Use As Much Electricity As Wisconsin, Michigan, or Indiana](https://peakoil.com/consumption/over-400-american-ai-data-centers-use-as-much-electricity-as-wisconsin-michigan-or-indiana)** — Power & Electricity | global_discovery | score 33
+11. **[Why Iraq Just Fast-Tracked Chevron's Takeover Of A 14-Billion-Barrel Supergiant](http://www.zerohedge.com/markets/why-iraq-just-fast-tracked-chevrons-takeover-14-billion-barrel-supergiant)** — Oil & Energy | global_discovery | score 33
+   - Timestamp basis: discovery_index_first_seen_only (2026-11-18T19:31:00+00:00). Editorial status: **unapproved**.
+12. **[Over 400 American AI Data Centers Use As Much Electricity As Wisconsin, Michigan, or Indiana](https://peakoil.com/consumption/over-400-american-ai-data-centers-use-as-much-electricity-as-wisconsin-michigan-or-indiana)** — Power & Electricity | global_discovery | score 33
    - Timestamp basis: discovery_index_first_seen_only (2026-11-18T18:32:00+00:00). Editorial status: **unapproved**.
-12. **[Largest data centers in the U.S. use as much electricity as some states and countries, study finds](https://www.cbsnews.com/news/hyperscale-data-centers-electricity-harvard-study)** — Power & Electricity | global_discovery | score 33
+13. **[Largest data centers in the U.S. use as much electricity as some states and countries, study finds](https://www.cbsnews.com/news/hyperscale-data-centers-electricity-harvard-study)** — Power & Electricity | global_discovery | score 33
    - Timestamp basis: discovery_index_first_seen_only (2026-11-18T18:32:00+00:00). Editorial status: **unapproved**.
-13. **[น้ำมันโลกดิ่งหนัก เบรนท์หลุด $91/WTI หลุด $83 หลังสต็อกน้ำมันสหรัฐเพิ่มมากกว่าคาด](https://www.ryt9.com/s/iq/12857836)** — Oil & Energy | global_discovery | score 33
+14. **[น้ำมันโลกดิ่งหนัก เบรนท์หลุด $91/WTI หลุด $83 หลังสต็อกน้ำมันสหรัฐเพิ่มมากกว่าคาด](https://www.ryt9.com/s/iq/12857836)** — Oil & Energy | global_discovery | score 33
    - Timestamp basis: discovery_index_first_seen_only (2026-11-18T18:32:00+00:00). Editorial status: **unapproved**.
-14. **[The Most Powerful Data Centers Use as Much Electricity as an Entire State](https://www.nationalgeographic.com/environment/article/data-center-energy-usage-study)** — Power & Electricity | global_discovery | score 33
+15. **[The Most Powerful Data Centers Use as Much Electricity as an Entire State](https://www.nationalgeographic.com/environment/article/data-center-energy-usage-study)** — Power & Electricity | global_discovery | score 33
    - Timestamp basis: discovery_index_first_seen_only (2026-11-18T18:17:00+00:00). Editorial status: **unapproved**.
-15. **[Reps postpone electricity tariff review pending committee report](https://dailypost.ng/2026/11/18/reps-postpone-electricity-tariff-review-pending-committee-report)** — Power & Electricity | global_discovery | score 33
+16. **[Reps postpone electricity tariff review pending committee report](https://dailypost.ng/2026/11/18/reps-postpone-electricity-tariff-review-pending-committee-report)** — Power & Electricity | global_discovery | score 33
    - Timestamp basis: discovery_index_first_seen_only (2026-11-18T18:17:00+00:00). Editorial status: **unapproved**.
-16. **[Brent cede de barrera de US$93 el barril ante mayores inventarios en EE.UU.](https://www.larepublica.co/globoeconomia/brent-cede-de-barrera-de-us-93-el-barril-ante-mayores-inventarios-en-ee-uu-4527313)** — Oil & Energy | global_discovery | score 33
+17. **[Brent cede de barrera de US$93 el barril ante mayores inventarios en EE.UU.](https://www.larepublica.co/globoeconomia/brent-cede-de-barrera-de-us-93-el-barril-ante-mayores-inventarios-en-ee-uu-4527313)** — Oil & Energy | global_discovery | score 33
    - Timestamp basis: discovery_index_first_seen_only (2026-11-18T18:16:00+00:00). Editorial status: **unapproved**.
-17. **[India's first commercial sustainable aviation fuel plant ready for production at IOC's refinery: Chairman Sahney](http://www.indiagazette.com/news/279441274/india-first-commercial-sustainable-aviation-fuel-plant-ready-for-production-at-ioc-refinery-chairman-sahney)** — Oil & Energy | global_discovery | score 30
+18. **[SC County Seeks Data Center Impact Study](https://www.odwyerpr.com/story/public/25629/2026-11-18/sc-county-seeks-data-center-impact-study.html)** — Power & Electricity | global_discovery | score 30
+   - Timestamp basis: discovery_index_first_seen_only (2026-11-18T19:32:00+00:00). Editorial status: **unapproved**.
+19. **[Gas Infrastructure Offers Africa’s Best Energy Investment In 2027 – WEC](https://leadership.ng/gas-infrastructure-offers-africas-best-energy-investment-in-2027-wec)** — Infrastructure & Investment | global_discovery | score 30
+   - Timestamp basis: discovery_index_first_seen_only (2026-11-18T19:32:00+00:00). Editorial status: **unapproved**.
+20. **[Texas resumes issuing data center air permits, regulator says](https://wkzo.com/2026/11/18/texas-resumes-issuing-data-center-air-permits-regulator-says)** — Power & Electricity | global_discovery | score 30
+   - Timestamp basis: discovery_index_first_seen_only (2026-11-18T19:32:00+00:00). Editorial status: **unapproved**.
+21. **[India's first commercial sustainable aviation fuel plant ready for production at IOC's refinery: Chairman Sahney](http://www.indiagazette.com/news/279441274/india-first-commercial-sustainable-aviation-fuel-plant-ready-for-production-at-ioc-refinery-chairman-sahney)** — Oil & Energy | global_discovery | score 30
    - Timestamp basis: discovery_index_first_seen_only (2026-11-18T19:02:00+00:00). Editorial status: **unapproved**.
-18. **[Texas resumes issuing data center air permits, regulator says](https://kelo.com/2026/11/18/texas-resumes-issuing-data-center-air-permits-regulator-says)** — Power & Electricity | global_discovery | score 30
-   - Timestamp basis: discovery_index_first_seen_only (2026-11-18T19:01:00+00:00). Editorial status: **unapproved**.
-19. **[Texas resumes issuing data center air permits, regulator says](https://wtvbam.com/2026/11/18/texas-resumes-issuing-data-center-air-permits-regulator-says)** — Power & Electricity | global_discovery | score 30
-   - Timestamp basis: discovery_index_first_seen_only (2026-11-18T19:01:00+00:00). Editorial status: **unapproved**.
-20. **[Protesters rally in a town in southwestern Iran after a road crash killed 13 refinery workers](https://www.arabnews.com/middle-east/protesters-rally-in-a-town-in-southwestern-iran-after-a-road-crash-killed-13-refinery-workers-3012779)** — Oil & Energy | global_discovery | score 30
+22. **[Protesters rally in a town in southwestern Iran after a road crash killed 13 refinery workers](https://www.arabnews.com/middle-east/protesters-rally-in-a-town-in-southwestern-iran-after-a-road-crash-killed-13-refinery-workers-3012779)** — Oil & Energy | global_discovery | score 30
    - Timestamp basis: discovery_index_first_seen_only (2026-11-18T18:47:00+00:00). Editorial status: **unapproved**.
-21. **[Russia’s Strangulation of Ukraine’s Sunflower Oil Production Will Have Global Impact](https://www.kyivpost.com/post/90507)** — Oil & Energy | global_discovery | score 30
+23. **[Russia’s Strangulation of Ukraine’s Sunflower Oil Production Will Have Global Impact](https://www.kyivpost.com/post/90507)** — Oil & Energy | global_discovery | score 30
    - Timestamp basis: discovery_index_first_seen_only (2026-11-18T18:32:00+00:00). Editorial status: **unapproved**.
-22. **[Bahrain's war-hit Sitra refinery weeks away from full capacity, Bapco Energies CEO says / The National](https://www.thenationalnews.com/business/energy/2026/11/18/bahrains-war-hit-sitra-refinery-weeks-away-from-full-capacity-bapco-energies-ceo-says)** — Oil & Energy | global_discovery | score 30
+24. **[Bahrain's war-hit Sitra refinery weeks away from full capacity, Bapco Energies CEO says / The National](https://www.thenationalnews.com/business/energy/2026/11/18/bahrains-war-hit-sitra-refinery-weeks-away-from-full-capacity-bapco-energies-ceo-says)** — Oil & Energy | global_discovery | score 30
    - Timestamp basis: discovery_index_first_seen_only (2026-11-18T18:32:00+00:00). Editorial status: **unapproved**.
-23. **[OPEC speaks up for fossil fuels at COP31 climate talks / MEO](https://www.middle-east-online.com/en/opec-speaks-fossil-fuels-cop31-climate-talks)** — Oil & Energy | global_discovery | score 30
+25. **[OPEC speaks up for fossil fuels at COP31 climate talks / MEO](https://www.middle-east-online.com/en/opec-speaks-fossil-fuels-cop31-climate-talks)** — Oil & Energy | global_discovery | score 30
    - Timestamp basis: discovery_index_first_seen_only (2026-11-18T18:17:00+00:00). Editorial status: **unapproved**.
-24. **[President Finds Petroleum Capacity Essential to National Defense Under the DPA: Practical Implications for EB-2 NIW Applicants and Employers](https://natlawreview.com/article/president-finds-petroleum-capacity-essential-national-defense-under-dpa-practical)** — Oil & Energy | global_discovery | score 27
-   - Timestamp basis: discovery_index_first_seen_only (2026-11-18T18:47:00+00:00). Editorial status: **unapproved**.
 
 ## Coverage gaps
 
