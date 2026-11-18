@@ -42,6 +42,8 @@ class CollectorTests(unittest.TestCase):
             fetch = lambda url: (sample(), 200)
             first = collect(state, out, now=NOW, fetcher=fetch)
             self.assertEqual(first["feeds_connected"], 8)
+            self.assertEqual(first["relevant_fresh_entries"], 8)
+            self.assertEqual(len(json.loads((out/"editorial_candidates.json").read_text())), 8)
             self.assertEqual(first["new_article_links"], 8)  # source identities are independent
             second = collect(state, out, now=NOW + timedelta(hours=1), fetcher=fetch)
             self.assertEqual(second["new_article_links"], 0)
