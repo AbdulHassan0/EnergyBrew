@@ -25,8 +25,7 @@ SOURCES = [
     ("DOE Hydrocarbons Releases", "https://www.energy.gov/rss/hgeo/2282977"),
     ("DOE Hydrocarbons Blog", "https://www.energy.gov/rss/hgeo/2283029"),
     ("European Commission DG Energy", "https://energy.ec.europa.eu/node/2/rss_en"),
-    ("Federal Register FERC notices", "https://www.federalregister.gov/api/v1/documents.rss?conditions%5Bagencies%5D%5B%5D=federal-energy-regulatory-commission"),
-    ("Federal Register DOE notices", "https://www.federalregister.gov/api/v1/documents.rss?conditions%5Bagencies%5D%5B%5D=energy-department"),
+    ("Federal Register notices", "https://www.federalregister.gov/api/v1/documents.rss?conditions%5Bagencies%5D%5B%5D=federal-energy-regulatory-commission"),
 ]
 KEYWORDS = {
     "Natural Gas & LNG": ("natural gas", "lng", "liquefied", "gas pipeline", "gas storage", "haynesville", "henry hub", "methane", "gas export"),
@@ -39,7 +38,8 @@ DROP_PARAMS = {"utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_t
 MAX_BYTES = 2_000_000
 # Federal Register is an official daily publication: the date is meaningful,
 # but its feed clock is NOT evidence of an intraday publication timestamp.
-DAY_PRECISION_SOURCES = {"Federal Register FERC notices", "Federal Register DOE notices"}
+DAY_PRECISION_SOURCES = {"Federal Register notices"}
+FORMER_FEDERAL_REGISTER_LABELS = {"Federal Register FERC notices", "Federal Register DOE notices"}
 
 def local(tag: str) -> str:
     return tag.rsplit("}", 1)[-1].lower()
@@ -152,7 +152,29 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
             raise ValueError("Existing state unreadable; refusing to erase its history")
     else:
         previous = {"articles": [], "runs": []}
-    articles = {x["id"]: x for x in previous.get("articles", [])}
+    articles = {}
+    seen_urls = {}
+    # Fold past repeated publisher URLs before calculating counts.
+    # The earlier two Federal Register queries returned the same documents.
+    for old in previous.get("articles", []):
+        item = dict(old)
+        if item.get("source") in FORMER_FEDERAL_REGISTER_LABELS:
+            item["source"] = "Federal Register notices"
+            item["published_precision"] = "day"
+            item["editorial_candidate"] = False
+            item["status"] = "research_date_only"
+        url = clean_url(item.get("url", ""))
+        if not url:
+            continue
+        if url in seen_urls:
+            first = articles[seen_urls[url]]
+            first.setdefault("also_seen_in", [])
+            if item["source"] != first["source"] and item["source"] not in first["also_seen_in"]:
+                first["also_seen_in"].append(item["source"])
+            continue
+        item["url"] = url
+        articles[item["id"]] = item
+        seen_urls[url] = item["id"]
     # Refresh existing research records when the relevance model changes.
     for existing in articles.values():
         if "editorial_candidate" not in existing:
@@ -172,10 +194,18 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
                 "date_only": sum(x["published_precision"] == "day" for x in items),
                 "relevant": sum(x["editorial_candidate"] for x in items), "rejected": rejected})
             for item in items:
+                prior_id = seen_urls.get(item["url"])
+                if prior_id is not None and prior_id != item["id"]:
+                    prior = articles[prior_id]
+                    prior.setdefault("also_seen_in", [])
+                    if name != prior["source"] and name not in prior["also_seen_in"]:
+                        prior["also_seen_in"].append(name)
+                    continue
                 if item["id"] not in articles:
                     new_count += 1
                     row["new"] += 1
                 articles[item["id"]] = item
+                seen_urls[item["url"]] = item["id"]
         except Exception as exc:
             row["error"] = f"{type(exc).__name__}: {str(exc)[:220]}"
         results.append(row)
@@ -188,7 +218,9 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
            "new_article_links": new_count, "relevant_fresh_entries": sum(x.get("relevant", 0) for x in results), "distinct_article_links_7d": len(retained),
            "approx_distinct_titles_7d": len(unique_titles),
            "date_only_entries": sum(x.get("date_only",0) for x in results),
-           "editorial_candidate_links_7d": sum(x.get("editorial_candidate",False) for x in retained), "sources": results}
+           "editorial_candidate_links_7d": sum(x.get("editorial_candidate",False) for x in retained),
+           "regulatory_watch_links_7d": sum(x.get("published_precision")=="day" and x.get("relevance_score",0)>=22 for x in retained),
+           "sources": results}
     runs = [x for x in previous.get("runs", []) if datetime.fromisoformat(x["run_utc"]) >= cutoff]
     runs.append({k: run[k] for k in ("run_utc", "feeds_connected", "feeds_checked", "fresh_entries", "new_article_links")})
     outdir.mkdir(parents=True, exist_ok=True)
@@ -207,9 +239,13 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
     volumes = [{"publication_date_utc":d,"source_links":by_day[d],"editorial_candidates":candidates_by_day[d],"regulatory_date_only_leads":date_only_by_day[d]} for d in days]
     (outdir / "volume_7d.json").write_text(json.dumps({"run_utc":now.isoformat(), "days":volumes, "definitions":"Publisher-date link counts, not unique independently verified events or collection-day counts."},indent=2) + "\n", encoding="utf-8")
     (outdir / "editorial_candidates.json").write_text(json.dumps(candidates, indent=2) + "\n", encoding="utf-8")
+    regulatory_watch = sorted((x for x in retained
+        if x.get("published_precision") == "day" and x.get("relevance_score",0) >= 22),
+        key=lambda x:(x.get("relevance_score",0),x["published_utc"]),reverse=True)
+    (outdir / "regulatory_watch.json").write_text(json.dumps(regulatory_watch,indent=2) + "\n",encoding="utf-8")
     lines = ["# EnergyBrew — live RSS collection", "",
              f"Run: {run['run_utc']}", f"Successfully parsed feeds: **{run['feeds_connected']}/{run['feeds_checked']}**",
-             f"Fresh timestamped entries: **{run['fresh_entries']}**", f"Editorial candidates (timestamped): **{run['relevant_fresh_entries']}**", f"Regulatory date-only leads: **{run['date_only_entries']}**", f"New stored links (all precision levels): **{new_count}**",
+             f"Fresh timestamped entries: **{run['fresh_entries']}**", f"Editorial candidates (timestamped): **{run['relevant_fresh_entries']}**", f"Regulatory date-only feed entries: **{run['date_only_entries']}**", f"Regulatory watchlist links (7 days): **{run['regulatory_watch_links_7d']}**", f"New unique links (all precision levels): **{new_count}**",
              f"Distinct article links in 7-day state: **{len(retained)}**", "",
              "| Source | Connected | Timestamped | Date-only | Candidates | New | Error |", "|---|---|---:|---:|---:|---:|---|"]
     for r in results:
