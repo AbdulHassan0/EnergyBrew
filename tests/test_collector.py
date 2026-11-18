@@ -77,6 +77,8 @@ class CollectorTests(unittest.TestCase):
             volumes = json.loads((out/"volume_7d.json").read_text())
             self.assertEqual(report["relevant_fresh_entries"], 9)
             self.assertEqual(report["date_only_entries"], 1)
+            self.assertEqual(report["editorial_candidates_24h"], 9)
+            self.assertEqual(len(json.loads((out/"editorial_candidates_24h.json").read_text())), 9)
             self.assertEqual(volumes["days"][0]["editorial_candidates"], 9)
             self.assertEqual(volumes["days"][0]["regulatory_date_only_leads"], 1)
             self.assertEqual(len(json.loads((out/"editorial_candidates.json").read_text())), 9)
