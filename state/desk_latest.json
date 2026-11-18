@@ -1,14 +1,14 @@
 {
-  "generated_utc": "2026-11-18T20:58:57.474013+00:00",
+  "generated_utc": "2026-11-18T21:03:56.009072+00:00",
   "status": "research_only_not_approved",
-  "unique_relevant_urls_7d": 77,
+  "unique_relevant_urls_7d": 81,
   "selected_research_links": 25,
   "unique_domains_in_selection": 21,
   "queue_counts": {
     "timestamped_official": 5,
     "regulatory_date_only": 4,
     "older_official_context": 5,
-    "discovery_unverified": 58,
+    "discovery_unverified": 62,
     "company_release_unverified": 5
   },
   "selected_category_counts": {
@@ -389,6 +389,60 @@
       "rank": 48
     },
     {
+      "title": "Electricity-Challenged Cuba Wants to Implement AI",
+      "url": "https://www.breitbart.com/latin-america/2026/11/18/electricity-challenged-cuba-wants-to-implement-ai",
+      "domain": "www.breitbart.com",
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Power & Electricity",
+      "coverage_themes": [
+        "Power & Electricity"
+      ],
+      "relevance_score": 33,
+      "relevance_evidence": [
+        "electricity"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "discovery_index_first_seen_only",
+      "observed_time_utc": "2026-11-18T21:01:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 45
+    },
+    {
+      "title": "Enterprise Products Partners: Oil Prices Are Noisy, Dividend Is The Signal",
+      "url": "https://seekingalpha.com/article/4969737-enterprise-products-partners-oil-prices-are-noisy-dividend-is-the-signal",
+      "domain": "seekingalpha.com",
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Oil & Energy",
+      "coverage_themes": [
+        "Oil & Energy"
+      ],
+      "relevance_score": 33,
+      "relevance_evidence": [
+        "oil prices"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "discovery_index_first_seen_only",
+      "observed_time_utc": "2026-11-18T21:01:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 45
+    },
+    {
       "title": "Why Iraq Just Fast-Tracked Chevron's Takeover Of A 14-Billion-Barrel Supergiant",
       "url": "http://www.zerohedge.com/markets/why-iraq-just-fast-tracked-chevrons-takeover-14-billion-barrel-supergiant",
       "domain": "www.zerohedge.com",
@@ -632,33 +686,6 @@
       "rank": 42
     },
     {
-      "title": "Texas resumes issuing data center air permits, regulator says",
-      "url": "https://kfgo.com/2026/11/18/texas-resumes-issuing-data-center-air-permits-regulator-says",
-      "domain": "kfgo.com",
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Power & Electricity",
-      "coverage_themes": [
-        "Power & Electricity"
-      ],
-      "relevance_score": 30,
-      "relevance_evidence": [
-        "data center"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "discovery_index_first_seen_only",
-      "observed_time_utc": "2026-11-18T20:47:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 42
-    },
-    {
       "title": "Gas Infrastructure Offers Africa’s Best Energy Investment In 2027 – WEC",
       "url": "https://leadership.ng/gas-infrastructure-offers-africas-best-energy-investment-in-2027-wec",
       "domain": "leadership.ng",
@@ -675,33 +702,6 @@
       "origin": "global_discovery",
       "time_basis": "discovery_index_first_seen_only",
       "observed_time_utc": "2026-11-18T19:32:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 42
-    },
-    {
-      "title": "India's first commercial sustainable aviation fuel plant ready for production at IOC's refinery: Chairman Sahney",
-      "url": "http://www.indiagazette.com/news/279441274/india-first-commercial-sustainable-aviation-fuel-plant-ready-for-production-at-ioc-refinery-chairman-sahney",
-      "domain": "www.indiagazette.com",
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Oil & Energy",
-      "coverage_themes": [
-        "Oil & Energy"
-      ],
-      "relevance_score": 30,
-      "relevance_evidence": [
-        "refinery"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "discovery_index_first_seen_only",
-      "observed_time_utc": "2026-11-18T19:02:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,

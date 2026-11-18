@@ -1,6 +1,21 @@
 {
   "articles": [
     {
+      "id": "bac23f84b89634e4a766d0c5",
+      "title": "Thames Water's Rescue Deal Comes With a Dirty Catch",
+      "url": "https://oilprice.com/Energy/Energy-General/Thames-Waters-Rescue-Deal-Comes-With-a-Dirty-Catch.html",
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-18T21:00:00+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified"
+    },
+    {
       "id": "c96336a7faf839838c869d82",
       "title": "Iraq's Border Shutdown With Iran Threatens a Much Bigger Economic Crisis",
       "url": "https://oilprice.com/Geopolitics/Middle-East/Iraqs-Border-Shutdown-With-Iran-Threatens-a-Much-Bigger-Economic-Crisis.html",
@@ -13,7 +28,8 @@
       "keyword_matches": 0,
       "editorial_candidate": false,
       "relevance_evidence": [],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "3e03c81f3a66fa9866b99bd4",
@@ -28,7 +44,8 @@
       "keyword_matches": 0,
       "editorial_candidate": false,
       "relevance_evidence": [],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "08c2f3b512606a6b7a68c0c7",
@@ -59,7 +76,8 @@
       "keyword_matches": 0,
       "editorial_candidate": false,
       "relevance_evidence": [],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "0dad76f8aa1370117b07fc49",
@@ -74,7 +92,8 @@
       "keyword_matches": 0,
       "editorial_candidate": false,
       "relevance_evidence": [],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "a556bd0d67d095de25e62318",
@@ -93,7 +112,8 @@
         "lng",
         "natural gas"
       ],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "d4fe066912643785ea2ffd16",
@@ -108,7 +128,8 @@
       "keyword_matches": 0,
       "editorial_candidate": false,
       "relevance_evidence": [],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "b5493c2967d5c68d6c2f94b5",
@@ -125,7 +146,8 @@
       "relevance_evidence": [
         "electricity"
       ],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "12c9ad8c1b37d3c4d5621721",
@@ -143,7 +165,8 @@
         "crude oil",
         "petroleum"
       ],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "dbb75ca8064473f97e60db15",
@@ -162,7 +185,8 @@
         "natural gas",
         "venture global"
       ],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "9b59cf44df724a0879698bfa",
@@ -179,7 +203,8 @@
       "relevance_evidence": [
         "lng"
       ],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "4d0071d8f2927e6783380db2",
@@ -194,7 +219,8 @@
       "keyword_matches": 0,
       "editorial_candidate": false,
       "relevance_evidence": [],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "33b7c622f7d6734f22075838",
@@ -209,7 +235,8 @@
       "keyword_matches": 0,
       "editorial_candidate": false,
       "relevance_evidence": [],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "a4c390e9c48b4825355d9bf6",
@@ -246,7 +273,8 @@
       "relevance_evidence": [
         "drilling"
       ],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "d021b967b58c90a0b5d9efad",
@@ -264,7 +292,8 @@
         "lng",
         "venture global"
       ],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "3b0edb75f4c14407fb406a2d",
@@ -281,7 +310,8 @@
       "relevance_evidence": [
         "upstream"
       ],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "fdd2223f847233e1029794d6",
@@ -298,7 +328,8 @@
       "relevance_evidence": [
         "crude oil"
       ],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "e703de8d48bd9fb296d72a6f",
@@ -315,7 +346,8 @@
       "relevance_evidence": [
         "electricity"
       ],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "e5684895a8736874e0cf776e",
@@ -330,7 +362,8 @@
       "keyword_matches": 0,
       "editorial_candidate": false,
       "relevance_evidence": [],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "0e60962e4349037dfa1fbcfd",
@@ -345,7 +378,8 @@
       "keyword_matches": 0,
       "editorial_candidate": false,
       "relevance_evidence": [],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "18df0d39e9013d6b917315a6",
@@ -360,7 +394,8 @@
       "keyword_matches": 0,
       "editorial_candidate": false,
       "relevance_evidence": [],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "ece006e7c63756cac601b5cc",
@@ -379,7 +414,8 @@
         "lng",
         "natural gas"
       ],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "5579e2a2230c578d14ebd744",
@@ -409,7 +445,8 @@
       "keyword_matches": 0,
       "editorial_candidate": false,
       "relevance_evidence": [],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "9c7ac5b57e13e2d343a3bdad",
@@ -426,7 +463,8 @@
       "relevance_evidence": [
         "drilling"
       ],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "2687db57fb5c80d10ef13782",
@@ -441,7 +479,8 @@
       "keyword_matches": 0,
       "editorial_candidate": false,
       "relevance_evidence": [],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "941d6aa5712d82895a1180c3",
@@ -663,7 +702,8 @@
       "keyword_matches": 0,
       "editorial_candidate": false,
       "relevance_evidence": [],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "b9b1dbb35bdc6562fe0996b4",
@@ -696,7 +736,8 @@
       "relevance_evidence": [
         "electricity"
       ],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "1a06a3d42cc83ad90f8ce17f",
@@ -711,7 +752,8 @@
       "keyword_matches": 0,
       "editorial_candidate": false,
       "relevance_evidence": [],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "6de41f64b53ea46ec5cfabba",
@@ -726,7 +768,8 @@
       "keyword_matches": 0,
       "editorial_candidate": false,
       "relevance_evidence": [],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "c33fd5e619b0b80d2e2edc2e",
@@ -743,7 +786,8 @@
       "relevance_evidence": [
         "lng"
       ],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "6d76b4a689bce18518eccc19",
@@ -758,7 +802,8 @@
       "keyword_matches": 0,
       "editorial_candidate": false,
       "relevance_evidence": [],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "968b31ef8fafebea6963a67f",
@@ -773,7 +818,8 @@
       "keyword_matches": 0,
       "editorial_candidate": false,
       "relevance_evidence": [],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "ffeaf298774a3406bb15a015",
@@ -791,7 +837,8 @@
         "gas production",
         "natural gas"
       ],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "7cd9e69593698adc68610cf0",
@@ -808,7 +855,8 @@
       "relevance_evidence": [
         "exxonmobil"
       ],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "ae076784ea4fb7c3cced6add",
@@ -1182,6 +1230,13 @@
       "feeds_checked": 13,
       "fresh_entries": 44,
       "new_article_links": 34
+    },
+    {
+      "run_utc": "2026-11-18T21:03:51.180620+00:00",
+      "feeds_connected": 13,
+      "feeds_checked": 13,
+      "fresh_entries": 44,
+      "new_article_links": 1
     }
   ]
 }
