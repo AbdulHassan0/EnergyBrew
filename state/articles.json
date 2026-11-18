@@ -13,7 +13,8 @@
       "keyword_matches": 0,
       "editorial_candidate": false,
       "relevance_evidence": [],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "c96336a7faf839838c869d82",
@@ -1237,6 +1238,13 @@
       "feeds_checked": 13,
       "fresh_entries": 44,
       "new_article_links": 1
+    },
+    {
+      "run_utc": "2026-11-18T21:05:51.011640+00:00",
+      "feeds_connected": 13,
+      "feeds_checked": 13,
+      "fresh_entries": 44,
+      "new_article_links": 0
     }
   ]
 }

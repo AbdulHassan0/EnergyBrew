@@ -239,6 +239,46 @@
     "status": "discovery_only_requires_publisher_verification"
   },
   {
+    "url": "https://www.breitbart.com/latin-america/2026/11/18/electricity-challenged-cuba-wants-to-implement-ai",
+    "title": "Electricity-Challenged Cuba Wants to Implement AI",
+    "domain": "www.breitbart.com",
+    "gdelt_first_seen_utc": "2026-11-18T21:01:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://seekingalpha.com/article/4969737-enterprise-products-partners-oil-prices-are-noisy-dividend-is-the-signal",
+    "title": "Enterprise Products Partners: Oil Prices Are Noisy, Dividend Is The Signal",
+    "domain": "seekingalpha.com",
+    "gdelt_first_seen_utc": "2026-11-18T21:01:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "oil prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
     "url": "https://www.westernpeople.ie/news/students-empowered-to-conserve-electricity-during-green-schools-energy-workshop_arid-20333572.html",
     "title": "Students empowered to conserve electricity during Green Schools Energy Workshop - news - Western People",
     "domain": "www.westernpeople.ie",
@@ -1106,6 +1146,46 @@
     "category": "Power & Electricity",
     "relevance_evidence": [
       "vistra"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.kmaland.com/news/triple-a-report-iowa-gas-prices-tumble/article_27faeff0-0a4a-4982-8229-6201c65e559e.html",
+    "title": "Triple A report: Iowa gas prices tumble",
+    "domain": "www.kmaland.com",
+    "gdelt_first_seen_utc": "2026-11-18T21:01:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Natural Gas & LNG",
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://journalstar.com/news/local/business/article_9ec64df9-2301-4905-9482-f76cced7d5af.html",
+    "title": "Lincoln drivers are getting a break at the pump as gas prices plunge",
+    "domain": "journalstar.com",
+    "gdelt_first_seen_utc": "2026-11-18T21:01:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Natural Gas & LNG",
+    "relevance_evidence": [
+      "gas prices"
     ],
     "status": "discovery_only_requires_publisher_verification"
   },

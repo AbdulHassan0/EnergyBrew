@@ -1,13 +1,13 @@
 # EnergyBrew — live RSS collection
 
-Run: 2026-11-18T21:03:51.180620+00:00
+Run: 2026-11-18T21:05:51.011640+00:00
 Successfully parsed feeds: **13/13**
 Fresh timestamped entries: **44**
 Editorial candidates (in collection window): **10**
 Editorial candidates (last 24h): **5**
 Regulatory date-only feed entries: **12**
 Regulatory watchlist links (7 days): **4**
-New unique links (all precision levels): **1**
+New unique links (all precision levels): **0**
 Distinct article links in 7-day state: **57**
 
 | Source | Connected | Timestamped | Date-only | Candidates | New | Error |
@@ -24,7 +24,7 @@ Distinct article links in 7-day state: **57**
 | European Commission DG Energy | True | 6 | 0 | 1 | 0 |  |
 | Federal Register notices | True | 0 | 12 | 0 | 0 |  |
 | Offshore Energy News | True | 19 | 0 | 5 | 0 |  |
-| OilPrice.com News | True | 15 | 0 | 2 | 1 |  |
+| OilPrice.com News | True | 15 | 0 | 2 | 0 |  |
 
 Source-linked metadata only (no publisher article text). Dates come from publishers' publication fields, not HTTP crawl times.
 No newsletter publication or subscriber email occurs.

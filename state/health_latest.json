@@ -1,10 +1,12 @@
 {
-  "audit_utc": "2026-11-18T21:03:56.313081+00:00",
+  "audit_utc": "2026-11-18T21:05:57.155646+00:00",
   "status": "degraded",
   "official_feeds_connected": 13,
   "official_feeds_checked": 13,
-  "official_rss_last_run_utc": "2026-11-18T21:03:51.180620+00:00",
+  "official_rss_last_run_utc": "2026-11-18T21:05:51.011640+00:00",
   "timestamped_editorial_leads_24h": 5,
+  "official_agency_editorial_leads_24h": 1,
+  "specialist_publisher_editorial_leads_24h": 4,
   "editorial_target_24h": 12,
   "observed_beat_counts_24h": {
     "Natural Gas & LNG": 5,
@@ -17,8 +19,8 @@
     "Oil & Energy",
     "Infrastructure & Investment"
   ],
-  "research_first_seen_links_24h": 91,
-  "research_high_signal_links_24h": 62,
+  "research_first_seen_links_24h": 102,
+  "research_high_signal_links_24h": 73,
   "research_publisher_dates_verified": 0,
   "company_announcement_links_24h": 5,
   "company_announcement_feed_status": "ok",
@@ -27,7 +29,7 @@
   "rolling_gal_recent_healthy": true,
   "rolling_gal_sampling_gap": false,
   "discovery_latest_status": "provider_cooldown",
-  "discovery_latest_run_utc": "2026-11-18T21:03:52.970966+00:00",
+  "discovery_latest_run_utc": "2026-11-18T21:05:53.070663+00:00",
   "critical": [],
   "warnings": [
     "Only 5 editorial leads within 24h; target 12",
