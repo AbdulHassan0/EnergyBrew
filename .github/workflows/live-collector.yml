@@ -7,6 +7,7 @@ on:
       - "collector.py"
       - "editorial.py"
       - "discovery.py"
+      - "newsroom_health.py"
       - "tests/**"
       - ".github/workflows/live-collector.yml"
   schedule:
@@ -57,6 +58,10 @@ jobs:
         id: discovery
         continue-on-error: true
         run: python discovery.py --state state/discovery.json --output output/discovery --max-queries 4
+      - name: Audit news coverage and collection gaps
+        if: always()
+        run: |
+          python newsroom_health.py --rss-state state/articles.json --rss-run output/collector/latest.json --discovery-state state/discovery.json --discovery-run output/discovery/latest.json --output output/health
       - name: Publish run summary and artifact
         if: always()
         run: |
@@ -72,6 +77,10 @@ jobs:
           else
             echo "Discovery report missing; no verified GDELT findings" >> "$GITHUB_STEP_SUMMARY"
           fi
+          if test -f output/health/health.md; then
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            cat output/health/health.md >> "$GITHUB_STEP_SUMMARY"
+          fi
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -79,6 +88,7 @@ jobs:
           path: |
             output/collector/
             output/discovery/
+            output/health/
           if-no-files-found: warn
           retention-days: 30
       - name: Save collector state in isolated branch
@@ -122,6 +132,10 @@ jobs:
                 cp "$GITHUB_WORKSPACE/output/discovery/$report" "state/discovery_$report"
               fi
             done
+          fi
+          if test -f "$GITHUB_WORKSPACE/output/health/health.json"; then
+            cp "$GITHUB_WORKSPACE/output/health/health.json" state/health_latest.json
+            cp "$GITHUB_WORKSPACE/output/health/health.md" state/health_latest.md
           fi
           git config user.name "EnergyBrew collector"
           git config user.email "energybrew-bot@users.noreply.github.com"
