@@ -4,7 +4,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from public_collector_guard import SafetyError, ensure_sources_public, validate_all, validate_records
+from public_collector_guard import SafetyError, ensure_sources_public, sanitize_legacy_rss, validate_all, validate_records
 
 
 class PublicGuardTests(unittest.TestCase):
@@ -19,6 +19,15 @@ class PublicGuardTests(unittest.TestCase):
                 "summary_excerpt":"Publisher article snippet",}],"runs":[]}))
             with self.assertRaises(SafetyError):
                 validate_records(path,"articles")
+
+    def test_migration_removes_only_legacy_excerpt(self):
+        with tempfile.TemporaryDirectory() as d:
+            p=Path(d)/"articles.json"
+            p.write_text(json.dumps({"articles":[{"title":"Natural gas market storage story",
+                "url":"https://example.org/story","summary_excerpt":"copyrighted text"}]}))
+            self.assertEqual(sanitize_legacy_rss(p),1)
+            self.assertEqual(sanitize_legacy_rss(p),0)
+            self.assertEqual(validate_records(p,"articles"),1)
 
     def test_reject_credentials_and_unsafe_urls(self):
         with tempfile.TemporaryDirectory() as d:

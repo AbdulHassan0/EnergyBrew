@@ -82,7 +82,7 @@ jobs:
       - name: Validate public-source metadata before state persistence
         id: metadata_guard
         if: always()
-        run: python public_collector_guard.py --rss state/articles.json --discovery state/discovery.json --releases state/press_releases.json
+        run: python public_collector_guard.py --sanitize-legacy --rss state/articles.json --discovery state/discovery.json --releases state/press_releases.json
       - name: Publish run summary and artifact
         if: always()
         run: |

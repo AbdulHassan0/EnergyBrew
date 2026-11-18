@@ -44,6 +44,30 @@ def ensure_sources_public() -> None:
             raise SafetyError(f"Source needs a public-safe host review: {parsed.hostname}")
 
 
+def sanitize_legacy_rss(path: Path) -> int:
+    """One-time safe removal of historical publisher snippets; other unsafe fields still fail."""
+    if not path.exists():
+        return 0
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError) as exc:
+        raise SafetyError(f"{path}: cannot safely migrate malformed RSS history") from exc
+    if not isinstance(data, dict) or not isinstance(data.get("articles"), list):
+        raise SafetyError(f"{path}: cannot migrate invalid RSS state schema")
+    changed = 0
+    for item in data["articles"]:
+        if not isinstance(item, dict):
+            raise SafetyError(f"{path}: non-object RSS history record")
+        if "summary_excerpt" in item:
+            item.pop("summary_excerpt")
+            changed += 1
+    if changed:
+        temporary = path.with_suffix(".sanitized.tmp")
+        temporary.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        temporary.replace(path)
+    return changed
+
+
 def validate_records(path: Path, key: str) -> int:
     if not path.exists():
         return 0  # first-ever run or optional lane that failed
@@ -85,7 +109,10 @@ def main() -> int:
     p.add_argument("--rss", type=Path, default=Path("state/articles.json"))
     p.add_argument("--discovery", type=Path, default=Path("state/discovery.json"))
     p.add_argument("--releases", type=Path, default=Path("state/press_releases.json"))
+    p.add_argument("--sanitize-legacy", action="store_true", help="Remove previously persisted RSS summary_excerpt fields only")
     args = p.parse_args()
+    if args.sanitize_legacy:
+        print("Removed old publisher RSS excerpts:", sanitize_legacy_rss(args.rss))
     print("Public metadata collection safety gate:", json.dumps(validate_all(args.rss,args.discovery,args.releases)))
     return 0
 

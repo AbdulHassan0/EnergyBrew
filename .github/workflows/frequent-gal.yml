@@ -1,14 +1,6 @@
 name: EnergyBrew frequent global news discovery
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - ".github/workflows/frequent-gal.yml"
-      - "gal.py"
-      - "public_collector_guard.py"
-      - "ops_metrics.py"
-      - "tests/test_gal.py"
   schedule:
     # The GDELT GAL feed represents a rolling ~15-minute sample.
     # GitHub can delay scheduled runs; this is NOT guaranteed full coverage.
@@ -84,7 +76,7 @@ jobs:
       - name: Verify public metadata before branch update
         id: metadata_guard
         if: always()
-        run: python public_collector_guard.py --rss state/articles.json --discovery state/discovery.json --releases state/press_releases.json
+        run: python public_collector_guard.py --sanitize-legacy --rss state/articles.json --discovery state/discovery.json --releases state/press_releases.json
       - name: Persist shared discovery history and gap diagnostics
         if: steps.metadata_guard.outcome == 'success'
         run: |
