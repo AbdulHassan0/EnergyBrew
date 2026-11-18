@@ -3,8 +3,9 @@ on:
   workflow_dispatch:
   schedule:
     # The GDELT GAL feed represents a rolling ~15-minute sample.
-    # GitHub can delay scheduled runs; this is NOT guaranteed full coverage.
-    - cron: "7,22,37,52 * * * *"
+    # Ten-minute overlap reduces gaps in ~15-minute rolling news indexing.
+    # GitHub delays can still cause missing windows: NOT guaranteed full coverage.
+    - cron: "6,16,26,36,46,56 * * * *"
 
 permissions:
   contents: write

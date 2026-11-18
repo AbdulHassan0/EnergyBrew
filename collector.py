@@ -286,13 +286,14 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
            "editorial_candidates_24h": sum(x.get("editorial_candidate",False) and datetime.fromisoformat(x["published_utc"]) >= now - timedelta(hours=24) for x in retained),
            "regulatory_watch_links_7d": sum(x.get("published_precision")=="day" and x.get("relevance_score",0)>=22 for x in retained),
            "sources": results, "source_health": source_health}
+    run_retention_cutoff = now - timedelta(days=8)  # retain audit window boundary
     runs = []
     for x in previous["runs"]:
         if not isinstance(x, dict):
             continue
         try:
             stamp = datetime.fromisoformat(str(x["run_utc"]).replace("Z", "+00:00"))
-            if stamp.tzinfo and cutoff <= stamp.astimezone(timezone.utc) <= now + timedelta(minutes=10):
+            if stamp.tzinfo and run_retention_cutoff <= stamp.astimezone(timezone.utc) <= now + timedelta(minutes=10):
                 runs.append(x)
         except (KeyError, ValueError, TypeError):
             continue

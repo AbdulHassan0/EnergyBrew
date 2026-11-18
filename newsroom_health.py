@@ -99,7 +99,7 @@ def audit(rss_state, rss_report, discovery_state=None, discovery_report=None, *,
     last_rss = dt(rss_report.get("run_utc"))
     last_discovery = dt(discovery_report.get("run_utc"))
     last_gal = dt(gal_report.get("run_utc"))
-    gal_recent_ok = bool(last_gal and now-last_gal <= timedelta(minutes=35)
+    gal_recent_ok = bool(last_gal and now-last_gal <= timedelta(minutes=25)
                          and gal_report.get("status") == "ok")
     connected = int(rss_report.get("feeds_connected",0) or 0)
     checked = int(rss_report.get("feeds_checked",0) or 0)
@@ -129,7 +129,7 @@ def audit(rss_state, rss_report, discovery_state=None, discovery_report=None, *,
         else:
             warnings.append("Global discovery is degraded or rate limited")
     if gal_report and not gal_recent_ok:
-        warnings.append("Rolling GDELT GAL sample failed or is older than 35 minutes")
+        warnings.append("Rolling GDELT GAL sample failed or is older than 25 minutes")
     if gal_report.get("potential_sampling_gap"):
         warnings.append("A missed rolling GAL sample interval was observed")
     if not research_high:

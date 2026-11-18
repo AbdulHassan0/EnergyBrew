@@ -3,7 +3,7 @@ name: EnergyBrew hourly discovery backup
 on:
   workflow_dispatch:
   schedule:
-    - cron: "45 * * * *"
+    - cron: "1 * * * *"  # additional backstop offset from primary minute-06
 
 permissions:
   contents: write

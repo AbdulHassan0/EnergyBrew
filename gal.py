@@ -121,7 +121,7 @@ def collect_gal(state_path, outdir, *, now=None, fetcher=None):
     interval_minutes=round((now-last_attempt).total_seconds()/60,1) if last_attempt else None
     summary={"run_utc":utc_stamp(now),"provider":"GDELT GAL RSS",
              "minutes_since_previous_sample":interval_minutes,
-             "potential_sampling_gap":bool(interval_minutes is not None and interval_minutes>20),
+             "potential_sampling_gap":bool(interval_minutes is not None and interval_minutes>15),
              "coverage":"rolling_15min_sample_only_not_full_day",
              "status":"pending","raw_feed_items":0,"high_signal_items":0,
              "new_unique_links":0,"rejected":{},
@@ -166,8 +166,9 @@ def collect_gal(state_path, outdir, *, now=None, fetcher=None):
     state["leads"]=retained
     state.setdefault("gal_runs",[]).append({k:summary[k] for k in
         ("run_utc","status","raw_feed_items","high_signal_items","new_unique_links")})
+    run_retention_cutoff=now-timedelta(days=8)
     state["gal_runs"]=[r for r in state["gal_runs"] if
-        (_datetime(r.get("run_utc")) or cutoff)>=cutoff][-800:]
+        (_datetime(r.get("run_utc")) or run_retention_cutoff)>=run_retention_cutoff][-1800:]
     outdir=Path(outdir)
     outdir.mkdir(parents=True,exist_ok=True)
     state_path.parent.mkdir(parents=True,exist_ok=True)
