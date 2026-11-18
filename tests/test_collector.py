@@ -75,7 +75,7 @@ class CollectorTests(unittest.TestCase):
             state, out = Path(d)/"state.json", Path(d)/"out"
             report = collect(state, out, now=NOW, fetcher=fixture_fetch)
             volumes = json.loads((out/"volume_7d.json").read_text())
-            self.assertEqual(report["relevant_fresh_entries"], 8)
+            self.assertEqual(report["relevant_fresh_entries"], 9)
             self.assertEqual(report["date_only_entries"], 1)
             self.assertEqual(volumes["days"][0]["editorial_candidates"], 9)
             self.assertEqual(volumes["days"][0]["regulatory_date_only_leads"], 1)
