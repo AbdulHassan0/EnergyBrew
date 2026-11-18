@@ -5,6 +5,7 @@ import unittest
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from collector import collect, parse_feed, published_date
+from editorial import evaluate
 from xml.etree import ElementTree as ET
 
 NOW = datetime(2026, 11, 18, 12, 0, tzinfo=timezone.utc)
@@ -41,14 +42,39 @@ class CollectorTests(unittest.TestCase):
             out = Path(d) / "out"
             fetch = lambda url: (sample(), 200)
             first = collect(state, out, now=NOW, fetcher=fetch)
-            self.assertEqual(first["feeds_connected"], 8)
+            self.assertEqual(first["feeds_connected"], 10)
             self.assertEqual(first["relevant_fresh_entries"], 8)
             self.assertEqual(len(json.loads((out/"editorial_candidates.json").read_text())), 8)
-            self.assertEqual(first["new_article_links"], 8)  # source identities are independent
+            self.assertEqual(first["new_article_links"], 10)  # source identities are independent
             second = collect(state, out, now=NOW + timedelta(hours=1), fetcher=fetch)
             self.assertEqual(second["new_article_links"], 0)
-            self.assertEqual(len(json.loads(state.read_text())["articles"]), 8)
+            self.assertEqual(len(json.loads(state.read_text())["articles"]), 10)
             self.assertEqual(len(json.loads(state.read_text())["runs"]), 2)
+
+    def test_relevance_requires_sector_context(self):
+        self.assertTrue(evaluate("LNG export terminal expansion approved")["editorial_candidate"])
+        self.assertTrue(evaluate("PJM seeks faster connections for data center power demand")["editorial_candidate"])
+        self.assertFalse(evaluate("Company announces a new project and commission approval")["editorial_candidate"])
+        self.assertFalse(evaluate("Spoiled ingredients and boiler maintenance project")["editorial_candidate"])
+
+    def test_date_only_regulatory_leads_are_not_fresh_editorial_headlines(self):
+        items, rejected, seen = parse_feed(sample(), "Federal Register FERC notices", NOW, 48, date_precision="day")
+        self.assertEqual(seen, 1)
+        self.assertEqual(len(items), 1)
+        self.assertEqual(items[0]["published_precision"], "day")
+        self.assertEqual(items[0]["status"], "research_date_only")
+        self.assertFalse(items[0]["editorial_candidate"])
+
+    def test_daily_volume_separates_regulatory_notices(self):
+        with tempfile.TemporaryDirectory() as d:
+            state, out = Path(d)/"state.json", Path(d)/"out"
+            report = collect(state, out, now=NOW, fetcher=lambda url: (sample(), 200))
+            volumes = json.loads((out/"volume_7d.json").read_text())
+            self.assertEqual(report["relevant_fresh_entries"], 8)
+            self.assertEqual(report["date_only_entries"], 2)
+            self.assertEqual(volumes["days"][0]["editorial_candidates"], 8)
+            self.assertEqual(volumes["days"][0]["regulatory_date_only_leads"], 2)
+            self.assertEqual(len(json.loads((out/"editorial_candidates.json").read_text())), 8)
 
     def test_failure_is_visible(self):
         with tempfile.TemporaryDirectory() as d:
@@ -56,7 +82,7 @@ class CollectorTests(unittest.TestCase):
                 raise OSError("offline")
             report = collect(Path(d)/"db.json", Path(d)/"out", now=NOW, fetcher=fail)
             self.assertEqual(report["feeds_connected"], 0)
-            self.assertEqual(len(report["sources"]), 8)
+            self.assertEqual(len(report["sources"]), 10)
             self.assertIn("offline", (Path(d)/"out/latest.md").read_text())
 
     def test_invalid_existing_state_is_not_overwritten(self):
