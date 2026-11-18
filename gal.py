@@ -14,7 +14,7 @@ from xml.etree import ElementTree as ET
 
 from collector import article_link, child_text, clean_url, local, published_date
 from discovery import _datetime, _load_state, utc_stamp
-from editorial import evaluate
+from editorial import evaluate, non_article_reason
 
 FEED_URL = "https://data.gdeltproject.org/gdeltv3/gal/feed.rss"
 MAX_BYTES = 15_000_000
@@ -39,7 +39,7 @@ def parse_gal(xml, now):
     if local(root.tag) not in ("rss","rdf","feed"):
         raise ValueError("Not an RSS/Atom document")
     nodes=[x for x in root.iter() if local(x.tag) in ("item","entry")]
-    rejected={"missing_link":0,"missing_index_time":0,"stale_index_time":0,"off_topic":0}
+    rejected={"missing_link":0,"missing_index_time":0,"stale_index_time":0,"off_topic":0,"non_article":0}
     results=[]
     for node in nodes:
         url=clean_url(article_link(node))
@@ -53,6 +53,9 @@ def parse_gal(xml, now):
             continue
         if observed>now+timedelta(hours=1) or observed<now-timedelta(hours=48):
             rejected["stale_index_time"]+=1
+            continue
+        if non_article_reason(title, url):
+            rejected["non_article"]+=1
             continue
         quality=evaluate(title)
         if not quality["editorial_candidate"]:
@@ -84,11 +87,33 @@ def collect_gal(state_path, outdir, *, now=None, fetcher=None):
     fetcher=fetcher or fetch_gal
     state=_load_state(state_path)
     previously=state.get("leads",[])
-    by_url={x["url"]:dict(x) for x in previously if isinstance(x,dict) and x.get("url")}
+    by_url={}
+    historical_noise_removed=0
+    historical_rescored=0
+    for raw in previously:
+        if not isinstance(raw,dict) or not raw.get("url"):
+            continue
+        item=dict(raw)
+        if non_article_reason(item.get("title",""),item.get("url","")):
+            historical_noise_removed+=1
+            continue
+        quality=evaluate(item.get("title",""))
+        if item.get("relevance_score") != quality["relevance_score"]:
+            historical_rescored+=1
+        item["category"]=quality["category"]
+        item["relevance_score"]=quality["relevance_score"]
+        item["relevance_evidence"]=quality["evidence"]
+        # Indexer first-seen time is not publisher publication time,
+        # even if the stored record was written by an older scoring version.
+        item["publisher_published_utc"]=None
+        item["published_time_verified"]=False
+        by_url[item["url"]]=item
     summary={"run_utc":utc_stamp(now),"provider":"GDELT GAL RSS",
              "coverage":"rolling_15min_sample_only_not_full_day",
              "status":"pending","raw_feed_items":0,"high_signal_items":0,
-             "new_unique_links":0,"rejected":{}}
+             "new_unique_links":0,"rejected":{},
+             "historical_noise_removed":historical_noise_removed,
+             "historical_rescored":historical_rescored}
     try:
         payload,status=fetcher(FEED_URL)
         if not 200<=status<300:
@@ -107,7 +132,12 @@ def collect_gal(state_path, outdir, *, now=None, fetcher=None):
                 providers.add(prior.get("discovery_provider","unknown"))
                 providers.add("GDELT GAL RSS")
                 prior["discovery_providers"]=sorted(providers)
-                prior["relevance_score"]=max(prior.get("relevance_score",0),lead["relevance_score"])
+                # Always use the latest scorer, not a historical inflated maximum.
+                # Different providers may find the same URL under multiple beats.
+                quality=evaluate(prior.get("title") or lead["title"])
+                prior["relevance_score"]=quality["relevance_score"]
+                prior["category"]=quality["category"]
+                prior["relevance_evidence"]=quality["evidence"]
             else:
                 by_url[uri]=lead
                 summary["new_unique_links"]+=1
@@ -141,6 +171,8 @@ def collect_gal(state_path, outdir, *, now=None, fetcher=None):
         f"RSS entries examined: **{summary['raw_feed_items']}**",
         f"High-signal sampled entries: **{summary['high_signal_items']}**",
         f"New unique URLs in research state: **{summary['new_unique_links']}**",
+        f"Previously stored non-article pages removed: **{summary['historical_noise_removed']}**",
+        f"Previously stored scores corrected: **{summary['historical_rescored']}**",
         "", "This is a rolling 15-minute SAMPLE only, not full daily source coverage.",
         "Dates are supplied by the GDELT RSS index, NOT independently verified publisher publication times.",
         "No external article pages were scraped or republished.",
