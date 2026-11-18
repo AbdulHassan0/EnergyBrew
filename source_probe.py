@@ -15,13 +15,16 @@ from collector import MAX_BYTES, USER_AGENT, parse_feed
 
 # Directly advertised publisher endpoints, staged for hosted validation.
 CANDIDATES = (
-    ("S&P Global LNG headlines", "https://www.spglobal.com/content/spglobal/energy/us/en/rss/lng.xml"),
-    ("S&P Global Natural Gas headlines", "https://www.spglobal.com/content/spglobal/energy/us/en/rss/natural-gas.xml"),
-    ("S&P Global Electric Power headlines", "https://www.spglobal.com/content/spglobal/energy/us/en/rss/electric-power.xml"),
-    ("S&P Global Oil headlines", "https://www.spglobal.com/content/spglobal/energy/us/en/rss/oil.xml"),
+    # Provider RSS available from verified site RSS directories; staged, not enabled.
+    ("Utility Dive Latest News", "https://www.utilitydive.com/feeds/news/"),
+    ("PJM Inside Lines", "https://insidelines.pjm.com/feed/"),
+    ("EIA What's New", "https://www.eia.gov/about/new/WNtest3.php"),
+    ("EIA Gasoline & Diesel Update", "https://www.eia.gov/petroleum/gasdiesel/includes/gas_diesel_rss.xml"),
+    ("EIA Heating Oil & Propane Update", "https://www.eia.gov/petroleum/heatingoilpropane/includes/hopu_rss.xml"),
     ("Offshore Energy News", "https://www.offshore-energy.biz/feed"),
     ("OilPrice.com News", "https://oilprice.com/rss.xml"),
 )
+
 SIZE_LIMIT = min(MAX_BYTES, 1_500_000)
 SOURCE_TIMEOUT = 12
 
