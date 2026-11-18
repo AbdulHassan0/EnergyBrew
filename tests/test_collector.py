@@ -88,7 +88,7 @@ class CollectorTests(unittest.TestCase):
             self.assertEqual(len(json.loads((out/"editorial_candidates_24h.json").read_text())), len(SOURCES)-len(DAY_PRECISION_SOURCES))
             self.assertEqual(volumes["days"][0]["editorial_candidates"], len(SOURCES)-len(DAY_PRECISION_SOURCES))
             self.assertEqual(volumes["days"][0]["regulatory_date_only_leads"], 1)
-            self.assertEqual(len(json.loads((out/"editorial_candidates.json").read_text())), 9)
+            self.assertEqual(len(json.loads((out/"editorial_candidates.json").read_text())), len(SOURCES)-len(DAY_PRECISION_SOURCES))
 
     def test_old_federal_register_duplication_is_folded_by_url(self):
         with tempfile.TemporaryDirectory() as d:
