@@ -201,8 +201,11 @@
     $("scan-status").textContent = collectorStatus(data);
     const age = Date.now() - Date.parse(stamp || "");
     if (Number.isFinite(age) && age > 24 * 3600000) {
-      const warn = make("p", "stale-data", "This is an older research snapshot. Stories may no longer be current.");
-      $("research-notice").append(warn);
+      const notice = $("research-notice").querySelector("p");
+      if (notice && !notice.dataset.ageWarning) {
+        notice.append(document.createTextNode(" This snapshot is over 24 hours old; verify dates at the original sources."));
+        notice.dataset.ageWarning = "true";
+      }
     }
   }
   async function fetchFeed() {
