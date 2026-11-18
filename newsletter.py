@@ -9,7 +9,8 @@ import argparse
 import html
 import json
 import re
-from datetime import datetime, timezone
+import unicodedata
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import urlparse
 from zoneinfo import ZoneInfo
@@ -67,11 +68,16 @@ def safe_text(raw: object, max_chars: int = 300) -> str:
     return " ".join(str(raw or "").split())[:max_chars]
 
 
-def research_queue(desk: dict, *, edition_date: str | None = None, limit: int = 10) -> dict:
+def research_queue(desk: dict, *, edition_date: str | None = None, limit: int = 10,
+                   now: datetime | None = None) -> dict:
     """Make private editor work items with *empty* summary fields."""
     if not isinstance(desk, dict) or not isinstance(desk.get("stories"), list):
         raise EditorialError("Collector desk does not contain a stories array")
-    issue_date = edition_date or datetime.now(LOCAL_ZONE).date().isoformat()
+    now = now or datetime.now(timezone.utc)
+    snapshot = parse_utc(desk.get("generated_utc"))
+    if snapshot is None or now - snapshot > timedelta(hours=24) or snapshot - now > timedelta(minutes=5):
+        raise EditorialError("Research desk is missing or more than 24 hours stale; do not recycle old news")
+    issue_date = edition_date or now.astimezone(LOCAL_ZONE).date().isoformat()
     if not date_only(issue_date):
         raise EditorialError("Expected valid YYYY-MM-DD local issue date")
     cleaned = []
@@ -83,7 +89,12 @@ def research_queue(desk: dict, *, edition_date: str | None = None, limit: int = 
         if not valid_url(url) or url in seen:
             continue
         title = safe_text(entry.get("title"))
-        if not title:
+        letters = [c for c in title if c.isalpha()]
+        latin_count = sum("LATIN" in unicodedata.name(c, "") for c in letters)
+        if not title or not letters or latin_count / len(letters) < 0.8:
+            continue  # Do not place unreviewed non-Latin-language leads in the morning English queue.
+        review_flags = entry.get("needs_editor_review") or []
+        if any(f in ("promotional_or_generic_marketing", "low_commercial_impact") for f in review_flags):
             continue
         seen.add(url)
         topic = entry.get("category") if entry.get("category") in TOPICS else "Oil & Energy"
@@ -92,6 +103,7 @@ def research_queue(desk: dict, *, edition_date: str | None = None, limit: int = 
             "source_url": url,
             "publisher": safe_text(entry.get("source") or entry.get("domain"), 100),
             "section": topic,
+            "coverage_themes": [t for t in (entry.get("coverage_themes") or []) if t in TOPICS],
             "lead_origin": safe_text(entry.get("origin"), 40),
             "lead_observed_utc": safe_text(entry.get("observed_time_utc"), 40),
             "lead_date_basis": safe_text(entry.get("time_basis"), 60),
@@ -109,7 +121,7 @@ def research_queue(desk: dict, *, edition_date: str | None = None, limit: int = 
     selected = set()
     # Ensure a beat-balanced shortlist while preserving desk ranking in each beat.
     for topic in TOPICS:
-        item = next((x for x in cleaned if x["section"] == topic and x["source_url"] not in selected), None)
+        item = next((x for x in cleaned if topic in ([x["section"]] + x["coverage_themes"]) and x["source_url"] not in selected), None)
         if item:
             chosen.append(item)
             selected.add(item["source_url"])
