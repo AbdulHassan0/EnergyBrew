@@ -1,9 +1,9 @@
 {
-  "audit_utc": "2026-11-18T18:46:31.986491+00:00",
+  "audit_utc": "2026-11-18T18:47:10.660618+00:00",
   "status": "degraded",
   "official_feeds_connected": 11,
   "official_feeds_checked": 11,
-  "official_rss_last_run_utc": "2026-11-18T18:46:24.117268+00:00",
+  "official_rss_last_run_utc": "2026-11-18T18:47:01.684441+00:00",
   "timestamped_editorial_leads_24h": 1,
   "editorial_target_24h": 12,
   "observed_beat_counts_24h": {
@@ -20,8 +20,11 @@
   "research_first_seen_links_24h": 53,
   "research_high_signal_links_24h": 24,
   "research_publisher_dates_verified": 0,
+  "company_announcement_links_24h": 5,
+  "company_announcement_feed_status": "ok",
+  "company_announcement_publisher_dates_verified": 0,
   "discovery_latest_status": "provider_cooldown",
-  "discovery_latest_run_utc": "2026-11-18T18:46:25.646796+00:00",
+  "discovery_latest_run_utc": "2026-11-18T18:47:03.965121+00:00",
   "critical": [],
   "warnings": [
     "Only 1 editorial leads within 24h; target 12",
@@ -32,6 +35,7 @@
     "No result proves zero market stories or comprehensive industry coverage.",
     "Editorial lead counts are distinct links, not independently verified events.",
     "GDELT first-seen times cannot establish original publisher dates.",
+    "Company or newswire releases are issuer claims and their feed timestamps do not independently verify original publisher publication time.",
     "Only editorial review and independent publisher verification can approve a story."
   ]
 }
