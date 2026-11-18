@@ -1,11 +1,12 @@
-# EnergyBrew — Live Energy News Research Collector
+# EnergyBrew — Five-minute morning energy newsletter (research preview)
 
 **Status: both hosted collection workflows verified running on GitHub Actions (November 18, 2026).**
 
-This private GitHub repository contains Energy TLDR's **live news research infrastructure**. It does not yet host the public newsletter website or send emails. No unverified source is automatically approved for publication.
+This repository contains both **live energy news collection infrastructure** and the [EnergyBrew website preview](https://abdulhassan0.github.io/EnergyBrew/). The web experience is built around **five minutes of energy news with your morning coffee**. It does not yet send subscriber emails or publish independently fact-checked, editorially approved summaries.
 
-## Open the latest real-world news
+## Open EnergyBrew and its live source research
 
+- **[Open EnergyBrew — five-minute morning preview](https://abdulhassan0.github.io/EnergyBrew/)** — responsive edition and searchable research desk with real, unapproved source leads
 - **[Unified ranked EnergyBrew Research Desk](https://github.com/AbdulHassan0/EnergyBrew/blob/collector-state/state/desk_latest.md)** — prioritized energy stories with direct publisher links, source provenance and timestamp caveats
 - [Daily collection reliability, article volume and scan gaps](https://github.com/AbdulHassan0/EnergyBrew/blob/collector-state/state/metrics_latest.md)
 - [Collection health, live-source status and coverage gaps](https://github.com/AbdulHassan0/EnergyBrew/blob/collector-state/state/health_latest.md)
@@ -55,6 +56,6 @@ See [OPERATIONS.md](OPERATIONS.md) for incident response, sampling-gap diagnosti
 - Obtain authorized specialist energy-news feeds/APIs to improve LNG, oil and power coverage.
 - Validate original publisher dates for discovery leads and preserve editorial sign-off.
 - Move high-volume state from Git commits to a durable database before scale.
-- Deploy the full Energy TLDR subscriber website, archive and email delivery workflow separately.
+- Build editorially verified five-minute summaries, approved newsletter editions, archives, subscriber signup and email delivery. The website *preview* has already been deployed.
 
 **Current state: live research collection is real; automatic publication-grade energy coverage is not yet established.**
