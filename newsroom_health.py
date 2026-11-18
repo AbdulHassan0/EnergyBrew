@@ -40,7 +40,7 @@ def load_json(path, *, default=None):
         return default
 
 
-def audit(rss_state, rss_report, discovery_state=None, discovery_report=None, *, release_state=None, release_report=None, now=None):
+def audit(rss_state, rss_report, discovery_state=None, discovery_report=None, *, release_state=None, release_report=None, gal_report=None, now=None):
     now = now or datetime.now(timezone.utc)
     if now.tzinfo is None:
         raise ValueError("now must be timezone aware")
@@ -50,6 +50,7 @@ def audit(rss_state, rss_report, discovery_state=None, discovery_report=None, *,
     discovery_report = discovery_report if isinstance(discovery_report, dict) else {}
     release_state = release_state if isinstance(release_state, dict) else {}
     release_report = release_report if isinstance(release_report, dict) else {}
+    gal_report = gal_report if isinstance(gal_report, dict) else {}
     cutoff = now-timedelta(hours=24)
     articles = rss_state.get("articles") if isinstance(rss_state.get("articles"),list) else []
     discovery = discovery_state.get("leads") if isinstance(discovery_state.get("leads"),list) else []
@@ -94,6 +95,9 @@ def audit(rss_state, rss_report, discovery_state=None, discovery_report=None, *,
             release_links.add(uri)
     last_rss = dt(rss_report.get("run_utc"))
     last_discovery = dt(discovery_report.get("run_utc"))
+    last_gal = dt(gal_report.get("run_utc"))
+    gal_recent_ok = bool(last_gal and now-last_gal <= timedelta(minutes=35)
+                         and gal_report.get("status") == "ok")
     connected = int(rss_report.get("feeds_connected",0) or 0)
     checked = int(rss_report.get("feeds_checked",0) or 0)
     warnings=[]
@@ -113,7 +117,14 @@ def audit(rss_state, rss_report, discovery_state=None, discovery_report=None, *,
     elif now-last_discovery > timedelta(hours=MAX_RUN_AGE_HOURS):
         warnings.append("Global discovery report is older than 12h")
     elif discovery_report.get("status") not in ("ok","attempted"):
-        warnings.append("Global discovery is degraded or rate limited")
+        if gal_recent_ok:
+            warnings.append("GDELT DOC query API is degraded or rate limited; rolling GAL backup is healthy")
+        else:
+            warnings.append("Global discovery is degraded or rate limited")
+    if gal_report and not gal_recent_ok:
+        warnings.append("Rolling GDELT GAL sample failed or is older than 35 minutes")
+    if gal_report.get("potential_sampling_gap"):
+        warnings.append("A missed rolling GAL sample interval was observed")
     if not research_high:
         warnings.append("No high-signal global research leads first seen within 24h")
     if release_report and release_report.get("status")!="ok":
@@ -134,6 +145,9 @@ def audit(rss_state, rss_report, discovery_state=None, discovery_report=None, *,
         "company_announcement_links_24h":len(release_links),
         "company_announcement_feed_status":release_report.get("status","not_run"),
         "company_announcement_publisher_dates_verified":0,
+        "rolling_gal_status":gal_report.get("status","not_run"),
+        "rolling_gal_recent_healthy":gal_recent_ok,
+        "rolling_gal_sampling_gap":bool(gal_report.get("potential_sampling_gap")),
         "discovery_latest_status":discovery_report.get("status","not_run"),
         "discovery_latest_run_utc":discovery_report.get("run_utc"),
         "critical":critical,
@@ -149,13 +163,14 @@ def audit(rss_state, rss_report, discovery_state=None, discovery_report=None, *,
     return summary
 
 
-def report(rss_state_path, rss_report_path, discovery_state_path, discovery_report_path, output_dir, *, release_state_path=None, release_report_path=None, now=None):
+def report(rss_state_path, rss_report_path, discovery_state_path, discovery_report_path, output_dir, *, release_state_path=None, release_report_path=None, gal_report_path=None, now=None):
     result=audit(load_json(rss_state_path),
                  load_json(rss_report_path),
                  load_json(discovery_state_path),
                  load_json(discovery_report_path),
                  release_state=load_json(release_state_path),
-                 release_report=load_json(release_report_path),now=now)
+                 release_report=load_json(release_report_path),
+                 gal_report=load_json(gal_report_path),now=now)
     output_dir=Path(output_dir)
     output_dir.mkdir(parents=True,exist_ok=True)
     (output_dir/"health.json").write_text(json.dumps(result,indent=2)+"\n",encoding="utf-8")
@@ -168,6 +183,7 @@ def report(rss_state_path, rss_report_path, discovery_state_path, discovery_repo
            "GDELT publisher-verified times: **0** (requires a separate check)",
            f"Company/newswire release leads (last 24h feed date): **{result['company_announcement_links_24h']}**",
            f"Company release provider status: **{result['company_announcement_feed_status']}**",
+           f"Rolling GAL fallback status: **{result['rolling_gal_status']}** (recent and healthy: {result['rolling_gal_recent_healthy']})",
            "Company release publication times and issuer claims independently verified: **0**",
            "", "## Missing coverage"]
     lines += [f"- {b}: {result['observed_beat_counts_24h'][b]} verified-source editorial leads" for b in REQUIRED_BEATS]
@@ -188,10 +204,12 @@ def main(argv=None):
     p.add_argument("--discovery-run",default="output/discovery/latest.json")
     p.add_argument("--releases-state",default="state/press_releases.json")
     p.add_argument("--releases-run",default="output/releases/latest.json")
+    p.add_argument("--gal-run",default="output/gal/latest.json")
     p.add_argument("--output",default="output/health")
     args=p.parse_args(argv)
     r=report(args.rss_state,args.rss_run,args.discovery_state,args.discovery_run,args.output,
-             release_state_path=args.releases_state,release_report_path=args.releases_run)
+             release_state_path=args.releases_state,release_report_path=args.releases_run,
+             gal_report_path=args.gal_run)
     print(json.dumps({k:r[k] for k in ("status","official_feeds_connected",
         "timestamped_editorial_leads_24h","research_first_seen_links_24h",
         "research_high_signal_links_24h","company_announcement_links_24h",
