@@ -1,11 +1,11 @@
 # EnergyBrew collection reliability and volume
 
-Generated: 2026-11-18T20:55:33.466168+00:00
+Generated: 2026-11-18T20:56:29.676536+00:00
 Status: **degraded**
 Seven-day pilot complete: **False**
 Observed history span: **0.39 days**
-Official RSS scans: **34** (successful: 34, failed: 0)
-GDELT GAL samples: **27** (successful: 27, degraded: 0)
+Official RSS scans: **35** (successful: 35, failed: 0)
+GDELT GAL samples: **28** (successful: 28, degraded: 0)
 Observed sampling gaps over 20 minutes: **2**
 
 | UTC day | Official scans | GAL samples | Timestamped official | High-signal official | GDELT first-seen URLs | Release-feed URLs |
@@ -16,7 +16,7 @@ Observed sampling gaps over 20 minutes: **2**
 | 2026-11-15 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2026-11-16 | 0 | 0 | 3 | 1 | 0 | 0 |
 | 2026-11-17 | 0 | 0 | 5 | 1 | 0 | 0 |
-| 2026-11-18 | 34 | 27 | 2 | 1 | 87 | 5 |
+| 2026-11-18 | 35 | 28 | 2 | 1 | 87 | 5 |
 
 ## Warnings
 - 2 observed GAL intervals exceeded 20 minutes
