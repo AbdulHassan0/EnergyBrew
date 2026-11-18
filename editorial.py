@@ -73,7 +73,7 @@ def non_article_reason(title, url=""):
     title = (title or "").strip().lower()
     if not title:
         return "empty_title"
-    if re.match(r"^(?:tag|tags|category|categories|archive|archives|topics?)\\s*:", title):
+    if re.match(r"^(?:tag|tags|category|categories|archive|archives|topics?)\s*:", title):
         return "archive_title"
     if not url:
         return None
