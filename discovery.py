@@ -10,6 +10,7 @@ import argparse
 import json
 import re
 import sys
+import time
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
@@ -110,8 +111,11 @@ def normalize_results(payload, topic, now):
     if isinstance(payload, bytes):
         try:
             data = json.loads(payload)
-        except (ValueError, UnicodeDecodeError):
-            raise ValueError("GDELT returned non-JSON data (possibly throttled)")
+        except (ValueError, UnicodeDecodeError) as exc:
+            excerpt = payload[:2000].decode("utf-8", errors="replace").lower()
+            if any(token in excerpt for token in ("too many requests", "limit requests to one", "rate limit", "429 too many")):
+                raise HTTPError(API,429,"Provider throttle response",{},None) from exc
+            raise ValueError("GDELT returned non-JSON data (invalid query or provider error)") from exc
     elif isinstance(payload, dict):
         data = payload
     else:
@@ -184,6 +188,7 @@ def run_discovery(state_path, output_dir, *, now=None, fetcher=None, max_queries
         raise ValueError("now must be timezone-aware")
     if not 1 <= max_queries <= len(TOPICS):
         raise ValueError("max_queries must be 1..number of topics")
+    live_network = fetcher is None
     fetcher = fetcher or fetch_json
     state = _load_state(state_path)
     topic_state = state.setdefault("topics", {})
@@ -203,7 +208,11 @@ def run_discovery(state_path, output_dir, *, now=None, fetcher=None, max_queries
             x[0],
         ))
         chosen = ranked[:max_queries]
-        for topic, query in chosen:
+        for index_number, (topic, query) in enumerate(chosen):
+            # DOC 2.0 asks clients not to exceed one request every five seconds.
+            # Do not delay fixture-based offline tests.
+            if live_network and index_number:
+                time.sleep(5.5)
             record = topic_state.setdefault(topic, {})
             row = {"topic": topic, "attempted_utc": utc_stamp(now), "status": "pending", "raw_results": 0, "new_urls": 0}
             record["last_attempt_utc"] = utc_stamp(now)
