@@ -1,12 +1,14 @@
 {
-  "run_utc": "2026-11-18T11:33:03.848162+00:00",
-  "feeds_connected": 8,
-  "feeds_checked": 8,
+  "run_utc": "2026-11-18T12:24:27.809884+00:00",
+  "feeds_connected": 10,
+  "feeds_checked": 10,
   "fresh_entries": 6,
-  "new_article_links": 0,
-  "relevant_fresh_entries": 3,
-  "distinct_article_links_7d": 6,
-  "approx_distinct_titles_7d": 6,
+  "new_article_links": 24,
+  "relevant_fresh_entries": 2,
+  "distinct_article_links_7d": 30,
+  "approx_distinct_titles_7d": 16,
+  "date_only_entries": 24,
+  "editorial_candidate_links_7d": 2,
   "sources": [
     {
       "source": "EIA Today in Energy",
@@ -16,6 +18,7 @@
       "fresh": 1,
       "new": 0,
       "http_status": 200,
+      "date_only": 0,
       "relevant": 0,
       "rejected": {
         "undated": 1,
@@ -32,6 +35,7 @@
       "fresh": 0,
       "new": 0,
       "http_status": 200,
+      "date_only": 0,
       "relevant": 0,
       "rejected": {
         "undated": 0,
@@ -48,6 +52,7 @@
       "fresh": 0,
       "new": 0,
       "http_status": 200,
+      "date_only": 0,
       "relevant": 0,
       "rejected": {
         "undated": 0,
@@ -64,6 +69,7 @@
       "fresh": 0,
       "new": 0,
       "http_status": 200,
+      "date_only": 0,
       "relevant": 0,
       "rejected": {
         "undated": 0,
@@ -80,6 +86,7 @@
       "fresh": 1,
       "new": 0,
       "http_status": 200,
+      "date_only": 0,
       "relevant": 1,
       "rejected": {
         "undated": 0,
@@ -96,6 +103,7 @@
       "fresh": 0,
       "new": 0,
       "http_status": 200,
+      "date_only": 0,
       "relevant": 0,
       "rejected": {
         "undated": 0,
@@ -112,6 +120,7 @@
       "fresh": 0,
       "new": 0,
       "http_status": 200,
+      "date_only": 0,
       "relevant": 0,
       "rejected": {
         "undated": 0,
@@ -128,10 +137,45 @@
       "fresh": 4,
       "new": 0,
       "http_status": 200,
-      "relevant": 2,
+      "date_only": 0,
+      "relevant": 1,
       "rejected": {
         "undated": 0,
         "old": 26,
+        "future": 0,
+        "invalid_link": 0
+      }
+    },
+    {
+      "source": "Federal Register FERC notices",
+      "url": "https://www.federalregister.gov/api/v1/documents.rss?conditions%5Bagencies%5D%5B%5D=federal-energy-regulatory-commission",
+      "connected": true,
+      "items_seen": 136,
+      "fresh": 0,
+      "new": 12,
+      "http_status": 200,
+      "date_only": 12,
+      "relevant": 0,
+      "rejected": {
+        "undated": 0,
+        "old": 124,
+        "future": 0,
+        "invalid_link": 0
+      }
+    },
+    {
+      "source": "Federal Register DOE notices",
+      "url": "https://www.federalregister.gov/api/v1/documents.rss?conditions%5Bagencies%5D%5B%5D=energy-department",
+      "connected": true,
+      "items_seen": 151,
+      "fresh": 0,
+      "new": 12,
+      "http_status": 200,
+      "date_only": 12,
+      "relevant": 0,
+      "rejected": {
+        "undated": 0,
+        "old": 139,
         "future": 0,
         "invalid_link": 0
       }
