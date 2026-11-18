@@ -1,0 +1,55 @@
+name: EnergyBrew morning newsletter editorial draft
+on:
+  workflow_dispatch:
+  schedule:
+    # 6:15 AM Chicago, two UTC attempts to cover CST/CDT.
+    - cron: "15 11,12 * * 1-5"
+
+permissions:
+  contents: read
+
+jobs:
+  prepare-private-draft:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check the Chicago-time morning window
+        id: window
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import os
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          now = datetime.now(ZoneInfo("America/Chicago"))
+          print("run=" + ("yes" if os.environ.get("GITHUB_EVENT_NAME") == "workflow_dispatch" or now.hour == 6 else "no"))
+          PY
+      - name: Require private editorial workspace
+        if: steps.window.outputs.run == 'yes' && github.event.repository.private == false
+        run: |
+          echo "Editorial artifacts require private-repository controls" >&2
+          exit 1
+      - name: Run regression tests
+        if: steps.window.outputs.run == 'yes'
+        run: python -m unittest discover -s tests -q
+      - name: Retrieve current private research desk
+        if: steps.window.outputs.run == 'yes'
+        run: |
+          mkdir -p latest-state
+          git fetch --no-tags origin collector-state
+          git show FETCH_HEAD:state/desk_latest.json > latest-state/desk_latest.json
+      - name: Prepare research-only morning review
+        if: steps.window.outputs.run == 'yes'
+        run: |
+          python newsletter.py prepare --desk latest-state/desk_latest.json --out output/newsletter/review_queue.json
+          python newsletter.py preview --draft output/newsletter/review_queue.json --html output/newsletter/DRAFT_email_preview.html --text output/newsletter/DRAFT_email_preview.txt
+      - name: Archive private draft; NEVER email or publish
+        if: steps.window.outputs.run == 'yes'
+        uses: actions/upload-artifact@v4
+        with:
+          name: energybrew-private-editorial-draft
+          path: output/newsletter/
+          retention-days: 7
