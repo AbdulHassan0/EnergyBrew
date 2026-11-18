@@ -1568,6 +1568,14 @@
       "topics_succeeded": 0,
       "new_discovered_urls": 0,
       "leads_in_last_24h_first_seen": 72
+    },
+    {
+      "run_utc": "2026-11-18T19:10:48.387746+00:00",
+      "status": "provider_cooldown",
+      "topics_attempted": 0,
+      "topics_succeeded": 0,
+      "new_discovered_urls": 0,
+      "leads_in_last_24h_first_seen": 72
     }
   ],
   "provider_cooldown_until_utc": "2026-11-18T19:50:59.758419+00:00",
@@ -1707,6 +1715,13 @@
     },
     {
       "run_utc": "2026-11-18T19:08:13.953286+00:00",
+      "status": "ok",
+      "raw_feed_items": 5483,
+      "high_signal_items": 8,
+      "new_unique_links": 0
+    },
+    {
+      "run_utc": "2026-11-18T19:10:48.478458+00:00",
       "status": "ok",
       "raw_feed_items": 5483,
       "high_signal_items": 8,
