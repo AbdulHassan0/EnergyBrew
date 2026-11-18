@@ -9,12 +9,14 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import unicodedata
 from collections import Counter
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from collector import clean_url
 from editorial import evaluate, non_article_reason
+from event_dedup import attach_related, same_event
 
 LIMIT_PER_DOMAIN = 4
 TOP_PER_CATEGORY = 8
@@ -42,12 +44,12 @@ def load(path, key):
         data = json.loads(Path(path).read_text(encoding="utf-8"))
         records = data.get(key, []) if isinstance(data, dict) else data
         return records if isinstance(records, list) else []
-    except (OSError, ValueError):
-        return []
+    except (OSError, ValueError) as exc:
+        raise ValueError(f"Unreadable research state is not a clean empty feed: {path}") from exc
 
 def is_english_script(title):
-    # Never invent a translated English title for non-Latin source material.
-    return not bool(re.search(r"[\u0370-\u03ff\u0400-\u052f\u0600-\u06ff\u4e00-\u9fff]", title or ""))
+    letters=[c for c in (title or "") if c.isalpha()]
+    return bool(letters) and sum("LATIN" in unicodedata.name(c,"") for c in letters)/len(letters)>=.8
 
 def marketing_signal(title):
     s = (title or "").lower()
@@ -64,6 +66,8 @@ def low_market_impact_signal(title):
         r"(?:school|students?).*(?:energy|electricity) awareness",
         r"how to save (?:electricity|energy) at home",
         r"energy-saving tips",
+        r"^(?:rupee|indian rupee|currenc(?:y|ies)).*(?:crude|oil|brent)",
+        r"^(?:stocks?|shares?|equities).*(?:rall(?:y|ies)|drop|fall|gain).*(?:crude|oil)",
     ))
 
 def coverage_themes(title, primary):
@@ -181,7 +185,8 @@ def assemble(rss, discovered, releases, now=None, max_stories=32):
     all_rows = list(index.values())
     for x in all_rows:
         x["queue"] = (
-            "timestamped_official" if x["origin"] == "official_rss" and x["within_24h_on_own_time_basis"]
+            "specialist_publisher_24h" if x["origin"] == "official_rss" and x.get("source_class") == "specialist_publisher" and x["within_24h_on_own_time_basis"]
+            else "timestamped_official" if x["origin"] == "official_rss" and x["within_24h_on_own_time_basis"]
             else "regulatory_date_only" if x["origin"] == "regulatory_notice"
             else "company_release_unverified" if x["origin"] == "company_announcement"
             else "discovery_unverified" if x["origin"] == "global_discovery"
@@ -204,7 +209,13 @@ def assemble(rss, discovered, releases, now=None, max_stories=32):
     domains = Counter()
     selected = []
     release_selected = 0
+    duplicate_links_suppressed = 0
     for x in all_rows:
+        existing = next((s for s in selected if same_event(s, x)), None)
+        if existing is not None:
+            attach_related(existing, x)
+            duplicate_links_suppressed += 1
+            continue
         if counts[x["category"]] >= TOP_PER_CATEGORY or domains[x["domain"]] >= LIMIT_PER_DOMAIN:
             continue
         if x["origin"] == "company_announcement" and release_selected >= MAX_COMPANY_RELEASES:
@@ -234,11 +245,14 @@ def assemble(rss, discovered, releases, now=None, max_stories=32):
         "selected_topic_coverage_counts": {name: themes[name] for name in CATEGORY_ORDER},
         "missing_categories": [name for name in CATEGORY_ORDER if not themes[name]],
         "publisher_timestamped_official_24h": queue_count["timestamped_official"],
+        "publisher_timestamped_specialist_24h": queue_count["specialist_publisher_24h"],
+        "likely_same_event_links_suppressed":duplicate_links_suppressed,
         "discovery_publisher_dates_verified": 0,
         "promotional_or_language_review_count": sum(bool(x["needs_editor_review"]) for x in selected),
         "stories": selected,
         "definitions": {
             "timestamped_official": "Publisher-supplied publication datetime on original feeds (official agencies and specialist publishers); content not independently fact-checked",
+            "specialist_publisher_24h": "Specialist publisher RSS timestamp, NOT official government news or independently verified content",
             "regulatory_date_only": "Government record with publication DATE, no reliable intraday release timestamp",
             "discovery_unverified": "GDELT index observed a linked article; neither publisher publication date nor facts verified",
             "company_release_unverified": "Third-party press-release aggregator feed date and issuer claims, not independent reporting",
@@ -258,6 +272,8 @@ def generate(rss_file, discovered_file, release_file, output_dir, now=None):
             f"Distinct relevant URLs in retained data: **{result['unique_relevant_urls_7d']}**",
             f"Selected diverse research leads: **{result['selected_research_links']}**",
             f"Publisher-timestamped official leads within 24h: **{result['publisher_timestamped_official_24h']}**",
+            f"Specialist-publisher timestamped links within 24h: **{result['publisher_timestamped_specialist_24h']}**",
+            f"Likely duplicate links suppressed in the selection: **{result['likely_same_event_links_suppressed']}**",
             f"Discovery publisher dates verified: **0**", "",
             "## Candidate list", ""]
     if not result["stories"]:
@@ -271,6 +287,8 @@ def generate(rss_file, discovered_file, release_file, output_dir, now=None):
             rows.append("   - Review flags: " + ", ".join(x["needs_editor_review"]))
         if x["other_origins"]:
             rows.append("   - Also discovered by: " + ", ".join(x["other_origins"]))
+        if x.get("related_reports"):
+            rows.append(f"   - {len(x['related_reports'])} likely same-event publisher links preserved for review (not independent corroboration).")
     rows += ["", "## Coverage gaps", ""]
     rows += ["- "+cat for cat in result["missing_categories"]] or ["- No missing category observed in the selected set (not proof of complete coverage)."]
     rows += ["", "## Source-date rules", "",

@@ -20,12 +20,24 @@ def release(url="https://wire.com/story/2", title="PJM power grid reliability pr
             "provider":"Press Release Feed"}
 
 class DeskTests(unittest.TestCase):
+    def test_specialist_event_collapsed_in_short_research_desk(self):
+        a=dict(official(url="https://source-a.com/one",title="China Gas Upsizes Long-Term LNG Supply with U.S. Venture Global"),source_class="specialist_publisher")
+        b=dict(official(url="https://source-b.com/two",title="Venture Global’s bigger LNG deal with China Gas adds 500,000 tons annually"),source_class="specialist_publisher")
+        result=assemble([a,b],[],[],now=NOW)
+        self.assertEqual(result["unique_relevant_urls_7d"],2)
+        self.assertEqual(result["selected_research_links"],1)
+        self.assertEqual(result["publisher_timestamped_specialist_24h"],2)
+        self.assertEqual(result["publisher_timestamped_official_24h"],0)
+        self.assertEqual(result["likely_same_event_links_suppressed"],1)
+        self.assertEqual(len(result["stories"][0]["related_reports"]),1)
+
     def test_specialist_publisher_provenance(self):
         article=official()
         article["source_class"]="specialist_publisher"
         result=assemble([article],[],[],now=NOW)
         self.assertEqual(result["stories"][0]["source_class"],"specialist_publisher")
         self.assertEqual(result["stories"][0]["time_basis"],"specialist_publisher_rss_timestamp")
+        self.assertEqual(result["stories"][0]["queue"],"specialist_publisher_24h")
 
     def test_separated_provenance_and_status(self):
         r=assemble([official()], [global_lead()], [release()], now=NOW)
