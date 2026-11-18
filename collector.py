@@ -13,6 +13,8 @@ from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 from urllib.request import Request, urlopen
 from xml.etree import ElementTree as ET
+from collections import Counter
+from editorial import evaluate, normalized_event_title
 
 SOURCES = [
     ("EIA Today in Energy", "https://www.eia.gov/rss/todayinenergy.xml"),
@@ -23,6 +25,8 @@ SOURCES = [
     ("DOE Hydrocarbons Releases", "https://www.energy.gov/rss/hgeo/2282977"),
     ("DOE Hydrocarbons Blog", "https://www.energy.gov/rss/hgeo/2283029"),
     ("European Commission DG Energy", "https://energy.ec.europa.eu/node/2/rss_en"),
+    ("Federal Register FERC notices", "https://www.federalregister.gov/api/v1/documents.rss?conditions%5Bagencies%5D%5B%5D=federal-energy-regulatory-commission"),
+    ("Federal Register DOE notices", "https://www.federalregister.gov/api/v1/documents.rss?conditions%5Bagencies%5D%5B%5D=energy-department"),
 ]
 KEYWORDS = {
     "Natural Gas & LNG": ("natural gas", "lng", "liquefied", "gas pipeline", "gas storage", "haynesville", "henry hub", "methane", "gas export"),
@@ -33,6 +37,9 @@ KEYWORDS = {
 USER_AGENT = "EnergyBrewResearchCollector/1.0 (+https://github.com/AbdulHassan0/EnergyBrew)"
 DROP_PARAMS = {"utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "fbclid", "gclid"}
 MAX_BYTES = 2_000_000
+# Federal Register is an official daily publication: the date is meaningful,
+# but its feed clock is NOT evidence of an intraday publication timestamp.
+DAY_PRECISION_SOURCES = {"Federal Register FERC notices", "Federal Register DOE notices"}
 
 def local(tag: str) -> str:
     return tag.rsplit("}", 1)[-1].lower()
@@ -86,7 +93,7 @@ def classify(title, summary):
     category, points = max(matched, key=lambda x: x[1])
     return (category if points else "Cross-sector", points)
 
-def parse_feed(xml_bytes, source_name, now, hours):
+def parse_feed(xml_bytes, source_name, now, hours, date_precision="timestamp"):
     root = ET.fromstring(xml_bytes)
     nodes = [n for n in root.iter() if local(n.tag) in ("item", "entry")]
     if local(root.tag) not in ("rss", "rdf", "feed") and not nodes:
@@ -109,15 +116,21 @@ def parse_feed(xml_bytes, source_name, now, hours):
             rejected["old"] += 1
             continue
         summary = child_text(node, ("description", "summary", "content"))[:700]
-        category, score = classify(title, summary)
+        quality = evaluate(title, summary)
+        is_precise = date_precision == "timestamp"
+        category, score = quality["category"], quality["relevance_score"]
         guid = child_text(node, ("guid", "id"))
         identity = (source_name + "|" + (guid or link)).encode("utf-8")
         accepted.append({
             "id": hashlib.sha256(identity).hexdigest()[:24],
             "title": title[:300], "url": link, "source": source_name,
             "published_utc": dt.isoformat(), "category": category,
-            "keyword_matches": score,
-            "status": "research_only_unverified", "summary_excerpt": summary[:350],
+            "published_precision": date_precision,
+            "relevance_score": score, "keyword_matches": len(quality["evidence"]),
+            "editorial_candidate": bool(quality["editorial_candidate"] and is_precise),
+            "relevance_evidence": quality["evidence"],
+            "status": "research_only_unverified" if is_precise else "research_date_only",
+            "summary_excerpt": summary[:350],
         })
     return accepted, rejected, len(nodes)
 
@@ -140,13 +153,24 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
     else:
         previous = {"articles": [], "runs": []}
     articles = {x["id"]: x for x in previous.get("articles", [])}
+    # Refresh existing research records when the relevance model changes.
+    for existing in articles.values():
+        if "editorial_candidate" not in existing:
+            quality = evaluate(existing.get("title",""), existing.get("summary_excerpt",""))
+            existing.update(category=quality["category"], relevance_score=quality["relevance_score"],
+                editorial_candidate=bool(quality["editorial_candidate"] and existing.get("published_precision","timestamp") == "timestamp"),
+                relevance_evidence=quality["evidence"],
+                published_precision=existing.get("published_precision","timestamp"))
     results, new_count = [], 0
     for name, url in SOURCES:
         row = {"source": name, "url": url, "connected": False, "items_seen": 0, "fresh": 0, "new": 0}
         try:
             raw, status = fetcher(url)
-            items, rejected, seen = parse_feed(raw, name, now, hours)
-            row.update({"connected": True, "http_status": status, "items_seen": seen, "fresh": len(items), "relevant": sum(x["keyword_matches"] > 0 for x in items), "rejected": rejected})
+            date_precision = "day" if name in DAY_PRECISION_SOURCES else "timestamp"
+            items, rejected, seen = parse_feed(raw, name, now, hours, date_precision=date_precision)
+            row.update({"connected": True, "http_status": status, "items_seen": seen, "fresh": sum(x["published_precision"] == "timestamp" for x in items),
+                "date_only": sum(x["published_precision"] == "day" for x in items),
+                "relevant": sum(x["editorial_candidate"] for x in items), "rejected": rejected})
             for item in items:
                 if item["id"] not in articles:
                     new_count += 1
@@ -158,11 +182,13 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
     cutoff = now - timedelta(days=7)
     retained = [v for v in articles.values() if datetime.fromisoformat(v["published_utc"]) >= cutoff]
     retained.sort(key=lambda x: x["published_utc"], reverse=True)
-    unique_titles = {re.sub(r"[^a-z0-9]+", " ", x["title"].lower()).strip() for x in retained}
+    unique_titles = {normalized_event_title(x["title"]) for x in retained}
     run = {"run_utc": now.isoformat(), "feeds_connected": sum(x["connected"] for x in results),
            "feeds_checked": len(results), "fresh_entries": sum(x["fresh"] for x in results),
            "new_article_links": new_count, "relevant_fresh_entries": sum(x.get("relevant", 0) for x in results), "distinct_article_links_7d": len(retained),
-           "approx_distinct_titles_7d": len(unique_titles), "sources": results}
+           "approx_distinct_titles_7d": len(unique_titles),
+           "date_only_entries": sum(x.get("date_only",0) for x in results),
+           "editorial_candidate_links_7d": sum(x.get("editorial_candidate",False) for x in retained), "sources": results}
     runs = [x for x in previous.get("runs", []) if datetime.fromisoformat(x["run_utc"]) >= cutoff]
     runs.append({k: run[k] for k in ("run_utc", "feeds_connected", "feeds_checked", "fresh_entries", "new_article_links")})
     outdir.mkdir(parents=True, exist_ok=True)
@@ -172,16 +198,23 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
     temp.replace(state_path)
     (outdir / "latest.json").write_text(json.dumps(run, indent=2) + "\n", encoding="utf-8")
     (outdir / "articles.json").write_text(json.dumps(retained, indent=2) + "\n", encoding="utf-8")
-    candidates = [x for x in retained if x["keyword_matches"] > 0]
+    candidates = sorted((x for x in retained if x.get("editorial_candidate")), key=lambda x:(x.get("relevance_score",0), x["published_utc"]), reverse=True)
+    # Per-publication-date volumes are independent of collection-date activity.
+    by_day = Counter(x["published_utc"][:10] for x in retained if x.get("published_precision", "timestamp") == "timestamp")
+    candidates_by_day = Counter(x["published_utc"][:10] for x in candidates)
+    date_only_by_day = Counter(x["published_utc"][:10] for x in retained if x.get("published_precision") == "day")
+    days = sorted(set(by_day) | set(candidates_by_day) | set(date_only_by_day))
+    volumes = [{"publication_date_utc":d,"source_links":by_day[d],"editorial_candidates":candidates_by_day[d],"regulatory_date_only_leads":date_only_by_day[d]} for d in days]
+    (outdir / "volume_7d.json").write_text(json.dumps({"run_utc":now.isoformat(), "days":volumes, "definitions":"Publisher-date link counts, not unique independently verified events or collection-day counts."},indent=2) + "\n", encoding="utf-8")
     (outdir / "editorial_candidates.json").write_text(json.dumps(candidates, indent=2) + "\n", encoding="utf-8")
     lines = ["# EnergyBrew — live RSS collection", "",
              f"Run: {run['run_utc']}", f"Successfully parsed feeds: **{run['feeds_connected']}/{run['feeds_checked']}**",
-             f"Fresh feed entries (raw): **{run['fresh_entries']}**", f"Relevant fresh entries: **{run['relevant_fresh_entries']}**", f"New links: **{new_count}**",
+             f"Fresh timestamped entries: **{run['fresh_entries']}**", f"Editorial candidates (timestamped): **{run['relevant_fresh_entries']}**", f"Regulatory date-only leads: **{run['date_only_entries']}**", f"New stored links (all precision levels): **{new_count}**",
              f"Distinct article links in 7-day state: **{len(retained)}**", "",
-             "| Source | Connected | Fresh | Relevant | New | Error |", "|---|---|---:|---:|---:|---|"]
+             "| Source | Connected | Timestamped | Date-only | Candidates | New | Error |", "|---|---|---:|---:|---:|---:|---|"]
     for r in results:
         err = r.get("error", "").replace("|", "/")
-        lines.append(f"| {r['source']} | {r['connected']} | {r['fresh']} | {r.get('relevant', 0)} | {r['new']} | {err} |")
+        lines.append(f"| {r['source']} | {r['connected']} | {r['fresh']} | {r.get('date_only',0)} | {r.get('relevant', 0)} | {r['new']} | {err} |")
     lines += ["", "Source-linked metadata is for private editorial research only. Dates come from publishers' publication fields, not HTTP crawl times.", "No newsletter publication or subscriber email occurs."]
     (outdir / "latest.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     return run
