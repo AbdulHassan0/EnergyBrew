@@ -47,13 +47,13 @@ class CollectorTests(unittest.TestCase):
             out = Path(d) / "out"
             fetch = fixture_fetch
             first = collect(state, out, now=NOW, fetcher=fetch)
-            self.assertEqual(first["feeds_connected"], 9)
-            self.assertEqual(first["relevant_fresh_entries"], 8)
-            self.assertEqual(len(json.loads((out/"editorial_candidates.json").read_text())), 8)
-            self.assertEqual(first["new_article_links"], 9)  # source identities are independent
+            self.assertEqual(first["feeds_connected"], 10)
+            self.assertEqual(first["relevant_fresh_entries"], 9)
+            self.assertEqual(len(json.loads((out/"editorial_candidates.json").read_text())), 9)
+            self.assertEqual(first["new_article_links"], 10)  # source identities are independent
             second = collect(state, out, now=NOW + timedelta(hours=1), fetcher=fetch)
             self.assertEqual(second["new_article_links"], 0)
-            self.assertEqual(len(json.loads(state.read_text())["articles"]), 9)
+            self.assertEqual(len(json.loads(state.read_text())["articles"]), 10)
             self.assertEqual(len(json.loads(state.read_text())["runs"]), 2)
 
     def test_relevance_requires_sector_context(self):
@@ -77,9 +77,9 @@ class CollectorTests(unittest.TestCase):
             volumes = json.loads((out/"volume_7d.json").read_text())
             self.assertEqual(report["relevant_fresh_entries"], 8)
             self.assertEqual(report["date_only_entries"], 1)
-            self.assertEqual(volumes["days"][0]["editorial_candidates"], 8)
+            self.assertEqual(volumes["days"][0]["editorial_candidates"], 9)
             self.assertEqual(volumes["days"][0]["regulatory_date_only_leads"], 1)
-            self.assertEqual(len(json.loads((out/"editorial_candidates.json").read_text())), 8)
+            self.assertEqual(len(json.loads((out/"editorial_candidates.json").read_text())), 9)
 
     def test_old_federal_register_duplication_is_folded_by_url(self):
         with tempfile.TemporaryDirectory() as d:
@@ -93,7 +93,7 @@ class CollectorTests(unittest.TestCase):
             self.assertEqual(len(duplicated),1)
             self.assertEqual(duplicated[0]["source"],"Federal Register notices")
             self.assertFalse(duplicated[0]["editorial_candidate"])
-            self.assertEqual(report["distinct_article_links_7d"],10)
+            self.assertEqual(report["distinct_article_links_7d"],11)
 
     def test_failure_is_visible(self):
         with tempfile.TemporaryDirectory() as d:
@@ -101,7 +101,7 @@ class CollectorTests(unittest.TestCase):
                 raise OSError("offline")
             report = collect(Path(d)/"db.json", Path(d)/"out", now=NOW, fetcher=fail)
             self.assertEqual(report["feeds_connected"], 0)
-            self.assertEqual(len(report["sources"]), 9)
+            self.assertEqual(len(report["sources"]), 10)
             self.assertIn("offline", (Path(d)/"out/latest.md").read_text())
 
     def test_invalid_existing_state_is_not_overwritten(self):
