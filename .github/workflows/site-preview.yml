@@ -7,6 +7,10 @@ on:
       - "frontend/**"
       - "site_builder.py"
       - "tests/test_site_builder.py"
+      - "newsletter.py"
+      - "newsletter_delivery.py"
+      - "newsletter/editions/**"
+      - "tests/test_newsletter.py"
       - ".github/workflows/site-preview.yml"
   schedule:
     - cron: "43 */2 * * *"
@@ -49,6 +53,8 @@ jobs:
       - name: Build frontend with real research leads
         run: |
           python site_builder.py --desk latest-state/desk_latest.json --metrics latest-state/metrics_latest.json --health latest-state/health_latest.json --assets frontend --out dist
+      - name: Render approved newsletter archive (no draft may publish)
+        run: python newsletter.py archive --editions newsletter/editions --site dist/editions --email-out output/newsletter/published
       - name: Save preview artifact (works even before Pages setup)
         uses: actions/upload-artifact@v4
         with:
