@@ -101,7 +101,7 @@ class DeskTests(unittest.TestCase):
         d=global_lead(title="Students empowered to conserve electricity")
         r=assemble([], [d], releases, now=NOW)
         self.assertLessEqual(sum(x["origin"]=="company_announcement" for x in r["stories"]),2)
-        self.assertTrue(any("low_commercial_impact" in x["needs_editor_review"] for x in r["stories"]))
+        self.assertFalse(any(x["title"] == d["title"] for x in r["stories"]))  # filtered before selection
 
     def test_infrastructure_as_secondary_topic(self):
         r=assemble([official(title="Gas pipeline expansion for LNG exports")], [], [], now=NOW)
