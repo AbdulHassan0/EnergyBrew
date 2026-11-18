@@ -23,6 +23,7 @@ SOURCES = [
     ("EIA Presentations", "https://www.eia.gov/rss/presentations.xml"),
     ("DOE Energy News", "https://www.energy.gov/rss/energygov/2193718"),
     ("DOE Grid Deployment", "https://www.energy.gov/rss/oe/4819948"),
+    ("US NRC Nuclear News", "https://www.nrc.gov/public-involve/rss?feed=news"),
     ("DOE Hydrocarbons Releases", "https://www.energy.gov/rss/hgeo/2282977"),
     ("DOE Hydrocarbons Blog", "https://www.energy.gov/rss/hgeo/2283029"),
     ("European Commission DG Energy", "https://energy.ec.europa.eu/node/2/rss_en"),
