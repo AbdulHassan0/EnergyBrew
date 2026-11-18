@@ -2,13 +2,15 @@
 
 ## Current stage
 
-The collector discovers real source links. The newsletter engine generates private review queues and email-ready layouts. **No collector lead is independently fact-checked, approved for publication, or licensed merely because it appeared in a feed.**
+The collector discovers real source links. The newsletter engine generates unapproved review queues and email-ready layouts. **No collector lead is independently fact-checked, approved for publication, or licensed merely because it appeared in a feed.**
 
-A weekday GitHub Action attempts to prepare a private editorial queue around **6:15 AM America/Chicago** (subject to scheduling delay). No email is sent. Once a human approves a 4–8-story edition and commits its JSON file, the website can publish an archive and generate email-ready HTML/text. Actual subscriber delivery is NOT enabled.
+A weekday GitHub Action attempts to prepare an unapproved editorial queue around **6:15 AM America/Chicago** (subject to scheduling delay). No email is sent. Once a human approves a 4–8-story edition and commits its JSON file, the website can publish an archive and generate email-ready HTML/text. Actual subscriber delivery is NOT enabled.
 
 ## 1. Get the draft
 
-Open https://github.com/AbdulHassan0/EnergyBrew/actions/workflows/morning-editorial.yml and click Run workflow. Download the private artifact named energybrew-private-editorial-draft.
+Open https://github.com/AbdulHassan0/EnergyBrew/actions/workflows/morning-editorial.yml and click Run workflow. Download the unapproved artifact named energybrew-editorial-draft-unapproved.
+
+The artifact contains only source-linked lead metadata. Because this repository is currently PUBLIC, GitHub Actions artifacts may also be publicly accessible; do not put private editorial notes, credentials, subscriber information, licensed article text, or confidential material in this output.
 
 The artifact contains:
 - review_queue.json — real headlines/links, attribution, date basis, and empty editorial summary fields.
@@ -31,7 +33,7 @@ Target about 500–700 total words for a five-minute issue; the validator enforc
 
 ## 3. Human editorial approval
 
-Keep the file name and issue date aligned: newsletter/editions/YYYY-MM-DD.json. The queue can be edited into an edition (schema_version=1).
+Keep the file name and issue date aligned: newsletter/editions/YYYY-MM-DD.json. IMPORTANT: this repository is PUBLIC; do not commit sensitive notes or private source material to it. The queue can be edited into an edition (schema_version=1).
 
 Only after final review:
 - Set status to approved.
