@@ -1,0 +1,99 @@
+name: EnergyBrew frequent global news discovery
+on:
+  workflow_dispatch:
+  schedule:
+    # The GDELT GAL feed represents a rolling ~15-minute sample.
+    # GitHub can delay scheduled runs; this is NOT guaranteed full coverage.
+    - cron: "7,22,37,52 * * * *"
+
+permissions:
+  contents: write
+
+# Same concurrency group as the main collector prevents state-branch races.
+concurrency:
+  group: energybrew-live-collector
+  cancel-in-progress: false
+
+jobs:
+  gal-sample:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Restrict research state to private repository
+        env:
+          REPO_PRIVATE: ${{ github.event.repository.private }}
+        run: |
+          test "$REPO_PRIVATE" = "true" || { echo "A private repository is required"; exit 1; }
+      - name: Validate parser and state behavior
+        run: python -m unittest discover -s tests -q
+      - name: Restore shared research history
+        run: |
+          mkdir -p state
+          if git ls-remote --exit-code --heads origin collector-state >/dev/null 2>&1; then
+            git fetch --no-tags origin collector-state
+            if git cat-file -e FETCH_HEAD:state/discovery.json 2>/dev/null; then
+              git show FETCH_HEAD:state/discovery.json > state/discovery.json
+            fi
+          fi
+      - name: Sample rolling global article list
+        id: gal
+        continue-on-error: true
+        run: python gal.py --state state/discovery.json --output output/gal
+      - name: Write sampling health summary
+        if: always()
+        run: |
+          if test -f output/gal/latest.md; then
+            cat output/gal/latest.md >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "No GAL report generated; sampling failed before report creation" >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: energybrew-gal-${{ github.run_id }}-${{ github.run_attempt }}
+          path: output/gal/
+          if-no-files-found: warn
+          retention-days: 3
+      - name: Persist shared discovery history and gap diagnostics
+        if: always()
+        run: |
+          if test ! -s state/discovery.json; then
+            echo "No valid discovery history to persist"
+            exit 0
+          fi
+          STATE_DIR="$RUNNER_TEMP/energybrew-gal-state"
+          if git ls-remote --exit-code --heads origin collector-state >/dev/null 2>&1; then
+            git fetch --no-tags origin collector-state
+            git worktree add --detach "$STATE_DIR" FETCH_HEAD
+            cd "$STATE_DIR"
+            git switch -c "update-gal-${GITHUB_RUN_ID}"
+          else
+            git worktree add --detach "$STATE_DIR" HEAD
+            cd "$STATE_DIR"
+            git switch --orphan collector-state
+            git rm -rf . >/dev/null 2>&1 || true
+          fi
+          mkdir -p state
+          cp "$GITHUB_WORKSPACE/state/discovery.json" state/discovery.json
+          if test -f "$GITHUB_WORKSPACE/output/gal/latest.json"; then
+            cp "$GITHUB_WORKSPACE/output/gal/latest.json" state/gal_latest.json
+            cp "$GITHUB_WORKSPACE/output/gal/latest.md" state/gal_latest.md
+            cp "$GITHUB_WORKSPACE/output/gal/leads_24h.json" state/research_leads_24h.json
+            cp "$GITHUB_WORKSPACE/output/gal/leads_7d.json" state/research_leads_7d.json
+          fi
+          git config user.name "EnergyBrew collector"
+          git config user.email "energybrew-bot@users.noreply.github.com"
+          git add -f state/
+          if ! git diff --cached --quiet; then
+            git commit -m "Record frequent GDELT sample ${GITHUB_RUN_ID}"
+            git push origin HEAD:collector-state
+          fi
+      - name: Fail visibly if global sample did not succeed
+        if: steps.gal.outcome == 'failure'
+        run: |
+          echo "GDELT global sample failed; see attached diagnostics" >&2
+          exit 1
