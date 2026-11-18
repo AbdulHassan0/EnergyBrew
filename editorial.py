@@ -20,6 +20,11 @@ BEATS = {
         "northwest pipeline": 10, "interstate pipeline": 10,
         "texas eastern": 9, "trunkline": 9, "transco": 9,
         "columbia gulf": 9, "gulf run": 10,
+        "cheniere": 13, "venture global": 13, "nextdecade": 12,
+        "golden pass": 12, "plaquemines lng": 12, "sabine pass": 11,
+        "freeport lng": 11, "cameron lng": 11, "woodside energy": 10,
+        "commonwealth lng": 11, "sempra infrastructure": 10,
+        "lng tanker": 10, "lng feedgas": 13, "gas basis": 10,
     },
     "Power & Electricity": {
         "electricity": 11, "power grid": 11, "grid reliability": 11,
@@ -30,6 +35,8 @@ BEATS = {
         "ercot": 12, "pjm": 10, "miso": 10, "caiso": 10, "nyiso": 10,
         "iso-ne": 10, "offshore wind": 9, "electrification": 5,
         "nuclear plant": 9, "utility rates": 7, "power prices": 10,
+        "vistra": 10, "calpine": 10, "nrg energy": 10,
+        "southwest power pool": 10, "iso new england": 10,
     },
     "Oil & Energy": {
         "crude oil": 12, "brent": 11, "wti": 11, "oil prices": 11,
@@ -37,6 +44,8 @@ BEATS = {
         "refinery": 10, "petroleum": 9, "opec": 10, "drilling": 7,
         "gasoline": 8, "diesel": 7, "oilfield": 7, "oil and gas": 10,
         "upstream": 7, "offshore production": 10,
+        "chevron": 11, "exxonmobil": 11, "exxon mobil": 11,
+        "conocophillips": 11, "diamondback energy": 9,
     },
     "Infrastructure & Investment": {
         "pipeline project": 10, "pipeline expansion": 12,
@@ -46,6 +55,8 @@ BEATS = {
         "gas infrastructure": 10, "grid expansion": 10,
         "transmission project": 10, "ferc": 7,
         "pipeline approval": 12, "lng project": 10,
+        "kinder morgan": 10, "energy transfer": 9,
+        "williams companies": 9, "pipeline takeaway": 10,
     },
 }
 
