@@ -142,6 +142,38 @@ class CollectorTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 collect(state,Path(d)/"out",now=NOW,fetcher=fixture_fetch)
 
+    def test_http_503_rss_body_is_not_a_successful_connection(self):
+        with tempfile.TemporaryDirectory() as d:
+            r=collect(Path(d)/"db.json",Path(d)/"out",now=NOW,
+                      fetcher=lambda url:(sample(),503))
+            self.assertEqual(r["scan_state"],"critical")
+            self.assertEqual(r["feeds_connected"],0)
+
+    def test_single_connected_feed_fails_minimum_quorum(self):
+        with tempfile.TemporaryDirectory() as d:
+            state=Path(d)/"db.json"
+            def one(url):
+                if url==SOURCES[0][1]:
+                    return sample(),200
+                raise OSError("offline")
+            r=collect(state,Path(d)/"out",now=NOW,fetcher=one)
+            self.assertEqual(r["feeds_connected"],1)
+            self.assertEqual(r["scan_state"],"critical")
+            second=collect(state,Path(d)/"out",now=NOW+timedelta(hours=1),fetcher=one)
+            self.assertEqual(second["scan_state"],"critical")
+            history=json.loads(state.read_text())
+            self.assertEqual(history["source_health"][SOURCES[1][0]]["consecutive_failures"],2)
+            self.assertEqual(history["source_health"][SOURCES[0][0]]["consecutive_successes"],2)
+
+    def test_zero_new_headlines_is_success_if_feeds_parse(self):
+        with tempfile.TemporaryDirectory() as d:
+            state=Path(d)/"db.json"
+            r=collect(state,Path(d)/"out",now=NOW,fetcher=fixture_fetch)
+            self.assertEqual(r["scan_state"],"healthy")
+            second=collect(state,Path(d)/"out",now=NOW+timedelta(hours=1),fetcher=fixture_fetch)
+            self.assertEqual(second["new_article_links"],0)
+            self.assertEqual(second["scan_state"],"healthy")
+
     def test_invalid_existing_state_is_not_overwritten(self):
         with tempfile.TemporaryDirectory() as d:
             state = Path(d)/"db.json"

@@ -44,6 +44,7 @@ KEYWORDS = {
 USER_AGENT = "EnergyBrewResearchCollector/1.0 (+https://github.com/AbdulHassan0/EnergyBrew)"
 DROP_PARAMS = {"utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "fbclid", "gclid", "access_token", "apikey", "api_key", "auth", "sessionid", "password", "token"}
 MAX_BYTES = 2_000_000
+MIN_HEALTHY_FEED_RATIO = 0.8
 # Federal Register is an official daily publication: the date is meaningful,
 # but its feed clock is NOT evidence of an intraday publication timestamp.
 DAY_PRECISION_SOURCES = {"Federal Register notices"}
@@ -169,7 +170,7 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
         except (ValueError, OSError):
             raise ValueError("Existing state unreadable; refusing to erase its history")
     else:
-        previous = {"articles": [], "runs": []}
+        previous = {"articles": [], "runs": [], "source_health": {}}
     if not isinstance(previous, dict) or not isinstance(previous.get("articles"), list) or not isinstance(previous.get("runs"), list):
         raise ValueError("Invalid publisher state schema; refusing to overwrite history")
     articles = {}
@@ -205,11 +206,16 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
             editorial_candidate=bool(quality["editorial_candidate"] and existing.get("published_precision","timestamp") == "timestamp"),
             relevance_evidence=quality["evidence"],
             published_precision=existing.get("published_precision","timestamp"))
+    old_source_health = previous.get("source_health", {})
+    if not isinstance(old_source_health, dict):
+        raise ValueError("Existing source health malformed; refusing overwrite")
     results, new_count = [], 0
     for name, url in SOURCES:
         row = {"source": name, "url": url, "connected": False, "items_seen": 0, "fresh": 0, "new": 0}
         try:
             raw, status = fetcher(url)
+            if not isinstance(status, int) or not 200 <= status < 300:
+                raise ValueError(f"Source returned HTTP {status} rather than a successful feed response")
             date_precision = "day" if name in DAY_PRECISION_SOURCES else "timestamp"
             items, rejected, seen = parse_feed(raw, name, now, hours, date_precision=date_precision)
             row.update({"connected": True, "http_status": status, "items_seen": seen, "fresh": sum(x["published_precision"] == "timestamp" for x in items),
@@ -237,6 +243,21 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
         except Exception as exc:
             row["error"] = f"{type(exc).__name__}: {str(exc)[:220]}"
         results.append(row)
+    source_health = {}
+    for row in results:
+        name = row["source"]
+        prior = old_source_health.get(name, {})
+        prior = prior if isinstance(prior, dict) else {}
+        success = bool(row["connected"])
+        source_health[name] = {
+            "last_attempt_utc": now.isoformat(),
+            "last_success_utc": now.isoformat() if success else prior.get("last_success_utc"),
+            "last_failure_utc": prior.get("last_failure_utc") if success else now.isoformat(),
+            "consecutive_failures": 0 if success else max(0, int(prior.get("consecutive_failures", 0))) + 1,
+            "consecutive_successes": max(0, int(prior.get("consecutive_successes", 0))) + 1 if success else 0,
+            "last_items_seen": row.get("items_seen") if success else prior.get("last_items_seen"),
+            "last_error_type": None if success else row.get("error", "").split(":", 1)[0][:80],
+        }
     cutoff = now - timedelta(days=7)
     retained = []
     for v in articles.values():
@@ -248,7 +269,15 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
             continue
     retained.sort(key=lambda x: x["published_utc"], reverse=True)
     unique_titles = {normalized_event_title(x["title"]) for x in retained}
-    run = {"run_utc": now.isoformat(), "feeds_connected": sum(x["connected"] for x in results),
+    connected_count = sum(bool(x["connected"]) for x in results)
+    connection_ratio = connected_count / len(results) if results else 0
+    scan_state = ("healthy" if results and connected_count == len(results)
+                  else "degraded" if connected_count and connection_ratio >= MIN_HEALTHY_FEED_RATIO
+                  else "critical")
+    run = {"run_utc": now.isoformat(), "scan_state": scan_state,
+           "connection_ratio": round(connection_ratio, 3),
+           "feeds_failed": len(results) - connected_count,
+           "feeds_connected": connected_count,
            "feeds_checked": len(results), "fresh_entries": sum(x["fresh"] for x in results),
            "new_article_links": new_count, "relevant_fresh_entries": sum(x.get("relevant", 0) for x in results), "distinct_article_links_7d": len(retained),
            "approx_distinct_titles_7d": len(unique_titles),
@@ -256,7 +285,7 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
            "editorial_candidate_links_7d": sum(x.get("editorial_candidate",False) for x in retained),
            "editorial_candidates_24h": sum(x.get("editorial_candidate",False) and datetime.fromisoformat(x["published_utc"]) >= now - timedelta(hours=24) for x in retained),
            "regulatory_watch_links_7d": sum(x.get("published_precision")=="day" and x.get("relevance_score",0)>=22 for x in retained),
-           "sources": results}
+           "sources": results, "source_health": source_health}
     runs = []
     for x in previous["runs"]:
         if not isinstance(x, dict):
@@ -267,11 +296,11 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
                 runs.append(x)
         except (KeyError, ValueError, TypeError):
             continue
-    runs.append({k: run[k] for k in ("run_utc", "feeds_connected", "feeds_checked", "fresh_entries", "new_article_links")})
+    runs.append({k: run[k] for k in ("run_utc", "feeds_connected", "feeds_checked", "feeds_failed", "scan_state", "fresh_entries", "new_article_links")})
     outdir.mkdir(parents=True, exist_ok=True)
     state_path.parent.mkdir(parents=True, exist_ok=True)
     temp = state_path.with_suffix(".tmp")
-    temp.write_text(json.dumps({"articles": retained, "runs": runs}, indent=2) + "\n", encoding="utf-8")
+    temp.write_text(json.dumps({"articles": retained, "runs": runs, "source_health": source_health}, indent=2) + "\n", encoding="utf-8")
     temp.replace(state_path)
     (outdir / "latest.json").write_text(json.dumps(run, indent=2) + "\n", encoding="utf-8")
     (outdir / "articles.json").write_text(json.dumps(retained, indent=2) + "\n", encoding="utf-8")
@@ -292,6 +321,7 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
     (outdir / "regulatory_watch.json").write_text(json.dumps(regulatory_watch,indent=2) + "\n",encoding="utf-8")
     lines = ["# EnergyBrew — live RSS collection", "",
              f"Run: {run['run_utc']}", f"Successfully parsed feeds: **{run['feeds_connected']}/{run['feeds_checked']}**",
+             f"Source connectivity: **{run['scan_state']}** ({run['feeds_failed']} feeds failed)",
              f"Fresh timestamped entries: **{run['fresh_entries']}**", f"Editorial candidates (in collection window): **{run['relevant_fresh_entries']}**", f"Editorial candidates (last 24h): **{run['editorial_candidates_24h']}**", f"Regulatory date-only feed entries: **{run['date_only_entries']}**", f"Regulatory watchlist links (7 days): **{run['regulatory_watch_links_7d']}**", f"New unique links (all precision levels): **{new_count}**",
              f"Distinct article links in 7-day state: **{len(retained)}**", "",
              "| Source | Connected | Timestamped | Date-only | Candidates | New | Error |", "|---|---|---:|---:|---:|---:|---|"]
@@ -312,7 +342,7 @@ def main(argv=None):
         parser.error("--hours must be 1..168")
     result = collect(Path(args.state), Path(args.output), hours=args.hours)
     print(json.dumps({k: v for k, v in result.items() if k != "sources"}, indent=2))
-    return 0 if result["feeds_connected"] else 2
+    return 2 if result["scan_state"] == "critical" else 0
 
 if __name__ == "__main__":
     sys.exit(main())
