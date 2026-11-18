@@ -1,21 +1,30 @@
 {
-  "generated_utc": "2026-11-18T19:37:26.628801+00:00",
+  "generated_utc": "2026-11-18T20:55:33.466168+00:00",
   "status": "degraded",
   "seven_day_pilot_complete": false,
-  "history_span_days": 0.34,
-  "official_scan_runs": 33,
-  "gal_sample_runs": 26,
-  "gal_successful_samples": 26,
+  "history_span_days": 0.39,
+  "official_scan_runs": 34,
+  "official_successful_scans": 34,
+  "official_failed_scans": 0,
+  "gal_sample_runs": 27,
+  "gal_successful_samples": 27,
   "gal_failed_samples": 0,
   "observed_sampling_gaps": [
     {
       "from_utc": "2026-11-18T19:12:58.126745+00:00",
       "to_utc": "2026-11-18T19:37:21.469201+00:00",
       "minutes": 24.4
+    },
+    {
+      "from_utc": "2026-11-18T19:37:21.469201+00:00",
+      "to_utc": "2026-11-18T20:55:27.932996+00:00",
+      "minutes": 78.1
     }
   ],
-  "latest_official_scan_utc": "2026-11-18T19:37:19.506249+00:00",
-  "latest_gal_sample_utc": "2026-11-18T19:37:21.469201+00:00",
+  "latest_official_scan_utc": "2026-11-18T20:54:52.910239+00:00",
+  "latest_official_attempt_utc": "2026-11-18T20:54:52.910239+00:00",
+  "latest_gal_attempt_utc": "2026-11-18T20:55:27.932996+00:00",
+  "latest_gal_sample_utc": "2026-11-18T20:55:27.932996+00:00",
   "daily": [
     {
       "date_utc": "2026-11-12",
@@ -25,7 +34,10 @@
       "high_signal_official_links": 0,
       "gdelt_index_first_seen_urls": 0,
       "press_release_feed_date_urls": 0,
-      "scanning_observed": false
+      "scanning_observed": false,
+      "successful_official_scans": 0,
+      "successful_gal_samples": 0,
+      "successful_scanning_observed": false
     },
     {
       "date_utc": "2026-11-13",
@@ -35,7 +47,10 @@
       "high_signal_official_links": 0,
       "gdelt_index_first_seen_urls": 0,
       "press_release_feed_date_urls": 0,
-      "scanning_observed": false
+      "scanning_observed": false,
+      "successful_official_scans": 0,
+      "successful_gal_samples": 0,
+      "successful_scanning_observed": false
     },
     {
       "date_utc": "2026-11-14",
@@ -45,7 +60,10 @@
       "high_signal_official_links": 0,
       "gdelt_index_first_seen_urls": 0,
       "press_release_feed_date_urls": 0,
-      "scanning_observed": false
+      "scanning_observed": false,
+      "successful_official_scans": 0,
+      "successful_gal_samples": 0,
+      "successful_scanning_observed": false
     },
     {
       "date_utc": "2026-11-15",
@@ -55,7 +73,10 @@
       "high_signal_official_links": 0,
       "gdelt_index_first_seen_urls": 0,
       "press_release_feed_date_urls": 0,
-      "scanning_observed": false
+      "scanning_observed": false,
+      "successful_official_scans": 0,
+      "successful_gal_samples": 0,
+      "successful_scanning_observed": false
     },
     {
       "date_utc": "2026-11-16",
@@ -65,7 +86,10 @@
       "high_signal_official_links": 1,
       "gdelt_index_first_seen_urls": 0,
       "press_release_feed_date_urls": 0,
-      "scanning_observed": false
+      "scanning_observed": false,
+      "successful_official_scans": 0,
+      "successful_gal_samples": 0,
+      "successful_scanning_observed": false
     },
     {
       "date_utc": "2026-11-17",
@@ -75,21 +99,27 @@
       "high_signal_official_links": 1,
       "gdelt_index_first_seen_urls": 0,
       "press_release_feed_date_urls": 0,
-      "scanning_observed": false
+      "scanning_observed": false,
+      "successful_official_scans": 0,
+      "successful_gal_samples": 0,
+      "successful_scanning_observed": false
     },
     {
       "date_utc": "2026-11-18",
-      "official_scans": 33,
-      "gal_samples": 26,
+      "official_scans": 34,
+      "gal_samples": 27,
       "publisher_timestamped_official_links": 2,
       "high_signal_official_links": 1,
-      "gdelt_index_first_seen_urls": 79,
+      "gdelt_index_first_seen_urls": 87,
       "press_release_feed_date_urls": 5,
-      "scanning_observed": true
+      "scanning_observed": true,
+      "successful_official_scans": 34,
+      "successful_gal_samples": 27,
+      "successful_scanning_observed": true
     }
   ],
   "warnings": [
-    "1 observed GAL intervals exceeded 20 minutes",
+    "2 observed GAL intervals exceeded 20 minutes",
     "Seven-day operating pilot is not yet complete"
   ],
   "definitions": "Article totals are source links, GAL totals are index-first-seen links. Neither measures independently verified news events. Blank scan history does not mean zero energy stories."

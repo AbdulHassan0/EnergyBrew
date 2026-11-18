@@ -1,7 +1,7 @@
 {
   "articles": [
     {
-      "id": "cda6dc699f7c33c7d58f5d69",
+      "id": "08c2f3b512606a6b7a68c0c7",
       "title": "Energy Secretary Acts to Protect Mid-Atlantic Grid",
       "url": "https://www.energy.gov/articles/energy-secretary-acts-protect-mid-atlantic-grid-0",
       "source": "DOE Energy News",
@@ -12,30 +12,26 @@
       "keyword_matches": 0,
       "editorial_candidate": false,
       "relevance_evidence": [],
-      "status": "research_only_unverified",
-      "summary_excerpt": "Secretary Wright issues emergency order to stabilize the mid-Atlantic grid and minimize the risk of energy shortfalls in 13 states and the District of Columbia."
+      "status": "research_only_unverified"
     },
     {
-      "id": "ae66f5a441d649c4ee553197",
+      "id": "a4c390e9c48b4825355d9bf6",
       "title": "U.S. natural gas inventories end injection season above normal levels",
       "url": "https://www.eia.gov/todayinenergy/detail.php?id=68484",
       "source": "EIA Today in Energy",
       "published_utc": "2026-11-18T14:00:00+00:00",
       "category": "Natural Gas & LNG",
       "published_precision": "timestamp",
-      "relevance_score": 54,
+      "relevance_score": 36,
       "keyword_matches": 3,
       "editorial_candidate": true,
       "relevance_evidence": [
-        "gas demand",
-        "gas storage",
         "natural gas"
       ],
-      "status": "research_only_unverified",
-      "summary_excerpt": "Working natural gas in storage in the Lower 48 states ended the natural gas injection season at 3,810 billion cubic feet (Bcf), exceeding the five-year average by almost 2%, according to estimates based on data from our Weekly Natural Gas Storage Report released on November 12. Injection season runs April 1\u2013October 31, the months of typically lower"
+      "status": "research_only_unverified"
     },
     {
-      "id": "8665b5fa7cf65bb8499f6074",
+      "id": "941d6aa5712d82895a1180c3",
       "title": "Village of Swanton, Vermont; Notice of Availability of Environmental Assessment",
       "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23447/village-of-swanton-vermont-notice-of-availability-of-environmental-assessment",
       "source": "Federal Register notices",
@@ -47,11 +43,10 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_date_only",
-      "summary_excerpt": "",
       "also_seen_in": []
     },
     {
-      "id": "30ba38eaff50faedcc851a5f",
+      "id": "e4ec4d63fc6d664805180f16",
       "title": "Algonquin Gas Transmission, LLC; Notice of Application and Establishing Intervention Deadline",
       "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23446/algonquin-gas-transmission-llc-notice-of-application-and-establishing-intervention-deadline",
       "source": "Federal Register notices",
@@ -66,11 +61,10 @@
         "gas transmission"
       ],
       "status": "research_date_only",
-      "summary_excerpt": "",
       "also_seen_in": []
     },
     {
-      "id": "7a2ec88b72be924d25c3b649",
+      "id": "872408023224602e365aa957",
       "title": "Commission Information Collection Activities (FERC-510); Comment Request; Extension",
       "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23443/commission-information-collection-activities-ferc-510-comment-request-extension",
       "source": "Federal Register notices",
@@ -84,11 +78,10 @@
         "ferc"
       ],
       "status": "research_date_only",
-      "summary_excerpt": "In compliance with the requirements of the Paperwork Reduction Act of 1995, the Federal Energy Regulatory Commission (Commission or FERC) is submitting its information collection, FERC-510 Application for Surrender of Hydropower License (OMB No 1902-0068), to the Office of Management and Budget (OMB) for review of the information collection require",
       "also_seen_in": []
     },
     {
-      "id": "0d8a56694544e3678a261637",
+      "id": "ea327fca2f5987c8cb30074d",
       "title": "Natural Gas Pipeline of America, LLC; Horizon Pipeline Company, LLC; Notice of Schedule for the Preparation of an Environmental Assessment for the North Extension Project",
       "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23442/natural-gas-pipeline-of-america-llc-horizon-pipeline-company-llc-notice-of-schedule-for-the",
       "source": "Federal Register notices",
@@ -103,11 +96,10 @@
         "natural gas"
       ],
       "status": "research_date_only",
-      "summary_excerpt": "",
       "also_seen_in": []
     },
     {
-      "id": "3456765e9445da5616288490",
+      "id": "98cf091cac76154ba0c0feae",
       "title": "Northwest Pipeline, LLC; Notice of Scoping Period Requesting Comments on Environmental Issues for the Planned Silver Spur Project and Notice of Public Scoping Sessions",
       "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23441/northwest-pipeline-llc-notice-of-scoping-period-requesting-comments-on-environmental-issues-for-the",
       "source": "Federal Register notices",
@@ -121,11 +113,10 @@
         "northwest pipeline"
       ],
       "status": "research_date_only",
-      "summary_excerpt": "",
       "also_seen_in": []
     },
     {
-      "id": "074e269d7033fafdaa6f4711",
+      "id": "bed15f845edb11135b95d102",
       "title": "Combined Notice of Filings",
       "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23440/combined-notice-of-filings",
       "source": "Federal Register notices",
@@ -137,11 +128,10 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_date_only",
-      "summary_excerpt": "",
       "also_seen_in": []
     },
     {
-      "id": "c04d57175a62453af9b75f0f",
+      "id": "fd25cbdbea392f1946c4f864",
       "title": "Combined Notice of Filings #1",
       "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23439/combined-notice-of-filings-1",
       "source": "Federal Register notices",
@@ -153,11 +143,10 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_date_only",
-      "summary_excerpt": "",
       "also_seen_in": []
     },
     {
-      "id": "c9e8b573da110facfea359ee",
+      "id": "b459e408c77cd7bd46429ebe",
       "title": "Combined Notice of Filings #2",
       "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23436/combined-notice-of-filings-2",
       "source": "Federal Register notices",
@@ -169,11 +158,10 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_date_only",
-      "summary_excerpt": "",
       "also_seen_in": []
     },
     {
-      "id": "113a460f1e4ca2f43a802c1e",
+      "id": "08d34946ed67ba0847803fdd",
       "title": "EU endorses Global Electrification Pledge at COP31",
       "url": "https://ec.europa.eu/commission/presscorner/detail/en/jp_26_2465",
       "source": "European Commission DG Energy",
@@ -186,11 +174,10 @@
       "relevance_evidence": [
         "electrification"
       ],
-      "status": "research_only_unverified",
-      "summary_excerpt": "<p>The European Union has endorsed the 35-by-35 Global Electrification Pledge at the UN Climate Change Conference COP31 in Antalya, T\u00fcrkiye.</p>"
+      "status": "research_only_unverified"
     },
     {
-      "id": "c74e9cde38b0f7e611dfd199",
+      "id": "b71e65618f150209f9cf4a13",
       "title": "Commissioner J\u00f8rgensen in Poland to discuss energy and housing priorities",
       "url": "https://energy.ec.europa.eu/news/commissioner-jorgensen-poland-discuss-energy-and-housing-priorities-2026-11-18_en",
       "source": "European Commission DG Energy",
@@ -201,11 +188,10 @@
       "keyword_matches": 0,
       "editorial_candidate": false,
       "relevance_evidence": [],
-      "status": "research_only_unverified",
-      "summary_excerpt": "<p>From tomorrow until Monday, Commissioner for Energy and Housing Dan J\u00f8rgensen will be in Warsaw and Gda\u0144sk, Poland, to discuss with Polish decision makers and stakeholders about two key priorities for European citizens: affordable, secure and clean energy, and access to affordable housing.</p>"
+      "status": "research_only_unverified"
     },
     {
-      "id": "f97efca0b958dd5cc5095128",
+      "id": "0316553476cd350aeb58e704",
       "title": "Commission welcomes political agreement on faster and simpler permitting for grids, clean energy projects",
       "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2450",
       "source": "European Commission DG Energy",
@@ -216,29 +202,26 @@
       "keyword_matches": 0,
       "editorial_candidate": false,
       "relevance_evidence": [],
-      "status": "research_only_unverified",
-      "summary_excerpt": "<p>The European Commission welcomes the provisional political agreement reached by the European Parliament and the Council on new rules to simplify and accelerate permitting procedures for grids and clean energy infrastructure.</p>"
+      "status": "research_only_unverified"
     },
     {
-      "id": "7e064d8be7a07d1271b311e6",
+      "id": "a86b6bed4d391a5877a630e8",
       "title": "Energy Department Announces $2.8 Billion Loan to Strengthen Grid Reliability and Help Lower Costs in Wyoming",
       "url": "https://www.energy.gov/articles/energy-department-announces-28-billion-loan-strengthen-grid-reliability-and-help-lower",
       "source": "DOE Energy News",
       "published_utc": "2026-11-17T18:10:03+00:00",
       "category": "Power & Electricity",
       "published_precision": "timestamp",
-      "relevance_score": 44,
+      "relevance_score": 33,
       "keyword_matches": 2,
       "editorial_candidate": true,
       "relevance_evidence": [
-        "electricity",
         "grid reliability"
       ],
-      "status": "research_only_unverified",
-      "summary_excerpt": "The U.S. Department of Energy\u2019s Office of Energy Dominance Financing today announced a conditional loan commitment of up to $2.8 billion for Grid United\u2019s Wyoming Intertie project to lower electricity costs and strengthen grid reliability in Wyoming"
+      "status": "research_only_unverified"
     },
     {
-      "id": "12241b956c8e888ae2b3b800",
+      "id": "b9b1dbb35bdc6562fe0996b4",
       "title": "How does EIA account for small differences between energy supply and demand data?",
       "url": "https://www.eia.gov/todayinenergy/detail.php?id=68464",
       "source": "EIA Today in Energy",
@@ -249,11 +232,10 @@
       "keyword_matches": 0,
       "editorial_candidate": false,
       "relevance_evidence": [],
-      "status": "research_only_unverified",
-      "summary_excerpt": "EIA uses over 60 surveys to collect data on the U.S. energy sector's supply and demand. In theory, supply and demand should balance. In practice, we often have small differences between our total supply and total demand figures."
+      "status": "research_only_unverified"
     },
     {
-      "id": "2de83994e8b2123d3c333b83",
+      "id": "ae076784ea4fb7c3cced6add",
       "title": "Combined Notice of Filings",
       "url": "https://www.federalregister.gov/documents/2026/11/17/2026-23362/combined-notice-of-filings",
       "source": "Federal Register notices",
@@ -265,11 +247,10 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_date_only",
-      "summary_excerpt": "",
       "also_seen_in": []
     },
     {
-      "id": "bc3c2cd0f7a57f17e7c3cc9f",
+      "id": "892d8fe0c9f3d2a933e8a821",
       "title": "Eastern Shore Natural Gas Company; Notice of Scoping Period Requesting Comments on Environmental Issues for the Proposed Delmar Regional Enhancement Project",
       "url": "https://www.federalregister.gov/documents/2026/11/17/2026-23361/eastern-shore-natural-gas-company-notice-of-scoping-period-requesting-comments-on-environmental",
       "source": "Federal Register notices",
@@ -283,11 +264,10 @@
         "natural gas"
       ],
       "status": "research_date_only",
-      "summary_excerpt": "",
       "also_seen_in": []
     },
     {
-      "id": "3834c98e8041aff9a904aab6",
+      "id": "e2de177a128fd361cb35316a",
       "title": "Combined Notice of Filings #1",
       "url": "https://www.federalregister.gov/documents/2026/11/17/2026-23360/combined-notice-of-filings-1",
       "source": "Federal Register notices",
@@ -299,11 +279,10 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_date_only",
-      "summary_excerpt": "",
       "also_seen_in": []
     },
     {
-      "id": "4368871030d0e851e5f2582a",
+      "id": "fa385ccd9225ff73a54a985f",
       "title": "Sunshine Act Meeting Notice",
       "url": "https://www.federalregister.gov/documents/2026/11/17/2026-23359/sunshine-act-meeting-notice",
       "source": "Federal Register notices",
@@ -315,11 +294,10 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_date_only",
-      "summary_excerpt": "",
       "also_seen_in": []
     },
     {
-      "id": "0f36175897bee08b7d289bf9",
+      "id": "dd37359e8da1525f105294fe",
       "title": "In focus: Industrial carbon management \u2013 how it works and why we need it",
       "url": "https://energy.ec.europa.eu/news/focus-industrial-carbon-management-how-it-works-and-why-we-need-it-2026-11-17_en",
       "source": "European Commission DG Energy",
@@ -330,43 +308,37 @@
       "keyword_matches": 0,
       "editorial_candidate": false,
       "relevance_evidence": [],
-      "status": "research_only_unverified",
-      "summary_excerpt": "<p>Industrial carbon management is not a replacement for clean energy technologies. Rather, it offers solutions complementary to their rollout, and needed for the EU to become the world\u2019s first climate-neutral continent by 2050.</p>"
+      "status": "research_only_unverified"
     },
     {
-      "id": "524654500aa1fb2a69b3e9c6",
+      "id": "88828b568f9ea3a6778ac1d8",
       "title": "Commission approves amended German State aid schemes for energy-intensive companies",
       "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2456",
       "source": "European Commission DG Energy",
       "published_utc": "2026-11-16T23:00:00+00:00",
-      "category": "Power & Electricity",
+      "category": "Cross-sector",
       "published_precision": "timestamp",
-      "relevance_score": 11,
+      "relevance_score": 0,
       "keyword_matches": 1,
       "editorial_candidate": false,
-      "relevance_evidence": [
-        "electricity"
-      ],
-      "status": "research_only_unverified",
-      "summary_excerpt": "<p>The European Commission has approved, under EU State aid rules, Germany's amended schemes to compensate energy-intensive companies for indirect emission costs under the EU Emission Trading System (EU ETS) and for temporary electricity price relief under the CISAF and METSAF.</p>"
+      "relevance_evidence": [],
+      "status": "research_only_unverified"
     },
     {
-      "id": "e24c55fd82c64f9ce167d764",
+      "id": "341efc196ccfef7af0271025",
       "title": "Commission approves \u20ac9.5 billion Dutch State aid to support offshore wind energy",
       "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2457",
       "source": "European Commission DG Energy",
       "published_utc": "2026-11-16T23:00:00+00:00",
       "category": "Power & Electricity",
       "published_precision": "timestamp",
-      "relevance_score": 38,
+      "relevance_score": 27,
       "keyword_matches": 2,
       "editorial_candidate": true,
       "relevance_evidence": [
-        "electricity",
         "offshore wind"
       ],
-      "status": "research_only_unverified",
-      "summary_excerpt": "<p>The European Commission has approved, under EU State aid rules, a \u20ac9.5 billion Dutch scheme to support renewable electricity production from two offshore wind farms in the North Sea.</p>"
+      "status": "research_only_unverified"
     }
   ],
   "runs": [
@@ -596,6 +568,13 @@
     },
     {
       "run_utc": "2026-11-18T19:37:19.506249+00:00",
+      "feeds_connected": 11,
+      "feeds_checked": 11,
+      "fresh_entries": 10,
+      "new_article_links": 0
+    },
+    {
+      "run_utc": "2026-11-18T20:54:52.910239+00:00",
       "feeds_connected": 11,
       "feeds_checked": 11,
       "fresh_entries": 10,

@@ -1,6 +1,6 @@
 # EnergyBrew — live RSS collection
 
-Run: 2026-11-18T19:37:19.506249+00:00
+Run: 2026-11-18T20:54:52.910239+00:00
 Successfully parsed feeds: **11/11**
 Fresh timestamped entries: **10**
 Editorial candidates (in collection window): **3**
@@ -24,5 +24,5 @@ Distinct article links in 7-day state: **22**
 | European Commission DG Energy | True | 6 | 0 | 1 | 0 |  |
 | Federal Register notices | True | 0 | 12 | 0 | 0 |  |
 
-Source-linked metadata is for private editorial research only. Dates come from publishers' publication fields, not HTTP crawl times.
+Source-linked metadata only (no publisher article text). Dates come from publishers' publication fields, not HTTP crawl times.
 No newsletter publication or subscriber email occurs.

@@ -1,15 +1,15 @@
 {
-  "generated_utc": "2026-11-18T19:37:26.450903+00:00",
+  "generated_utc": "2026-11-18T20:55:33.246960+00:00",
   "status": "research_only_not_approved",
-  "unique_relevant_urls_7d": 62,
+  "unique_relevant_urls_7d": 70,
   "selected_research_links": 25,
   "unique_domains_in_selection": 22,
   "queue_counts": {
     "timestamped_official": 1,
     "regulatory_date_only": 4,
     "older_official_context": 2,
-    "company_release_unverified": 5,
-    "discovery_unverified": 50
+    "discovery_unverified": 58,
+    "company_release_unverified": 5
   },
   "selected_category_counts": {
     "Natural Gas & LNG": 8,
@@ -37,9 +37,8 @@
       "coverage_themes": [
         "Natural Gas & LNG"
       ],
-      "relevance_score": 45,
+      "relevance_score": 36,
       "relevance_evidence": [
-        "gas storage",
         "natural gas"
       ],
       "origin": "official_rss",
@@ -53,7 +52,7 @@
       "other_origins": [],
       "independent_corroboration_verified": false,
       "queue": "timestamped_official",
-      "rank": 120
+      "rank": 111
     },
     {
       "title": "Algonquin Gas Transmission, LLC; Notice of Application and Establishing Intervention Deadline",
@@ -120,9 +119,8 @@
         "Power & Electricity",
         "Infrastructure & Investment"
       ],
-      "relevance_score": 44,
+      "relevance_score": 33,
       "relevance_evidence": [
-        "electricity",
         "grid reliability"
       ],
       "origin": "official_rss",
@@ -136,34 +134,34 @@
       "other_origins": [],
       "independent_corroboration_verified": false,
       "queue": "older_official_context",
-      "rank": 94
+      "rank": 83
     },
     {
-      "title": "Commission approves €9.5 billion Dutch State aid to support offshore wind energy",
-      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2457",
-      "domain": "ec.europa.eu",
-      "source": "European Commission DG Energy",
-      "category": "Power & Electricity",
+      "title": "Rupee gains 31 paise against US dollar amid falling crude oil prices",
+      "url": "https://www.ibtimes.co.in/rupee-gains-31-paise-against-us-dollar-amid-falling-crude-oil-prices-908439",
+      "domain": "www.ibtimes.co.in",
+      "source": "GDELT GAL RSS",
+      "category": "Oil & Energy",
       "coverage_themes": [
-        "Power & Electricity"
+        "Oil & Energy"
       ],
-      "relevance_score": 38,
+      "relevance_score": 69,
       "relevance_evidence": [
-        "electricity",
-        "offshore wind"
+        "crude oil",
+        "oil prices"
       ],
-      "origin": "official_rss",
-      "time_basis": "publisher_feed_publication_time",
-      "observed_time_utc": "2026-11-16T23:00:00+00:00",
-      "publisher_time_verified": true,
-      "date_confidence": "publisher_rss_timestamp",
-      "within_24h_on_own_time_basis": false,
+      "origin": "global_discovery",
+      "time_basis": "discovery_index_first_seen_only",
+      "observed_time_utc": "2026-11-18T20:46:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
       "needs_editor_review": [],
       "editorial_status": "research_only_not_approved",
       "other_origins": [],
       "independent_corroboration_verified": false,
-      "queue": "older_official_context",
-      "rank": 88
+      "queue": "discovery_unverified",
+      "rank": 81
     },
     {
       "title": "Venture Global and China Gas Announce Increased Long-Term LNG Agreement",
@@ -191,6 +189,32 @@
       "independent_corroboration_verified": false,
       "queue": "company_release_unverified",
       "rank": 78
+    },
+    {
+      "title": "Commission approves €9.5 billion Dutch State aid to support offshore wind energy",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2457",
+      "domain": "ec.europa.eu",
+      "source": "European Commission DG Energy",
+      "category": "Power & Electricity",
+      "coverage_themes": [
+        "Power & Electricity"
+      ],
+      "relevance_score": 27,
+      "relevance_evidence": [
+        "offshore wind"
+      ],
+      "origin": "official_rss",
+      "time_basis": "publisher_feed_publication_time",
+      "observed_time_utc": "2026-11-16T23:00:00+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
+      "within_24h_on_own_time_basis": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "older_official_context",
+      "rank": 77
     },
     {
       "title": "Eastern Shore Natural Gas Company; Notice of Scoping Period Requesting Comments on Environmental Issues for the Proposed Delmar Regional Enhancement Project",
@@ -247,6 +271,32 @@
       "rank": 70
     },
     {
+      "title": "Golar LNG: 3 Key Takeaways for Long-Term Investors | The Motley Fool",
+      "url": "https://www.fool.com/earnings/takeaways/2026/11/18/golar-lng-3-key-takeaways-for-long-term-investors?source=iedfolrf0000001",
+      "domain": "www.fool.com",
+      "source": "GDELT GAL RSS",
+      "category": "Natural Gas & LNG",
+      "coverage_themes": [
+        "Natural Gas & LNG"
+      ],
+      "relevance_score": 39,
+      "relevance_evidence": [
+        "lng"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "discovery_index_first_seen_only",
+      "observed_time_utc": "2026-11-18T20:46:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 51
+    },
+    {
       "title": "GTT Energy receives an order from Hudong-Zhonghua Shipbuilding for the tank design of five new LNG Carriers",
       "url": "https://www.hellenicshippingnews.com/gtt-energy-receives-an-order-from-hudong-zhonghua-shipbuilding-for-the-tank-design-of-five-new-lng-carriers",
       "domain": "www.hellenicshippingnews.com",
@@ -273,21 +323,21 @@
       "rank": 51
     },
     {
-      "title": "Nasi sąsiedzi dogadali się z USA. Wielki kontrakt na LNG",
-      "url": "https://www.money.pl/gospodarka/czesi-stawiaja-na-usa-wielki-kontrakt-na-lng-7352418180843520a.html",
-      "domain": "www.money.pl",
+      "title": "Crude Oil Plummeting As Inventories Increase More Than Expected",
+      "url": "https://www.rttnews.com/story.aspx?Id=3716011",
+      "domain": "www.rttnews.com",
       "source": "GDELT GAL RSS",
-      "category": "Natural Gas & LNG",
+      "category": "Oil & Energy",
       "coverage_themes": [
-        "Natural Gas & LNG"
+        "Oil & Energy"
       ],
-      "relevance_score": 39,
+      "relevance_score": 36,
       "relevance_evidence": [
-        "lng"
+        "crude oil"
       ],
       "origin": "global_discovery",
       "time_basis": "discovery_index_first_seen_only",
-      "observed_time_utc": "2026-11-18T18:32:00+00:00",
+      "observed_time_utc": "2026-11-18T20:47:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
@@ -296,7 +346,7 @@
       "other_origins": [],
       "independent_corroboration_verified": false,
       "queue": "discovery_unverified",
-      "rank": 51
+      "rank": 48
     },
     {
       "title": "Why Iraq Just Fast-Tracked Chevron's Takeover Of A 14-Billion-Barrel Supergiant",
@@ -481,9 +531,61 @@
       "rank": 45
     },
     {
-      "title": "SC County Seeks Data Center Impact Study",
-      "url": "https://www.odwyerpr.com/story/public/25629/2026-11-18/sc-county-seeks-data-center-impact-study.html",
-      "domain": "www.odwyerpr.com",
+      "title": "WindAction | One week after the Kotoura wind power plant fire, scattered parts damaged local products",
+      "url": "https://www.windaction.org/posts/57083",
+      "domain": "www.windaction.org",
+      "source": "GDELT GAL RSS",
+      "category": "Power & Electricity",
+      "coverage_themes": [
+        "Power & Electricity"
+      ],
+      "relevance_score": 30,
+      "relevance_evidence": [
+        "power plant"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "discovery_index_first_seen_only",
+      "observed_time_utc": "2026-11-18T20:47:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 42
+    },
+    {
+      "title": "Mumford & Sons’ Ben Lovett to open new venue in NYC’s iconic Domino Sugar Refinery",
+      "url": "https://nypost.com/2026/11/18/us-news/mumford-sons-ben-lovett-to-open-new-venue-in-nycs-iconic-domino-sugar-refinery",
+      "domain": "nypost.com",
+      "source": "GDELT GAL RSS",
+      "category": "Oil & Energy",
+      "coverage_themes": [
+        "Oil & Energy"
+      ],
+      "relevance_score": 30,
+      "relevance_evidence": [
+        "refinery"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "discovery_index_first_seen_only",
+      "observed_time_utc": "2026-11-18T20:47:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 42
+    },
+    {
+      "title": "Texas resumes issuing data center air permits, regulator says",
+      "url": "https://kfgo.com/2026/11/18/texas-resumes-issuing-data-center-air-permits-regulator-says",
+      "domain": "kfgo.com",
       "source": "GDELT GAL RSS",
       "category": "Power & Electricity",
       "coverage_themes": [
@@ -495,7 +597,7 @@
       ],
       "origin": "global_discovery",
       "time_basis": "discovery_index_first_seen_only",
-      "observed_time_utc": "2026-11-18T19:32:00+00:00",
+      "observed_time_utc": "2026-11-18T20:47:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
@@ -518,32 +620,6 @@
       "relevance_score": 30,
       "relevance_evidence": [
         "gas infrastructure"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "discovery_index_first_seen_only",
-      "observed_time_utc": "2026-11-18T19:32:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 42
-    },
-    {
-      "title": "Texas resumes issuing data center air permits, regulator says",
-      "url": "https://wkzo.com/2026/11/18/texas-resumes-issuing-data-center-air-permits-regulator-says",
-      "domain": "wkzo.com",
-      "source": "GDELT GAL RSS",
-      "category": "Power & Electricity",
-      "coverage_themes": [
-        "Power & Electricity"
-      ],
-      "relevance_score": 30,
-      "relevance_evidence": [
-        "data center"
       ],
       "origin": "global_discovery",
       "time_basis": "discovery_index_first_seen_only",
@@ -600,84 +676,6 @@
       "origin": "global_discovery",
       "time_basis": "discovery_index_first_seen_only",
       "observed_time_utc": "2026-11-18T18:47:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 42
-    },
-    {
-      "title": "Russia’s Strangulation of Ukraine’s Sunflower Oil Production Will Have Global Impact",
-      "url": "https://www.kyivpost.com/post/90507",
-      "domain": "www.kyivpost.com",
-      "source": "GDELT GAL RSS",
-      "category": "Oil & Energy",
-      "coverage_themes": [
-        "Oil & Energy"
-      ],
-      "relevance_score": 30,
-      "relevance_evidence": [
-        "oil production"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "discovery_index_first_seen_only",
-      "observed_time_utc": "2026-11-18T18:32:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 42
-    },
-    {
-      "title": "Bahrain's war-hit Sitra refinery weeks away from full capacity, Bapco Energies CEO says | The National",
-      "url": "https://www.thenationalnews.com/business/energy/2026/11/18/bahrains-war-hit-sitra-refinery-weeks-away-from-full-capacity-bapco-energies-ceo-says",
-      "domain": "www.thenationalnews.com",
-      "source": "GDELT GAL RSS",
-      "category": "Oil & Energy",
-      "coverage_themes": [
-        "Oil & Energy"
-      ],
-      "relevance_score": 30,
-      "relevance_evidence": [
-        "refinery"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "discovery_index_first_seen_only",
-      "observed_time_utc": "2026-11-18T18:32:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 42
-    },
-    {
-      "title": "OPEC speaks up for fossil fuels at COP31 climate talks | MEO",
-      "url": "https://www.middle-east-online.com/en/opec-speaks-fossil-fuels-cop31-climate-talks",
-      "domain": "www.middle-east-online.com",
-      "source": "GDELT GAL RSS",
-      "category": "Oil & Energy",
-      "coverage_themes": [
-        "Oil & Energy"
-      ],
-      "relevance_score": 30,
-      "relevance_evidence": [
-        "opec"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "discovery_index_first_seen_only",
-      "observed_time_utc": "2026-11-18T18:17:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,

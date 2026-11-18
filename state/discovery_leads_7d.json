@@ -169,6 +169,66 @@
     "status": "discovery_only_requires_publisher_verification"
   },
   {
+    "url": "https://www.westernpeople.ie/news/students-empowered-to-conserve-electricity-during-green-schools-energy-workshop_arid-20333572.html",
+    "title": "Students empowered to conserve electricity during Green Schools Energy Workshop - news - Western People",
+    "domain": "www.westernpeople.ie",
+    "gdelt_first_seen_utc": "2026-11-18T19:32:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "http://www.zerohedge.com/markets/why-iraq-just-fast-tracked-chevrons-takeover-14-billion-barrel-supergiant",
+    "title": "Why Iraq Just Fast-Tracked Chevron's Takeover Of A 14-Billion-Barrel Supergiant",
+    "domain": "www.zerohedge.com",
+    "gdelt_first_seen_utc": "2026-11-18T19:31:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "chevron"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.stoxos.gr/2026/11/chevron.html",
+    "title": "\u03a5\u03b4\u03c1\u03bf\u03b3\u03bf\u03bd\u03ac\u03bd\u03b8\u03c1\u03b1\u03ba\u03b5\u03c2: \u039e\u03b5\u03ba\u03b9\u03bd\u03bf\u03cd\u03bd \u03bf\u03b9 \u03ad\u03c1\u03b5\u03c5\u03bd\u03b5\u03c2 \u03c4\u03b7\u03c2 Chevron \u03c3\u03c4\u03b1 \u03b8\u03b1\u03bb\u03ac\u03c3\u03c3\u03b9\u03b1 \u03bf\u03b9\u03ba\u03cc\u03c0\u03b5\u03b4\u03b1 \u03bd\u03cc\u03c4\u03b9\u03b1 \u03c4\u03b7\u03c2 \u03a0\u03b5\u03bb\u03bf\u03c0\u03bf\u03bd\u03bd\u03ae\u03c3\u03bf\u03c5",
+    "domain": "www.stoxos.gr",
+    "gdelt_first_seen_utc": "2026-11-18T19:31:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "chevron"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
     "url": "https://www.emakedonia.gr/epanekkinisi-stis-ereynes-ydrogonanthrakon-me-tria-ploia-xekinoyn-oi-seismikes-katagrafes-tis-koinopraxias-chevron-helleniq-energy",
     "title": "\u0395\u03c0\u03b1\u03bd\u03b5\u03ba\u03ba\u03af\u03bd\u03b7\u03c3\u03b7 \u03c3\u03c4\u03b9\u03c2 \u03ad\u03c1\u03b5\u03c5\u03bd\u03b5\u03c2 \u03c5\u03b4\u03c1\u03bf\u03b3\u03bf\u03bd\u03b1\u03bd\u03b8\u03c1\u03ac\u03ba\u03c9\u03bd: \u039c\u03b5 \u03c4\u03c1\u03af\u03b1 \u03c0\u03bb\u03bf\u03af\u03b1 \u03be\u03b5\u03ba\u03b9\u03bd\u03bf\u03cd\u03bd \u03bf\u03b9 \u03c3\u03b5\u03b9\u03c3\u03bc\u03b9\u03ba\u03ad\u03c2 \u03ba\u03b1\u03c4\u03b1\u03b3\u03c1\u03b1\u03c6\u03ad\u03c2 \u03c4\u03b7\u03c2 \u03ba\u03bf\u03b9\u03bd\u03bf\u03c0\u03c1\u03b1\u03be\u03af\u03b1\u03c2 Chevron - HELLENiQ Energy",
     "domain": "www.emakedonia.gr",
@@ -337,6 +397,86 @@
     "category": "Oil & Energy",
     "relevance_evidence": [
       "brent"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.odwyerpr.com/story/public/25629/2026-11-18/sc-county-seeks-data-center-impact-study.html",
+    "title": "SC County Seeks Data Center Impact Study",
+    "domain": "www.odwyerpr.com",
+    "gdelt_first_seen_utc": "2026-11-18T19:32:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://leadership.ng/gas-infrastructure-offers-africas-best-energy-investment-in-2027-wec",
+    "title": "Gas Infrastructure Offers Africa\u2019s Best Energy Investment In 2027 \u2013 WEC",
+    "domain": "leadership.ng",
+    "gdelt_first_seen_utc": "2026-11-18T19:32:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Infrastructure & Investment",
+    "relevance_evidence": [
+      "gas infrastructure"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://wkzo.com/2026/11/18/texas-resumes-issuing-data-center-air-permits-regulator-says",
+    "title": "Texas resumes issuing data center air permits, regulator says",
+    "domain": "wkzo.com",
+    "gdelt_first_seen_utc": "2026-11-18T19:32:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "http://readme.readmedia.com/Hundreds-of-FLX-Residents-Turn-Out-for-Data-Center-Ban-In-Lansing-Where-300-MW-Data-Center-Is-Proposed/21765915",
+    "title": "Hundreds of FLX Residents Turn Out for Data Center Ban In Lansing Where 300 MW Data Center Is Proposed",
+    "domain": "readme.readmedia.com",
+    "gdelt_first_seen_utc": "2026-11-18T19:31:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
     ],
     "status": "discovery_only_requires_publisher_verification"
   },
