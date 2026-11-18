@@ -1,6 +1,46 @@
 {
   "leads": [
     {
+      "url": "https://www.hellenicshippingnews.com/gtt-energy-receives-an-order-from-hudong-zhonghua-shipbuilding-for-the-tank-design-of-five-new-lng-carriers",
+      "title": "GTT Energy receives an order from Hudong-Zhonghua Shipbuilding for the tank design of five new LNG Carriers",
+      "domain": "www.hellenicshippingnews.com",
+      "gdelt_first_seen_utc": "2026-11-18T18:47:00+00:00",
+      "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 39,
+      "category": "Natural Gas & LNG",
+      "relevance_evidence": [
+        "lng"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
+      "url": "https://www.voria.gr/article/i-tsehia-oristikopoiei-makrohronia-symfonia-promitheias-lng-me-tis-ipa",
+      "title": "\u0397 \u03a4\u03c3\u03b5\u03c7\u03af\u03b1 \u03bf\u03c1\u03b9\u03c3\u03c4\u03b9\u03ba\u03bf\u03c0\u03bf\u03b9\u03b5\u03af \u03bc\u03b1\u03ba\u03c1\u03bf\u03c7\u03c1\u03cc\u03bd\u03b9\u03b1 \u03c3\u03c5\u03bc\u03c6\u03c9\u03bd\u03af\u03b1 \u03c0\u03c1\u03bf\u03bc\u03ae\u03b8\u03b5\u03b9\u03b1\u03c2 LNG \u03bc\u03b5 \u03c4\u03b9\u03c2 \u0397\u03a0\u0391",
+      "domain": "www.voria.gr",
+      "gdelt_first_seen_utc": "2026-11-18T18:46:00+00:00",
+      "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 39,
+      "category": "Natural Gas & LNG",
+      "relevance_evidence": [
+        "lng"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
       "url": "https://www.newsit.gr/oikonomia/diethni/tsexia-ipa-symfonisan-gia-promitheia-lng-eos-20-xronia/4825733",
       "title": "\u03a4\u03c3\u03b5\u03c7\u03af\u03b1 - \u0397\u03a0\u0391 \u03c3\u03c5\u03bc\u03c6\u03ce\u03bd\u03b7\u03c3\u03b1\u03bd \u03b3\u03b9\u03b1 \u03c0\u03c1\u03bf\u03bc\u03ae\u03b8\u03b5\u03b9\u03b1 LNG \u03ad\u03c9\u03c2 20 \u03c7\u03c1\u03cc\u03bd\u03b9\u03b1",
       "domain": "www.newsit.gr",
@@ -103,6 +143,26 @@
       "category": "Natural Gas & LNG",
       "relevance_evidence": [
         "natural gas"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
+      "url": "https://www.emakedonia.gr/epanekkinisi-stis-ereynes-ydrogonanthrakon-me-tria-ploia-xekinoyn-oi-seismikes-katagrafes-tis-koinopraxias-chevron-helleniq-energy",
+      "title": "\u0395\u03c0\u03b1\u03bd\u03b5\u03ba\u03ba\u03af\u03bd\u03b7\u03c3\u03b7 \u03c3\u03c4\u03b9\u03c2 \u03ad\u03c1\u03b5\u03c5\u03bd\u03b5\u03c2 \u03c5\u03b4\u03c1\u03bf\u03b3\u03bf\u03bd\u03b1\u03bd\u03b8\u03c1\u03ac\u03ba\u03c9\u03bd: \u039c\u03b5 \u03c4\u03c1\u03af\u03b1 \u03c0\u03bb\u03bf\u03af\u03b1 \u03be\u03b5\u03ba\u03b9\u03bd\u03bf\u03cd\u03bd \u03bf\u03b9 \u03c3\u03b5\u03b9\u03c3\u03bc\u03b9\u03ba\u03ad\u03c2 \u03ba\u03b1\u03c4\u03b1\u03b3\u03c1\u03b1\u03c6\u03ad\u03c2 \u03c4\u03b7\u03c2 \u03ba\u03bf\u03b9\u03bd\u03bf\u03c0\u03c1\u03b1\u03be\u03af\u03b1\u03c2 Chevron - HELLENiQ Energy",
+      "domain": "www.emakedonia.gr",
+      "gdelt_first_seen_utc": "2026-11-18T18:46:00+00:00",
+      "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 33,
+      "category": "Oil & Energy",
+      "relevance_evidence": [
+        "chevron"
       ],
       "status": "discovery_only_requires_publisher_verification"
     },
@@ -255,6 +315,106 @@
       "category": "Oil & Energy",
       "relevance_evidence": [
         "brent"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
+      "url": "https://www.arabnews.com/middle-east/protesters-rally-in-a-town-in-southwestern-iran-after-a-road-crash-killed-13-refinery-workers-3012779",
+      "title": "Protesters rally in a town in southwestern Iran after a road crash killed 13 refinery workers",
+      "domain": "www.arabnews.com",
+      "gdelt_first_seen_utc": "2026-11-18T18:47:00+00:00",
+      "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 30,
+      "category": "Oil & Energy",
+      "relevance_evidence": [
+        "refinery"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
+      "url": "https://www.fox7austin.com/news/28-acre-georgetown-data-center-residents-push-back-against-proposal",
+      "title": "28-acre Georgetown data center: Residents push back against proposal",
+      "domain": "www.fox7austin.com",
+      "gdelt_first_seen_utc": "2026-11-18T18:46:00+00:00",
+      "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 30,
+      "category": "Power & Electricity",
+      "relevance_evidence": [
+        "data center"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
+      "url": "https://www.thetimes-tribune.com/2026/11/18/data-center-opponents-react-to-olyphants-approval-of-settlement-cba",
+      "title": "Data center opponents react to Olyphant\u2019s approval of settlement, CBA",
+      "domain": "www.thetimes-tribune.com",
+      "gdelt_first_seen_utc": "2026-11-18T18:46:00+00:00",
+      "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 30,
+      "category": "Power & Electricity",
+      "relevance_evidence": [
+        "data center"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
+      "url": "https://whbl.com/2026/11/18/texas-resumes-issuing-data-center-air-permits-regulator-says",
+      "title": "Texas resumes issuing data center air permits, regulator says",
+      "domain": "whbl.com",
+      "gdelt_first_seen_utc": "2026-11-18T18:46:00+00:00",
+      "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 30,
+      "category": "Power & Electricity",
+      "relevance_evidence": [
+        "data center"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/first-of-its-kind-markleys-lowell-data-center-earns-arboretum-certification-302944256.html",
+      "title": "First of Its Kind: Markley's Lowell Data Center Earns Arboretum Certification",
+      "domain": "www.prnewswire.com",
+      "gdelt_first_seen_utc": "2026-11-18T18:46:00+00:00",
+      "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 30,
+      "category": "Power & Electricity",
+      "relevance_evidence": [
+        "data center"
       ],
       "status": "discovery_only_requires_publisher_verification"
     },
@@ -484,6 +644,66 @@
       "category": "Power & Electricity",
       "relevance_evidence": [
         "vistra"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
+      "url": "https://natlawreview.com/article/president-finds-petroleum-capacity-essential-national-defense-under-dpa-practical",
+      "title": "President Finds Petroleum Capacity Essential to National Defense Under the DPA: Practical Implications for EB-2 NIW Applicants and Employers",
+      "domain": "natlawreview.com",
+      "gdelt_first_seen_utc": "2026-11-18T18:47:00+00:00",
+      "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 27,
+      "category": "Oil & Energy",
+      "relevance_evidence": [
+        "petroleum"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
+      "url": "https://www.aol.co.uk/articles/more-gas-storage-risk-government-181715000.html",
+      "title": "More gas storage is at risk. What\u2019s the government plan for secure supplies? - AOL",
+      "domain": "www.aol.co.uk",
+      "gdelt_first_seen_utc": "2026-11-18T18:47:00+00:00",
+      "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 27,
+      "category": "Natural Gas & LNG",
+      "relevance_evidence": [
+        "gas storage"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
+      "url": "https://www.capitalgazette.com/2026/11/18/ocean-city-offshore-wind-opposition-2",
+      "title": "Ocean City takes harder line against offshore wind",
+      "domain": "www.capitalgazette.com",
+      "gdelt_first_seen_utc": "2026-11-18T18:47:00+00:00",
+      "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 27,
+      "category": "Power & Electricity",
+      "relevance_evidence": [
+        "offshore wind"
       ],
       "status": "discovery_only_requires_publisher_verification"
     },
@@ -1132,6 +1352,14 @@
       "topics_succeeded": 0,
       "new_discovered_urls": 0,
       "leads_in_last_24h_first_seen": 53
+    },
+    {
+      "run_utc": "2026-11-18T19:02:36.925846+00:00",
+      "status": "provider_cooldown",
+      "topics_attempted": 0,
+      "topics_succeeded": 0,
+      "new_discovered_urls": 0,
+      "leads_in_last_24h_first_seen": 53
     }
   ],
   "provider_cooldown_until_utc": "2026-11-18T19:50:59.758419+00:00",
@@ -1233,6 +1461,13 @@
       "raw_feed_items": 6168,
       "high_signal_items": 10,
       "new_unique_links": 0
+    },
+    {
+      "run_utc": "2026-11-18T19:02:37.023505+00:00",
+      "status": "ok",
+      "raw_feed_items": 5779,
+      "high_signal_items": 11,
+      "new_unique_links": 11
     }
   ]
 }
