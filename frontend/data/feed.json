@@ -1,0 +1,446 @@
+{
+  "status": "research_only_not_approved",
+  "disclaimer": "Research preview only; not fact-checked or approved for publication.",
+  "generated_utc": "2026-11-18T19:13:02.074974+00:00",
+  "build_utc": "2026-11-18T19:13:02.074974+00:00",
+  "unique_relevant_urls_7d": 55,
+  "unique_domains_in_selection": 21,
+  "selected_topic_coverage_counts": {
+    "Natural Gas & LNG": 8,
+    "Power & Electricity": 8,
+    "Oil & Energy": 8,
+    "Infrastructure & Investment": 4
+  },
+  "stories": [
+    {
+      "id": "preview-0-ail.php?id=68484",
+      "title": "U.S. natural gas inventories end injection season above normal levels",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68484",
+      "source": "EIA Today in Energy",
+      "domain": "www.eia.gov",
+      "category": "Natural Gas & LNG",
+      "coverage_themes": [
+        "Natural Gas & LNG"
+      ],
+      "origin": "official_rss",
+      "observed_time_utc": "2026-11-18T14:00:00+00:00",
+      "time_basis": "publisher_feed_publication_time",
+      "publisher_time_verified": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved"
+    },
+    {
+      "id": "preview-1-vention-deadline",
+      "title": "Algonquin Gas Transmission, LLC; Notice of Application and Establishing Intervention Deadline",
+      "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23446/algonquin-gas-transmission-llc-notice-of-application-and-establishing-intervention-deadline",
+      "source": "Federal Register notices",
+      "domain": "www.federalregister.gov",
+      "category": "Natural Gas & LNG",
+      "coverage_themes": [
+        "Natural Gas & LNG"
+      ],
+      "origin": "regulatory_notice",
+      "observed_time_utc": "2026-11-18T05:00:00+00:00",
+      "time_basis": "official_publication_date_only",
+      "publisher_time_verified": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved"
+    },
+    {
+      "id": "preview-2-schedule-for-the",
+      "title": "Natural Gas Pipeline of America, LLC; Horizon Pipeline Company, LLC; Notice of Schedule for the Preparation of an Environmental Assessment for the North Extension Project",
+      "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23442/natural-gas-pipeline-of-america-llc-horizon-pipeline-company-llc-notice-of-schedule-for-the",
+      "source": "Federal Register notices",
+      "domain": "www.federalregister.gov",
+      "category": "Natural Gas & LNG",
+      "coverage_themes": [
+        "Natural Gas & LNG",
+        "Infrastructure & Investment"
+      ],
+      "origin": "regulatory_notice",
+      "observed_time_utc": "2026-11-18T05:00:00+00:00",
+      "time_basis": "official_publication_date_only",
+      "publisher_time_verified": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved"
+    },
+    {
+      "id": "preview-3-y-and-help-lower",
+      "title": "Energy Department Announces $2.8 Billion Loan to Strengthen Grid Reliability and Help Lower Costs in Wyoming",
+      "url": "https://www.energy.gov/articles/energy-department-announces-28-billion-loan-strengthen-grid-reliability-and-help-lower",
+      "source": "DOE Energy News",
+      "domain": "www.energy.gov",
+      "category": "Power & Electricity",
+      "coverage_themes": [
+        "Power & Electricity",
+        "Infrastructure & Investment"
+      ],
+      "origin": "official_rss",
+      "observed_time_utc": "2026-11-17T18:10:03+00:00",
+      "time_basis": "publisher_feed_publication_time",
+      "publisher_time_verified": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved"
+    },
+    {
+      "id": "preview-4-il/en/ip_26_2457",
+      "title": "Commission approves €9.5 billion Dutch State aid to support offshore wind energy",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2457",
+      "source": "European Commission DG Energy",
+      "domain": "ec.europa.eu",
+      "category": "Power & Electricity",
+      "coverage_themes": [
+        "Power & Electricity"
+      ],
+      "origin": "official_rss",
+      "observed_time_utc": "2026-11-16T23:00:00+00:00",
+      "time_basis": "publisher_feed_publication_time",
+      "publisher_time_verified": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved"
+    },
+    {
+      "id": "preview-5-e-000000135.html",
+      "title": "Venture Global and China Gas Announce Increased Long-Term LNG Agreement",
+      "url": "https://finance.yahoo.com/energy/articles/venture-global-china-gas-announce-000000135.html",
+      "source": "Press Release Feed",
+      "domain": "finance.yahoo.com",
+      "category": "Natural Gas & LNG",
+      "coverage_themes": [
+        "Natural Gas & LNG"
+      ],
+      "origin": "company_announcement",
+      "observed_time_utc": "2026-11-18T00:00:00+00:00",
+      "time_basis": "third_party_release_feed_date_unverified",
+      "publisher_time_verified": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved"
+    },
+    {
+      "id": "preview-6-on-environmental",
+      "title": "Eastern Shore Natural Gas Company; Notice of Scoping Period Requesting Comments on Environmental Issues for the Proposed Delmar Regional Enhancement Project",
+      "url": "https://www.federalregister.gov/documents/2026/11/17/2026-23361/eastern-shore-natural-gas-company-notice-of-scoping-period-requesting-comments-on-environmental",
+      "source": "Federal Register notices",
+      "domain": "www.federalregister.gov",
+      "category": "Natural Gas & LNG",
+      "coverage_themes": [
+        "Natural Gas & LNG",
+        "Infrastructure & Investment"
+      ],
+      "origin": "regulatory_notice",
+      "observed_time_utc": "2026-11-17T05:00:00+00:00",
+      "time_basis": "official_publication_date_only",
+      "publisher_time_verified": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved"
+    },
+    {
+      "id": "preview-7-l-issues-for-the",
+      "title": "Northwest Pipeline, LLC; Notice of Scoping Period Requesting Comments on Environmental Issues for the Planned Silver Spur Project and Notice of Public Scoping Sessions",
+      "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23441/northwest-pipeline-llc-notice-of-scoping-period-requesting-comments-on-environmental-issues-for-the",
+      "source": "Federal Register notices",
+      "domain": "www.federalregister.gov",
+      "category": "Natural Gas & LNG",
+      "coverage_themes": [
+        "Natural Gas & LNG",
+        "Infrastructure & Investment"
+      ],
+      "origin": "regulatory_notice",
+      "observed_time_utc": "2026-11-18T05:00:00+00:00",
+      "time_basis": "official_publication_date_only",
+      "publisher_time_verified": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved"
+    },
+    {
+      "id": "preview-8-new-lng-carriers",
+      "title": "GTT Energy receives an order from Hudong-Zhonghua Shipbuilding for the tank design of five new LNG Carriers",
+      "url": "https://www.hellenicshippingnews.com/gtt-energy-receives-an-order-from-hudong-zhonghua-shipbuilding-for-the-tank-design-of-five-new-lng-carriers",
+      "source": "GDELT GAL RSS",
+      "domain": "www.hellenicshippingnews.com",
+      "category": "Natural Gas & LNG",
+      "coverage_themes": [
+        "Natural Gas & LNG"
+      ],
+      "origin": "global_discovery",
+      "observed_time_utc": "2026-11-18T18:47:00+00:00",
+      "time_basis": "discovery_index_first_seen_only",
+      "publisher_time_verified": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved"
+    },
+    {
+      "id": "preview-9-8180843520a.html",
+      "title": "Nasi sąsiedzi dogadali się z USA. Wielki kontrakt na LNG",
+      "url": "https://www.money.pl/gospodarka/czesi-stawiaja-na-usa-wielki-kontrakt-na-lng-7352418180843520a.html",
+      "source": "GDELT GAL RSS",
+      "domain": "www.money.pl",
+      "category": "Natural Gas & LNG",
+      "coverage_themes": [
+        "Natural Gas & LNG"
+      ],
+      "origin": "global_discovery",
+      "observed_time_utc": "2026-11-18T18:32:00+00:00",
+      "time_basis": "discovery_index_first_seen_only",
+      "publisher_time_verified": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved"
+    },
+    {
+      "id": "preview-10-higan-or-indiana",
+      "title": "Over 400 American AI Data Centers Use As Much Electricity As Wisconsin, Michigan, or Indiana",
+      "url": "https://peakoil.com/consumption/over-400-american-ai-data-centers-use-as-much-electricity-as-wisconsin-michigan-or-indiana",
+      "source": "GDELT GAL RSS",
+      "domain": "peakoil.com",
+      "category": "Power & Electricity",
+      "coverage_themes": [
+        "Power & Electricity"
+      ],
+      "origin": "global_discovery",
+      "observed_time_utc": "2026-11-18T18:32:00+00:00",
+      "time_basis": "discovery_index_first_seen_only",
+      "publisher_time_verified": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved"
+    },
+    {
+      "id": "preview-11-ty-harvard-study",
+      "title": "Largest data centers in the U.S. use as much electricity as some states and countries, study finds",
+      "url": "https://www.cbsnews.com/news/hyperscale-data-centers-electricity-harvard-study",
+      "source": "GDELT GAL RSS",
+      "domain": "www.cbsnews.com",
+      "category": "Power & Electricity",
+      "coverage_themes": [
+        "Power & Electricity"
+      ],
+      "origin": "global_discovery",
+      "observed_time_utc": "2026-11-18T18:32:00+00:00",
+      "time_basis": "discovery_index_first_seen_only",
+      "publisher_time_verified": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved"
+    },
+    {
+      "id": "preview-12-om/s/iq/12857836",
+      "title": "น้ำมันโลกดิ่งหนัก เบรนท์หลุด $91/WTI หลุด $83 หลังสต็อกน้ำมันสหรัฐเพิ่มมากกว่าคาด",
+      "url": "https://www.ryt9.com/s/iq/12857836",
+      "source": "GDELT GAL RSS",
+      "domain": "www.ryt9.com",
+      "category": "Oil & Energy",
+      "coverage_themes": [
+        "Oil & Energy"
+      ],
+      "origin": "global_discovery",
+      "observed_time_utc": "2026-11-18T18:32:00+00:00",
+      "time_basis": "discovery_index_first_seen_only",
+      "publisher_time_verified": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved"
+    },
+    {
+      "id": "preview-13-ergy-usage-study",
+      "title": "The Most Powerful Data Centers Use as Much Electricity as an Entire State",
+      "url": "https://www.nationalgeographic.com/environment/article/data-center-energy-usage-study",
+      "source": "GDELT GAL RSS",
+      "domain": "www.nationalgeographic.com",
+      "category": "Power & Electricity",
+      "coverage_themes": [
+        "Power & Electricity"
+      ],
+      "origin": "global_discovery",
+      "observed_time_utc": "2026-11-18T18:17:00+00:00",
+      "time_basis": "discovery_index_first_seen_only",
+      "publisher_time_verified": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved"
+    },
+    {
+      "id": "preview-14-committee-report",
+      "title": "Reps postpone electricity tariff review pending committee report",
+      "url": "https://dailypost.ng/2026/11/18/reps-postpone-electricity-tariff-review-pending-committee-report",
+      "source": "GDELT GAL RSS",
+      "domain": "dailypost.ng",
+      "category": "Power & Electricity",
+      "coverage_themes": [
+        "Power & Electricity"
+      ],
+      "origin": "global_discovery",
+      "observed_time_utc": "2026-11-18T18:17:00+00:00",
+      "time_basis": "discovery_index_first_seen_only",
+      "publisher_time_verified": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved"
+    },
+    {
+      "id": "preview-15-en-ee-uu-4527313",
+      "title": "Brent cede de barrera de US$93 el barril ante mayores inventarios en EE.UU.",
+      "url": "https://www.larepublica.co/globoeconomia/brent-cede-de-barrera-de-us-93-el-barril-ante-mayores-inventarios-en-ee-uu-4527313",
+      "source": "GDELT GAL RSS",
+      "domain": "www.larepublica.co",
+      "category": "Oil & Energy",
+      "coverage_themes": [
+        "Oil & Energy"
+      ],
+      "origin": "global_discovery",
+      "observed_time_utc": "2026-11-18T18:16:00+00:00",
+      "time_basis": "discovery_index_first_seen_only",
+      "publisher_time_verified": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved"
+    },
+    {
+      "id": "preview-16--chairman-sahney",
+      "title": "India's first commercial sustainable aviation fuel plant ready for production at IOC's refinery: Chairman Sahney",
+      "url": "http://www.indiagazette.com/news/279441274/india-first-commercial-sustainable-aviation-fuel-plant-ready-for-production-at-ioc-refinery-chairman-sahney",
+      "source": "GDELT GAL RSS",
+      "domain": "www.indiagazette.com",
+      "category": "Oil & Energy",
+      "coverage_themes": [
+        "Oil & Energy"
+      ],
+      "origin": "global_discovery",
+      "observed_time_utc": "2026-11-18T19:02:00+00:00",
+      "time_basis": "discovery_index_first_seen_only",
+      "publisher_time_verified": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved"
+    },
+    {
+      "id": "preview-17-s-regulator-says",
+      "title": "Texas resumes issuing data center air permits, regulator says",
+      "url": "https://kelo.com/2026/11/18/texas-resumes-issuing-data-center-air-permits-regulator-says",
+      "source": "GDELT GAL RSS",
+      "domain": "kelo.com",
+      "category": "Power & Electricity",
+      "coverage_themes": [
+        "Power & Electricity"
+      ],
+      "origin": "global_discovery",
+      "observed_time_utc": "2026-11-18T19:01:00+00:00",
+      "time_basis": "discovery_index_first_seen_only",
+      "publisher_time_verified": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved"
+    },
+    {
+      "id": "preview-18-s-regulator-says",
+      "title": "Texas resumes issuing data center air permits, regulator says",
+      "url": "https://wtvbam.com/2026/11/18/texas-resumes-issuing-data-center-air-permits-regulator-says",
+      "source": "GDELT GAL RSS",
+      "domain": "wtvbam.com",
+      "category": "Power & Electricity",
+      "coverage_themes": [
+        "Power & Electricity"
+      ],
+      "origin": "global_discovery",
+      "observed_time_utc": "2026-11-18T19:01:00+00:00",
+      "time_basis": "discovery_index_first_seen_only",
+      "publisher_time_verified": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved"
+    },
+    {
+      "id": "preview-19--workers-3012779",
+      "title": "Protesters rally in a town in southwestern Iran after a road crash killed 13 refinery workers",
+      "url": "https://www.arabnews.com/middle-east/protesters-rally-in-a-town-in-southwestern-iran-after-a-road-crash-killed-13-refinery-workers-3012779",
+      "source": "GDELT GAL RSS",
+      "domain": "www.arabnews.com",
+      "category": "Oil & Energy",
+      "coverage_themes": [
+        "Oil & Energy"
+      ],
+      "origin": "global_discovery",
+      "observed_time_utc": "2026-11-18T18:47:00+00:00",
+      "time_basis": "discovery_index_first_seen_only",
+      "publisher_time_verified": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved"
+    },
+    {
+      "id": "preview-20-t.com/post/90507",
+      "title": "Russia’s Strangulation of Ukraine’s Sunflower Oil Production Will Have Global Impact",
+      "url": "https://www.kyivpost.com/post/90507",
+      "source": "GDELT GAL RSS",
+      "domain": "www.kyivpost.com",
+      "category": "Oil & Energy",
+      "coverage_themes": [
+        "Oil & Energy"
+      ],
+      "origin": "global_discovery",
+      "observed_time_utc": "2026-11-18T18:32:00+00:00",
+      "time_basis": "discovery_index_first_seen_only",
+      "publisher_time_verified": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved"
+    },
+    {
+      "id": "preview-21-nergies-ceo-says",
+      "title": "Bahrain's war-hit Sitra refinery weeks away from full capacity, Bapco Energies CEO says | The National",
+      "url": "https://www.thenationalnews.com/business/energy/2026/11/18/bahrains-war-hit-sitra-refinery-weeks-away-from-full-capacity-bapco-energies-ceo-says",
+      "source": "GDELT GAL RSS",
+      "domain": "www.thenationalnews.com",
+      "category": "Oil & Energy",
+      "coverage_themes": [
+        "Oil & Energy"
+      ],
+      "origin": "global_discovery",
+      "observed_time_utc": "2026-11-18T18:32:00+00:00",
+      "time_basis": "discovery_index_first_seen_only",
+      "publisher_time_verified": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved"
+    },
+    {
+      "id": "preview-22-31-climate-talks",
+      "title": "OPEC speaks up for fossil fuels at COP31 climate talks | MEO",
+      "url": "https://www.middle-east-online.com/en/opec-speaks-fossil-fuels-cop31-climate-talks",
+      "source": "GDELT GAL RSS",
+      "domain": "www.middle-east-online.com",
+      "category": "Oil & Energy",
+      "coverage_themes": [
+        "Oil & Energy"
+      ],
+      "origin": "global_discovery",
+      "observed_time_utc": "2026-11-18T18:17:00+00:00",
+      "time_basis": "discovery_index_first_seen_only",
+      "publisher_time_verified": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved"
+    },
+    {
+      "id": "preview-23-er-dpa-practical",
+      "title": "President Finds Petroleum Capacity Essential to National Defense Under the DPA: Practical Implications for EB-2 NIW Applicants and Employers",
+      "url": "https://natlawreview.com/article/president-finds-petroleum-capacity-essential-national-defense-under-dpa-practical",
+      "source": "GDELT GAL RSS",
+      "domain": "natlawreview.com",
+      "category": "Oil & Energy",
+      "coverage_themes": [
+        "Oil & Energy"
+      ],
+      "origin": "global_discovery",
+      "observed_time_utc": "2026-11-18T18:47:00+00:00",
+      "time_basis": "discovery_index_first_seen_only",
+      "publisher_time_verified": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved"
+    }
+  ],
+  "metrics": {
+    "status": "incomplete_pilot",
+    "seven_day_pilot_complete": false,
+    "latest_official_scan_utc": "2026-11-18T19:12:56.048998+00:00",
+    "latest_gal_sample_utc": "2026-11-18T19:12:58.126745+00:00",
+    "warnings": [
+      "Seven-day operating pilot is not yet complete"
+    ]
+  },
+  "health": {
+    "status": "degraded",
+    "official_feeds_connected": 11,
+    "warnings": [
+      "Only 1 editorial leads within 24h; target 12",
+      "No observed high-signal stories in: Power & Electricity, Oil & Energy, Infrastructure & Investment",
+      "GDELT DOC query API is degraded or rate limited; rolling GAL backup is healthy"
+    ]
+  }
+}
