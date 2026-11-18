@@ -80,6 +80,25 @@ class NewsroomHealthTests(unittest.TestCase):
         self.assertEqual(h["status"],"degraded")
         self.assertTrue(any("rate limited" in w for w in h["warnings"]))
 
+    def test_doc_cooldown_with_healthy_gal_backup_is_distinguished(self):
+        state={"articles":[rss_record(i,REQUIRED_BEATS[i%4]) for i in range(12)]}
+        x=audit(state,rss_report(),{"leads":[discovery_lead(1)]},
+                {"status":"provider_cooldown","run_utc":NOW.isoformat()},
+                gal_report={"status":"ok","run_utc":NOW.isoformat(),
+                            "potential_sampling_gap":False},now=NOW)
+        self.assertTrue(x["rolling_gal_recent_healthy"])
+        self.assertEqual(x["rolling_gal_status"],"ok")
+        self.assertTrue(any("GAL backup is healthy" in w for w in x["warnings"]))
+        self.assertEqual(x["status"],"degraded")
+
+    def test_missing_gal_sample_is_reported_when_run_data_present(self):
+        x=audit({"articles":[]},rss_report(),{"leads":[]},broad_discovery(),
+                gal_report={"status":"ok","run_utc":(NOW-timedelta(hours=2)).isoformat(),
+                            "potential_sampling_gap":True},now=NOW)
+        self.assertFalse(x["rolling_gal_recent_healthy"])
+        self.assertTrue(any("Rolling GDELT GAL sample failed" in w for w in x["warnings"]))
+        self.assertTrue(any("missed rolling GAL" in w for w in x["warnings"]))
+
     def test_old_indexed_lead_not_counted(self):
         h=audit({"articles":[]},rss_report(),
                 {"leads":[discovery_lead(1,date=NOW-timedelta(days=3))]},
