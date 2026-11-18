@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-11-18T21:43:12.766552+00:00",
+  "generated_utc": "2026-11-18T22:58:20.685395+00:00",
   "status": "research_only_not_approved",
-  "unique_relevant_urls_7d": 140,
+  "unique_relevant_urls_7d": 148,
   "selected_research_links": 26,
   "unique_domains_in_selection": 13,
   "queue_counts": {
@@ -10,8 +10,8 @@
     "specialist_publisher_24h": 20,
     "timestamped_official": 2,
     "regulatory_date_only": 4,
-    "company_release_unverified": 11,
-    "discovery_unverified": 92
+    "company_release_unverified": 12,
+    "discovery_unverified": 99
   },
   "selected_category_counts": {
     "Natural Gas & LNG": 8,

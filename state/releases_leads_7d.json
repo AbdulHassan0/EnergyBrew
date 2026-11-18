@@ -1,5 +1,24 @@
 [
   {
+    "url": "https://www.globenewswire.com/news-release/2026/11/18/3406181/0/en/xos-enters-energy-generation-with-the-xos-solar-system-bringing-grid-independent-power-to-any-site-in-days.html",
+    "title": "Xos Enters Energy Generation with the Xos Solar System, Bringing Grid-Independent Power to Any Site in Days",
+    "feed_creator_label": "GlobeNewswire",
+    "named_issuer_verified": false,
+    "feed_source_url": "https://www.globenewswire.com/news-release/2026/11/18/3406181/0/en/xos-enters-energy-generation-with-the-xos-solar-system-bringing-grid-independent-power-to-any-site-in-days.html",
+    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+    "feed_published_utc": "2026-11-18T21:30:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "category": "Power & Electricity",
+    "relevance_score": 24,
+    "relevance_evidence": [
+      "grid"
+    ],
+    "provider": "Press Release Feed",
+    "content_kind": "company_or_newswire_press_release",
+    "status": "promotional_issuer_claim_requires_editorial_verification"
+  },
+  {
     "url": "https://www.globenewswire.com/news-release/2026/11/18/3406111/0/en/cmblu-and-imperial-irrigation-district-announce-10-mw-100-mwh-echo-sands-solidflow-energy-storage-project.html",
     "title": "CMBLU and Imperial Irrigation District Announce 10 MW / 100 MWh Echo Sands SolidFlow Energy Storage Project",
     "feed_creator_label": "CMBlu Energy, Inc.",

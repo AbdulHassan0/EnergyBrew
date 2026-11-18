@@ -25,6 +25,27 @@
       ]
     },
     {
+      "url": "https://www.savingadvice.com/articles/2026/11/18/10769854_doe-announces-2-8-billion-wyoming-power-grid-loan-could-it-lower-electric-bills-in-17-states.html",
+      "title": "DOE Announces $2.8 Billion Wyoming Power Grid Loan \u2014 Could It Lower Electric Bills in 17 States?",
+      "domain": "www.savingadvice.com",
+      "gdelt_first_seen_utc": "2026-11-18T22:47:00+00:00",
+      "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 57,
+      "category": "Power & Electricity",
+      "relevance_evidence": [
+        "grid",
+        "power grid"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
       "url": "https://www.malawivoice.com/2026/11/18/malawi-needs-13600-mini-grid-connections-annually-to-meet-2030-electricity-target-mathanga",
       "title": "Malawi needs 13,600 mini-grid connections annually to meet 2030 electricity target-Mathanga",
       "domain": "www.malawivoice.com",
@@ -309,6 +330,26 @@
       "category": "Natural Gas & LNG",
       "relevance_evidence": [
         "lng"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
+      "url": "https://smallbiztrends.com/natural-gas-inventories-surge-above-average-as-injection-season-ends",
+      "title": "Natural Gas Inventories Surge Above Average as Injection Season Ends",
+      "domain": "smallbiztrends.com",
+      "gdelt_first_seen_utc": "2026-11-18T22:46:00+00:00",
+      "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 36,
+      "category": "Natural Gas & LNG",
+      "relevance_evidence": [
+        "natural gas"
       ],
       "status": "discovery_only_requires_publisher_verification"
     },
@@ -702,6 +743,86 @@
       "category": "Oil & Energy",
       "relevance_evidence": [
         "brent"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70171585-jericho-energy-ventures-inc-jericho-energy-ventures-provides-update-on-oil-and-gas-joint-venture-credit-facility-200.htm",
+      "title": "Jericho Energy Ventures, Inc.: Jericho Energy Ventures Provides Update on Oil and Gas Joint Venture Credit Facility",
+      "domain": "www.finanznachrichten.de",
+      "gdelt_first_seen_utc": "2026-11-18T22:47:00+00:00",
+      "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 30,
+      "category": "Oil & Energy",
+      "relevance_evidence": [
+        "oil and gas"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
+      "url": "https://econotimes.com/AI-Data-Center-Cooling-Forces-a-Trade-Off-Between-Power-and-Water-1779203",
+      "title": "AI Data Center Cooling Forces a Trade-Off Between Power and Water | EconoTimes",
+      "domain": "econotimes.com",
+      "gdelt_first_seen_utc": "2026-11-18T22:46:00+00:00",
+      "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 30,
+      "category": "Power & Electricity",
+      "relevance_evidence": [
+        "data center"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
+      "url": "https://www.chicagotribune.com/2026/11/18/michigan-city-residents-urge-for-stronger-data-center-pollution-controls-at-idem-meeting",
+      "title": "Michigan City residents urge for stronger data center pollution controls at IDEM meeting",
+      "domain": "www.chicagotribune.com",
+      "gdelt_first_seen_utc": "2026-11-18T22:46:00+00:00",
+      "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 30,
+      "category": "Power & Electricity",
+      "relevance_evidence": [
+        "data center"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
+      "url": "https://www.wrdw.com/2026/11/18/effingham-county-approves-openai-data-center-site-plan-delays-vote-future-applications",
+      "title": "Effingham County approves OpenAI data center site plan, delays vote on future applications",
+      "domain": "www.wrdw.com",
+      "gdelt_first_seen_utc": "2026-11-18T22:46:00+00:00",
+      "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 30,
+      "category": "Power & Electricity",
+      "relevance_evidence": [
+        "data center"
       ],
       "status": "discovery_only_requires_publisher_verification"
     },
@@ -1690,6 +1811,26 @@
       "status": "discovery_only_requires_publisher_verification"
     },
     {
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70171570-penoles-and-atlas-renewable-energy-sign-a-20-year-agreement-to-strengthen-renewable-supply-and-advance-the-decarbonization-of-penoles-operations-with-008.htm",
+      "title": "Pe\u00f1oles and Atlas Renewable Energy sign a 20-year agreement to strengthen renewable supply and advance the decarbonization of Pe\u00f1oles' operations with solar energy and battery storage",
+      "domain": "www.finanznachrichten.de",
+      "gdelt_first_seen_utc": "2026-11-18T22:47:00+00:00",
+      "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 27,
+      "category": "Power & Electricity",
+      "relevance_evidence": [
+        "battery storage"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
       "url": "https://mynewsla.com/orange-county/2026/11/18/la-orange-county-gas-prices-at-lowest-amounts-since-july-3",
       "title": "LA, Orange County Gas Prices at Lowest Amounts Since July - MyNewsLA.com",
       "domain": "mynewsla.com",
@@ -2544,6 +2685,10 @@
     "lng_exports": {
       "last_attempt_utc": "2026-11-18T20:54:53.912907+00:00",
       "consecutive_failures": 1
+    },
+    "lng_global": {
+      "last_attempt_utc": "2026-11-18T22:58:05.772122+00:00",
+      "consecutive_failures": 1
     }
   },
   "runs": [
@@ -2842,9 +2987,17 @@
       "topics_succeeded": 0,
       "new_discovered_urls": 0,
       "leads_in_last_24h_first_seen": 121
+    },
+    {
+      "run_utc": "2026-11-18T22:58:05.772122+00:00",
+      "status": "degraded",
+      "topics_attempted": 1,
+      "topics_succeeded": 0,
+      "new_discovered_urls": 0,
+      "leads_in_last_24h_first_seen": 121
     }
   ],
-  "provider_cooldown_until_utc": "2026-11-18T22:24:53.912907+00:00",
+  "provider_cooldown_until_utc": "2026-11-19T00:28:05.772122+00:00",
   "gal_runs": [
     {
       "run_utc": "2026-11-18T18:31:26.411800+00:00",
@@ -3125,6 +3278,13 @@
       "raw_feed_items": 4479,
       "high_signal_items": 12,
       "new_unique_links": 0
+    },
+    {
+      "run_utc": "2026-11-18T22:58:15.023076+00:00",
+      "status": "ok",
+      "raw_feed_items": 4120,
+      "high_signal_items": 7,
+      "new_unique_links": 7
     }
   ]
 }
