@@ -1,15 +1,15 @@
 {
-  "generated_utc": "2026-11-18T21:29:03.750979+00:00",
+  "generated_utc": "2026-11-18T21:31:17.956180+00:00",
   "status": "degraded",
   "seven_day_pilot_complete": false,
-  "history_span_days": 0.41,
-  "official_scan_runs": 41,
-  "official_successful_scans": 41,
-  "official_fully_connected_scans": 41,
+  "history_span_days": 0.42,
+  "official_scan_runs": 42,
+  "official_successful_scans": 42,
+  "official_fully_connected_scans": 42,
   "failing_sources": [],
   "official_failed_scans": 0,
-  "gal_sample_runs": 34,
-  "gal_successful_samples": 34,
+  "gal_sample_runs": 35,
+  "gal_successful_samples": 35,
   "gal_failed_samples": 0,
   "observed_sampling_gaps": [
     {
@@ -23,10 +23,10 @@
       "minutes": 78.1
     }
   ],
-  "latest_official_scan_utc": "2026-11-18T21:28:55.445373+00:00",
-  "latest_official_attempt_utc": "2026-11-18T21:28:55.445373+00:00",
-  "latest_gal_attempt_utc": "2026-11-18T21:28:58.315745+00:00",
-  "latest_gal_sample_utc": "2026-11-18T21:28:58.315745+00:00",
+  "latest_official_scan_utc": "2026-11-18T21:31:09.093027+00:00",
+  "latest_official_attempt_utc": "2026-11-18T21:31:09.093027+00:00",
+  "latest_gal_attempt_utc": "2026-11-18T21:31:12.656099+00:00",
+  "latest_gal_sample_utc": "2026-11-18T21:31:12.656099+00:00",
   "daily": [
     {
       "date_utc": "2026-11-12",
@@ -120,8 +120,8 @@
     },
     {
       "date_utc": "2026-11-18",
-      "official_scans": 41,
-      "gal_samples": 34,
+      "official_scans": 42,
+      "gal_samples": 35,
       "publisher_timestamped_official_links": 2,
       "specialist_publisher_timestamped_links": 30,
       "grid_operator_primary_timestamped_links": 1,
@@ -129,8 +129,8 @@
       "gdelt_index_first_seen_urls": 111,
       "press_release_feed_date_urls": 5,
       "scanning_observed": true,
-      "successful_official_scans": 41,
-      "successful_gal_samples": 34,
+      "successful_official_scans": 42,
+      "successful_gal_samples": 35,
       "successful_scanning_observed": true
     }
   ],

@@ -41,7 +41,10 @@
     "relevance_evidence": [
       "lng"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://oilprice.com/Latest-Energy-News/World-News/Mozambique-Approves-Exxons-Redesigned-30-Billion-Rovuma-LNG-Plan.html",
@@ -61,7 +64,10 @@
     "relevance_evidence": [
       "lng"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.skaikritis.gr/tsechia-oloklirose-ti-synapsi-symfonias-me-tis-ipa-gia-tin-promitheia-lng",
@@ -319,7 +325,10 @@
     "relevance_evidence": [
       "electricity"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://thenationonlineng.net/reps-move-to-probe-nerc-electricity-band-tariff-system-seek-suspension-of-policy",
@@ -640,7 +649,10 @@
     "relevance_evidence": [
       "data center"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.delcotimes.com/2026/11/18/we-came-to-fight-bid-to-quash-trainer-data-center-zoning-appeal-is-nixed",
@@ -660,7 +672,10 @@
     "relevance_evidence": [
       "data center"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.clubic.com/actualite-639937-des-riverains-s-opposent-a-un-projet-de-data-center-en-savoie.html",
@@ -680,7 +695,10 @@
     "relevance_evidence": [
       "data center"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://financialpost.com/category/energy/oil-gas",
@@ -700,7 +718,10 @@
     "relevance_evidence": [
       "oil and gas"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://wiky.com/2026/11/18/texas-resumes-issuing-data-center-air-permits-regulator-says",
@@ -1543,7 +1564,10 @@
     "relevance_evidence": [
       "gas exports"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://seekingalpha.com/article/4969757-energy-transfer-rare-second-chance-to-get-in",
@@ -1758,7 +1782,10 @@
     "relevance_evidence": [
       "gasoline"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://hpr1.com/diesel-the-fuel-that-affects-everything",
