@@ -38,6 +38,41 @@ class CollectorTests(unittest.TestCase):
         self.assertIn("PJM Inside Lines", SYSTEM_OPERATOR_SOURCES)
         self.assertEqual(items[0]["source_class"],"system_operator_primary")
 
+    def test_day_only_regulatory_source_preserves_date_without_release_time(self):
+        xml=b"""<rss version='2.0'><channel><item>
+            <title>FERC pipeline environmental permit notice</title>
+            <link>https://example.gov/ferc/2026-11-18</link>
+            <pubDate>2026-11-18</pubDate></item></channel></rss>"""
+        entries,skips,seen=parse_feed(xml,"Federal Register notices",NOW,48,date_precision="day")
+        self.assertEqual((len(entries),seen),(1,1))
+        self.assertEqual(entries[0]["published_utc"],"2026-11-18T00:00:00+00:00")
+        self.assertEqual(entries[0]["published_precision"],"day")
+        self.assertFalse(entries[0]["editorial_candidate"])
+        # Same date-only payload cannot masquerade as a timestamped news headline.
+        regular,rejections,_=parse_feed(xml,"Other Publisher",NOW,48)
+        self.assertFalse(regular)
+        self.assertEqual(rejections["undated"],1)
+
+    def test_http_200_invalid_rss_root_does_not_count_connected(self):
+        with tempfile.TemporaryDirectory() as d:
+            empty=b"<rss version='2.0'></rss>"
+            def fake(url):
+                return (empty,200) if url==SOURCES[0][1] else fixture_fetch(url)
+            report=collect(Path(d)/"db.json",Path(d)/"out",now=NOW,fetcher=fake)
+            self.assertEqual(report["feeds_connected"],len(SOURCES)-1)
+            self.assertEqual(report["scan_state"],"degraded")
+            self.assertIn("required channel",report["sources"][0]["error"])
+
+    def test_source_freshness_is_measured_separately_from_connectivity(self):
+        with tempfile.TemporaryDirectory() as d:
+            path=Path(d)/"db.json"
+            report=collect(path,Path(d)/"out",now=NOW,fetcher=fixture_fetch)
+            source=report["sources"][0]
+            self.assertTrue(source["connected"])
+            self.assertIsNotNone(source["newest_feed_published_utc"])
+            stored=json.loads(path.read_text())["source_health"][source["source"]]
+            self.assertEqual(stored["newest_feed_published_utc"],source["newest_feed_published_utc"])
+
     def test_updated_is_not_published(self):
         xml = b'<feed xmlns="http://www.w3.org/2005/Atom"><entry><title>Gas LNG</title><link href="https://example.gov/x"/><updated>2026-11-18T10:00:00Z</updated></entry></feed>'
         items, rejected, seen = parse_feed(xml, "Official", NOW, 48)

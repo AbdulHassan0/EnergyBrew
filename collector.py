@@ -91,6 +91,32 @@ def published_date(node):
         return dt.astimezone(timezone.utc)
     return None
 
+def publication_day_only(node):
+    """Official day-only record: preserve the date WITHOUT inventing a release clock."""
+    for ch in node:
+        if local(ch.tag) in ("pubdate", "published", "issued", "date"):
+            raw=(ch.text or "").strip()
+            if re.fullmatch(r"\d{4}-\d{2}-\d{2}", raw):
+                try:
+                    return datetime.fromisoformat(raw).replace(tzinfo=timezone.utc)
+                except ValueError:
+                    return None
+    return None
+
+
+def feed_newest_published(xml_bytes):
+    """Read the publisher-provided newest date independent of a 48-hour selection."""
+    root=ET.fromstring(xml_bytes)
+    stamps=[]
+    for node in root.iter():
+        if local(node.tag) not in ("item","entry"):
+            continue
+        dt=published_date(node) or publication_day_only(node)
+        if dt:
+            stamps.append(dt)
+    return max(stamps).isoformat() if stamps else None
+
+
 def clean_url(url):
     """Canonicalize article links; never retain credentials or token-like query values."""
     if not isinstance(url, str) or len(url) > 4096 or any(ch in url for ch in "\r\n\x00"):
@@ -114,13 +140,17 @@ def classify(title, summary):
 def parse_feed(xml_bytes, source_name, now, hours, date_precision="timestamp"):
     root = ET.fromstring(xml_bytes)
     nodes = [n for n in root.iter() if local(n.tag) in ("item", "entry")]
-    if local(root.tag) not in ("rss", "rdf", "feed") and not nodes:
+    if local(root.tag) not in ("rss", "rdf", "feed"):
         raise ValueError("Not a recognizable RSS/Atom feed")
+    if local(root.tag) == "rss" and not any(local(ch.tag) == "channel" for ch in root):
+        raise ValueError("RSS response missing its required channel element")
     accepted, rejected = [], {"undated": 0, "old": 0, "future": 0, "invalid_link": 0}
     for node in nodes:
         title = child_text(node, ("title",))
         link = clean_url(article_link(node))
         dt = published_date(node)
+        if dt is None and date_precision == "day":
+            dt = publication_day_only(node)
         if not title or not link:
             rejected["invalid_link"] += 1
             continue
@@ -220,7 +250,8 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
             items, rejected, seen = parse_feed(raw, name, now, hours, date_precision=date_precision)
             row.update({"connected": True, "http_status": status, "items_seen": seen, "fresh": sum(x["published_precision"] == "timestamp" for x in items),
                 "date_only": sum(x["published_precision"] == "day" for x in items),
-                "relevant": sum(x["editorial_candidate"] for x in items), "rejected": rejected})
+                "relevant": sum(x["editorial_candidate"] for x in items), "rejected": rejected,
+                "newest_feed_published_utc": feed_newest_published(raw)})
             for item in items:
                 prior_id = seen_urls.get(item["url"])
                 if prior_id is not None:
@@ -256,6 +287,7 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
             "consecutive_failures": 0 if success else max(0, int(prior.get("consecutive_failures", 0))) + 1,
             "consecutive_successes": max(0, int(prior.get("consecutive_successes", 0))) + 1 if success else 0,
             "last_items_seen": row.get("items_seen") if success else prior.get("last_items_seen"),
+            "newest_feed_published_utc": row.get("newest_feed_published_utc") if success else prior.get("newest_feed_published_utc"),
             "last_error_type": None if success else row.get("error", "").split(":", 1)[0][:80],
         }
     cutoff = now - timedelta(days=7)
