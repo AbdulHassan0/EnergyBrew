@@ -37,6 +37,53 @@ class GalTests(unittest.TestCase):
             self.assertFalse(items)
             self.assertEqual(rejected[key],1)
 
+    def test_brent_cross_is_not_crude_oil(self):
+        items, rejected, _ = parse_gal(
+            feed(title="Worker injured by electric shock at Brent Cross Shopping Centre",
+                 url="https://example.com/brent-cross-shopping-centre"), NOW)
+        self.assertEqual(items, [])
+        self.assertEqual(rejected["off_topic"], 1)
+
+    def test_real_brent_crude_price_is_preserved(self):
+        items, rejected, _ = parse_gal(
+            feed(title="Brent crude oil prices rise as OPEC forecasts tighten",
+                 url="https://example.com/brent-crude-oil-prices"), NOW)
+        self.assertEqual(len(items), 1)
+        self.assertEqual(items[0]["category"], "Oil & Energy")
+
+    def test_taxonomy_tag_titles_and_pages_are_excluded(self):
+        for title,url in [
+            ("Tag: electricity_demand","https://news.example.com/tag/electricity_demand"),
+            ("Category: LNG","https://news.example.com/category/lng"),
+            ("News on LNG","https://news.example.com/tag/lng"),
+        ]:
+            items,rejected,_=parse_gal(feed(title=title,url=url), NOW)
+            self.assertEqual(items,[])
+            self.assertEqual(rejected["non_article"],1)
+
+    def test_historical_false_positives_are_removed_and_recalculated(self):
+        with tempfile.TemporaryDirectory() as d:
+            state,out=Path(d)/"discovery.json",Path(d)/"out"
+            records=[
+                {"url":"https://news.example.com/brent-cross","title":"Injury at Brent Cross shopping centre",
+                 "gdelt_first_seen_utc":NOW.isoformat(),"discovery_provider":"GDELT GAL RSS",
+                 "relevance_score":33, "category":"Oil & Energy"},
+                {"url":"https://news.example.com/tag/lng","title":"Tag: LNG",
+                 "gdelt_first_seen_utc":NOW.isoformat(),"discovery_provider":"GDELT GAL RSS",
+                 "relevance_score":39},
+                {"url":"https://news.example.com/henry-hub","title":"Henry Hub natural gas prices rise",
+                 "gdelt_first_seen_utc":NOW.isoformat(),"discovery_provider":"GDELT DOC 2.0",
+                 "relevance_score":0,"topics":["gas"]}
+            ]
+            state.write_text(json.dumps({"leads":records,"topics":{},"runs":[]}))
+            result=collect_gal(state,out,now=NOW,fetcher=lambda url:(feed(),200))
+            fresh=json.loads(state.read_text())["leads"]
+            self.assertEqual(result["historical_noise_removed"],2)
+            self.assertEqual(len(fresh),2)
+            self.assertTrue(any(x["url"]=="https://news.example.com/henry-hub" and
+                                x["relevance_score"]>0 for x in fresh))
+            self.assertFalse(any(x["published_time_verified"] for x in fresh))
+
     def test_malformed_document_fails_not_silent(self):
         with self.assertRaises(Exception):
             parse_gal(b"<rss",NOW)
