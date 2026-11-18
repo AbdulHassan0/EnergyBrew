@@ -1,63 +1,60 @@
-# EnergyBrew — Live Energy News Collector
+# EnergyBrew — Live Energy News Research Collector
 
-**Live GitHub-hosted RSS collection verified on November 18, 2026.**
+**Status: both hosted collection workflows verified running on GitHub Actions (November 18, 2026).**
 
-This private repository contains the independent production-pilot collector, not yet the public Energy TLDR newsletter website. It collects source-linked research metadata only, with no auto-approval, subscriber email, or publication.
+This private GitHub repository contains Energy TLDR's **live news research infrastructure**. It does not yet host the public newsletter website or send emails. No unverified source is automatically approved for publication.
 
-## Live status — verified November 18, 2026
+## Open the latest real-world news
 
-The most recent completed [GitHub Actions run](https://github.com/AbdulHassan0/EnergyBrew/actions/workflows/live-collector.yml) verified:
+- **[Unified ranked EnergyBrew Research Desk](https://github.com/AbdulHassan0/EnergyBrew/blob/collector-state/state/desk_latest.md)** — prioritized energy stories with direct publisher links, source provenance and timestamp caveats
+- [Daily collection reliability, article volume and scan gaps](https://github.com/AbdulHassan0/EnergyBrew/blob/collector-state/state/metrics_latest.md)
+- [Collection health, live-source status and coverage gaps](https://github.com/AbdulHassan0/EnergyBrew/blob/collector-state/state/health_latest.md)
+- [Timestamped official stories — last 24 hours](https://github.com/AbdulHassan0/EnergyBrew/blob/collector-state/state/editorial_candidates_24h.json)
+- [Government pipeline and regulatory watchlist](https://github.com/AbdulHassan0/EnergyBrew/blob/collector-state/state/regulatory_watch.json)
+- [Global news discovery (publisher dates unverified)](https://github.com/AbdulHassan0/EnergyBrew/blob/collector-state/state/research_leads_24h.json)
+- [Company/newswire release leads (not independently verified)](https://github.com/AbdulHassan0/EnergyBrew/blob/collector-state/state/releases_leads_24h.json)
 
-| Measurement | Result |
-|---|---:|
-| Reachable and parseable eligible official RSS feeds | **10 / 10** |
-| Publisher-timestamped RSS entries within 48 hours | **6** |
-| High-signal editorial candidates in the 48-hour feed window | **2** |
-| Editorial candidates published within the **last 24 hours** | **1** |
-| Federal Register date-only entries in collection window | **12** |
-| High-signal regulatory watchlist leads retained | **4** |
-| Unique stored article links retained for seven days | **18** |
+## Live services
 
-**Caution:** These are observed first-day counts, not seven-day reliability statistics or unique independently verified news events. Regulatory notices have date precision only and are not placed in the last-24-hour breaking-news shortlist.
+| Workflow | Function | Scheduled frequency |
+|---|---|---|
+| [Main official RSS + research pipeline](https://github.com/AbdulHassan0/EnergyBrew/actions/workflows/live-collector.yml) | EIA/DOE/NRC/EU/Federal Register feeds; GDELT DOC queries; GAL sample; press releases; merged research desk; newsroom health and volume reports | Four times daily |
+| [Frequent global discovery](https://github.com/AbdulHassan0/EnergyBrew/actions/workflows/frequent-gal.yml) | GDELT rolling Global Article List; preserve discoveries; refresh ranked research desk and reliability scorecard | Every 15 minutes, subject to GitHub delays |
 
-## Browse actual results
+Both use the same GitHub Actions concurrency group when writing private historical state, avoiding concurrent modifications of the `collector-state` branch.
 
-- [Latest collection report](https://github.com/AbdulHassan0/EnergyBrew/blob/collector-state/state/latest.md)
-- [Last 24 hours — editorial candidates](https://github.com/AbdulHassan0/EnergyBrew/blob/collector-state/state/editorial_candidates_24h.json)
-- [Seven-day editorial research queue](https://github.com/AbdulHassan0/EnergyBrew/blob/collector-state/state/editorial_candidates.json)
-- [Regulatory pipeline watchlist](https://github.com/AbdulHassan0/EnergyBrew/blob/collector-state/state/regulatory_watch.json)
-- [Daily article-volume report](https://github.com/AbdulHassan0/EnergyBrew/blob/collector-state/state/volume_7d.json)
-- [Source-level health and exceptions](https://github.com/AbdulHassan0/EnergyBrew/blob/collector-state/state/latest.json)
-- [Complete source-linked article metadata](https://github.com/AbdulHassan0/EnergyBrew/blob/collector-state/state/articles.json)
-- [GitHub Actions execution history](https://github.com/AbdulHassan0/EnergyBrew/actions/workflows/live-collector.yml)
+**Provenance rules:** Original official publisher RSS timestamps, Federal Register publication dates, GDELT index-first-seen timestamps, and press-release feed dates are labeled **differently**. None guarantees truth or publication rights.
 
-## Sources and editorial safeguards
+The source ranking is intentionally conservative: original official headlines rank above corporate promotional releases. The desk limits company releases and repeated links from one domain, flags low-commercial-value stories, and exposes category gaps. These are editorial research *candidates*, never fact-checked newsletter copy.
 
-Enabled feeds are eight original EIA, DOE, and European Commission official sources, a DOE Grid Deployment feed, and a Federal Register notices feed.
+## Initial observations, not a reliability guarantee
 
-- Federal Register feeds were originally configured as separate DOE and FERC feeds, but the live API returned overlapping identical documents. The collector now uses a single neutral regulatory feed and deduplicates by canonical URL across source labels and historical state.
-- Official Federal Register documents are retained as **date-only regulatory leads**, never as precisely timed breaking news.
-- DOE Grid Deployment is reachable but its observed feed items were all older than the 48-hour window on the first run.
-- Relevance scores are conservative, explainable keyword-based signals, **not fact-checking**.
-- Specialist publisher RSS, such as S&P Global Energy and Oil & Gas Journal, remains disabled absent appropriate commercial collection rights.
+The November 18, 2026 hosted pilot observed **11 accessible official feeds**, alongside global discovery, press-release feeds, and a working shared state store. A private research desk run identified **55 relevant URL records in retained history**, selected 24 diverse research links across 21 domains, and kept their source classifications separate. Many of those links were **not** independently date-verified; only one high-signal official link was inside the observed 24-hour window.
 
-## Reliability and deployment
+The **seven-day operational pilot is incomplete**. GitHub Actions schedules may be late or missed, especially for a rolling 15-minute feed. [The reliability scorecard](https://github.com/AbdulHassan0/EnergyBrew/blob/collector-state/state/metrics_latest.md) is the source of truth rather than these dated figures.
 
-The collector runs **four times daily** in GitHub Actions, at 04:17, 10:17, 16:17, and 22:17 UTC (subject to GitHub scheduling delays). Each hosted run:
+## Developer commands (Python 3.12; no npm)
 
-1. Checks the repository remains private and runs automated tests.
-2. Loads preserved state from the `collector-state` branch.
-3. Downloads allowed official RSS feeds and validates publication timestamps.
-4. Separates high-signal recent editorial leads from date-only regulatory leads.
-5. Deduplicates by canonical URL and persists seven-day article/run history.
-6. Saves human-readable reports and downloadable GitHub Actions artifacts.
-7. Never publishes, sends emails, or claims the headlines have been fact-checked.
+```bash
+python -m unittest discover -s tests -v
+python collector.py --state state/articles.json --output output/collector --hours 48
+python discovery.py --state state/discovery.json --output output/discovery --max-queries 4
+python gal.py --state state/discovery.json --output output/gal
+python press_releases.py --state state/press_releases.json --output output/releases
+python research_desk.py --rss-state state/articles.json --discovery-state state/discovery.json --releases-state state/press_releases.json --output output/desk
+python ops_metrics.py --rss state/articles.json --discovery state/discovery.json --releases state/press_releases.json --output output/operations
+```
 
-All source-linked research is for editorial consideration; an accessible RSS feed does not grant rights to reproduce copyrighted full text.
+**Before collecting third-party sources commercially:** confirm permitted automated access, retention, and downstream display rights. Publicly reachable RSS feeds are not automatically licensed for commercial use. Company announcements are issuer claims, and GDELT discovery links require source-date and factual checks.
 
-## Next milestones
+See [OPERATIONS.md](OPERATIONS.md) for incident response, sampling-gap diagnostics, acceptance criteria, GitHub Actions billing considerations, and remaining production work.
 
-1. Run an uninterrupted seven-day pilot and report actual useful unique daily article volume.
-2. Expand permitted specialist feeds and/or licensed news discovery APIs after validating terms and host access.
-3. Integrate the separate verified collector with the full Energy TLDR editorial website and approval workflow.
-4. Add monitoring for missing scheduled jobs, failure alerts and source freshness by sector.
+## Still to ship
+
+- Complete an uninterrupted seven-day internet-connected measurement pilot.
+- Obtain authorized specialist energy-news feeds/APIs to improve LNG, oil and power coverage.
+- Validate original publisher dates for discovery leads and preserve editorial sign-off.
+- Move high-volume state from Git commits to a durable database before scale.
+- Deploy the full Energy TLDR subscriber website, archive and email delivery workflow separately.
+
+**Current state: live research collection is real; automatic publication-grade energy coverage is not yet established.**
