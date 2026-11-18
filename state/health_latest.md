@@ -1,10 +1,10 @@
 # EnergyBrew Newsroom Collection Health
 
-Audit time: 2026-11-18T19:02:43.575995+00:00
+Audit time: 2026-11-18T19:05:14.280116+00:00
 Status: **degraded**
 Official feeds connected: **11/11**
 Timestamped high-signal editorial leads (24h): **1** / target 12
-GDELT links first seen (24h): **64**, of which **35** headline-score as high signal
+GDELT links first seen (24h): **72**, of which **43** headline-score as high signal
 GDELT publisher-verified times: **0** (requires a separate check)
 Company/newswire release leads (last 24h feed date): **5**
 Company release provider status: **ok**
