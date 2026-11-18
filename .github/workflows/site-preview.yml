@@ -1,0 +1,65 @@
+name: EnergyBrew frontend preview
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "frontend/**"
+      - "site_builder.py"
+      - "tests/test_site_builder.py"
+      - ".github/workflows/site-preview.yml"
+  schedule:
+    - cron: "43 */2 * * *"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: energybrew-pages
+  cancel-in-progress: true
+
+jobs:
+  frontend:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+    steps:
+      - name: Check out frontend
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run frontend and collector tests
+        run: python -m unittest discover -s tests -v
+      - name: Restore current research output
+        run: |
+          mkdir -p latest-state
+          git fetch --no-tags origin collector-state
+          for file in desk_latest.json metrics_latest.json health_latest.json; do
+            if ! git cat-file -e "FETCH_HEAD:state/$file" 2>/dev/null; then
+              echo "Missing collector research state: $file" >&2
+              exit 1
+            fi
+            git show "FETCH_HEAD:state/$file" > "latest-state/$file"
+          done
+      - name: Build frontend with real research leads
+        run: |
+          python site_builder.py --desk latest-state/desk_latest.json --metrics latest-state/metrics_latest.json --health latest-state/health_latest.json --assets frontend --out dist
+      - name: Save preview artifact (works even before Pages setup)
+        uses: actions/upload-artifact@v4
+        with:
+          name: energybrew-frontend-preview
+          path: dist/
+          retention-days: 7
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - name: Deploy frontend website
+        uses: actions/deploy-pages@v4
