@@ -83,7 +83,7 @@ jobs:
           if test -f "$GITHUB_WORKSPACE/output/collector/latest.json"; then
             cp "$GITHUB_WORKSPACE/output/collector/latest.json" state/latest.json
             cp "$GITHUB_WORKSPACE/output/collector/latest.md" state/latest.md
-            for report in volume_7d.json editorial_candidates.json regulatory_watch.json; do
+            for report in volume_7d.json editorial_candidates.json editorial_candidates_24h.json regulatory_watch.json; do
               if test -f "$GITHUB_WORKSPACE/output/collector/$report"; then
                 cp "$GITHUB_WORKSPACE/output/collector/$report" "state/$report"
               fi
