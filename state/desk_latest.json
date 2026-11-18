@@ -1,14 +1,15 @@
 {
-  "generated_utc": "2026-11-18T21:05:56.693043+00:00",
+  "generated_utc": "2026-11-18T21:11:40.631970+00:00",
   "status": "research_only_not_approved",
-  "unique_relevant_urls_7d": 92,
+  "unique_relevant_urls_7d": 97,
   "selected_research_links": 26,
-  "unique_domains_in_selection": 19,
+  "unique_domains_in_selection": 16,
   "queue_counts": {
+    "older_official_context": 9,
+    "system_operator_primary_24h": 1,
     "specialist_publisher_24h": 4,
     "timestamped_official": 1,
     "regulatory_date_only": 4,
-    "older_official_context": 5,
     "company_release_unverified": 5,
     "discovery_unverified": 73
   },
@@ -22,15 +23,75 @@
     "Natural Gas & LNG": 8,
     "Power & Electricity": 8,
     "Oil & Energy": 8,
-    "Infrastructure & Investment": 7
+    "Infrastructure & Investment": 12
   },
   "missing_categories": [],
   "publisher_timestamped_official_24h": 1,
   "publisher_timestamped_specialist_24h": 4,
+  "system_operator_primary_24h": 1,
   "likely_same_event_links_suppressed": 2,
   "discovery_publisher_dates_verified": 0,
   "promotional_or_language_review_count": 0,
   "stories": [
+    {
+      "title": "PJM Proposes New Rules to Protect Grid Reliability as Data Center Demand Grows",
+      "url": "https://insidelines.pjm.com/pjm-proposes-new-rules-to-protect-grid-reliability-as-data-center-demand-grows",
+      "domain": "insidelines.pjm.com",
+      "source": "PJM Inside Lines",
+      "source_class": "system_operator_primary",
+      "category": "Power & Electricity",
+      "coverage_themes": [
+        "Power & Electricity",
+        "Infrastructure & Investment"
+      ],
+      "relevance_score": 93,
+      "relevance_evidence": [
+        "data center",
+        "grid reliability",
+        "pjm"
+      ],
+      "origin": "official_rss",
+      "time_basis": "system_operator_rss_timestamp",
+      "observed_time_utc": "2026-11-16T21:31:15+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
+      "within_24h_on_own_time_basis": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "older_official_context",
+      "rank": 143
+    },
+    {
+      "title": "PJM Board Approves Transmission Project Changes to Support Grid Reliability",
+      "url": "https://insidelines.pjm.com/pjm-board-approves-transmission-project-changes-to-support-grid-reliability-2",
+      "domain": "insidelines.pjm.com",
+      "source": "PJM Inside Lines",
+      "source_class": "system_operator_primary",
+      "category": "Power & Electricity",
+      "coverage_themes": [
+        "Power & Electricity",
+        "Infrastructure & Investment"
+      ],
+      "relevance_score": 63,
+      "relevance_evidence": [
+        "grid reliability",
+        "pjm"
+      ],
+      "origin": "official_rss",
+      "time_basis": "system_operator_rss_timestamp",
+      "observed_time_utc": "2026-11-18T18:56:18+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "system_operator_primary_24h",
+      "rank": 138
+    },
     {
       "title": "China Gas Upsizes Long-Term LNG Supply with U.S. Venture Global",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/China-Gas-Upsizes-Long-Term-LNG-Supply-with-US-Venture-Global.html",
@@ -101,6 +162,35 @@
       "independent_corroboration_verified": false,
       "queue": "timestamped_official",
       "rank": 111
+    },
+    {
+      "title": "PJM Plan Would Cut Interconnection Process Time in Half",
+      "url": "https://insidelines.pjm.com/pjm-proposal-would-cut-interconnection-process-time-in-half",
+      "domain": "insidelines.pjm.com",
+      "source": "PJM Inside Lines",
+      "source_class": "system_operator_primary",
+      "category": "Power & Electricity",
+      "coverage_themes": [
+        "Power & Electricity",
+        "Infrastructure & Investment"
+      ],
+      "relevance_score": 57,
+      "relevance_evidence": [
+        "interconnection",
+        "pjm"
+      ],
+      "origin": "official_rss",
+      "time_basis": "system_operator_rss_timestamp",
+      "observed_time_utc": "2026-11-16T22:24:16+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
+      "within_24h_on_own_time_basis": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "older_official_context",
+      "rank": 107
     },
     {
       "title": "Algonquin Gas Transmission, LLC; Notice of Application and Establishing Intervention Deadline",
@@ -353,6 +443,62 @@
       "rank": 63
     },
     {
+      "title": "Data center slowdown would raise risks for utility investments",
+      "url": "https://www.utilitydive.com/news/data-center-slowdown-raises-risks-for-utility-investments/874924",
+      "domain": "www.utilitydive.com",
+      "source": "Utility Dive News",
+      "source_class": "specialist_publisher",
+      "category": "Power & Electricity",
+      "coverage_themes": [
+        "Power & Electricity",
+        "Infrastructure & Investment"
+      ],
+      "relevance_score": 30,
+      "relevance_evidence": [
+        "data center"
+      ],
+      "origin": "official_rss",
+      "time_basis": "specialist_publisher_rss_timestamp",
+      "observed_time_utc": "2026-11-17T18:10:00+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
+      "within_24h_on_own_time_basis": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "older_official_context",
+      "rank": 60
+    },
+    {
+      "title": "Grid operators file closely watched large load interconnection reforms at FERC",
+      "url": "https://www.utilitydive.com/news/pjm-rto-large-load-interconnection-ferc-show-cause/874872",
+      "domain": "www.utilitydive.com",
+      "source": "Utility Dive News",
+      "source_class": "specialist_publisher",
+      "category": "Power & Electricity",
+      "coverage_themes": [
+        "Power & Electricity",
+        "Infrastructure & Investment"
+      ],
+      "relevance_score": 27,
+      "relevance_evidence": [
+        "interconnection"
+      ],
+      "origin": "official_rss",
+      "time_basis": "specialist_publisher_rss_timestamp",
+      "observed_time_utc": "2026-11-17T14:28:30+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
+      "within_24h_on_own_time_basis": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "older_official_context",
+      "rank": 57
+    },
+    {
       "title": "Crude Oil Plummeting As Inventories Increase More Than Expected",
       "url": "https://www.rttnews.com/story.aspx?Id=3716011",
       "domain": "www.rttnews.com",
@@ -407,33 +553,6 @@
       "rank": 45
     },
     {
-      "title": "Electricity-Challenged Cuba Wants to Implement AI",
-      "url": "https://www.breitbart.com/latin-america/2026/11/18/electricity-challenged-cuba-wants-to-implement-ai",
-      "domain": "www.breitbart.com",
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Power & Electricity",
-      "coverage_themes": [
-        "Power & Electricity"
-      ],
-      "relevance_score": 33,
-      "relevance_evidence": [
-        "electricity"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "discovery_index_first_seen_only",
-      "observed_time_utc": "2026-11-18T21:01:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 45
-    },
-    {
       "title": "Enterprise Products Partners: Oil Prices Are Noisy, Dividend Is The Signal",
       "url": "https://seekingalpha.com/article/4969737-enterprise-products-partners-oil-prices-are-noisy-dividend-is-the-signal",
       "domain": "seekingalpha.com",
@@ -477,114 +596,6 @@
       "origin": "global_discovery",
       "time_basis": "discovery_index_first_seen_only",
       "observed_time_utc": "2026-11-18T19:31:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 45
-    },
-    {
-      "title": "Over 400 American AI Data Centers Use As Much Electricity As Wisconsin, Michigan, or Indiana",
-      "url": "https://peakoil.com/consumption/over-400-american-ai-data-centers-use-as-much-electricity-as-wisconsin-michigan-or-indiana",
-      "domain": "peakoil.com",
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Power & Electricity",
-      "coverage_themes": [
-        "Power & Electricity"
-      ],
-      "relevance_score": 33,
-      "relevance_evidence": [
-        "electricity"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "discovery_index_first_seen_only",
-      "observed_time_utc": "2026-11-18T18:32:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 45
-    },
-    {
-      "title": "Largest data centers in the U.S. use as much electricity as some states and countries, study finds",
-      "url": "https://www.cbsnews.com/news/hyperscale-data-centers-electricity-harvard-study",
-      "domain": "www.cbsnews.com",
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Power & Electricity",
-      "coverage_themes": [
-        "Power & Electricity"
-      ],
-      "relevance_score": 33,
-      "relevance_evidence": [
-        "electricity"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "discovery_index_first_seen_only",
-      "observed_time_utc": "2026-11-18T18:32:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 45
-    },
-    {
-      "title": "The Most Powerful Data Centers Use as Much Electricity as an Entire State",
-      "url": "https://www.nationalgeographic.com/environment/article/data-center-energy-usage-study",
-      "domain": "www.nationalgeographic.com",
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Power & Electricity",
-      "coverage_themes": [
-        "Power & Electricity"
-      ],
-      "relevance_score": 33,
-      "relevance_evidence": [
-        "electricity"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "discovery_index_first_seen_only",
-      "observed_time_utc": "2026-11-18T18:17:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 45
-    },
-    {
-      "title": "Reps postpone electricity tariff review pending committee report",
-      "url": "https://dailypost.ng/2026/11/18/reps-postpone-electricity-tariff-review-pending-committee-report",
-      "domain": "dailypost.ng",
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Power & Electricity",
-      "coverage_themes": [
-        "Power & Electricity"
-      ],
-      "relevance_score": 33,
-      "relevance_evidence": [
-        "electricity"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "discovery_index_first_seen_only",
-      "observed_time_utc": "2026-11-18T18:17:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
@@ -761,6 +772,7 @@
   "definitions": {
     "timestamped_official": "Publisher-supplied publication datetime on original feeds (official agencies and specialist publishers); content not independently fact-checked",
     "specialist_publisher_24h": "Specialist publisher RSS timestamp, NOT official government news or independently verified content",
+    "system_operator_primary_24h": "Original electric-grid system operator RSS timestamp, not a government agency or independent editorial fact check",
     "regulatory_date_only": "Government record with publication DATE, no reliable intraday release timestamp",
     "discovery_unverified": "GDELT index observed a linked article; neither publisher publication date nor facts verified",
     "company_release_unverified": "Third-party press-release aggregator feed date and issuer claims, not independent reporting"

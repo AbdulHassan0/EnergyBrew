@@ -24,6 +24,26 @@
     ]
   },
   {
+    "url": "https://www.skaikritis.gr/tsechia-oloklirose-ti-synapsi-symfonias-me-tis-ipa-gia-tin-promitheia-lng",
+    "title": "\u03a4\u03c3\u03b5\u03c7\u03af\u03b1: \u039f\u03bb\u03bf\u03ba\u03bb\u03ae\u03c1\u03c9\u03c3\u03b5 \u03c4\u03b7 \u03c3\u03cd\u03bd\u03b1\u03c8\u03b7 \u03c3\u03c5\u03bc\u03c6\u03c9\u03bd\u03af\u03b1\u03c2 \u03bc\u03b5 \u03c4\u03b9\u03c2 \u0397\u03a0\u0391 \u03b3\u03b9\u03b1 \u03c4\u03b7\u03bd \u03c0\u03c1\u03bf\u03bc\u03ae\u03b8\u03b5\u03b9\u03b1 LNG",
+    "domain": "www.skaikritis.gr",
+    "gdelt_first_seen_utc": "2026-11-18T21:02:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 39,
+    "category": "Natural Gas & LNG",
+    "relevance_evidence": [
+      "lng"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
     "url": "https://www.fool.com/earnings/takeaways/2026/11/18/golar-lng-3-key-takeaways-for-long-term-investors?source=iedfolrf0000001",
     "title": "Golar LNG: 3 Key Takeaways for Long-Term Investors | The Motley Fool",
     "domain": "www.fool.com",
@@ -239,6 +259,26 @@
     "status": "discovery_only_requires_publisher_verification"
   },
   {
+    "url": "https://thenationonlineng.net/reps-move-to-probe-nerc-electricity-band-tariff-system-seek-suspension-of-policy",
+    "title": "Reps move to probe NERC electricity band tariff system, seek suspension of policy",
+    "domain": "thenationonlineng.net",
+    "gdelt_first_seen_utc": "2026-11-18T21:02:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
     "url": "https://www.breitbart.com/latin-america/2026/11/18/electricity-challenged-cuba-wants-to-implement-ai",
     "title": "Electricity-Challenged Cuba Wants to Implement AI",
     "domain": "www.breitbart.com",
@@ -256,7 +296,10 @@
     "relevance_evidence": [
       "electricity"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://seekingalpha.com/article/4969737-enterprise-products-partners-oil-prices-are-noisy-dividend-is-the-signal",
@@ -276,7 +319,10 @@
     "relevance_evidence": [
       "oil prices"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.westernpeople.ie/news/students-empowered-to-conserve-electricity-during-green-schools-energy-workshop_arid-20333572.html",
@@ -507,6 +553,166 @@
     "category": "Oil & Energy",
     "relevance_evidence": [
       "brent"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://wiky.com/2026/11/18/texas-resumes-issuing-data-center-air-permits-regulator-says",
+    "title": "Texas resumes issuing data center air permits, regulator says",
+    "domain": "wiky.com",
+    "gdelt_first_seen_utc": "2026-11-18T21:02:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://ntv.co.ug/business/uganda-builds-local-oil-and-gas-skills",
+    "title": "Uganda builds local oil and gas skills",
+    "domain": "ntv.co.ug",
+    "gdelt_first_seen_utc": "2026-11-18T21:02:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "oil and gas"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.africanews.com/2026/11/18/tunisia-olive-oil-exports-jump-nearly-50-on-bumper-harvest",
+    "title": "Tunisia olive oil exports jump nearly 50% on bumper harvest | Africanews",
+    "domain": "www.africanews.com",
+    "gdelt_first_seen_utc": "2026-11-18T21:02:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "oil exports"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://thenationonlineng.net/eyesan-seeks-greater-opportunities-for-women-in-oil-and-gas",
+    "title": "Eyesan seeks greater opportunities for women in oil and gas",
+    "domain": "thenationonlineng.net",
+    "gdelt_first_seen_utc": "2026-11-18T21:02:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "oil and gas"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://cointelegraph.com/markets/mara-long-ridge-debt-offering-bitcoin-sales",
+    "title": "MARA Issues $185M in Debt to Fund $1.5B AI Power Plant Deal",
+    "domain": "cointelegraph.com",
+    "gdelt_first_seen_utc": "2026-11-18T21:02:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "power plant"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.theglobeandmail.com/business/economy/article-alberta-approves-power-plant-proposed-data-centre-near-calgary",
+    "title": "Alberta Utilities Commission approves power plant to fuel proposed data centre near Calgary",
+    "domain": "www.theglobeandmail.com",
+    "gdelt_first_seen_utc": "2026-11-18T21:02:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "power plant"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://atholdailynews.com/2026/11/18/rep-jim-mcgovern-rallies-at-u-s-capitol-for-national-ai-data-center-moratorium",
+    "title": "McGovern rallies at U.S. Capitol for national AI data center moratorium - Athol Daily News",
+    "domain": "atholdailynews.com",
+    "gdelt_first_seen_utc": "2026-11-18T21:02:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://wccftech.com/kraft-tries-to-placate-a-massachusetts-community-by-dangling-a-tax-benefit-of-5800-year-to-each-household-for-its-16-billion-data-center-in-the-middle-of-peoples-neighborhoods",
+    "title": "Kraft's $16-Billion Massachusetts Data Center Dangles A Tax Benefit Of $5,800/Year To Each Household, As The Community Rails It's 'In The Middle Of People\u2019s Neighborhoods'",
+    "domain": "wccftech.com",
+    "gdelt_first_seen_utc": "2026-11-18T21:02:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
     ],
     "status": "discovery_only_requires_publisher_verification"
   },
@@ -1150,6 +1356,26 @@
     "status": "discovery_only_requires_publisher_verification"
   },
   {
+    "url": "https://seekingalpha.com/article/4969757-energy-transfer-rare-second-chance-to-get-in",
+    "title": "Energy Transfer: A Rare Second Chance To Get In",
+    "domain": "seekingalpha.com",
+    "gdelt_first_seen_utc": "2026-11-18T21:02:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Infrastructure & Investment",
+    "relevance_evidence": [
+      "energy transfer"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
     "url": "https://www.kmaland.com/news/triple-a-report-iowa-gas-prices-tumble/article_27faeff0-0a4a-4982-8229-6201c65e559e.html",
     "title": "Triple A report: Iowa gas prices tumble",
     "domain": "www.kmaland.com",
@@ -1167,7 +1393,10 @@
     "relevance_evidence": [
       "gas prices"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://journalstar.com/news/local/business/article_9ec64df9-2301-4905-9482-f76cced7d5af.html",
@@ -1187,7 +1416,10 @@
     "relevance_evidence": [
       "gas prices"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.okotoksonline.com/articles/gas-prices-fall-across-southern-alberta-but-okotoks-drivers-still-paying-more-than-calgary",

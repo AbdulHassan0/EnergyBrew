@@ -1,5 +1,24 @@
 [
   {
+    "id": "4ab08cf5edc2645191ac619c",
+    "title": "PJM Proposes New Rules to Protect Grid Reliability as Data Center Demand Grows",
+    "url": "https://insidelines.pjm.com/pjm-proposes-new-rules-to-protect-grid-reliability-as-data-center-demand-grows",
+    "source": "PJM Inside Lines",
+    "source_class": "system_operator_primary",
+    "published_utc": "2026-11-16T21:31:15+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 93,
+    "keyword_matches": 3,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "data center",
+      "grid reliability",
+      "pjm"
+    ],
+    "status": "research_only_unverified"
+  },
+  {
     "id": "dbb75ca8064473f97e60db15",
     "title": "China Gas Upsizes Long-Term LNG Supply with U.S. Venture Global",
     "url": "https://oilprice.com/Latest-Energy-News/World-News/China-Gas-Upsizes-Long-Term-LNG-Supply-with-US-Venture-Global.html",
@@ -37,6 +56,44 @@
     ],
     "status": "research_only_unverified",
     "also_seen_in": []
+  },
+  {
+    "id": "9ac450c745073b19124309ac",
+    "title": "PJM Plan Would Cut Interconnection Process Time in Half",
+    "url": "https://insidelines.pjm.com/pjm-proposal-would-cut-interconnection-process-time-in-half",
+    "source": "PJM Inside Lines",
+    "source_class": "system_operator_primary",
+    "published_utc": "2026-11-16T22:24:16+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 77,
+    "keyword_matches": 4,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "electricity",
+      "interconnection",
+      "pjm",
+      "power generation"
+    ],
+    "status": "research_only_unverified"
+  },
+  {
+    "id": "6c922e4edba15f1f787245dd",
+    "title": "PJM Board Approves Transmission Project Changes to Support Grid Reliability",
+    "url": "https://insidelines.pjm.com/pjm-board-approves-transmission-project-changes-to-support-grid-reliability-2",
+    "source": "PJM Inside Lines",
+    "source_class": "system_operator_primary",
+    "published_utc": "2026-11-18T18:56:18+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 63,
+    "keyword_matches": 2,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "grid reliability",
+      "pjm"
+    ],
+    "status": "research_only_unverified"
   },
   {
     "id": "a556bd0d67d095de25e62318",
@@ -174,6 +231,24 @@
     "also_seen_in": []
   },
   {
+    "id": "99d43497f540f0f48306e53b",
+    "title": "Grid operators file closely watched large load interconnection reforms at FERC",
+    "url": "https://www.utilitydive.com/news/pjm-rto-large-load-interconnection-ferc-show-cause/874872",
+    "source": "Utility Dive News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-17T14:28:30+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 37,
+    "keyword_matches": 2,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "interconnection",
+      "pjm"
+    ],
+    "status": "research_only_unverified"
+  },
+  {
     "id": "7cd9e69593698adc68610cf0",
     "title": "ExxonMobil pushes ahead with Guyana\u2019s eighth oil project as Saipem gets the all-clear and SBM Offshore bags FPSO job",
     "url": "https://www.offshore-energy.biz/2026/11/17/exxonmobil-pushes-ahead-with-guyanas-eighth-oil-project-as-saipem-gets-the-all-clear-and-sbm-offshore-bags-fpso-job",
@@ -190,5 +265,22 @@
     ],
     "status": "research_only_unverified",
     "also_seen_in": []
+  },
+  {
+    "id": "88adb9f4729c548ccfad41ff",
+    "title": "Data center slowdown would raise risks for utility investments",
+    "url": "https://www.utilitydive.com/news/data-center-slowdown-raises-risks-for-utility-investments/874924",
+    "source": "Utility Dive News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-17T18:10:00+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 30,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "research_only_unverified"
   }
 ]

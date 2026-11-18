@@ -49,6 +49,24 @@
       "also_seen_in": []
     },
     {
+      "id": "6c922e4edba15f1f787245dd",
+      "title": "PJM Board Approves Transmission Project Changes to Support Grid Reliability",
+      "url": "https://insidelines.pjm.com/pjm-board-approves-transmission-project-changes-to-support-grid-reliability-2",
+      "source": "PJM Inside Lines",
+      "source_class": "system_operator_primary",
+      "published_utc": "2026-11-18T18:56:18+00:00",
+      "category": "Power & Electricity",
+      "published_precision": "timestamp",
+      "relevance_score": 63,
+      "keyword_matches": 2,
+      "editorial_candidate": true,
+      "relevance_evidence": [
+        "grid reliability",
+        "pjm"
+      ],
+      "status": "research_only_unverified"
+    },
+    {
       "id": "08c2f3b512606a6b7a68c0c7",
       "title": "Energy Secretary Acts to Protect Mid-Atlantic Grid",
       "url": "https://www.energy.gov/articles/energy-secretary-acts-protect-mid-atlantic-grid-0",
@@ -151,6 +169,21 @@
       "also_seen_in": []
     },
     {
+      "id": "3bd4f9b4ba7eab7921694801",
+      "title": "The grid will fall short of AI\u2019s power needs. These 6 resources can close the gap.",
+      "url": "https://www.utilitydive.com/news/the-grid-will-fall-short-of-ais-power-needs-6-resources-close-the-gap/874125",
+      "source": "Utility Dive News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-18T15:57:17+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified"
+    },
+    {
       "id": "12c9ad8c1b37d3c4d5621721",
       "title": "US Oil Inventories On the Rise",
       "url": "https://oilprice.com/Energy/Crude-Oil/US-Oil-Inventories-On-the-Rise.html",
@@ -168,6 +201,23 @@
       ],
       "status": "research_only_unverified",
       "also_seen_in": []
+    },
+    {
+      "id": "68f2f4fe9ba50ace39b28345",
+      "title": "How National Grid, Eversource are using VPPs to solve local-level constraints",
+      "url": "https://www.utilitydive.com/news/national-grid-eversource-vpp-demand-response/875039",
+      "source": "Utility Dive News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-18T15:31:06+00:00",
+      "category": "Power & Electricity",
+      "published_precision": "timestamp",
+      "relevance_score": 10,
+      "keyword_matches": 1,
+      "editorial_candidate": false,
+      "relevance_evidence": [
+        "power plant"
+      ],
+      "status": "research_only_unverified"
     },
     {
       "id": "dbb75ca8064473f97e60db15",
@@ -691,6 +741,68 @@
       "also_seen_in": []
     },
     {
+      "id": "88adb9f4729c548ccfad41ff",
+      "title": "Data center slowdown would raise risks for utility investments",
+      "url": "https://www.utilitydive.com/news/data-center-slowdown-raises-risks-for-utility-investments/874924",
+      "source": "Utility Dive News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-17T18:10:00+00:00",
+      "category": "Power & Electricity",
+      "published_precision": "timestamp",
+      "relevance_score": 30,
+      "keyword_matches": 1,
+      "editorial_candidate": true,
+      "relevance_evidence": [
+        "data center"
+      ],
+      "status": "research_only_unverified"
+    },
+    {
+      "id": "2f81175edc7909b59c28c598",
+      "title": "Most states fail \u2018community power\u2019 test, advocacy group says",
+      "url": "https://www.utilitydive.com/news/most-states-fail-community-power-test-advocacy-group-says/874915",
+      "source": "Utility Dive News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-17T16:43:41+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified"
+    },
+    {
+      "id": "be8eff9ebd3a8fb655f66aaf",
+      "title": "Batteries included: A practical checklist for storage owners, operators to boost reliability",
+      "url": "https://www.utilitydive.com/news/battery-storage-markets-ercot-xpansiv/873451",
+      "source": "Utility Dive News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-17T15:44:48+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified"
+    },
+    {
+      "id": "6f6a60b2a0a9499d845b46ae",
+      "title": "New York eyes 2030 storage goal with second bulk procurement",
+      "url": "https://www.utilitydive.com/news/nyserda-bulk-energy-storage-solicitation/874888",
+      "source": "Utility Dive News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-17T15:32:15+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified"
+    },
+    {
       "id": "48fd3b91ad7384503bddfcc7",
       "title": "Weatherford finds more work with Constellation in Brazil",
       "url": "https://www.offshore-energy.biz/2026/11/17/weatherford-finds-more-work-with-constellation-in-brazil",
@@ -705,6 +817,24 @@
       "relevance_evidence": [],
       "status": "research_only_unverified",
       "also_seen_in": []
+    },
+    {
+      "id": "99d43497f540f0f48306e53b",
+      "title": "Grid operators file closely watched large load interconnection reforms at FERC",
+      "url": "https://www.utilitydive.com/news/pjm-rto-large-load-interconnection-ferc-show-cause/874872",
+      "source": "Utility Dive News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-17T14:28:30+00:00",
+      "category": "Power & Electricity",
+      "published_precision": "timestamp",
+      "relevance_score": 37,
+      "keyword_matches": 2,
+      "editorial_candidate": true,
+      "relevance_evidence": [
+        "interconnection",
+        "pjm"
+      ],
+      "status": "research_only_unverified"
     },
     {
       "id": "b9b1dbb35bdc6562fe0996b4",
@@ -739,6 +869,21 @@
       ],
       "status": "research_only_unverified",
       "also_seen_in": []
+    },
+    {
+      "id": "b9e6a8db6369cf68072d7131",
+      "title": "Elevated demand for gas turbines could persist through 2035: Siemens Energy",
+      "url": "https://www.utilitydive.com/news/elevated-demand-for-gas-turbines-could-persist-through-2035-siemens-energy/874839",
+      "source": "Utility Dive News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-17T13:00:00+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified"
     },
     {
       "id": "1a06a3d42cc83ad90f8ce17f",
@@ -977,6 +1122,45 @@
       ],
       "status": "research_only_unverified",
       "also_seen_in": []
+    },
+    {
+      "id": "9ac450c745073b19124309ac",
+      "title": "PJM Plan Would Cut Interconnection Process Time in Half",
+      "url": "https://insidelines.pjm.com/pjm-proposal-would-cut-interconnection-process-time-in-half",
+      "source": "PJM Inside Lines",
+      "source_class": "system_operator_primary",
+      "published_utc": "2026-11-16T22:24:16+00:00",
+      "category": "Power & Electricity",
+      "published_precision": "timestamp",
+      "relevance_score": 77,
+      "keyword_matches": 4,
+      "editorial_candidate": true,
+      "relevance_evidence": [
+        "electricity",
+        "interconnection",
+        "pjm",
+        "power generation"
+      ],
+      "status": "research_only_unverified"
+    },
+    {
+      "id": "4ab08cf5edc2645191ac619c",
+      "title": "PJM Proposes New Rules to Protect Grid Reliability as Data Center Demand Grows",
+      "url": "https://insidelines.pjm.com/pjm-proposes-new-rules-to-protect-grid-reliability-as-data-center-demand-grows",
+      "source": "PJM Inside Lines",
+      "source_class": "system_operator_primary",
+      "published_utc": "2026-11-16T21:31:15+00:00",
+      "category": "Power & Electricity",
+      "published_precision": "timestamp",
+      "relevance_score": 93,
+      "keyword_matches": 3,
+      "editorial_candidate": true,
+      "relevance_evidence": [
+        "data center",
+        "grid reliability",
+        "pjm"
+      ],
+      "status": "research_only_unverified"
     }
   ],
   "runs": [
@@ -1245,6 +1429,13 @@
       "feeds_checked": 13,
       "fresh_entries": 44,
       "new_article_links": 0
+    },
+    {
+      "run_utc": "2026-11-18T21:11:32.523235+00:00",
+      "feeds_connected": 15,
+      "feeds_checked": 15,
+      "fresh_entries": 55,
+      "new_article_links": 11
     }
   ]
 }

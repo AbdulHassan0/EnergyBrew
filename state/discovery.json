@@ -42,7 +42,10 @@
       "relevance_evidence": [
         "lng"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.fool.com/earnings/takeaways/2026/11/18/golar-lng-3-key-takeaways-for-long-term-investors?source=iedfolrf0000001",
@@ -277,7 +280,10 @@
       "relevance_evidence": [
         "electricity"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.breitbart.com/latin-america/2026/11/18/electricity-challenged-cuba-wants-to-implement-ai",
@@ -575,7 +581,10 @@
       "relevance_evidence": [
         "data center"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://ntv.co.ug/business/uganda-builds-local-oil-and-gas-skills",
@@ -595,7 +604,10 @@
       "relevance_evidence": [
         "oil and gas"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.africanews.com/2026/11/18/tunisia-olive-oil-exports-jump-nearly-50-on-bumper-harvest",
@@ -615,7 +627,10 @@
       "relevance_evidence": [
         "oil exports"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://thenationonlineng.net/eyesan-seeks-greater-opportunities-for-women-in-oil-and-gas",
@@ -635,7 +650,10 @@
       "relevance_evidence": [
         "oil and gas"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://cointelegraph.com/markets/mara-long-ridge-debt-offering-bitcoin-sales",
@@ -655,7 +673,10 @@
       "relevance_evidence": [
         "power plant"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.theglobeandmail.com/business/economy/article-alberta-approves-power-plant-proposed-data-centre-near-calgary",
@@ -675,7 +696,10 @@
       "relevance_evidence": [
         "power plant"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://atholdailynews.com/2026/11/18/rep-jim-mcgovern-rallies-at-u-s-capitol-for-national-ai-data-center-moratorium",
@@ -695,7 +719,10 @@
       "relevance_evidence": [
         "data center"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://wccftech.com/kraft-tries-to-placate-a-massachusetts-community-by-dangling-a-tax-benefit-of-5800-year-to-each-household-for-its-16-billion-data-center-in-the-middle-of-peoples-neighborhoods",
@@ -715,7 +742,10 @@
       "relevance_evidence": [
         "data center"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.windaction.org/posts/57083",
@@ -1374,7 +1404,10 @@
       "relevance_evidence": [
         "energy transfer"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.kmaland.com/news/triple-a-report-iowa-gas-prices-tumble/article_27faeff0-0a4a-4982-8229-6201c65e559e.html",
@@ -2294,6 +2327,14 @@
       "topics_succeeded": 0,
       "new_discovered_urls": 0,
       "leads_in_last_24h_first_seen": 91
+    },
+    {
+      "run_utc": "2026-11-18T21:11:36.384506+00:00",
+      "status": "provider_cooldown",
+      "topics_attempted": 0,
+      "topics_succeeded": 0,
+      "new_discovered_urls": 0,
+      "leads_in_last_24h_first_seen": 102
     }
   ],
   "provider_cooldown_until_utc": "2026-11-18T22:24:53.912907+00:00",
@@ -2514,6 +2555,13 @@
       "raw_feed_items": 4282,
       "high_signal_items": 15,
       "new_unique_links": 11
+    },
+    {
+      "run_utc": "2026-11-18T21:11:36.452821+00:00",
+      "status": "ok",
+      "raw_feed_items": 4282,
+      "high_signal_items": 15,
+      "new_unique_links": 0
     }
   ]
 }

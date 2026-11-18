@@ -1,21 +1,21 @@
 {
-  "audit_utc": "2026-11-18T21:05:57.155646+00:00",
+  "audit_utc": "2026-11-18T21:11:41.290707+00:00",
   "status": "degraded",
-  "official_feeds_connected": 13,
-  "official_feeds_checked": 13,
-  "official_rss_last_run_utc": "2026-11-18T21:05:51.011640+00:00",
-  "timestamped_editorial_leads_24h": 5,
+  "official_feeds_connected": 15,
+  "official_feeds_checked": 15,
+  "official_rss_last_run_utc": "2026-11-18T21:11:32.523235+00:00",
+  "timestamped_editorial_leads_24h": 6,
   "official_agency_editorial_leads_24h": 1,
   "specialist_publisher_editorial_leads_24h": 4,
+  "system_operator_primary_editorial_leads_24h": 1,
   "editorial_target_24h": 12,
   "observed_beat_counts_24h": {
     "Natural Gas & LNG": 5,
-    "Power & Electricity": 0,
+    "Power & Electricity": 1,
     "Oil & Energy": 0,
     "Infrastructure & Investment": 0
   },
   "unobserved_beats": [
-    "Power & Electricity",
     "Oil & Energy",
     "Infrastructure & Investment"
   ],
@@ -29,11 +29,11 @@
   "rolling_gal_recent_healthy": true,
   "rolling_gal_sampling_gap": false,
   "discovery_latest_status": "provider_cooldown",
-  "discovery_latest_run_utc": "2026-11-18T21:05:53.070663+00:00",
+  "discovery_latest_run_utc": "2026-11-18T21:11:36.384506+00:00",
   "critical": [],
   "warnings": [
-    "Only 5 editorial leads within 24h; target 12",
-    "No observed high-signal stories in: Power & Electricity, Oil & Energy, Infrastructure & Investment",
+    "Only 6 editorial leads within 24h; target 12",
+    "No observed high-signal stories in: Oil & Energy, Infrastructure & Investment",
     "GDELT DOC query API is degraded or rate limited; rolling GAL backup is healthy"
   ],
   "limitations": [
