@@ -146,7 +146,7 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
         try:
             raw, status = fetcher(url)
             items, rejected, seen = parse_feed(raw, name, now, hours)
-            row.update({"connected": True, "http_status": status, "items_seen": seen, "fresh": len(items), "rejected": rejected})
+            row.update({"connected": True, "http_status": status, "items_seen": seen, "fresh": len(items), "relevant": sum(x["keyword_matches"] > 0 for x in items), "rejected": rejected})
             for item in items:
                 if item["id"] not in articles:
                     new_count += 1
@@ -161,7 +161,7 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
     unique_titles = {re.sub(r"[^a-z0-9]+", " ", x["title"].lower()).strip() for x in retained}
     run = {"run_utc": now.isoformat(), "feeds_connected": sum(x["connected"] for x in results),
            "feeds_checked": len(results), "fresh_entries": sum(x["fresh"] for x in results),
-           "new_article_links": new_count, "distinct_article_links_7d": len(retained),
+           "new_article_links": new_count, "relevant_fresh_entries": sum(x.get("relevant", 0) for x in results), "distinct_article_links_7d": len(retained),
            "approx_distinct_titles_7d": len(unique_titles), "sources": results}
     runs = [x for x in previous.get("runs", []) if datetime.fromisoformat(x["run_utc"]) >= cutoff]
     runs.append({k: run[k] for k in ("run_utc", "feeds_connected", "feeds_checked", "fresh_entries", "new_article_links")})
@@ -172,14 +172,16 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
     temp.replace(state_path)
     (outdir / "latest.json").write_text(json.dumps(run, indent=2) + "\n", encoding="utf-8")
     (outdir / "articles.json").write_text(json.dumps(retained, indent=2) + "\n", encoding="utf-8")
+    candidates = [x for x in retained if x["keyword_matches"] > 0]
+    (outdir / "editorial_candidates.json").write_text(json.dumps(candidates, indent=2) + "\n", encoding="utf-8")
     lines = ["# EnergyBrew — live RSS collection", "",
              f"Run: {run['run_utc']}", f"Successfully parsed feeds: **{run['feeds_connected']}/{run['feeds_checked']}**",
-             f"Fresh feed entries: **{run['fresh_entries']}**", f"New links: **{new_count}**",
+             f"Fresh feed entries (raw): **{run['fresh_entries']}**", f"Relevant fresh entries: **{run['relevant_fresh_entries']}**", f"New links: **{new_count}**",
              f"Distinct article links in 7-day state: **{len(retained)}**", "",
-             "| Source | Connected | Fresh | New | Error |", "|---|---|---:|---:|---|"]
+             "| Source | Connected | Fresh | Relevant | New | Error |", "|---|---|---:|---:|---:|---|"]
     for r in results:
         err = r.get("error", "").replace("|", "/")
-        lines.append(f"| {r['source']} | {r['connected']} | {r['fresh']} | {r['new']} | {err} |")
+        lines.append(f"| {r['source']} | {r['connected']} | {r['fresh']} | {r.get('relevant', 0)} | {r['new']} | {err} |")
     lines += ["", "Source-linked metadata is for private editorial research only. Dates come from publishers' publication fields, not HTTP crawl times.", "No newsletter publication or subscriber email occurs."]
     (outdir / "latest.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     return run
