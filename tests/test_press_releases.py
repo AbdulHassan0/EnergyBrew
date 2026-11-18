@@ -28,7 +28,9 @@ class PressReleaseTests(unittest.TestCase):
         self.assertEqual(len(records),1)
         row=records[0]
         self.assertEqual(row["url"],"https://www.example.com/company/lng-expansion")
-        self.assertEqual(row["issuer"],"Cheniere Energy")
+        self.assertEqual(row["feed_creator_label"],"Cheniere Energy")
+        self.assertFalse(row["named_issuer_verified"])
+        self.assertTrue(row["feed_source_url_may_be_newsroom_or_wire_mirror"])
         self.assertIsNone(row["publisher_published_utc"])
         self.assertFalse(row["published_time_verified"])
         self.assertEqual(row["content_kind"],"company_or_newswire_press_release")
@@ -52,6 +54,24 @@ class PressReleaseTests(unittest.TestCase):
             title="Tag: LNG",src="https://www.example.com/tag/lng"),NOW)
         self.assertFalse(records)
         self.assertEqual(skips["non_article"],1)
+
+    def test_marketing_vendor_claims_do_not_count_as_energy_development(self):
+        records,skips,count=parse_releases(feed(
+            title="SearchBeyond Launches SEO and AI Search for Calgary Oil and Gas Sector"),NOW)
+        self.assertEqual(records,[])
+        self.assertEqual(skips["marketing_only"],1)
+
+    def test_prior_issuer_field_migrates_to_unverified_feed_label(self):
+        with tempfile.TemporaryDirectory() as d:
+            state,out=Path(d)/"releases.json",Path(d)/"out"
+            row=parse_releases(feed(),NOW)[0][0]
+            row["issuer"]=row.pop("feed_creator_label")
+            state.write_text(json.dumps({"leads":[row],"runs":[]}))
+            collect(state,out,now=NOW,fetcher=lambda url:(feed(),200))
+            item=json.loads(state.read_text())["leads"][0]
+            self.assertEqual(item["feed_creator_label"],"Cheniere Energy")
+            self.assertNotIn("issuer",item)
+            self.assertFalse(item["named_issuer_verified"])
 
     def test_history_preserved_and_duplicate_removed(self):
         with tempfile.TemporaryDirectory() as d:
