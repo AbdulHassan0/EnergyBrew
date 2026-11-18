@@ -220,6 +220,7 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
            "approx_distinct_titles_7d": len(unique_titles),
            "date_only_entries": sum(x.get("date_only",0) for x in results),
            "editorial_candidate_links_7d": sum(x.get("editorial_candidate",False) for x in retained),
+           "editorial_candidates_24h": sum(x.get("editorial_candidate",False) and datetime.fromisoformat(x["published_utc"]) >= now - timedelta(hours=24) for x in retained),
            "regulatory_watch_links_7d": sum(x.get("published_precision")=="day" and x.get("relevance_score",0)>=22 for x in retained),
            "sources": results}
     runs = [x for x in previous.get("runs", []) if datetime.fromisoformat(x["run_utc"]) >= cutoff]
@@ -240,13 +241,15 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
     volumes = [{"publication_date_utc":d,"source_links":by_day[d],"editorial_candidates":candidates_by_day[d],"regulatory_date_only_leads":date_only_by_day[d]} for d in days]
     (outdir / "volume_7d.json").write_text(json.dumps({"run_utc":now.isoformat(), "days":volumes, "definitions":"Publisher-date link counts, not unique independently verified events or collection-day counts."},indent=2) + "\n", encoding="utf-8")
     (outdir / "editorial_candidates.json").write_text(json.dumps(candidates, indent=2) + "\n", encoding="utf-8")
+    candidates24 = [x for x in candidates if datetime.fromisoformat(x["published_utc"]) >= now - timedelta(hours=24)]
+    (outdir / "editorial_candidates_24h.json").write_text(json.dumps(candidates24,indent=2) + "\n",encoding="utf-8")
     regulatory_watch = sorted((x for x in retained
         if x.get("published_precision") == "day" and x.get("relevance_score",0) >= 22),
         key=lambda x:(x.get("relevance_score",0),x["published_utc"]),reverse=True)
     (outdir / "regulatory_watch.json").write_text(json.dumps(regulatory_watch,indent=2) + "\n",encoding="utf-8")
     lines = ["# EnergyBrew — live RSS collection", "",
              f"Run: {run['run_utc']}", f"Successfully parsed feeds: **{run['feeds_connected']}/{run['feeds_checked']}**",
-             f"Fresh timestamped entries: **{run['fresh_entries']}**", f"Editorial candidates (timestamped): **{run['relevant_fresh_entries']}**", f"Regulatory date-only feed entries: **{run['date_only_entries']}**", f"Regulatory watchlist links (7 days): **{run['regulatory_watch_links_7d']}**", f"New unique links (all precision levels): **{new_count}**",
+             f"Fresh timestamped entries: **{run['fresh_entries']}**", f"Editorial candidates (in collection window): **{run['relevant_fresh_entries']}**", f"Editorial candidates (last 24h): **{run['editorial_candidates_24h']}**", f"Regulatory date-only feed entries: **{run['date_only_entries']}**", f"Regulatory watchlist links (7 days): **{run['regulatory_watch_links_7d']}**", f"New unique links (all precision levels): **{new_count}**",
              f"Distinct article links in 7-day state: **{len(retained)}**", "",
              "| Source | Connected | Timestamped | Date-only | Candidates | New | Error |", "|---|---|---:|---:|---:|---:|---|"]
     for r in results:
