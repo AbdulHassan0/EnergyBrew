@@ -1,0 +1,45 @@
+name: EnergyBrew approved edition — test email
+on:
+  workflow_dispatch:
+    inputs:
+      edition_date:
+        description: "An approved YYYY-MM-DD edition file in newsletter/editions/"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  test-one-mailbox:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Test newsletter approval and rendering logic
+        run: python -m unittest discover -s tests -q
+      - name: Check approved edition and recipient configuration
+        env:
+          EDITION_DATE: ${{ inputs.edition_date }}
+          NEWSLETTER_ALLOW_TEST_SEND: ${{ vars.NEWSLETTER_ALLOW_TEST_SEND }}
+          NEWSLETTER_TEST_TO: ${{ secrets.NEWSLETTER_TEST_TO }}
+          NEWSLETTER_FROM: ${{ secrets.NEWSLETTER_FROM }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          from newsletter import date_only, EditorialError
+          date = os.environ["EDITION_DATE"]
+          if not date_only(date):
+              raise EditorialError("Invalid edition date; YYYY-MM-DD required")
+          if not Path("newsletter/editions", date + ".json").is_file():
+              raise EditorialError("No approved edition file for that date")
+          PY
+          python newsletter_delivery.py --edition "newsletter/editions/$EDITION_DATE.json" --send-test
