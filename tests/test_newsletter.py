@@ -3,6 +3,7 @@ import copy
 import json
 import tempfile
 import unittest
+from datetime import datetime, timezone
 from pathlib import Path
 
 from newsletter import (
@@ -57,7 +58,7 @@ class NewsletterTests(unittest.TestCase):
             {"title": "Duplicate version", "url": "https://eia.gov/news/1", "origin": "official_rss"},
             {"title": "Malformed link", "url": "javascript:alert(1)", "origin": "global_discovery"},
         ]}
-        queue = research_queue(desk, edition_date="2026-11-18")
+        queue = research_queue(desk, edition_date="2026-11-18", now=datetime(2026,11,18,20,0,tzinfo=timezone.utc))
         self.assertEqual(len(queue["stories"]), 1)
         self.assertEqual(queue["status"], "draft")
         self.assertEqual(queue["stories"][0]["summary"], "")
@@ -65,6 +66,19 @@ class NewsletterTests(unittest.TestCase):
         self.assertFalse(queue["stories"][0]["original_source_checked"])
         with self.assertRaises(EditorialError):
             validate_approved(queue)
+
+    def test_reject_stale_snapshot(self):
+        with self.assertRaises(EditorialError):
+            research_queue({"generated_utc": "2026-11-10T00:00:00Z", "stories": []},
+                           now=datetime(2026,11,18,20,0,tzinfo=timezone.utc))
+
+    def test_exclude_non_latin_titles(self):
+        desk = {"generated_utc":"2026-11-18T19:00:00Z", "stories":[
+            {"title":"Thai oil ราคาน้ำมันโลกดิ่งหนัก", "url":"https://example.com/thai", "category":"Oil & Energy"},
+            {"title":"English energy industry briefing", "url":"https://example.com/english", "category":"Oil & Energy"}]}
+        queue = research_queue(desk, now=datetime(2026,11,18,20,0,tzinfo=timezone.utc))
+        self.assertEqual(len(queue["stories"]), 1)
+        self.assertIn("English energy", queue["stories"][0]["title"])
 
     def test_only_https_and_no_credentials(self):
         self.assertFalse(valid_url("http://example.com/story"))
