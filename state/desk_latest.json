@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-11-18T21:32:08.319552+00:00",
+  "generated_utc": "2026-11-18T21:35:55.033277+00:00",
   "status": "research_only_not_approved",
-  "unique_relevant_urls_7d": 105,
+  "unique_relevant_urls_7d": 117,
   "selected_research_links": 26,
   "unique_domains_in_selection": 17,
   "queue_counts": {
@@ -11,7 +11,7 @@
     "timestamped_official": 1,
     "regulatory_date_only": 4,
     "company_release_unverified": 5,
-    "discovery_unverified": 81
+    "discovery_unverified": 93
   },
   "selected_category_counts": {
     "Natural Gas & LNG": 8,
@@ -23,7 +23,7 @@
     "Natural Gas & LNG": 8,
     "Power & Electricity": 8,
     "Oil & Energy": 8,
-    "Infrastructure & Investment": 13
+    "Infrastructure & Investment": 12
   },
   "missing_categories": [],
   "publisher_timestamped_official_24h": 1,
@@ -528,15 +528,14 @@
       "rank": 48
     },
     {
-      "title": "Feds back $4B project to connect eastern and western electricity grids",
-      "url": "https://www.winnipegfreepress.com/business/2026/11/18/feds-back-4b-project-to-connect-eastern-and-western-electricity-grids",
-      "domain": "www.winnipegfreepress.com",
+      "title": "Contractors seek representation on Ogun electricity board",
+      "url": "https://punchng.com/contractors-seek-representation-on-ogun-electricity-board",
+      "domain": "punchng.com",
       "source": "GDELT GAL RSS",
       "source_class": "unclassified",
       "category": "Power & Electricity",
       "coverage_themes": [
-        "Power & Electricity",
-        "Infrastructure & Investment"
+        "Power & Electricity"
       ],
       "relevance_score": 33,
       "relevance_evidence": [
@@ -544,7 +543,34 @@
       ],
       "origin": "global_discovery",
       "time_basis": "discovery_index_first_seen_only",
-      "observed_time_utc": "2026-11-18T21:17:00+00:00",
+      "observed_time_utc": "2026-11-18T21:32:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 45
+    },
+    {
+      "title": "ExxonMobil (XOM) Just Achieved Something 95% of S&P 500 (GSPC) Members Haven't Done | The Motley Fool",
+      "url": "https://www.fool.com/investing/2026/11/18/exxonmobil-xom-achieved-something-95-of-sp-50-gspc?source=iedfolrf0000001",
+      "domain": "www.fool.com",
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Oil & Energy",
+      "coverage_themes": [
+        "Oil & Energy"
+      ],
+      "relevance_score": 33,
+      "relevance_evidence": [
+        "exxonmobil"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "discovery_index_first_seen_only",
+      "observed_time_utc": "2026-11-18T21:31:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
@@ -637,6 +663,33 @@
       "rank": 45
     },
     {
+      "title": "Empowering People in Oil and Gas",
+      "url": "https://www.rigzone.com/news/wire/usa_strikes_irgc_site_on_qeshm_island-18-nov-2026-185116-article",
+      "domain": "www.rigzone.com",
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Oil & Energy",
+      "coverage_themes": [
+        "Oil & Energy"
+      ],
+      "relevance_score": 30,
+      "relevance_evidence": [
+        "oil and gas"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "discovery_index_first_seen_only",
+      "observed_time_utc": "2026-11-18T21:32:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 42
+    },
+    {
       "title": "Oil and Gas",
       "url": "https://financialpost.com/category/energy/oil-gas",
       "domain": "financialpost.com",
@@ -653,60 +706,6 @@
       "origin": "global_discovery",
       "time_basis": "discovery_index_first_seen_only",
       "observed_time_utc": "2026-11-18T21:16:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 42
-    },
-    {
-      "title": "Uganda builds local oil and gas skills",
-      "url": "https://ntv.co.ug/business/uganda-builds-local-oil-and-gas-skills",
-      "domain": "ntv.co.ug",
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Oil & Energy",
-      "coverage_themes": [
-        "Oil & Energy"
-      ],
-      "relevance_score": 30,
-      "relevance_evidence": [
-        "oil and gas"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "discovery_index_first_seen_only",
-      "observed_time_utc": "2026-11-18T21:02:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 42
-    },
-    {
-      "title": "Tunisia olive oil exports jump nearly 50% on bumper harvest | Africanews",
-      "url": "https://www.africanews.com/2026/11/18/tunisia-olive-oil-exports-jump-nearly-50-on-bumper-harvest",
-      "domain": "www.africanews.com",
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Oil & Energy",
-      "coverage_themes": [
-        "Oil & Energy"
-      ],
-      "relevance_score": 30,
-      "relevance_evidence": [
-        "oil exports"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "discovery_index_first_seen_only",
-      "observed_time_utc": "2026-11-18T21:02:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,

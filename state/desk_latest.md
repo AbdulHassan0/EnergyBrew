@@ -2,8 +2,8 @@
 
 **Research links only. Not fact-checked, approved, or ready for publication.**
 
-Generated (UTC): 2026-11-18T21:32:08.319552+00:00
-Distinct relevant URLs in retained data: **105**
+Generated (UTC): 2026-11-18T21:35:55.033277+00:00
+Distinct relevant URLs in retained data: **117**
 Selected diverse research leads: **26**
 Publisher-timestamped official leads within 24h: **1**
 Specialist-publisher timestamped links within 24h: **4**
@@ -49,20 +49,20 @@ Discovery publisher dates verified: **0**
    - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-17T14:28:30+00:00). Editorial status: **unapproved**.
 17. **[Crude Oil Plummeting As Inventories Increase More Than Expected](https://www.rttnews.com/story.aspx?Id=3716011)** — Oil & Energy | global_discovery | score 36
    - Timestamp basis: discovery_index_first_seen_only (2026-11-18T20:47:00+00:00). Editorial status: **unapproved**.
-18. **[Feds back $4B project to connect eastern and western electricity grids](https://www.winnipegfreepress.com/business/2026/11/18/feds-back-4b-project-to-connect-eastern-and-western-electricity-grids)** — Power & Electricity | global_discovery | score 33
-   - Timestamp basis: discovery_index_first_seen_only (2026-11-18T21:17:00+00:00). Editorial status: **unapproved**.
-19. **[Enterprise Products Partners: Oil Prices Are Noisy, Dividend Is The Signal](https://seekingalpha.com/article/4969737-enterprise-products-partners-oil-prices-are-noisy-dividend-is-the-signal)** — Oil & Energy | global_discovery | score 33
+18. **[Contractors seek representation on Ogun electricity board](https://punchng.com/contractors-seek-representation-on-ogun-electricity-board)** — Power & Electricity | global_discovery | score 33
+   - Timestamp basis: discovery_index_first_seen_only (2026-11-18T21:32:00+00:00). Editorial status: **unapproved**.
+19. **[ExxonMobil (XOM) Just Achieved Something 95% of S&P 500 (GSPC) Members Haven't Done / The Motley Fool](https://www.fool.com/investing/2026/11/18/exxonmobil-xom-achieved-something-95-of-sp-50-gspc?source=iedfolrf0000001)** — Oil & Energy | global_discovery | score 33
+   - Timestamp basis: discovery_index_first_seen_only (2026-11-18T21:31:00+00:00). Editorial status: **unapproved**.
+20. **[Enterprise Products Partners: Oil Prices Are Noisy, Dividend Is The Signal](https://seekingalpha.com/article/4969737-enterprise-products-partners-oil-prices-are-noisy-dividend-is-the-signal)** — Oil & Energy | global_discovery | score 33
    - Timestamp basis: discovery_index_first_seen_only (2026-11-18T21:01:00+00:00). Editorial status: **unapproved**.
-20. **[Why Iraq Just Fast-Tracked Chevron's Takeover Of A 14-Billion-Barrel Supergiant](http://www.zerohedge.com/markets/why-iraq-just-fast-tracked-chevrons-takeover-14-billion-barrel-supergiant)** — Oil & Energy | global_discovery | score 33
+21. **[Why Iraq Just Fast-Tracked Chevron's Takeover Of A 14-Billion-Barrel Supergiant](http://www.zerohedge.com/markets/why-iraq-just-fast-tracked-chevrons-takeover-14-billion-barrel-supergiant)** — Oil & Energy | global_discovery | score 33
    - Timestamp basis: discovery_index_first_seen_only (2026-11-18T19:31:00+00:00). Editorial status: **unapproved**.
-21. **[Brent cede de barrera de US$93 el barril ante mayores inventarios en EE.UU.](https://www.larepublica.co/globoeconomia/brent-cede-de-barrera-de-us-93-el-barril-ante-mayores-inventarios-en-ee-uu-4527313)** — Oil & Energy | global_discovery | score 33
+22. **[Brent cede de barrera de US$93 el barril ante mayores inventarios en EE.UU.](https://www.larepublica.co/globoeconomia/brent-cede-de-barrera-de-us-93-el-barril-ante-mayores-inventarios-en-ee-uu-4527313)** — Oil & Energy | global_discovery | score 33
    - Timestamp basis: discovery_index_first_seen_only (2026-11-18T18:16:00+00:00). Editorial status: **unapproved**.
-22. **[Oil and Gas](https://financialpost.com/category/energy/oil-gas)** — Oil & Energy | global_discovery | score 30
+23. **[Empowering People in Oil and Gas](https://www.rigzone.com/news/wire/usa_strikes_irgc_site_on_qeshm_island-18-nov-2026-185116-article)** — Oil & Energy | global_discovery | score 30
+   - Timestamp basis: discovery_index_first_seen_only (2026-11-18T21:32:00+00:00). Editorial status: **unapproved**.
+24. **[Oil and Gas](https://financialpost.com/category/energy/oil-gas)** — Oil & Energy | global_discovery | score 30
    - Timestamp basis: discovery_index_first_seen_only (2026-11-18T21:16:00+00:00). Editorial status: **unapproved**.
-23. **[Uganda builds local oil and gas skills](https://ntv.co.ug/business/uganda-builds-local-oil-and-gas-skills)** — Oil & Energy | global_discovery | score 30
-   - Timestamp basis: discovery_index_first_seen_only (2026-11-18T21:02:00+00:00). Editorial status: **unapproved**.
-24. **[Tunisia olive oil exports jump nearly 50% on bumper harvest / Africanews](https://www.africanews.com/2026/11/18/tunisia-olive-oil-exports-jump-nearly-50-on-bumper-harvest)** — Oil & Energy | global_discovery | score 30
-   - Timestamp basis: discovery_index_first_seen_only (2026-11-18T21:02:00+00:00). Editorial status: **unapproved**.
 25. **[Gas Infrastructure Offers Africa’s Best Energy Investment In 2027 – WEC](https://leadership.ng/gas-infrastructure-offers-africas-best-energy-investment-in-2027-wec)** — Infrastructure & Investment | global_discovery | score 30
    - Timestamp basis: discovery_index_first_seen_only (2026-11-18T19:32:00+00:00). Editorial status: **unapproved**.
 26. **[Energy Transfer: A Rare Second Chance To Get In](https://seekingalpha.com/article/4969757-energy-transfer-rare-second-chance-to-get-in)** — Infrastructure & Investment | global_discovery | score 27

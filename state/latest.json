@@ -1,5 +1,5 @@
 {
-  "run_utc": "2026-11-18T21:32:00.310425+00:00",
+  "run_utc": "2026-11-18T21:35:47.426545+00:00",
   "scan_state": "healthy",
   "connection_ratio": 1.0,
   "feeds_failed": 0,
@@ -30,7 +30,8 @@
         "old": 26,
         "future": 0,
         "invalid_link": 0
-      }
+      },
+      "newest_feed_published_utc": "2026-11-18T14:00:00+00:00"
     },
     {
       "source": "EIA Press Releases",
@@ -47,7 +48,8 @@
         "old": 0,
         "future": 0,
         "invalid_link": 13
-      }
+      },
+      "newest_feed_published_utc": "2026-11-10T17:00:00+00:00"
     },
     {
       "source": "EIA Congressional Testimony",
@@ -64,7 +66,8 @@
         "old": 0,
         "future": 0,
         "invalid_link": 1
-      }
+      },
+      "newest_feed_published_utc": "2021-11-16T14:00:00+00:00"
     },
     {
       "source": "EIA Presentations",
@@ -81,7 +84,8 @@
         "old": 1,
         "future": 0,
         "invalid_link": 0
-      }
+      },
+      "newest_feed_published_utc": "2026-03-04T14:00:00+00:00"
     },
     {
       "source": "DOE Energy News",
@@ -98,7 +102,8 @@
         "old": 8,
         "future": 0,
         "invalid_link": 0
-      }
+      },
+      "newest_feed_published_utc": "2026-11-18T18:06:31+00:00"
     },
     {
       "source": "DOE Grid Deployment",
@@ -115,7 +120,8 @@
         "old": 10,
         "future": 0,
         "invalid_link": 0
-      }
+      },
+      "newest_feed_published_utc": "2026-10-30T14:42:15+00:00"
     },
     {
       "source": "US NRC Nuclear News",
@@ -132,7 +138,8 @@
         "old": 164,
         "future": 0,
         "invalid_link": 0
-      }
+      },
+      "newest_feed_published_utc": "2026-09-14T08:00:00+00:00"
     },
     {
       "source": "DOE Hydrocarbons Releases",
@@ -149,7 +156,8 @@
         "old": 10,
         "future": 0,
         "invalid_link": 0
-      }
+      },
+      "newest_feed_published_utc": "2026-11-04T05:00:00+00:00"
     },
     {
       "source": "DOE Hydrocarbons Blog",
@@ -166,7 +174,8 @@
         "old": 10,
         "future": 0,
         "invalid_link": 0
-      }
+      },
+      "newest_feed_published_utc": "2026-10-29T20:16:57+00:00"
     },
     {
       "source": "European Commission DG Energy",
@@ -183,7 +192,8 @@
         "old": 24,
         "future": 0,
         "invalid_link": 0
-      }
+      },
+      "newest_feed_published_utc": "2026-11-17T23:00:00+00:00"
     },
     {
       "source": "Federal Register notices",
@@ -200,7 +210,8 @@
         "old": 124,
         "future": 0,
         "invalid_link": 0
-      }
+      },
+      "newest_feed_published_utc": "2026-11-18T05:00:00+00:00"
     },
     {
       "source": "Offshore Energy News",
@@ -217,7 +228,8 @@
         "old": 31,
         "future": 0,
         "invalid_link": 0
-      }
+      },
+      "newest_feed_published_utc": "2026-11-18T15:07:53+00:00"
     },
     {
       "source": "OilPrice.com News",
@@ -234,7 +246,8 @@
         "old": 0,
         "future": 0,
         "invalid_link": 0
-      }
+      },
+      "newest_feed_published_utc": "2026-11-18T21:00:00+00:00"
     },
     {
       "source": "Utility Dive News",
@@ -251,7 +264,8 @@
         "old": 2,
         "future": 0,
         "invalid_link": 0
-      }
+      },
+      "newest_feed_published_utc": "2026-11-18T15:57:17+00:00"
     },
     {
       "source": "PJM Inside Lines",
@@ -268,143 +282,159 @@
         "old": 8,
         "future": 0,
         "invalid_link": 0
-      }
+      },
+      "newest_feed_published_utc": "2026-11-18T18:56:18+00:00"
     }
   ],
   "source_health": {
     "EIA Today in Energy": {
-      "last_attempt_utc": "2026-11-18T21:32:00.310425+00:00",
-      "last_success_utc": "2026-11-18T21:32:00.310425+00:00",
+      "last_attempt_utc": "2026-11-18T21:35:47.426545+00:00",
+      "last_success_utc": "2026-11-18T21:35:47.426545+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 4,
+      "consecutive_successes": 5,
       "last_items_seen": 29,
+      "newest_feed_published_utc": "2026-11-18T14:00:00+00:00",
       "last_error_type": null
     },
     "EIA Press Releases": {
-      "last_attempt_utc": "2026-11-18T21:32:00.310425+00:00",
-      "last_success_utc": "2026-11-18T21:32:00.310425+00:00",
+      "last_attempt_utc": "2026-11-18T21:35:47.426545+00:00",
+      "last_success_utc": "2026-11-18T21:35:47.426545+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 4,
+      "consecutive_successes": 5,
       "last_items_seen": 13,
+      "newest_feed_published_utc": "2026-11-10T17:00:00+00:00",
       "last_error_type": null
     },
     "EIA Congressional Testimony": {
-      "last_attempt_utc": "2026-11-18T21:32:00.310425+00:00",
-      "last_success_utc": "2026-11-18T21:32:00.310425+00:00",
+      "last_attempt_utc": "2026-11-18T21:35:47.426545+00:00",
+      "last_success_utc": "2026-11-18T21:35:47.426545+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 4,
+      "consecutive_successes": 5,
       "last_items_seen": 1,
+      "newest_feed_published_utc": "2021-11-16T14:00:00+00:00",
       "last_error_type": null
     },
     "EIA Presentations": {
-      "last_attempt_utc": "2026-11-18T21:32:00.310425+00:00",
-      "last_success_utc": "2026-11-18T21:32:00.310425+00:00",
+      "last_attempt_utc": "2026-11-18T21:35:47.426545+00:00",
+      "last_success_utc": "2026-11-18T21:35:47.426545+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 4,
+      "consecutive_successes": 5,
       "last_items_seen": 1,
+      "newest_feed_published_utc": "2026-03-04T14:00:00+00:00",
       "last_error_type": null
     },
     "DOE Energy News": {
-      "last_attempt_utc": "2026-11-18T21:32:00.310425+00:00",
-      "last_success_utc": "2026-11-18T21:32:00.310425+00:00",
+      "last_attempt_utc": "2026-11-18T21:35:47.426545+00:00",
+      "last_success_utc": "2026-11-18T21:35:47.426545+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 4,
+      "consecutive_successes": 5,
       "last_items_seen": 10,
+      "newest_feed_published_utc": "2026-11-18T18:06:31+00:00",
       "last_error_type": null
     },
     "DOE Grid Deployment": {
-      "last_attempt_utc": "2026-11-18T21:32:00.310425+00:00",
-      "last_success_utc": "2026-11-18T21:32:00.310425+00:00",
+      "last_attempt_utc": "2026-11-18T21:35:47.426545+00:00",
+      "last_success_utc": "2026-11-18T21:35:47.426545+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 4,
+      "consecutive_successes": 5,
       "last_items_seen": 10,
+      "newest_feed_published_utc": "2026-10-30T14:42:15+00:00",
       "last_error_type": null
     },
     "US NRC Nuclear News": {
-      "last_attempt_utc": "2026-11-18T21:32:00.310425+00:00",
-      "last_success_utc": "2026-11-18T21:32:00.310425+00:00",
+      "last_attempt_utc": "2026-11-18T21:35:47.426545+00:00",
+      "last_success_utc": "2026-11-18T21:35:47.426545+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 4,
+      "consecutive_successes": 5,
       "last_items_seen": 164,
+      "newest_feed_published_utc": "2026-09-14T08:00:00+00:00",
       "last_error_type": null
     },
     "DOE Hydrocarbons Releases": {
-      "last_attempt_utc": "2026-11-18T21:32:00.310425+00:00",
-      "last_success_utc": "2026-11-18T21:32:00.310425+00:00",
+      "last_attempt_utc": "2026-11-18T21:35:47.426545+00:00",
+      "last_success_utc": "2026-11-18T21:35:47.426545+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 4,
+      "consecutive_successes": 5,
       "last_items_seen": 10,
+      "newest_feed_published_utc": "2026-11-04T05:00:00+00:00",
       "last_error_type": null
     },
     "DOE Hydrocarbons Blog": {
-      "last_attempt_utc": "2026-11-18T21:32:00.310425+00:00",
-      "last_success_utc": "2026-11-18T21:32:00.310425+00:00",
+      "last_attempt_utc": "2026-11-18T21:35:47.426545+00:00",
+      "last_success_utc": "2026-11-18T21:35:47.426545+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 4,
+      "consecutive_successes": 5,
       "last_items_seen": 10,
+      "newest_feed_published_utc": "2026-10-29T20:16:57+00:00",
       "last_error_type": null
     },
     "European Commission DG Energy": {
-      "last_attempt_utc": "2026-11-18T21:32:00.310425+00:00",
-      "last_success_utc": "2026-11-18T21:32:00.310425+00:00",
+      "last_attempt_utc": "2026-11-18T21:35:47.426545+00:00",
+      "last_success_utc": "2026-11-18T21:35:47.426545+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 4,
+      "consecutive_successes": 5,
       "last_items_seen": 30,
+      "newest_feed_published_utc": "2026-11-17T23:00:00+00:00",
       "last_error_type": null
     },
     "Federal Register notices": {
-      "last_attempt_utc": "2026-11-18T21:32:00.310425+00:00",
-      "last_success_utc": "2026-11-18T21:32:00.310425+00:00",
+      "last_attempt_utc": "2026-11-18T21:35:47.426545+00:00",
+      "last_success_utc": "2026-11-18T21:35:47.426545+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 4,
+      "consecutive_successes": 5,
       "last_items_seen": 136,
+      "newest_feed_published_utc": "2026-11-18T05:00:00+00:00",
       "last_error_type": null
     },
     "Offshore Energy News": {
-      "last_attempt_utc": "2026-11-18T21:32:00.310425+00:00",
-      "last_success_utc": "2026-11-18T21:32:00.310425+00:00",
+      "last_attempt_utc": "2026-11-18T21:35:47.426545+00:00",
+      "last_success_utc": "2026-11-18T21:35:47.426545+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 4,
+      "consecutive_successes": 5,
       "last_items_seen": 50,
+      "newest_feed_published_utc": "2026-11-18T15:07:53+00:00",
       "last_error_type": null
     },
     "OilPrice.com News": {
-      "last_attempt_utc": "2026-11-18T21:32:00.310425+00:00",
-      "last_success_utc": "2026-11-18T21:32:00.310425+00:00",
+      "last_attempt_utc": "2026-11-18T21:35:47.426545+00:00",
+      "last_success_utc": "2026-11-18T21:35:47.426545+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 4,
+      "consecutive_successes": 5,
       "last_items_seen": 15,
+      "newest_feed_published_utc": "2026-11-18T21:00:00+00:00",
       "last_error_type": null
     },
     "Utility Dive News": {
-      "last_attempt_utc": "2026-11-18T21:32:00.310425+00:00",
-      "last_success_utc": "2026-11-18T21:32:00.310425+00:00",
+      "last_attempt_utc": "2026-11-18T21:35:47.426545+00:00",
+      "last_success_utc": "2026-11-18T21:35:47.426545+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 4,
+      "consecutive_successes": 5,
       "last_items_seen": 10,
+      "newest_feed_published_utc": "2026-11-18T15:57:17+00:00",
       "last_error_type": null
     },
     "PJM Inside Lines": {
-      "last_attempt_utc": "2026-11-18T21:32:00.310425+00:00",
-      "last_success_utc": "2026-11-18T21:32:00.310425+00:00",
+      "last_attempt_utc": "2026-11-18T21:35:47.426545+00:00",
+      "last_success_utc": "2026-11-18T21:35:47.426545+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 4,
+      "consecutive_successes": 5,
       "last_items_seen": 10,
+      "newest_feed_published_utc": "2026-11-18T18:56:18+00:00",
       "last_error_type": null
     }
   }

@@ -1,15 +1,15 @@
 {
-  "generated_utc": "2026-11-18T21:32:08.927217+00:00",
+  "generated_utc": "2026-11-18T21:35:55.615184+00:00",
   "status": "degraded",
   "seven_day_pilot_complete": false,
   "history_span_days": 0.42,
-  "official_scan_runs": 43,
-  "official_successful_scans": 43,
-  "official_fully_connected_scans": 43,
+  "official_scan_runs": 44,
+  "official_successful_scans": 44,
+  "official_fully_connected_scans": 44,
   "failing_sources": [],
   "official_failed_scans": 0,
-  "gal_sample_runs": 36,
-  "gal_successful_samples": 36,
+  "gal_sample_runs": 37,
+  "gal_successful_samples": 37,
   "gal_failed_samples": 0,
   "observed_sampling_gaps": [
     {
@@ -23,13 +23,13 @@
       "minutes": 78.1
     }
   ],
-  "seven_day_start_gap_minutes": 9899.3,
+  "seven_day_start_gap_minutes": 9895.5,
   "latest_gal_age_minutes": 0.1,
   "expected_gal_interval_minutes": 10,
-  "latest_official_scan_utc": "2026-11-18T21:32:00.310425+00:00",
-  "latest_official_attempt_utc": "2026-11-18T21:32:00.310425+00:00",
-  "latest_gal_attempt_utc": "2026-11-18T21:32:04.052076+00:00",
-  "latest_gal_sample_utc": "2026-11-18T21:32:04.052076+00:00",
+  "latest_official_scan_utc": "2026-11-18T21:35:47.426545+00:00",
+  "latest_official_attempt_utc": "2026-11-18T21:35:47.426545+00:00",
+  "latest_gal_attempt_utc": "2026-11-18T21:35:50.974207+00:00",
+  "latest_gal_sample_utc": "2026-11-18T21:35:50.974207+00:00",
   "daily": [
     {
       "date_utc": "2026-11-12",
@@ -123,17 +123,17 @@
     },
     {
       "date_utc": "2026-11-18",
-      "official_scans": 43,
-      "gal_samples": 36,
+      "official_scans": 44,
+      "gal_samples": 37,
       "publisher_timestamped_official_links": 2,
       "specialist_publisher_timestamped_links": 30,
       "grid_operator_primary_timestamped_links": 1,
       "high_signal_official_links": 1,
-      "gdelt_index_first_seen_urls": 111,
+      "gdelt_index_first_seen_urls": 123,
       "press_release_feed_date_urls": 5,
       "scanning_observed": true,
-      "successful_official_scans": 43,
-      "successful_gal_samples": 36,
+      "successful_official_scans": 44,
+      "successful_gal_samples": 37,
       "successful_scanning_observed": true
     }
   ],

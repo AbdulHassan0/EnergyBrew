@@ -24,6 +24,26 @@
     ]
   },
   {
+    "url": "https://az.trend.az/other/world/4248094.html",
+    "title": "\u00c7exiya AB\u015e-d\u0259n 15-20 il m\u00fcdd\u0259tin\u0259 LNG t\u0259dar\u00fck\u00fc bar\u0259d\u0259 raz\u0131la\u015fma \u0259ld\u0259 edib",
+    "domain": "az.trend.az",
+    "gdelt_first_seen_utc": "2026-11-18T21:31:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 39,
+    "category": "Natural Gas & LNG",
+    "relevance_evidence": [
+      "lng"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
     "url": "https://financialpost.com/category/energy/lng",
     "title": "LNG News, Stories and Headlines on the Financial Post",
     "domain": "financialpost.com",
@@ -304,6 +324,86 @@
     "category": "Natural Gas & LNG",
     "relevance_evidence": [
       "natural gas"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://punchng.com/contractors-seek-representation-on-ogun-electricity-board",
+    "title": "Contractors seek representation on Ogun electricity board",
+    "domain": "punchng.com",
+    "gdelt_first_seen_utc": "2026-11-18T21:32:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.malawivoice.com/2026/11/18/malawi-needs-13600-mini-grid-connections-annually-to-meet-2030-electricity-target-mathanga",
+    "title": "Malawi needs 13,600 mini-grid connections annually to meet 2030 electricity target-Mathanga",
+    "domain": "www.malawivoice.com",
+    "gdelt_first_seen_utc": "2026-11-18T21:31:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.fool.com/investing/2026/11/18/exxonmobil-xom-achieved-something-95-of-sp-50-gspc?source=iedfolrf0000001",
+    "title": "ExxonMobil (XOM) Just Achieved Something 95% of S&P 500 (GSPC) Members Haven't Done | The Motley Fool",
+    "domain": "www.fool.com",
+    "gdelt_first_seen_utc": "2026-11-18T21:31:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "exxonmobil"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://en.shafaqna.com/491262/data-centre-power-demand-iea-quantum",
+    "title": "data centre power demand to top russia by 2030, iea says",
+    "domain": "en.shafaqna.com",
+    "gdelt_first_seen_utc": "2026-11-18T21:31:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "power demand"
     ],
     "status": "discovery_only_requires_publisher_verification"
   },
@@ -628,6 +728,66 @@
     "category": "Oil & Energy",
     "relevance_evidence": [
       "brent"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.rigzone.com/news/wire/usa_strikes_irgc_site_on_qeshm_island-18-nov-2026-185116-article",
+    "title": "Empowering People in Oil and Gas",
+    "domain": "www.rigzone.com",
+    "gdelt_first_seen_utc": "2026-11-18T21:32:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "oil and gas"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "http://www.southernminn.com/owatonna_peoples_press/news/local/residents-call-on-council-for-data-center-moratorium/article_64baa3fc-833d-422d-9607-545a31668d6d.html",
+    "title": "Residents call on council for data center moratorium",
+    "domain": "www.southernminn.com",
+    "gdelt_first_seen_utc": "2026-11-18T21:31:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.weau.com/2026/11/18/wis360-top-stories-eau-claire-co-data-center-moratorium-expected-january",
+    "title": "WIS360 top stories: Eau Claire Co. data center moratorium expected in January",
+    "domain": "www.weau.com",
+    "gdelt_first_seen_utc": "2026-11-18T21:31:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
     ],
     "status": "discovery_only_requires_publisher_verification"
   },
@@ -1543,6 +1703,86 @@
     "category": "Power & Electricity",
     "relevance_evidence": [
       "vistra"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://mynewsla.com/orange-county/2026/11/18/la-orange-county-gas-prices-at-lowest-amounts-since-july-3",
+    "title": "LA, Orange County Gas Prices at Lowest Amounts Since July - MyNewsLA.com",
+    "domain": "mynewsla.com",
+    "gdelt_first_seen_utc": "2026-11-18T21:32:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Natural Gas & LNG",
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.manilatimes.net/2026/11/19/business/top-business/transco-moves-to-stabilize-supply-in-mindoro-palawan/2473533",
+    "title": "Transco moves to stabilize supply in Mindoro, Palawan",
+    "domain": "www.manilatimes.net",
+    "gdelt_first_seen_utc": "2026-11-18T21:31:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Natural Gas & LNG",
+    "relevance_evidence": [
+      "transco"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.radio.gov.pk/18-11-2026/govt-revises-prices-of-petroleum-products-for-thursday",
+    "title": "Govt revises prices of petroleum products for Thursday",
+    "domain": "www.radio.gov.pk",
+    "gdelt_first_seen_utc": "2026-11-18T21:31:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "petroleum"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://mynewsla.com/riverside/2026/11/18/riverside-county-gas-prices-at-lowest-amounts-since-july-17",
+    "title": "Riverside County Gas Prices at Lowest Amounts Since July 17 - MyNewsLA.com",
+    "domain": "mynewsla.com",
+    "gdelt_first_seen_utc": "2026-11-18T21:31:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Natural Gas & LNG",
+    "relevance_evidence": [
+      "gas prices"
     ],
     "status": "discovery_only_requires_publisher_verification"
   },
