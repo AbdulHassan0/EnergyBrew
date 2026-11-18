@@ -1,18 +1,97 @@
 [
   {
+    "id": "dbb75ca8064473f97e60db15",
+    "title": "China Gas Upsizes Long-Term LNG Supply with U.S. Venture Global",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/China-Gas-Upsizes-Long-Term-LNG-Supply-with-US-Venture-Global.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-18T15:30:00+00:00",
+    "category": "Natural Gas & LNG",
+    "published_precision": "timestamp",
+    "relevance_score": 90,
+    "keyword_matches": 3,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "lng",
+      "natural gas",
+      "venture global"
+    ],
+    "status": "research_only_unverified"
+  },
+  {
+    "id": "d021b967b58c90a0b5d9efad",
+    "title": "Venture Global\u2019s bigger LNG deal with China Gas adds 500,000 tons annually",
+    "url": "https://www.offshore-energy.biz/2026/11/18/venture-globals-bigger-lng-deal-with-china-gas-adds-500000-tons-annually",
+    "source": "Offshore Energy News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-18T13:01:15+00:00",
+    "category": "Natural Gas & LNG",
+    "published_precision": "timestamp",
+    "relevance_score": 78,
+    "keyword_matches": 2,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "lng",
+      "venture global"
+    ],
+    "status": "research_only_unverified"
+  },
+  {
+    "id": "a556bd0d67d095de25e62318",
+    "title": "Mozambique Approves Exxon\u2019s Redesigned $30 Billion Rovuma LNG Plan",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Mozambique-Approves-Exxons-Redesigned-30-Billion-Rovuma-LNG-Plan.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-18T17:30:00+00:00",
+    "category": "Natural Gas & LNG",
+    "published_precision": "timestamp",
+    "relevance_score": 61,
+    "keyword_matches": 3,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "liquefied",
+      "lng",
+      "natural gas"
+    ],
+    "status": "research_only_unverified"
+  },
+  {
+    "id": "ece006e7c63756cac601b5cc",
+    "title": "Woodside and Trafigura sign off on decade-long LNG deal",
+    "url": "https://www.offshore-energy.biz/2026/11/18/woodside-and-trafigura-sign-off-on-decade-long-lng-deal",
+    "source": "Offshore Energy News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-18T09:16:02+00:00",
+    "category": "Natural Gas & LNG",
+    "published_precision": "timestamp",
+    "relevance_score": 61,
+    "keyword_matches": 3,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "liquefied",
+      "lng",
+      "natural gas"
+    ],
+    "status": "research_only_unverified"
+  },
+  {
     "id": "a4c390e9c48b4825355d9bf6",
     "title": "U.S. natural gas inventories end injection season above normal levels",
     "url": "https://www.eia.gov/todayinenergy/detail.php?id=68484",
     "source": "EIA Today in Energy",
+    "source_class": "official_agency",
     "published_utc": "2026-11-18T14:00:00+00:00",
     "category": "Natural Gas & LNG",
     "published_precision": "timestamp",
-    "relevance_score": 36,
+    "relevance_score": 54,
     "keyword_matches": 3,
     "editorial_candidate": true,
     "relevance_evidence": [
+      "gas demand",
+      "gas storage",
       "natural gas"
     ],
-    "status": "research_only_unverified"
+    "status": "research_only_unverified",
+    "also_seen_in": []
   }
 ]

@@ -1,14 +1,14 @@
 # EnergyBrew — live RSS collection
 
-Run: 2026-11-18T20:56:22.864943+00:00
-Successfully parsed feeds: **11/11**
-Fresh timestamped entries: **10**
-Editorial candidates (in collection window): **3**
-Editorial candidates (last 24h): **1**
+Run: 2026-11-18T20:58:49.729482+00:00
+Successfully parsed feeds: **13/13**
+Fresh timestamped entries: **44**
+Editorial candidates (in collection window): **10**
+Editorial candidates (last 24h): **5**
 Regulatory date-only feed entries: **12**
 Regulatory watchlist links (7 days): **4**
-New unique links (all precision levels): **0**
-Distinct article links in 7-day state: **22**
+New unique links (all precision levels): **34**
+Distinct article links in 7-day state: **56**
 
 | Source | Connected | Timestamped | Date-only | Candidates | New | Error |
 |---|---|---:|---:|---:|---:|---|
@@ -23,6 +23,8 @@ Distinct article links in 7-day state: **22**
 | DOE Hydrocarbons Blog | True | 0 | 0 | 0 | 0 |  |
 | European Commission DG Energy | True | 6 | 0 | 1 | 0 |  |
 | Federal Register notices | True | 0 | 12 | 0 | 0 |  |
+| Offshore Energy News | True | 19 | 0 | 5 | 19 |  |
+| OilPrice.com News | True | 15 | 0 | 2 | 15 |  |
 
 Source-linked metadata only (no publisher article text). Dates come from publishers' publication fields, not HTTP crawl times.
 No newsletter publication or subscriber email occurs.

@@ -1,13 +1,13 @@
 {
-  "generated_utc": "2026-11-18T20:56:29.676536+00:00",
+  "generated_utc": "2026-11-18T20:58:57.737225+00:00",
   "status": "degraded",
   "seven_day_pilot_complete": false,
   "history_span_days": 0.39,
-  "official_scan_runs": 35,
-  "official_successful_scans": 35,
+  "official_scan_runs": 36,
+  "official_successful_scans": 36,
   "official_failed_scans": 0,
-  "gal_sample_runs": 28,
-  "gal_successful_samples": 28,
+  "gal_sample_runs": 29,
+  "gal_successful_samples": 29,
   "gal_failed_samples": 0,
   "observed_sampling_gaps": [
     {
@@ -21,10 +21,10 @@
       "minutes": 78.1
     }
   ],
-  "latest_official_scan_utc": "2026-11-18T20:56:22.864943+00:00",
-  "latest_official_attempt_utc": "2026-11-18T20:56:22.864943+00:00",
-  "latest_gal_attempt_utc": "2026-11-18T20:56:24.102868+00:00",
-  "latest_gal_sample_utc": "2026-11-18T20:56:24.102868+00:00",
+  "latest_official_scan_utc": "2026-11-18T20:58:49.729482+00:00",
+  "latest_official_attempt_utc": "2026-11-18T20:58:49.729482+00:00",
+  "latest_gal_attempt_utc": "2026-11-18T20:58:51.845913+00:00",
+  "latest_gal_sample_utc": "2026-11-18T20:58:51.845913+00:00",
   "daily": [
     {
       "date_utc": "2026-11-12",
@@ -95,8 +95,8 @@
       "date_utc": "2026-11-17",
       "official_scans": 0,
       "gal_samples": 0,
-      "publisher_timestamped_official_links": 5,
-      "high_signal_official_links": 1,
+      "publisher_timestamped_official_links": 14,
+      "high_signal_official_links": 4,
       "gdelt_index_first_seen_urls": 0,
       "press_release_feed_date_urls": 0,
       "scanning_observed": false,
@@ -106,15 +106,15 @@
     },
     {
       "date_utc": "2026-11-18",
-      "official_scans": 35,
-      "gal_samples": 28,
-      "publisher_timestamped_official_links": 2,
-      "high_signal_official_links": 1,
+      "official_scans": 36,
+      "gal_samples": 29,
+      "publisher_timestamped_official_links": 27,
+      "high_signal_official_links": 5,
       "gdelt_index_first_seen_urls": 87,
       "press_release_feed_date_urls": 5,
       "scanning_observed": true,
-      "successful_official_scans": 35,
-      "successful_gal_samples": 28,
+      "successful_official_scans": 36,
+      "successful_gal_samples": 29,
       "successful_scanning_observed": true
     }
   ],

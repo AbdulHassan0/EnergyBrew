@@ -1,33 +1,150 @@
 [
   {
+    "id": "dbb75ca8064473f97e60db15",
+    "title": "China Gas Upsizes Long-Term LNG Supply with U.S. Venture Global",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/China-Gas-Upsizes-Long-Term-LNG-Supply-with-US-Venture-Global.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-18T15:30:00+00:00",
+    "category": "Natural Gas & LNG",
+    "published_precision": "timestamp",
+    "relevance_score": 90,
+    "keyword_matches": 3,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "lng",
+      "natural gas",
+      "venture global"
+    ],
+    "status": "research_only_unverified"
+  },
+  {
+    "id": "d021b967b58c90a0b5d9efad",
+    "title": "Venture Global\u2019s bigger LNG deal with China Gas adds 500,000 tons annually",
+    "url": "https://www.offshore-energy.biz/2026/11/18/venture-globals-bigger-lng-deal-with-china-gas-adds-500000-tons-annually",
+    "source": "Offshore Energy News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-18T13:01:15+00:00",
+    "category": "Natural Gas & LNG",
+    "published_precision": "timestamp",
+    "relevance_score": 78,
+    "keyword_matches": 2,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "lng",
+      "venture global"
+    ],
+    "status": "research_only_unverified"
+  },
+  {
+    "id": "a556bd0d67d095de25e62318",
+    "title": "Mozambique Approves Exxon\u2019s Redesigned $30 Billion Rovuma LNG Plan",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Mozambique-Approves-Exxons-Redesigned-30-Billion-Rovuma-LNG-Plan.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-18T17:30:00+00:00",
+    "category": "Natural Gas & LNG",
+    "published_precision": "timestamp",
+    "relevance_score": 61,
+    "keyword_matches": 3,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "liquefied",
+      "lng",
+      "natural gas"
+    ],
+    "status": "research_only_unverified"
+  },
+  {
+    "id": "ece006e7c63756cac601b5cc",
+    "title": "Woodside and Trafigura sign off on decade-long LNG deal",
+    "url": "https://www.offshore-energy.biz/2026/11/18/woodside-and-trafigura-sign-off-on-decade-long-lng-deal",
+    "source": "Offshore Energy News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-18T09:16:02+00:00",
+    "category": "Natural Gas & LNG",
+    "published_precision": "timestamp",
+    "relevance_score": 61,
+    "keyword_matches": 3,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "liquefied",
+      "lng",
+      "natural gas"
+    ],
+    "status": "research_only_unverified"
+  },
+  {
     "id": "a4c390e9c48b4825355d9bf6",
     "title": "U.S. natural gas inventories end injection season above normal levels",
     "url": "https://www.eia.gov/todayinenergy/detail.php?id=68484",
     "source": "EIA Today in Energy",
+    "source_class": "official_agency",
     "published_utc": "2026-11-18T14:00:00+00:00",
     "category": "Natural Gas & LNG",
     "published_precision": "timestamp",
-    "relevance_score": 36,
+    "relevance_score": 54,
     "keyword_matches": 3,
     "editorial_candidate": true,
     "relevance_evidence": [
+      "gas demand",
+      "gas storage",
       "natural gas"
     ],
-    "status": "research_only_unverified"
+    "status": "research_only_unverified",
+    "also_seen_in": []
   },
   {
     "id": "a86b6bed4d391a5877a630e8",
     "title": "Energy Department Announces $2.8 Billion Loan to Strengthen Grid Reliability and Help Lower Costs in Wyoming",
     "url": "https://www.energy.gov/articles/energy-department-announces-28-billion-loan-strengthen-grid-reliability-and-help-lower",
     "source": "DOE Energy News",
+    "source_class": "official_agency",
     "published_utc": "2026-11-17T18:10:03+00:00",
     "category": "Power & Electricity",
     "published_precision": "timestamp",
-    "relevance_score": 33,
+    "relevance_score": 44,
     "keyword_matches": 2,
     "editorial_candidate": true,
     "relevance_evidence": [
+      "electricity",
       "grid reliability"
+    ],
+    "status": "research_only_unverified",
+    "also_seen_in": []
+  },
+  {
+    "id": "ffeaf298774a3406bb15a015",
+    "title": "Shell kicks off gas production from its deepwater project in Southeast Asia",
+    "url": "https://www.offshore-energy.biz/2026/11/17/shell-kicks-off-gas-production-from-its-deepwater-project-in-southeast-asia",
+    "source": "Offshore Energy News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-17T08:53:26+00:00",
+    "category": "Natural Gas & LNG",
+    "published_precision": "timestamp",
+    "relevance_score": 42,
+    "keyword_matches": 2,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "gas production",
+      "natural gas"
+    ],
+    "status": "research_only_unverified"
+  },
+  {
+    "id": "c33fd5e619b0b80d2e2edc2e",
+    "title": "Fourth floating LNG terminal put into operation mode to fuel Germany\u2019s energy security",
+    "url": "https://www.offshore-energy.biz/2026/11/17/fourth-floating-lng-terminal-put-into-operation-mode-to-fuel-germanys-energy-security",
+    "source": "Offshore Energy News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-17T10:41:15+00:00",
+    "category": "Natural Gas & LNG",
+    "published_precision": "timestamp",
+    "relevance_score": 39,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "lng"
     ],
     "status": "research_only_unverified"
   },
@@ -36,14 +153,34 @@
     "title": "Commission approves \u20ac9.5 billion Dutch State aid to support offshore wind energy",
     "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2457",
     "source": "European Commission DG Energy",
+    "source_class": "official_agency",
     "published_utc": "2026-11-16T23:00:00+00:00",
     "category": "Power & Electricity",
     "published_precision": "timestamp",
-    "relevance_score": 27,
+    "relevance_score": 38,
     "keyword_matches": 2,
     "editorial_candidate": true,
     "relevance_evidence": [
+      "electricity",
       "offshore wind"
+    ],
+    "status": "research_only_unverified",
+    "also_seen_in": []
+  },
+  {
+    "id": "7cd9e69593698adc68610cf0",
+    "title": "ExxonMobil pushes ahead with Guyana\u2019s eighth oil project as Saipem gets the all-clear and SBM Offshore bags FPSO job",
+    "url": "https://www.offshore-energy.biz/2026/11/17/exxonmobil-pushes-ahead-with-guyanas-eighth-oil-project-as-saipem-gets-the-all-clear-and-sbm-offshore-bags-fpso-job",
+    "source": "Offshore Energy News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-17T08:00:08+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 33,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "exxonmobil"
     ],
     "status": "research_only_unverified"
   }

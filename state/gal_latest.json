@@ -1,7 +1,7 @@
 {
-  "run_utc": "2026-11-18T20:56:24.102868+00:00",
+  "run_utc": "2026-11-18T20:58:51.845913+00:00",
   "provider": "GDELT GAL RSS",
-  "minutes_since_previous_sample": 0.9,
+  "minutes_since_previous_sample": 2.5,
   "potential_sampling_gap": false,
   "coverage": "rolling_15min_sample_only_not_full_day",
   "status": "ok",

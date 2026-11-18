@@ -18,7 +18,10 @@
       "crude oil",
       "oil prices"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.fool.com/earnings/takeaways/2026/11/18/golar-lng-3-key-takeaways-for-long-term-investors?source=iedfolrf0000001",
@@ -38,7 +41,10 @@
     "relevance_evidence": [
       "lng"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.in.gr/2026/11/18/economy/diethnis-oikonomia/i-tsexia-oloklironei-tin-synapsi-symfonias-me-tis-ipa-gia-tin-promitheia-lng",
@@ -207,7 +213,10 @@
     "relevance_evidence": [
       "crude oil"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.abc12.com/news/state/dte-energy-will-not-ask-for-a-natural-gas-rate-hike-until-late-2027/article_ce1f3f5f-2a6c-4fdd-be51-1af5b1477697.html",
@@ -479,7 +488,10 @@
     "relevance_evidence": [
       "power plant"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://nypost.com/2026/11/18/us-news/mumford-sons-ben-lovett-to-open-new-venue-in-nycs-iconic-domino-sugar-refinery",
@@ -499,7 +511,10 @@
     "relevance_evidence": [
       "refinery"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://kfgo.com/2026/11/18/texas-resumes-issuing-data-center-air-permits-regulator-says",
@@ -519,7 +534,10 @@
     "relevance_evidence": [
       "data center"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://hot96.com/2026/11/18/texas-resumes-issuing-data-center-air-permits-regulator-says",
@@ -539,7 +557,10 @@
     "relevance_evidence": [
       "data center"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.odwyerpr.com/story/public/25629/2026-11-18/sc-county-seeks-data-center-impact-study.html",
@@ -1106,7 +1127,10 @@
     "relevance_evidence": [
       "gas prices"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://wtvbam.com/2026/11/18/1002844",
