@@ -110,6 +110,21 @@ class MetricsTests(unittest.TestCase):
         self.assertGreater(r["seven_day_start_gap_minutes"],15)
         self.assertFalse(r["seven_day_pilot_complete"])
 
+    def test_connected_feed_can_be_dormant_not_broken(self):
+        rss={"runs":[{"run_utc":stamp(3),"feeds_connected":2,"feeds_checked":2,
+                      "scan_state":"healthy"}],
+             "source_health":{
+                 "Old testimony":{"newest_feed_published_utc":(NOW-timedelta(days=365)).isoformat(),
+                                  "last_success_utc":stamp(3),"consecutive_failures":0},
+                 "Active LNG RSS":{"newest_feed_published_utc":stamp(60),
+                                   "last_success_utc":stamp(3),"consecutive_failures":0},
+             }}
+        r=create(rss,{"gal_runs":[{"run_utc":stamp(2),"status":"ok"}]},now=NOW)
+        self.assertEqual(r["official_fully_connected_scans"],1)
+        self.assertEqual(r["feed_publication_activity_counts"]["publication_within_7d"],1)
+        self.assertEqual(r["feed_publication_activity_counts"]["no_publication_in_7d"],1)
+        self.assertEqual(r["failing_sources"],[])
+
     def test_report_outputs_readable_files(self):
         with tempfile.TemporaryDirectory() as d:
             root=Path(d)

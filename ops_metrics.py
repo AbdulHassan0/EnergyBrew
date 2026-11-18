@@ -139,6 +139,26 @@ def create(rss, discovery, releases=None, *, now=None):
         warnings.append("Seven-day operating pilot is not yet complete")
     source_health=rss.get("source_health",{})
     source_health=source_health if isinstance(source_health,dict) else {}
+    # Connectivity and publisher activity are distinct. Some government feeds
+    # legitimately publish less than weekly; stale content is a diagnostic,
+    # NOT proof that polling failed or an invented missing article.
+    publication_activity=[]
+    for name,row in source_health.items():
+        if not isinstance(row,dict):
+            continue
+        newest=as_time(row.get("newest_feed_published_utc"))
+        age_hours=round((now-newest).total_seconds()/3600,1) if newest else None
+        activity=("unknown_date" if age_hours is None else
+                  "future_dated_anomaly" if age_hours < -1 else
+                  "no_publication_in_7d" if age_hours>168 else "publication_within_7d")
+        publication_activity.append({
+            "source":name,"newest_feed_published_utc":newest.isoformat() if newest else None,
+            "age_hours":age_hours,"activity":activity,
+            "last_successful_scan_utc":row.get("last_success_utc")
+        })
+    publication_activity.sort(key=lambda x:(x["age_hours"] is not None,
+                                             -(x["age_hours"] or 0), x["source"]))
+    activity_counts=Counter(x["activity"] for x in publication_activity)
     failing_sources=sorted([
         {"source":name,"consecutive_failures":row.get("consecutive_failures",0),
          "last_success_utc":row.get("last_success_utc"),"last_error_type":row.get("last_error_type")}
@@ -153,6 +173,8 @@ def create(rss, discovery, releases=None, *, now=None):
         "official_scan_runs":len(r_runs),"official_successful_scans":len(successful_r_runs),
         "official_fully_connected_scans":len(fully_connected_r_runs),
         "failing_sources":failing_sources,
+        "feed_publication_activity":publication_activity,
+        "feed_publication_activity_counts":dict(activity_counts),
         "official_failed_scans":len(r_runs)-len(successful_r_runs),
         "gal_sample_runs":len(g_runs),
         "gal_successful_samples":sum(x.get("status")=="ok" for x in g_runs),
@@ -181,6 +203,7 @@ def report(rss_path, discovery_path, releases_path, outdir, *, now=None):
            f"Seven-day pilot complete: **{r['seven_day_pilot_complete']}**",
            f"Observed history span: **{r['history_span_days']} days**",
            f"RSS scans: **{r['official_scan_runs']}** (above 80% feed quorum: {r['official_successful_scans']}, all feeds connected: {r['official_fully_connected_scans']}, below quorum: {r['official_failed_scans']})",
+           f"Sources whose newest publisher item is within seven days: **{r['feed_publication_activity_counts'].get('publication_within_7d',0)}** / {len(r['feed_publication_activity'])}",
            f"GDELT GAL samples: **{r['gal_sample_runs']}** (successful: {r['gal_successful_samples']}, degraded: {r['gal_failed_samples']})",
            f"GDELT intervals longer than {MAX_GAL_GAP_MINUTES} minutes: **{len(r['observed_sampling_gaps'])}**",
            f"Gap from seven-day window start to first GAL sample: **{r['seven_day_start_gap_minutes']} min**",
@@ -189,6 +212,12 @@ def report(rss_path, discovery_path, releases_path, outdir, *, now=None):
            "|---|---:|---:|---:|---:|---:|---:|---:|---:|"]
     for x in r["daily"]:
         lines.append(f"| {x['date_utc']} | {x['official_scans']} | {x['gal_samples']} | {x['publisher_timestamped_official_links']} | {x['specialist_publisher_timestamped_links']} | {x['grid_operator_primary_timestamped_links']} | {x['high_signal_official_links']} | {x['gdelt_index_first_seen_urls']} | {x['press_release_feed_date_urls']} |")
+    lines+=["","## Feed content age — independent of network connectivity","",
+            "| Feed | Most recent item in feed | Age (h) | Publication activity |",
+            "|---|---|---:|---|"]
+    for source in r["feed_publication_activity"]:
+        lines.append(f"| {source['source']} | {source['newest_feed_published_utc'] or 'unknown'} | {source['age_hours'] if source['age_hours'] is not None else '-'} | {source['activity']} |")
+    lines += ["", "Some regulator and testimony feeds are naturally intermittent; an old item does not imply collection failure.", ""]
     lines+=["","## Individual feed failures"] + ([
         f"- {x['source']}: {x['consecutive_failures']} consecutive failures; last successful scan: {x['last_success_utc'] or 'never'}"
         for x in r["failing_sources"]] or ["- None in latest state"]) + [
