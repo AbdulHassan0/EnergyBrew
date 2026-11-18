@@ -20,6 +20,13 @@ def release(url="https://wire.com/story/2", title="PJM power grid reliability pr
             "provider":"Press Release Feed"}
 
 class DeskTests(unittest.TestCase):
+    def test_specialist_publisher_provenance(self):
+        article=official()
+        article["source_class"]="specialist_publisher"
+        result=assemble([article],[],[],now=NOW)
+        self.assertEqual(result["stories"][0]["source_class"],"specialist_publisher")
+        self.assertEqual(result["stories"][0]["time_basis"],"specialist_publisher_rss_timestamp")
+
     def test_separated_provenance_and_status(self):
         r=assemble([official()], [global_lead()], [release()], now=NOW)
         self.assertEqual(r["unique_relevant_urls_7d"],3)

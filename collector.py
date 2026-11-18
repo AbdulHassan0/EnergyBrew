@@ -28,6 +28,10 @@ SOURCES = [
     ("DOE Hydrocarbons Blog", "https://www.energy.gov/rss/hgeo/2283029"),
     ("European Commission DG Energy", "https://energy.ec.europa.eu/node/2/rss_en"),
     ("Federal Register notices", "https://www.federalregister.gov/api/v1/documents.rss?conditions%5Bagencies%5D%5B%5D=federal-energy-regulatory-commission"),
+    # Validated on an internet-connected GitHub Actions runner 2026-11-18.
+    # Independent publisher RSS metadata only; no article bodies or reprint permission.
+    ("Offshore Energy News", "https://www.offshore-energy.biz/feed"),
+    ("OilPrice.com News", "https://oilprice.com/rss.xml"),
 ]
 KEYWORDS = {
     "Natural Gas & LNG": ("natural gas", "lng", "liquefied", "gas pipeline", "gas storage", "haynesville", "henry hub", "methane", "gas export"),
@@ -41,6 +45,7 @@ MAX_BYTES = 2_000_000
 # Federal Register is an official daily publication: the date is meaningful,
 # but its feed clock is NOT evidence of an intraday publication timestamp.
 DAY_PRECISION_SOURCES = {"Federal Register notices"}
+SPECIALIST_NEWS_SOURCES = {"Offshore Energy News", "OilPrice.com News"}
 FORMER_FEDERAL_REGISTER_LABELS = {"Federal Register FERC notices", "Federal Register DOE notices"}
 
 def local(tag: str) -> str:
@@ -132,6 +137,7 @@ def parse_feed(xml_bytes, source_name, now, hours, date_precision="timestamp"):
         accepted.append({
             "id": hashlib.sha256(identity).hexdigest()[:24],
             "title": title[:300], "url": link, "source": source_name,
+            "source_class": "specialist_publisher" if source_name in SPECIALIST_NEWS_SOURCES else "official_agency",
             "published_utc": dt.isoformat(), "category": category,
             "published_precision": date_precision,
             "relevance_score": score, "keyword_matches": len(quality["evidence"]),
@@ -213,7 +219,7 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
                         if name not in prior["also_seen_in"]:
                             prior["also_seen_in"].append(name)
                     # Prefer the newer original timestamp, but keep one canonical identity.
-                    if prior.get("published_utc", "") < item["published_utc"]:
+                    if prior.get("published_utc", "") <= item["published_utc"]:
                         item["id"] = prior_id
                         item["also_seen_in"] = prior.get("also_seen_in", [])
                         articles[prior_id] = item

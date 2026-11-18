@@ -88,7 +88,9 @@ def entry(record, kind, now):
         if record.get("published_precision", "timestamp") != "timestamp":
             return None
         stamp = as_time(record.get("published_utc"))
-        time_basis = "publisher_feed_publication_time"
+        is_specialist = record.get("source_class") == "specialist_publisher"
+        time_basis = ("specialist_publisher_rss_timestamp" if is_specialist
+                      else "publisher_feed_publication_time")
         date_verification = "publisher_rss_timestamp"
         has_publisher_date = True
     elif kind == "regulatory_notice":
@@ -128,7 +130,8 @@ def entry(record, kind, now):
     domain = urlsplit(url).hostname or ""
     return {
         "title": title, "url": url, "domain": domain.lower(),
-        "source": str(source), "category": quality["category"],
+        "source": str(source), "source_class": record.get("source_class") or "unclassified",
+        "category": quality["category"],
         "coverage_themes": coverage_themes(title, quality["category"]),
         "relevance_score": quality["relevance_score"],
         "relevance_evidence": quality["evidence"],
@@ -185,6 +188,8 @@ def assemble(rss, discovered, releases, now=None, max_stories=32):
             else "older_official_context"
         )
         x["rank"] = x["relevance_score"] + ORIGIN_RANK_BOOST[x["origin"]]
+        if x.get("source_class") == "specialist_publisher":
+            x["rank"] -= 20  # distinguish publisher journalism from agency primary-source records
         if x["queue"] == "older_official_context":
             x["rank"] -= 25
         if "translation_and_source_review" in x["needs_editor_review"]:
@@ -233,7 +238,7 @@ def assemble(rss, discovered, releases, now=None, max_stories=32):
         "promotional_or_language_review_count": sum(bool(x["needs_editor_review"]) for x in selected),
         "stories": selected,
         "definitions": {
-            "timestamped_official": "Publisher-supplied publication datetime on an official feed; content not independently fact-checked",
+            "timestamped_official": "Publisher-supplied publication datetime on original feeds (official agencies and specialist publishers); content not independently fact-checked",
             "regulatory_date_only": "Government record with publication DATE, no reliable intraday release timestamp",
             "discovery_unverified": "GDELT index observed a linked article; neither publisher publication date nor facts verified",
             "company_release_unverified": "Third-party press-release aggregator feed date and issuer claims, not independent reporting",
