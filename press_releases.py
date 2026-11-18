@@ -17,6 +17,16 @@ from xml.etree import ElementTree as ET
 from collector import MAX_BYTES, clean_url, child_text, local, published_date
 from editorial import evaluate, non_article_reason
 
+def promotional_non_energy(title):
+    """Marketing vendors addressing energy companies are not energy events."""
+    t=(title or "").lower()
+    return any(word in t for word in (
+        "seo and ai search","seo services","search engine optimization",
+        "marketing services","social media marketing",
+        "online marketing agency","digital marketing agency",
+        "launches new website","press release distribution service",
+    ))
+
 URL="https://pressreleasefeed.org/feed.xml?topic=energy&language=en&limit=100"
 AGENT="EnergyBrewResearchCollector/2.0 (+https://github.com/AbdulHassan0/EnergyBrew)"
 
@@ -37,7 +47,8 @@ def parse_releases(xml, now):
     nodes=[n for n in root.iter() if local(n.tag) in ("item","entry")]
     results=[]
     skipped={"missing_original_source_url":0, "missing_feed_timestamp":0,
-             "outside_window":0, "off_topic":0,"non_article":0}
+             "outside_window":0, "off_topic":0,"non_article":0,
+             "marketing_only":0}
     for node in nodes:
         title=child_text(node,("title",))[:300]
         # The RSS <link> points to the aggregator; <source url="...">
@@ -56,6 +67,9 @@ def parse_releases(xml, now):
         if non_article_reason(title,original):
             skipped["non_article"]+=1
             continue
+        if promotional_non_energy(title):
+            skipped["marketing_only"]+=1
+            continue
         observed=published_date(node)
         if observed is None:
             skipped["missing_feed_timestamp"]+=1
@@ -70,7 +84,10 @@ def parse_releases(xml, now):
         results.append({
             "url":original,
             "title":title,
-            "issuer":issuer[:160],
+            "feed_creator_label":issuer[:160],
+            "named_issuer_verified":False,
+            "feed_source_url":original,
+            "feed_source_url_may_be_newsroom_or_wire_mirror":True,
             "feed_published_utc":observed.isoformat(),
             "publisher_published_utc":None,
             "published_time_verified":False,
@@ -102,7 +119,7 @@ def collect(state_file,outdir,*,now=None,fetcher=None):
     # Re-score old records on every run, discarding obvious nonarticle pages.
     for uri in list(old):
         item=old[uri]
-        if non_article_reason(item.get("title",""),uri):
+        if non_article_reason(item.get("title",""),uri) or promotional_non_energy(item.get("title","")):
             del old[uri]
             continue
         q=evaluate(item.get("title",""))
@@ -111,6 +128,9 @@ def collect(state_file,outdir,*,now=None,fetcher=None):
         item["relevance_evidence"]=q["evidence"]
         item["published_time_verified"]=False
         item["publisher_published_utc"]=None
+        item["named_issuer_verified"]=False
+        item["feed_creator_label"]=item.pop("issuer",item.get("feed_creator_label",""))
+        item["feed_source_url_may_be_newsroom_or_wire_mirror"]=True
     r={"run_utc":now.isoformat(), "status":"pending", "provider":"Press Release Feed",
        "raw_feed_entries":0,"high_signal_company_releases":0,"new_unique_links":0,
        "error":None,"skipped":{}}
@@ -157,7 +177,8 @@ def collect(state_file,outdir,*,now=None,fetcher=None):
         f"Feed records: **{r['raw_feed_entries']}** | Energy-score matches: **{r['high_signal_company_releases']}**",
         f"New unique original-source links: **{r['new_unique_links']}**",
         f"Release research leads in the 24-hour feed-date window: **{r['company_release_leads_24h']}**",
-        "", "Issuer claims are NOT independently fact-checked reporting.",
+        "", "Newswire/creator labels are not verified issuer identities.",
+        "Company or newswire claims are NOT independently fact-checked reporting.",
         "Feed-provided dates are NOT independently checked original publisher publication times.",
         "Store only metadata and original source links; do not reuse publisher bodies or images.",
     ]
