@@ -4,7 +4,7 @@ import tempfile
 import unittest
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from research_desk import assemble, generate
+from research_desk import assemble, generate, entry
 
 NOW = datetime(2026, 11, 18, 19, 0, tzinfo=timezone.utc)
 def dt(hours=0):
@@ -55,7 +55,8 @@ class DeskTests(unittest.TestCase):
         y=release(title="Vendor launches SEO services for power grid operators")
         r=assemble([], [x],[y],now=NOW)
         self.assertTrue(any("translation_and_source_review" in row["needs_editor_review"] for row in r["stories"]))
-        self.assertTrue(any("promotional_or_generic_marketing" in row["needs_editor_review"] for row in r["stories"]))
+        self.assertIn("promotional_or_generic_marketing", entry(y, "company_announcement", NOW)["needs_editor_review"])
+        self.assertFalse(any("promotional_or_generic_marketing" in row["needs_editor_review"] for row in r["stories"]))
 
     def test_domain_cap(self):
         leads=[global_lead(url=f"https://same.org/news/{n}",title=f"LNG export terminal expansion project {n}") for n in range(10)]
