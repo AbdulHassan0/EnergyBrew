@@ -1,40 +1,63 @@
-# EnergyBrew — Live energy news collection
+# EnergyBrew — Live Energy News Collector
 
-**Status: LIVE RSS collection verified on GitHub-hosted runners (November 18, 2026).**
+**Live GitHub-hosted RSS collection verified on November 18, 2026.**
 
-The repository contains a small, independent collector pilot. It gathers original-source article metadata from selected EIA, DOE, and European Commission RSS feeds; preserves results between scheduled jobs; and **never publishes newsletters or sends email**.
+This private repository contains the independent production-pilot collector, not yet the public Energy TLDR newsletter website. It collects source-linked research metadata only, with no auto-approval, subscriber email, or publication.
 
-## Verified first-day results
+## Live status — verified November 18, 2026
 
-Three successful GitHub Actions runs on November 18, 2026 demonstrated:
-- 8/8 eligible official feeds successfully parsed;
-- 6 distinct source-dated article links within the 48-hour collection window;
-- 3 keyword-relevant energy-market candidates;
-- zero duplicate links inserted by the third run.
+The most recent completed [GitHub Actions run](https://github.com/AbdulHassan0/EnergyBrew/actions/workflows/live-collector.yml) verified:
 
-These are **observed first-day results**, not a seven-day reliability record or 15–25 daily editorial stories.
+| Measurement | Result |
+|---|---:|
+| Reachable and parseable eligible official RSS feeds | **10 / 10** |
+| Publisher-timestamped RSS entries within 48 hours | **6** |
+| High-signal editorial candidates in the 48-hour feed window | **2** |
+| Editorial candidates published within the **last 24 hours** | **1** |
+| Federal Register date-only entries in collection window | **12** |
+| High-signal regulatory watchlist leads retained | **4** |
+| Unique stored article links retained for seven days | **18** |
 
-## Where to see actual reports
+**Caution:** These are observed first-day counts, not seven-day reliability statistics or unique independently verified news events. Regulatory notices have date precision only and are not placed in the last-24-hour breaking-news shortlist.
 
-- [Latest hosted RSS run](https://github.com/AbdulHassan0/EnergyBrew/blob/collector-state/state/latest.md)
-- [Machine-readable run diagnostics](https://github.com/AbdulHassan0/EnergyBrew/blob/collector-state/state/latest.json)
-- [Persistent article metadata and run history](https://github.com/AbdulHassan0/EnergyBrew/blob/collector-state/state/articles.json)
-- [GitHub Actions run history](https://github.com/AbdulHassan0/EnergyBrew/actions/workflows/live-collector.yml)
+## Browse actual results
 
-The workflow runs **four times daily** on a UTC schedule and is also manually runnable from the Actions tab. Scheduled runs can be delayed by GitHub. Artifacts contain full per-run diagnostics and `editorial_candidates.json`.
+- [Latest collection report](https://github.com/AbdulHassan0/EnergyBrew/blob/collector-state/state/latest.md)
+- [Last 24 hours — editorial candidates](https://github.com/AbdulHassan0/EnergyBrew/blob/collector-state/state/editorial_candidates_24h.json)
+- [Seven-day editorial research queue](https://github.com/AbdulHassan0/EnergyBrew/blob/collector-state/state/editorial_candidates.json)
+- [Regulatory pipeline watchlist](https://github.com/AbdulHassan0/EnergyBrew/blob/collector-state/state/regulatory_watch.json)
+- [Daily article-volume report](https://github.com/AbdulHassan0/EnergyBrew/blob/collector-state/state/volume_7d.json)
+- [Source-level health and exceptions](https://github.com/AbdulHassan0/EnergyBrew/blob/collector-state/state/latest.json)
+- [Complete source-linked article metadata](https://github.com/AbdulHassan0/EnergyBrew/blob/collector-state/state/articles.json)
+- [GitHub Actions execution history](https://github.com/AbdulHassan0/EnergyBrew/actions/workflows/live-collector.yml)
 
-## Architecture and safeguards
+## Sources and editorial safeguards
 
-- `collector.py`: Python standard-library RSS/Atom collector with strict source publication-date handling, URL tracking removal, source-based identity, and keyword classification.
-- `tests/test_collector.py`: offline regression tests for RSS parsing, Atom timestamps, persistence, and failure reporting.
-- `.github/workflows/live-collector.yml`: internet-connected scheduled runner; restores and persists state in a separate `collector-state` branch.
-- All data is **research-only**. Publisher-discovery timestamps never count as original publication dates. Access to an RSS feed is not a license to republish its content.
-- No credentials, paid news subscriptions, or SMTP configuration are required for these eight eligible official feeds.
+Enabled feeds are eight original EIA, DOE, and European Commission official sources, a DOE Grid Deployment feed, and a Federal Register notices feed.
 
-## What is not deployed
+- Federal Register feeds were originally configured as separate DOE and FERC feeds, but the live API returned overlapping identical documents. The collector now uses a single neutral regulatory feed and deduplicates by canonical URL across source labels and historical state.
+- Official Federal Register documents are retained as **date-only regulatory leads**, never as precisely timed breaking news.
+- DOE Grid Deployment is reachable but its observed feed items were all older than the 48-hour window on the first run.
+- Relevance scores are conservative, explainable keyword-based signals, **not fact-checking**.
+- Specialist publisher RSS, such as S&P Global Energy and Oil & Gas Journal, remains disabled absent appropriate commercial collection rights.
 
-This is the **standalone live collector**, not yet the complete Energy TLDR newsletter web application or subscriber/email system. The full local web MVP exists separately as the v2.0 project archive. Joining the hosted collector to that editorial application is a subsequent deployment task.
+## Reliability and deployment
 
-## Next acceptance test
+The collector runs **four times daily** in GitHub Actions, at 04:17, 10:17, 16:17, and 22:17 UTC (subject to GitHub scheduling delays). Each hosted run:
 
-Run the collector for seven consecutive days, measure unique **relevant** article/event volume per day, inspect low-performing sources and category gaps, then expand with authorized energy-specialist providers. A successful HTTP request is not sufficient: the number of useful unique stories matters.
+1. Checks the repository remains private and runs automated tests.
+2. Loads preserved state from the `collector-state` branch.
+3. Downloads allowed official RSS feeds and validates publication timestamps.
+4. Separates high-signal recent editorial leads from date-only regulatory leads.
+5. Deduplicates by canonical URL and persists seven-day article/run history.
+6. Saves human-readable reports and downloadable GitHub Actions artifacts.
+7. Never publishes, sends emails, or claims the headlines have been fact-checked.
+
+All source-linked research is for editorial consideration; an accessible RSS feed does not grant rights to reproduce copyrighted full text.
+
+## Next milestones
+
+1. Run an uninterrupted seven-day pilot and report actual useful unique daily article volume.
+2. Expand permitted specialist feeds and/or licensed news discovery APIs after validating terms and host access.
+3. Integrate the separate verified collector with the full Energy TLDR editorial website and approval workflow.
+4. Add monitoring for missing scheduled jobs, failure alerts and source freshness by sector.
