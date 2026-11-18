@@ -1,8 +1,8 @@
 # EnergyBrew — Five-minute morning energy newsletter (research preview)
 
-**Status: both hosted collection workflows verified running on GitHub Actions (November 18, 2026).**
+**Status (November 18, 2026):** The frontend and newsletter editorial-draft pipeline deploy successfully. **However, this repository is now PUBLIC, so the original RSS and GAL collectors deliberately fail their private-repository safety checks. Their last retained research snapshot is real but new collection is BLOCKED until the hosting/privacy architecture is resolved.** GitHub Pages public hosting and a confidential collector/editorial backend should be separated.
 
-This repository contains both **live energy news collection infrastructure** and the [EnergyBrew website preview](https://abdulhassan0.github.io/EnergyBrew/). The web experience is built around **five minutes of energy news with your morning coffee**. It does not yet send subscriber emails or publish independently fact-checked, editorially approved summaries.
+This repository contains both **energy news collection infrastructure** and the [EnergyBrew website preview](https://abdulhassan0.github.io/EnergyBrew/). The web experience is built around **five minutes of energy news with your morning coffee**. It does not yet send subscriber emails or publish independently fact-checked, editorially approved summaries.
 
 ## Open EnergyBrew and its live source research
 
@@ -15,6 +15,16 @@ This repository contains both **live energy news collection infrastructure** and
 - [Global news discovery (publisher dates unverified)](https://github.com/AbdulHassan0/EnergyBrew/blob/collector-state/state/research_leads_24h.json)
 - [Company/newswire release leads (not independently verified)](https://github.com/AbdulHassan0/EnergyBrew/blob/collector-state/state/releases_leads_24h.json)
 
+## Five-minute newsletter workflow (new)
+
+- **[Approved edition archive](https://abdulhassan0.github.io/EnergyBrew/editions/)** — real approved issues only; empty until the first one passes human editorial verification
+- [Morning editorial research queue workflow](https://github.com/AbdulHassan0/EnergyBrew/actions/workflows/morning-editorial.yml) — prepares source-linked, unapproved review draft and email layout; public-repo artifacts are not confidential
+- [Human editorial checklist](newsletter/EDITORIAL.md) — original source/date/fact/rights review, summaries, and why-it-matters explanations
+- [Newsletter renderer and publisher](newsletter.py) — fails closed for unapproved editions, generates responsive email HTML/plain text and an issue archive
+- [Manual one-mailbox email test](https://github.com/AbdulHassan0/EnergyBrew/actions/workflows/newsletter-test-send.yml) — requires an approved issue, configured SMTP secrets, and explicit test-send permission; **no subscriber mailing is enabled**
+
+**Critical hosting gap:** A public GitHub repo cannot double as a private editorial and restricted-source research workspace. The collector remains intentionally guarded. For durable development, keep the website in a public repo and use a separate private collector/editorial repository with a controlled, sanitized export into Pages. Until configured, newsletter drafting from the historic desk may eventually fail its 24-hour freshness gate rather than claim stale news is current.
+
 ## Live services
 
 | Workflow | Function | Scheduled frequency |
@@ -22,7 +32,7 @@ This repository contains both **live energy news collection infrastructure** and
 | [Main official RSS + research pipeline](https://github.com/AbdulHassan0/EnergyBrew/actions/workflows/live-collector.yml) | EIA/DOE/NRC/EU/Federal Register feeds; GDELT DOC queries; GAL sample; press releases; merged research desk; newsroom health and volume reports | Four times daily |
 | [Frequent global discovery](https://github.com/AbdulHassan0/EnergyBrew/actions/workflows/frequent-gal.yml) | GDELT rolling Global Article List; preserve discoveries; refresh ranked research desk and reliability scorecard | Every 15 minutes, subject to GitHub delays |
 
-Both use the same GitHub Actions concurrency group when writing private historical state, avoiding concurrent modifications of the `collector-state` branch.
+Both were configured to use the same GitHub Actions concurrency group when writing historical state. Collection is currently stopped by public-repository guards; no new freshness should be inferred from this historic state branch.
 
 **Provenance rules:** Original official publisher RSS timestamps, Federal Register publication dates, GDELT index-first-seen timestamps, and press-release feed dates are labeled **differently**. None guarantees truth or publication rights.
 
@@ -30,7 +40,7 @@ The source ranking is intentionally conservative: original official headlines ra
 
 ## Initial observations, not a reliability guarantee
 
-The November 18, 2026 hosted pilot observed **11 accessible official feeds**, alongside global discovery, press-release feeds, and a working shared state store. A private research desk run identified **55 relevant URL records in retained history**, selected 24 diverse research links across 21 domains, and kept their source classifications separate. Many of those links were **not** independently date-verified; only one high-signal official link was inside the observed 24-hour window.
+The earlier November 18, 2026 hosted pilot observed **11 accessible official feeds**, alongside global discovery, press-release feeds, and a working shared state store. A private research desk run identified **55 relevant URL records in retained history**, selected 24 diverse research links across 21 domains, and kept their source classifications separate. Many of those links were **not** independently date-verified; only one high-signal official link was inside the observed 24-hour window.
 
 The **seven-day operational pilot is incomplete**. GitHub Actions schedules may be late or missed, especially for a rolling 15-minute feed. [The reliability scorecard](https://github.com/AbdulHassan0/EnergyBrew/blob/collector-state/state/metrics_latest.md) is the source of truth rather than these dated figures.
 
@@ -58,4 +68,4 @@ See [OPERATIONS.md](OPERATIONS.md) for incident response, sampling-gap diagnosti
 - Move high-volume state from Git commits to a durable database before scale.
 - Build editorially verified five-minute summaries, approved newsletter editions, archives, subscriber signup and email delivery. The website *preview* has already been deployed.
 
-**Current state: live research collection is real; automatic publication-grade energy coverage is not yet established.**
+**Current state: the saved research links are real and the newsletter pipeline is implemented, but live collection is currently blocked by the public repository setting. Automatic publication-grade and subscriber-delivered coverage is not yet established.**
