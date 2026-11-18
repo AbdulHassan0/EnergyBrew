@@ -62,6 +62,24 @@ class DeskTests(unittest.TestCase):
         r=assemble([],leads,[],now=NOW)
         self.assertEqual(r["selected_research_links"],4)
 
+    def test_official_news_ranks_above_release_even_with_lower_raw_score(self):
+        o=official(title="Natural gas production pipeline expansion")
+        p=release(title="Natural gas LNG feedgas pipeline expansion investment project")
+        r=assemble([o],[],[p],now=NOW)
+        self.assertEqual(r["stories"][0]["origin"],"official_rss")
+
+    def test_release_cap_and_low_impact_flag(self):
+        releases=[release(url=f"https://wire.com/{i}",title=f"LNG terminal expansion infrastructure project {i}") for i in range(5)]
+        d=global_lead(title="Students empowered to conserve electricity")
+        r=assemble([], [d], releases, now=NOW)
+        self.assertLessEqual(sum(x["origin"]=="company_announcement" for x in r["stories"]),2)
+        self.assertTrue(any("low_commercial_impact" in x["needs_editor_review"] for x in r["stories"]))
+
+    def test_infrastructure_as_secondary_topic(self):
+        r=assemble([official(title="Gas pipeline expansion for LNG exports")], [], [], now=NOW)
+        self.assertEqual(r["selected_topic_coverage_counts"]["Infrastructure & Investment"],1)
+        self.assertNotIn("Infrastructure & Investment",r["missing_categories"])
+
     def test_report_files(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp)
