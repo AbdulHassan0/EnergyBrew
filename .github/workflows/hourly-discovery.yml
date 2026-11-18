@@ -38,7 +38,7 @@ jobs:
           mkdir -p state
           if git ls-remote --exit-code --heads origin collector-state >/dev/null 2>&1; then
             git fetch --no-tags origin collector-state
-            for prior in discovery.json articles.json latest.json discovery_latest.json; do
+            for prior in discovery.json articles.json latest.json discovery_latest.json press_releases.json releases_latest.json; do
               if git cat-file -e "FETCH_HEAD:state/$prior" 2>/dev/null; then
                 git show "FETCH_HEAD:state/$prior" > "state/$prior"
               fi
@@ -51,7 +51,7 @@ jobs:
       - name: Audit live coverage after the new sample
         if: always()
         run: |
-          python newsroom_health.py --rss-state state/articles.json --rss-run state/latest.json --discovery-state state/discovery.json --discovery-run state/discovery_latest.json --output output/health
+          python newsroom_health.py --rss-state state/articles.json --rss-run state/latest.json --discovery-state state/discovery.json --discovery-run state/discovery_latest.json --releases-state state/press_releases.json --releases-run state/releases_latest.json --output output/health
       - name: Report result
         if: always()
         run: |
