@@ -1,14 +1,15 @@
 {
-  "run_utc": "2026-11-18T12:24:27.809884+00:00",
-  "feeds_connected": 10,
-  "feeds_checked": 10,
+  "run_utc": "2026-11-18T12:27:59.606669+00:00",
+  "feeds_connected": 9,
+  "feeds_checked": 9,
   "fresh_entries": 6,
-  "new_article_links": 24,
+  "new_article_links": 0,
   "relevant_fresh_entries": 2,
-  "distinct_article_links_7d": 30,
+  "distinct_article_links_7d": 18,
   "approx_distinct_titles_7d": 16,
-  "date_only_entries": 24,
+  "date_only_entries": 12,
   "editorial_candidate_links_7d": 2,
+  "regulatory_watch_links_7d": 4,
   "sources": [
     {
       "source": "EIA Today in Energy",
@@ -147,35 +148,18 @@
       }
     },
     {
-      "source": "Federal Register FERC notices",
+      "source": "Federal Register notices",
       "url": "https://www.federalregister.gov/api/v1/documents.rss?conditions%5Bagencies%5D%5B%5D=federal-energy-regulatory-commission",
       "connected": true,
       "items_seen": 136,
       "fresh": 0,
-      "new": 12,
+      "new": 0,
       "http_status": 200,
       "date_only": 12,
       "relevant": 0,
       "rejected": {
         "undated": 0,
         "old": 124,
-        "future": 0,
-        "invalid_link": 0
-      }
-    },
-    {
-      "source": "Federal Register DOE notices",
-      "url": "https://www.federalregister.gov/api/v1/documents.rss?conditions%5Bagencies%5D%5B%5D=energy-department",
-      "connected": true,
-      "items_seen": 151,
-      "fresh": 0,
-      "new": 12,
-      "http_status": 200,
-      "date_only": 12,
-      "relevant": 0,
-      "rejected": {
-        "undated": 0,
-        "old": 139,
         "future": 0,
         "invalid_link": 0
       }

@@ -4,7 +4,7 @@
       "id": "8665b5fa7cf65bb8499f6074",
       "title": "Village of Swanton, Vermont; Notice of Availability of Environmental Assessment",
       "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23447/village-of-swanton-vermont-notice-of-availability-of-environmental-assessment",
-      "source": "Federal Register FERC notices",
+      "source": "Federal Register notices",
       "published_utc": "2026-11-18T05:00:00+00:00",
       "category": "Cross-sector",
       "published_precision": "day",
@@ -13,28 +13,33 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_date_only",
-      "summary_excerpt": ""
+      "summary_excerpt": "",
+      "also_seen_in": []
     },
     {
       "id": "30ba38eaff50faedcc851a5f",
       "title": "Algonquin Gas Transmission, LLC; Notice of Application and Establishing Intervention Deadline",
       "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23446/algonquin-gas-transmission-llc-notice-of-application-and-establishing-intervention-deadline",
-      "source": "Federal Register FERC notices",
+      "source": "Federal Register notices",
       "published_utc": "2026-11-18T05:00:00+00:00",
-      "category": "Cross-sector",
+      "category": "Natural Gas & LNG",
       "published_precision": "day",
-      "relevance_score": 0,
+      "relevance_score": 66,
       "keyword_matches": 0,
       "editorial_candidate": false,
-      "relevance_evidence": [],
+      "relevance_evidence": [
+        "algonquin gas transmission",
+        "gas transmission"
+      ],
       "status": "research_date_only",
-      "summary_excerpt": ""
+      "summary_excerpt": "",
+      "also_seen_in": []
     },
     {
       "id": "7a2ec88b72be924d25c3b649",
       "title": "Commission Information Collection Activities (FERC-510); Comment Request; Extension",
       "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23443/commission-information-collection-activities-ferc-510-comment-request-extension",
-      "source": "Federal Register FERC notices",
+      "source": "Federal Register notices",
       "published_utc": "2026-11-18T05:00:00+00:00",
       "category": "Infrastructure & Investment",
       "published_precision": "day",
@@ -45,13 +50,14 @@
         "ferc"
       ],
       "status": "research_date_only",
-      "summary_excerpt": "In compliance with the requirements of the Paperwork Reduction Act of 1995, the Federal Energy Regulatory Commission (Commission or FERC) is submitting its information collection, FERC-510 Application for Surrender of Hydropower License (OMB No 1902-0068), to the Office of Management and Budget (OMB) for review of the information collection require"
+      "summary_excerpt": "In compliance with the requirements of the Paperwork Reduction Act of 1995, the Federal Energy Regulatory Commission (Commission or FERC) is submitting its information collection, FERC-510 Application for Surrender of Hydropower License (OMB No 1902-0068), to the Office of Management and Budget (OMB) for review of the information collection require",
+      "also_seen_in": []
     },
     {
       "id": "0d8a56694544e3678a261637",
       "title": "Natural Gas Pipeline of America, LLC; Horizon Pipeline Company, LLC; Notice of Schedule for the Preparation of an Environmental Assessment for the North Extension Project",
       "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23442/natural-gas-pipeline-of-america-llc-horizon-pipeline-company-llc-notice-of-schedule-for-the",
-      "source": "Federal Register FERC notices",
+      "source": "Federal Register notices",
       "published_utc": "2026-11-18T05:00:00+00:00",
       "category": "Natural Gas & LNG",
       "published_precision": "day",
@@ -63,28 +69,32 @@
         "natural gas"
       ],
       "status": "research_date_only",
-      "summary_excerpt": ""
+      "summary_excerpt": "",
+      "also_seen_in": []
     },
     {
       "id": "3456765e9445da5616288490",
       "title": "Northwest Pipeline, LLC; Notice of Scoping Period Requesting Comments on Environmental Issues for the Planned Silver Spur Project and Notice of Public Scoping Sessions",
       "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23441/northwest-pipeline-llc-notice-of-scoping-period-requesting-comments-on-environmental-issues-for-the",
-      "source": "Federal Register FERC notices",
+      "source": "Federal Register notices",
       "published_utc": "2026-11-18T05:00:00+00:00",
-      "category": "Cross-sector",
+      "category": "Natural Gas & LNG",
       "published_precision": "day",
-      "relevance_score": 0,
+      "relevance_score": 30,
       "keyword_matches": 0,
       "editorial_candidate": false,
-      "relevance_evidence": [],
+      "relevance_evidence": [
+        "northwest pipeline"
+      ],
       "status": "research_date_only",
-      "summary_excerpt": ""
+      "summary_excerpt": "",
+      "also_seen_in": []
     },
     {
       "id": "074e269d7033fafdaa6f4711",
       "title": "Combined Notice of Filings",
       "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23440/combined-notice-of-filings",
-      "source": "Federal Register FERC notices",
+      "source": "Federal Register notices",
       "published_utc": "2026-11-18T05:00:00+00:00",
       "category": "Cross-sector",
       "published_precision": "day",
@@ -93,13 +103,14 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_date_only",
-      "summary_excerpt": ""
+      "summary_excerpt": "",
+      "also_seen_in": []
     },
     {
       "id": "c04d57175a62453af9b75f0f",
       "title": "Combined Notice of Filings #1",
       "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23439/combined-notice-of-filings-1",
-      "source": "Federal Register FERC notices",
+      "source": "Federal Register notices",
       "published_utc": "2026-11-18T05:00:00+00:00",
       "category": "Cross-sector",
       "published_precision": "day",
@@ -108,13 +119,14 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_date_only",
-      "summary_excerpt": ""
+      "summary_excerpt": "",
+      "also_seen_in": []
     },
     {
       "id": "c9e8b573da110facfea359ee",
       "title": "Combined Notice of Filings #2",
       "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23436/combined-notice-of-filings-2",
-      "source": "Federal Register FERC notices",
+      "source": "Federal Register notices",
       "published_utc": "2026-11-18T05:00:00+00:00",
       "category": "Cross-sector",
       "published_precision": "day",
@@ -123,132 +135,8 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_date_only",
-      "summary_excerpt": ""
-    },
-    {
-      "id": "9fcef77978248278bb45b4f9",
-      "title": "Village of Swanton, Vermont; Notice of Availability of Environmental Assessment",
-      "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23447/village-of-swanton-vermont-notice-of-availability-of-environmental-assessment",
-      "source": "Federal Register DOE notices",
-      "published_utc": "2026-11-18T05:00:00+00:00",
-      "category": "Cross-sector",
-      "published_precision": "day",
-      "relevance_score": 0,
-      "keyword_matches": 0,
-      "editorial_candidate": false,
-      "relevance_evidence": [],
-      "status": "research_date_only",
-      "summary_excerpt": ""
-    },
-    {
-      "id": "a938e4d147452c3ec890ca9d",
-      "title": "Algonquin Gas Transmission, LLC; Notice of Application and Establishing Intervention Deadline",
-      "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23446/algonquin-gas-transmission-llc-notice-of-application-and-establishing-intervention-deadline",
-      "source": "Federal Register DOE notices",
-      "published_utc": "2026-11-18T05:00:00+00:00",
-      "category": "Cross-sector",
-      "published_precision": "day",
-      "relevance_score": 0,
-      "keyword_matches": 0,
-      "editorial_candidate": false,
-      "relevance_evidence": [],
-      "status": "research_date_only",
-      "summary_excerpt": ""
-    },
-    {
-      "id": "1f800abcdc2d3311ae5e324b",
-      "title": "Commission Information Collection Activities (FERC-510); Comment Request; Extension",
-      "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23443/commission-information-collection-activities-ferc-510-comment-request-extension",
-      "source": "Federal Register DOE notices",
-      "published_utc": "2026-11-18T05:00:00+00:00",
-      "category": "Infrastructure & Investment",
-      "published_precision": "day",
-      "relevance_score": 21,
-      "keyword_matches": 1,
-      "editorial_candidate": false,
-      "relevance_evidence": [
-        "ferc"
-      ],
-      "status": "research_date_only",
-      "summary_excerpt": "In compliance with the requirements of the Paperwork Reduction Act of 1995, the Federal Energy Regulatory Commission (Commission or FERC) is submitting its information collection, FERC-510 Application for Surrender of Hydropower License (OMB No 1902-0068), to the Office of Management and Budget (OMB) for review of the information collection require"
-    },
-    {
-      "id": "f600895c577a48f35eb74148",
-      "title": "Natural Gas Pipeline of America, LLC; Horizon Pipeline Company, LLC; Notice of Schedule for the Preparation of an Environmental Assessment for the North Extension Project",
-      "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23442/natural-gas-pipeline-of-america-llc-horizon-pipeline-company-llc-notice-of-schedule-for-the",
-      "source": "Federal Register DOE notices",
-      "published_utc": "2026-11-18T05:00:00+00:00",
-      "category": "Natural Gas & LNG",
-      "published_precision": "day",
-      "relevance_score": 66,
-      "keyword_matches": 2,
-      "editorial_candidate": false,
-      "relevance_evidence": [
-        "gas pipeline",
-        "natural gas"
-      ],
-      "status": "research_date_only",
-      "summary_excerpt": ""
-    },
-    {
-      "id": "76221f57f06f2d20acc97eb3",
-      "title": "Northwest Pipeline, LLC; Notice of Scoping Period Requesting Comments on Environmental Issues for the Planned Silver Spur Project and Notice of Public Scoping Sessions",
-      "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23441/northwest-pipeline-llc-notice-of-scoping-period-requesting-comments-on-environmental-issues-for-the",
-      "source": "Federal Register DOE notices",
-      "published_utc": "2026-11-18T05:00:00+00:00",
-      "category": "Cross-sector",
-      "published_precision": "day",
-      "relevance_score": 0,
-      "keyword_matches": 0,
-      "editorial_candidate": false,
-      "relevance_evidence": [],
-      "status": "research_date_only",
-      "summary_excerpt": ""
-    },
-    {
-      "id": "fea5564036acdc1327bdb7c7",
-      "title": "Combined Notice of Filings",
-      "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23440/combined-notice-of-filings",
-      "source": "Federal Register DOE notices",
-      "published_utc": "2026-11-18T05:00:00+00:00",
-      "category": "Cross-sector",
-      "published_precision": "day",
-      "relevance_score": 0,
-      "keyword_matches": 0,
-      "editorial_candidate": false,
-      "relevance_evidence": [],
-      "status": "research_date_only",
-      "summary_excerpt": ""
-    },
-    {
-      "id": "a3eb9ac097d2675e610f5634",
-      "title": "Combined Notice of Filings #1",
-      "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23439/combined-notice-of-filings-1",
-      "source": "Federal Register DOE notices",
-      "published_utc": "2026-11-18T05:00:00+00:00",
-      "category": "Cross-sector",
-      "published_precision": "day",
-      "relevance_score": 0,
-      "keyword_matches": 0,
-      "editorial_candidate": false,
-      "relevance_evidence": [],
-      "status": "research_date_only",
-      "summary_excerpt": ""
-    },
-    {
-      "id": "0f69c107d25c099758847128",
-      "title": "Combined Notice of Filings #2",
-      "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23436/combined-notice-of-filings-2",
-      "source": "Federal Register DOE notices",
-      "published_utc": "2026-11-18T05:00:00+00:00",
-      "category": "Cross-sector",
-      "published_precision": "day",
-      "relevance_score": 0,
-      "keyword_matches": 0,
-      "editorial_candidate": false,
-      "relevance_evidence": [],
-      "status": "research_date_only",
-      "summary_excerpt": ""
+      "summary_excerpt": "",
+      "also_seen_in": []
     },
     {
       "id": "113a460f1e4ca2f43a802c1e",
@@ -304,7 +192,7 @@
       "id": "2de83994e8b2123d3c333b83",
       "title": "Combined Notice of Filings",
       "url": "https://www.federalregister.gov/documents/2026/11/17/2026-23362/combined-notice-of-filings",
-      "source": "Federal Register FERC notices",
+      "source": "Federal Register notices",
       "published_utc": "2026-11-17T05:00:00+00:00",
       "category": "Cross-sector",
       "published_precision": "day",
@@ -313,13 +201,14 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_date_only",
-      "summary_excerpt": ""
+      "summary_excerpt": "",
+      "also_seen_in": []
     },
     {
       "id": "bc3c2cd0f7a57f17e7c3cc9f",
       "title": "Eastern Shore Natural Gas Company; Notice of Scoping Period Requesting Comments on Environmental Issues for the Proposed Delmar Regional Enhancement Project",
       "url": "https://www.federalregister.gov/documents/2026/11/17/2026-23361/eastern-shore-natural-gas-company-notice-of-scoping-period-requesting-comments-on-environmental",
-      "source": "Federal Register FERC notices",
+      "source": "Federal Register notices",
       "published_utc": "2026-11-17T05:00:00+00:00",
       "category": "Natural Gas & LNG",
       "published_precision": "day",
@@ -330,13 +219,14 @@
         "natural gas"
       ],
       "status": "research_date_only",
-      "summary_excerpt": ""
+      "summary_excerpt": "",
+      "also_seen_in": []
     },
     {
       "id": "3834c98e8041aff9a904aab6",
       "title": "Combined Notice of Filings #1",
       "url": "https://www.federalregister.gov/documents/2026/11/17/2026-23360/combined-notice-of-filings-1",
-      "source": "Federal Register FERC notices",
+      "source": "Federal Register notices",
       "published_utc": "2026-11-17T05:00:00+00:00",
       "category": "Cross-sector",
       "published_precision": "day",
@@ -345,13 +235,14 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_date_only",
-      "summary_excerpt": ""
+      "summary_excerpt": "",
+      "also_seen_in": []
     },
     {
       "id": "4368871030d0e851e5f2582a",
       "title": "Sunshine Act Meeting Notice",
       "url": "https://www.federalregister.gov/documents/2026/11/17/2026-23359/sunshine-act-meeting-notice",
-      "source": "Federal Register FERC notices",
+      "source": "Federal Register notices",
       "published_utc": "2026-11-17T05:00:00+00:00",
       "category": "Cross-sector",
       "published_precision": "day",
@@ -360,69 +251,8 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_date_only",
-      "summary_excerpt": ""
-    },
-    {
-      "id": "8af6e870b949f704fc9f6f81",
-      "title": "Combined Notice of Filings",
-      "url": "https://www.federalregister.gov/documents/2026/11/17/2026-23362/combined-notice-of-filings",
-      "source": "Federal Register DOE notices",
-      "published_utc": "2026-11-17T05:00:00+00:00",
-      "category": "Cross-sector",
-      "published_precision": "day",
-      "relevance_score": 0,
-      "keyword_matches": 0,
-      "editorial_candidate": false,
-      "relevance_evidence": [],
-      "status": "research_date_only",
-      "summary_excerpt": ""
-    },
-    {
-      "id": "00c8c287eab20a6cde615fe8",
-      "title": "Eastern Shore Natural Gas Company; Notice of Scoping Period Requesting Comments on Environmental Issues for the Proposed Delmar Regional Enhancement Project",
-      "url": "https://www.federalregister.gov/documents/2026/11/17/2026-23361/eastern-shore-natural-gas-company-notice-of-scoping-period-requesting-comments-on-environmental",
-      "source": "Federal Register DOE notices",
-      "published_utc": "2026-11-17T05:00:00+00:00",
-      "category": "Natural Gas & LNG",
-      "published_precision": "day",
-      "relevance_score": 36,
-      "keyword_matches": 1,
-      "editorial_candidate": false,
-      "relevance_evidence": [
-        "natural gas"
-      ],
-      "status": "research_date_only",
-      "summary_excerpt": ""
-    },
-    {
-      "id": "5655c984efe1962c62cfc771",
-      "title": "Combined Notice of Filings #1",
-      "url": "https://www.federalregister.gov/documents/2026/11/17/2026-23360/combined-notice-of-filings-1",
-      "source": "Federal Register DOE notices",
-      "published_utc": "2026-11-17T05:00:00+00:00",
-      "category": "Cross-sector",
-      "published_precision": "day",
-      "relevance_score": 0,
-      "keyword_matches": 0,
-      "editorial_candidate": false,
-      "relevance_evidence": [],
-      "status": "research_date_only",
-      "summary_excerpt": ""
-    },
-    {
-      "id": "0250220f4c67b60292f5f2fd",
-      "title": "Sunshine Act Meeting Notice",
-      "url": "https://www.federalregister.gov/documents/2026/11/17/2026-23359/sunshine-act-meeting-notice",
-      "source": "Federal Register DOE notices",
-      "published_utc": "2026-11-17T05:00:00+00:00",
-      "category": "Cross-sector",
-      "published_precision": "day",
-      "relevance_score": 0,
-      "keyword_matches": 0,
-      "editorial_candidate": false,
-      "relevance_evidence": [],
-      "status": "research_date_only",
-      "summary_excerpt": ""
+      "summary_excerpt": "",
+      "also_seen_in": []
     },
     {
       "id": "0f36175897bee08b7d289bf9",
@@ -503,6 +333,13 @@
       "feeds_checked": 10,
       "fresh_entries": 6,
       "new_article_links": 24
+    },
+    {
+      "run_utc": "2026-11-18T12:27:59.606669+00:00",
+      "feeds_connected": 9,
+      "feeds_checked": 9,
+      "fresh_entries": 6,
+      "new_article_links": 0
     }
   ]
 }
