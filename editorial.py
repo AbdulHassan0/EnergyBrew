@@ -16,6 +16,10 @@ BEATS = {
         "gillis": 8, "methane": 6, "gas production": 10,
         "gas supply": 9, "gas demand": 9, "pipeline capacity": 7,
         "gas prices": 9, "gas-fired power": 10,
+        "gas transmission": 10, "algonquin gas transmission": 12,
+        "northwest pipeline": 10, "interstate pipeline": 10,
+        "texas eastern": 9, "trunkline": 9, "transco": 9,
+        "columbia gulf": 9, "gulf run": 10,
     },
     "Power & Electricity": {
         "electricity": 11, "power grid": 11, "grid reliability": 11,
