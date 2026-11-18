@@ -107,10 +107,14 @@ def audit(rss_state, rss_report, discovery_state=None, discovery_report=None, *,
     critical=[]
     if not last_rss or now-last_rss > timedelta(hours=MAX_RUN_AGE_HOURS):
         critical.append("Official RSS collection has no recent verified run (12h threshold)")
+    if checked and connected/checked < .8:
+        critical.append(f"RSS connectivity below quorum: {connected}/{checked} sources (<80%)")
+    elif checked and connected<checked:
+        warnings.append(f"RSS source degradation: {checked-connected}/{checked} feeds failed")
     if connected == 0:
-        critical.append("No official RSS feed successfully parsed in latest run")
+        critical.append("No publisher RSS feed successfully parsed in latest run")
     if len(candidates)==0:
-        critical.append("No high-signal timestamped editorial candidates within 24 hours")
+        warnings.append("No high-signal timestamped leads in 24 hours; editorial coverage thin but connectivity may still be healthy")
     if 0 < len(candidates) < TARGET_CANDIDATES_24H:
         warnings.append(f"Only {len(candidates)} editorial leads within 24h; target {TARGET_CANDIDATES_24H}")
     if missing:
@@ -137,6 +141,8 @@ def audit(rss_state, rss_report, discovery_state=None, discovery_report=None, *,
         "status":"critical" if critical else "degraded" if warnings else "operational_coverage_target_met",
         "official_feeds_connected":connected,
         "official_feeds_checked":checked,
+        "rss_scan_state":rss_report.get("scan_state","unknown"),
+        "rss_connection_ratio":round(connected/checked,3) if checked else 0,
         "official_rss_last_run_utc":rss_report.get("run_utc"),
         "timestamped_editorial_leads_24h":len(candidates),
         "official_agency_editorial_leads_24h":len(official_candidates),

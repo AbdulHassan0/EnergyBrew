@@ -34,10 +34,10 @@ def broad_discovery():
 
 
 class NewsroomHealthTests(unittest.TestCase):
-    def test_no_articles_critical_even_if_feeds_connect(self):
+    def test_no_articles_is_not_by_itself_a_source_outage(self):
         h=audit({"articles":[]},rss_report(),{"leads":[discovery_lead(1)]},broad_discovery(),now=NOW)
-        self.assertEqual(h["status"],"critical")
-        self.assertIn("No high-signal", " ".join(h["critical"]))
+        self.assertEqual(h["status"],"degraded")
+        self.assertIn("No high-signal", " ".join(h["warnings"]))
         self.assertEqual(h["research_first_seen_links_24h"],1)
         self.assertEqual(h["research_publisher_dates_verified"],0)
 
@@ -104,6 +104,13 @@ class NewsroomHealthTests(unittest.TestCase):
                 {"leads":[discovery_lead(1,date=NOW-timedelta(days=3))]},
                 broad_discovery(),now=NOW)
         self.assertEqual(h["research_first_seen_links_24h"],0)
+
+    def test_one_connected_feed_is_critical_even_with_editorial_stories(self):
+        rss_state={"articles":[rss_record(i,REQUIRED_BEATS[i%4]) for i in range(12)]}
+        h=audit(rss_state,rss_report(connected=1),
+                {"leads":[discovery_lead(1)]},broad_discovery(),now=NOW)
+        self.assertEqual(h["status"],"critical")
+        self.assertTrue(any("below quorum" in msg for msg in h["critical"]))
 
     def test_press_release_claims_count_separately_from_verified_stories(self):
         state={"articles":[rss_record(i,REQUIRED_BEATS[i%4]) for i in range(12)]}

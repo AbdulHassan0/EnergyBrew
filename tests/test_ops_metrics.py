@@ -75,6 +75,18 @@ class MetricsTests(unittest.TestCase):
         self.assertEqual(r["status"],"degraded")
         self.assertFalse(r["daily"][-1]["successful_scanning_observed"])
 
+    def test_single_connected_feed_does_not_count_as_successful_scan(self):
+        rss={"runs":[{"run_utc":stamp(2),"feeds_checked":15,
+                      "feeds_connected":1,"scan_state":"critical"}],
+             "source_health":{"Failed feed":{"consecutive_failures":3,
+                               "last_success_utc":None,"last_error_type":"OSError"}}}
+        discovery={"gal_runs":[{"run_utc":stamp(2),"status":"ok"}]}
+        result=create(rss,discovery,now=NOW)
+        self.assertEqual(result["official_successful_scans"],0)
+        self.assertIsNone(result["latest_official_scan_utc"])
+        self.assertEqual(result["failing_sources"][0]["consecutive_failures"],3)
+        self.assertEqual(result["status"],"degraded")
+
     def test_report_outputs_readable_files(self):
         with tempfile.TemporaryDirectory() as d:
             root=Path(d)

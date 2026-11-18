@@ -16,6 +16,7 @@ EXPECTED_GAL_MINUTES = 15
 MAX_GAL_GAP_MINUTES = 20
 MAX_RSS_AGE_HOURS = 12
 MAX_GAL_AGE_MINUTES = 35
+MIN_FEED_RATIO = 0.8
 
 def read_state(path):
     try:
@@ -39,7 +40,14 @@ def create(rss, discovery, releases=None, *, now=None):
                   key=lambda a:a["run_utc"])
     g_runs=sorted((a for a in discovery.get("gal_runs",[]) if isinstance(a,dict) and recent(as_time(a.get("run_utc")))),
                   key=lambda a:a["run_utc"])
-    successful_r_runs=[x for x in r_runs if int(x.get("feeds_connected", 0) or 0) > 0]
+    def rss_above_quorum(run):
+        connected=int(run.get("feeds_connected",0) or 0)
+        checked=int(run.get("feeds_checked",0) or connected)
+        return (connected>0 and checked>0 and connected / checked >= MIN_FEED_RATIO
+                and run.get("scan_state")!="critical")
+    successful_r_runs=[x for x in r_runs if rss_above_quorum(x)]
+    fully_connected_r_runs=[x for x in r_runs if x.get("feeds_connected",0)>0
+                             and x.get("feeds_connected")==x.get("feeds_checked",x.get("feeds_connected"))]
     successful_g_runs=[x for x in g_runs if x.get("status") == "ok"]
     latest_r=as_time(successful_r_runs[-1]["run_utc"]) if successful_r_runs else None
     latest_g=as_time(successful_g_runs[-1]["run_utc"]) if successful_g_runs else None
@@ -108,17 +116,29 @@ def create(rss, discovery, releases=None, *, now=None):
         warnings.append("GDELT rolling-feed sample missing or older than 35 minutes")
     if gal_gaps:
         warnings.append(f"{len(gal_gaps)} observed GAL intervals exceeded 20 minutes")
+    if len(fully_connected_r_runs)<len(r_runs):
+        warnings.append(f"{len(r_runs)-len(fully_connected_r_runs)} RSS scans had incomplete source connectivity")
     first_observed=min(([as_time(x["run_utc"]) for x in r_runs+g_runs if as_time(x["run_utc"])]),default=None)
     history_days=((now-first_observed).total_seconds()/86400) if first_observed else 0
-    pilot_complete=history_days>=7 and all(x["successful_scanning_observed"] for x in data) and not gal_gaps
+    pilot_complete=history_days>=7 and all(x["successful_scanning_observed"] for x in data) and not gal_gaps and len(fully_connected_r_runs)==len(r_runs)
     if not pilot_complete:
         warnings.append("Seven-day operating pilot is not yet complete")
+    source_health=rss.get("source_health",{})
+    source_health=source_health if isinstance(source_health,dict) else {}
+    failing_sources=sorted([
+        {"source":name,"consecutive_failures":row.get("consecutive_failures",0),
+         "last_success_utc":row.get("last_success_utc"),"last_error_type":row.get("last_error_type")}
+        for name,row in source_health.items()
+        if isinstance(row,dict) and row.get("consecutive_failures",0)>0
+    ], key=lambda x:(-x["consecutive_failures"],x["source"]))
     return {
         "generated_utc":now.isoformat(),
-        "status":"degraded" if any("missing" in x.lower() for x in warnings) or gal_gaps else "incomplete_pilot" if not pilot_complete else "observations_available",
+        "status":"degraded" if any(("missing" in x.lower() or "incomplete source" in x.lower()) for x in warnings) or gal_gaps else "incomplete_pilot" if not pilot_complete else "observations_available",
         "seven_day_pilot_complete":pilot_complete,
         "history_span_days":round(history_days,2),
         "official_scan_runs":len(r_runs),"official_successful_scans":len(successful_r_runs),
+        "official_fully_connected_scans":len(fully_connected_r_runs),
+        "failing_sources":failing_sources,
         "official_failed_scans":len(r_runs)-len(successful_r_runs),
         "gal_sample_runs":len(g_runs),
         "gal_successful_samples":sum(x.get("status")=="ok" for x in g_runs),
@@ -143,14 +163,17 @@ def report(rss_path, discovery_path, releases_path, outdir, *, now=None):
            f"Status: **{r['status']}**",
            f"Seven-day pilot complete: **{r['seven_day_pilot_complete']}**",
            f"Observed history span: **{r['history_span_days']} days**",
-           f"Official RSS scans: **{r['official_scan_runs']}** (successful: {r['official_successful_scans']}, failed: {r['official_failed_scans']})",
+           f"RSS scans: **{r['official_scan_runs']}** (above 80% feed quorum: {r['official_successful_scans']}, all feeds connected: {r['official_fully_connected_scans']}, below quorum: {r['official_failed_scans']})",
            f"GDELT GAL samples: **{r['gal_sample_runs']}** (successful: {r['gal_successful_samples']}, degraded: {r['gal_failed_samples']})",
            f"Observed sampling gaps over 20 minutes: **{len(r['observed_sampling_gaps'])}**","",
            "| UTC day | Official scans | GAL samples | Timestamped agency | Specialist RSS | Grid operator | High-signal agency | GDELT first-seen URLs | Release-feed URLs |",
            "|---|---:|---:|---:|---:|---:|---:|---:|---:|"]
     for x in r["daily"]:
         lines.append(f"| {x['date_utc']} | {x['official_scans']} | {x['gal_samples']} | {x['publisher_timestamped_official_links']} | {x['specialist_publisher_timestamped_links']} | {x['grid_operator_primary_timestamped_links']} | {x['high_signal_official_links']} | {x['gdelt_index_first_seen_urls']} | {x['press_release_feed_date_urls']} |")
-    lines+=["","## Warnings"]+["- "+x for x in r["warnings"]]+[
+    lines+=["","## Individual feed failures"] + ([
+        f"- {x['source']}: {x['consecutive_failures']} consecutive failures; last successful scan: {x['last_success_utc'] or 'never'}"
+        for x in r["failing_sources"]] or ["- None in latest state"]) + [
+        "", "## Warnings"] + ["- "+x for x in r["warnings"]]+[
         "","No scan activity is **unknown coverage**, not proof that no market news occurred.",
         "GDELT RSS timestamps reflect index observations, not original publication dates.",
         "Even complete scan history is not proof of complete industry coverage."]
