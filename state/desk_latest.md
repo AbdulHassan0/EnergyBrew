@@ -2,7 +2,7 @@
 
 **Research links only. Not fact-checked, approved, or ready for publication.**
 
-Generated (UTC): 2026-11-18T21:39:52.220853+00:00
+Generated (UTC): 2026-11-18T21:41:37.634010+00:00
 Distinct relevant URLs in retained data: **140**
 Selected diverse research leads: **26**
 Publisher-timestamped official leads within 24h: **2**
