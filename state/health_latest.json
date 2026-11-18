@@ -1,0 +1,37 @@
+{
+  "audit_utc": "2026-11-18T18:27:16.905519+00:00",
+  "status": "degraded",
+  "official_feeds_connected": 11,
+  "official_feeds_checked": 11,
+  "official_rss_last_run_utc": "2026-11-18T18:27:14.459789+00:00",
+  "timestamped_editorial_leads_24h": 1,
+  "editorial_target_24h": 12,
+  "observed_beat_counts_24h": {
+    "Natural Gas & LNG": 1,
+    "Power & Electricity": 0,
+    "Oil & Energy": 0,
+    "Infrastructure & Investment": 0
+  },
+  "unobserved_beats": [
+    "Power & Electricity",
+    "Oil & Energy",
+    "Infrastructure & Investment"
+  ],
+  "research_first_seen_links_24h": 32,
+  "research_high_signal_links_24h": 2,
+  "research_publisher_dates_verified": 0,
+  "discovery_latest_status": "provider_cooldown",
+  "discovery_latest_run_utc": "2026-11-18T18:27:16.857272+00:00",
+  "critical": [],
+  "warnings": [
+    "Only 1 editorial leads within 24h; target 12",
+    "No observed high-signal stories in: Power & Electricity, Oil & Energy, Infrastructure & Investment",
+    "Global discovery is degraded or rate limited"
+  ],
+  "limitations": [
+    "No result proves zero market stories or comprehensive industry coverage.",
+    "Editorial lead counts are distinct links, not independently verified events.",
+    "GDELT first-seen times cannot establish original publisher dates.",
+    "Only editorial review and independent publisher verification can approve a story."
+  ]
+}

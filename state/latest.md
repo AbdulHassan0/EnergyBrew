@@ -1,7 +1,7 @@
 # EnergyBrew — live RSS collection
 
-Run: 2026-11-18T18:20:58.234806+00:00
-Successfully parsed feeds: **10/10**
+Run: 2026-11-18T18:27:14.459789+00:00
+Successfully parsed feeds: **11/11**
 Fresh timestamped entries: **10**
 Editorial candidates (in collection window): **3**
 Editorial candidates (last 24h): **1**
@@ -18,6 +18,7 @@ Distinct article links in 7-day state: **22**
 | EIA Presentations | True | 0 | 0 | 0 | 0 |  |
 | DOE Energy News | True | 2 | 0 | 1 | 0 |  |
 | DOE Grid Deployment | True | 0 | 0 | 0 | 0 |  |
+| US NRC Nuclear News | True | 0 | 0 | 0 | 0 |  |
 | DOE Hydrocarbons Releases | True | 0 | 0 | 0 | 0 |  |
 | DOE Hydrocarbons Blog | True | 0 | 0 | 0 | 0 |  |
 | European Commission DG Energy | True | 6 | 0 | 1 | 0 |  |

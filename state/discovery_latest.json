@@ -1,53 +1,15 @@
 {
-  "run_utc": "2026-11-18T18:20:59.758419+00:00",
+  "run_utc": "2026-11-18T18:27:16.857272+00:00",
   "provider": "GDELT DOC 2.0",
-  "status": "degraded",
+  "status": "provider_cooldown",
   "topics_configured": 12,
-  "topics_attempted": 3,
-  "topics_succeeded": 2,
-  "topics_pending_or_unsearched": 9,
-  "new_discovered_urls": 32,
+  "topics_attempted": 0,
+  "topics_succeeded": 0,
+  "topics_pending_or_unsearched": 12,
+  "new_discovered_urls": 0,
   "leads_in_last_24h_first_seen": 32,
   "leads_in_7d_state": 32,
   "provider_cooldown_until_utc": "2026-11-18T19:50:59.758419+00:00",
-  "topic_attempts": [
-    {
-      "topic": "data_centers",
-      "attempted_utc": "2026-11-18T18:20:59.758419+00:00",
-      "status": "success",
-      "raw_results": 26,
-      "new_urls": 26,
-      "normalized_results": 26,
-      "rejected": {
-        "invalid_url": 0,
-        "invalid_first_seen": 0,
-        "outside_window": 0
-      },
-      "http_status": 200
-    },
-    {
-      "topic": "energy_investment",
-      "attempted_utc": "2026-11-18T18:20:59.758419+00:00",
-      "status": "success",
-      "raw_results": 7,
-      "new_urls": 6,
-      "normalized_results": 7,
-      "rejected": {
-        "invalid_url": 0,
-        "invalid_first_seen": 0,
-        "outside_window": 0
-      },
-      "http_status": 200
-    },
-    {
-      "topic": "energy_policy",
-      "attempted_utc": "2026-11-18T18:20:59.758419+00:00",
-      "status": "rate_limited",
-      "raw_results": 0,
-      "new_urls": 0,
-      "http_status": 429,
-      "error": "HTTP 429"
-    }
-  ],
+  "topic_attempts": [],
   "notice": "Discovery index timestamps are NOT original article publication dates. All leads need publisher verification before newsletter use."
 }
