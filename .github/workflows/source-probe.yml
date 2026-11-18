@@ -1,0 +1,49 @@
+name: EnergyBrew energy-specialist RSS source probe
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "source_probe.py"
+      - "tests/test_source_probe.py"
+      - ".github/workflows/source-probe.yml"
+  schedule:
+    # One daily hosted health sample. Sources are staged, NOT production enabled.
+    - cron: "11 13 * * *"
+
+permissions:
+  contents: read
+
+jobs:
+  specialist-probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate probe parser and reporting logic
+        run: python -m unittest discover -s tests -p "test_source_probe.py" -v
+      - name: Fetch real specialist RSS endpoints from hosted runner
+        id: probe
+        continue-on-error: true
+        run: python source_probe.py --output output/source_probe
+      - name: Publish per-source operational results
+        if: always()
+        run: |
+          if test -f output/source_probe/source_probe.md; then
+            cat output/source_probe/source_probe.md >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Source probe failed before producing a report" >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: energybrew-specialist-source-probe
+          path: output/source_probe/
+          retention-days: 14
+      - name: Fail visibly when all specialist endpoints fail
+        if: steps.probe.outcome == 'failure'
+        run: exit 1

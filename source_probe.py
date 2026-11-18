@@ -1,0 +1,112 @@
+"""Measure real energy-specialist RSS endpoints before making them production sources.
+
+The probe collects public headline/link metadata only. It does not scrape articles,
+copy bodies, bypass paywalls, or claim that public feeds grant reuse rights.
+"""
+from __future__ import annotations
+import argparse
+import json
+import time
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
+from urllib.request import Request, urlopen
+
+from collector import MAX_BYTES, USER_AGENT, parse_feed
+
+# Directly advertised publisher endpoints, staged for hosted validation.
+CANDIDATES = (
+    ("S&P Global LNG headlines", "https://www.spglobal.com/content/spglobal/energy/us/en/rss/lng.xml"),
+    ("S&P Global Natural Gas headlines", "https://www.spglobal.com/content/spglobal/energy/us/en/rss/natural-gas.xml"),
+    ("S&P Global Electric Power headlines", "https://www.spglobal.com/content/spglobal/energy/us/en/rss/electric-power.xml"),
+    ("S&P Global Oil headlines", "https://www.spglobal.com/content/spglobal/energy/us/en/rss/oil.xml"),
+    ("Offshore Energy News", "https://www.offshore-energy.biz/feed"),
+    ("OilPrice.com News", "https://oilprice.com/rss.xml"),
+)
+SIZE_LIMIT = min(MAX_BYTES, 1_500_000)
+SOURCE_TIMEOUT = 12
+
+
+def fetch(url: str) -> tuple[bytes, int]:
+    request = Request(url, headers={
+        "User-Agent": USER_AGENT,
+        "Accept": "application/rss+xml,application/atom+xml,text/xml,application/xml",
+    })
+    with urlopen(request, timeout=SOURCE_TIMEOUT) as response:
+        data = response.read(SIZE_LIMIT + 1)
+        if len(data) > SIZE_LIMIT:
+            raise ValueError("Candidate RSS exceeds 1.5 MB safety limit")
+        return data, response.status
+
+
+def measure(candidates=CANDIDATES, *, now=None, fetcher=None) -> dict:
+    now = now or datetime.now(timezone.utc)
+    if now.tzinfo is None:
+        raise ValueError("Probe clock must be timezone-aware")
+    fetcher = fetcher or fetch
+    results = []
+    for name, url in candidates:
+        started = time.monotonic()
+        row = {"name": name, "url": url, "status": "degraded", "fresh_links_24h": 0,
+               "fresh_links_48h": 0, "high_signal_48h": 0, "error": None}
+        try:
+            payload, status = fetcher(url)
+            if not 200 <= status < 300:
+                raise ValueError(f"Publisher RSS returned HTTP {status}")
+            items, rejected, count = parse_feed(payload, name, now, 48)
+            row.update(
+                status="ok",
+                http_status=status,
+                rss_item_count=count,
+                fresh_links_48h=len(items),
+                fresh_links_24h=sum(datetime.fromisoformat(x["published_utc"]) >= now - timedelta(hours=24) for x in items),
+                high_signal_48h=sum(bool(x["editorial_candidate"]) for x in items),
+                rejected=rejected,
+                sample_headlines=[{"title": x["title"], "url": x["url"]} for x in items[:3]],
+            )
+        except Exception as exc:
+            row["error"] = f"{type(exc).__name__}: {str(exc)[:160]}"
+        row["duration_ms"] = round((time.monotonic() - started) * 1000)
+        results.append(row)
+    return {
+        "run_utc": now.isoformat(),
+        "status": "ok" if any(x["status"]=="ok" for x in results) else "degraded",
+        "feeds_checked": len(results),
+        "feeds_connected": sum(x["status"]=="ok" for x in results),
+        "fresh_links_24h": sum(x["fresh_links_24h"] for x in results),
+        "high_signal_48h": sum(x["high_signal_48h"] for x in results),
+        "sources": results,
+        "note": "Link metadata and publisher feed timestamps only; article contents and publication/reuse rights unverified.",
+    }
+
+
+def write_report(data: dict, output: Path) -> None:
+    output.mkdir(parents=True, exist_ok=True)
+    (output/"source_probe.json").write_text(json.dumps(data, indent=2, ensure_ascii=False)+"\n", encoding="utf-8")
+    lines = [
+        "# EnergyBrew energy specialist RSS — connection and volume pilot", "",
+        f"Probe UTC: {data['run_utc']}",
+        f"Connected: **{data['feeds_connected']}/{data['feeds_checked']}**",
+        f"Fresh source-linked records in last 24h: **{data['fresh_links_24h']}**",
+        "", "| Source | Status | 24h links | 48h links | High-signal 48h | Error |",
+        "|---|---|---:|---:|---:|---|",
+    ]
+    for x in data["sources"]:
+        error = (x.get("error") or "").replace("|","/")
+        lines.append(f"| {x['name']} | {x['status']} | {x['fresh_links_24h']} | {x['fresh_links_48h']} | {x['high_signal_48h']} | {error} |")
+    lines += ["", "Freshness is based on publisher RSS timestamps, not independent confirmation.",
+              "Results do not automatically authorize redistribution or promotion into an approved newsletter."]
+    (output/"source_probe.md").write_text("\n".join(lines)+"\n",encoding="utf-8")
+
+
+def main(argv=None) -> int:
+    p=argparse.ArgumentParser()
+    p.add_argument("--output", type=Path, default=Path("output/source_probe"))
+    args=p.parse_args(argv)
+    data=measure()
+    write_report(data,args.output)
+    print(json.dumps({k:v for k,v in data.items() if k!="sources"},indent=2))
+    return 0 if data["status"]=="ok" else 2
+
+
+if __name__=="__main__":
+    raise SystemExit(main())
