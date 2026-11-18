@@ -1,9 +1,10 @@
 {
-  "run_utc": "2026-11-18T11:31:44.907666+00:00",
+  "run_utc": "2026-11-18T11:32:51.700907+00:00",
   "feeds_connected": 8,
   "feeds_checked": 8,
   "fresh_entries": 6,
-  "new_article_links": 6,
+  "new_article_links": 0,
+  "relevant_fresh_entries": 3,
   "distinct_article_links_7d": 6,
   "approx_distinct_titles_7d": 6,
   "sources": [
@@ -13,8 +14,9 @@
       "connected": true,
       "items_seen": 28,
       "fresh": 1,
-      "new": 1,
+      "new": 0,
       "http_status": 200,
+      "relevant": 0,
       "rejected": {
         "undated": 1,
         "old": 26,
@@ -30,6 +32,7 @@
       "fresh": 0,
       "new": 0,
       "http_status": 200,
+      "relevant": 0,
       "rejected": {
         "undated": 0,
         "old": 0,
@@ -45,6 +48,7 @@
       "fresh": 0,
       "new": 0,
       "http_status": 200,
+      "relevant": 0,
       "rejected": {
         "undated": 0,
         "old": 0,
@@ -60,6 +64,7 @@
       "fresh": 0,
       "new": 0,
       "http_status": 200,
+      "relevant": 0,
       "rejected": {
         "undated": 0,
         "old": 1,
@@ -73,8 +78,9 @@
       "connected": true,
       "items_seen": 10,
       "fresh": 1,
-      "new": 1,
+      "new": 0,
       "http_status": 200,
+      "relevant": 1,
       "rejected": {
         "undated": 0,
         "old": 9,
@@ -90,6 +96,7 @@
       "fresh": 0,
       "new": 0,
       "http_status": 200,
+      "relevant": 0,
       "rejected": {
         "undated": 0,
         "old": 10,
@@ -105,6 +112,7 @@
       "fresh": 0,
       "new": 0,
       "http_status": 200,
+      "relevant": 0,
       "rejected": {
         "undated": 0,
         "old": 10,
@@ -118,8 +126,9 @@
       "connected": true,
       "items_seen": 30,
       "fresh": 4,
-      "new": 4,
+      "new": 0,
       "http_status": 200,
+      "relevant": 2,
       "rejected": {
         "undated": 0,
         "old": 26,
