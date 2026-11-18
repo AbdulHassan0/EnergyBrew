@@ -1,5 +1,5 @@
 {
-  "run_utc": "2026-11-18T18:35:56.455154+00:00",
+  "run_utc": "2026-11-18T18:36:20.043924+00:00",
   "provider": "GDELT GAL RSS",
   "coverage": "rolling_15min_sample_only_not_full_day",
   "status": "ok",
@@ -13,8 +13,8 @@
     "off_topic": 6096,
     "non_article": 53
   },
-  "historical_noise_removed": 1,
-  "historical_rescored": 3,
+  "historical_noise_removed": 2,
+  "historical_rescored": 0,
   "http_status": 200,
-  "combined_research_leads_24h": 55
+  "combined_research_leads_24h": 53
 }

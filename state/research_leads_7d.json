@@ -526,42 +526,6 @@
     "status": "discovery_only_requires_publisher_verification"
   },
   {
-    "url": "https://www.london-now.co.uk/news/26742320.brent-cross-shopping-centre-closed---man-fighting-life",
-    "title": "Worker fighting for his life after \u2018electric shock\u2019 at Brent Cross Shopping Centre",
-    "domain": "www.london-now.co.uk",
-    "gdelt_first_seen_utc": "2026-11-18T18:17:00+00:00",
-    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification"
-  },
-  {
-    "url": "https://www.bankingnews.gr/diethni/articles/911722/epifylaktikotita-stis-evropaikes-agores-me-to-vlemma-stin-ai-sto-0-1-o-dax-sta-92-dol-to-brent%20title=",
-    "title": "\u0395\u03c0\u03b9\u03c6\u03c5\u03bb\u03b1\u03ba\u03c4\u03b9\u03ba\u03cc\u03c4\u03b7\u03c4\u03b1 \u03c3\u03c4\u03b9\u03c2 \u03b5\u03c5\u03c1\u03c9\u03c0\u03b1\u03ca\u03ba\u03ad\u03c2 \u03b1\u03b3\u03bf\u03c1\u03ad\u03c2 \u03bc\u03b5 \u03c4\u03bf \u03b2\u03bb\u03ad\u03bc\u03bc\u03b1 \u03c3\u03c4\u03b7\u03bd \u0391\u0399 - \u03a3\u03c4\u03bf -1,1% \u03bf DAX, \u03c3\u03c4\u03b1 91 \u03b4\u03bf\u03bb. \u03c4\u03bf Brent",
-    "domain": "www.bankingnews.gr",
-    "gdelt_first_seen_utc": "2026-11-18T18:16:00+00:00",
-    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification"
-  },
-  {
     "url": "https://en.interfax.com.ua/news/press-release/1238792.html",
     "title": "Schneider Electric and Arup will develop new energy technologies for buildings and infrastructure",
     "domain": "en.interfax.com.ua",
