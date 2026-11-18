@@ -8,6 +8,7 @@ on:
       - "editorial.py"
       - "discovery.py"
       - "newsroom_health.py"
+      - "gal.py"
       - "tests/**"
       - ".github/workflows/live-collector.yml"
   schedule:
@@ -58,6 +59,10 @@ jobs:
         id: discovery
         continue-on-error: true
         run: python discovery.py --state state/discovery.json --output output/discovery --max-queries 4
+      - name: Capture supplemental GDELT GAL RSS research sample
+        id: gal
+        continue-on-error: true
+        run: python gal.py --state state/discovery.json --output output/gal
       - name: Audit news coverage and collection gaps
         if: always()
         run: |
@@ -77,6 +82,11 @@ jobs:
           else
             echo "Discovery report missing; no verified GDELT findings" >> "$GITHUB_STEP_SUMMARY"
           fi
+          echo "GAL sampled-feed outcome: ${{ steps.gal.outcome }}" >> "$GITHUB_STEP_SUMMARY"
+          if test -f output/gal/latest.md; then
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            cat output/gal/latest.md >> "$GITHUB_STEP_SUMMARY"
+          fi
           if test -f output/health/health.md; then
             echo "" >> "$GITHUB_STEP_SUMMARY"
             cat output/health/health.md >> "$GITHUB_STEP_SUMMARY"
@@ -89,6 +99,7 @@ jobs:
             output/collector/
             output/discovery/
             output/health/
+            output/gal/
           if-no-files-found: warn
           retention-days: 30
       - name: Save collector state in isolated branch
@@ -130,6 +141,15 @@ jobs:
             for report in leads_24h.json leads_7d.json; do
               if test -f "$GITHUB_WORKSPACE/output/discovery/$report"; then
                 cp "$GITHUB_WORKSPACE/output/discovery/$report" "state/discovery_$report"
+              fi
+            done
+          fi
+          if test -f "$GITHUB_WORKSPACE/output/gal/latest.json"; then
+            cp "$GITHUB_WORKSPACE/output/gal/latest.json" state/gal_latest.json
+            cp "$GITHUB_WORKSPACE/output/gal/latest.md" state/gal_latest.md
+            for report in leads_24h.json leads_7d.json; do
+              if test -f "$GITHUB_WORKSPACE/output/gal/$report"; then
+                cp "$GITHUB_WORKSPACE/output/gal/$report" "state/research_$report"
               fi
             done
           fi
