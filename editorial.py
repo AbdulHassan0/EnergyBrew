@@ -104,6 +104,7 @@ LOW_VALUE_PATTERNS = (
     r"\benergy.saving tips\b",
     r"\b(?:students?|schoolchildren)\b.{0,60}\b(?:conserve|saving|awareness)\b.{0,40}\b(?:electricity|energy)\b",
     r"\b(?:schools?|students?)\b.{0,60}\benergy awareness\b",
+    r"\b(?:cooking|recipes?|cleaning)\b.{0,50}\b(?:natural gas|gas stove|gas burner)\b",
 )
 
 
