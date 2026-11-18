@@ -10,6 +10,7 @@ on:
       - "newsroom_health.py"
       - "gal.py"
       - "press_releases.py"
+      - "research_desk.py"
       - "tests/**"
       - ".github/workflows/live-collector.yml"
   schedule:
@@ -71,6 +72,9 @@ jobs:
         id: releasefeed
         continue-on-error: true
         run: python press_releases.py --state state/press_releases.json --output output/releases
+      - name: Assemble unified private research desk
+        if: always()
+        run: python research_desk.py --rss-state state/articles.json --discovery-state state/discovery.json --releases-state state/press_releases.json --output output/desk
       - name: Audit news coverage and collection gaps
         if: always()
         run: |
@@ -100,6 +104,10 @@ jobs:
             echo "" >> "$GITHUB_STEP_SUMMARY"
             cat output/releases/latest.md >> "$GITHUB_STEP_SUMMARY"
           fi
+          if test -f output/desk/desk.md; then
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            cat output/desk/desk.md >> "$GITHUB_STEP_SUMMARY"
+          fi
           if test -f output/health/health.md; then
             echo "" >> "$GITHUB_STEP_SUMMARY"
             cat output/health/health.md >> "$GITHUB_STEP_SUMMARY"
@@ -114,6 +122,7 @@ jobs:
             output/health/
             output/gal/
             output/releases/
+            output/desk/
           if-no-files-found: warn
           retention-days: 30
       - name: Save collector state in isolated branch
@@ -179,6 +188,10 @@ jobs:
             cp "$GITHUB_WORKSPACE/output/releases/latest.md" state/releases_latest.md
             cp "$GITHUB_WORKSPACE/output/releases/leads_24h.json" state/releases_leads_24h.json
             cp "$GITHUB_WORKSPACE/output/releases/leads_7d.json" state/releases_leads_7d.json
+          fi
+          if test -f "$GITHUB_WORKSPACE/output/desk/desk.json"; then
+            cp "$GITHUB_WORKSPACE/output/desk/desk.json" state/desk_latest.json
+            cp "$GITHUB_WORKSPACE/output/desk/desk.md" state/desk_latest.md
           fi
           git config user.name "EnergyBrew collector"
           git config user.email "energybrew-bot@users.noreply.github.com"
