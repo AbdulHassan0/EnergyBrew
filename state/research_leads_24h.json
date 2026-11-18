@@ -218,26 +218,6 @@
     "status": "discovery_only_requires_publisher_verification"
   },
   {
-    "url": "https://newsroomamerica.com/tag/electricity_demand",
-    "title": "Tag: electricity_demand",
-    "domain": "newsroomamerica.com",
-    "gdelt_first_seen_utc": "2026-11-18T18:17:00+00:00",
-    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 33,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "electricity"
-    ],
-    "status": "discovery_only_requires_publisher_verification"
-  },
-  {
     "url": "https://dailypost.ng/2026/11/18/reps-postpone-electricity-tariff-review-pending-committee-report",
     "title": "Reps postpone electricity tariff review pending committee report",
     "domain": "dailypost.ng",
@@ -258,49 +238,9 @@
     "status": "discovery_only_requires_publisher_verification"
   },
   {
-    "url": "https://www.london-now.co.uk/news/26742320.brent-cross-shopping-centre-closed---man-fighting-life",
-    "title": "Worker fighting for his life after \u2018electric shock\u2019 at Brent Cross Shopping Centre",
-    "domain": "www.london-now.co.uk",
-    "gdelt_first_seen_utc": "2026-11-18T18:17:00+00:00",
-    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 33,
-    "category": "Oil & Energy",
-    "relevance_evidence": [
-      "brent"
-    ],
-    "status": "discovery_only_requires_publisher_verification"
-  },
-  {
     "url": "https://www.larepublica.co/globoeconomia/brent-cede-de-barrera-de-us-93-el-barril-ante-mayores-inventarios-en-ee-uu-4527313",
     "title": "Brent cede de barrera de US$93 el barril ante mayores inventarios en EE.UU.",
     "domain": "www.larepublica.co",
-    "gdelt_first_seen_utc": "2026-11-18T18:16:00+00:00",
-    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 33,
-    "category": "Oil & Energy",
-    "relevance_evidence": [
-      "brent"
-    ],
-    "status": "discovery_only_requires_publisher_verification"
-  },
-  {
-    "url": "https://www.bankingnews.gr/diethni/articles/911722/epifylaktikotita-stis-evropaikes-agores-me-to-vlemma-stin-ai-sto-0-1-o-dax-sta-92-dol-to-brent%20title=",
-    "title": "\u0395\u03c0\u03b9\u03c6\u03c5\u03bb\u03b1\u03ba\u03c4\u03b9\u03ba\u03cc\u03c4\u03b7\u03c4\u03b1 \u03c3\u03c4\u03b9\u03c2 \u03b5\u03c5\u03c1\u03c9\u03c0\u03b1\u03ca\u03ba\u03ad\u03c2 \u03b1\u03b3\u03bf\u03c1\u03ad\u03c2 \u03bc\u03b5 \u03c4\u03bf \u03b2\u03bb\u03ad\u03bc\u03bc\u03b1 \u03c3\u03c4\u03b7\u03bd \u0391\u0399 - \u03a3\u03c4\u03bf -1,1% \u03bf DAX, \u03c3\u03c4\u03b1 91 \u03b4\u03bf\u03bb. \u03c4\u03bf Brent",
-    "domain": "www.bankingnews.gr",
     "gdelt_first_seen_utc": "2026-11-18T18:16:00+00:00",
     "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
     "publisher_published_utc": null,
@@ -528,6 +468,25 @@
     "status": "discovery_only_requires_publisher_verification"
   },
   {
+    "url": "https://www.fool.com/investing/2026/11/17/only-11-of-the-power-plants-vistra-just-bought-are",
+    "title": "Only 11 % of the Power Plants Vistra Just Bought Are in Texas . Here Why That Matters After the Election .",
+    "domain": "www.fool.com",
+    "gdelt_first_seen_utc": "2026-11-18T01:15:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "data_centers",
+    "topics": [
+      "data_centers"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "vistra"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
     "url": "https://www.riotimesonline.com/brazil-natural-gas-supply-80-percent-2036",
     "title": "Brazil Sees Gas Supply Growing Over 80%",
     "domain": "www.riotimesonline.com",
@@ -564,6 +523,42 @@
     "relevance_evidence": [
       "diesel"
     ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.london-now.co.uk/news/26742320.brent-cross-shopping-centre-closed---man-fighting-life",
+    "title": "Worker fighting for his life after \u2018electric shock\u2019 at Brent Cross Shopping Centre",
+    "domain": "www.london-now.co.uk",
+    "gdelt_first_seen_utc": "2026-11-18T18:17:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.bankingnews.gr/diethni/articles/911722/epifylaktikotita-stis-evropaikes-agores-me-to-vlemma-stin-ai-sto-0-1-o-dax-sta-92-dol-to-brent%20title=",
+    "title": "\u0395\u03c0\u03b9\u03c6\u03c5\u03bb\u03b1\u03ba\u03c4\u03b9\u03ba\u03cc\u03c4\u03b7\u03c4\u03b1 \u03c3\u03c4\u03b9\u03c2 \u03b5\u03c5\u03c1\u03c9\u03c0\u03b1\u03ca\u03ba\u03ad\u03c2 \u03b1\u03b3\u03bf\u03c1\u03ad\u03c2 \u03bc\u03b5 \u03c4\u03bf \u03b2\u03bb\u03ad\u03bc\u03bc\u03b1 \u03c3\u03c4\u03b7\u03bd \u0391\u0399 - \u03a3\u03c4\u03bf -1,1% \u03bf DAX, \u03c3\u03c4\u03b1 91 \u03b4\u03bf\u03bb. \u03c4\u03bf Brent",
+    "domain": "www.bankingnews.gr",
+    "gdelt_first_seen_utc": "2026-11-18T18:16:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
     "status": "discovery_only_requires_publisher_verification"
   },
   {
@@ -860,23 +855,6 @@
     "url": "https://www.foxbusiness.com/markets/nvidia-releases-quarterly-earnings-after-jensen-huangs-resignation-ceo",
     "title": "Nvidia releases first quarterly earnings report since Jensen Huang resignation",
     "domain": "www.foxbusiness.com",
-    "gdelt_first_seen_utc": "2026-11-18T01:15:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "data_centers",
-    "topics": [
-      "data_centers"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification"
-  },
-  {
-    "url": "https://www.fool.com/investing/2026/11/17/only-11-of-the-power-plants-vistra-just-bought-are",
-    "title": "Only 11 % of the Power Plants Vistra Just Bought Are in Texas . Here Why That Matters After the Election .",
-    "domain": "www.fool.com",
     "gdelt_first_seen_utc": "2026-11-18T01:15:00+00:00",
     "publisher_published_utc": null,
     "published_time_verified": false,

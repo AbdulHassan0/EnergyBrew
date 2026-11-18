@@ -1,9 +1,9 @@
 {
-  "audit_utc": "2026-11-18T18:35:40.512152+00:00",
+  "audit_utc": "2026-11-18T18:36:00.527604+00:00",
   "status": "degraded",
   "official_feeds_connected": 11,
   "official_feeds_checked": 11,
-  "official_rss_last_run_utc": "2026-11-18T18:35:32.955857+00:00",
+  "official_rss_last_run_utc": "2026-11-18T18:35:54.218436+00:00",
   "timestamped_editorial_leads_24h": 1,
   "editorial_target_24h": 12,
   "observed_beat_counts_24h": {
@@ -17,11 +17,11 @@
     "Oil & Energy",
     "Infrastructure & Investment"
   ],
-  "research_first_seen_links_24h": 56,
-  "research_high_signal_links_24h": 26,
+  "research_first_seen_links_24h": 55,
+  "research_high_signal_links_24h": 24,
   "research_publisher_dates_verified": 0,
   "discovery_latest_status": "provider_cooldown",
-  "discovery_latest_run_utc": "2026-11-18T18:35:35.393429+00:00",
+  "discovery_latest_run_utc": "2026-11-18T18:35:56.372905+00:00",
   "critical": [],
   "warnings": [
     "Only 1 editorial leads within 24h; target 12",
