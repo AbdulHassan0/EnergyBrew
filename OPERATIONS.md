@@ -1,12 +1,12 @@
 # EnergyBrew — News Collection Operations
 
-This is an operating pilot for internal research, **not** a licensed news redistribution service or automated newsletter publisher.
+This is an operating pilot for public-source news metadata collection, **not** a licensed news redistribution service or independently verified publisher. The repository and collector-state branch are PUBLIC, so article bodies, snippets, credentials and confidential information must never be retained.
 
 ## Current hosted workflow
 
-- **Primary official RSS collector:** [Actions](https://github.com/AbdulHassan0/EnergyBrew/actions/workflows/live-collector.yml), scheduled at 04:17 / 10:17 / 16:17 / 22:17 UTC. Includes official EIA, DOE, NRC, European Commission, and Federal Register sources.
+- **Primary source-aware RSS collector:** [Actions](https://github.com/AbdulHassan0/EnergyBrew/actions/workflows/live-collector.yml), scheduled at 04:17 / 10:17 / 16:17 / 22:17 UTC. Includes EIA, DOE, NRC, European Commission, Federal Register, Offshore Energy, OilPrice.com, Utility Dive, and PJM Inside Lines sources. Connected sources include government agencies, specialist publishers, and an independent grid-operator's primary feed; classes are never conflated.
 - **Rolling global discovery sampler:** [Actions](https://github.com/AbdulHassan0/EnergyBrew/actions/workflows/frequent-gal.yml), scheduled at minute 7, 22, 37 and 52 each hour. The GDELT Global Article List is a rolling approximately 15-minute index feed, and GitHub schedule delays can create sampling gaps.
-- Both workflows use the same GitHub Actions concurrency group and shared private `collector-state` branch. This is **pilot-scale state storage**, not a production database.
+- The collectors use a shared concurrency group and PUBLIC collector-state branch. All writes pass the strict public_collector_guard.py metadata-only gate (including a legacy snippet migration). This is **pilot-scale state storage**, not a private or licensed feed warehouse.
 - The full publishing website, automated email sender, and subscriber analytics are **not** deployed with these workflows. Nothing is auto-approved or emailed.
 
 ## Live reports
@@ -23,7 +23,9 @@ This is an operating pilot for internal research, **not** a licensed news redist
 
 | Lane | What its timestamps prove | What they do NOT prove |
 |---|---|---|
-| Official RSS | Original publisher-provided publication timestamp on a feed | Story facts independently verified |
+| Government agency RSS | Original agency-feed publication timestamp | Independent fact verification or commercial redistribution permission |
+| Grid operator primary RSS (PJM) | PJM's own source-feed timestamp | Government agency status or independent journalistic reporting |
+| Specialist publisher RSS | Publisher-provided RSS publication timestamp | Independently verified facts, original article rights, or commercial reuse permission |
 | Federal Register | Publication calendar DATE | Intraday breaking-news time |
 | GDELT DOC / GAL | Time GDELT first indexed the URL | Original publisher article publication time, truth, or a license |
 | Company press release aggregator | Third-party feed's recorded time | Independent editorial reporting, named issuer, or original publisher time |
@@ -36,14 +38,14 @@ This is an operating pilot for internal research, **not** a licensed news redist
 - If the GAL sampler is older than 35 minutes or recorded a gap over 20 minutes, inspect its Actions run. An index sampling gap cannot automatically be filled using the current rolling RSS snapshot; label coverage incomplete.
 - If GDELT DOC returns 429, honor its persistent cooldown; the independent GAL path should continue. **Do not** accelerate retries.
 - If a feed says HTTP 200 but has 0 current articles, count connectivity as successful and current coverage as 0. Do not manufacture stories or change publication dates.
-- If source permissions are not sufficiently clear for commercial automated polling, leave the feed off until permission is obtained.
+- If source permissions are not sufficiently clear for commercial automated polling, leave the feed off until permission is obtained. Specifically, Rigzone and Oil & Gas Journal RSS prohibit commercial use without separate rights; do not integrate them on the basis of public accessibility.
 - If GitHub Actions or state persistence fails, preserve existing state, keep the run failure visible, and do not claim a healthy scan.
 
 ## Acceptance criteria for a seven-day live pilot
 
 - Seven consecutive days of hosted observations; the report must explicitly say `seven_day_pilot_complete = true`.
 - Review missing scheduled scans and measured GAL sampling gaps.
-- Record source connectivity separately from fresh relevant publisher-timestamped articles.
+- Record source connectivity separately from fresh relevant publisher-timestamped articles; distinguish agency, grid-operator primary, specialist-publisher, GDELT-first-seen, and press-release claims.
 - Report by category: Natural Gas & LNG, Power & Electricity, Oil & Energy, Infrastructure & Investment.
 - Calculate URL duplicates separately from possible repeated reporting of the same real event.
 - Examine false positives (school energy tips, promotional releases, tag pages, unrelated keyword collisions), false negatives and multilingual headline needs.
