@@ -60,6 +60,7 @@ def create(rss, discovery, releases=None, *, now=None):
     r_success=Counter(as_time(x["run_utc"]).date().isoformat() for x in successful_r_runs)
     g_success=Counter(as_time(x["run_utc"]).date().isoformat() for x in successful_g_runs)
     article_counts=Counter()
+    specialist_counts=Counter()
     official_candidates=Counter()
     for row in articles:
         stamp=as_time(row.get("published_utc"))
@@ -67,9 +68,12 @@ def create(rss, discovery, releases=None, *, now=None):
             continue
         date=stamp.date().isoformat()
         if row.get("published_precision","timestamp")=="timestamp":
-            article_counts[date]+=1
-            if row.get("editorial_candidate") is True:
-                official_candidates[date]+=1
+            if row.get("source_class")=="specialist_publisher":
+                specialist_counts[date]+=1
+            else:
+                article_counts[date]+=1
+                if row.get("editorial_candidate") is True:
+                    official_candidates[date]+=1
     discovery_links={}
     for row in leads:
         stamp=as_time(row.get("gdelt_first_seen_utc"))
@@ -86,6 +90,7 @@ def create(rss, discovery, releases=None, *, now=None):
     release_counts=Counter(release_links.values())
     data=[{"date_utc":d,"official_scans":r_scan[d],"gal_samples":g_scan[d],
            "publisher_timestamped_official_links":article_counts[d],
+           "specialist_publisher_timestamped_links":specialist_counts[d],
            "high_signal_official_links":official_candidates[d],
            "gdelt_index_first_seen_urls":index_counts[d],
            "press_release_feed_date_urls":release_counts[d],
@@ -137,10 +142,10 @@ def report(rss_path, discovery_path, releases_path, outdir, *, now=None):
            f"Official RSS scans: **{r['official_scan_runs']}** (successful: {r['official_successful_scans']}, failed: {r['official_failed_scans']})",
            f"GDELT GAL samples: **{r['gal_sample_runs']}** (successful: {r['gal_successful_samples']}, degraded: {r['gal_failed_samples']})",
            f"Observed sampling gaps over 20 minutes: **{len(r['observed_sampling_gaps'])}**","",
-           "| UTC day | Official scans | GAL samples | Timestamped official | High-signal official | GDELT first-seen URLs | Release-feed URLs |",
-           "|---|---:|---:|---:|---:|---:|---:|"]
+           "| UTC day | Official scans | GAL samples | Timestamped official | Specialist RSS | High-signal official | GDELT first-seen URLs | Release-feed URLs |",
+           "|---|---:|---:|---:|---:|---:|---:|---:|"]
     for x in r["daily"]:
-        lines.append(f"| {x['date_utc']} | {x['official_scans']} | {x['gal_samples']} | {x['publisher_timestamped_official_links']} | {x['high_signal_official_links']} | {x['gdelt_index_first_seen_urls']} | {x['press_release_feed_date_urls']} |")
+        lines.append(f"| {x['date_utc']} | {x['official_scans']} | {x['gal_samples']} | {x['publisher_timestamped_official_links']} | {x['specialist_publisher_timestamped_links']} | {x['high_signal_official_links']} | {x['gdelt_index_first_seen_urls']} | {x['press_release_feed_date_urls']} |")
     lines+=["","## Warnings"]+["- "+x for x in r["warnings"]]+[
         "","No scan activity is **unknown coverage**, not proof that no market news occurred.",
         "GDELT RSS timestamps reflect index observations, not original publication dates.",

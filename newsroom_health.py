@@ -68,6 +68,8 @@ def audit(rss_state, rss_report, discovery_state=None, discovery_report=None, *,
         url=article.get("url")
         if url:
             candidates[url] = article
+    official_candidates=[a for a in candidates.values() if a.get("source_class")!="specialist_publisher"]
+    specialist_candidates=[a for a in candidates.values() if a.get("source_class")=="specialist_publisher"]
     beats = Counter(a.get("category","Cross-sector") for a in candidates.values())
     missing = [topic for topic in REQUIRED_BEATS if not beats[topic]]
     research_24 = {}
@@ -136,6 +138,8 @@ def audit(rss_state, rss_report, discovery_state=None, discovery_report=None, *,
         "official_feeds_checked":checked,
         "official_rss_last_run_utc":rss_report.get("run_utc"),
         "timestamped_editorial_leads_24h":len(candidates),
+        "official_agency_editorial_leads_24h":len(official_candidates),
+        "specialist_publisher_editorial_leads_24h":len(specialist_candidates),
         "editorial_target_24h":TARGET_CANDIDATES_24H,
         "observed_beat_counts_24h":{b:beats[b] for b in REQUIRED_BEATS},
         "unobserved_beats":missing,
@@ -178,7 +182,7 @@ def report(rss_state_path, rss_report_path, discovery_state_path, discovery_repo
            f"Audit time: {result['audit_utc']}",
            f"Status: **{result['status']}**",
            f"Official feeds connected: **{result['official_feeds_connected']}/{result['official_feeds_checked']}**",
-           f"Timestamped high-signal editorial leads (24h): **{result['timestamped_editorial_leads_24h']}** / target {TARGET_CANDIDATES_24H}",
+           f"Timestamped high-signal editorial leads (24h): **{result['timestamped_editorial_leads_24h']}** / target {TARGET_CANDIDATES_24H} (agency: {result['official_agency_editorial_leads_24h']}, specialist RSS: {result['specialist_publisher_editorial_leads_24h']})",
            f"GDELT links first seen (24h): **{result['research_first_seen_links_24h']}**, of which **{result['research_high_signal_links_24h']}** headline-score as high signal",
            "GDELT publisher-verified times: **0** (requires a separate check)",
            f"Company/newswire release leads (last 24h feed date): **{result['company_announcement_links_24h']}**",

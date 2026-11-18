@@ -43,6 +43,17 @@ class MetricsTests(unittest.TestCase):
         self.assertEqual(r["gal_successful_samples"],2)
         self.assertEqual(r["gal_failed_samples"],0)
 
+    def test_source_class_counts_do_not_mislabel_specialist_as_official(self):
+        rss={"runs":[{"run_utc":stamp(5),"feeds_connected":2}],
+             "articles":[{"url":"https://publisher.test/1","published_utc":stamp(10),
+                         "published_precision":"timestamp","source_class":"specialist_publisher",
+                         "editorial_candidate":True}]}
+        report=create(rss,{},now=NOW)
+        today=report["daily"][-1]
+        self.assertEqual(today["publisher_timestamped_official_links"],0)
+        self.assertEqual(today["specialist_publisher_timestamped_links"],1)
+        self.assertEqual(today["high_signal_official_links"],0)
+
     def test_all_failed_scans_do_not_mark_health_ok(self):
         rss={"runs":[{"run_utc":stamp(3),"feeds_connected":0}]}
         discovery={"gal_runs":[{"run_utc":stamp(2),"status":"degraded"}]}
