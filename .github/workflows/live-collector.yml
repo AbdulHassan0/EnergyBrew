@@ -40,8 +40,14 @@ jobs:
           mkdir -p state
           if git ls-remote --exit-code --heads origin collector-state >/dev/null 2>&1; then
             git fetch --no-tags origin collector-state
-            git show FETCH_HEAD:state/articles.json > state/articles.json || true
-            git show FETCH_HEAD:state/discovery.json > state/discovery.json || true
+            # Missing files on a fresh deployment must stay absent, not become
+            # zero-byte files (which the collectors correctly reject as corrupt).
+            if git cat-file -e FETCH_HEAD:state/articles.json 2>/dev/null; then
+              git show FETCH_HEAD:state/articles.json > state/articles.json
+            fi
+            if git cat-file -e FETCH_HEAD:state/discovery.json 2>/dev/null; then
+              git show FETCH_HEAD:state/discovery.json > state/discovery.json
+            fi
           fi
       - name: Fetch actual publisher-dated RSS stories
         id: ingest
@@ -59,6 +65,7 @@ jobs:
           else
             echo "Collection report was not produced" >> "$GITHUB_STEP_SUMMARY"
           fi
+          echo "Discovery step outcome: ${{ steps.discovery.outcome }}" >> "$GITHUB_STEP_SUMMARY"
           if test -f output/discovery/latest.md; then
             echo "" >> "$GITHUB_STEP_SUMMARY"
             cat output/discovery/latest.md >> "$GITHUB_STEP_SUMMARY"
