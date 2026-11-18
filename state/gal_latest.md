@@ -1,6 +1,6 @@
 # GDELT Global Article List — sampled backup
 
-Run: 2026-11-18T18:44:02.010017+00:00
+Run: 2026-11-18T18:46:25.746827+00:00
 Status: **ok**
 RSS entries examined: **6168**
 High-signal sampled entries: **10**
