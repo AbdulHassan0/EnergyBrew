@@ -116,7 +116,12 @@ def collect_gal(state_path, outdir, *, now=None, fetcher=None):
         item["publisher_published_utc"]=None
         item["published_time_verified"]=False
         by_url[item["url"]]=item
+    previous_runs=state.get("gal_runs",[])
+    last_attempt=max((_datetime(x.get("run_utc")) for x in previous_runs if _datetime(x.get("run_utc"))),default=None)
+    interval_minutes=round((now-last_attempt).total_seconds()/60,1) if last_attempt else None
     summary={"run_utc":utc_stamp(now),"provider":"GDELT GAL RSS",
+             "minutes_since_previous_sample":interval_minutes,
+             "potential_sampling_gap":bool(interval_minutes is not None and interval_minutes>20),
              "coverage":"rolling_15min_sample_only_not_full_day",
              "status":"pending","raw_feed_items":0,"high_signal_items":0,
              "new_unique_links":0,"rejected":{},
@@ -162,7 +167,7 @@ def collect_gal(state_path, outdir, *, now=None, fetcher=None):
     state.setdefault("gal_runs",[]).append({k:summary[k] for k in
         ("run_utc","status","raw_feed_items","high_signal_items","new_unique_links")})
     state["gal_runs"]=[r for r in state["gal_runs"] if
-        (_datetime(r.get("run_utc")) or cutoff)>=cutoff][-50:]
+        (_datetime(r.get("run_utc")) or cutoff)>=cutoff][-800:]
     outdir=Path(outdir)
     outdir.mkdir(parents=True,exist_ok=True)
     state_path.parent.mkdir(parents=True,exist_ok=True)
@@ -178,6 +183,8 @@ def collect_gal(state_path, outdir, *, now=None, fetcher=None):
         f"Status: **{summary['status']}**",
         f"RSS entries examined: **{summary['raw_feed_items']}**",
         f"High-signal sampled entries: **{summary['high_signal_items']}**",
+        f"Minutes since previous scheduled sample: **{summary['minutes_since_previous_sample']}**",
+        f"Potential gap in rolling feed sampling: **{summary['potential_sampling_gap']}**",
         f"New unique URLs in research state: **{summary['new_unique_links']}**",
         f"Previously stored non-article pages removed: **{summary['historical_noise_removed']}**",
         f"Previously stored scores corrected: **{summary['historical_rescored']}**",
