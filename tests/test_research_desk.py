@@ -70,7 +70,7 @@ class DeskTests(unittest.TestCase):
             result=generate(root/"rss.json",root/"discovery.json",root/"missing.json",root/"out",now=NOW)
             self.assertEqual(result["selected_research_links"],2)
             self.assertTrue((root/"out/desk.json").exists())
-            self.assertIn("NOT", (root/"out/desk.md").read_text())
+            self.assertIn("Not fact-checked", (root/"out/desk.md").read_text())
 
 if __name__=="__main__":
     unittest.main()
