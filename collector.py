@@ -36,7 +36,7 @@ KEYWORDS = {
     "Infrastructure & Investment": ("pipeline", "terminal", "investment", "infrastructure", "capacity", "commission", "approval", "permit", "project"),
 }
 USER_AGENT = "EnergyBrewResearchCollector/1.0 (+https://github.com/AbdulHassan0/EnergyBrew)"
-DROP_PARAMS = {"utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "fbclid", "gclid"}
+DROP_PARAMS = {"utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "fbclid", "gclid", "access_token", "apikey", "api_key", "auth", "sessionid", "password", "token"}
 MAX_BYTES = 2_000_000
 # Federal Register is an official daily publication: the date is meaningful,
 # but its feed clock is NOT evidence of an intraday publication timestamp.
@@ -83,11 +83,18 @@ def published_date(node):
     return None
 
 def clean_url(url):
-    p = urlsplit(url)
-    if p.scheme not in ("http", "https") or not p.netloc:
+    """Canonicalize article links; never retain credentials or token-like query values."""
+    if not isinstance(url, str) or len(url) > 4096 or any(ch in url for ch in "\r\n\x00"):
         return ""
-    qs = [(k, v) for k, v in parse_qsl(p.query, keep_blank_values=True) if k.lower() not in DROP_PARAMS]
-    return urlunsplit((p.scheme.lower(), p.netloc.lower(), p.path.rstrip("/") or "/", urlencode(qs), ""))
+    try:
+        p = urlsplit(url.strip())
+        if p.scheme.lower() not in ("http", "https") or not p.hostname or p.username or p.password:
+            return ""
+        qs = [(k, v) for k, v in parse_qsl(p.query, keep_blank_values=True)
+              if k.lower() not in DROP_PARAMS]
+        return urlunsplit((p.scheme.lower(), p.netloc.lower(), p.path.rstrip("/") or "/", urlencode(qs), ""))
+    except ValueError:
+        return ""
 
 def classify(title, summary):
     txt = (title + " " + summary).lower()
@@ -121,8 +128,7 @@ def parse_feed(xml_bytes, source_name, now, hours, date_precision="timestamp"):
         quality = evaluate(title, summary)
         is_precise = date_precision == "timestamp"
         category, score = quality["category"], quality["relevance_score"]
-        guid = child_text(node, ("guid", "id"))
-        identity = (source_name + "|" + (guid or link)).encode("utf-8")
+        identity = link.encode("utf-8")  # URL is stable even when publisher GUID or feed changes
         accepted.append({
             "id": hashlib.sha256(identity).hexdigest()[:24],
             "title": title[:300], "url": link, "source": source_name,
@@ -132,7 +138,6 @@ def parse_feed(xml_bytes, source_name, now, hours, date_precision="timestamp"):
             "editorial_candidate": bool(quality["editorial_candidate"] and is_precise),
             "relevance_evidence": quality["evidence"],
             "status": "research_only_unverified" if is_precise else "research_date_only",
-            "summary_excerpt": summary[:350],
         })
     return accepted, rejected, len(nodes)
 
@@ -154,6 +159,8 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
             raise ValueError("Existing state unreadable; refusing to erase its history")
     else:
         previous = {"articles": [], "runs": []}
+    if not isinstance(previous, dict) or not isinstance(previous.get("articles"), list) or not isinstance(previous.get("runs"), list):
+        raise ValueError("Invalid publisher state schema; refusing to overwrite history")
     articles = {}
     seen_urls = {}
     # Fold past repeated publisher URLs before calculating counts.
@@ -175,12 +182,14 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
                 first["also_seen_in"].append(item["source"])
             continue
         item["url"] = url
+        item.pop("summary_excerpt", None)  # legacy state migration: no publisher excerpt in public history
+        item["id"] = hashlib.sha256(url.encode("utf-8")).hexdigest()[:24]
         articles[item["id"]] = item
         seen_urls[url] = item["id"]
     # Re-evaluate all research records: an upgraded sector model can recover
     # previously missed pipeline notices without altering publication approval.
     for existing in articles.values():
-        quality = evaluate(existing.get("title",""), existing.get("summary_excerpt",""))
+        quality = evaluate(existing.get("title",""))  # never persist publisher excerpts
         existing.update(category=quality["category"], relevance_score=quality["relevance_score"],
             editorial_candidate=bool(quality["editorial_candidate"] and existing.get("published_precision","timestamp") == "timestamp"),
             relevance_evidence=quality["evidence"],
@@ -197,11 +206,17 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
                 "relevant": sum(x["editorial_candidate"] for x in items), "rejected": rejected})
             for item in items:
                 prior_id = seen_urls.get(item["url"])
-                if prior_id is not None and prior_id != item["id"]:
+                if prior_id is not None:
                     prior = articles[prior_id]
-                    prior.setdefault("also_seen_in", [])
-                    if name != prior["source"] and name not in prior["also_seen_in"]:
-                        prior["also_seen_in"].append(name)
+                    if name != prior.get("source"):
+                        prior.setdefault("also_seen_in", [])
+                        if name not in prior["also_seen_in"]:
+                            prior["also_seen_in"].append(name)
+                    # Prefer the newer original timestamp, but keep one canonical identity.
+                    if prior.get("published_utc", "") < item["published_utc"]:
+                        item["id"] = prior_id
+                        item["also_seen_in"] = prior.get("also_seen_in", [])
+                        articles[prior_id] = item
                     continue
                 if item["id"] not in articles:
                     new_count += 1
@@ -212,7 +227,14 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
             row["error"] = f"{type(exc).__name__}: {str(exc)[:220]}"
         results.append(row)
     cutoff = now - timedelta(days=7)
-    retained = [v for v in articles.values() if datetime.fromisoformat(v["published_utc"]) >= cutoff]
+    retained = []
+    for v in articles.values():
+        try:
+            dt = datetime.fromisoformat(v["published_utc"].replace("Z", "+00:00"))
+            if dt.tzinfo and cutoff <= dt.astimezone(timezone.utc) <= now + timedelta(minutes=10):
+                retained.append(v)
+        except (KeyError, ValueError, TypeError):
+            continue
     retained.sort(key=lambda x: x["published_utc"], reverse=True)
     unique_titles = {normalized_event_title(x["title"]) for x in retained}
     run = {"run_utc": now.isoformat(), "feeds_connected": sum(x["connected"] for x in results),
@@ -224,7 +246,16 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
            "editorial_candidates_24h": sum(x.get("editorial_candidate",False) and datetime.fromisoformat(x["published_utc"]) >= now - timedelta(hours=24) for x in retained),
            "regulatory_watch_links_7d": sum(x.get("published_precision")=="day" and x.get("relevance_score",0)>=22 for x in retained),
            "sources": results}
-    runs = [x for x in previous.get("runs", []) if datetime.fromisoformat(x["run_utc"]) >= cutoff]
+    runs = []
+    for x in previous["runs"]:
+        if not isinstance(x, dict):
+            continue
+        try:
+            stamp = datetime.fromisoformat(str(x["run_utc"]).replace("Z", "+00:00"))
+            if stamp.tzinfo and cutoff <= stamp.astimezone(timezone.utc) <= now + timedelta(minutes=10):
+                runs.append(x)
+        except (KeyError, ValueError, TypeError):
+            continue
     runs.append({k: run[k] for k in ("run_utc", "feeds_connected", "feeds_checked", "fresh_entries", "new_article_links")})
     outdir.mkdir(parents=True, exist_ok=True)
     state_path.parent.mkdir(parents=True, exist_ok=True)
@@ -256,7 +287,7 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
     for r in results:
         err = r.get("error", "").replace("|", "/")
         lines.append(f"| {r['source']} | {r['connected']} | {r['fresh']} | {r.get('date_only',0)} | {r.get('relevant', 0)} | {r['new']} | {err} |")
-    lines += ["", "Source-linked metadata is for private editorial research only. Dates come from publishers' publication fields, not HTTP crawl times.", "No newsletter publication or subscriber email occurs."]
+    lines += ["", "Source-linked metadata only (no publisher article text). Dates come from publishers' publication fields, not HTTP crawl times.", "No newsletter publication or subscriber email occurs."]
     (outdir / "latest.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     return run
 

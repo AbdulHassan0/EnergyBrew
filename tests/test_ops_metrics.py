@@ -18,7 +18,7 @@ class MetricsTests(unittest.TestCase):
         self.assertTrue(any("missing" in x.lower() for x in r["warnings"]))
 
     def test_gal_sampling_gap_and_source_date_distinction(self):
-        rss={"runs":[{"run_utc":stamp(10)}],
+        rss={"runs":[{"run_utc":stamp(10),"feeds_connected":2}],
              "articles":[{"url":"https://gov.test/1","published_utc":stamp(30),
                           "published_precision":"timestamp","editorial_candidate":True}]}
         discovery={"gal_runs":[
@@ -37,11 +37,22 @@ class MetricsTests(unittest.TestCase):
     def test_recent_regular_samples_do_not_report_gap(self):
         discovery={"gal_runs":[{"run_utc":stamp(20),"status":"ok"},
                               {"run_utc":stamp(5),"status":"ok"}]}
-        rss={"runs":[{"run_utc":stamp(5)}]}
+        rss={"runs":[{"run_utc":stamp(5),"feeds_connected":1}]}
         r=create(rss,discovery,now=NOW)
         self.assertFalse(r["observed_sampling_gaps"])
         self.assertEqual(r["gal_successful_samples"],2)
         self.assertEqual(r["gal_failed_samples"],0)
+
+    def test_all_failed_scans_do_not_mark_health_ok(self):
+        rss={"runs":[{"run_utc":stamp(3),"feeds_connected":0}]}
+        discovery={"gal_runs":[{"run_utc":stamp(2),"status":"degraded"}]}
+        r=create(rss,discovery,now=NOW)
+        self.assertEqual(r["official_scan_runs"],1)
+        self.assertEqual(r["official_successful_scans"],0)
+        self.assertIsNone(r["latest_official_scan_utc"])
+        self.assertIsNone(r["latest_gal_sample_utc"])
+        self.assertEqual(r["status"],"degraded")
+        self.assertFalse(r["daily"][-1]["successful_scanning_observed"])
 
     def test_report_outputs_readable_files(self):
         with tempfile.TemporaryDirectory() as d:

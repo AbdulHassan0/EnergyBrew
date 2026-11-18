@@ -5,7 +5,7 @@ import tempfile
 import unittest
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
-from collector import collect, parse_feed, published_date, SOURCES, DAY_PRECISION_SOURCES
+from collector import clean_url, collect, parse_feed, published_date, SOURCES, DAY_PRECISION_SOURCES
 from editorial import evaluate
 from xml.etree import ElementTree as ET
 
@@ -40,6 +40,18 @@ class CollectorTests(unittest.TestCase):
             items, rejected, _ = parse_feed(sample(when=date), "Official", NOW, 48)
             self.assertFalse(items)
             self.assertEqual(rejected[label], 1)
+
+    def test_public_history_has_no_publisher_excerpt(self):
+        with tempfile.TemporaryDirectory() as d:
+            state=Path(d)/"state.json"
+            collect(state,Path(d)/"out",now=NOW,fetcher=fixture_fetch)
+            saved=json.loads(state.read_text())
+            self.assertTrue(saved["articles"])
+            self.assertTrue(all("summary_excerpt" not in x for x in saved["articles"]))
+
+    def test_sensitive_link_query_and_credentials(self):
+        self.assertFalse(clean_url("https://user:secret@example.com/story"))
+        self.assertEqual(clean_url("https://example.com/story?utm_source=site&token=secret&id=5"),"https://example.com/story?id=5")
 
     def test_state_persists_without_duplication(self):
         with tempfile.TemporaryDirectory() as d:
@@ -112,6 +124,13 @@ class CollectorTests(unittest.TestCase):
             self.assertEqual(report["feeds_connected"], 0)
             self.assertEqual(len(report["sources"]), len(SOURCES))
             self.assertIn("offline", (Path(d)/"out/latest.md").read_text())
+
+    def test_invalid_schema_is_not_overwritten(self):
+        with tempfile.TemporaryDirectory() as d:
+            state=Path(d)/"db.json"
+            state.write_text(json.dumps(["bad-state"]))
+            with self.assertRaises(ValueError):
+                collect(state,Path(d)/"out",now=NOW,fetcher=fixture_fetch)
 
     def test_invalid_existing_state_is_not_overwritten(self):
         with tempfile.TemporaryDirectory() as d:

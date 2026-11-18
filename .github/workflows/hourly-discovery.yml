@@ -27,10 +27,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Require private repository
-        env:
-          REPO_PRIVATE: ${{ github.event.repository.private }}
-        run: test "$REPO_PRIVATE" = "true"
       - name: Validate GAL collector before live sampling
         run: python -m unittest discover -s tests -p "test_gal.py" -v
       - name: Restore previous discovery history
@@ -64,8 +60,12 @@ jobs:
             echo "" >> "$GITHUB_STEP_SUMMARY"
             cat output/health/health.md >> "$GITHUB_STEP_SUMMARY"
           fi
-      - name: Persist hourly discovery history
+      - name: Verify public metadata before branch update
+        id: metadata_guard
         if: always()
+        run: python public_collector_guard.py --rss state/articles.json --discovery state/discovery.json --releases state/press_releases.json
+      - name: Persist hourly discovery history
+        if: steps.metadata_guard.outcome == 'success'
         run: |
           if test ! -s state/discovery.json; then
             echo "No valid discovery history to persist"

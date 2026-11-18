@@ -39,10 +39,12 @@ def create(rss, discovery, releases=None, *, now=None):
                   key=lambda a:a["run_utc"])
     g_runs=sorted((a for a in discovery.get("gal_runs",[]) if isinstance(a,dict) and recent(as_time(a.get("run_utc")))),
                   key=lambda a:a["run_utc"])
-    latest_r=as_time(r_runs[-1]["run_utc"]) if r_runs else None
-    latest_g=as_time(g_runs[-1]["run_utc"]) if g_runs else None
+    successful_r_runs=[x for x in r_runs if int(x.get("feeds_connected", 0) or 0) > 0]
+    successful_g_runs=[x for x in g_runs if x.get("status") == "ok"]
+    latest_r=as_time(successful_r_runs[-1]["run_utc"]) if successful_r_runs else None
+    latest_g=as_time(successful_g_runs[-1]["run_utc"]) if successful_g_runs else None
     gal_gaps=[]
-    for earlier,later in zip(g_runs,g_runs[1:]):
+    for earlier,later in zip(successful_g_runs,successful_g_runs[1:]):
         a,b=as_time(earlier["run_utc"]),as_time(later["run_utc"])
         if a is None or b is None:
             continue
@@ -55,6 +57,8 @@ def create(rss, discovery, releases=None, *, now=None):
     days=[(now.date()-timedelta(days=i)).isoformat() for i in range(6,-1,-1)]
     r_scan=Counter(as_time(x.get("run_utc")).date().isoformat() for x in r_runs if as_time(x.get("run_utc")))
     g_scan=Counter(as_time(x.get("run_utc")).date().isoformat() for x in g_runs if as_time(x.get("run_utc")))
+    r_success=Counter(as_time(x["run_utc"]).date().isoformat() for x in successful_r_runs)
+    g_success=Counter(as_time(x["run_utc"]).date().isoformat() for x in successful_g_runs)
     article_counts=Counter()
     official_candidates=Counter()
     for row in articles:
@@ -85,7 +89,9 @@ def create(rss, discovery, releases=None, *, now=None):
            "high_signal_official_links":official_candidates[d],
            "gdelt_index_first_seen_urls":index_counts[d],
            "press_release_feed_date_urls":release_counts[d],
-           "scanning_observed":bool(r_scan[d] or g_scan[d])} for d in days]
+           "scanning_observed":bool(r_scan[d] or g_scan[d]),
+           "successful_official_scans":r_success[d], "successful_gal_samples":g_success[d],
+           "successful_scanning_observed":bool(r_success[d] and g_success[d])} for d in days]
     warnings=[]
     if not latest_r or now-latest_r>timedelta(hours=MAX_RSS_AGE_HOURS):
         warnings.append("Official RSS scan missing or older than 12 hours")
@@ -95,7 +101,7 @@ def create(rss, discovery, releases=None, *, now=None):
         warnings.append(f"{len(gal_gaps)} observed GAL intervals exceeded 20 minutes")
     first_observed=min(([as_time(x["run_utc"]) for x in r_runs+g_runs if as_time(x["run_utc"])]),default=None)
     history_days=((now-first_observed).total_seconds()/86400) if first_observed else 0
-    pilot_complete=history_days>=7 and all(x["scanning_observed"] for x in data)
+    pilot_complete=history_days>=7 and all(x["successful_scanning_observed"] for x in data) and not gal_gaps
     if not pilot_complete:
         warnings.append("Seven-day operating pilot is not yet complete")
     return {
@@ -103,11 +109,15 @@ def create(rss, discovery, releases=None, *, now=None):
         "status":"degraded" if any("missing" in x.lower() for x in warnings) or gal_gaps else "incomplete_pilot" if not pilot_complete else "observations_available",
         "seven_day_pilot_complete":pilot_complete,
         "history_span_days":round(history_days,2),
-        "official_scan_runs":len(r_runs),"gal_sample_runs":len(g_runs),
+        "official_scan_runs":len(r_runs),"official_successful_scans":len(successful_r_runs),
+        "official_failed_scans":len(r_runs)-len(successful_r_runs),
+        "gal_sample_runs":len(g_runs),
         "gal_successful_samples":sum(x.get("status")=="ok" for x in g_runs),
         "gal_failed_samples":sum(x.get("status")!="ok" for x in g_runs),
         "observed_sampling_gaps":gal_gaps[-30:],
         "latest_official_scan_utc":latest_r.isoformat() if latest_r else None,
+        "latest_official_attempt_utc":as_time(r_runs[-1]["run_utc"]).isoformat() if r_runs else None,
+        "latest_gal_attempt_utc":as_time(g_runs[-1]["run_utc"]).isoformat() if g_runs else None,
         "latest_gal_sample_utc":latest_g.isoformat() if latest_g else None,
         "daily":data,
         "warnings":warnings,
@@ -124,7 +134,7 @@ def report(rss_path, discovery_path, releases_path, outdir, *, now=None):
            f"Status: **{r['status']}**",
            f"Seven-day pilot complete: **{r['seven_day_pilot_complete']}**",
            f"Observed history span: **{r['history_span_days']} days**",
-           f"Official RSS scans: **{r['official_scan_runs']}**",
+           f"Official RSS scans: **{r['official_scan_runs']}** (successful: {r['official_successful_scans']}, failed: {r['official_failed_scans']})",
            f"GDELT GAL samples: **{r['gal_sample_runs']}** (successful: {r['gal_successful_samples']}, degraded: {r['gal_failed_samples']})",
            f"Observed sampling gaps over 20 minutes: **{len(r['observed_sampling_gaps'])}**","",
            "| UTC day | Official scans | GAL samples | Timestamped official | High-signal official | GDELT first-seen URLs | Release-feed URLs |",
