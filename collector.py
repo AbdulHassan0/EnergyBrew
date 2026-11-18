@@ -175,14 +175,14 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
         item["url"] = url
         articles[item["id"]] = item
         seen_urls[url] = item["id"]
-    # Refresh existing research records when the relevance model changes.
+    # Re-evaluate all research records: an upgraded sector model can recover
+    # previously missed pipeline notices without altering publication approval.
     for existing in articles.values():
-        if "editorial_candidate" not in existing:
-            quality = evaluate(existing.get("title",""), existing.get("summary_excerpt",""))
-            existing.update(category=quality["category"], relevance_score=quality["relevance_score"],
-                editorial_candidate=bool(quality["editorial_candidate"] and existing.get("published_precision","timestamp") == "timestamp"),
-                relevance_evidence=quality["evidence"],
-                published_precision=existing.get("published_precision","timestamp"))
+        quality = evaluate(existing.get("title",""), existing.get("summary_excerpt",""))
+        existing.update(category=quality["category"], relevance_score=quality["relevance_score"],
+            editorial_candidate=bool(quality["editorial_candidate"] and existing.get("published_precision","timestamp") == "timestamp"),
+            relevance_evidence=quality["evidence"],
+            published_precision=existing.get("published_precision","timestamp"))
     results, new_count = [], 0
     for name, url in SOURCES:
         row = {"source": name, "url": url, "connected": False, "items_seen": 0, "fresh": 0, "new": 0}
