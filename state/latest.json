@@ -1,0 +1,131 @@
+{
+  "run_utc": "2026-11-18T11:31:44.907666+00:00",
+  "feeds_connected": 8,
+  "feeds_checked": 8,
+  "fresh_entries": 6,
+  "new_article_links": 6,
+  "distinct_article_links_7d": 6,
+  "approx_distinct_titles_7d": 6,
+  "sources": [
+    {
+      "source": "EIA Today in Energy",
+      "url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "connected": true,
+      "items_seen": 28,
+      "fresh": 1,
+      "new": 1,
+      "http_status": 200,
+      "rejected": {
+        "undated": 1,
+        "old": 26,
+        "future": 0,
+        "invalid_link": 0
+      }
+    },
+    {
+      "source": "EIA Press Releases",
+      "url": "https://www.eia.gov/rss/press_rss.xml",
+      "connected": true,
+      "items_seen": 13,
+      "fresh": 0,
+      "new": 0,
+      "http_status": 200,
+      "rejected": {
+        "undated": 0,
+        "old": 0,
+        "future": 0,
+        "invalid_link": 13
+      }
+    },
+    {
+      "source": "EIA Congressional Testimony",
+      "url": "https://www.eia.gov/rss/testimony.xml",
+      "connected": true,
+      "items_seen": 1,
+      "fresh": 0,
+      "new": 0,
+      "http_status": 200,
+      "rejected": {
+        "undated": 0,
+        "old": 0,
+        "future": 0,
+        "invalid_link": 1
+      }
+    },
+    {
+      "source": "EIA Presentations",
+      "url": "https://www.eia.gov/rss/presentations.xml",
+      "connected": true,
+      "items_seen": 1,
+      "fresh": 0,
+      "new": 0,
+      "http_status": 200,
+      "rejected": {
+        "undated": 0,
+        "old": 1,
+        "future": 0,
+        "invalid_link": 0
+      }
+    },
+    {
+      "source": "DOE Energy News",
+      "url": "https://www.energy.gov/rss/energygov/2193718",
+      "connected": true,
+      "items_seen": 10,
+      "fresh": 1,
+      "new": 1,
+      "http_status": 200,
+      "rejected": {
+        "undated": 0,
+        "old": 9,
+        "future": 0,
+        "invalid_link": 0
+      }
+    },
+    {
+      "source": "DOE Hydrocarbons Releases",
+      "url": "https://www.energy.gov/rss/hgeo/2282977",
+      "connected": true,
+      "items_seen": 10,
+      "fresh": 0,
+      "new": 0,
+      "http_status": 200,
+      "rejected": {
+        "undated": 0,
+        "old": 10,
+        "future": 0,
+        "invalid_link": 0
+      }
+    },
+    {
+      "source": "DOE Hydrocarbons Blog",
+      "url": "https://www.energy.gov/rss/hgeo/2283029",
+      "connected": true,
+      "items_seen": 10,
+      "fresh": 0,
+      "new": 0,
+      "http_status": 200,
+      "rejected": {
+        "undated": 0,
+        "old": 10,
+        "future": 0,
+        "invalid_link": 0
+      }
+    },
+    {
+      "source": "European Commission DG Energy",
+      "url": "https://energy.ec.europa.eu/node/2/rss_en",
+      "connected": true,
+      "items_seen": 30,
+      "fresh": 4,
+      "new": 4,
+      "http_status": 200,
+      "rejected": {
+        "undated": 0,
+        "old": 26,
+        "future": 0,
+        "invalid_link": 0
+      }
+    }
+  ]
+}
