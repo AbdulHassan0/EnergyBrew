@@ -2,61 +2,57 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#173c30"><meta name="robots" content="noindex,nofollow">
-<meta name="description" content="Source-linked energy research covering natural gas, LNG, power, oil and infrastructure.">
-<title>EnergyBrew | The energy industry, distilled</title>
+<meta name="theme-color" content="#392b25"><meta name="robots" content="noindex,nofollow">
+<meta name="description" content="EnergyBrew. Your five-minute energy news briefing, made for your morning coffee.">
+<title>EnergyBrew — Your daily shot of energy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./styles.css"><script src="./app.js" defer></script>
 </head>
 <body>
-<a href="#stories" class="skip">Skip to stories</a>
-<div class="ribbon"><div class="wrap ribbon-flex"><span>THE ENERGY INTELLIGENCE BRIEF</span><span id="top-date">RESEARCH PREVIEW</span></div></div>
-<header class="header"><div class="wrap header-flex">
-<a class="logo" href="./"><span class="logomark">↗</span><span>energy<span class="lighter">brew</span><span class="orange">.</span></span></a>
-<nav aria-label="Main"><a href="#stories">Latest stories</a><a href="#coverage">Coverage</a><a href="#about">Our approach</a></nav>
-<a class="header-link" href="https://github.com/AbdulHassan0/EnergyBrew" target="_blank" rel="noopener noreferrer">Build progress ↗</a>
+<a class="skip-link" href="#edition">Skip to the morning brew</a>
+<div class="top-note"><div class="container top-note-inner"><span>ENERGY NEWS. COFFEE FIRST.</span><span>MADE FOR THE FIRST FIVE MINUTES OF YOUR DAY</span></div></div>
+<header class="site-header"><div class="container header-content">
+<a href="./" class="wordmark" aria-label="EnergyBrew home">
+<svg class="logo-cup" aria-hidden="true" viewBox="0 0 40 40" fill="none"><path d="M7 16h23v11a9 9 0 0 1-9 9h-5a9 9 0 0 1-9-9V16Z" fill="currentColor"/><path d="M30 19h3a4 4 0 0 1 0 8h-3" stroke="currentColor" stroke-width="3"/><path d="M15 12c-3-3 3-4 0-7M23 12c-3-3 3-4 0-7" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>
+<span>Energy<span class="wordmark-accent">Brew</span><span class="period">.</span></span></a>
+<nav class="nav-links" aria-label="Main navigation"><a href="#edition">Today's brew</a><a href="#desk" data-switch-desk>All stories</a><a href="#about">Our approach</a></nav>
+<a class="header-cta" href="#edition">Start reading <span aria-hidden="true">↗</span></a>
 </div></header>
 <main>
-<section class="hero">
-<div class="wrap hero-grid">
-<div class="hero-copy"><div class="eyebrow"><span></span> MADE FOR ENERGY PEOPLE</div>
-<h1>Stay ahead of<br>the <em>energy</em><br>conversation<span class="orange">.</span></h1>
-<p>The stories moving natural gas, LNG, power and oil, gathered in one clean place. Less digging. More signal.</p>
-<div class="hero-actions"><a class="primary-btn" href="#stories">Explore the news <span>↗</span></a><a class="plain-btn" href="#about">How this works →</a></div>
-<div class="preview-note">■ &nbsp; RESEARCH PREVIEW · UNVERIFIED LEADS, NOT EDITED NEWSLETTER CONTENT</div>
-</div>
-<div class="hero-art" aria-hidden="true"><div class="circle c1"></div><div class="circle c2"></div><div class="circle c3"></div>
-<div class="art-card card-one"><small>NATURAL GAS <span>↗</span></small><strong>SUPPLY & LNG</strong><i></i></div>
-<div class="art-card card-two"><small>POWER MARKETS <span>↗</span></small><strong>GRID & DEMAND</strong><i></i></div>
-<div class="art-footer"><span>01 / 04</span><span>ENERGY, IN CONTEXT</span></div></div>
-</div></section>
-<div class="edition"><div class="wrap edition-flex"><div><strong>TODAY'S RESEARCH DESK</strong><span id="edition-date">Loading latest data…</span></div><div id="scan-pill" class="scan-pill"><i></i><span id="scan-status">Checking collector</span></div></div></div>
-<section class="wrap latest" id="stories">
-<div class="section-heading"><div><div class="kicker">THE DAILY SIGNAL &nbsp; ━━━ &nbsp; 01</div><h2>The latest <em>developments.</em></h2><p>Real source headlines, directly linked and clearly attributed. No made-up summaries.</p></div><div class="edition-mark"><small>ENERGYBREW</small><b>01</b><small>RESEARCH DESK</small></div></div>
-<div class="columns">
-<div class="feed">
-<div class="category-filters" id="category-filters" role="group" aria-label="Filter stories by sector">
-<button class="active" data-category="All" aria-pressed="true">All stories</button>
-<button data-category="Natural Gas & LNG" aria-pressed="false">Gas & LNG</button>
-<button data-category="Power & Electricity" aria-pressed="false">Power</button>
-<button data-category="Oil & Energy" aria-pressed="false">Oil</button>
-<button data-category="Infrastructure & Investment" aria-pressed="false">Infrastructure</button></div>
-<div class="search-tools"><label class="search-box"><span aria-hidden="true">⌕</span><span class="sr-only">Search stories or sources</span><input id="search" type="search" placeholder="Search headlines and sources…" autocomplete="off"></label><button id="saved-filter" aria-pressed="false">☆ Saved (0)</button></div>
-<div class="feed-label"><span id="result-count">LOADING RESEARCH</span><span>SOURCE-LINKED STORIES</span></div>
-<div id="loading" class="feed-state">Connecting to the live EnergyBrew research feed…</div>
-<div id="error" class="feed-state" hidden><strong>Research feed could not load.</strong><p>The source collector may be unavailable. Try refreshing.</p><button id="retry">Retry ↗</button></div>
+<section class="hero" aria-labelledby="hero-heading"><div class="container hero-layout">
+<div class="hero-text"><h1 id="hero-heading">Your daily shot<br>of <em>energy.</em></h1>
+<p class="hero-description">A smarter morning starts here. The natural gas, LNG, oil and power stories worth knowing—designed to go with your first cup of coffee.</p>
+<div class="hero-actions"><a class="btn btn-dark" href="#edition">Read the morning brew <span aria-hidden="true">↗</span></a><span class="hero-ritual">A five-minute ritual, in the making.</span></div></div>
+<div class="hero-visual" role="img" aria-label="An illustrated coffee cup beside the five-minute EnergyBrew morning ritual">
+<div class="visual-top"><span>THE DAILY POUR</span><span>ENERGYBREW / MORNING EDITION</span></div>
+<div class="visual-main"><span class="visual-number">05</span><span class="visual-min">MINUTES<br>TO GET<br>IN THE KNOW.</span></div>
+<svg class="hero-cup" viewBox="0 0 360 180" fill="none" aria-hidden="true"><path d="M60 72h196v49c0 29-23 52-52 52h-92c-29 0-52-23-52-52V72Z" fill="#392b25"/><path d="M254 83h20c22 0 35 13 35 31s-13 30-35 30h-21" stroke="#392b25" stroke-width="16"/><path d="M114 54c-26-24 23-28 0-49M169 54c-26-24 23-28 0-49M224 54c-26-24 23-28 0-49" stroke="#392b25" stroke-width="6" stroke-linecap="round"/></svg>
+<div class="visual-bottom"><span>BREWED FOR CURIOUS MINDS.</span><span>FRESH PERSPECTIVE, EVERY MORNING</span></div>
+</div></div></section>
+<div class="topic-strip"><div class="container topic-strip-inner"><span>NATURAL GAS</span><i></i><span>LNG</span><i></i><span>POWER</span><i></i><span>OIL</span><i></i><span>INFRASTRUCTURE</span></div></div>
+<section class="edition-section" id="edition" aria-labelledby="edition-title"><div class="container">
+<div class="edition-head"><div><p class="edition-date" id="edition-date">Loading the latest research snapshot…</p><h2 id="edition-title">The morning <em>brew.</em></h2><p class="edition-deck">A quick first look at the energy stories on our radar.</p></div><div class="edition-stamp" aria-hidden="true"><span>ENERGYBREW</span><strong>5<span>min</span></strong><span>MORNING RITUAL</span></div></div>
+<div class="research-notice" id="research-notice"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9.5" stroke="currentColor" stroke-width="1.5"/><path d="M12 11v6m0-10v1" stroke="currentColor" stroke-linecap="round" stroke-width="2"/></svg><p><strong>You're reading a research preview.</strong> These are source-linked leads, not a fact-checked, edited newsletter. Publication dates and other details require verification.</p></div>
+<div class="edition-grid"><div class="primary-column">
+<div class="mode-bar"><div class="mode-switch" role="group" aria-label="Choose reading view"><button class="mode-button is-selected" type="button" data-view="morning" aria-pressed="true">The 5-minute brew</button><button class="mode-button" type="button" data-view="desk" aria-pressed="false">Full research desk</button></div><span class="mode-caption" id="mode-caption">A short selection of research headlines</span></div>
+<div class="reading-progress" id="reading-progress"><div class="reading-progress-text"><span>YOUR MORNING READ</span><span id="progress-count">0 of 6 marked read</span></div><div class="progress-track" id="progress-track" role="progressbar" aria-label="Morning reading progress" aria-valuemin="0" aria-valuemax="6" aria-valuenow="0"><div class="progress-fill" id="progress-fill"></div></div></div>
+<div class="desk-tools" id="desk-tools" hidden><div class="sector-tabs" role="group" aria-label="Filter research by sector"><button type="button" data-category="All" class="is-selected" aria-pressed="true">All</button><button type="button" data-category="Natural Gas & LNG" aria-pressed="false">Gas &amp; LNG</button><button type="button" data-category="Power & Electricity" aria-pressed="false">Power</button><button type="button" data-category="Oil & Energy" aria-pressed="false">Oil</button><button type="button" data-category="Infrastructure & Investment" aria-pressed="false">Infrastructure</button></div><div class="desk-search-row"><label class="search-field"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none"><circle cx="10.5" cy="10.5" r="6.5" stroke="currentColor" stroke-width="1.7"/><path d="m15.5 15.5 5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><span class="sr-only">Search headlines or publishers</span><input id="search" type="search" placeholder="Search headlines or publishers…" autocomplete="off"></label><button class="saved-toggle" id="saved-filter" type="button" aria-pressed="false">Saved (0)</button></div></div>
+<div class="list-meta"><span id="results-label" aria-live="polite">LOADING HEADLINES</span><span>OPEN THE ORIGINAL SOURCE ↗</span></div>
+<div id="loading" class="feed-state" role="status"><span class="loading-lines" aria-hidden="true"></span>Fetching the latest research…</div>
+<div id="error" class="feed-state error-state" hidden><h3>Today's research couldn't load.</h3><p>The collector feed may be temporarily unavailable. Try again or view the <a href="https://github.com/AbdulHassan0/EnergyBrew/blob/collector-state/state/desk_latest.md" target="_blank" rel="noopener noreferrer">latest source report</a>.</p><button class="btn btn-outline" id="retry" type="button">Try again</button></div>
 <div id="featured"></div><div id="stories-list"></div>
-<div class="more-wrap"><button id="more" class="outline-btn" hidden>Show more stories ↓</button></div>
+<div class="story-actions-bottom"><button class="btn btn-outline" id="more" type="button" hidden>Load more stories <span aria-hidden="true">↓</span></button><button class="text-link" id="open-all-stories" type="button">Explore the full research desk <span aria-hidden="true">↗</span></button></div>
 </div>
-<aside>
-<div class="side-panel tinted"><div class="side-kicker">DESK SNAPSHOT <span>✳</span></div><h3>Knowledge is<br><em>power.</em></h3><div id="total-links" class="big-number">—</div><p class="stat-description">unique source URLs observed in retained research history</p><hr><div class="ministats"><div><strong id="selected">—</strong><small>selected leads</small></div><div><strong id="domains">—</strong><small>source domains</small></div></div><p class="fine-print">Links aren't independently verified news events.</p></div>
-<div class="side-panel" id="coverage"><div class="side-kicker">WHAT WE'RE TRACKING</div><h3>By the sector</h3><div id="coverage-bars"></div><p class="fine-print">Topic link counts from the selected research desk.</p></div>
-<div class="side-panel quote"><div class="side-kicker">THE ENERGYBREW STANDARD</div><div class="quote-mark">“</div><p>Know <em>where</em> a story came from. Know <em>what</em> has—and hasn't—been verified.</p><a href="#about">Our sourcing approach ↗</a></div>
-</aside>
-</div>
-</section>
-<section id="about" class="about"><div class="wrap about-grid"><div><div class="kicker">BEHIND THE BRIEF &nbsp; ━━━ &nbsp; 02</div><h2>Less noise.<br><em>More context.</em></h2></div><div><p>EnergyBrew gathers energy-market research leads and official announcements so you can find original sources quickly. This early version is a <strong>research desk, not a published newsletter</strong>.</p><p>We distinguish original publisher timestamps, regulatory publication dates, first-seen discovery timestamps, and company release dates. Every lead still needs editorial review before publication.</p><a href="https://github.com/AbdulHassan0/EnergyBrew/blob/collector-state/state/health_latest.md" target="_blank" rel="noopener noreferrer">Source health and coverage gaps ↗</a></div></div></section>
-<section class="cta"><div class="wrap cta-inner"><span class="cta-mark">↗</span><div><strong>Built for the people powering everything.</strong><p>Curated newsletters and subscriber features are coming later.</p></div><a href="https://github.com/AbdulHassan0/EnergyBrew" target="_blank" rel="noopener noreferrer">Follow the build ↗</a></div></section>
+<aside class="edition-rail" aria-label="What's in the brew">
+<div class="rail-note"><div class="rail-title"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M7 16h23v11a9 9 0 0 1-9 9h-5a9 9 0 0 1-9-9V16Z" fill="currentColor"/><path d="M30 19h3a4 4 0 0 1 0 8h-3" stroke="currentColor" stroke-width="3"/><path d="M15 12c-3-3 3-4 0-7M23 12c-3-3 3-4 0-7" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg><span>In this cup</span></div><p>A little bit of everything moving the energy world.</p><div class="rail-topics"><span>Natural gas &amp; LNG</span><span>Power &amp; electricity</span><span>Oil &amp; energy</span><span>Infrastructure &amp; investment</span></div></div>
+<div class="source-ledger"><h3>Behind the brew</h3><p>The collection is real. The editorial review is still in progress.</p><dl><div><dt>Research leads</dt><dd id="stat-selected">—</dd></div><div><dt>Source domains</dt><dd id="stat-domains">—</dd></div><div><dt>Last collector scan</dt><dd id="scan-status">Checking…</dd></div></dl><a href="https://github.com/AbdulHassan0/EnergyBrew/blob/collector-state/state/health_latest.md" target="_blank" rel="noopener noreferrer">View source health ↗</a></div>
+<div class="rail-tip"><span class="tip-line"></span><p>Save the stories you want to revisit. Mark the rest as read. Coffee not included.</p></div>
+</aside></div></div></section>
+<section class="about-section" id="about"><div class="container about-layout"><div class="about-heading"><h2>Good coffee.<br><em>Better context.</em></h2><p>EnergyBrew is being built around one idea: you shouldn't need an hour to make sense of what's happening in energy.</p></div><div class="about-details"><div class="about-line"><span class="about-number">01</span><div><h3>Start with the signal.</h3><p>A compact morning selection, before the firehose of headlines.</p></div></div><div class="about-line"><span class="about-number">02</span><div><h3>Follow the source.</h3><p>Clear links and timestamp labels, with no invented summaries or hidden provenance.</p></div></div><div class="about-line"><span class="about-number">03</span><div><h3>Build the daily ritual.</h3><p>The upcoming email edition will add verified, concise context delivered to your inbox.</p></div></div></div></div></section>
+<section class="closing" id="delivery"><div class="container closing-layout"><div><h2>Put a little <em>energy</em><br>in your mornings.</h2><p>The email newsletter is in development. For now, enjoy the research preview and see what we're building.</p></div><a class="btn btn-cream" href="#edition">Take another sip <span aria-hidden="true">↗</span></a></div></section>
 </main>
-<footer><div class="wrap footer-flex"><a class="logo footer-logo" href="./"><span class="logomark">↗</span><span>energy<span class="lighter">brew</span><span class="orange">.</span></span></a><p>Independent editorial review required for all research leads.</p><span>© ENERGYBREW · RESEARCH PREVIEW</span></div></footer>
+<footer class="footer"><div class="container footer-inner"><a href="./" class="footer-wordmark">EnergyBrew<span>.</span></a><span>Five-minute energy news. Coffee optional, curiosity required.</span><a href="https://github.com/AbdulHassan0/EnergyBrew" target="_blank" rel="noopener noreferrer">Build on GitHub ↗</a></div></footer>
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
-</body></html>
+</body>
+</html>
