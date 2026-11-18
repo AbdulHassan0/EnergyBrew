@@ -6,6 +6,7 @@ on:
     paths:
       - ".github/workflows/frequent-gal.yml"
       - "gal.py"
+      - "ops_metrics.py"
       - "tests/test_gal.py"
   schedule:
     # The GDELT GAL feed represents a rolling ~15-minute sample.
@@ -54,6 +55,9 @@ jobs:
       - name: Refresh unified research desk
         if: always()
         run: python research_desk.py --rss-state state/articles.json --discovery-state state/discovery.json --releases-state state/press_releases.json --output output/desk
+      - name: Produce seven-day reliability and volume scorecard
+        if: always()
+        run: python ops_metrics.py --rss state/articles.json --discovery state/discovery.json --releases state/press_releases.json --output output/operations
       - name: Write sampling health summary
         if: always()
         run: |
@@ -61,6 +65,10 @@ jobs:
             cat output/gal/latest.md >> "$GITHUB_STEP_SUMMARY"
           else
             echo "No GAL report generated; sampling failed before report creation" >> "$GITHUB_STEP_SUMMARY"
+          fi
+          if test -f output/operations/metrics.md; then
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            cat output/operations/metrics.md >> "$GITHUB_STEP_SUMMARY"
           fi
           if test -f output/desk/desk.md; then
             echo "" >> "$GITHUB_STEP_SUMMARY"
@@ -74,6 +82,7 @@ jobs:
           path: |
             output/gal/
             output/desk/
+            output/operations/
           if-no-files-found: warn
           retention-days: 3
       - name: Persist shared discovery history and gap diagnostics
@@ -106,6 +115,10 @@ jobs:
           if test -f "$GITHUB_WORKSPACE/output/desk/desk.json"; then
             cp "$GITHUB_WORKSPACE/output/desk/desk.json" state/desk_latest.json
             cp "$GITHUB_WORKSPACE/output/desk/desk.md" state/desk_latest.md
+          fi
+          if test -f "$GITHUB_WORKSPACE/output/operations/metrics.json"; then
+            cp "$GITHUB_WORKSPACE/output/operations/metrics.json" state/metrics_latest.json
+            cp "$GITHUB_WORKSPACE/output/operations/metrics.md" state/metrics_latest.md
           fi
           git config user.name "EnergyBrew collector"
           git config user.email "energybrew-bot@users.noreply.github.com"
