@@ -1,9 +1,9 @@
 {
-  "audit_utc": "2026-11-18T19:11:17.852717+00:00",
+  "audit_utc": "2026-11-18T19:12:42.229274+00:00",
   "status": "degraded",
   "official_feeds_connected": 11,
   "official_feeds_checked": 11,
-  "official_rss_last_run_utc": "2026-11-18T19:11:10.544108+00:00",
+  "official_rss_last_run_utc": "2026-11-18T19:12:34.784515+00:00",
   "timestamped_editorial_leads_24h": 1,
   "editorial_target_24h": 12,
   "observed_beat_counts_24h": {
@@ -23,13 +23,16 @@
   "company_announcement_links_24h": 5,
   "company_announcement_feed_status": "ok",
   "company_announcement_publisher_dates_verified": 0,
+  "rolling_gal_status": "ok",
+  "rolling_gal_recent_healthy": true,
+  "rolling_gal_sampling_gap": false,
   "discovery_latest_status": "provider_cooldown",
-  "discovery_latest_run_utc": "2026-11-18T19:11:12.417297+00:00",
+  "discovery_latest_run_utc": "2026-11-18T19:12:36.186784+00:00",
   "critical": [],
   "warnings": [
     "Only 1 editorial leads within 24h; target 12",
     "No observed high-signal stories in: Power & Electricity, Oil & Energy, Infrastructure & Investment",
-    "Global discovery is degraded or rate limited"
+    "GDELT DOC query API is degraded or rate limited; rolling GAL backup is healthy"
   ],
   "limitations": [
     "No result proves zero market stories or comprehensive industry coverage.",
