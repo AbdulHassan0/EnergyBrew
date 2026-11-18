@@ -61,9 +61,29 @@ BEATS = {
 }
 
 def occurrences(text, phrase):
-    # Word boundaries stop "oil" matching "boiler"/"spoiled",
-    # while preserving phrase matching for hyphenated energy terms.
-    return bool(re.search(r"(?<![a-z0-9])" + re.escape(phrase) + r"(?![a-z0-9])", text, re.I))
+    # Underscores count as word characters: electricity_demand is a tag name,
+    # not an article mentioning electricity. Word boundaries also prevent
+    # e.g. "oil" from matching "boiler" or "spoiled".
+    return bool(re.search(r"(?<![a-z0-9_])" + re.escape(phrase) + r"(?![a-z0-9_])", text, re.I))
+
+
+def non_article_reason(title, url=""):
+    """Reject obvious landing/tag pages, not foreign-language energy articles."""
+    from urllib.parse import urlsplit
+    title = (title or "").strip().lower()
+    if not title:
+        return "empty_title"
+    if re.match(r"^(?:tag|tags|category|categories|archive|archives|topics?)\\s*:", title):
+        return "archive_title"
+    if not url:
+        return None
+    path = urlsplit(url).path.lower()
+    # Only reject explicit top-level taxonomy paths. Do not throw away
+    # legitimate articles simply because a URL has a category directory.
+    if re.fullmatch(r"/(?:tag|tags|category|categories|archive|archives|topic|topics)/[^/]+/?", path):
+        return "taxonomy_page"
+    return None
+
 
 def evaluate(title, excerpt=""):
     title = (title or "").lower()
@@ -74,6 +94,16 @@ def evaluate(title, excerpt=""):
         for phrase, weight in terms.items():
             title_hit = occurrences(title, phrase)
             excerpt_hit = occurrences(excerpt, phrase)
+            if phrase == "brent":
+                # Brent Cross and other proper names are not crude benchmarks.
+                # Require explicit price/oil context even for a lone "Brent".
+                context = title + " " + excerpt
+                oil_context = ("crude", "oil", "barrel", "bbl", "petroleum",
+                               "futures", "wti", "opec", "benchmark", "baril", "barril")
+                if occurrences(context, "brent cross") or not any(
+                    occurrences(context, clue) for clue in oil_context
+                ):
+                    continue
             if title_hit or excerpt_hit:
                 contributions[category] += weight * (3 if title_hit else 1)
                 evidence[category].append(phrase)
