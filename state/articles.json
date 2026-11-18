@@ -1,6 +1,40 @@
 {
   "articles": [
     {
+      "id": "cda6dc699f7c33c7d58f5d69",
+      "title": "Energy Secretary Acts to Protect Mid-Atlantic Grid",
+      "url": "https://www.energy.gov/articles/energy-secretary-acts-protect-mid-atlantic-grid-0",
+      "source": "DOE Energy News",
+      "published_utc": "2026-11-18T18:06:31+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified",
+      "summary_excerpt": "Secretary Wright issues emergency order to stabilize the mid-Atlantic grid and minimize the risk of energy shortfalls in 13 states and the District of Columbia."
+    },
+    {
+      "id": "ae66f5a441d649c4ee553197",
+      "title": "U.S. natural gas inventories end injection season above normal levels",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68484",
+      "source": "EIA Today in Energy",
+      "published_utc": "2026-11-18T14:00:00+00:00",
+      "category": "Natural Gas & LNG",
+      "published_precision": "timestamp",
+      "relevance_score": 54,
+      "keyword_matches": 3,
+      "editorial_candidate": true,
+      "relevance_evidence": [
+        "gas demand",
+        "gas storage",
+        "natural gas"
+      ],
+      "status": "research_only_unverified",
+      "summary_excerpt": "Working natural gas in storage in the Lower 48 states ended the natural gas injection season at 3,810 billion cubic feet (Bcf), exceeding the five-year average by almost 2%, according to estimates based on data from our Weekly Natural Gas Storage Report released on November 12. Injection season runs April 1\u2013October 31, the months of typically lower"
+    },
+    {
       "id": "8665b5fa7cf65bb8499f6074",
       "title": "Village of Swanton, Vermont; Notice of Availability of Environmental Assessment",
       "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23447/village-of-swanton-vermont-notice-of-availability-of-environmental-assessment",
@@ -154,6 +188,36 @@
       ],
       "status": "research_only_unverified",
       "summary_excerpt": "<p>The European Union has endorsed the 35-by-35 Global Electrification Pledge at the UN Climate Change Conference COP31 in Antalya, T\u00fcrkiye.</p>"
+    },
+    {
+      "id": "c74e9cde38b0f7e611dfd199",
+      "title": "Commissioner J\u00f8rgensen in Poland to discuss energy and housing priorities",
+      "url": "https://energy.ec.europa.eu/news/commissioner-jorgensen-poland-discuss-energy-and-housing-priorities-2026-11-18_en",
+      "source": "European Commission DG Energy",
+      "published_utc": "2026-11-17T23:00:00+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified",
+      "summary_excerpt": "<p>From tomorrow until Monday, Commissioner for Energy and Housing Dan J\u00f8rgensen will be in Warsaw and Gda\u0144sk, Poland, to discuss with Polish decision makers and stakeholders about two key priorities for European citizens: affordable, secure and clean energy, and access to affordable housing.</p>"
+    },
+    {
+      "id": "f97efca0b958dd5cc5095128",
+      "title": "Commission welcomes political agreement on faster and simpler permitting for grids, clean energy projects",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2450",
+      "source": "European Commission DG Energy",
+      "published_utc": "2026-11-17T23:00:00+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified",
+      "summary_excerpt": "<p>The European Commission welcomes the provisional political agreement reached by the European Parliament and the Council on new rules to simplify and accelerate permitting procedures for grids and clean energy infrastructure.</p>"
     },
     {
       "id": "7e064d8be7a07d1271b311e6",
@@ -361,6 +425,13 @@
       "feeds_checked": 10,
       "fresh_entries": 6,
       "new_article_links": 0
+    },
+    {
+      "run_utc": "2026-11-18T18:18:08.855416+00:00",
+      "feeds_connected": 10,
+      "feeds_checked": 10,
+      "fresh_entries": 10,
+      "new_article_links": 4
     }
   ]
 }

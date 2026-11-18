@@ -1,5 +1,24 @@
 [
   {
+    "id": "ae66f5a441d649c4ee553197",
+    "title": "U.S. natural gas inventories end injection season above normal levels",
+    "url": "https://www.eia.gov/todayinenergy/detail.php?id=68484",
+    "source": "EIA Today in Energy",
+    "published_utc": "2026-11-18T14:00:00+00:00",
+    "category": "Natural Gas & LNG",
+    "published_precision": "timestamp",
+    "relevance_score": 54,
+    "keyword_matches": 3,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "gas demand",
+      "gas storage",
+      "natural gas"
+    ],
+    "status": "research_only_unverified",
+    "summary_excerpt": "Working natural gas in storage in the Lower 48 states ended the natural gas injection season at 3,810 billion cubic feet (Bcf), exceeding the five-year average by almost 2%, according to estimates based on data from our Weekly Natural Gas Storage Report released on November 12. Injection season runs April 1\u2013October 31, the months of typically lower"
+  },
+  {
     "id": "7e064d8be7a07d1271b311e6",
     "title": "Energy Department Announces $2.8 Billion Loan to Strengthen Grid Reliability and Help Lower Costs in Wyoming",
     "url": "https://www.energy.gov/articles/energy-department-announces-28-billion-loan-strengthen-grid-reliability-and-help-lower",
