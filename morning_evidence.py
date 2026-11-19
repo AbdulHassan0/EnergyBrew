@@ -110,7 +110,10 @@ def build(rss, discovery, releases, *, now=None, edition_date=None, zone=ZONE):
             # pre-cutoff publisher-dated article.
             provider_stamp=as_time(lead.get("observed_time_utc"))
             if is_date_only:
-                pubday=provider_stamp.astimezone(tz).date() if provider_stamp else None
+                # Day-only official records often encode a calendar date at
+                # midnight UTC. Converting midnight into Chicago would
+                # silently shift the official publication date backward.
+                pubday=provider_stamp.date() if provider_stamp else None
                 if pubday!=day-timedelta(days=1):
                     continue
             elif not provider_stamp or not previous<=provider_stamp<=observation_limit:
