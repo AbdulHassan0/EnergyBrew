@@ -11,6 +11,30 @@ def stamp(minutes_ago):
     return (NOW-timedelta(minutes=minutes_ago)).isoformat()
 
 class MetricsTests(unittest.TestCase):
+    def test_future_completion_not_counted_as_healthy_even_if_started_early(self):
+        rss={"runs":[{"run_utc":stamp(6),
+                      "completed_utc":(NOW+timedelta(minutes=2)).isoformat(),
+                      "scan_state":"healthy","feeds_checked":15,"feeds_connected":15}]}
+        gal={"gal_runs":[{"run_utc":stamp(5),
+                          "completed_utc":(NOW+timedelta(minutes=1)).isoformat(),
+                          "status":"ok"}]}
+        metric=create(rss,gal,now=NOW)
+        self.assertIsNone(metric["latest_official_scan_utc"])
+        self.assertIsNone(metric["latest_gal_sample_utc"])
+        self.assertEqual(metric["official_successful_scans"],0)
+        self.assertEqual(metric["gal_successful_samples"],0)
+        self.assertEqual(metric["gal_sampled_window_24h"]["potential_coverage_upper_bound_pct"],0)
+
+    def test_actual_completion_replaces_start_as_freshness_reference(self):
+        rss={"runs":[{"run_utc":stamp(15),"completed_utc":stamp(3),
+                      "scan_state":"healthy","feeds_checked":15,"feeds_connected":15}]}
+        gal={"gal_runs":[{"run_utc":stamp(20),"completed_utc":stamp(5),
+                          "status":"ok"}]}
+        metric=create(rss,gal,now=NOW)
+        self.assertEqual(metric["latest_official_scan_utc"],stamp(3))
+        self.assertEqual(metric["latest_gal_sample_utc"],stamp(5))
+        self.assertEqual(metric["latest_gal_age_minutes"],5)
+
     def test_empty_system_is_not_healthy(self):
         r=create({}, {}, now=NOW)
         self.assertFalse(r["seven_day_pilot_complete"])

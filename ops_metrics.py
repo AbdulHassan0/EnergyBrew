@@ -28,6 +28,11 @@ def read_state(path):
     except (OSError,ValueError,TypeError):
         return {}
 
+def collection_available_at(run):
+    """Observed completion time; a scan start is not a completed sample."""
+    return as_time(run.get("completed_utc") or run.get("run_utc"))
+
+
 def create(rss, discovery, releases=None, *, now=None):
     now=now or datetime.now(timezone.utc)
     if now.tzinfo is None:
@@ -48,12 +53,15 @@ def create(rss, discovery, releases=None, *, now=None):
         checked=int(run.get("feeds_checked",0) or connected)
         return (connected>0 and checked>0 and connected / checked >= MIN_FEED_RATIO
                 and run.get("scan_state")!="critical")
-    successful_r_runs=[x for x in r_runs if rss_above_quorum(x)]
+    available=lambda x: ((stamp := collection_available_at(x)) is not None
+                         and stamp<=now)
+    successful_r_runs=[x for x in r_runs if rss_above_quorum(x) and available(x)]
     fully_connected_r_runs=[x for x in r_runs if x.get("feeds_connected",0)>0
-                             and x.get("feeds_connected")==x.get("feeds_checked",x.get("feeds_connected"))]
-    successful_g_runs=[x for x in g_runs if x.get("status") == "ok"]
-    latest_r=as_time(successful_r_runs[-1]["run_utc"]) if successful_r_runs else None
-    latest_g=as_time(successful_g_runs[-1]["run_utc"]) if successful_g_runs else None
+                             and x.get("feeds_connected")==x.get("feeds_checked",x.get("feeds_connected"))
+                             and available(x)]
+    successful_g_runs=[x for x in g_runs if x.get("status") == "ok" and available(x)]
+    latest_r=max((collection_available_at(x) for x in successful_r_runs),default=None)
+    latest_g=max((collection_available_at(x) for x in successful_g_runs),default=None)
     # Measure actual potential sample-window coverage. A seven-hour outage
     # must not count as merely "one gap" on the operational scorecard.
     gal_coverage_24h=estimate_sampling_coverage(g_runs,now=now,hours=24)
@@ -65,7 +73,7 @@ def create(rss, discovery, releases=None, *, now=None):
         for earlier,later in zip(successful_g_runs,successful_g_runs[1:])
     )
     for earlier,later in zip(successful_g_runs,successful_g_runs[1:]):
-        a,b=as_time(earlier["run_utc"]),as_time(later["run_utc"])
+        a,b=collection_available_at(earlier),collection_available_at(later)
         if a is None or b is None:
             continue
         minutes=round((b-a).total_seconds()/60,1)
@@ -77,8 +85,8 @@ def create(rss, discovery, releases=None, *, now=None):
     days=[(now.date()-timedelta(days=i)).isoformat() for i in range(6,-1,-1)]
     r_scan=Counter(as_time(x.get("run_utc")).date().isoformat() for x in r_runs if as_time(x.get("run_utc")))
     g_scan=Counter(as_time(x.get("run_utc")).date().isoformat() for x in g_runs if as_time(x.get("run_utc")))
-    r_success=Counter(as_time(x["run_utc"]).date().isoformat() for x in successful_r_runs)
-    g_success=Counter(as_time(x["run_utc"]).date().isoformat() for x in successful_g_runs)
+    r_success=Counter(collection_available_at(x).date().isoformat() for x in successful_r_runs)
+    g_success=Counter(collection_available_at(x).date().isoformat() for x in successful_g_runs)
     article_counts=Counter()
     specialist_counts=Counter()
     grid_operator_counts=Counter()
@@ -141,11 +149,13 @@ def create(rss, discovery, releases=None, *, now=None):
         )
     if len(fully_connected_r_runs)<len(r_runs):
         warnings.append(f"{len(r_runs)-len(fully_connected_r_runs)} RSS scans had incomplete source connectivity")
-    successful_g_in_window=[as_time(r["run_utc"]) for r in successful_g_runs
-                            if as_time(r["run_utc"]) and as_time(r["run_utc"])>=cutoff]
+    successful_g_in_window=sorted(collection_available_at(r) for r in successful_g_runs
+                                  if collection_available_at(r)>=cutoff)
     start_gap=round((successful_g_in_window[0]-cutoff).total_seconds()/60,1) if successful_g_in_window else None
     tail_gap=round((now-successful_g_in_window[-1]).total_seconds()/60,1) if successful_g_in_window else None
-    first_observed=min(([as_time(x["run_utc"]) for x in r_runs+g_runs if as_time(x["run_utc"])]),default=None)
+    first_observed=min((collection_available_at(x) for x in r_runs+g_runs
+                        if collection_available_at(x) is not None and collection_available_at(x)<=now),
+                       default=None)
     history_days=((now-first_observed).total_seconds()/86400) if first_observed else 0
     pilot_complete=(history_days>=7
                     and all(x["successful_scanning_observed"] for x in data)
@@ -212,9 +222,9 @@ def create(rss, discovery, releases=None, *, now=None):
         "feed_publication_activity_counts":dict(activity_counts),
         "official_failed_scans":len(r_runs)-len(successful_r_runs),
         "gal_sample_runs":len(g_runs),
-        "gal_successful_samples":sum(x.get("status")=="ok" for x in g_runs),
+        "gal_successful_samples":len(successful_g_runs),
         "gal_repeated_feed_payloads":repeated_feed_payloads,
-        "gal_failed_samples":sum(x.get("status")!="ok" for x in g_runs),
+        "gal_failed_samples":len(g_runs)-len(successful_g_runs),
         "observed_sampling_gaps":gal_gaps[-30:],
         "gal_sampled_window_24h":gal_coverage_24h,
         "gal_sampled_window_7d":gal_coverage_7d,
