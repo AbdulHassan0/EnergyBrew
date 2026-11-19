@@ -49,3 +49,22 @@ The GitHub editorial workflow performs these steps automatically
 unsummarized research queue rather than generating a misleading email.
 Cutoff-completeness and licensed redistribution are not claimed.
 Production sending and approval still remain separately disabled.
+
+## Automatically prepared research inputs
+
+Both free morning workflows now generate a **six-beat source-evidence
+packet** from the persisted RSS, GDELT and issuer metadata. The files include:
+
+- `morning_evidence.json` or `MORNING_SOURCE_EVIDENCE.json`:
+  which energy beats have direct publisher news, GDELT-only discoveries,
+  issuer claims or no confirmed pre-cutoff coverage
+- `morning_evidence.md`: human-readable linked headline research brief
+- `morning_evidence_brief_template.json`: unsummarized writing template,
+  with an empty summary and market-impact note for each selected beat
+
+The selection uses the America/Chicago **06:30 news cutoff**, not the time
+when a delayed GitHub Action happens to start. Legacy sources with no measured
+first-collection time are marked unproven rather than silently counted as
+available by 06:30. Day-only Federal Register timestamps do not establish
+an intraday release time. The packet is an input to **source review and
+brief authoring**, not an autonomous summarizer or newsletter approval.

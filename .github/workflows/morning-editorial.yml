@@ -56,6 +56,10 @@ jobs:
           for file in articles.json discovery.json press_releases.json; do
             git show "FETCH_HEAD:state/$file" > "latest-state/$file"
           done
+      - name: Make complete source-evidence packet for authoring future briefs
+        if: steps.window.outputs.run == 'yes'
+        run: |
+          python morning_evidence.py --rss latest-state/articles.json --discovery latest-state/discovery.json --releases latest-state/press_releases.json --output output/newsletter/MORNING_SOURCE_EVIDENCE.json --zone America/Chicago
       - name: Preserve collected source headlines for the editor
         if: steps.window.outputs.run == 'yes'
         run: |

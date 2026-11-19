@@ -67,6 +67,18 @@ class WorkflowSeparationTests(unittest.TestCase):
         self.assertNotIn('python -m unittest discover -s tests -q',frequent)
         self.assertIn('python -m unittest discover -s tests -v',offline)
 
+    def test_morning_workflows_export_evidence_without_inventing_summary(self):
+        research=workflow("morning-news-readiness.yml")
+        editorial=workflow("morning-editorial.yml")
+        self.assertIn("python morning_evidence.py --rss",research)
+        self.assertIn("morning_evidence_brief_template.json",research.replace(
+            "morning_evidence.json","morning_evidence_brief_template.json"))
+        self.assertIn("steps.evidence.outcome != 'success'",research)
+        self.assertIn("python morning_evidence.py --rss",editorial)
+        self.assertIn("MORNING_SOURCE_EVIDENCE.json",editorial)
+        self.assertNotIn("newsletter_delivery.py",research)
+        self.assertNotIn("newsletter_delivery.py",editorial)
+
     def test_pilot_editorial_action_renders_complete_email_without_sending(self):
         flow=workflow("morning-editorial.yml")
         self.assertIn("python pilot_audit.py --pilot",flow)
