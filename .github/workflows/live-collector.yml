@@ -61,6 +61,8 @@ jobs:
         run: python research_desk.py --rss-state state/articles.json --discovery-state state/discovery.json --releases-state state/press_releases.json --output output/desk
       - name: Produce seven-day reliability and volume scorecard
         run: python ops_metrics.py --rss state/articles.json --discovery state/discovery.json --releases state/press_releases.json --output output/operations
+      - name: Identify index-only headlines missing direct publisher feed counterparts
+        run: python source_gap_audit.py --rss state/articles.json --discovery state/discovery.json --releases state/press_releases.json --output output/source_gap
       - name: Audit news coverage and collection gaps
         run: |
           python newsroom_health.py --rss-state state/articles.json --rss-run output/collector/latest.json --discovery-state state/discovery.json --discovery-run output/discovery/latest.json --releases-state state/press_releases.json --releases-run output/releases/latest.json --output output/health
@@ -96,6 +98,10 @@ jobs:
             echo "" >> "$GITHUB_STEP_SUMMARY"
             cat output/operations/metrics.md >> "$GITHUB_STEP_SUMMARY"
           fi
+          if test -f output/source_gap/source_gap.md; then
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            sed -n '1,36p' output/source_gap/source_gap.md >> "$GITHUB_STEP_SUMMARY"
+          fi
           if test -f output/desk/desk.md; then
             echo "" >> "$GITHUB_STEP_SUMMARY"
             cat output/desk/desk.md >> "$GITHUB_STEP_SUMMARY"
@@ -116,6 +122,7 @@ jobs:
             output/releases/
             output/desk/
             output/operations/
+            output/source_gap/
           if-no-files-found: warn
           retention-days: 30
       - name: Save collector state in isolated branch
@@ -168,6 +175,10 @@ jobs:
                 cp "$GITHUB_WORKSPACE/output/gal/$report" "state/research_$report"
               fi
             done
+          fi
+          if test -f "$GITHUB_WORKSPACE/output/source_gap/source_gap.json"; then
+            cp "$GITHUB_WORKSPACE/output/source_gap/source_gap.json" state/source_gap_latest.json
+            cp "$GITHUB_WORKSPACE/output/source_gap/source_gap.md" state/source_gap_latest.md
           fi
           if test -f "$GITHUB_WORKSPACE/output/health/health.json"; then
             cp "$GITHUB_WORKSPACE/output/health/health.json" state/health_latest.json

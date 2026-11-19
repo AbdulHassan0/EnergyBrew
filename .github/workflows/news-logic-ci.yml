@@ -7,6 +7,8 @@ on:
       - "*.py"
       - "tests/**"
       - "Dockerfile.collector"
+      - "source_gap_audit.py"
+      - ".github/workflows/frequent-gal.yml"
       - ".github/workflows/news-logic-ci.yml"
       - ".github/workflows/live-collector.yml"
       - ".github/workflows/frequent-gal.yml"

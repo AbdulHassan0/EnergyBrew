@@ -43,6 +43,14 @@ class WorkflowSeparationTests(unittest.TestCase):
         self.assertIn("if: success() && steps.metadata_guard.outcome == 'success'",s)
         self.assertIn("No successful live RSS response",s)
 
+    def test_free_collection_paths_publish_gap_diagnostics_without_email(self):
+        for path in ("live-collector.yml","frequent-gal.yml"):
+            s=workflow(path)
+            self.assertIn("python source_gap_audit.py --",s)
+            self.assertIn("state/source_gap_latest.json",s)
+            self.assertNotIn("newsletter_delivery.py",s)
+            self.assertIn("public_collector_guard.py",s)
+
     def test_no_collection_guard_is_removed_to_silence_notifications(self):
         s=workflow("live-collector.yml")
         self.assertIn("public_collector_guard.py --sanitize-legacy",s)

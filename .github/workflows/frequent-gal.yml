@@ -47,6 +47,9 @@ jobs:
       - name: Produce seven-day reliability and volume scorecard
         if: always()
         run: python ops_metrics.py --rss state/articles.json --discovery state/discovery.json --releases state/press_releases.json --output output/operations
+      - name: Compare GDELT-only candidate headlines with direct publisher feeds
+        if: always()
+        run: python source_gap_audit.py --rss state/articles.json --discovery state/discovery.json --releases state/press_releases.json --output output/source_gap
       - name: Write sampling health summary
         if: always()
         run: |
@@ -58,6 +61,10 @@ jobs:
           if test -f output/operations/metrics.md; then
             echo "" >> "$GITHUB_STEP_SUMMARY"
             cat output/operations/metrics.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+          if test -f output/source_gap/source_gap.md; then
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            sed -n '1,28p' output/source_gap/source_gap.md >> "$GITHUB_STEP_SUMMARY"
           fi
           if test -f output/desk/desk.md; then
             echo "" >> "$GITHUB_STEP_SUMMARY"
@@ -72,6 +79,7 @@ jobs:
             output/gal/
             output/desk/
             output/operations/
+            output/source_gap/
           if-no-files-found: warn
           retention-days: 3
       - name: Verify public metadata before branch update
@@ -108,6 +116,10 @@ jobs:
           if test -f "$GITHUB_WORKSPACE/output/desk/desk.json"; then
             cp "$GITHUB_WORKSPACE/output/desk/desk.json" state/desk_latest.json
             cp "$GITHUB_WORKSPACE/output/desk/desk.md" state/desk_latest.md
+          fi
+          if test -f "$GITHUB_WORKSPACE/output/source_gap/source_gap.json"; then
+            cp "$GITHUB_WORKSPACE/output/source_gap/source_gap.json" state/source_gap_latest.json
+            cp "$GITHUB_WORKSPACE/output/source_gap/source_gap.md" state/source_gap_latest.md
           fi
           if test -f "$GITHUB_WORKSPACE/output/operations/metrics.json"; then
             cp "$GITHUB_WORKSPACE/output/operations/metrics.json" state/metrics_latest.json
