@@ -1,8 +1,8 @@
 {
-  "generated_utc": "2026-11-19T02:45:40.609351+00:00",
+  "generated_utc": "2026-11-19T02:47:45.542411+00:00",
   "status": "degraded",
   "seven_day_pilot_complete": false,
-  "history_span_days": 0.63,
+  "history_span_days": 0.64,
   "official_scan_runs": 57,
   "official_successful_scans": 57,
   "official_fully_connected_scans": 54,
@@ -88,7 +88,7 @@
     {
       "source": "Offshore Energy News",
       "newest_feed_published_utc": "2026-11-18T15:07:53+00:00",
-      "age_hours": 11.6,
+      "age_hours": 11.7,
       "activity": "publication_within_7d",
       "last_successful_scan_utc": "2026-11-19T02:45:31.945739+00:00"
     },
@@ -109,7 +109,7 @@
     {
       "source": "PJM Inside Lines",
       "newest_feed_published_utc": "2026-11-18T18:56:18+00:00",
-      "age_hours": 7.8,
+      "age_hours": 7.9,
       "activity": "publication_within_7d",
       "last_successful_scan_utc": "2026-11-19T02:38:35.776217+00:00"
     },
@@ -126,9 +126,9 @@
     "publication_within_7d": 8
   },
   "official_failed_scans": 0,
-  "gal_sample_runs": 51,
-  "gal_successful_samples": 51,
-  "gal_repeated_feed_payloads": 7,
+  "gal_sample_runs": 52,
+  "gal_successful_samples": 52,
+  "gal_repeated_feed_payloads": 8,
   "gal_failed_samples": 0,
   "observed_sampling_gaps": [
     {
@@ -157,13 +157,13 @@
       "minutes": 123.8
     }
   ],
-  "seven_day_start_gap_minutes": 9585.8,
+  "seven_day_start_gap_minutes": 9583.7,
   "latest_gal_age_minutes": 0.1,
   "expected_gal_interval_minutes": 10,
   "latest_official_scan_utc": "2026-11-19T02:45:31.945739+00:00",
   "latest_official_attempt_utc": "2026-11-19T02:45:31.945739+00:00",
-  "latest_gal_attempt_utc": "2026-11-19T02:45:33.940108+00:00",
-  "latest_gal_sample_utc": "2026-11-19T02:45:33.940108+00:00",
+  "latest_gal_attempt_utc": "2026-11-19T02:47:38.800406+00:00",
+  "latest_gal_sample_utc": "2026-11-19T02:47:38.800406+00:00",
   "daily": [
     {
       "date_utc": "2026-11-13",
@@ -258,7 +258,7 @@
     {
       "date_utc": "2026-11-19",
       "official_scans": 9,
-      "gal_samples": 10,
+      "gal_samples": 11,
       "publisher_timestamped_official_links": 0,
       "specialist_publisher_timestamped_links": 3,
       "grid_operator_primary_timestamped_links": 0,
@@ -267,7 +267,7 @@
       "press_release_feed_date_urls": 0,
       "scanning_observed": true,
       "successful_official_scans": 9,
-      "successful_gal_samples": 10,
+      "successful_gal_samples": 11,
       "successful_scanning_observed": true
     }
   ],
