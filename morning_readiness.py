@@ -15,6 +15,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from coverage_windows import estimate_sampling_coverage
+from event_dedup import same_event
 from public_collector_guard import validate_records, ensure_sources_public
 from research_desk import assemble, as_time, load
 
@@ -70,8 +71,39 @@ def eligible_article(row, lane, cutoff, lookback, local_day, tz):
     return stamp is not None and lookback <= stamp <= cutoff
 
 
+def record_time(row, lane):
+    key = "published_utc" if lane == "rss" else "feed_published_utc" if lane == "release" else "gdelt_first_seen_utc"
+    return as_time(row.get(key)) if isinstance(row, dict) else None
+
+
+def mark_morning_research(stories, prior_cutoff, overnight_start, previous_research):
+    previous = previous_research.get("research_desk",{}).get("stories",[]) if isinstance(previous_research, dict) else []
+    previous = [p for p in previous if isinstance(p,dict)]
+    prior_urls = {p.get("url") for p in previous}
+    for story in stories:
+        stamp = as_time(story["observed_time_utc"])
+        if story["time_basis"] == "official_publication_date_only":
+            bucket = "date_only_prior_day_context"
+        elif stamp and stamp >= overnight_start:
+            bucket = "overnight_on_source_time_basis"
+        elif stamp and stamp >= prior_cutoff:
+            bucket = "since_previous_cutoff_on_source_time_basis"
+        else:
+            bucket = "older_background_context"
+        story["morning_time_bucket"] = bucket
+        story["morning_time_basis"] = story["time_basis"]
+        story["prior_research_repeat_review"] = (
+            "same_url_previous_research" if story["url"] in prior_urls else
+            "likely_same_event_previous_research" if any(same_event(story,p) for p in previous)
+            else None
+        )
+        # Yesterday's candidate list does not imply it was ever approved or sent.
+        # Only flag possible repeats for editors; never automatically discard.
+    return stories
+
+
 def prepare(rss, discovery, releases, *, now=None, edition_date=None,
-            zone=DEFAULT_ZONE, max_stories=32):
+            zone=DEFAULT_ZONE, max_stories=32, previous_research=None):
     now = now or datetime.now(timezone.utc)
     if now.tzinfo is None:
         raise ValueError("now must be timezone-aware")
@@ -134,7 +166,24 @@ def prepare(rss, discovery, releases, *, now=None, edition_date=None,
                   if eligible_article(x,"discovery",cutoff,lookback,edition_local_day,tz)]
     released = [x for x in (releases.get("leads",[]) if isinstance(releases,dict) else [])
                 if eligible_article(x,"release",cutoff,lookback,edition_local_day,tz)]
-    desk = assemble(rss_articles,discovered,released,now=cutoff,max_stories=max_stories)
+    # Prefer real developments since yesterday's 06:30 local cutoff. A UTC
+    # 24-hour subtraction is wrong across daylight saving transitions.
+    previous_day = edition_local_day - timedelta(days=1)
+    prior_cutoff = datetime.combine(previous_day, CUTOFF_LOCAL, tzinfo=tz).astimezone(timezone.utc)
+    overnight_start = datetime.combine(previous_day, time(18,0), tzinfo=tz).astimezone(timezone.utc)
+    fresh_rss = [x for x in rss_articles if x.get("published_precision") != "day"
+                 and (record_time(x,"rss") or datetime.min.replace(tzinfo=timezone.utc)) >= prior_cutoff]
+    fresh_discovery = [x for x in discovered if (record_time(x,"discovery") or datetime.min.replace(tzinfo=timezone.utc)) >= prior_cutoff]
+    fresh_release = [x for x in released if (record_time(x,"release") or datetime.min.replace(tzinfo=timezone.utc)) >= prior_cutoff]
+    desk = assemble(fresh_rss,fresh_discovery,fresh_release,now=cutoff,max_stories=max_stories)
+    mark_morning_research(desk["stories"],prior_cutoff,overnight_start,previous_research)
+    # Older records are context only. Do not fill limited headline slots
+    # with yesterday's articles simply because they rank highly.
+    old_rss = [x for x in rss_articles if x not in fresh_rss]
+    old_discovery = [x for x in discovered if x not in fresh_discovery]
+    old_release = [x for x in released if x not in fresh_release]
+    background = assemble(old_rss,old_discovery,old_release,now=cutoff,max_stories=6)
+    mark_morning_research(background["stories"],prior_cutoff,overnight_start,previous_research)
     if desk["selected_research_links"] == 0:
         issues.append("no_qualifying_research_leads")
     if desk["missing_categories"]:
@@ -154,6 +203,9 @@ def prepare(rss, discovery, releases, *, now=None, edition_date=None,
         "overnight_gdelt_window": coverage,
         "candidate_window_utc": {"from":lookback.isoformat(),"through":cutoff.isoformat()},
         "eligible_source_records": {"rss":len(rss_articles),"discovery":len(discovered),"releases":len(released)},
+        "primary_candidate_count_since_previous_cutoff":desk["selected_research_links"],
+        "older_background_context_count":background["selected_research_links"],
+        "background_context":background["stories"],
         "research_desk": desk,
         "publication_status":"research_only_not_approved_not_sent",
         "disclaimer":"A ready research snapshot is NOT fact-checked, licensed for republication, or approved for distribution.",
@@ -175,6 +227,7 @@ def write_preparation(result, directory):
         "edition": result["edition"],
         "candidate_window_utc": result["candidate_window_utc"],
         "research_desk": result["research_desk"],
+        "background_context": result["background_context"],
         "publication_status": result["publication_status"],
         "disclaimer": result["disclaimer"],
     }
@@ -197,6 +250,7 @@ def main(argv=None):
     p.add_argument("--output",type=Path,default=Path("output/morning"))
     p.add_argument("--time-zone",default=DEFAULT_ZONE)
     p.add_argument("--edition-date",default=None)
+    p.add_argument("--prior-research",type=Path,default=None)
     args=p.parse_args(argv)
     ensure_sources_public()
     # Reuse the existing public-metadata state validator before freezing a desk.
@@ -206,8 +260,10 @@ def main(argv=None):
         if not path.exists():
             return {}
         return json.loads(path.read_text(encoding="utf-8"))
+    prior=read(args.prior_research) if args.prior_research else None
     data=prepare(read(args.rss),read(args.discovery),read(args.releases),
-                 edition_date=args.edition_date,zone=args.time_zone)
+                 edition_date=args.edition_date,zone=args.time_zone,
+                 previous_research=prior)
     froze=write_preparation(data,args.output)
     print(json.dumps({
         "date":data["edition"]["edition_date"],"status":data["status"],

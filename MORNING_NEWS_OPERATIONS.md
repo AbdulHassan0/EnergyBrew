@@ -13,6 +13,16 @@ deliveries should use Central Time.
   GDELT first-seen metadata, or press-release feed timestamps in this edition.
   Date-only official notices from the edition date are excluded because their
   availability at 06:30 cannot be established.
+- **Story recency:** primary headlines must have a source-supplied timestamp
+  or GDELT observation since the preceding day's 06:30 local cutoff. The
+  36-hour candidate lookback is kept only for a separate *background context*
+  queue. Within the primary queue, stories are marked as overnight (after
+  18:00 local) or earlier since the previous cutoff. GDELT time labels are
+  observations, NOT verified original publication times.
+- **Repeat review:** when a previous frozen RESEARCH file is supplied using
+  `--prior-research`, exact recurring URLs and conservative likely same-event
+  links are flagged. They are never automatically removed because yesterday's
+  research candidate might not actually have been sent.
 - **06:30–06:45 local:** validate source freshness, evaluate 6-hour GDELT
   sampled-window coverage, rank/deduplicate the six subject categories, and
   produce an immutable **research-only** candidate JSON snapshot.

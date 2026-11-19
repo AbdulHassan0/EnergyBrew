@@ -98,6 +98,42 @@ class MorningTests(unittest.TestCase):
         result=prepare(a,b,c,now=CUTOFF+timedelta(minutes=25))
         self.assertIn("insufficient_editorial_review_time_before_7am",result["blocking_issues"])
 
+    def test_overnight_and_early_evening_use_distinct_time_buckets(self):
+        a,b,c=fixtures()
+        a["articles"].append({"url":"https://example.org/news/evening",
+            "title":"EIA US natural gas inventories report",
+            "published_utc":time_str(-11*60),"published_precision":"timestamp"})
+        r=prepare(a,b,c,now=NOW)
+        by_url={x["url"]:x for x in r["research_desk"]["stories"]}
+        self.assertEqual(by_url["https://example.net/energy/world"]["morning_time_bucket"],
+                         "overnight_on_source_time_basis")
+        self.assertEqual(by_url["https://example.org/news/evening"]["morning_time_bucket"],
+                         "since_previous_cutoff_on_source_time_basis")
+
+    def test_prior_day_news_is_background_not_filling_fresh_candidate_slots(self):
+        a,b,c=fixtures()
+        a["articles"].append({"url":"https://example.org/news/previous",
+            "title":"Venture Global LNG terminal investment advances",
+            "published_utc":time_str(-30*60),"published_precision":"timestamp"})
+        r=prepare(a,b,c,now=NOW)
+        self.assertEqual(r["primary_candidate_count_since_previous_cutoff"],2)
+        self.assertEqual(r["older_background_context_count"],1)
+        self.assertNotIn("https://example.org/news/previous",
+                         [x["url"] for x in r["research_desk"]["stories"]])
+        self.assertEqual(r["background_context"][0]["morning_time_bucket"],"older_background_context")
+
+    def test_previous_research_is_repeat_flag_not_automatic_exclusion(self):
+        a,b,c=fixtures()
+        previous={"research_desk":{"stories":[{"url":"https://example.org/news/old",
+                 "title":"Henry Hub natural gas production surges",
+                 "observed_time_utc":time_str(-2*60),
+                 "category":"Natural Gas"}]}}
+        r=prepare(a,b,c,now=NOW,previous_research=previous)
+        by_url={x["url"]:x for x in r["research_desk"]["stories"]}
+        self.assertEqual(by_url["https://example.org/news/old"]["prior_research_repeat_review"],
+                         "same_url_previous_research")
+        self.assertEqual(r["primary_candidate_count_since_previous_cutoff"],2)
+
     def test_immutable_research_snapshot_cannot_be_rewritten(self):
         a,b,c=fixtures()
         result=prepare(a,b,c,now=NOW)
