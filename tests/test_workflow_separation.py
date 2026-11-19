@@ -67,6 +67,15 @@ class WorkflowSeparationTests(unittest.TestCase):
         self.assertNotIn('python -m unittest discover -s tests -q',frequent)
         self.assertIn('python -m unittest discover -s tests -v',offline)
 
+    def test_pilot_editorial_action_renders_complete_email_without_sending(self):
+        flow=workflow("morning-editorial.yml")
+        self.assertIn("newsletter/pilots/**",flow)
+        self.assertIn("python newsletter.py pilot-preview --edition",flow)
+        self.assertIn("PILOT_email_preview.html",flow)
+        self.assertNotIn("python newsletter.py preview --draft",flow)
+        self.assertNotIn("newsletter_delivery.py",flow)
+        self.assertIn("no fake summaries",flow)
+
     def test_no_collection_guard_is_removed_to_silence_notifications(self):
         s=workflow("live-collector.yml")
         self.assertIn("public_collector_guard.py --sanitize-legacy",s)

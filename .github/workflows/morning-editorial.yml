@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "newsletter.py"
+      - "newsletter/pilots/**"
       - "newsletter/EDITORIAL.md"
       - ".github/workflows/morning-editorial.yml"
   schedule:
@@ -42,11 +43,23 @@ jobs:
           mkdir -p latest-state
           git fetch --no-tags origin collector-state
           git show FETCH_HEAD:state/desk_latest.json > latest-state/desk_latest.json
-      - name: Prepare research-only morning review
+      - name: Preserve collected source headlines for the editor
         if: steps.window.outputs.run == 'yes'
         run: |
           python newsletter.py prepare --desk latest-state/desk_latest.json --out output/newsletter/review_queue.json
-          python newsletter.py preview --draft output/newsletter/review_queue.json --html output/newsletter/DRAFT_email_preview.html --text output/newsletter/DRAFT_email_preview.txt
+      - name: Render fully written pilot email when today's curated issue exists
+        if: steps.window.outputs.run == 'yes'
+        run: |
+          # Source summaries are authored from publisher articles, not from
+          # headline-only templates. Do not make placeholder emails for dates
+          # without content.
+          TODAY="$(TZ=America/Chicago date +%F)"
+          if test -f "newsletter/pilots/${TODAY}.json"; then
+            python newsletter.py pilot-preview --edition "newsletter/pilots/${TODAY}.json" --html output/newsletter/PILOT_email_preview.html --text output/newsletter/PILOT_email_preview.txt
+            echo "PILOT preview generated with complete copy; NO email sent." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "No source-backed pilot brief for ${TODAY}: saved research queue only; no fake summaries." >> "$GITHUB_STEP_SUMMARY"
+          fi
       - name: Archive unapproved draft; NEVER email or publish
         if: steps.window.outputs.run == 'yes'
         uses: actions/upload-artifact@v4

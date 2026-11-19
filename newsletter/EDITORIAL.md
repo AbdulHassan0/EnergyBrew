@@ -18,6 +18,12 @@ The artifact contains:
 - DRAFT_email_preview.txt — the same unapproved layout in plain text.
 
 The automatic research queue does not invent article summaries or publication dates.
+During the temporary pilot, when a real source-backed issue exists in
+`newsletter/pilots/YYYY-MM-DD.json`, the workflow also renders a
+`PILOT_email_preview.html` and `PILOT_email_preview.txt` with complete
+summaries and market impacts. If no curated issue exists, it produces the
+research queue only—not a misleading placeholder newsletter. Pilot previews
+never send or publish, and they require no fact-check attestation.
 
 ## 2. Verify and write the actual issue
 
