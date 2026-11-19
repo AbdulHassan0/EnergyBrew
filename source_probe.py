@@ -23,6 +23,12 @@ CANDIDATES = (
     ("EIA Heating Oil & Propane Update", "https://www.eia.gov/petroleum/heatingoilpropane/includes/hopu_rss.xml"),
     ("Offshore Energy News", "https://www.offshore-energy.biz/feed"),
     ("OilPrice.com News", "https://oilprice.com/rss.xml"),
+    # Staged feeds: connection/volume probe ONLY, not production-enabled or licensed.
+    ("POWER Magazine", "https://www.powermag.com/feed/"),
+    ("Power Engineering", "https://www.power-eng.com/feed/"),
+    ("Energy Storage News", "https://www.energy-storage.news/feed/"),
+    ("LNG Prime", "https://lngprime.com/feed/"),
+    ("LNG Industry", "https://www.lngindustry.com/feed/"),
 )
 
 SIZE_LIMIT = min(MAX_BYTES, 1_500_000)
