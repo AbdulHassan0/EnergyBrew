@@ -10,7 +10,7 @@ param(
 )
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
-if (-not $IsWindows -and $PSVersionTable.PSEdition -eq "Core") {
+if ([System.Environment]::OSVersion.Platform -ne [System.PlatformID]::Win32NT) {
     throw "This Task Scheduler installer requires Windows"
 }
 $Repo = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path
@@ -40,6 +40,7 @@ if (-not $Install) {
 if ($Task -and -not $Replace) {
     throw "Task $TaskName already exists. Use -Replace explicitly to update."
 }
+Set-Location $Repo
 & py -3.12 -c "from zoneinfo import ZoneInfo; import render_worker; assert ZoneInfo('America/Chicago')"
 if ($LASTEXITCODE -ne 0) {
     throw "Python 3.12 with tzdata and collector imports is required."
