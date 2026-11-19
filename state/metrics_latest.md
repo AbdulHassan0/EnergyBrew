@@ -1,21 +1,21 @@
 # EnergyBrew collection reliability and volume
 
-Generated: 2026-11-19T13:34:09.086797+00:00
+Generated: 2026-11-19T13:34:57.210614+00:00
 Status: **degraded**
 Seven-day pilot complete: **False**
 Observed history span: **1.09 days**
-RSS scans: **68** (above 80% feed quorum: 68, all feeds connected: 63, below quorum: 0)
+RSS scans: **69** (above 80% feed quorum: 69, all feeds connected: 63, below quorum: 0)
 Sources whose newest publisher item is within seven days: **8** / 15
-RSS transient retries in retained scan history: **4**; recovered source events: **0**
-GDELT GAL samples: **68** (successful: 68, degraded: 0, repeated payload fingerprints: 13)
+RSS transient retries in retained scan history: **6**; recovered source events: **0**
+GDELT GAL samples: **69** (successful: 69, degraded: 0, repeated payload fingerprints: 13)
 GDELT intervals longer than 15 minutes: **10**
-Past 24h GAL potential sampling window covered (upper bound): **21.46%**
-Past 24h certainly unobserved time: **1131.0 minutes**
+Past 24h GAL potential sampling window covered (upper bound): **21.51%**
+Past 24h certainly unobserved time: **1130.3 minutes**
 Longest unobserved span in 24h: **415.4 minutes**
 Past 7d GAL potential sampling window covered (upper bound): **3.07%**
 Potential coverage is NOT proof of complete news indexing or publication-time accuracy.
-Gap from seven-day window start to first GAL sample: **8937.3 min**
-Age of latest successful GAL sample: **0.2 min**
+Gap from seven-day window start to first GAL sample: **8936.5 min**
+Age of latest successful GAL sample: **0.3 min**
 
 | UTC day | Official scans | GAL samples | Timestamped agency | Specialist RSS | Grid operator | High-signal agency | GDELT first-seen URLs | Release-feed URLs |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -25,7 +25,7 @@ Age of latest successful GAL sample: **0.2 min**
 | 2026-11-16 | 0 | 0 | 3 | 0 | 2 | 1 | 0 | 0 |
 | 2026-11-17 | 0 | 0 | 5 | 15 | 0 | 1 | 0 | 0 |
 | 2026-11-18 | 48 | 41 | 4 | 32 | 1 | 3 | 127 | 15 |
-| 2026-11-19 | 20 | 27 | 0 | 17 | 0 | 0 | 229 | 6 |
+| 2026-11-19 | 21 | 28 | 0 | 17 | 0 | 0 | 244 | 6 |
 
 ## Feed content age — independent of network connectivity
 
@@ -54,12 +54,12 @@ Some regulator and testimony feeds are naturally intermittent; an old item does 
 - None recorded on latest scan
 
 ## Individual feed failures
-- None in latest state
+- PJM Inside Lines: 1 consecutive failures; last successful scan: 2026-11-19T13:33:52.326333+00:00
 
 ## Warnings
 - 10 observed GAL intervals exceeded 15 minutes
-- 24h GAL sampled-window coverage upper bound is 21.46% (1131.0 min not sampled)
-- 5 RSS scans had incomplete source connectivity
+- 24h GAL sampled-window coverage upper bound is 21.51% (1130.3 min not sampled)
+- 6 RSS scans had incomplete source connectivity
 - Seven-day operating pilot is not yet complete
 
 No scan activity is **unknown coverage**, not proof that no market news occurred.

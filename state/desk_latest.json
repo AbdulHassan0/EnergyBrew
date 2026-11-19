@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-11-19T13:34:07.666566+00:00",
+  "generated_utc": "2026-11-19T13:34:55.757161+00:00",
   "status": "research_only_not_approved",
-  "unique_relevant_urls_7d": 393,
+  "unique_relevant_urls_7d": 408,
   "selected_research_links": 32,
   "unique_domains_in_selection": 19,
   "queue_counts": {
@@ -10,7 +10,7 @@
     "older_official_context": 18,
     "regulatory_date_only": 6,
     "timestamped_official": 3,
-    "discovery_unverified": 328,
+    "discovery_unverified": 343,
     "company_release_unverified": 21
   },
   "selected_category_counts": {

@@ -21,7 +21,10 @@
         "geopolitical_event:attack",
         "world_context:houthis"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.newsday.com/business/cop31-turkey-climate-change-energy-y82979",
@@ -656,6 +659,98 @@
       ]
     },
     {
+      "url": "https://news.az/news/residents-feared-trapped-as-russian-strike-hits-residential-building-in-ukraine-s-izium",
+      "title": "Residents feared trapped as Russian strike hits residential building in Ukraine's Izium | News.az",
+      "domain": "news.az",
+      "gdelt_first_seen_utc": "2026-11-19T13:32:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:strike",
+        "world_context:russia/ukraine"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
+      "url": "http://www.russiaherald.com/news/279442569/trump-considering-fresh-joint-attack-with-israel-against-iranian-regime-israeli-media",
+      "title": "Trump considering fresh joint attack with Israel against Iranian regime: Israeli Media",
+      "domain": "www.russiaherald.com",
+      "gdelt_first_seen_utc": "2026-11-19T13:32:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:attack",
+        "world_context:iran/israel"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
+      "url": "http://www.russiaherald.com/news/279442473/russia-strikes-ukraine-as-putin-holds-talks-with-trump-in-shenzen-ahead-of-key-trilateral-with-xi",
+      "title": "Russia strikes Ukraine as Putin holds talks with Trump in Shenzen ahead of key trilateral with Xi",
+      "domain": "www.russiaherald.com",
+      "gdelt_first_seen_utc": "2026-11-19T13:32:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:strikes",
+        "world_context:russia/ukraine"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
+      "url": "https://www.ketv.com/article/third-ukrainian-strike-halts-rail-traffic-russias-kerch-bridge/74474991",
+      "title": "A third Ukrainian strike in 4 days halts rail traffic on Russia's Kerch Bridge to Crimea",
+      "domain": "www.ketv.com",
+      "gdelt_first_seen_utc": "2026-11-19T13:32:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:strike",
+        "world_context:russia/ukraine"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
       "url": "https://www.dailysabah.com/world/mid-east/blasts-rock-bahrain-as-fresh-iran-strikes-target-us-base-on-island",
       "title": "Blasts rock Bahrain as fresh Iran strikes target US base on island",
       "domain": "www.dailysabah.com",
@@ -676,7 +771,10 @@
         "geopolitical_event:strikes",
         "world_context:iran/united states"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.theglobeandmail.com/world/article-ukraine-strike-russia-kerch-bridge-crimea-rail-traffic",
@@ -699,7 +797,10 @@
         "geopolitical_event:strikes",
         "world_context:russia/ukraine"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.brandonsun.com/world/2026/11/19/a-third-ukrainian-strike-in-4-days-halts-rail-traffic-on-russias-kerch-bridge-to-crimea",
@@ -2663,6 +2764,27 @@
       ]
     },
     {
+      "url": "https://www.manilatimes.net/2026/11/19/tmt-newswire/globenewswire/tesser-atomics-and-samsung-heavy-industries-enter-exclusive-collaboration-on-a-nuclear-powered-lng-carrier/2474074",
+      "title": "Tesser Atomics and Samsung Heavy Industries Enter Exclusive Collaboration on a Nuclear-Powered LNG Carrier",
+      "domain": "www.manilatimes.net",
+      "gdelt_first_seen_utc": "2026-11-19T13:32:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 45,
+      "category": "LNG",
+      "relevance_evidence": [
+        "lng"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
       "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70178724-tesser-atomics-and-samsung-heavy-industries-enter-exclusive-collaboration-on-a-nuclear-powered-lng-carrier-399.htm",
       "title": "Tesser Atomics and Samsung Heavy Industries Enter Exclusive Collaboration on a Nuclear-Powered LNG Carrier",
       "domain": "www.finanznachrichten.de",
@@ -3047,6 +3169,48 @@
       "status": "discovery_only_requires_publisher_verification"
     },
     {
+      "url": "https://www.manilatimes.net/2026/11/19/tmt-newswire/globenewswire/alpha-compute-completes-asset-acquisitions-for-alpha-energy-02-campus-in-western-pennsylvania-securing-430mw-of-natural-gas-power/2474091",
+      "title": "Alpha Compute Completes Asset Acquisitions for Alpha Energy 02 Campus in Western Pennsylvania, Securing 430MW of Natural Gas Power",
+      "domain": "www.manilatimes.net",
+      "gdelt_first_seen_utc": "2026-11-19T13:32:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 39,
+      "category": "Natural Gas",
+      "relevance_evidence": [
+        "natural gas"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
+      "url": "https://www.azernews.az/oil_and_gas/267733.html",
+      "title": "Azerbaijan increases natural gas exports to Georgia",
+      "domain": "www.azernews.az",
+      "gdelt_first_seen_utc": "2026-11-19T13:32:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 39,
+      "category": "Natural Gas",
+      "relevance_evidence": [
+        "natural gas"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
       "url": "https://www.fortmorgantimes.com/2026/11/19/today-in-history-november-19-explosions-at-mexico-city-natural-gas-facility-kills-at-least-500",
       "title": "Today in History: November 19, explosions at Mexico City natural gas facility kills at least 500",
       "domain": "www.fortmorgantimes.com",
@@ -3065,7 +3229,10 @@
       "relevance_evidence": [
         "natural gas"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.denverpost.com/2026/11/19/today-in-history-november-19-explosions-at-mexico-city-natural-gas-facility-kills-at-least-500",
@@ -3086,7 +3253,10 @@
       "relevance_evidence": [
         "natural gas"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.thetimes-tribune.com/2026/11/19/today-in-history-november-19-explosions-at-mexico-city-natural-gas-facility-kills-at-least-500",
@@ -3107,7 +3277,10 @@
       "relevance_evidence": [
         "natural gas"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.dailysabah.com/business/energy/renewables-electrification-can-play-role-in-reducing-fossil-fuel-use",
@@ -3129,7 +3302,10 @@
         "electrification",
         "renewables"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.reporterherald.com/2026/11/19/today-in-history-november-19-explosions-at-mexico-city-natural-gas-facility-kills-at-least-500",
@@ -3427,7 +3603,10 @@
       "relevance_evidence": [
         "gas storage"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.tribuneindia.com/news/india/indias-crude-oil-output-to-decline-20-over-the-next-decade-international-energy-agency",
@@ -3565,6 +3744,48 @@
       "status": "discovery_only_requires_publisher_verification"
     },
     {
+      "url": "https://www.tv6tnt.com/news/7pmnews/proman-on-270-m-plant-turnaround-gas-supply/article_2ccbeb9b-c6f4-495a-8219-02a4f05dd960.html",
+      "title": "PROMAN ON $270 M PLANT TURNAROUND & GAS SUPPLY",
+      "domain": "www.tv6tnt.com",
+      "gdelt_first_seen_utc": "2026-11-19T13:32:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 33,
+      "category": "Natural Gas",
+      "relevance_evidence": [
+        "gas supply"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
+      "url": "https://www.rethemnosnews.gr/kriti/728395_xekinoyn-oi-seismikes-ereynes-tis-chevron-stin-ellada-protos-stathmos-i-peloponnisos",
+      "title": "\u039e\u03b5\u03ba\u03b9\u03bd\u03bf\u03cd\u03bd \u03bf\u03b9 \u03c3\u03b5\u03b9\u03c3\u03bc\u03b9\u03ba\u03ad\u03c2 \u03ad\u03c1\u03b5\u03c5\u03bd\u03b5\u03c2 \u03c4\u03b7\u03c2 Chevron \u03c3\u03c4\u03b7\u03bd \u0395\u03bb\u03bb\u03ac\u03b4\u03b1 \u2013 \u03a0\u03c1\u03ce\u03c4\u03bf\u03c2 \u03c3\u03c4\u03b1\u03b8\u03bc\u03cc\u03c2 \u03b7 \u03a0\u03b5\u03bb\u03bf\u03c0\u03cc\u03bd\u03bd\u03b7\u03c3\u03bf\u03c2, \u03b1\u03ba\u03bf\u03bb\u03bf\u03c5\u03b8\u03b5\u03af \u03b7 \u039a\u03c1\u03ae\u03c4\u03b7",
+      "domain": "www.rethemnosnews.gr",
+      "gdelt_first_seen_utc": "2026-11-19T13:32:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 33,
+      "category": "Oil & Energy",
+      "relevance_evidence": [
+        "chevron"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
       "url": "https://www.azernews.az/region/267730.html",
       "title": "Central Asian countries prepare to launch unified electricity market",
       "domain": "www.azernews.az",
@@ -3583,7 +3804,10 @@
       "relevance_evidence": [
         "electricity"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.tribuneindia.com/news/haryana/fatehabad-electricity-department-je-arrested-for-accepting-rs-15000-bribe",
@@ -4641,6 +4865,69 @@
       "status": "discovery_only_requires_publisher_verification"
     },
     {
+      "url": "https://www.brantfordexpositor.ca/press-releases/newsfile/aether-holdings-signs-binding-framework-agreement-for-jv-to-develop-ai-data-center-in-thailand",
+      "title": "Aether Holdings Signs Binding Framework Agreement for JV to Develop AI Data Center in Thailand",
+      "domain": "www.brantfordexpositor.ca",
+      "gdelt_first_seen_utc": "2026-11-19T13:32:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 30,
+      "category": "Power & Electricity",
+      "relevance_evidence": [
+        "data center"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
+      "url": "https://www.azernews.az/region/267711.html",
+      "title": "Iraq plans to boost oil exports through T\u00fcrkiye to 500,000 barrels per day",
+      "domain": "www.azernews.az",
+      "gdelt_first_seen_utc": "2026-11-19T13:32:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 30,
+      "category": "Oil & Energy",
+      "relevance_evidence": [
+        "oil exports"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
+      "url": "https://www.offshore-technology.com/analyst-comment/gas-pipelines-length-additions-india-2030",
+      "title": "Gas pipelines to lead oil and gas pipeline length additions in India by 2030 - Offshore Technology",
+      "domain": "www.offshore-technology.com",
+      "gdelt_first_seen_utc": "2026-11-19T13:32:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 30,
+      "category": "Natural Gas",
+      "relevance_evidence": [
+        "gas pipeline"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
       "url": "https://www.azernews.az/oil_and_gas/267720.html",
       "title": "ACG oil production decline rate may fall below 3% by year-end, bp executive says",
       "domain": "www.azernews.az",
@@ -4659,7 +4946,10 @@
       "relevance_evidence": [
         "oil production"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.thelocal.se/20261119/relief-for-swedish-households-as-nuclear-power-plant-comes-back-online",
@@ -4680,7 +4970,10 @@
       "relevance_evidence": [
         "power plant"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.key4biz.it/aie-70-di-co2-dai-data-center-entro-il-2030/593850",
@@ -4701,7 +4994,10 @@
       "relevance_evidence": [
         "data center"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.laregione.ch/svizzera/svizzera/1963859/center-data-twh-aes-elettricita-deloitte",
@@ -4722,7 +5018,10 @@
       "relevance_evidence": [
         "data center"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.springfieldnewssun.com/local/urbana-data-center-project-in-limbo-after-developer-withdraws-mou/article_5e9997eb-c68f-5a1a-9dc6-73a20ffc352a.html",
@@ -6785,6 +7084,48 @@
       "status": "discovery_only_requires_publisher_verification"
     },
     {
+      "url": "https://www.eltiempo.com/economia/sectores/si-estamos-interesados-en-hacer-fracking-en-colombia-geopark-revela-detalles-ineditos-de-su-operacion-en-argentina-que-busca-replicar-en-el-pais-3602028",
+      "title": "'S\u00ed estamos interesados en hacer fracking en Colombia': GeoPark revela detalles in\u00e9ditos de su operaci\u00f3n en Argentina que busca replicar en el pa\u00eds - El Tiempo",
+      "domain": "www.eltiempo.com",
+      "gdelt_first_seen_utc": "2026-11-19T13:32:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 27,
+      "category": "Oil & Energy",
+      "relevance_evidence": [
+        "fracking"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
+      "url": "https://www.ebc.com.br/imprensa/2026/tv-brasil-exibe-final-entre-ferroviaria-e-sao-paulo-do-paulista-f-sub-17-petrobras-neste-domingo-22",
+      "title": "TV Brasil exibe final entre Ferrovi\u00e1ria e S\u00e3o Paulo do Paulista F Sub-17 Petrobras neste domingo (22)",
+      "domain": "www.ebc.com.br",
+      "gdelt_first_seen_utc": "2026-11-19T13:32:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 27,
+      "category": "Oil & Energy",
+      "relevance_evidence": [
+        "petrobras"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
       "url": "http://www.argentinastar.com/news/279442923/adnoc-distribution-accelerates-adnoc-voyager-expansion-across-africa-south-america-asia",
       "title": "ADNOC Distribution accelerates ADNOC Voyager's expansion across Africa, South America, Asia",
       "domain": "www.argentinastar.com",
@@ -6803,7 +7144,10 @@
       "relevance_evidence": [
         "adnoc"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.thenational.scot/news/26743837.scottish-offshore-wind-farm-approved-scottish-government",
@@ -7397,6 +7741,27 @@
       "category": "Power & Electricity",
       "relevance_evidence": [
         "offshore wind"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
+      "url": "https://capitalfm.africa/frontier-minerals-eyes-local-refining-of-mrima-hill-rare-earths-to-boost-kenyas-mineral-value",
+      "title": "Frontier Minerals eyes local refining of Mrima Hill rare earths to boost Kenya\u2019s mineral value",
+      "domain": "capitalfm.africa",
+      "gdelt_first_seen_utc": "2026-11-19T13:32:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 24,
+      "category": "Oil & Energy",
+      "relevance_evidence": [
+        "refining"
       ],
       "status": "discovery_only_requires_publisher_verification"
     },
@@ -8508,6 +8873,14 @@
       "topics_succeeded": 0,
       "new_discovered_urls": 0,
       "leads_in_last_24h_first_seen": 319
+    },
+    {
+      "run_utc": "2026-11-19T13:34:40.234624+00:00",
+      "status": "provider_cooldown",
+      "topics_attempted": 0,
+      "topics_succeeded": 0,
+      "new_discovered_urls": 0,
+      "leads_in_last_24h_first_seen": 333
     }
   ],
   "provider_cooldown_until_utc": "2026-11-19T16:28:08.320524+00:00",
@@ -9068,6 +9441,16 @@
       "feed_newest_index_utc": "2026-11-19T13:31:00+00:00",
       "feed_index_lag_minutes": 3.0,
       "feed_payload_sha256": "0b764f457095933d"
+    },
+    {
+      "run_utc": "2026-11-19T13:34:40.338843+00:00",
+      "status": "ok",
+      "raw_feed_items": 6926,
+      "high_signal_items": 29,
+      "new_unique_links": 15,
+      "feed_newest_index_utc": "2026-11-19T13:32:00+00:00",
+      "feed_index_lag_minutes": 2.7,
+      "feed_payload_sha256": "0bb8a35902e5d1f5"
     }
   ],
   "provider_throttle_streak": 2
