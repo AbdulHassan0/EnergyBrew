@@ -770,6 +770,174 @@
     "status": "discovery_only_requires_publisher_verification"
   },
   {
+    "url": "https://www.wfmj.com/news/local-news/mcdonald-data-center-company-answering-community-questions/article_17a6fed7-f226-4e02-a2d4-006a280b4fb6.html",
+    "title": "McDonald data center company answering community questions",
+    "domain": "www.wfmj.com",
+    "gdelt_first_seen_utc": "2026-11-19T00:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "http://www.newjerseytelegraph.com/news/279441799/jericho-energy-ventures-provides-update-on-oil-and-gas-joint-venture-credit-facility",
+    "title": "Jericho Energy Ventures Provides Update on Oil and Gas Joint Venture Credit Facility",
+    "domain": "www.newjerseytelegraph.com",
+    "gdelt_first_seen_utc": "2026-11-19T00:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "oil and gas"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://english.pravda.ru/news/world/173423-uzbekneftegaz-bukhara-refinery-expansion-talks",
+    "title": "Uzbekneftegaz in talks with Technip, Axens, KBR for Bukhara refinery expansion",
+    "domain": "english.pravda.ru",
+    "gdelt_first_seen_utc": "2026-11-19T00:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "refinery"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.northernpublicradio.org/illinois/2026-11-18/time-is-up-advocates-rally-in-springfield-for-data-center-reforms-in-illinois",
+    "title": "\u2018Time is up\u2019: Advocates rally in Springfield for data center reforms in Illinois",
+    "domain": "www.northernpublicradio.org",
+    "gdelt_first_seen_utc": "2026-11-19T00:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "http://biomassmagazine.com/articles/sierra-pacific-industries-acquires-burney-biomass-power-plant-assets",
+    "title": "Sierra Pacific Industries acquires Burney biomass power plant assets | Biomass Magazine",
+    "domain": "biomassmagazine.com",
+    "gdelt_first_seen_utc": "2026-11-19T00:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "power plant"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://fox23.com/news/local/sirens-to-sound-in-west-tulsa-as-hf-sinclair-stages-refinery-alarm-test-tomorrow",
+    "title": "Sirens to sound in West Tulsa as HF Sinclair stages refinery alarm test tomorrow",
+    "domain": "fox23.com",
+    "gdelt_first_seen_utc": "2026-11-19T00:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "refinery"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "http://www.tennesseedaily.com/news/279441799/jericho-energy-ventures-provides-update-on-oil-and-gas-joint-venture-credit-facility",
+    "title": "Jericho Energy Ventures Provides Update on Oil and Gas Joint Venture Credit Facility",
+    "domain": "www.tennesseedaily.com",
+    "gdelt_first_seen_utc": "2026-11-19T00:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "oil and gas"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://ktul.com/news/local/sirens-to-sound-in-west-tulsa-as-hf-sinclair-stages-refinery-alarm-test-tomorrow-11-18-2026",
+    "title": "Sirens to sound in West Tulsa as HF Sinclair stages refinery alarm test tomorrow",
+    "domain": "ktul.com",
+    "gdelt_first_seen_utc": "2026-11-19T00:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "refinery"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
     "url": "https://www.12onyourside.com/2026/11/18/community-groups-urge-henrico-protect-water-supply",
     "title": "Henrico says no water agreement in place for proposed power plant as community groups raise concerns",
     "domain": "www.12onyourside.com",
@@ -1899,6 +2067,48 @@
     "category": "Power & Electricity",
     "relevance_evidence": [
       "vistra"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.foundry-planet.com/d/offshore-wind-could-create-10800-new-jobs-in-uk-casting-and-forging-industry-by-2050",
+    "title": "Offshore Wind Could Create 10,800 New Jobs in UK Casting and Forging Industry by 2050",
+    "domain": "www.foundry-planet.com",
+    "gdelt_first_seen_utc": "2026-11-19T00:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "offshore wind"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.denizhaber.com/hurmuz-bogazinda-adnoc-tankerine-saldiri-1-kayip-11-yarali/127871",
+    "title": "H\u00fcrm\u00fcz Bo\u011faz\u0131'nda ADNOC tankerine sald\u0131r\u0131: 1 kay\u0131p, 11 yaral\u0131",
+    "domain": "www.denizhaber.com",
+    "gdelt_first_seen_utc": "2026-11-19T00:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "adnoc"
     ],
     "status": "discovery_only_requires_publisher_verification"
   },

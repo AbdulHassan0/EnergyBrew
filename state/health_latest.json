@@ -1,11 +1,11 @@
 {
-  "audit_utc": "2026-11-19T00:32:16.640443+00:00",
+  "audit_utc": "2026-11-19T00:35:27.698592+00:00",
   "status": "degraded",
   "official_feeds_connected": 15,
   "official_feeds_checked": 15,
   "rss_scan_state": "healthy",
   "rss_connection_ratio": 1.0,
-  "official_rss_last_run_utc": "2026-11-19T00:32:08.220496+00:00",
+  "official_rss_last_run_utc": "2026-11-19T00:35:18.241104+00:00",
   "timestamped_editorial_leads_24h": 23,
   "official_agency_editorial_leads_24h": 2,
   "specialist_publisher_editorial_leads_24h": 20,
@@ -20,8 +20,8 @@
   "unobserved_beats": [
     "Infrastructure & Investment"
   ],
-  "research_first_seen_links_24h": 135,
-  "research_high_signal_links_24h": 107,
+  "research_first_seen_links_24h": 145,
+  "research_high_signal_links_24h": 117,
   "research_publisher_dates_verified": 0,
   "company_announcement_links_24h": 14,
   "company_announcement_feed_status": "ok",
@@ -30,7 +30,7 @@
   "rolling_gal_recent_healthy": true,
   "rolling_gal_sampling_gap": false,
   "discovery_latest_status": "provider_cooldown",
-  "discovery_latest_run_utc": "2026-11-19T00:32:11.873711+00:00",
+  "discovery_latest_run_utc": "2026-11-19T00:35:20.582749+00:00",
   "critical": [],
   "warnings": [
     "No observed high-signal stories in: Infrastructure & Investment",

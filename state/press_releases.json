@@ -520,6 +520,13 @@
       "raw_feed_entries": 100,
       "high_signal_company_releases": 13,
       "new_unique_links": 0
+    },
+    {
+      "run_utc": "2026-11-19T00:35:25.401688+00:00",
+      "status": "ok",
+      "raw_feed_entries": 100,
+      "high_signal_company_releases": 13,
+      "new_unique_links": 0
     }
   ]
 }

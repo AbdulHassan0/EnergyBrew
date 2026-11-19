@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-11-19T00:32:15.942609+00:00",
+  "generated_utc": "2026-11-19T00:35:26.381556+00:00",
   "status": "research_only_not_approved",
-  "unique_relevant_urls_7d": 158,
+  "unique_relevant_urls_7d": 168,
   "selected_research_links": 26,
   "unique_domains_in_selection": 13,
   "queue_counts": {
@@ -11,7 +11,7 @@
     "timestamped_official": 2,
     "regulatory_date_only": 4,
     "company_release_unverified": 15,
-    "discovery_unverified": 106
+    "discovery_unverified": 116
   },
   "selected_category_counts": {
     "Natural Gas & LNG": 8,
