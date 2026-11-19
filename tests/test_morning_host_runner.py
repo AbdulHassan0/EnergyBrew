@@ -166,12 +166,16 @@ class MorningHostTests(unittest.TestCase):
             state=root/"articles.json"
             refresh_rss_safely(state,root/"out",now=NOW,
                                fetcher=lambda _:(RSS,200))
-            previous=state.read_bytes()
+            previous=json.loads(state.read_text())
+            old_urls={row["url"] for row in previous["articles"]}
+            old_runs=len(previous["runs"])
             stale=root/"articles.json.morning-stage"
             stale.write_text("partial power loss")
             refresh_rss_safely(state,root/"out",now=NOW,
                                fetcher=lambda _:(RSS,200))
-            self.assertEqual(state.read_bytes(),previous)
+            updated=json.loads(state.read_text())
+            self.assertTrue(old_urls.issubset({row["url"] for row in updated["articles"]}))
+            self.assertEqual(len(updated["runs"]),old_runs+1)
             self.assertFalse(stale.exists())
 
     def test_stale_rss_stage_kept_if_committed_history_is_corrupt(self):
