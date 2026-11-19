@@ -1,6 +1,6 @@
 # EnergyBrew Newsroom Collection Health
 
-Audit time: 2026-11-19T00:26:14.926494+00:00
+Audit time: 2026-11-19T00:28:49.284522+00:00
 Status: **degraded**
 Official feeds connected: **15/15**
 Timestamped high-signal editorial leads (24h): **23** / target 12 (agency: 2, grid operator: 1, specialist RSS: 20)
