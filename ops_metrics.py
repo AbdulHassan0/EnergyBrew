@@ -11,6 +11,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from research_desk import as_time
+from coverage_windows import estimate_sampling_coverage
 
 EXPECTED_GAL_MINUTES = 10
 MAX_GAL_GAP_MINUTES = 15
@@ -53,6 +54,10 @@ def create(rss, discovery, releases=None, *, now=None):
     successful_g_runs=[x for x in g_runs if x.get("status") == "ok"]
     latest_r=as_time(successful_r_runs[-1]["run_utc"]) if successful_r_runs else None
     latest_g=as_time(successful_g_runs[-1]["run_utc"]) if successful_g_runs else None
+    # Measure actual potential sample-window coverage. A seven-hour outage
+    # must not count as merely "one gap" on the operational scorecard.
+    gal_coverage_24h=estimate_sampling_coverage(g_runs,now=now,hours=24)
+    gal_coverage_7d=estimate_sampling_coverage(g_runs,now=now,hours=7*24)
     gal_gaps=[]
     repeated_feed_payloads = sum(
         earlier.get("feed_payload_sha256") is not None
@@ -123,6 +128,12 @@ def create(rss, discovery, releases=None, *, now=None):
         warnings.append(f"GDELT rolling-feed sample missing or older than {MAX_GAL_AGE_MINUTES} minutes")
     if gal_gaps:
         warnings.append(f"{len(gal_gaps)} observed GAL intervals exceeded {MAX_GAL_GAP_MINUTES} minutes")
+    if gal_coverage_24h["potential_coverage_upper_bound_pct"] < 99.9:
+        warnings.append(
+            "24h GAL sampled-window coverage upper bound is "
+            f"{gal_coverage_24h['potential_coverage_upper_bound_pct']}% "
+            f"({gal_coverage_24h['unobserved_minutes_at_least']} min not sampled)"
+        )
     if len(fully_connected_r_runs)<len(r_runs):
         warnings.append(f"{len(r_runs)-len(fully_connected_r_runs)} RSS scans had incomplete source connectivity")
     successful_g_in_window=[as_time(r["run_utc"]) for r in successful_g_runs
@@ -134,6 +145,7 @@ def create(rss, discovery, releases=None, *, now=None):
     pilot_complete=(history_days>=7
                     and all(x["successful_scanning_observed"] for x in data)
                     and not gal_gaps and len(fully_connected_r_runs)==len(r_runs)
+                    and gal_coverage_7d["unobserved_minutes_at_least"] <= 0
                     and start_gap is not None and start_gap<=MAX_GAL_GAP_MINUTES
                     and tail_gap is not None and tail_gap<=MAX_GAL_GAP_MINUTES)
     if history_days>=7 and (start_gap is None or start_gap>MAX_GAL_GAP_MINUTES):
@@ -199,6 +211,8 @@ def create(rss, discovery, releases=None, *, now=None):
         "gal_repeated_feed_payloads":repeated_feed_payloads,
         "gal_failed_samples":sum(x.get("status")!="ok" for x in g_runs),
         "observed_sampling_gaps":gal_gaps[-30:],
+        "gal_sampled_window_24h":gal_coverage_24h,
+        "gal_sampled_window_7d":gal_coverage_7d,
         "seven_day_start_gap_minutes":start_gap,
         "latest_gal_age_minutes":tail_gap,
         "expected_gal_interval_minutes":EXPECTED_GAL_MINUTES,
@@ -226,6 +240,11 @@ def report(rss_path, discovery_path, releases_path, outdir, *, now=None):
             f"RSS transient retries in retained scan history: **{r['rss_transient_retries_8d']}**; recovered source events: **{r['rss_recovered_sources_8d']}**",
            f"GDELT GAL samples: **{r['gal_sample_runs']}** (successful: {r['gal_successful_samples']}, degraded: {r['gal_failed_samples']}, repeated payload fingerprints: {r['gal_repeated_feed_payloads']})",
            f"GDELT intervals longer than {MAX_GAL_GAP_MINUTES} minutes: **{len(r['observed_sampling_gaps'])}**",
+           f"Past 24h GAL potential sampling window covered (upper bound): **{r['gal_sampled_window_24h']['potential_coverage_upper_bound_pct']}%**",
+           f"Past 24h certainly unobserved time: **{r['gal_sampled_window_24h']['unobserved_minutes_at_least']} minutes**",
+           f"Longest unobserved span in 24h: **{r['gal_sampled_window_24h']['longest_unobserved_minutes']} minutes**",
+           f"Past 7d GAL potential sampling window covered (upper bound): **{r['gal_sampled_window_7d']['potential_coverage_upper_bound_pct']}%**",
+           "Potential coverage is NOT proof of complete news indexing or publication-time accuracy.",
            f"Gap from seven-day window start to first GAL sample: **{r['seven_day_start_gap_minutes']} min**",
            f"Age of latest successful GAL sample: **{r['latest_gal_age_minutes']} min**","",
            "| UTC day | Official scans | GAL samples | Timestamped agency | Specialist RSS | Grid operator | High-signal agency | GDELT first-seen URLs | Release-feed URLs |",

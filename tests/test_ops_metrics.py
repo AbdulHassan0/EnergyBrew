@@ -154,6 +154,17 @@ class MetricsTests(unittest.TestCase):
         self.assertEqual(r["gal_repeated_feed_payloads"],1)
         self.assertEqual(len(r["observed_sampling_gaps"]),0)
 
+    def test_metrics_identify_historical_large_gap_magnitude(self):
+        rss={"runs":[{"run_utc":stamp(2),"feeds_checked":15,
+                      "feeds_connected":15,"scan_state":"healthy"}]}
+        gal={"gal_runs":[{"run_utc":stamp(24*60-15),"status":"ok"},
+                         {"run_utc":stamp(2),"status":"ok"}]}
+        r=create(rss,gal,now=NOW)
+        self.assertLess(r["gal_sampled_window_24h"]["potential_coverage_upper_bound_pct"],5)
+        self.assertGreater(r["gal_sampled_window_24h"]["unobserved_minutes_at_least"],1300)
+        self.assertFalse(r["seven_day_pilot_complete"])
+        self.assertTrue(any("sampled-window" in warning for warning in r["warnings"]))
+
     def test_report_outputs_readable_files(self):
         with tempfile.TemporaryDirectory() as d:
             root=Path(d)
