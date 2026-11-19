@@ -176,13 +176,15 @@ class CollectorTests(unittest.TestCase):
             counts={}
             def always_bad(url):
                 counts[url] = counts.get(url,0) + 1
-                if url.endswith("insidelines.pjm.com/feed/"):
+                if url.startswith("https://insidelines.pjm.com/feed/"):
                     return b"<rss><channel><item><title>bad & markup</title></item></channel></rss>",200
                 return fixture_fetch(url)
             report=collect(Path(d)/"state.json",Path(d)/"out",now=NOW,fetcher=always_bad)
             pjm=next(x for x in report["sources"] if x["source"]=="PJM Inside Lines")
             self.assertFalse(pjm["connected"])
-            self.assertEqual(pjm["request_attempts"],3)
+            self.assertEqual(pjm["request_attempts"],4)
+            self.assertEqual(counts["https://insidelines.pjm.com/feed/"],3)
+            self.assertEqual(counts["https://insidelines.pjm.com/feed/atom/"],1)
             self.assertEqual(report["feeds_connected"],len(SOURCES)-1)
             self.assertEqual(report["scan_state"],"degraded")
             self.assertIn("ParseError",pjm["error"])
