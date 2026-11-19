@@ -61,7 +61,7 @@ class MorningHostTests(unittest.TestCase):
                 raise TimeoutError("Temporary publisher timeout")
             return RSS,200
         with patch("morning_host_runner.fetch_feed",side_effect=mocked_http), patch(
-                "morning_host_runner.time.sleep",return_value=None):
+                "rss_fetch_pool.time.sleep",return_value=None):
             pool,fetcher=concurrent_first_fetches(workers=5)
             try:
                 with self.assertRaises(TimeoutError):
