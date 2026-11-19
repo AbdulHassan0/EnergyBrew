@@ -40,7 +40,7 @@ class DeskTests(unittest.TestCase):
         self.assertEqual(r["publisher_timestamped_official_24h"],0)
 
     def test_gal_provider_timestamp_does_not_imply_original_publication_date(self):
-        lead=discovery()
+        lead=global_lead()
         lead["discovery_provider"]="GDELT GAL RSS"
         result=assemble([], [lead], [], now=NOW)
         self.assertEqual(result["stories"][0]["time_basis"],
