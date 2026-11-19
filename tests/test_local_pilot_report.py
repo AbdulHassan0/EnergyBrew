@@ -50,6 +50,18 @@ class PilotTests(unittest.TestCase):
             r=inspect(d,now=datetime(2026,11,19,14,10,tzinfo=timezone.utc))
             self.assertIn("morning_final_job_blocked",r["problems"])
 
+    def test_final_ledger_ok_without_actual_frozen_research_is_not_healthy(self):
+        with tempfile.TemporaryDirectory() as d:
+            write(d,"render_schedule.json",{"dates":{"2026-11-19":{
+                 "research_final":{"status":"ok"}}}})
+            checked=datetime(2026,11,19,14,10,tzinfo=timezone.utc)
+            result=inspect(d,now=checked)
+            self.assertIn("morning_frozen_research_snapshot_missing",result["problems"])
+            write(d,"morning/research_2026-11-19.json",
+                  {"edition":{"edition_date":"2026-11-18"}})
+            result=inspect(d,now=checked)
+            self.assertIn("morning_frozen_research_edition_mismatch",result["problems"])
+
     def test_malformed_state_fails_instead_of_returning_green(self):
         with tempfile.TemporaryDirectory() as d:
             (Path(d)/"render_worker_heartbeat.json").write_text("[]")

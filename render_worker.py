@@ -14,7 +14,7 @@ import queue
 import threading
 import time
 from dataclasses import dataclass
-from datetime import datetime, time as wall_time, timedelta, timezone
+from datetime import date, datetime, time as wall_time, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -66,6 +66,33 @@ def read_state(path):
     return record
 
 
+def pre_cutoff_rss_issues(job, day, zone="America/Chicago"):
+    """Confirm the actual 06:24 RSS job started AND finished before 06:30.
+
+    A successful status without a verified on-time finish cannot authorize
+    today's frozen research snapshot. Dates are evaluated in Chicago local
+    civil time so DST does not change the editorial cutoff.
+    """
+    if not isinstance(job,dict) or job.get("status")!="ok":
+        return ("pre_cutoff_publisher_refresh_not_confirmed",)
+    try:
+        started=datetime.fromisoformat(job["started_utc"].replace("Z","+00:00"))
+        finished=datetime.fromisoformat(job["finished_utc"].replace("Z","+00:00"))
+        if any(x.tzinfo is None or x.utcoffset() is None for x in (started,finished)):
+            raise ValueError("Job time must be timezone-aware")
+        day=date.fromisoformat(day)
+        tz=ZoneInfo(zone)
+        window=datetime.combine(day,wall_time(6,24),tzinfo=tz).astimezone(timezone.utc)
+        cutoff=datetime.combine(day,wall_time(6,30),tzinfo=tz).astimezone(timezone.utc)
+    except (KeyError,TypeError,ValueError,AttributeError):
+        return ("pre_cutoff_publisher_refresh_completion_unverified",)
+    if finished>cutoff:
+        return ("pre_cutoff_publisher_refresh_completed_after_0630",)
+    if not (window<=started<cutoff and started<=finished):
+        return ("pre_cutoff_publisher_refresh_outside_0624_window",)
+    return ()
+
+
 def run_job(name, root, zone):
     """Execute just one news-only operation, preserving the public-data guard."""
     root = Path(root)
@@ -93,8 +120,7 @@ def run_job(name, root, zone):
         date_jobs = read_state(root / "render_schedule.json")["dates"].get(
             local_day, {})
         pre_cutoff = date_jobs.get("rss_pre_cutoff", {})
-        issues = (() if pre_cutoff.get("status") == "ok" else
-                  ("pre_cutoff_publisher_refresh_not_confirmed",))
+        issues = pre_cutoff_rss_issues(pre_cutoff, local_day, zone)
         outcome = run_morning(root, zone=zone, refresh_rss=False,
                               prerequisite_issues=issues)
         status = outcome["status"]

@@ -64,6 +64,16 @@ def inspect(root, *, now=None, zone="America/Chicago"):
             problems.append("morning_final_job_not_recorded_after_0700")
         elif final.get("status")!="ok":
             problems.append("morning_final_job_"+final["status"])
+        else:
+            # A ledger saying "ok" does not prove that a safe frozen research
+            # snapshot was durably created for this morning's local edition.
+            snapshot = root / "morning" / ("research_" + edition + ".json")
+            if not snapshot.exists():
+                problems.append("morning_frozen_research_snapshot_missing")
+            else:
+                record=_state(root, "morning/research_" + edition + ".json")
+                if record.get("edition",{}).get("edition_date")!=edition:
+                    problems.append("morning_frozen_research_edition_mismatch")
     if not metrics["seven_day_pilot_complete"]:
         problems.append("seven_day_sampling_reliability_not_yet_proven")
     return {

@@ -86,3 +86,12 @@ its account to SYSTEM because that would switch the per-user state folder.
 The installer is only code in the repository until YOU explicitly run it.
 The local-health command above verifies observed results rather than
 assuming task registration implies successful collection.
+
+## Safeguards for the 06:30 morning cutoff
+
+The local scheduler will not treat the 06:24 publisher refresh as adequate
+unless the persisted attempt **started at/after 06:24 and finished by
+06:30** America/Chicago. Earlier and slower scans do not satisfy that exact
+prerequisite even if they returned HTTP 200. After 07:00 the local pilot
+health report additionally requires the actual immutable frozen research
+file for that edition—not just an `ok` status in the scheduler ledger.

@@ -103,14 +103,16 @@ jobs:
         shell: pwsh
         run: |
           python -c "from zoneinfo import ZoneInfo; from render_worker import JOBS; from portable_lock import lock_exclusive_nonblocking; assert ZoneInfo('America/Chicago'); assert len(JOBS)==4; print('Windows collector imports OK')"
-      - name: Validate optional Task Scheduler installer syntax without registering anything
+      - name: Validate Windows Task Scheduler preview without registering anything
         shell: pwsh
         run: |
           $src = Get-Content "deploy/windows/install-news-task.ps1" -Raw
           [void][scriptblock]::Create($src)
-          if ($src -notmatch "PREVIEW ONLY") { throw "Installer needs explicit opt-in" }
           if ($src -notmatch "MultipleInstances IgnoreNew") { throw "Duplicate-worker policy missing" }
-          Write-Host "Windows task registration script parses; no task was registered."
+          $preview = & .\\deploy\\windows\\install-news-task.ps1 2>&1
+          if ($LASTEXITCODE -and $LASTEXITCODE -ne 0) { throw "Preview failed" }
+          if (($preview | Out-String) -notmatch "PREVIEW ONLY") { throw "Installer requires explicit opt-in" }
+          Write-Host "Windows task preview succeeded; no task was registered."
       - name: Run portable file locking and scheduler tests on actual Windows
         shell: pwsh
         run: |

@@ -6,7 +6,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from render_worker import JOBS, read_state, scheduler_tick, worker_loop, periodic_rss_tick, periodic_issuer_tick
+from render_worker import JOBS, read_state, scheduler_tick, worker_loop, periodic_rss_tick, periodic_issuer_tick, pre_cutoff_rss_issues
 
 ROOT = Path(__file__).resolve().parents[1]
 ZONE = ZoneInfo("America/Chicago")
@@ -29,6 +29,30 @@ class RenderWorkerTests(unittest.TestCase):
         self.assertNotIn("email", blueprint.split("services:")[1].lower())
         self.assertIn('ENTRYPOINT ["python", "render_entrypoint.py"]',
                       (ROOT / "Dockerfile.render").read_text())
+
+    def test_morning_cutoff_requires_actual_pre_0630_completion(self):
+        start=local_time(6,24)
+        finish=local_time(6,29)
+        job={"status":"ok","started_utc":start.isoformat(),
+             "finished_utc":finish.isoformat()}
+        self.assertEqual(pre_cutoff_rss_issues(job,"2026-11-19"),())
+        job["finished_utc"]=local_time(6,31).isoformat()
+        self.assertEqual(pre_cutoff_rss_issues(job,"2026-11-19"),
+                         ("pre_cutoff_publisher_refresh_completed_after_0630",))
+        job["finished_utc"]=finish.isoformat()
+        job["started_utc"]=local_time(5,35).isoformat()
+        self.assertEqual(pre_cutoff_rss_issues(job,"2026-11-19"),
+                         ("pre_cutoff_publisher_refresh_outside_0624_window",))
+        job.pop("finished_utc")
+        self.assertEqual(pre_cutoff_rss_issues(job,"2026-11-19"),
+                         ("pre_cutoff_publisher_refresh_completion_unverified",))
+
+    def test_pre_cutoff_window_follows_chicago_dst(self):
+        summer=datetime(2026,7,19,6,24,tzinfo=ZONE).astimezone(timezone.utc)
+        done=datetime(2026,7,19,6,29,tzinfo=ZONE).astimezone(timezone.utc)
+        job={"status":"ok","started_utc":summer.isoformat(),
+             "finished_utc":done.isoformat()}
+        self.assertEqual(pre_cutoff_rss_issues(job,"2026-07-19"),())
 
     def test_render_final_reads_pre_cutoff_snapshot_not_another_http_scan(self):
         source = (ROOT / "render_worker.py").read_text()
