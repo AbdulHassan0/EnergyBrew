@@ -1,5 +1,5 @@
 {
-  "run_utc": "2026-11-19T03:48:12.969325+00:00",
+  "run_utc": "2026-11-19T03:49:55.035931+00:00",
   "provider": "GDELT DOC 2.0",
   "status": "provider_cooldown",
   "topics_configured": 15,
@@ -7,9 +7,10 @@
   "topics_succeeded": 0,
   "topics_pending_or_unsearched": 15,
   "new_discovered_urls": 0,
-  "leads_in_last_24h_first_seen": 148,
-  "leads_in_7d_state": 171,
+  "leads_in_last_24h_first_seen": 156,
+  "leads_in_7d_state": 179,
   "provider_cooldown_until_utc": "2026-11-19T04:08:38.764393+00:00",
+  "provider_throttle_streak": 0,
   "topic_attempts": [],
   "notice": "Discovery index timestamps are NOT original article publication dates. All leads need publisher verification before newsletter use."
 }

@@ -113,7 +113,10 @@
       "geopolitical_event:war",
       "world_context:iran/united states"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.aol.co.uk/articles/ukraine-war-briefing-russia-asks-021626000.html",
@@ -136,7 +139,10 @@
       "geopolitical_event:strike",
       "world_context:russia/ukraine"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "http://www.heraldglobe.com/news/279442005/we-dont-need-any-help-trump-claims-us-has-defeated-iran-military-rules-out-seeking-assistance-from-china-russia",
@@ -159,7 +165,10 @@
       "geopolitical_event:military",
       "world_context:iran/united states"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.onenewspage.com/story/irans-army-chief-vows-more-crushing-response-if-us-attacks-again-6928c75f",
@@ -768,6 +777,27 @@
     "status": "discovery_only_requires_publisher_verification"
   },
   {
+    "url": "https://peakoil.com/publicpolicy/why-iraq-just-fast-tracked-chevrons-takeover-of-a-14-billion-barrel-supergiant",
+    "title": "Why Iraq Just Fast-Tracked Chevron's Takeover Of A 14-Billion-Barrel Supergiant | Peak Oil News and Message Boards",
+    "domain": "peakoil.com",
+    "gdelt_first_seen_utc": "2026-11-19T03:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "chevron"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
     "url": "https://www.simcoe.com/news/ontario-gas-price-prediction-for-nov-19-20/article_17e8bd45-49b2-546f-b2b0-a48a12ec248e.html",
     "title": "Ontario gas prices are about to dip again. Here's how much you'll save.",
     "domain": "www.simcoe.com",
@@ -786,7 +816,10 @@
     "relevance_evidence": [
       "gas prices"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.punjabijagran.com/punjab/ludhiana-why-is-there-pitch-darkness-at-lala-jis-house-the-electricity-bill-hasnt-been-paid-sir-lala-lajpat-rais-ancestral-home-opens-only-upon-the-arrival-of-a-vip-9715056.html",
@@ -807,7 +840,10 @@
     "relevance_evidence": [
       "electricity"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.columbian.com/news/2026/nov/18/wa-gas-prices-continue-downward-trend",
@@ -1451,6 +1487,27 @@
     "status": "discovery_only_requires_publisher_verification"
   },
   {
+    "url": "https://www.commercial-news.com/news/time-is-up-advocates-rally-in-springfield-for-data-center-reforms-in-illinois/article_4f0fb690-bba6-4021-87ab-cbde1b402495.html",
+    "title": "\u2018Time is up\u2019: Advocates rally in Springfield for data center reforms in Illinois",
+    "domain": "www.commercial-news.com",
+    "gdelt_first_seen_utc": "2026-11-19T03:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
     "url": "https://fox56.com/news/local/lackawanna-co-commissioners-vote-to-repeal-tax-exemption-given-to-data-center-project",
     "title": "Lackawanna Co. commissioners vote to repeal tax exemption given to data center project",
     "domain": "fox56.com",
@@ -1469,7 +1526,10 @@
     "relevance_evidence": [
       "data center"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.tribtoday.com/news/local-news/2026/11/data-center-developer-completes-youngstown-purchase",
@@ -1490,7 +1550,10 @@
     "relevance_evidence": [
       "data center"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.manilatimes.net/2026/11/19/tmt-newswire/globenewswire/agencia-comercial-spirits-ltd-announces-execution-of-mep-equipment-supply-and-installation-contracts-for-phase-1b-of-indonesia-data-center/2473698",
@@ -1511,7 +1574,10 @@
     "relevance_evidence": [
       "data center"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.kfvs12.com/2026/11/19/city-perryville-warning-residents-water-utility-phone-scam",
@@ -2895,6 +2961,27 @@
     "category": "Power & Electricity",
     "relevance_evidence": [
       "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.wboc.com/news/ocean-city-mayor-and-council-reaffirm-opposition-for-offshore-wind/article_15e6ee80-b2ce-4d69-b030-15cd27b059c2.html",
+    "title": "Ocean city mayor and council reaffirm opposition for offshore wind",
+    "domain": "www.wboc.com",
+    "gdelt_first_seen_utc": "2026-11-19T03:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "offshore wind"
     ],
     "status": "discovery_only_requires_publisher_verification"
   },

@@ -1,15 +1,15 @@
 # EnergyBrew collection reliability and volume
 
-Generated: 2026-11-19T03:48:21.171250+00:00
+Generated: 2026-11-19T03:50:02.280703+00:00
 Status: **degraded**
 Seven-day pilot complete: **False**
 Observed history span: **0.68 days**
-RSS scans: **59** (above 80% feed quorum: 59, all feeds connected: 56, below quorum: 0)
+RSS scans: **60** (above 80% feed quorum: 60, all feeds connected: 57, below quorum: 0)
 Sources whose newest publisher item is within seven days: **8** / 15
 RSS transient retries in retained scan history: **0**; recovered source events: **0**
-GDELT GAL samples: **56** (successful: 56, degraded: 0, repeated payload fingerprints: 9)
+GDELT GAL samples: **57** (successful: 57, degraded: 0, repeated payload fingerprints: 9)
 GDELT intervals longer than 15 minutes: **6**
-Gap from seven-day window start to first GAL sample: **9523.1 min**
+Gap from seven-day window start to first GAL sample: **9521.4 min**
 Age of latest successful GAL sample: **0.1 min**
 
 | UTC day | Official scans | GAL samples | Timestamped agency | Specialist RSS | Grid operator | High-signal agency | GDELT first-seen URLs | Release-feed URLs |
@@ -20,7 +20,7 @@ Age of latest successful GAL sample: **0.1 min**
 | 2026-11-16 | 0 | 0 | 3 | 0 | 2 | 1 | 0 | 0 |
 | 2026-11-17 | 0 | 0 | 5 | 15 | 0 | 1 | 0 | 0 |
 | 2026-11-18 | 48 | 41 | 2 | 32 | 1 | 2 | 127 | 15 |
-| 2026-11-19 | 11 | 15 | 0 | 3 | 0 | 0 | 52 | 0 |
+| 2026-11-19 | 12 | 16 | 0 | 3 | 0 | 0 | 55 | 0 |
 
 ## Feed content age — independent of network connectivity
 
@@ -29,7 +29,7 @@ Age of latest successful GAL sample: **0.1 min**
 | EIA Congressional Testimony | 2021-11-16T14:00:00+00:00 | 43885.8 | no_publication_in_7d |
 | EIA Presentations | 2026-03-04T14:00:00+00:00 | 6229.8 | no_publication_in_7d |
 | US NRC Nuclear News | 2026-09-14T08:00:00+00:00 | 1579.8 | no_publication_in_7d |
-| DOE Hydrocarbons Blog | 2026-10-29T20:16:57+00:00 | 487.5 | no_publication_in_7d |
+| DOE Hydrocarbons Blog | 2026-10-29T20:16:57+00:00 | 487.6 | no_publication_in_7d |
 | DOE Grid Deployment | 2026-10-30T14:42:15+00:00 | 469.1 | no_publication_in_7d |
 | DOE Hydrocarbons Releases | 2026-11-04T05:00:00+00:00 | 358.8 | no_publication_in_7d |
 | EIA Press Releases | 2026-11-10T17:00:00+00:00 | 202.8 | no_publication_in_7d |
