@@ -1,14 +1,21 @@
-name: EnergyBrew hourly discovery backup
+name: EnergyBrew staggered GAL backup sampling
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/hourly-discovery.yml"
   schedule:
-    - cron: "1 * * * *"  # additional backstop offset from primary minute-06
+    # Stagger against minute-06 primary collector: alternate at minute-01.
+    # GitHub-hosted cron jobs may be skipped or delayed for hours; this is
+    # REDUNDANCY, NOT A SERVICE-LEVEL GUARANTEE.
+    - cron: "1,11,21,31,41,51 * * * *"
 
 permissions:
   contents: write
 
-# A shared lock serializes the hourly writer with the full daily RSS workflow.
+# A shared lock serializes the backup writer with the full RSS/GAL workflow.
 # Both persist their separate state in the same collector-state branch.
 concurrency:
   group: energybrew-live-collector
@@ -60,14 +67,14 @@ jobs:
         id: metadata_guard
         if: always()
         run: python public_collector_guard.py --sanitize-legacy --rss state/articles.json --discovery state/discovery.json --releases state/press_releases.json
-      - name: Persist hourly discovery history
+      - name: Persist staggered GAL discovery history
         if: steps.metadata_guard.outcome == 'success'
         run: |
           if test ! -s state/discovery.json; then
             echo "No valid discovery history to persist"
             exit 0
           fi
-          export STATE_DIR="$RUNNER_TEMP/energybrew-hourly-state"
+          export STATE_DIR="$RUNNER_TEMP/energybrew-staggered-backup-state"
           if git ls-remote --exit-code --heads origin collector-state >/dev/null 2>&1; then
             git fetch --no-tags origin collector-state
             git worktree add --detach "$STATE_DIR" FETCH_HEAD
