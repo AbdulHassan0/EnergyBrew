@@ -20,6 +20,7 @@ from zoneinfo import ZoneInfo
 
 from collector_daemon import atomic_json, run_forever as collect_gal_forever
 from host_rss_refresh import run_refresh
+from host_release_refresh import run_refresh as run_issuer_refresh
 from morning_host_runner import run_morning
 from morning_readiness import main as morning_preview_main
 from public_collector_guard import SafetyError, ensure_sources_public
@@ -51,6 +52,8 @@ RETRY_AFTER_SECONDS = 75
 DEFAULT_WAKE_SECONDS = 10
 PERIODIC_RSS_SECONDS = 2 * 3600
 FAILED_RSS_RETRY_SECONDS = 20 * 60
+ISSUER_POLL_SECONDS = 3 * 3600
+FAILED_ISSUER_RETRY_SECONDS = 30 * 60
 
 
 def read_state(path):
@@ -226,6 +229,49 @@ def periodic_rss_tick(root, *, now=None, zone="America/Chicago", execute=None):
             "next_due_utc": state.get("next_due_utc")}
 
 
+def periodic_issuer_tick(root, *, now=None, zone="America/Chicago", execute=None):
+    """Refresh verified public issuer-newswire RSS metadata on the same disk.
+
+    A press release remains an issuer claim and is never promoted to verified
+    news automatically. Failures use explicit reduced-frequency retry.
+    """
+    now=now or datetime.now(timezone.utc)
+    if now.tzinfo is None or now.utcoffset() is None:
+        raise ValueError("Issuer scheduler requires a timezone-aware clock")
+    now=now.astimezone(timezone.utc)
+    wall=now.astimezone(ZoneInfo(zone)).time().replace(tzinfo=None)
+    if wall_time(5,20)<=wall<wall_time(7,15):
+        return {"status":"reserved_morning_window","attempted":False}
+    root=Path(root)
+    root.mkdir(parents=True,exist_ok=True)
+    path=root/"render_issuer_schedule.json"
+    state=json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+    if not isinstance(state,dict):
+        raise ValueError("Invalid persistent issuer schedule")
+    due=state.get("next_due_utc")
+    if due and datetime.fromisoformat(due)>now:
+        return {"status":state.get("status","unknown"),"attempted":False}
+    state.update(status="running",last_attempt_utc=now.isoformat())
+    atomic_json(path,state)
+    try:
+        report=execute() if execute else run_issuer_refresh(root,now=now)
+        status="ok" if report.get("status")=="ok" else "degraded"
+        state.update(status=status,last_scan_state=report.get("status"),
+                     last_completed_utc=datetime.now(timezone.utc).isoformat(),
+                     next_due_utc=(now+timedelta(seconds=(
+                         ISSUER_POLL_SECONDS if status=="ok"
+                         else FAILED_ISSUER_RETRY_SECONDS))).isoformat())
+    except SafetyError:
+        state.update(status="critical",last_scan_state="metadata_safety_failure")
+        atomic_json(path,state)
+        raise
+    except Exception as exc:
+        state.update(status="degraded",last_scan_state=type(exc).__name__,
+                     next_due_utc=(now+timedelta(seconds=FAILED_ISSUER_RETRY_SECONDS)).isoformat())
+    atomic_json(path,state)
+    return {"status":state["status"],"attempted":True}
+
+
 def worker_loop(root, *, zone="America/Chicago", wake_seconds=DEFAULT_WAKE_SECONDS,
                 gal_interval_seconds=300, sleep=time.sleep, now_fn=None,
                 max_iterations=None, gal_runner=None):
@@ -263,6 +309,10 @@ def worker_loop(root, *, zone="America/Chicago", wake_seconds=DEFAULT_WAKE_SECON
         now = now_fn() if now_fn else datetime.now(timezone.utc)
         report = scheduler_tick(root, now=now, zone=zone)
         periodic = periodic_rss_tick(root, now=now, zone=zone)
+        issuer = periodic_issuer_tick(root, now=now, zone=zone)
+        if issuer["attempted"]:
+            print(json.dumps({"job":"issuer_announcement_refresh",
+                              "status":issuer["status"]}),flush=True)
         if periodic["attempted"]:
             print(json.dumps({"job": "periodic_publisher_rss",
                               "status": periodic["status"]}), flush=True)
@@ -274,6 +324,7 @@ def worker_loop(root, *, zone="America/Chicago", wake_seconds=DEFAULT_WAKE_SECON
             "gal_thread_alive": gal.is_alive(),
             "edition_date": report["date"],
             "daytime_rss_state": periodic["status"],
+            "issuer_announcement_state": issuer["status"],
             "scheduled_jobs": {name: v["status"] for name, v in
                                report["jobs"].items()},
             "source": "local_worker_heartbeat_not_external_monitoring",

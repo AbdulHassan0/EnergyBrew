@@ -46,6 +46,9 @@ never two simultaneous writers to the same state.**
   window, then every two hours; critical source outages back off 20 minutes.
   A separate 05:20–07:15 reserved window prevents nonessential refreshes
   from delaying time-critical research preparation.
+- Issuer/newswire release RSS: one research-only refresh at worker startup
+  outside the protected morning window, then every three hours. Failures
+  retry after 30 minutes and remain labeled degraded; claims are unverified.
 - GAL: every five minutes, continuously; never retroactively fills missed
   GDELT index time. Successful and failed runs are individually measured.
 - 05:35: safely refresh publisher RSS metadata.
@@ -61,7 +64,9 @@ The ledger records a job as started **before** execution; process restarts
 cannot pretend a job did not start. No retry after a window has closed.
 A blocked final result does not silently turn into readiness.
 
-**Data boundaries:** GDELT discovery timestamps are not confirmed article
+**Data boundaries:** Issuer announcements are unverified primary-source
+claims. They must not be labeled as independently reported facts or sent
+without source verification. GDELT discovery timestamps are not confirmed article
 publication times. The worker collects safe headline/link metadata only.
 No copied articles, proprietary content, subscriber information or API keys.
 Render workers do not have a public website URL.

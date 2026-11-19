@@ -6,7 +6,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from render_worker import JOBS, read_state, scheduler_tick, worker_loop, periodic_rss_tick
+from render_worker import JOBS, read_state, scheduler_tick, worker_loop, periodic_rss_tick, periodic_issuer_tick
 
 ROOT = Path(__file__).resolve().parents[1]
 ZONE = ZoneInfo("America/Chicago")
@@ -133,6 +133,38 @@ class RenderWorkerTests(unittest.TestCase):
             self.assertFalse(b["attempted"])
             self.assertEqual(c["status"], "ok")
             self.assertEqual(len(calls), 2)
+
+    def test_periodic_issuer_scan_is_durable_and_separate_from_rss(self):
+        with tempfile.TemporaryDirectory() as directory:
+            calls=[]
+            def scan():
+                calls.append(1)
+                return {"status":"ok","new_links":1}
+            first=periodic_issuer_tick(directory,now=local_time(8,0),execute=scan)
+            duplicate=periodic_issuer_tick(directory,now=local_time(9,0),execute=scan)
+            again=periodic_issuer_tick(directory,now=local_time(11,0),execute=scan)
+            self.assertTrue(first["attempted"])
+            self.assertFalse(duplicate["attempted"])
+            self.assertTrue(again["attempted"])
+            self.assertEqual(len(calls),2)
+            self.assertTrue((Path(directory)/"render_issuer_schedule.json").exists())
+
+    def test_issuer_research_does_not_run_during_morning_cutoff(self):
+        with tempfile.TemporaryDirectory() as directory:
+            calls=[]
+            outcome=periodic_issuer_tick(directory,now=local_time(6,38),
+                                         execute=lambda:calls.append(1))
+            self.assertFalse(outcome["attempted"])
+            self.assertEqual(calls,[])
+
+    def test_issuer_failure_retries_without_fabricated_success(self):
+        with tempfile.TemporaryDirectory() as directory:
+            report=periodic_issuer_tick(directory,now=local_time(8,0),
+                                         execute=lambda:{"status":"degraded"})
+            self.assertEqual(report["status"],"degraded")
+            again=periodic_issuer_tick(directory,now=local_time(8,30),
+                                        execute=lambda:{"status":"ok"})
+            self.assertEqual(again["status"],"ok")
 
     def test_naive_clock_is_rejected(self):
         with tempfile.TemporaryDirectory() as directory:
