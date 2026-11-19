@@ -1,29 +1,6 @@
 {
   "leads": [
     {
-      "url": "https://www.bordermail.com.au/story/9394287/iran-hammers-us-drone-missile-sites-in-kuwait",
-      "title": "Iran hammers US drone, missile sites in Kuwait",
-      "domain": "www.bordermail.com.au",
-      "gdelt_first_seen_utc": "2026-11-19T02:31:00+00:00",
-      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT GAL RSS",
-      "discovery_topic": "gal_rolling_sample",
-      "topics": [
-        "gal_rolling_sample"
-      ],
-      "relevance_score": 90,
-      "category": "Geopolitics",
-      "relevance_evidence": [
-        "energy_market_exposure:inferred_high_risk_region",
-        "geopolitical_event:missile",
-        "world_context:iran/united states"
-      ],
-      "status": "discovery_only_requires_publisher_verification"
-    },
-    {
       "url": "https://www.thenationalnews.com/business/energy/2026/11/18/bahrains-war-hit-sitra-refinery-weeks-away-from-full-capacity-bapco-energies-ceo-says",
       "title": "Bahrain's war-hit Sitra refinery weeks away from full capacity, Bapco Energies CEO says | The National",
       "domain": "www.thenationalnews.com",
@@ -70,27 +47,6 @@
       "status": "discovery_only_requires_publisher_verification"
     },
     {
-      "url": "http://www.middleeaststar.com/news/279440849/is-another-us-iran-war-looming",
-      "title": "Is another US - Iran war looming ?",
-      "domain": "www.middleeaststar.com",
-      "gdelt_first_seen_utc": "2026-11-18T17:30:00+00:00",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT DOC 2.0",
-      "discovery_topic": "energy_investment",
-      "topics": [
-        "energy_investment"
-      ],
-      "relevance_score": 90,
-      "category": "Geopolitics",
-      "relevance_evidence": [
-        "energy_market_exposure:inferred_high_risk_region",
-        "geopolitical_event:war",
-        "world_context:iran/united states"
-      ],
-      "status": "discovery_only_requires_publisher_verification"
-    },
-    {
       "url": "https://www.ibtimes.co.in/rupee-gains-31-paise-against-us-dollar-amid-falling-crude-oil-prices-908439",
       "title": "Rupee gains 31 paise against US dollar amid falling crude oil prices",
       "domain": "www.ibtimes.co.in",
@@ -113,6 +69,53 @@
       "discovery_providers": [
         "GDELT GAL RSS"
       ]
+    },
+    {
+      "url": "https://www.bordermail.com.au/story/9394287/iran-hammers-us-drone-missile-sites-in-kuwait",
+      "title": "Iran hammers US drone, missile sites in Kuwait",
+      "domain": "www.bordermail.com.au",
+      "gdelt_first_seen_utc": "2026-11-19T02:31:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:missile",
+        "world_context:iran/united states"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
+    },
+    {
+      "url": "http://www.middleeaststar.com/news/279440849/is-another-us-iran-war-looming",
+      "title": "Is another US - Iran war looming ?",
+      "domain": "www.middleeaststar.com",
+      "gdelt_first_seen_utc": "2026-11-18T17:30:00+00:00",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT DOC 2.0",
+      "discovery_topic": "energy_investment",
+      "topics": [
+        "energy_investment"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:war",
+        "world_context:iran/united states"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
     },
     {
       "url": "https://www.afr.com/policy/energy-and-climate/a-victorian-coalition-win-will-deepen-fractures-in-national-power-grid-20261119-p61fcl",
@@ -3644,6 +3647,14 @@
       "topics_succeeded": 0,
       "new_discovered_urls": 0,
       "leads_in_last_24h_first_seen": 129
+    },
+    {
+      "run_utc": "2026-11-19T02:45:33.862880+00:00",
+      "status": "provider_cooldown",
+      "topics_attempted": 0,
+      "topics_succeeded": 0,
+      "new_discovered_urls": 0,
+      "leads_in_last_24h_first_seen": 130
     }
   ],
   "provider_cooldown_until_utc": "2026-11-19T04:08:38.764393+00:00",
@@ -4023,6 +4034,16 @@
       "new_unique_links": 1,
       "feed_newest_index_utc": "2026-11-19T02:32:00+00:00",
       "feed_index_lag_minutes": 10.1,
+      "feed_payload_sha256": "ad91ef1a891f9bb6"
+    },
+    {
+      "run_utc": "2026-11-19T02:45:33.940108+00:00",
+      "status": "ok",
+      "raw_feed_items": 3381,
+      "high_signal_items": 9,
+      "new_unique_links": 0,
+      "feed_newest_index_utc": "2026-11-19T02:32:00+00:00",
+      "feed_index_lag_minutes": 13.6,
       "feed_payload_sha256": "ad91ef1a891f9bb6"
     }
   ]

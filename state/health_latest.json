@@ -1,11 +1,11 @@
 {
-  "audit_utc": "2026-11-19T02:42:12.389765+00:00",
+  "audit_utc": "2026-11-19T02:45:40.666883+00:00",
   "status": "degraded",
   "official_feeds_connected": 14,
   "official_feeds_checked": 15,
   "rss_scan_state": "degraded",
   "rss_connection_ratio": 0.933,
-  "official_rss_last_run_utc": "2026-11-19T02:42:01.014047+00:00",
+  "official_rss_last_run_utc": "2026-11-19T02:45:31.945739+00:00",
   "timestamped_editorial_leads_24h": 25,
   "official_agency_editorial_leads_24h": 2,
   "specialist_publisher_editorial_leads_24h": 22,
@@ -34,7 +34,7 @@
   "rolling_gal_recent_healthy": true,
   "rolling_gal_sampling_gap": false,
   "discovery_latest_status": "provider_cooldown",
-  "discovery_latest_run_utc": "2026-11-19T02:42:03.368506+00:00",
+  "discovery_latest_run_utc": "2026-11-19T02:45:33.862880+00:00",
   "critical": [],
   "warnings": [
     "RSS source degradation: 1/15 feeds failed",

@@ -60,26 +60,6 @@
     "also_seen_in": []
   },
   {
-    "id": "33b7c622f7d6734f22075838",
-    "title": "U.S.-Iran Conflict Flares Again as Gulf Nations Brace for Attacks",
-    "url": "https://oilprice.com/Geopolitics/Middle-East/US-Iran-Conflict-Flares-Again-as-Gulf-Nations-Brace-for-Attacks.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T14:30:00+00:00",
-    "category": "Geopolitics",
-    "published_precision": "timestamp",
-    "relevance_score": 90,
-    "keyword_matches": 0,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:attacks",
-      "world_context:iran/united states"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": []
-  },
-  {
     "id": "0e60962e4349037dfa1fbcfd",
     "title": "ADNOC Ship Attacked in Hormuz as Maritime Security Risks Rise",
     "url": "https://oilprice.com/Latest-Energy-News/World-News/ADNOC-Ship-Attacked-in-Hormuz-as-Maritime-Security-Risks-Rise.html",
@@ -154,6 +134,26 @@
       "eversource",
       "national grid",
       "vpps"
+    ],
+    "status": "research_only_unverified",
+    "also_seen_in": []
+  },
+  {
+    "id": "33b7c622f7d6734f22075838",
+    "title": "U.S.-Iran Conflict Flares Again as Gulf Nations Brace for Attacks",
+    "url": "https://oilprice.com/Geopolitics/Middle-East/US-Iran-Conflict-Flares-Again-as-Gulf-Nations-Brace-for-Attacks.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-18T14:30:00+00:00",
+    "category": "Geopolitics",
+    "published_precision": "timestamp",
+    "relevance_score": 68,
+    "keyword_matches": 0,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attacks",
+      "world_context:iran/united states"
     ],
     "status": "research_only_unverified",
     "also_seen_in": []
