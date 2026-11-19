@@ -54,6 +54,11 @@ def create(rss, discovery, releases=None, *, now=None):
     latest_r=as_time(successful_r_runs[-1]["run_utc"]) if successful_r_runs else None
     latest_g=as_time(successful_g_runs[-1]["run_utc"]) if successful_g_runs else None
     gal_gaps=[]
+    repeated_feed_payloads = sum(
+        earlier.get("feed_payload_sha256") is not None
+        and earlier.get("feed_payload_sha256")==later.get("feed_payload_sha256")
+        for earlier,later in zip(successful_g_runs,successful_g_runs[1:])
+    )
     for earlier,later in zip(successful_g_runs,successful_g_runs[1:]):
         a,b=as_time(earlier["run_utc"]),as_time(later["run_utc"])
         if a is None or b is None:
@@ -178,6 +183,7 @@ def create(rss, discovery, releases=None, *, now=None):
         "official_failed_scans":len(r_runs)-len(successful_r_runs),
         "gal_sample_runs":len(g_runs),
         "gal_successful_samples":sum(x.get("status")=="ok" for x in g_runs),
+        "gal_repeated_feed_payloads":repeated_feed_payloads,
         "gal_failed_samples":sum(x.get("status")!="ok" for x in g_runs),
         "observed_sampling_gaps":gal_gaps[-30:],
         "seven_day_start_gap_minutes":start_gap,
@@ -204,7 +210,7 @@ def report(rss_path, discovery_path, releases_path, outdir, *, now=None):
            f"Observed history span: **{r['history_span_days']} days**",
            f"RSS scans: **{r['official_scan_runs']}** (above 80% feed quorum: {r['official_successful_scans']}, all feeds connected: {r['official_fully_connected_scans']}, below quorum: {r['official_failed_scans']})",
            f"Sources whose newest publisher item is within seven days: **{r['feed_publication_activity_counts'].get('publication_within_7d',0)}** / {len(r['feed_publication_activity'])}",
-           f"GDELT GAL samples: **{r['gal_sample_runs']}** (successful: {r['gal_successful_samples']}, degraded: {r['gal_failed_samples']})",
+           f"GDELT GAL samples: **{r['gal_sample_runs']}** (successful: {r['gal_successful_samples']}, degraded: {r['gal_failed_samples']}, repeated payload fingerprints: {r['gal_repeated_feed_payloads']})",
            f"GDELT intervals longer than {MAX_GAL_GAP_MINUTES} minutes: **{len(r['observed_sampling_gaps'])}**",
            f"Gap from seven-day window start to first GAL sample: **{r['seven_day_start_gap_minutes']} min**",
            f"Age of latest successful GAL sample: **{r['latest_gal_age_minutes']} min**","",

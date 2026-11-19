@@ -125,6 +125,14 @@ class MetricsTests(unittest.TestCase):
         self.assertEqual(r["feed_publication_activity_counts"]["no_publication_in_7d"],1)
         self.assertEqual(r["failing_sources"],[])
 
+    def test_repeated_gal_payload_is_visible_without_being_falsely_called_outage(self):
+        r=create({},{"gal_runs":[
+            {"run_utc":stamp(20),"status":"ok","feed_payload_sha256":"same-a"},
+            {"run_utc":stamp(10),"status":"ok","feed_payload_sha256":"same-a"},
+            {"run_utc":stamp(2),"status":"ok","feed_payload_sha256":"new-b"}]},now=NOW)
+        self.assertEqual(r["gal_repeated_feed_payloads"],1)
+        self.assertEqual(len(r["observed_sampling_gaps"]),0)
+
     def test_report_outputs_readable_files(self):
         with tempfile.TemporaryDirectory() as d:
             root=Path(d)

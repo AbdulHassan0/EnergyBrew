@@ -7,6 +7,7 @@ licensed article text, fact checking, automatic publication, or subscriber mail.
 from __future__ import annotations
 import argparse
 import json
+import hashlib
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.request import Request, urlopen
@@ -19,6 +20,40 @@ from editorial import evaluate, non_article_reason
 FEED_URL = "https://data.gdeltproject.org/gdeltv3/gal/feed.rss"
 MAX_BYTES = 15_000_000
 MAX_RELEVANT = 400
+MAX_INDEX_AGE_MINUTES = 45
+MAX_FUTURE_INDEX_MINUTES = 5
+
+
+def index_window_health(xml_bytes, now):
+    """Assess ALL index timestamps, not just energy articles. Never label a stale GAL
+    response successful simply because it parses as valid XML.
+    """
+    root = ET.fromstring(xml_bytes)
+    if local(root.tag) not in ("rss", "rdf", "feed"):
+        raise ValueError("GDELT GAL response is not RSS/Atom")
+    if local(root.tag) == "rss" and not any(local(x.tag) == "channel" for x in root):
+        raise ValueError("GAL RSS is missing channel")
+    entries = [x for x in root.iter() if local(x.tag) in ("item", "entry")]
+    if not entries:
+        raise ValueError("GAL returned zero entries; global index health unknown")
+    stamps = []
+    for entry in entries:
+        stamp = published_date(entry)
+        if stamp and stamp <= now + timedelta(minutes=MAX_FUTURE_INDEX_MINUTES):
+            stamps.append(stamp)
+    if not stamps:
+        raise ValueError("GAL had no valid, nonfuture index timestamps")
+    newest = max(stamps)
+    lag = round((now - newest).total_seconds() / 60, 1)
+    return {
+        "feed_newest_index_utc": utc_stamp(newest),
+        "feed_index_lag_minutes": lag,
+        "feed_entry_count": len(entries),
+        "feed_timestamped_entries": len(stamps),
+        "feed_payload_sha256": hashlib.sha256(xml_bytes).hexdigest()[:16],
+        "upstream_stale": lag > MAX_INDEX_AGE_MINUTES,
+    }
+
 
 
 def fetch_gal(url=FEED_URL):
@@ -131,6 +166,10 @@ def collect_gal(state_path, outdir, *, now=None, fetcher=None):
         payload,status=fetcher(FEED_URL)
         if not 200<=status<300:
             raise ValueError(f"GAL returned HTTP {status}")
+        window = index_window_health(payload, now)
+        summary.update(window)
+        if window["upstream_stale"]:
+            raise ValueError(f"GAL upstream feed stale: newest index time {window['feed_index_lag_minutes']} minutes old")
         parsed,rejected,raw_count=parse_gal(payload,now)
         summary.update(status="ok",raw_feed_items=raw_count,
                        high_signal_items=len(parsed),rejected=rejected,http_status=status)
@@ -165,7 +204,8 @@ def collect_gal(state_path, outdir, *, now=None, fetcher=None):
     summary["combined_research_leads_24h"]=len(recent)
     state["leads"]=retained
     state.setdefault("gal_runs",[]).append({k:summary[k] for k in
-        ("run_utc","status","raw_feed_items","high_signal_items","new_unique_links")})
+        ("run_utc","status","raw_feed_items","high_signal_items","new_unique_links",
+         "feed_newest_index_utc","feed_index_lag_minutes","feed_payload_sha256") if k in summary})
     run_retention_cutoff=now-timedelta(days=8)
     state["gal_runs"]=[r for r in state["gal_runs"] if
         (_datetime(r.get("run_utc")) or run_retention_cutoff)>=run_retention_cutoff][-1800:]
@@ -183,6 +223,9 @@ def collect_gal(state_path, outdir, *, now=None, fetcher=None):
         f"Run: {summary['run_utc']}",
         f"Status: **{summary['status']}**",
         f"RSS entries examined: **{summary['raw_feed_items']}**",
+        f"Latest GDELT index timestamp: **{summary.get('feed_newest_index_utc', 'unknown')}**",
+        f"Index lag (minutes): **{summary.get('feed_index_lag_minutes', 'unknown')}**",
+        f"Upstream feed stale: **{summary.get('upstream_stale', 'unknown')}**",
         f"High-signal sampled entries: **{summary['high_signal_items']}**",
         f"Minutes since previous scheduled sample: **{summary['minutes_since_previous_sample']}**",
         f"Potential gap in rolling feed sampling: **{summary['potential_sampling_gap']}**",

@@ -10,7 +10,7 @@ from gal import parse_gal, collect_gal
 NOW=datetime(2026,11,18,15,0,tzinfo=timezone.utc)
 
 def feed(title="Cheniere LNG expansion advances",
-         date="Wed, 18 Nov 2026 14:00:00 GMT",
+         date="Wed, 18 Nov 2026 14:45:00 GMT",
          url="https://example.com/new-lng-project?utm_source=gal"):
     return (f'<rss version="2.0"><channel><title>GAL</title><item>'
             f'<title>{title}</title><link>{url}</link>'
@@ -134,6 +134,36 @@ class GalTests(unittest.TestCase):
             self.assertIn("lng_exports",item["topics"])
             self.assertIn("gal_rolling_sample",item["topics"])
             self.assertFalse(item["published_time_verified"])
+
+    def test_empty_but_parseable_gal_is_not_marked_healthy(self):
+        with tempfile.TemporaryDirectory() as d:
+            r=collect_gal(Path(d)/"state.json",Path(d)/"out",now=NOW,
+                          fetcher=lambda _: (b"<rss><channel></channel></rss>",200))
+            self.assertEqual(r["status"],"degraded")
+            self.assertIn("zero entries",r["error"])
+
+    def test_old_index_200_is_reported_stale_instead_of_success(self):
+        with tempfile.TemporaryDirectory() as d:
+            old=feed(date="Wed, 18 Nov 2026 11:00:00 GMT")
+            r=collect_gal(Path(d)/"state.json",Path(d)/"out",now=NOW,
+                          fetcher=lambda _: (old,200))
+            self.assertEqual(r["status"],"degraded")
+            self.assertTrue(r["upstream_stale"])
+            self.assertGreater(r["feed_index_lag_minutes"],45)
+            stored=json.loads((Path(d)/"state.json").read_text())
+            self.assertEqual(stored["gal_runs"][-1]["status"],"degraded")
+
+    def test_good_gal_records_index_timestamp_and_payload_hash_without_body(self):
+        with tempfile.TemporaryDirectory() as d:
+            r=collect_gal(Path(d)/"state.json",Path(d)/"out",now=NOW,
+                          fetcher=lambda _: (feed(),200))
+            self.assertEqual(r["status"],"ok")
+            self.assertEqual(r["feed_index_lag_minutes"],15.0)
+            self.assertEqual(len(r["feed_payload_sha256"]),16)
+            stored=json.loads((Path(d)/"state.json").read_text())
+            self.assertEqual(stored["gal_runs"][-1]["feed_payload_sha256"],
+                             r["feed_payload_sha256"])
+            self.assertNotIn("article_body",str(stored))
 
     def test_network_failure_recorded_without_state_loss(self):
         with tempfile.TemporaryDirectory() as d:
