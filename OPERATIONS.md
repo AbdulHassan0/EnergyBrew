@@ -66,3 +66,40 @@ State branch commits on every scan are a convenient pilot method, **not appropri
 ## Next commercial news-source expansion
 
 Specialist energy publishers (S&P Global Energy, NGI, RBN, Argus, Reuters, etc.) offer far better headline coverage than official newsrooms. However, being able to view or subscribe to an RSS feed is not a commercial right to poll or republish it. Obtain a feed/news/API license where required. Prefer metadata/original links, original summaries based on facts, and a record of usage rights and allowed retention.
+
+## Workflow notifications and failure triage — November 19, 2026
+
+**Background:** GitHub sent repeated "EnergyBrew live RSS collection: All jobs
+have failed" emails during rapid development. Investigation of specific
+November 19 runs (including 44532719422 and 44534002288) found failures in
+new morning regression test fixtures, NOT proof that all RSS feeds were down.
+The prior workflow also continued its "always" public-metadata guard despite
+never restoring state, creating a misleading second SafetyError.
+
+**Permanent separation:**
+
+- \`news-logic-ci.yml\` runs all Python tests on collection-code/test changes,
+  without hitting external news feeds, publishing metadata or claiming a live
+  run. **Code test failures report under "news logic CI" only.**
+- \`live-collector.yml\` runs on its four daily scheduled slots or deliberate
+  manual dispatch, not each push. The live run still performs its critical RSS
+  and public-source safety tests. The safety gate and state push run only
+  after the earlier required steps succeed.
+- \`frequent-gal.yml\`, \`hourly-discovery.yml\` and
+  \`morning-news-readiness.yml\` are time- or manually triggered only, rather
+  than also firing on development pushes.
+- \`scheduler-audit.yml\` audits scheduling once daily rather than hourly.
+  A genuine sustained missed-schedule incident may still produce a **real
+  failure notification**. This is deliberate; don't suppress genuine outages.
+- A failing source scan, failed public-metadata guard, or failed morning
+  readiness is actionable and should remain visible in Actions.
+
+**Proof:** First separate CI run
+\`https://github.com/AbdulHassan0/EnergyBrew/actions/runs/44536947333\`
+passed 211 tests. No live RSS collector was triggered by that commit.
+
+**Still unproven:** the next scheduled RSS run must succeed on the new
+configuration, and persistent hosting is not deployed. GitHub schedules
+remain best effort. This workflow change cannot stop notification emails
+for *historically* failed runs or control the GitHub notification preference
+on the user's account.
