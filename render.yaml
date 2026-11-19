@@ -1,0 +1,22 @@
+# Pilot infrastructure blueprint: news collection only. NO EMAIL OR FRONTEND.
+# Requires a paid Render background worker + persistent disk.
+# Creating a Blueprint can incur compute and disk charges. Not auto-provisioned.
+services:
+  - type: worker
+    name: energybrew-news-collector
+    runtime: docker
+    repo: https://github.com/AbdulHassan0/EnergyBrew
+    branch: main
+    dockerfilePath: ./Dockerfile.render
+    region: ohio
+    plan: 0.5c-512mb
+    numInstances: 1
+    disk:
+      name: research-metadata
+      mountPath: /data
+      sizeGB: 1
+    envVars:
+      - key: ENERGYBREW_STATE_ROOT
+        value: /data
+      - key: ENERGYBREW_TIME_ZONE
+        value: America/Chicago
