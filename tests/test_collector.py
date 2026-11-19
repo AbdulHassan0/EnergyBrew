@@ -27,17 +27,30 @@ class CollectorTests(unittest.TestCase):
         from collector import main
         with tempfile.TemporaryDirectory() as d:
             seen=set()
+            active=0
+            maximum=0
             guard=threading.Lock()
+            ready=threading.Event()
             def fake(url):
+                nonlocal active,maximum
                 with guard:
                     seen.add(threading.get_ident())
-                return fixture_fetch(url)
+                    active+=1
+                    maximum=max(active,maximum)
+                    if len(seen)>=3:
+                        ready.set()
+                if not ready.wait(timeout=5):
+                    raise AssertionError("RSS CLI did not start three parallel workers")
+                result=fixture_fetch(url)
+                with guard:
+                    active-=1
+                return result
             with patch("collector.fetch_feed",side_effect=fake):
                 rc=main(["--state",str(Path(d)/"articles.json"),
                          "--output",str(Path(d)/"out")])
             self.assertEqual(rc,0)
-            self.assertGreater(len(seen),1)
-            self.assertLessEqual(len(seen),5)
+            self.assertGreaterEqual(len(seen),3)
+            self.assertLessEqual(maximum,5)
             self.assertTrue((Path(d)/"articles.json").exists())
 
     def test_rss_dates_links(self):

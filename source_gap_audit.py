@@ -13,10 +13,9 @@ from collections import Counter
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from collector import clean_url, SOURCES
+from collector import SOURCES
 from event_dedup import same_event
-from research_desk import (CATEGORY_ORDER, as_time, entry, is_english_script,
-                           load, low_market_impact_signal, marketing_signal)
+from research_desk import CATEGORY_ORDER, as_time, entry, load
 
 MAX_GAP_ROWS = 18
 MAX_PER_CATEGORY = 3
@@ -167,6 +166,14 @@ def reconcile(rss, discovery, releases=None, *, now=None):
     }
 
 
+def _plain_markdown_label(text):
+    """Publisher-controlled titles must not inject new Markdown formatting."""
+    import re
+    result = re.sub(r"[\\r\\n\\t]+", " ", str(text or ""))
+    result = re.sub(r"[<>\\[\\]\\`*_!]", "", result)
+    return result.replace("\\\\", "").replace("|", " ").strip()[:300]
+
+
 def write_report(report, directory):
     directory=Path(directory)
     directory.mkdir(parents=True, exist_ok=True)
@@ -185,7 +192,7 @@ def write_report(report, directory):
     ]
     for i,item in enumerate(report["high_priority_discovery_only_leads_for_review"],1):
         lines.append(
-            f"{i}. [{item['title'].replace('[','').replace(']','')}]"
+            f"{i}. [{_plain_markdown_label(item['title'])}]"
             f"({item['url']}) — {item['category']} | {item['domain']}"
             " (GDELT index-only timestamp; unverified)")
     if not report["high_priority_discovery_only_leads_for_review"]:

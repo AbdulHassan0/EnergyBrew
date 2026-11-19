@@ -75,6 +75,15 @@ class GapAuditTests(unittest.TestCase):
             self.assertEqual(payload["status"],"source_gap_triage_not_a_verified_recall_score")
             self.assertIn("not proof",(Path(temp)/"source_gap.md").read_text().lower())
 
+    def test_untrusted_publisher_title_cannot_create_markdown_links(self):
+        from source_gap_audit import _plain_markdown_label
+        result = _plain_markdown_label('LNG [fake](https://fake.test) | <script>')
+        self.assertNotIn('[', result)
+        self.assertNotIn(']', result)
+        self.assertNotIn('<', result)
+        self.assertNotIn('|', result)
+        self.assertIn('LNG fake', result)
+
     def test_rejects_naive_now(self):
         with self.assertRaises(ValueError):
             reconcile({}, {},now=datetime(2026,11,19,14,0))
