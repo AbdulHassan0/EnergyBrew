@@ -1,41 +1,41 @@
 {
-  "generated_utc": "2026-11-19T03:50:01.553220+00:00",
+  "generated_utc": "2026-11-19T11:00:26.653074+00:00",
   "status": "research_only_not_approved",
-  "unique_relevant_urls_7d": 208,
+  "unique_relevant_urls_7d": 251,
   "selected_research_links": 32,
   "unique_domains_in_selection": 18,
   "queue_counts": {
     "system_operator_primary_24h": 1,
-    "specialist_publisher_24h": 22,
-    "older_official_context": 10,
+    "specialist_publisher_24h": 18,
+    "older_official_context": 14,
     "timestamped_official": 2,
     "regulatory_date_only": 4,
-    "discovery_unverified": 154,
+    "discovery_unverified": 197,
     "company_release_unverified": 15
   },
   "selected_category_counts": {
-    "Natural Gas": 6,
-    "LNG": 7,
+    "Natural Gas": 7,
+    "LNG": 6,
     "Power & Electricity": 8,
     "Oil & Energy": 2,
     "Infrastructure & Investment": 1,
     "Geopolitics": 8
   },
   "selected_topic_coverage_counts": {
-    "Natural Gas": 6,
-    "LNG": 7,
+    "Natural Gas": 7,
+    "LNG": 6,
     "Power & Electricity": 8,
-    "Oil & Energy": 6,
-    "Infrastructure & Investment": 11,
+    "Oil & Energy": 7,
+    "Infrastructure & Investment": 12,
     "Geopolitics": 8
   },
   "missing_categories": [],
   "publisher_timestamped_official_24h": 2,
-  "publisher_timestamped_specialist_24h": 22,
+  "publisher_timestamped_specialist_24h": 18,
   "system_operator_primary_24h": 1,
-  "likely_same_event_links_suppressed": 3,
+  "likely_same_event_links_suppressed": 6,
   "discovery_publisher_dates_verified": 0,
-  "promotional_or_language_review_count": 4,
+  "promotional_or_language_review_count": 1,
   "stories": [
     {
       "title": "PJM Board Approves Transmission Project Changes to Support Grid Reliability",
@@ -339,7 +339,7 @@
       "observed_time_utc": "2026-11-18T05:00:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "date_only",
-      "within_24h_on_own_time_basis": true,
+      "within_24h_on_own_time_basis": false,
       "needs_editor_review": [],
       "editorial_status": "research_only_not_approved",
       "other_origins": [],
@@ -453,13 +453,131 @@
       "observed_time_utc": "2026-11-18T05:00:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "date_only",
-      "within_24h_on_own_time_basis": true,
+      "within_24h_on_own_time_basis": false,
       "needs_editor_review": [],
       "editorial_status": "research_only_not_approved",
       "other_origins": [],
       "independent_corroboration_verified": false,
       "queue": "regulatory_date_only",
       "rank": 106
+    },
+    {
+      "title": "Iran's attacks on ships in the Strait of Hormuz escalate",
+      "url": "https://www.wknofm.org/2026-11-19/irans-attacks-on-ships-in-the-strait-of-hormuz-escalate",
+      "domain": "www.wknofm.org",
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:strait of hormuz",
+        "geopolitical_event:attacks",
+        "world_context:iran"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-19T10:47:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
+    },
+    {
+      "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
+      "url": "https://www.winnipegfreepress.com/arts-and-life/life/greenpage/2026/11/19/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy-shock-iea-says",
+      "domain": "www.winnipegfreepress.com",
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:energy",
+        "geopolitical_event:war",
+        "world_context:iran"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-19T10:47:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102,
+      "related_reports": [
+        {
+          "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
+          "url": "https://www.ktvo.com/news/nation-world/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy/article_700273e3-39b2-59a1-8b62-97b3313798cf.html",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
+          "url": "https://kdhnews.com/news/nation/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy/article_7c74bad0-b589-5647-ae81-0bfd0aedc630.html",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
+          "url": "https://www.couriernews.com/news/business/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy/article_baf9fbb9-0b63-50ee-805a-73089f8418a8.html",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
+          "url": "https://www.thesunchronicle.com/business/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy/article_8799d6a5-5a86-5b36-9fc1-58b76eed83f2.html",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        }
+      ]
+    },
+    {
+      "title": "Ammonnews : Jordanian sailor missing after oil tanker attack in Strait of Hormuz",
+      "url": "http://en.ammonnews.net/article/97318",
+      "domain": "en.ammonnews.net",
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics",
+        "Oil & Energy"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:oil",
+        "geopolitical_event:attack",
+        "world_context:strait of hormuz"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-19T10:46:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
     },
     {
       "title": "Bahrain's war-hit Sitra refinery weeks away from full capacity, Bapco Energies CEO says | The National",
@@ -520,33 +638,6 @@
       "independent_corroboration_verified": false,
       "queue": "discovery_unverified",
       "rank": 102
-    },
-    {
-      "title": "Woodside and Trafigura sign off on decade-long LNG deal",
-      "url": "https://www.offshore-energy.biz/2026/11/18/woodside-and-trafigura-sign-off-on-decade-long-lng-deal",
-      "domain": "www.offshore-energy.biz",
-      "source": "Offshore Energy News",
-      "source_class": "specialist_publisher",
-      "category": "LNG",
-      "coverage_themes": [
-        "LNG"
-      ],
-      "relevance_score": 45,
-      "relevance_evidence": [
-        "lng"
-      ],
-      "origin": "official_rss",
-      "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-18T09:16:02+00:00",
-      "publisher_time_verified": true,
-      "date_confidence": "publisher_rss_timestamp",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "specialist_publisher_24h",
-      "rank": 100
     },
     {
       "title": "Energy Secretary Acts to Protect Mid-Atlantic Grid",
@@ -662,34 +753,6 @@
       "rank": 85
     },
     {
-      "title": "PLSV under construction to work for Petrobras from end of 2028",
-      "url": "https://www.offshore-energy.biz/2026/11/18/plsv-under-construction-to-work-for-petrobras-from-end-of-2028",
-      "domain": "www.offshore-energy.biz",
-      "source": "Offshore Energy News",
-      "source_class": "specialist_publisher",
-      "category": "Oil & Energy",
-      "coverage_themes": [
-        "Oil & Energy",
-        "Infrastructure & Investment"
-      ],
-      "relevance_score": 27,
-      "relevance_evidence": [
-        "petrobras"
-      ],
-      "origin": "official_rss",
-      "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-18T09:26:31+00:00",
-      "publisher_time_verified": true,
-      "date_confidence": "publisher_rss_timestamp",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "specialist_publisher_24h",
-      "rank": 82
-    },
-    {
       "title": "Eastern Shore Natural Gas Company; Notice of Scoping Period Requesting Comments on Environmental Issues for the Proposed Delmar Regional Enhancement Project",
       "url": "https://www.federalregister.gov/documents/2026/11/17/2026-23361/eastern-shore-natural-gas-company-notice-of-scoping-period-requesting-comments-on-environmental",
       "domain": "www.federalregister.gov",
@@ -718,6 +781,62 @@
       "rank": 79
     },
     {
+      "title": "Tanzania, Uganda fast-track crude oil pipeline completion - Channel Africa",
+      "url": "https://www.channelafrica.co.za/channelafrica/news/tanzania-uganda-fast-track-crude-oil-pipeline-completion",
+      "domain": "www.channelafrica.co.za",
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Oil & Energy",
+      "coverage_themes": [
+        "Oil & Energy",
+        "Infrastructure & Investment"
+      ],
+      "relevance_score": 66,
+      "relevance_evidence": [
+        "crude oil",
+        "oil pipeline"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-19T10:47:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 78
+    },
+    {
+      "title": "Woodside and Trafigura sign off on decade-long LNG deal",
+      "url": "https://www.offshore-energy.biz/2026/11/18/woodside-and-trafigura-sign-off-on-decade-long-lng-deal",
+      "domain": "www.offshore-energy.biz",
+      "source": "Offshore Energy News",
+      "source_class": "specialist_publisher",
+      "category": "LNG",
+      "coverage_themes": [
+        "LNG"
+      ],
+      "relevance_score": 45,
+      "relevance_evidence": [
+        "lng"
+      ],
+      "origin": "official_rss",
+      "time_basis": "specialist_publisher_rss_timestamp",
+      "observed_time_utc": "2026-11-18T09:16:02+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
+      "within_24h_on_own_time_basis": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "older_official_context",
+      "rank": 75
+    },
+    {
       "title": "Northwest Pipeline, LLC; Notice of Scoping Period Requesting Comments on Environmental Issues for the Planned Silver Spur Project and Notice of Public Scoping Sessions",
       "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23441/northwest-pipeline-llc-notice-of-scoping-period-requesting-comments-on-environmental-issues-for-the",
       "domain": "www.federalregister.gov",
@@ -737,7 +856,7 @@
       "observed_time_utc": "2026-11-18T05:00:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "date_only",
-      "within_24h_on_own_time_basis": true,
+      "within_24h_on_own_time_basis": false,
       "needs_editor_review": [],
       "editorial_status": "research_only_not_approved",
       "other_origins": [],
@@ -746,106 +865,32 @@
       "rank": 70
     },
     {
-      "title": "US Navy Used Expired Weapons in Iran War Amid Munitions Shortage",
-      "url": "https://www.deccanchronicle.com/world/americas/us-navy-used-expired-weapons-in-iran-war-amid-munitions-shortage-2005763",
-      "domain": "www.deccanchronicle.com",
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
+      "title": "Shell kicks off gas production from its deepwater project in Southeast Asia",
+      "url": "https://www.offshore-energy.biz/2026/11/17/shell-kicks-off-gas-production-from-its-deepwater-project-in-southeast-asia",
+      "domain": "www.offshore-energy.biz",
+      "source": "Offshore Energy News",
+      "source_class": "specialist_publisher",
+      "category": "Natural Gas",
       "coverage_themes": [
-        "Geopolitics"
+        "Natural Gas",
+        "Infrastructure & Investment"
       ],
-      "relevance_score": 68,
+      "relevance_score": 33,
       "relevance_evidence": [
-        "energy_market_exposure:inferred_high_risk_region",
-        "geopolitical_event:war",
-        "world_context:iran/united states"
+        "gas production"
       ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-19T03:46:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [
-        "energy_market_exposure_inferred"
-      ],
+      "origin": "official_rss",
+      "time_basis": "specialist_publisher_rss_timestamp",
+      "observed_time_utc": "2026-11-17T08:53:26+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
+      "within_24h_on_own_time_basis": false,
+      "needs_editor_review": [],
       "editorial_status": "research_only_not_approved",
       "other_origins": [],
       "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 62
-    },
-    {
-      "title": "Ukraine war briefing: Russia asks if Netherlands has joined conflict after Crimea bridge strike - AOL",
-      "url": "https://www.aol.co.uk/articles/ukraine-war-briefing-russia-asks-021626000.html",
-      "domain": "www.aol.co.uk",
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics"
-      ],
-      "relevance_score": 68,
-      "relevance_evidence": [
-        "energy_market_exposure:inferred_high_risk_region",
-        "geopolitical_event:strike",
-        "world_context:russia/ukraine"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-19T03:46:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [
-        "energy_market_exposure_inferred"
-      ],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 62
-    },
-    {
-      "title": "\"We don't need any help\": Trump claims US has defeated Iran's military, rules out seeking assistance from China, Russia",
-      "url": "http://www.heraldglobe.com/news/279442005/we-dont-need-any-help-trump-claims-us-has-defeated-iran-military-rules-out-seeking-assistance-from-china-russia",
-      "domain": "www.heraldglobe.com",
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics"
-      ],
-      "relevance_score": 68,
-      "relevance_evidence": [
-        "energy_market_exposure:inferred_high_risk_region",
-        "geopolitical_event:military",
-        "world_context:iran/united states"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-19T03:46:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [
-        "energy_market_exposure_inferred"
-      ],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 62,
-      "related_reports": [
-        {
-          "title": "\"We don't need any help\": Trump claims US has defeated Iran's military, rules out seeking assistance from China, Russia",
-          "url": "http://www.middleeaststar.com/news/279442005/we-dont-need-any-help-trump-claims-us-has-defeated-iran-military-rules-out-seeking-assistance-from-china-russia",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        }
-      ]
+      "queue": "older_official_context",
+      "rank": 63
     },
     {
       "title": "Thành phố Hải Phòng đề xuất thêm 2 dự án điện khí LNG mới",
@@ -918,33 +963,6 @@
       "origin": "global_discovery",
       "time_basis": "gdelt_gal_rss_provider_time_unverified",
       "observed_time_utc": "2026-11-18T21:17:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 57
-    },
-    {
-      "title": "Golar LNG: 3 Key Takeaways for Long-Term Investors | The Motley Fool",
-      "url": "https://www.fool.com/earnings/takeaways/2026/11/18/golar-lng-3-key-takeaways-for-long-term-investors?source=iedfolrf0000001",
-      "domain": "www.fool.com",
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "LNG",
-      "coverage_themes": [
-        "LNG"
-      ],
-      "relevance_score": 45,
-      "relevance_evidence": [
-        "lng"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-18T20:46:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,

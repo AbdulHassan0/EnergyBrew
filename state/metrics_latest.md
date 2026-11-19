@@ -1,16 +1,16 @@
 # EnergyBrew collection reliability and volume
 
-Generated: 2026-11-19T03:50:02.280703+00:00
+Generated: 2026-11-19T11:00:27.565264+00:00
 Status: **degraded**
 Seven-day pilot complete: **False**
-Observed history span: **0.68 days**
+Observed history span: **0.98 days**
 RSS scans: **60** (above 80% feed quorum: 60, all feeds connected: 57, below quorum: 0)
 Sources whose newest publisher item is within seven days: **8** / 15
 RSS transient retries in retained scan history: **0**; recovered source events: **0**
-GDELT GAL samples: **57** (successful: 57, degraded: 0, repeated payload fingerprints: 9)
-GDELT intervals longer than 15 minutes: **6**
-Gap from seven-day window start to first GAL sample: **9521.4 min**
-Age of latest successful GAL sample: **0.1 min**
+GDELT GAL samples: **58** (successful: 58, degraded: 0, repeated payload fingerprints: 9)
+GDELT intervals longer than 15 minutes: **7**
+Gap from seven-day window start to first GAL sample: **9091.0 min**
+Age of latest successful GAL sample: **0.2 min**
 
 | UTC day | Official scans | GAL samples | Timestamped agency | Specialist RSS | Grid operator | High-signal agency | GDELT first-seen URLs | Release-feed URLs |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -20,27 +20,27 @@ Age of latest successful GAL sample: **0.1 min**
 | 2026-11-16 | 0 | 0 | 3 | 0 | 2 | 1 | 0 | 0 |
 | 2026-11-17 | 0 | 0 | 5 | 15 | 0 | 1 | 0 | 0 |
 | 2026-11-18 | 48 | 41 | 2 | 32 | 1 | 2 | 127 | 15 |
-| 2026-11-19 | 12 | 16 | 0 | 3 | 0 | 0 | 55 | 0 |
+| 2026-11-19 | 12 | 17 | 0 | 3 | 0 | 0 | 98 | 0 |
 
 ## Feed content age — independent of network connectivity
 
 | Feed | Most recent item in feed | Age (h) | Publication activity |
 |---|---|---:|---|
-| EIA Congressional Testimony | 2021-11-16T14:00:00+00:00 | 43885.8 | no_publication_in_7d |
-| EIA Presentations | 2026-03-04T14:00:00+00:00 | 6229.8 | no_publication_in_7d |
-| US NRC Nuclear News | 2026-09-14T08:00:00+00:00 | 1579.8 | no_publication_in_7d |
-| DOE Hydrocarbons Blog | 2026-10-29T20:16:57+00:00 | 487.6 | no_publication_in_7d |
-| DOE Grid Deployment | 2026-10-30T14:42:15+00:00 | 469.1 | no_publication_in_7d |
-| DOE Hydrocarbons Releases | 2026-11-04T05:00:00+00:00 | 358.8 | no_publication_in_7d |
-| EIA Press Releases | 2026-11-10T17:00:00+00:00 | 202.8 | no_publication_in_7d |
-| European Commission DG Energy | 2026-11-17T23:00:00+00:00 | 28.8 | publication_within_7d |
-| Federal Register notices | 2026-11-18T05:00:00+00:00 | 22.8 | publication_within_7d |
-| EIA Today in Energy | 2026-11-18T14:00:00+00:00 | 13.8 | publication_within_7d |
-| Offshore Energy News | 2026-11-18T15:07:53+00:00 | 12.7 | publication_within_7d |
-| Utility Dive News | 2026-11-18T15:57:17+00:00 | 11.9 | publication_within_7d |
-| DOE Energy News | 2026-11-18T18:06:31+00:00 | 9.7 | publication_within_7d |
-| PJM Inside Lines | 2026-11-18T18:56:18+00:00 | 8.9 | publication_within_7d |
-| OilPrice.com News | 2026-11-19T02:00:00+00:00 | 1.8 | publication_within_7d |
+| EIA Congressional Testimony | 2021-11-16T14:00:00+00:00 | 43893.0 | no_publication_in_7d |
+| EIA Presentations | 2026-03-04T14:00:00+00:00 | 6237.0 | no_publication_in_7d |
+| US NRC Nuclear News | 2026-09-14T08:00:00+00:00 | 1587.0 | no_publication_in_7d |
+| DOE Hydrocarbons Blog | 2026-10-29T20:16:57+00:00 | 494.7 | no_publication_in_7d |
+| DOE Grid Deployment | 2026-10-30T14:42:15+00:00 | 476.3 | no_publication_in_7d |
+| DOE Hydrocarbons Releases | 2026-11-04T05:00:00+00:00 | 366.0 | no_publication_in_7d |
+| EIA Press Releases | 2026-11-10T17:00:00+00:00 | 210.0 | no_publication_in_7d |
+| European Commission DG Energy | 2026-11-17T23:00:00+00:00 | 36.0 | publication_within_7d |
+| Federal Register notices | 2026-11-18T05:00:00+00:00 | 30.0 | publication_within_7d |
+| EIA Today in Energy | 2026-11-18T14:00:00+00:00 | 21.0 | publication_within_7d |
+| Offshore Energy News | 2026-11-18T15:07:53+00:00 | 19.9 | publication_within_7d |
+| Utility Dive News | 2026-11-18T15:57:17+00:00 | 19.1 | publication_within_7d |
+| DOE Energy News | 2026-11-18T18:06:31+00:00 | 16.9 | publication_within_7d |
+| PJM Inside Lines | 2026-11-18T18:56:18+00:00 | 16.1 | publication_within_7d |
+| OilPrice.com News | 2026-11-19T02:00:00+00:00 | 9.0 | publication_within_7d |
 
 Some regulator and testimony feeds are naturally intermittent; an old item does not imply collection failure.
 
@@ -52,7 +52,7 @@ Some regulator and testimony feeds are naturally intermittent; an old item does 
 - None in latest state
 
 ## Warnings
-- 6 observed GAL intervals exceeded 15 minutes
+- 7 observed GAL intervals exceeded 15 minutes
 - 3 RSS scans had incomplete source connectivity
 - Seven-day operating pilot is not yet complete
 

@@ -2,13 +2,13 @@
 
 **Research links only. Not fact-checked, approved, or ready for publication.**
 
-Generated (UTC): 2026-11-19T03:50:01.553220+00:00
-Distinct relevant URLs in retained data: **208**
+Generated (UTC): 2026-11-19T11:00:26.653074+00:00
+Distinct relevant URLs in retained data: **251**
 Selected diverse research leads: **32**
 Publisher-timestamped official leads within 24h: **2**
-Specialist-publisher timestamped links within 24h: **22**
+Specialist-publisher timestamped links within 24h: **18**
 Grid-operator original timestamped links within 24h: **1**
-Likely duplicate links suppressed in the selection: **3**
+Likely duplicate links suppressed in the selection: **6**
 Discovery publisher dates verified: **0**
 
 ## Candidate list
@@ -42,45 +42,42 @@ Discovery publisher dates verified: **0**
    - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-18T15:57:17+00:00). Editorial status: **unapproved**.
 14. **[Algonquin Gas Transmission, LLC; Notice of Application and Establishing Intervention Deadline](https://www.federalregister.gov/documents/2026/11/18/2026-23446/algonquin-gas-transmission-llc-notice-of-application-and-establishing-intervention-deadline)** — Natural Gas | regulatory_notice | score 66
    - Timestamp basis: official_publication_date_only (2026-11-18T05:00:00+00:00). Editorial status: **unapproved**.
-15. **[Bahrain's war-hit Sitra refinery weeks away from full capacity, Bapco Energies CEO says / The National](https://www.thenationalnews.com/business/energy/2026/11/18/bahrains-war-hit-sitra-refinery-weeks-away-from-full-capacity-bapco-energies-ceo-says)** — Geopolitics | global_discovery | score 90
+15. **[Iran's attacks on ships in the Strait of Hormuz escalate](https://www.wknofm.org/2026-11-19/irans-attacks-on-ships-in-the-strait-of-hormuz-escalate)** — Geopolitics | global_discovery | score 90
+   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T10:47:00+00:00). Editorial status: **unapproved**.
+16. **[There is no going back 'to the way it was before' the Iran war's energy shock, IEA says](https://www.winnipegfreepress.com/arts-and-life/life/greenpage/2026/11/19/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy-shock-iea-says)** — Geopolitics | global_discovery | score 90
+   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T10:47:00+00:00). Editorial status: **unapproved**.
+   - 4 likely same-event publisher links preserved for review (not independent corroboration).
+17. **[Ammonnews : Jordanian sailor missing after oil tanker attack in Strait of Hormuz](http://en.ammonnews.net/article/97318)** — Geopolitics | global_discovery | score 90
+   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T10:46:00+00:00). Editorial status: **unapproved**.
+18. **[Bahrain's war-hit Sitra refinery weeks away from full capacity, Bapco Energies CEO says / The National](https://www.thenationalnews.com/business/energy/2026/11/18/bahrains-war-hit-sitra-refinery-weeks-away-from-full-capacity-bapco-energies-ceo-says)** — Geopolitics | global_discovery | score 90
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-18T18:32:00+00:00). Editorial status: **unapproved**.
-16. **[Drone attacks nearly halve Russia November oil refining , sources say](https://www.jpost.com/international/internationalrussia-ukraine-war/article-915337)** — Geopolitics | global_discovery | score 90
+19. **[Drone attacks nearly halve Russia November oil refining , sources say](https://www.jpost.com/international/internationalrussia-ukraine-war/article-915337)** — Geopolitics | global_discovery | score 90
    - Timestamp basis: discovery_index_first_seen_only (2026-11-18T17:30:00+00:00). Editorial status: **unapproved**.
-17. **[Woodside and Trafigura sign off on decade-long LNG deal](https://www.offshore-energy.biz/2026/11/18/woodside-and-trafigura-sign-off-on-decade-long-lng-deal)** — LNG | official_rss | score 45
-   - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-18T09:16:02+00:00). Editorial status: **unapproved**.
-18. **[Energy Secretary Acts to Protect Mid-Atlantic Grid](https://www.energy.gov/articles/energy-secretary-acts-protect-mid-atlantic-grid-0)** — Power & Electricity | official_rss | score 24
+20. **[Energy Secretary Acts to Protect Mid-Atlantic Grid](https://www.energy.gov/articles/energy-secretary-acts-protect-mid-atlantic-grid-0)** — Power & Electricity | official_rss | score 24
    - Timestamp basis: publisher_feed_publication_time (2026-11-18T18:06:31+00:00). Editorial status: **unapproved**.
-19. **[US Oil Inventories On the Rise](https://oilprice.com/Energy/Crude-Oil/US-Oil-Inventories-On-the-Rise.html)** — Oil & Energy | official_rss | score 36
+21. **[US Oil Inventories On the Rise](https://oilprice.com/Energy/Crude-Oil/US-Oil-Inventories-On-the-Rise.html)** — Oil & Energy | official_rss | score 36
    - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-18T15:39:53+00:00). Editorial status: **unapproved**.
-20. **[Oil Price Today (November 19): Brent crude rises to $93 as Trump likely weighs fresh Iran attacks. What are experts saying?](https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-november-19-brent-crude-rises-to-93-as-trump-likely-weighs-fresh-iran-attacks-what-are-experts-saying/articleshow/135975416.cms)** — Geopolitics | global_discovery | score 90
+22. **[Oil Price Today (November 19): Brent crude rises to $93 as Trump likely weighs fresh Iran attacks. What are experts saying?](https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-november-19-brent-crude-rises-to-93-as-trump-likely-weighs-fresh-iran-attacks-what-are-experts-saying/articleshow/135975416.cms)** — Geopolitics | global_discovery | score 90
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T02:46:00+00:00). Editorial status: **unapproved**.
    - Review flags: speculative_geopolitical_headline
-21. **[Orlen spreads its wings across Central and Eastern Europe with new gas pacts](https://www.offshore-energy.biz/2026/11/18/orlen-spreads-its-wings-across-central-and-eastern-europe-with-new-gas-pacts)** — Natural Gas | official_rss | score 30
+23. **[Orlen spreads its wings across Central and Eastern Europe with new gas pacts](https://www.offshore-energy.biz/2026/11/18/orlen-spreads-its-wings-across-central-and-eastern-europe-with-new-gas-pacts)** — Natural Gas | official_rss | score 30
    - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-18T15:07:53+00:00). Editorial status: **unapproved**.
-22. **[PLSV under construction to work for Petrobras from end of 2028](https://www.offshore-energy.biz/2026/11/18/plsv-under-construction-to-work-for-petrobras-from-end-of-2028)** — Oil & Energy | official_rss | score 27
-   - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-18T09:26:31+00:00). Editorial status: **unapproved**.
-23. **[Eastern Shore Natural Gas Company; Notice of Scoping Period Requesting Comments on Environmental Issues for the Proposed Delmar Regional Enhancement Project](https://www.federalregister.gov/documents/2026/11/17/2026-23361/eastern-shore-natural-gas-company-notice-of-scoping-period-requesting-comments-on-environmental)** — Natural Gas | regulatory_notice | score 39
+24. **[Eastern Shore Natural Gas Company; Notice of Scoping Period Requesting Comments on Environmental Issues for the Proposed Delmar Regional Enhancement Project](https://www.federalregister.gov/documents/2026/11/17/2026-23361/eastern-shore-natural-gas-company-notice-of-scoping-period-requesting-comments-on-environmental)** — Natural Gas | regulatory_notice | score 39
    - Timestamp basis: official_publication_date_only (2026-11-17T05:00:00+00:00). Editorial status: **unapproved**.
-24. **[Northwest Pipeline, LLC; Notice of Scoping Period Requesting Comments on Environmental Issues for the Planned Silver Spur Project and Notice of Public Scoping Sessions](https://www.federalregister.gov/documents/2026/11/18/2026-23441/northwest-pipeline-llc-notice-of-scoping-period-requesting-comments-on-environmental-issues-for-the)** — Natural Gas | regulatory_notice | score 30
+25. **[Tanzania, Uganda fast-track crude oil pipeline completion - Channel Africa](https://www.channelafrica.co.za/channelafrica/news/tanzania-uganda-fast-track-crude-oil-pipeline-completion)** — Oil & Energy | global_discovery | score 66
+   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T10:47:00+00:00). Editorial status: **unapproved**.
+26. **[Woodside and Trafigura sign off on decade-long LNG deal](https://www.offshore-energy.biz/2026/11/18/woodside-and-trafigura-sign-off-on-decade-long-lng-deal)** — LNG | official_rss | score 45
+   - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-18T09:16:02+00:00). Editorial status: **unapproved**.
+27. **[Northwest Pipeline, LLC; Notice of Scoping Period Requesting Comments on Environmental Issues for the Planned Silver Spur Project and Notice of Public Scoping Sessions](https://www.federalregister.gov/documents/2026/11/18/2026-23441/northwest-pipeline-llc-notice-of-scoping-period-requesting-comments-on-environmental-issues-for-the)** — Natural Gas | regulatory_notice | score 30
    - Timestamp basis: official_publication_date_only (2026-11-18T05:00:00+00:00). Editorial status: **unapproved**.
-25. **[US Navy Used Expired Weapons in Iran War Amid Munitions Shortage](https://www.deccanchronicle.com/world/americas/us-navy-used-expired-weapons-in-iran-war-amid-munitions-shortage-2005763)** — Geopolitics | global_discovery | score 68
-   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T03:46:00+00:00). Editorial status: **unapproved**.
-   - Review flags: energy_market_exposure_inferred
-26. **[Ukraine war briefing: Russia asks if Netherlands has joined conflict after Crimea bridge strike - AOL](https://www.aol.co.uk/articles/ukraine-war-briefing-russia-asks-021626000.html)** — Geopolitics | global_discovery | score 68
-   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T03:46:00+00:00). Editorial status: **unapproved**.
-   - Review flags: energy_market_exposure_inferred
-27. **["We don't need any help": Trump claims US has defeated Iran's military, rules out seeking assistance from China, Russia](http://www.heraldglobe.com/news/279442005/we-dont-need-any-help-trump-claims-us-has-defeated-iran-military-rules-out-seeking-assistance-from-china-russia)** — Geopolitics | global_discovery | score 68
-   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T03:46:00+00:00). Editorial status: **unapproved**.
-   - Review flags: energy_market_exposure_inferred
-   - 1 likely same-event publisher links preserved for review (not independent corroboration).
-28. **[Thành phố Hải Phòng đề xuất thêm 2 dự án điện khí LNG mới](https://baodautu.vn/thanh-pho-hai-phong-de-xuat-them-2-du-an-dien-khi-lng-moi-d746022.html)** — LNG | global_discovery | score 45
+28. **[Shell kicks off gas production from its deepwater project in Southeast Asia](https://www.offshore-energy.biz/2026/11/17/shell-kicks-off-gas-production-from-its-deepwater-project-in-southeast-asia)** — Natural Gas | official_rss | score 33
+   - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-17T08:53:26+00:00). Editorial status: **unapproved**.
+29. **[Thành phố Hải Phòng đề xuất thêm 2 dự án điện khí LNG mới](https://baodautu.vn/thanh-pho-hai-phong-de-xuat-them-2-du-an-dien-khi-lng-moi-d746022.html)** — LNG | global_discovery | score 45
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T02:31:00+00:00). Editorial status: **unapproved**.
-29. **[Çexiya ABŞ-dən 15-20 il müddətinə LNG tədarükü barədə razılaşma əldə edib](https://az.trend.az/other/world/4248094.html)** — LNG | global_discovery | score 45
+30. **[Çexiya ABŞ-dən 15-20 il müddətinə LNG tədarükü barədə razılaşma əldə edib](https://az.trend.az/other/world/4248094.html)** — LNG | global_discovery | score 45
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-18T21:31:00+00:00). Editorial status: **unapproved**.
-30. **[LNG News, Stories and Headlines on the Financial Post](https://financialpost.com/category/energy/lng)** — LNG | global_discovery | score 45
+31. **[LNG News, Stories and Headlines on the Financial Post](https://financialpost.com/category/energy/lng)** — LNG | global_discovery | score 45
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-18T21:17:00+00:00). Editorial status: **unapproved**.
-31. **[Golar LNG: 3 Key Takeaways for Long-Term Investors / The Motley Fool](https://www.fool.com/earnings/takeaways/2026/11/18/golar-lng-3-key-takeaways-for-long-term-investors?source=iedfolrf0000001)** — LNG | global_discovery | score 45
-   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-18T20:46:00+00:00). Editorial status: **unapproved**.
 32. **[Gas Infrastructure Offers Africa’s Best Energy Investment In 2027 – WEC](https://leadership.ng/gas-infrastructure-offers-africas-best-energy-investment-in-2027-wec)** — Infrastructure & Investment | global_discovery | score 30
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-18T19:32:00+00:00). Editorial status: **unapproved**.
 
