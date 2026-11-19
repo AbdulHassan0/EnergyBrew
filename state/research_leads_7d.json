@@ -113,7 +113,10 @@
       "geopolitical_event:attacks",
       "world_context:iran/united states"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "http://www.middleeaststar.com/news/279442005/we-dont-need-any-help-trump-claims-us-has-defeated-iran-military-rules-out-seeking-assistance-from-china-russia",
@@ -714,7 +717,10 @@
     "relevance_evidence": [
       "gas prices"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://worldtribune.com/about-those-midterm-elections-president-trump-notes-timing-of-sharp-drop-in-gas-prices",
@@ -735,7 +741,10 @@
     "relevance_evidence": [
       "gas prices"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.insideottawavalley.com/news/ontario-gas-price-prediction-for-nov-19-20/article_73f28a30-b931-5c5b-8757-6ebd129a099d.html",
@@ -1349,7 +1358,10 @@
     "relevance_evidence": [
       "perryville"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.kkco11news.com/2026/11/19/montrose-county-drafting-data-center-regulations-during-moratorium",

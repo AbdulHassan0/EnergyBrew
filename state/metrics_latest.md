@@ -1,14 +1,15 @@
 # EnergyBrew collection reliability and volume
 
-Generated: 2026-11-19T03:45:41.346969+00:00
+Generated: 2026-11-19T03:47:54.495517+00:00
 Status: **degraded**
 Seven-day pilot complete: **False**
 Observed history span: **0.68 days**
 RSS scans: **58** (above 80% feed quorum: 58, all feeds connected: 55, below quorum: 0)
 Sources whose newest publisher item is within seven days: **8** / 15
-GDELT GAL samples: **54** (successful: 54, degraded: 0, repeated payload fingerprints: 8)
+RSS transient retries in retained scan history: **0**; recovered source events: **0**
+GDELT GAL samples: **55** (successful: 55, degraded: 0, repeated payload fingerprints: 9)
 GDELT intervals longer than 15 minutes: **6**
-Gap from seven-day window start to first GAL sample: **9525.8 min**
+Gap from seven-day window start to first GAL sample: **9523.5 min**
 Age of latest successful GAL sample: **0.1 min**
 
 | UTC day | Official scans | GAL samples | Timestamped agency | Specialist RSS | Grid operator | High-signal agency | GDELT first-seen URLs | Release-feed URLs |
@@ -19,7 +20,7 @@ Age of latest successful GAL sample: **0.1 min**
 | 2026-11-16 | 0 | 0 | 3 | 0 | 2 | 1 | 0 | 0 |
 | 2026-11-17 | 0 | 0 | 5 | 15 | 0 | 1 | 0 | 0 |
 | 2026-11-18 | 48 | 41 | 2 | 32 | 1 | 2 | 127 | 15 |
-| 2026-11-19 | 10 | 13 | 0 | 3 | 0 | 0 | 44 | 0 |
+| 2026-11-19 | 10 | 14 | 0 | 3 | 0 | 0 | 44 | 0 |
 
 ## Feed content age — independent of network connectivity
 
@@ -35,14 +36,17 @@ Age of latest successful GAL sample: **0.1 min**
 | European Commission DG Energy | 2026-11-17T23:00:00+00:00 | 28.8 | publication_within_7d |
 | Federal Register notices | 2026-11-18T05:00:00+00:00 | 22.8 | publication_within_7d |
 | EIA Today in Energy | 2026-11-18T14:00:00+00:00 | 13.8 | publication_within_7d |
-| Offshore Energy News | 2026-11-18T15:07:53+00:00 | 12.6 | publication_within_7d |
+| Offshore Energy News | 2026-11-18T15:07:53+00:00 | 12.7 | publication_within_7d |
 | Utility Dive News | 2026-11-18T15:57:17+00:00 | 11.8 | publication_within_7d |
 | DOE Energy News | 2026-11-18T18:06:31+00:00 | 9.7 | publication_within_7d |
-| PJM Inside Lines | 2026-11-18T18:56:18+00:00 | 8.8 | publication_within_7d |
+| PJM Inside Lines | 2026-11-18T18:56:18+00:00 | 8.9 | publication_within_7d |
 | OilPrice.com News | 2026-11-19T02:00:00+00:00 | 1.8 | publication_within_7d |
 
 Some regulator and testimony feeds are naturally intermittent; an old item does not imply collection failure.
 
+
+## Sources recovered on latest RSS run
+- None recorded on latest scan
 
 ## Individual feed failures
 - None in latest state

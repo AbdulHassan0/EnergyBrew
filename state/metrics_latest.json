@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-19T03:45:41.346969+00:00",
+  "generated_utc": "2026-11-19T03:47:54.495517+00:00",
   "status": "degraded",
   "seven_day_pilot_complete": false,
   "history_span_days": 0.68,
@@ -7,6 +7,9 @@
   "official_successful_scans": 58,
   "official_fully_connected_scans": 55,
   "failing_sources": [],
+  "rss_transient_retries_8d": 0,
+  "rss_recovered_sources_8d": 0,
+  "latest_rss_recovered_sources": [],
   "feed_publication_activity": [
     {
       "source": "EIA Congressional Testimony",
@@ -81,7 +84,7 @@
     {
       "source": "Offshore Energy News",
       "newest_feed_published_utc": "2026-11-18T15:07:53+00:00",
-      "age_hours": 12.6,
+      "age_hours": 12.7,
       "activity": "publication_within_7d",
       "last_successful_scan_utc": "2026-11-19T03:45:32.357155+00:00"
     },
@@ -102,7 +105,7 @@
     {
       "source": "PJM Inside Lines",
       "newest_feed_published_utc": "2026-11-18T18:56:18+00:00",
-      "age_hours": 8.8,
+      "age_hours": 8.9,
       "activity": "publication_within_7d",
       "last_successful_scan_utc": "2026-11-19T03:45:32.357155+00:00"
     },
@@ -119,9 +122,9 @@
     "publication_within_7d": 8
   },
   "official_failed_scans": 0,
-  "gal_sample_runs": 54,
-  "gal_successful_samples": 54,
-  "gal_repeated_feed_payloads": 8,
+  "gal_sample_runs": 55,
+  "gal_successful_samples": 55,
+  "gal_repeated_feed_payloads": 9,
   "gal_failed_samples": 0,
   "observed_sampling_gaps": [
     {
@@ -155,13 +158,13 @@
       "minutes": 50.2
     }
   ],
-  "seven_day_start_gap_minutes": 9525.8,
+  "seven_day_start_gap_minutes": 9523.5,
   "latest_gal_age_minutes": 0.1,
   "expected_gal_interval_minutes": 10,
   "latest_official_scan_utc": "2026-11-19T03:45:32.357155+00:00",
   "latest_official_attempt_utc": "2026-11-19T03:45:32.357155+00:00",
-  "latest_gal_attempt_utc": "2026-11-19T03:45:35.640874+00:00",
-  "latest_gal_sample_utc": "2026-11-19T03:45:35.640874+00:00",
+  "latest_gal_attempt_utc": "2026-11-19T03:47:50.180575+00:00",
+  "latest_gal_sample_utc": "2026-11-19T03:47:50.180575+00:00",
   "daily": [
     {
       "date_utc": "2026-11-13",
@@ -256,7 +259,7 @@
     {
       "date_utc": "2026-11-19",
       "official_scans": 10,
-      "gal_samples": 13,
+      "gal_samples": 14,
       "publisher_timestamped_official_links": 0,
       "specialist_publisher_timestamped_links": 3,
       "grid_operator_primary_timestamped_links": 0,
@@ -265,7 +268,7 @@
       "press_release_feed_date_urls": 0,
       "scanning_observed": true,
       "successful_official_scans": 10,
-      "successful_gal_samples": 13,
+      "successful_gal_samples": 14,
       "successful_scanning_observed": true
     }
   ],
