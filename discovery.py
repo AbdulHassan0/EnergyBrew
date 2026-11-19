@@ -26,6 +26,7 @@ USER_AGENT = "EnergyBrewResearchCollector/2.0 (+https://github.com/AbdulHassan0/
 MAX_BYTES = 1_500_000
 MAX_RESULTS = 75
 DEFAULT_QUERIES_PER_RUN = 4
+MAX_BACKOFF_SECONDS = 12 * 3600
 TOPICS = (
     ("us_natural_gas", '("natural gas" OR "Henry Hub" OR "Haynesville" OR "gas pipeline")'),
     ("lng_exports", '("LNG export" OR "LNG terminal" OR "LNG cargo" OR "liquefied natural gas")'),
@@ -108,6 +109,19 @@ def retry_after_seconds(headers, now):
             return default
     # Never hammer the API; also never suppress collection longer than one day.
     return min(24 * 3600, max(30 * 60, amount))
+
+
+def escalation_cooldown_seconds(headers, now, streak):
+    """An upstream 429/503 pauses DOC, without consuming GAL feed capacity.
+
+    Backoff is 90m, 3h, 6h, 12h on successive throttled attempts.
+    A provider Retry-After header requesting more time always takes precedence,
+    capped at 24 hours by the existing parser. Cooldown never triggers
+    immediate retrying or circumvention of provider rate limits.
+    """
+    strike = max(1, int(streak))
+    exponential = min(MAX_BACKOFF_SECONDS, 90 * 60 * (2 ** min(strike - 1, 3)))
+    return max(retry_after_seconds(headers, now), exponential)
 
 
 def normalize_results(payload, topic, now):
@@ -200,6 +214,7 @@ def run_discovery(state_path, output_dir, *, now=None, fetcher=None, max_queries
     prior_leads = state.get("leads", [])
     index = {x["url"]: dict(x) for x in prior_leads if clean_url(x.get("url", ""))}
     cooldown = _datetime(state.get("provider_cooldown_until_utc"))
+    state.setdefault("provider_throttle_streak", 0)
     history = []
     seen_new = set()
     chosen = []
@@ -231,6 +246,8 @@ def run_discovery(state_path, output_dir, *, now=None, fetcher=None, max_queries
                            normalized_results=len(items), rejected=rejected, http_status=http_status)
                 record["last_success_utc"] = utc_stamp(now)
                 record["consecutive_failures"] = 0
+                state["provider_throttle_streak"] = 0
+                state["provider_cooldown_until_utc"] = None
                 for item in items:
                     uri = item["url"]
                     previous = index.get(uri)
@@ -248,8 +265,12 @@ def run_discovery(state_path, output_dir, *, now=None, fetcher=None, max_queries
                            http_status=exc.code, error=f"HTTP {exc.code}")
                 record["consecutive_failures"] = record.get("consecutive_failures", 0) + 1
                 if exc.code in (429, 503):
-                    secs = retry_after_seconds(exc.headers, now)
+                    strikes = int(state.get("provider_throttle_streak", 0)) + 1
+                    state["provider_throttle_streak"] = strikes
+                    secs = escalation_cooldown_seconds(exc.headers, now, strikes)
                     state["provider_cooldown_until_utc"] = utc_stamp(now + timedelta(seconds=secs))
+                    row["backoff_seconds"] = secs
+                    row["throttle_streak"] = strikes
                     history.append(row)
                     break
             except Exception as exc:
@@ -276,6 +297,7 @@ def run_discovery(state_path, output_dir, *, now=None, fetcher=None, max_queries
         "leads_in_last_24h_first_seen": len(recent),
         "leads_in_7d_state": len(retained),
         "provider_cooldown_until_utc": state.get("provider_cooldown_until_utc"),
+        "provider_throttle_streak": state.get("provider_throttle_streak", 0),
         "topic_attempts": history,
         "notice": "Discovery index timestamps are NOT original article publication dates. All leads need publisher verification before newsletter use.",
     }
@@ -298,6 +320,8 @@ def run_discovery(state_path, output_dir, *, now=None, fetcher=None, max_queries
         "# EnergyBrew — broad discovery leads", "",
         f"Run UTC: {result['run_utc']}",
         f"GDELT status: **{result['status']}**",
+        f"Consecutive provider throttle episodes: **{result['provider_throttle_streak']}**",
+        f"Provider retry after: **{result['provider_cooldown_until_utc'] or 'not restricted'}**",
         f"Topics attempted/succeeded: **{result['topics_attempted']}/{result['topics_succeeded']}**",
         f"New URL leads: **{result['new_discovered_urls']}**",
         f"Links first seen by GDELT in past 24h: **{result['leads_in_last_24h_first_seen']}**",

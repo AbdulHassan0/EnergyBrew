@@ -8,7 +8,7 @@ from urllib.error import HTTPError
 
 from discovery import (
     TOPICS, api_url, normalize_results, parse_first_seen,
-    retry_after_seconds, run_discovery,
+    retry_after_seconds, escalation_cooldown_seconds, run_discovery,
 )
 
 NOW = datetime(2026, 11, 18, 14, 0, tzinfo=timezone.utc)
@@ -104,6 +104,53 @@ class DiscoveryTests(unittest.TestCase):
             third = run_discovery(state,out,now=NOW+timedelta(hours=2),fetcher=limit,max_queries=4)
             self.assertEqual(third["topics_attempted"],1)
             self.assertEqual(len(calls),2)
+
+    def test_backoff_increases_after_repeated_provider_rate_limits(self):
+        with tempfile.TemporaryDirectory() as d:
+            state,out=Path(d)/"state.json",Path(d)/"out"
+            attempts=[]
+            def limit(url):
+                attempts.append(url)
+                raise HTTPError(url,429,"Rate limit",{},None)
+            first=run_discovery(state,out,now=NOW,fetcher=limit,max_queries=4)
+            self.assertEqual(first["provider_throttle_streak"],1)
+            self.assertEqual(first["topic_attempts"][0]["backoff_seconds"],5400)
+            self.assertEqual(len(attempts),1)
+            second=run_discovery(state,out,now=NOW+timedelta(hours=2),
+                                 fetcher=limit,max_queries=4)
+            self.assertEqual(second["provider_throttle_streak"],2)
+            self.assertEqual(second["topic_attempts"][0]["backoff_seconds"],10800)
+            blocked=run_discovery(state,out,now=NOW+timedelta(hours=4),
+                                  fetcher=limit,max_queries=4)
+            self.assertEqual(blocked["status"],"provider_cooldown")
+            self.assertEqual(len(attempts),2)
+            third=run_discovery(state,out,now=NOW+timedelta(hours=6),
+                                fetcher=limit,max_queries=4)
+            self.assertEqual(third["provider_throttle_streak"],3)
+            self.assertEqual(third["topic_attempts"][0]["backoff_seconds"],21600)
+            self.assertEqual(len(attempts),3)
+
+    def test_gdelt_success_resets_throttle_streak(self):
+        with tempfile.TemporaryDirectory() as d:
+            state,out=Path(d)/"state.json",Path(d)/"out"
+            def limit(url):
+                raise HTTPError(url,429,"Rate limit",{},None)
+            run_discovery(state,out,now=NOW,fetcher=limit,max_queries=1)
+            def good(url):
+                return json.dumps(sample(seen="20261118T130000Z")).encode(),200
+            success=run_discovery(state,out,now=NOW+timedelta(hours=2),
+                                  fetcher=good,max_queries=1)
+            self.assertEqual(success["topics_succeeded"],1)
+            self.assertEqual(success["provider_throttle_streak"],0)
+            self.assertIsNone(success["provider_cooldown_until_utc"])
+            limited=run_discovery(state,out,now=NOW+timedelta(hours=3),
+                                  fetcher=limit,max_queries=1)
+            self.assertEqual(limited["topic_attempts"][0]["backoff_seconds"],5400)
+
+    def test_explicit_retry_after_can_override_exponential(self):
+        self.assertEqual(escalation_cooldown_seconds({"Retry-After":"14400"},NOW,1),14400)
+        self.assertEqual(escalation_cooldown_seconds({},NOW,2),10800)
+        self.assertEqual(escalation_cooldown_seconds({},NOW,10),43200)
 
     def test_retry_after_clamps_extremes(self):
         self.assertEqual(retry_after_seconds({"Retry-After":"1"},NOW),1800)
