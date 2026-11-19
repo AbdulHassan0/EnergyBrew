@@ -28,13 +28,13 @@ if ($Remove) {
     return
 }
 if (-not $Install) {
-    Write-Host "PREVIEW ONLY: This script changes nothing unless -Install is passed."
-    Write-Host "Task: $TaskName"
-    Write-Host "User: $User (only while signed in)"
-    Write-Host "Runner: $Runner"
-    Write-Host "When: each sign-in; restart after failure; one instance maximum."
-    Write-Host "Requirement: machine stays awake and online overnight."
-    Write-Host "Use -Install to register, -Replace to overwrite an existing task."
+    Write-Output "PREVIEW ONLY: This script changes nothing unless -Install is passed."
+    Write-Output "Task: $TaskName"
+    Write-Output "User: $User (only while signed in)"
+    Write-Output "Runner: $Runner"
+    Write-Output "When: each sign-in; restart after failure; one instance maximum."
+    Write-Output "Requirement: machine stays awake and online overnight."
+    Write-Output "Use -Install to register, -Replace to overwrite an existing task."
     return
 }
 if ($Task -and -not $Replace) {

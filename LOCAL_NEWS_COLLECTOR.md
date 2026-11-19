@@ -67,16 +67,16 @@ From a PowerShell terminal in the cloned repository:
 
 ```powershell
 # Preview only: prints the task and makes NO system changes.
-.\deploy\windows\install-news-task.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File .\deploy\windows\install-news-task.ps1
 
 # Only if you want this PC to run the research collector at sign-in:
-.\deploy\windows\install-news-task.ps1 -Install -StartNow
+powershell -NoProfile -ExecutionPolicy Bypass -File .\deploy\windows\install-news-task.ps1 -Install -StartNow
 
 # Update the task after moving your clone:
-.\deploy\windows\install-news-task.ps1 -Install -Replace
+powershell -NoProfile -ExecutionPolicy Bypass -File .\deploy\windows\install-news-task.ps1 -Install -Replace
 
 # Remove the task, keeping your historical news state:
-.\deploy\windows\install-news-task.ps1 -Remove
+powershell -NoProfile -ExecutionPolicy Bypass -File .\deploy\windows\install-news-task.ps1 -Remove
 ```
 
 The script registers for the current signed-in user (no stored password),
