@@ -73,7 +73,7 @@ class SourceProbeTests(unittest.TestCase):
         future_feed=b"""<rss><channel><item>
 <title>Natural gas LNG future announcement</title>
 <link>https://example.org/news/future</link>
-<pubDate>Fri, 20 Nov 2026 19:00:00 GMT</pubDate>
+<pubDate>Wed, 18 Nov 2026 20:05:00 GMT</pubDate>
 </item></channel></rss>"""
         report=measure([("Publisher","https://example.org/feed")],now=NOW,
                        fetcher=lambda _: (future_feed,200))
