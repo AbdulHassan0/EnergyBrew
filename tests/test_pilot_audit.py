@@ -74,6 +74,27 @@ class AuditTests(unittest.TestCase):
         r=audit_pilot(f)
         self.assertTrue(any("placeholder" in x for x in r["errors"]))
 
+    def test_unshortlisted_story_is_traced_to_full_gdelt_source_history(self):
+        f=fixture()
+        # Its actual source was discovered, but the top 32 list omitted it.
+        chosen=f["stories"][0]
+        lead={"url":chosen["source_url"],
+              "gdelt_first_seen_utc":"2026-11-19T10:00:00+00:00",
+              "first_collector_observed_utc":"2026-11-19T12:25:00+00:00"}
+        result=audit_pilot(f,{"stories":[]},
+                           raw_sources={"discovery":[lead]})
+        self.assertEqual(result["matched_research_links"],0)
+        self.assertEqual(result["matched_saved_source_links"],1)
+        self.assertEqual(result["stories"][0]["as_of_cutoff"],"observed_before_cutoff")
+        self.assertNotIn(chosen["source_url"],result["links_missing_in_saved_sources"])
+
+    def test_raw_gdelt_provider_timestamp_is_not_local_observation(self):
+        f=fixture()
+        lead={"url":f["stories"][0]["source_url"],
+              "gdelt_first_seen_utc":"2026-11-19T09:00:00+00:00"}
+        result=audit_pilot(f,{"stories":[]},raw_sources={"discovery":[lead]})
+        self.assertEqual(result["stories"][0]["as_of_cutoff"],"unproven")
+
     def test_pre_cutoff_observation_is_distinct_from_later_snapshot(self):
         f=fixture()
         earlier="2026-11-19T12:20:00+00:00"

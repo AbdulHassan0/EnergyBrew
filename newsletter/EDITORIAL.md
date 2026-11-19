@@ -123,3 +123,12 @@ EnergyBrew before the **06:30 Chicago** cutoff. A late research snapshot,
 publisher date, or GDELT first-seen timestamp is never proof of on-time
 collection. The report can mark the copy ready but the 7 a.m. collection
 evidence `not_established`. A pilot email cannot publish or send.
+
+## Full-source traceability
+
+The pilot quality audit now looks up each story in the entire saved RSS,
+GDELT and press-release state, in addition to the 32-story research desk.
+This prevents a valid indexed story that was not shortlisted from being
+misreported as completely unknown. The report distinguishes shortlist
+matches from saved-source matches; it never treats GDELT provider pubDate
+as proof that EnergyBrew collected the story by 06:30.

@@ -49,6 +49,11 @@ jobs:
           mkdir -p latest-state
           git fetch --no-tags origin collector-state
           git show FETCH_HEAD:state/desk_latest.json > latest-state/desk_latest.json
+          # Audit against complete saved source history, not just a ranked
+          # 32-story desk which may omit otherwise legitimate publisher links.
+          for file in articles.json discovery.json press_releases.json; do
+            git show "FETCH_HEAD:state/$file" > "latest-state/$file"
+          done
       - name: Preserve collected source headlines for the editor
         if: steps.window.outputs.run == 'yes'
         run: |
@@ -61,7 +66,7 @@ jobs:
           # without content.
           TODAY="$(TZ=America/Chicago date +%F)"
           if test -f "newsletter/pilots/${TODAY}.json"; then
-            python pilot_audit.py --pilot "newsletter/pilots/${TODAY}.json" --desk latest-state/desk_latest.json --output output/newsletter/PILOT_QUALITY_REPORT.json
+            python pilot_audit.py --pilot "newsletter/pilots/${TODAY}.json" --desk latest-state/desk_latest.json --rss latest-state/articles.json --discovery latest-state/discovery.json --releases latest-state/press_releases.json --output output/newsletter/PILOT_QUALITY_REPORT.json
             python newsletter.py pilot-preview --edition "newsletter/pilots/${TODAY}.json" --html output/newsletter/PILOT_email_preview.html --text output/newsletter/PILOT_email_preview.txt
             sed -n '1,38p' output/newsletter/PILOT_QUALITY_REPORT.md >> "$GITHUB_STEP_SUMMARY"
             echo "PILOT preview generated with complete copy; NO email sent." >> "$GITHUB_STEP_SUMMARY"

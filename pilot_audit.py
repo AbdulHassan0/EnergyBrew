@@ -49,7 +49,7 @@ def _as_date(s):
         return None
 
 
-def audit_pilot(edition, desk=None):
+def audit_pilot(edition, desk=None, *, raw_sources=None):
     """Return separate copy-readiness and 06:30 evidence assessments.
 
     An edition may be copy-ready while its time-of-day evidence is unproven.
@@ -64,11 +64,31 @@ def audit_pilot(edition, desk=None):
     domain_counts = Counter()
     seen_keys = set()
     indexed = {}
+    selected_urls = set()
     if isinstance(desk, dict):
         for record in desk.get("stories", []):
-            if isinstance(record, dict):
-                indexed.setdefault(_key(record.get("url")), record)
+            if isinstance(record,dict):
+                key=_key(record.get("url"))
+                if key:
+                    selected_urls.add(key)
+                    indexed.setdefault(key, [])
+                    indexed[key].append(record)
+    # Include all retained source metadata, not only 32 shortlisted leads.
+    # Publisher time and index-first-seen are NEVER first collector observations.
+    for lane,records in (raw_sources or {}).items():
+        if lane not in ("rss","discovery","releases"):
+            raise EditorialError("Unknown source lane in pilot audit")
+        if not isinstance(records,list):
+            raise EditorialError("Pilot audit source lane requires a list")
+        for record in records:
+            if isinstance(record,dict):
+                key=_key(record.get("url"))
+                if key:
+                    indexed.setdefault(key, [])
+                    indexed[key].append(record)
     matched = 0
+    matched_selected = 0
+    missing_sources = []
     time_evidence = 0
     after_cutoff = []
     unknown_clock = []
@@ -95,12 +115,22 @@ def audit_pilot(edition, desk=None):
         if re.search(r"\b(?:pending (?:fact.check|review)|lorem ipsum|tbd|insert summary)\b",
                      combined, flags=re.I):
             errors.append("Unwritten or placeholder brief: " + item["title"])
-        candidate = indexed.get(key)
+        candidates = indexed.get(key) or []
         observed = None
-        if candidate is not None:
+        if candidates:
             matched += 1
-            observed = parse_utc(candidate.get("first_collector_observed_utc")
-                                 or candidate.get("first_collected_utc"))
+            observed_times = [
+                stamp for record in candidates
+                if (stamp := parse_utc(record.get("first_collector_observed_utc")
+                                       or record.get("first_collected_utc")))
+                is not None
+            ]
+            if observed_times:
+                observed = min(observed_times)
+        else:
+            missing_sources.append(url)
+        if key in selected_urls:
+            matched_selected += 1
         if observed is None:
             unknown_clock.append(url)
         elif observed > cutoff:
@@ -110,7 +140,8 @@ def audit_pilot(edition, desk=None):
         rows.append({
             "section": beat, "title": item["title"], "url": url,
             "domain": domain, "source_date": item.get("source_date",""),
-            "matched_in_research_desk": candidate is not None,
+            "matched_in_research_desk": key in selected_urls,
+            "matched_in_saved_sources": bool(candidates),
             "first_observed_utc": observed.isoformat() if observed else None,
             "as_of_cutoff": ("unproven" if observed is None else
                             "observed_after_cutoff" if observed > cutoff else
@@ -131,9 +162,11 @@ def audit_pilot(edition, desk=None):
     if unknown_clock:
         warnings.append("First EnergyBrew collection time unproven for some source links")
     if not isinstance(desk, dict):
-        warnings.append("No matching saved research desk supplied; cutoff evidence unknown")
-    elif matched != len(edition["stories"]):
-        warnings.append("Some newsletter links are absent from the supplied research desk")
+        warnings.append("No selected research desk supplied; evidence limited to raw saved state")
+    elif matched_selected != len(edition["stories"]):
+        warnings.append("Some pilot links are not in the 32-story shortlist; checked retained raw source state")
+    if missing_sources:
+        warnings.append("Some pilot links are not in any supplied saved source state")
     if desk and parse_utc(desk.get("generated_utc")) and parse_utc(
             desk["generated_utc"]) > cutoff:
         warnings.append("Research snapshot generated after 06:30; not a frozen morning edition")
@@ -149,7 +182,9 @@ def audit_pilot(edition, desk=None):
         "publisher_domains": dict(sorted(domain_counts.items())),
         "total_stories": len(edition["stories"]),
         "reading_words": word_total,
-        "matched_research_links": matched,
+        "matched_research_links": matched_selected,
+        "matched_saved_source_links": matched,
+        "links_missing_in_saved_sources": missing_sources,
         "cutoff_utc": cutoff.isoformat(),
         "cutoff_collection_evidence": ("supported" if time_evidence == len(rows)
                                        and isinstance(desk, dict) and matched == len(rows)
@@ -175,6 +210,8 @@ def write_report(report, output):
         "",
         f"Briefs: **{report['total_stories']}** · Reading copy: **{report['reading_words']} words**",
         f"Publisher domains: **{len(report['publisher_domains'])}**",
+        f"Matching saved source URLs: **{report['matched_saved_source_links']} / {report['total_stories']}**",
+        f"Matching selected desk URLs: **{report['matched_research_links']} / {report['total_stories']}**",
         f"Morning 06:30 evidence: **{report['cutoff_collection_evidence']}**",
         "",
         "| Beat | Stories |", "|---|---:|",
@@ -194,11 +231,23 @@ def main(argv=None):
     parser=argparse.ArgumentParser()
     parser.add_argument("--pilot",type=Path,required=True)
     parser.add_argument("--desk",type=Path)
+    parser.add_argument("--rss",type=Path)
+    parser.add_argument("--discovery",type=Path)
+    parser.add_argument("--releases",type=Path)
     parser.add_argument("--output",type=Path,required=True)
     args=parser.parse_args(argv)
     pilot=json.loads(args.pilot.read_text(encoding="utf-8"))
     desk=json.loads(args.desk.read_text(encoding="utf-8")) if args.desk else None
-    result=audit_pilot(pilot,desk)
+    raw_sources={}
+    for lane,field in (("rss","articles"),("discovery","leads"),
+                       ("releases","leads")):
+        path=getattr(args,lane)
+        if path:
+            contents=json.loads(path.read_text(encoding="utf-8"))
+            if not isinstance(contents,dict) or not isinstance(contents.get(field),list):
+                raise EditorialError("Invalid saved source state for pilot audit: "+lane)
+            raw_sources[lane]=contents[field]
+    result=audit_pilot(pilot,desk,raw_sources=raw_sources)
     write_report(result,args.output)
     print(json.dumps({k:result[k] for k in (
         "status","six_beats_present","total_stories","reading_words",
