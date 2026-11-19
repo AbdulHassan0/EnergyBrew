@@ -23,6 +23,7 @@ CUTOFF_LOCAL = time(6, 30)
 SEND_TARGET_LOCAL = time(7, 0)
 MAX_RSS_AGE_MINUTES = 90
 MAX_GAL_AGE_MINUTES = 20
+MAX_PREPARATION_LAG_MINUTES = 20
 MIN_GAL_OVERNIGHT_PCT = 75.0
 MIN_RSS_CONNECTED_RATIO = .8
 CANDIDATE_LOOKBACK_HOURS = 36
@@ -85,18 +86,24 @@ def prepare(rss, discovery, releases, *, now=None, edition_date=None,
     warnings = []
     if now < cutoff:
         issues.append("edition_cutoff_not_reached")
+    if now >= cutoff + timedelta(minutes=MAX_PREPARATION_LAG_MINUTES):
+        issues.append("insufficient_editorial_review_time_before_7am")
     if now >= as_time(schedule["target_delivery_utc"]):
         warnings.append("edition_target_time_has_passed_do_not_claim_on_time_delivery")
 
     rss_runs = rss.get("runs", []) if isinstance(rss, dict) else []
     gal_runs = discovery.get("gal_runs", []) if isinstance(discovery, dict) else []
-    last_rss = last_successful_run(rss_runs, cutoff,
+    last_rss = last_successful_run(rss_runs, now,
                                   success=lambda r: r.get("scan_state") in ("healthy","degraded")
                                   and r.get("feeds_connected", 0) > 0)
-    last_gal = last_successful_run(gal_runs, cutoff,
+    last_gal = last_successful_run(gal_runs, now,
                                   success=lambda r: r.get("status") == "ok")
-    age_rss = round((cutoff - last_rss).total_seconds()/60, 1) if last_rss else None
-    age_gal = round((cutoff - last_gal).total_seconds()/60, 1) if last_gal else None
+    age_rss = round(max(0, (cutoff - last_rss).total_seconds()/60), 1) if last_rss else None
+    age_gal = round(max(0, (cutoff - last_gal).total_seconds()/60), 1) if last_gal else None
+    if last_rss and last_rss > cutoff:
+        warnings.append("rss_polled_after_cutoff_records_strictly_filtered_to_cutoff")
+    if last_gal and last_gal > cutoff:
+        warnings.append("gal_polled_after_cutoff_records_strictly_filtered_to_cutoff")
     if age_rss is None or age_rss > MAX_RSS_AGE_MINUTES:
         issues.append("publisher_rss_not_recent_at_cutoff")
     if age_gal is None or age_gal > MAX_GAL_AGE_MINUTES:
@@ -140,6 +147,8 @@ def prepare(rss, discovery, releases, *, now=None, edition_date=None,
         "blocking_issues": issues,
         "warnings": warnings,
         "publisher_rss_age_at_cutoff_minutes": age_rss,
+        "publisher_rss_last_successful_scan_utc": last_rss.isoformat() if last_rss else None,
+        "gdelt_gal_last_successful_scan_utc": last_gal.isoformat() if last_gal else None,
         "gdelt_gal_age_at_cutoff_minutes": age_gal,
         "publisher_rss_connection_ratio": ratio,
         "overnight_gdelt_window": coverage,
