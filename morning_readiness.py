@@ -60,7 +60,7 @@ def eligible_article(row, lane, cutoff, lookback, local_day, tz):
         if row.get("published_precision") == "day":
             # A day-only notice is NOT proven to be available at 06:30.
             # Previous-day notices can be reviewed without fabricated hours.
-            return bool(stamp and stamp.astimezone(tz).date() < local_day
+            return bool(stamp and stamp.date() < local_day
                         and stamp >= lookback)
     elif lane == "release":
         stamp = as_time(row.get("feed_published_utc"))
@@ -120,13 +120,13 @@ def prepare(rss, discovery, releases, *, now=None, edition_date=None,
     if coverage["potential_coverage_upper_bound_pct"] < 100:
         warnings.append("some_overnight_index_windows_unobserved")
 
+    edition_local_day = date.fromisoformat(schedule["edition_date"])
     rss_articles = [x for x in (rss.get("articles",[]) if isinstance(rss,dict) else [])
-                    if eligible_article(x,"rss",cutoff,lookback,local_now.date() if edition_date is None else
-                                       date.fromisoformat(schedule["edition_date"]),tz)]
+                    if eligible_article(x,"rss",cutoff,lookback,edition_local_day,tz)]
     discovered = [x for x in (discovery.get("leads",[]) if isinstance(discovery,dict) else [])
-                  if eligible_article(x,"discovery",cutoff,lookback,local_now.date(),tz)]
+                  if eligible_article(x,"discovery",cutoff,lookback,edition_local_day,tz)]
     released = [x for x in (releases.get("leads",[]) if isinstance(releases,dict) else [])
-                if eligible_article(x,"release",cutoff,lookback,local_now.date(),tz)]
+                if eligible_article(x,"release",cutoff,lookback,edition_local_day,tz)]
     desk = assemble(rss_articles,discovered,released,now=cutoff,max_stories=max_stories)
     if desk["selected_research_links"] == 0:
         issues.append("no_qualifying_research_leads")
