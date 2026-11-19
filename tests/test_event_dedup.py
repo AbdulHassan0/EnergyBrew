@@ -46,6 +46,16 @@ class EventDedupTests(unittest.TestCase):
                "https://b.test/b","2026-11-21T02:00:00Z")
         self.assertFalse(same_event(a,b))
 
+    def test_distinct_event_families_same_counterparties_not_merged(self):
+        a=item("Venture Global and China Gas announce LNG supply agreement", "https://a.test/a")
+        b=item("Venture Global and China Gas announce LNG stake acquisition", "https://b.test/b")
+        self.assertFalse(same_event(a,b))
+
+    def test_different_named_counterparties_do_not_merge_on_generic_words(self):
+        a=item("Shell and BP announce natural gas supply expansion investment project", "https://a.test/a")
+        b=item("Shell and Chevron announce natural gas supply expansion investment project", "https://b.test/b")
+        self.assertFalse(same_event(a,b))
+
     def test_markers(self):
         self.assertIn("venture global",entities("Venture Global shipping LNG"))
         self.assertEqual(family("Venture Global LNG supply agreement"),"lng_contract")
