@@ -72,6 +72,13 @@ class SamplingWindowTests(unittest.TestCase):
         self.assertEqual(r["longest_unobserved_minutes"],1440)
         self.assertIn("not verified publisher coverage",r["warning"])
 
+    def test_post_cutoff_run_cannot_backfill_earlier_coverage(self):
+        samples=[run(10),run(-3)]
+        result=estimate_sampling_coverage(samples,now=NOW,hours=1)
+        self.assertEqual(result["potentially_sampled_minutes_upper_bound"],15)
+        self.assertEqual(result["successfully_timestamped_run_count"],1)
+        self.assertEqual(result["unobserved_minutes_at_least"],45)
+
     def test_rejects_naive_reference_clock(self):
         with self.assertRaises(ValueError):
             estimate_sampling_coverage([],now=datetime(2026,11,19,12),hours=24)

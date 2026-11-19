@@ -42,7 +42,9 @@ def estimate_sampling_coverage(gal_runs, *, now, hours, window_minutes=ROLLING_M
         if not isinstance(item,dict) or item.get("status")!="ok":
             continue
         completed=_aware(item.get("run_utc"))
-        if completed is None or completed>horizon_end+timedelta(minutes=5):
+        # A sample completed after the editorial cutoff did not exist at that
+        # cutoff. Even a five-minute tolerance would leak future observations.
+        if completed is None or completed>horizon_end:
             continue
         # Provider pubDate is not a verified publication time. The poll time
         # is only a possible window anchor, never proof of full coverage.
