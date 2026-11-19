@@ -68,6 +68,22 @@ class SourceProbeTests(unittest.TestCase):
         self.assertEqual(row["fresh_links_48h"],1)
         self.assertEqual(row["duplicate_article_urls"],4)
 
+
+    def test_future_dated_feed_entries_are_not_counted_as_fresh(self):
+        future_feed=b"""<rss><channel><item>
+<title>Natural gas LNG future announcement</title>
+<link>https://example.org/news/future</link>
+<pubDate>Wed, 18 Nov 2026 20:05:00 GMT</pubDate>
+</item></channel></rss>"""
+        report=measure([("Publisher","https://example.org/feed")],now=NOW,
+                       fetcher=lambda _: (future_feed,200))
+        row=report["sources"][0]
+        self.assertEqual(row["future_dated_links"],1)
+        self.assertEqual(row["fresh_links_24h"],0)
+        self.assertEqual(row["fresh_links_48h"],0)
+        self.assertEqual(row["high_signal_48h"],0)
+        self.assertEqual(report["future_dated_links"],1)
+
     def test_writes_public_metadata_only(self):
         with tempfile.TemporaryDirectory() as d:
             report=measure([("Publisher","https://energy.example.com/feed")],now=NOW,fetcher=lambda url:(FEED,200))
