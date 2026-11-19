@@ -180,8 +180,13 @@ def entry(record, kind, now):
               else record.get("provider") or record.get("discovery_provider") or "Research provider")
     from urllib.parse import urlsplit
     domain = urlsplit(url).hostname or ""
+    local_first_observed=as_time(record.get("first_collector_observed_utc")
+                                 or record.get("first_collected_utc"))
     return {
         "title": title, "url": url, "domain": domain.lower(),
+        "first_collector_observed_utc": (
+            local_first_observed.isoformat() if local_first_observed else None),
+        "local_collection_time_known": local_first_observed is not None,
         "source": str(source), "source_class": record.get("source_class") or "unclassified",
         "category": quality["category"],
         "coverage_themes": coverage_themes(title, quality["category"]),

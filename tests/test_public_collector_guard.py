@@ -56,6 +56,21 @@ class PublicGuardTests(unittest.TestCase):
             self.assertEqual(validate_records(p,"articles"),1)
             self.assertEqual(validate_all(p,Path(d)/"none.json",Path(d)/"none2.json")["publisher_metadata"],1)
 
+    def test_missing_legacy_clock_allowed_but_invalid_claimed_clock_rejected(self):
+        with tempfile.TemporaryDirectory() as temp:
+            path=Path(temp)/"state.json"
+            record={"url":"https://publisher.example.com/energy/gas",
+                    "title":"Natural gas pipeline supply expansion"}
+            for field in ("first_collected_utc","first_collector_observed_utc"):
+                for invalid in ("not-a-date","2026-11-19T06:30:00",None,0):
+                    with self.subTest(field=field,invalid=invalid):
+                        path.write_text(json.dumps({"articles":[dict(record,**{field:invalid})]}))
+                        with self.assertRaises(SafetyError):
+                            validate_records(path,"articles")
+            path.write_text(json.dumps({"articles":[dict(record,
+                first_collector_observed_utc="2026-11-19T12:30:00+00:00")]}))
+            self.assertEqual(validate_records(path,"articles"),1)
+
     def test_empty_collector_state_fails_closed(self):
         with tempfile.TemporaryDirectory() as d:
             with self.assertRaises(SafetyError):

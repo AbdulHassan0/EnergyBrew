@@ -39,6 +39,22 @@ class DeskTests(unittest.TestCase):
         self.assertEqual(r["system_operator_primary_24h"],1)
         self.assertEqual(r["publisher_timestamped_official_24h"],0)
 
+    def test_editor_sees_collector_first_observed_time_separate_from_provider_time(self):
+        lead=global_lead()
+        observed=NOW-timedelta(minutes=2)
+        lead["first_collector_observed_utc"]=observed.isoformat()
+        desk=assemble([], [lead], [], now=NOW)
+        row=desk["stories"][0]
+        self.assertTrue(row["local_collection_time_known"])
+        self.assertEqual(row["first_collector_observed_utc"],observed.isoformat())
+        self.assertNotEqual(row["first_collector_observed_utc"],
+                            row["observed_time_utc"])
+
+    def test_legacy_lead_reports_local_collection_time_unknown(self):
+        row=assemble([], [global_lead()], [], now=NOW)["stories"][0]
+        self.assertFalse(row["local_collection_time_known"])
+        self.assertIsNone(row["first_collector_observed_utc"])
+
     def test_gal_provider_timestamp_does_not_imply_original_publication_date(self):
         lead=global_lead()
         lead["discovery_provider"]="GDELT GAL RSS"
