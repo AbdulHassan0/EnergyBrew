@@ -134,6 +134,27 @@ class MorningTests(unittest.TestCase):
                          "same_url_previous_research")
         self.assertEqual(r["primary_candidate_count_since_previous_cutoff"],2)
 
+    def test_unverified_only_discovery_never_becomes_ready(self):
+        a,b,c=fixtures()
+        a["articles"]=[]
+        r=prepare(a,b,c,now=NOW)
+        self.assertEqual(r["primary_candidate_count_since_previous_cutoff"],1)
+        self.assertEqual(r["publisher_timestamped_primary_candidates"],0)
+        self.assertIn("no_publisher_timestamped_morning_lead",r["blocking_issues"])
+
+    def test_conflicting_freeze_does_not_rewrite_ready_report(self):
+        a,b,c=fixtures()
+        r=prepare(a,b,c,now=NOW)
+        with tempfile.TemporaryDirectory() as d:
+            self.assertTrue(write_preparation(r,d))
+            path=Path(d)/"readiness_2026-11-19.json"
+            prior=path.read_text()
+            altered=json.loads(json.dumps(r))
+            altered["research_desk"]["stories"][0]["title"]="Replacement story"
+            with self.assertRaises(ValueError):
+                write_preparation(altered,d)
+            self.assertEqual(path.read_text(),prior)
+
     def test_immutable_research_snapshot_cannot_be_rewritten(self):
         a,b,c=fixtures()
         result=prepare(a,b,c,now=NOW)

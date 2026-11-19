@@ -37,6 +37,15 @@ upper bound of at least 75% overnight GAL sampled-window coverage. These are
 conservative PILOT thresholds, not guarantees of completeness. The measured
 coverage upper bound must not be misrepresented as confirmed news recall.
 
+Publisher RSS-timestamped reporting must ground at least one primary research
+candidate. GDELT-only discovery is never sufficient for readiness. All
+candidates still require human editorial review before any future sending.
+
+Immutable research snapshots require a **persistent shared output volume**.
+Separate GitHub Actions runners are ephemeral: the pilot artifacts do not
+enforce cross-run uniqueness. Production needs durable daily uniqueness
+constraints and transactional storage.
+
 Research window: previous 36 hours ending exactly at 06:30; sufficient for
 overnight/previous-day reporting without allowing post-cutoff future leaks.
 Reruns cannot rewrite a previously frozen snapshot, even with new article

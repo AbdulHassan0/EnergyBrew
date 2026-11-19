@@ -186,6 +186,12 @@ def prepare(rss, discovery, releases, *, now=None, edition_date=None,
     mark_morning_research(background["stories"],prior_cutoff,overnight_start,previous_research)
     if desk["selected_research_links"] == 0:
         issues.append("no_qualifying_research_leads")
+    publisher_dated = sum(
+        s.get("origin") == "official_rss" and bool(s.get("publisher_time_verified"))
+        for s in desk["stories"]
+    )
+    if not publisher_dated:
+        issues.append("no_publisher_timestamped_morning_lead")
     if desk["missing_categories"]:
         warnings.append("some_energy_beats_unobserved_not_proof_of_absence")
 
@@ -204,6 +210,7 @@ def prepare(rss, discovery, releases, *, now=None, edition_date=None,
         "candidate_window_utc": {"from":lookback.isoformat(),"through":cutoff.isoformat()},
         "eligible_source_records": {"rss":len(rss_articles),"discovery":len(discovered),"releases":len(released)},
         "primary_candidate_count_since_previous_cutoff":desk["selected_research_links"],
+        "publisher_timestamped_primary_candidates":publisher_dated,
         "older_background_context_count":background["selected_research_links"],
         "background_context":background["stories"],
         "research_desk": desk,
@@ -214,31 +221,35 @@ def prepare(rss, discovery, releases, *, now=None, edition_date=None,
 
 def write_preparation(result, directory):
     directory = Path(directory)
-    directory.mkdir(parents=True,exist_ok=True)
-    # Blocked reports can be overwritten to reflect the latest diagnostics.
-    report = directory / ("readiness_"+result["edition"]["edition_date"]+".json")
-    report.write_text(json.dumps({
-        k:v for k,v in result.items() if k!="research_desk"
-    }, indent=2)+"\n",encoding="utf-8")
-    if result["status"] != "ready_for_editor_review":
-        return False
-    freeze = directory / ("research_"+result["edition"]["edition_date"]+".json")
-    stable = {
-        "edition": result["edition"],
-        "candidate_window_utc": result["candidate_window_utc"],
-        "research_desk": result["research_desk"],
-        "background_context": result["background_context"],
-        "publication_status": result["publication_status"],
-        "disclaimer": result["disclaimer"],
-    }
-    body = json.dumps(stable,sort_keys=True,ensure_ascii=False,indent=2)+"\n"
-    if freeze.exists():
-        if freeze.read_text(encoding="utf-8") != body:
+    directory.mkdir(parents=True, exist_ok=True)
+    report = directory / ("readiness_" + result["edition"]["edition_date"] + ".json")
+    freeze = directory / ("research_" + result["edition"]["edition_date"] + ".json")
+    ready = result["status"] == "ready_for_editor_review"
+    snapshot = None
+    if ready:
+        stable = {
+            "edition": result["edition"],
+            "candidate_window_utc": result["candidate_window_utc"],
+            "research_desk": result["research_desk"],
+            "background_context": result["background_context"],
+            "publication_status": result["publication_status"],
+            "disclaimer": result["disclaimer"],
+        }
+        snapshot = json.dumps(stable,sort_keys=True,ensure_ascii=False,indent=2)+"\n"
+        if freeze.exists() and freeze.read_text(encoding="utf-8") != snapshot:
+            # Never leave a newly written READY report when the frozen
+            # payload conflicts with the previously committed edition.
             raise ValueError("Immutable morning research snapshot already exists; refusing to overwrite")
+    summary = {k:v for k,v in result.items() if k not in ("research_desk","background_context")}
+    summary["frozen_research_available"] = ready
+    temp_report = report.with_suffix(".tmp")
+    temp_report.write_text(json.dumps(summary,indent=2)+"\n",encoding="utf-8")
+    temp_report.replace(report)
+    if not ready or freeze.exists():
         return False
-    tmp=freeze.with_suffix(".tmp")
-    tmp.write_text(body,encoding="utf-8")
-    tmp.replace(freeze)
+    temp_freeze = freeze.with_suffix(".tmp")
+    temp_freeze.write_text(snapshot,encoding="utf-8")
+    temp_freeze.replace(freeze)
     return True
 
 
