@@ -2,13 +2,13 @@
 
 **Research links only. Not fact-checked, approved, or ready for publication.**
 
-Generated (UTC): 2026-11-19T03:47:53.989108+00:00
-Distinct relevant URLs in retained data: **197**
+Generated (UTC): 2026-11-19T03:48:20.237166+00:00
+Distinct relevant URLs in retained data: **205**
 Selected diverse research leads: **32**
 Publisher-timestamped official leads within 24h: **2**
 Specialist-publisher timestamped links within 24h: **22**
 Grid-operator original timestamped links within 24h: **1**
-Likely duplicate links suppressed in the selection: **2**
+Likely duplicate links suppressed in the selection: **3**
 Discovery publisher dates verified: **0**
 
 ## Candidate list
@@ -63,15 +63,16 @@ Discovery publisher dates verified: **0**
    - Timestamp basis: official_publication_date_only (2026-11-17T05:00:00+00:00). Editorial status: **unapproved**.
 24. **[Northwest Pipeline, LLC; Notice of Scoping Period Requesting Comments on Environmental Issues for the Planned Silver Spur Project and Notice of Public Scoping Sessions](https://www.federalregister.gov/documents/2026/11/18/2026-23441/northwest-pipeline-llc-notice-of-scoping-period-requesting-comments-on-environmental-issues-for-the)** — Natural Gas | regulatory_notice | score 30
    - Timestamp basis: official_publication_date_only (2026-11-18T05:00:00+00:00). Editorial status: **unapproved**.
-25. **[Iran’s army chief vows ‘more crushing’ response if US attacks again — One News Page](https://www.onenewspage.com/story/irans-army-chief-vows-more-crushing-response-if-us-attacks-again-6928c75f)** — Geopolitics | global_discovery | score 68
-   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T03:31:00+00:00). Editorial status: **unapproved**.
+25. **[US Navy Used Expired Weapons in Iran War Amid Munitions Shortage](https://www.deccanchronicle.com/world/americas/us-navy-used-expired-weapons-in-iran-war-amid-munitions-shortage-2005763)** — Geopolitics | global_discovery | score 68
+   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T03:46:00+00:00). Editorial status: **unapproved**.
    - Review flags: energy_market_exposure_inferred
-26. **["We don't need any help": Trump claims US has defeated Iran's military, rules out seeking assistance from China, Russia](http://www.middleeaststar.com/news/279442005/we-dont-need-any-help-trump-claims-us-has-defeated-iran-military-rules-out-seeking-assistance-from-china-russia)** — Geopolitics | global_discovery | score 68
-   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T02:46:00+00:00). Editorial status: **unapproved**.
+26. **[Ukraine war briefing: Russia asks if Netherlands has joined conflict after Crimea bridge strike - AOL](https://www.aol.co.uk/articles/ukraine-war-briefing-russia-asks-021626000.html)** — Geopolitics | global_discovery | score 68
+   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T03:46:00+00:00). Editorial status: **unapproved**.
    - Review flags: energy_market_exposure_inferred
-27. **[US Iran War Live Updates: Saudi Arabia issues potential threat alert in Riyadh - The Times of India](https://timesofindia.indiatimes.com/world/middle-east/us-iran-war-live-updates-donald-trump-us-drone-attack-irgc-qeshm-island-middle-east-conflict-strait-of-hormuz-latest-news/liveblog/135969571.cms)** — Geopolitics | global_discovery | score 68
-   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T02:46:00+00:00). Editorial status: **unapproved**.
+27. **["We don't need any help": Trump claims US has defeated Iran's military, rules out seeking assistance from China, Russia](http://www.heraldglobe.com/news/279442005/we-dont-need-any-help-trump-claims-us-has-defeated-iran-military-rules-out-seeking-assistance-from-china-russia)** — Geopolitics | global_discovery | score 68
+   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T03:46:00+00:00). Editorial status: **unapproved**.
    - Review flags: energy_market_exposure_inferred
+   - 1 likely same-event publisher links preserved for review (not independent corroboration).
 28. **[Thành phố Hải Phòng đề xuất thêm 2 dự án điện khí LNG mới](https://baodautu.vn/thanh-pho-hai-phong-de-xuat-them-2-du-an-dien-khi-lng-moi-d746022.html)** — LNG | global_discovery | score 45
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T02:31:00+00:00). Editorial status: **unapproved**.
 29. **[Çexiya ABŞ-dən 15-20 il müddətinə LNG tədarükü barədə razılaşma əldə edib](https://az.trend.az/other/world/4248094.html)** — LNG | global_discovery | score 45

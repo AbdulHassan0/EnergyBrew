@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-11-19T03:47:53.989108+00:00",
+  "generated_utc": "2026-11-19T03:48:20.237166+00:00",
   "status": "research_only_not_approved",
-  "unique_relevant_urls_7d": 197,
+  "unique_relevant_urls_7d": 205,
   "selected_research_links": 32,
   "unique_domains_in_selection": 18,
   "queue_counts": {
@@ -10,7 +10,7 @@
     "older_official_context": 10,
     "timestamped_official": 2,
     "regulatory_date_only": 4,
-    "discovery_unverified": 143,
+    "discovery_unverified": 151,
     "company_release_unverified": 15
   },
   "selected_category_counts": {
@@ -33,7 +33,7 @@
   "publisher_timestamped_official_24h": 2,
   "publisher_timestamped_specialist_24h": 22,
   "system_operator_primary_24h": 1,
-  "likely_same_event_links_suppressed": 2,
+  "likely_same_event_links_suppressed": 3,
   "discovery_publisher_dates_verified": 0,
   "promotional_or_language_review_count": 4,
   "stories": [
@@ -746,71 +746,9 @@
       "rank": 70
     },
     {
-      "title": "Iran’s army chief vows ‘more crushing’ response if US attacks again — One News Page",
-      "url": "https://www.onenewspage.com/story/irans-army-chief-vows-more-crushing-response-if-us-attacks-again-6928c75f",
-      "domain": "www.onenewspage.com",
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics"
-      ],
-      "relevance_score": 68,
-      "relevance_evidence": [
-        "energy_market_exposure:inferred_high_risk_region",
-        "geopolitical_event:attacks",
-        "world_context:iran/united states"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-19T03:31:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [
-        "energy_market_exposure_inferred"
-      ],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 62
-    },
-    {
-      "title": "\"We don't need any help\": Trump claims US has defeated Iran's military, rules out seeking assistance from China, Russia",
-      "url": "http://www.middleeaststar.com/news/279442005/we-dont-need-any-help-trump-claims-us-has-defeated-iran-military-rules-out-seeking-assistance-from-china-russia",
-      "domain": "www.middleeaststar.com",
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics"
-      ],
-      "relevance_score": 68,
-      "relevance_evidence": [
-        "energy_market_exposure:inferred_high_risk_region",
-        "geopolitical_event:military",
-        "world_context:iran/united states"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-19T02:46:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [
-        "energy_market_exposure_inferred"
-      ],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 62
-    },
-    {
-      "title": "US Iran War Live Updates: Saudi Arabia issues potential threat alert in Riyadh - The Times of India",
-      "url": "https://timesofindia.indiatimes.com/world/middle-east/us-iran-war-live-updates-donald-trump-us-drone-attack-irgc-qeshm-island-middle-east-conflict-strait-of-hormuz-latest-news/liveblog/135969571.cms",
-      "domain": "timesofindia.indiatimes.com",
+      "title": "US Navy Used Expired Weapons in Iran War Amid Munitions Shortage",
+      "url": "https://www.deccanchronicle.com/world/americas/us-navy-used-expired-weapons-in-iran-war-amid-munitions-shortage-2005763",
+      "domain": "www.deccanchronicle.com",
       "source": "GDELT GAL RSS",
       "source_class": "unclassified",
       "category": "Geopolitics",
@@ -825,7 +763,7 @@
       ],
       "origin": "global_discovery",
       "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-19T02:46:00+00:00",
+      "observed_time_utc": "2026-11-19T03:46:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
@@ -837,6 +775,77 @@
       "independent_corroboration_verified": false,
       "queue": "discovery_unverified",
       "rank": 62
+    },
+    {
+      "title": "Ukraine war briefing: Russia asks if Netherlands has joined conflict after Crimea bridge strike - AOL",
+      "url": "https://www.aol.co.uk/articles/ukraine-war-briefing-russia-asks-021626000.html",
+      "domain": "www.aol.co.uk",
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics"
+      ],
+      "relevance_score": 68,
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:strike",
+        "world_context:russia/ukraine"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-19T03:46:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [
+        "energy_market_exposure_inferred"
+      ],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 62
+    },
+    {
+      "title": "\"We don't need any help\": Trump claims US has defeated Iran's military, rules out seeking assistance from China, Russia",
+      "url": "http://www.heraldglobe.com/news/279442005/we-dont-need-any-help-trump-claims-us-has-defeated-iran-military-rules-out-seeking-assistance-from-china-russia",
+      "domain": "www.heraldglobe.com",
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics"
+      ],
+      "relevance_score": 68,
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:military",
+        "world_context:iran/united states"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-19T03:46:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [
+        "energy_market_exposure_inferred"
+      ],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 62,
+      "related_reports": [
+        {
+          "title": "\"We don't need any help\": Trump claims US has defeated Iran's military, rules out seeking assistance from China, Russia",
+          "url": "http://www.middleeaststar.com/news/279442005/we-dont-need-any-help-trump-claims-us-has-defeated-iran-military-rules-out-seeking-assistance-from-china-russia",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        }
+      ]
     },
     {
       "title": "Thành phố Hải Phòng đề xuất thêm 2 dự án điện khí LNG mới",
