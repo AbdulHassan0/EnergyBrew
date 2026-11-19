@@ -20,7 +20,10 @@
       "geopolitical_event:attacks",
       "world_context:iran"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.clickorlando.com/business/2026/11/19/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy-shock-iea-says",
@@ -43,7 +46,10 @@
       "geopolitical_event:war",
       "world_context:iran"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.therecord.com/business/there-is-no-going-back-to-the-way-it-was-before-the-iran-war-s-energy-shock-iea-says/article_66e3bb2c-44d0-500b-802b-ef9ee7dfb210.html",
@@ -66,7 +72,10 @@
       "geopolitical_event:war",
       "world_context:iran"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.businesstoday.in/india/story/even-if-military-tensions-exacerbate-we-will-manage-hardeep-puri-on-indias-oil-supplies-amid-west-asia-tensions-568562-2026-11-19",
@@ -89,7 +98,10 @@
       "geopolitical_event:military",
       "world_context:india"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.kvnf.org/2026-11-19/irans-attacks-on-ships-in-the-strait-of-hormuz-escalate",
@@ -458,7 +470,10 @@
       "geopolitical_event:strike",
       "world_context:russia/ukraine"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.ibtimes.co.uk/elon-musk-defends-starlink-support-ukraine-1833313",
@@ -481,7 +496,10 @@
       "geopolitical_event:war",
       "world_context:russia/ukraine"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.breakingnews.ie/world/third-ukrainian-strike-in-four-days-halts-rail-traffic-on-russias-kerch-bridge-1959221.html",
@@ -504,7 +522,10 @@
       "geopolitical_event:strike",
       "world_context:russia/ukraine"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.yakimaherald.com/news/nation_and_world/nation/a-third-ukrainian-strike-in-4-days-halts-rail-traffic-on-russias-kerch-bridge-to/article_9cf1bcde-4f03-5149-b674-a8c4cae99372.html",
@@ -527,7 +548,10 @@
       "geopolitical_event:strike",
       "world_context:russia/ukraine"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "http://www.goskagit.com/news/nation/a-third-ukrainian-strike-in-4-days-halts-rail-traffic-on-russias-kerch-bridge-to/article_3643ec7f-a7c1-5bc7-9300-3993643ccc47.html",
@@ -550,7 +574,10 @@
       "geopolitical_event:strike",
       "world_context:russia/ukraine"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.yakimaherald.com/news/nation_and_world/entertainment/after-near-death-a-leading-russian-filmmaker-resolves-to-confront-putins-war-in-ukraine/article_6a533992-4e7e-555c-8a55-df740ff9f7a3.html",
@@ -573,7 +600,10 @@
       "geopolitical_event:war",
       "world_context:russia/ukraine"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.naharnet.com:443/stories/en/323889-third-ukrainian-strike-in-4-days-halts-rail-traffic-on-russia-s-kerch-bridge",
@@ -596,7 +626,10 @@
       "geopolitical_event:strike",
       "world_context:russia/ukraine"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.el-balad.com/17068214",
@@ -619,7 +652,10 @@
       "geopolitical_event:attacks",
       "world_context:iran/united states"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://lethbridgeherald.com/entertainment/entertainment-news/2026/11/19/after-near-death-a-leading-russian-filmmaker-resolves-to-confront-putins-war-in-ukraine",
@@ -642,7 +678,10 @@
       "geopolitical_event:war",
       "world_context:russia/ukraine"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.therecord.com/news/world/europe/a-third-ukrainian-strike-in-4-days-halts-rail-traffic-on-russia-s-kerch-bridge/article_efa73479-f958-5481-a6df-0171f54ce807.html",
@@ -665,7 +704,10 @@
       "geopolitical_event:strike",
       "world_context:russia/ukraine"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.times-series.co.uk/news/national/26743383.third-ukrainian-strike-four-days-halts-rail-traffic-russias-kerch-bridge",
@@ -1778,7 +1820,10 @@
       "grid",
       "power grid"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.afr.com/policy/energy-and-climate/a-victorian-coalition-win-will-deepen-fractures-in-national-power-grid-20261119-p61fcl",
@@ -2180,7 +2225,10 @@
     "relevance_evidence": [
       "natural gas"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.republicanherald.com/2026/11/19/today-in-history-november-19-explosions-at-mexico-city-natural-gas-facility-kills-at-least-500",
@@ -2201,7 +2249,10 @@
     "relevance_evidence": [
       "natural gas"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.timescall.com/2026/11/19/today-in-history-november-19-explosions-at-mexico-city-natural-gas-facility-kills-at-least-500",
@@ -2222,7 +2273,10 @@
     "relevance_evidence": [
       "natural gas"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.mercurynews.com/2026/11/19/today-in-history-november-19-explosions-at-mexico-city-natural-gas-facility-kills-at-least-500",
@@ -2391,7 +2445,10 @@
     "relevance_evidence": [
       "gas prices"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.abc.net.au/news/topic/electricity-production-and-distribution",
@@ -2412,7 +2469,10 @@
     "relevance_evidence": [
       "electricity"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://arynews.tv/oil-prices-rise-as-middle-east-shipping-attacks-counter-supply-surplus-outlook",
@@ -2433,7 +2493,10 @@
     "relevance_evidence": [
       "oil prices"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.inewsgr.com/486/Chevron-avrio-xekina-geofysikes-erevnes-notia-tis-peloponnisou.htm",
@@ -2454,7 +2517,10 @@
     "relevance_evidence": [
       "chevron"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "http://www.bignewsnetwork.com/news/279443014/globalizing-energy-socialism-mission-innovative-engineered-solutions-for-stabilized-performance-of-natural-resources-based-electricity-generation",
@@ -2475,7 +2541,10 @@
     "relevance_evidence": [
       "electricity"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.wellandtribune.ca/news/ontario-gas-price-prediction-for-nov-19-20/article_ae858898-a9b9-5cb7-ab8f-fcd248f9caab.html",
@@ -2496,7 +2565,10 @@
     "relevance_evidence": [
       "gas prices"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.tanea.gr/2026/11/19/greece/en-plo-to-ramform-tethys-gia-tis-ereynes-tis-chevron-ekdothike-i-navtex-pou-epivevaionei-to-reportaz-ton-neon",
@@ -3332,7 +3404,10 @@
     "relevance_evidence": [
       "data center"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.energylivenews.com/2026/11/19/offshore-oil-and-gas-industry-cuts-emissions-to-below-2027-target",
@@ -3353,7 +3428,10 @@
     "relevance_evidence": [
       "oil and gas"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://econotimes.com/Ontario-s-Ford-Says-Municipalities-Should-Choose-Data-Center-Sites-1779599",
@@ -3374,7 +3452,10 @@
     "relevance_evidence": [
       "data center"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.timescall.com/2026/11/18/kyndryl-inks-630m-pact-with-argentum-for-boulder-data-center",
@@ -3395,7 +3476,10 @@
     "relevance_evidence": [
       "data center"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://ildispaccio.it/calabria/2026/11/19/data-center-e-transizione-quantistica-la-linea-di-pietropaolo-sostenere-gli-investimenti-senza-mortificare-i-territori-la-calabria-ha-bisogno-di-una-normativa-lungimirante-a-tutela-dei-suoi-patri",
@@ -3416,7 +3500,10 @@
     "relevance_evidence": [
       "data center"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://wsau.com/2026/11/19/at-cop31-venezuela-touts-ai-as-path-to-cleaner-oil-production",
@@ -5161,7 +5248,10 @@
     "relevance_evidence": [
       "siemens energy"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.manager-magazin.de/unternehmen/industrie/siemens-energy-so-naehrt-der-dax-konzern-zerschlagungsaengste-a-c0115484-b365-4d73-9680-5bbac56c4649",
@@ -5182,7 +5272,10 @@
     "relevance_evidence": [
       "siemens energy"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://cyprus-mail.com/2026/11/19/eac-insists-battery-storage-is-moving-forward",
