@@ -14,7 +14,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from collector import SOURCES, collect, fetch_feed
+from collector import SOURCES, SOURCE_FALLBACKS, collect, fetch_feed
 from morning_readiness import local_schedule, prepare, write_preparation
 from newsletter import research_queue
 from public_collector_guard import ensure_sources_public, validate_records
@@ -34,7 +34,8 @@ def read_json(path):
 def concurrent_first_fetches(*, workers=5):
     """Share the same bounded source-aware fanout as the GitHub RSS CLI."""
     return _concurrent_first_fetches(
-        sources=SOURCES, fetcher=fetch_feed, workers=workers)
+        sources=SOURCES, fetcher=fetch_feed, workers=workers,
+        on_demand_urls=tuple(SOURCE_FALLBACKS.values()))
 
 
 def recover_abandoned_rss_stage(state_path):

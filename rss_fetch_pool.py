@@ -10,7 +10,8 @@ import time
 from concurrent.futures import ThreadPoolExecutor
 
 
-def concurrent_first_fetches(*, sources, fetcher, workers=5, sleep=None):
+def concurrent_first_fetches(*, sources, fetcher, workers=5, sleep=None,
+                             on_demand_urls=()):
     if not 1 <= workers <= 10:
         raise ValueError("RSS worker count must be 1..10")
     if not callable(fetcher):
@@ -18,6 +19,9 @@ def concurrent_first_fetches(*, sources, fetcher, workers=5, sleep=None):
     # URLs are de-duplicated before network requests even if several source
     # labels accidentally point to the same endpoint.
     urls=list(dict.fromkeys(url for _label,url in sources))
+    # The fallback allowlist is authored in code, not learned from untrusted
+    # feed items or redirects. It is NEVER prefetched when primary feeds work.
+    on_demand=set(on_demand_urls) - set(urls)
     executor=ThreadPoolExecutor(max_workers=workers,
                                 thread_name_prefix="energybrew-rss")
     try:
@@ -29,6 +33,8 @@ def concurrent_first_fetches(*, sources, fetcher, workers=5, sleep=None):
     pause=sleep if sleep is not None else time.sleep
 
     def get(url):
+        if url in on_demand:
+            return fetcher(url)
         if url not in first:
             raise ValueError("Unconfigured RSS URL")
         times=attempts.get(url,0)

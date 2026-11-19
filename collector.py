@@ -43,6 +43,13 @@ MAX_BYTES = 2_000_000
 MIN_HEALTHY_FEED_RATIO = 0.8
 MAX_TRANSIENT_RETRIES = 1
 FRAGILE_SOURCE_EXTRA_RETRIES = frozenset({"PJM Inside Lines"})
+# Same official PJM publisher, independently validated as parsable Atom RSS
+# from an internet-connected GitHub Actions runner on 2026-11-19.
+# This is strictly an on-demand last-resort alternate after transient primary
+# failures, not a repair of malformed XML and not an additional news publisher.
+SOURCE_FALLBACKS = {
+    "PJM Inside Lines": "https://insidelines.pjm.com/feed/atom/",
+}
 # Federal Register is an official daily publication: the date is meaningful,
 # but its feed clock is NOT evidence of an intraday publication timestamp.
 DAY_PRECISION_SOURCES = {"Federal Register notices"}
@@ -276,10 +283,16 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
         row = {"source": name, "url": url, "connected": False, "items_seen": 0,
                "fresh": 0, "new": 0, "request_attempts": 0,
                "transient_retry_count": 0, "recovered_after_retry": False}
-        for attempt in range(1, max_feed_attempts(name) + 1):
+        # Keep every ordinary retry on the configured primary; only the final
+        # attempt for a persistently transient failure may request the validated
+        # alternate from that SAME official publisher. Never evade a 429.
+        attempt_urls = [url] * max_feed_attempts(name)
+        if name in SOURCE_FALLBACKS:
+            attempt_urls.append(SOURCE_FALLBACKS[name])
+        for attempt, attempt_url in enumerate(attempt_urls, start=1):
             row["request_attempts"] = attempt
             try:
-                raw, status = fetcher(url)
+                raw, status = fetcher(attempt_url)
                 if not isinstance(status, int) or not 200 <= status < 300:
                     raise FeedHTTPStatusError(status)
                 date_precision = "day" if name in DAY_PRECISION_SOURCES else "timestamp"
@@ -290,6 +303,9 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
                 row.update({
                     "connected": True,
                     "http_status": status,
+                    "actual_feed_url": attempt_url,
+                    "fallback_used": attempt_url != url,
+                    "primary_error_before_fallback": (row.get("error") if attempt_url != url else None),
                     "items_seen": seen,
                     "fresh": sum(x["published_precision"] == "timestamp" for x in items),
                     "date_only": sum(x["published_precision"] == "day" for x in items),
@@ -324,7 +340,7 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
                 break
             except Exception as exc:
                 row["error"] = f"{type(exc).__name__}: {str(exc)[:220]}"
-                if attempt == max_feed_attempts(name) or not retryable_feed_error(exc):
+                if attempt == len(attempt_urls) or not retryable_feed_error(exc):
                     break
                 row["transient_retry_count"] += 1
                 # Don't delay deterministic offline tests with an injected fetcher.
@@ -349,6 +365,9 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
             "newest_feed_published_utc": row.get("newest_feed_published_utc") if success else prior.get("newest_feed_published_utc"),
             "last_error_type": None if success else row.get("error", "").split(":", 1)[0][:80],
             "last_request_attempts": row["request_attempts"],
+            "last_fallback_used": bool(row.get("fallback_used")),
+            "last_actual_feed_url": row.get("actual_feed_url", url) if success else None,
+            "total_fallback_recoveries": int(prior.get("total_fallback_recoveries",0)) + int(bool(row.get("fallback_used"))),
             "last_transient_retry_count": row["transient_retry_count"],
             "last_recovered_after_retry": bool(row["recovered_after_retry"]),
             "total_recoveries": int(prior.get("total_recoveries", 0)) + int(row["recovered_after_retry"]),
@@ -452,7 +471,9 @@ def main(argv=None):
     # All public publisher requests begin in bounded parallel batches,
     # rather than serially waiting on each slow or failing source.
     from rss_fetch_pool import concurrent_first_fetches
-    pool, fetcher = concurrent_first_fetches(sources=SOURCES, fetcher=fetch_feed)
+    pool, fetcher = concurrent_first_fetches(
+        sources=SOURCES, fetcher=fetch_feed,
+        on_demand_urls=tuple(SOURCE_FALLBACKS.values()))
     try:
         result = collect(Path(args.state), Path(args.output),
                          hours=args.hours, fetcher=fetcher)

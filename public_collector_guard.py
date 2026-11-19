@@ -8,7 +8,7 @@ import argparse
 import json
 from pathlib import Path
 from urllib.parse import urlsplit
-from collector import SOURCES, clean_url
+from collector import SOURCES, SOURCE_FALLBACKS, clean_url
 from discovery import API as GDELT_DOC_URL
 from gal import FEED_URL as GDELT_GAL_URL
 from press_releases import URL as PRESS_FEED_URL
@@ -41,6 +41,7 @@ class SafetyError(ValueError):
 
 def ensure_sources_public() -> None:
     source_urls = [url for _, url in SOURCES]
+    source_urls.extend(SOURCE_FALLBACKS.values())
     source_urls.extend([GDELT_DOC_URL, GDELT_GAL_URL, PRESS_FEED_URL])
     for uri in source_urls:
         parsed = urlsplit(uri)

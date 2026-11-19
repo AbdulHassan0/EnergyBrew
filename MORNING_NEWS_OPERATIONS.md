@@ -101,3 +101,14 @@ A tested morning preparation workflow alone does not repair this: the
 continuous collector must be deployed on a reliable, internet-connected host
 with persistent state and independent alerts before claiming dependable
 daily 07:00 readiness.
+
+## PJM single-publisher safe recovery
+
+PJM Inside Lines has occasionally returned malformed XML even with HTTP 200.
+A live 2026-11-19 GitHub runner verified the regular feed and its same-domain
+WordPress Atom alternate parse successfully; RSS2 alternate returned identical
+bytes to the primary. The collector now retries the primary three times on
+transient failures and uses Atom only on the **last resort fourth request**.
+HTTP 429 is never circumvented. Fallback usage, original parse error and
+actual endpoint are persisted in source health; success does not imply a
+second independent news publisher or permission to redistribute article text.

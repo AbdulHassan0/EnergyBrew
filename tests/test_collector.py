@@ -23,6 +23,47 @@ def fixture_fetch(url):
     return sample(url=f"https://example.gov/unique-story/{unique}"), 200
 
 class CollectorTests(unittest.TestCase):
+    def test_pjm_last_resort_atom_fallback_after_three_malformed_primary_responses(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            primary="https://insidelines.pjm.com/feed/"
+            atom="https://insidelines.pjm.com/feed/atom/"
+            requested=[]
+            def fake(url):
+                requested.append(url)
+                if url==primary:
+                    return b"<rss><channel><item><title>invalid & XML</title></item></channel></rss>",200
+                return fixture_fetch(url)
+            report=collect(Path(tmp)/"state.json",Path(tmp)/"out",
+                           now=NOW,fetcher=fake)
+            pjm=next(x for x in report["sources"] if x["source"]=="PJM Inside Lines")
+            self.assertEqual(report["feeds_connected"],len(SOURCES))
+            self.assertEqual(requested.count(primary),3)
+            self.assertEqual(requested.count(atom),1)
+            self.assertTrue(pjm["fallback_used"])
+            self.assertEqual(pjm["actual_feed_url"],atom)
+            self.assertIn("ParseError",pjm["primary_error_before_fallback"])
+            self.assertEqual(pjm["request_attempts"],4)
+            self.assertTrue(report["source_health"]["PJM Inside Lines"]["last_fallback_used"])
+
+    def test_pjm_429_does_not_probe_alternate_to_avoid_rate_limit(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            primary="https://insidelines.pjm.com/feed/"
+            atom="https://insidelines.pjm.com/feed/atom/"
+            requested=[]
+            def fake(url):
+                requested.append(url)
+                if url==primary:
+                    return b"",429
+                if url==atom:
+                    raise AssertionError("Never use alternate after 429")
+                return fixture_fetch(url)
+            report=collect(Path(tmp)/"state.json",Path(tmp)/"out",
+                           now=NOW,fetcher=fake)
+            pjm=next(x for x in report["sources"] if x["source"]=="PJM Inside Lines")
+            self.assertFalse(pjm["connected"])
+            self.assertEqual(pjm["request_attempts"],1)
+            self.assertEqual(requested.count(atom),0)
+
     def test_publisher_cli_uses_real_bounded_parallel_fetch_pool(self):
         from collector import main
         with tempfile.TemporaryDirectory() as d:

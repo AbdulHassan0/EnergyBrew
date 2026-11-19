@@ -35,6 +35,24 @@ class RSSFetchPoolTests(unittest.TestCase):
         finally:
             pool.shutdown(wait=True)
 
+    def test_alternate_is_on_demand_not_prefetched_or_arbitrary(self):
+        calls=[]
+        primary="https://official.test/feed/"
+        fallback="https://official.test/feed/atom/"
+        pool,get=concurrent_first_fetches(
+            sources=[("official",primary)],
+            fetcher=lambda url:(calls.append(url) or (b"<rss/>",200)),
+            on_demand_urls=[fallback])
+        try:
+            self.assertEqual(get(primary)[1],200)
+            self.assertEqual(calls,[primary])
+            with self.assertRaises(ValueError):
+                get("https://unknown.test/feed")
+            self.assertEqual(get(fallback)[1],200)
+            self.assertEqual(calls,[primary,fallback])
+        finally:
+            pool.shutdown(wait=True)
+
     def test_rejects_unlisted_host_without_http_request(self):
         pool,get=concurrent_first_fetches(
             sources=[],fetcher=lambda _:(_ for _ in ()).throw(AssertionError("http")))
