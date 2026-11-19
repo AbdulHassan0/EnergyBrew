@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-11-19T13:30:50.867187+00:00",
+  "generated_utc": "2026-11-19T13:34:07.666566+00:00",
   "status": "research_only_not_approved",
-  "unique_relevant_urls_7d": 379,
+  "unique_relevant_urls_7d": 393,
   "selected_research_links": 32,
   "unique_domains_in_selection": 19,
   "queue_counts": {
@@ -10,7 +10,7 @@
     "older_official_context": 18,
     "regulatory_date_only": 6,
     "timestamped_official": 3,
-    "discovery_unverified": 314,
+    "discovery_unverified": 328,
     "company_release_unverified": 21
   },
   "selected_category_counts": {
@@ -26,7 +26,7 @@
     "LNG": 4,
     "Power & Electricity": 8,
     "Oil & Energy": 10,
-    "Infrastructure & Investment": 11,
+    "Infrastructure & Investment": 12,
     "Geopolitics": 8
   },
   "missing_categories": [],
@@ -517,6 +517,37 @@
       "rank": 106
     },
     {
+      "title": "Houthis Attack Saudi Oil Pipeline Pumping Station",
+      "url": "http://www.maritimeprofessional.com/news/houthis-attack-saudi-pipeline-pumping-424289",
+      "domain": "www.maritimeprofessional.com",
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics",
+        "Infrastructure & Investment",
+        "Oil & Energy"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:oil",
+        "geopolitical_event:attack",
+        "world_context:houthis"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-19T13:31:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
+    },
+    {
       "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says - Newsday",
       "url": "https://www.newsday.com/business/cop31-turkey-climate-change-energy-y82979",
       "domain": "www.newsday.com",
@@ -784,36 +815,6 @@
       "origin": "global_discovery",
       "time_basis": "gdelt_gal_rss_provider_time_unverified",
       "observed_time_utc": "2026-11-18T18:32:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102
-    },
-    {
-      "title": "Drone attacks nearly halve Russia November oil refining , sources say",
-      "url": "https://www.jpost.com/international/internationalrussia-ukraine-war/article-915337",
-      "domain": "www.jpost.com",
-      "source": "GDELT DOC 2.0",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics",
-        "Oil & Energy"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:oil",
-        "geopolitical_event:attacks",
-        "world_context:russia"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "discovery_index_first_seen_only",
-      "observed_time_utc": "2026-11-18T17:30:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,

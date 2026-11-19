@@ -1,6 +1,6 @@
 # EnergyBrew — broad discovery leads
 
-Run UTC: 2026-11-19T13:30:39.618717+00:00
+Run UTC: 2026-11-19T13:33:57.712290+00:00
 GDELT status: **provider_cooldown**
 Consecutive provider throttle episodes: **2**
 Provider retry after: **2026-11-19T16:28:08.320524+00:00**

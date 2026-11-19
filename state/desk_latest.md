@@ -2,8 +2,8 @@
 
 **Research links only. Not fact-checked, approved, or ready for publication.**
 
-Generated (UTC): 2026-11-19T13:30:50.867187+00:00
-Distinct relevant URLs in retained data: **379**
+Generated (UTC): 2026-11-19T13:34:07.666566+00:00
+Distinct relevant URLs in retained data: **393**
 Selected diverse research leads: **32**
 Publisher-timestamped official leads within 24h: **3**
 Specialist-publisher timestamped links within 24h: **16**
@@ -46,20 +46,20 @@ Discovery publisher dates verified: **0**
    - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-18T15:57:17+00:00). Editorial status: **unapproved**.
 16. **[Algonquin Gas Transmission, LLC; Notice of Application and Establishing Intervention Deadline](https://www.federalregister.gov/documents/2026/11/18/2026-23446/algonquin-gas-transmission-llc-notice-of-application-and-establishing-intervention-deadline)** — Natural Gas | regulatory_notice | score 66
    - Timestamp basis: official_publication_date_only (2026-11-18T05:00:00+00:00). Editorial status: **unapproved**.
-17. **[There is no going back 'to the way it was before' the Iran war's energy shock, IEA says - Newsday](https://www.newsday.com/business/cop31-turkey-climate-change-energy-y82979)** — Geopolitics | global_discovery | score 90
+17. **[Houthis Attack Saudi Oil Pipeline Pumping Station](http://www.maritimeprofessional.com/news/houthis-attack-saudi-pipeline-pumping-424289)** — Geopolitics | global_discovery | score 90
+   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T13:31:00+00:00). Editorial status: **unapproved**.
+18. **[There is no going back 'to the way it was before' the Iran war's energy shock, IEA says - Newsday](https://www.newsday.com/business/cop31-turkey-climate-change-energy-y82979)** — Geopolitics | global_discovery | score 90
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T13:17:00+00:00). Editorial status: **unapproved**.
    - 15 likely same-event publisher links preserved for review (not independent corroboration).
-18. **[Iran's attacks on ships in the Strait of Hormuz escalate](https://www.wfae.org/united-states-world/2026-11-19/irans-attacks-on-ships-in-the-strait-of-hormuz-escalate)** — Geopolitics | global_discovery | score 90
+19. **[Iran's attacks on ships in the Strait of Hormuz escalate](https://www.wfae.org/united-states-world/2026-11-19/irans-attacks-on-ships-in-the-strait-of-hormuz-escalate)** — Geopolitics | global_discovery | score 90
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T12:46:00+00:00). Editorial status: **unapproved**.
    - 3 likely same-event publisher links preserved for review (not independent corroboration).
-19. **['Even if military tensions exacerbate, we will manage': Hardeep Puri on India’s oil supplies amid West Asia tensions - BusinessToday](https://www.businesstoday.in/india/story/even-if-military-tensions-exacerbate-we-will-manage-hardeep-puri-on-indias-oil-supplies-amid-west-asia-tensions-568562-2026-11-19)** — Geopolitics | global_discovery | score 90
+20. **['Even if military tensions exacerbate, we will manage': Hardeep Puri on India’s oil supplies amid West Asia tensions - BusinessToday](https://www.businesstoday.in/india/story/even-if-military-tensions-exacerbate-we-will-manage-hardeep-puri-on-indias-oil-supplies-amid-west-asia-tensions-568562-2026-11-19)** — Geopolitics | global_discovery | score 90
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T11:47:00+00:00). Editorial status: **unapproved**.
-20. **[Ammonnews : Jordanian sailor missing after oil tanker attack in Strait of Hormuz](http://en.ammonnews.net/article/97318)** — Geopolitics | global_discovery | score 90
+21. **[Ammonnews : Jordanian sailor missing after oil tanker attack in Strait of Hormuz](http://en.ammonnews.net/article/97318)** — Geopolitics | global_discovery | score 90
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T10:46:00+00:00). Editorial status: **unapproved**.
-21. **[Bahrain's war-hit Sitra refinery weeks away from full capacity, Bapco Energies CEO says / The National](https://www.thenationalnews.com/business/energy/2026/11/18/bahrains-war-hit-sitra-refinery-weeks-away-from-full-capacity-bapco-energies-ceo-says)** — Geopolitics | global_discovery | score 90
+22. **[Bahrain's war-hit Sitra refinery weeks away from full capacity, Bapco Energies CEO says / The National](https://www.thenationalnews.com/business/energy/2026/11/18/bahrains-war-hit-sitra-refinery-weeks-away-from-full-capacity-bapco-energies-ceo-says)** — Geopolitics | global_discovery | score 90
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-18T18:32:00+00:00). Editorial status: **unapproved**.
-22. **[Drone attacks nearly halve Russia November oil refining , sources say](https://www.jpost.com/international/internationalrussia-ukraine-war/article-915337)** — Geopolitics | global_discovery | score 90
-   - Timestamp basis: discovery_index_first_seen_only (2026-11-18T17:30:00+00:00). Editorial status: **unapproved**.
 23. **[US Oil Inventories On the Rise](https://oilprice.com/Energy/Crude-Oil/US-Oil-Inventories-On-the-Rise.html)** — Oil & Energy | official_rss | score 36
    - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-18T15:39:53+00:00). Editorial status: **unapproved**.
 24. **[Orlen spreads its wings across Central and Eastern Europe with new gas pacts](https://www.offshore-energy.biz/2026/11/18/orlen-spreads-its-wings-across-central-and-eastern-europe-with-new-gas-pacts)** — Natural Gas | official_rss | score 30
