@@ -1,20 +1,20 @@
 # EnergyBrew collection reliability and volume
 
-Generated: 2026-11-19T13:28:30.596218+00:00
+Generated: 2026-11-19T13:30:51.923343+00:00
 Status: **degraded**
 Seven-day pilot complete: **False**
 Observed history span: **1.08 days**
-RSS scans: **66** (above 80% feed quorum: 66, all feeds connected: 61, below quorum: 0)
+RSS scans: **67** (above 80% feed quorum: 67, all feeds connected: 62, below quorum: 0)
 Sources whose newest publisher item is within seven days: **8** / 15
 RSS transient retries in retained scan history: **4**; recovered source events: **0**
-GDELT GAL samples: **66** (successful: 66, degraded: 0, repeated payload fingerprints: 12)
+GDELT GAL samples: **67** (successful: 67, degraded: 0, repeated payload fingerprints: 13)
 GDELT intervals longer than 15 minutes: **10**
-Past 24h GAL potential sampling window covered (upper bound): **21.07%**
-Past 24h certainly unobserved time: **1136.6 minutes**
+Past 24h GAL potential sampling window covered (upper bound): **21.23%**
+Past 24h certainly unobserved time: **1134.3 minutes**
 Longest unobserved span in 24h: **415.4 minutes**
-Past 7d GAL potential sampling window covered (upper bound): **3.01%**
+Past 7d GAL potential sampling window covered (upper bound): **3.03%**
 Potential coverage is NOT proof of complete news indexing or publication-time accuracy.
-Gap from seven-day window start to first GAL sample: **8942.9 min**
+Gap from seven-day window start to first GAL sample: **8940.6 min**
 Age of latest successful GAL sample: **0.2 min**
 
 | UTC day | Official scans | GAL samples | Timestamped agency | Specialist RSS | Grid operator | High-signal agency | GDELT first-seen URLs | Release-feed URLs |
@@ -25,7 +25,7 @@ Age of latest successful GAL sample: **0.2 min**
 | 2026-11-16 | 0 | 0 | 3 | 0 | 2 | 1 | 0 | 0 |
 | 2026-11-17 | 0 | 0 | 5 | 15 | 0 | 1 | 0 | 0 |
 | 2026-11-18 | 48 | 41 | 4 | 32 | 1 | 3 | 127 | 15 |
-| 2026-11-19 | 18 | 25 | 0 | 16 | 0 | 0 | 215 | 6 |
+| 2026-11-19 | 19 | 26 | 0 | 17 | 0 | 0 | 215 | 6 |
 
 ## Feed content age — independent of network connectivity
 
@@ -39,13 +39,13 @@ Age of latest successful GAL sample: **0.2 min**
 | DOE Hydrocarbons Releases | 2026-11-04T05:00:00+00:00 | 368.5 | no_publication_in_7d |
 | EIA Press Releases | 2026-11-10T17:00:00+00:00 | 212.5 | no_publication_in_7d |
 | EIA Today in Energy | 2026-11-18T14:00:00+00:00 | 23.5 | publication_within_7d |
-| Utility Dive News | 2026-11-18T15:57:17+00:00 | 21.5 | publication_within_7d |
+| Utility Dive News | 2026-11-18T15:57:17+00:00 | 21.6 | publication_within_7d |
 | DOE Energy News | 2026-11-18T18:06:31+00:00 | 19.4 | publication_within_7d |
-| PJM Inside Lines | 2026-11-18T18:56:18+00:00 | 18.5 | publication_within_7d |
+| PJM Inside Lines | 2026-11-18T18:56:18+00:00 | 18.6 | publication_within_7d |
 | European Commission DG Energy | 2026-11-18T23:00:00+00:00 | 14.5 | publication_within_7d |
 | Federal Register notices | 2026-11-19T05:00:00+00:00 | 8.5 | publication_within_7d |
-| Offshore Energy News | 2026-11-19T12:26:28+00:00 | 1.0 | publication_within_7d |
-| OilPrice.com News | 2026-11-19T12:30:00+00:00 | 1.0 | publication_within_7d |
+| Offshore Energy News | 2026-11-19T12:26:28+00:00 | 1.1 | publication_within_7d |
+| OilPrice.com News | 2026-11-19T13:30:00+00:00 | 0.0 | publication_within_7d |
 
 Some regulator and testimony feeds are naturally intermittent; an old item does not imply collection failure.
 
@@ -58,7 +58,7 @@ Some regulator and testimony feeds are naturally intermittent; an old item does 
 
 ## Warnings
 - 10 observed GAL intervals exceeded 15 minutes
-- 24h GAL sampled-window coverage upper bound is 21.07% (1136.6 min not sampled)
+- 24h GAL sampled-window coverage upper bound is 21.23% (1134.3 min not sampled)
 - 5 RSS scans had incomplete source connectivity
 - Seven-day operating pilot is not yet complete
 

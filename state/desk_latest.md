@@ -2,11 +2,11 @@
 
 **Research links only. Not fact-checked, approved, or ready for publication.**
 
-Generated (UTC): 2026-11-19T13:28:29.551668+00:00
+Generated (UTC): 2026-11-19T13:30:50.867187+00:00
 Distinct relevant URLs in retained data: **379**
 Selected diverse research leads: **32**
 Publisher-timestamped official leads within 24h: **3**
-Specialist-publisher timestamped links within 24h: **17**
+Specialist-publisher timestamped links within 24h: **16**
 Grid-operator original timestamped links within 24h: **1**
 Likely duplicate links suppressed in the selection: **21**
 Discovery publisher dates verified: **0**
