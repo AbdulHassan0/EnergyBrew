@@ -40,6 +40,10 @@ never two simultaneous writers to the same state.**
 
 ## Single-worker operating schedule (America/Chicago, DST-aware)
 
+- Publisher RSS: one immediate startup scan outside the protected morning
+  window, then every two hours; critical source outages back off 20 minutes.
+  A separate 05:20–07:15 reserved window prevents nonessential refreshes
+  from delaying time-critical research preparation.
 - GAL: every five minutes, continuously; never retroactively fills missed
   GDELT index time. Successful and failed runs are individually measured.
 - 05:35: safely refresh publisher RSS metadata.

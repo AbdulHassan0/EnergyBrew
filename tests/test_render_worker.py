@@ -6,7 +6,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from render_worker import JOBS, read_state, scheduler_tick, worker_loop
+from render_worker import JOBS, read_state, scheduler_tick, worker_loop, periodic_rss_tick
 
 ROOT = Path(__file__).resolve().parents[1]
 ZONE = ZoneInfo("America/Chicago")
@@ -90,6 +90,44 @@ class RenderWorkerTests(unittest.TestCase):
                                     execute=lambda _: ("ok", "recovered"))
             self.assertEqual(report["jobs"]["rss_early"]["status"], "ok")
             self.assertEqual(report["jobs"]["rss_early"]["attempts"], 2)
+
+    def test_periodic_rss_bootstraps_empty_disk_and_respects_two_hour_cadence(self):
+        with tempfile.TemporaryDirectory() as directory:
+            calls = []
+            def scan():
+                calls.append("rss")
+                return {"status": "healthy"}
+            initial = periodic_rss_tick(directory, now=local_time(8, 0), execute=scan)
+            early = periodic_rss_tick(directory, now=local_time(9, 59), execute=scan)
+            due = periodic_rss_tick(directory, now=local_time(10, 0), execute=scan)
+            self.assertTrue(initial["attempted"])
+            self.assertFalse(early["attempted"])
+            self.assertTrue(due["attempted"])
+            self.assertEqual(calls, ["rss", "rss"])
+
+    def test_periodic_rss_cannot_interfere_with_morning_cutoff(self):
+        with tempfile.TemporaryDirectory() as directory:
+            calls = []
+            for h,m in [(5,35),(5,45),(6,24),(6,38),(7,14)]:
+                report=periodic_rss_tick(directory, now=local_time(h,m),
+                                         execute=lambda: calls.append("unexpected"))
+                self.assertEqual(report["status"], "reserved_morning_window")
+                self.assertFalse(report["attempted"])
+            self.assertEqual(calls, [])
+
+    def test_failed_periodic_scan_retries_later_not_hammered(self):
+        with tempfile.TemporaryDirectory() as directory:
+            calls = []
+            def scan():
+                calls.append("rss")
+                return {"status": "critical" if len(calls)==1 else "healthy"}
+            a=periodic_rss_tick(directory, now=local_time(8,0), execute=scan)
+            b=periodic_rss_tick(directory, now=local_time(8,10), execute=scan)
+            c=periodic_rss_tick(directory, now=local_time(8,20), execute=scan)
+            self.assertEqual(a["status"], "critical")
+            self.assertFalse(b["attempted"])
+            self.assertEqual(c["status"], "ok")
+            self.assertEqual(len(calls), 2)
 
     def test_naive_clock_is_rejected(self):
         with tempfile.TemporaryDirectory() as directory:

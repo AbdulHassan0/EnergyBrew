@@ -49,6 +49,8 @@ JOBS = (
 MAX_ATTEMPTS = 2
 RETRY_AFTER_SECONDS = 75
 DEFAULT_WAKE_SECONDS = 10
+PERIODIC_RSS_SECONDS = 2 * 3600
+FAILED_RSS_RETRY_SECONDS = 20 * 60
 
 
 def read_state(path):
@@ -163,6 +165,56 @@ def scheduler_tick(root, *, now=None, zone="America/Chicago", execute=None):
     return {"date": day, "dispatched": dispatched, "jobs": dict(today)}
 
 
+def periodic_rss_tick(root, *, now=None, zone="America/Chicago", execute=None):
+    """Collect publisher RSS throughout the day, including first boot.
+
+    Keep background scans away from the strict morning edition schedule.
+    A critical scan retries after 20 minutes; success is normally every
+    two hours. Never count a failed poll as publisher connectivity.
+    """
+    now = now or datetime.now(timezone.utc)
+    if now.tzinfo is None or now.utcoffset() is None:
+        raise ValueError("Periodic RSS clock must include a timezone")
+    now = now.astimezone(timezone.utc)
+    wall = now.astimezone(ZoneInfo(zone)).time().replace(tzinfo=None)
+    if wall_time(5, 20) <= wall < wall_time(7, 15):
+        return {"status": "reserved_morning_window", "attempted": False}
+    root = Path(root)
+    root.mkdir(parents=True, exist_ok=True)
+    path = root / "render_periodic_rss.json"
+    if path.exists():
+        state = json.loads(path.read_text(encoding="utf-8"))
+        if not isinstance(state, dict):
+            raise ValueError("Invalid periodic RSS state")
+    else:
+        state = {}
+    due = state.get("next_due_utc")
+    if due and datetime.fromisoformat(due) > now:
+        return {"status": state.get("status", "unknown"), "attempted": False}
+    state.update(status="running", last_attempt_utc=now.isoformat())
+    atomic_json(path, state)
+    try:
+        outcome = execute() if execute else run_refresh(root, now=now)
+        scan = outcome.get("status", "unknown")
+        status = "critical" if scan == "critical" else (
+            "ok" if scan in ("healthy", "degraded") else "critical")
+        state.update(status=status, last_scan_state=scan,
+                     last_completed_utc=datetime.now(timezone.utc).isoformat(),
+                     next_due_utc=(now + timedelta(seconds=(
+                         FAILED_RSS_RETRY_SECONDS if status == "critical"
+                         else PERIODIC_RSS_SECONDS))).isoformat())
+    except SafetyError:
+        state.update(status="critical", last_scan_state="metadata_safety_failure")
+        atomic_json(path, state)
+        raise
+    except Exception as exc:
+        state.update(status="critical", last_scan_state=type(exc).__name__,
+                     next_due_utc=(now + timedelta(seconds=FAILED_RSS_RETRY_SECONDS)).isoformat())
+    atomic_json(path, state)
+    return {"status": state["status"], "attempted": True,
+            "next_due_utc": state.get("next_due_utc")}
+
+
 def worker_loop(root, *, zone="America/Chicago", wake_seconds=DEFAULT_WAKE_SECONDS,
                 gal_interval_seconds=300, sleep=time.sleep, now_fn=None,
                 max_iterations=None, gal_runner=None):
@@ -199,6 +251,10 @@ def worker_loop(root, *, zone="America/Chicago", wake_seconds=DEFAULT_WAKE_SECON
             raise RuntimeError("GDELT worker thread is no longer alive")
         now = now_fn() if now_fn else datetime.now(timezone.utc)
         report = scheduler_tick(root, now=now, zone=zone)
+        periodic = periodic_rss_tick(root, now=now, zone=zone)
+        if periodic["attempted"]:
+            print(json.dumps({"job": "periodic_publisher_rss",
+                              "status": periodic["status"]}), flush=True)
         for name, result in report["dispatched"]:
             print(json.dumps({"job": name, "status": result,
                               "edition_date": report["date"]}), flush=True)
@@ -206,6 +262,7 @@ def worker_loop(root, *, zone="America/Chicago", wake_seconds=DEFAULT_WAKE_SECON
             "checked_utc": now.astimezone(timezone.utc).isoformat(),
             "gal_thread_alive": gal.is_alive(),
             "edition_date": report["date"],
+            "daytime_rss_state": periodic["status"],
             "scheduled_jobs": {name: v["status"] for name, v in
                                report["jobs"].items()},
             "source": "local_worker_heartbeat_not_external_monitoring",
