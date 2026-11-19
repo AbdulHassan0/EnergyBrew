@@ -63,6 +63,71 @@ class CollectorTests(unittest.TestCase):
             self.assertEqual(report["scan_state"],"degraded")
             self.assertIn("required channel",report["sources"][0]["error"])
 
+    def test_transient_malformed_pjm_retries_and_recovers_without_fake_success(self):
+        with tempfile.TemporaryDirectory() as d:
+            counts = {}
+            def recover(url):
+                counts[url] = counts.get(url, 0) + 1
+                if url.endswith("insidelines.pjm.com/feed/") and counts[url] < 3:
+                    return b"<rss><channel><item><title>bad & token</title></item></channel></rss>", 200
+                return fixture_fetch(url)
+            report = collect(Path(d)/"state.json",Path(d)/"out",now=NOW,fetcher=recover)
+            pjm = next(x for x in report["sources"] if x["source"]=="PJM Inside Lines")
+            self.assertEqual(pjm["request_attempts"],3)
+            self.assertEqual(pjm["transient_retry_count"],2)
+            self.assertTrue(pjm["recovered_after_retry"])
+            self.assertTrue(pjm["connected"])
+            self.assertNotIn("error",pjm)
+            self.assertEqual(report["scan_state"],"healthy")
+            self.assertEqual(report["feeds_recovered_after_retry"],1)
+            source=json.loads((Path(d)/"state.json").read_text())["source_health"]["PJM Inside Lines"]
+            self.assertEqual(source["total_recoveries"],1)
+            self.assertEqual(source["consecutive_failures"],0)
+
+    def test_always_malformed_pjm_stays_failed_after_bounded_attempts(self):
+        with tempfile.TemporaryDirectory() as d:
+            counts={}
+            def always_bad(url):
+                counts[url] = counts.get(url,0) + 1
+                if url.endswith("insidelines.pjm.com/feed/"):
+                    return b"<rss><channel><item><title>bad & markup</title></item></channel></rss>",200
+                return fixture_fetch(url)
+            report=collect(Path(d)/"state.json",Path(d)/"out",now=NOW,fetcher=always_bad)
+            pjm=next(x for x in report["sources"] if x["source"]=="PJM Inside Lines")
+            self.assertFalse(pjm["connected"])
+            self.assertEqual(pjm["request_attempts"],3)
+            self.assertEqual(report["feeds_connected"],len(SOURCES)-1)
+            self.assertEqual(report["scan_state"],"degraded")
+            self.assertIn("ParseError",pjm["error"])
+
+    def test_nonretryable_http_429_does_not_hammer_rate_limited_source(self):
+        with tempfile.TemporaryDirectory() as d:
+            attempts={}
+            def rate_limited(url):
+                attempts[url]=attempts.get(url,0)+1
+                if url==SOURCES[0][1]:
+                    return b"",429
+                return fixture_fetch(url)
+            report=collect(Path(d)/"db.json",Path(d)/"out",now=NOW,fetcher=rate_limited)
+            self.assertEqual(attempts[SOURCES[0][1]],1)
+            source=report["sources"][0]
+            self.assertEqual(source["request_attempts"],1)
+            self.assertEqual(source["transient_retry_count"],0)
+            self.assertFalse(source["connected"])
+
+    def test_transient_http_503_recovers_on_second_attempt(self):
+        with tempfile.TemporaryDirectory() as d:
+            attempts={}
+            def flaky(url):
+                attempts[url]=attempts.get(url,0)+1
+                if url==SOURCES[0][1] and attempts[url]==1:
+                    return b"",503
+                return fixture_fetch(url)
+            report=collect(Path(d)/"db.json",Path(d)/"out",now=NOW,fetcher=flaky)
+            self.assertEqual(report["feeds_recovered_after_retry"],1)
+            self.assertEqual(report["transient_retries"],1)
+            self.assertEqual(report["scan_state"],"healthy")
+
     def test_source_freshness_is_measured_separately_from_connectivity(self):
         with tempfile.TemporaryDirectory() as d:
             path=Path(d)/"db.json"

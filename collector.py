@@ -7,10 +7,12 @@ import hashlib
 import json
 import re
 import sys
+import time
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
+from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 from xml.etree import ElementTree as ET
 from collections import Counter
@@ -39,6 +41,8 @@ USER_AGENT = "EnergyBrewResearchCollector/1.0 (+https://github.com/AbdulHassan0/
 DROP_PARAMS = {"utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "fbclid", "gclid", "access_token", "apikey", "api_key", "auth", "sessionid", "password", "token"}
 MAX_BYTES = 2_000_000
 MIN_HEALTHY_FEED_RATIO = 0.8
+MAX_TRANSIENT_RETRIES = 1
+FRAGILE_SOURCE_EXTRA_RETRIES = frozenset({"PJM Inside Lines"})
 # Federal Register is an official daily publication: the date is meaningful,
 # but its feed clock is NOT evidence of an intraday publication timestamp.
 DAY_PRECISION_SOURCES = {"Federal Register notices"}
@@ -187,6 +191,28 @@ def parse_feed(xml_bytes, source_name, now, hours, date_precision="timestamp"):
         })
     return accepted, rejected, len(nodes)
 
+class FeedHTTPStatusError(ValueError):
+    """A non-2xx status returned by an injected or real feed transport."""
+    def __init__(self, status):
+        self.status = status
+        super().__init__(f"Source returned HTTP {status} rather than a successful feed response")
+
+
+def retryable_feed_error(exc):
+    """Retry only transient failures. Respect explicit 429/rate-limit responses."""
+    if isinstance(exc, FeedHTTPStatusError):
+        return 500 <= exc.status <= 599
+    if isinstance(exc, HTTPError):
+        return 500 <= exc.code <= 599
+    if isinstance(exc, ET.ParseError):
+        return True  # transient malformed upstream XML, never silently repaired
+    return isinstance(exc, (URLError, TimeoutError, ConnectionError, OSError))
+
+
+def max_feed_attempts(name):
+    return 1 + MAX_TRANSIENT_RETRIES + int(name in FRAGILE_SOURCE_EXTRA_RETRIES)
+
+
 def fetch_feed(url):
     request = Request(url, headers={"User-Agent": USER_AGENT, "Accept": "application/rss+xml, application/atom+xml, text/xml, application/xml"})
     with urlopen(request, timeout=20) as response:
@@ -245,38 +271,61 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
         raise ValueError("Existing source health malformed; refusing overwrite")
     results, new_count = [], 0
     for name, url in SOURCES:
-        row = {"source": name, "url": url, "connected": False, "items_seen": 0, "fresh": 0, "new": 0}
-        try:
-            raw, status = fetcher(url)
-            if not isinstance(status, int) or not 200 <= status < 300:
-                raise ValueError(f"Source returned HTTP {status} rather than a successful feed response")
-            date_precision = "day" if name in DAY_PRECISION_SOURCES else "timestamp"
-            items, rejected, seen = parse_feed(raw, name, now, hours, date_precision=date_precision)
-            row.update({"connected": True, "http_status": status, "items_seen": seen, "fresh": sum(x["published_precision"] == "timestamp" for x in items),
-                "date_only": sum(x["published_precision"] == "day" for x in items),
-                "relevant": sum(x["editorial_candidate"] for x in items), "rejected": rejected,
-                "newest_feed_published_utc": feed_newest_published(raw)})
-            for item in items:
-                prior_id = seen_urls.get(item["url"])
-                if prior_id is not None:
-                    prior = articles[prior_id]
-                    if name != prior.get("source"):
-                        prior.setdefault("also_seen_in", [])
-                        if name not in prior["also_seen_in"]:
-                            prior["also_seen_in"].append(name)
-                    # Prefer the newer original timestamp, but keep one canonical identity.
-                    if prior.get("published_utc", "") <= item["published_utc"]:
-                        item["id"] = prior_id
-                        item["also_seen_in"] = prior.get("also_seen_in", [])
-                        articles[prior_id] = item
-                    continue
-                if item["id"] not in articles:
-                    new_count += 1
-                    row["new"] += 1
-                articles[item["id"]] = item
-                seen_urls[item["url"]] = item["id"]
-        except Exception as exc:
-            row["error"] = f"{type(exc).__name__}: {str(exc)[:220]}"
+        row = {"source": name, "url": url, "connected": False, "items_seen": 0,
+               "fresh": 0, "new": 0, "request_attempts": 0,
+               "transient_retry_count": 0, "recovered_after_retry": False}
+        for attempt in range(1, max_feed_attempts(name) + 1):
+            row["request_attempts"] = attempt
+            try:
+                raw, status = fetcher(url)
+                if not isinstance(status, int) or not 200 <= status < 300:
+                    raise FeedHTTPStatusError(status)
+                date_precision = "day" if name in DAY_PRECISION_SOURCES else "timestamp"
+                items, rejected, seen = parse_feed(raw, name, now, hours, date_precision=date_precision)
+                newest_stamp = feed_newest_published(raw)
+                # Only record a connected source after the entire response is
+                # parsed. Previous articles remain intact across retry attempts.
+                row.update({
+                    "connected": True,
+                    "http_status": status,
+                    "items_seen": seen,
+                    "fresh": sum(x["published_precision"] == "timestamp" for x in items),
+                    "date_only": sum(x["published_precision"] == "day" for x in items),
+                    "relevant": sum(x["editorial_candidate"] for x in items),
+                    "rejected": rejected,
+                    "newest_feed_published_utc": newest_stamp,
+                    "recovered_after_retry": attempt > 1,
+                })
+                for item in items:
+                    prior_id = seen_urls.get(item["url"])
+                    if prior_id is not None:
+                        prior = articles[prior_id]
+                        if name != prior.get("source"):
+                            prior.setdefault("also_seen_in", [])
+                            if name not in prior["also_seen_in"]:
+                                prior["also_seen_in"].append(name)
+                        # Prefer the newer original timestamp; preserve one URL.
+                        if prior.get("published_utc", "") <= item["published_utc"]:
+                            item["id"] = prior_id
+                            item["also_seen_in"] = prior.get("also_seen_in", [])
+                            articles[prior_id] = item
+                        continue
+                    if item["id"] not in articles:
+                        new_count += 1
+                        row["new"] += 1
+                    articles[item["id"]] = item
+                    seen_urls[item["url"]] = item["id"]
+                break
+            except Exception as exc:
+                row["error"] = f"{type(exc).__name__}: {str(exc)[:220]}"
+                if attempt == max_feed_attempts(name) or not retryable_feed_error(exc):
+                    break
+                row["transient_retry_count"] += 1
+                # Don't delay deterministic offline tests with an injected fetcher.
+                if fetcher is fetch_feed:
+                    time.sleep(min(2 ** (attempt - 1), 3))
+        if row["connected"]:
+            row.pop("error", None)  # a recovered transient error is NOT an outage
         results.append(row)
     source_health = {}
     for row in results:
@@ -293,6 +342,10 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
             "last_items_seen": row.get("items_seen") if success else prior.get("last_items_seen"),
             "newest_feed_published_utc": row.get("newest_feed_published_utc") if success else prior.get("newest_feed_published_utc"),
             "last_error_type": None if success else row.get("error", "").split(":", 1)[0][:80],
+            "last_request_attempts": row["request_attempts"],
+            "last_transient_retry_count": row["transient_retry_count"],
+            "last_recovered_after_retry": bool(row["recovered_after_retry"]),
+            "total_recoveries": int(prior.get("total_recoveries", 0)) + int(row["recovered_after_retry"]),
         }
     cutoff = now - timedelta(days=7)
     retained = []
@@ -313,6 +366,8 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
     run = {"run_utc": now.isoformat(), "scan_state": scan_state,
            "connection_ratio": round(connection_ratio, 3),
            "feeds_failed": len(results) - connected_count,
+           "feeds_recovered_after_retry": sum(x["recovered_after_retry"] for x in results),
+           "transient_retries": sum(x["transient_retry_count"] for x in results),
            "feeds_connected": connected_count,
            "feeds_checked": len(results), "fresh_entries": sum(x["fresh"] for x in results),
            "new_article_links": new_count, "relevant_fresh_entries": sum(x.get("relevant", 0) for x in results), "distinct_article_links_7d": len(retained),
@@ -359,6 +414,7 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
     lines = ["# EnergyBrew — live RSS collection", "",
              f"Run: {run['run_utc']}", f"Successfully parsed feeds: **{run['feeds_connected']}/{run['feeds_checked']}**",
              f"Source connectivity: **{run['scan_state']}** ({run['feeds_failed']} feeds failed)",
+             f"Transient retry attempts: **{run['transient_retries']}**; sources recovered: **{run['feeds_recovered_after_retry']}**",
              f"Fresh timestamped entries: **{run['fresh_entries']}**", f"Editorial candidates (in collection window): **{run['relevant_fresh_entries']}**", f"Editorial candidates (last 24h): **{run['editorial_candidates_24h']}**", f"Regulatory date-only feed entries: **{run['date_only_entries']}**", f"Regulatory watchlist links (7 days): **{run['regulatory_watch_links_7d']}**", f"New unique links (all precision levels): **{new_count}**",
              f"Distinct article links in 7-day state: **{len(retained)}**", "",
              "| Source | Connected | Timestamped | Date-only | Candidates | New | Error |", "|---|---|---:|---:|---:|---:|---|"]
