@@ -9,6 +9,7 @@ on:
       - "host_rss_refresh.py"
       - "rss_fetch_pool.py"
       - "portable_lock.py"
+      - "tests/test_windows_local_news_ci.py"
       - "deploy/windows/run-energybrew-news.ps1"
       - "host_release_refresh.py"
       - "render_worker.py"
@@ -70,3 +71,30 @@ jobs:
         run: |
           docker image inspect energybrew-collector:test --format '{{.Config.User}}' | grep -x energybrew
           docker image inspect energybrew-collector:test --format '{{json .Config.Volumes}}' | grep /data
+
+  windows-local-smoke:
+    # GitHub-hosted standard Windows runner, not Render or paid hosting.
+    # No live publisher polling, publishing, or outbound email.
+    runs-on: windows-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Windows timezone data
+        run: python -m pip install tzdata
+      - name: Check Windows native collector imports and Chicago timezone
+        shell: pwsh
+        run: |
+          python -c "from zoneinfo import ZoneInfo; from render_worker import JOBS; from portable_lock import lock_exclusive_nonblocking; assert ZoneInfo('America/Chicago'); assert len(JOBS)==4; print('Windows collector imports OK')"
+      - name: Run portable file locking and scheduler tests on actual Windows
+        shell: pwsh
+        run: |
+          python -m unittest discover -s tests -p "test_portable_lock.py" -v
+          python -m unittest discover -s tests -p "test_render_worker.py" -v
+          python -m unittest discover -s tests -p "test_morning_host_runner.py" -v
+          python -m unittest discover -s tests -p "test_host_rss_refresh.py" -v
+          python -m unittest discover -s tests -p "test_host_release_refresh.py" -v
+      - name: Confirm no subscriber delivery in local process
+        run: python -c "from render_worker import worker_loop; print('Research worker available; no subscriber delivery was invoked')"

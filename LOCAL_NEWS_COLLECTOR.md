@@ -36,3 +36,11 @@ Keep the state folder out of the public Git repository. Do not expose secrets.
 
 This collector does **not** automatically fact-check, approve, publish, or
 email editions. Reliability remains unproven until observed on a real machine.
+
+## Windows CI evidence
+
+The `collector-daemon-ci.yml` workflow also runs portable locking and
+morning scheduling unit tests on an actual standard GitHub-hosted Windows
+runner. A passing CI test establishes platform import, path, locking and
+offline scheduler compatibility, **not** 24/7 runtime reliability, a live
+publisher connection or Task Scheduler/autostart behavior.
