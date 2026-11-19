@@ -18,6 +18,17 @@ def feed(title="Cheniere LNG expansion advances",
             f'</item></channel></rss>').encode()
 
 class GalTests(unittest.TestCase):
+    def test_explicit_network_finish_clock_is_authoritative(self):
+        with tempfile.TemporaryDirectory() as temp:
+            path=Path(temp)/"discovery.json"
+            done=NOW+timedelta(minutes=7)
+            result=collect_gal(path,Path(temp)/"out",now=NOW,
+                               fetcher=lambda _:(feed(),200),
+                               completion_clock=lambda:done)
+            self.assertEqual(result["completed_utc"],done.isoformat())
+            data=json.loads(path.read_text())
+            self.assertEqual(data["gal_runs"][0]["completed_utc"],done.isoformat())
+
     def test_public_rss_is_research_only(self):
         items,rejected,seen=parse_gal(feed(),NOW)
         self.assertEqual((len(items),seen),(1,1))

@@ -22,6 +22,17 @@ def feed(title="Cheniere Energy announces LNG expansion financing",
 
 
 class PressReleaseTests(unittest.TestCase):
+    def test_issuer_completed_clock_records_real_end_not_injected_start(self):
+        with tempfile.TemporaryDirectory() as temp:
+            done=NOW+timedelta(minutes=4)
+            path=Path(temp)/"state.json"
+            result=collect(path,Path(temp)/"out",now=NOW,
+                           fetcher=lambda _:(feed(),200),
+                           completion_clock=lambda:done)
+            self.assertEqual(result["completed_utc"],done.isoformat())
+            saved=json.loads(path.read_text())
+            self.assertEqual(saved["runs"][0]["completed_utc"],done.isoformat())
+
     def test_original_source_url_only(self):
         records,skips,count=parse_releases(feed(),NOW)
         self.assertEqual(count,1)

@@ -102,6 +102,7 @@ def parse_releases(xml, now):
 
 
 def collect(state_file,outdir,*,now=None,fetcher=None,completion_clock=None):
+    injected_clock=now is not None
     now=now or datetime.now(timezone.utc)
     if now.tzinfo is None:
         raise ValueError("now must be timezone aware")
@@ -166,7 +167,7 @@ def collect(state_file,outdir,*,now=None,fetcher=None,completion_clock=None):
     r["company_release_leads_7d"]=len(all_leads)
     saved["leads"]=all_leads[:2000]
     saved.setdefault("runs",[]).append({k:r[k] for k in
-        ("run_utc","status","raw_feed_entries","high_signal_company_releases","new_unique_links")})
+        ("run_utc","completed_utc","status","raw_feed_entries","high_signal_company_releases","new_unique_links")})
     saved["runs"]=saved["runs"][-100:]
     state_file.parent.mkdir(parents=True,exist_ok=True)
     outdir.mkdir(parents=True,exist_ok=True)

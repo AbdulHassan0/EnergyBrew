@@ -22,6 +22,19 @@ def healthy_gal(root):
     (root/"discovery.json").write_text(json.dumps({"leads":[],"gal_runs":records}))
 
 class MorningHostTests(unittest.TestCase):
+    def test_rss_host_finishing_after_cutoff_never_borrows_early_start_time(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp)
+            finish=CUTOFF+timedelta(minutes=3)
+            result=refresh_rss_safely(
+                root/"articles.json",root/"out",
+                now=CUTOFF-timedelta(minutes=6),
+                fetcher=lambda _:(RSS,200),
+                completion_clock=lambda:finish)
+            self.assertEqual(result["completed_utc"],finish.isoformat())
+            saved=json.loads((root/"articles.json").read_text())
+            self.assertEqual(saved["runs"][-1]["completed_utc"],finish.isoformat())
+
     def test_initial_publisher_fetches_are_bounded_concurrent(self):
         from collector import SOURCES
         seen = set()

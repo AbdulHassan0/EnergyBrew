@@ -94,6 +94,18 @@ class CollectorTests(unittest.TestCase):
             self.assertLessEqual(maximum,5)
             self.assertTrue((Path(d)/"articles.json").exists())
 
+    def test_explicit_live_finish_clock_overrides_injected_start_timestamp(self):
+        with tempfile.TemporaryDirectory() as temp:
+            done=NOW+timedelta(minutes=9)
+            result=collect(Path(temp)/"state.json",Path(temp)/"out",
+                           now=NOW,fetcher=fixture_fetch,
+                           completion_clock=lambda:done)
+            self.assertEqual(result["run_utc"],NOW.isoformat())
+            self.assertEqual(result["completed_utc"],done.isoformat())
+            data=json.loads((Path(temp)/"state.json").read_text())
+            self.assertTrue(all(x["first_collected_utc"]==done.isoformat()
+                                for x in data["articles"]))
+
     def test_first_collected_timestamp_is_preserved_across_later_polls(self):
         with tempfile.TemporaryDirectory() as d:
             path=Path(d)/"state.json"
