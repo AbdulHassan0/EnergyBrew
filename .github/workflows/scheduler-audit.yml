@@ -1,0 +1,52 @@
+name: EnergyBrew GDELT scheduler audit
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scheduler_audit.py"
+      - "tests/test_scheduler_audit.py"
+      - ".github/workflows/scheduler-audit.yml"
+  schedule:
+    - cron: "23 * * * *"
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Test scheduler event accounting
+        run: python -m unittest discover -s tests -p "test_scheduler_audit.py" -v
+      - name: Measure scheduled run deficits
+        id: check
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: "${{ github.token }}"
+        run: python scheduler_audit.py --repo "${{ github.repository }}" --output output/scheduler
+      - name: Publish findings
+        if: always()
+        run: |
+          if test -f output/scheduler/scheduler_audit.md; then
+            cat output/scheduler/scheduler_audit.md >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Scheduler audit produced no report" >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: energybrew-scheduler-audit
+          path: output/scheduler/
+          retention-days: 14
+          if-no-files-found: warn
+      - name: Signal critical scheduler outage
+        if: steps.check.outcome == 'failure'
+        run: exit 1
