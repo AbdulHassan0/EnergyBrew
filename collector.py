@@ -433,7 +433,15 @@ def main(argv=None):
     args = parser.parse_args(argv)
     if not 1 <= args.hours <= 168:
         parser.error("--hours must be 1..168")
-    result = collect(Path(args.state), Path(args.output), hours=args.hours)
+    # All public publisher requests begin in bounded parallel batches,
+    # rather than serially waiting on each slow or failing source.
+    from rss_fetch_pool import concurrent_first_fetches
+    pool, fetcher = concurrent_first_fetches(sources=SOURCES, fetcher=fetch_feed)
+    try:
+        result = collect(Path(args.state), Path(args.output),
+                         hours=args.hours, fetcher=fetcher)
+    finally:
+        pool.shutdown(wait=True, cancel_futures=True)
     print(json.dumps({k: v for k, v in result.items() if k != "sources"}, indent=2))
     return 2 if result["scan_state"] == "critical" else 0
 

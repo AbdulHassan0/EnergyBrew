@@ -7,6 +7,7 @@ on:
     paths:
       - "collector_daemon.py"
       - "host_rss_refresh.py"
+      - "rss_fetch_pool.py"
       - "host_release_refresh.py"
       - "render_worker.py"
       - "render_entrypoint.py"
@@ -18,6 +19,7 @@ on:
       - "morning_readiness.py"
       - "tests/test_morning_host_runner.py"
       - "tests/test_host_rss_refresh.py"
+      - "tests/test_rss_fetch_pool.py"
       - "tests/test_host_release_refresh.py"
       - "tests/test_render_worker.py"
       - ".github/workflows/collector-daemon-ci.yml"
@@ -40,6 +42,7 @@ jobs:
           python -m unittest discover -s tests -p "test_morning_host_runner.py" -v
           python -m unittest discover -s tests -p "test_morning_readiness.py" -v
           python -m unittest discover -s tests -p "test_host_rss_refresh.py" -v
+          python -m unittest discover -s tests -p "test_rss_fetch_pool.py" -v
           python -m unittest discover -s tests -p "test_host_release_refresh.py" -v
           python -m unittest discover -s tests -p "test_render_worker.py" -v
       - name: Build no-dependency Python collector image

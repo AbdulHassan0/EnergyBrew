@@ -9,8 +9,7 @@ import fcntl
 import json
 import os
 import shutil
-import time
-from concurrent.futures import ThreadPoolExecutor
+from rss_fetch_pool import concurrent_first_fetches as _concurrent_first_fetches
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -33,26 +32,9 @@ def read_json(path):
 
 
 def concurrent_first_fetches(*, workers=5):
-    """Bounded fanout for initial HTTP requests; retries stay source-specific.
-
-    The caller must keep the returned pool alive through collect(). A failed
-    upstream HTTP request is not silently substituted with cached payloads.
-    """
-    executor = ThreadPoolExecutor(max_workers=workers,
-                                  thread_name_prefix="energybrew-rss")
-    initial = {url: executor.submit(fetch_feed, url) for _name, url in SOURCES}
-    attempts = {}
-
-    def fetch(url):
-        count = attempts.get(url, 0)
-        attempts[url] = count + 1
-        if count == 0:
-            return initial[url].result()
-        # Retry on fresh transport data, not the exact same failed future.
-        time.sleep(min(2 ** (count - 1), 3))
-        return fetch_feed(url)
-
-    return executor, fetch
+    """Share the same bounded source-aware fanout as the GitHub RSS CLI."""
+    return _concurrent_first_fetches(
+        sources=SOURCES, fetcher=fetch_feed, workers=workers)
 
 
 def recover_abandoned_rss_stage(state_path):

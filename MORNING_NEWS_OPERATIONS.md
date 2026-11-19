@@ -64,6 +64,14 @@ For testing a particular edition:
 The existing state-publication safety gate remains enforced. No article text,
 subscriber information, email-delivery code or newsletter template is touched.
 
+**Free GitHub Actions RSS mode:** `python collector.py` now issues the
+15 configured RSS requests with at most five parallel network workers,
+while parsing, per-source retries, staging and state persistence remain
+source-aware. This reduces head-of-line blocking on slow publisher feeds,
+but GitHub's scheduled-run timing is still best-effort and cannot guarantee
+overnight GDELT coverage or a 07:00 email. No paid host is required to
+use the existing public-repository CI workflows.
+
 **Deployment risks:** Current GitHub Actions schedules have substantial gaps;
 the continuously hosted worker is built but not deployed. A reliable 06:20
 refresh and cutoff job need a persistent host and external alerting. Morning

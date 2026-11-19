@@ -3,6 +3,8 @@ import json
 import hashlib
 import tempfile
 import unittest
+import threading
+from unittest.mock import patch
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from collector import clean_url, collect, parse_feed, published_date, SOURCES, DAY_PRECISION_SOURCES, SPECIALIST_NEWS_SOURCES, SYSTEM_OPERATOR_SOURCES
@@ -21,6 +23,23 @@ def fixture_fetch(url):
     return sample(url=f"https://example.gov/unique-story/{unique}"), 200
 
 class CollectorTests(unittest.TestCase):
+    def test_publisher_cli_uses_real_bounded_parallel_fetch_pool(self):
+        from collector import main
+        with tempfile.TemporaryDirectory() as d:
+            seen=set()
+            guard=threading.Lock()
+            def fake(url):
+                with guard:
+                    seen.add(threading.get_ident())
+                return fixture_fetch(url)
+            with patch("collector.fetch_feed",side_effect=fake):
+                rc=main(["--state",str(Path(d)/"articles.json"),
+                         "--output",str(Path(d)/"out")])
+            self.assertEqual(rc,0)
+            self.assertGreater(len(seen),1)
+            self.assertLessEqual(len(seen),5)
+            self.assertTrue((Path(d)/"articles.json").exists())
+
     def test_rss_dates_links(self):
         items, rejected, seen = parse_feed(sample(), "Official", NOW, 48)
         self.assertEqual((len(items), seen), (1, 1))
