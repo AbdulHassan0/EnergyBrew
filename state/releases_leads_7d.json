@@ -1,5 +1,43 @@
 [
   {
+    "url": "https://www.einpresswire.com/article/957737340/ontario-s-missing-eleventh-recommendation-first-nations-are-ready-to-invest-in-electricity-distribution",
+    "title": "Ontario\u2019s Missing Eleventh Recommendation: First Nations Are Ready to Invest in Electricity Distribution",
+    "feed_creator_label": "EIN Presswire",
+    "named_issuer_verified": false,
+    "feed_source_url": "https://www.einpresswire.com/article/957737340/ontario-s-missing-eleventh-recommendation-first-nations-are-ready-to-invest-in-electricity-distribution",
+    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+    "feed_published_utc": "2026-11-19T16:07:06+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "category": "Power & Electricity",
+    "relevance_score": 33,
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "provider": "Press Release Feed",
+    "content_kind": "company_or_newswire_press_release",
+    "status": "promotional_issuer_claim_requires_editorial_verification"
+  },
+  {
+    "url": "https://www.globenewswire.com/news-release/2026/11/19/3406799/0/en/form-8-3-gresham-house-energy-storage-fund-plc.html",
+    "title": "Form 8.3 Gresham House Energy Storage Fund Plc",
+    "feed_creator_label": "GlobeNewswire",
+    "named_issuer_verified": false,
+    "feed_source_url": "https://www.globenewswire.com/news-release/2026/11/19/3406799/0/en/form-8-3-gresham-house-energy-storage-fund-plc.html",
+    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+    "feed_published_utc": "2026-11-19T15:05:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "category": "Power & Electricity",
+    "relevance_score": 27,
+    "relevance_evidence": [
+      "energy storage"
+    ],
+    "provider": "Press Release Feed",
+    "content_kind": "company_or_newswire_press_release",
+    "status": "promotional_issuer_claim_requires_editorial_verification"
+  },
+  {
     "url": "https://finance.yahoo.com/energy/articles/netscout-sustainability-design-approach-combats-130500068.html",
     "title": "NETSCOUT\u2019s Sustainability-by-Design Approach Combats Surging Data Center Energy Consumption",
     "feed_creator_label": "NETSCOUT SYSTEMS, INC.",

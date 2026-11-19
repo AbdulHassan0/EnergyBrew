@@ -1,0 +1,390 @@
+{
+  "generated_utc": "2026-11-19T17:19:01.187085+00:00",
+  "status": "source_gap_triage_not_a_verified_recall_score",
+  "publisher_dated_direct_rss_links_24h": 12,
+  "publisher_dated_direct_source_classes_24h": {
+    "specialist_publisher": 9,
+    "official_agency": 2,
+    "system_operator_primary": 1
+  },
+  "gdelt_observed_unique_urls_24h": 328,
+  "gdelt_publisher_date_verified": 0,
+  "cross_origin_classifications": {
+    "discovery_only_needs_source_verification": 327,
+    "exact_direct_publisher_link": 1
+  },
+  "direct_publisher_category_counts_24h": {
+    "Natural Gas": 1,
+    "LNG": 2,
+    "Power & Electricity": 4,
+    "Oil & Energy": 4,
+    "Infrastructure & Investment": 0,
+    "Geopolitics": 1
+  },
+  "indexed_candidate_category_counts_24h": {
+    "Natural Gas": 41,
+    "LNG": 11,
+    "Power & Electricity": 107,
+    "Oil & Energy": 58,
+    "Infrastructure & Investment": 5,
+    "Geopolitics": 106
+  },
+  "high_priority_discovery_only_leads_for_review": [
+    {
+      "title": "Drone attacks nearly halve Russia November oil refining , sources say",
+      "url": "https://www.jpost.com/international/internationalrussia-ukraine-war/article-915337",
+      "domain": "www.jpost.com",
+      "category": "Geopolitics",
+      "gdelt_first_seen_utc": "2026-11-18T17:30:00+00:00",
+      "relevance_score": 90,
+      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
+      "editorial_status": "unverified_research_lead_not_approved",
+      "requires_original_publisher_verification": true
+    },
+    {
+      "title": "Bahrain's war-hit Sitra refinery weeks away from full capacity, Bapco Energies CEO says | The National",
+      "url": "https://www.thenationalnews.com/business/energy/2026/11/18/bahrains-war-hit-sitra-refinery-weeks-away-from-full-capacity-bapco-energies-ceo-says",
+      "domain": "www.thenationalnews.com",
+      "category": "Geopolitics",
+      "gdelt_first_seen_utc": "2026-11-18T18:32:00+00:00",
+      "relevance_score": 90,
+      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
+      "editorial_status": "unverified_research_lead_not_approved",
+      "requires_original_publisher_verification": true
+    },
+    {
+      "title": "Oil Price Today (November 19): Brent crude rises to $93 as Trump likely weighs fresh Iran attacks. What are experts saying?",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-november-19-brent-crude-rises-to-93-as-trump-likely-weighs-fresh-iran-attacks-what-are-experts-saying/articleshow/135975416.cms",
+      "domain": "economictimes.indiatimes.com",
+      "category": "Geopolitics",
+      "gdelt_first_seen_utc": "2026-11-19T02:46:00+00:00",
+      "relevance_score": 90,
+      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
+      "editorial_status": "unverified_research_lead_not_approved",
+      "requires_original_publisher_verification": true
+    },
+    {
+      "title": "Tanzania, Uganda fast-track crude oil pipeline completion - Channel Africa",
+      "url": "https://www.channelafrica.co.za/channelafrica/news/tanzania-uganda-fast-track-crude-oil-pipeline-completion",
+      "domain": "www.channelafrica.co.za",
+      "category": "Oil & Energy",
+      "gdelt_first_seen_utc": "2026-11-19T10:47:00+00:00",
+      "relevance_score": 66,
+      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
+      "editorial_status": "unverified_research_lead_not_approved",
+      "requires_original_publisher_verification": true
+    },
+    {
+      "title": "India's Crude Oil Production Set To Fall 20% By 2035: IEA - BW Businessworld",
+      "url": "https://www.businessworld.in/article/india-s-crude-oil-production-set-to-fall-20-by-2035-iea-634356",
+      "domain": "www.businessworld.in",
+      "category": "Oil & Energy",
+      "gdelt_first_seen_utc": "2026-11-19T11:01:00+00:00",
+      "relevance_score": 66,
+      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
+      "editorial_status": "unverified_research_lead_not_approved",
+      "requires_original_publisher_verification": true
+    },
+    {
+      "title": "Data center electricity use could double by 2030, IEA says",
+      "url": "https://www.cnbc.com/2026/11/19/data-center-electricity-demand-iea.html",
+      "domain": "www.cnbc.com",
+      "category": "Power & Electricity",
+      "gdelt_first_seen_utc": "2026-11-19T10:46:00+00:00",
+      "relevance_score": 63,
+      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
+      "editorial_status": "unverified_research_lead_not_approved",
+      "requires_original_publisher_verification": true
+    },
+    {
+      "title": "API Shows Substantial Crude Oil, Gasoline Inventory Builds | Peak Oil News and Message Boards",
+      "url": "https://peakoil.com/consumption/api-shows-substantial-crude-oil-gasoline-inventory-builds",
+      "domain": "peakoil.com",
+      "category": "Oil & Energy",
+      "gdelt_first_seen_utc": "2026-11-19T13:18:00+00:00",
+      "relevance_score": 60,
+      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
+      "editorial_status": "unverified_research_lead_not_approved",
+      "requires_original_publisher_verification": true
+    },
+    {
+      "title": "Malawi needs 13,600 mini-grid connections annually to meet 2030 electricity target-Mathanga",
+      "url": "https://www.malawivoice.com/2026/11/18/malawi-needs-13600-mini-grid-connections-annually-to-meet-2030-electricity-target-mathanga",
+      "domain": "www.malawivoice.com",
+      "category": "Power & Electricity",
+      "gdelt_first_seen_utc": "2026-11-18T21:31:00+00:00",
+      "relevance_score": 57,
+      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
+      "editorial_status": "unverified_research_lead_not_approved",
+      "requires_original_publisher_verification": true
+    },
+    {
+      "title": "DOE Announces $2.8 Billion Wyoming Power Grid Loan — Could It Lower Electric Bills in 17 States?",
+      "url": "https://www.savingadvice.com/articles/2026/11/18/10769854_doe-announces-2-8-billion-wyoming-power-grid-loan-could-it-lower-electric-bills-in-17-states.html",
+      "domain": "www.savingadvice.com",
+      "category": "Power & Electricity",
+      "gdelt_first_seen_utc": "2026-11-18T22:47:00+00:00",
+      "relevance_score": 57,
+      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
+      "editorial_status": "unverified_research_lead_not_approved",
+      "requires_original_publisher_verification": true
+    },
+    {
+      "title": "Revancha en Vaca Muerta: tras tres derrotas seguidas, Techint ganó un contrato clave en Argentina LNG",
+      "url": "https://eleconomista.com.ar/energia/revancha-vaca-muerta-tras-tres-derrotas-seguidas-techint-gano-contrato-clave-argentina-lng-n99757",
+      "domain": "eleconomista.com.ar",
+      "category": "LNG",
+      "gdelt_first_seen_utc": "2026-11-18T18:17:00+00:00",
+      "relevance_score": 45,
+      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
+      "editorial_status": "unverified_research_lead_not_approved",
+      "requires_original_publisher_verification": true
+    },
+    {
+      "title": "Nasi sąsiedzi dogadali się z USA. Wielki kontrakt na LNG",
+      "url": "https://www.money.pl/gospodarka/czesi-stawiaja-na-usa-wielki-kontrakt-na-lng-7352418180843520a.html",
+      "domain": "www.money.pl",
+      "category": "LNG",
+      "gdelt_first_seen_utc": "2026-11-18T18:32:00+00:00",
+      "relevance_score": 45,
+      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
+      "editorial_status": "unverified_research_lead_not_approved",
+      "requires_original_publisher_verification": true
+    },
+    {
+      "title": "GTT Energy receives an order from Hudong-Zhonghua Shipbuilding for the tank design of five new LNG Carriers",
+      "url": "https://www.hellenicshippingnews.com/gtt-energy-receives-an-order-from-hudong-zhonghua-shipbuilding-for-the-tank-design-of-five-new-lng-carriers",
+      "domain": "www.hellenicshippingnews.com",
+      "category": "LNG",
+      "gdelt_first_seen_utc": "2026-11-18T18:47:00+00:00",
+      "relevance_score": 45,
+      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
+      "editorial_status": "unverified_research_lead_not_approved",
+      "requires_original_publisher_verification": true
+    },
+    {
+      "title": "DTE Energy will not ask for a natural gas rate hike until late 2027",
+      "url": "https://www.abc12.com/news/state/dte-energy-will-not-ask-for-a-natural-gas-rate-hike-until-late-2027/article_ce1f3f5f-2a6c-4fdd-be51-1af5b1477697.html",
+      "domain": "www.abc12.com",
+      "category": "Natural Gas",
+      "gdelt_first_seen_utc": "2026-11-18T18:17:00+00:00",
+      "relevance_score": 39,
+      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
+      "editorial_status": "unverified_research_lead_not_approved",
+      "requires_original_publisher_verification": true
+    },
+    {
+      "title": "Natural Gas Inventories Surge Above Average as Injection Season Ends",
+      "url": "https://smallbiztrends.com/natural-gas-inventories-surge-above-average-as-injection-season-ends",
+      "domain": "smallbiztrends.com",
+      "category": "Natural Gas",
+      "gdelt_first_seen_utc": "2026-11-18T22:46:00+00:00",
+      "relevance_score": 39,
+      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
+      "editorial_status": "unverified_research_lead_not_approved",
+      "requires_original_publisher_verification": true
+    },
+    {
+      "title": "Today in History: November 19, explosions at Mexico City natural gas facility kills at least 500",
+      "url": "https://www.mercurynews.com/2026/11/19/today-in-history-november-19-explosions-at-mexico-city-natural-gas-facility-kills-at-least-500",
+      "domain": "www.mercurynews.com",
+      "category": "Natural Gas",
+      "gdelt_first_seen_utc": "2026-11-19T10:47:00+00:00",
+      "relevance_score": 39,
+      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
+      "editorial_status": "unverified_research_lead_not_approved",
+      "requires_original_publisher_verification": true
+    },
+    {
+      "title": "Final investment decision on Azerbaijan's Karabakh field expected in 2027",
+      "url": "https://en.apa.az/energy-and-industry/final-investment-decision-on-azerbaijans-karabakh-field-expected-in-2027-537196",
+      "domain": "en.apa.az",
+      "category": "Infrastructure & Investment",
+      "gdelt_first_seen_utc": "2026-11-19T11:01:00+00:00",
+      "relevance_score": 36,
+      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
+      "editorial_status": "unverified_research_lead_not_approved",
+      "requires_original_publisher_verification": true
+    },
+    {
+      "title": "Gas Infrastructure Offers Africa’s Best Energy Investment In 2027 – WEC",
+      "url": "https://leadership.ng/gas-infrastructure-offers-africas-best-energy-investment-in-2027-wec",
+      "domain": "leadership.ng",
+      "category": "Infrastructure & Investment",
+      "gdelt_first_seen_utc": "2026-11-18T19:32:00+00:00",
+      "relevance_score": 30,
+      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
+      "editorial_status": "unverified_research_lead_not_approved",
+      "requires_original_publisher_verification": true
+    },
+    {
+      "title": "Adani Energy Solutions wins Bihar transmission project, to generate Rs 500 crore annual tariff revenue",
+      "url": "https://aninews.in/news/business/adani-energy-solutions-wins-bihar-transmission-project-to-generate-rs-500-crore-annual-tariff-revenue20261119174822",
+      "domain": "aninews.in",
+      "category": "Infrastructure & Investment",
+      "gdelt_first_seen_utc": "2026-11-19T12:46:00+00:00",
+      "relevance_score": 30,
+      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
+      "editorial_status": "unverified_research_lead_not_approved",
+      "requires_original_publisher_verification": true
+    }
+  ],
+  "feed_liveness": [
+    {
+      "source": "DOE Grid Deployment",
+      "feed_url": "https://www.energy.gov/rss/oe/4819948",
+      "last_success_utc": "2026-11-19T17:18:42.946054+00:00",
+      "newest_feed_published_utc": "2026-10-30T14:42:15+00:00",
+      "hours_since_newest_publisher_item": 482.6,
+      "timestamped_article_links_24h": 0,
+      "consecutive_failures": 0,
+      "activity": "no_publisher_item_in_7d"
+    },
+    {
+      "source": "DOE Hydrocarbons Blog",
+      "feed_url": "https://www.energy.gov/rss/hgeo/2283029",
+      "last_success_utc": "2026-11-19T17:18:42.946054+00:00",
+      "newest_feed_published_utc": "2026-10-29T20:16:57+00:00",
+      "hours_since_newest_publisher_item": 501.0,
+      "timestamped_article_links_24h": 0,
+      "consecutive_failures": 0,
+      "activity": "no_publisher_item_in_7d"
+    },
+    {
+      "source": "DOE Hydrocarbons Releases",
+      "feed_url": "https://www.energy.gov/rss/hgeo/2282977",
+      "last_success_utc": "2026-11-19T17:18:42.946054+00:00",
+      "newest_feed_published_utc": "2026-11-04T05:00:00+00:00",
+      "hours_since_newest_publisher_item": 372.3,
+      "timestamped_article_links_24h": 0,
+      "consecutive_failures": 0,
+      "activity": "no_publisher_item_in_7d"
+    },
+    {
+      "source": "EIA Congressional Testimony",
+      "feed_url": "https://www.eia.gov/rss/testimony.xml",
+      "last_success_utc": "2026-11-19T17:18:42.946054+00:00",
+      "newest_feed_published_utc": "2021-11-16T14:00:00+00:00",
+      "hours_since_newest_publisher_item": 43899.3,
+      "timestamped_article_links_24h": 0,
+      "consecutive_failures": 0,
+      "activity": "no_publisher_item_in_7d"
+    },
+    {
+      "source": "EIA Presentations",
+      "feed_url": "https://www.eia.gov/rss/presentations.xml",
+      "last_success_utc": "2026-11-19T17:18:42.946054+00:00",
+      "newest_feed_published_utc": "2026-03-04T14:00:00+00:00",
+      "hours_since_newest_publisher_item": 6243.3,
+      "timestamped_article_links_24h": 0,
+      "consecutive_failures": 0,
+      "activity": "no_publisher_item_in_7d"
+    },
+    {
+      "source": "EIA Press Releases",
+      "feed_url": "https://www.eia.gov/rss/press_rss.xml",
+      "last_success_utc": "2026-11-19T17:18:42.946054+00:00",
+      "newest_feed_published_utc": "2026-11-10T17:00:00+00:00",
+      "hours_since_newest_publisher_item": 216.3,
+      "timestamped_article_links_24h": 0,
+      "consecutive_failures": 0,
+      "activity": "no_publisher_item_in_7d"
+    },
+    {
+      "source": "EIA Today in Energy",
+      "feed_url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "last_success_utc": "2026-11-19T17:18:42.946054+00:00",
+      "newest_feed_published_utc": "2026-11-19T14:00:00+00:00",
+      "hours_since_newest_publisher_item": 3.3,
+      "timestamped_article_links_24h": 0,
+      "consecutive_failures": 0,
+      "activity": "recent_publisher_activity"
+    },
+    {
+      "source": "Federal Register notices",
+      "feed_url": "https://www.federalregister.gov/api/v1/documents.rss?conditions%5Bagencies%5D%5B%5D=federal-energy-regulatory-commission",
+      "last_success_utc": "2026-11-19T17:18:42.946054+00:00",
+      "newest_feed_published_utc": "2026-11-19T05:00:00+00:00",
+      "hours_since_newest_publisher_item": 12.3,
+      "timestamped_article_links_24h": 0,
+      "consecutive_failures": 0,
+      "activity": "recent_publisher_activity"
+    },
+    {
+      "source": "US NRC Nuclear News",
+      "feed_url": "https://www.nrc.gov/public-involve/rss?feed=news",
+      "last_success_utc": "2026-11-19T17:18:42.946054+00:00",
+      "newest_feed_published_utc": "2026-09-14T08:00:00+00:00",
+      "hours_since_newest_publisher_item": 1593.3,
+      "timestamped_article_links_24h": 0,
+      "consecutive_failures": 0,
+      "activity": "no_publisher_item_in_7d"
+    },
+    {
+      "source": "Utility Dive News",
+      "feed_url": "https://www.utilitydive.com/feeds/news/",
+      "last_success_utc": "2026-11-19T17:18:42.946054+00:00",
+      "newest_feed_published_utc": "2026-11-19T11:38:50+00:00",
+      "hours_since_newest_publisher_item": 5.7,
+      "timestamped_article_links_24h": 0,
+      "consecutive_failures": 0,
+      "activity": "recent_publisher_activity"
+    },
+    {
+      "source": "DOE Energy News",
+      "feed_url": "https://www.energy.gov/rss/energygov/2193718",
+      "last_success_utc": "2026-11-19T17:18:42.946054+00:00",
+      "newest_feed_published_utc": "2026-11-18T18:06:31+00:00",
+      "hours_since_newest_publisher_item": 23.2,
+      "timestamped_article_links_24h": 1,
+      "consecutive_failures": 0,
+      "activity": "recent_publisher_activity"
+    },
+    {
+      "source": "European Commission DG Energy",
+      "feed_url": "https://energy.ec.europa.eu/node/2/rss_en",
+      "last_success_utc": "2026-11-19T17:18:42.946054+00:00",
+      "newest_feed_published_utc": "2026-11-18T23:00:00+00:00",
+      "hours_since_newest_publisher_item": 18.3,
+      "timestamped_article_links_24h": 1,
+      "consecutive_failures": 0,
+      "activity": "recent_publisher_activity"
+    },
+    {
+      "source": "PJM Inside Lines",
+      "feed_url": "https://insidelines.pjm.com/feed/",
+      "last_success_utc": "2026-11-19T17:18:42.946054+00:00",
+      "newest_feed_published_utc": "2026-11-18T18:56:18+00:00",
+      "hours_since_newest_publisher_item": 22.4,
+      "timestamped_article_links_24h": 1,
+      "consecutive_failures": 0,
+      "activity": "recent_publisher_activity"
+    },
+    {
+      "source": "Offshore Energy News",
+      "feed_url": "https://www.offshore-energy.biz/feed",
+      "last_success_utc": "2026-11-19T17:18:42.946054+00:00",
+      "newest_feed_published_utc": "2026-11-19T16:23:56+00:00",
+      "hours_since_newest_publisher_item": 0.9,
+      "timestamped_article_links_24h": 2,
+      "consecutive_failures": 0,
+      "activity": "recent_publisher_activity"
+    },
+    {
+      "source": "OilPrice.com News",
+      "feed_url": "https://oilprice.com/rss.xml",
+      "last_success_utc": "2026-11-19T17:18:42.946054+00:00",
+      "newest_feed_published_utc": "2026-11-19T17:00:00+00:00",
+      "hours_since_newest_publisher_item": 0.3,
+      "timestamped_article_links_24h": 7,
+      "consecutive_failures": 0,
+      "activity": "recent_publisher_activity"
+    }
+  ],
+  "warnings": [
+    "Discovery-only does not establish a missed news event, editorial importance, or original publication date.",
+    "Similar headlines are grouped heuristically; never count grouped links as independent corroboration.",
+    "An aged government RSS feed may be legitimately quiet; connectivity and publication activity are separate.",
+    "This report compares sources EnergyBrew already configured, not all energy publishers."
+  ]
+}

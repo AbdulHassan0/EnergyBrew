@@ -659,6 +659,121 @@
       ]
     },
     {
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-irgc-vows-challenge-us-blockade",
+      "title": "Iran\u2019s IRGC vows to challenge US blockade",
+      "domain": "www.middleeasteye.net",
+      "gdelt_first_seen_utc": "2026-11-19T17:16:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:blockade",
+        "world_context:iran/united states"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
+      "url": "https://www.columbian.com/news/2026/nov/19/risk-of-u-s-strikes-on-iran-grows-as-sides-escalate-skirmishes",
+      "title": "Risk of U.S. strikes on Iran grows as sides escalate skirmishes",
+      "domain": "www.columbian.com",
+      "gdelt_first_seen_utc": "2026-11-19T17:16:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:strikes",
+        "world_context:iran/united states"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
+      "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-war-costs-surpass-48b-us-pentagon-official-says",
+      "title": "Iran war costs surpass $48b, US Pentagon official says",
+      "domain": "www.middleeasteye.net",
+      "gdelt_first_seen_utc": "2026-11-19T17:16:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:war",
+        "world_context:iran/united states"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
+      "url": "https://www.military.com/risk-of-us-strikes-on-iran-grows-as-sides-escalate-skirmishes",
+      "title": "Risk of US Strikes on Iran Grows as Sides Escalate Skirmishes",
+      "domain": "www.military.com",
+      "gdelt_first_seen_utc": "2026-11-19T17:16:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:strikes",
+        "world_context:iran/united states"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
+      "url": "https://bigislandnow.com/2026/11/17/u-s-rep-ed-case-supports-extension-of-the-jones-act-waiver-during-iran-war",
+      "title": "U.S. Rep. Ed Case supports extension of the Jones Act waiver during Iran war | Big Island Now",
+      "domain": "bigislandnow.com",
+      "gdelt_first_seen_utc": "2026-11-19T17:16:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:war",
+        "world_context:iran/united states"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
       "url": "https://news.az/news/residents-feared-trapped-as-russian-strike-hits-residential-building-in-ukraine-s-izium",
       "title": "Residents feared trapped as Russian strike hits residential building in Ukraine's Izium | News.az",
       "domain": "news.az",
@@ -7120,6 +7235,48 @@
       "status": "discovery_only_requires_publisher_verification"
     },
     {
+      "url": "https://www.meed.com:443/saudi-arabia-selects-turbine-suppliers-for-gas-fired-ipps",
+      "title": "Saudi Arabia selects turbine suppliers for gas-fired IPPs | MEED",
+      "domain": "www.meed.com:443",
+      "gdelt_first_seen_utc": "2026-11-19T17:16:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 27,
+      "category": "Natural Gas",
+      "relevance_evidence": [
+        "gas-fired"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
+      "url": "https://247wallst.com/companies/nee",
+      "title": "NextEra Energy (NEE) Stock Price, News & Analysis | 24/7 Wall St.",
+      "domain": "247wallst.com",
+      "gdelt_first_seen_utc": "2026-11-19T17:16:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 27,
+      "category": "Power & Electricity",
+      "relevance_evidence": [
+        "nextera"
+      ],
+      "status": "discovery_only_requires_publisher_verification"
+    },
+    {
       "url": "https://www.eltiempo.com/economia/sectores/si-estamos-interesados-en-hacer-fracking-en-colombia-geopark-revela-detalles-ineditos-de-su-operacion-en-argentina-que-busca-replicar-en-el-pais-3602028",
       "title": "'S\u00ed estamos interesados en hacer fracking en Colombia': GeoPark revela detalles in\u00e9ditos de su operaci\u00f3n en Argentina que busca replicar en el pa\u00eds - El Tiempo",
       "domain": "www.eltiempo.com",
@@ -8452,6 +8609,10 @@
     "oil_refining": {
       "last_attempt_utc": "2026-11-19T13:28:08.320524+00:00",
       "consecutive_failures": 1
+    },
+    "power_markets": {
+      "last_attempt_utc": "2026-11-19T17:18:44.472441+00:00",
+      "consecutive_failures": 1
     }
   },
   "runs": [
@@ -8942,9 +9103,17 @@
       "topics_succeeded": 0,
       "new_discovered_urls": 0,
       "leads_in_last_24h_first_seen": 348
+    },
+    {
+      "run_utc": "2026-11-19T17:18:44.472441+00:00",
+      "status": "degraded",
+      "topics_attempted": 1,
+      "topics_succeeded": 0,
+      "new_discovered_urls": 0,
+      "leads_in_last_24h_first_seen": 348
     }
   ],
-  "provider_cooldown_until_utc": "2026-11-19T16:28:08.320524+00:00",
+  "provider_cooldown_until_utc": "2026-11-19T23:18:44.472441+00:00",
   "gal_runs": [
     {
       "run_utc": "2026-11-18T18:31:26.411800+00:00",
@@ -9532,7 +9701,19 @@
       "feed_newest_index_utc": "2026-11-19T13:32:00+00:00",
       "feed_index_lag_minutes": 8.3,
       "feed_payload_sha256": "0bb8a35902e5d1f5"
+    },
+    {
+      "run_utc": "2026-11-19T17:18:55.785919+00:00",
+      "completed_utc": "2026-11-19T17:18:58.722322+00:00",
+      "status": "ok",
+      "raw_feed_items": 1804,
+      "high_signal_items": 7,
+      "new_unique_links": 7,
+      "feed_newest_index_utc": "2026-11-19T17:16:00+00:00",
+      "feed_index_lag_minutes": 2.9,
+      "feed_payload_sha256": "b93f35fe1fe115da",
+      "identical_payload_to_previous_success": false
     }
   ],
-  "provider_throttle_streak": 2
+  "provider_throttle_streak": 3
 }

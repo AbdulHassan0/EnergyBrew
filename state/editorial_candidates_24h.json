@@ -1,25 +1,5 @@
 [
   {
-    "id": "dbb75ca8064473f97e60db15",
-    "title": "China Gas Upsizes Long-Term LNG Supply with U.S. Venture Global",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/China-Gas-Upsizes-Long-Term-LNG-Supply-with-US-Venture-Global.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T15:30:00+00:00",
-    "category": "LNG",
-    "published_precision": "timestamp",
-    "relevance_score": 100,
-    "keyword_matches": 3,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "lng",
-      "lng supply",
-      "venture global"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": []
-  },
-  {
     "id": "cd2beda6e00bf50792701f74",
     "title": "China Burns Less Oil and Coal as the Iran War Reshapes Its Energy Mix",
     "url": "https://oilprice.com/Energy/Energy-General/China-Burns-Less-Oil-and-Coal-as-the-Iran-War-Reshapes-Its-Energy-Mix.html",
@@ -33,26 +13,6 @@
     "editorial_candidate": true,
     "relevance_evidence": [
       "energy_market_hook:oil",
-      "geopolitical_event:war",
-      "world_context:iran"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": []
-  },
-  {
-    "id": "b5493c2967d5c68d6c2f94b5",
-    "title": "Iran War Set to Hike 2027 UK Energy Bills to Four-Year High",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-War-Set-to-Hike-2027-UK-Energy-Bills-to-Four-Year-High.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T16:30:00+00:00",
-    "category": "Geopolitics",
-    "published_precision": "timestamp",
-    "relevance_score": 90,
-    "keyword_matches": 3,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "energy_market_hook:energy",
       "geopolitical_event:war",
       "world_context:iran"
     ],
@@ -80,63 +40,23 @@
     "also_seen_in": []
   },
   {
-    "id": "68f2f4fe9ba50ace39b28345",
-    "title": "How National Grid, Eversource are using VPPs to solve local-level constraints",
-    "url": "https://www.utilitydive.com/news/national-grid-eversource-vpp-demand-response/875039",
-    "source": "Utility Dive News",
+    "id": "e69e12886a535aeeee9f3129",
+    "title": "McDermott-Baker Hughes consortium picks up work on Australian LNG project",
+    "url": "https://www.offshore-energy.biz/2026/11/19/mcdermott-baker-hughes-consortium-picks-up-work-on-australian-lng-project",
+    "source": "Offshore Energy News",
     "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T15:31:06+00:00",
-    "category": "Power & Electricity",
+    "published_utc": "2026-11-19T14:06:41+00:00",
+    "category": "LNG",
     "published_precision": "timestamp",
     "relevance_score": 81,
-    "keyword_matches": 3,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "eversource",
-      "national grid",
-      "vpps"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": []
-  },
-  {
-    "id": "33b7c622f7d6734f22075838",
-    "title": "U.S.-Iran Conflict Flares Again as Gulf Nations Brace for Attacks",
-    "url": "https://oilprice.com/Geopolitics/Middle-East/US-Iran-Conflict-Flares-Again-as-Gulf-Nations-Brace-for-Attacks.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T14:30:00+00:00",
-    "category": "Geopolitics",
-    "published_precision": "timestamp",
-    "relevance_score": 68,
-    "keyword_matches": 0,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:attacks",
-      "world_context:iran/united states"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": []
-  },
-  {
-    "id": "3bd4f9b4ba7eab7921694801",
-    "title": "The grid will fall short of AI\u2019s power needs. These 6 resources can close the gap.",
-    "url": "https://www.utilitydive.com/news/the-grid-will-fall-short-of-ais-power-needs-6-resources-close-the-gap/874125",
-    "source": "Utility Dive News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T15:57:17+00:00",
-    "category": "Power & Electricity",
-    "published_precision": "timestamp",
-    "relevance_score": 51,
     "keyword_matches": 2,
     "editorial_candidate": true,
     "relevance_evidence": [
-      "grid",
-      "power needs"
+      "lng",
+      "lng project"
     ],
     "status": "research_only_unverified",
-    "also_seen_in": []
+    "first_collected_utc": "2026-11-19T17:18:44.403286+00:00"
   },
   {
     "id": "a556bd0d67d095de25e62318",
@@ -157,40 +77,22 @@
     "also_seen_in": []
   },
   {
-    "id": "a4c390e9c48b4825355d9bf6",
-    "title": "U.S. natural gas inventories end injection season above normal levels",
-    "url": "https://www.eia.gov/todayinenergy/detail.php?id=68484",
-    "source": "EIA Today in Energy",
-    "source_class": "official_agency",
-    "published_utc": "2026-11-18T14:00:00+00:00",
-    "category": "Natural Gas",
-    "published_precision": "timestamp",
-    "relevance_score": 39,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "natural gas"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": []
-  },
-  {
-    "id": "12c9ad8c1b37d3c4d5621721",
-    "title": "US Oil Inventories On the Rise",
-    "url": "https://oilprice.com/Energy/Crude-Oil/US-Oil-Inventories-On-the-Rise.html",
+    "id": "784ea8b254d669166f14fe51",
+    "title": "AI Jitters Haven't Slowed the Bet on U.S. Power Demand",
+    "url": "https://oilprice.com/Energy/Energy-General/AI-Jitters-Havent-Slowed-the-Bet-on-US-Power-Demand.html",
     "source": "OilPrice.com News",
     "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T15:39:53+00:00",
-    "category": "Oil & Energy",
+    "published_utc": "2026-11-19T16:00:00+00:00",
+    "category": "Power & Electricity",
     "published_precision": "timestamp",
-    "relevance_score": 36,
+    "relevance_score": 33,
     "keyword_matches": 1,
     "editorial_candidate": true,
     "relevance_evidence": [
-      "oil inventories"
+      "power demand"
     ],
     "status": "research_only_unverified",
-    "also_seen_in": []
+    "first_collected_utc": "2026-11-19T17:18:44.403286+00:00"
   },
   {
     "id": "8d63312521323ff165f0737e",
@@ -247,22 +149,22 @@
     "also_seen_in": []
   },
   {
-    "id": "9b59cf44df724a0879698bfa",
-    "title": "Orlen spreads its wings across Central and Eastern Europe with new gas pacts",
-    "url": "https://www.offshore-energy.biz/2026/11/18/orlen-spreads-its-wings-across-central-and-eastern-europe-with-new-gas-pacts",
+    "id": "acba60beecdcbd9ab285c37f",
+    "title": "$960 million deal enabling NEO NEXT+ to bring EnQuest\u2019s UK North Sea business into its fold",
+    "url": "https://www.offshore-energy.biz/2026/11/19/dollar960-million-deal-enabling-neo-next-to-bring-enquests-uk-north-sea-business-into-its-fold",
     "source": "Offshore Energy News",
     "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T15:07:53+00:00",
-    "category": "Natural Gas",
+    "published_utc": "2026-11-19T16:23:56+00:00",
+    "category": "Oil & Energy",
     "published_precision": "timestamp",
-    "relevance_score": 30,
+    "relevance_score": 27,
     "keyword_matches": 1,
     "editorial_candidate": true,
     "relevance_evidence": [
-      "gas pacts"
+      "enquest"
     ],
     "status": "research_only_unverified",
-    "also_seen_in": []
+    "first_collected_utc": "2026-11-19T17:18:44.403286+00:00"
   },
   {
     "id": "b7d6d9a018a30f85c260796a",
@@ -296,60 +198,6 @@
     "editorial_candidate": true,
     "relevance_evidence": [
       "vaca muerta"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": []
-  },
-  {
-    "id": "d4fe066912643785ea2ffd16",
-    "title": "Democrats Could Slow Venezuela\u2019s Push Toward 3 Million Bpd",
-    "url": "https://oilprice.com/Energy/Energy-General/Democrats-Could-Slow-Venezuelas-Push-Toward-3-Million-Bpd.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T17:00:00+00:00",
-    "category": "Oil & Energy",
-    "published_precision": "timestamp",
-    "relevance_score": 27,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "bpd"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": []
-  },
-  {
-    "id": "7de2ab9619d2f9b5ce722f10",
-    "title": "NextEra-Dominion merger hearings kick off with focus on scope",
-    "url": "https://www.utilitydive.com/news/nextera-dominion-merger-virginia-scc-hearing/875046",
-    "source": "Utility Dive News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T15:50:14+00:00",
-    "category": "Power & Electricity",
-    "published_precision": "timestamp",
-    "relevance_score": 27,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "nextera"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": []
-  },
-  {
-    "id": "86772b4f506d95c18071e2c0",
-    "title": "DOE-funded transmission projects could boost East-West transfer capacity 440%",
-    "url": "https://www.utilitydive.com/news/doe-funded-transmission-projects-could-boost-east-west-transfer-capacity-40/875021",
-    "source": "Utility Dive News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T14:23:48+00:00",
-    "category": "Power & Electricity",
-    "published_precision": "timestamp",
-    "relevance_score": 27,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "transmission projects"
     ],
     "status": "research_only_unverified",
     "also_seen_in": []

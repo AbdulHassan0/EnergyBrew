@@ -658,6 +658,121 @@
     ]
   },
   {
+    "url": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-irgc-vows-challenge-us-blockade",
+    "title": "Iran\u2019s IRGC vows to challenge US blockade",
+    "domain": "www.middleeasteye.net",
+    "gdelt_first_seen_utc": "2026-11-19T17:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:blockade",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.columbian.com/news/2026/nov/19/risk-of-u-s-strikes-on-iran-grows-as-sides-escalate-skirmishes",
+    "title": "Risk of U.S. strikes on Iran grows as sides escalate skirmishes",
+    "domain": "www.columbian.com",
+    "gdelt_first_seen_utc": "2026-11-19T17:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strikes",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-war-costs-surpass-48b-us-pentagon-official-says",
+    "title": "Iran war costs surpass $48b, US Pentagon official says",
+    "domain": "www.middleeasteye.net",
+    "gdelt_first_seen_utc": "2026-11-19T17:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:war",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.military.com/risk-of-us-strikes-on-iran-grows-as-sides-escalate-skirmishes",
+    "title": "Risk of US Strikes on Iran Grows as Sides Escalate Skirmishes",
+    "domain": "www.military.com",
+    "gdelt_first_seen_utc": "2026-11-19T17:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strikes",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://bigislandnow.com/2026/11/17/u-s-rep-ed-case-supports-extension-of-the-jones-act-waiver-during-iran-war",
+    "title": "U.S. Rep. Ed Case supports extension of the Jones Act waiver during Iran war | Big Island Now",
+    "domain": "bigislandnow.com",
+    "gdelt_first_seen_utc": "2026-11-19T17:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:war",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
     "url": "https://news.az/news/residents-feared-trapped-as-russian-strike-hits-residential-building-in-ukraine-s-izium",
     "title": "Residents feared trapped as Russian strike hits residential building in Ukraine's Izium | News.az",
     "domain": "news.az",
@@ -7058,6 +7173,48 @@
     "category": "Power & Electricity",
     "relevance_evidence": [
       "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.meed.com:443/saudi-arabia-selects-turbine-suppliers-for-gas-fired-ipps",
+    "title": "Saudi Arabia selects turbine suppliers for gas-fired IPPs | MEED",
+    "domain": "www.meed.com:443",
+    "gdelt_first_seen_utc": "2026-11-19T17:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas-fired"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://247wallst.com/companies/nee",
+    "title": "NextEra Energy (NEE) Stock Price, News & Analysis | 24/7 Wall St.",
+    "domain": "247wallst.com",
+    "gdelt_first_seen_utc": "2026-11-19T17:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "nextera"
     ],
     "status": "discovery_only_requires_publisher_verification"
   },

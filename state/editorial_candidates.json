@@ -180,6 +180,25 @@
     "also_seen_in": []
   },
   {
+    "id": "e69e12886a535aeeee9f3129",
+    "title": "McDermott-Baker Hughes consortium picks up work on Australian LNG project",
+    "url": "https://www.offshore-energy.biz/2026/11/19/mcdermott-baker-hughes-consortium-picks-up-work-on-australian-lng-project",
+    "source": "Offshore Energy News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-19T14:06:41+00:00",
+    "category": "LNG",
+    "published_precision": "timestamp",
+    "relevance_score": 81,
+    "keyword_matches": 2,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "lng",
+      "lng project"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-19T17:18:44.403286+00:00"
+  },
+  {
     "id": "68f2f4fe9ba50ace39b28345",
     "title": "How National Grid, Eversource are using VPPs to solve local-level constraints",
     "url": "https://www.utilitydive.com/news/national-grid-eversource-vpp-demand-response/875039",
@@ -368,6 +387,24 @@
     "also_seen_in": []
   },
   {
+    "id": "784ea8b254d669166f14fe51",
+    "title": "AI Jitters Haven't Slowed the Bet on U.S. Power Demand",
+    "url": "https://oilprice.com/Energy/Energy-General/AI-Jitters-Havent-Slowed-the-Bet-on-US-Power-Demand.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-19T16:00:00+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 33,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "power demand"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-19T17:18:44.403286+00:00"
+  },
+  {
     "id": "8d63312521323ff165f0737e",
     "title": "Oil Prices Steady as Hormuz Tanker Threats Offset Supply Glut Fears",
     "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Steady-as-Hormuz-Tanker-Threats-Offset-Supply-Glut-Fears.html",
@@ -492,6 +529,24 @@
     ],
     "status": "research_only_unverified",
     "also_seen_in": []
+  },
+  {
+    "id": "acba60beecdcbd9ab285c37f",
+    "title": "$960 million deal enabling NEO NEXT+ to bring EnQuest\u2019s UK North Sea business into its fold",
+    "url": "https://www.offshore-energy.biz/2026/11/19/dollar960-million-deal-enabling-neo-next-to-bring-enquests-uk-north-sea-business-into-its-fold",
+    "source": "Offshore Energy News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-19T16:23:56+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 27,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "enquest"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-19T17:18:44.403286+00:00"
   },
   {
     "id": "b7d6d9a018a30f85c260796a",
