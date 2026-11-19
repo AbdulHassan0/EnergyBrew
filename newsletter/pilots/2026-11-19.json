@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "edition_date": "2026-11-19",
+  "status": "pilot",
+  "headline": "Your daily shot of energy.",
+  "intro": "Good morning. U.S. gas storage is comfortable, long-term LNG contracting remains active, and grid operators are racing to keep up with data center demand. Here's today's energy landscape—before your coffee gets cold.",
+  "stories": [
+    {
+      "section": "Natural Gas",
+      "publisher": "EIA",
+      "source_date": "2026-11-18",
+      "title": "U.S. Natural Gas Storage Finishes Injection Season Above Normal",
+      "source_url": "https://www.eia.gov/todayinenergy/detail.php?id=68484",
+      "summary": "The EIA estimates that Lower 48 working gas storage ended the 2026 injection season at 3,810 Bcf, nearly 2% above its five-year average. Inventories began the season already elevated, while higher gas production was partly absorbed by growing LNG export demand.",
+      "why_it_matters": "The storage cushion helps heading into winter, but LNG exports and colder weather could tighten balances quickly."
+    },
+    {
+      "section": "LNG",
+      "publisher": "OilPrice.com / Venture Global",
+      "source_date": "2026-11-18",
+      "title": "China Gas Doubles Its New Venture Global LNG Agreement",
+      "source_url": "https://oilprice.com/Latest-Energy-News/World-News/China-Gas-Upsizes-Long-Term-LNG-Supply-with-US-Venture-Global.html",
+      "summary": "China Gas raised its newest 20-year LNG supply agreement with Venture Global from 0.5 million to 1.0 million tonnes annually, beginning in 2030. The companies say their total long-term Venture Global arrangements now cover as much as 3 million tonnes per year across multiple agreements.",
+      "why_it_matters": "Long-dated Asian contracts underpin U.S. export capacity and future Gulf Coast feedgas demand."
+    },
+    {
+      "section": "Power & Electricity",
+      "publisher": "PJM Inside Lines",
+      "source_date": "2026-11-18",
+      "title": "PJM Approves Major Transmission Revisions as Costs Rise",
+      "source_url": "https://insidelines.pjm.com/pjm-board-approves-transmission-project-changes-to-support-grid-reliability-2",
+      "summary": "PJM authorized cost and scope changes to multiple planned transmission projects. The major Valley Link 765-kV corridor's estimate increased from about $3.0 billion to $5.1 billion, while key in-service dates moved from 2029 into 2030–2031. The lines are intended to move power across growing load centers.",
+      "why_it_matters": "Higher costs and later grid upgrades could constrain new large-load connections and change power investment timelines."
+    },
+    {
+      "section": "Geopolitics",
+      "publisher": "OilPrice.com",
+      "source_date": "2026-11-18",
+      "title": "China's Fuel Mix Shifts Amid the Iran War's Energy Shock",
+      "source_url": "https://oilprice.com/Energy/Energy-General/China-Burns-Less-Oil-and-Coal-as-the-Iran-War-Reshapes-Its-Energy-Mix.html",
+      "summary": "An OilPrice analysis reports that China's third-quarter carbon emissions fell 3.1%, with oil use down 4% year over year and coal-related emissions down about 3%. Expanding renewable and nuclear output has helped offset fossil-fuel consumption as geopolitical supply disruption strengthens the case for domestic energy alternatives.",
+      "why_it_matters": "Changes in China's energy mix matter for global crude and coal demand, commodity prices, and power infrastructure investment."
+    },
+    {
+      "section": "Power & Electricity",
+      "publisher": "PJM Inside Lines",
+      "source_date": "2026-11-16",
+      "title": "PJM Targets Unexpected Data Center Load Transfers",
+      "source_url": "https://insidelines.pjm.com/pjm-proposes-new-rules-to-protect-grid-reliability-as-data-center-demand-grows",
+      "summary": "PJM asked FERC to establish voltage and frequency ride-through standards for large computing loads. The proposal follows a July event in which nearly 3.9 GW of data center demand abruptly switched from grid supply to on-site generation during a transmission disturbance, creating system-wide reliability concerns.",
+      "why_it_matters": "Data centers' rapid load changes can affect grid stability, influencing operating requirements and the cost of large new connections."
+    },
+    {
+      "section": "Geopolitics",
+      "publisher": "OilPrice.com / Cornwall Insight",
+      "source_date": "2026-11-18",
+      "title": "Iran War May Push British Household Energy Bills Up 26%",
+      "source_url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-War-Set-to-Hike-2027-UK-Energy-Bills-to-Four-Year-High.html",
+      "summary": "Consultancy Cornwall Insight forecasts a 26% increase in the U.K.'s typical household energy price cap from January 2027, taking the annualized figure to about £2,166 for the first quarter. Higher wholesale natural gas and power prices linked to the Middle East conflict are the main driver; the estimate is not yet a final regulator decision.",
+      "why_it_matters": "The forecast highlights how global gas supply shocks transmit into European power costs and consumer inflation."
+    },
+    {
+      "section": "Power & Electricity",
+      "publisher": "Utility Dive",
+      "source_date": "2026-11-18",
+      "title": "National Grid and Eversource Use Virtual Power Plants to Ease Local Constraints",
+      "source_url": "https://www.utilitydive.com/news/national-grid-eversource-vpp-demand-response/875039",
+      "summary": "The utilities are expanding coordinated use of smart thermostats, storage and other distributed resources to relieve local electricity constraints. National Grid cited around 100 MW of flexible demand in New England and more than 350 MW in upstate New York, while Eversource has a large customer-device portfolio.",
+      "why_it_matters": "Flexible demand may defer expensive distribution upgrades, particularly where electricity use grows faster than new wires can be built."
+    },
+    {
+      "section": "Power & Electricity",
+      "publisher": "Utility Dive",
+      "source_date": "2026-11-17",
+      "title": "Grid Operators Propose New Ways to Connect Large Loads at FERC",
+      "source_url": "https://www.utilitydive.com/news/pjm-rto-large-load-interconnection-ferc-show-cause/874872",
+      "summary": "Several regional grid operators submitted proposals on large-load interconnection reform to FERC. PJM outlined a combined, roughly one-year review of major electricity demand and new generation projects, seeking a more coordinated approach to data center growth, grid reliability and connections.",
+      "why_it_matters": "Interconnection rules can reshape how quickly data centers energize and how utilities plan generation and transmission expansion."
+    }
+  ],
+  "notice": "Temporary pilot edition, source-linked originals; no human fact-check attestation. Not sent automatically."
+}
