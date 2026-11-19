@@ -1,15 +1,15 @@
 # EnergyBrew — live RSS collection
 
-Run: 2026-11-18T22:58:02.255684+00:00
+Run: 2026-11-19T00:21:23.911284+00:00
 Successfully parsed feeds: **15/15**
 Source connectivity: **healthy** (0 feeds failed)
-Fresh timestamped entries: **53**
-Editorial candidates (in collection window): **27**
+Fresh timestamped entries: **50**
+Editorial candidates (in collection window): **24**
 Editorial candidates (last 24h): **23**
 Regulatory date-only feed entries: **12**
 Regulatory watchlist links (7 days): **4**
-New unique links (all precision levels): **1**
-Distinct article links in 7-day state: **71**
+New unique links (all precision levels): **2**
+Distinct article links in 7-day state: **73**
 
 | Source | Connected | Timestamped | Date-only | Candidates | New | Error |
 |---|---|---:|---:|---:|---:|---|
@@ -22,10 +22,10 @@ Distinct article links in 7-day state: **71**
 | US NRC Nuclear News | True | 0 | 0 | 0 | 0 |  |
 | DOE Hydrocarbons Releases | True | 0 | 0 | 0 | 0 |  |
 | DOE Hydrocarbons Blog | True | 0 | 0 | 0 | 0 |  |
-| European Commission DG Energy | True | 6 | 0 | 1 | 0 |  |
+| European Commission DG Energy | True | 3 | 0 | 0 | 0 |  |
 | Federal Register notices | True | 0 | 12 | 0 | 0 |  |
 | Offshore Energy News | True | 19 | 0 | 7 | 0 |  |
-| OilPrice.com News | True | 15 | 0 | 10 | 1 |  |
+| OilPrice.com News | True | 15 | 0 | 8 | 2 |  |
 | Utility Dive News | True | 8 | 0 | 5 | 0 |  |
 | PJM Inside Lines | True | 1 | 0 | 1 | 0 |  |
 

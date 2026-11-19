@@ -1,5 +1,62 @@
 [
   {
+    "url": "https://finance.yahoo.com/energy/articles/ugi-corporation-announces-plan-pursue-230100078.html",
+    "title": "UGI Corporation Announces Plan to Pursue the Separation of Its Global Liquefied Petroleum Gas Business Into a Standalone Public Company",
+    "feed_creator_label": "UGI Corporation",
+    "named_issuer_verified": false,
+    "feed_source_url": "https://finance.yahoo.com/energy/articles/ugi-corporation-announces-plan-pursue-230100078.html",
+    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+    "feed_published_utc": "2026-11-18T23:01:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "category": "Natural Gas & LNG",
+    "relevance_score": 30,
+    "relevance_evidence": [
+      "liquefied"
+    ],
+    "provider": "Press Release Feed",
+    "content_kind": "company_or_newswire_press_release",
+    "status": "promotional_issuer_claim_requires_editorial_verification"
+  },
+  {
+    "url": "https://www.newswire.com/news/jericho-energy-ventures-provides-update-on-oil-and-gas-joint-venture-22890825",
+    "title": "Jericho Energy Ventures Provides Update on Oil and Gas Joint Venture Credit Facility",
+    "feed_creator_label": "Newswire.com",
+    "named_issuer_verified": false,
+    "feed_source_url": "https://www.newswire.com/news/jericho-energy-ventures-provides-update-on-oil-and-gas-joint-venture-22890825",
+    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+    "feed_published_utc": "2026-11-18T22:30:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "category": "Oil & Energy",
+    "relevance_score": 30,
+    "relevance_evidence": [
+      "oil and gas"
+    ],
+    "provider": "Press Release Feed",
+    "content_kind": "company_or_newswire_press_release",
+    "status": "promotional_issuer_claim_requires_editorial_verification"
+  },
+  {
+    "url": "https://finance.yahoo.com/energy/articles/jericho-energy-ventures-provides-oil-223000281.html",
+    "title": "Jericho Energy Ventures Provides Update on Oil and Gas Joint Venture Credit Facility",
+    "feed_creator_label": "ACCESS Newswire",
+    "named_issuer_verified": false,
+    "feed_source_url": "https://finance.yahoo.com/energy/articles/jericho-energy-ventures-provides-oil-223000281.html",
+    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+    "feed_published_utc": "2026-11-18T22:30:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "category": "Oil & Energy",
+    "relevance_score": 30,
+    "relevance_evidence": [
+      "oil and gas"
+    ],
+    "provider": "Press Release Feed",
+    "content_kind": "company_or_newswire_press_release",
+    "status": "promotional_issuer_claim_requires_editorial_verification"
+  },
+  {
     "url": "https://www.globenewswire.com/news-release/2026/11/18/3406181/0/en/xos-enters-energy-generation-with-the-xos-solar-system-bringing-grid-independent-power-to-any-site-in-days.html",
     "title": "Xos Enters Energy Generation with the Xos Solar System, Bringing Grid-Independent Power to Any Site in Days",
     "feed_creator_label": "GlobeNewswire",
@@ -205,26 +262,6 @@
     "relevance_evidence": [
       "grid",
       "power grid"
-    ],
-    "provider": "Press Release Feed",
-    "content_kind": "company_or_newswire_press_release",
-    "status": "promotional_issuer_claim_requires_editorial_verification"
-  },
-  {
-    "url": "https://finance.yahoo.com/energy/articles/venture-global-china-gas-announce-000000135.html",
-    "title": "Venture Global and China Gas Announce Increased Long-Term LNG Agreement",
-    "feed_creator_label": "Business Wire",
-    "named_issuer_verified": false,
-    "feed_source_url": "https://finance.yahoo.com/energy/articles/venture-global-china-gas-announce-000000135.html",
-    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-    "feed_published_utc": "2026-11-18T00:00:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "category": "Natural Gas & LNG",
-    "relevance_score": 78,
-    "relevance_evidence": [
-      "lng",
-      "venture global"
     ],
     "provider": "Press Release Feed",
     "content_kind": "company_or_newswire_press_release",

@@ -24,6 +24,27 @@
     ]
   },
   {
+    "url": "https://www.afr.com/policy/energy-and-climate/a-victorian-coalition-win-will-deepen-fractures-in-national-power-grid-20261119-p61fcl",
+    "title": "A Victorian Coalition win will deepen fractures in national power grid",
+    "domain": "www.afr.com",
+    "gdelt_first_seen_utc": "2026-11-19T00:17:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 57,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "grid",
+      "power grid"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
     "url": "https://www.savingadvice.com/articles/2026/11/18/10769854_doe-announces-2-8-billion-wyoming-power-grid-loan-could-it-lower-electric-bills-in-17-states.html",
     "title": "DOE Announces $2.8 Billion Wyoming Power Grid Loan \u2014 Could It Lower Electric Bills in 17 States?",
     "domain": "www.savingadvice.com",
@@ -742,6 +763,66 @@
     "category": "Oil & Energy",
     "relevance_evidence": [
       "brent"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.12onyourside.com/2026/11/18/community-groups-urge-henrico-protect-water-supply",
+    "title": "Henrico says no water agreement in place for proposed power plant as community groups raise concerns",
+    "domain": "www.12onyourside.com",
+    "gdelt_first_seen_utc": "2026-11-19T00:17:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "power plant"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.thestar.com.my/tech/tech-news/2026/11/19/texas-resumes-issuing-data-center-air-permits-regulator-says",
+    "title": "Texas resumes issuing data center air permits, regulator says",
+    "domain": "www.thestar.com.my",
+    "gdelt_first_seen_utc": "2026-11-19T00:17:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.wxow.com/news/oakdale-town-board-calls-for-delay-in-proposed-nodiac-data-center-permit-decision/article_14316ea1-1ad2-47d8-ae83-14a968c23510.html",
+    "title": "Oakdale Town Board calls for delay in proposed Nodiac data center permit decision",
+    "domain": "www.wxow.com",
+    "gdelt_first_seen_utc": "2026-11-19T00:16:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
     ],
     "status": "discovery_only_requires_publisher_verification"
   },
@@ -1806,6 +1887,66 @@
     "category": "Power & Electricity",
     "relevance_evidence": [
       "vistra"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.riotimesonline.com/geopark-colombia-fracking-interest-vaca-muerta",
+    "title": "Oil Firm GeoPark Eyes Colombia Fracking",
+    "domain": "www.riotimesonline.com",
+    "gdelt_first_seen_utc": "2026-11-19T00:17:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "fracking"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "http://www.dailyunion.com/news/local/wise-transmission-line-holds-open-house/article_5537af6e-2086-560b-9b5d-bdae4ac092d8.html",
+    "title": "WISE transmission line holds open house",
+    "domain": "www.dailyunion.com",
+    "gdelt_first_seen_utc": "2026-11-19T00:17:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "transmission line"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://fox4beaumont.com/news/bpd-capers-unit-404-homicides-investigated-more-than-90-percent-solved",
+    "title": "BPD CAPERS Unit: 404 homicides investigated, more than 90 percent solved",
+    "domain": "fox4beaumont.com",
+    "gdelt_first_seen_utc": "2026-11-19T00:17:00+00:00",
+    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "bpd"
     ],
     "status": "discovery_only_requires_publisher_verification"
   },
