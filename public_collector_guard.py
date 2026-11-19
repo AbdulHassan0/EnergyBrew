@@ -102,18 +102,18 @@ def validate_records(path: Path, key: str) -> int:
             raise SafetyError(f"{path}: unsafe or unnormalized publisher link at record {i}")
         if not isinstance(article.get("title"), str) or not 2 <= len(article["title"]) <= 300:
             raise SafetyError(f"{path}: missing or oversized headline at record {i}")
-        for key in ("first_collector_observed_utc", "first_collected_utc"):
-            if key not in article:
+        for timestamp_field in ("first_collector_observed_utc", "first_collected_utc"):
+            if timestamp_field not in article:
                 continue  # Older imported records have no measured timestamp.
-            value=article[key]
+            value=article[timestamp_field]
             if not isinstance(value,str):
-                raise SafetyError(f"{path}: invalid {key} at record {i}")
+                raise SafetyError(f"{path}: invalid {timestamp_field} at record {i}")
             try:
                 stamp=datetime.fromisoformat(value.replace("Z","+00:00"))
             except ValueError as exc:
-                raise SafetyError(f"{path}: invalid {key} at record {i}") from exc
+                raise SafetyError(f"{path}: invalid {timestamp_field} at record {i}") from exc
             if stamp.tzinfo is None or stamp.utcoffset() is None:
-                raise SafetyError(f"{path}: timezone missing from {key} at record {i}")
+                raise SafetyError(f"{path}: timezone missing from {timestamp_field} at record {i}")
     return len(record[key])
 
 
