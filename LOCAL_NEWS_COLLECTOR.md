@@ -56,3 +56,33 @@ sample, publisher feed recency, the final Central morning job, and the upper
 bound on 24-hour sampling coverage. A newly started collector will correctly
 report that the seven-day pilot is **not** yet complete. Status never means
 subscriber email delivery or production approval.
+
+## Optional Windows logon auto-start (explicit opt-in)
+
+**Do not run this on a computer that cannot stay awake overnight and online.**
+An interactive Windows sign-in task cannot collect while the user is logged
+out, the PC is asleep, disconnected or powered off. It is not a production SLA.
+
+From a PowerShell terminal in the cloned repository:
+
+```powershell
+# Preview only: prints the task and makes NO system changes.
+.\deploy\windows\install-news-task.ps1
+
+# Only if you want this PC to run the research collector at sign-in:
+.\deploy\windows\install-news-task.ps1 -Install -StartNow
+
+# Update the task after moving your clone:
+.\deploy\windows\install-news-task.ps1 -Install -Replace
+
+# Remove the task, keeping your historical news state:
+.\deploy\windows\install-news-task.ps1 -Remove
+```
+
+The script registers for the current signed-in user (no stored password),
+uses one instance, restarts after process failures, sets no task runtime
+limit and checks Python 3.12 and Central timezone data first. Do not change
+its account to SYSTEM because that would switch the per-user state folder.
+The installer is only code in the repository until YOU explicitly run it.
+The local-health command above verifies observed results rather than
+assuming task registration implies successful collection.

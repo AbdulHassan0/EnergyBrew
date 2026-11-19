@@ -22,6 +22,7 @@ on:
       - "portable_lock.py"
       - "tests/test_windows_local_news_ci.py"
       - "deploy/windows/run-energybrew-news.ps1"
+      - "deploy/windows/install-news-task.ps1"
       - "host_release_refresh.py"
       - "render_worker.py"
       - "render_entrypoint.py"
@@ -102,6 +103,14 @@ jobs:
         shell: pwsh
         run: |
           python -c "from zoneinfo import ZoneInfo; from render_worker import JOBS; from portable_lock import lock_exclusive_nonblocking; assert ZoneInfo('America/Chicago'); assert len(JOBS)==4; print('Windows collector imports OK')"
+      - name: Validate optional Task Scheduler installer syntax without registering anything
+        shell: pwsh
+        run: |
+          $src = Get-Content "deploy/windows/install-news-task.ps1" -Raw
+          [void][scriptblock]::Create($src)
+          if ($src -notmatch "PREVIEW ONLY") { throw "Installer needs explicit opt-in" }
+          if ($src -notmatch "MultipleInstances IgnoreNew") { throw "Duplicate-worker policy missing" }
+          Write-Host "Windows task registration script parses; no task was registered."
       - name: Run portable file locking and scheduler tests on actual Windows
         shell: pwsh
         run: |

@@ -85,7 +85,16 @@ def update_health(path, report, *, now=None):
 
 def collect_cycle(state, output, *, now=None, fetcher=None):
     report = sample_once(state, output, now=now, fetcher=fetcher)
-    heartbeat = update_health(Path(output) / "worker_health.json", report, now=now)
+    # Heartbeats must mark the END of the live GDELT request. Using the
+    # injected/start time here makes a slow request look recent prematurely.
+    finished = report.get("completed_utc")
+    if not isinstance(finished, str):
+        raise ValueError("GAL report has no authoritative completion time")
+    finished = datetime.fromisoformat(finished.replace("Z","+00:00"))
+    if finished.tzinfo is None or finished.utcoffset() is None:
+        raise ValueError("GAL report completion time lacks timezone")
+    heartbeat = update_health(Path(output) / "worker_health.json", report,
+                              now=finished)
     return report, heartbeat
 
 

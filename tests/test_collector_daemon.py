@@ -4,8 +4,9 @@ import tempfile
 import unittest
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from unittest.mock import patch
 
-from collector_daemon import sample_once, update_health, run_forever, recover_abandoned_stage
+from collector_daemon import sample_once, update_health, run_forever, recover_abandoned_stage, collect_cycle
 
 NOW=datetime(2026,11,18,15,tzinfo=timezone.utc)
 FEED=b"""<rss><channel><item><title>Cheniere LNG expansion advances</title>
@@ -14,6 +15,25 @@ FEED=b"""<rss><channel><item><title>Cheniere LNG expansion advances</title>
 </item></channel></rss>"""
 
 class WorkerTests(unittest.TestCase):
+    def test_daemon_heartbeat_uses_actual_network_completion_not_scan_start(self):
+        with tempfile.TemporaryDirectory() as directory:
+            finish=NOW+timedelta(minutes=6)
+            report={"status":"ok","run_utc":NOW.isoformat(),
+                    "completed_utc":finish.isoformat(),"new_unique_links":1}
+            with patch("collector_daemon.sample_once",return_value=report):
+                result,health=collect_cycle(Path(directory)/"discovery.json",
+                                            Path(directory)/"out",now=NOW)
+            self.assertEqual(health["checked_utc"],finish.isoformat())
+            self.assertEqual(health["last_success_utc"],finish.isoformat())
+            self.assertEqual(result["run_utc"],NOW.isoformat())
+
+    def test_missing_gal_completion_fails_closed(self):
+        with tempfile.TemporaryDirectory() as directory:
+            with patch("collector_daemon.sample_once",
+                       return_value={"status":"ok","run_utc":NOW.isoformat()}):
+                with self.assertRaisesRegex(ValueError,"completion time"):
+                    collect_cycle(Path(directory)/"state.json",Path(directory)/"out",now=NOW)
+
     def test_safe_staging_writes_durable_state(self):
         with tempfile.TemporaryDirectory() as d:
             state=Path(d)/"state/discovery.json"
