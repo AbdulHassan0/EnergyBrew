@@ -81,6 +81,23 @@ class MorningTests(unittest.TestCase):
         self.assertNotIn("https://agency.gov/notices/today",
                          [x["url"] for x in result["research_desk"]["stories"]])
 
+    def test_fresh_scan_after_cutoff_does_not_import_late_news(self):
+        a,b,c=fixtures()
+        a["runs"].append({"run_utc":time_str(+5),"feeds_checked":15,
+                          "feeds_connected":15,"scan_state":"healthy"})
+        b["gal_runs"].append({"run_utc":time_str(+5),"status":"ok"})
+        result=prepare(a,b,c,now=NOW)
+        self.assertEqual(result["status"],"ready_for_editor_review")
+        self.assertIn("rss_polled_after_cutoff_records_strictly_filtered_to_cutoff",result["warnings"])
+        titles=[x["title"] for x in result["research_desk"]["stories"]]
+        self.assertNotIn("LNG export terminal new deal",titles)
+        self.assertNotIn("Russian oil refinery struck by missile",titles)
+
+    def test_late_morning_preparation_not_marked_ready(self):
+        a,b,c=fixtures()
+        result=prepare(a,b,c,now=CUTOFF+timedelta(minutes=25))
+        self.assertIn("insufficient_editorial_review_time_before_7am",result["blocking_issues"])
+
     def test_immutable_research_snapshot_cannot_be_rewritten(self):
         a,b,c=fixtures()
         result=prepare(a,b,c,now=NOW)
