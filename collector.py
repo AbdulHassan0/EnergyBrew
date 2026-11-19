@@ -271,6 +271,7 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
     if not isinstance(old_source_health, dict):
         raise ValueError("Existing source health malformed; refusing overwrite")
     results, new_count = [], 0
+    new_article_ids = set()  # never invent first-seen times for legacy state
     for name, url in SOURCES:
         row = {"source": name, "url": url, "connected": False, "items_seen": 0,
                "fresh": 0, "new": 0, "request_attempts": 0,
@@ -309,11 +310,15 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
                         if prior.get("published_utc", "") <= item["published_utc"]:
                             item["id"] = prior_id
                             item["also_seen_in"] = prior.get("also_seen_in", [])
+                            # Preserve earliest actual collection time if known.
+                            if prior.get("first_collected_utc"):
+                                item["first_collected_utc"] = prior["first_collected_utc"]
                             articles[prior_id] = item
                         continue
                     if item["id"] not in articles:
                         new_count += 1
                         row["new"] += 1
+                        new_article_ids.add(item["id"])
                     articles[item["id"]] = item
                     seen_urls[item["url"]] = item["id"]
                 break
@@ -382,6 +387,12 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
            "editorial_candidates_24h": sum(x.get("editorial_candidate",False) and datetime.fromisoformat(x["published_utc"]) >= now - timedelta(hours=24) for x in retained),
            "regulatory_watch_links_7d": sum(x.get("published_precision")=="day" and x.get("relevance_score",0)>=22 for x in retained),
            "sources": results, "source_health": source_health}
+    # Only truly new links receive a first-collected time; the full scan had
+    # to finish before its records became available for morning review.
+    # retained contains the same record dictionaries as articles.
+    for article_id in new_article_ids:
+        if article_id in articles:
+            articles[article_id]["first_collected_utc"] = completed_utc.isoformat()
     run_retention_cutoff = now - timedelta(days=8)  # retain audit window boundary
     runs = []
     for x in previous["runs"]:

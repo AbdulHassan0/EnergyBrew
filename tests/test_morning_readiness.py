@@ -95,6 +95,19 @@ class MorningTests(unittest.TestCase):
         record=next(x for x in result["background_context"] if x["url"]==urls[0])
         self.assertEqual(record["morning_time_bucket"],"date_only_prior_day_context")
 
+    def test_older_publisher_dated_article_first_seen_after_cutoff_is_excluded(self):
+        a,b,c=fixtures()
+        a["articles"].append({
+            "url":"https://example.org/lng/late-arrival",
+            "title":"LNG export terminal approval announced",
+            "published_utc":time_str(-20),
+            "first_collected_utc":time_str(+5),
+            "published_precision":"timestamp"})
+        r=prepare(a,b,c,now=NOW)
+        self.assertEqual(r["status"],"ready_for_editor_review")
+        urls={x["url"] for x in r["research_desk"]["stories"]}
+        self.assertNotIn("https://example.org/lng/late-arrival",urls)
+
     def test_only_postcutoff_rss_run_cannot_count_at_cutoff(self):
         a,b,c=fixtures()
         a["runs"]=[{"run_utc":time_str(+5),"completed_utc":time_str(+5),

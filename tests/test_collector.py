@@ -53,6 +53,20 @@ class CollectorTests(unittest.TestCase):
             self.assertLessEqual(maximum,5)
             self.assertTrue((Path(d)/"articles.json").exists())
 
+    def test_first_collected_timestamp_is_preserved_across_later_polls(self):
+        with tempfile.TemporaryDirectory() as d:
+            path=Path(d)/"state.json"
+            out=Path(d)/"out"
+            first=collect(path,out,now=NOW,fetcher=fixture_fetch)
+            original=json.loads(path.read_text())
+            row=original["articles"][0]
+            self.assertEqual(row["first_collected_utc"],NOW.isoformat())
+            self.assertEqual(first["completed_utc"],NOW.isoformat())
+            later=NOW+timedelta(minutes=10)
+            collect(path,out,now=later,fetcher=fixture_fetch)
+            second=json.loads(path.read_text())
+            self.assertEqual(second["articles"][0]["first_collected_utc"],NOW.isoformat())
+
     def test_rss_dates_links(self):
         items, rejected, seen = parse_feed(sample(), "Official", NOW, 48)
         self.assertEqual((len(items), seen), (1, 1))

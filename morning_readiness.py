@@ -62,6 +62,11 @@ def eligible_article(row, lane, cutoff, lookback, local_day, tz):
     if not isinstance(row, dict):
         return False
     if lane == "rss":
+        # A pre-cutoff publisher date cannot make a link first collected at
+        # 06:38 retroactively available at 06:30.
+        first_collected = as_time(row.get("first_collected_utc"))
+        if first_collected is not None and first_collected > cutoff:
+            return False
         stamp = as_time(row.get("published_utc"))
         if row.get("published_precision") == "day":
             # A day-only notice is NOT proven to be available at 06:30.
@@ -172,6 +177,8 @@ def prepare(rss, discovery, releases, *, now=None, edition_date=None,
     edition_local_day = date.fromisoformat(schedule["edition_date"])
     rss_articles = [x for x in (rss.get("articles",[]) if isinstance(rss,dict) else [])
                     if eligible_article(x,"rss",observed_cutoff,lookback,edition_local_day,tz)]
+    if any(not x.get("first_collected_utc") for x in rss_articles):
+        warnings.append("legacy_rss_first_collection_time_unknown_requires_review")
     discovered = [x for x in (discovery.get("leads",[]) if isinstance(discovery,dict) else [])
                   if eligible_article(x,"discovery",observed_cutoff,lookback,edition_local_day,tz)]
     released = [x for x in (releases.get("leads",[]) if isinstance(releases,dict) else [])
