@@ -85,6 +85,24 @@ class DeskTests(unittest.TestCase):
         r=assemble([], [x,dict(x,gdelt_first_seen_utc="bad")],[],now=NOW)
         self.assertEqual(r["unique_relevant_urls_7d"],0)
 
+    def test_publisher_promotion_and_forum_announcement_flagged(self):
+        from research_desk import marketing_signal, low_market_impact_signal
+        self.assertTrue(marketing_signal(
+            "Electra to Showcase Refinery Progress at Global Industry Forums"))
+        self.assertTrue(low_market_impact_signal(
+            "API Shows Oil Inventory Builds | Peak Oil News and Message Boards"))
+        self.assertFalse(marketing_signal(
+            "Grid operator approves major $3B transmission investment project"))
+
+    def test_spanish_and_polish_latin_script_headlines_need_translation_review(self):
+        from research_desk import likely_non_english_latin_title
+        spanish="Revancha en Vaca Muerta: tras tres derrotas seguidas, Techint ganó un contrato clave en Argentina LNG"
+        polish="Nasi sąsiedzi dogadali się z USA. Wielki kontrakt na LNG"
+        self.assertTrue(likely_non_english_latin_title(spanish))
+        self.assertTrue(likely_non_english_latin_title(polish))
+        self.assertFalse(likely_non_english_latin_title(
+            "PJM approves data center transmission project for regional reliability"))
+
     def test_foreign_script_and_promotional_flags(self):
         x=global_lead(title="Ελλάδα LNG export terminal expansion")
         y=release(title="Vendor launches SEO services for power grid operators")

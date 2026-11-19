@@ -61,6 +61,13 @@ NEGATIVE = [
 ]
 
 class RelevanceCorpus(unittest.TestCase):
+    def test_historical_anniversary_is_not_todays_market_news(self):
+        from editorial import non_article_reason
+        title="Today in History: November 19, explosions at Mexico City natural gas facility kill hundreds"
+        self.assertFalse(evaluate(title)["editorial_candidate"])
+        self.assertEqual(non_article_reason(title,"https://example.com/history/gas"),
+                         "historical_retrospective")
+
     def test_real_energy_market_headlines_survive(self):
         for beat, titles in POSITIVE.items():
             for title in titles:

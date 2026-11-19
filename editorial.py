@@ -96,6 +96,10 @@ def non_article_reason(title, url=""):
         return "empty_title"
     if re.match(r"^(?:tag|tags|category|categories|archive|archives|topics?)\s*:", title):
         return "archive_title"
+    # Retrospective historic incidents can contain many sector keywords but
+    # they are not current market developments.
+    if re.match(r"^(?:today in history|this day in history|on this day)\b", title):
+        return "historical_retrospective"
     if not url:
         return None
     path = urlsplit(url).path.lower()
@@ -107,6 +111,7 @@ def non_article_reason(title, url=""):
 
 
 LOW_VALUE_PATTERNS = (
+    r"^(?:today in history|this day in history|on this day)\b",
     r"\bhow to save (?:electricity|energy) at home\b",
     r"\benergy.saving tips\b",
     r"\b(?:students?|schoolchildren)\b.{0,60}\b(?:conserve|saving|awareness)\b.{0,40}\b(?:electricity|energy)\b",

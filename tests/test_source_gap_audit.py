@@ -39,6 +39,21 @@ class GapAuditTests(unittest.TestCase):
         self.assertNotIn("published_utc",lead)
         self.assertEqual(a["gdelt_publisher_date_verified"],0)
 
+    def test_retrospective_and_untranslated_latin_news_not_shortlisted(self):
+        rows=[
+            index("https://a.test/history",
+                  "Today in History: Natural gas facility explosion kills hundreds"),
+            index("https://b.test/es",
+                  "Revancha en Vaca Muerta: tras tres derrotas seguidas, Techint ganó un contrato clave en Argentina LNG"),
+            index("https://c.test/en",
+                  "Data center electricity use could double by 2030, IEA says"),
+        ]
+        a=reconcile({},{"leads":rows},now=NOW)
+        selected=[x["url"] for x in a["high_priority_discovery_only_leads_for_review"]]
+        self.assertNotIn(rows[0]["url"],selected)
+        self.assertNotIn(rows[1]["url"],selected)
+        self.assertIn(rows[2]["url"],selected)
+
     def test_aged_gdelt_index_link_is_excluded_from_24h(self):
         a=reconcile({},{"leads":[index("https://publisher.test/one",
                             "LNG export contract supply expansion",mins=1600)]},now=NOW)

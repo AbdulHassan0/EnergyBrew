@@ -51,12 +51,38 @@ def is_english_script(title):
     letters=[c for c in (title or "") if c.isalpha()]
     return bool(letters) and sum("LATIN" in unicodedata.name(c,"") for c in letters)/len(letters)>=.9
 
+def likely_non_english_latin_title(title):
+    """Flag for translation review, never infer exact source language.
+
+    Latin script is shared by English, Polish, Spanish and other languages.
+    This conservative heuristic avoids treating a couple of words such as
+    LNG or USA as proof an entire headline is English.
+    """
+    words = re.findall(r"[a-zà-ÿąćęłńóśźż]+", (title or "").lower())
+    if len(words) < 5:
+        return False
+    non_ascii_letters = sum(c.isalpha() and not c.isascii() for c in title)
+    if non_ascii_letters >= 2:
+        return True
+    spanish_connectors = {"en","tras","los","las","del","una","para",
+                          "con","que","por","al","un","se","de","es"}
+    return sum(w in spanish_connectors for w in words) >= 3 and (
+        sum(w in spanish_connectors for w in words) / len(words) >= .2
+    )
+
+
 def marketing_signal(title):
     s = (title or "").lower()
-    return any(x in s for x in (
+    if any(x in s for x in (
         "seo services", "search engine optimization", "ai search visibility",
         "marketing agency", "social media marketing", "press release distribution",
         "launches new website", "sector analysis examining",
+    )):
+        return True
+    return bool(re.search(
+        r"\b(?:to showcase|will showcase|showcasing)\b.{0,85}"
+        r"\b(?:at|during)\b.{0,35}\b(?:forum|forums|conference|expo|summit)\b",
+        s,
     ))
 
 def low_market_impact_signal(title):
@@ -68,6 +94,7 @@ def low_market_impact_signal(title):
         r"energy-saving tips",
         r"^(?:rupee|indian rupee|currenc(?:y|ies)).*(?:crude|oil|brent)",
         r"^(?:stocks?|shares?|equities).*(?:rall(?:y|ies)|drop|fall|gain).*(?:crude|oil)",
+        r"\bmessage boards?\b",
     ))
 
 def coverage_themes(title, primary):
@@ -140,7 +167,7 @@ def entry(record, kind, now):
         flagged.append("promotional_or_generic_marketing")
     if low_market_impact_signal(title):
         flagged.append("low_commercial_impact")
-    if not is_english_script(title):
+    if not is_english_script(title) or likely_non_english_latin_title(title):
         flagged.append("translation_and_source_review")
     if quality["category"] == "Geopolitics":
         if any(s.startswith("energy_market_exposure:inferred_") for s in quality["evidence"]):
