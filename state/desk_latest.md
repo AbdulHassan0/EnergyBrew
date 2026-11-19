@@ -2,7 +2,7 @@
 
 **Research links only. Not fact-checked, approved, or ready for publication.**
 
-Generated (UTC): 2026-11-19T00:28:48.142599+00:00
+Generated (UTC): 2026-11-19T00:31:13.271397+00:00
 Distinct relevant URLs in retained data: **158**
 Selected diverse research leads: **26**
 Publisher-timestamped official leads within 24h: **2**
@@ -54,19 +54,19 @@ Discovery publisher dates verified: **0**
 19. **[ExxonMobil pushes ahead with Guyana’s eighth oil project as Saipem gets the all-clear and SBM Offshore bags FPSO job](https://www.offshore-energy.biz/2026/11/17/exxonmobil-pushes-ahead-with-guyanas-eighth-oil-project-as-saipem-gets-the-all-clear-and-sbm-offshore-bags-fpso-job)** — Oil & Energy | official_rss | score 33
    - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-17T08:00:08+00:00). Editorial status: **unapproved**.
 20. **[Crude Oil Plummeting As Inventories Increase More Than Expected](https://www.rttnews.com/story.aspx?Id=3716011)** — Oil & Energy | global_discovery | score 36
-   - Timestamp basis: discovery_index_first_seen_only (2026-11-18T20:47:00+00:00). Editorial status: **unapproved**.
+   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-18T20:47:00+00:00). Editorial status: **unapproved**.
 21. **[ExxonMobil (XOM) Just Achieved Something 95% of S&P 500 (GSPC) Members Haven't Done / The Motley Fool](https://www.fool.com/investing/2026/11/18/exxonmobil-xom-achieved-something-95-of-sp-50-gspc?source=iedfolrf0000001)** — Oil & Energy | global_discovery | score 33
-   - Timestamp basis: discovery_index_first_seen_only (2026-11-18T21:31:00+00:00). Editorial status: **unapproved**.
+   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-18T21:31:00+00:00). Editorial status: **unapproved**.
 22. **[Enterprise Products Partners: Oil Prices Are Noisy, Dividend Is The Signal](https://seekingalpha.com/article/4969737-enterprise-products-partners-oil-prices-are-noisy-dividend-is-the-signal)** — Oil & Energy | global_discovery | score 33
-   - Timestamp basis: discovery_index_first_seen_only (2026-11-18T21:01:00+00:00). Editorial status: **unapproved**.
+   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-18T21:01:00+00:00). Editorial status: **unapproved**.
 23. **[Why Iraq Just Fast-Tracked Chevron's Takeover Of A 14-Billion-Barrel Supergiant](http://www.zerohedge.com/markets/why-iraq-just-fast-tracked-chevrons-takeover-14-billion-barrel-supergiant)** — Oil & Energy | global_discovery | score 33
-   - Timestamp basis: discovery_index_first_seen_only (2026-11-18T19:31:00+00:00). Editorial status: **unapproved**.
+   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-18T19:31:00+00:00). Editorial status: **unapproved**.
 24. **[Brent cede de barrera de US$93 el barril ante mayores inventarios en EE.UU.](https://www.larepublica.co/globoeconomia/brent-cede-de-barrera-de-us-93-el-barril-ante-mayores-inventarios-en-ee-uu-4527313)** — Oil & Energy | global_discovery | score 33
-   - Timestamp basis: discovery_index_first_seen_only (2026-11-18T18:16:00+00:00). Editorial status: **unapproved**.
+   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-18T18:16:00+00:00). Editorial status: **unapproved**.
 25. **[Gas Infrastructure Offers Africa’s Best Energy Investment In 2027 – WEC](https://leadership.ng/gas-infrastructure-offers-africas-best-energy-investment-in-2027-wec)** — Infrastructure & Investment | global_discovery | score 30
-   - Timestamp basis: discovery_index_first_seen_only (2026-11-18T19:32:00+00:00). Editorial status: **unapproved**.
+   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-18T19:32:00+00:00). Editorial status: **unapproved**.
 26. **[Energy Transfer: A Rare Second Chance To Get In](https://seekingalpha.com/article/4969757-energy-transfer-rare-second-chance-to-get-in)** — Infrastructure & Investment | global_discovery | score 27
-   - Timestamp basis: discovery_index_first_seen_only (2026-11-18T21:02:00+00:00). Editorial status: **unapproved**.
+   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-18T21:02:00+00:00). Editorial status: **unapproved**.
 
 ## Coverage gaps
 

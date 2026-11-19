@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-19T00:28:48.142599+00:00",
+  "generated_utc": "2026-11-19T00:31:13.271397+00:00",
   "status": "research_only_not_approved",
   "unique_relevant_urls_7d": 158,
   "selected_research_links": 26,
@@ -603,7 +603,7 @@
         "crude oil"
       ],
       "origin": "global_discovery",
-      "time_basis": "discovery_index_first_seen_only",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
       "observed_time_utc": "2026-11-18T20:47:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
@@ -630,7 +630,7 @@
         "exxonmobil"
       ],
       "origin": "global_discovery",
-      "time_basis": "discovery_index_first_seen_only",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
       "observed_time_utc": "2026-11-18T21:31:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
@@ -657,7 +657,7 @@
         "oil prices"
       ],
       "origin": "global_discovery",
-      "time_basis": "discovery_index_first_seen_only",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
       "observed_time_utc": "2026-11-18T21:01:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
@@ -684,7 +684,7 @@
         "chevron"
       ],
       "origin": "global_discovery",
-      "time_basis": "discovery_index_first_seen_only",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
       "observed_time_utc": "2026-11-18T19:31:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
@@ -711,7 +711,7 @@
         "brent"
       ],
       "origin": "global_discovery",
-      "time_basis": "discovery_index_first_seen_only",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
       "observed_time_utc": "2026-11-18T18:16:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
@@ -738,7 +738,7 @@
         "gas infrastructure"
       ],
       "origin": "global_discovery",
-      "time_basis": "discovery_index_first_seen_only",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
       "observed_time_utc": "2026-11-18T19:32:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
@@ -765,7 +765,7 @@
         "energy transfer"
       ],
       "origin": "global_discovery",
-      "time_basis": "discovery_index_first_seen_only",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
       "observed_time_utc": "2026-11-18T21:02:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
