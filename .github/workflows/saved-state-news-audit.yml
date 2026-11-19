@@ -1,0 +1,74 @@
+name: EnergyBrew saved-news coverage audit (NO LIVE POLLING)
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "source_gap_audit.py"
+      - "tests/test_source_gap_audit.py"
+      - ".github/workflows/saved-state-news-audit.yml"
+  schedule:
+    # One morning diagnostic. Cron may be delayed; this is an audit, not a
+    # replacement for continuously sampling live news.
+    - cron: "43 13 * * *"
+
+permissions:
+  contents: read
+
+jobs:
+  saved-news-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate source triage against deterministic offline fixtures
+        run: python -m unittest discover -s tests -p "test_source_gap_audit.py" -v
+      - name: Read latest previously persisted public research state
+        id: saved
+        run: |
+          if git ls-remote --exit-code --heads origin collector-state >/dev/null 2>&1; then
+            git fetch --no-tags origin collector-state
+            mkdir -p state
+            for name in articles.json discovery.json press_releases.json; do
+              if git cat-file -e "FETCH_HEAD:state/$name" 2>/dev/null; then
+                git show "FETCH_HEAD:state/$name" > "state/$name"
+              fi
+            done
+            echo "present=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "No collector-state branch: insufficient saved evidence." >> "$GITHUB_STEP_SUMMARY"
+            echo "present=false" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Audit saved publisher links versus global index
+        if: steps.saved.outputs.present == 'true'
+        run: |
+          python source_gap_audit.py --rss state/articles.json --discovery state/discovery.json --releases state/press_releases.json --output output/saved_state_news_audit
+          python ops_metrics.py --rss state/articles.json --discovery state/discovery.json --releases state/press_releases.json --output output/saved_state_ops
+      - name: Report source age and limits (NEVER claim live freshness)
+        if: always()
+        run: |
+          echo "## Saved-state research audit (NOT live collection)" >> "$GITHUB_STEP_SUMMARY"
+          echo "This report only reads previously committed public metadata." >> "$GITHUB_STEP_SUMMARY"
+          echo "It does not poll publishers, verify facts, publish or send email." >> "$GITHUB_STEP_SUMMARY"
+          if test -f output/saved_state_news_audit/source_gap.md; then
+            sed -n '1,38p' output/saved_state_news_audit/source_gap.md >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "No saved-state source gap report; upstream state absent or invalid." >> "$GITHUB_STEP_SUMMARY"
+          fi
+          if test -f output/saved_state_ops/metrics.md; then
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            sed -n '1,22p' output/saved_state_ops/metrics.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: energybrew-saved-news-audit
+          path: |
+            output/saved_state_news_audit/
+            output/saved_state_ops/
+          if-no-files-found: warn
+          retention-days: 7
