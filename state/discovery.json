@@ -1,6 +1,78 @@
 {
   "leads": [
     {
+      "url": "https://www.livemint.com/market/us-sour-crude-s-war-premium-vanishes-as-supply-surges-11795121544365.html",
+      "title": "US Sour Crude\u2019s War Premium Vanishes as Supply Surges | Stock Market News",
+      "domain": "www.livemint.com",
+      "gdelt_first_seen_utc": "2026-11-19T23:02:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 90,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_hook:crude",
+        "geopolitical_event:war",
+        "world_context:us"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-19T23:06:34.942486+00:00"
+    },
+    {
+      "url": "https://peakoil.com/generalideas/rapidan-energy-crumbling-peak-demand-narrative-and-iran-war-reshape-the-long-term-investment-map",
+      "title": "Rapidan Energy: Crumbling \"Peak Demand\" Narrative and Iran War Reshape the Long-Term Investment Map",
+      "domain": "peakoil.com",
+      "gdelt_first_seen_utc": "2026-11-19T23:02:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 90,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_hook:energy",
+        "geopolitical_event:war",
+        "world_context:iran"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-19T23:06:34.942486+00:00"
+    },
+    {
+      "url": "https://www.digbycourier.ca/us-stocks-fall-oil-rises-on-middle-east-conflict",
+      "title": "US stocks fall, oil rises on Middle East conflict",
+      "domain": "www.digbycourier.ca",
+      "gdelt_first_seen_utc": "2026-11-19T23:02:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 90,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_hook:oil",
+        "geopolitical_event:conflict",
+        "world_context:us"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-19T23:06:34.942486+00:00"
+    },
+    {
       "url": "https://cbs12.com/news/nation-world/iran-war-could-leave-consumers-facing-years-of-uncertainty-over-energy-costs",
       "title": "Iran war could leave consumers facing years of uncertainty over energy costs",
       "domain": "cbs12.com",
@@ -1110,6 +1182,126 @@
       "discovery_providers": [
         "GDELT GAL RSS"
       ]
+    },
+    {
+      "url": "https://www.canberratimes.com.au/story/9395127/us-senate-rejects-curbing-trumps-iran-war-powers",
+      "title": "US Senate rejects curbing Trump's Iran war powers",
+      "domain": "www.canberratimes.com.au",
+      "gdelt_first_seen_utc": "2026-11-19T23:02:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:war",
+        "world_context:iran/united states"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-19T23:06:34.942486+00:00"
+    },
+    {
+      "url": "https://freerepublic.com/focus/f-news/4403660/posts",
+      "title": "Trump Pentagon Blasts Ukraine's Russia Strikes, NATO Allies Fire Back",
+      "domain": "freerepublic.com",
+      "gdelt_first_seen_utc": "2026-11-19T23:02:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:strikes",
+        "world_context:russia/ukraine"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-19T23:06:34.942486+00:00"
+    },
+    {
+      "url": "https://www.queanbeyanage.com.au/story/9395127/us-senate-rejects-curbing-trumps-iran-war-powers",
+      "title": "US Senate rejects curbing Trump's Iran war powers",
+      "domain": "www.queanbeyanage.com.au",
+      "gdelt_first_seen_utc": "2026-11-19T23:02:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:war",
+        "world_context:iran/united states"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-19T23:06:34.942486+00:00"
+    },
+    {
+      "url": "https://freerepublic.com/focus/f-news/4403670/posts",
+      "title": "Trump says he won't strike Iran again before 2027, as envoy says Israel may 'go it alone' against Tehran regime",
+      "domain": "freerepublic.com",
+      "gdelt_first_seen_utc": "2026-11-19T23:02:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:strike",
+        "world_context:iran/israel"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-19T23:06:34.942486+00:00"
+    },
+    {
+      "url": "https://www.digbycourier.ca/the-us-has-carried-out-two-airstrikes-against-iran-aligned-groups-in-syria-the-official-said",
+      "title": "The US has carried out two airstrikes against Iran-aligned groups in Syria, the official said",
+      "domain": "www.digbycourier.ca",
+      "gdelt_first_seen_utc": "2026-11-19T23:02:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:airstrikes",
+        "world_context:iran/united states"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-19T23:06:34.942486+00:00"
     },
     {
       "url": "http://www.iranherald.com/news/279434460/iran-claims-drone-attack-on-us-military-airbase-in-bahrain",
@@ -3391,6 +3583,29 @@
       ]
     },
     {
+      "url": "https://dotchuoinon.com/2026/11/19/can-one-mega-grid-really-power-southeast-asia-the-asean-power-grid",
+      "title": "Can one mega grid really power Southeast Asia? The ASEAN Power Grid",
+      "domain": "dotchuoinon.com",
+      "gdelt_first_seen_utc": "2026-11-19T23:02:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 57,
+      "category": "Power & Electricity",
+      "relevance_evidence": [
+        "grid",
+        "power grid"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-19T23:06:34.942486+00:00"
+    },
+    {
       "url": "https://auburnpub.com/news/state-regional/article_7acbcf28-f649-46c6-b4ed-6ec22cc39ef5.html",
       "title": "NY faces statewide electricity shortage and has nation's oldest grid",
       "domain": "auburnpub.com",
@@ -4331,6 +4546,116 @@
         "gas storage"
       ],
       "status": "discovery_only_requires_publisher_verification"
+    },
+    {
+      "url": "https://www.prrecordgazette.com:443/business/energy/bill-42-utility-fees-alberta-fort-mcmurray-electricty/wcm/31b188e3-0935-4327-8ff5-d1cee0a4d203",
+      "title": "Alberta bill promises relief on high electricity distribution fees in northern communities",
+      "domain": "www.prrecordgazette.com:443",
+      "gdelt_first_seen_utc": "2026-11-19T23:02:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 33,
+      "category": "Power & Electricity",
+      "relevance_evidence": [
+        "electricity"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-19T23:06:34.942486+00:00"
+    },
+    {
+      "url": "https://kroc.com/ixp/719/p/minnesota-thanksgiving-gas-prices-2026",
+      "title": "Minnesota Gas Prices Have Dropped, But Here's the Bad News",
+      "domain": "kroc.com",
+      "gdelt_first_seen_utc": "2026-11-19T23:02:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 33,
+      "category": "Natural Gas",
+      "relevance_evidence": [
+        "gas prices"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-19T23:06:34.942486+00:00"
+    },
+    {
+      "url": "https://www.4029tv.com/article/will-president-trumps-agreement-with-putin-and-xi-bring-down-gas-prices/74481612",
+      "title": "Will President Trump's agreement with Putin and Xi bring down gas prices?",
+      "domain": "www.4029tv.com",
+      "gdelt_first_seen_utc": "2026-11-19T23:02:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 33,
+      "category": "Natural Gas",
+      "relevance_evidence": [
+        "gas prices"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-19T23:06:34.942486+00:00"
+    },
+    {
+      "url": "https://www.wvtm13.com/article/will-president-trumps-agreement-with-putin-and-xi-bring-down-gas-prices/74481612",
+      "title": "Will President Trump's agreement with Putin and Xi bring down gas prices?",
+      "domain": "www.wvtm13.com",
+      "gdelt_first_seen_utc": "2026-11-19T23:02:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 33,
+      "category": "Natural Gas",
+      "relevance_evidence": [
+        "gas prices"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-19T23:06:34.942486+00:00"
+    },
+    {
+      "url": "https://www.wtae.com/article/will-president-trumps-agreement-with-putin-and-xi-bring-down-gas-prices/74481612",
+      "title": "Will President Trump's agreement with Putin and Xi bring down gas prices?",
+      "domain": "www.wtae.com",
+      "gdelt_first_seen_utc": "2026-11-19T23:02:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 33,
+      "category": "Natural Gas",
+      "relevance_evidence": [
+        "gas prices"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-19T23:06:34.942486+00:00"
     },
     {
       "url": "https://wcbm.com/local-story/two-thirds-of-americans-plan-thanksgiving-road-trips-despite-higher-gas-prices-gasbuddy",
@@ -5612,6 +5937,50 @@
         "gas supply"
       ],
       "status": "discovery_only_requires_publisher_verification"
+    },
+    {
+      "url": "https://www.azfamily.com/2026/11/19/ag-mayes-asks-cochise-county-delay-vote-50b-spacex-data-center",
+      "title": "AG Mayes asks Cochise County to delay vote on $50B SpaceX data center",
+      "domain": "www.azfamily.com",
+      "gdelt_first_seen_utc": "2026-11-19T23:02:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 30,
+      "category": "Power & Electricity",
+      "relevance_evidence": [
+        "data center"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-19T23:06:34.942486+00:00"
+    },
+    {
+      "url": "https://www.algona.com/articles/news-kossuth/data-center-moratorium-passed-in-kossuth-county",
+      "title": "Data center moratorium passed in Kossuth County - Enterprise Media",
+      "domain": "www.algona.com",
+      "gdelt_first_seen_utc": "2026-11-19T23:01:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 30,
+      "category": "Power & Electricity",
+      "relevance_evidence": [
+        "data center"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-19T23:06:34.942486+00:00"
     },
     {
       "url": "https://www.933thedrive.com/2026/11/19/exclusive-canadas-bmo-returning-to-us-oil-and-gas-investment-banking-sources-say",
@@ -8040,6 +8409,72 @@
       "status": "discovery_only_requires_publisher_verification"
     },
     {
+      "url": "https://www.journalgazette.net/local/indiana/company-eyeing-leap-district-site-says-its-plans-won-t-include-nuclear-power-generation/article_450947d7-94fc-47af-bb06-9e6ebc4c207f.html",
+      "title": "Company eyeing LEAP District site says its plans won\u2019t include nuclear power generation",
+      "domain": "www.journalgazette.net",
+      "gdelt_first_seen_utc": "2026-11-19T23:02:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 27,
+      "category": "Power & Electricity",
+      "relevance_evidence": [
+        "power generation"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-19T23:06:34.942486+00:00"
+    },
+    {
+      "url": "https://www.emporiagazette.com/free/article_58990ae2-456b-4fec-9483-192da6fc89df.html",
+      "title": "Lyon County Commission extends moratoriums on solar energy, data centers and battery storage systems",
+      "domain": "www.emporiagazette.com",
+      "gdelt_first_seen_utc": "2026-11-19T23:02:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 27,
+      "category": "Power & Electricity",
+      "relevance_evidence": [
+        "battery storage"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-19T23:06:34.942486+00:00"
+    },
+    {
+      "url": "https://www.boerse-express.com/news/articles/energy-transfer-equity-aktie-vaquero-ist-jetzt-an-bord-964815",
+      "title": "Energy Transfer Equity Aktie: Vaquero ist jetzt an Bord",
+      "domain": "www.boerse-express.com",
+      "gdelt_first_seen_utc": "2026-11-19T23:02:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 27,
+      "category": "Infrastructure & Investment",
+      "relevance_evidence": [
+        "energy transfer"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-19T23:06:34.942486+00:00"
+    },
+    {
       "url": "https://www.citizensvoice.com/2026/11/19/dep-to-hold-hearing-friday-in-scranton-on-ppl-upgrade-of-transmission-line",
       "title": "DEP to hold hearing Friday in Scranton on PPL upgrade of transmission line",
       "domain": "www.citizensvoice.com",
@@ -10114,6 +10549,14 @@
       "topics_succeeded": 0,
       "new_discovered_urls": 0,
       "leads_in_last_24h_first_seen": 348
+    },
+    {
+      "run_utc": "2026-11-19T23:06:25.353798+00:00",
+      "status": "provider_cooldown",
+      "topics_attempted": 0,
+      "topics_succeeded": 0,
+      "new_discovered_urls": 0,
+      "leads_in_last_24h_first_seen": 295
     }
   ],
   "provider_cooldown_until_utc": "2026-11-19T23:18:44.472441+00:00",
@@ -10739,6 +11182,18 @@
       "feed_newest_index_utc": "2026-11-19T19:47:00+00:00",
       "feed_index_lag_minutes": 15.5,
       "feed_payload_sha256": "409139c0ab6ff488",
+      "identical_payload_to_previous_success": false
+    },
+    {
+      "run_utc": "2026-11-19T23:06:25.459905+00:00",
+      "completed_utc": "2026-11-19T23:06:34.942486+00:00",
+      "status": "ok",
+      "raw_feed_items": 4513,
+      "high_signal_items": 19,
+      "new_unique_links": 19,
+      "feed_newest_index_utc": "2026-11-19T23:02:00+00:00",
+      "feed_index_lag_minutes": 4.4,
+      "feed_payload_sha256": "a0fa362acfd58175",
       "identical_payload_to_previous_success": false
     }
   ],

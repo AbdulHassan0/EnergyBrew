@@ -1,43 +1,24 @@
 [
   {
-    "id": "cd2beda6e00bf50792701f74",
-    "title": "China Burns Less Oil and Coal as the Iran War Reshapes Its Energy Mix",
-    "url": "https://oilprice.com/Energy/Energy-General/China-Burns-Less-Oil-and-Coal-as-the-Iran-War-Reshapes-Its-Energy-Mix.html",
-    "source": "OilPrice.com News",
+    "id": "de359ff62a99594accce6100",
+    "title": "Grid operators need data center ride-through rules that protect reliability",
+    "url": "https://www.utilitydive.com/news/grid-operators-data-center-ride-through-rules-ercot-nerc/873466",
+    "source": "Utility Dive News",
     "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T22:00:00+00:00",
-    "category": "Geopolitics",
-    "published_precision": "timestamp",
-    "relevance_score": 90,
-    "keyword_matches": 3,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "energy_market_hook:oil",
-      "geopolitical_event:war",
-      "world_context:iran"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": []
-  },
-  {
-    "id": "6c922e4edba15f1f787245dd",
-    "title": "PJM Board Approves Transmission Project Changes to Support Grid Reliability",
-    "url": "https://insidelines.pjm.com/pjm-board-approves-transmission-project-changes-to-support-grid-reliability-2",
-    "source": "PJM Inside Lines",
-    "source_class": "system_operator_primary",
-    "published_utc": "2026-11-18T18:56:18+00:00",
+    "published_utc": "2026-11-19T17:13:16+00:00",
     "category": "Power & Electricity",
     "published_precision": "timestamp",
-    "relevance_score": 87,
+    "relevance_score": 81,
     "keyword_matches": 3,
     "editorial_candidate": true,
     "relevance_evidence": [
+      "data center",
       "grid",
-      "grid reliability",
-      "pjm"
+      "grid operators"
     ],
     "status": "research_only_unverified",
-    "also_seen_in": []
+    "first_collected_utc": "2026-11-19T23:06:25.262021+00:00",
+    "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
   },
   {
     "id": "e69e12886a535aeeee9f3129",
@@ -56,25 +37,29 @@
       "lng project"
     ],
     "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-19T17:18:44.403286+00:00"
+    "also_seen_in": [],
+    "first_collected_utc": "2026-11-19T17:18:44.403286+00:00",
+    "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
   },
   {
-    "id": "a556bd0d67d095de25e62318",
-    "title": "Mozambique Approves Exxon\u2019s Redesigned $30 Billion Rovuma LNG Plan",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/Mozambique-Approves-Exxons-Redesigned-30-Billion-Rovuma-LNG-Plan.html",
-    "source": "OilPrice.com News",
+    "id": "32dc83129ba55f1a37a05375",
+    "title": "PJM urged to delay base capacity auction until data centers cut from forecast",
+    "url": "https://www.utilitydive.com/news/ratepayer-advocates-pjm-market-monitor-capacity-auction/875165",
+    "source": "Utility Dive News",
     "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T17:30:00+00:00",
-    "category": "LNG",
+    "published_utc": "2026-11-19T14:29:26+00:00",
+    "category": "Power & Electricity",
     "published_precision": "timestamp",
-    "relevance_score": 45,
-    "keyword_matches": 1,
+    "relevance_score": 60,
+    "keyword_matches": 2,
     "editorial_candidate": true,
     "relevance_evidence": [
-      "lng"
+      "capacity auction",
+      "pjm"
     ],
     "status": "research_only_unverified",
-    "also_seen_in": []
+    "first_collected_utc": "2026-11-19T23:06:25.262021+00:00",
+    "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
   },
   {
     "id": "784ea8b254d669166f14fe51",
@@ -92,7 +77,9 @@
       "power demand"
     ],
     "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-19T17:18:44.403286+00:00"
+    "also_seen_in": [],
+    "first_collected_utc": "2026-11-19T17:18:44.403286+00:00",
+    "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
   },
   {
     "id": "8d63312521323ff165f0737e",
@@ -113,40 +100,23 @@
     "also_seen_in": []
   },
   {
-    "id": "adae1615af6e22fc7fe9837a",
-    "title": "EU spending on electricity support measures reached \u20ac12 billion, as reliance grows",
-    "url": "https://www.acer.europa.eu/news/eu-spending-electricity-support-measures-reaches-eur12-billion-2025-reliance-grows",
-    "source": "European Commission DG Energy",
-    "source_class": "official_agency",
-    "published_utc": "2026-11-18T23:00:00+00:00",
-    "category": "Power & Electricity",
-    "published_precision": "timestamp",
-    "relevance_score": 33,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "electricity"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": []
-  },
-  {
-    "id": "3e03c81f3a66fa9866b99bd4",
-    "title": "China Secures Major Gas Deal as Its Influence Grows Across Central Asia",
-    "url": "https://oilprice.com/Energy/Energy-General/China-Secures-Major-Gas-Deal-as-Its-Influence-Grows-Across-Central-Asia.html",
+    "id": "82400098b8a19fba9b3af1d0",
+    "title": "Hormuz Oil Exports Could Decline amid Inbound Tanker Shortage",
+    "url": "https://oilprice.com/Energy/Crude-Oil/Hormuz-Oil-Exports-Could-Decline-amid-Inbound-Tanker-Shortage.html",
     "source": "OilPrice.com News",
     "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T19:00:00+00:00",
-    "category": "Natural Gas",
+    "published_utc": "2026-11-19T23:00:00+00:00",
+    "category": "Oil & Energy",
     "published_precision": "timestamp",
     "relevance_score": 30,
     "keyword_matches": 1,
     "editorial_candidate": true,
     "relevance_evidence": [
-      "gas deal"
+      "oil exports"
     ],
     "status": "research_only_unverified",
-    "also_seen_in": []
+    "first_collected_utc": "2026-11-19T23:06:25.262021+00:00",
+    "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
   },
   {
     "id": "acba60beecdcbd9ab285c37f",
@@ -164,7 +134,9 @@
       "enquest"
     ],
     "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-19T17:18:44.403286+00:00"
+    "also_seen_in": [],
+    "first_collected_utc": "2026-11-19T17:18:44.403286+00:00",
+    "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
   },
   {
     "id": "b7d6d9a018a30f85c260796a",
@@ -180,42 +152,6 @@
     "editorial_candidate": true,
     "relevance_evidence": [
       "oil imports"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": []
-  },
-  {
-    "id": "0dad76f8aa1370117b07fc49",
-    "title": "Thiel Doubles Down on Vaca Muerta as Trump Calls Venezuela an \u201cAcquisition\u201d",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/Thiel-Doubles-Down-on-Vaca-Muerta-as-Trump-Calls-Venezuela-an-Acquisition.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T17:30:00+00:00",
-    "category": "Oil & Energy",
-    "published_precision": "timestamp",
-    "relevance_score": 27,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "vaca muerta"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": []
-  },
-  {
-    "id": "08c2f3b512606a6b7a68c0c7",
-    "title": "Energy Secretary Acts to Protect Mid-Atlantic Grid",
-    "url": "https://www.energy.gov/articles/energy-secretary-acts-protect-mid-atlantic-grid-0",
-    "source": "DOE Energy News",
-    "source_class": "official_agency",
-    "published_utc": "2026-11-18T18:06:31+00:00",
-    "category": "Power & Electricity",
-    "published_precision": "timestamp",
-    "relevance_score": 24,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "grid"
     ],
     "status": "research_only_unverified",
     "also_seen_in": []

@@ -16,7 +16,8 @@
       "lng"
     ],
     "status": "research_date_only",
-    "also_seen_in": []
+    "also_seen_in": [],
+    "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
   },
   {
     "id": "ea327fca2f5987c8cb30074d",
@@ -35,7 +36,8 @@
       "natural gas"
     ],
     "status": "research_date_only",
-    "also_seen_in": []
+    "also_seen_in": [],
+    "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
   },
   {
     "id": "e4ec4d63fc6d664805180f16",
@@ -54,7 +56,8 @@
       "gas transmission"
     ],
     "status": "research_date_only",
-    "also_seen_in": []
+    "also_seen_in": [],
+    "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
   },
   {
     "id": "2d3e231e081ec3e22ad84514",
@@ -73,7 +76,8 @@
       "pjm"
     ],
     "status": "research_date_only",
-    "also_seen_in": []
+    "also_seen_in": [],
+    "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
   },
   {
     "id": "892d8fe0c9f3d2a933e8a821",
@@ -109,6 +113,7 @@
       "northwest pipeline"
     ],
     "status": "research_date_only",
-    "also_seen_in": []
+    "also_seen_in": [],
+    "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
   }
 ]

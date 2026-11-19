@@ -1,6 +1,165 @@
 {
   "articles": [
     {
+      "id": "82400098b8a19fba9b3af1d0",
+      "title": "Hormuz Oil Exports Could Decline amid Inbound Tanker Shortage",
+      "url": "https://oilprice.com/Energy/Crude-Oil/Hormuz-Oil-Exports-Could-Decline-amid-Inbound-Tanker-Shortage.html",
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-19T23:00:00+00:00",
+      "category": "Oil & Energy",
+      "published_precision": "timestamp",
+      "relevance_score": 30,
+      "keyword_matches": 1,
+      "editorial_candidate": true,
+      "relevance_evidence": [
+        "oil exports"
+      ],
+      "status": "research_only_unverified",
+      "first_collected_utc": "2026-11-19T23:06:25.262021+00:00",
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
+    },
+    {
+      "id": "9f397f9a669417dd15a466a6",
+      "title": "5 Energy Stocks to Benefit from Anthropic\u2019s $1.5 Trillion Debut",
+      "url": "https://oilprice.com/Energy/Energy-General/5-Energy-Stocks-to-Benefit-from-Anthropics-15-Trillion-Debut.html",
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-19T22:00:00+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified",
+      "first_collected_utc": "2026-11-19T23:06:25.262021+00:00",
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
+    },
+    {
+      "id": "faa4360cf7795a8e78c23d27",
+      "title": "Mercosur\u2019s Tax Break Is Fueling Brazil\u2019s Oil Push Into Europe",
+      "url": "https://oilprice.com/Energy/Crude-Oil/Mercosurs-Tax-Break-Is-Fueling-Brazils-Oil-Push-Into-Europe.html",
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-19T21:00:00+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified",
+      "first_collected_utc": "2026-11-19T23:06:25.262021+00:00",
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
+    },
+    {
+      "id": "d1a92c70431ee1f7ebd16541",
+      "title": "EU Moves to Overhaul Emergency Oil Stockpiles",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/EU-Moves-to-Overhaul-Emergency-Oil-Stockpiles.html",
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-19T19:30:00+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified",
+      "first_collected_utc": "2026-11-19T23:06:25.262021+00:00",
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
+    },
+    {
+      "id": "fb3227bb9f45423650c64d40",
+      "title": "Central Asia Faces a Looming Water Crisis as Glaciers Retreat",
+      "url": "https://oilprice.com/Energy/Energy-General/Central-Asia-Faces-a-Looming-Water-Crisis-as-Glaciers-Retreat.html",
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-19T19:00:00+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified",
+      "first_collected_utc": "2026-11-19T23:06:25.262021+00:00",
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
+    },
+    {
+      "id": "c4cfd2558dff501d9bd19ae6",
+      "title": "Trafigura Not Rushing to Alternative Marine Fuels",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Trafigura-Not-Rushing-to-Alternative-Marine-Fuels.html",
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-19T18:30:00+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified",
+      "first_collected_utc": "2026-11-19T23:06:25.262021+00:00",
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
+    },
+    {
+      "id": "ee4e82eb3abb71d99baade7b",
+      "title": "7,000 Egyptian Factories Will Soon Be Solar-powered",
+      "url": "https://oilprice.com/Alternative-Energy/Solar-Energy/7000-Egyptian-Factories-Will-Soon-Be-Solar-powered.html",
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-19T18:00:00+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified",
+      "first_collected_utc": "2026-11-19T23:06:25.262021+00:00",
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
+    },
+    {
+      "id": "ddd87268efc90ae28538fcbb",
+      "title": "Google signs 50-MW superhot geothermal PPA with Quaise Energy",
+      "url": "https://www.utilitydive.com/news/google-signs-50-mw-superhot-geothermal-ppa-with-quaise-energy/875217",
+      "source": "Utility Dive News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-19T17:58:42+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified",
+      "first_collected_utc": "2026-11-19T23:06:25.262021+00:00",
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
+    },
+    {
+      "id": "de359ff62a99594accce6100",
+      "title": "Grid operators need data center ride-through rules that protect reliability",
+      "url": "https://www.utilitydive.com/news/grid-operators-data-center-ride-through-rules-ercot-nerc/873466",
+      "source": "Utility Dive News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-19T17:13:16+00:00",
+      "category": "Power & Electricity",
+      "published_precision": "timestamp",
+      "relevance_score": 81,
+      "keyword_matches": 3,
+      "editorial_candidate": true,
+      "relevance_evidence": [
+        "data center",
+        "grid",
+        "grid operators"
+      ],
+      "status": "research_only_unverified",
+      "first_collected_utc": "2026-11-19T23:06:25.262021+00:00",
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
+    },
+    {
       "id": "b414835dde38cab9b73caed8",
       "title": "How Energy Security Is Reshaping Global Investment Decisions",
       "url": "https://oilprice.com/Energy/Energy-General/How-Energy-Security-Is-Reshaping-Global-Investment-Decisions.html",
@@ -14,7 +173,9 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_only_unverified",
-      "first_collected_utc": "2026-11-19T17:18:44.403286+00:00"
+      "also_seen_in": [],
+      "first_collected_utc": "2026-11-19T17:18:44.403286+00:00",
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "c6e04248951df595004c4f60",
@@ -30,7 +191,9 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_only_unverified",
-      "first_collected_utc": "2026-11-19T17:18:44.403286+00:00"
+      "also_seen_in": [],
+      "first_collected_utc": "2026-11-19T17:18:44.403286+00:00",
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "acba60beecdcbd9ab285c37f",
@@ -48,7 +211,9 @@
         "enquest"
       ],
       "status": "research_only_unverified",
-      "first_collected_utc": "2026-11-19T17:18:44.403286+00:00"
+      "also_seen_in": [],
+      "first_collected_utc": "2026-11-19T17:18:44.403286+00:00",
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "784ea8b254d669166f14fe51",
@@ -66,7 +231,9 @@
         "power demand"
       ],
       "status": "research_only_unverified",
-      "first_collected_utc": "2026-11-19T17:18:44.403286+00:00"
+      "also_seen_in": [],
+      "first_collected_utc": "2026-11-19T17:18:44.403286+00:00",
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "c8385822c4ea57176889c28d",
@@ -84,7 +251,9 @@
         "methane"
       ],
       "status": "research_only_unverified",
-      "first_collected_utc": "2026-11-19T17:18:44.403286+00:00"
+      "also_seen_in": [],
+      "first_collected_utc": "2026-11-19T17:18:44.403286+00:00",
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "e7744740097b2e86aa0b1ef8",
@@ -100,7 +269,9 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_only_unverified",
-      "first_collected_utc": "2026-11-19T17:18:44.403286+00:00"
+      "also_seen_in": [],
+      "first_collected_utc": "2026-11-19T17:18:44.403286+00:00",
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "fef71d3409f308ac356f0332",
@@ -116,7 +287,9 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_only_unverified",
-      "first_collected_utc": "2026-11-19T17:18:44.403286+00:00"
+      "also_seen_in": [],
+      "first_collected_utc": "2026-11-19T17:18:44.403286+00:00",
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "f698731fff90076981866109",
@@ -132,7 +305,9 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_only_unverified",
-      "first_collected_utc": "2026-11-19T17:18:44.403286+00:00"
+      "also_seen_in": [],
+      "first_collected_utc": "2026-11-19T17:18:44.403286+00:00",
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "3cfaeaf3fd0920b47a34c46b",
@@ -148,7 +323,29 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_only_unverified",
-      "first_collected_utc": "2026-11-19T17:18:44.403286+00:00"
+      "also_seen_in": [],
+      "first_collected_utc": "2026-11-19T17:18:44.403286+00:00",
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
+    },
+    {
+      "id": "32dc83129ba55f1a37a05375",
+      "title": "PJM urged to delay base capacity auction until data centers cut from forecast",
+      "url": "https://www.utilitydive.com/news/ratepayer-advocates-pjm-market-monitor-capacity-auction/875165",
+      "source": "Utility Dive News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-19T14:29:26+00:00",
+      "category": "Power & Electricity",
+      "published_precision": "timestamp",
+      "relevance_score": 60,
+      "keyword_matches": 2,
+      "editorial_candidate": true,
+      "relevance_evidence": [
+        "capacity auction",
+        "pjm"
+      ],
+      "status": "research_only_unverified",
+      "first_collected_utc": "2026-11-19T23:06:25.262021+00:00",
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "e69e12886a535aeeee9f3129",
@@ -167,7 +364,9 @@
         "lng project"
       ],
       "status": "research_only_unverified",
-      "first_collected_utc": "2026-11-19T17:18:44.403286+00:00"
+      "also_seen_in": [],
+      "first_collected_utc": "2026-11-19T17:18:44.403286+00:00",
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "4fc01779a50d0e53fb521f34",
@@ -183,7 +382,9 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_only_unverified",
-      "first_collected_utc": "2026-11-19T17:18:44.403286+00:00"
+      "also_seen_in": [],
+      "first_collected_utc": "2026-11-19T17:18:44.403286+00:00",
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "7dd88225b4ad6945571af2ee",
@@ -199,7 +400,9 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_only_unverified",
-      "first_collected_utc": "2026-11-19T17:18:44.403286+00:00"
+      "also_seen_in": [],
+      "first_collected_utc": "2026-11-19T17:18:44.403286+00:00",
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "a62eaba7ff9eb60ab61c80c8",
@@ -215,7 +418,8 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_only_unverified",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "a550de982c9c912a9cef3726",
@@ -231,7 +435,8 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_only_unverified",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "c861ad911a0ddd4889ba7b9d",
@@ -247,7 +452,8 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_only_unverified",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "5b6aeac269a134316acd9a94",
@@ -278,7 +484,8 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_only_unverified",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "ccc9bb318e24d689143c66ab",
@@ -294,7 +501,9 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_only_unverified",
-      "first_collected_utc": "2026-11-19T17:18:44.403286+00:00"
+      "also_seen_in": [],
+      "first_collected_utc": "2026-11-19T17:18:44.403286+00:00",
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "e02e14e5f567fabf2fd70b36",
@@ -313,6 +522,23 @@
       "also_seen_in": []
     },
     {
+      "id": "ea0545c7845390c699ed5bbb",
+      "title": "New York state is short electric resources beginning 2033: ISO",
+      "url": "https://www.utilitydive.com/news/new-york-is-short-electric-resources-beginning-2033-iso/875155",
+      "source": "Utility Dive News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-19T10:55:14+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified",
+      "first_collected_utc": "2026-11-19T23:06:25.262021+00:00",
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
+    },
+    {
       "id": "7584dd530aeb9d387f6e03b5",
       "title": "AlloySelect relaunches at Offshore Energy 2026 with new CCS screening preview",
       "url": "https://www.offshore-energy.biz/2026/11/19/alloyselect-relaunches-at-offshore-energy-2026-with-new-ccs-screening-preview",
@@ -326,7 +552,8 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_only_unverified",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "b7d6d9a018a30f85c260796a",
@@ -360,7 +587,8 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_only_unverified",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "6d2c6aaa652d4808f7574393",
@@ -378,7 +606,8 @@
         "drilling"
       ],
       "status": "research_only_unverified",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "15b350ebdadd98a391b1eacc",
@@ -412,7 +641,8 @@
         "drilling"
       ],
       "status": "research_only_unverified",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "0f4c377dcfb7babb9ba5901b",
@@ -467,7 +697,8 @@
         "pjm"
       ],
       "status": "research_date_only",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "a9ba8d5a0c56a228a404417e",
@@ -486,7 +717,8 @@
         "lng"
       ],
       "status": "research_date_only",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "02953df1160b2ff5a731c117",
@@ -502,7 +734,8 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_date_only",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "00157d4d66ff758b8b891367",
@@ -518,7 +751,8 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_date_only",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "3992746790911abc252eb17c",
@@ -600,7 +834,8 @@
         "electricity"
       ],
       "status": "research_only_unverified",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "9414cab074262bb9e48d47c7",
@@ -616,7 +851,8 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_only_unverified",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "dd17e8b76d5df487caadc6fb",
@@ -634,7 +870,9 @@
         "methane"
       ],
       "status": "research_only_unverified",
-      "first_collected_utc": "2026-11-19T17:18:44.403286+00:00"
+      "also_seen_in": [],
+      "first_collected_utc": "2026-11-19T17:18:44.403286+00:00",
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "cd2beda6e00bf50792701f74",
@@ -724,7 +962,8 @@
         "pjm"
       ],
       "status": "research_only_unverified",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "08c2f3b512606a6b7a68c0c7",
@@ -742,7 +981,8 @@
         "grid"
       ],
       "status": "research_only_unverified",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "274b12314d877c3a9ab5ea7d",
@@ -851,7 +1091,8 @@
         "power needs"
       ],
       "status": "research_only_unverified",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "7de2ab9619d2f9b5ce722f10",
@@ -869,7 +1110,8 @@
         "nextera"
       ],
       "status": "research_only_unverified",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "12c9ad8c1b37d3c4d5621721",
@@ -907,7 +1149,8 @@
         "vpps"
       ],
       "status": "research_only_unverified",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "dbb75ca8064473f97e60db15",
@@ -945,7 +1188,8 @@
         "gas pacts"
       ],
       "status": "research_only_unverified",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "4d0071d8f2927e6783380db2",
@@ -961,7 +1205,8 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_only_unverified",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "33b7c622f7d6734f22075838",
@@ -999,7 +1244,8 @@
         "transmission projects"
       ],
       "status": "research_only_unverified",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "a4c390e9c48b4825355d9bf6",
@@ -1017,7 +1263,8 @@
         "natural gas"
       ],
       "status": "research_only_unverified",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "6e8bef55b58dac69c9908e52",
@@ -1054,7 +1301,8 @@
         "venture global"
       ],
       "status": "research_only_unverified",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "3b0edb75f4c14407fb406a2d",
@@ -1106,7 +1354,8 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_only_unverified",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "e5684895a8736874e0cf776e",
@@ -1122,7 +1371,8 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_only_unverified",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "0e60962e4349037dfa1fbcfd",
@@ -1160,7 +1410,8 @@
         "petrobras"
       ],
       "status": "research_only_unverified",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "ece006e7c63756cac601b5cc",
@@ -1178,7 +1429,8 @@
         "lng"
       ],
       "status": "research_only_unverified",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "5579e2a2230c578d14ebd744",
@@ -1211,7 +1463,8 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_only_unverified",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "9c7ac5b57e13e2d343a3bdad",
@@ -1227,7 +1480,8 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_only_unverified",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "2687db57fb5c80d10ef13782",
@@ -1243,7 +1497,8 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_only_unverified",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "941d6aa5712d82895a1180c3",
@@ -1259,7 +1514,8 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_date_only",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "e4ec4d63fc6d664805180f16",
@@ -1278,7 +1534,8 @@
         "gas transmission"
       ],
       "status": "research_date_only",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "872408023224602e365aa957",
@@ -1296,7 +1553,8 @@
         "ferc"
       ],
       "status": "research_date_only",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "ea327fca2f5987c8cb30074d",
@@ -1315,7 +1573,8 @@
         "natural gas"
       ],
       "status": "research_date_only",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "98cf091cac76154ba0c0feae",
@@ -1333,7 +1592,8 @@
         "northwest pipeline"
       ],
       "status": "research_date_only",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "bed15f845edb11135b95d102",
@@ -1349,7 +1609,8 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_date_only",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "fd25cbdbea392f1946c4f864",
@@ -1365,7 +1626,8 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_date_only",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "b459e408c77cd7bd46429ebe",
@@ -1381,7 +1643,8 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_date_only",
-      "also_seen_in": []
+      "also_seen_in": [],
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
     },
     {
       "id": "08d34946ed67ba0847803fdd",
@@ -2480,15 +2743,27 @@
       "new_article_links": 14,
       "transient_retries": 0,
       "feeds_recovered_after_retry": 0
+    },
+    {
+      "run_utc": "2026-11-19T23:06:23.762345+00:00",
+      "completed_utc": "2026-11-19T23:06:25.262021+00:00",
+      "feeds_connected": 15,
+      "feeds_checked": 15,
+      "feeds_failed": 0,
+      "scan_state": "healthy",
+      "fresh_entries": 52,
+      "new_article_links": 11,
+      "transient_retries": 0,
+      "feeds_recovered_after_retry": 0
     }
   ],
   "source_health": {
     "EIA Today in Energy": {
-      "last_attempt_utc": "2026-11-19T17:18:42.946054+00:00",
-      "last_success_utc": "2026-11-19T17:18:42.946054+00:00",
+      "last_attempt_utc": "2026-11-19T23:06:23.762345+00:00",
+      "last_success_utc": "2026-11-19T23:06:23.762345+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 33,
+      "consecutive_successes": 34,
       "last_items_seen": 30,
       "newest_feed_published_utc": "2026-11-19T14:00:00+00:00",
       "last_error_type": null,
@@ -2501,11 +2776,11 @@
       "total_recoveries": 0
     },
     "EIA Press Releases": {
-      "last_attempt_utc": "2026-11-19T17:18:42.946054+00:00",
-      "last_success_utc": "2026-11-19T17:18:42.946054+00:00",
+      "last_attempt_utc": "2026-11-19T23:06:23.762345+00:00",
+      "last_success_utc": "2026-11-19T23:06:23.762345+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 33,
+      "consecutive_successes": 34,
       "last_items_seen": 13,
       "newest_feed_published_utc": "2026-11-10T17:00:00+00:00",
       "last_error_type": null,
@@ -2518,11 +2793,11 @@
       "total_recoveries": 0
     },
     "EIA Congressional Testimony": {
-      "last_attempt_utc": "2026-11-19T17:18:42.946054+00:00",
-      "last_success_utc": "2026-11-19T17:18:42.946054+00:00",
+      "last_attempt_utc": "2026-11-19T23:06:23.762345+00:00",
+      "last_success_utc": "2026-11-19T23:06:23.762345+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 33,
+      "consecutive_successes": 34,
       "last_items_seen": 1,
       "newest_feed_published_utc": "2021-11-16T14:00:00+00:00",
       "last_error_type": null,
@@ -2535,11 +2810,11 @@
       "total_recoveries": 0
     },
     "EIA Presentations": {
-      "last_attempt_utc": "2026-11-19T17:18:42.946054+00:00",
-      "last_success_utc": "2026-11-19T17:18:42.946054+00:00",
+      "last_attempt_utc": "2026-11-19T23:06:23.762345+00:00",
+      "last_success_utc": "2026-11-19T23:06:23.762345+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 33,
+      "consecutive_successes": 34,
       "last_items_seen": 1,
       "newest_feed_published_utc": "2026-03-04T14:00:00+00:00",
       "last_error_type": null,
@@ -2552,11 +2827,11 @@
       "total_recoveries": 0
     },
     "DOE Energy News": {
-      "last_attempt_utc": "2026-11-19T17:18:42.946054+00:00",
-      "last_success_utc": "2026-11-19T17:18:42.946054+00:00",
+      "last_attempt_utc": "2026-11-19T23:06:23.762345+00:00",
+      "last_success_utc": "2026-11-19T23:06:23.762345+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 33,
+      "consecutive_successes": 34,
       "last_items_seen": 10,
       "newest_feed_published_utc": "2026-11-18T18:06:31+00:00",
       "last_error_type": null,
@@ -2569,11 +2844,11 @@
       "total_recoveries": 0
     },
     "DOE Grid Deployment": {
-      "last_attempt_utc": "2026-11-19T17:18:42.946054+00:00",
-      "last_success_utc": "2026-11-19T17:18:42.946054+00:00",
+      "last_attempt_utc": "2026-11-19T23:06:23.762345+00:00",
+      "last_success_utc": "2026-11-19T23:06:23.762345+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 33,
+      "consecutive_successes": 34,
       "last_items_seen": 10,
       "newest_feed_published_utc": "2026-10-30T14:42:15+00:00",
       "last_error_type": null,
@@ -2586,13 +2861,13 @@
       "total_recoveries": 0
     },
     "US NRC Nuclear News": {
-      "last_attempt_utc": "2026-11-19T17:18:42.946054+00:00",
-      "last_success_utc": "2026-11-19T17:18:42.946054+00:00",
+      "last_attempt_utc": "2026-11-19T23:06:23.762345+00:00",
+      "last_success_utc": "2026-11-19T23:06:23.762345+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 33,
-      "last_items_seen": 164,
-      "newest_feed_published_utc": "2026-09-14T08:00:00+00:00",
+      "consecutive_successes": 34,
+      "last_items_seen": 175,
+      "newest_feed_published_utc": "2026-11-12T10:00:00+00:00",
       "last_error_type": null,
       "last_request_attempts": 1,
       "last_fallback_used": false,
@@ -2603,11 +2878,11 @@
       "total_recoveries": 0
     },
     "DOE Hydrocarbons Releases": {
-      "last_attempt_utc": "2026-11-19T17:18:42.946054+00:00",
-      "last_success_utc": "2026-11-19T17:18:42.946054+00:00",
+      "last_attempt_utc": "2026-11-19T23:06:23.762345+00:00",
+      "last_success_utc": "2026-11-19T23:06:23.762345+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 33,
+      "consecutive_successes": 34,
       "last_items_seen": 10,
       "newest_feed_published_utc": "2026-11-04T05:00:00+00:00",
       "last_error_type": null,
@@ -2620,11 +2895,11 @@
       "total_recoveries": 0
     },
     "DOE Hydrocarbons Blog": {
-      "last_attempt_utc": "2026-11-19T17:18:42.946054+00:00",
-      "last_success_utc": "2026-11-19T17:18:42.946054+00:00",
+      "last_attempt_utc": "2026-11-19T23:06:23.762345+00:00",
+      "last_success_utc": "2026-11-19T23:06:23.762345+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 33,
+      "consecutive_successes": 34,
       "last_items_seen": 10,
       "newest_feed_published_utc": "2026-10-29T20:16:57+00:00",
       "last_error_type": null,
@@ -2637,11 +2912,11 @@
       "total_recoveries": 0
     },
     "European Commission DG Energy": {
-      "last_attempt_utc": "2026-11-19T17:18:42.946054+00:00",
-      "last_success_utc": "2026-11-19T17:18:42.946054+00:00",
+      "last_attempt_utc": "2026-11-19T23:06:23.762345+00:00",
+      "last_success_utc": "2026-11-19T23:06:23.762345+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 33,
+      "consecutive_successes": 34,
       "last_items_seen": 30,
       "newest_feed_published_utc": "2026-11-18T23:00:00+00:00",
       "last_error_type": null,
@@ -2654,11 +2929,11 @@
       "total_recoveries": 0
     },
     "Federal Register notices": {
-      "last_attempt_utc": "2026-11-19T17:18:42.946054+00:00",
-      "last_success_utc": "2026-11-19T17:18:42.946054+00:00",
+      "last_attempt_utc": "2026-11-19T23:06:23.762345+00:00",
+      "last_success_utc": "2026-11-19T23:06:23.762345+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 33,
+      "consecutive_successes": 34,
       "last_items_seen": 133,
       "newest_feed_published_utc": "2026-11-19T05:00:00+00:00",
       "last_error_type": null,
@@ -2671,11 +2946,11 @@
       "total_recoveries": 0
     },
     "Offshore Energy News": {
-      "last_attempt_utc": "2026-11-19T17:18:42.946054+00:00",
-      "last_success_utc": "2026-11-19T17:18:42.946054+00:00",
+      "last_attempt_utc": "2026-11-19T23:06:23.762345+00:00",
+      "last_success_utc": "2026-11-19T23:06:23.762345+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 33,
+      "consecutive_successes": 34,
       "last_items_seen": 50,
       "newest_feed_published_utc": "2026-11-19T16:23:56+00:00",
       "last_error_type": null,
@@ -2688,13 +2963,13 @@
       "total_recoveries": 0
     },
     "OilPrice.com News": {
-      "last_attempt_utc": "2026-11-19T17:18:42.946054+00:00",
-      "last_success_utc": "2026-11-19T17:18:42.946054+00:00",
+      "last_attempt_utc": "2026-11-19T23:06:23.762345+00:00",
+      "last_success_utc": "2026-11-19T23:06:23.762345+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 33,
+      "consecutive_successes": 34,
       "last_items_seen": 15,
-      "newest_feed_published_utc": "2026-11-19T17:00:00+00:00",
+      "newest_feed_published_utc": "2026-11-19T23:00:00+00:00",
       "last_error_type": null,
       "last_request_attempts": 1,
       "last_fallback_used": false,
@@ -2705,13 +2980,13 @@
       "total_recoveries": 0
     },
     "Utility Dive News": {
-      "last_attempt_utc": "2026-11-19T17:18:42.946054+00:00",
-      "last_success_utc": "2026-11-19T17:18:42.946054+00:00",
+      "last_attempt_utc": "2026-11-19T23:06:23.762345+00:00",
+      "last_success_utc": "2026-11-19T23:06:23.762345+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 33,
+      "consecutive_successes": 34,
       "last_items_seen": 10,
-      "newest_feed_published_utc": "2026-11-19T11:38:50+00:00",
+      "newest_feed_published_utc": "2026-11-19T17:58:42+00:00",
       "last_error_type": null,
       "last_request_attempts": 1,
       "last_fallback_used": false,
@@ -2722,11 +2997,11 @@
       "total_recoveries": 0
     },
     "PJM Inside Lines": {
-      "last_attempt_utc": "2026-11-19T17:18:42.946054+00:00",
-      "last_success_utc": "2026-11-19T17:18:42.946054+00:00",
+      "last_attempt_utc": "2026-11-19T23:06:23.762345+00:00",
+      "last_success_utc": "2026-11-19T23:06:23.762345+00:00",
       "last_failure_utc": "2026-11-19T13:40:11.146097+00:00",
       "consecutive_failures": 0,
-      "consecutive_successes": 1,
+      "consecutive_successes": 2,
       "last_items_seen": 10,
       "newest_feed_published_utc": "2026-11-18T18:56:18+00:00",
       "last_error_type": null,
