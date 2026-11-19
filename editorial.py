@@ -153,7 +153,7 @@ def evaluate(title, excerpt=""):
         evidence["Geopolitics"] = geopolitics
     if not contributions:
         return {"category":"Cross-sector", "relevance_score":0, "editorial_candidate":False, "evidence":[]}
-    best = max(BEATS, key=lambda category: contributions[category])
+    best = "Geopolitics" if geopolitics else max(BEATS, key=lambda category: contributions[category])
     score = min(100, contributions[best])
     if any(re.search(pattern, title) for pattern in LOW_VALUE_PATTERNS):
         score = min(score, 20)  # Keep low-market-impact items out of top candidate feeds.

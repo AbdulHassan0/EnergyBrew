@@ -34,6 +34,21 @@ MARKET_HOOKS = (
     "strait of hormuz", "hormuz", "bab el mandeb", "red sea", "suez canal",
 )
 CHOKEPOINTS = ("strait of hormuz", "hormuz", "bab el mandeb", "red sea", "suez canal")
+# Exception for major cross-border military escalations with established
+# energy-security exposure, even when a short wire headline omits oil or gas.
+# The exposure is an inference for editorial review, not a factual price claim.
+HIGH_IMPACT_PAIRINGS = (
+    (("iran", "iranian"), ("israel", "israeli")),
+    (("iran", "iranian"), ("united states", "us", "u.s.", "american")),
+    (("russia", "russian"), ("ukraine", "ukrainian")),
+    (("china", "chinese"), ("taiwan", "taiwanese")),
+    (("iran", "iranian"), ("saudi arabia",)),
+)
+MAJOR_ESCALATIONS = (
+    "missile", "missiles", "airstrike", "airstrikes", "strike", "strikes",
+    "attack", "attacks", "attacked", "war", "invasion", "invades",
+    "drone", "drones", "military", "blockade", "bombing", "bombed",
+)
 
 
 def present(title, phrase):
@@ -48,8 +63,23 @@ def geopolitical_evidence(title):
     risks = [x for x in EVENTS if present(title, x)]
     market = [x for x in MARKET_HOOKS if present(title, x)]
     chokepoints = [x for x in CHOKEPOINTS if present(title, x)]
-    if not (actors or chokepoints) or not risks or not market:
+    if not risks or not (actors or chokepoints):
         return []
+    if not market:
+        # An explicit energy commodity is not in every internationally important
+        # military headline. Surface only known cross-border escalation pairs,
+        # clearly labeled as POTENTIAL risk rather than verified market impact.
+        paired = next((
+            (left[0], right[0])
+            for left, right in HIGH_IMPACT_PAIRINGS
+            if any(present(title, a) for a in left)
+            and any(present(title, b) for b in right)
+        ), None)
+        if not paired or not any(present(title, risk) for risk in MAJOR_ESCALATIONS):
+            return []
+        return ["geopolitical_event:" + risks[0],
+                "energy_market_exposure:inferred_high_risk_region",
+                "world_context:" + "/".join(paired)]
     return ["geopolitical_event:" + risks[0],
             "energy_market_hook:" + market[0],
             "world_context:" + (actors[0] if actors else chokepoints[0])]

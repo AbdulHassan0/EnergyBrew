@@ -35,6 +35,9 @@ POSITIVE = {
         "China announces tariffs on US LNG imports",
         "Houthi drone attacks disrupt Red Sea shipping routes",
         "Israel strikes Iranian power grid infrastructure amid conflict",
+        "US launches missile strikes against Iran",
+        "Russian forces launch a major invasion of Ukraine",
+        "China threatens Taiwan with military invasion",
     ],
 }
 
@@ -53,6 +56,8 @@ NEGATIVE = [
     "Ukraine and Russia discuss prisoner exchange",
     "US sanctions Russian banks for cybersecurity breaches",
     "Regional school debate discusses the war in Europe",
+    "China and Taiwan hold peace negotiations",
+    "US and Iran announce new diplomatic meetings",
 ]
 
 class RelevanceCorpus(unittest.TestCase):
@@ -68,6 +73,14 @@ class RelevanceCorpus(unittest.TestCase):
         for title in NEGATIVE:
             with self.subTest(title=title):
                 self.assertFalse(evaluate(title)["editorial_candidate"],msg=evaluate(title))
+
+    def test_mixed_energy_keywords_cannot_hide_geopolitical_incident(self):
+        title=("Iranian drone strikes threaten Strait of Hormuz oil tankers, "
+               "crude oil exports and LNG gas shipping supply")
+        r=evaluate(title)
+        self.assertEqual(r["category"],"Geopolitics")
+        self.assertIn("world_context:iranian",r["evidence"])
+        self.assertTrue(r["editorial_candidate"])
 
     def test_excerpts_do_not_have_to_be_retained_to_classify(self):
         self.assertTrue(evaluate("US Oil Inventories On the Rise")["editorial_candidate"])

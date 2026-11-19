@@ -56,6 +56,15 @@ class NewsroomHealthTests(unittest.TestCase):
         self.assertEqual(len(REQUIRED_BEATS),6)
         self.assertEqual(h["geopolitical_energy_leads_24h"],2)
 
+    def test_no_geopolitical_event_is_not_in_itself_a_feed_failure(self):
+        categories=[b for b in REQUIRED_BEATS if b!="Geopolitics"]
+        rss={"articles":[rss_record(i,categories[i%len(categories)]) for i in range(15)]}
+        h=audit(rss,rss_report(),{"leads":[discovery_lead(1)]},broad_discovery(),now=NOW)
+        self.assertEqual(h["status"],"operational_coverage_target_met")
+        self.assertIn("Geopolitics",h["unobserved_beats"])
+        self.assertEqual(h["event_driven_beats_with_no_observed_stories"],["Geopolitics"])
+        self.assertEqual(h["geopolitical_energy_leads_24h"],0)
+
     def test_thin_category_coverage_flagged(self):
         state={"articles":[rss_record(i,"Power & Electricity") for i in range(12)]}
         h=audit(state,rss_report(),{"leads":[discovery_lead(1)]},broad_discovery(),now=NOW)

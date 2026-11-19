@@ -119,8 +119,11 @@ def audit(rss_state, rss_report, discovery_state=None, discovery_report=None, *,
         warnings.append("No high-signal timestamped leads in 24 hours; editorial coverage thin but connectivity may still be healthy")
     if 0 < len(candidates) < TARGET_CANDIDATES_24H:
         warnings.append(f"Only {len(candidates)} editorial leads within 24h; target {TARGET_CANDIDATES_24H}")
-    if missing:
-        warnings.append("No observed high-signal stories in: " + ", ".join(missing))
+    # Geopolitical developments are event-driven. A quiet geopolitical day is
+    # NOT by itself evidence of collector failure; still report the absent beat.
+    daily_expected_missing=[beat for beat in missing if beat!="Geopolitics"]
+    if daily_expected_missing:
+        warnings.append("No observed high-signal stories in: " + ", ".join(daily_expected_missing))
     if not last_discovery:
         warnings.append("No recorded global news discovery run")
     elif now-last_discovery > timedelta(hours=MAX_RUN_AGE_HOURS):
@@ -153,6 +156,7 @@ def audit(rss_state, rss_report, discovery_state=None, discovery_report=None, *,
         "editorial_target_24h":TARGET_CANDIDATES_24H,
         "observed_beat_counts_24h":{b:beats[b] for b in REQUIRED_BEATS},
         "unobserved_beats":missing,
+        "event_driven_beats_with_no_observed_stories":[x for x in missing if x=="Geopolitics"],
         "geopolitical_energy_leads_24h":beats["Geopolitics"],
         "research_first_seen_links_24h":len(research_24),
         "research_high_signal_links_24h":len(research_high),
