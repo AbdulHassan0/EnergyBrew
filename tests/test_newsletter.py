@@ -8,7 +8,7 @@ from pathlib import Path
 
 from newsletter import (
     EditorialError, archive, date_only, render_html, render_text, research_queue,
-    validate_approved, valid_url,
+    validate_approved, valid_url, TOPICS,
 )
 from newsletter_delivery import deliver_test, prepare_message
 
@@ -36,7 +36,7 @@ def example_approved(day="2026-11-17"):
             "title": f"Story number {i} about energy infrastructure",
             "source_url": f"https://example.org/energy/{i}",
             "publisher": "Example Publisher",
-            "section": ("Natural Gas & LNG" if i % 2 else "Power & Electricity"),
+            "section": ("Natural Gas" if i % 2 else "Power & Electricity"),
             "source_date": "2026-11-17",
             "summary": BODY,
             "why_it_matters": WHY,
@@ -54,7 +54,7 @@ class NewsletterTests(unittest.TestCase):
     def test_draft_only_from_real_desk_links(self):
         desk = {"generated_utc": "2026-11-18T13:00:00Z", "stories": [
             {"title": "Actual sample original headline", "url": "https://eia.gov/news/1",
-             "category": "Natural Gas & LNG", "source": "EIA", "origin": "official_rss"},
+             "category": "Natural Gas", "source": "EIA", "origin": "official_rss"},
             {"title": "Duplicate version", "url": "https://eia.gov/news/1", "origin": "official_rss"},
             {"title": "Malformed link", "url": "javascript:alert(1)", "origin": "global_discovery"},
         ]}
@@ -66,6 +66,27 @@ class NewsletterTests(unittest.TestCase):
         self.assertFalse(queue["stories"][0]["original_source_checked"])
         with self.assertRaises(EditorialError):
             validate_approved(queue)
+
+    def test_newsletter_preserves_all_six_research_beats(self):
+        from research_desk import CATEGORY_ORDER
+        self.assertEqual(TOPICS, CATEGORY_ORDER)
+        desk = {"generated_utc": "2026-11-19T12:40:00Z", "stories": [
+            {"title": f"Relevant {beat} market development today",
+             "url": f"https://example.org/energy/{i}", "category": beat,
+             "source": "Research publisher", "origin": "official_rss"}
+            for i, beat in enumerate(CATEGORY_ORDER)
+        ]}
+        queue = research_queue(desk, now=datetime(2026,11,19,13,0,tzinfo=timezone.utc))
+        self.assertEqual([row["section"] for row in queue["stories"]],
+                         list(CATEGORY_ORDER))
+
+    def test_unrecognized_topic_does_not_masquerade_as_oil(self):
+        desk = {"generated_utc": "2026-11-19T12:40:00Z", "stories": [
+            {"title": "Unknown source message with energy words",
+             "url": "https://example.org/energy/1", "category": "Unexpected"}
+        ]}
+        queue = research_queue(desk, now=datetime(2026,11,19,13,0,tzinfo=timezone.utc))
+        self.assertEqual(queue["stories"], [])
 
     def test_reject_stale_snapshot(self):
         with self.assertRaises(EditorialError):

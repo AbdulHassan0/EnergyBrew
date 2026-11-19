@@ -42,6 +42,36 @@ class MorningHostTests(unittest.TestCase):
             self.assertFalse((root/"morning/research_2026-11-19.json").exists())
             self.assertTrue((root/"morning/readiness_2026-11-19.json").exists())
 
+    def test_render_0638_uses_pre_cutoff_feed_without_network_request(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            healthy_gal(root)
+            refresh_rss_safely(root/"articles.json",root/"out",now=CUTOFF-timedelta(minutes=6),
+                               fetcher=lambda _:(RSS,200))
+            before=(root/"articles.json").read_bytes()
+            requested=[]
+            outcome=run_morning(root,now=NOW,
+                                fetcher=lambda url:requested.append(url),
+                                refresh_rss=False)
+            self.assertEqual(outcome["status"],"ready_for_editor_review")
+            self.assertTrue(outcome["frozen"])
+            self.assertEqual(requested,[])
+            self.assertEqual((root/"articles.json").read_bytes(),before)
+
+    def test_render_missing_pre_cutoff_refresh_blocks_freeze(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            healthy_gal(root)
+            refresh_rss_safely(root/"articles.json",root/"out",now=CUTOFF-timedelta(minutes=6),
+                               fetcher=lambda _:(RSS,200))
+            outcome=run_morning(root,now=NOW,refresh_rss=False,
+                 prerequisite_issues=("pre_cutoff_publisher_refresh_not_confirmed",))
+            self.assertEqual(outcome["status"],"blocked_collection_readiness")
+            self.assertFalse(outcome["frozen"])
+            self.assertFalse((root/"morning/research_2026-11-19.json").exists())
+            self.assertIn("pre_cutoff_publisher_refresh_not_confirmed",
+                          outcome["blocking_issues"])
+
     def test_unhealthy_last_rss_attempt_forces_block(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp)

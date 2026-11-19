@@ -14,10 +14,12 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import urlparse
 from zoneinfo import ZoneInfo
+from research_desk import CATEGORY_ORDER
 
 LOCAL_ZONE = ZoneInfo("America/Chicago")
-TOPICS = ("Natural Gas & LNG", "Power & Electricity", "Oil & Energy",
-          "Infrastructure & Investment")
+# Use the same six exact beats as the collecting and ranking pipeline.
+# A missing or unknown beat must never quietly become Oil & Energy.
+TOPICS = CATEGORY_ORDER
 MAX_ARTICLES = 8
 MIN_ARTICLES = 4
 MAX_WORDS = 875
@@ -97,7 +99,9 @@ def research_queue(desk: dict, *, edition_date: str | None = None, limit: int = 
         if any(f in ("promotional_or_generic_marketing", "low_commercial_impact") for f in review_flags):
             continue
         seen.add(url)
-        topic = entry.get("category") if entry.get("category") in TOPICS else "Oil & Energy"
+        topic = entry.get("category")
+        if topic not in TOPICS:
+            continue  # Fail closed rather than silently mislabeling live research.
         cleaned.append({
             "title": title,
             "source_url": url,

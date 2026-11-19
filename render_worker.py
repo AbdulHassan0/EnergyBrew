@@ -82,7 +82,18 @@ def run_job(name, root, zone):
         ])
         return ("ok" if code == 0 else "failed", "unfrozen_preflight_research_only")
     if name == "research_final":
-        outcome = run_morning(root, zone=zone)
+        # The final research cutoff is authoritative: the 06:24 publisher
+        # refresh MUST have completed successfully. Do not silently use a
+        # two-hour-old scan or launch another full scan at 06:38.
+        local_day = datetime.now(timezone.utc).astimezone(
+            ZoneInfo(zone)).date().isoformat()
+        date_jobs = read_state(root / "render_schedule.json")["dates"].get(
+            local_day, {})
+        pre_cutoff = date_jobs.get("rss_pre_cutoff", {})
+        issues = (() if pre_cutoff.get("status") == "ok" else
+                  ("pre_cutoff_publisher_refresh_not_confirmed",))
+        outcome = run_morning(root, zone=zone, refresh_rss=False,
+                              prerequisite_issues=issues)
         status = outcome["status"]
         return ("ok" if status == "ready_for_editor_review" else "blocked",
                 status)

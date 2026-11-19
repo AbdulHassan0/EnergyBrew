@@ -49,7 +49,7 @@ def refresh_rss_safely(state_path, output, *, now, fetcher=None):
 
 
 def run_morning(root, *, now=None, zone="America/Chicago", fetcher=None,
-                completion_clock=None):
+                completion_clock=None, refresh_rss=True, prerequisite_issues=()):
     # A fixed clock is accepted for deterministic offline regression tests.
     # The live host must validate the ACTUAL completion time before freezing.
     fixed_test_clock = now is not None
@@ -71,7 +71,14 @@ def run_morning(root, *, now=None, zone="America/Chicago", fetcher=None,
         except BlockingIOError as exc:
             raise RuntimeError("Another morning job holds the persistent lock") from exc
         rss_path = root / "articles.json"
-        rss_report = refresh_rss_safely(rss_path, root / "output/rss-morning", now=now, fetcher=fetcher)
+        # The Render worker already polls RSS at 06:24; repeating a sequential
+        # 15-source scan at 06:38 can overrun the human review window.
+        # The independent systemd runner retains its legacy refresh default.
+        if refresh_rss:
+            rss_report = refresh_rss_safely(
+                rss_path, root / "output/rss-morning", now=now, fetcher=fetcher)
+        else:
+            rss_report = {"scan_state": "pre_cutoff_cached_snapshot"}
         # The GAL worker owns discovery.json; it atomically replaces each
         # committed sample. Morning research only READS that independent state.
         discovery = read_json(root / "discovery.json")
@@ -86,6 +93,10 @@ def run_morning(root, *, now=None, zone="America/Chicago", fetcher=None,
             result["blocking_issues"].append("final_publisher_refresh_critical")
             result["status"] = "blocked_collection_readiness"
         result["final_rss_scan_status"] = rss_report.get("scan_state")
+        for issue in prerequisite_issues:
+            if issue not in result["blocking_issues"]:
+                result["blocking_issues"].append(issue)
+                result["status"] = "blocked_collection_readiness"
         completed = (completion_clock() if completion_clock else
                      now if fixed_test_clock else datetime.now(timezone.utc))
         if completed.tzinfo is None or completed.utcoffset() is None:

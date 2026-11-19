@@ -30,6 +30,11 @@ class RenderWorkerTests(unittest.TestCase):
         self.assertIn('ENTRYPOINT ["python", "render_entrypoint.py"]',
                       (ROOT / "Dockerfile.render").read_text())
 
+    def test_render_final_reads_pre_cutoff_snapshot_not_another_http_scan(self):
+        source = (ROOT / "render_worker.py").read_text()
+        self.assertIn('pre_cutoff_publisher_refresh_not_confirmed', source)
+        self.assertIn('refresh_rss=False', source)
+
     def test_jobs_are_ordered_and_before_seven_am(self):
         self.assertEqual([x.name for x in JOBS], [
             "rss_early", "research_preview", "rss_pre_cutoff", "research_final"])

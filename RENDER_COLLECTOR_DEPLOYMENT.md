@@ -51,8 +51,10 @@ never two simultaneous writers to the same state.**
 - 05:35: safely refresh publisher RSS metadata.
 - 05:45: create an **unfrozen** overnight editorial preview.
 - 06:24: refresh publisher RSS before the fixed 06:30 cutoff.
-- 06:38: prepare the immutable research-only candidate snapshot if all
-  freshness, quorum, cutoff and safety gates pass.
+- 06:38: read the already-completed 06:24 publisher snapshot (NO additional
+  RSS network poll) and prepare the immutable research-only candidate snapshot
+  if all freshness, quorum, cutoff and safety gates pass. A missing or failed
+  06:24 refresh explicitly blocks the morning research freeze.
 
 One retry is permitted for transient job failure inside its short window.
 The ledger records a job as started **before** execution; process restarts
