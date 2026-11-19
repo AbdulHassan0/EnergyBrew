@@ -2,13 +2,13 @@
 
 **Research links only. Not fact-checked, approved, or ready for publication.**
 
-Generated (UTC): 2026-11-19T12:54:55.541851+00:00
-Distinct relevant URLs in retained data: **351**
+Generated (UTC): 2026-11-19T13:24:37.617909+00:00
+Distinct relevant URLs in retained data: **379**
 Selected diverse research leads: **32**
 Publisher-timestamped official leads within 24h: **3**
-Specialist-publisher timestamped links within 24h: **18**
+Specialist-publisher timestamped links within 24h: **17**
 Grid-operator original timestamped links within 24h: **1**
-Likely duplicate links suppressed in the selection: **17**
+Likely duplicate links suppressed in the selection: **21**
 Discovery publisher dates verified: **0**
 
 ## Candidate list
@@ -46,9 +46,9 @@ Discovery publisher dates verified: **0**
    - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-18T15:57:17+00:00). Editorial status: **unapproved**.
 16. **[Algonquin Gas Transmission, LLC; Notice of Application and Establishing Intervention Deadline](https://www.federalregister.gov/documents/2026/11/18/2026-23446/algonquin-gas-transmission-llc-notice-of-application-and-establishing-intervention-deadline)** — Natural Gas | regulatory_notice | score 66
    - Timestamp basis: official_publication_date_only (2026-11-18T05:00:00+00:00). Editorial status: **unapproved**.
-17. **[There is no going back 'to the way it was before' the Iran war's energy shock, IEA says](https://isp.netscape.com:443/pf/story/0001/20261119/a53b5522e557afd5370c08aee351032b)** — Geopolitics | global_discovery | score 90
-   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T12:47:00+00:00). Editorial status: **unapproved**.
-   - 11 likely same-event publisher links preserved for review (not independent corroboration).
+17. **[There is no going back 'to the way it was before' the Iran war's energy shock, IEA says - Newsday](https://www.newsday.com/business/cop31-turkey-climate-change-energy-y82979)** — Geopolitics | global_discovery | score 90
+   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T13:17:00+00:00). Editorial status: **unapproved**.
+   - 15 likely same-event publisher links preserved for review (not independent corroboration).
 18. **[Iran's attacks on ships in the Strait of Hormuz escalate](https://www.wfae.org/united-states-world/2026-11-19/irans-attacks-on-ships-in-the-strait-of-hormuz-escalate)** — Geopolitics | global_discovery | score 90
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T12:46:00+00:00). Editorial status: **unapproved**.
    - 3 likely same-event publisher links preserved for review (not independent corroboration).
@@ -72,13 +72,13 @@ Discovery publisher dates verified: **0**
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T10:47:00+00:00). Editorial status: **unapproved**.
 28. **[Woodside and Trafigura sign off on decade-long LNG deal](https://www.offshore-energy.biz/2026/11/18/woodside-and-trafigura-sign-off-on-decade-long-lng-deal)** — LNG | official_rss | score 45
    - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-18T09:16:02+00:00). Editorial status: **unapproved**.
-29. **[Electra to Showcase Refinery Progress and Allied Refining Vision at Global Industry Forums](https://www.manilatimes.net/2026/11/19/tmt-newswire/globenewswire/electra-to-showcase-refinery-progress-and-allied-refining-vision-at-global-industry-forums/2474055)** — Oil & Energy | global_discovery | score 54
+29. **[API Shows Substantial Crude Oil, Gasoline Inventory Builds / Peak Oil News and Message Boards](https://peakoil.com/consumption/api-shows-substantial-crude-oil-gasoline-inventory-builds)** — Oil & Energy | global_discovery | score 60
+   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T13:18:00+00:00). Editorial status: **unapproved**.
+30. **[Electra to Showcase Refinery Progress and Allied Refining Vision at Global Industry Forums](https://www.manilatimes.net/2026/11/19/tmt-newswire/globenewswire/electra-to-showcase-refinery-progress-and-allied-refining-vision-at-global-industry-forums/2474055)** — Oil & Energy | global_discovery | score 54
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T12:47:00+00:00). Editorial status: **unapproved**.
    - 1 likely same-event publisher links preserved for review (not independent corroboration).
-30. **[Shell kicks off gas production from its deepwater project in Southeast Asia](https://www.offshore-energy.biz/2026/11/17/shell-kicks-off-gas-production-from-its-deepwater-project-in-southeast-asia)** — Natural Gas | official_rss | score 33
+31. **[Shell kicks off gas production from its deepwater project in Southeast Asia](https://www.offshore-energy.biz/2026/11/17/shell-kicks-off-gas-production-from-its-deepwater-project-in-southeast-asia)** — Natural Gas | official_rss | score 33
    - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-17T08:53:26+00:00). Editorial status: **unapproved**.
-31. **[Thành phố Hải Phòng đề xuất thêm 2 dự án điện khí LNG mới](https://baodautu.vn/thanh-pho-hai-phong-de-xuat-them-2-du-an-dien-khi-lng-moi-d746022.html)** — LNG | global_discovery | score 45
-   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T02:31:00+00:00). Editorial status: **unapproved**.
 32. **[Final investment decision on Azerbaijan's Karabakh field expected in 2027](https://en.apa.az/energy-and-industry/final-investment-decision-on-azerbaijans-karabakh-field-expected-in-2027-537196)** — Infrastructure & Investment | global_discovery | score 36
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T11:01:00+00:00). Editorial status: **unapproved**.
 

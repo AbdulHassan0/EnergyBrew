@@ -1,39 +1,39 @@
 {
-  "generated_utc": "2026-11-19T12:54:55.541851+00:00",
+  "generated_utc": "2026-11-19T13:24:37.617909+00:00",
   "status": "research_only_not_approved",
-  "unique_relevant_urls_7d": 351,
+  "unique_relevant_urls_7d": 379,
   "selected_research_links": 32,
   "unique_domains_in_selection": 19,
   "queue_counts": {
     "system_operator_primary_24h": 1,
-    "specialist_publisher_24h": 18,
-    "older_official_context": 16,
+    "specialist_publisher_24h": 17,
+    "older_official_context": 17,
     "regulatory_date_only": 6,
     "timestamped_official": 3,
-    "discovery_unverified": 288,
-    "company_release_unverified": 19
+    "discovery_unverified": 314,
+    "company_release_unverified": 21
   },
   "selected_category_counts": {
     "Natural Gas": 6,
-    "LNG": 5,
+    "LNG": 4,
     "Power & Electricity": 8,
-    "Oil & Energy": 4,
+    "Oil & Energy": 5,
     "Infrastructure & Investment": 1,
     "Geopolitics": 8
   },
   "selected_topic_coverage_counts": {
     "Natural Gas": 6,
-    "LNG": 5,
+    "LNG": 4,
     "Power & Electricity": 8,
-    "Oil & Energy": 9,
+    "Oil & Energy": 10,
     "Infrastructure & Investment": 11,
     "Geopolitics": 8
   },
   "missing_categories": [],
   "publisher_timestamped_official_24h": 3,
-  "publisher_timestamped_specialist_24h": 18,
+  "publisher_timestamped_specialist_24h": 17,
   "system_operator_primary_24h": 1,
-  "likely_same_event_links_suppressed": 17,
+  "likely_same_event_links_suppressed": 21,
   "discovery_publisher_dates_verified": 0,
   "promotional_or_language_review_count": 0,
   "stories": [
@@ -517,9 +517,9 @@
       "rank": 106
     },
     {
-      "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
-      "url": "https://isp.netscape.com:443/pf/story/0001/20261119/a53b5522e557afd5370c08aee351032b",
-      "domain": "isp.netscape.com",
+      "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says - Newsday",
+      "url": "https://www.newsday.com/business/cop31-turkey-climate-change-energy-y82979",
+      "domain": "www.newsday.com",
       "source": "GDELT GAL RSS",
       "source_class": "unclassified",
       "category": "Geopolitics",
@@ -534,7 +534,7 @@
       ],
       "origin": "global_discovery",
       "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-19T12:47:00+00:00",
+      "observed_time_utc": "2026-11-19T13:17:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
@@ -545,6 +545,34 @@
       "queue": "discovery_unverified",
       "rank": 102,
       "related_reports": [
+        {
+          "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
+          "url": "https://www.news4jax.com/business/2026/11/19/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy-shock-iea-says",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
+          "url": "https://www.gjsentinel.com/news/us/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy/article_8f374c45-2a86-51b6-bf51-af7f80ca10d1.html",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
+          "url": "https://www.dailygazette.com/ap/business/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy/article_ef13ff21-9fe2-512b-a414-cc831f1d214a.html",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
+          "url": "https://isp.netscape.com:443/pf/story/0001/20261119/a53b5522e557afd5370c08aee351032b",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
         {
           "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
           "url": "https://isp.netscape.com:443/news/world/story/0001/20261119/a53b5522e557afd5370c08aee351032b",
@@ -963,6 +991,34 @@
       "rank": 75
     },
     {
+      "title": "API Shows Substantial Crude Oil, Gasoline Inventory Builds | Peak Oil News and Message Boards",
+      "url": "https://peakoil.com/consumption/api-shows-substantial-crude-oil-gasoline-inventory-builds",
+      "domain": "peakoil.com",
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Oil & Energy",
+      "coverage_themes": [
+        "Oil & Energy"
+      ],
+      "relevance_score": 60,
+      "relevance_evidence": [
+        "crude oil",
+        "gasoline"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-19T13:18:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 72
+    },
+    {
       "title": "Electra to Showcase Refinery Progress and Allied Refining Vision at Global Industry Forums",
       "url": "https://www.manilatimes.net/2026/11/19/tmt-newswire/globenewswire/electra-to-showcase-refinery-progress-and-allied-refining-vision-at-global-industry-forums/2474055",
       "domain": "www.manilatimes.net",
@@ -1026,33 +1082,6 @@
       "independent_corroboration_verified": false,
       "queue": "older_official_context",
       "rank": 63
-    },
-    {
-      "title": "Thành phố Hải Phòng đề xuất thêm 2 dự án điện khí LNG mới",
-      "url": "https://baodautu.vn/thanh-pho-hai-phong-de-xuat-them-2-du-an-dien-khi-lng-moi-d746022.html",
-      "domain": "baodautu.vn",
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "LNG",
-      "coverage_themes": [
-        "LNG"
-      ],
-      "relevance_score": 45,
-      "relevance_evidence": [
-        "lng"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-19T02:31:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 57
     },
     {
       "title": "Final investment decision on Azerbaijan's Karabakh field expected in 2027",

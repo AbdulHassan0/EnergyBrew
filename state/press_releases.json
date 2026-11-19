@@ -1,6 +1,44 @@
 {
   "leads": [
     {
+      "url": "https://finance.yahoo.com/energy/articles/netscout-sustainability-design-approach-combats-130500068.html",
+      "title": "NETSCOUT\u2019s Sustainability-by-Design Approach Combats Surging Data Center Energy Consumption",
+      "feed_creator_label": "NETSCOUT SYSTEMS, INC.",
+      "named_issuer_verified": false,
+      "feed_source_url": "https://finance.yahoo.com/energy/articles/netscout-sustainability-design-approach-combats-130500068.html",
+      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+      "feed_published_utc": "2026-11-19T13:05:00+00:00",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "category": "Power & Electricity",
+      "relevance_score": 30,
+      "relevance_evidence": [
+        "data center"
+      ],
+      "provider": "Press Release Feed",
+      "content_kind": "company_or_newswire_press_release",
+      "status": "promotional_issuer_claim_requires_editorial_verification"
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/11/19/3406505/0/en/alpha-compute-completes-asset-acquisitions-for-alpha-energy-02-campus-in-western-pennsylvania-securing-430mw-of-natural-gas-power.html",
+      "title": "Alpha Compute Completes Asset Acquisitions for Alpha Energy 02 Campus in Western Pennsylvania, Securing 430MW of Natural Gas Power",
+      "feed_creator_label": "GlobeNewswire",
+      "named_issuer_verified": false,
+      "feed_source_url": "https://www.globenewswire.com/news-release/2026/11/19/3406505/0/en/alpha-compute-completes-asset-acquisitions-for-alpha-energy-02-campus-in-western-pennsylvania-securing-430mw-of-natural-gas-power.html",
+      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+      "feed_published_utc": "2026-11-19T13:00:00+00:00",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "category": "Natural Gas",
+      "relevance_score": 39,
+      "relevance_evidence": [
+        "natural gas"
+      ],
+      "provider": "Press Release Feed",
+      "content_kind": "company_or_newswire_press_release",
+      "status": "promotional_issuer_claim_requires_editorial_verification"
+    },
+    {
       "url": "https://www.globenewswire.com/news-release/2026/11/19/3406429/0/en/inpex-awards-mcdermott-baker-hughes-consortium-contract-for-ichthys-lng-development.html",
       "title": "INPEX Awards McDermott-Baker Hughes Consortium Contract for Ichthys LNG Development",
       "feed_creator_label": "GlobeNewswire",
@@ -673,6 +711,13 @@
       "raw_feed_entries": 100,
       "high_signal_company_releases": 12,
       "new_unique_links": 0
+    },
+    {
+      "run_utc": "2026-11-19T13:24:36.320079+00:00",
+      "status": "ok",
+      "raw_feed_entries": 100,
+      "high_signal_company_releases": 12,
+      "new_unique_links": 2
     }
   ]
 }

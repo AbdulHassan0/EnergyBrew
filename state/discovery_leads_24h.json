@@ -20,7 +20,10 @@
       "geopolitical_event:war",
       "world_context:iran"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://isp.netscape.com:443/news/world/story/0001/20261119/a53b5522e557afd5370c08aee351032b",
@@ -545,7 +548,10 @@
       "geopolitical_event:attacks",
       "world_context:iran/united states"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://openthemagazine.com/world/trump-says-no-nukes-for-iran-at-meet-with-xi-putin-optimistic-on-solution-to-russia-ukraine-war",
@@ -568,7 +574,10 @@
       "geopolitical_event:war",
       "world_context:russia/ukraine"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://isp.netscape.com:443/entertainment/story/0001/20261119/5b99a5dc54f1d4834b694b1905272af0",
@@ -591,7 +600,10 @@
       "geopolitical_event:war",
       "world_context:russia/ukraine"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.hawaiitribune-herald.com/2026/11/19/nation-world-news/trump-weighs-new-strikes-on-iran-as-israel-presses-for-action-officials-say",
@@ -614,7 +626,10 @@
       "geopolitical_event:strikes",
       "world_context:iran/israel"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.wlwt.com/article/third-ukrainian-strike-halts-rail-traffic-russias-kerch-bridge/74474991",
@@ -637,7 +652,10 @@
       "geopolitical_event:strike",
       "world_context:russia/ukraine"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.newsweek.com/as-if-iran-war-not-chaotic-enough-pirates-making-comeback-12734982",
@@ -660,7 +678,10 @@
       "geopolitical_event:war",
       "world_context:iran/united states"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://isp.netscape.com:443/news/world/story/0001/20261119/7b4a86809dcd466bba97d374045a1a78",
@@ -683,7 +704,10 @@
       "geopolitical_event:strike",
       "world_context:russia/ukraine"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.samaa.tv/2087360594-trump-weighs-fresh-military-strikes-on-iran-as-israel-pushes-us",
@@ -706,7 +730,10 @@
       "geopolitical_event:strikes",
       "world_context:iran/israel"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.ynetnews.com/article/rku1l830mx",
@@ -729,7 +756,10 @@
       "geopolitical_event:war",
       "world_context:iran/united states"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.aol.co.uk/articles/vladimir-putin-refuses-accept-responsibility-124123000.html",
@@ -2248,7 +2278,10 @@
       "refinery",
       "refining"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.theobserver.ca/press-releases/globe-newswire/electra-to-showcase-refinery-progress-and-allied-refining-vision-at-global-industry-forums",
@@ -2606,7 +2639,10 @@
     "relevance_evidence": [
       "natural gas"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://wkvi.com/2026/11/nipsco-settlement-proposes-refunds-for-thousands-of-overcharged-natural-gas-customers",
@@ -2943,7 +2979,10 @@
     "relevance_evidence": [
       "wti"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://thecorner.eu/news-spain/spain-outlines-a-plan-to-achieve-100-renewable-electricity-by-2040/127712",
