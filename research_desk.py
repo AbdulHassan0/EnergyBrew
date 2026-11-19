@@ -142,6 +142,11 @@ def entry(record, kind, now):
         flagged.append("low_commercial_impact")
     if not is_english_script(title):
         flagged.append("translation_and_source_review")
+    if quality["category"] == "Geopolitics":
+        if any(s.startswith("energy_market_exposure:inferred_") for s in quality["evidence"]):
+            flagged.append("energy_market_exposure_inferred")
+        if title.endswith("?") or re.search(r"\b(?:looming|speculates|might|may|could)\b", title, re.I):
+            flagged.append("speculative_geopolitical_headline")
     # Index first-seen cannot stand in for original publication freshness.
     recent = stamp >= now - timedelta(hours=24)
     source = (record.get("source") if kind in ("official_rss", "regulatory_notice")
@@ -220,34 +225,57 @@ def assemble(rss, discovered, releases, now=None, max_stories=32):
             x["rank"] -= 45
         if "low_commercial_impact" in x["needs_editor_review"]:
             x["rank"] -= 40
+        if "energy_market_exposure_inferred" in x["needs_editor_review"]:
+            x["rank"] -= 18
+        if "speculative_geopolitical_headline" in x["needs_editor_review"]:
+            x["rank"] -= 15
     all_rows.sort(key=lambda x: (x["rank"], x["observed_time_utc"]), reverse=True)
-    # Balance beats and publishers without pretending different sites independently confirm an event.
+    # Give each observed beat one opportunity before rank-filling the desk:
+    # high-volume LNG/power/geopolitics cannot eliminate all oil/infra coverage.
+    # This is editorial research diversity, NOT guaranteed event completeness.
     counts = Counter()
     domains = Counter()
     selected = []
+    processed_urls = set()
     release_selected = 0
     duplicate_links_suppressed = 0
-    for x in all_rows:
-        existing = next((s for s in selected if same_event(s, x)), None)
+
+    def consider(x):
+        nonlocal release_selected, duplicate_links_suppressed
+        if x["url"] in processed_urls:
+            return False
+        existing = next((story for story in selected if same_event(story, x)), None)
         if existing is not None:
             attach_related(existing, x)
             duplicate_links_suppressed += 1
-            continue
+            processed_urls.add(x["url"])
+            return False
         if counts[x["category"]] >= TOP_PER_CATEGORY or domains[x["domain"]] >= LIMIT_PER_DOMAIN:
-            continue
+            return False
         if x["origin"] == "company_announcement" and release_selected >= MAX_COMPANY_RELEASES:
-            continue
-        # Obvious promotional announcements are retained in raw research data
-        # but must not crowd out industry headlines in the curated view.
+            return False
         if "promotional_or_generic_marketing" in x["needs_editor_review"]:
-            continue
+            return False
         selected.append(x)
+        processed_urls.add(x["url"])
         if x["origin"] == "company_announcement":
             release_selected += 1
         counts[x["category"]] += 1
         domains[x["domain"]] += 1
-        if len(selected) >= max_stories:
-            break
+        return True
+
+    if max_stories > 0:
+        for category in CATEGORY_ORDER:
+            if len(selected) >= max_stories:
+                break
+            for row in all_rows:
+                if row["category"] == category and consider(row):
+                    break
+        for row in all_rows:
+            if len(selected) >= max_stories:
+                break
+            consider(row)
+    selected.sort(key=lambda x: (x["rank"], x["observed_time_utc"]), reverse=True)
     queue_count = Counter(x["queue"] for x in all_rows)
     beats = Counter(x["category"] for x in selected)
     themes = Counter(t for x in selected for t in x["coverage_themes"])

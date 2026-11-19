@@ -126,6 +126,34 @@ class DeskTests(unittest.TestCase):
         result=assemble([], [x], [], now=NOW)
         self.assertEqual(result["selected_research_links"],0)
 
+    def test_every_available_beat_can_be_selected_in_short_six_story_desk(self):
+        candidates=[
+            ("Henry Hub natural gas storage prices rise", "Natural Gas"),
+            ("Venture Global LNG supply agreement expands", "LNG"),
+            ("PJM power grid electricity reliability update", "Power & Electricity"),
+            ("WTI crude oil inventories weekly report", "Oil & Energy"),
+            ("FERC infrastructure pipeline expansion investment project", "Infrastructure & Investment"),
+            ("Iranian drone attacks threaten oil tankers near Strait of Hormuz", "Geopolitics"),
+        ]
+        rows=[official(url=f"https://sources.example.com/news/{i}",
+                       title=title) for i,(title,_) in enumerate(candidates)]
+        result=assemble(rows,[],[],now=NOW,max_stories=6)
+        self.assertEqual(len(result["stories"]),6)
+        for _,category in candidates:
+            self.assertEqual(result["selected_category_counts"][category],1)
+
+    def test_inferred_speculative_geopolitics_gets_review_flag_and_lower_rank(self):
+        x=official(url="https://news.example.com/is-war-looming",
+                   title="Is another US Iran war looming?")
+        y=official(url="https://news2.example.com/oil-strikes",
+                   title="Iranian missile attacks hit oil tankers in Strait of Hormuz")
+        result=assemble([x,y],[],[],now=NOW)
+        a=next(row for row in result["stories"] if "looming" in row["title"])
+        b=next(row for row in result["stories"] if "oil tankers" in row["title"])
+        self.assertIn("energy_market_exposure_inferred",a["needs_editor_review"])
+        self.assertIn("speculative_geopolitical_headline",a["needs_editor_review"])
+        self.assertLess(a["rank"],b["rank"])
+
     def test_infrastructure_as_secondary_topic(self):
         r=assemble([official(title="Gas pipeline expansion for LNG exports")], [], [], now=NOW)
         self.assertEqual(r["selected_topic_coverage_counts"]["Infrastructure & Investment"],1)

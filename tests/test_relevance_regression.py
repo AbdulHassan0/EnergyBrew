@@ -82,6 +82,14 @@ class RelevanceCorpus(unittest.TestCase):
         self.assertIn("world_context:iranian",r["evidence"])
         self.assertTrue(r["editorial_candidate"])
 
+    def test_inferred_regional_conflict_lower_confidence_than_explicit_oil_risk(self):
+        inferred=evaluate("US launches missile strikes against Iran")
+        explicit=evaluate("US launches missile strikes against Iranian oil export terminal")
+        self.assertEqual(inferred["category"],"Geopolitics")
+        self.assertEqual(explicit["category"],"Geopolitics")
+        self.assertLess(inferred["relevance_score"],explicit["relevance_score"])
+        self.assertTrue(any("inferred_" in x for x in inferred["evidence"]))
+
     def test_excerpts_do_not_have_to_be_retained_to_classify(self):
         self.assertTrue(evaluate("US Oil Inventories On the Rise")["editorial_candidate"])
 

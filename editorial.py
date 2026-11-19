@@ -149,7 +149,10 @@ def evaluate(title, excerpt=""):
                 evidence[category].append(phrase)
     geopolitics = geopolitical_evidence(title)
     if geopolitics:
-        contributions["Geopolitics"] = min(97, 72 + 6 * len(geopolitics))
+        # A declared oil/gas/power hook is higher confidence than an inferred
+        # regional escalation whose commodity implications await review.
+        inferred = any(x.startswith("energy_market_exposure:inferred_") for x in geopolitics)
+        contributions["Geopolitics"] = 68 if inferred else min(97, 72 + 6 * len(geopolitics))
         evidence["Geopolitics"] = geopolitics
     if not contributions:
         return {"category":"Cross-sector", "relevance_score":0, "editorial_candidate":False, "evidence":[]}
