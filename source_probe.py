@@ -21,6 +21,10 @@ CANDIDATES = (
     ("EIA What's New", "https://www.eia.gov/about/new/WNtest3.php"),
     ("EIA Gasoline & Diesel Update", "https://www.eia.gov/petroleum/gasdiesel/includes/gas_diesel_rss.xml"),
     ("EIA Heating Oil & Propane Update", "https://www.eia.gov/petroleum/heatingoilpropane/includes/hopu_rss.xml"),
+    # Official US federal agency endpoints: public metadata-only availability probes.
+    ("DOE HGEO Press Releases", "https://www.energy.gov/hgeo/listings/hgeo-press-releases-and-techlines?view=rss"),
+    ("DOE Resource Sustainability", "https://www.energy.gov/hgeo/listings/office-resource-sustainability-news?view=rss"),
+    ("FERC eForms RSS", "https://ecollection.ferc.gov/api/rssfeed"),
     ("Offshore Energy News", "https://www.offshore-energy.biz/feed"),
     ("OilPrice.com News", "https://oilprice.com/rss.xml"),
     # Staged feeds: connection/volume probe ONLY, not production-enabled or licensed.
