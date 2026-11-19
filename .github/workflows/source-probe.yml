@@ -6,6 +6,8 @@ on:
     branches: [main]
     paths:
       - "source_probe.py"
+      - "gal_archive_probe.py"
+      - "tests/test_gal_archive_probe.py"
       - "tests/test_source_probe.py"
       - ".github/workflows/source-probe.yml"
   schedule:
@@ -30,11 +32,18 @@ jobs:
         id: probe
         continue-on-error: true
         run: python source_probe.py --output output/source_probe
+      - name: Probe documented GDELT minute archive HEAD endpoints (no downloads)
+        continue-on-error: true
+        run: python gal_archive_probe.py --output output/source_probe
       - name: Publish per-source operational results
         if: always()
         run: |
           if test -f output/source_probe/source_probe.md; then
             cat output/source_probe/source_probe.md >> "$GITHUB_STEP_SUMMARY"
+            if test -f output/source_probe/gal_archive_probe.md; then
+              echo "" >> "$GITHUB_STEP_SUMMARY"
+              cat output/source_probe/gal_archive_probe.md >> "$GITHUB_STEP_SUMMARY"
+            fi
           else
             echo "Source probe failed before producing a report" >> "$GITHUB_STEP_SUMMARY"
           fi
