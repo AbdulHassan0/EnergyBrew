@@ -1,28 +1,28 @@
 {
-  "run_utc": "2026-11-19T12:49:06.128650+00:00",
+  "run_utc": "2026-11-19T12:52:06.041022+00:00",
   "provider": "GDELT GAL RSS",
-  "minutes_since_previous_sample": 50.5,
-  "potential_sampling_gap": true,
+  "minutes_since_previous_sample": 3.0,
+  "potential_sampling_gap": false,
   "coverage": "rolling_15min_sample_only_not_full_day",
   "status": "ok",
-  "raw_feed_items": 4360,
-  "high_signal_items": 17,
-  "new_unique_links": 17,
+  "raw_feed_items": 6733,
+  "high_signal_items": 30,
+  "new_unique_links": 13,
   "rejected": {
     "missing_link": 0,
     "missing_index_time": 0,
     "stale_index_time": 0,
-    "off_topic": 4308,
-    "non_article": 35
+    "off_topic": 6644,
+    "non_article": 59
   },
   "historical_noise_removed": 0,
   "historical_rescored": 0,
-  "feed_newest_index_utc": "2026-11-19T12:46:00+00:00",
-  "feed_index_lag_minutes": 3.1,
-  "feed_entry_count": 4360,
-  "feed_timestamped_entries": 4360,
-  "feed_payload_sha256": "6c2aa0d40f9f8d17",
+  "feed_newest_index_utc": "2026-11-19T12:47:00+00:00",
+  "feed_index_lag_minutes": 5.1,
+  "feed_entry_count": 6733,
+  "feed_timestamped_entries": 6733,
+  "feed_payload_sha256": "85615aa3a1840590",
   "upstream_stale": false,
   "http_status": 200,
-  "combined_research_leads_24h": 280
+  "combined_research_leads_24h": 293
 }
