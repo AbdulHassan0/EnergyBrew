@@ -44,7 +44,10 @@ def sample_once(state_path, output_dir, *, now=None, fetcher=None):
     if state_path.exists():
         shutil.copyfile(state_path, staging)
     try:
-        report = collect_gal(staging, output_dir, now=now, fetcher=fetcher)
+        report = collect_gal(
+            staging, output_dir, now=now, fetcher=fetcher,
+            completion_clock=(lambda: datetime.now(timezone.utc))
+            if fetcher is None else None)
         # The same public-metadata safety gate used by GitHub Actions is
         # mandatory even for the independent worker.
         validate_records(staging, "leads")

@@ -47,8 +47,11 @@ def run_refresh(root, *, now=None, fetcher=None):
         if state.exists():
             shutil.copyfile(state, staging)
         try:
-            report = collect(staging, root / "output" / "company-releases",
-                             now=now.astimezone(timezone.utc), fetcher=fetcher)
+            report = collect(
+                staging, root / "output" / "company-releases",
+                now=now.astimezone(timezone.utc), fetcher=fetcher,
+                completion_clock=(lambda: datetime.now(timezone.utc))
+                if fetcher is None else None)
             validate_records(staging, "leads")
             staging.replace(state)
         finally:

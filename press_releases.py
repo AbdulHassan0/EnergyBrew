@@ -101,7 +101,7 @@ def parse_releases(xml, now):
     return results,skipped,len(nodes)
 
 
-def collect(state_file,outdir,*,now=None,fetcher=None):
+def collect(state_file,outdir,*,now=None,fetcher=None,completion_clock=None):
     now=now or datetime.now(timezone.utc)
     if now.tzinfo is None:
         raise ValueError("now must be timezone aware")
@@ -147,6 +147,11 @@ def collect(state_file,outdir,*,now=None,fetcher=None):
             old[item["url"]]=item
     except Exception as exc:
         r.update(status="degraded",error=f"{type(exc).__name__}: {str(exc)[:200]}")
+    completed = (completion_clock() if completion_clock else
+                 now if injected_clock else datetime.now(timezone.utc))
+    if completed.tzinfo is None or completed.utcoffset() is None:
+        raise ValueError("Issuer collection completion clock requires timezone")
+    r["completed_utc"] = completed.astimezone(timezone.utc).isoformat()
     cutoff=now-timedelta(days=7)
     def stamp(x):
         try:

@@ -55,7 +55,8 @@ def recover_abandoned_rss_stage(state_path):
     return True
 
 
-def refresh_rss_safely(state_path, output, *, now, fetcher=None):
+def refresh_rss_safely(state_path, output, *, now, fetcher=None,
+                       completion_clock=None):
     """Uncommitted RSS state is validated before replacing durable history.
 
     Live initial publisher requests are made concurrently with bounded fanout
@@ -69,10 +70,17 @@ def refresh_rss_safely(state_path, output, *, now, fetcher=None):
     if state_path.exists():
         shutil.copyfile(state_path, staging)
     pool = None
+    live_network = fetcher is None
     try:
-        if fetcher is None:
+        if live_network:
             pool, fetcher = concurrent_first_fetches()
-        report = collect(staging, Path(output), now=now, fetcher=fetcher)
+        # A caller-provided start time is not permission to pretend the
+        # real network job completed at that time.
+        effective_clock = (completion_clock or
+                           (lambda: datetime.now(timezone.utc)) if live_network
+                           else completion_clock)
+        report = collect(staging, Path(output), now=now, fetcher=fetcher,
+                         completion_clock=effective_clock)
         validate_records(staging, "articles")
         staging.replace(state_path)
         return report

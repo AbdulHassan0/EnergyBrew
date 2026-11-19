@@ -120,7 +120,8 @@ def parse_gal(xml, now):
     return results[:MAX_RELEVANT],rejected,len(nodes)
 
 
-def collect_gal(state_path, outdir, *, now=None, fetcher=None):
+def collect_gal(state_path, outdir, *, now=None, fetcher=None,
+                completion_clock=None):
     injected_clock = now is not None
     now=now or datetime.now(timezone.utc)
     if now.tzinfo is None:
@@ -216,7 +217,11 @@ def collect_gal(state_path, outdir, *, now=None, fetcher=None):
     recent=[x for x in retained if (_datetime(x.get("gdelt_first_seen_utc")) or cutoff) >= now-timedelta(hours=24)]
     # The full GAL sample is not available until the network parse completes.
     # Preserve start-time run_utc for intervals, and completion for cutoffs.
-    summary["completed_utc"] = utc_stamp(now if injected_clock else datetime.now(timezone.utc))
+    completed = (completion_clock() if completion_clock else
+                 now if injected_clock else datetime.now(timezone.utc))
+    if completed.tzinfo is None or completed.utcoffset() is None:
+        raise ValueError("GAL completion clock must be timezone-aware")
+    summary["completed_utc"] = utc_stamp(completed)
     summary["combined_research_leads_24h"]=len(recent)
     state["leads"]=retained
     state.setdefault("gal_runs",[]).append({k:summary[k] for k in

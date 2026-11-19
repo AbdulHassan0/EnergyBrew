@@ -228,7 +228,7 @@ def fetch_feed(url):
             raise ValueError("Feed exceeded 2 MB safety limit")
         return payload, response.status
 
-def collect(state_path, outdir, hours=48, now=None, fetcher=None):
+def collect(state_path, outdir, hours=48, now=None, fetcher=None, completion_clock=None):
     injected_clock = now is not None
     now = now or datetime.now(timezone.utc)
     fetcher = fetcher or fetch_feed
@@ -390,7 +390,11 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
                   else "critical")
     # Polling starts before the HTTP requests. Only the completed timestamp
     # proves the whole RSS snapshot existed by the editorial cutoff.
-    completed_utc = now if injected_clock else datetime.now(timezone.utc)
+    completed_utc = (completion_clock() if completion_clock else
+                     now if injected_clock else datetime.now(timezone.utc))
+    if completed_utc.tzinfo is None or completed_utc.utcoffset() is None:
+        raise ValueError("Publisher collection completion clock must have timezone")
+    completed_utc = completed_utc.astimezone(timezone.utc)
     run = {"run_utc": now.isoformat(), "completed_utc": completed_utc.isoformat(),
            "scan_state": scan_state,
            "connection_ratio": round(connection_ratio, 3),
