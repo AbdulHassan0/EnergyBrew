@@ -106,3 +106,20 @@ The existing `validate_approved()` publication and delivery gates are
 unchanged and can be restored as the only mode by discontinuing
 `pilot-preview`. Real content is preferable to invented title-only summaries;
 this November 19 issue's prose was drafted from publisher articles.
+
+## Six-beat freshness and diversity checks (pilot)
+
+The editorial workflow targets **06:45 Chicago time**, after the 06:30
+source cutoff and planned 06:38 final research. GitHub cron remains
+best-effort. Each curated pilot edition goes through `pilot_audit.py`
+BEFORE HTML rendering. The pilot must cover all six energy categories,
+limit any beat to two stories, use four or more publisher domains, and
+limit any domain to three stories. Sources older than two calendar days
+and unfinished placeholder copy block the email preview. This temporarily
+waives human fact-check attestations, not source-link or copy-quality checks.
+
+The separate quality report records whether each source was observed by
+EnergyBrew before the **06:30 Chicago** cutoff. A late research snapshot,
+publisher date, or GDELT first-seen timestamp is never proof of on-time
+collection. The report can mark the copy ready but the 7 a.m. collection
+evidence `not_established`. A pilot email cannot publish or send.

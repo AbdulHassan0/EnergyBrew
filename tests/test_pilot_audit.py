@@ -17,7 +17,7 @@ def fixture():
         stories.append({
             "section":beat,"publisher":"Publisher "+str(i),
             "source_date":"2026-11-18",
-            "source_url":"https://publisher"+str(i)+".example.com/news/"+str(i),
+            "source_url":"https://publisher"+str(i)+".com/news/"+str(i),
             "title":"Energy development changes investment outlook for "+beat,
             "summary":("An energy company announced a new infrastructure development this week. "
                        "The original publisher describes the scope of work and the affected "

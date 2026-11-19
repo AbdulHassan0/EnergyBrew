@@ -5,12 +5,14 @@ on:
     branches: [main]
     paths:
       - "newsletter.py"
+      - "pilot_audit.py"
       - "newsletter/pilots/**"
       - "newsletter/EDITORIAL.md"
       - ".github/workflows/morning-editorial.yml"
   schedule:
-    # 6:15 AM Chicago, two UTC attempts to cover CST/CDT.
-    - cron: "15 11,12 * * 1-5"
+    # 06:45 Chicago, after 06:30 collection cutoff and 06:38 research.
+    # GitHub can delay cron; this is not an on-time newsletter guarantee.
+    - cron: "45 11,12 * * 1-5"
 
 permissions:
   contents: read
@@ -32,11 +34,15 @@ jobs:
           from datetime import datetime
           from zoneinfo import ZoneInfo
           now = datetime.now(ZoneInfo("America/Chicago"))
-          print("run=" + ("yes" if os.environ.get("GITHUB_EVENT_NAME") in ("workflow_dispatch", "push") or now.hour == 6 else "no"))
+          active = now.hour == 6 and 40 <= now.minute < 55
+          print("run=" + ("yes" if os.environ.get("GITHUB_EVENT_NAME") in ("workflow_dispatch", "push") or active else "no"))
           PY
-      - name: Run regression tests
+      - name: Run focused pilot editorial QA; complete suite runs on code pushes
         if: steps.window.outputs.run == 'yes'
-        run: python -m unittest discover -s tests -q
+        run: |
+          python -m unittest discover -s tests -p "test_newsletter.py" -q
+          python -m unittest discover -s tests -p "test_pilot_audit.py" -q
+          python -m unittest discover -s tests -p "test_workflow_separation.py" -q
       - name: Retrieve current private research desk
         if: steps.window.outputs.run == 'yes'
         run: |
@@ -55,7 +61,9 @@ jobs:
           # without content.
           TODAY="$(TZ=America/Chicago date +%F)"
           if test -f "newsletter/pilots/${TODAY}.json"; then
+            python pilot_audit.py --pilot "newsletter/pilots/${TODAY}.json" --desk latest-state/desk_latest.json --output output/newsletter/PILOT_QUALITY_REPORT.json
             python newsletter.py pilot-preview --edition "newsletter/pilots/${TODAY}.json" --html output/newsletter/PILOT_email_preview.html --text output/newsletter/PILOT_email_preview.txt
+            sed -n '1,38p' output/newsletter/PILOT_QUALITY_REPORT.md >> "$GITHUB_STEP_SUMMARY"
             echo "PILOT preview generated with complete copy; NO email sent." >> "$GITHUB_STEP_SUMMARY"
           else
             echo "No source-backed pilot brief for ${TODAY}: saved research queue only; no fake summaries." >> "$GITHUB_STEP_SUMMARY"
