@@ -1,0 +1,36 @@
+name: EnergyBrew standalone collector build validation
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "collector_daemon.py"
+      - "Dockerfile.collector"
+      - "tests/test_collector_daemon.py"
+      - ".github/workflows/collector-daemon-ci.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  container-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Offline persistent state and safety tests
+        run: python -m unittest discover -s tests -p "test_collector_daemon.py" -v
+      - name: Build no-dependency Python collector image
+        run: docker build -f Dockerfile.collector -t energybrew-collector:test .
+      - name: Run tests inside isolated collector image
+        run: |
+          docker run --rm --entrypoint python energybrew-collector:test -c "from collector_daemon import run_forever; print('EnergyBrew worker imports OK')"
+          docker run --rm --entrypoint python energybrew-collector:test -c "from gal import parse_gal; from public_collector_guard import ensure_sources_public; ensure_sources_public(); print('Metadata guard and GAL parser OK')"
+      - name: Verify non-root user and persistent-volume configuration
+        run: |
+          docker image inspect energybrew-collector:test --format '{{.Config.User}}' | grep -x energybrew
+          docker image inspect energybrew-collector:test --format '{{json .Config.Volumes}}' | grep /data
