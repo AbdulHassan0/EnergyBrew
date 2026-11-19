@@ -84,15 +84,26 @@ def measure(candidates=CANDIDATES, *, now=None, fetcher=None) -> dict:
             if not 200 <= status < 300:
                 raise ValueError(f"Publisher RSS returned HTTP {status}")
             items, rejected, count = parse_feed(payload, name, now, 48)
+            distinct = {}
+            for story in items:
+                # The same generic item URL repeated 500 times is ONE link, not 500.
+                prior = distinct.get(story["url"])
+                if prior is None or story["published_utc"] > prior["published_utc"]:
+                    distinct[story["url"]] = story
+            unique = list(distinct.values())
+            generic_only = count > 0 and rejected.get("homepage_link", 0) / count >= 0.8
             row.update(
                 status="ok",
                 http_status=status,
                 rss_item_count=count,
-                fresh_links_48h=len(items),
-                fresh_links_24h=sum(datetime.fromisoformat(x["published_utc"]) >= now - timedelta(hours=24) for x in items),
-                high_signal_48h=sum(bool(x["editorial_candidate"]) for x in items),
+                raw_window_entries_48h=len(items),
+                fresh_links_48h=len(unique),
+                fresh_links_24h=sum(datetime.fromisoformat(x["published_utc"]) >= now - timedelta(hours=24) for x in unique),
+                high_signal_48h=sum(bool(x["editorial_candidate"]) for x in unique),
+                duplicate_article_urls=len(items) - len(unique),
+                link_quality="homepage_only" if generic_only else "actionable_links" if unique else "no_recent_items",
                 rejected=rejected,
-                sample_headlines=[{"title": x["title"], "url": x["url"]} for x in items[:3]],
+                sample_headlines=[{"title": x["title"], "url": x["url"]} for x in unique[:3]],
             )
         except Exception as exc:
             row["error"] = f"{type(exc).__name__}: {str(exc)[:160]}"
@@ -103,10 +114,12 @@ def measure(candidates=CANDIDATES, *, now=None, fetcher=None) -> dict:
         "status": "ok" if any(x["status"]=="ok" for x in results) else "degraded",
         "feeds_checked": len(results),
         "feeds_connected": sum(x["status"]=="ok" for x in results),
+        "feeds_with_recent_actionable_links": sum(x.get("link_quality")=="actionable_links" for x in results),
+        "generic_homepage_only_feeds": sum(x.get("link_quality")=="homepage_only" for x in results),
         "fresh_links_24h": sum(x["fresh_links_24h"] for x in results),
         "high_signal_48h": sum(x["high_signal_48h"] for x in results),
         "sources": results,
-        "note": "Link metadata and publisher feed timestamps only; article contents and publication/reuse rights unverified.",
+        "note": "Deduplicated actionable URLs, NOT raw feed-entry counts. Publisher timestamps and reuse rights unverified.",
     }
 
 
@@ -117,14 +130,17 @@ def write_report(data: dict, output: Path) -> None:
         "# EnergyBrew energy specialist RSS — connection and volume pilot", "",
         f"Probe UTC: {data['run_utc']}",
         f"Connected: **{data['feeds_connected']}/{data['feeds_checked']}**",
+        f"Feeds with unique actionable URLs in the last 48h: **{data['feeds_with_recent_actionable_links']}**",
+        f"Feeds pointing predominantly to a generic homepage: **{data['generic_homepage_only_feeds']}**",
         f"Fresh source-linked records in last 24h: **{data['fresh_links_24h']}**",
-        "", "| Source | Connection | Usage review | 24h links | 48h links | High-signal 48h | Error |",
-        "|---|---|---|---:|---:|---:|---|",
+        "", "| Source | Connection | Link quality | Usage review | Unique 24h links | Unique 48h links | High-signal 48h | Error |",
+        "|---|---|---|---|---:|---:|---:|---|",
     ]
     for x in data["sources"]:
         error = (x.get("error") or "").replace("|","/")
-        lines.append(f"| {x['name']} | {x['status']} | {x['rights_status']} | {x['fresh_links_24h']} | {x['fresh_links_48h']} | {x['high_signal_48h']} | {error} |")
+        lines.append(f"| {x['name']} | {x['status']} | {x.get('link_quality', 'not_checked')} | {x['rights_status']} | {x['fresh_links_24h']} | {x['fresh_links_48h']} | {x['high_signal_48h']} | {error} |")
     lines += ["", "Freshness is based on publisher RSS timestamps, not independent confirmation.",
+              "A successful HTTP/RSS connection is not evidence of unique actionable story URLs.",
               "A successful endpoint probe does NOT authorize adding a source to commercial production collection.",
               "Blocked/review-pending candidates require source-specific legal and contractual evaluation before direct automated polling."]
     (output/"source_probe.md").write_text("\n".join(lines)+"\n",encoding="utf-8")

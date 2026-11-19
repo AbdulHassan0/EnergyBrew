@@ -209,6 +209,18 @@ class CollectorTests(unittest.TestCase):
             self.assertEqual(second["new_article_links"],0)
             self.assertEqual(second["scan_state"],"healthy")
 
+    def test_homepage_url_is_not_an_article_even_with_a_valid_date(self):
+        entries,rejected,_ = parse_feed(sample(
+            title="FERC official pipeline filing notice",
+            url="https://ferc.gov/"),"Regulator",NOW,48)
+        self.assertEqual(entries,[])
+        self.assertEqual(rejected["homepage_link"],1)
+        # Deep links with query identifiers remain actionable.
+        valid,_,_=parse_feed(sample(
+            title="FERC official pipeline filing notice",
+            url="https://ferc.gov/?filing=20261118"),"Regulator",NOW,48)
+        self.assertEqual(len(valid),1)
+
     def test_invalid_existing_state_is_not_overwritten(self):
         with tempfile.TemporaryDirectory() as d:
             state = Path(d)/"db.json"

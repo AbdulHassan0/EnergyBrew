@@ -131,6 +131,15 @@ def clean_url(url):
     except ValueError:
         return ""
 
+def is_article_url(url):
+    """Do not mistake a publisher home page for an individual article/filing link."""
+    if not url:
+        return False
+    p = urlsplit(url)
+    stem=p.path.strip("/").lower()
+    return bool(p.query or stem not in ("", "index.html", "index.php", "home"))
+
+
 def classify(title, summary):
     txt = (title + " " + summary).lower()
     matched = [(category, sum(1 for term in terms if term in txt)) for category, terms in KEYWORDS.items()]
@@ -144,7 +153,7 @@ def parse_feed(xml_bytes, source_name, now, hours, date_precision="timestamp"):
         raise ValueError("Not a recognizable RSS/Atom feed")
     if local(root.tag) == "rss" and not any(local(ch.tag) == "channel" for ch in root):
         raise ValueError("RSS response missing its required channel element")
-    accepted, rejected = [], {"undated": 0, "old": 0, "future": 0, "invalid_link": 0}
+    accepted, rejected = [], {"undated": 0, "old": 0, "future": 0, "invalid_link": 0, "homepage_link": 0}
     for node in nodes:
         title = child_text(node, ("title",))
         link = clean_url(article_link(node))
@@ -153,6 +162,9 @@ def parse_feed(xml_bytes, source_name, now, hours, date_precision="timestamp"):
             dt = publication_day_only(node)
         if not title or not link:
             rejected["invalid_link"] += 1
+            continue
+        if not is_article_url(link):
+            rejected["homepage_link"] += 1
             continue
         if dt is None:
             rejected["undated"] += 1
