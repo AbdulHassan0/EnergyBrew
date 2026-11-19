@@ -39,6 +39,14 @@ class DeskTests(unittest.TestCase):
         self.assertEqual(r["system_operator_primary_24h"],1)
         self.assertEqual(r["publisher_timestamped_official_24h"],0)
 
+    def test_gal_provider_timestamp_does_not_imply_original_publication_date(self):
+        lead=discovery()
+        lead["discovery_provider"]="GDELT GAL RSS"
+        result=assemble([], [lead], [], now=NOW)
+        self.assertEqual(result["stories"][0]["time_basis"],
+                         "gdelt_gal_rss_provider_time_unverified")
+        self.assertFalse(result["stories"][0]["publisher_time_verified"])
+
     def test_specialist_publisher_provenance(self):
         article=official()
         article["source_class"]="specialist_publisher"

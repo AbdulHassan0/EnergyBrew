@@ -229,7 +229,7 @@ def report(rss_path, discovery_path, releases_path, outdir, *, now=None):
         for x in r["failing_sources"]] or ["- None in latest state"]) + [
         "", "## Warnings"] + ["- "+x for x in r["warnings"]]+[
         "","No scan activity is **unknown coverage**, not proof that no market news occurred.",
-        "GDELT RSS timestamps reflect index observations, not original publication dates.",
+        "GDELT GAL RSS pubDate is a provider timestamp and may reflect publisher metadata or index observation; original publication time remains unverified.",
         "Even complete scan history is not proof of complete industry coverage."]
     (out/"metrics.md").write_text("\n".join(lines)+"\n",encoding="utf-8")
     return r

@@ -100,7 +100,8 @@ def parse_gal(xml, now):
             "url":url,"title":title,
             "domain":url.split("/")[2].lower(),
             "gdelt_first_seen_utc":utc_stamp(observed),
-            "index_timestamp_source":"GAL RSS pubDate (not publisher publication date)",
+            "index_timestamp_source":"GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+            "gdelt_timestamp_semantics":"provider_pubdate_origin_unverified",
             "publisher_published_utc":None,
             "published_time_verified":False,
             "discovery_provider":"GDELT GAL RSS",
@@ -233,7 +234,7 @@ def collect_gal(state_path, outdir, *, now=None, fetcher=None):
         f"Previously stored non-article pages removed: **{summary['historical_noise_removed']}**",
         f"Previously stored scores corrected: **{summary['historical_rescored']}**",
         "", "This is a rolling 15-minute SAMPLE only, not full daily source coverage.",
-        "Dates are supplied by the GDELT RSS index, NOT independently verified publisher publication times.",
+        "GDELT RSS pubDate may represent publisher metadata or index observation. Original publication times are NOT independently verified.",
         "No external article pages were scraped or republished.",
     ]
     if summary.get("error"):

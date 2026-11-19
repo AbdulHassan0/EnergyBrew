@@ -112,7 +112,10 @@ def entry(record, kind, now):
         has_publisher_date = False
     else:
         stamp = as_time(record.get("gdelt_first_seen_utc"))
-        time_basis = "discovery_index_first_seen_only"
+        providers = record.get("discovery_providers") or []
+        time_basis = ("gdelt_gal_rss_provider_time_unverified"
+                      if record.get("discovery_provider")=="GDELT GAL RSS" or "GDELT GAL RSS" in providers
+                      else "discovery_index_first_seen_only")
         date_verification = "not_verified"
         has_publisher_date = False
     if stamp is None or stamp > now + timedelta(hours=1) or stamp < now - timedelta(days=7):

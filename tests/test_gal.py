@@ -25,7 +25,8 @@ class GalTests(unittest.TestCase):
         self.assertEqual(lead["url"],"https://example.com/new-lng-project")
         self.assertFalse(lead["published_time_verified"])
         self.assertIsNone(lead["publisher_published_utc"])
-        self.assertEqual(lead["index_timestamp_source"],"GAL RSS pubDate (not publisher publication date)")
+        self.assertEqual(lead["gdelt_timestamp_semantics"],"provider_pubdate_origin_unverified")
+        self.assertIn("not independently verified",lead["index_timestamp_source"])
 
     def test_off_topic_and_old_items_excluded(self):
         for kwargs,key in [
