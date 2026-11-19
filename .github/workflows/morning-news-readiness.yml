@@ -5,7 +5,8 @@ on:
     branches: [main]
     paths: [morning_readiness.py, tests/test_morning_readiness.py, .github/workflows/morning-news-readiness.yml]
   schedule:
-    - cron: "38 11,12 * * *"
+    - cron: "45 10,11 * * *" # 05:45 Chicago preview, DST-aware local gate
+    - cron: "38 11,12 * * *" # 06:38 Chicago final, DST-aware local gate
 permissions:
   contents: read
 concurrency:
@@ -22,7 +23,7 @@ jobs:
           python-version: "3.12"
       - name: Test morning cutoff and freshness rules
         run: python -m unittest discover -s tests -p "test_morning_readiness.py" -v
-      - name: Check 06:30–06:49 local preparation window
+      - name: Gate 05:45 preview versus 06:30 final Central windows
         id: gate
         run: |
           python - <<'PY'
@@ -30,13 +31,16 @@ jobs:
           from zoneinfo import ZoneInfo
           import os
           now=datetime.now(ZoneInfo("America/Chicago"))
-          active=time(6,30)<=now.time().replace(tzinfo=None)<time(6,50)
-          print("America/Chicago:",now.isoformat(),"active:",active)
+          wall=now.time().replace(tzinfo=None)
+          active=time(6,30)<=wall<time(6,50)
+          preflight=time(5,45)<=wall<time(6,0)
+          print("America/Chicago:",now.isoformat(),"final:",active,"preflight:",preflight)
           with open(os.environ["GITHUB_OUTPUT"],"a") as fp:
               fp.write("active="+("true" if active else "false")+"\n")
+              fp.write("preflight="+("true" if preflight else "false")+"\n")
           PY
       - name: Restore public metadata state
-        if: steps.gate.outputs.active == 'true'
+        if: steps.gate.outputs.active == 'true' || steps.gate.outputs.preflight == 'true'
         run: |
           mkdir -p state
           git fetch --no-tags origin collector-state
@@ -57,9 +61,14 @@ jobs:
         run: python gal.py --state state/discovery.json --output output/gal
       - name: Public-metadata safety gate
         id: guard
-        if: steps.gate.outputs.active == 'true'
+        if: steps.gate.outputs.active == 'true' || steps.gate.outputs.preflight == 'true'
         continue-on-error: true
         run: python public_collector_guard.py --sanitize-legacy --rss state/articles.json --discovery state/discovery.json --releases state/press_releases.json
+      - name: Prepare early news research preview (never final)
+        id: preview
+        if: steps.gate.outputs.preflight == 'true' && steps.guard.outcome == 'success'
+        continue-on-error: true
+        run: python morning_readiness.py --rss state/articles.json --discovery state/discovery.json --releases state/press_releases.json --output output/morning --time-zone America/Chicago --preflight
       - name: Freeze research leads if fresh enough
         id: ready
         if: steps.gate.outputs.active == 'true' && steps.rss.outcome == 'success' && steps.gal.outcome == 'success' && steps.guard.outcome == 'success'
@@ -69,9 +78,9 @@ jobs:
         if: always()
         run: |
           echo "Research only, not approved, no email sent" >> "$GITHUB_STEP_SUMMARY"
-          echo "Gate: ${{ steps.gate.outputs.active }}, RSS: ${{ steps.rss.outcome }}, GAL: ${{ steps.gal.outcome }}, safe: ${{ steps.guard.outcome }}, ready: ${{ steps.ready.outcome }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "Final gate: ${{ steps.gate.outputs.active }}, preview gate: ${{ steps.gate.outputs.preflight }}, RSS: ${{ steps.rss.outcome }}, GAL: ${{ steps.gal.outcome }}, safe: ${{ steps.guard.outcome }}, preview: ${{ steps.preview.outcome }}, ready: ${{ steps.ready.outcome }}" >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@v4
-        if: steps.gate.outputs.active == 'true'
+        if: steps.gate.outputs.active == 'true' || steps.gate.outputs.preflight == 'true'
         with:
           name: energybrew-morning-research-${{ github.run_id }}
           path: |
@@ -81,4 +90,7 @@ jobs:
           retention-days: 14
       - name: Fail if morning research cannot be safely prepared
         if: steps.gate.outputs.active == 'true' && (steps.rss.outcome != 'success' || steps.gal.outcome != 'success' || steps.guard.outcome != 'success' || steps.ready.outcome != 'success')
+        run: exit 1
+      - name: Fail if preview lacks valid public state
+        if: steps.gate.outputs.preflight == 'true' && (steps.guard.outcome != 'success' || steps.preview.outcome != 'success')
         run: exit 1
