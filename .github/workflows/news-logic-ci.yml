@@ -11,6 +11,7 @@ on:
       - ".github/workflows/frequent-gal.yml"
       - ".github/workflows/news-logic-ci.yml"
       - ".github/workflows/live-collector.yml"
+      - ".github/workflows/precutoff-rss.yml"
       - ".github/workflows/frequent-gal.yml"
       - ".github/workflows/hourly-discovery.yml"
       - ".github/workflows/morning-news-readiness.yml"

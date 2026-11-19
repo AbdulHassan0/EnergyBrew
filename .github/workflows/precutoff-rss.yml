@@ -1,0 +1,96 @@
+name: EnergyBrew free pre-cutoff publisher scan (NO EMAIL)
+on:
+  workflow_dispatch:
+  schedule:
+    # Exactly one attempt at 06:10 America/Chicago in either CST or CDT.
+    # GitHub cron may be late or skipped; late attempts do not fake coverage.
+    - cron: "10 11,12 * * *"
+permissions:
+  contents: write
+concurrency:
+  group: energybrew-live-collector
+  cancel-in-progress: false
+jobs:
+  publisher-precutoff:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify actual Chicago-time collection window
+        id: gate
+        run: |
+          python - <<'PY'
+          import os
+          from datetime import datetime,time
+          from zoneinfo import ZoneInfo
+          now=datetime.now(ZoneInfo("America/Chicago"))
+          wall=now.time().replace(tzinfo=None)
+          active=time(6,5)<=wall<time(6,25)
+          print("Local:",now.isoformat(),"precutoff RSS:",active)
+          with open(os.environ["GITHUB_OUTPUT"],"a") as out:
+              out.write("active="+("true" if active else "false")+"\n")
+          PY
+      - name: Validate parser before network requests
+        if: ${{ steps.gate.outputs.active == 'true' }}
+        run: python -m unittest discover -s tests -p "test_collector.py" -q
+      - name: Restore previously committed public research
+        if: ${{ steps.gate.outputs.active == 'true' }}
+        run: |
+          mkdir -p state
+          git fetch --no-tags origin collector-state
+          for name in articles.json discovery.json press_releases.json; do
+            if git cat-file -e "FETCH_HEAD:state/$name" 2>/dev/null; then
+              git show "FETCH_HEAD:state/$name" > "state/$name"
+            fi
+          done
+      - name: Poll publisher RSS before 06:30
+        id: rss
+        if: ${{ steps.gate.outputs.active == 'true' }}
+        continue-on-error: true
+        run: python collector.py --state state/articles.json --output output/precutoff-rss --hours 48
+      - name: Validate safe public headline metadata
+        id: guard
+        if: ${{ steps.gate.outputs.active == 'true' && steps.rss.outcome == 'success' }}
+        run: python public_collector_guard.py --sanitize-legacy --rss state/articles.json --discovery state/discovery.json --releases state/press_releases.json
+      - name: Commit only publisher RSS lane to shared state branch
+        if: ${{ steps.gate.outputs.active == 'true' && steps.rss.outcome == 'success' && steps.guard.outcome == 'success' }}
+        run: |
+          git fetch --no-tags origin collector-state
+          STATE_DIR="$RUNNER_TEMP/energybrew-precutoff-state"
+          git worktree add --detach "$STATE_DIR" FETCH_HEAD
+          cd "$STATE_DIR"
+          git switch -c "precutoff-$GITHUB_RUN_ID"
+          mkdir -p state
+          cp "$GITHUB_WORKSPACE/state/articles.json" state/articles.json
+          cp "$GITHUB_WORKSPACE/output/precutoff-rss/latest.json" state/latest.json
+          cp "$GITHUB_WORKSPACE/output/precutoff-rss/latest.md" state/latest.md
+          git config user.name "EnergyBrew publisher collector"
+          git config user.email "energybrew-bot@users.noreply.github.com"
+          git add -f state/articles.json state/latest.json state/latest.md
+          if ! git diff --cached --quiet; then
+            git commit -m "Save pre-cutoff RSS $GITHUB_RUN_ID"
+            git push origin HEAD:collector-state
+          fi
+      - name: Report actual scan or explicit no-op
+        if: always()
+        run: |
+          echo "No email sent. A late scheduled run is not a pre-cutoff news scan." >> "$GITHUB_STEP_SUMMARY"
+          echo "Window: ${{ steps.gate.outputs.active }}, RSS: ${{ steps.rss.outcome }}, metadata guard: ${{ steps.guard.outcome }}" >> "$GITHUB_STEP_SUMMARY"
+          if test -s output/precutoff-rss/latest.md; then
+            sed -n '1,30p' output/precutoff-rss/latest.md >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "No publisher scan collected; no claimed source availability." >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - uses: actions/upload-artifact@v4
+        if: ${{ steps.gate.outputs.active == 'true' }}
+        with:
+          name: energybrew-precutoff-rss
+          path: output/precutoff-rss/
+          retention-days: 7
+          if-no-files-found: warn
+      - name: Signal failed attempted collection
+        if: ${{ steps.gate.outputs.active == 'true' && steps.rss.outcome != 'success' }}
+        run: exit 1
