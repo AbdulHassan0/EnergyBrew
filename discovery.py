@@ -39,6 +39,10 @@ TOPICS = (
     ("energy_policy", '("FERC" OR "DOE LNG" OR "energy regulation" OR "electricity regulation")'),
     ("oil_refining", '("refinery" OR "diesel market" OR "gasoline supply" OR "petroleum refining")'),
     ("renewables_nuclear", '("nuclear power" OR "renewable energy" OR "battery storage" OR "offshore wind")'),
+    # Worldwide energy-security headlines with market-specific exposure.
+    ("geo_energy_shipping", '("Strait of Hormuz" OR "Red Sea oil tanker" OR "tanker attack" OR "oil shipping disruption")'),
+    ("geo_energy_sanctions", '("energy sanctions" OR "Russia oil sanctions" OR "Iran oil exports sanctions" OR "LNG export ban")'),
+    ("geo_energy_conflict", '("Ukraine refinery strikes" OR "oil infrastructure attack" OR "gas pipeline sabotage" OR "energy trade tariffs")'),
 )
 
 

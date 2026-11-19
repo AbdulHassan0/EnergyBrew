@@ -35,12 +35,6 @@ SOURCES = [
     ("Utility Dive News", "https://www.utilitydive.com/feeds/news/"),
     ("PJM Inside Lines", "https://insidelines.pjm.com/feed/"),
 ]
-KEYWORDS = {
-    "Natural Gas & LNG": ("natural gas", "lng", "liquefied", "gas pipeline", "gas storage", "haynesville", "henry hub", "methane", "gas export"),
-    "Power & Electricity": ("electricity", "electric", "power grid", "power plant", "transmission", "data center", "grid", "renewable", "generation", "nuclear"),
-    "Oil & Energy": ("crude", "oil", "refinery", "petroleum", "diesel", "gasoline", "offshore", "drilling"),
-    "Infrastructure & Investment": ("pipeline", "terminal", "investment", "infrastructure", "capacity", "commission", "approval", "permit", "project"),
-}
 USER_AGENT = "EnergyBrewResearchCollector/1.0 (+https://github.com/AbdulHassan0/EnergyBrew)"
 DROP_PARAMS = {"utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "fbclid", "gclid", "access_token", "apikey", "api_key", "auth", "sessionid", "password", "token"}
 MAX_BYTES = 2_000_000
@@ -141,10 +135,9 @@ def is_article_url(url):
 
 
 def classify(title, summary):
-    txt = (title + " " + summary).lower()
-    matched = [(category, sum(1 for term in terms if term in txt)) for category, terms in KEYWORDS.items()]
-    category, points = max(matched, key=lambda x: x[1])
-    return (category if points else "Cross-sector", points)
+    """Use the exact same six-beat scoring rules as all other collection lanes."""
+    result = evaluate(title, summary)
+    return result["category"], result["relevance_score"]
 
 def parse_feed(xml_bytes, source_name, now, hours, date_precision="timestamp"):
     root = ET.fromstring(xml_bytes)

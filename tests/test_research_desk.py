@@ -111,6 +111,21 @@ class DeskTests(unittest.TestCase):
         self.assertLessEqual(sum(x["origin"]=="company_announcement" for x in r["stories"]),2)
         self.assertFalse(any(x["title"] == d["title"] for x in r["stories"]))  # filtered before selection
 
+    def test_geopolitics_is_a_sixth_market_news_beat(self):
+        a=official(url="https://news.example.com/hormuz",
+            title="Iranian drone attacks disrupt oil tanker shipping through Strait of Hormuz")
+        result=assemble([a],[],[],now=NOW)
+        self.assertEqual(result["selected_research_links"],1)
+        story=result["stories"][0]
+        self.assertEqual(story["category"],"Geopolitics")
+        self.assertIn("Oil & Energy",story["coverage_themes"])
+        self.assertNotIn("Geopolitics",result["missing_categories"])
+
+    def test_political_news_without_energy_exposure_is_not_a_market_lead(self):
+        x=global_lead(title="European Union announces parliamentary election date")
+        result=assemble([], [x], [], now=NOW)
+        self.assertEqual(result["selected_research_links"],0)
+
     def test_infrastructure_as_secondary_topic(self):
         r=assemble([official(title="Gas pipeline expansion for LNG exports")], [], [], now=NOW)
         self.assertEqual(r["selected_topic_coverage_counts"]["Infrastructure & Investment"],1)

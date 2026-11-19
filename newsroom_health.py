@@ -12,10 +12,12 @@ from pathlib import Path
 
 
 REQUIRED_BEATS = (
-    "Natural Gas & LNG",
+    "Natural Gas",
+    "LNG",
     "Power & Electricity",
     "Oil & Energy",
     "Infrastructure & Investment",
+    "Geopolitics",
 )
 TARGET_CANDIDATES_24H = 12
 MAX_RUN_AGE_HOURS = 12
@@ -151,6 +153,7 @@ def audit(rss_state, rss_report, discovery_state=None, discovery_report=None, *,
         "editorial_target_24h":TARGET_CANDIDATES_24H,
         "observed_beat_counts_24h":{b:beats[b] for b in REQUIRED_BEATS},
         "unobserved_beats":missing,
+        "geopolitical_energy_leads_24h":beats["Geopolitics"],
         "research_first_seen_links_24h":len(research_24),
         "research_high_signal_links_24h":len(research_high),
         "research_publisher_dates_verified":0,

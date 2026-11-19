@@ -130,6 +130,13 @@ class DiscoveryTests(unittest.TestCase):
                 run_discovery(state,Path(d)/"out",now=NOW,fetcher=lambda url:(b'{}',200))
             self.assertEqual(state.read_text(),"bad data")
 
+    def test_worldwide_geopolitical_energy_discovery_has_three_topics(self):
+        geo=[(n,q) for n,q in TOPICS if n.startswith("geo_energy_")]
+        self.assertEqual(len(geo),3)
+        self.assertTrue(all(any(v in q.lower() for v in
+            ("oil","lng","energy","tanker","pipeline","hormuz","refinery"))
+            for _,q in geo))
+
     def test_query_budget_enforced(self):
         with tempfile.TemporaryDirectory() as d:
             with self.assertRaises(ValueError):

@@ -3,11 +3,15 @@ import unittest
 from editorial import evaluate
 
 POSITIVE = {
-    "Natural Gas & LNG": [
+    "Natural Gas": [
         "China Secures Major Gas Deal as Its Influence Grows Across Central Asia",
         "Orlen spreads its wings across Central and Eastern Europe with new gas pacts",
         "U.S. natural gas inventories end injection season above normal levels",
+    ],
+    "LNG": [
         "Woodside and Trafigura sign off on decade-long LNG deal",
+        "Venture Global expands LNG supply agreement with China Gas",
+        "Sabine Pass LNG feedgas deliveries declined after pipeline constraints",
     ],
     "Power & Electricity": [
         "Energy Secretary Acts to Protect Mid-Atlantic Grid",
@@ -22,8 +26,16 @@ POSITIVE = {
         "EnQuest Exits UK North Sea in $960 Million Deal",
         "Thiel Doubles Down on Vaca Muerta as Trump Calls Venezuela an Acquisition",
         "Democrats Could Slow Venezuela's Push Toward 3 Million Bpd",
+    ],
+    "Geopolitics": [
         "ADNOC Ship Attacked in Hormuz as Maritime Security Risks Rise",
-    ]
+        "Iranian missiles threaten oil tankers near Strait of Hormuz",
+        "Ukraine strikes two Russian oil refineries amid conflict",
+        "US imposes new sanctions on Russian crude oil exports",
+        "China announces tariffs on US LNG imports",
+        "Houthi drone attacks disrupt Red Sea shipping routes",
+        "Israel strikes Iranian power grid infrastructure amid conflict",
+    ],
 }
 
 NEGATIVE = [
@@ -36,6 +48,11 @@ NEGATIVE = [
     "City government opens new shopping mall",
     "Thames Water rescue deal comes with a dirty catch",
     "Oil painting exhibition opens in city hall",
+    "Iran and Israel resume ceasefire talks",
+    "Russia announces new election dates",
+    "Ukraine and Russia discuss prisoner exchange",
+    "US sanctions Russian banks for cybersecurity breaches",
+    "Regional school debate discusses the war in Europe",
 ]
 
 class RelevanceCorpus(unittest.TestCase):

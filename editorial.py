@@ -4,29 +4,35 @@ This ranks candidates; it does not verify facts, approve stories, or grant conte
 from __future__ import annotations
 import re
 from collections import defaultdict
+from geopolitics import geopolitical_evidence
 
 # Strong sector-specific phrases; generic words such as "project", "commission",
 # "energy", "oil" inside another word, or "capacity" alone do not qualify a story.
 BEATS = {
-    "Natural Gas & LNG": {
-        "natural gas": 12, "lng": 13, "liquefied": 10, "gas pipeline": 10,
-        "gas storage": 9, "gas-fired": 9, "gas exports": 9,
-        "feedgas": 12, "henry hub": 12, "haynesville": 10,
-        "bossier shale": 9, "waha": 9, "perryville": 8,
-        "gillis": 8, "methane": 6, "gas production": 10,
-        "gas supply": 9, "gas demand": 9, "pipeline capacity": 7,
-        "gas prices": 9, "gas-fired power": 10,
-        "gas transmission": 10, "algonquin gas transmission": 12,
-        "northwest pipeline": 10, "interstate pipeline": 10,
-        "texas eastern": 9, "trunkline": 9, "transco": 9,
-        "columbia gulf": 9, "gulf run": 10,
+    "Natural Gas": {
+        "natural gas": 13, "gas pipeline": 10, "gas storage": 12,
+        "gas-fired": 9, "henry hub": 13, "haynesville": 12,
+        "bossier shale": 10, "waha": 10, "perryville": 10, "gillis": 10,
+        "methane": 6, "gas production": 11, "gas supply": 11,
+        "gas demand": 11, "pipeline capacity": 7, "gas prices": 11,
+        "gas-fired power": 10, "gas transmission": 10,
+        "algonquin gas transmission": 12, "northwest pipeline": 10,
+        "interstate pipeline": 10, "texas eastern": 10, "trunkline": 10,
+        "transco": 10, "columbia gulf": 10, "gulf run": 10,
+        "gas basis": 12, "gas deal": 10, "gas deals": 10,
+        "gas pacts": 10, "gas project": 9, "gas fields": 9,
+        "gas field": 9, "shale gas": 10,
+    },
+    "LNG": {
+        "lng": 15, "liquefied natural gas": 17, "liquefied": 11,
+        "lng export": 14, "lng exports": 14, "lng terminal": 14,
+        "lng project": 12, "lng cargo": 14, "lng tanker": 12,
+        "lng feedgas": 14, "feedgas": 12, "regasification": 12,
+        "lng offtake": 14, "lng supply": 13, "lng contract": 14,
         "cheniere": 13, "venture global": 13, "nextdecade": 12,
-        "golden pass": 12, "plaquemines lng": 12, "sabine pass": 11,
-        "freeport lng": 11, "cameron lng": 11, "woodside energy": 10,
-        "commonwealth lng": 11, "sempra infrastructure": 10,
-        "lng tanker": 10, "lng feedgas": 13, "gas basis": 10,
-        "gas deal": 9, "gas deals": 9, "gas pacts": 9,
-        "gas project": 8, "gas fields": 8, "gas field": 8, "shale gas": 9,
+        "golden pass": 12, "plaquemines lng": 12,
+        "sabine pass": 12, "freeport lng": 12, "cameron lng": 12,
+        "commonwealth lng": 12, "sempra infrastructure": 10,
     },
     "Power & Electricity": {
         "electricity": 11, "power grid": 11, "grid reliability": 11,
@@ -72,6 +78,7 @@ BEATS = {
         "kinder morgan": 10, "energy transfer": 9,
         "williams companies": 9, "pipeline takeaway": 10,
     },
+    "Geopolitics": {},  # requires a specific, energy-linked global risk
 }
 
 def occurrences(text, phrase):
@@ -140,6 +147,10 @@ def evaluate(title, excerpt=""):
             if title_hit or excerpt_hit:
                 contributions[category] += weight * (3 if title_hit else 1)
                 evidence[category].append(phrase)
+    geopolitics = geopolitical_evidence(title)
+    if geopolitics:
+        contributions["Geopolitics"] = min(97, 72 + 6 * len(geopolitics))
+        evidence["Geopolitics"] = geopolitics
     if not contributions:
         return {"category":"Cross-sector", "relevance_score":0, "editorial_candidate":False, "evidence":[]}
     best = max(BEATS, key=lambda category: contributions[category])

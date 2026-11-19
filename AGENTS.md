@@ -20,7 +20,7 @@ Permitted work: public-source discovery, feed/API vetting, live collection, resi
 ## Acceptance priorities
 
 1. Resolve observed GDELT sampling gaps and improve seven-day operating reliability measurement.
-2. Grow distinct *relevant* news coverage for natural gas, LNG, oil, power, and infrastructure, not just raw article volume.
+2. Grow distinct relevant news in six pilot beats: Natural Gas, LNG, Power & Electricity, Oil & Energy, Infrastructure & Investment, and Geopolitics (global developments with an explicit energy-market link), not just raw links.
 3. Harden source failures, crawl freshness, API throttling and state consistency.
 4. Improve precision/recall with adversarial headline tests, source diversity, and transparent rankings.
 5. Keep user-visible reports honest about source limitations, date basis and rights.

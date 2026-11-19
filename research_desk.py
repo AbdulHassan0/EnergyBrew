@@ -23,8 +23,8 @@ TOP_PER_CATEGORY = 8
 MAX_COMPANY_RELEASES = 2
 ORIGIN_RANK_BOOST = {"official_rss": 75, "regulatory_notice": 40,
                      "global_discovery": 12, "company_announcement": 0}
-CATEGORY_ORDER = ("Natural Gas & LNG", "Power & Electricity",
-                  "Oil & Energy", "Infrastructure & Investment")
+CATEGORY_ORDER = ("Natural Gas", "LNG", "Power & Electricity",
+                  "Oil & Energy", "Infrastructure & Investment", "Geopolitics")
 ORIGIN_PRIORITY = {"official_rss": 4, "regulatory_notice": 3,
                    "company_announcement": 2, "global_discovery": 1}
 
@@ -79,6 +79,18 @@ def coverage_themes(title, primary):
                       "investment", "project", "grid reliability", "capital expenditure")
     if any(k in s for k in infrastructure) and "Infrastructure & Investment" not in themes:
         themes.append("Infrastructure & Investment")
+    if primary == "Geopolitics":
+        # A single geopolitical event can impact several commodity markets.
+        impacts = {
+            "Natural Gas": ("natural gas", "gas transit", "gas pipeline"),
+            "LNG": ("lng", "liquefied natural gas", "regasification"),
+            "Oil & Energy": ("oil", "crude", "refinery", "refineries", "tanker", "brent"),
+            "Power & Electricity": ("power grid", "electricity", "power plant", "solar panels"),
+        }
+        for beat, terms in impacts.items():
+            if any(re.search(r"(?<![a-z0-9])" + re.escape(k) + r"(?![a-z0-9])", s) for k in terms):
+                if beat not in themes:
+                    themes.append(beat)
     return themes
 
 def entry(record, kind, now):

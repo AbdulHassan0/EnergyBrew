@@ -42,23 +42,26 @@ class NewsroomHealthTests(unittest.TestCase):
         self.assertEqual(h["research_publisher_dates_verified"],0)
 
     def test_old_and_date_only_do_not_count(self):
-        state={"articles":[rss_record(1,"Natural Gas & LNG",date=NOW-timedelta(days=2)),
+        state={"articles":[rss_record(1,"Natural Gas",date=NOW-timedelta(days=2)),
                            rss_record(2,"Oil & Energy",precision="day")]}
         h=audit(state,rss_report(),now=NOW)
         self.assertEqual(h["timestamped_editorial_leads_24h"],0)
 
     def test_good_coverage_requires_multiple_beats(self):
-        state={"articles":[rss_record(i,REQUIRED_BEATS[i%4]) for i in range(12)]}
+        state={"articles":[rss_record(i,REQUIRED_BEATS[i%len(REQUIRED_BEATS)]) for i in range(12)]}
         h=audit(state,rss_report(),{"leads":[discovery_lead(1)]},broad_discovery(),now=NOW)
         self.assertEqual(h["status"],"operational_coverage_target_met")
         self.assertEqual(h["timestamped_editorial_leads_24h"],12)
         self.assertEqual(h["unobserved_beats"],[])
+        self.assertEqual(len(REQUIRED_BEATS),6)
+        self.assertEqual(h["geopolitical_energy_leads_24h"],2)
 
     def test_thin_category_coverage_flagged(self):
         state={"articles":[rss_record(i,"Power & Electricity") for i in range(12)]}
         h=audit(state,rss_report(),{"leads":[discovery_lead(1)]},broad_discovery(),now=NOW)
         self.assertEqual(h["status"],"degraded")
-        self.assertIn("Natural Gas & LNG",h["unobserved_beats"])
+        self.assertIn("Natural Gas",h["unobserved_beats"])
+        self.assertIn("Geopolitics",h["unobserved_beats"])
 
     def test_stale_rss_run_is_critical(self):
         h=audit({"articles":[rss_record(1,"Power & Electricity")]},
@@ -74,14 +77,14 @@ class NewsroomHealthTests(unittest.TestCase):
         self.assertEqual(h["research_first_seen_links_24h"],40)
 
     def test_discovery_degraded_not_misreported_healthy(self):
-        state={"articles":[rss_record(i,REQUIRED_BEATS[i%4]) for i in range(12)]}
+        state={"articles":[rss_record(i,REQUIRED_BEATS[i%len(REQUIRED_BEATS)]) for i in range(12)]}
         h=audit(state,rss_report(),{"leads":[discovery_lead(1)]},
                 {"run_utc":NOW.isoformat(),"status":"degraded"},now=NOW)
         self.assertEqual(h["status"],"degraded")
         self.assertTrue(any("rate limited" in w for w in h["warnings"]))
 
     def test_doc_cooldown_with_healthy_gal_backup_is_distinguished(self):
-        state={"articles":[rss_record(i,REQUIRED_BEATS[i%4]) for i in range(12)]}
+        state={"articles":[rss_record(i,REQUIRED_BEATS[i%len(REQUIRED_BEATS)]) for i in range(12)]}
         x=audit(state,rss_report(),{"leads":[discovery_lead(1)]},
                 {"status":"provider_cooldown","run_utc":NOW.isoformat()},
                 gal_report={"status":"ok","run_utc":NOW.isoformat(),
@@ -106,14 +109,14 @@ class NewsroomHealthTests(unittest.TestCase):
         self.assertEqual(h["research_first_seen_links_24h"],0)
 
     def test_one_connected_feed_is_critical_even_with_editorial_stories(self):
-        rss_state={"articles":[rss_record(i,REQUIRED_BEATS[i%4]) for i in range(12)]}
+        rss_state={"articles":[rss_record(i,REQUIRED_BEATS[i%len(REQUIRED_BEATS)]) for i in range(12)]}
         h=audit(rss_state,rss_report(connected=1),
                 {"leads":[discovery_lead(1)]},broad_discovery(),now=NOW)
         self.assertEqual(h["status"],"critical")
         self.assertTrue(any("below quorum" in msg for msg in h["critical"]))
 
     def test_press_release_claims_count_separately_from_verified_stories(self):
-        state={"articles":[rss_record(i,REQUIRED_BEATS[i%4]) for i in range(12)]}
+        state={"articles":[rss_record(i,REQUIRED_BEATS[i%len(REQUIRED_BEATS)]) for i in range(12)]}
         releases={"leads":[{"url":"https://example.com/company-announcement",
                             "feed_published_utc":NOW.isoformat(),
                             "published_time_verified":False,
@@ -127,7 +130,7 @@ class NewsroomHealthTests(unittest.TestCase):
         self.assertEqual(x["status"],"operational_coverage_target_met")
 
     def test_press_release_provider_failure_is_reported(self):
-        state={"articles":[rss_record(i,REQUIRED_BEATS[i%4]) for i in range(12)]}
+        state={"articles":[rss_record(i,REQUIRED_BEATS[i%len(REQUIRED_BEATS)]) for i in range(12)]}
         x=audit(state,rss_report(),{"leads":[discovery_lead(1)]},broad_discovery(),
                 release_state={"leads":[]},release_report={"status":"degraded"},now=NOW)
         self.assertEqual(x["status"],"degraded")
