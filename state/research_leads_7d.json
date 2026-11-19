@@ -1,5 +1,28 @@
 [
   {
+    "url": "https://www.bordermail.com.au/story/9394287/iran-hammers-us-drone-missile-sites-in-kuwait",
+    "title": "Iran hammers US drone, missile sites in Kuwait",
+    "domain": "www.bordermail.com.au",
+    "gdelt_first_seen_utc": "2026-11-19T02:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:missile",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
     "url": "https://www.thenationalnews.com/business/energy/2026/11/18/bahrains-war-hit-sitra-refinery-weeks-away-from-full-capacity-bapco-energies-ceo-says",
     "title": "Bahrain's war-hit Sitra refinery weeks away from full capacity, Bapco Energies CEO says | The National",
     "domain": "www.thenationalnews.com",
@@ -42,6 +65,27 @@
       "energy_market_hook:oil",
       "geopolitical_event:attacks",
       "world_context:russia"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "http://www.middleeaststar.com/news/279440849/is-another-us-iran-war-looming",
+    "title": "Is another US - Iran war looming ?",
+    "domain": "www.middleeaststar.com",
+    "gdelt_first_seen_utc": "2026-11-18T17:30:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "energy_investment",
+    "topics": [
+      "energy_investment"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:war",
+      "world_context:iran/united states"
     ],
     "status": "discovery_only_requires_publisher_verification"
   },
@@ -157,7 +201,10 @@
     "relevance_evidence": [
       "lng"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://baodautu.vn/thanh-pho-hai-phong-de-xuat-them-2-du-an-dien-khi-lng-moi-d746022.html",
@@ -178,7 +225,10 @@
     "relevance_evidence": [
       "lng"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://az.trend.az/other/world/4248094.html",
@@ -569,7 +619,10 @@
     "relevance_evidence": [
       "gas prices"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://punchng.com/contractors-seek-representation-on-ogun-electricity-board",
@@ -1075,7 +1128,10 @@
     "relevance_evidence": [
       "data center"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.wfmz.com/news/area/lehighvalley/northampton-county/slate-belt/2-separate-data-center-proposals-to-be-decided-on-by-township-supervisors-during-upper-mt/article_85057822-1f7a-4e22-a6d9-c7d853891ec5.html",
@@ -1096,7 +1152,10 @@
     "relevance_evidence": [
       "data center"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.wfmz.com/news/area/lehighvalley/lehigh-county/bethlehem-area/plans-for-second-two-story-data-center-in-bethlehem-go-under-the-microscope/article_44b9d4d9-3382-4fe3-bc74-7fbff38e8268.html",
@@ -1117,7 +1176,10 @@
     "relevance_evidence": [
       "data center"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.uatrav.com/news/arkansas-issue-3-fails-data-center-debates-persist/article_31ac96f8-e632-436c-add0-7bf8f2a21953.html",
@@ -1138,7 +1200,10 @@
     "relevance_evidence": [
       "data center"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.wfmj.com/news/local-news/mcdonald-data-center-company-answering-community-questions/article_17a6fed7-f226-4e02-a2d4-006a280b4fb6.html",
@@ -2460,7 +2525,10 @@
     "relevance_evidence": [
       "petroleum"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.foundry-planet.com/d/offshore-wind-could-create-10800-new-jobs-in-uk-casting-and-forging-industry-by-2050",
@@ -2811,23 +2879,6 @@
     "url": "https://fas.org/publication/steal-this-to-make-government-work-better",
     "title": "How to Government Better : Free Ideas You Should Steal",
     "domain": "fas.org",
-    "gdelt_first_seen_utc": "2026-11-18T17:30:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "energy_investment",
-    "topics": [
-      "energy_investment"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification"
-  },
-  {
-    "url": "http://www.middleeaststar.com/news/279440849/is-another-us-iran-war-looming",
-    "title": "Is another US - Iran war looming ?",
-    "domain": "www.middleeaststar.com",
     "gdelt_first_seen_utc": "2026-11-18T17:30:00+00:00",
     "publisher_published_utc": null,
     "published_time_verified": false,

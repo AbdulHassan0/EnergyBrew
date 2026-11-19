@@ -1,37 +1,37 @@
 {
-  "generated_utc": "2026-11-19T02:39:18.076516+00:00",
+  "generated_utc": "2026-11-19T02:42:11.488249+00:00",
   "status": "research_only_not_approved",
-  "unique_relevant_urls_7d": 176,
+  "unique_relevant_urls_7d": 179,
   "selected_research_links": 32,
-  "unique_domains_in_selection": 17,
+  "unique_domains_in_selection": 18,
   "queue_counts": {
     "system_operator_primary_24h": 1,
-    "specialist_publisher_24h": 21,
+    "specialist_publisher_24h": 22,
     "older_official_context": 10,
     "timestamped_official": 2,
     "regulatory_date_only": 4,
-    "discovery_unverified": 123,
+    "discovery_unverified": 125,
     "company_release_unverified": 15
   },
   "selected_category_counts": {
     "Natural Gas": 8,
     "LNG": 8,
     "Power & Electricity": 8,
-    "Oil & Energy": 3,
+    "Oil & Energy": 1,
     "Infrastructure & Investment": 0,
-    "Geopolitics": 5
+    "Geopolitics": 7
   },
   "selected_topic_coverage_counts": {
     "Natural Gas": 8,
     "LNG": 8,
     "Power & Electricity": 8,
-    "Oil & Energy": 6,
+    "Oil & Energy": 4,
     "Infrastructure & Investment": 10,
-    "Geopolitics": 5
+    "Geopolitics": 7
   },
   "missing_categories": [],
   "publisher_timestamped_official_24h": 2,
-  "publisher_timestamped_specialist_24h": 21,
+  "publisher_timestamped_specialist_24h": 22,
   "system_operator_primary_24h": 1,
   "likely_same_event_links_suppressed": 2,
   "discovery_publisher_dates_verified": 0,
@@ -203,8 +203,8 @@
       "rank": 145
     },
     {
-      "title": "ADNOC Ship Attacked in Hormuz as Maritime Security Risks Rise",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/ADNOC-Ship-Attacked-in-Hormuz-as-Maritime-Security-Risks-Rise.html",
+      "title": "U.S.-Iran Conflict Flares Again as Gulf Nations Brace for Attacks",
+      "url": "https://oilprice.com/Geopolitics/Middle-East/US-Iran-Conflict-Flares-Again-as-Gulf-Nations-Brace-for-Attacks.html",
       "domain": "oilprice.com",
       "source": "OilPrice.com News",
       "source_class": "specialist_publisher",
@@ -214,13 +214,13 @@
       ],
       "relevance_score": 90,
       "relevance_evidence": [
-        "energy_market_hook:hormuz",
-        "geopolitical_event:attacked",
-        "world_context:hormuz"
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:attacks",
+        "world_context:iran/united states"
       ],
       "origin": "official_rss",
       "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-18T10:00:00+00:00",
+      "observed_time_utc": "2026-11-18T14:30:00+00:00",
       "publisher_time_verified": true,
       "date_confidence": "publisher_rss_timestamp",
       "within_24h_on_own_time_basis": true,
@@ -491,6 +491,35 @@
       "rank": 106
     },
     {
+      "title": "Iran hammers US drone, missile sites in Kuwait",
+      "url": "https://www.bordermail.com.au/story/9394287/iran-hammers-us-drone-missile-sites-in-kuwait",
+      "domain": "www.bordermail.com.au",
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:missile",
+        "world_context:iran/united states"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-19T02:31:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
+    },
+    {
       "title": "Bahrain's war-hit Sitra refinery weeks away from full capacity, Bapco Energies CEO says | The National",
       "url": "https://www.thenationalnews.com/business/energy/2026/11/18/bahrains-war-hit-sitra-refinery-weeks-away-from-full-capacity-bapco-energies-ceo-says",
       "domain": "www.thenationalnews.com",
@@ -536,6 +565,35 @@
         "energy_market_hook:oil",
         "geopolitical_event:attacks",
         "world_context:russia"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "discovery_index_first_seen_only",
+      "observed_time_utc": "2026-11-18T17:30:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
+    },
+    {
+      "title": "Is another US - Iran war looming ?",
+      "url": "http://www.middleeaststar.com/news/279440849/is-another-us-iran-war-looming",
+      "domain": "www.middleeaststar.com",
+      "source": "GDELT DOC 2.0",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:war",
+        "world_context:iran/united states"
       ],
       "origin": "global_discovery",
       "time_basis": "discovery_index_first_seen_only",
@@ -903,60 +961,6 @@
       "independent_corroboration_verified": false,
       "queue": "discovery_unverified",
       "rank": 51
-    },
-    {
-      "title": "Crude Oil Plummeting As Inventories Increase More Than Expected",
-      "url": "https://www.rttnews.com/story.aspx?Id=3716011",
-      "domain": "www.rttnews.com",
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Oil & Energy",
-      "coverage_themes": [
-        "Oil & Energy"
-      ],
-      "relevance_score": 36,
-      "relevance_evidence": [
-        "crude oil"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-18T20:47:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 48
-    },
-    {
-      "title": "ExxonMobil (XOM) Just Achieved Something 95% of S&P 500 (GSPC) Members Haven't Done | The Motley Fool",
-      "url": "https://www.fool.com/investing/2026/11/18/exxonmobil-xom-achieved-something-95-of-sp-50-gspc?source=iedfolrf0000001",
-      "domain": "www.fool.com",
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Oil & Energy",
-      "coverage_themes": [
-        "Oil & Energy"
-      ],
-      "relevance_score": 33,
-      "relevance_evidence": [
-        "exxonmobil"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-18T21:31:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 45
     }
   ],
   "definitions": {

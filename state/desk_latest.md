@@ -2,11 +2,11 @@
 
 **Research links only. Not fact-checked, approved, or ready for publication.**
 
-Generated (UTC): 2026-11-19T02:39:18.076516+00:00
-Distinct relevant URLs in retained data: **176**
+Generated (UTC): 2026-11-19T02:42:11.488249+00:00
+Distinct relevant URLs in retained data: **179**
 Selected diverse research leads: **32**
 Publisher-timestamped official leads within 24h: **2**
-Specialist-publisher timestamped links within 24h: **21**
+Specialist-publisher timestamped links within 24h: **22**
 Grid-operator original timestamped links within 24h: **1**
 Likely duplicate links suppressed in the selection: **2**
 Discovery publisher dates verified: **0**
@@ -24,8 +24,8 @@ Discovery publisher dates verified: **0**
    - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-18T22:00:00+00:00). Editorial status: **unapproved**.
 5. **[Iran War Set to Hike 2027 UK Energy Bills to Four-Year High](https://oilprice.com/Latest-Energy-News/World-News/Iran-War-Set-to-Hike-2027-UK-Energy-Bills-to-Four-Year-High.html)** — Geopolitics | official_rss | score 90
    - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-18T16:30:00+00:00). Editorial status: **unapproved**.
-6. **[ADNOC Ship Attacked in Hormuz as Maritime Security Risks Rise](https://oilprice.com/Latest-Energy-News/World-News/ADNOC-Ship-Attacked-in-Hormuz-as-Maritime-Security-Risks-Rise.html)** — Geopolitics | official_rss | score 90
-   - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-18T10:00:00+00:00). Editorial status: **unapproved**.
+6. **[U.S.-Iran Conflict Flares Again as Gulf Nations Brace for Attacks](https://oilprice.com/Geopolitics/Middle-East/US-Iran-Conflict-Flares-Again-as-Gulf-Nations-Brace-for-Attacks.html)** — Geopolitics | official_rss | score 90
+   - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-18T14:30:00+00:00). Editorial status: **unapproved**.
 7. **[How National Grid, Eversource are using VPPs to solve local-level constraints](https://www.utilitydive.com/news/national-grid-eversource-vpp-demand-response/875039)** — Power & Electricity | official_rss | score 81
    - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-18T15:31:06+00:00). Editorial status: **unapproved**.
 8. **[Grid operators file closely watched large load interconnection reforms at FERC](https://www.utilitydive.com/news/pjm-rto-large-load-interconnection-ferc-show-cause/874872)** — Power & Electricity | official_rss | score 100
@@ -44,40 +44,40 @@ Discovery publisher dates verified: **0**
    - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-18T15:57:17+00:00). Editorial status: **unapproved**.
 15. **[Algonquin Gas Transmission, LLC; Notice of Application and Establishing Intervention Deadline](https://www.federalregister.gov/documents/2026/11/18/2026-23446/algonquin-gas-transmission-llc-notice-of-application-and-establishing-intervention-deadline)** — Natural Gas | regulatory_notice | score 66
    - Timestamp basis: official_publication_date_only (2026-11-18T05:00:00+00:00). Editorial status: **unapproved**.
-16. **[Bahrain's war-hit Sitra refinery weeks away from full capacity, Bapco Energies CEO says / The National](https://www.thenationalnews.com/business/energy/2026/11/18/bahrains-war-hit-sitra-refinery-weeks-away-from-full-capacity-bapco-energies-ceo-says)** — Geopolitics | global_discovery | score 90
-   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-18T18:32:00+00:00). Editorial status: **unapproved**.
-17. **[Drone attacks nearly halve Russia November oil refining , sources say](https://www.jpost.com/international/internationalrussia-ukraine-war/article-915337)** — Geopolitics | global_discovery | score 90
-   - Timestamp basis: discovery_index_first_seen_only (2026-11-18T17:30:00+00:00). Editorial status: **unapproved**.
-18. **[Woodside and Trafigura sign off on decade-long LNG deal](https://www.offshore-energy.biz/2026/11/18/woodside-and-trafigura-sign-off-on-decade-long-lng-deal)** — LNG | official_rss | score 45
-   - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-18T09:16:02+00:00). Editorial status: **unapproved**.
-19. **[Energy Secretary Acts to Protect Mid-Atlantic Grid](https://www.energy.gov/articles/energy-secretary-acts-protect-mid-atlantic-grid-0)** — Power & Electricity | official_rss | score 24
-   - Timestamp basis: publisher_feed_publication_time (2026-11-18T18:06:31+00:00). Editorial status: **unapproved**.
-20. **[Orlen spreads its wings across Central and Eastern Europe with new gas pacts](https://www.offshore-energy.biz/2026/11/18/orlen-spreads-its-wings-across-central-and-eastern-europe-with-new-gas-pacts)** — Natural Gas | official_rss | score 30
-   - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-18T15:07:53+00:00). Editorial status: **unapproved**.
-21. **[PLSV under construction to work for Petrobras from end of 2028](https://www.offshore-energy.biz/2026/11/18/plsv-under-construction-to-work-for-petrobras-from-end-of-2028)** — Oil & Energy | official_rss | score 27
-   - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-18T09:26:31+00:00). Editorial status: **unapproved**.
-22. **[Eastern Shore Natural Gas Company; Notice of Scoping Period Requesting Comments on Environmental Issues for the Proposed Delmar Regional Enhancement Project](https://www.federalregister.gov/documents/2026/11/17/2026-23361/eastern-shore-natural-gas-company-notice-of-scoping-period-requesting-comments-on-environmental)** — Natural Gas | regulatory_notice | score 39
-   - Timestamp basis: official_publication_date_only (2026-11-17T05:00:00+00:00). Editorial status: **unapproved**.
-23. **[Northwest Pipeline, LLC; Notice of Scoping Period Requesting Comments on Environmental Issues for the Planned Silver Spur Project and Notice of Public Scoping Sessions](https://www.federalregister.gov/documents/2026/11/18/2026-23441/northwest-pipeline-llc-notice-of-scoping-period-requesting-comments-on-environmental-issues-for-the)** — Natural Gas | regulatory_notice | score 30
-   - Timestamp basis: official_publication_date_only (2026-11-18T05:00:00+00:00). Editorial status: **unapproved**.
-24. **[Thành phố Hải Phòng đề xuất thêm 2 dự án điện khí LNG mới](https://baodautu.vn/thanh-pho-hai-phong-de-xuat-them-2-du-an-dien-khi-lng-moi-d746022.html)** — LNG | global_discovery | score 45
+16. **[Iran hammers US drone, missile sites in Kuwait](https://www.bordermail.com.au/story/9394287/iran-hammers-us-drone-missile-sites-in-kuwait)** — Geopolitics | global_discovery | score 90
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T02:31:00+00:00). Editorial status: **unapproved**.
-25. **[Çexiya ABŞ-dən 15-20 il müddətinə LNG tədarükü barədə razılaşma əldə edib](https://az.trend.az/other/world/4248094.html)** — LNG | global_discovery | score 45
+17. **[Bahrain's war-hit Sitra refinery weeks away from full capacity, Bapco Energies CEO says / The National](https://www.thenationalnews.com/business/energy/2026/11/18/bahrains-war-hit-sitra-refinery-weeks-away-from-full-capacity-bapco-energies-ceo-says)** — Geopolitics | global_discovery | score 90
+   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-18T18:32:00+00:00). Editorial status: **unapproved**.
+18. **[Drone attacks nearly halve Russia November oil refining , sources say](https://www.jpost.com/international/internationalrussia-ukraine-war/article-915337)** — Geopolitics | global_discovery | score 90
+   - Timestamp basis: discovery_index_first_seen_only (2026-11-18T17:30:00+00:00). Editorial status: **unapproved**.
+19. **[Is another US - Iran war looming ?](http://www.middleeaststar.com/news/279440849/is-another-us-iran-war-looming)** — Geopolitics | global_discovery | score 90
+   - Timestamp basis: discovery_index_first_seen_only (2026-11-18T17:30:00+00:00). Editorial status: **unapproved**.
+20. **[Woodside and Trafigura sign off on decade-long LNG deal](https://www.offshore-energy.biz/2026/11/18/woodside-and-trafigura-sign-off-on-decade-long-lng-deal)** — LNG | official_rss | score 45
+   - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-18T09:16:02+00:00). Editorial status: **unapproved**.
+21. **[Energy Secretary Acts to Protect Mid-Atlantic Grid](https://www.energy.gov/articles/energy-secretary-acts-protect-mid-atlantic-grid-0)** — Power & Electricity | official_rss | score 24
+   - Timestamp basis: publisher_feed_publication_time (2026-11-18T18:06:31+00:00). Editorial status: **unapproved**.
+22. **[Orlen spreads its wings across Central and Eastern Europe with new gas pacts](https://www.offshore-energy.biz/2026/11/18/orlen-spreads-its-wings-across-central-and-eastern-europe-with-new-gas-pacts)** — Natural Gas | official_rss | score 30
+   - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-18T15:07:53+00:00). Editorial status: **unapproved**.
+23. **[PLSV under construction to work for Petrobras from end of 2028](https://www.offshore-energy.biz/2026/11/18/plsv-under-construction-to-work-for-petrobras-from-end-of-2028)** — Oil & Energy | official_rss | score 27
+   - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-18T09:26:31+00:00). Editorial status: **unapproved**.
+24. **[Eastern Shore Natural Gas Company; Notice of Scoping Period Requesting Comments on Environmental Issues for the Proposed Delmar Regional Enhancement Project](https://www.federalregister.gov/documents/2026/11/17/2026-23361/eastern-shore-natural-gas-company-notice-of-scoping-period-requesting-comments-on-environmental)** — Natural Gas | regulatory_notice | score 39
+   - Timestamp basis: official_publication_date_only (2026-11-17T05:00:00+00:00). Editorial status: **unapproved**.
+25. **[Northwest Pipeline, LLC; Notice of Scoping Period Requesting Comments on Environmental Issues for the Planned Silver Spur Project and Notice of Public Scoping Sessions](https://www.federalregister.gov/documents/2026/11/18/2026-23441/northwest-pipeline-llc-notice-of-scoping-period-requesting-comments-on-environmental-issues-for-the)** — Natural Gas | regulatory_notice | score 30
+   - Timestamp basis: official_publication_date_only (2026-11-18T05:00:00+00:00). Editorial status: **unapproved**.
+26. **[Thành phố Hải Phòng đề xuất thêm 2 dự án điện khí LNG mới](https://baodautu.vn/thanh-pho-hai-phong-de-xuat-them-2-du-an-dien-khi-lng-moi-d746022.html)** — LNG | global_discovery | score 45
+   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T02:31:00+00:00). Editorial status: **unapproved**.
+27. **[Çexiya ABŞ-dən 15-20 il müddətinə LNG tədarükü barədə razılaşma əldə edib](https://az.trend.az/other/world/4248094.html)** — LNG | global_discovery | score 45
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-18T21:31:00+00:00). Editorial status: **unapproved**.
-26. **[LNG News, Stories and Headlines on the Financial Post](https://financialpost.com/category/energy/lng)** — LNG | global_discovery | score 45
+28. **[LNG News, Stories and Headlines on the Financial Post](https://financialpost.com/category/energy/lng)** — LNG | global_discovery | score 45
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-18T21:17:00+00:00). Editorial status: **unapproved**.
-27. **[Golar LNG: 3 Key Takeaways for Long-Term Investors / The Motley Fool](https://www.fool.com/earnings/takeaways/2026/11/18/golar-lng-3-key-takeaways-for-long-term-investors?source=iedfolrf0000001)** — LNG | global_discovery | score 45
+29. **[Golar LNG: 3 Key Takeaways for Long-Term Investors / The Motley Fool](https://www.fool.com/earnings/takeaways/2026/11/18/golar-lng-3-key-takeaways-for-long-term-investors?source=iedfolrf0000001)** — LNG | global_discovery | score 45
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-18T20:46:00+00:00). Editorial status: **unapproved**.
-28. **[GTT Energy receives an order from Hudong-Zhonghua Shipbuilding for the tank design of five new LNG Carriers](https://www.hellenicshippingnews.com/gtt-energy-receives-an-order-from-hudong-zhonghua-shipbuilding-for-the-tank-design-of-five-new-lng-carriers)** — LNG | global_discovery | score 45
+30. **[GTT Energy receives an order from Hudong-Zhonghua Shipbuilding for the tank design of five new LNG Carriers](https://www.hellenicshippingnews.com/gtt-energy-receives-an-order-from-hudong-zhonghua-shipbuilding-for-the-tank-design-of-five-new-lng-carriers)** — LNG | global_discovery | score 45
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-18T18:47:00+00:00). Editorial status: **unapproved**.
-29. **[Natural Gas Inventories Surge Above Average as Injection Season Ends](https://smallbiztrends.com/natural-gas-inventories-surge-above-average-as-injection-season-ends)** — Natural Gas | global_discovery | score 39
+31. **[Natural Gas Inventories Surge Above Average as Injection Season Ends](https://smallbiztrends.com/natural-gas-inventories-surge-above-average-as-injection-season-ends)** — Natural Gas | global_discovery | score 39
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-18T22:46:00+00:00). Editorial status: **unapproved**.
-30. **[DTE Energy will not ask for a natural gas rate hike until late 2027](https://www.abc12.com/news/state/dte-energy-will-not-ask-for-a-natural-gas-rate-hike-until-late-2027/article_ce1f3f5f-2a6c-4fdd-be51-1af5b1477697.html)** — Natural Gas | global_discovery | score 39
+32. **[DTE Energy will not ask for a natural gas rate hike until late 2027](https://www.abc12.com/news/state/dte-energy-will-not-ask-for-a-natural-gas-rate-hike-until-late-2027/article_ce1f3f5f-2a6c-4fdd-be51-1af5b1477697.html)** — Natural Gas | global_discovery | score 39
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-18T18:17:00+00:00). Editorial status: **unapproved**.
-31. **[Crude Oil Plummeting As Inventories Increase More Than Expected](https://www.rttnews.com/story.aspx?Id=3716011)** — Oil & Energy | global_discovery | score 36
-   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-18T20:47:00+00:00). Editorial status: **unapproved**.
-32. **[ExxonMobil (XOM) Just Achieved Something 95% of S&P 500 (GSPC) Members Haven't Done / The Motley Fool](https://www.fool.com/investing/2026/11/18/exxonmobil-xom-achieved-something-95-of-sp-50-gspc?source=iedfolrf0000001)** — Oil & Energy | global_discovery | score 33
-   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-18T21:31:00+00:00). Editorial status: **unapproved**.
 
 ## Coverage gaps
 

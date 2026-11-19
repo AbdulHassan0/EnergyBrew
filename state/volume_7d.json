@@ -1,5 +1,5 @@
 {
-  "run_utc": "2026-11-19T02:38:35.776217+00:00",
+  "run_utc": "2026-11-19T02:42:01.014047+00:00",
   "days": [
     {
       "publication_date_utc": "2026-11-16",
@@ -16,7 +16,7 @@
     {
       "publication_date_utc": "2026-11-18",
       "source_links": 35,
-      "editorial_candidates": 24,
+      "editorial_candidates": 25,
       "regulatory_date_only_leads": 8
     },
     {
