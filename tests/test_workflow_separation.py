@@ -51,6 +51,13 @@ class WorkflowSeparationTests(unittest.TestCase):
             self.assertNotIn("newsletter_delivery.py",s)
             self.assertIn("public_collector_guard.py",s)
 
+    def test_final_morning_preparation_never_polls_after_cutoff(self):
+        s=workflow("morning-news-readiness.yml")
+        self.assertIn("python morning_readiness.py --rss",s)
+        self.assertNotIn("python collector.py --",s)
+        self.assertNotIn("python gal.py --",s)
+        self.assertIn("saved source state only",s)
+
     def test_no_collection_guard_is_removed_to_silence_notifications(self):
         s=workflow("live-collector.yml")
         self.assertIn("public_collector_guard.py --sanitize-legacy",s)

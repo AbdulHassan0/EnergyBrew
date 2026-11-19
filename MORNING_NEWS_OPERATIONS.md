@@ -8,7 +8,13 @@ US daylight saving time. This is NOT an assumption that all future subscriber
 deliveries should use Central Time.
 
 - **05:45 local:** monitor overnight sampling and generate an **unfrozen preflight** with `python morning_readiness.py --preflight`; this is the editor’s early review queue, not the final cutoff-complete candidate set.
-- **06:20–06:30 local:** targeted final RSS/GDELT collection on a persistent host.
+- **06:10 local (free GitHub mode):** a best-effort publisher RSS scan
+  is scheduled with paired CST/CDT UTC entries and a strict actual
+  06:05–06:25 local gate. The scan records its completion timestamp;
+  if it finishes after 06:30, its output does NOT count as cutoff-ready.
+  GitHub may delay or omit cron entirely. GDELT coverage is independent.
+- **06:20–06:30 local (continuously hosted mode):** targeted final
+  RSS/GDELT collection on a persistent local or hosted worker.
 - **06:30 local:** hard research cutoff: no post-cutoff publisher timestamps,
   GDELT first-seen metadata, or press-release feed timestamps in this edition.
   Date-only official notices from the edition date are excluded because their
@@ -23,7 +29,9 @@ deliveries should use Central Time.
   `--prior-research`, exact recurring URLs and conservative likely same-event
   links are flagged. They are never automatically removed because yesterday's
   research candidate might not actually have been sent.
-- **06:30–06:45 local:** validate source freshness, evaluate 6-hour GDELT
+- **06:30–06:45 local:** use previously collected state only; do not
+  fetch publisher feeds postcutoff. Validate source freshness, evaluate
+  6-hour GDELT
   sampled-window coverage, rank/deduplicate the six subject categories, and
   produce an immutable **research-only** candidate JSON snapshot.
 - **06:45–06:55 local:** source checks, human editorial verification, permissions
