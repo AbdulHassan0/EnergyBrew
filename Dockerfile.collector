@@ -1,0 +1,9 @@
+FROM python:3.12-slim
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
+WORKDIR /app
+COPY *.py ./
+RUN useradd --uid 10001 --create-home energybrew
+USER energybrew
+VOLUME ["/data"]
+ENTRYPOINT ["python", "collector_daemon.py"]
+CMD ["--state", "/data/discovery.json", "--output", "/data/output", "--interval-seconds", "300"]
