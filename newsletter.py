@@ -70,11 +70,14 @@ def safe_text(raw: object, max_chars: int = 300) -> str:
     return " ".join(str(raw or "").split())[:max_chars]
 
 
-def research_queue(desk: dict, *, edition_date: str | None = None, limit: int = 10,
+def research_queue(desk: dict, *, edition_date: str | None = None, limit: int = MAX_ARTICLES,
                    now: datetime | None = None) -> dict:
     """Make private editor work items with *empty* summary fields."""
     if not isinstance(desk, dict) or not isinstance(desk.get("stories"), list):
         raise EditorialError("Collector desk does not contain a stories array")
+    if not isinstance(limit, int) or isinstance(limit, bool) or limit < 1:
+        raise EditorialError("Research queue story limit must be a positive integer")
+    limit = min(limit, MAX_ARTICLES)  # Never draft more than the approval validator can accept.
     now = now or datetime.now(timezone.utc)
     snapshot = parse_utc(desk.get("generated_utc"))
     if snapshot is None or now - snapshot > timedelta(hours=24) or snapshot - now > timedelta(minutes=5):

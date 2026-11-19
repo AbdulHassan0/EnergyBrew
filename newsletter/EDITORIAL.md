@@ -73,3 +73,11 @@ Publication rights must also be confirmed for any source-linked commercial use, 
 ## 6. Operational troubleshooting
 
 If the private queue has too few high-quality current articles, do not invent them: improve discovery or wait for verified material. If there is no approved issue, the public archive should say so rather than show a fake edition. If email credentials are not configured, the manual test fails safely without attempting delivery.
+
+## MVP eight-story draft invariant
+
+Research queues default to **no more than eight headlines** even when the
+underlying six-category desk carries 32 links; this matches the publication
+gate's 4–8-story limit. Unverified story summaries and publisher times remain
+blank until a human editor checks originals and approves. Reducing to eight
+does **not** make a draft sendable, and no delivery is implied.

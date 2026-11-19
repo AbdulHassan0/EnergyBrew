@@ -88,6 +88,24 @@ class NewsletterTests(unittest.TestCase):
         queue = research_queue(desk, now=datetime(2026,11,19,13,0,tzinfo=timezone.utc))
         self.assertEqual(queue["stories"], [])
 
+    def test_default_draft_respects_maximum_eight_story_approval_rule(self):
+        desk={"generated_utc":"2026-11-19T12:40:00Z","stories":[
+            {"title":f"Natural gas pipeline contract expansion announcement {i}",
+             "url":f"https://example.org/natural-gas/{i}",
+             "category":"Natural Gas","source":"Energy publisher"} for i in range(15)]}
+        queue=research_queue(desk,now=datetime(2026,11,19,13,0,tzinfo=timezone.utc))
+        self.assertEqual(len(queue["stories"]),8)
+        queue2=research_queue(desk,limit=99,
+                              now=datetime(2026,11,19,13,0,tzinfo=timezone.utc))
+        self.assertEqual(len(queue2["stories"]),8)
+
+    def test_invalid_draft_story_limit_is_refused(self):
+        desk={"generated_utc":"2026-11-19T12:40:00Z","stories":[]}
+        for limit in (0,-1,True,"8"):
+            with self.subTest(limit=limit),self.assertRaises(EditorialError):
+                research_queue(desk,limit=limit,
+                               now=datetime(2026,11,19,13,0,tzinfo=timezone.utc))
+
     def test_reject_stale_snapshot(self):
         with self.assertRaises(EditorialError):
             research_queue({"generated_utc": "2026-11-10T00:00:00Z", "stories": []},
