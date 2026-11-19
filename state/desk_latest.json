@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-11-19T02:47:44.753350+00:00",
+  "generated_utc": "2026-11-19T03:45:40.770105+00:00",
   "status": "research_only_not_approved",
-  "unique_relevant_urls_7d": 179,
+  "unique_relevant_urls_7d": 197,
   "selected_research_links": 32,
   "unique_domains_in_selection": 18,
   "queue_counts": {
@@ -10,24 +10,24 @@
     "older_official_context": 10,
     "timestamped_official": 2,
     "regulatory_date_only": 4,
-    "discovery_unverified": 125,
+    "discovery_unverified": 143,
     "company_release_unverified": 15
   },
   "selected_category_counts": {
-    "Natural Gas": 8,
-    "LNG": 8,
+    "Natural Gas": 6,
+    "LNG": 7,
     "Power & Electricity": 8,
     "Oil & Energy": 2,
     "Infrastructure & Investment": 1,
-    "Geopolitics": 5
+    "Geopolitics": 8
   },
   "selected_topic_coverage_counts": {
-    "Natural Gas": 8,
-    "LNG": 8,
+    "Natural Gas": 6,
+    "LNG": 7,
     "Power & Electricity": 8,
-    "Oil & Energy": 5,
+    "Oil & Energy": 6,
     "Infrastructure & Investment": 11,
-    "Geopolitics": 5
+    "Geopolitics": 8
   },
   "missing_categories": [],
   "publisher_timestamped_official_24h": 2,
@@ -35,7 +35,7 @@
   "system_operator_primary_24h": 1,
   "likely_same_event_links_suppressed": 2,
   "discovery_publisher_dates_verified": 0,
-  "promotional_or_language_review_count": 1,
+  "promotional_or_language_review_count": 4,
   "stories": [
     {
       "title": "PJM Board Approves Transmission Project Changes to Support Grid Reliability",
@@ -603,6 +603,38 @@
       "rank": 91
     },
     {
+      "title": "Oil Price Today (November 19): Brent crude rises to $93 as Trump likely weighs fresh Iran attacks. What are experts saying?",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-november-19-brent-crude-rises-to-93-as-trump-likely-weighs-fresh-iran-attacks-what-are-experts-saying/articleshow/135975416.cms",
+      "domain": "economictimes.indiatimes.com",
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics",
+        "Oil & Energy"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:oil",
+        "geopolitical_event:attacks",
+        "world_context:iran"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-19T02:46:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [
+        "speculative_geopolitical_headline"
+      ],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 87
+    },
+    {
       "title": "Orlen spreads its wings across Central and Eastern Europe with new gas pacts",
       "url": "https://www.offshore-energy.biz/2026/11/18/orlen-spreads-its-wings-across-central-and-eastern-europe-with-new-gas-pacts",
       "domain": "www.offshore-energy.biz",
@@ -714,9 +746,9 @@
       "rank": 70
     },
     {
-      "title": "Iran hammers US drone, missile sites in Kuwait",
-      "url": "https://www.bordermail.com.au/story/9394287/iran-hammers-us-drone-missile-sites-in-kuwait",
-      "domain": "www.bordermail.com.au",
+      "title": "Iran’s army chief vows ‘more crushing’ response if US attacks again — One News Page",
+      "url": "https://www.onenewspage.com/story/irans-army-chief-vows-more-crushing-response-if-us-attacks-again-6928c75f",
+      "domain": "www.onenewspage.com",
       "source": "GDELT GAL RSS",
       "source_class": "unclassified",
       "category": "Geopolitics",
@@ -726,12 +758,74 @@
       "relevance_score": 68,
       "relevance_evidence": [
         "energy_market_exposure:inferred_high_risk_region",
-        "geopolitical_event:missile",
+        "geopolitical_event:attacks",
         "world_context:iran/united states"
       ],
       "origin": "global_discovery",
       "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-19T02:31:00+00:00",
+      "observed_time_utc": "2026-11-19T03:31:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [
+        "energy_market_exposure_inferred"
+      ],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 62
+    },
+    {
+      "title": "\"We don't need any help\": Trump claims US has defeated Iran's military, rules out seeking assistance from China, Russia",
+      "url": "http://www.middleeaststar.com/news/279442005/we-dont-need-any-help-trump-claims-us-has-defeated-iran-military-rules-out-seeking-assistance-from-china-russia",
+      "domain": "www.middleeaststar.com",
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics"
+      ],
+      "relevance_score": 68,
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:military",
+        "world_context:iran/united states"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-19T02:46:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [
+        "energy_market_exposure_inferred"
+      ],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 62
+    },
+    {
+      "title": "US Iran War Live Updates: Saudi Arabia issues potential threat alert in Riyadh - The Times of India",
+      "url": "https://timesofindia.indiatimes.com/world/middle-east/us-iran-war-live-updates-donald-trump-us-drone-attack-irgc-qeshm-island-middle-east-conflict-strait-of-hormuz-latest-news/liveblog/135969571.cms",
+      "domain": "timesofindia.indiatimes.com",
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics"
+      ],
+      "relevance_score": 68,
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:war",
+        "world_context:iran/united states"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-19T02:46:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
@@ -851,87 +945,6 @@
       "independent_corroboration_verified": false,
       "queue": "discovery_unverified",
       "rank": 57
-    },
-    {
-      "title": "GTT Energy receives an order from Hudong-Zhonghua Shipbuilding for the tank design of five new LNG Carriers",
-      "url": "https://www.hellenicshippingnews.com/gtt-energy-receives-an-order-from-hudong-zhonghua-shipbuilding-for-the-tank-design-of-five-new-lng-carriers",
-      "domain": "www.hellenicshippingnews.com",
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "LNG",
-      "coverage_themes": [
-        "LNG"
-      ],
-      "relevance_score": 45,
-      "relevance_evidence": [
-        "lng"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-18T18:47:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 57
-    },
-    {
-      "title": "Natural Gas Inventories Surge Above Average as Injection Season Ends",
-      "url": "https://smallbiztrends.com/natural-gas-inventories-surge-above-average-as-injection-season-ends",
-      "domain": "smallbiztrends.com",
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Natural Gas",
-      "coverage_themes": [
-        "Natural Gas"
-      ],
-      "relevance_score": 39,
-      "relevance_evidence": [
-        "natural gas"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-18T22:46:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 51
-    },
-    {
-      "title": "DTE Energy will not ask for a natural gas rate hike until late 2027",
-      "url": "https://www.abc12.com/news/state/dte-energy-will-not-ask-for-a-natural-gas-rate-hike-until-late-2027/article_ce1f3f5f-2a6c-4fdd-be51-1af5b1477697.html",
-      "domain": "www.abc12.com",
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Natural Gas",
-      "coverage_themes": [
-        "Natural Gas"
-      ],
-      "relevance_score": 39,
-      "relevance_evidence": [
-        "natural gas"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-18T18:17:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 51
     },
     {
       "title": "Gas Infrastructure Offers Africa’s Best Energy Investment In 2027 – WEC",

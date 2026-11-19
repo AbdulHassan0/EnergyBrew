@@ -2,8 +2,8 @@
 
 **Research links only. Not fact-checked, approved, or ready for publication.**
 
-Generated (UTC): 2026-11-19T02:47:44.753350+00:00
-Distinct relevant URLs in retained data: **179**
+Generated (UTC): 2026-11-19T03:45:40.770105+00:00
+Distinct relevant URLs in retained data: **197**
 Selected diverse research leads: **32**
 Publisher-timestamped official leads within 24h: **2**
 Specialist-publisher timestamped links within 24h: **22**
@@ -52,31 +52,34 @@ Discovery publisher dates verified: **0**
    - Timestamp basis: publisher_feed_publication_time (2026-11-18T18:06:31+00:00). Editorial status: **unapproved**.
 19. **[US Oil Inventories On the Rise](https://oilprice.com/Energy/Crude-Oil/US-Oil-Inventories-On-the-Rise.html)** — Oil & Energy | official_rss | score 36
    - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-18T15:39:53+00:00). Editorial status: **unapproved**.
-20. **[Orlen spreads its wings across Central and Eastern Europe with new gas pacts](https://www.offshore-energy.biz/2026/11/18/orlen-spreads-its-wings-across-central-and-eastern-europe-with-new-gas-pacts)** — Natural Gas | official_rss | score 30
+20. **[Oil Price Today (November 19): Brent crude rises to $93 as Trump likely weighs fresh Iran attacks. What are experts saying?](https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-november-19-brent-crude-rises-to-93-as-trump-likely-weighs-fresh-iran-attacks-what-are-experts-saying/articleshow/135975416.cms)** — Geopolitics | global_discovery | score 90
+   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T02:46:00+00:00). Editorial status: **unapproved**.
+   - Review flags: speculative_geopolitical_headline
+21. **[Orlen spreads its wings across Central and Eastern Europe with new gas pacts](https://www.offshore-energy.biz/2026/11/18/orlen-spreads-its-wings-across-central-and-eastern-europe-with-new-gas-pacts)** — Natural Gas | official_rss | score 30
    - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-18T15:07:53+00:00). Editorial status: **unapproved**.
-21. **[PLSV under construction to work for Petrobras from end of 2028](https://www.offshore-energy.biz/2026/11/18/plsv-under-construction-to-work-for-petrobras-from-end-of-2028)** — Oil & Energy | official_rss | score 27
+22. **[PLSV under construction to work for Petrobras from end of 2028](https://www.offshore-energy.biz/2026/11/18/plsv-under-construction-to-work-for-petrobras-from-end-of-2028)** — Oil & Energy | official_rss | score 27
    - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-18T09:26:31+00:00). Editorial status: **unapproved**.
-22. **[Eastern Shore Natural Gas Company; Notice of Scoping Period Requesting Comments on Environmental Issues for the Proposed Delmar Regional Enhancement Project](https://www.federalregister.gov/documents/2026/11/17/2026-23361/eastern-shore-natural-gas-company-notice-of-scoping-period-requesting-comments-on-environmental)** — Natural Gas | regulatory_notice | score 39
+23. **[Eastern Shore Natural Gas Company; Notice of Scoping Period Requesting Comments on Environmental Issues for the Proposed Delmar Regional Enhancement Project](https://www.federalregister.gov/documents/2026/11/17/2026-23361/eastern-shore-natural-gas-company-notice-of-scoping-period-requesting-comments-on-environmental)** — Natural Gas | regulatory_notice | score 39
    - Timestamp basis: official_publication_date_only (2026-11-17T05:00:00+00:00). Editorial status: **unapproved**.
-23. **[Northwest Pipeline, LLC; Notice of Scoping Period Requesting Comments on Environmental Issues for the Planned Silver Spur Project and Notice of Public Scoping Sessions](https://www.federalregister.gov/documents/2026/11/18/2026-23441/northwest-pipeline-llc-notice-of-scoping-period-requesting-comments-on-environmental-issues-for-the)** — Natural Gas | regulatory_notice | score 30
+24. **[Northwest Pipeline, LLC; Notice of Scoping Period Requesting Comments on Environmental Issues for the Planned Silver Spur Project and Notice of Public Scoping Sessions](https://www.federalregister.gov/documents/2026/11/18/2026-23441/northwest-pipeline-llc-notice-of-scoping-period-requesting-comments-on-environmental-issues-for-the)** — Natural Gas | regulatory_notice | score 30
    - Timestamp basis: official_publication_date_only (2026-11-18T05:00:00+00:00). Editorial status: **unapproved**.
-24. **[Iran hammers US drone, missile sites in Kuwait](https://www.bordermail.com.au/story/9394287/iran-hammers-us-drone-missile-sites-in-kuwait)** — Geopolitics | global_discovery | score 68
-   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T02:31:00+00:00). Editorial status: **unapproved**.
+25. **[Iran’s army chief vows ‘more crushing’ response if US attacks again — One News Page](https://www.onenewspage.com/story/irans-army-chief-vows-more-crushing-response-if-us-attacks-again-6928c75f)** — Geopolitics | global_discovery | score 68
+   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T03:31:00+00:00). Editorial status: **unapproved**.
    - Review flags: energy_market_exposure_inferred
-25. **[Thành phố Hải Phòng đề xuất thêm 2 dự án điện khí LNG mới](https://baodautu.vn/thanh-pho-hai-phong-de-xuat-them-2-du-an-dien-khi-lng-moi-d746022.html)** — LNG | global_discovery | score 45
+26. **["We don't need any help": Trump claims US has defeated Iran's military, rules out seeking assistance from China, Russia](http://www.middleeaststar.com/news/279442005/we-dont-need-any-help-trump-claims-us-has-defeated-iran-military-rules-out-seeking-assistance-from-china-russia)** — Geopolitics | global_discovery | score 68
+   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T02:46:00+00:00). Editorial status: **unapproved**.
+   - Review flags: energy_market_exposure_inferred
+27. **[US Iran War Live Updates: Saudi Arabia issues potential threat alert in Riyadh - The Times of India](https://timesofindia.indiatimes.com/world/middle-east/us-iran-war-live-updates-donald-trump-us-drone-attack-irgc-qeshm-island-middle-east-conflict-strait-of-hormuz-latest-news/liveblog/135969571.cms)** — Geopolitics | global_discovery | score 68
+   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T02:46:00+00:00). Editorial status: **unapproved**.
+   - Review flags: energy_market_exposure_inferred
+28. **[Thành phố Hải Phòng đề xuất thêm 2 dự án điện khí LNG mới](https://baodautu.vn/thanh-pho-hai-phong-de-xuat-them-2-du-an-dien-khi-lng-moi-d746022.html)** — LNG | global_discovery | score 45
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T02:31:00+00:00). Editorial status: **unapproved**.
-26. **[Çexiya ABŞ-dən 15-20 il müddətinə LNG tədarükü barədə razılaşma əldə edib](https://az.trend.az/other/world/4248094.html)** — LNG | global_discovery | score 45
+29. **[Çexiya ABŞ-dən 15-20 il müddətinə LNG tədarükü barədə razılaşma əldə edib](https://az.trend.az/other/world/4248094.html)** — LNG | global_discovery | score 45
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-18T21:31:00+00:00). Editorial status: **unapproved**.
-27. **[LNG News, Stories and Headlines on the Financial Post](https://financialpost.com/category/energy/lng)** — LNG | global_discovery | score 45
+30. **[LNG News, Stories and Headlines on the Financial Post](https://financialpost.com/category/energy/lng)** — LNG | global_discovery | score 45
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-18T21:17:00+00:00). Editorial status: **unapproved**.
-28. **[Golar LNG: 3 Key Takeaways for Long-Term Investors / The Motley Fool](https://www.fool.com/earnings/takeaways/2026/11/18/golar-lng-3-key-takeaways-for-long-term-investors?source=iedfolrf0000001)** — LNG | global_discovery | score 45
+31. **[Golar LNG: 3 Key Takeaways for Long-Term Investors / The Motley Fool](https://www.fool.com/earnings/takeaways/2026/11/18/golar-lng-3-key-takeaways-for-long-term-investors?source=iedfolrf0000001)** — LNG | global_discovery | score 45
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-18T20:46:00+00:00). Editorial status: **unapproved**.
-29. **[GTT Energy receives an order from Hudong-Zhonghua Shipbuilding for the tank design of five new LNG Carriers](https://www.hellenicshippingnews.com/gtt-energy-receives-an-order-from-hudong-zhonghua-shipbuilding-for-the-tank-design-of-five-new-lng-carriers)** — LNG | global_discovery | score 45
-   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-18T18:47:00+00:00). Editorial status: **unapproved**.
-30. **[Natural Gas Inventories Surge Above Average as Injection Season Ends](https://smallbiztrends.com/natural-gas-inventories-surge-above-average-as-injection-season-ends)** — Natural Gas | global_discovery | score 39
-   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-18T22:46:00+00:00). Editorial status: **unapproved**.
-31. **[DTE Energy will not ask for a natural gas rate hike until late 2027](https://www.abc12.com/news/state/dte-energy-will-not-ask-for-a-natural-gas-rate-hike-until-late-2027/article_ce1f3f5f-2a6c-4fdd-be51-1af5b1477697.html)** — Natural Gas | global_discovery | score 39
-   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-18T18:17:00+00:00). Editorial status: **unapproved**.
 32. **[Gas Infrastructure Offers Africa’s Best Energy Investment In 2027 – WEC](https://leadership.ng/gas-infrastructure-offers-africas-best-energy-investment-in-2027-wec)** — Infrastructure & Investment | global_discovery | score 30
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-18T19:32:00+00:00). Editorial status: **unapproved**.
 
