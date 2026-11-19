@@ -1,9 +1,6 @@
 name: EnergyBrew morning research readiness (NO EMAIL)
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths: [morning_readiness.py, tests/test_morning_readiness.py, .github/workflows/morning-news-readiness.yml]
   schedule:
     - cron: "45 10,11 * * *" # 05:45 Chicago preview, DST-aware local gate
     - cron: "38 11,12 * * *" # 06:38 Chicago final, DST-aware local gate

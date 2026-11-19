@@ -2,10 +2,6 @@ name: EnergyBrew staggered GAL backup sampling
 
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - ".github/workflows/hourly-discovery.yml"
   schedule:
     # Stagger against minute-06 primary collector: alternate at minute-01.
     # GitHub-hosted cron jobs may be skipped or delayed for hours; this is

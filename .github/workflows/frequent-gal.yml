@@ -1,14 +1,6 @@
 name: EnergyBrew frequent global news discovery
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - "gal.py"
-      - "ops_metrics.py"
-      - "tests/test_gal.py"
-      - "tests/test_ops_metrics.py"
-      - ".github/workflows/frequent-gal.yml"
   schedule:
     # The GDELT GAL feed represents a rolling ~15-minute sample.
     # Ten-minute overlap reduces gaps in ~15-minute rolling news indexing.

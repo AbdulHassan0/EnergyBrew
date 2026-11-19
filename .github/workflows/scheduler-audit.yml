@@ -2,14 +2,10 @@ name: EnergyBrew GDELT scheduler audit
 
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - "scheduler_audit.py"
-      - "tests/test_scheduler_audit.py"
-      - ".github/workflows/scheduler-audit.yml"
   schedule:
-    - cron: "23 * * * *"
+    # Daily aggregated scheduler reliability diagnostic. Critical outages
+    # remain failures; do not email the same ongoing failure hourly.
+    - cron: "23 13 * * *"
 
 permissions:
   contents: read
