@@ -69,6 +69,12 @@ def measure(candidates=CANDIDATES, *, now=None, fetcher=None) -> dict:
                "rights_status": PROBE_RIGHTS_STATUS.get(name, "not_assessed_by_probe"),
                "fresh_links_24h": 0,
                "fresh_links_48h": 0, "high_signal_48h": 0, "error": None}
+        if row["rights_status"] in ("blocked_direct_feed_pending_permission", "rights_review_pending"):
+            row["status"] = "skipped_rights_review"
+            row["error"] = "No automated request made; rights not cleared for recurrent polling"
+            row["duration_ms"] = 0
+            results.append(row)
+            continue
         try:
             payload, status = fetcher(url)
             if not 200 <= status < 300:

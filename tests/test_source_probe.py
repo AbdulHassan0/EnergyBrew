@@ -23,11 +23,18 @@ class SourceProbeTests(unittest.TestCase):
         self.assertEqual(report["high_signal_48h"],1)
         self.assertNotIn("summary_excerpt",str(report))
 
-    def test_restricted_feed_is_never_marked_cleared_by_successful_probe(self):
-        report=measure([("LNG Prime","https://lngprime.com/feed/")],now=NOW,
-                       fetcher=lambda url:(FEED,200))
-        self.assertEqual(report["feeds_connected"],1)
-        self.assertEqual(report["sources"][0]["rights_status"],"blocked_direct_feed_pending_permission")
+    def test_restricted_feed_is_not_requested_even_with_valid_endpoint(self):
+        requested=[]
+        def forbidden(url):
+            requested.append(url)
+            raise AssertionError("Restricted feed must never be fetched")
+        report=measure([("LNG Prime","https://lngprime.com/feed/"),
+                        ("Energy Storage News","https://www.energy-storage.news/feed/"),
+                        ("POWER Magazine","https://www.powermag.com/feed/")],
+                       now=NOW,fetcher=forbidden)
+        self.assertEqual(report["feeds_connected"],0)
+        self.assertEqual(requested,[])
+        self.assertTrue(all(x["status"]=="skipped_rights_review" for x in report["sources"]))
 
     def test_error_is_reported_not_silenced(self):
         def failure(_): raise OSError("connection refused")
