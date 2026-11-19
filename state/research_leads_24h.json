@@ -678,7 +678,10 @@
       "geopolitical_event:strike",
       "world_context:russia/ukraine"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "http://www.russiaherald.com/news/279442569/trump-considering-fresh-joint-attack-with-israel-against-iranian-regime-israeli-media",
@@ -701,7 +704,10 @@
       "geopolitical_event:attack",
       "world_context:iran/israel"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "http://www.russiaherald.com/news/279442473/russia-strikes-ukraine-as-putin-holds-talks-with-trump-in-shenzen-ahead-of-key-trilateral-with-xi",
@@ -724,7 +730,10 @@
       "geopolitical_event:strikes",
       "world_context:russia/ukraine"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.ketv.com/article/third-ukrainian-strike-halts-rail-traffic-russias-kerch-bridge/74474991",
@@ -747,7 +756,10 @@
       "geopolitical_event:strike",
       "world_context:russia/ukraine"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.dailysabah.com/world/mid-east/blasts-rock-bahrain-as-fresh-iran-strikes-target-us-base-on-island",
@@ -2781,7 +2793,10 @@
     "relevance_evidence": [
       "lng"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70178724-tesser-atomics-and-samsung-heavy-industries-enter-exclusive-collaboration-on-a-nuclear-powered-lng-carrier-399.htm",
@@ -3186,7 +3201,10 @@
     "relevance_evidence": [
       "natural gas"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.azernews.az/oil_and_gas/267733.html",
@@ -3207,7 +3225,10 @@
     "relevance_evidence": [
       "natural gas"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.fortmorgantimes.com/2026/11/19/today-in-history-november-19-explosions-at-mexico-city-natural-gas-facility-kills-at-least-500",
@@ -3761,7 +3782,10 @@
     "relevance_evidence": [
       "gas supply"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.rethemnosnews.gr/kriti/728395_xekinoyn-oi-seismikes-ereynes-tis-chevron-stin-ellada-protos-stathmos-i-peloponnisos",
@@ -3782,7 +3806,10 @@
     "relevance_evidence": [
       "chevron"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.azernews.az/region/267730.html",
@@ -4882,7 +4909,10 @@
     "relevance_evidence": [
       "data center"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.azernews.az/region/267711.html",
@@ -4903,7 +4933,10 @@
     "relevance_evidence": [
       "oil exports"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.offshore-technology.com/analyst-comment/gas-pipelines-length-additions-india-2030",
@@ -4924,7 +4957,10 @@
     "relevance_evidence": [
       "gas pipeline"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.azernews.az/oil_and_gas/267720.html",
@@ -7044,7 +7080,10 @@
     "relevance_evidence": [
       "fracking"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.ebc.com.br/imprensa/2026/tv-brasil-exibe-final-entre-ferroviaria-e-sao-paulo-do-paulista-f-sub-17-petrobras-neste-domingo-22",
@@ -7065,7 +7104,10 @@
     "relevance_evidence": [
       "petrobras"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "http://www.argentinastar.com/news/279442923/adnoc-distribution-accelerates-adnoc-voyager-expansion-across-africa-south-america-asia",
@@ -7705,7 +7747,10 @@
     "relevance_evidence": [
       "refining"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.dailyexcelsior.com/nlc-india-renewables-files-ipo-papers-with-sebi-aims-to-raise-rs-3300-crvia-fresh-issue",
