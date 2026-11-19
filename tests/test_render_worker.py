@@ -25,6 +25,7 @@ class RenderWorkerTests(unittest.TestCase):
         self.assertIn("mountPath: /data", blueprint)
         self.assertIn("dockerfilePath: ./Dockerfile.render", blueprint)
         self.assertIn("numInstances: 1", blueprint)
+        self.assertIn("autoDeployTrigger: checksPass", blueprint)
         self.assertNotIn("email", blueprint.split("services:")[1].lower())
         self.assertIn('ENTRYPOINT ["python", "render_worker.py"]',
                       (ROOT / "Dockerfile.render").read_text())

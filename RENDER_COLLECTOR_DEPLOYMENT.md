@@ -27,7 +27,8 @@ never two simultaneous writers to the same state.**
 3. Review `render.yaml`: one **background worker**, **Ohio region**, paid
    `0.5c-512mb` instance and 1 GiB disk mounted at `/data`.
    Confirm the current quoted costs and billing preference before approving.
-4. Deploy, then read the worker logs. Check that `/data/render_worker_heartbeat.json`
+4. Deploy, then read the worker logs. Subsequent code pushes wait for
+   GitHub CI checks to pass before auto-deploying the worker. Check that `/data/render_worker_heartbeat.json`
    and `/data/output/gal-worker/worker_health.json` update as expected.
 5. Verify at least one genuine HTTP 200 GDELT poll, index freshness, unique
    payload fingerprint and metadata-only state guard. A successful build is

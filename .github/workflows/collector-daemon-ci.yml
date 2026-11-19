@@ -6,11 +6,17 @@ on:
     branches: [main]
     paths:
       - "collector_daemon.py"
+      - "host_rss_refresh.py"
+      - "render_worker.py"
       - "Dockerfile.collector"
+      - "Dockerfile.render"
+      - "render.yaml"
       - "tests/test_collector_daemon.py"
       - "morning_host_runner.py"
       - "morning_readiness.py"
       - "tests/test_morning_host_runner.py"
+      - "tests/test_host_rss_refresh.py"
+      - "tests/test_render_worker.py"
       - ".github/workflows/collector-daemon-ci.yml"
 
 permissions:
@@ -30,8 +36,17 @@ jobs:
           python -m unittest discover -s tests -p "test_collector_daemon.py" -v
           python -m unittest discover -s tests -p "test_morning_host_runner.py" -v
           python -m unittest discover -s tests -p "test_morning_readiness.py" -v
+          python -m unittest discover -s tests -p "test_host_rss_refresh.py" -v
+          python -m unittest discover -s tests -p "test_render_worker.py" -v
       - name: Build no-dependency Python collector image
         run: docker build -f Dockerfile.collector -t energybrew-collector:test .
+      - name: Build Render single-disk metadata worker
+        run: docker build -f Dockerfile.render -t energybrew-render-worker:test .
+      - name: Smoke test Render worker container entrypoint
+        run: |
+          docker image inspect energybrew-render-worker:test --format '{{.Config.User}}' | grep -x energybrew
+          docker image inspect energybrew-render-worker:test --format '{{json .Config.Entrypoint}}' | grep render_worker.py
+          docker run --rm --entrypoint python energybrew-render-worker:test -c "from render_worker import JOBS; from public_collector_guard import ensure_sources_public; ensure_sources_public(); assert len(JOBS)==4; print('Render worker imports and metadata gate OK')"
       - name: Run tests inside isolated collector image
         run: |
           docker run --rm --entrypoint python energybrew-collector:test -c "from collector_daemon import run_forever; print('EnergyBrew worker imports OK')"

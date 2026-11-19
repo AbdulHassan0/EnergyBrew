@@ -11,6 +11,8 @@ services:
     region: ohio
     plan: 0.5c-512mb
     numInstances: 1
+    # Only deploy after GitHub code checks succeed.
+    autoDeployTrigger: checksPass
     disk:
       name: research-metadata
       mountPath: /data
