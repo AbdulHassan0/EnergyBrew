@@ -222,6 +222,7 @@ def fetch_feed(url):
         return payload, response.status
 
 def collect(state_path, outdir, hours=48, now=None, fetcher=None):
+    injected_clock = now is not None
     now = now or datetime.now(timezone.utc)
     fetcher = fetcher or fetch_feed
     if state_path.exists():
@@ -363,7 +364,11 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None):
     scan_state = ("healthy" if results and connected_count == len(results)
                   else "degraded" if connected_count and connection_ratio >= MIN_HEALTHY_FEED_RATIO
                   else "critical")
-    run = {"run_utc": now.isoformat(), "scan_state": scan_state,
+    # Polling starts before the HTTP requests. Only the completed timestamp
+    # proves the whole RSS snapshot existed by the editorial cutoff.
+    completed_utc = now if injected_clock else datetime.now(timezone.utc)
+    run = {"run_utc": now.isoformat(), "completed_utc": completed_utc.isoformat(),
+           "scan_state": scan_state,
            "connection_ratio": round(connection_ratio, 3),
            "feeds_failed": len(results) - connected_count,
            "feeds_recovered_after_retry": sum(x["recovered_after_retry"] for x in results),

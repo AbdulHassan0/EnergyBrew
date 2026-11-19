@@ -121,6 +121,7 @@ def parse_gal(xml, now):
 
 
 def collect_gal(state_path, outdir, *, now=None, fetcher=None):
+    injected_clock = now is not None
     now=now or datetime.now(timezone.utc)
     if now.tzinfo is None:
         raise ValueError("now must include timezone")
@@ -213,10 +214,13 @@ def collect_gal(state_path, outdir, *, now=None, fetcher=None):
     retained.sort(key=lambda x:(x.get("relevance_score",0),x["gdelt_first_seen_utc"]),reverse=True)
     retained=retained[:4000]
     recent=[x for x in retained if (_datetime(x.get("gdelt_first_seen_utc")) or cutoff) >= now-timedelta(hours=24)]
+    # The full GAL sample is not available until the network parse completes.
+    # Preserve start-time run_utc for intervals, and completion for cutoffs.
+    summary["completed_utc"] = utc_stamp(now if injected_clock else datetime.now(timezone.utc))
     summary["combined_research_leads_24h"]=len(recent)
     state["leads"]=retained
     state.setdefault("gal_runs",[]).append({k:summary[k] for k in
-        ("run_utc","status","raw_feed_items","high_signal_items","new_unique_links",
+        ("run_utc","completed_utc","status","raw_feed_items","high_signal_items","new_unique_links",
          "feed_newest_index_utc","feed_index_lag_minutes","feed_payload_sha256",
          "identical_payload_to_previous_success") if k in summary})
     run_retention_cutoff=now-timedelta(days=8)
