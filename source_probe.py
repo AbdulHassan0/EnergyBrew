@@ -6,6 +6,7 @@ copy bodies, bypass paywalls, or claim that public feeds grant reuse rights.
 from __future__ import annotations
 import argparse
 import json
+import hashlib
 import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -18,6 +19,10 @@ CANDIDATES = (
     # Provider RSS available from verified site RSS directories; staged, not enabled.
     ("Utility Dive Latest News", "https://www.utilitydive.com/feeds/news/"),
     ("PJM Inside Lines", "https://insidelines.pjm.com/feed/"),
+    # These are *unverified* conventional WordPress alternate formats.
+    # Probe only: never quietly replace a failing configured primary feed.
+    ("PJM Inside Lines RSS2 alternate (probe only)", "https://insidelines.pjm.com/feed/rss2/"),
+    ("PJM Inside Lines Atom alternate (probe only)", "https://insidelines.pjm.com/feed/atom/"),
     ("EIA What's New", "https://www.eia.gov/about/new/WNtest3.php"),
     ("EIA Gasoline & Diesel Update", "https://www.eia.gov/petroleum/gasdiesel/includes/gas_diesel_rss.xml"),
     ("EIA Heating Oil & Propane Update", "https://www.eia.gov/petroleum/heatingoilpropane/includes/hopu_rss.xml"),
@@ -81,6 +86,9 @@ def measure(candidates=CANDIDATES, *, now=None, fetcher=None) -> dict:
             continue
         try:
             payload, status = fetcher(url)
+            row["http_status"] = status
+            row["response_bytes"] = len(payload)
+            row["response_sha256_12"] = hashlib.sha256(payload).hexdigest()[:12]
             if not 200 <= status < 300:
                 raise ValueError(f"Publisher RSS returned HTTP {status}")
             items, rejected, count = parse_feed(payload, name, now, 48)
@@ -107,6 +115,9 @@ def measure(candidates=CANDIDATES, *, now=None, fetcher=None) -> dict:
             )
         except Exception as exc:
             row["error"] = f"{type(exc).__name__}: {str(exc)[:160]}"
+            if type(exc).__name__ == "ParseError":
+                row["xml_parse_failure"] = True
+                row["link_quality"] = "invalid_xml_not_connected"
         row["duration_ms"] = round((time.monotonic() - started) * 1000)
         results.append(row)
     return {
@@ -153,6 +164,18 @@ def main(argv=None) -> int:
     data=measure()
     write_report(data,args.output)
     print(json.dumps({k:v for k,v in data.items() if k!="sources"},indent=2))
+    # Per-source health is operationally useful in live CI logs. Never log
+    # publisher body content, headlines, credentials or copied RSS payloads.
+    for row in data["sources"]:
+        print(json.dumps({
+            "source_probe":row["name"], "status":row["status"],
+            "unique_fresh_urls_24h":row["fresh_links_24h"],
+            "rss_item_count":row.get("rss_item_count"),
+            "response_bytes":row.get("response_bytes"),
+            "response_sha256_12":row.get("response_sha256_12"),
+            "error":row.get("error"),
+            "rights_status":row["rights_status"],
+        }))
     return 0 if data["status"]=="ok" else 2
 
 

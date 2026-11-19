@@ -36,6 +36,29 @@ class SourceProbeTests(unittest.TestCase):
         self.assertEqual(requested,[])
         self.assertTrue(all(x["status"]=="skipped_rights_review" for x in report["sources"]))
 
+    def test_invalid_pjm_xml_not_connected_or_counted_as_news(self):
+        malformed=b"<rss><channel><item><title>bad & token</title></item></channel></rss>"
+        result=measure([("PJM Inside Lines","https://insidelines.pjm.com/feed/")],
+                       now=NOW,fetcher=lambda _:(malformed,200))
+        source=result["sources"][0]
+        self.assertEqual(result["feeds_connected"],0)
+        self.assertEqual(source["link_quality"],"invalid_xml_not_connected")
+        self.assertTrue(source["xml_parse_failure"])
+        self.assertEqual(source["response_bytes"],len(malformed))
+        self.assertEqual(len(source["response_sha256_12"]),12)
+        self.assertNotIn("bad & token",str(result))
+
+    def test_alternate_pjm_formats_remain_probe_only_not_enabled(self):
+        from source_probe import CANDIDATES
+        from collector import SOURCES
+        candidates=dict(CANDIDATES)
+        active_urls={url for _,url in SOURCES}
+        for name in (
+           "PJM Inside Lines RSS2 alternate (probe only)",
+           "PJM Inside Lines Atom alternate (probe only)"):
+            self.assertIn(name,candidates)
+            self.assertNotIn(candidates[name],active_urls)
+
     def test_error_is_reported_not_silenced(self):
         def failure(_): raise OSError("connection refused")
         report=measure([("Offline","https://news.example.org/feed")],now=NOW,fetcher=failure)
