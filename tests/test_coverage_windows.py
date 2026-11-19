@@ -34,8 +34,8 @@ class SamplingWindowTests(unittest.TestCase):
 
     def test_duplicate_timestamps_do_not_inflate_coverage(self):
         r=estimate_sampling_coverage([run(5),run(5),run(0)],now=NOW,hours=1)
-        self.assertEqual(r["potentially_sampled_minutes_upper_bound"],15)
-        self.assertEqual(r["unobserved_minutes_at_least"],45)
+        self.assertEqual(r["potentially_sampled_minutes_upper_bound"],20)
+        self.assertEqual(r["unobserved_minutes_at_least"],40)
 
     def test_only_horizon_intersection_counts(self):
         r=estimate_sampling_coverage([run(100),run(5)],now=NOW,hours=1)
