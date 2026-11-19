@@ -24,8 +24,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Validate parser and state behavior
-        run: python -m unittest discover -s tests -q
+      - name: Validate critical GAL parsing, safety, coverage and source-gap logic
+        run: |
+          # The complete regression suite runs on every main code push in
+          # news-logic-ci.yml. Repeating 300+ tests on every 10-minute
+          # sampling job delays the valuable live news poll on free runners.
+          python -m unittest discover -s tests -p "test_gal.py" -q
+          python -m unittest discover -s tests -p "test_public_collector_guard.py" -q
+          python -m unittest discover -s tests -p "test_coverage_windows.py" -q
+          python -m unittest discover -s tests -p "test_source_gap_audit.py" -q
       - name: Restore shared research history
         run: |
           mkdir -p state

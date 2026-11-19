@@ -58,6 +58,15 @@ class WorkflowSeparationTests(unittest.TestCase):
         self.assertNotIn("python gal.py --",s)
         self.assertIn("saved source state only",s)
 
+    def test_frequent_free_gal_does_not_repeat_full_suite_on_every_poll(self):
+        frequent=workflow("frequent-gal.yml")
+        offline=workflow("news-logic-ci.yml")
+        self.assertIn('test_gal.py',frequent)
+        self.assertIn('test_public_collector_guard.py',frequent)
+        self.assertIn('test_coverage_windows.py',frequent)
+        self.assertNotIn('python -m unittest discover -s tests -q',frequent)
+        self.assertIn('python -m unittest discover -s tests -v',offline)
+
     def test_no_collection_guard_is_removed_to_silence_notifications(self):
         s=workflow("live-collector.yml")
         self.assertIn("public_collector_guard.py --sanitize-legacy",s)

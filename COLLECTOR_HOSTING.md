@@ -65,3 +65,13 @@ A Windows and POSIX local collection option is documented in
 [LOCAL_NEWS_COLLECTOR.md](LOCAL_NEWS_COLLECTOR.md). It relies on an existing
 computer staying awake, does not require Render, and does not send email.
 Windows needs `tzdata`; actual Windows execution remains unverified.
+
+## Avoid slow free hosted polling
+
+The ten-minute GDELT GitHub Action now runs focused parser, provenance,
+coverage and source-gap tests before live sampling; the **entire** news
+logic suite still runs on every code push and all imported engine changes
+also trigger a Windows/Linux collector build validation. This reduces the
+delay inside an eligible free scheduled polling job without lowering the
+safety requirement for publishing saved metadata. GitHub cron start times
+remain best-effort and this is not evidence of reliable 24/7 coverage.

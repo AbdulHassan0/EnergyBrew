@@ -5,6 +5,17 @@ on:
   push:
     branches: [main]
     paths:
+      # The local worker imports these shared news engines. Changes to any
+      # ingestion or timing primitive must trigger both Windows and Linux.
+      - "collector.py"
+      - "gal.py"
+      - "discovery.py"
+      - "press_releases.py"
+      - "public_collector_guard.py"
+      - "research_desk.py"
+      - "coverage_windows.py"
+      - "ops_metrics.py"
+      - "editorial.py"
       - "collector_daemon.py"
       - "host_rss_refresh.py"
       - "rss_fetch_pool.py"
