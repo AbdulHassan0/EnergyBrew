@@ -60,6 +60,9 @@ never two simultaneous writers to the same state.**
   RSS network poll) and prepare the immutable research-only candidate snapshot
   if all freshness, quorum, cutoff and safety gates pass. A missing or failed
   06:24 refresh explicitly blocks the morning research freeze.
+  A READY snapshot also generates a **private, unapproved** editor checklist
+  at `/data/morning/editorial_draft_YYYY-MM-DD.json`. Every story's
+  summary and verification attestations remain blank; no automatic emails.
 
 One retry is permitted for transient job failure inside its short window.
 The ledger records a job as started **before** execution; process restarts

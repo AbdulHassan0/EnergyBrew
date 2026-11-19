@@ -17,6 +17,7 @@ from zoneinfo import ZoneInfo
 
 from collector import SOURCES, collect, fetch_feed
 from morning_readiness import local_schedule, prepare, write_preparation
+from newsletter import research_queue
 from public_collector_guard import ensure_sources_public, validate_records
 from research_desk import as_time
 
@@ -83,6 +84,28 @@ def refresh_rss_safely(state_path, output, *, now, fetcher=None):
             staging.unlink()
 
 
+def write_private_editor_draft(research, root, *, day, now):
+    """Create a review-only edition draft; never approve, publish, or email.
+
+    Existing drafts are immutable from collector automation. Human edits must
+    be managed explicitly outside this ingest process.
+    """
+    draft = research_queue(research, edition_date=day, now=now)
+    if draft["status"] != "draft" or draft["approval"]["edition_fact_checked"]:
+        raise RuntimeError("Research queue returned unexpectedly publishable content")
+    path = Path(root) / "morning" / ("editorial_draft_" + day + ".json")
+    contents = json.dumps(draft, ensure_ascii=False, indent=2) + "\n"
+    if path.exists():
+        if path.read_text(encoding="utf-8") != contents:
+            raise ValueError("Private editorial draft exists with different content")
+        return path
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temp = path.with_suffix(".tmp")
+    temp.write_text(contents, encoding="utf-8")
+    temp.replace(path)
+    return path
+
+
 def run_morning(root, *, now=None, zone="America/Chicago", fetcher=None,
                 completion_clock=None, refresh_rss=True, prerequisite_issues=()):
     # A fixed clock is accepted for deterministic offline regression tests.
@@ -144,9 +167,15 @@ def run_morning(root, *, now=None, zone="America/Chicago", fetcher=None,
             result["blocking_issues"].append("host_research_completed_after_0650")
             result["status"] = "blocked_collection_readiness"
         frozen = write_preparation(result, root / "morning")
+        draft_path = None
+        if result["status"] == "ready_for_editor_review":
+            draft_path = write_private_editor_draft(
+                result["research_desk"], root,
+                day=local_date.isoformat(), now=completed)
         return {"date":local_date.isoformat(), "status":result["status"],
                 "blocking_issues":result["blocking_issues"],
-                "frozen":frozen,"selected_research_links":result["research_desk"]["selected_research_links"],
+                "frozen":frozen,"private_draft_available":draft_path is not None,
+                "selected_research_links":result["research_desk"]["selected_research_links"],
                 "latest_rss_status":rss_report.get("scan_state"),
                 "publication":"research_only_not_approved_not_sent"}
 

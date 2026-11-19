@@ -83,6 +83,12 @@ class MorningHostTests(unittest.TestCase):
             payload=json.loads((root/"morning/research_2026-11-19.json").read_text())
             self.assertEqual(payload["publication_status"],"research_only_not_approved_not_sent")
             self.assertEqual(len(payload["research_desk"]["stories"]),1)
+            draft=json.loads((root/"morning/editorial_draft_2026-11-19.json").read_text())
+            self.assertEqual(draft["status"],"draft")
+            self.assertFalse(draft["approval"]["edition_fact_checked"])
+            self.assertEqual(draft["stories"][0]["summary"],"")
+            self.assertFalse(draft["stories"][0]["facts_checked"])
+            self.assertTrue(result["private_draft_available"])
 
     def test_missing_gal_history_blocks_snapshot_but_records_reason(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -91,6 +97,7 @@ class MorningHostTests(unittest.TestCase):
             self.assertEqual(result["status"],"blocked_collection_readiness")
             self.assertIn("overnight_gdelt_sampling_below_minimum",result["blocking_issues"])
             self.assertFalse((root/"morning/research_2026-11-19.json").exists())
+            self.assertFalse((root/"morning/editorial_draft_2026-11-19.json").exists())
             self.assertTrue((root/"morning/readiness_2026-11-19.json").exists())
 
     def test_render_0638_uses_pre_cutoff_feed_without_network_request(self):
