@@ -25,7 +25,7 @@ class CollectorTests(unittest.TestCase):
         items, rejected, seen = parse_feed(sample(), "Official", NOW, 48)
         self.assertEqual((len(items), seen), (1, 1))
         self.assertEqual(items[0]["url"], "https://example.gov/energy")
-        self.assertEqual(items[0]["category"], "Natural Gas & LNG")
+        self.assertEqual(items[0]["category"], "LNG")
         self.assertEqual(rejected["undated"], 0)
 
     def test_publisher_feed_tier_not_misrepresented_as_agency(self):
