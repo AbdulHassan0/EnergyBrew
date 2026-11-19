@@ -48,7 +48,11 @@ def refresh_rss_safely(state_path, output, *, now, fetcher=None):
             staging.unlink()
 
 
-def run_morning(root, *, now=None, zone="America/Chicago", fetcher=None):
+def run_morning(root, *, now=None, zone="America/Chicago", fetcher=None,
+                completion_clock=None):
+    # A fixed clock is accepted for deterministic offline regression tests.
+    # The live host must validate the ACTUAL completion time before freezing.
+    fixed_test_clock = now is not None
     now = now or datetime.now(timezone.utc)
     if now.tzinfo is None:
         raise ValueError("Clock must be timezone aware")
@@ -82,6 +86,17 @@ def run_morning(root, *, now=None, zone="America/Chicago", fetcher=None):
             result["blocking_issues"].append("final_publisher_refresh_critical")
             result["status"] = "blocked_collection_readiness"
         result["final_rss_scan_status"] = rss_report.get("scan_state")
+        completed = (completion_clock() if completion_clock else
+                     now if fixed_test_clock else datetime.now(timezone.utc))
+        if completed.tzinfo is None or completed.utcoffset() is None:
+            raise ValueError("Completion timestamp must include a timezone")
+        completed = completed.astimezone(timezone.utc)
+        result["host_collection_completed_utc"] = completed.isoformat()
+        # An on-time START cannot disguise a slow network scan that finishes
+        # too late to leave a meaningful human review window before 07:00.
+        if completed >= cutoff + timedelta(minutes=20):
+            result["blocking_issues"].append("host_research_completed_after_0650")
+            result["status"] = "blocked_collection_readiness"
         frozen = write_preparation(result, root / "morning")
         return {"date":local_date.isoformat(), "status":result["status"],
                 "blocking_issues":result["blocking_issues"],

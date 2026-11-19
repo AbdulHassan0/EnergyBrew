@@ -50,6 +50,28 @@ class MorningHostTests(unittest.TestCase):
             self.assertEqual(result["status"],"blocked_collection_readiness")
             self.assertIn("final_publisher_refresh_critical",result["blocking_issues"])
 
+    def test_slow_0638_refresh_finishing_after_0650_cannot_freeze(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            healthy_gal(root)
+            outcome=run_morning(
+                root, now=NOW, fetcher=lambda _:(RSS,200),
+                completion_clock=lambda: CUTOFF+timedelta(minutes=22))
+            self.assertEqual(outcome["status"], "blocked_collection_readiness")
+            self.assertIn("host_research_completed_after_0650",
+                          outcome["blocking_issues"])
+            self.assertFalse((root/"morning/research_2026-11-19.json").exists())
+            audit=json.loads((root/"morning/readiness_2026-11-19.json").read_text())
+            self.assertEqual(audit["status"],"blocked_collection_readiness")
+
+    def test_tz_naive_completion_clock_is_refused(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            healthy_gal(root)
+            with self.assertRaises(ValueError):
+                run_morning(root,now=NOW,fetcher=lambda _:(RSS,200),
+                            completion_clock=lambda:datetime(2026,11,19,12,40))
+
     def test_existing_rss_metadata_not_overwritten_if_invalid(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp)
