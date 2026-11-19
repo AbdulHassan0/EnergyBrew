@@ -1,0 +1,12 @@
+[Unit]
+Description=EnergyBrew 06:38 America/Chicago final research cutoff (NO EMAIL)
+
+[Timer]
+OnCalendar=*-*-* 06:38:00 America/Chicago
+AccuracySec=10s
+RandomizedDelaySec=0
+Persistent=false
+Unit=energybrew-morning.service
+
+[Install]
+WantedBy=timers.target

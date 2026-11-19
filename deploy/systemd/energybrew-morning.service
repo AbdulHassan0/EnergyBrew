@@ -1,0 +1,11 @@
+[Unit]
+Description=EnergyBrew immutable 06:38 morning research preparation (NO EMAIL)
+After=network-online.target docker.service
+Wants=network-online.target
+Requires=docker.service
+AssertPathIsDirectory=/opt/energybrew/energybrew-state
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/docker run --rm --name energybrew-morning --mount type=bind,source=/opt/energybrew/energybrew-state,target=/data --entrypoint python energybrew-collector:latest morning_host_runner.py --root /data --time-zone America/Chicago
+TimeoutStartSec=9min

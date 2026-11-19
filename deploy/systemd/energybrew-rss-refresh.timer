@@ -1,0 +1,13 @@
+[Unit]
+Description=EnergyBrew publisher RSS preflight at 05:35 and 06:24 Chicago
+
+[Timer]
+OnCalendar=*-*-* 05:35:00 America/Chicago
+OnCalendar=*-*-* 06:24:00 America/Chicago
+AccuracySec=10s
+RandomizedDelaySec=0
+Persistent=false
+Unit=energybrew-rss-refresh.service
+
+[Install]
+WantedBy=timers.target

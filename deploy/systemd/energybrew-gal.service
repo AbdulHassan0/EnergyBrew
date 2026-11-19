@@ -1,0 +1,19 @@
+[Unit]
+Description=EnergyBrew 5-minute GDELT public metadata collector (NO EMAIL)
+After=network-online.target docker.service
+Wants=network-online.target
+Requires=docker.service
+AssertPathIsDirectory=/opt/energybrew/energybrew-state
+StartLimitIntervalSec=10min
+StartLimitBurst=5
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/docker run --rm --name energybrew-gal --mount type=bind,source=/opt/energybrew/energybrew-state,target=/data energybrew-collector:latest
+ExecStop=/usr/bin/docker stop --time=20 energybrew-gal
+Restart=on-failure
+RestartSec=15s
+TimeoutStopSec=45s
+
+[Install]
+WantedBy=multi-user.target

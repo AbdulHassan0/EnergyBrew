@@ -53,3 +53,8 @@ wire controlled metadata-only synchronization to the website research
 pipeline, add external heartbeat alerts, and measure seven consecutive
 days of actual running coverage. GitHub cron remains a pilot fallback until
 then. A live hosted Docker deployment is NOT claimed.
+
+For a supervised Linux server with daily Central-time RSS preflight and immutable
+morning research jobs, see the installable `deploy/systemd/` units and
+`MORNING_HOST_RUNNER.md`. Those files are deployment recipes only, not a
+live cloud deployment or guaranteed 07:00 delivery.

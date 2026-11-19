@@ -1,0 +1,12 @@
+[Unit]
+Description=EnergyBrew 05:45 America/Chicago research preflight (NO EMAIL)
+
+[Timer]
+OnCalendar=*-*-* 05:45:00 America/Chicago
+AccuracySec=10s
+RandomizedDelaySec=0
+Persistent=false
+Unit=energybrew-preflight.service
+
+[Install]
+WantedBy=timers.target
