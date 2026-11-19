@@ -60,26 +60,6 @@
     "also_seen_in": []
   },
   {
-    "id": "0e60962e4349037dfa1fbcfd",
-    "title": "ADNOC Ship Attacked in Hormuz as Maritime Security Risks Rise",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/ADNOC-Ship-Attacked-in-Hormuz-as-Maritime-Security-Risks-Rise.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T10:00:00+00:00",
-    "category": "Geopolitics",
-    "published_precision": "timestamp",
-    "relevance_score": 90,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "energy_market_hook:hormuz",
-      "geopolitical_event:attacked",
-      "world_context:hormuz"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": []
-  },
-  {
     "id": "6c922e4edba15f1f787245dd",
     "title": "PJM Board Approves Transmission Project Changes to Support Grid Reliability",
     "url": "https://insidelines.pjm.com/pjm-board-approves-transmission-project-changes-to-support-grid-reliability-2",
@@ -196,24 +176,6 @@
     "also_seen_in": []
   },
   {
-    "id": "ece006e7c63756cac601b5cc",
-    "title": "Woodside and Trafigura sign off on decade-long LNG deal",
-    "url": "https://www.offshore-energy.biz/2026/11/18/woodside-and-trafigura-sign-off-on-decade-long-lng-deal",
-    "source": "Offshore Energy News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T09:16:02+00:00",
-    "category": "LNG",
-    "published_precision": "timestamp",
-    "relevance_score": 45,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "lng"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": []
-  },
-  {
     "id": "a4c390e9c48b4825355d9bf6",
     "title": "U.S. natural gas inventories end injection season above normal levels",
     "url": "https://www.eia.gov/todayinenergy/detail.php?id=68484",
@@ -250,6 +212,40 @@
     "also_seen_in": []
   },
   {
+    "id": "8d63312521323ff165f0737e",
+    "title": "Oil Prices Steady as Hormuz Tanker Threats Offset Supply Glut Fears",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Steady-as-Hormuz-Tanker-Threats-Offset-Supply-Glut-Fears.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-19T06:00:00+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 33,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "oil prices"
+    ],
+    "status": "research_only_unverified"
+  },
+  {
+    "id": "adae1615af6e22fc7fe9837a",
+    "title": "EU spending on electricity support measures reached \u20ac12 billion, as reliance grows",
+    "url": "https://www.acer.europa.eu/news/eu-spending-electricity-support-measures-reaches-eur12-billion-2025-reliance-grows",
+    "source": "European Commission DG Energy",
+    "source_class": "official_agency",
+    "published_utc": "2026-11-18T23:00:00+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 33,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "research_only_unverified"
+  },
+  {
     "id": "3e03c81f3a66fa9866b99bd4",
     "title": "China Secures Major Gas Deal as Its Influence Grows Across Central Asia",
     "url": "https://oilprice.com/Energy/Energy-General/China-Secures-Major-Gas-Deal-as-Its-Influence-Grows-Across-Central-Asia.html",
@@ -284,6 +280,23 @@
     ],
     "status": "research_only_unverified",
     "also_seen_in": []
+  },
+  {
+    "id": "b7d6d9a018a30f85c260796a",
+    "title": "India\u2019s Oil Imports Hit Record High as Saudi Shipments Surge",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Indias-Oil-Imports-Hit-Record-High-as-Saudi-Shipments-Surge.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-19T10:30:00+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 27,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "oil imports"
+    ],
+    "status": "research_only_unverified"
   },
   {
     "id": "0dad76f8aa1370117b07fc49",
@@ -392,59 +405,6 @@
     ],
     "status": "research_only_unverified",
     "also_seen_in": []
-  },
-  {
-    "id": "fdd2223f847233e1029794d6",
-    "title": "Small Vessel Trade Thrives in Hormuz as Iran Targets Supertankers",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/Small-Vessel-Trade-Thrives-in-Hormuz-as-Iran-Targets-Supertankers.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T11:30:00+00:00",
-    "category": "Oil & Energy",
-    "published_precision": "timestamp",
-    "relevance_score": 27,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "supertankers"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": []
-  },
-  {
-    "id": "18df0d39e9013d6b917315a6",
-    "title": "PLSV under construction to work for Petrobras from end of 2028",
-    "url": "https://www.offshore-energy.biz/2026/11/18/plsv-under-construction-to-work-for-petrobras-from-end-of-2028",
-    "source": "Offshore Energy News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T09:26:31+00:00",
-    "category": "Oil & Energy",
-    "published_precision": "timestamp",
-    "relevance_score": 27,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "petrobras"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": []
-  },
-  {
-    "id": "5579e2a2230c578d14ebd744",
-    "title": "EU Moves to Fast-Track Renewables as Oil Import Costs Soar",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/EU-Moves-to-Fast-Track-Renewables-as-Oil-Import-Costs-Soar.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T08:45:00+00:00",
-    "category": "Oil & Energy",
-    "published_precision": "timestamp",
-    "relevance_score": 27,
-    "keyword_matches": 0,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "oil import"
-    ],
-    "status": "research_only_unverified"
   },
   {
     "id": "08c2f3b512606a6b7a68c0c7",

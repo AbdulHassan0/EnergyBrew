@@ -368,6 +368,40 @@
     "also_seen_in": []
   },
   {
+    "id": "8d63312521323ff165f0737e",
+    "title": "Oil Prices Steady as Hormuz Tanker Threats Offset Supply Glut Fears",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Steady-as-Hormuz-Tanker-Threats-Offset-Supply-Glut-Fears.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-19T06:00:00+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 33,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "oil prices"
+    ],
+    "status": "research_only_unverified"
+  },
+  {
+    "id": "adae1615af6e22fc7fe9837a",
+    "title": "EU spending on electricity support measures reached \u20ac12 billion, as reliance grows",
+    "url": "https://www.acer.europa.eu/news/eu-spending-electricity-support-measures-reaches-eur12-billion-2025-reliance-grows",
+    "source": "European Commission DG Energy",
+    "source_class": "official_agency",
+    "published_utc": "2026-11-18T23:00:00+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 33,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "research_only_unverified"
+  },
+  {
     "id": "ffeaf298774a3406bb15a015",
     "title": "Shell kicks off gas production from its deepwater project in Southeast Asia",
     "url": "https://www.offshore-energy.biz/2026/11/17/shell-kicks-off-gas-production-from-its-deepwater-project-in-southeast-asia",
@@ -456,6 +490,23 @@
     ],
     "status": "research_only_unverified",
     "also_seen_in": []
+  },
+  {
+    "id": "b7d6d9a018a30f85c260796a",
+    "title": "India\u2019s Oil Imports Hit Record High as Saudi Shipments Surge",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Indias-Oil-Imports-Hit-Record-High-as-Saudi-Shipments-Surge.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-19T10:30:00+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 27,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "oil imports"
+    ],
+    "status": "research_only_unverified"
   },
   {
     "id": "0dad76f8aa1370117b07fc49",

@@ -1,10 +1,10 @@
 # EnergyBrew energy company announcements (unverified)
 
 Provider: Press Release Feed. This source aggregates company and newswire press releases.
-Run: 2026-11-19T03:50:00.440283+00:00 | Status: **ok**
-Feed records: **100** | Energy-score matches: **13**
-New unique original-source links: **0**
-Release research leads in the 24-hour feed-date window: **14**
+Run: 2026-11-19T11:57:40.352178+00:00 | Status: **ok**
+Feed records: **100** | Energy-score matches: **11**
+New unique original-source links: **3**
+Release research leads in the 24-hour feed-date window: **13**
 
 Newswire/creator labels are not verified issuer identities.
 Company or newswire claims are NOT independently fact-checked reporting.

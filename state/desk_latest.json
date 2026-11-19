@@ -1,41 +1,41 @@
 {
-  "generated_utc": "2026-11-19T11:00:26.653074+00:00",
+  "generated_utc": "2026-11-19T11:57:41.600890+00:00",
   "status": "research_only_not_approved",
-  "unique_relevant_urls_7d": 251,
+  "unique_relevant_urls_7d": 320,
   "selected_research_links": 32,
-  "unique_domains_in_selection": 18,
+  "unique_domains_in_selection": 19,
   "queue_counts": {
     "system_operator_primary_24h": 1,
-    "specialist_publisher_24h": 18,
-    "older_official_context": 14,
-    "timestamped_official": 2,
-    "regulatory_date_only": 4,
-    "discovery_unverified": 197,
-    "company_release_unverified": 15
+    "specialist_publisher_24h": 19,
+    "older_official_context": 15,
+    "regulatory_date_only": 6,
+    "timestamped_official": 3,
+    "discovery_unverified": 258,
+    "company_release_unverified": 18
   },
   "selected_category_counts": {
-    "Natural Gas": 7,
+    "Natural Gas": 6,
     "LNG": 6,
     "Power & Electricity": 8,
-    "Oil & Energy": 2,
+    "Oil & Energy": 3,
     "Infrastructure & Investment": 1,
     "Geopolitics": 8
   },
   "selected_topic_coverage_counts": {
-    "Natural Gas": 7,
+    "Natural Gas": 6,
     "LNG": 6,
     "Power & Electricity": 8,
-    "Oil & Energy": 7,
-    "Infrastructure & Investment": 12,
+    "Oil & Energy": 8,
+    "Infrastructure & Investment": 11,
     "Geopolitics": 8
   },
   "missing_categories": [],
-  "publisher_timestamped_official_24h": 2,
-  "publisher_timestamped_specialist_24h": 18,
+  "publisher_timestamped_official_24h": 3,
+  "publisher_timestamped_specialist_24h": 19,
   "system_operator_primary_24h": 1,
-  "likely_same_event_links_suppressed": 6,
+  "likely_same_event_links_suppressed": 13,
   "discovery_publisher_dates_verified": 0,
-  "promotional_or_language_review_count": 1,
+  "promotional_or_language_review_count": 0,
   "stories": [
     {
       "title": "PJM Board Approves Transmission Project Changes to Support Grid Reliability",
@@ -263,6 +263,34 @@
       "rank": 130
     },
     {
+      "title": "Freeport LNG Development, L.P., FLNG Liquefaction, LLC, FLNG Liquefaction 2, LLC, FLNG Liquefaction 3, LLC, FLNG Liquefaction 4, LLC; Notice of Application and Establishing Intervention Deadline",
+      "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23609/freeport-lng-development-lp-flng-liquefaction-llc-flng-liquefaction-2-llc-flng-liquefaction-3-llc",
+      "domain": "www.federalregister.gov",
+      "source": "Federal Register notices",
+      "source_class": "official_agency",
+      "category": "LNG",
+      "coverage_themes": [
+        "LNG"
+      ],
+      "relevance_score": 81,
+      "relevance_evidence": [
+        "freeport lng",
+        "lng"
+      ],
+      "origin": "regulatory_notice",
+      "time_basis": "official_publication_date_only",
+      "observed_time_utc": "2026-11-19T05:00:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "date_only",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "regulatory_date_only",
+      "rank": 121
+    },
+    {
       "title": "Fourth floating LNG terminal put into operation mode to fuel Germany’s energy security",
       "url": "https://www.offshore-energy.biz/2026/11/17/fourth-floating-lng-terminal-put-into-operation-mode-to-fuel-germanys-energy-security",
       "domain": "www.offshore-energy.biz",
@@ -346,6 +374,33 @@
       "independent_corroboration_verified": false,
       "queue": "regulatory_date_only",
       "rank": 109
+    },
+    {
+      "title": "EU spending on electricity support measures reached €12 billion, as reliance grows",
+      "url": "https://www.acer.europa.eu/news/eu-spending-electricity-support-measures-reaches-eur12-billion-2025-reliance-grows",
+      "domain": "www.acer.europa.eu",
+      "source": "European Commission DG Energy",
+      "source_class": "official_agency",
+      "category": "Power & Electricity",
+      "coverage_themes": [
+        "Power & Electricity"
+      ],
+      "relevance_score": 33,
+      "relevance_evidence": [
+        "electricity"
+      ],
+      "origin": "official_rss",
+      "time_basis": "publisher_feed_publication_time",
+      "observed_time_utc": "2026-11-18T23:00:00+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "timestamped_official",
+      "rank": 108
     },
     {
       "title": "Energy Department Announces $2.8 Billion Loan to Strengthen Grid Reliability and Help Lower Costs in Wyoming",
@@ -463,8 +518,8 @@
     },
     {
       "title": "Iran's attacks on ships in the Strait of Hormuz escalate",
-      "url": "https://www.wknofm.org/2026-11-19/irans-attacks-on-ships-in-the-strait-of-hormuz-escalate",
-      "domain": "www.wknofm.org",
+      "url": "https://www.delawarepublic.org/2026-11-19/irans-attacks-on-ships-in-the-strait-of-hormuz-escalate",
+      "domain": "www.delawarepublic.org",
       "source": "GDELT GAL RSS",
       "source_class": "unclassified",
       "category": "Geopolitics",
@@ -479,7 +534,7 @@
       ],
       "origin": "global_discovery",
       "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-19T10:47:00+00:00",
+      "observed_time_utc": "2026-11-19T11:47:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
@@ -488,12 +543,28 @@
       "other_origins": [],
       "independent_corroboration_verified": false,
       "queue": "discovery_unverified",
-      "rank": 102
+      "rank": 102,
+      "related_reports": [
+        {
+          "title": "Iran's attacks on ships in the Strait of Hormuz escalate",
+          "url": "https://www.kvnf.org/2026-11-19/irans-attacks-on-ships-in-the-strait-of-hormuz-escalate",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "Iran's attacks on ships in the Strait of Hormuz escalate",
+          "url": "https://www.wknofm.org/2026-11-19/irans-attacks-on-ships-in-the-strait-of-hormuz-escalate",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        }
+      ]
     },
     {
       "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
-      "url": "https://www.winnipegfreepress.com/arts-and-life/life/greenpage/2026/11/19/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy-shock-iea-says",
-      "domain": "www.winnipegfreepress.com",
+      "url": "https://www.clickorlando.com/business/2026/11/19/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy-shock-iea-says",
+      "domain": "www.clickorlando.com",
       "source": "GDELT GAL RSS",
       "source_class": "unclassified",
       "category": "Geopolitics",
@@ -508,7 +579,7 @@
       ],
       "origin": "global_discovery",
       "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-19T10:47:00+00:00",
+      "observed_time_utc": "2026-11-19T11:47:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
@@ -519,6 +590,41 @@
       "queue": "discovery_unverified",
       "rank": 102,
       "related_reports": [
+        {
+          "title": "There is no going back ‘to the way it was before’ the Iran war’s energy shock, IEA says",
+          "url": "https://www.therecord.com/business/there-is-no-going-back-to-the-way-it-was-before-the-iran-war-s-energy-shock-iea-says/article_66e3bb2c-44d0-500b-802b-ef9ee7dfb210.html",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
+          "url": "https://www.messenger-inquirer.com/ap/ap_national_news/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy/article_2f8406e2-c01c-5e66-854d-7715603bd582.html",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
+          "url": "http://www.wdtimes.com/news/national/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy/article_f31935de-68c8-5d16-bbc8-c49a7c3330bf.html",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
+          "url": "http://www.gazettextra.com/news/nation_world/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy/article_5c4eb20c-1159-5064-a8ba-9c22c92c10b6.html",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
+          "url": "https://www.winnipegfreepress.com/arts-and-life/life/greenpage/2026/11/19/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy-shock-iea-says",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
         {
           "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
           "url": "https://www.ktvo.com/news/nation-world/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy/article_700273e3-39b2-59a1-8b62-97b3313798cf.html",
@@ -548,6 +654,36 @@
           "note": "Potential same-event source link; not independently corroborated"
         }
       ]
+    },
+    {
+      "title": "'Even if military tensions exacerbate, we will manage': Hardeep Puri on India’s oil supplies amid West Asia tensions - BusinessToday",
+      "url": "https://www.businesstoday.in/india/story/even-if-military-tensions-exacerbate-we-will-manage-hardeep-puri-on-indias-oil-supplies-amid-west-asia-tensions-568562-2026-11-19",
+      "domain": "www.businesstoday.in",
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics",
+        "Oil & Energy"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:oil",
+        "geopolitical_event:military",
+        "world_context:india"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-19T11:47:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
     },
     {
       "title": "Ammonnews : Jordanian sailor missing after oil tanker attack in Strait of Hormuz",
@@ -640,33 +776,6 @@
       "rank": 102
     },
     {
-      "title": "Energy Secretary Acts to Protect Mid-Atlantic Grid",
-      "url": "https://www.energy.gov/articles/energy-secretary-acts-protect-mid-atlantic-grid-0",
-      "domain": "www.energy.gov",
-      "source": "DOE Energy News",
-      "source_class": "official_agency",
-      "category": "Power & Electricity",
-      "coverage_themes": [
-        "Power & Electricity"
-      ],
-      "relevance_score": 24,
-      "relevance_evidence": [
-        "grid"
-      ],
-      "origin": "official_rss",
-      "time_basis": "publisher_feed_publication_time",
-      "observed_time_utc": "2026-11-18T18:06:31+00:00",
-      "publisher_time_verified": true,
-      "date_confidence": "publisher_rss_timestamp",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "timestamped_official",
-      "rank": 99
-    },
-    {
       "title": "US Oil Inventories On the Rise",
       "url": "https://oilprice.com/Energy/Crude-Oil/US-Oil-Inventories-On-the-Rise.html",
       "domain": "oilprice.com",
@@ -692,38 +801,6 @@
       "independent_corroboration_verified": false,
       "queue": "specialist_publisher_24h",
       "rank": 91
-    },
-    {
-      "title": "Oil Price Today (November 19): Brent crude rises to $93 as Trump likely weighs fresh Iran attacks. What are experts saying?",
-      "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-november-19-brent-crude-rises-to-93-as-trump-likely-weighs-fresh-iran-attacks-what-are-experts-saying/articleshow/135975416.cms",
-      "domain": "economictimes.indiatimes.com",
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics",
-        "Oil & Energy"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:oil",
-        "geopolitical_event:attacks",
-        "world_context:iran"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-19T02:46:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [
-        "speculative_geopolitical_headline"
-      ],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 87
     },
     {
       "title": "Orlen spreads its wings across Central and Eastern Europe with new gas pacts",
@@ -781,6 +858,34 @@
       "rank": 79
     },
     {
+      "title": "India's Crude Oil Production Set To Fall 20% By 2035: IEA - BW Businessworld",
+      "url": "https://www.businessworld.in/article/india-s-crude-oil-production-set-to-fall-20-by-2035-iea-634356",
+      "domain": "www.businessworld.in",
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Oil & Energy",
+      "coverage_themes": [
+        "Oil & Energy"
+      ],
+      "relevance_score": 66,
+      "relevance_evidence": [
+        "crude oil",
+        "oil production"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-19T11:01:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 78
+    },
+    {
       "title": "Tanzania, Uganda fast-track crude oil pipeline completion - Channel Africa",
       "url": "https://www.channelafrica.co.za/channelafrica/news/tanzania-uganda-fast-track-crude-oil-pipeline-completion",
       "domain": "www.channelafrica.co.za",
@@ -835,34 +940,6 @@
       "independent_corroboration_verified": false,
       "queue": "older_official_context",
       "rank": 75
-    },
-    {
-      "title": "Northwest Pipeline, LLC; Notice of Scoping Period Requesting Comments on Environmental Issues for the Planned Silver Spur Project and Notice of Public Scoping Sessions",
-      "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23441/northwest-pipeline-llc-notice-of-scoping-period-requesting-comments-on-environmental-issues-for-the",
-      "domain": "www.federalregister.gov",
-      "source": "Federal Register notices",
-      "source_class": "official_agency",
-      "category": "Natural Gas",
-      "coverage_themes": [
-        "Natural Gas",
-        "Infrastructure & Investment"
-      ],
-      "relevance_score": 30,
-      "relevance_evidence": [
-        "northwest pipeline"
-      ],
-      "origin": "regulatory_notice",
-      "time_basis": "official_publication_date_only",
-      "observed_time_utc": "2026-11-18T05:00:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "date_only",
-      "within_24h_on_own_time_basis": false,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "regulatory_date_only",
-      "rank": 70
     },
     {
       "title": "Shell kicks off gas production from its deepwater project in Southeast Asia",
@@ -947,49 +1024,22 @@
       "rank": 57
     },
     {
-      "title": "LNG News, Stories and Headlines on the Financial Post",
-      "url": "https://financialpost.com/category/energy/lng",
-      "domain": "financialpost.com",
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "LNG",
-      "coverage_themes": [
-        "LNG"
-      ],
-      "relevance_score": 45,
-      "relevance_evidence": [
-        "lng"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-18T21:17:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 57
-    },
-    {
-      "title": "Gas Infrastructure Offers Africa’s Best Energy Investment In 2027 – WEC",
-      "url": "https://leadership.ng/gas-infrastructure-offers-africas-best-energy-investment-in-2027-wec",
-      "domain": "leadership.ng",
+      "title": "Final investment decision on Azerbaijan's Karabakh field expected in 2027",
+      "url": "https://en.apa.az/energy-and-industry/final-investment-decision-on-azerbaijans-karabakh-field-expected-in-2027-537196",
+      "domain": "en.apa.az",
       "source": "GDELT GAL RSS",
       "source_class": "unclassified",
       "category": "Infrastructure & Investment",
       "coverage_themes": [
         "Infrastructure & Investment"
       ],
-      "relevance_score": 30,
+      "relevance_score": 36,
       "relevance_evidence": [
-        "gas infrastructure"
+        "final investment decision"
       ],
       "origin": "global_discovery",
       "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-18T19:32:00+00:00",
+      "observed_time_utc": "2026-11-19T11:01:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
@@ -998,7 +1048,7 @@
       "other_origins": [],
       "independent_corroboration_verified": false,
       "queue": "discovery_unverified",
-      "rank": 42
+      "rank": 48
     }
   ],
   "definitions": {

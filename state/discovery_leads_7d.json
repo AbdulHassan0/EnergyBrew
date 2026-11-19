@@ -1,5 +1,258 @@
 [
   {
+    "url": "https://www.kvnf.org/2026-11-19/irans-attacks-on-ships-in-the-strait-of-hormuz-escalate",
+    "title": "Iran's attacks on ships in the Strait of Hormuz escalate",
+    "domain": "www.kvnf.org",
+    "gdelt_first_seen_utc": "2026-11-19T11:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:strait of hormuz",
+      "geopolitical_event:attacks",
+      "world_context:iran"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.messenger-inquirer.com/ap/ap_national_news/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy/article_2f8406e2-c01c-5e66-854d-7715603bd582.html",
+    "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
+    "domain": "www.messenger-inquirer.com",
+    "gdelt_first_seen_utc": "2026-11-19T11:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:energy",
+      "geopolitical_event:war",
+      "world_context:iran"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "http://www.wdtimes.com/news/national/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy/article_f31935de-68c8-5d16-bbc8-c49a7c3330bf.html",
+    "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
+    "domain": "www.wdtimes.com",
+    "gdelt_first_seen_utc": "2026-11-19T11:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:energy",
+      "geopolitical_event:war",
+      "world_context:iran"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "http://www.gazettextra.com/news/nation_world/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy/article_5c4eb20c-1159-5064-a8ba-9c22c92c10b6.html",
+    "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
+    "domain": "www.gazettextra.com",
+    "gdelt_first_seen_utc": "2026-11-19T11:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:energy",
+      "geopolitical_event:war",
+      "world_context:iran"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.wknofm.org/2026-11-19/irans-attacks-on-ships-in-the-strait-of-hormuz-escalate",
+    "title": "Iran's attacks on ships in the Strait of Hormuz escalate",
+    "domain": "www.wknofm.org",
+    "gdelt_first_seen_utc": "2026-11-19T10:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:strait of hormuz",
+      "geopolitical_event:attacks",
+      "world_context:iran"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.winnipegfreepress.com/arts-and-life/life/greenpage/2026/11/19/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy-shock-iea-says",
+    "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
+    "domain": "www.winnipegfreepress.com",
+    "gdelt_first_seen_utc": "2026-11-19T10:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:energy",
+      "geopolitical_event:war",
+      "world_context:iran"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.ktvo.com/news/nation-world/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy/article_700273e3-39b2-59a1-8b62-97b3313798cf.html",
+    "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
+    "domain": "www.ktvo.com",
+    "gdelt_first_seen_utc": "2026-11-19T10:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:energy",
+      "geopolitical_event:war",
+      "world_context:iran"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://kdhnews.com/news/nation/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy/article_7c74bad0-b589-5647-ae81-0bfd0aedc630.html",
+    "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
+    "domain": "kdhnews.com",
+    "gdelt_first_seen_utc": "2026-11-19T10:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:energy",
+      "geopolitical_event:war",
+      "world_context:iran"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.couriernews.com/news/business/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy/article_baf9fbb9-0b63-50ee-805a-73089f8418a8.html",
+    "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
+    "domain": "www.couriernews.com",
+    "gdelt_first_seen_utc": "2026-11-19T10:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:energy",
+      "geopolitical_event:war",
+      "world_context:iran"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.thesunchronicle.com/business/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy/article_8799d6a5-5a86-5b36-9fc1-58b76eed83f2.html",
+    "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
+    "domain": "www.thesunchronicle.com",
+    "gdelt_first_seen_utc": "2026-11-19T10:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:energy",
+      "geopolitical_event:war",
+      "world_context:iran"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "http://en.ammonnews.net/article/97318",
+    "title": "Ammonnews : Jordanian sailor missing after oil tanker attack in Strait of Hormuz",
+    "domain": "en.ammonnews.net",
+    "gdelt_first_seen_utc": "2026-11-19T10:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:oil",
+      "geopolitical_event:attack",
+      "world_context:strait of hormuz"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
     "url": "https://economictimes.indiatimes.com/markets/commodities/news/oil-price-today-november-19-brent-crude-rises-to-93-as-trump-likely-weighs-fresh-iran-attacks-what-are-experts-saying/articleshow/135975416.cms",
     "title": "Oil Price Today (November 19): Brent crude rises to $93 as Trump likely weighs fresh Iran attacks. What are experts saying?",
     "domain": "economictimes.indiatimes.com",
@@ -93,6 +346,834 @@
     ]
   },
   {
+    "url": "https://www.times-series.co.uk/news/national/26743383.third-ukrainian-strike-four-days-halts-rail-traffic-russias-kerch-bridge",
+    "title": "Third Ukrainian strike in four days halts rail traffic on Russia\u2019s Kerch Bridge",
+    "domain": "www.times-series.co.uk",
+    "gdelt_first_seen_utc": "2026-11-19T11:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.thecomet.net/news/national/26743383.third-ukrainian-strike-four-days-halts-rail-traffic-russias-kerch-bridge",
+    "title": "Third Ukrainian strike in four days halts rail traffic on Russia\u2019s Kerch Bridge",
+    "domain": "www.thecomet.net",
+    "gdelt_first_seen_utc": "2026-11-19T11:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://en.apa.az/america/trump-russia-and-ukraine-want-war-to-end-537159",
+    "title": "Trump: Russia and Ukraine want war to end",
+    "domain": "en.apa.az",
+    "gdelt_first_seen_utc": "2026-11-19T11:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:war",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.newsshopper.co.uk/news/national/26743383.third-ukrainian-strike-four-days-halts-rail-traffic-russias-kerch-bridge",
+    "title": "Third Ukrainian strike in four days halts rail traffic on Russia\u2019s Kerch Bridge",
+    "domain": "www.newsshopper.co.uk",
+    "gdelt_first_seen_utc": "2026-11-19T11:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.eastlothiancourier.com/news/national/26743383.third-ukrainian-strike-four-days-halts-rail-traffic-russias-kerch-bridge",
+    "title": "Third Ukrainian strike in four days halts rail traffic on Russia\u2019s Kerch Bridge",
+    "domain": "www.eastlothiancourier.com",
+    "gdelt_first_seen_utc": "2026-11-19T11:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.channelnewsasia.com/world/ukraine-russia-strike-crimean-bridge-6565221",
+    "title": "Ukraine strikes Crimean Bridge for third time in a week ahead of US-China-Russia summit",
+    "domain": "www.channelnewsasia.com",
+    "gdelt_first_seen_utc": "2026-11-19T11:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strikes",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.bournemouthecho.co.uk/news/national/26743383.third-ukrainian-strike-four-days-halts-rail-traffic-russias-kerch-bridge",
+    "title": "Third Ukrainian strike in four days halts rail traffic on Russia\u2019s Kerch Bridge",
+    "domain": "www.bournemouthecho.co.uk",
+    "gdelt_first_seen_utc": "2026-11-19T11:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.jagran.com/world/china-donald-trump-putin-xi-jinping-trilateral-talks-on-nuclear-disarmament-russia-ukraine-war-iran-us-china-40441562.html",
+    "title": "\u091f\u094d\u0930\u0902\u092a-\u092a\u0941\u0924\u093f\u0928 \u0914\u0930 \u091a\u093f\u0928\u092b\u093f\u0902\u0917 \u0915\u0947 \u092c\u0940\u091a \u0924\u094d\u0930\u093f\u092a\u0915\u094d\u0937\u0940\u092f \u0935\u093e\u0930\u094d\u0924\u093e \u0916\u0924\u094d\u092e, \u0915\u093f\u0928-\u0915\u093f\u0928 \u092e\u0941\u0926\u094d\u0926\u094b\u0902 \u092a\u0930 \u0939\u0941\u0908 \u091a\u0930\u094d\u091a\u093e? - donald trump putin xi jinping trilateral talks on nuclear disarmament russia ukraine war iran us china",
+    "domain": "www.jagran.com",
+    "gdelt_first_seen_utc": "2026-11-19T11:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:war",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.keighleynews.co.uk/news/national/26743383.third-ukrainian-strike-four-days-halts-rail-traffic-russias-kerch-bridge",
+    "title": "Third Ukrainian strike in four days halts rail traffic on Russia\u2019s Kerch Bridge",
+    "domain": "www.keighleynews.co.uk",
+    "gdelt_first_seen_utc": "2026-11-19T11:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.northwaleschronicle.co.uk/news/national/26743383.third-ukrainian-strike-four-days-halts-rail-traffic-russias-kerch-bridge",
+    "title": "Third Ukrainian strike in four days halts rail traffic on Russia\u2019s Kerch Bridge",
+    "domain": "www.northwaleschronicle.co.uk",
+    "gdelt_first_seen_utc": "2026-11-19T11:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.oxfordmail.co.uk/news/national/26743383.third-ukrainian-strike-four-days-halts-rail-traffic-russias-kerch-bridge",
+    "title": "Third Ukrainian strike in four days halts rail traffic on Russia\u2019s Kerch Bridge",
+    "domain": "www.oxfordmail.co.uk",
+    "gdelt_first_seen_utc": "2026-11-19T11:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.dailyecho.co.uk/news/national/26743383.third-ukrainian-strike-four-days-halts-rail-traffic-russias-kerch-bridge",
+    "title": "Third Ukrainian strike in four days halts rail traffic on Russia\u2019s Kerch Bridge",
+    "domain": "www.dailyecho.co.uk",
+    "gdelt_first_seen_utc": "2026-11-19T11:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.peeblesshirenews.com/news/national/26743383.third-ukrainian-strike-four-days-halts-rail-traffic-russias-kerch-bridge",
+    "title": "Third Ukrainian strike in four days halts rail traffic on Russia\u2019s Kerch Bridge",
+    "domain": "www.peeblesshirenews.com",
+    "gdelt_first_seen_utc": "2026-11-19T11:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.dumbartonreporter.co.uk/news/national/26743383.third-ukrainian-strike-four-days-halts-rail-traffic-russias-kerch-bridge",
+    "title": "Third Ukrainian strike in four days halts rail traffic on Russia\u2019s Kerch Bridge",
+    "domain": "www.dumbartonreporter.co.uk",
+    "gdelt_first_seen_utc": "2026-11-19T10:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.ktvo.com/news/nation-world/after-near-death-a-leading-russian-filmmaker-resolves-to-confront-putins-war-in-ukraine/article_13f14fb8-1d22-558e-8dc7-033abdd9ec33.html",
+    "title": "After near death, a leading Russian filmmaker resolves to confront Putin's war in Ukraine",
+    "domain": "www.ktvo.com",
+    "gdelt_first_seen_utc": "2026-11-19T10:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:war",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.nvdaily.com/associated_press_national/after-near-death-a-leading-russian-filmmaker-resolves-to-confront-putins-war-in-ukraine/article_49f56bad-d118-5312-898b-a2a0524bb8cc.html",
+    "title": "After near death, a leading Russian filmmaker resolves to confront Putin's war in Ukraine",
+    "domain": "www.nvdaily.com",
+    "gdelt_first_seen_utc": "2026-11-19T10:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:war",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.hexham-courant.co.uk/news/national/26743383.third-ukrainian-strike-four-days-halts-rail-traffic-russias-kerch-bridge",
+    "title": "Third Ukrainian strike in four days halts rail traffic on Russia\u2019s Kerch Bridge",
+    "domain": "www.hexham-courant.co.uk",
+    "gdelt_first_seen_utc": "2026-11-19T10:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.london-now.co.uk/news/national/26743383.third-ukrainian-strike-four-days-halts-rail-traffic-russias-kerch-bridge",
+    "title": "Third Ukrainian strike in four days halts rail traffic on Russia\u2019s Kerch Bridge",
+    "domain": "www.london-now.co.uk",
+    "gdelt_first_seen_utc": "2026-11-19T10:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.theglobeandmail.com/world/article-ukrainian-ngo-head-says-russian-attacks-on-infrastructure-are-a-sign",
+    "title": "Ukrainian NGO head says Russian attacks on infrastructure are a sign of desperation",
+    "domain": "www.theglobeandmail.com",
+    "gdelt_first_seen_utc": "2026-11-19T10:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attacks",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.wiltsglosstandard.co.uk/news/national/26743383.third-ukrainian-strike-four-days-halts-rail-traffic-russias-kerch-bridge",
+    "title": "Third Ukrainian strike in four days halts rail traffic on Russia\u2019s Kerch Bridge",
+    "domain": "www.wiltsglosstandard.co.uk",
+    "gdelt_first_seen_utc": "2026-11-19T10:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.arkansasonline.com/news/2026/nov/19/us-gulf-allies-aim-to-avert-renewal-of-war-with",
+    "title": "US\u2019 Gulf allies aim to avert renewal of war with Iran | Arkansas Democrat Gazette",
+    "domain": "www.arkansasonline.com",
+    "gdelt_first_seen_utc": "2026-11-19T10:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:war",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.dunmowbroadcast.co.uk/news/national/26743383.third-ukrainian-strike-four-days-halts-rail-traffic-russias-kerch-bridge",
+    "title": "Third Ukrainian strike in four days halts rail traffic on Russia\u2019s Kerch Bridge",
+    "domain": "www.dunmowbroadcast.co.uk",
+    "gdelt_first_seen_utc": "2026-11-19T10:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.wokv.com/entertainment/after-near-death/TU2Y2JBV6454ZAVPY4X4UZ43IU",
+    "title": "After near death, a leading Russian filmmaker resolves to confront Putin's war in Ukraine",
+    "domain": "www.wokv.com",
+    "gdelt_first_seen_utc": "2026-11-19T10:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:war",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.burnhamandhighbridgeweeklynews.co.uk/news/national/26743383.third-ukrainian-strike-four-days-halts-rail-traffic-russias-kerch-bridge",
+    "title": "Third Ukrainian strike in four days halts rail traffic on Russia\u2019s Kerch Bridge",
+    "domain": "www.burnhamandhighbridgeweeklynews.co.uk",
+    "gdelt_first_seen_utc": "2026-11-19T10:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.yourlocalguardian.co.uk/news/national/26743383.third-ukrainian-strike-four-days-halts-rail-traffic-russias-kerch-bridge",
+    "title": "Third Ukrainian strike in four days halts rail traffic on Russia\u2019s Kerch Bridge",
+    "domain": "www.yourlocalguardian.co.uk",
+    "gdelt_first_seen_utc": "2026-11-19T10:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.stcatharinesstandard.ca/news/world/europe/a-third-ukrainian-strike-in-4-days-halts-rail-traffic-on-russia-s-kerch-bridge/article_5169659b-fff3-548e-ab4a-5d4fe2f3cdbc.html",
+    "title": "A third Ukrainian strike in 4 days halts rail traffic on Russia\u2019s Kerch Bridge",
+    "domain": "www.stcatharinesstandard.ca",
+    "gdelt_first_seen_utc": "2026-11-19T10:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.thesunchronicle.com/features/stories/after-near-death-a-leading-russian-filmmaker-resolves-to-confront-putins-war-in-ukraine/article_7a26caac-5366-50a9-b039-a852c350a0cc.html",
+    "title": "After near death, a leading Russian filmmaker resolves to confront Putin's war in Ukraine",
+    "domain": "www.thesunchronicle.com",
+    "gdelt_first_seen_utc": "2026-11-19T10:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:war",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.couriernews.com/news/national/a-third-ukrainian-strike-in-4-days-halts-rail-traffic-on-russias-kerch-bridge/article_9ea6eddb-7f45-5b4f-80f8-301e9a961f88.html",
+    "title": "A third Ukrainian strike in 4 days halts rail traffic on Russia's Kerch Bridge",
+    "domain": "www.couriernews.com",
+    "gdelt_first_seen_utc": "2026-11-19T10:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.couriernews.com/news/national/after-near-death-a-leading-russian-filmmaker-resolves-to-confront-putins-war-in-ukraine/article_cb7a63a7-21d5-5639-9dcf-16e0fd1fb23b.html",
+    "title": "After near death, a leading Russian filmmaker resolves to confront Putin's war in Ukraine",
+    "domain": "www.couriernews.com",
+    "gdelt_first_seen_utc": "2026-11-19T10:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:war",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.harrowtimes.co.uk/news/national/26743383.third-ukrainian-strike-four-days-halts-rail-traffic-russias-kerch-bridge",
+    "title": "Third Ukrainian strike in four days halts rail traffic on Russia\u2019s Kerch Bridge",
+    "domain": "www.harrowtimes.co.uk",
+    "gdelt_first_seen_utc": "2026-11-19T10:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.romfordrecorder.co.uk/news/national/26743383.third-ukrainian-strike-four-days-halts-rail-traffic-russias-kerch-bridge",
+    "title": "Third Ukrainian strike in four days halts rail traffic on Russia\u2019s Kerch Bridge",
+    "domain": "www.romfordrecorder.co.uk",
+    "gdelt_first_seen_utc": "2026-11-19T10:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.surinametimes.com/artikel/gulf-nations-on-alert-after-us-strikes-iranian-island",
+    "title": "Gulf nations on alert after US strikes Iranian island",
+    "domain": "www.surinametimes.com",
+    "gdelt_first_seen_utc": "2026-11-19T10:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strikes",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.southwalesguardian.co.uk/news/national/26743383.third-ukrainian-strike-four-days-halts-rail-traffic-russias-kerch-bridge",
+    "title": "Third Ukrainian strike in four days halts rail traffic on Russia\u2019s Kerch Bridge",
+    "domain": "www.southwalesguardian.co.uk",
+    "gdelt_first_seen_utc": "2026-11-19T10:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://tert.am/en/news/2026/11/19/US%20and%20China/4290929",
+    "title": "US and China want to help end Ukraine war, Trump says ahead of trilateral with Russia",
+    "domain": "tert.am",
+    "gdelt_first_seen_utc": "2026-11-19T10:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:war",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.wfmz.com/news/ap/ap-national/a-third-ukrainian-strike-in-4-days-halts-rail-traffic-on-russia-s-kerch-bridge/article_0ab00e19-b8a6-562b-9992-c3f15b43cf32.html",
+    "title": "A third Ukrainian strike in 4 days halts rail traffic on Russia's Kerch Bridge",
+    "domain": "www.wfmz.com",
+    "gdelt_first_seen_utc": "2026-11-19T10:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.bridgwatermercury.co.uk/news/national/26743383.third-ukrainian-strike-four-days-halts-rail-traffic-russias-kerch-bridge",
+    "title": "Third Ukrainian strike in four days halts rail traffic on Russia\u2019s Kerch Bridge",
+    "domain": "www.bridgwatermercury.co.uk",
+    "gdelt_first_seen_utc": "2026-11-19T10:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
     "url": "https://www.deccanchronicle.com/world/americas/us-navy-used-expired-weapons-in-iran-war-amid-munitions-shortage-2005763",
     "title": "US Navy Used Expired Weapons in Iran War Amid Munitions Shortage",
     "domain": "www.deccanchronicle.com",
@@ -113,7 +1194,10 @@
       "geopolitical_event:war",
       "world_context:iran/united states"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.aol.co.uk/articles/ukraine-war-briefing-russia-asks-021626000.html",
@@ -136,7 +1220,10 @@
       "geopolitical_event:strike",
       "world_context:russia/ukraine"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "http://www.heraldglobe.com/news/279442005/we-dont-need-any-help-trump-claims-us-has-defeated-iran-military-rules-out-seeking-assistance-from-china-russia",
@@ -159,7 +1246,10 @@
       "geopolitical_event:military",
       "world_context:iran/united states"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.onenewspage.com/story/irans-army-chief-vows-more-crushing-response-if-us-attacks-again-6928c75f",
@@ -277,6 +1367,72 @@
       "energy_market_exposure:inferred_high_risk_region",
       "geopolitical_event:war",
       "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.businessworld.in/article/india-s-crude-oil-production-set-to-fall-20-by-2035-iea-634356",
+    "title": "India's Crude Oil Production Set To Fall 20% By 2035: IEA - BW Businessworld",
+    "domain": "www.businessworld.in",
+    "gdelt_first_seen_utc": "2026-11-19T11:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 66,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "crude oil",
+      "oil production"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.channelafrica.co.za/channelafrica/news/tanzania-uganda-fast-track-crude-oil-pipeline-completion",
+    "title": "Tanzania, Uganda fast-track crude oil pipeline completion - Channel Africa",
+    "domain": "www.channelafrica.co.za",
+    "gdelt_first_seen_utc": "2026-11-19T10:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 66,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "crude oil",
+      "oil pipeline"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.cnbc.com/2026/11/19/data-center-electricity-demand-iea.html",
+    "title": "Data center electricity use could double by 2030, IEA says",
+    "domain": "www.cnbc.com",
+    "gdelt_first_seen_utc": "2026-11-19T10:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 63,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center",
+      "electricity"
     ],
     "status": "discovery_only_requires_publisher_verification"
   },
@@ -662,6 +1818,27 @@
     "status": "discovery_only_requires_publisher_verification"
   },
   {
+    "url": "https://www.mercurynews.com/2026/11/19/today-in-history-november-19-explosions-at-mexico-city-natural-gas-facility-kills-at-least-500",
+    "title": "Today in History: November 19, explosions at Mexico City natural gas facility kills at least 500",
+    "domain": "www.mercurynews.com",
+    "gdelt_first_seen_utc": "2026-11-19T10:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 39,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "natural gas"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
     "url": "https://smallbiztrends.com/natural-gas-inventories-surge-above-average-as-injection-season-ends",
     "title": "Natural Gas Inventories Surge Above Average as Injection Season Ends",
     "domain": "smallbiztrends.com",
@@ -698,6 +1875,27 @@
     "category": "Natural Gas",
     "relevance_evidence": [
       "natural gas"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://en.apa.az/energy-and-industry/final-investment-decision-on-azerbaijans-karabakh-field-expected-in-2027-537196",
+    "title": "Final investment decision on Azerbaijan's Karabakh field expected in 2027",
+    "domain": "en.apa.az",
+    "gdelt_first_seen_utc": "2026-11-19T11:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 36,
+    "category": "Infrastructure & Investment",
+    "relevance_evidence": [
+      "final investment decision"
     ],
     "status": "discovery_only_requires_publisher_verification"
   },
@@ -768,6 +1966,132 @@
     "status": "discovery_only_requires_publisher_verification"
   },
   {
+    "url": "https://www.tanea.gr/2026/11/19/greece/en-plo-to-ramform-tethys-gia-tis-ereynes-tis-chevron-ekdothike-i-navtex-pou-epivevaionei-to-reportaz-ton-neon",
+    "title": "\u0395\u03bd \u03c0\u03bb\u03c9 \u03c4\u03bf \u00abRamform Tethys\u00bb \u03b3\u03b9\u03b1 \u03c4\u03b9\u03c2 \u03ad\u03c1\u03b5\u03c5\u03bd\u03b5\u03c2 \u03c4\u03b7\u03c2 Chevron \u2013 \u0395\u03ba\u03b4\u03cc\u03b8\u03b7\u03ba\u03b5 \u03b7 NAVTEX \u03c0\u03bf\u03c5 \u03b5\u03c0\u03b9\u03b2\u03b5\u03b2\u03b1\u03b9\u03ce\u03bd\u03b5\u03b9 \u03c4\u03bf \u03c1\u03b5\u03c0\u03bf\u03c1\u03c4\u03ac\u03b6 \u03c4\u03c9\u03bd \u00ab\u039d\u0395\u03a9\u039d\u00bb",
+    "domain": "www.tanea.gr",
+    "gdelt_first_seen_utc": "2026-11-19T11:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "chevron"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.eco-business.com/news/global-electricity-demand-to-rise-about-37-per-cent-by-2035-with-heatwaves-and-ai-pushing-projections-higher-iea",
+    "title": "Global electricity demand to rise about 37 per cent by 2035, with heatwaves and AI pushing projections higher: IEA",
+    "domain": "www.eco-business.com",
+    "gdelt_first_seen_utc": "2026-11-19T10:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "http://en.ammonnews.net/article/97314",
+    "title": "Ammonnews : Electricity and Water: Between Today\u2019s Costs and Tomorrow\u2019s Investments",
+    "domain": "en.ammonnews.net",
+    "gdelt_first_seen_utc": "2026-11-19T10:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.theglobeandmail.com/investing/article-oil-prices-rise-as-middle-east-shipping-attacks-counter-supply-surplus",
+    "title": "Oil prices rise as Middle East shipping attacks counter supply surplus outlook",
+    "domain": "www.theglobeandmail.com",
+    "gdelt_first_seen_utc": "2026-11-19T10:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "oil prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://woai.iheart.com/featured/san-antonios-first-news/content/2026-11-18-gas-prices-fall-below-4-a-gallon-for-the-first-time-since-july",
+    "title": "Gas Prices Fall Below $4 a Gallon for the First Time Since July | News Radio 1200 WOAI | San Antonio's First News",
+    "domain": "woai.iheart.com",
+    "gdelt_first_seen_utc": "2026-11-19T10:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://peakoil.com/publicpolicy/why-iraq-just-fast-tracked-chevrons-takeover-of-a-14-billion-barrel-supergiant",
+    "title": "Why Iraq Just Fast-Tracked Chevron's Takeover Of A 14-Billion-Barrel Supergiant | Peak Oil News and Message Boards",
+    "domain": "peakoil.com",
+    "gdelt_first_seen_utc": "2026-11-19T03:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "chevron"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
     "url": "https://www.simcoe.com/news/ontario-gas-price-prediction-for-nov-19-20/article_17e8bd45-49b2-546f-b2b0-a48a12ec248e.html",
     "title": "Ontario gas prices are about to dip again. Here's how much you'll save.",
     "domain": "www.simcoe.com",
@@ -786,7 +2110,10 @@
     "relevance_evidence": [
       "gas prices"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.punjabijagran.com/punjab/ludhiana-why-is-there-pitch-darkness-at-lala-jis-house-the-electricity-bill-hasnt-been-paid-sir-lala-lajpat-rais-ancestral-home-opens-only-upon-the-arrival-of-a-vip-9715056.html",
@@ -807,7 +2134,10 @@
     "relevance_evidence": [
       "electricity"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.columbian.com/news/2026/nov/18/wa-gas-prices-continue-downward-trend",
@@ -1451,6 +2781,216 @@
     "status": "discovery_only_requires_publisher_verification"
   },
   {
+    "url": "https://wsau.com/2026/11/19/at-cop31-venezuela-touts-ai-as-path-to-cleaner-oil-production",
+    "title": "At COP31, Venezuela touts AI as path to cleaner oil production",
+    "domain": "wsau.com",
+    "gdelt_first_seen_utc": "2026-11-19T11:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "oil production"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://en.apa.az/energy-and-industry/bp-construction-of-shafag-solar-power-plant-progressing-as-planned-537199",
+    "title": "bp: Construction of Shafag Solar Power Plant progressing as planned",
+    "domain": "en.apa.az",
+    "gdelt_first_seen_utc": "2026-11-19T11:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "power plant"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "http://www.gazettextra.com/news/local/rock-road-companies-to-take-the-lead-in-effort-to-bring-data-center-to-rock/article_78d19050-371d-59a3-83c8-a6a633696f0e.html",
+    "title": "Rock Road Companies to take the lead in effort to bring data center to Rock County",
+    "domain": "www.gazettextra.com",
+    "gdelt_first_seen_utc": "2026-11-19T11:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://kfgo.com/2026/11/19/at-cop31-venezuela-touts-ai-as-path-to-cleaner-oil-production",
+    "title": "At COP31, Venezuela touts AI as path to cleaner oil production",
+    "domain": "kfgo.com",
+    "gdelt_first_seen_utc": "2026-11-19T11:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "oil production"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://en.apa.az/cis-countries/pashinyan-armenia-ready-to-develop-oil-refinery-project-using-iranian-oil-537198",
+    "title": "Pashinyan: Armenia ready to develop oil refinery project using Iranian oil",
+    "domain": "en.apa.az",
+    "gdelt_first_seen_utc": "2026-11-19T11:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "refinery"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.illinoistimes.com/food-drink/food/east-meets-west-miso-butterscotch-budino",
+    "title": "East meets West: Miso butterscotch budino - Illinois Times, the capital city's source of news, politics, arts, entertainment, culture",
+    "domain": "www.illinoistimes.com",
+    "gdelt_first_seen_utc": "2026-11-19T11:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "miso"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://wiky.com/2026/11/19/at-cop31-venezuela-touts-ai-as-path-to-cleaner-oil-production",
+    "title": "At COP31, Venezuela touts AI as path to cleaner oil production",
+    "domain": "wiky.com",
+    "gdelt_first_seen_utc": "2026-11-19T10:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "oil production"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.corrierecomunicazioni.it/data-center/data-center-milano-verso-il-sorpasso-su-dublino-nel-2028-potrebbe-diventare-il-quinto-hub-europeo",
+    "title": "Data center AI, Milano nel 2028 quinto mercato europeo",
+    "domain": "www.corrierecomunicazioni.it",
+    "gdelt_first_seen_utc": "2026-11-19T10:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://brescia.corriere.it/notizie/cronaca/26_novembre_19/data-center-si-sgonfia-la-bolla-delle-domande-la-potenza-richiesta-in-calo-del-27-per-cento-101dcdb0-85ff-4b49-a482-c8deed70axlk.shtml",
+    "title": "Data center, si sgonfia la bolla delle domande: la potenza richiesta in calo del 27 per cento",
+    "domain": "brescia.corriere.it",
+    "gdelt_first_seen_utc": "2026-11-19T10:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.commercial-news.com/news/time-is-up-advocates-rally-in-springfield-for-data-center-reforms-in-illinois/article_4f0fb690-bba6-4021-87ab-cbde1b402495.html",
+    "title": "\u2018Time is up\u2019: Advocates rally in Springfield for data center reforms in Illinois",
+    "domain": "www.commercial-news.com",
+    "gdelt_first_seen_utc": "2026-11-19T03:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
     "url": "https://fox56.com/news/local/lackawanna-co-commissioners-vote-to-repeal-tax-exemption-given-to-data-center-project",
     "title": "Lackawanna Co. commissioners vote to repeal tax exemption given to data center project",
     "domain": "fox56.com",
@@ -1469,7 +3009,10 @@
     "relevance_evidence": [
       "data center"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.tribtoday.com/news/local-news/2026/11/data-center-developer-completes-youngstown-purchase",
@@ -1490,7 +3033,10 @@
     "relevance_evidence": [
       "data center"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.manilatimes.net/2026/11/19/tmt-newswire/globenewswire/agencia-comercial-spirits-ltd-announces-execution-of-mep-equipment-supply-and-installation-contracts-for-phase-1b-of-indonesia-data-center/2473698",
@@ -1511,7 +3057,10 @@
     "relevance_evidence": [
       "data center"
     ],
-    "status": "discovery_only_requires_publisher_verification"
+    "status": "discovery_only_requires_publisher_verification",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.kfvs12.com/2026/11/19/city-perryville-warning-residents-water-utility-phone-scam",
@@ -2956,6 +4505,111 @@
     "status": "discovery_only_requires_publisher_verification"
   },
   {
+    "url": "https://cyprus-mail.com/2026/11/19/eac-insists-battery-storage-is-moving-forward",
+    "title": "EAC insists battery storage is moving forward",
+    "domain": "cyprus-mail.com",
+    "gdelt_first_seen_utc": "2026-11-19T11:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "battery storage"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://english.elpais.com/economy-and-business/2026-11-19/peter-thiel-expands-investments-in-vaca-muertas-largest-oil-exporter.html",
+    "title": "Peter Thiel expands investments in Vaca Muerta's largest oil exporter",
+    "domain": "english.elpais.com",
+    "gdelt_first_seen_utc": "2026-11-19T11:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "vaca muerta"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "http://www.bignewsnetwork.com/news/279442923/adnoc-distribution-accelerates-adnoc-voyager-expansion-across-africa-south-america-asia",
+    "title": "ADNOC Distribution accelerates ADNOC Voyager's expansion across Africa, South America, Asia",
+    "domain": "www.bignewsnetwork.com",
+    "gdelt_first_seen_utc": "2026-11-19T11:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "adnoc"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.tnp.no/norway/economy/3630-aker-solutions-awarded-frame-agreement-with-petrobras",
+    "title": "Aker Solutions awarded frame agreement with Petrobras - The Nordic Page",
+    "domain": "www.tnp.no",
+    "gdelt_first_seen_utc": "2026-11-19T10:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "petrobras"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.wboc.com/news/ocean-city-mayor-and-council-reaffirm-opposition-for-offshore-wind/article_15e6ee80-b2ce-4d69-b030-15cd27b059c2.html",
+    "title": "Ocean city mayor and council reaffirm opposition for offshore wind",
+    "domain": "www.wboc.com",
+    "gdelt_first_seen_utc": "2026-11-19T03:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "offshore wind"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
     "url": "https://www.abnnewswire.net/press/en/143448/Central-Petroleum-Limited-%28ASX-CTP%29-AGM-Presentation-and-Chairs-2026-AGM-Address.html",
     "title": "Central Petroleum Limited (ASX:CTP) AGM Presentation and Chair's 2026 AGM Address",
     "domain": "www.abnnewswire.net",
@@ -3298,6 +4952,69 @@
     "category": "Power & Electricity",
     "relevance_evidence": [
       "offshore wind"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.businessworld.in/article/nlc-india-renewables-files-for-rs-3-300-cr-ipo-10-cr-shares-to-be-offloaded-634357",
+    "title": "NLC India Renewables Files For Rs 3,300 Cr IPO, 10 Cr Shares To Be Offloaded - BW Businessworld",
+    "domain": "www.businessworld.in",
+    "gdelt_first_seen_utc": "2026-11-19T11:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 24,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "renewables"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://economictimes.indiatimes.com/industry/renewables/kkr-buys-minority-stake-in-petronas-unit-gentaris-india-renewables-arm/articleshow/135986641.cms",
+    "title": "KKR buys minority stake in Petronas unit Gentari\u2019s India renewables arm",
+    "domain": "economictimes.indiatimes.com",
+    "gdelt_first_seen_utc": "2026-11-19T10:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 24,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "renewables"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.riotimesonline.com/ghana-gold-refining-target-roadmap-manteaw",
+    "title": "Ghana Gold Refining Target Needs a Roadmap",
+    "domain": "www.riotimesonline.com",
+    "gdelt_first_seen_utc": "2026-11-19T10:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 24,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "refining"
     ],
     "status": "discovery_only_requires_publisher_verification"
   },

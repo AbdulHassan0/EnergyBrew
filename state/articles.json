@@ -1,6 +1,232 @@
 {
   "articles": [
     {
+      "id": "5b6aeac269a134316acd9a94",
+      "title": "Another methanol-ready offshore energy support vessels launches in China",
+      "url": "https://www.offshore-energy.biz/2026/11/19/another-methanol-ready-offshore-energy-support-vessels-launches-in-china",
+      "source": "Offshore Energy News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-19T11:44:40+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified"
+    },
+    {
+      "id": "e02e14e5f567fabf2fd70b36",
+      "title": "Global Cooling Demand Overtakes Heating for the First Time",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Global-Cooling-Demand-Overtakes-Heating-for-the-First-Time.html",
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-19T11:30:00+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified"
+    },
+    {
+      "id": "7584dd530aeb9d387f6e03b5",
+      "title": "AlloySelect relaunches at Offshore Energy 2026 with new CCS screening preview",
+      "url": "https://www.offshore-energy.biz/2026/11/19/alloyselect-relaunches-at-offshore-energy-2026-with-new-ccs-screening-preview",
+      "source": "Offshore Energy News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-19T10:30:21+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified"
+    },
+    {
+      "id": "b7d6d9a018a30f85c260796a",
+      "title": "India\u2019s Oil Imports Hit Record High as Saudi Shipments Surge",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Indias-Oil-Imports-Hit-Record-High-as-Saudi-Shipments-Surge.html",
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-19T10:30:00+00:00",
+      "category": "Oil & Energy",
+      "published_precision": "timestamp",
+      "relevance_score": 27,
+      "keyword_matches": 1,
+      "editorial_candidate": true,
+      "relevance_evidence": [
+        "oil imports"
+      ],
+      "status": "research_only_unverified"
+    },
+    {
+      "id": "de8382284bd33a04c0bf6cca",
+      "title": "NKT widens new nearshore cable-lay barge by eight meters as part of upgrade program",
+      "url": "https://www.offshore-energy.biz/2026/11/19/nkt-widens-new-nearshore-cable-lay-barge-by-eight-meters-as-part-of-upgrade-program",
+      "source": "Offshore Energy News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-19T09:47:38+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified"
+    },
+    {
+      "id": "6d2c6aaa652d4808f7574393",
+      "title": "Borr Drilling\u2019s CEO sees \u2018encouraging signs\u2019 in rig market activity",
+      "url": "https://www.offshore-energy.biz/2026/11/19/borr-drillings-ceo-sees-encouraging-signs-in-rig-market-activity",
+      "source": "Offshore Energy News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-19T09:14:23+00:00",
+      "category": "Oil & Energy",
+      "published_precision": "timestamp",
+      "relevance_score": 21,
+      "keyword_matches": 1,
+      "editorial_candidate": false,
+      "relevance_evidence": [
+        "drilling"
+      ],
+      "status": "research_only_unverified"
+    },
+    {
+      "id": "15b350ebdadd98a391b1eacc",
+      "title": "The Middle East War Has Wiped 2.8 Billion Barrels Off Global Oil Supply",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/The-Middle-East-War-Has-Wiped-28-Billion-Barrels-Off-Global-Oil-Supply.html",
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-19T09:00:00+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified"
+    },
+    {
+      "id": "6d54c2d8608dcf57d2a9090e",
+      "title": "Transocean rig spuds final well in East Coast gas drilling campaign",
+      "url": "https://www.offshore-energy.biz/2026/11/19/transocean-rig-spuds-final-well-in-east-coast-gas-drilling-campaign",
+      "source": "Offshore Energy News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-19T07:58:41+00:00",
+      "category": "Oil & Energy",
+      "published_precision": "timestamp",
+      "relevance_score": 21,
+      "keyword_matches": 1,
+      "editorial_candidate": false,
+      "relevance_evidence": [
+        "drilling"
+      ],
+      "status": "research_only_unverified"
+    },
+    {
+      "id": "0f4c377dcfb7babb9ba5901b",
+      "title": "EU Delays Methane Rules by Two Years Amid Energy Supply Fears",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/EU-Delays-Methane-Rules-by-Two-Years-Amid-Energy-Supply-Fears.html",
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-19T07:30:00+00:00",
+      "category": "Natural Gas",
+      "published_precision": "timestamp",
+      "relevance_score": 18,
+      "keyword_matches": 1,
+      "editorial_candidate": false,
+      "relevance_evidence": [
+        "methane"
+      ],
+      "status": "research_only_unverified"
+    },
+    {
+      "id": "8d63312521323ff165f0737e",
+      "title": "Oil Prices Steady as Hormuz Tanker Threats Offset Supply Glut Fears",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Steady-as-Hormuz-Tanker-Threats-Offset-Supply-Glut-Fears.html",
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-19T06:00:00+00:00",
+      "category": "Oil & Energy",
+      "published_precision": "timestamp",
+      "relevance_score": 33,
+      "keyword_matches": 1,
+      "editorial_candidate": true,
+      "relevance_evidence": [
+        "oil prices"
+      ],
+      "status": "research_only_unverified"
+    },
+    {
+      "id": "2d3e231e081ec3e22ad84514",
+      "title": "Exelon Corporation v. PJM Interconnection, L.L.C.; Notice Establishing Comment Period",
+      "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23611/exelon-corporation-v-pjm-interconnection-llc-notice-establishing-comment-period",
+      "source": "Federal Register notices",
+      "source_class": "official_agency",
+      "published_utc": "2026-11-19T05:00:00+00:00",
+      "category": "Power & Electricity",
+      "published_precision": "day",
+      "relevance_score": 57,
+      "keyword_matches": 2,
+      "editorial_candidate": false,
+      "relevance_evidence": [
+        "interconnection",
+        "pjm"
+      ],
+      "status": "research_date_only"
+    },
+    {
+      "id": "a9ba8d5a0c56a228a404417e",
+      "title": "Freeport LNG Development, L.P., FLNG Liquefaction, LLC, FLNG Liquefaction 2, LLC, FLNG Liquefaction 3, LLC, FLNG Liquefaction 4, LLC; Notice of Application and Establishing Intervention Deadline",
+      "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23609/freeport-lng-development-lp-flng-liquefaction-llc-flng-liquefaction-2-llc-flng-liquefaction-3-llc",
+      "source": "Federal Register notices",
+      "source_class": "official_agency",
+      "published_utc": "2026-11-19T05:00:00+00:00",
+      "category": "LNG",
+      "published_precision": "day",
+      "relevance_score": 81,
+      "keyword_matches": 2,
+      "editorial_candidate": false,
+      "relevance_evidence": [
+        "freeport lng",
+        "lng"
+      ],
+      "status": "research_date_only"
+    },
+    {
+      "id": "02953df1160b2ff5a731c117",
+      "title": "Combined Notice of Filings",
+      "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23608/combined-notice-of-filings",
+      "source": "Federal Register notices",
+      "source_class": "official_agency",
+      "published_utc": "2026-11-19T05:00:00+00:00",
+      "category": "Cross-sector",
+      "published_precision": "day",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_date_only"
+    },
+    {
+      "id": "00157d4d66ff758b8b891367",
+      "title": "Combined Notice of Filings #1",
+      "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23607/combined-notice-of-filings-1",
+      "source": "Federal Register notices",
+      "source_class": "official_agency",
+      "published_utc": "2026-11-19T05:00:00+00:00",
+      "category": "Cross-sector",
+      "published_precision": "day",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_date_only"
+    },
+    {
       "id": "3992746790911abc252eb17c",
       "title": "Inside the Army\u2019s 75 Year Plan to Escape China\u2019s Rare Earth Dominance",
       "url": "https://oilprice.com/Energy/Energy-General/Inside-the-Armys-75-Year-Plan-to-Escape-Chinas-Rare-Earth-Dominance.html",
@@ -63,6 +289,38 @@
       "relevance_evidence": [],
       "status": "research_only_unverified",
       "also_seen_in": []
+    },
+    {
+      "id": "adae1615af6e22fc7fe9837a",
+      "title": "EU spending on electricity support measures reached \u20ac12 billion, as reliance grows",
+      "url": "https://www.acer.europa.eu/news/eu-spending-electricity-support-measures-reaches-eur12-billion-2025-reliance-grows",
+      "source": "European Commission DG Energy",
+      "source_class": "official_agency",
+      "published_utc": "2026-11-18T23:00:00+00:00",
+      "category": "Power & Electricity",
+      "published_precision": "timestamp",
+      "relevance_score": 33,
+      "keyword_matches": 1,
+      "editorial_candidate": true,
+      "relevance_evidence": [
+        "electricity"
+      ],
+      "status": "research_only_unverified"
+    },
+    {
+      "id": "9414cab074262bb9e48d47c7",
+      "title": "November infringements package: key decisions on energy",
+      "url": "https://energy.ec.europa.eu/news/november-infringements-package-key-decisions-energy-2026-11-19_en",
+      "source": "European Commission DG Energy",
+      "source_class": "official_agency",
+      "published_utc": "2026-11-18T23:00:00+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified"
     },
     {
       "id": "cd2beda6e00bf50792701f74",
@@ -1776,15 +2034,26 @@
       "new_article_links": 0,
       "transient_retries": 0,
       "feeds_recovered_after_retry": 0
+    },
+    {
+      "run_utc": "2026-11-19T11:57:10.003620+00:00",
+      "feeds_connected": 14,
+      "feeds_checked": 15,
+      "feeds_failed": 1,
+      "scan_state": "degraded",
+      "fresh_entries": 50,
+      "new_article_links": 16,
+      "transient_retries": 2,
+      "feeds_recovered_after_retry": 0
     }
   ],
   "source_health": {
     "EIA Today in Energy": {
-      "last_attempt_utc": "2026-11-19T03:49:51.492927+00:00",
-      "last_success_utc": "2026-11-19T03:49:51.492927+00:00",
+      "last_attempt_utc": "2026-11-19T11:57:10.003620+00:00",
+      "last_success_utc": "2026-11-19T11:57:10.003620+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 21,
+      "consecutive_successes": 22,
       "last_items_seen": 29,
       "newest_feed_published_utc": "2026-11-18T14:00:00+00:00",
       "last_error_type": null,
@@ -1794,11 +2063,11 @@
       "total_recoveries": 0
     },
     "EIA Press Releases": {
-      "last_attempt_utc": "2026-11-19T03:49:51.492927+00:00",
-      "last_success_utc": "2026-11-19T03:49:51.492927+00:00",
+      "last_attempt_utc": "2026-11-19T11:57:10.003620+00:00",
+      "last_success_utc": "2026-11-19T11:57:10.003620+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 21,
+      "consecutive_successes": 22,
       "last_items_seen": 13,
       "newest_feed_published_utc": "2026-11-10T17:00:00+00:00",
       "last_error_type": null,
@@ -1808,11 +2077,11 @@
       "total_recoveries": 0
     },
     "EIA Congressional Testimony": {
-      "last_attempt_utc": "2026-11-19T03:49:51.492927+00:00",
-      "last_success_utc": "2026-11-19T03:49:51.492927+00:00",
+      "last_attempt_utc": "2026-11-19T11:57:10.003620+00:00",
+      "last_success_utc": "2026-11-19T11:57:10.003620+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 21,
+      "consecutive_successes": 22,
       "last_items_seen": 1,
       "newest_feed_published_utc": "2021-11-16T14:00:00+00:00",
       "last_error_type": null,
@@ -1822,11 +2091,11 @@
       "total_recoveries": 0
     },
     "EIA Presentations": {
-      "last_attempt_utc": "2026-11-19T03:49:51.492927+00:00",
-      "last_success_utc": "2026-11-19T03:49:51.492927+00:00",
+      "last_attempt_utc": "2026-11-19T11:57:10.003620+00:00",
+      "last_success_utc": "2026-11-19T11:57:10.003620+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 21,
+      "consecutive_successes": 22,
       "last_items_seen": 1,
       "newest_feed_published_utc": "2026-03-04T14:00:00+00:00",
       "last_error_type": null,
@@ -1836,11 +2105,11 @@
       "total_recoveries": 0
     },
     "DOE Energy News": {
-      "last_attempt_utc": "2026-11-19T03:49:51.492927+00:00",
-      "last_success_utc": "2026-11-19T03:49:51.492927+00:00",
+      "last_attempt_utc": "2026-11-19T11:57:10.003620+00:00",
+      "last_success_utc": "2026-11-19T11:57:10.003620+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 21,
+      "consecutive_successes": 22,
       "last_items_seen": 10,
       "newest_feed_published_utc": "2026-11-18T18:06:31+00:00",
       "last_error_type": null,
@@ -1850,11 +2119,11 @@
       "total_recoveries": 0
     },
     "DOE Grid Deployment": {
-      "last_attempt_utc": "2026-11-19T03:49:51.492927+00:00",
-      "last_success_utc": "2026-11-19T03:49:51.492927+00:00",
+      "last_attempt_utc": "2026-11-19T11:57:10.003620+00:00",
+      "last_success_utc": "2026-11-19T11:57:10.003620+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 21,
+      "consecutive_successes": 22,
       "last_items_seen": 10,
       "newest_feed_published_utc": "2026-10-30T14:42:15+00:00",
       "last_error_type": null,
@@ -1864,11 +2133,11 @@
       "total_recoveries": 0
     },
     "US NRC Nuclear News": {
-      "last_attempt_utc": "2026-11-19T03:49:51.492927+00:00",
-      "last_success_utc": "2026-11-19T03:49:51.492927+00:00",
+      "last_attempt_utc": "2026-11-19T11:57:10.003620+00:00",
+      "last_success_utc": "2026-11-19T11:57:10.003620+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 21,
+      "consecutive_successes": 22,
       "last_items_seen": 164,
       "newest_feed_published_utc": "2026-09-14T08:00:00+00:00",
       "last_error_type": null,
@@ -1878,11 +2147,11 @@
       "total_recoveries": 0
     },
     "DOE Hydrocarbons Releases": {
-      "last_attempt_utc": "2026-11-19T03:49:51.492927+00:00",
-      "last_success_utc": "2026-11-19T03:49:51.492927+00:00",
+      "last_attempt_utc": "2026-11-19T11:57:10.003620+00:00",
+      "last_success_utc": "2026-11-19T11:57:10.003620+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 21,
+      "consecutive_successes": 22,
       "last_items_seen": 10,
       "newest_feed_published_utc": "2026-11-04T05:00:00+00:00",
       "last_error_type": null,
@@ -1892,11 +2161,11 @@
       "total_recoveries": 0
     },
     "DOE Hydrocarbons Blog": {
-      "last_attempt_utc": "2026-11-19T03:49:51.492927+00:00",
-      "last_success_utc": "2026-11-19T03:49:51.492927+00:00",
+      "last_attempt_utc": "2026-11-19T11:57:10.003620+00:00",
+      "last_success_utc": "2026-11-19T11:57:10.003620+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 21,
+      "consecutive_successes": 22,
       "last_items_seen": 10,
       "newest_feed_published_utc": "2026-10-29T20:16:57+00:00",
       "last_error_type": null,
@@ -1906,13 +2175,13 @@
       "total_recoveries": 0
     },
     "European Commission DG Energy": {
-      "last_attempt_utc": "2026-11-19T03:49:51.492927+00:00",
-      "last_success_utc": "2026-11-19T03:49:51.492927+00:00",
+      "last_attempt_utc": "2026-11-19T11:57:10.003620+00:00",
+      "last_success_utc": "2026-11-19T11:57:10.003620+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 21,
+      "consecutive_successes": 22,
       "last_items_seen": 30,
-      "newest_feed_published_utc": "2026-11-17T23:00:00+00:00",
+      "newest_feed_published_utc": "2026-11-18T23:00:00+00:00",
       "last_error_type": null,
       "last_request_attempts": 1,
       "last_transient_retry_count": 0,
@@ -1920,13 +2189,13 @@
       "total_recoveries": 0
     },
     "Federal Register notices": {
-      "last_attempt_utc": "2026-11-19T03:49:51.492927+00:00",
-      "last_success_utc": "2026-11-19T03:49:51.492927+00:00",
+      "last_attempt_utc": "2026-11-19T11:57:10.003620+00:00",
+      "last_success_utc": "2026-11-19T11:57:10.003620+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 21,
-      "last_items_seen": 136,
-      "newest_feed_published_utc": "2026-11-18T05:00:00+00:00",
+      "consecutive_successes": 22,
+      "last_items_seen": 133,
+      "newest_feed_published_utc": "2026-11-19T05:00:00+00:00",
       "last_error_type": null,
       "last_request_attempts": 1,
       "last_transient_retry_count": 0,
@@ -1934,13 +2203,13 @@
       "total_recoveries": 0
     },
     "Offshore Energy News": {
-      "last_attempt_utc": "2026-11-19T03:49:51.492927+00:00",
-      "last_success_utc": "2026-11-19T03:49:51.492927+00:00",
+      "last_attempt_utc": "2026-11-19T11:57:10.003620+00:00",
+      "last_success_utc": "2026-11-19T11:57:10.003620+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 21,
+      "consecutive_successes": 22,
       "last_items_seen": 50,
-      "newest_feed_published_utc": "2026-11-18T15:07:53+00:00",
+      "newest_feed_published_utc": "2026-11-19T11:44:40+00:00",
       "last_error_type": null,
       "last_request_attempts": 1,
       "last_transient_retry_count": 0,
@@ -1948,13 +2217,13 @@
       "total_recoveries": 0
     },
     "OilPrice.com News": {
-      "last_attempt_utc": "2026-11-19T03:49:51.492927+00:00",
-      "last_success_utc": "2026-11-19T03:49:51.492927+00:00",
+      "last_attempt_utc": "2026-11-19T11:57:10.003620+00:00",
+      "last_success_utc": "2026-11-19T11:57:10.003620+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 21,
+      "consecutive_successes": 22,
       "last_items_seen": 15,
-      "newest_feed_published_utc": "2026-11-19T02:00:00+00:00",
+      "newest_feed_published_utc": "2026-11-19T11:30:00+00:00",
       "last_error_type": null,
       "last_request_attempts": 1,
       "last_transient_retry_count": 0,
@@ -1962,11 +2231,11 @@
       "total_recoveries": 0
     },
     "Utility Dive News": {
-      "last_attempt_utc": "2026-11-19T03:49:51.492927+00:00",
-      "last_success_utc": "2026-11-19T03:49:51.492927+00:00",
+      "last_attempt_utc": "2026-11-19T11:57:10.003620+00:00",
+      "last_success_utc": "2026-11-19T11:57:10.003620+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 21,
+      "consecutive_successes": 22,
       "last_items_seen": 10,
       "newest_feed_published_utc": "2026-11-18T15:57:17+00:00",
       "last_error_type": null,
@@ -1976,16 +2245,16 @@
       "total_recoveries": 0
     },
     "PJM Inside Lines": {
-      "last_attempt_utc": "2026-11-19T03:49:51.492927+00:00",
+      "last_attempt_utc": "2026-11-19T11:57:10.003620+00:00",
       "last_success_utc": "2026-11-19T03:49:51.492927+00:00",
-      "last_failure_utc": "2026-11-19T02:45:31.945739+00:00",
-      "consecutive_failures": 0,
-      "consecutive_successes": 3,
+      "last_failure_utc": "2026-11-19T11:57:10.003620+00:00",
+      "consecutive_failures": 1,
+      "consecutive_successes": 0,
       "last_items_seen": 10,
       "newest_feed_published_utc": "2026-11-18T18:56:18+00:00",
-      "last_error_type": null,
-      "last_request_attempts": 1,
-      "last_transient_retry_count": 0,
+      "last_error_type": "ParseError",
+      "last_request_attempts": 3,
+      "last_transient_retry_count": 2,
       "last_recovered_after_retry": false,
       "total_recoveries": 0
     }

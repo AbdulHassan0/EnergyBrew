@@ -1,5 +1,62 @@
 [
   {
+    "url": "https://finance.yahoo.com/energy/articles/americans-believe-affordable-reliable-electricity-110200782.html",
+    "title": "Americans Believe Affordable and Reliable Electricity Can Be Met by Using Nuclear in Addition to Wind and Solar",
+    "feed_creator_label": "Business Wire",
+    "named_issuer_verified": false,
+    "feed_source_url": "https://finance.yahoo.com/energy/articles/americans-believe-affordable-reliable-electricity-110200782.html",
+    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+    "feed_published_utc": "2026-11-19T11:02:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "category": "Power & Electricity",
+    "relevance_score": 33,
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "provider": "Press Release Feed",
+    "content_kind": "company_or_newswire_press_release",
+    "status": "promotional_issuer_claim_requires_editorial_verification"
+  },
+  {
+    "url": "https://www.globenewswire.com/news-release/2026/11/19/3406376/0/en/first-atlantic-nickel-cobalt-attends-critical-minerals-briefing-on-capitol-hill-highlighting-new-cerium-refining-technology-that-extracted-98-of-the-nickel-and-82-of-the-cobalt-fro.html",
+    "title": "First Atlantic Nickel & Cobalt Attends Critical Minerals Briefing on Capitol Hill, Highlighting New Cerium Refining Technology That Extracted 98% of the Nickel and 82% of the Cobalt From Pipestone XL Awaruite (Ni-Fe-Co Alloy) in 20 Minutes Without Smelting, in Columbia University Research Funded by ",
+    "feed_creator_label": "GlobeNewswire",
+    "named_issuer_verified": false,
+    "feed_source_url": "https://www.globenewswire.com/news-release/2026/11/19/3406376/0/en/first-atlantic-nickel-cobalt-attends-critical-minerals-briefing-on-capitol-hill-highlighting-new-cerium-refining-technology-that-extracted-98-of-the-nickel-and-82-of-the-cobalt-fro.html",
+    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+    "feed_published_utc": "2026-11-19T11:00:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "category": "Oil & Energy",
+    "relevance_score": 24,
+    "relevance_evidence": [
+      "refining"
+    ],
+    "provider": "Press Release Feed",
+    "content_kind": "company_or_newswire_press_release",
+    "status": "promotional_issuer_claim_requires_editorial_verification"
+  },
+  {
+    "url": "https://express-press-release.net/news/2026/11/19/1784021",
+    "title": "Refinery Catalysts Market: What Tight Oil Means for Catalyst Consumption",
+    "feed_creator_label": "Express Press Release",
+    "named_issuer_verified": false,
+    "feed_source_url": "https://express-press-release.net/news/2026/11/19/1784021",
+    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+    "feed_published_utc": "2026-11-19T07:39:45+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "category": "Oil & Energy",
+    "relevance_score": 30,
+    "relevance_evidence": [
+      "refinery"
+    ],
+    "provider": "Press Release Feed",
+    "content_kind": "company_or_newswire_press_release",
+    "status": "promotional_issuer_claim_requires_editorial_verification"
+  },
+  {
     "url": "https://finance.yahoo.com/energy/articles/ugi-corporation-announces-plan-pursue-230100078.html",
     "title": "UGI Corporation Announces Plan to Pursue the Separation of Its Global Liquefied Petroleum Gas Business Into a Standalone Public Company",
     "feed_creator_label": "UGI Corporation",
@@ -185,83 +242,6 @@
     "relevance_score": 39,
     "relevance_evidence": [
       "natural gas"
-    ],
-    "provider": "Press Release Feed",
-    "content_kind": "company_or_newswire_press_release",
-    "status": "promotional_issuer_claim_requires_editorial_verification"
-  },
-  {
-    "url": "https://www.globenewswire.com/news-release/2026/11/18/3405465/0/en/first-atlantic-s-awaruite-concentrate-achieves-98-nickel-and-82-cobalt-extraction-in-20-minutes-using-new-cerium-refining-technology-outperforming-u-s-tamarack-nickel-sulfide-conce.html",
-    "title": "First Atlantic\u2019s Awaruite Concentrate Achieves 98% Nickel and 82% Cobalt Extraction in 20 Minutes Using New Cerium Refining Technology, Outperforming U.S. Tamarack Nickel Sulfide Concentrate in Peer-Reviewed Columbia University Research Funded by the U.S. Department of Energy ARPA-E MINER Program",
-    "feed_creator_label": "GlobeNewswire",
-    "named_issuer_verified": false,
-    "feed_source_url": "https://www.globenewswire.com/news-release/2026/11/18/3405465/0/en/first-atlantic-s-awaruite-concentrate-achieves-98-nickel-and-82-cobalt-extraction-in-20-minutes-using-new-cerium-refining-technology-outperforming-u-s-tamarack-nickel-sulfide-conce.html",
-    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-    "feed_published_utc": "2026-11-18T11:00:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "category": "Oil & Energy",
-    "relevance_score": 24,
-    "relevance_evidence": [
-      "refining"
-    ],
-    "provider": "Press Release Feed",
-    "content_kind": "company_or_newswire_press_release",
-    "status": "promotional_issuer_claim_requires_editorial_verification"
-  },
-  {
-    "url": "https://www.webwire.com/ViewPressRel.asp?aId=364352",
-    "title": "ACCIONA Energ\ufffda to supply electricity to universities and research centers in Catalonia and Madrid",
-    "feed_creator_label": "WebWire",
-    "named_issuer_verified": false,
-    "feed_source_url": "https://www.webwire.com/ViewPressRel.asp?aId=364352",
-    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-    "feed_published_utc": "2026-11-18T10:19:55+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "category": "Power & Electricity",
-    "relevance_score": 33,
-    "relevance_evidence": [
-      "electricity"
-    ],
-    "provider": "Press Release Feed",
-    "content_kind": "company_or_newswire_press_release",
-    "status": "promotional_issuer_claim_requires_editorial_verification"
-  },
-  {
-    "url": "https://www.webwire.com/ViewPressRel.asp?aId=364349",
-    "title": "LEGO Manufacturing Vietnam powers on battery energy storage system",
-    "feed_creator_label": "WebWire",
-    "named_issuer_verified": false,
-    "feed_source_url": "https://www.webwire.com/ViewPressRel.asp?aId=364349",
-    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-    "feed_published_utc": "2026-11-18T10:05:40+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "category": "Power & Electricity",
-    "relevance_score": 27,
-    "relevance_evidence": [
-      "energy storage"
-    ],
-    "provider": "Press Release Feed",
-    "content_kind": "company_or_newswire_press_release",
-    "status": "promotional_issuer_claim_requires_editorial_verification"
-  },
-  {
-    "url": "https://financewire.com/2026/11/18/vestafund-releases-sector-analysis-examining-physical-infrastructure-power-grid-constraints",
-    "title": "VestaFund Releases Sector Analysis Examining Physical Infrastructure, Power Grid Constraints",
-    "feed_creator_label": "FinanceWire",
-    "named_issuer_verified": false,
-    "feed_source_url": "https://financewire.com/2026/11/18/vestafund-releases-sector-analysis-examining-physical-infrastructure-power-grid-constraints",
-    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-    "feed_published_utc": "2026-11-18T04:19:27+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "category": "Power & Electricity",
-    "relevance_score": 57,
-    "relevance_evidence": [
-      "grid",
-      "power grid"
     ],
     "provider": "Press Release Feed",
     "content_kind": "company_or_newswire_press_release",
