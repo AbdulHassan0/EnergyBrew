@@ -132,6 +132,7 @@ def collect(state_file,outdir,*,now=None,fetcher=None,completion_clock=None):
         item["named_issuer_verified"]=False
         item["feed_creator_label"]=item.pop("issuer",item.get("feed_creator_label",""))
         item["feed_source_url_may_be_newsroom_or_wire_mirror"]=True
+    observed_urls=set()
     r={"run_utc":now.isoformat(), "status":"pending", "provider":"Press Release Feed",
        "raw_feed_entries":0,"high_signal_company_releases":0,"new_unique_links":0,
        "error":None,"skipped":{}}
@@ -145,6 +146,11 @@ def collect(state_file,outdir,*,now=None,fetcher=None,completion_clock=None):
         for item in records:
             if item["url"] not in old:
                 r["new_unique_links"]+=1
+            else:
+                previous_first = old[item["url"]].get("first_collector_observed_utc")
+                if previous_first:
+                    item["first_collector_observed_utc"]=previous_first
+            observed_urls.add(item["url"])
             old[item["url"]]=item
     except Exception as exc:
         r.update(status="degraded",error=f"{type(exc).__name__}: {str(exc)[:200]}")
@@ -153,6 +159,10 @@ def collect(state_file,outdir,*,now=None,fetcher=None,completion_clock=None):
     if completed.tzinfo is None or completed.utcoffset() is None:
         raise ValueError("Issuer collection completion clock requires timezone")
     r["completed_utc"] = completed.astimezone(timezone.utc).isoformat()
+    if r["status"] == "ok":
+        for uri in observed_urls:
+            old[uri].setdefault("first_collector_observed_utc",
+                                r["completed_utc"])
     cutoff=now-timedelta(days=7)
     def stamp(x):
         try:

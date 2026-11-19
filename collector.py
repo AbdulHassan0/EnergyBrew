@@ -279,6 +279,7 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None, completion_clo
         raise ValueError("Existing source health malformed; refusing overwrite")
     results, new_count = [], 0
     new_article_ids = set()  # never invent first-seen times for legacy state
+    observed_article_ids = set()  # only URLs reobserved in a parsed feed
     for name, url in SOURCES:
         row = {"source": name, "url": url, "connected": False, "items_seen": 0,
                "fresh": 0, "new": 0, "request_attempts": 0,
@@ -317,6 +318,7 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None, completion_clo
                 for item in items:
                     prior_id = seen_urls.get(item["url"])
                     if prior_id is not None:
+                        observed_article_ids.add(prior_id)
                         prior = articles[prior_id]
                         if name != prior.get("source"):
                             prior.setdefault("also_seen_in", [])
@@ -329,6 +331,8 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None, completion_clo
                             # Preserve earliest actual collection time if known.
                             if prior.get("first_collected_utc"):
                                 item["first_collected_utc"] = prior["first_collected_utc"]
+                            if prior.get("first_collector_observed_utc"):
+                                item["first_collector_observed_utc"] = prior["first_collector_observed_utc"]
                             articles[prior_id] = item
                         continue
                     if item["id"] not in articles:
@@ -336,6 +340,7 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None, completion_clo
                         row["new"] += 1
                         new_article_ids.add(item["id"])
                     articles[item["id"]] = item
+                    observed_article_ids.add(item["id"])
                     seen_urls[item["url"]] = item["id"]
                 break
             except Exception as exc:
@@ -416,6 +421,12 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None, completion_clo
     for article_id in new_article_ids:
         if article_id in articles:
             articles[article_id]["first_collected_utc"] = completed_utc.isoformat()
+    # Do not pretend all previously saved links were observed in this scan:
+    # only URLs actually parsed today gain the local availability timestamp.
+    for article_id in observed_article_ids:
+        if article_id in articles:
+            articles[article_id].setdefault("first_collector_observed_utc",
+                                            completed_utc.isoformat())
     run_retention_cutoff = now - timedelta(days=8)  # retain audit window boundary
     runs = []
     for x in previous["runs"]:

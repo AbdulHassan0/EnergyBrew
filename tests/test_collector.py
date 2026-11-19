@@ -106,6 +106,20 @@ class CollectorTests(unittest.TestCase):
             self.assertTrue(all(x["first_collected_utc"]==done.isoformat()
                                 for x in data["articles"]))
 
+    def test_old_rss_record_without_reobservation_not_backfilled_as_seen(self):
+        with tempfile.TemporaryDirectory() as d:
+            path=Path(d)/"state.json"
+            legacy={"id":"legacy","url":"https://old.example.com/pipeline-approval",
+                    "title":"Natural gas pipeline approval","source":"EIA Today in Energy",
+                    "published_utc":NOW.isoformat(),"published_precision":"timestamp"}
+            path.write_text(json.dumps({"articles":[legacy],"runs":[],"source_health":{}}))
+            collect(path,Path(d)/"out",now=NOW,fetcher=fixture_fetch)
+            rows=json.loads(path.read_text())["articles"]
+            old=next(x for x in rows if x["url"]==legacy["url"])
+            self.assertNotIn("first_collector_observed_utc",old)
+            self.assertTrue(all(x.get("first_collector_observed_utc")==NOW.isoformat()
+                                for x in rows if x["url"]!=legacy["url"]))
+
     def test_first_collected_timestamp_is_preserved_across_later_polls(self):
         with tempfile.TemporaryDirectory() as d:
             path=Path(d)/"state.json"

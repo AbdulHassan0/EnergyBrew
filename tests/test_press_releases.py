@@ -33,6 +33,18 @@ class PressReleaseTests(unittest.TestCase):
             saved=json.loads(path.read_text())
             self.assertEqual(saved["runs"][0]["completed_utc"],done.isoformat())
 
+    def test_issuer_original_feed_date_is_not_energybrew_observation(self):
+        with tempfile.TemporaryDirectory() as d:
+            path=Path(d)/"press.json"
+            collect(path,Path(d)/"out",now=NOW,fetcher=lambda _:(feed(),200))
+            row=json.loads(path.read_text())["leads"][0]
+            self.assertEqual(row["first_collector_observed_utc"],NOW.isoformat())
+            self.assertNotEqual(row["first_collector_observed_utc"],row["feed_published_utc"])
+            collect(path,Path(d)/"out",now=NOW+timedelta(minutes=5),
+                    fetcher=lambda _:(feed(),200))
+            after=json.loads(path.read_text())["leads"][0]
+            self.assertEqual(after["first_collector_observed_utc"],NOW.isoformat())
+
     def test_original_source_url_only(self):
         records,skips,count=parse_releases(feed(),NOW)
         self.assertEqual(count,1)
