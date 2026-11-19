@@ -427,7 +427,7 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None, completion_clo
                 runs.append(x)
         except (KeyError, ValueError, TypeError):
             continue
-    runs.append({k: run[k] for k in ("run_utc", "feeds_connected", "feeds_checked", "feeds_failed", "scan_state", "fresh_entries", "new_article_links", "transient_retries", "feeds_recovered_after_retry")})
+    runs.append({k: run[k] for k in ("run_utc", "completed_utc", "feeds_connected", "feeds_checked", "feeds_failed", "scan_state", "fresh_entries", "new_article_links", "transient_retries", "feeds_recovered_after_retry")})
     outdir.mkdir(parents=True, exist_ok=True)
     state_path.parent.mkdir(parents=True, exist_ok=True)
     temp = state_path.with_suffix(".tmp")
