@@ -212,7 +212,7 @@ def write_report(report, output):
         f"Publisher domains: **{len(report['publisher_domains'])}**",
         f"Matching saved source URLs: **{report['matched_saved_source_links']} / {report['total_stories']}**",
         f"Matching selected desk URLs: **{report['matched_research_links']} / {report['total_stories']}**",
-        f"Morning 06:30 evidence: **{report['cutoff_collection_evidence']}**",
+        f"Morning 06:30 cutoff evidence: **{report['cutoff_collection_evidence']}**",
         "",
         "| Beat | Stories |", "|---|---:|",
     ]
