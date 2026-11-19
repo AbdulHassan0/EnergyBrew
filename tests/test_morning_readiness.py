@@ -95,6 +95,30 @@ class MorningTests(unittest.TestCase):
         record=next(x for x in result["background_context"] if x["url"]==urls[0])
         self.assertEqual(record["morning_time_bucket"],"date_only_prior_day_context")
 
+    def test_only_postcutoff_rss_run_cannot_count_at_cutoff(self):
+        a,b,c=fixtures()
+        a["runs"]=[{"run_utc":time_str(+5),"completed_utc":time_str(+5),
+                    "feeds_checked":15,"feeds_connected":15,"scan_state":"healthy"}]
+        r=prepare(a,b,c,now=NOW)
+        self.assertIn("publisher_rss_not_recent_at_cutoff",r["blocking_issues"])
+        self.assertIn("publisher_rss_below_minimum_quorum",r["blocking_issues"])
+        self.assertIn("postcutoff_rss_poll_not_credited_to_0630_readiness",r["warnings"])
+
+    def test_started_before_cutoff_but_finished_after_does_not_count(self):
+        a,b,c=fixtures()
+        a["runs"]=[{"run_utc":time_str(-10),"completed_utc":time_str(+3),
+                    "feeds_checked":15,"feeds_connected":15,"scan_state":"healthy"}]
+        r=prepare(a,b,c,now=NOW)
+        self.assertIn("publisher_rss_not_recent_at_cutoff",r["blocking_issues"])
+
+    def test_postcutoff_gal_completion_excluded_from_overight_window(self):
+        a,b,c=fixtures()
+        b["gal_runs"]=[{"run_utc":time_str(-5),"completed_utc":time_str(+2),
+                        "status":"ok"}]
+        r=prepare(a,b,c,now=NOW)
+        self.assertIn("gdelt_gal_not_recent_at_cutoff",r["blocking_issues"])
+        self.assertIn("overnight_gdelt_sampling_below_minimum",r["blocking_issues"])
+
     def test_fresh_scan_after_cutoff_does_not_import_late_news(self):
         a,b,c=fixtures()
         a["runs"].append({"run_utc":time_str(+5),"feeds_checked":15,

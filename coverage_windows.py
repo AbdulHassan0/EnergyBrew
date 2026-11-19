@@ -41,7 +41,7 @@ def estimate_sampling_coverage(gal_runs, *, now, hours, window_minutes=ROLLING_M
     for item in gal_runs:
         if not isinstance(item,dict) or item.get("status")!="ok":
             continue
-        completed=_aware(item.get("run_utc"))
+        completed=_aware(item.get("completed_utc") or item.get("run_utc"))
         # A sample completed after the editorial cutoff did not exist at that
         # cutoff. Even a five-minute tolerance would leak future observations.
         if completed is None or completed>horizon_end:

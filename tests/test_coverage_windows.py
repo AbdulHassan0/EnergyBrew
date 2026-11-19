@@ -11,6 +11,13 @@ def run(minutes_ago,status="ok"):
 
 
 class SamplingWindowTests(unittest.TestCase):
+    def test_completed_after_cutoff_excluded_even_if_started_before(self):
+        sample={"run_utc":(NOW-timedelta(minutes=5)).isoformat(),
+                "completed_utc":(NOW+timedelta(minutes=2)).isoformat(),
+                "status":"ok"}
+        r=estimate_sampling_coverage([sample],now=NOW,hours=1)
+        self.assertEqual(r["potential_coverage_upper_bound_pct"],0)
+
     def test_full_coverage_with_overlapping_ten_minute_samples(self):
         samples=[run(i) for i in range(0,24*60+1,10)]
         r=estimate_sampling_coverage(samples,now=NOW,hours=24)

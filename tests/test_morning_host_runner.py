@@ -76,6 +76,9 @@ class MorningHostTests(unittest.TestCase):
             root=Path(tmp)
             healthy_gal(root)
             before=(root/"discovery.json").read_bytes()
+            refresh_rss_safely(root/"articles.json",root/"out",
+                               now=CUTOFF-timedelta(minutes=6),
+                               fetcher=lambda _:(RSS,200))
             result=run_morning(root,now=NOW,fetcher=lambda _: (RSS,200))
             self.assertEqual(result["status"],"ready_for_editor_review")
             self.assertTrue(result["frozen"])
@@ -211,6 +214,9 @@ class MorningHostTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp)
             healthy_gal(root)
+            refresh_rss_safely(root/"articles.json",root/"out",
+                               now=CUTOFF-timedelta(minutes=6),
+                               fetcher=lambda _:(RSS,200))
             run_morning(root,now=NOW,fetcher=lambda _:(RSS,200))
             before=(root/"morning/research_2026-11-19.json").read_text()
             with self.assertRaisesRegex(ValueError,"Immutable"):

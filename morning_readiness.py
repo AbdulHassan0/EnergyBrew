@@ -46,11 +46,15 @@ def local_schedule(day, zone=DEFAULT_ZONE):
     }
 
 
+def collection_completion(run):
+    """A scan cannot be credited at a cutoff before its network work ends."""
+    return as_time(run.get("completed_utc") or run.get("run_utc"))
+
+
 def last_successful_run(runs, cutoff, *, success):
-    good = [as_time(r.get("run_utc")) for r in (runs or [])
+    good = [stamp for r in (runs or [])
             if isinstance(r, dict) and success(r)
-            and (stamp := as_time(r.get("run_utc"))) is not None
-            and stamp <= cutoff]
+            if (stamp := collection_completion(r)) is not None and stamp <= cutoff]
     return max(good) if good else None
 
 
@@ -127,23 +131,27 @@ def prepare(rss, discovery, releases, *, now=None, edition_date=None,
 
     rss_runs = rss.get("runs", []) if isinstance(rss, dict) else []
     gal_runs = discovery.get("gal_runs", []) if isinstance(discovery, dict) else []
-    last_rss = last_successful_run(rss_runs, now,
+    last_rss = last_successful_run(rss_runs, observed_cutoff,
                                   success=lambda r: r.get("scan_state") in ("healthy","degraded")
                                   and r.get("feeds_connected", 0) > 0)
-    last_gal = last_successful_run(gal_runs, now,
+    last_gal = last_successful_run(gal_runs, observed_cutoff,
                                   success=lambda r: r.get("status") == "ok")
     age_rss = round(max(0, (cutoff - last_rss).total_seconds()/60), 1) if last_rss else None
     age_gal = round(max(0, (cutoff - last_gal).total_seconds()/60), 1) if last_gal else None
-    if last_rss and last_rss > cutoff:
+    if any((stamp := collection_completion(r)) and cutoff < stamp <= now
+           for r in rss_runs if isinstance(r,dict)):
         warnings.append("rss_polled_after_cutoff_records_strictly_filtered_to_cutoff")
-    if last_gal and last_gal > cutoff:
+        warnings.append("postcutoff_rss_poll_not_credited_to_0630_readiness")
+    if any((stamp := collection_completion(r)) and cutoff < stamp <= now
+           for r in gal_runs if isinstance(r,dict)):
         warnings.append("gal_polled_after_cutoff_records_strictly_filtered_to_cutoff")
+        warnings.append("postcutoff_gal_poll_not_credited_to_0630_readiness")
     if age_rss is None or age_rss > MAX_RSS_AGE_MINUTES:
         issues.append("publisher_rss_not_recent_at_cutoff")
     if age_gal is None or age_gal > MAX_GAL_AGE_MINUTES:
         issues.append("gdelt_gal_not_recent_at_cutoff")
     latest_rss = next((r for r in reversed(rss_runs)
-                       if as_time(r.get("run_utc")) == last_rss), None)
+                       if collection_completion(r) == last_rss), None)
     ratio = None
     if latest_rss:
         total = int(latest_rss.get("feeds_checked", 0) or 0)
