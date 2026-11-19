@@ -5,7 +5,7 @@ import unittest
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from collector_daemon import sample_once, update_health, run_forever
+from collector_daemon import sample_once, update_health, run_forever, recover_abandoned_stage
 
 NOW=datetime(2026,11,18,15,tzinfo=timezone.utc)
 FEED=b"""<rss><channel><item><title>Cheniere LNG expansion advances</title>
@@ -52,6 +52,28 @@ class WorkerTests(unittest.TestCase):
             r=update_health(path,{"status":"ok","new_unique_links":1},now=NOW+timedelta(minutes=20))
             self.assertEqual(r["consecutive_failures"],0)
             self.assertEqual(r["status"],"healthy")
+
+    def test_stale_uncommitted_stage_recovered_without_overwriting_durable_state(self):
+        with tempfile.TemporaryDirectory() as d:
+            state=Path(d)/"discovery.json"
+            state.write_text(json.dumps({"leads":[],"gal_runs":[]}))
+            staged=state.with_name(state.name+".staging")
+            staged.write_text('{"leads":[{"title":"partial')
+            original=state.read_text()
+            self.assertTrue(recover_abandoned_stage(state))
+            self.assertEqual(state.read_text(),original)
+            self.assertFalse(staged.exists())
+            self.assertFalse(recover_abandoned_stage(state))
+
+    def test_staging_not_discarded_if_durable_state_is_corrupt(self):
+        with tempfile.TemporaryDirectory() as d:
+            state=Path(d)/"discovery.json"
+            state.write_text("broken")
+            staged=state.with_name(state.name+".staging")
+            staged.write_text('{"leads":[]}')
+            with self.assertRaises(ValueError):
+                recover_abandoned_stage(state)
+            self.assertTrue(staged.exists())
 
     def test_unsafe_poll_interval_rejected(self):
         with self.assertRaises(ValueError):

@@ -86,6 +86,26 @@ def collect_cycle(state, output, *, now=None, fetcher=None):
     return report, heartbeat
 
 
+def recover_abandoned_stage(state_path):
+    """Discard ONLY a leftover uncommitted staging file under exclusive lock.
+
+    The durable committed state is never replaced with possibly partial data.
+    This must be called only while holding the worker's volume-level flock.
+    """
+    state_path=Path(state_path)
+    staging=state_path.with_name(state_path.name+".staging")
+    if not staging.exists():
+        return False
+    if state_path.exists():
+        # Do not discard a temp file when the supposedly durable history is
+        # already corrupt: require operator intervention instead of data loss.
+        data=json.loads(state_path.read_text(encoding="utf-8"))
+        if not isinstance(data,dict) or not isinstance(data.get("leads"),list):
+            raise ValueError("Durable discovery state malformed; staged data retained")
+    staging.unlink()
+    return True
+
+
 def run_forever(state, output, interval_seconds=DEFAULT_INTERVAL_SECONDS):
     if interval_seconds < MIN_INTERVAL_SECONDS:
         raise ValueError("Minimum safe polling interval is 120 seconds")
@@ -97,6 +117,9 @@ def run_forever(state, output, interval_seconds=DEFAULT_INTERVAL_SECONDS):
             fcntl.flock(lock.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
         except BlockingIOError as exc:
             raise RuntimeError("Another collector holds this persistent volume lock") from exc
+        if recover_abandoned_stage(state):
+            print(json.dumps({"event":"recovered_abandoned_staging_write",
+                              "state":str(state)}),flush=True)
         next_due = time.monotonic()
         while True:
             try:

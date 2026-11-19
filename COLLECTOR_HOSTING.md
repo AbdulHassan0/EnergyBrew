@@ -37,7 +37,7 @@ Run an isolated one-time sample for testing:
 
 Every cycle uses the existing GAL parser, rejects stale upstream feeds, and
 validates the metadata-only state in a separate staging file BEFORE replacing
-persistent state. Unrecoverable state corruption and safety failures stop the
+persistent state. After acquiring its exclusive lock, a restarted worker discards any abandoned uncommitted staging file without touching its last durable committed state. Unrecoverable state corruption and safety failures stop the
 process visibly instead of silently destroying history. The worker never
 pretends historical index windows were backfilled.
 
