@@ -4,11 +4,11 @@ Unlike GitHub Actions cron, a continuously running worker owns its scheduling.
 It requires a persistent local volume and an external supervisor to restart it.
 Missing runs are reported; historical GDELT data are NEVER invented or backfilled.
 No subscriber mail, article bodies, or unlicensed RSS sources.
-Linux only: fcntl protects against accidental multiple daemon instances.
+Portable Windows/POSIX state locks prevent duplicate daemon instances.
 """
 from __future__ import annotations
 import argparse
-import fcntl
+from portable_lock import lock_exclusive_nonblocking
 import json
 import os
 import shutil
@@ -114,7 +114,7 @@ def run_forever(state, output, interval_seconds=DEFAULT_INTERVAL_SECONDS):
     lock_path = state.parent / "worker.lock"
     with open(lock_path, "a+", encoding="utf-8") as lock:
         try:
-            fcntl.flock(lock.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+            lock_exclusive_nonblocking(lock)
         except BlockingIOError as exc:
             raise RuntimeError("Another collector holds this persistent volume lock") from exc
         if recover_abandoned_stage(state):

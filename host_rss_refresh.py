@@ -7,7 +7,7 @@ The existing morning-runner flock prevents simultaneous RSS writers.
 from __future__ import annotations
 
 import argparse
-import fcntl
+from portable_lock import lock_exclusive_nonblocking
 import json
 import os
 from datetime import datetime, timezone
@@ -26,7 +26,7 @@ def run_refresh(root, *, now=None, fetcher=None):
     root.mkdir(parents=True, exist_ok=True)
     with (root / "morning-runner.lock").open("a+", encoding="utf-8") as lock:
         try:
-            fcntl.flock(lock.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+            lock_exclusive_nonblocking(lock)
         except BlockingIOError as exc:
             raise RuntimeError("RSS refresh and morning research cannot run concurrently") from exc
         summary = refresh_rss_safely(

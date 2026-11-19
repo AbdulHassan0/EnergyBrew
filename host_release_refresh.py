@@ -6,7 +6,7 @@ Never publish them or treat the aggregator timestamp as publisher confirmation.
 from __future__ import annotations
 
 import argparse
-import fcntl
+from portable_lock import lock_exclusive_nonblocking
 import json
 import os
 import shutil
@@ -40,7 +40,7 @@ def run_refresh(root, *, now=None, fetcher=None):
     staging = root / "press_releases.host-stage.json"
     with (root / "press-release-runner.lock").open("a+", encoding="utf-8") as lock:
         try:
-            fcntl.flock(lock.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+            lock_exclusive_nonblocking(lock)
         except BlockingIOError as exc:
             raise RuntimeError("Another issuer release refresh is active") from exc
         recover_abandoned_release_stage(state, staging)

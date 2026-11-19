@@ -5,7 +5,7 @@ an immutable review-only morning research snapshot. Never send any email.
 """
 from __future__ import annotations
 import argparse
-import fcntl
+from portable_lock import lock_exclusive_nonblocking
 import json
 import os
 import shutil
@@ -123,7 +123,7 @@ def run_morning(root, *, now=None, zone="America/Chicago", fetcher=None,
     root.mkdir(parents=True, exist_ok=True)
     with (root / "morning-runner.lock").open("a+", encoding="utf-8") as handle:
         try:
-            fcntl.flock(handle.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+            lock_exclusive_nonblocking(handle)
         except BlockingIOError as exc:
             raise RuntimeError("Another morning job holds the persistent lock") from exc
         rss_path = root / "articles.json"
