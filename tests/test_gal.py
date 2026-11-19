@@ -166,6 +166,33 @@ class GalTests(unittest.TestCase):
                              r["feed_payload_sha256"])
             self.assertNotIn("article_body",str(stored))
 
+    def test_repeated_feed_fingerprint_is_observed_not_suppressed(self):
+        with tempfile.TemporaryDirectory() as d:
+            state,out=Path(d)/"discovery.json",Path(d)/"out"
+            first=collect_gal(state,out,now=NOW,fetcher=lambda _: (feed(),200))
+            second=collect_gal(state,out,now=NOW+timedelta(minutes=5),
+                               fetcher=lambda _: (feed(),200))
+            self.assertEqual(first["status"],"ok")
+            self.assertEqual(second["status"],"ok")
+            self.assertTrue(second["identical_payload_to_previous_success"])
+            self.assertTrue(json.loads(state.read_text())["gal_runs"][-1]
+                            ["identical_payload_to_previous_success"])
+
+    def test_history_retention_can_reach_full_seven_days_at_five_minute_cadence(self):
+        with tempfile.TemporaryDirectory() as d:
+            state,out=Path(d)/"discovery.json",Path(d)/"out"
+            runs=[{"run_utc":(NOW-timedelta(minutes=5*i)).isoformat(),
+                   "status":"ok","feed_payload_sha256":f"hash-{i}"}
+                  for i in range(2017)]
+            state.write_text(json.dumps({"leads":[],"gal_runs":runs}))
+            result=collect_gal(state,out,now=NOW,fetcher=lambda _: (feed(),200))
+            stored=json.loads(state.read_text())["gal_runs"]
+            self.assertEqual(result["status"],"ok")
+            self.assertGreater(len(stored),2016)
+            self.assertLessEqual(len(stored),6500)
+            self.assertTrue(any(datetime.fromisoformat(r["run_utc"])<=
+                                NOW-timedelta(days=7) for r in stored))
+
     def test_network_failure_recorded_without_state_loss(self):
         with tempfile.TemporaryDirectory() as d:
             state,out=Path(d)/"discovery.json",Path(d)/"out"

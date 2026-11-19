@@ -37,6 +37,31 @@ class SamplingWindowTests(unittest.TestCase):
         self.assertEqual(r["potentially_sampled_minutes_upper_bound"],20)
         self.assertEqual(r["unobserved_minutes_at_least"],40)
 
+    def test_identical_cached_feed_does_not_claim_new_time_coverage(self):
+        samples=[
+            {**run(30), "feed_payload_sha256":"a1"},
+            {**run(20), "feed_payload_sha256":"a1"},
+            {**run(10), "feed_payload_sha256":"b2"},
+            {**run(0), "feed_payload_sha256":"b2"}]
+        result=estimate_sampling_coverage(samples,now=NOW,hours=1)
+        self.assertEqual(result["potentially_sampled_minutes_upper_bound"],30.0)
+        self.assertEqual(result["repeated_identical_payload_samples_not_credited"],2)
+        self.assertEqual(result["successfully_timestamped_run_count"],2)
+
+    def test_duplicate_detection_is_order_independent(self):
+        samples=[
+            {**run(0), "feed_payload_sha256":"x"},
+            {**run(20), "feed_payload_sha256":"x"},
+            {**run(10), "feed_payload_sha256":"y"}]
+        result=estimate_sampling_coverage(samples,now=NOW,hours=1)
+        self.assertEqual(result["potentially_sampled_minutes_upper_bound"],30)
+        self.assertEqual(result["repeated_identical_payload_samples_not_credited"],1)
+
+    def test_legacy_hashless_history_is_labelled_unknown(self):
+        result=estimate_sampling_coverage([run(20),run(10)],now=NOW,hours=1)
+        self.assertEqual(result["samples_without_payload_fingerprint"],2)
+        self.assertEqual(result["repeated_identical_payload_samples_not_credited"],0)
+
     def test_only_horizon_intersection_counts(self):
         r=estimate_sampling_coverage([run(100),run(5)],now=NOW,hours=1)
         self.assertEqual(r["potential_coverage_upper_bound_pct"],25.0)

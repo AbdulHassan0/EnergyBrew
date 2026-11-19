@@ -35,6 +35,12 @@ Run an isolated one-time sample for testing:
     python collector_daemon.py --state ./state/discovery.json \
       --output ./output/worker --once
 
+For seven-day reliability measurement the collector retains up to 6,500 GAL
+run records, sufficient for eight days at the minimum supported 120-second
+poll interval. Identical cached GAL RSS payloads are recognized as repeat
+observations and receive no extra optimistic coverage-window credit; legacy
+runs without a payload fingerprint remain explicitly uncertain.
+
 Every cycle uses the existing GAL parser, rejects stale upstream feeds, and
 validates the metadata-only state in a separate staging file BEFORE replacing
 persistent state. After acquiring its exclusive lock, a restarted worker discards any abandoned uncommitted staging file without touching its last durable committed state. Unrecoverable state corruption and safety failures stop the

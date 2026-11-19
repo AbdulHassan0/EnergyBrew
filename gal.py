@@ -22,6 +22,10 @@ MAX_BYTES = 15_000_000
 MAX_RELEVANT = 400
 MAX_INDEX_AGE_MINUTES = 45
 MAX_FUTURE_INDEX_MINUTES = 5
+# An always-on collector samples every five minutes (and permits two-minute
+# intervals): 1800 records would truncate a seven-day pilot before it ends.
+# 8 days at the permitted 120-second minimum = 5760 slots.
+MAX_RUN_HISTORY = 6500
 
 
 def index_window_health(xml_bytes, now):
@@ -153,7 +157,11 @@ def collect_gal(state_path, outdir, *, now=None, fetcher=None):
         item["published_time_verified"]=False
         by_url[item["url"]]=item
     previous_runs=state.get("gal_runs",[])
-    last_attempt=max((_datetime(x.get("run_utc")) for x in previous_runs if _datetime(x.get("run_utc"))),default=None)
+    previous_success_hash=next(
+        (r.get("feed_payload_sha256") for r in reversed(previous_runs)
+         if isinstance(r,dict) and r.get("status")=="ok" and r.get("feed_payload_sha256")),
+        None)
+    last_attempt=max((_datetime(x.get("run_utc")) for x in previous_runs if isinstance(x,dict) and _datetime(x.get("run_utc"))),default=None)
     interval_minutes=round((now-last_attempt).total_seconds()/60,1) if last_attempt else None
     summary={"run_utc":utc_stamp(now),"provider":"GDELT GAL RSS",
              "minutes_since_previous_sample":interval_minutes,
@@ -169,6 +177,9 @@ def collect_gal(state_path, outdir, *, now=None, fetcher=None):
             raise ValueError(f"GAL returned HTTP {status}")
         window = index_window_health(payload, now)
         summary.update(window)
+        summary["identical_payload_to_previous_success"] = (
+            previous_success_hash is not None
+            and previous_success_hash == window["feed_payload_sha256"])
         if window["upstream_stale"]:
             raise ValueError(f"GAL upstream feed stale: newest index time {window['feed_index_lag_minutes']} minutes old")
         parsed,rejected,raw_count=parse_gal(payload,now)
@@ -206,10 +217,11 @@ def collect_gal(state_path, outdir, *, now=None, fetcher=None):
     state["leads"]=retained
     state.setdefault("gal_runs",[]).append({k:summary[k] for k in
         ("run_utc","status","raw_feed_items","high_signal_items","new_unique_links",
-         "feed_newest_index_utc","feed_index_lag_minutes","feed_payload_sha256") if k in summary})
+         "feed_newest_index_utc","feed_index_lag_minutes","feed_payload_sha256",
+         "identical_payload_to_previous_success") if k in summary})
     run_retention_cutoff=now-timedelta(days=8)
     state["gal_runs"]=[r for r in state["gal_runs"] if
-        (_datetime(r.get("run_utc")) or run_retention_cutoff)>=run_retention_cutoff][-1800:]
+        (_datetime(r.get("run_utc")) or run_retention_cutoff)>=run_retention_cutoff][-MAX_RUN_HISTORY:]
     outdir=Path(outdir)
     outdir.mkdir(parents=True,exist_ok=True)
     state_path.parent.mkdir(parents=True,exist_ok=True)
@@ -231,6 +243,7 @@ def collect_gal(state_path, outdir, *, now=None, fetcher=None):
         f"Minutes since previous scheduled sample: **{summary['minutes_since_previous_sample']}**",
         f"Potential gap in rolling feed sampling: **{summary['potential_sampling_gap']}**",
         f"New unique URLs in research state: **{summary['new_unique_links']}**",
+        f"Identical to prior successful feed payload: **{summary.get('identical_payload_to_previous_success', 'unknown')}**",
         f"Previously stored non-article pages removed: **{summary['historical_noise_removed']}**",
         f"Previously stored scores corrected: **{summary['historical_rescored']}**",
         "", "This is a rolling 15-minute SAMPLE only, not full daily source coverage.",

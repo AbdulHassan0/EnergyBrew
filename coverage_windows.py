@@ -37,19 +37,37 @@ def estimate_sampling_coverage(gal_runs, *, now, hours, window_minutes=ROLLING_M
     horizon_end=now.astimezone(timezone.utc)
     horizon_start=horizon_end-timedelta(hours=hours)
     rolling=timedelta(minutes=window_minutes)
-    intervals=[]
+    candidates=[]
     for item in gal_runs:
         if not isinstance(item,dict) or item.get("status")!="ok":
             continue
         completed=_aware(item.get("run_utc"))
         if completed is None or completed>horizon_end+timedelta(minutes=5):
             continue
-        # Use the run timestamp, not GDELT's ambiguous pubDate, as the
-        # observational window anchor.
+        # Provider pubDate is not a verified publication time. The poll time
+        # is only a possible window anchor, never proof of full coverage.
         left=max(horizon_start,completed-rolling)
         right=min(horizon_end,completed)
         if right>left:
-            intervals.append((left,right))
+            candidates.append((completed,left,right,item.get("feed_payload_sha256")))
+    candidates.sort(key=lambda item:item[0])
+    intervals=[]
+    seen_fingerprints=set()
+    repeated_payloads=0
+    missing_fingerprints=0
+    for completed,left,right,fingerprint in candidates:
+        if isinstance(fingerprint,str) and fingerprint:
+            if fingerprint in seen_fingerprints:
+                # Re-polling identical bytes cannot demonstrate a NEW slice
+                # of a rolling feed. Count the first response only.
+                repeated_payloads+=1
+                continue
+            seen_fingerprints.add(fingerprint)
+        else:
+            # Legacy records have no fingerprint. Preserve their historical
+            # estimate, but expose that their duplication is untestable.
+            missing_fingerprints+=1
+        intervals.append((left,right))
     intervals.sort()
     merged=[]
     for left,right in intervals:
@@ -81,5 +99,7 @@ def estimate_sampling_coverage(gal_runs, *, now, hours, window_minutes=ROLLING_M
         ],
         "longest_unobserved_minutes":round(max(((b-a).total_seconds()/60 for a,b in gaps),default=0),1),
         "successfully_timestamped_run_count":len(intervals),
-        "warning":"Upper bound on potential indexed time sampled, not verified publisher coverage or recovered missed stories.",
+        "repeated_identical_payload_samples_not_credited":repeated_payloads,
+        "samples_without_payload_fingerprint":missing_fingerprints,
+        "warning":"Conservative upper bound of distinct rolling-feed responses; identical payloads receive no additional window credit. Legacy samples without a hash cannot be checked. This is not verified publisher coverage or recovered news.",
     }

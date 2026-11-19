@@ -128,6 +128,11 @@ def create(rss, discovery, releases=None, *, now=None):
         warnings.append(f"GDELT rolling-feed sample missing or older than {MAX_GAL_AGE_MINUTES} minutes")
     if gal_gaps:
         warnings.append(f"{len(gal_gaps)} observed GAL intervals exceeded {MAX_GAL_GAP_MINUTES} minutes")
+    if gal_coverage_24h["repeated_identical_payload_samples_not_credited"]:
+        warnings.append(
+            f"{gal_coverage_24h['repeated_identical_payload_samples_not_credited']} "
+            "identical GAL payload re-polls received no additional time-coverage credit"
+        )
     if gal_coverage_24h["potential_coverage_upper_bound_pct"] < 99.9:
         warnings.append(
             "24h GAL sampled-window coverage upper bound is "

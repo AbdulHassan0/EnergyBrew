@@ -154,6 +154,18 @@ class MetricsTests(unittest.TestCase):
         self.assertEqual(r["gal_repeated_feed_payloads"],1)
         self.assertEqual(len(r["observed_sampling_gaps"]),0)
 
+    def test_metrics_do_not_credit_duplicate_snapshots_as_extra_windows(self):
+        discovery={"gal_runs":[
+            {"run_utc":stamp(30),"status":"ok","feed_payload_sha256":"a"},
+            {"run_utc":stamp(20),"status":"ok","feed_payload_sha256":"a"},
+            {"run_utc":stamp(10),"status":"ok","feed_payload_sha256":"b"}]}
+        r=create({},discovery,now=NOW)
+        self.assertEqual(r["gal_sampled_window_24h"]
+                         ["repeated_identical_payload_samples_not_credited"],1)
+        self.assertEqual(r["gal_sampled_window_24h"]
+                         ["potentially_sampled_minutes_upper_bound"],30)
+        self.assertTrue(any("received no additional" in w for w in r["warnings"]))
+
     def test_metrics_identify_historical_large_gap_magnitude(self):
         rss={"runs":[{"run_utc":stamp(2),"feeds_checked":15,
                       "feeds_connected":15,"scan_state":"healthy"}]}
