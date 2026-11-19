@@ -54,6 +54,8 @@ never two simultaneous writers to the same state.**
 - 05:35: safely refresh publisher RSS metadata.
 - 05:45: create an **unfrozen** overnight editorial preview.
 - 06:24: refresh publisher RSS before the fixed 06:30 cutoff.
+  Initial requests use bounded five-thread fanout; failed sources retry
+  independently against fresh network responses rather than cached failures.
 - 06:38: read the already-completed 06:24 publisher snapshot (NO additional
   RSS network poll) and prepare the immutable research-only candidate snapshot
   if all freshness, quorum, cutoff and safety gates pass. A missing or failed

@@ -2,10 +2,12 @@
 import json
 import tempfile
 import unittest
+import threading
+from unittest.mock import patch
 from datetime import datetime,timedelta,timezone
 from pathlib import Path
 
-from morning_host_runner import refresh_rss_safely, run_morning
+from morning_host_runner import refresh_rss_safely, run_morning, concurrent_first_fetches
 
 CUTOFF=datetime(2026,11,19,12,30,tzinfo=timezone.utc)
 NOW=CUTOFF+timedelta(minutes=8)
@@ -20,6 +22,55 @@ def healthy_gal(root):
     (root/"discovery.json").write_text(json.dumps({"leads":[],"gal_runs":records}))
 
 class MorningHostTests(unittest.TestCase):
+    def test_initial_publisher_fetches_are_bounded_concurrent(self):
+        from collector import SOURCES
+        seen = set()
+        gate = threading.Event()
+        all_entered = threading.Event()
+        lock = threading.Lock()
+
+        def mocked_http(url):
+            with lock:
+                seen.add(threading.get_ident())
+                if len(seen) >= 3:
+                    all_entered.set()
+            if not gate.wait(timeout=4):
+                raise TimeoutError("Parallel fetch did not release")
+            return RSS, 200
+
+        with patch("morning_host_runner.fetch_feed", side_effect=mocked_http):
+            pool, fetcher=concurrent_first_fetches(workers=5)
+            try:
+                self.assertTrue(all_entered.wait(timeout=4))
+                gate.set()
+                first=fetcher(SOURCES[0][1])
+                self.assertEqual(first[1],200)
+                self.assertGreaterEqual(len(seen),3)
+                self.assertLessEqual(len(seen),5)
+            finally:
+                gate.set()
+                pool.shutdown(wait=True)
+
+    def test_failed_prefetch_is_retried_via_fresh_request(self):
+        from collector import SOURCES
+        first_url=SOURCES[0][1]
+        attempts={}
+        def mocked_http(url):
+            attempts[url]=attempts.get(url,0)+1
+            if url==first_url and attempts[url]==1:
+                raise TimeoutError("Temporary publisher timeout")
+            return RSS,200
+        with patch("morning_host_runner.fetch_feed",side_effect=mocked_http), patch(
+                "morning_host_runner.time.sleep",return_value=None):
+            pool,fetcher=concurrent_first_fetches(workers=5)
+            try:
+                with self.assertRaises(TimeoutError):
+                    fetcher(first_url)
+                self.assertEqual(fetcher(first_url)[1],200)
+                self.assertEqual(attempts[first_url],2)
+            finally:
+                pool.shutdown(wait=True)
+
     def test_once_at_0638_prepares_without_email_or_mutating_gal_state(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp)

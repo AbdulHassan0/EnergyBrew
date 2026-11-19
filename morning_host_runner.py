@@ -9,11 +9,13 @@ import fcntl
 import json
 import os
 import shutil
+import time
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from collector import collect
+from collector import SOURCES, collect, fetch_feed
 from morning_readiness import local_schedule, prepare, write_preparation
 from public_collector_guard import ensure_sources_public, validate_records
 from research_desk import as_time
@@ -29,8 +31,36 @@ def read_json(path):
     return data
 
 
+def concurrent_first_fetches(*, workers=5):
+    """Bounded fanout for initial HTTP requests; retries stay source-specific.
+
+    The caller must keep the returned pool alive through collect(). A failed
+    upstream HTTP request is not silently substituted with cached payloads.
+    """
+    executor = ThreadPoolExecutor(max_workers=workers,
+                                  thread_name_prefix="energybrew-rss")
+    initial = {url: executor.submit(fetch_feed, url) for _name, url in SOURCES}
+    attempts = {}
+
+    def fetch(url):
+        count = attempts.get(url, 0)
+        attempts[url] = count + 1
+        if count == 0:
+            return initial[url].result()
+        # Retry on fresh transport data, not the exact same failed future.
+        time.sleep(min(2 ** (count - 1), 3))
+        return fetch_feed(url)
+
+    return executor, fetch
+
+
 def refresh_rss_safely(state_path, output, *, now, fetcher=None):
-    """Uncommitted RSS state is validated before replacing durable history."""
+    """Uncommitted RSS state is validated before replacing durable history.
+
+    Live initial publisher requests are made concurrently with bounded fanout
+    to protect the 06:24 cutoff window. Injected test fetchers remain serial
+    and fully deterministic.
+    """
     state_path = Path(state_path)
     state_path.parent.mkdir(parents=True, exist_ok=True)
     staging = state_path.with_name(state_path.name + ".morning-stage")
@@ -38,12 +68,17 @@ def refresh_rss_safely(state_path, output, *, now, fetcher=None):
         raise RuntimeError("An uncommitted morning RSS staging file requires inspection")
     if state_path.exists():
         shutil.copyfile(state_path, staging)
+    pool = None
     try:
+        if fetcher is None:
+            pool, fetcher = concurrent_first_fetches()
         report = collect(staging, Path(output), now=now, fetcher=fetcher)
         validate_records(staging, "articles")
         staging.replace(state_path)
         return report
     finally:
+        if pool is not None:
+            pool.shutdown(wait=True, cancel_futures=True)
         if staging.exists():
             staging.unlink()
 
