@@ -111,6 +111,9 @@ def prepare(rss, discovery, releases, *, now=None, edition_date=None,
     edition_date = edition_date or local_now.date()
     schedule = local_schedule(edition_date, zone=zone)
     cutoff = as_time(schedule["news_cutoff_utc"])
+    # Early preflight cannot use future timestamps just because the final
+    # editorial cutoff is scheduled for later that morning.
+    observed_cutoff = min(now, cutoff)
     lookback = cutoff - timedelta(hours=CANDIDATE_LOOKBACK_HOURS)
     tz = ZoneInfo(zone)
     issues = []
@@ -160,11 +163,11 @@ def prepare(rss, discovery, releases, *, now=None, edition_date=None,
 
     edition_local_day = date.fromisoformat(schedule["edition_date"])
     rss_articles = [x for x in (rss.get("articles",[]) if isinstance(rss,dict) else [])
-                    if eligible_article(x,"rss",cutoff,lookback,edition_local_day,tz)]
+                    if eligible_article(x,"rss",observed_cutoff,lookback,edition_local_day,tz)]
     discovered = [x for x in (discovery.get("leads",[]) if isinstance(discovery,dict) else [])
-                  if eligible_article(x,"discovery",cutoff,lookback,edition_local_day,tz)]
+                  if eligible_article(x,"discovery",observed_cutoff,lookback,edition_local_day,tz)]
     released = [x for x in (releases.get("leads",[]) if isinstance(releases,dict) else [])
-                if eligible_article(x,"release",cutoff,lookback,edition_local_day,tz)]
+                if eligible_article(x,"release",observed_cutoff,lookback,edition_local_day,tz)]
     # Prefer real developments since yesterday's 06:30 local cutoff. A UTC
     # 24-hour subtraction is wrong across daylight saving transitions.
     previous_day = edition_local_day - timedelta(days=1)
@@ -174,14 +177,14 @@ def prepare(rss, discovery, releases, *, now=None, edition_date=None,
                  and (record_time(x,"rss") or datetime.min.replace(tzinfo=timezone.utc)) >= prior_cutoff]
     fresh_discovery = [x for x in discovered if (record_time(x,"discovery") or datetime.min.replace(tzinfo=timezone.utc)) >= prior_cutoff]
     fresh_release = [x for x in released if (record_time(x,"release") or datetime.min.replace(tzinfo=timezone.utc)) >= prior_cutoff]
-    desk = assemble(fresh_rss,fresh_discovery,fresh_release,now=cutoff,max_stories=max_stories)
+    desk = assemble(fresh_rss,fresh_discovery,fresh_release,now=observed_cutoff,max_stories=max_stories)
     mark_morning_research(desk["stories"],prior_cutoff,overnight_start,previous_research)
     # Older records are context only. Do not fill limited headline slots
     # with yesterday's articles simply because they rank highly.
     old_rss = [x for x in rss_articles if x not in fresh_rss]
     old_discovery = [x for x in discovered if x not in fresh_discovery]
     old_release = [x for x in released if x not in fresh_release]
-    background = assemble(old_rss,old_discovery,old_release,now=cutoff,max_stories=6)
+    background = assemble(old_rss,old_discovery,old_release,now=observed_cutoff,max_stories=6)
     mark_morning_research(background["stories"],prior_cutoff,overnight_start,previous_research)
     if desk["selected_research_links"] == 0:
         issues.append("no_qualifying_research_leads")
@@ -206,7 +209,7 @@ def prepare(rss, discovery, releases, *, now=None, edition_date=None,
         "gdelt_gal_age_at_cutoff_minutes": age_gal,
         "publisher_rss_connection_ratio": ratio,
         "overnight_gdelt_window": coverage,
-        "candidate_window_utc": {"from":lookback.isoformat(),"through":cutoff.isoformat()},
+        "candidate_window_utc": {"from":lookback.isoformat(),"through":observed_cutoff.isoformat()},
         "eligible_source_records": {"rss":len(rss_articles),"discovery":len(discovered),"releases":len(released)},
         "primary_candidate_count_since_previous_cutoff":desk["selected_research_links"],
         "publisher_timestamped_primary_candidates":publisher_dated,
@@ -252,6 +255,26 @@ def write_preparation(result, directory):
     return True
 
 
+def write_preflight(result, directory):
+    """Preliminary metadata-only editorial view; never a frozen or sendable edition."""
+    directory = Path(directory)
+    directory.mkdir(parents=True,exist_ok=True)
+    output = directory / ("preflight_" + result["edition"]["edition_date"] + ".json")
+    data = {
+        "edition": result["edition"],
+        "as_of_utc": result["candidate_window_utc"]["through"],
+        "status": "unfrozen_preflight_research_only",
+        "primary_research_candidates": result["research_desk"]["stories"],
+        "background_context": result["background_context"],
+        "blocking_issues_at_preflight": result["blocking_issues"],
+        "disclaimer": "PREVIEW ONLY. Not cutoff-complete, fact-checked, approved or sent.",
+    }
+    temp = output.with_suffix(".tmp")
+    temp.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    temp.replace(output)
+    return output
+
+
 def main(argv=None):
     p=argparse.ArgumentParser()
     p.add_argument("--rss",type=Path,default=Path("state/articles.json"))
@@ -261,6 +284,7 @@ def main(argv=None):
     p.add_argument("--time-zone",default=DEFAULT_ZONE)
     p.add_argument("--edition-date",default=None)
     p.add_argument("--prior-research",type=Path,default=None)
+    p.add_argument("--preflight",action="store_true")
     args=p.parse_args(argv)
     ensure_sources_public()
     # Reuse the existing public-metadata state validator before freezing a desk.
@@ -274,6 +298,12 @@ def main(argv=None):
     data=prepare(read(args.rss),read(args.discovery),read(args.releases),
                  edition_date=args.edition_date,zone=args.time_zone,
                  previous_research=prior)
+    if args.preflight:
+        file=write_preflight(data,args.output)
+        print(json.dumps({"status":"unfrozen_preflight_research_only",
+                          "path":str(file),
+                          "candidate_count":data["research_desk"]["selected_research_links"]}))
+        return 0
     froze=write_preparation(data,args.output)
     print(json.dumps({
         "date":data["edition"]["edition_date"],"status":data["status"],

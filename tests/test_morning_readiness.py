@@ -5,7 +5,7 @@ import unittest
 from datetime import date,datetime,timedelta,timezone
 from pathlib import Path
 
-from morning_readiness import prepare, local_schedule, write_preparation
+from morning_readiness import prepare, local_schedule, write_preparation, write_preflight
 
 CT=datetime(2026,11,19,6,30,tzinfo=timezone(timedelta(hours=-6)))
 CUTOFF=CT.astimezone(timezone.utc)
@@ -147,6 +147,23 @@ class MorningTests(unittest.TestCase):
         self.assertEqual(by_url["https://example.org/news/old"]["prior_research_repeat_review"],
                          "same_url_previous_research")
         self.assertEqual(r["primary_candidate_count_since_previous_cutoff"],2)
+
+    def test_0545_preflight_is_preliminary_and_excludes_future_articles(self):
+        a,b,c=fixtures()
+        early=CUTOFF-timedelta(minutes=45)
+        result=prepare(a,b,c,now=early)
+        self.assertEqual(result["status"],"blocked_collection_readiness")
+        self.assertIn("edition_cutoff_not_reached",result["blocking_issues"])
+        urls={story["url"] for story in result["research_desk"]["stories"]}
+        self.assertIn("https://example.org/news/old",urls)
+        self.assertNotIn("https://example.net/energy/world",urls)
+        self.assertEqual(result["candidate_window_utc"]["through"],early.isoformat())
+        with tempfile.TemporaryDirectory() as d:
+            path=write_preflight(result,d)
+            self.assertTrue(path.exists())
+            self.assertFalse((Path(d)/"research_2026-11-19.json").exists())
+            preview=json.loads(path.read_text())
+            self.assertEqual(preview["status"],"unfrozen_preflight_research_only")
 
     def test_unverified_only_discovery_never_becomes_ready(self):
         a,b,c=fixtures()

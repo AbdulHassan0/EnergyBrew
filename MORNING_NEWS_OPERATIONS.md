@@ -7,7 +7,7 @@ Pilot schedule: **America/Chicago**; timezone is configurable and adjusts for
 US daylight saving time. This is NOT an assumption that all future subscriber
 deliveries should use Central Time.
 
-- **05:45 local:** monitor overnight GDELT sampling and RSS source health; investigate gaps.
+- **05:45 local:** monitor overnight sampling and generate an **unfrozen preflight** with `python morning_readiness.py --preflight`; this is the editor’s early review queue, not the final cutoff-complete candidate set.
 - **06:20–06:30 local:** targeted final RSS/GDELT collection on a persistent host.
 - **06:30 local:** hard research cutoff: no post-cutoff publisher timestamps,
   GDELT first-seen metadata, or press-release feed timestamps in this edition.
