@@ -31,6 +31,16 @@ CANDIDATES = (
     ("LNG Industry", "https://www.lngindustry.com/feed/"),
 )
 
+# Explicitly distinguish a reachable RSS URL from authorized commercial use.
+# Blocking is for adding a DIRECT AUTOMATED source to collection; a public link
+# discovered through a search index remains a source for human verification.
+PROBE_RIGHTS_STATUS = {
+    "LNG Prime": "blocked_direct_feed_pending_permission",
+    "Energy Storage News": "blocked_direct_feed_pending_permission",
+    "POWER Magazine": "rights_review_pending",
+    "Power Engineering": "rights_review_pending",
+    "LNG Industry": "rights_review_pending",
+}
 SIZE_LIMIT = min(MAX_BYTES, 1_500_000)
 SOURCE_TIMEOUT = 12
 
@@ -55,7 +65,9 @@ def measure(candidates=CANDIDATES, *, now=None, fetcher=None) -> dict:
     results = []
     for name, url in candidates:
         started = time.monotonic()
-        row = {"name": name, "url": url, "status": "degraded", "fresh_links_24h": 0,
+        row = {"name": name, "url": url, "status": "degraded",
+               "rights_status": PROBE_RIGHTS_STATUS.get(name, "not_assessed_by_probe"),
+               "fresh_links_24h": 0,
                "fresh_links_48h": 0, "high_signal_48h": 0, "error": None}
         try:
             payload, status = fetcher(url)
@@ -96,14 +108,15 @@ def write_report(data: dict, output: Path) -> None:
         f"Probe UTC: {data['run_utc']}",
         f"Connected: **{data['feeds_connected']}/{data['feeds_checked']}**",
         f"Fresh source-linked records in last 24h: **{data['fresh_links_24h']}**",
-        "", "| Source | Status | 24h links | 48h links | High-signal 48h | Error |",
-        "|---|---|---:|---:|---:|---|",
+        "", "| Source | Connection | Usage review | 24h links | 48h links | High-signal 48h | Error |",
+        "|---|---|---|---:|---:|---:|---|",
     ]
     for x in data["sources"]:
         error = (x.get("error") or "").replace("|","/")
-        lines.append(f"| {x['name']} | {x['status']} | {x['fresh_links_24h']} | {x['fresh_links_48h']} | {x['high_signal_48h']} | {error} |")
+        lines.append(f"| {x['name']} | {x['status']} | {x['rights_status']} | {x['fresh_links_24h']} | {x['fresh_links_48h']} | {x['high_signal_48h']} | {error} |")
     lines += ["", "Freshness is based on publisher RSS timestamps, not independent confirmation.",
-              "Results do not automatically authorize redistribution or promotion into an approved newsletter."]
+              "A successful endpoint probe does NOT authorize adding a source to commercial production collection.",
+              "Blocked/review-pending candidates require source-specific legal and contractual evaluation before direct automated polling."]
     (output/"source_probe.md").write_text("\n".join(lines)+"\n",encoding="utf-8")
 
 

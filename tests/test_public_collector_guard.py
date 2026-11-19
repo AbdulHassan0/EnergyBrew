@@ -3,6 +3,8 @@ import json
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
+import public_collector_guard as guard
 
 from public_collector_guard import SafetyError, ensure_sources_public, sanitize_legacy_rss, validate_all, validate_records
 
@@ -10,6 +12,15 @@ from public_collector_guard import SafetyError, ensure_sources_public, sanitize_
 class PublicGuardTests(unittest.TestCase):
     def test_allowlisted_sources_are_public_https(self):
         ensure_sources_public()
+
+    def test_known_restricted_direct_feeds_cannot_be_enabled_by_whitelisting(self):
+        for host in ("lngprime.com", "energy-storage.news", "rigzone.com", "ogj.com"):
+            with self.subTest(host=host):
+                uri=f"https://www.{host}/feed/"
+                with patch.object(guard,"SOURCES",[("Unlicensed direct source",uri)]), \
+                     patch.object(guard,"PUBLIC_FEED_HOSTS",guard.PUBLIC_FEED_HOSTS|{f"www.{host}"}):
+                    with self.assertRaisesRegex(SafetyError, "written source permission"):
+                        guard.ensure_sources_public()
 
     def test_reject_publisher_excerpts(self):
         with tempfile.TemporaryDirectory() as d:

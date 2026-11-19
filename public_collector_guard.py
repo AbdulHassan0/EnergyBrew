@@ -13,6 +13,13 @@ from discovery import API as GDELT_DOC_URL
 from gal import FEED_URL as GDELT_GAL_URL
 from press_releases import URL as PRESS_FEED_URL
 
+# Explicit stop-list for sites with published commercial redistribution/storage
+# restrictions. Probe-only connectivity testing does not confer permission.
+# This guards direct automated publisher feed onboarding, not public links found by GDELT.
+RIGHTS_BLOCKED_DIRECT_FEED_HOSTS = frozenset({
+    "lngprime.com", "energy-storage.news", "rigzone.com", "ogj.com",
+})
+
 PUBLIC_FEED_HOSTS = frozenset({
     "www.eia.gov", "www.energy.gov", "www.nrc.gov", "energy.ec.europa.eu",
     "www.federalregister.gov",
@@ -39,6 +46,9 @@ def ensure_sources_public() -> None:
         parsed = urlsplit(uri)
         if parsed.scheme != "https" or parsed.username or parsed.password:
             raise SafetyError("Configured sources must be public HTTPS endpoints")
+        normalized_host=(parsed.hostname or "").removeprefix("www.")
+        if normalized_host in RIGHTS_BLOCKED_DIRECT_FEED_HOSTS:
+            raise SafetyError(f"Direct feed host requires written source permission: {normalized_host}")
         if uri in [GDELT_DOC_URL, GDELT_GAL_URL, PRESS_FEED_URL]:
             continue
         if parsed.hostname not in PUBLIC_FEED_HOSTS:
