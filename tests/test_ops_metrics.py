@@ -110,6 +110,27 @@ class MetricsTests(unittest.TestCase):
         self.assertGreater(r["seven_day_start_gap_minutes"],15)
         self.assertFalse(r["seven_day_pilot_complete"])
 
+    def test_transient_retry_successes_are_measured_separately_from_outages(self):
+        rss={"runs":[
+            {"run_utc":stamp(55),"feeds_connected":14,"feeds_checked":15,
+             "scan_state":"degraded","transient_retries":2,
+             "feeds_recovered_after_retry":0},
+            {"run_utc":stamp(5),"feeds_connected":15,"feeds_checked":15,
+             "scan_state":"healthy","transient_retries":2,
+             "feeds_recovered_after_retry":1},
+        ],"source_health":{"PJM Inside Lines":{
+            "last_recovered_after_retry":True,
+            "last_request_attempts":3,
+            "last_transient_retry_count":2,
+            "total_recoveries":1,"consecutive_failures":0,
+            "last_success_utc":stamp(5)}}}
+        report=create(rss,{"gal_runs":[{"run_utc":stamp(4),"status":"ok"}]},now=NOW)
+        self.assertEqual(report["rss_transient_retries_8d"],4)
+        self.assertEqual(report["rss_recovered_sources_8d"],1)
+        self.assertEqual(report["latest_rss_recovered_sources"][0]["source"],"PJM Inside Lines")
+        self.assertEqual(report["official_fully_connected_scans"],1)
+        self.assertEqual(report["failing_sources"],[])
+
     def test_connected_feed_can_be_dormant_not_broken(self):
         rss={"runs":[{"run_utc":stamp(3),"feeds_connected":2,"feeds_checked":2,
                       "scan_state":"healthy"}],

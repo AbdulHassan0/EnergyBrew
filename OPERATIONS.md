@@ -5,7 +5,8 @@ This is an operating pilot for public-source news metadata collection, **not** a
 ## Current hosted workflow
 
 - **Primary source-aware RSS collector:** [Actions](https://github.com/AbdulHassan0/EnergyBrew/actions/workflows/live-collector.yml), scheduled at 04:17 / 10:17 / 16:17 / 22:17 UTC. Includes EIA, DOE, NRC, European Commission, Federal Register, Offshore Energy, OilPrice.com, Utility Dive, and PJM Inside Lines sources. Connected sources include government agencies, specialist publishers, and an independent grid-operator's primary feed; classes are never conflated.
-- **Rolling global discovery sampler:** [Actions](https://github.com/AbdulHassan0/EnergyBrew/actions/workflows/frequent-gal.yml), scheduled at minute 7, 22, 37 and 52 each hour. The GDELT Global Article List is a rolling approximately 15-minute index feed, and GitHub schedule delays can create sampling gaps.
+- **Rolling global discovery sampler:** [Actions](https://github.com/AbdulHassan0/EnergyBrew/actions/workflows/frequent-gal.yml), scheduled at minute 6, 16, 26, 36, 46 and 56 of each hour (10-minute interval). The GDELT Global Article List is a rolling approximately 15-minute index feed, and GitHub schedule delays can create sampling gaps.
+- Source-level transient RSS errors use bounded retries (one extra attempt generally; two extra for PJM). HTTP 429 is never automatically retried, and permanently invalid feeds stay marked failed. Per-source recovery and outage diagnostics are recorded in collector state.
 - The collectors use a shared concurrency group and PUBLIC collector-state branch. All writes pass the strict public_collector_guard.py metadata-only gate (including a legacy snippet migration). This is **pilot-scale state storage**, not a private or licensed feed warehouse.
 - The full publishing website, automated email sender, and subscriber analytics are **not** deployed with these workflows. Nothing is auto-approved or emailed.
 

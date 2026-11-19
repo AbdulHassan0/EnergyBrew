@@ -120,7 +120,7 @@ def create(rss, discovery, releases=None, *, now=None):
     if not latest_r or now-latest_r>timedelta(hours=MAX_RSS_AGE_HOURS):
         warnings.append("Official RSS scan missing or older than 12 hours")
     if not latest_g or now-latest_g>timedelta(minutes=MAX_GAL_AGE_MINUTES):
-        warnings.append("GDELT rolling-feed sample missing or older than 35 minutes")
+        warnings.append(f"GDELT rolling-feed sample missing or older than {MAX_GAL_AGE_MINUTES} minutes")
     if gal_gaps:
         warnings.append(f"{len(gal_gaps)} observed GAL intervals exceeded {MAX_GAL_GAP_MINUTES} minutes")
     if len(fully_connected_r_runs)<len(r_runs):
@@ -164,6 +164,16 @@ def create(rss, discovery, releases=None, *, now=None):
     publication_activity.sort(key=lambda x:(x["age_hours"] is not None,
                                              -(x["age_hours"] or 0), x["source"]))
     activity_counts=Counter(x["activity"] for x in publication_activity)
+    recovered_sources=sorted([
+        {"source": name,
+         "last_request_attempts": row.get("last_request_attempts", 1),
+         "last_transient_retry_count": row.get("last_transient_retry_count", 0),
+         "total_recoveries": row.get("total_recoveries", 0)}
+        for name, row in source_health.items()
+        if isinstance(row, dict) and row.get("last_recovered_after_retry")
+    ], key=lambda x:x["source"])
+    total_rss_retries=sum(int(x.get("transient_retries",0) or 0) for x in r_runs)
+    total_rss_recoveries=sum(int(x.get("feeds_recovered_after_retry",0) or 0) for x in r_runs)
     failing_sources=sorted([
         {"source":name,"consecutive_failures":row.get("consecutive_failures",0),
          "last_success_utc":row.get("last_success_utc"),"last_error_type":row.get("last_error_type")}
@@ -178,6 +188,9 @@ def create(rss, discovery, releases=None, *, now=None):
         "official_scan_runs":len(r_runs),"official_successful_scans":len(successful_r_runs),
         "official_fully_connected_scans":len(fully_connected_r_runs),
         "failing_sources":failing_sources,
+        "rss_transient_retries_8d":total_rss_retries,
+        "rss_recovered_sources_8d":total_rss_recoveries,
+        "latest_rss_recovered_sources":recovered_sources,
         "feed_publication_activity":publication_activity,
         "feed_publication_activity_counts":dict(activity_counts),
         "official_failed_scans":len(r_runs)-len(successful_r_runs),
@@ -210,6 +223,7 @@ def report(rss_path, discovery_path, releases_path, outdir, *, now=None):
            f"Observed history span: **{r['history_span_days']} days**",
            f"RSS scans: **{r['official_scan_runs']}** (above 80% feed quorum: {r['official_successful_scans']}, all feeds connected: {r['official_fully_connected_scans']}, below quorum: {r['official_failed_scans']})",
            f"Sources whose newest publisher item is within seven days: **{r['feed_publication_activity_counts'].get('publication_within_7d',0)}** / {len(r['feed_publication_activity'])}",
+            f"RSS transient retries in retained scan history: **{r['rss_transient_retries_8d']}**; recovered source events: **{r['rss_recovered_sources_8d']}**",
            f"GDELT GAL samples: **{r['gal_sample_runs']}** (successful: {r['gal_successful_samples']}, degraded: {r['gal_failed_samples']}, repeated payload fingerprints: {r['gal_repeated_feed_payloads']})",
            f"GDELT intervals longer than {MAX_GAL_GAP_MINUTES} minutes: **{len(r['observed_sampling_gaps'])}**",
            f"Gap from seven-day window start to first GAL sample: **{r['seven_day_start_gap_minutes']} min**",
@@ -224,6 +238,9 @@ def report(rss_path, discovery_path, releases_path, outdir, *, now=None):
     for source in r["feed_publication_activity"]:
         lines.append(f"| {source['source']} | {source['newest_feed_published_utc'] or 'unknown'} | {source['age_hours'] if source['age_hours'] is not None else '-'} | {source['activity']} |")
     lines += ["", "Some regulator and testimony feeds are naturally intermittent; an old item does not imply collection failure.", ""]
+    lines += ["", "## Sources recovered on latest RSS run"] + ([
+        f"- {x['source']}: {x['last_transient_retry_count']} retries (attempts: {x['last_request_attempts']})"
+        for x in r["latest_rss_recovered_sources"]] or ["- None recorded on latest scan"])
     lines+=["","## Individual feed failures"] + ([
         f"- {x['source']}: {x['consecutive_failures']} consecutive failures; last successful scan: {x['last_success_utc'] or 'never'}"
         for x in r["failing_sources"]] or ["- None in latest state"]) + [
