@@ -81,3 +81,22 @@ underlying six-category desk carries 32 links; this matches the publication
 gate's 4–8-story limit. Unverified story summaries and publisher times remain
 blank until a human editor checks originals and approves. Reducing to eight
 does **not** make a draft sendable, and no delivery is implied.
+
+## Temporary pilot mode (November 2026)
+
+For testing a **complete readable email** without collecting human fact-check
+attestations yet, use:
+
+```bash
+python newsletter.py pilot-preview --edition newsletter/pilots/2026-11-19.json --html output/newsletter/PILOT_email_preview.html --text output/newsletter/PILOT_email_preview.txt
+```
+
+A pilot file has `status: pilot`, source-linked, original briefs, and
+market-impact notes. Pilot rendering intentionally skips source-date and
+fact-check *attestation* gates. It still requires 4–8 real HTTPS source links,
+nonempty substantive copy, correct beats, distinct URLs, and a five-minute
+length cap. **Pilot mode does not publish, email, or permit subscriber sends.**
+The existing `validate_approved()` publication and delivery gates are
+unchanged and can be restored as the only mode by discontinuing
+`pilot-preview`. Real content is preferable to invented title-only summaries;
+this November 19 issue's prose was drafted from publisher articles.

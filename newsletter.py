@@ -152,6 +152,45 @@ def research_queue(desk: dict, *, edition_date: str | None = None, limit: int = 
     }
 
 
+def validate_pilot_preview(edition: dict) -> dict:
+    """Temporary pilot: complete source-linked briefs WITHOUT fact-check attestations.
+
+    This deliberately is NOT the validate_approved() publication/send gate.
+    It requires meaningful original wording and working-source-shaped URLs,
+    but neither pretends to verify the source nor grants distribution consent.
+    """
+    if not isinstance(edition, dict) or edition.get("status") != "pilot":
+        raise EditorialError("Pilot preview requires a pilot-status edition")
+    if not date_only(edition.get("edition_date")):
+        raise EditorialError("Pilot preview requires a real YYYY-MM-DD issue date")
+    stories = edition.get("stories")
+    if not isinstance(stories, list) or not MIN_ARTICLES <= len(stories) <= MAX_ARTICLES:
+        raise EditorialError("Pilot preview requires 4–8 real stories")
+    if not isinstance(edition.get("intro"), str):
+        raise EditorialError("Pilot introduction must be plain text")
+    seen = set()
+    words = word_count(edition.get("intro"))
+    for i, story in enumerate(stories, 1):
+        if not isinstance(story, dict):
+            raise EditorialError(f"Pilot story {i} must be an object")
+        url = story.get("source_url")
+        if not valid_url(url) or url in seen:
+            raise EditorialError(f"Pilot story {i} has an invalid or repeated original source")
+        seen.add(url)
+        if word_count(story.get("title")) < 3:
+            raise EditorialError(f"Pilot story {i} needs an informative title")
+        if not story.get("publisher") or story.get("section") not in TOPICS:
+            raise EditorialError(f"Pilot story {i} needs a publisher and one valid beat")
+        if not 18 <= word_count(story.get("summary")) <= 110:
+            raise EditorialError(f"Pilot story {i} needs an 18–110 word news brief")
+        if not 8 <= word_count(story.get("why_it_matters")) <= 65:
+            raise EditorialError(f"Pilot story {i} needs an 8–65 word market implication")
+        words += sum(word_count(story.get(k)) for k in ("title","summary","why_it_matters"))
+    if words > MAX_WORDS:
+        raise EditorialError("Pilot newsletter is longer than five-minute reading limit")
+    return edition
+
+
 def validate_approved(edition: dict, *, now: datetime | None = None) -> dict:
     """Fail closed unless human editorial metadata and content are all provided.
 
@@ -238,9 +277,12 @@ def _date_label(raw: str) -> str:
     return f"{day.strftime('%B')} {day.day}, {day.year}"
 
 
-def render_html(edition: dict, *, preview: bool = False) -> str:
-    """Email-client-friendly table-based HTML; all editorial text escaped."""
-    if not preview:
+def render_html(edition: dict, *, preview: bool = False, pilot: bool = False) -> str:
+    """Email-client-friendly HTML; pilot previews skip approval but NEVER send."""
+    if pilot:
+        validate_pilot_preview(edition)
+        preview = True
+    elif not preview:
         validate_approved(edition)
     title = f"EnergyBrew — {_date_label(edition['edition_date'])}"
     story_html = []
@@ -264,6 +306,9 @@ def render_html(edition: dict, *, preview: bool = False) -> str:
             f'<p style="font:11px Arial,sans-serif;color:#7b7168;margin:12px 0 0">Original source date: {_esc(item.get("source_date") or "not verified")}</p>'
             '</td></tr>')
     draft_label = (
+        '<tr><td style="padding:12px 30px;background:#f9e6d1;color:#633820;font:700 12px/1.6 Arial,sans-serif">'
+        'PILOT PREVIEW — SOURCE-LINKED BRIEFS, NOT AN AUTOMATED EMAIL SEND'
+        '</td></tr>' if pilot else
         '<tr><td style="padding:16px 30px;background:#f9e6d1;color:#633820;font:700 12px/1.6 Arial,sans-serif">'
         'DRAFT — NOT FACT-CHECKED, APPROVED, OR AUTHORIZED FOR DISTRIBUTION'
         '</td></tr>' if preview else ""
@@ -291,11 +336,16 @@ def render_html(edition: dict, *, preview: bool = False) -> str:
     )
 
 
-def render_text(edition: dict, *, preview: bool = False) -> str:
-    if not preview:
+def render_text(edition: dict, *, preview: bool = False, pilot: bool = False) -> str:
+    if pilot:
+        validate_pilot_preview(edition)
+        preview = True
+    elif not preview:
         validate_approved(edition)
     lines = ["ENERGYBREW — YOUR DAILY SHOT OF ENERGY", _date_label(edition["edition_date"]), ""]
-    if preview:
+    if pilot:
+        lines += ["PILOT PREVIEW — SOURCE-LINKED BRIEFS, NO AUTOMATED SEND", ""]
+    elif preview:
         lines += ["DRAFT / UNVERIFIED / NOT APPROVED FOR DISTRIBUTION", ""]
     lines += [edition.get("intro") or "The energy headlines worth knowing.", ""]
     for item in edition.get("stories", []):
@@ -315,6 +365,8 @@ def archive(edition_dir: Path, output_dir: Path, email_out: Path) -> int:
         data = json.loads(path.read_text(encoding="utf-8"))
         if data.get("status") == "draft":
             continue
+        if data.get("status") == "pilot":
+            raise EditorialError("Pilot editions may only be previewed, never published by archive")
         validate_approved(data)
         if path.stem != data["edition_date"]:
             raise EditorialError(f"{path}: filename must match edition_date")
@@ -352,6 +404,10 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--draft", type=Path, required=True)
     p.add_argument("--html", type=Path, required=True)
     p.add_argument("--text", type=Path)
+    p = sub.add_parser("pilot-preview", help="Render complete source-linked pilot WITHOUT fact-check/approval gate; never send")
+    p.add_argument("--edition", type=Path, required=True)
+    p.add_argument("--html", type=Path, required=True)
+    p.add_argument("--text", type=Path)
     p = sub.add_parser("archive", help="Render approved editions only")
     p.add_argument("--editions", type=Path, default=Path("newsletter/editions"))
     p.add_argument("--site", type=Path, default=Path("dist/editions"))
@@ -375,6 +431,15 @@ def main(argv: list[str] | None = None) -> int:
             args.text.parent.mkdir(parents=True, exist_ok=True)
             args.text.write_text(render_text(draft, preview=True), encoding="utf-8")
         print(f"Wrote clearly labeled unapproved draft preview: {args.html}")
+    elif args.action == "pilot-preview":
+        pilot = json.loads(args.edition.read_text(encoding="utf-8"))
+        validate_pilot_preview(pilot)
+        args.html.parent.mkdir(parents=True, exist_ok=True)
+        args.html.write_text(render_html(pilot, pilot=True), encoding="utf-8")
+        if args.text:
+            args.text.parent.mkdir(parents=True, exist_ok=True)
+            args.text.write_text(render_text(pilot, pilot=True), encoding="utf-8")
+        print(f"Pilot email preview generated, with no fact-check approval and NO SEND: {args.html}")
     elif args.action == "archive":
         print(f"Published {archive(args.editions, args.site, args.email_out)} approved issues.")
     else:

@@ -8,7 +8,7 @@ from pathlib import Path
 
 from newsletter import (
     EditorialError, archive, date_only, render_html, render_text, research_queue,
-    validate_approved, valid_url, TOPICS,
+    validate_approved, validate_pilot_preview, valid_url, TOPICS,
 )
 from newsletter_delivery import deliver_test, prepare_message
 
@@ -51,6 +51,49 @@ def example_approved(day="2026-11-17"):
 
 
 class NewsletterTests(unittest.TestCase):
+    def test_pilot_preview_does_not_require_pending_fact_checks(self):
+        pilot = example_approved()
+        pilot["status"] = "pilot"
+        pilot["approval"] = {}
+        for story in pilot["stories"]:
+            for name in ("original_source_checked","publisher_date_checked",
+                         "facts_checked","summary_rights_checked"):
+                story[name] = False
+            story["fact_check_evidence_urls"] = []
+            story["verification_notes"] = ""
+        validate_pilot_preview(pilot)
+        html = render_html(pilot, pilot=True)
+        self.assertIn("PILOT PREVIEW", html)
+        self.assertIn(BODY, html)
+        self.assertNotIn("[Summary pending fact-check]", html)
+        self.assertNotIn("DRAFT — NOT FACT-CHECKED", html)
+        text = render_text(pilot, pilot=True)
+        self.assertNotIn("[Pending review]", text)
+        with self.assertRaises(EditorialError):
+            validate_approved(pilot)
+
+    def test_pilot_cannot_skip_substantive_copy_or_duplicate_link_checks(self):
+        pilot = example_approved()
+        pilot["status"] = "pilot"
+        pilot["stories"][0]["summary"] = ""
+        with self.assertRaises(EditorialError):
+            validate_pilot_preview(pilot)
+        pilot["stories"][0]["summary"] = BODY
+        pilot["stories"][0]["source_url"] = pilot["stories"][1]["source_url"]
+        with self.assertRaises(EditorialError):
+            validate_pilot_preview(pilot)
+
+    def test_pilot_not_published_or_emailed_by_archive(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            issue = example_approved()
+            issue["status"] = "pilot"
+            directory_editions = root / "editions"
+            directory_editions.mkdir()
+            (directory_editions / "2026-11-17.json").write_text(json.dumps(issue))
+            with self.assertRaises(EditorialError):
+                archive(directory_editions, root / "dist", root / "emails")
+
     def test_draft_only_from_real_desk_links(self):
         desk = {"generated_utc": "2026-11-18T13:00:00Z", "stories": [
             {"title": "Actual sample original headline", "url": "https://eia.gov/news/1",
