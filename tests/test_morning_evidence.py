@@ -44,6 +44,8 @@ class MorningEvidenceTests(unittest.TestCase):
         self.assertFalse(row["links"][0]["original_publication_date_verified"])
         self.assertEqual(row["links"][0]["original_publisher_date"],"2026-11-19")
         self.assertIn("Oil & Energy",packet["missing_beats"])
+        self.assertNotIn("Natural Gas",packet["beats_without_proven_pre_cutoff_collection"])
+        self.assertIn("LNG",packet["beats_without_proven_pre_cutoff_collection"])
         self.assertEqual(packet["researcher_brief_template"]["briefs"][0]["summary"],"")
         self.assertEqual(packet["researcher_brief_template"]["briefs"][0]["why_it_matters"],"")
 
@@ -74,6 +76,9 @@ class MorningEvidenceTests(unittest.TestCase):
         self.assertEqual(section["status"],"source_first_collection_time_unknown")
         self.assertEqual(section["publisher_links_confirmed_collected"],0)
         self.assertEqual(packet["unknown_first_collection_counts"]["publisher_rss"],1)
+        self.assertIn("Natural Gas",packet["beats_without_proven_pre_cutoff_collection"])
+        self.assertEqual(packet["pre_cutoff_collection_evidence_status"],
+                         "insufficient_time_proven_coverage")
 
     def test_issuer_publisher_claim_kept_separate(self):
         packet=build({}, {}, {"leads":[release()]},now=NOW)
@@ -130,6 +135,7 @@ class MorningEvidenceTests(unittest.TestCase):
             m=path.with_suffix(".md").read_text()
             self.assertIn("Natural Gas",m)
             self.assertIn("No factual summaries",m)
+            self.assertIn("Beats with no proven pre-cutoff collection",m)
             draft=json.loads(path.with_name(
                 "morning_evidence_brief_template.json").read_text())
             self.assertEqual(draft["briefs"][0]["summary"],"")

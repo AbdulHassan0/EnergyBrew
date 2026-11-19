@@ -207,6 +207,12 @@ def build(rss, discovery, releases, *, now=None, edition_date=None, zone=ZONE):
              if section["status"]=="no_current_source_evidence"]
     without_direct=[beat for beat,section in sections.items()
                     if section["publisher_links_confirmed_collected"]==0]
+    # This is deliberately stricter than "any candidate link". A legacy
+    # indexed headline with no first-observation clock does not prove
+    # the 07:00 morning research had that sector covered.
+    without_proven=[beat for beat,section in sections.items()
+                    if not any(x["can_prove_collected_before_cutoff"]
+                               for x in section["links"])]
     return {
         "edition_date":day.isoformat(),
         "generated_utc":now.isoformat(),
@@ -218,6 +224,11 @@ def build(rss, discovery, releases, *, now=None, edition_date=None, zone=ZONE):
         "section_statuses":sections,
         "missing_beats":missing,
         "beats_without_confirmed_direct_publisher_evidence":without_direct,
+        "beats_without_proven_pre_cutoff_collection":without_proven,
+        "pre_cutoff_collection_evidence_status":(
+            "all_six_beats_observed_by_cutoff" if not without_proven
+            else "insufficient_time_proven_coverage"
+        ),
         "observed_candidate_counts":dict(examined),
         "late_first_collection_exclusions":dict(late),
         "unknown_first_collection_counts":dict(unproven),
@@ -238,6 +249,9 @@ def write_packet(packet,output):
         "# EnergyBrew morning source evidence — "+packet["edition_date"],"",
         "**Research only. No factual summaries or fact-checks generated.**","",
         "06:30 Central cutoff: "+packet["news_cutoff_utc"],"",
+        "**Morning time evidence:** "+packet["pre_cutoff_collection_evidence_status"],"",
+        "**Beats with no proven pre-cutoff collection:** "+
+            (", ".join(packet["beats_without_proven_pre_cutoff_collection"]) or "None"),"",
         "| Energy beat | Coverage status | Direct RSS | GDELT |",
         "|---|---|---:|---:|",
     ]
@@ -283,6 +297,7 @@ def main(argv=None):
         "edition_date":packet["edition_date"],
         "missing_beats":packet["missing_beats"],
         "beats_without_direct_evidence":packet["beats_without_confirmed_direct_publisher_evidence"],
+        "beats_without_proven_pre_cutoff_collection":packet["beats_without_proven_pre_cutoff_collection"],
         "research_only":True
     },indent=2))
     return 0

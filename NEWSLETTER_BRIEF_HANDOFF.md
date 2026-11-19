@@ -68,3 +68,12 @@ first-collection time are marked unproven rather than silently counted as
 available by 06:30. Day-only Federal Register timestamps do not establish
 an intraday release time. The packet is an input to **source review and
 brief authoring**, not an autonomous summarizer or newsletter approval.
+
+A key operational distinction: **all six categories can have candidate news
+and still have zero categories proven collected by 06:30**. The packet now
+explicitly reports `beats_without_proven_pre_cutoff_collection` and
+`pre_cutoff_collection_evidence_status`, separate from
+`missing_beats`. The former measures actual recorded morning availability;
+the latter only identifies categories with no candidate headlines at all.
+This prevents an old GDELT index date or legacy RSS record from masquerading
+as an on-time EnergyBrew edition.
