@@ -167,11 +167,11 @@ def reconcile(rss, discovery, releases=None, *, now=None):
 
 
 def _plain_markdown_label(text):
-    """Publisher-controlled titles must not inject new Markdown formatting."""
+    """Publisher-controlled titles must not inject Markdown formatting."""
     import re
-    result = re.sub(r"[\\r\\n\\t]+", " ", str(text or ""))
-    result = re.sub(r"[<>\\[\\]\\`*_!]", "", result)
-    return result.replace("\\\\", "").replace("|", " ").strip()[:300]
+    result = re.sub(r"[\r\n\t]+", " ", str(text or ""))
+    result = re.sub(r"[<>\[\]\x60*_!]", "", result)
+    return result.replace("\\", "").replace("|", " ").strip()[:300]
 
 
 def write_report(report, directory):
