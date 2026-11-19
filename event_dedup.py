@@ -66,6 +66,14 @@ def same_event(a, b):
     name_b=entities(b.get("title",""))
     fam_a=family(a.get("title",""))
     fam_b=family(b.get("title",""))
+    # A merger and a supply contract can feature the same counterparties
+    # and overlapping headline terms; they are separate developments.
+    if fam_a and fam_b and fam_a != fam_b:
+        return False
+    # Conflicting explicitly named counterparties trump generic headline
+    # similarity. A shared company alone does not make two deals one event.
+    if name_a - name_b and name_b - name_a:
+        return False
     # Two contracts between the same counterparties are not necessarily the
     # same event. Different explicit transaction figures or years protect
     # distinct developments from a false merge, even on the entity shortcut.
