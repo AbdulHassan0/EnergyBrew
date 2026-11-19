@@ -96,7 +96,9 @@ class CompilerTests(unittest.TestCase):
                 "priority":90-i,
             })
         issue,quality=compile_pilot(desk,briefs,now=NOW)
-        self.assertEqual(len(issue["stories"]),8)
+        # With only one extra power story allowed under two-per-beat, a
+        # seven-story issue is correct; never manufacture an eighth.
+        self.assertEqual(len(issue["stories"]),7)
         self.assertLessEqual(sum(x["section"]=="Power & Electricity"
                                  for x in issue["stories"]),2)
         self.assertEqual(quality["status"],"pilot_copy_ready")

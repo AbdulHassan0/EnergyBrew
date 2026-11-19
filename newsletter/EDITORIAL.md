@@ -132,3 +132,20 @@ This prevents a valid indexed story that was not shortlisted from being
 misreported as completely unknown. The report distinguishes shortlist
 matches from saved-source matches; it never treats GDELT provider pubDate
 as proof that EnergyBrew collected the story by 06:30.
+
+## Reusable authored-brief handoff
+
+The `brief_compiler.py` module accepts `newsletter/briefs/YYYY-MM-DD.json`
+containing **original summary and why-it-matters prose already written from
+source material**. Each brief needs a source URL, its original publication
+date, section, title, 18–110 word summary, and 8–65 word market implication.
+The compiler looks up exact URLs in saved RSS, GDELT or release records,
+requires all six beats, selects up to eight with no more than two per beat
+and three per publisher, and refuses to invent missing copy. The private
+workflow automatically compiles a file if today's brief bank exists; else
+it uses a curated `newsletter/pilots/YYYY-MM-DD.json` if available; else
+it only prepares the research queue. **No briefs means no fake email.**
+
+This is a compositional bridge, **not autonomous daily summarization**:
+a research agent or human must actually author credible content beforehand.
+No new paid LLM, news API, or email-sending credential is enabled.

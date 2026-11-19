@@ -70,6 +70,9 @@ class WorkflowSeparationTests(unittest.TestCase):
     def test_pilot_editorial_action_renders_complete_email_without_sending(self):
         flow=workflow("morning-editorial.yml")
         self.assertIn("python pilot_audit.py --pilot",flow)
+        self.assertIn("python brief_compiler.py --desk",flow)
+        self.assertIn('newsletter/briefs/**',flow)
+        self.assertIn("COMPILED_PILOT.json",flow)
         self.assertIn("PILOT_QUALITY_REPORT.json",flow)
         self.assertIn('cron: "45 11,12 * * 1-5"',flow)
         self.assertIn('40 <= now.minute < 55',flow)

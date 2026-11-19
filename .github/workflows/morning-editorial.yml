@@ -6,6 +6,8 @@ on:
     paths:
       - "newsletter.py"
       - "pilot_audit.py"
+      - "brief_compiler.py"
+      - "newsletter/briefs/**"
       - "newsletter/pilots/**"
       - "newsletter/EDITORIAL.md"
       - ".github/workflows/morning-editorial.yml"
@@ -65,13 +67,21 @@ jobs:
           # headline-only templates. Do not make placeholder emails for dates
           # without content.
           TODAY="$(TZ=America/Chicago date +%F)"
-          if test -f "newsletter/pilots/${TODAY}.json"; then
-            python pilot_audit.py --pilot "newsletter/pilots/${TODAY}.json" --desk latest-state/desk_latest.json --rss latest-state/articles.json --discovery latest-state/discovery.json --releases latest-state/press_releases.json --output output/newsletter/PILOT_QUALITY_REPORT.json
-            python newsletter.py pilot-preview --edition "newsletter/pilots/${TODAY}.json" --html output/newsletter/PILOT_email_preview.html --text output/newsletter/PILOT_email_preview.txt
+          PILOT=""
+          if test -f "newsletter/briefs/${TODAY}.json"; then
+            # Compile only source-backed, already-authored briefs.
+            python brief_compiler.py --desk latest-state/desk_latest.json --briefs "newsletter/briefs/${TODAY}.json" --rss latest-state/articles.json --discovery latest-state/discovery.json --releases latest-state/press_releases.json --out output/newsletter/COMPILED_PILOT.json
+            PILOT=output/newsletter/COMPILED_PILOT.json
+          elif test -f "newsletter/pilots/${TODAY}.json"; then
+            PILOT="newsletter/pilots/${TODAY}.json"
+          fi
+          if test -n "$PILOT"; then
+            python pilot_audit.py --pilot "$PILOT" --desk latest-state/desk_latest.json --rss latest-state/articles.json --discovery latest-state/discovery.json --releases latest-state/press_releases.json --output output/newsletter/PILOT_QUALITY_REPORT.json
+            python newsletter.py pilot-preview --edition "$PILOT" --html output/newsletter/PILOT_email_preview.html --text output/newsletter/PILOT_email_preview.txt
             sed -n '1,38p' output/newsletter/PILOT_QUALITY_REPORT.md >> "$GITHUB_STEP_SUMMARY"
             echo "PILOT preview generated with complete copy; NO email sent." >> "$GITHUB_STEP_SUMMARY"
           else
-            echo "No source-backed pilot brief for ${TODAY}: saved research queue only; no fake summaries." >> "$GITHUB_STEP_SUMMARY"
+            echo "No source-backed complete brief bank for ${TODAY}; research queue only, no fake summaries." >> "$GITHUB_STEP_SUMMARY"
           fi
       - name: Archive unapproved draft; NEVER email or publish
         if: steps.window.outputs.run == 'yes'
