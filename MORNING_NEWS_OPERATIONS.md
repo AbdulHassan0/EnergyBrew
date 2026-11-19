@@ -69,3 +69,19 @@ the continuously hosted worker is built but not deployed. A reliable 06:20
 refresh and cutoff job need a persistent host and external alerting. Morning
 readiness alone does not guarantee delivery at 07:00. The human review and
 fact verification still need a separate approved workflow.
+
+## Pilot observation: November 19, 2026 morning cutoff
+
+From retained `collector-state` run records at **06:30 CST (12:30 UTC)**:
+the successful GDELT samples collectively covered only **35 of 360 minutes**
+(approximately **9.79% upper-bound potential time coverage**) over the preceding
+six hours. The last successful GAL sample before cutoff was approximately
+**31 minutes old**. The latest preceding RSS scan connected **14/15 feeds**.
+These are observed collection diagnostics, not a determination of how many
+real-world news events occurred. Under current readiness thresholds, this
+research edition is **BLOCKED**, not automatically approvable or sendable.
+
+A tested morning preparation workflow alone does not repair this: the
+continuous collector must be deployed on a reliable, internet-connected host
+with persistent state and independent alerts before claiming dependable
+daily 07:00 readiness.
