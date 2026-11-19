@@ -1,0 +1,84 @@
+name: EnergyBrew morning research readiness (NO EMAIL)
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [morning_readiness.py, tests/test_morning_readiness.py, .github/workflows/morning-news-readiness.yml]
+  schedule:
+    - cron: "38 11,12 * * *"
+permissions:
+  contents: read
+concurrency:
+  group: energybrew-live-collector
+  cancel-in-progress: false
+jobs:
+  research-only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Test morning cutoff and freshness rules
+        run: python -m unittest discover -s tests -p "test_morning_readiness.py" -v
+      - name: Check 06:30–06:49 local preparation window
+        id: gate
+        run: |
+          python - <<'PY'
+          from datetime import datetime,time
+          from zoneinfo import ZoneInfo
+          import os
+          now=datetime.now(ZoneInfo("America/Chicago"))
+          active=time(6,30)<=now.time().replace(tzinfo=None)<time(6,50)
+          print("America/Chicago:",now.isoformat(),"active:",active)
+          with open(os.environ["GITHUB_OUTPUT"],"a") as fp:
+              fp.write("active="+("true" if active else "false")+"\n")
+          PY
+      - name: Restore public metadata state
+        if: steps.gate.outputs.active == 'true'
+        run: |
+          mkdir -p state
+          git fetch --no-tags origin collector-state
+          for name in articles.json discovery.json press_releases.json; do
+            if git cat-file -e "FETCH_HEAD:state/$name" 2>/dev/null; then
+              git show "FETCH_HEAD:state/$name" > "state/$name"
+            fi
+          done
+      - name: Final RSS metadata refresh
+        id: rss
+        if: steps.gate.outputs.active == 'true'
+        continue-on-error: true
+        run: python collector.py --state state/articles.json --output output/collector --hours 48
+      - name: Final rolling GDELT metadata sample
+        id: gal
+        if: steps.gate.outputs.active == 'true'
+        continue-on-error: true
+        run: python gal.py --state state/discovery.json --output output/gal
+      - name: Public-metadata safety gate
+        id: guard
+        if: steps.gate.outputs.active == 'true'
+        continue-on-error: true
+        run: python public_collector_guard.py --sanitize-legacy --rss state/articles.json --discovery state/discovery.json --releases state/press_releases.json
+      - name: Freeze research leads if fresh enough
+        id: ready
+        if: steps.gate.outputs.active == 'true' && steps.rss.outcome == 'success' && steps.gal.outcome == 'success' && steps.guard.outcome == 'success'
+        continue-on-error: true
+        run: python morning_readiness.py --rss state/articles.json --discovery state/discovery.json --releases state/press_releases.json --output output/morning --time-zone America/Chicago
+      - name: Record result with no sending
+        if: always()
+        run: |
+          echo "Research only, not approved, no email sent" >> "$GITHUB_STEP_SUMMARY"
+          echo "Gate: ${{ steps.gate.outputs.active }}, RSS: ${{ steps.rss.outcome }}, GAL: ${{ steps.gal.outcome }}, safe: ${{ steps.guard.outcome }}, ready: ${{ steps.ready.outcome }}" >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: steps.gate.outputs.active == 'true'
+        with:
+          name: energybrew-morning-research-${{ github.run_id }}
+          path: |
+            output/morning/
+            output/collector/latest.json
+            output/gal/latest.json
+          retention-days: 14
+      - name: Fail if morning research cannot be safely prepared
+        if: steps.gate.outputs.active == 'true' && (steps.rss.outcome != 'success' || steps.gal.outcome != 'success' || steps.guard.outcome != 'success' || steps.ready.outcome != 'success')
+        run: exit 1
