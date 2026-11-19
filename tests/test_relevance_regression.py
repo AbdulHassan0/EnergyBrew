@@ -68,6 +68,20 @@ class RelevanceCorpus(unittest.TestCase):
         self.assertEqual(non_article_reason(title,"https://example.com/history/gas"),
                          "historical_retrospective")
 
+    def test_live_discovery_landing_and_stock_dashboard_not_treated_as_articles(self):
+        from editorial import non_article_reason
+        self.assertEqual(non_article_reason(
+            "LNG News, Stories and Headlines on the Financial Post",
+            "https://financialpost.com/category/energy/lng"),
+            "news_category_landing_title")
+        self.assertEqual(non_article_reason(
+            "Power Grid Corporation of India Ltd Share Price Today,, POWERGRID Share Price NSE, BSE",
+            "https://www.businesstoday.in/stocks/power-grid-corporation-of-india-ltd-powergrid-share-price-363940"),
+            "live_stock_quote_page")
+        self.assertIsNone(non_article_reason(
+            "PJM approves electric transmission project after utility planning review",
+            "https://publisher.com/category/energy/pjm-approves-transmission-project"))
+
     def test_real_energy_market_headlines_survive(self):
         for beat, titles in POSITIVE.items():
             for title in titles:

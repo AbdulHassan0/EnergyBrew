@@ -96,6 +96,12 @@ def non_article_reason(title, url=""):
         return "empty_title"
     if re.match(r"^(?:tag|tags|category|categories|archive|archives|topics?)\s*:", title):
         return "archive_title"
+    # Indexing services frequently return live quote dashboards and category
+    # headlines alongside actual publisher articles. Neither is a dated story.
+    if re.search(r"\bnews,?\s+stories\s+and\s+headlines\b", title):
+        return "news_category_landing_title"
+    if re.search(r"\bshare\s+price\s+today\b|\bstock\s+price\s+today\b", title):
+        return "live_stock_quote_page"
     # Retrospective historic incidents can contain many sector keywords but
     # they are not current market developments.
     if re.match(r"^(?:today in history|this day in history|on this day)\b", title):
@@ -106,6 +112,10 @@ def non_article_reason(title, url=""):
     # Only reject explicit top-level taxonomy paths. Do not throw away
     # legitimate articles simply because a URL has a category directory.
     if re.fullmatch(r"/(?:tag|tags|category|categories|archive|archives|topic|topics)/[^/]+/?", path):
+        return "taxonomy_page"
+    # Proven unwanted example: /category/energy/lng. Avoid blanket rejection
+    # of arbitrary nested category paths, which can contain real articles.
+    if re.fullmatch(r"/(?:category|topics?)/(?:energy|markets|business)/(?:lng|oil|gas|power|energy|electricity)/?",path):
         return "taxonomy_page"
     return None
 

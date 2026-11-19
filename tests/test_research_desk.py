@@ -101,6 +101,16 @@ class DeskTests(unittest.TestCase):
         r=assemble([], [x,dict(x,gdelt_first_seen_utc="bad")],[],now=NOW)
         self.assertEqual(r["unique_relevant_urls_7d"],0)
 
+    def test_energy_stock_tips_are_not_ranked_as_physical_energy_news(self):
+        from research_desk import low_market_impact_signal, entry
+        title="Energy Transfer: A Rare Second Chance To Get In"
+        self.assertTrue(low_market_impact_signal(title))
+        a=global_lead(url="https://seekingalpha.com/article/4969757-energy-transfer-rare-second-chance-to-get-in",title=title)
+        result=entry(a,"global_discovery",NOW)
+        # The discovery link can remain research context, not a top headline.
+        if result is not None:
+            self.assertIn("low_commercial_impact",result["needs_editor_review"])
+
     def test_publisher_promotion_and_forum_announcement_flagged(self):
         from research_desk import marketing_signal, low_market_impact_signal
         self.assertTrue(marketing_signal(

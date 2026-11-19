@@ -95,6 +95,8 @@ def low_market_impact_signal(title):
         r"^(?:rupee|indian rupee|currenc(?:y|ies)).*(?:crude|oil|brent)",
         r"^(?:stocks?|shares?|equities).*(?:rall(?:y|ies)|drop|fall|gain).*(?:crude|oil)",
         r"\bmessage boards?\b",
+        r"\brare second chance to get in\b",
+        r"\b(?:best|top) (?:energy|oil|gas) stocks? to buy\b",
     ))
 
 def coverage_themes(title, primary):
