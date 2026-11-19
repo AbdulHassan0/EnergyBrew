@@ -165,6 +165,7 @@ def collect_gal(state_path, outdir, *, now=None, fetcher=None,
         None)
     last_attempt=max((_datetime(x.get("run_utc")) for x in previous_runs if isinstance(x,dict) and _datetime(x.get("run_utc"))),default=None)
     interval_minutes=round((now-last_attempt).total_seconds()/60,1) if last_attempt else None
+    observed_urls = set()  # Only URLs actually returned by this network sample.
     summary={"run_utc":utc_stamp(now),"provider":"GDELT GAL RSS",
              "minutes_since_previous_sample":interval_minutes,
              "potential_sampling_gap":bool(interval_minutes is not None and interval_minutes>15),
@@ -189,6 +190,7 @@ def collect_gal(state_path, outdir, *, now=None, fetcher=None,
                        high_signal_items=len(parsed),rejected=rejected,http_status=status)
         for lead in parsed:
             uri=lead["url"]
+            observed_urls.add(uri)
             if uri in by_url:
                 prior=by_url[uri]
                 topics=set(prior.get("topics",[]))
@@ -222,6 +224,13 @@ def collect_gal(state_path, outdir, *, now=None, fetcher=None,
     if completed.tzinfo is None or completed.utcoffset() is None:
         raise ValueError("GAL completion clock must be timezone-aware")
     summary["completed_utc"] = utc_stamp(completed)
+    if summary["status"] == "ok":
+        for url in observed_urls:
+            if url in by_url:
+                # The provider's seendate can precede OUR first observation
+                # by hours. Never credit the provider time as local availability.
+                by_url[url].setdefault("first_collector_observed_utc",
+                                       summary["completed_utc"])
     summary["combined_research_leads_24h"]=len(recent)
     state["leads"]=retained
     state.setdefault("gal_runs",[]).append({k:summary[k] for k in

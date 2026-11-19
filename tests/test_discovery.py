@@ -24,6 +24,17 @@ def sample(url="https://news.example.com/lng?utm_source=feed",
 
 
 class DiscoveryTests(unittest.TestCase):
+    def test_gdelt_provider_first_seen_not_equal_to_local_collection_time(self):
+        with tempfile.TemporaryDirectory() as temp:
+            path=Path(temp)/"discovery.json"
+            run_discovery(path,Path(temp)/"out",now=NOW,
+                          fetcher=lambda url:(json.dumps(sample()).encode(),200),
+                          max_queries=1)
+            lead=json.loads(path.read_text())["leads"][0]
+            self.assertEqual(lead["first_collector_observed_utc"],NOW.isoformat())
+            self.assertNotEqual(lead["first_collector_observed_utc"],
+                                lead["gdelt_first_seen_utc"])
+
     def test_first_seen_formats_and_no_naive_timezone(self):
         self.assertEqual(parse_first_seen("20261118T130000Z"), NOW - timedelta(hours=1))
         self.assertEqual(parse_first_seen("20261118130000"), NOW - timedelta(hours=1))

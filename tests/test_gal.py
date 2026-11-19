@@ -29,6 +29,35 @@ class GalTests(unittest.TestCase):
             data=json.loads(path.read_text())
             self.assertEqual(data["gal_runs"][0]["completed_utc"],done.isoformat())
 
+    def test_gal_own_observation_differs_from_provider_index_time(self):
+        with tempfile.TemporaryDirectory() as temp:
+            state=Path(temp)/"discovery.json"
+            out=Path(temp)/"out"
+            collect_gal(state,out,now=NOW,fetcher=lambda _:(feed(),200))
+            row=json.loads(state.read_text())["leads"][0]
+            self.assertEqual(row["first_collector_observed_utc"],NOW.isoformat())
+            self.assertNotEqual(row["first_collector_observed_utc"],
+                                row["gdelt_first_seen_utc"])
+            collect_gal(state,out,now=NOW+timedelta(minutes=5),
+                        fetcher=lambda _:(feed(),200))
+            row2=json.loads(state.read_text())["leads"][0]
+            self.assertEqual(row2["first_collector_observed_utc"],NOW.isoformat())
+
+    def test_legacy_gal_lead_not_seen_again_gets_no_fabricated_time(self):
+        with tempfile.TemporaryDirectory() as temp:
+            path=Path(temp)/"discovery.json"
+            path.write_text(json.dumps({"leads":[{
+                "url":"https://example.com/legacy-lng",
+                "title":"Cheniere LNG export project capacity",
+                "gdelt_first_seen_utc":(NOW-timedelta(hours=1)).isoformat(),
+                "discovery_provider":"GDELT GAL RSS"
+            }],"gal_runs":[]}))
+            collect_gal(path,Path(temp)/"out",now=NOW,
+                        fetcher=lambda _:(feed(),200))
+            old=next(x for x in json.loads(path.read_text())["leads"]
+                     if x["url"]=="https://example.com/legacy-lng")
+            self.assertNotIn("first_collector_observed_utc",old)
+
     def test_public_rss_is_research_only(self):
         items,rejected,seen=parse_gal(feed(),NOW)
         self.assertEqual((len(items),seen),(1,1))

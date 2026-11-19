@@ -248,14 +248,22 @@ def run_discovery(state_path, output_dir, *, now=None, fetcher=None, max_queries
                 record["consecutive_failures"] = 0
                 state["provider_throttle_streak"] = 0
                 state["provider_cooldown_until_utc"] = None
+                observed_at = utc_stamp(now if not live_network
+                                        else datetime.now(timezone.utc))
                 for item in items:
                     uri = item["url"]
                     previous = index.get(uri)
                     if previous is None:
+                        # This is EnergyBrew's observation, NOT the earlier
+                        # GDELT index-first-seen timestamp.
+                        item["first_collector_observed_utc"] = observed_at
                         index[uri] = item
                         seen_new.add(uri)
                         row["new_urls"] += 1
                     else:
+                        # A legacy lead gets a clock only if observed anew.
+                        previous.setdefault("first_collector_observed_utc",
+                                            observed_at)
                         other_topics = set(previous.get("topics") or [])
                         other_topics.add(topic)
                         previous["topics"] = sorted(other_topics)
