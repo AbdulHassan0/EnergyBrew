@@ -62,8 +62,7 @@ def eligible_article(row, lane, cutoff, lookback, local_day, tz):
         if row.get("published_precision") == "day":
             # A day-only notice is NOT proven to be available at 06:30.
             # Previous-day notices can be reviewed without fabricated hours.
-            return bool(stamp and stamp.date() < local_day
-                        and stamp >= lookback)
+            return bool(stamp and local_day - timedelta(days=1) <= stamp.date() < local_day)
     elif lane == "release":
         stamp = as_time(row.get("feed_published_utc"))
     else:

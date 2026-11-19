@@ -81,6 +81,20 @@ class MorningTests(unittest.TestCase):
         self.assertNotIn("https://agency.gov/notices/today",
                          [x["url"] for x in result["research_desk"]["stories"]])
 
+    def test_previous_day_date_only_notice_remains_available_as_background(self):
+        a,b,c=fixtures()
+        a["articles"].append({"url":"https://agency.gov/notices/yesterday",
+                              "title":"FERC pipeline permit notice",
+                              "published_utc":"2026-11-18T00:00:00+00:00",
+                              "published_precision":"day"})
+        result=prepare(a,b,c,now=NOW)
+        self.assertNotIn("https://agency.gov/notices/yesterday",
+                         [x["url"] for x in result["research_desk"]["stories"]])
+        urls=[x["url"] for x in result["background_context"]]
+        self.assertIn("https://agency.gov/notices/yesterday",urls)
+        record=next(x for x in result["background_context"] if x["url"]==urls[0])
+        self.assertEqual(record["morning_time_bucket"],"date_only_prior_day_context")
+
     def test_fresh_scan_after_cutoff_does_not_import_late_news(self):
         a,b,c=fixtures()
         a["runs"].append({"run_utc":time_str(+5),"feeds_checked":15,
