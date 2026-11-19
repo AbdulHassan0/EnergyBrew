@@ -2,6 +2,8 @@ FROM python:3.12-slim
 ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
 WORKDIR /app
 COPY *.py ./
-RUN useradd --uid 10001 --create-home energybrew
-USER energybrew
-ENTRYPOINT ["python", "render_worker.py"]
+RUN useradd --uid 10001 --create-home energybrew \
+    && mkdir -p /data && chown 10001:10001 /data
+# Starts as root only long enough to verify the newly mounted persistent disk,
+# then render_entrypoint.py permanently drops to UID 10001.
+ENTRYPOINT ["python", "render_entrypoint.py"]

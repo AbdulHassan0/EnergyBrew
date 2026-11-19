@@ -14,9 +14,11 @@ thread and a morning scheduling thread. This is implemented in
 `render_worker.py` and defined declaratively in `render.yaml`. The worker does
 not accept HTTP, publish articles, update the website, or send mail.
 
-The Docker image runs Python 3.12 as nonroot UID 10001. Mount `/data` to
-one persistent Render disk and ensure it is writable to that UID. The service
-fails early if it cannot write. This is separate from the optional systemd
+The Docker image runs Python 3.12 as nonroot UID 10001 after a short
+root-owned mount bootstrap. `render_entrypoint.py` checks that `/data`
+is writable after dropping privileges; it changes ownership of the disk
+mount ROOT only when it is root-owned, never recursively alters stored files.
+A disk with unexpected ownership or permissions fails visibly at startup. This is separate from the optional systemd
 deployment for a directly controlled Linux VPS. **Use one deployment method,
 never two simultaneous writers to the same state.**
 

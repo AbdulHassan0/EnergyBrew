@@ -27,7 +27,7 @@ class RenderWorkerTests(unittest.TestCase):
         self.assertIn("numInstances: 1", blueprint)
         self.assertIn("autoDeployTrigger: checksPass", blueprint)
         self.assertNotIn("email", blueprint.split("services:")[1].lower())
-        self.assertIn('ENTRYPOINT ["python", "render_worker.py"]',
+        self.assertIn('ENTRYPOINT ["python", "render_entrypoint.py"]',
                       (ROOT / "Dockerfile.render").read_text())
 
     def test_jobs_are_ordered_and_before_seven_am(self):
@@ -155,7 +155,9 @@ class RenderWorkerTests(unittest.TestCase):
     def test_no_pdf_or_newsletter_delivery_dependencies_in_image(self):
         docker = (ROOT / "Dockerfile.render").read_text()
         self.assertIn("python:3.12-slim", docker)
-        self.assertIn("USER energybrew", docker)
+        self.assertIn("render_entrypoint.py", docker)
+        self.assertIn("os.setuid(account.pw_uid)",
+                      (ROOT / "render_entrypoint.py").read_text())
         self.assertNotIn("npm ", docker)
         self.assertNotIn("newsletter_delivery", (ROOT / "render_worker.py").read_text())
 
