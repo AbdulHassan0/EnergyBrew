@@ -1,6 +1,25 @@
 {
   "leads": [
     {
+      "url": "https://www.globenewswire.com/news-release/2026/11/19/3406429/0/en/inpex-awards-mcdermott-baker-hughes-consortium-contract-for-ichthys-lng-development.html",
+      "title": "INPEX Awards McDermott-Baker Hughes Consortium Contract for Ichthys LNG Development",
+      "feed_creator_label": "GlobeNewswire",
+      "named_issuer_verified": false,
+      "feed_source_url": "https://www.globenewswire.com/news-release/2026/11/19/3406429/0/en/inpex-awards-mcdermott-baker-hughes-consortium-contract-for-ichthys-lng-development.html",
+      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+      "feed_published_utc": "2026-11-19T12:00:00+00:00",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "category": "LNG",
+      "relevance_score": 45,
+      "relevance_evidence": [
+        "lng"
+      ],
+      "provider": "Press Release Feed",
+      "content_kind": "company_or_newswire_press_release",
+      "status": "promotional_issuer_claim_requires_editorial_verification"
+    },
+    {
       "url": "https://finance.yahoo.com/energy/articles/americans-believe-affordable-reliable-electricity-110200782.html",
       "title": "Americans Believe Affordable and Reliable Electricity Can Be Met by Using Nuclear in Addition to Wind and Solar",
       "feed_creator_label": "Business Wire",
@@ -633,6 +652,13 @@
       "raw_feed_entries": 100,
       "high_signal_company_releases": 11,
       "new_unique_links": 3
+    },
+    {
+      "run_utc": "2026-11-19T12:49:12.249824+00:00",
+      "status": "ok",
+      "raw_feed_entries": 100,
+      "high_signal_company_releases": 12,
+      "new_unique_links": 1
     }
   ]
 }

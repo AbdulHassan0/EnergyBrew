@@ -1,9 +1,54 @@
 {
   "articles": [
     {
+      "id": "a550de982c9c912a9cef3726",
+      "title": "China Coking Coal Hits Three-Month Low as Supply Recovers",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/China-Coking-Coal-Hits-Three-Month-Low-as-Supply-Recovers.html",
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-19T12:30:00+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified"
+    },
+    {
+      "id": "c861ad911a0ddd4889ba7b9d",
+      "title": "Purus takes delivery of first methanol-ready Damen CSOV",
+      "url": "https://www.offshore-energy.biz/2026/11/19/purus-takes-delivery-of-first-methanol-ready-damen-csov",
+      "source": "Offshore Energy News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-19T12:26:28+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified"
+    },
+    {
       "id": "5b6aeac269a134316acd9a94",
       "title": "Another methanol-ready offshore energy support vessels launches in China",
       "url": "https://www.offshore-energy.biz/2026/11/19/another-methanol-ready-offshore-energy-support-vessels-launches-in-china",
+      "source": "Offshore Energy News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-19T11:44:40+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified"
+    },
+    {
+      "id": "fdcdb4df90f8ff070adba076",
+      "title": "Another methanol-ready offshore energy support vessel launches in China",
+      "url": "https://www.offshore-energy.biz/2026/11/19/another-methanol-ready-offshore-energy-support-vessel-launches-in-china",
       "source": "Offshore Energy News",
       "source_class": "specialist_publisher",
       "published_utc": "2026-11-19T11:44:40+00:00",
@@ -28,7 +73,8 @@
       "keyword_matches": 0,
       "editorial_candidate": false,
       "relevance_evidence": [],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "7584dd530aeb9d387f6e03b5",
@@ -43,7 +89,8 @@
       "keyword_matches": 0,
       "editorial_candidate": false,
       "relevance_evidence": [],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "b7d6d9a018a30f85c260796a",
@@ -60,7 +107,8 @@
       "relevance_evidence": [
         "oil imports"
       ],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "de8382284bd33a04c0bf6cca",
@@ -75,7 +123,8 @@
       "keyword_matches": 0,
       "editorial_candidate": false,
       "relevance_evidence": [],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "6d2c6aaa652d4808f7574393",
@@ -92,7 +141,8 @@
       "relevance_evidence": [
         "drilling"
       ],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "15b350ebdadd98a391b1eacc",
@@ -107,7 +157,8 @@
       "keyword_matches": 0,
       "editorial_candidate": false,
       "relevance_evidence": [],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "6d54c2d8608dcf57d2a9090e",
@@ -124,7 +175,8 @@
       "relevance_evidence": [
         "drilling"
       ],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "0f4c377dcfb7babb9ba5901b",
@@ -141,7 +193,8 @@
       "relevance_evidence": [
         "methane"
       ],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "8d63312521323ff165f0737e",
@@ -158,7 +211,8 @@
       "relevance_evidence": [
         "oil prices"
       ],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "2d3e231e081ec3e22ad84514",
@@ -176,7 +230,8 @@
         "interconnection",
         "pjm"
       ],
-      "status": "research_date_only"
+      "status": "research_date_only",
+      "also_seen_in": []
     },
     {
       "id": "a9ba8d5a0c56a228a404417e",
@@ -194,7 +249,8 @@
         "freeport lng",
         "lng"
       ],
-      "status": "research_date_only"
+      "status": "research_date_only",
+      "also_seen_in": []
     },
     {
       "id": "02953df1160b2ff5a731c117",
@@ -209,7 +265,8 @@
       "keyword_matches": 0,
       "editorial_candidate": false,
       "relevance_evidence": [],
-      "status": "research_date_only"
+      "status": "research_date_only",
+      "also_seen_in": []
     },
     {
       "id": "00157d4d66ff758b8b891367",
@@ -224,7 +281,8 @@
       "keyword_matches": 0,
       "editorial_candidate": false,
       "relevance_evidence": [],
-      "status": "research_date_only"
+      "status": "research_date_only",
+      "also_seen_in": []
     },
     {
       "id": "3992746790911abc252eb17c",
@@ -305,7 +363,8 @@
       "relevance_evidence": [
         "electricity"
       ],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "9414cab074262bb9e48d47c7",
@@ -320,7 +379,8 @@
       "keyword_matches": 0,
       "editorial_candidate": false,
       "relevance_evidence": [],
-      "status": "research_only_unverified"
+      "status": "research_only_unverified",
+      "also_seen_in": []
     },
     {
       "id": "cd2beda6e00bf50792701f74",
@@ -2045,15 +2105,26 @@
       "new_article_links": 16,
       "transient_retries": 2,
       "feeds_recovered_after_retry": 0
+    },
+    {
+      "run_utc": "2026-11-19T12:49:03.553991+00:00",
+      "feeds_connected": 15,
+      "feeds_checked": 15,
+      "feeds_failed": 0,
+      "scan_state": "healthy",
+      "fresh_entries": 54,
+      "new_article_links": 3,
+      "transient_retries": 0,
+      "feeds_recovered_after_retry": 0
     }
   ],
   "source_health": {
     "EIA Today in Energy": {
-      "last_attempt_utc": "2026-11-19T11:57:10.003620+00:00",
-      "last_success_utc": "2026-11-19T11:57:10.003620+00:00",
+      "last_attempt_utc": "2026-11-19T12:49:03.553991+00:00",
+      "last_success_utc": "2026-11-19T12:49:03.553991+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 22,
+      "consecutive_successes": 23,
       "last_items_seen": 29,
       "newest_feed_published_utc": "2026-11-18T14:00:00+00:00",
       "last_error_type": null,
@@ -2063,11 +2134,11 @@
       "total_recoveries": 0
     },
     "EIA Press Releases": {
-      "last_attempt_utc": "2026-11-19T11:57:10.003620+00:00",
-      "last_success_utc": "2026-11-19T11:57:10.003620+00:00",
+      "last_attempt_utc": "2026-11-19T12:49:03.553991+00:00",
+      "last_success_utc": "2026-11-19T12:49:03.553991+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 22,
+      "consecutive_successes": 23,
       "last_items_seen": 13,
       "newest_feed_published_utc": "2026-11-10T17:00:00+00:00",
       "last_error_type": null,
@@ -2077,11 +2148,11 @@
       "total_recoveries": 0
     },
     "EIA Congressional Testimony": {
-      "last_attempt_utc": "2026-11-19T11:57:10.003620+00:00",
-      "last_success_utc": "2026-11-19T11:57:10.003620+00:00",
+      "last_attempt_utc": "2026-11-19T12:49:03.553991+00:00",
+      "last_success_utc": "2026-11-19T12:49:03.553991+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 22,
+      "consecutive_successes": 23,
       "last_items_seen": 1,
       "newest_feed_published_utc": "2021-11-16T14:00:00+00:00",
       "last_error_type": null,
@@ -2091,11 +2162,11 @@
       "total_recoveries": 0
     },
     "EIA Presentations": {
-      "last_attempt_utc": "2026-11-19T11:57:10.003620+00:00",
-      "last_success_utc": "2026-11-19T11:57:10.003620+00:00",
+      "last_attempt_utc": "2026-11-19T12:49:03.553991+00:00",
+      "last_success_utc": "2026-11-19T12:49:03.553991+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 22,
+      "consecutive_successes": 23,
       "last_items_seen": 1,
       "newest_feed_published_utc": "2026-03-04T14:00:00+00:00",
       "last_error_type": null,
@@ -2105,11 +2176,11 @@
       "total_recoveries": 0
     },
     "DOE Energy News": {
-      "last_attempt_utc": "2026-11-19T11:57:10.003620+00:00",
-      "last_success_utc": "2026-11-19T11:57:10.003620+00:00",
+      "last_attempt_utc": "2026-11-19T12:49:03.553991+00:00",
+      "last_success_utc": "2026-11-19T12:49:03.553991+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 22,
+      "consecutive_successes": 23,
       "last_items_seen": 10,
       "newest_feed_published_utc": "2026-11-18T18:06:31+00:00",
       "last_error_type": null,
@@ -2119,11 +2190,11 @@
       "total_recoveries": 0
     },
     "DOE Grid Deployment": {
-      "last_attempt_utc": "2026-11-19T11:57:10.003620+00:00",
-      "last_success_utc": "2026-11-19T11:57:10.003620+00:00",
+      "last_attempt_utc": "2026-11-19T12:49:03.553991+00:00",
+      "last_success_utc": "2026-11-19T12:49:03.553991+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 22,
+      "consecutive_successes": 23,
       "last_items_seen": 10,
       "newest_feed_published_utc": "2026-10-30T14:42:15+00:00",
       "last_error_type": null,
@@ -2133,11 +2204,11 @@
       "total_recoveries": 0
     },
     "US NRC Nuclear News": {
-      "last_attempt_utc": "2026-11-19T11:57:10.003620+00:00",
-      "last_success_utc": "2026-11-19T11:57:10.003620+00:00",
+      "last_attempt_utc": "2026-11-19T12:49:03.553991+00:00",
+      "last_success_utc": "2026-11-19T12:49:03.553991+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 22,
+      "consecutive_successes": 23,
       "last_items_seen": 164,
       "newest_feed_published_utc": "2026-09-14T08:00:00+00:00",
       "last_error_type": null,
@@ -2147,11 +2218,11 @@
       "total_recoveries": 0
     },
     "DOE Hydrocarbons Releases": {
-      "last_attempt_utc": "2026-11-19T11:57:10.003620+00:00",
-      "last_success_utc": "2026-11-19T11:57:10.003620+00:00",
+      "last_attempt_utc": "2026-11-19T12:49:03.553991+00:00",
+      "last_success_utc": "2026-11-19T12:49:03.553991+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 22,
+      "consecutive_successes": 23,
       "last_items_seen": 10,
       "newest_feed_published_utc": "2026-11-04T05:00:00+00:00",
       "last_error_type": null,
@@ -2161,11 +2232,11 @@
       "total_recoveries": 0
     },
     "DOE Hydrocarbons Blog": {
-      "last_attempt_utc": "2026-11-19T11:57:10.003620+00:00",
-      "last_success_utc": "2026-11-19T11:57:10.003620+00:00",
+      "last_attempt_utc": "2026-11-19T12:49:03.553991+00:00",
+      "last_success_utc": "2026-11-19T12:49:03.553991+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 22,
+      "consecutive_successes": 23,
       "last_items_seen": 10,
       "newest_feed_published_utc": "2026-10-29T20:16:57+00:00",
       "last_error_type": null,
@@ -2175,11 +2246,11 @@
       "total_recoveries": 0
     },
     "European Commission DG Energy": {
-      "last_attempt_utc": "2026-11-19T11:57:10.003620+00:00",
-      "last_success_utc": "2026-11-19T11:57:10.003620+00:00",
+      "last_attempt_utc": "2026-11-19T12:49:03.553991+00:00",
+      "last_success_utc": "2026-11-19T12:49:03.553991+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 22,
+      "consecutive_successes": 23,
       "last_items_seen": 30,
       "newest_feed_published_utc": "2026-11-18T23:00:00+00:00",
       "last_error_type": null,
@@ -2189,11 +2260,11 @@
       "total_recoveries": 0
     },
     "Federal Register notices": {
-      "last_attempt_utc": "2026-11-19T11:57:10.003620+00:00",
-      "last_success_utc": "2026-11-19T11:57:10.003620+00:00",
+      "last_attempt_utc": "2026-11-19T12:49:03.553991+00:00",
+      "last_success_utc": "2026-11-19T12:49:03.553991+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 22,
+      "consecutive_successes": 23,
       "last_items_seen": 133,
       "newest_feed_published_utc": "2026-11-19T05:00:00+00:00",
       "last_error_type": null,
@@ -2203,13 +2274,13 @@
       "total_recoveries": 0
     },
     "Offshore Energy News": {
-      "last_attempt_utc": "2026-11-19T11:57:10.003620+00:00",
-      "last_success_utc": "2026-11-19T11:57:10.003620+00:00",
+      "last_attempt_utc": "2026-11-19T12:49:03.553991+00:00",
+      "last_success_utc": "2026-11-19T12:49:03.553991+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 22,
+      "consecutive_successes": 23,
       "last_items_seen": 50,
-      "newest_feed_published_utc": "2026-11-19T11:44:40+00:00",
+      "newest_feed_published_utc": "2026-11-19T12:26:28+00:00",
       "last_error_type": null,
       "last_request_attempts": 1,
       "last_transient_retry_count": 0,
@@ -2217,13 +2288,13 @@
       "total_recoveries": 0
     },
     "OilPrice.com News": {
-      "last_attempt_utc": "2026-11-19T11:57:10.003620+00:00",
-      "last_success_utc": "2026-11-19T11:57:10.003620+00:00",
+      "last_attempt_utc": "2026-11-19T12:49:03.553991+00:00",
+      "last_success_utc": "2026-11-19T12:49:03.553991+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 22,
+      "consecutive_successes": 23,
       "last_items_seen": 15,
-      "newest_feed_published_utc": "2026-11-19T11:30:00+00:00",
+      "newest_feed_published_utc": "2026-11-19T12:30:00+00:00",
       "last_error_type": null,
       "last_request_attempts": 1,
       "last_transient_retry_count": 0,
@@ -2231,11 +2302,11 @@
       "total_recoveries": 0
     },
     "Utility Dive News": {
-      "last_attempt_utc": "2026-11-19T11:57:10.003620+00:00",
-      "last_success_utc": "2026-11-19T11:57:10.003620+00:00",
+      "last_attempt_utc": "2026-11-19T12:49:03.553991+00:00",
+      "last_success_utc": "2026-11-19T12:49:03.553991+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 22,
+      "consecutive_successes": 23,
       "last_items_seen": 10,
       "newest_feed_published_utc": "2026-11-18T15:57:17+00:00",
       "last_error_type": null,
@@ -2245,16 +2316,16 @@
       "total_recoveries": 0
     },
     "PJM Inside Lines": {
-      "last_attempt_utc": "2026-11-19T11:57:10.003620+00:00",
-      "last_success_utc": "2026-11-19T03:49:51.492927+00:00",
+      "last_attempt_utc": "2026-11-19T12:49:03.553991+00:00",
+      "last_success_utc": "2026-11-19T12:49:03.553991+00:00",
       "last_failure_utc": "2026-11-19T11:57:10.003620+00:00",
-      "consecutive_failures": 1,
-      "consecutive_successes": 0,
+      "consecutive_failures": 0,
+      "consecutive_successes": 1,
       "last_items_seen": 10,
       "newest_feed_published_utc": "2026-11-18T18:56:18+00:00",
-      "last_error_type": "ParseError",
-      "last_request_attempts": 3,
-      "last_transient_retry_count": 2,
+      "last_error_type": null,
+      "last_request_attempts": 1,
+      "last_transient_retry_count": 0,
       "last_recovered_after_retry": false,
       "total_recoveries": 0
     }

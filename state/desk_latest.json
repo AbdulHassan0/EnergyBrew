@@ -1,39 +1,39 @@
 {
-  "generated_utc": "2026-11-19T11:57:41.600890+00:00",
+  "generated_utc": "2026-11-19T12:49:13.295296+00:00",
   "status": "research_only_not_approved",
-  "unique_relevant_urls_7d": 320,
+  "unique_relevant_urls_7d": 338,
   "selected_research_links": 32,
   "unique_domains_in_selection": 19,
   "queue_counts": {
     "system_operator_primary_24h": 1,
-    "specialist_publisher_24h": 19,
-    "older_official_context": 15,
+    "specialist_publisher_24h": 18,
+    "older_official_context": 16,
     "regulatory_date_only": 6,
     "timestamped_official": 3,
-    "discovery_unverified": 258,
-    "company_release_unverified": 18
+    "discovery_unverified": 275,
+    "company_release_unverified": 19
   },
   "selected_category_counts": {
     "Natural Gas": 6,
-    "LNG": 6,
+    "LNG": 5,
     "Power & Electricity": 8,
-    "Oil & Energy": 3,
+    "Oil & Energy": 4,
     "Infrastructure & Investment": 1,
     "Geopolitics": 8
   },
   "selected_topic_coverage_counts": {
     "Natural Gas": 6,
-    "LNG": 6,
+    "LNG": 5,
     "Power & Electricity": 8,
-    "Oil & Energy": 8,
+    "Oil & Energy": 9,
     "Infrastructure & Investment": 11,
     "Geopolitics": 8
   },
   "missing_categories": [],
   "publisher_timestamped_official_24h": 3,
-  "publisher_timestamped_specialist_24h": 19,
+  "publisher_timestamped_specialist_24h": 18,
   "system_operator_primary_24h": 1,
-  "likely_same_event_links_suppressed": 13,
+  "likely_same_event_links_suppressed": 15,
   "discovery_publisher_dates_verified": 0,
   "promotional_or_language_review_count": 0,
   "stories": [
@@ -517,54 +517,9 @@
       "rank": 106
     },
     {
-      "title": "Iran's attacks on ships in the Strait of Hormuz escalate",
-      "url": "https://www.delawarepublic.org/2026-11-19/irans-attacks-on-ships-in-the-strait-of-hormuz-escalate",
-      "domain": "www.delawarepublic.org",
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:strait of hormuz",
-        "geopolitical_event:attacks",
-        "world_context:iran"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-19T11:47:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102,
-      "related_reports": [
-        {
-          "title": "Iran's attacks on ships in the Strait of Hormuz escalate",
-          "url": "https://www.kvnf.org/2026-11-19/irans-attacks-on-ships-in-the-strait-of-hormuz-escalate",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "Iran's attacks on ships in the Strait of Hormuz escalate",
-          "url": "https://www.wknofm.org/2026-11-19/irans-attacks-on-ships-in-the-strait-of-hormuz-escalate",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        }
-      ]
-    },
-    {
       "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
-      "url": "https://www.clickorlando.com/business/2026/11/19/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy-shock-iea-says",
-      "domain": "www.clickorlando.com",
+      "url": "https://isp.netscape.com:443/news/world/story/0001/20261119/a53b5522e557afd5370c08aee351032b",
+      "domain": "isp.netscape.com",
       "source": "GDELT GAL RSS",
       "source_class": "unclassified",
       "category": "Geopolitics",
@@ -579,7 +534,7 @@
       ],
       "origin": "global_discovery",
       "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-19T11:47:00+00:00",
+      "observed_time_utc": "2026-11-19T12:46:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
@@ -590,6 +545,13 @@
       "queue": "discovery_unverified",
       "rank": 102,
       "related_reports": [
+        {
+          "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
+          "url": "https://www.clickorlando.com/business/2026/11/19/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy-shock-iea-says",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
         {
           "title": "There is no going back ‘to the way it was before’ the Iran war’s energy shock, IEA says",
           "url": "https://www.therecord.com/business/there-is-no-going-back-to-the-way-it-was-before-the-iran-war-s-energy-shock-iea-says/article_66e3bb2c-44d0-500b-802b-ef9ee7dfb210.html",
@@ -649,6 +611,58 @@
         {
           "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
           "url": "https://www.thesunchronicle.com/business/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy/article_8799d6a5-5a86-5b36-9fc1-58b76eed83f2.html",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        }
+      ]
+    },
+    {
+      "title": "Iran's attacks on ships in the Strait of Hormuz escalate",
+      "url": "https://www.wfae.org/united-states-world/2026-11-19/irans-attacks-on-ships-in-the-strait-of-hormuz-escalate",
+      "domain": "www.wfae.org",
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:strait of hormuz",
+        "geopolitical_event:attacks",
+        "world_context:iran"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-19T12:46:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102,
+      "related_reports": [
+        {
+          "title": "Iran's attacks on ships in the Strait of Hormuz escalate",
+          "url": "https://www.delawarepublic.org/2026-11-19/irans-attacks-on-ships-in-the-strait-of-hormuz-escalate",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "Iran's attacks on ships in the Strait of Hormuz escalate",
+          "url": "https://www.kvnf.org/2026-11-19/irans-attacks-on-ships-in-the-strait-of-hormuz-escalate",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "Iran's attacks on ships in the Strait of Hormuz escalate",
+          "url": "https://www.wknofm.org/2026-11-19/irans-attacks-on-ships-in-the-strait-of-hormuz-escalate",
           "source": "GDELT GAL RSS",
           "origin": "global_discovery",
           "note": "Potential same-event source link; not independently corroborated"
@@ -942,6 +956,34 @@
       "rank": 75
     },
     {
+      "title": "Electra to Showcase Refinery Progress and Allied Refining Vision at Global Industry Forums",
+      "url": "https://www.theobserver.ca/press-releases/globe-newswire/electra-to-showcase-refinery-progress-and-allied-refining-vision-at-global-industry-forums",
+      "domain": "www.theobserver.ca",
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Oil & Energy",
+      "coverage_themes": [
+        "Oil & Energy"
+      ],
+      "relevance_score": 54,
+      "relevance_evidence": [
+        "refinery",
+        "refining"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-19T12:46:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 66
+    },
+    {
       "title": "Shell kicks off gas production from its deepwater project in Southeast Asia",
       "url": "https://www.offshore-energy.biz/2026/11/17/shell-kicks-off-gas-production-from-its-deepwater-project-in-southeast-asia",
       "domain": "www.offshore-energy.biz",
@@ -986,33 +1028,6 @@
       "origin": "global_discovery",
       "time_basis": "gdelt_gal_rss_provider_time_unverified",
       "observed_time_utc": "2026-11-19T02:31:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 57
-    },
-    {
-      "title": "Çexiya ABŞ-dən 15-20 il müddətinə LNG tədarükü barədə razılaşma əldə edib",
-      "url": "https://az.trend.az/other/world/4248094.html",
-      "domain": "az.trend.az",
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "LNG",
-      "coverage_themes": [
-        "LNG"
-      ],
-      "relevance_score": 45,
-      "relevance_evidence": [
-        "lng"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-18T21:31:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,

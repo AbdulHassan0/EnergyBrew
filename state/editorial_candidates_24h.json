@@ -226,7 +226,8 @@
     "relevance_evidence": [
       "oil prices"
     ],
-    "status": "research_only_unverified"
+    "status": "research_only_unverified",
+    "also_seen_in": []
   },
   {
     "id": "adae1615af6e22fc7fe9837a",
@@ -243,7 +244,8 @@
     "relevance_evidence": [
       "electricity"
     ],
-    "status": "research_only_unverified"
+    "status": "research_only_unverified",
+    "also_seen_in": []
   },
   {
     "id": "3e03c81f3a66fa9866b99bd4",
@@ -296,7 +298,8 @@
     "relevance_evidence": [
       "oil imports"
     ],
-    "status": "research_only_unverified"
+    "status": "research_only_unverified",
+    "also_seen_in": []
   },
   {
     "id": "0dad76f8aa1370117b07fc49",
@@ -384,24 +387,6 @@
     "editorial_candidate": true,
     "relevance_evidence": [
       "gas project"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": []
-  },
-  {
-    "id": "3b0edb75f4c14407fb406a2d",
-    "title": "EnQuest Exits UK North Sea in $960 Million Deal",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/EnQuest-Exits-UK-North-Sea-in-960-Million-Deal.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T12:30:00+00:00",
-    "category": "Oil & Energy",
-    "published_precision": "timestamp",
-    "relevance_score": 27,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "enquest"
     ],
     "status": "research_only_unverified",
     "also_seen_in": []

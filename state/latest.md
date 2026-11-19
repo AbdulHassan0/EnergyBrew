@@ -1,16 +1,16 @@
 # EnergyBrew — live RSS collection
 
-Run: 2026-11-19T11:57:10.003620+00:00
-Successfully parsed feeds: **14/15**
-Source connectivity: **degraded** (1 feeds failed)
-Transient retry attempts: **2**; sources recovered: **0**
-Fresh timestamped entries: **50**
-Editorial candidates (in collection window): **18**
-Editorial candidates (last 24h): **23**
+Run: 2026-11-19T12:49:03.553991+00:00
+Successfully parsed feeds: **15/15**
+Source connectivity: **healthy** (0 feeds failed)
+Transient retry attempts: **0**; sources recovered: **0**
+Fresh timestamped entries: **54**
+Editorial candidates (in collection window): **20**
+Editorial candidates (last 24h): **22**
 Regulatory date-only feed entries: **12**
 Regulatory watchlist links (7 days): **6**
-New unique links (all precision levels): **16**
-Distinct article links in 7-day state: **91**
+New unique links (all precision levels): **3**
+Distinct article links in 7-day state: **94**
 
 | Source | Connected | Timestamped | Date-only | Candidates | New | Error |
 |---|---|---:|---:|---:|---:|---|
@@ -23,12 +23,12 @@ Distinct article links in 7-day state: **91**
 | US NRC Nuclear News | True | 0 | 0 | 0 | 0 |  |
 | DOE Hydrocarbons Releases | True | 0 | 0 | 0 | 0 |  |
 | DOE Hydrocarbons Blog | True | 0 | 0 | 0 | 0 |  |
-| European Commission DG Energy | True | 5 | 0 | 1 | 2 |  |
-| Federal Register notices | True | 0 | 12 | 0 | 4 |  |
-| Offshore Energy News | True | 18 | 0 | 4 | 5 |  |
-| OilPrice.com News | True | 15 | 0 | 5 | 5 |  |
-| Utility Dive News | True | 8 | 0 | 5 | 0 |  |
-| PJM Inside Lines | False | 0 | 0 | 0 | 0 | ParseError: not well-formed (invalid token): line 1, column 119 |
+| European Commission DG Energy | True | 5 | 0 | 1 | 0 |  |
+| Federal Register notices | True | 0 | 12 | 0 | 0 |  |
+| Offshore Energy News | True | 19 | 0 | 4 | 2 |  |
+| OilPrice.com News | True | 15 | 0 | 4 | 1 |  |
+| Utility Dive News | True | 10 | 0 | 7 | 0 |  |
+| PJM Inside Lines | True | 1 | 0 | 1 | 0 |  |
 
 Source-linked metadata only (no publisher article text). Dates come from publishers' publication fields, not HTTP crawl times.
 No newsletter publication or subscriber email occurs.

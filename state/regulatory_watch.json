@@ -15,7 +15,8 @@
       "freeport lng",
       "lng"
     ],
-    "status": "research_date_only"
+    "status": "research_date_only",
+    "also_seen_in": []
   },
   {
     "id": "ea327fca2f5987c8cb30074d",
@@ -71,7 +72,8 @@
       "interconnection",
       "pjm"
     ],
-    "status": "research_date_only"
+    "status": "research_date_only",
+    "also_seen_in": []
   },
   {
     "id": "892d8fe0c9f3d2a933e8a821",

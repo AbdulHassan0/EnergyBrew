@@ -382,7 +382,8 @@
     "relevance_evidence": [
       "oil prices"
     ],
-    "status": "research_only_unverified"
+    "status": "research_only_unverified",
+    "also_seen_in": []
   },
   {
     "id": "adae1615af6e22fc7fe9837a",
@@ -399,7 +400,8 @@
     "relevance_evidence": [
       "electricity"
     ],
-    "status": "research_only_unverified"
+    "status": "research_only_unverified",
+    "also_seen_in": []
   },
   {
     "id": "ffeaf298774a3406bb15a015",
@@ -506,7 +508,8 @@
     "relevance_evidence": [
       "oil imports"
     ],
-    "status": "research_only_unverified"
+    "status": "research_only_unverified",
+    "also_seen_in": []
   },
   {
     "id": "0dad76f8aa1370117b07fc49",
