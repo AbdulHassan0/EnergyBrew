@@ -1,0 +1,87 @@
+{
+  "edition_date": "2026-11-19",
+  "intro": "Good morning. U.S. gas storage offers a cushion, long-term LNG contracts support future Gulf Coast demand, and proposed pipeline and grid projects face consequential development milestones. Here's the energy market in five minutes.",
+  "briefs": [
+    {
+      "section": "Natural Gas",
+      "publisher": "EIA",
+      "source_date": "2026-11-18",
+      "title": "U.S. Natural Gas Storage Finishes Injection Season Above Normal",
+      "source_url": "https://www.eia.gov/todayinenergy/detail.php?id=68484",
+      "summary": "The EIA estimates that Lower 48 working gas storage ended the 2026 injection season at 3,810 Bcf, nearly 2% above its five-year average. Inventories began the season already elevated, while higher gas production was partly absorbed by growing LNG export demand.",
+      "why_it_matters": "The storage cushion helps heading into winter, but LNG exports and colder weather could tighten balances quickly.",
+      "priority": 95
+    },
+    {
+      "section": "LNG",
+      "publisher": "OilPrice.com / Venture Global",
+      "source_date": "2026-11-18",
+      "title": "China Gas Doubles Its New Venture Global LNG Agreement",
+      "source_url": "https://oilprice.com/Latest-Energy-News/World-News/China-Gas-Upsizes-Long-Term-LNG-Supply-with-US-Venture-Global.html",
+      "summary": "China Gas raised its newest 20-year LNG supply agreement with Venture Global from 0.5 million to 1.0 million tonnes annually, beginning in 2030. The companies say their total long-term Venture Global arrangements now cover as much as 3 million tonnes per year across multiple agreements.",
+      "why_it_matters": "Long-dated Asian contracts underpin U.S. export capacity and future Gulf Coast feedgas demand.",
+      "priority": 92
+    },
+    {
+      "section": "Power & Electricity",
+      "publisher": "PJM Inside Lines",
+      "source_date": "2026-11-18",
+      "title": "PJM Approves Major Transmission Revisions as Costs Rise",
+      "source_url": "https://insidelines.pjm.com/pjm-board-approves-transmission-project-changes-to-support-grid-reliability-2",
+      "summary": "PJM authorized cost and scope changes to multiple planned transmission projects. The major Valley Link 765-kV corridor's estimate increased from about $3.0 billion to $5.1 billion, while key in-service dates moved from 2029 into 2030–2031. The lines are intended to move power across growing load centers.",
+      "why_it_matters": "Higher costs and later grid upgrades could constrain new large-load connections and change power investment timelines.",
+      "priority": 90
+    },
+    {
+      "section": "Oil & Energy",
+      "publisher": "The National",
+      "source_date": "2026-11-18",
+      "title": "Bahrain's Sitra Refinery Nears Full Output After War Damage",
+      "source_url": "https://www.thenationalnews.com/business/energy/2026/11/18/bahrains-war-hit-sitra-refinery-weeks-away-from-full-capacity-bapco-energies-ceo-says/",
+      "summary": "Bapco Energies says Bahrain's 415,000-barrel-per-day Sitra refinery is operating above 80% of capacity after multiple strikes earlier this year. Its chief executive expects the remaining conversion units to restart within weeks. With shipping through the Strait of Hormuz disrupted, the plant has shifted much of its fuel sales to buyers within the Gulf.",
+      "why_it_matters": "Refinery recovery changes regional product balances, while shipping constraints still affect exports, freight and insurance costs.",
+      "priority": 89
+    },
+    {
+      "section": "Geopolitics",
+      "publisher": "OilPrice.com",
+      "source_date": "2026-11-18",
+      "title": "China's Fuel Mix Shifts Amid the Iran War's Energy Shock",
+      "source_url": "https://oilprice.com/Energy/Energy-General/China-Burns-Less-Oil-and-Coal-as-the-Iran-War-Reshapes-Its-Energy-Mix.html",
+      "summary": "An OilPrice analysis reports that China's third-quarter carbon emissions fell 3.1%, with oil use down 4% year over year and coal-related emissions down about 3%. Expanding renewable and nuclear output has helped offset fossil-fuel consumption as geopolitical supply disruption strengthens the case for domestic energy alternatives.",
+      "why_it_matters": "Changes in China's energy mix matter for global crude and coal demand, commodity prices, and power infrastructure investment.",
+      "priority": 88
+    },
+    {
+      "section": "Infrastructure & Investment",
+      "publisher": "Federal Register / FERC",
+      "source_date": "2026-11-18",
+      "title": "FERC Sets Review Timeline for NGPL–Horizon North Extension",
+      "source_url": "https://www.federalregister.gov/documents/2026/11/18/2026-23442/natural-gas-pipeline-of-america-llc-horizon-pipeline-company-llc-notice-of-schedule-for-the",
+      "summary": "FERC published its environmental assessment schedule for Natural Gas Pipeline of America and Horizon Pipeline's proposed North Extension. The project would add up to 185,000 Dth/d of firm transportation to Wisconsin Electric Power Company, supported by new and expanded Illinois compression and an approximately 11.5-mile lateral into Wisconsin. The environmental assessment is scheduled for March 26, 2027.",
+      "why_it_matters": "The review timeline gives gas infrastructure investors and utility planners a clearer milestone for new Midwest supply capacity.",
+      "priority": 87
+    },
+    {
+      "section": "Power & Electricity",
+      "publisher": "Utility Dive",
+      "source_date": "2026-11-18",
+      "title": "National Grid and Eversource Use Virtual Power Plants to Ease Local Constraints",
+      "source_url": "https://www.utilitydive.com/news/national-grid-eversource-vpp-demand-response/875039",
+      "summary": "The utilities are expanding coordinated use of smart thermostats, storage and other distributed resources to relieve local electricity constraints. National Grid cited around 100 MW of flexible demand in New England and more than 350 MW in upstate New York, while Eversource has a large customer-device portfolio.",
+      "why_it_matters": "Flexible demand may defer expensive distribution upgrades, particularly where electricity use grows faster than new wires can be built.",
+      "priority": 78
+    },
+    {
+      "section": "Geopolitics",
+      "publisher": "OilPrice.com / Cornwall Insight",
+      "source_date": "2026-11-18",
+      "title": "Iran War May Push British Household Energy Bills Up 26%",
+      "source_url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-War-Set-to-Hike-2027-UK-Energy-Bills-to-Four-Year-High.html",
+      "summary": "Consultancy Cornwall Insight forecasts a 26% increase in the U.K.'s typical household energy price cap from January 2027, taking the annualized figure to about £2,166 for the first quarter. Higher wholesale natural gas and power prices linked to the Middle East conflict are the main driver; the estimate is not yet a final regulator decision.",
+      "why_it_matters": "The forecast highlights how global gas supply shocks transmit into European power costs and consumer inflation.",
+      "priority": 75
+    }
+  ],
+  "note": "Authored source-linked originals from the curated Nov 19 pilot. Not automatically generated or sent."
+}
