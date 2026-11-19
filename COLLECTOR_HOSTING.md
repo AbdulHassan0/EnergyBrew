@@ -58,3 +58,10 @@ For a supervised Linux server with daily Central-time RSS preflight and immutabl
 morning research jobs, see the installable `deploy/systemd/` units and
 `MORNING_HOST_RUNNER.md`. Those files are deployment recipes only, not a
 live cloud deployment or guaranteed 07:00 delivery.
+
+## No-cost local worker
+
+A Windows and POSIX local collection option is documented in
+[LOCAL_NEWS_COLLECTOR.md](LOCAL_NEWS_COLLECTOR.md). It relies on an existing
+computer staying awake, does not require Render, and does not send email.
+Windows needs `tzdata`; actual Windows execution remains unverified.

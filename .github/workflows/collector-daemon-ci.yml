@@ -8,6 +8,8 @@ on:
       - "collector_daemon.py"
       - "host_rss_refresh.py"
       - "rss_fetch_pool.py"
+      - "portable_lock.py"
+      - "deploy/windows/run-energybrew-news.ps1"
       - "host_release_refresh.py"
       - "render_worker.py"
       - "render_entrypoint.py"
@@ -20,6 +22,7 @@ on:
       - "tests/test_morning_host_runner.py"
       - "tests/test_host_rss_refresh.py"
       - "tests/test_rss_fetch_pool.py"
+      - "tests/test_portable_lock.py"
       - "tests/test_host_release_refresh.py"
       - "tests/test_render_worker.py"
       - ".github/workflows/collector-daemon-ci.yml"
@@ -43,6 +46,7 @@ jobs:
           python -m unittest discover -s tests -p "test_morning_readiness.py" -v
           python -m unittest discover -s tests -p "test_host_rss_refresh.py" -v
           python -m unittest discover -s tests -p "test_rss_fetch_pool.py" -v
+          python -m unittest discover -s tests -p "test_portable_lock.py" -v
           python -m unittest discover -s tests -p "test_host_release_refresh.py" -v
           python -m unittest discover -s tests -p "test_render_worker.py" -v
       - name: Build no-dependency Python collector image
