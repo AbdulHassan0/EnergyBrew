@@ -1,5 +1,5 @@
 {
-  "audit_utc": "2026-11-19T02:45:40.666883+00:00",
+  "audit_utc": "2026-11-19T02:55:27.654629+00:00",
   "status": "degraded",
   "official_feeds_connected": 14,
   "official_feeds_checked": 15,
@@ -24,8 +24,8 @@
   ],
   "event_driven_beats_with_no_observed_stories": [],
   "geopolitical_energy_leads_24h": 4,
-  "research_first_seen_links_24h": 130,
-  "research_high_signal_links_24h": 123,
+  "research_first_seen_links_24h": 144,
+  "research_high_signal_links_24h": 137,
   "research_publisher_dates_verified": 0,
   "company_announcement_links_24h": 14,
   "company_announcement_feed_status": "ok",
