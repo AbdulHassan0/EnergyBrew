@@ -5,7 +5,8 @@ This is an operating pilot for public-source news metadata collection, **not** a
 ## Current hosted workflow
 
 - **Primary source-aware RSS collector:** [Actions](https://github.com/AbdulHassan0/EnergyBrew/actions/workflows/live-collector.yml), scheduled at 04:17 / 10:17 / 16:17 / 22:17 UTC. Includes EIA, DOE, NRC, European Commission, Federal Register, Offshore Energy, OilPrice.com, Utility Dive, and PJM Inside Lines sources. Connected sources include government agencies, specialist publishers, and an independent grid-operator's primary feed; classes are never conflated.
-- **Rolling global discovery sampler:** [Actions](https://github.com/AbdulHassan0/EnergyBrew/actions/workflows/frequent-gal.yml), scheduled at minute 6, 16, 26, 36, 46 and 56 of each hour (10-minute interval). The GDELT Global Article List is a rolling approximately 15-minute index feed, and GitHub schedule delays can create sampling gaps.
+- **Primary rolling GDELT sampler:** [Actions](https://github.com/AbdulHassan0/EnergyBrew/actions/workflows/frequent-gal.yml), scheduled at minute 6, 16, 26, 36, 46 and 56 (UTC) every hour.
+- **Staggered backup sampler:** [Actions](https://github.com/AbdulHassan0/EnergyBrew/actions/workflows/hourly-discovery.yml), scheduled at minute 1, 11, 21, 31, 41 and 51 (UTC). Both use the same state-write lock. The nominal five-minute combined sampling cadence is **not guaranteed**: GitHub Actions cron may delay or skip runs. No historical articles are inferred from missed snapshots.
 - Source-level transient RSS errors use bounded retries (one extra attempt generally; two extra for PJM). HTTP 429 is never automatically retried, and permanently invalid feeds stay marked failed. Per-source recovery and outage diagnostics are recorded in collector state.
 - **GDELT DOC throttle circuit:** if DOC returns HTTP 429/503, it stops that run's remaining DOC queries and remembers an escalating cooldown: 90 minutes, 3 hours, 6 hours, then 12 hours for successive throttle episodes. A longer valid `Retry-After` header takes precedence (bounded at 24 hours). One successful DOC response clears the throttle streak. **The independent GAL rolling feed is never held in the DOC cooldown.**
 - **Retry reporting:** the RSS health report distinguishes source connectivity from temporary retry attempts and successful recoveries. The retained scan history records per-run recovery events; existing historical runs without those fields remain valid, with counts assumed zero for reporting only.
@@ -38,7 +39,8 @@ This is an operating pilot for public-source news metadata collection, **not** a
 ## Reliability thresholds and incident response
 
 - If the primary collector's last successful scan is more than 12 hours old, open its Actions history. Inspect failing source rows and retry only after identifying the reason.
-- If the GAL sampler is older than 35 minutes or recorded a gap over 20 minutes, inspect its Actions run. An index sampling gap cannot automatically be filled using the current rolling RSS snapshot; label coverage incomplete.
+- If the latest successful GAL sample is older than **25 minutes**, or any successful-sample interval exceeds **15 minutes**, inspect the actual Actions timestamps and source run. Missed index snapshots cannot be recovered from the current rolling feed.
+- Review `gal_sampled_window_24h` and `gal_sampled_window_7d` in [reliability metrics](https://github.com/AbdulHassan0/EnergyBrew/blob/collector-state/state/metrics_latest.json). These are **upper bounds** on observable time using an assumed 15-minute rolling window per successful sample, not proof of full news coverage. `unobserved_minutes_at_least` measures at least how much time the collector could not have sampled. A seven-hour gap must not be portrayed as a minor single incident.
 - If GDELT DOC returns 429, honor its persistent cooldown; the independent GAL path should continue. **Do not** accelerate retries.
 - If a feed says HTTP 200 but has 0 current articles, count connectivity as successful and current coverage as 0. Do not manufacture stories or change publication dates.
 - If source permissions are not sufficiently clear for commercial automated polling, leave the feed off until permission is obtained. Specifically, Rigzone and Oil & Gas Journal RSS prohibit commercial use without separate rights; do not integrate them on the basis of public accessibility.
@@ -47,7 +49,7 @@ This is an operating pilot for public-source news metadata collection, **not** a
 ## Acceptance criteria for a seven-day live pilot
 
 - Seven consecutive days of hosted observations; the report must explicitly say `seven_day_pilot_complete = true`.
-- Review missing scheduled scans and measured GAL sampling gaps.
+- Review actual missed scheduled polls, measured GAL gaps, longest uncovered span, 24h and seven-day potential coverage upper bounds. The pilot is **not** complete while any seven-day window remains unobserved.
 - Record source connectivity separately from fresh relevant publisher-timestamped articles; distinguish agency, grid-operator primary, specialist-publisher, GDELT-first-seen, and press-release claims.
 - Report by category: Natural Gas & LNG, Power & Electricity, Oil & Energy, Infrastructure & Investment.
 - Calculate URL duplicates separately from possible repeated reporting of the same real event.
