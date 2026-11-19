@@ -108,6 +108,42 @@ class MorningTests(unittest.TestCase):
         urls={x["url"] for x in r["research_desk"]["stories"]}
         self.assertNotIn("https://example.org/lng/late-arrival",urls)
 
+    def test_gdelt_indexed_before_cutoff_but_observed_after_is_excluded(self):
+        a,b,c=fixtures()
+        b["leads"].append({
+            "url":"https://global.example.com/late-gas-attack",
+            "title":"Iran drone strikes against LNG tanker in Strait of Hormuz",
+            "gdelt_first_seen_utc":time_str(-22),
+            "first_collector_observed_utc":time_str(+8),
+            "discovery_provider":"GDELT GAL RSS"})
+        r=prepare(a,b,c,now=NOW)
+        self.assertEqual(r["status"],"ready_for_editor_review")
+        urls={item["url"] for item in r["research_desk"]["stories"]}
+        self.assertNotIn("https://global.example.com/late-gas-attack",urls)
+
+    def test_issuer_claim_dated_before_cutoff_but_seen_late_is_excluded(self):
+        a,b,c=fixtures()
+        c["leads"].append({
+            "url":"https://issuer.example.com/lng-expansion",
+            "title":"Company announces LNG terminal expansion investment",
+            "feed_published_utc":time_str(-13),
+            "first_collector_observed_utc":time_str(+5)})
+        r=prepare(a,b,c,now=NOW)
+        self.assertEqual(r["status"],"ready_for_editor_review")
+        self.assertNotIn("https://issuer.example.com/lng-expansion",
+                         {item["url"] for item in r["research_desk"]["stories"]})
+
+    def test_legacy_unknown_gdelt_and_issuer_observation_is_flagged(self):
+        a,b,c=fixtures()
+        c["leads"].append({"url":"https://issuer.example.com/lng-deal",
+            "title":"Cheniere LNG supply contract financing",
+            "feed_published_utc":time_str(-21)})
+        r=prepare(a,b,c,now=NOW)
+        self.assertIn("legacy_gdelt_first_local_observation_unknown_requires_review",
+                      r["warnings"])
+        self.assertIn("legacy_release_first_local_observation_unknown_requires_review",
+                      r["warnings"])
+
     def test_only_postcutoff_rss_run_cannot_count_at_cutoff(self):
         a,b,c=fixtures()
         a["runs"]=[{"run_utc":time_str(+5),"completed_utc":time_str(+5),

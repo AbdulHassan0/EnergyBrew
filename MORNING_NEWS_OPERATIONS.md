@@ -112,3 +112,14 @@ transient failures and uses Atom only on the **last resort fourth request**.
 HTTP 429 is never circumvented. Fallback usage, original parse error and
 actual endpoint are persisted in source health; success does not imply a
 second independent news publisher or permission to redistribute article text.
+
+## Time provenance and editorial cutoff integrity
+
+For every newly observed RSS article, GDELT GAL/DOC discovery or issuer
+announcement, the collector now separately records
+`first_collector_observed_utc`. This is when EnergyBrew's collection of
+that exact URL became available, not the publisher or aggregator's earlier
+`pubDate`, `seendate`, or feed metadata. News observed after 06:30 Central
+cannot be credited to a 06:30 morning issue even when its upstream timestamp
+is older. Legacy links missing a real first-observation date remain
+explicitly flagged for editorial review; timestamps are never invented.

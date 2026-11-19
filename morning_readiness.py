@@ -61,12 +61,15 @@ def last_successful_run(runs, cutoff, *, success):
 def eligible_article(row, lane, cutoff, lookback, local_day, tz):
     if not isinstance(row, dict):
         return False
+    # A provider's publication / index time is NOT evidence that EnergyBrew
+    # knew about a headline at 06:30. This applies to RSS, GDELT and issuer
+    # releases alike. Old legacy records without observation dates remain
+    # explicitly unknown and must not be silently assigned an earlier clock.
+    first_seen = as_time(row.get("first_collector_observed_utc")
+                         or row.get("first_collected_utc"))
+    if first_seen is not None and first_seen > cutoff:
+        return False
     if lane == "rss":
-        # A pre-cutoff publisher date cannot make a link first collected at
-        # 06:38 retroactively available at 06:30.
-        first_collected = as_time(row.get("first_collected_utc"))
-        if first_collected is not None and first_collected > cutoff:
-            return False
         stamp = as_time(row.get("published_utc"))
         if row.get("published_precision") == "day":
             # A day-only notice is NOT proven to be available at 06:30.
@@ -177,12 +180,17 @@ def prepare(rss, discovery, releases, *, now=None, edition_date=None,
     edition_local_day = date.fromisoformat(schedule["edition_date"])
     rss_articles = [x for x in (rss.get("articles",[]) if isinstance(rss,dict) else [])
                     if eligible_article(x,"rss",observed_cutoff,lookback,edition_local_day,tz)]
-    if any(not x.get("first_collected_utc") for x in rss_articles):
+    if any(not (x.get("first_collector_observed_utc") or x.get("first_collected_utc"))
+           for x in rss_articles):
         warnings.append("legacy_rss_first_collection_time_unknown_requires_review")
     discovered = [x for x in (discovery.get("leads",[]) if isinstance(discovery,dict) else [])
                   if eligible_article(x,"discovery",observed_cutoff,lookback,edition_local_day,tz)]
     released = [x for x in (releases.get("leads",[]) if isinstance(releases,dict) else [])
                 if eligible_article(x,"release",observed_cutoff,lookback,edition_local_day,tz)]
+    if any(not x.get("first_collector_observed_utc") for x in discovered):
+        warnings.append("legacy_gdelt_first_local_observation_unknown_requires_review")
+    if any(not x.get("first_collector_observed_utc") for x in released):
+        warnings.append("legacy_release_first_local_observation_unknown_requires_review")
     # Prefer real developments since yesterday's 06:30 local cutoff. A UTC
     # 24-hour subtraction is wrong across daylight saving transitions.
     previous_day = edition_local_day - timedelta(days=1)
