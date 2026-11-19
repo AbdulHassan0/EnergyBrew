@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-19T00:21:31.881687+00:00",
+  "generated_utc": "2026-11-19T00:21:50.638357+00:00",
   "status": "degraded",
   "seven_day_pilot_complete": false,
   "history_span_days": 0.53,
@@ -119,9 +119,9 @@
     "publication_within_7d": 8
   },
   "official_failed_scans": 0,
-  "gal_sample_runs": 42,
-  "gal_successful_samples": 42,
-  "gal_repeated_feed_payloads": 0,
+  "gal_sample_runs": 43,
+  "gal_successful_samples": 43,
+  "gal_repeated_feed_payloads": 1,
   "gal_failed_samples": 0,
   "observed_sampling_gaps": [
     {
@@ -145,13 +145,13 @@
       "minutes": 83.2
     }
   ],
-  "seven_day_start_gap_minutes": 9729.9,
+  "seven_day_start_gap_minutes": 9729.6,
   "latest_gal_age_minutes": 0.1,
   "expected_gal_interval_minutes": 10,
   "latest_official_scan_utc": "2026-11-19T00:21:23.911284+00:00",
   "latest_official_attempt_utc": "2026-11-19T00:21:23.911284+00:00",
-  "latest_gal_attempt_utc": "2026-11-19T00:21:27.410613+00:00",
-  "latest_gal_sample_utc": "2026-11-19T00:21:27.410613+00:00",
+  "latest_gal_attempt_utc": "2026-11-19T00:21:45.049340+00:00",
+  "latest_gal_sample_utc": "2026-11-19T00:21:45.049340+00:00",
   "daily": [
     {
       "date_utc": "2026-11-13",
@@ -246,7 +246,7 @@
     {
       "date_utc": "2026-11-19",
       "official_scans": 1,
-      "gal_samples": 1,
+      "gal_samples": 2,
       "publisher_timestamped_official_links": 0,
       "specialist_publisher_timestamped_links": 1,
       "grid_operator_primary_timestamped_links": 0,
@@ -255,7 +255,7 @@
       "press_release_feed_date_urls": 0,
       "scanning_observed": true,
       "successful_official_scans": 1,
-      "successful_gal_samples": 1,
+      "successful_gal_samples": 2,
       "successful_scanning_observed": true
     }
   ],

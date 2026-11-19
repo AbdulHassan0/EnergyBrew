@@ -43,7 +43,10 @@
         "grid",
         "power grid"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.savingadvice.com/articles/2026/11/18/10769854_doe-announces-2-8-billion-wyoming-power-grid-loan-could-it-lower-electric-bills-in-17-states.html",
@@ -785,7 +788,10 @@
       "relevance_evidence": [
         "power plant"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.thestar.com.my/tech/tech-news/2026/11/19/texas-resumes-issuing-data-center-air-permits-regulator-says",
@@ -805,7 +811,10 @@
       "relevance_evidence": [
         "data center"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.wxow.com/news/oakdale-town-board-calls-for-delay-in-proposed-nodiac-data-center-permit-decision/article_14316ea1-1ad2-47d8-ae83-14a968c23510.html",
@@ -825,7 +834,10 @@
       "relevance_evidence": [
         "data center"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70171585-jericho-energy-ventures-inc-jericho-energy-ventures-provides-update-on-oil-and-gas-joint-venture-credit-facility-200.htm",
@@ -1909,7 +1921,10 @@
       "relevance_evidence": [
         "fracking"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "http://www.dailyunion.com/news/local/wise-transmission-line-holds-open-house/article_5537af6e-2086-560b-9b5d-bdae4ac092d8.html",
@@ -1929,7 +1944,10 @@
       "relevance_evidence": [
         "transmission line"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://fox4beaumont.com/news/bpd-capers-unit-404-homicides-investigated-more-than-90-percent-solved",
@@ -1949,7 +1967,10 @@
       "relevance_evidence": [
         "bpd"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70171570-penoles-and-atlas-renewable-energy-sign-a-20-year-agreement-to-strengthen-renewable-supply-and-advance-the-decarbonization-of-penoles-operations-with-008.htm",
@@ -3443,6 +3464,16 @@
       "new_unique_links": 7,
       "feed_newest_index_utc": "2026-11-19T00:17:00+00:00",
       "feed_index_lag_minutes": 4.5,
+      "feed_payload_sha256": "c51ea72b74fbd4e6"
+    },
+    {
+      "run_utc": "2026-11-19T00:21:45.049340+00:00",
+      "status": "ok",
+      "raw_feed_items": 3940,
+      "high_signal_items": 7,
+      "new_unique_links": 0,
+      "feed_newest_index_utc": "2026-11-19T00:17:00+00:00",
+      "feed_index_lag_minutes": 4.8,
       "feed_payload_sha256": "c51ea72b74fbd4e6"
     }
   ]

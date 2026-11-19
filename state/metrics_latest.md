@@ -1,14 +1,14 @@
 # EnergyBrew collection reliability and volume
 
-Generated: 2026-11-19T00:21:31.881687+00:00
+Generated: 2026-11-19T00:21:50.638357+00:00
 Status: **degraded**
 Seven-day pilot complete: **False**
 Observed history span: **0.53 days**
 RSS scans: **49** (above 80% feed quorum: 49, all feeds connected: 49, below quorum: 0)
 Sources whose newest publisher item is within seven days: **8** / 15
-GDELT GAL samples: **42** (successful: 42, degraded: 0, repeated payload fingerprints: 0)
+GDELT GAL samples: **43** (successful: 43, degraded: 0, repeated payload fingerprints: 1)
 GDELT intervals longer than 15 minutes: **4**
-Gap from seven-day window start to first GAL sample: **9729.9 min**
+Gap from seven-day window start to first GAL sample: **9729.6 min**
 Age of latest successful GAL sample: **0.1 min**
 
 | UTC day | Official scans | GAL samples | Timestamped agency | Specialist RSS | Grid operator | High-signal agency | GDELT first-seen URLs | Release-feed URLs |
@@ -19,7 +19,7 @@ Age of latest successful GAL sample: **0.1 min**
 | 2026-11-16 | 0 | 0 | 3 | 0 | 2 | 1 | 0 | 0 |
 | 2026-11-17 | 0 | 0 | 5 | 15 | 0 | 1 | 0 | 0 |
 | 2026-11-18 | 48 | 41 | 2 | 32 | 1 | 2 | 128 | 15 |
-| 2026-11-19 | 1 | 1 | 0 | 1 | 0 | 0 | 7 | 0 |
+| 2026-11-19 | 1 | 2 | 0 | 1 | 0 | 0 | 7 | 0 |
 
 ## Feed content age — independent of network connectivity
 
