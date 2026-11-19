@@ -9,8 +9,8 @@
     "feed_published_utc": "2026-11-18T23:01:00+00:00",
     "publisher_published_utc": null,
     "published_time_verified": false,
-    "category": "Natural Gas & LNG",
-    "relevance_score": 30,
+    "category": "LNG",
+    "relevance_score": 33,
     "relevance_evidence": [
       "liquefied"
     ],
@@ -162,8 +162,8 @@
     "feed_published_utc": "2026-11-18T14:00:00+00:00",
     "publisher_published_utc": null,
     "published_time_verified": false,
-    "category": "Natural Gas & LNG",
-    "relevance_score": 24,
+    "category": "Natural Gas",
+    "relevance_score": 27,
     "relevance_evidence": [
       "gas field"
     ],
@@ -181,8 +181,8 @@
     "feed_published_utc": "2026-11-18T13:00:00+00:00",
     "publisher_published_utc": null,
     "published_time_verified": false,
-    "category": "Natural Gas & LNG",
-    "relevance_score": 36,
+    "category": "Natural Gas",
+    "relevance_score": 39,
     "relevance_evidence": [
       "natural gas"
     ],

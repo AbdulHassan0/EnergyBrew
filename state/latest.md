@@ -1,15 +1,15 @@
 # EnergyBrew — live RSS collection
 
-Run: 2026-11-19T00:35:18.241104+00:00
+Run: 2026-11-19T02:38:35.776217+00:00
 Successfully parsed feeds: **15/15**
 Source connectivity: **healthy** (0 feeds failed)
-Fresh timestamped entries: **52**
-Editorial candidates (in collection window): **26**
-Editorial candidates (last 24h): **23**
+Fresh timestamped entries: **50**
+Editorial candidates (in collection window): **24**
+Editorial candidates (last 24h): **24**
 Regulatory date-only feed entries: **12**
 Regulatory watchlist links (7 days): **4**
-New unique links (all precision levels): **0**
-Distinct article links in 7-day state: **73**
+New unique links (all precision levels): **2**
+Distinct article links in 7-day state: **75**
 
 | Source | Connected | Timestamped | Date-only | Candidates | New | Error |
 |---|---|---:|---:|---:|---:|---|
@@ -25,8 +25,8 @@ Distinct article links in 7-day state: **73**
 | European Commission DG Energy | True | 3 | 0 | 0 | 0 |  |
 | Federal Register notices | True | 0 | 12 | 0 | 0 |  |
 | Offshore Energy News | True | 19 | 0 | 7 | 0 |  |
-| OilPrice.com News | True | 15 | 0 | 8 | 0 |  |
-| Utility Dive News | True | 10 | 0 | 7 | 0 |  |
+| OilPrice.com News | True | 15 | 0 | 8 | 2 |  |
+| Utility Dive News | True | 8 | 0 | 5 | 0 |  |
 | PJM Inside Lines | True | 1 | 0 | 1 | 0 |  |
 
 Source-linked metadata only (no publisher article text). Dates come from publishers' publication fields, not HTTP crawl times.

@@ -770,6 +770,174 @@
     "status": "discovery_only_requires_publisher_verification"
   },
   {
+    "url": "https://www.wfmj.com/news/local-news/mcdonald-data-center-company-answering-community-questions/article_17a6fed7-f226-4e02-a2d4-006a280b4fb6.html",
+    "title": "McDonald data center company answering community questions",
+    "domain": "www.wfmj.com",
+    "gdelt_first_seen_utc": "2026-11-19T00:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "http://www.newjerseytelegraph.com/news/279441799/jericho-energy-ventures-provides-update-on-oil-and-gas-joint-venture-credit-facility",
+    "title": "Jericho Energy Ventures Provides Update on Oil and Gas Joint Venture Credit Facility",
+    "domain": "www.newjerseytelegraph.com",
+    "gdelt_first_seen_utc": "2026-11-19T00:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "oil and gas"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://english.pravda.ru/news/world/173423-uzbekneftegaz-bukhara-refinery-expansion-talks",
+    "title": "Uzbekneftegaz in talks with Technip, Axens, KBR for Bukhara refinery expansion",
+    "domain": "english.pravda.ru",
+    "gdelt_first_seen_utc": "2026-11-19T00:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "refinery"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.northernpublicradio.org/illinois/2026-11-18/time-is-up-advocates-rally-in-springfield-for-data-center-reforms-in-illinois",
+    "title": "\u2018Time is up\u2019: Advocates rally in Springfield for data center reforms in Illinois",
+    "domain": "www.northernpublicradio.org",
+    "gdelt_first_seen_utc": "2026-11-19T00:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "http://biomassmagazine.com/articles/sierra-pacific-industries-acquires-burney-biomass-power-plant-assets",
+    "title": "Sierra Pacific Industries acquires Burney biomass power plant assets | Biomass Magazine",
+    "domain": "biomassmagazine.com",
+    "gdelt_first_seen_utc": "2026-11-19T00:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "power plant"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://fox23.com/news/local/sirens-to-sound-in-west-tulsa-as-hf-sinclair-stages-refinery-alarm-test-tomorrow",
+    "title": "Sirens to sound in West Tulsa as HF Sinclair stages refinery alarm test tomorrow",
+    "domain": "fox23.com",
+    "gdelt_first_seen_utc": "2026-11-19T00:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "refinery"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "http://www.tennesseedaily.com/news/279441799/jericho-energy-ventures-provides-update-on-oil-and-gas-joint-venture-credit-facility",
+    "title": "Jericho Energy Ventures Provides Update on Oil and Gas Joint Venture Credit Facility",
+    "domain": "www.tennesseedaily.com",
+    "gdelt_first_seen_utc": "2026-11-19T00:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "oil and gas"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://ktul.com/news/local/sirens-to-sound-in-west-tulsa-as-hf-sinclair-stages-refinery-alarm-test-tomorrow-11-18-2026",
+    "title": "Sirens to sound in West Tulsa as HF Sinclair stages refinery alarm test tomorrow",
+    "domain": "ktul.com",
+    "gdelt_first_seen_utc": "2026-11-19T00:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "refinery"
+    ],
+    "status": "discovery_only_requires_publisher_verification"
+  },
+  {
     "url": "https://www.12onyourside.com/2026/11/18/community-groups-urge-henrico-protect-water-supply",
     "title": "Henrico says no water agreement in place for proposed power plant as community groups raise concerns",
     "domain": "www.12onyourside.com",
@@ -1846,59 +2014,44 @@
     "status": "discovery_only_requires_publisher_verification"
   },
   {
-    "url": "https://www.nbcdfw.com/news/local/red-oak-residents-push-back-against-plans-for-more-data-centers/4107459",
-    "title": "Data center plans in Red Oak draw protest at joint city meeting \u2013 NBC 5 Dallas - Fort Worth",
-    "domain": "www.nbcdfw.com",
-    "gdelt_first_seen_utc": "2026-11-18T01:15:00+00:00",
+    "url": "https://www.foundry-planet.com/d/offshore-wind-could-create-10800-new-jobs-in-uk-casting-and-forging-industry-by-2050",
+    "title": "Offshore Wind Could Create 10,800 New Jobs in UK Casting and Forging Industry by 2050",
+    "domain": "www.foundry-planet.com",
+    "gdelt_first_seen_utc": "2026-11-19T00:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
     "publisher_published_utc": null,
     "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "data_centers",
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
     "topics": [
-      "data_centers"
+      "gal_rolling_sample"
     ],
-    "relevance_score": 30,
+    "relevance_score": 27,
     "category": "Power & Electricity",
     "relevance_evidence": [
-      "data center"
+      "offshore wind"
     ],
     "status": "discovery_only_requires_publisher_verification"
   },
   {
-    "url": "https://www.tonyskansascity.com/2026/11/kansas-city-data-center-ban-coming-soon.html",
-    "title": "Kansas City Data Center Ban Coming Soon ???",
-    "domain": "www.tonyskansascity.com",
-    "gdelt_first_seen_utc": "2026-11-18T01:15:00+00:00",
+    "url": "https://www.denizhaber.com/hurmuz-bogazinda-adnoc-tankerine-saldiri-1-kayip-11-yarali/127871",
+    "title": "H\u00fcrm\u00fcz Bo\u011faz\u0131'nda ADNOC tankerine sald\u0131r\u0131: 1 kay\u0131p, 11 yaral\u0131",
+    "domain": "www.denizhaber.com",
+    "gdelt_first_seen_utc": "2026-11-19T00:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
     "publisher_published_utc": null,
     "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "data_centers",
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
     "topics": [
-      "data_centers"
+      "gal_rolling_sample"
     ],
-    "relevance_score": 30,
-    "category": "Power & Electricity",
+    "relevance_score": 27,
+    "category": "Oil & Energy",
     "relevance_evidence": [
-      "data center"
-    ],
-    "status": "discovery_only_requires_publisher_verification"
-  },
-  {
-    "url": "https://www.fool.com/investing/2026/11/17/only-11-of-the-power-plants-vistra-just-bought-are",
-    "title": "Only 11 % of the Power Plants Vistra Just Bought Are in Texas . Here Why That Matters After the Election .",
-    "domain": "www.fool.com",
-    "gdelt_first_seen_utc": "2026-11-18T01:15:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "data_centers",
-    "topics": [
-      "data_centers"
-    ],
-    "relevance_score": 30,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "vistra"
+      "adnoc"
     ],
     "status": "discovery_only_requires_publisher_verification"
   },
@@ -2470,346 +2623,6 @@
     "title": "Is another US - Iran war looming ?",
     "domain": "www.middleeaststar.com",
     "gdelt_first_seen_utc": "2026-11-18T17:30:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "energy_investment",
-    "topics": [
-      "energy_investment"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification"
-  },
-  {
-    "url": "https://1019bigwaax.iheart.com/content/2026-11-17-nvidia-exceeds-q3-expectations-amid-ceo-huangs-exit",
-    "title": "Nvidia Exceeds Q3 Expectations Amid CEO Huang Exit | News Radio 101 . 9 Big WAAX",
-    "domain": "1019bigwaax.iheart.com",
-    "gdelt_first_seen_utc": "2026-11-18T01:15:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "data_centers",
-    "topics": [
-      "data_centers"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification"
-  },
-  {
-    "url": "https://powertalk1460.iheart.com/content/2026-11-17-nvidia-exceeds-q3-expectations-amid-ceo-huangs-exit",
-    "title": "Nvidia Exceeds Q3 Expectations Amid CEO Huang Exit | PowerTalk 1460 AM & 101 . 1 FM",
-    "domain": "powertalk1460.iheart.com",
-    "gdelt_first_seen_utc": "2026-11-18T01:15:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "data_centers",
-    "topics": [
-      "data_centers"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification"
-  },
-  {
-    "url": "https://wflaorlando.iheart.com/content/2026-11-17-nvidia-exceeds-q3-expectations-amid-ceo-huangs-exit",
-    "title": "Nvidia Exceeds Q3 Expectations Amid CEO Huang Exit | Newsradio WFLA Orlando",
-    "domain": "wflaorlando.iheart.com",
-    "gdelt_first_seen_utc": "2026-11-18T01:15:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "data_centers",
-    "topics": [
-      "data_centers"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification"
-  },
-  {
-    "url": "https://www.pr-inside.com/securities-lawsuit-alert-intel-corporation-intc-investors-may-contact-r5244910.htm",
-    "title": "Securities Lawsuit Alert : Intel Corporation ( INTC ) Investors May Contact ...",
-    "domain": "www.pr-inside.com",
-    "gdelt_first_seen_utc": "2026-11-18T01:15:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "data_centers",
-    "topics": [
-      "data_centers"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification"
-  },
-  {
-    "url": "https://techcrunch.com/2026/11/17/nvidia-promises-that-revenue-will-keep-soaring-for-now",
-    "title": "Nvidia promises that revenue will keep soaring for now",
-    "domain": "techcrunch.com",
-    "gdelt_first_seen_utc": "2026-11-18T01:15:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "data_centers",
-    "topics": [
-      "data_centers"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification"
-  },
-  {
-    "url": "https://www.klcc.org/environment/2026-11-17/google-quaise-energy-newberry-volcano-superhot-rock-geothermal-deal",
-    "title": "Google signs world first commercial superhot rock geothermal deal at Oregon Newberry Volcano",
-    "domain": "www.klcc.org",
-    "gdelt_first_seen_utc": "2026-11-18T01:15:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "data_centers",
-    "topics": [
-      "data_centers"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification"
-  },
-  {
-    "url": "https://newsradiowkcy.iheart.com/content/2026-11-17-nvidia-exceeds-q3-expectations-amid-ceo-huangs-exit",
-    "title": "Nvidia Exceeds Q3 Expectations Amid CEO Huang Exit | NewsRadio WKCY",
-    "domain": "newsradiowkcy.iheart.com",
-    "gdelt_first_seen_utc": "2026-11-18T01:15:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "data_centers",
-    "topics": [
-      "data_centers"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification"
-  },
-  {
-    "url": "https://wilm.iheart.com/content/2026-11-17-nvidia-exceeds-q3-expectations-amid-ceo-huangs-exit",
-    "title": "Nvidia Exceeds Q3 Expectations Amid CEO Huang Exit",
-    "domain": "wilm.iheart.com",
-    "gdelt_first_seen_utc": "2026-11-18T01:15:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "data_centers",
-    "topics": [
-      "data_centers"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification"
-  },
-  {
-    "url": "https://wspd.iheart.com/content/2026-11-17-nvidia-exceeds-q3-expectations-amid-ceo-huangs-exit",
-    "title": "Nvidia Exceeds Q3 Expectations Amid CEO Huang Exit | NewsRadio 1370 AM & 92 . 9 FM WSPD",
-    "domain": "wspd.iheart.com",
-    "gdelt_first_seen_utc": "2026-11-18T01:15:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "data_centers",
-    "topics": [
-      "data_centers"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification"
-  },
-  {
-    "url": "https://www.foxbusiness.com/markets/nvidia-releases-quarterly-earnings-after-jensen-huangs-resignation-ceo",
-    "title": "Nvidia releases first quarterly earnings report since Jensen Huang resignation",
-    "domain": "www.foxbusiness.com",
-    "gdelt_first_seen_utc": "2026-11-18T01:15:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "data_centers",
-    "topics": [
-      "data_centers"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification"
-  },
-  {
-    "url": "https://www.fool.com/investing/2026/11/17/nvidias-103-revenue-growth-took-a-backseat-to-its-internal-drama",
-    "title": "Nvidia 103 % Revenue Growth Took a Backseat to Its Internal Drama",
-    "domain": "www.fool.com",
-    "gdelt_first_seen_utc": "2026-11-18T01:15:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "data_centers",
-    "topics": [
-      "data_centers"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification"
-  },
-  {
-    "url": "https://www.10news.com/business/nvidia-board-rules-out-jensen-huangs-return-as-ceo-during-earnings-call",
-    "title": "Nvidia board rules out Huang return , as chipmaker posts blowout quarter",
-    "domain": "www.10news.com",
-    "gdelt_first_seen_utc": "2026-11-18T01:15:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "data_centers",
-    "topics": [
-      "data_centers"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification"
-  },
-  {
-    "url": "https://wjno.iheart.com/content/2026-11-17-nvidia-exceeds-q3-expectations-amid-ceo-huangs-exit",
-    "title": "Nvidia Exceeds Q3 Expectations Amid CEO Huang Exit",
-    "domain": "wjno.iheart.com",
-    "gdelt_first_seen_utc": "2026-11-18T01:15:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "data_centers",
-    "topics": [
-      "data_centers"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification"
-  },
-  {
-    "url": "https://www.tonyskansascity.com/2026/11/kansas-city-double-take-i-70-sneak-peek.html",
-    "title": "Kansas City Double Take : I - 70 Sneak Peek & Global Tech Trouble",
-    "domain": "www.tonyskansascity.com",
-    "gdelt_first_seen_utc": "2026-11-18T01:15:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "data_centers",
-    "topics": [
-      "data_centers"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification"
-  },
-  {
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70160136-ampera-and-berto-announce-proposed-business-combination-to-accelerate-advanced-energy-technology-development-and-commercialization-008.htm",
-    "title": "AMPERA and Berto Announce Proposed Business Combination to Accelerate Advanced Energy Technology Development and Commercialization",
-    "domain": "www.finanznachrichten.de",
-    "gdelt_first_seen_utc": "2026-11-18T01:15:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "data_centers",
-    "topics": [
-      "data_centers"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification"
-  },
-  {
-    "url": "https://wercfm.iheart.com/content/2026-11-17-nvidia-exceeds-q3-expectations-amid-ceo-huangs-exit",
-    "title": "Nvidia Exceeds Q3 Expectations Amid CEO Huang Exit | News Radio 105 . 5 WERC",
-    "domain": "wercfm.iheart.com",
-    "gdelt_first_seen_utc": "2026-11-18T01:15:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "data_centers",
-    "topics": [
-      "data_centers"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification"
-  },
-  {
-    "url": "https://bendbulletin.com/2026/11/17/google-to-use-geothermal-power-from-newberry-caldera-to-power-data-centers",
-    "title": "Google to use geothermal energy from Oregon volcano to power data centers",
-    "domain": "bendbulletin.com",
-    "gdelt_first_seen_utc": "2026-11-18T01:15:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "data_centers",
-    "topics": [
-      "data_centers"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification"
-  },
-  {
-    "url": "https://www.ksat.com/news/texas/2026/11/17/texas-regulators-are-resuming-environmental-permits-for-data-centers",
-    "title": "Texas regulators are resuming environmental permits for data centers",
-    "domain": "www.ksat.com",
-    "gdelt_first_seen_utc": "2026-11-18T01:15:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "data_centers",
-    "topics": [
-      "data_centers"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification"
-  },
-  {
-    "url": "https://tucson.com/news/local/article_58cd2491-2a2f-45e5-a0e4-54c73646f54b.html",
-    "title": "Emergency alert test today is real . A blackout is not .",
-    "domain": "tucson.com",
-    "gdelt_first_seen_utc": "2026-11-18T01:15:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "energy_investment",
-    "topics": [
-      "energy_investment"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification"
-  },
-  {
-    "url": "https://timesofindia.indiatimes.com/world/europe/ukraine-strikes-putins-prized-crimean-bridge-destroys-central-road-section-ahead-of-us-china-meet/articleshow/135944199.cms",
-    "title": "Ukraine strikes Putin prized Crimean Bridge , destroys central road section ahead of US - China meet",
-    "domain": "timesofindia.indiatimes.com",
-    "gdelt_first_seen_utc": "2026-11-18T01:15:00+00:00",
     "publisher_published_utc": null,
     "published_time_verified": false,
     "discovery_provider": "GDELT DOC 2.0",

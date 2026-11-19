@@ -1,12 +1,31 @@
 [
   {
+    "id": "ea327fca2f5987c8cb30074d",
+    "title": "Natural Gas Pipeline of America, LLC; Horizon Pipeline Company, LLC; Notice of Schedule for the Preparation of an Environmental Assessment for the North Extension Project",
+    "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23442/natural-gas-pipeline-of-america-llc-horizon-pipeline-company-llc-notice-of-schedule-for-the",
+    "source": "Federal Register notices",
+    "source_class": "official_agency",
+    "published_utc": "2026-11-18T05:00:00+00:00",
+    "category": "Natural Gas",
+    "published_precision": "day",
+    "relevance_score": 69,
+    "keyword_matches": 2,
+    "editorial_candidate": false,
+    "relevance_evidence": [
+      "gas pipeline",
+      "natural gas"
+    ],
+    "status": "research_date_only",
+    "also_seen_in": []
+  },
+  {
     "id": "e4ec4d63fc6d664805180f16",
     "title": "Algonquin Gas Transmission, LLC; Notice of Application and Establishing Intervention Deadline",
     "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23446/algonquin-gas-transmission-llc-notice-of-application-and-establishing-intervention-deadline",
     "source": "Federal Register notices",
     "source_class": "official_agency",
     "published_utc": "2026-11-18T05:00:00+00:00",
-    "category": "Natural Gas & LNG",
+    "category": "Natural Gas",
     "published_precision": "day",
     "relevance_score": 66,
     "keyword_matches": 2,
@@ -19,34 +38,15 @@
     "also_seen_in": []
   },
   {
-    "id": "ea327fca2f5987c8cb30074d",
-    "title": "Natural Gas Pipeline of America, LLC; Horizon Pipeline Company, LLC; Notice of Schedule for the Preparation of an Environmental Assessment for the North Extension Project",
-    "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23442/natural-gas-pipeline-of-america-llc-horizon-pipeline-company-llc-notice-of-schedule-for-the",
-    "source": "Federal Register notices",
-    "source_class": "official_agency",
-    "published_utc": "2026-11-18T05:00:00+00:00",
-    "category": "Natural Gas & LNG",
-    "published_precision": "day",
-    "relevance_score": 66,
-    "keyword_matches": 2,
-    "editorial_candidate": false,
-    "relevance_evidence": [
-      "gas pipeline",
-      "natural gas"
-    ],
-    "status": "research_date_only",
-    "also_seen_in": []
-  },
-  {
     "id": "892d8fe0c9f3d2a933e8a821",
     "title": "Eastern Shore Natural Gas Company; Notice of Scoping Period Requesting Comments on Environmental Issues for the Proposed Delmar Regional Enhancement Project",
     "url": "https://www.federalregister.gov/documents/2026/11/17/2026-23361/eastern-shore-natural-gas-company-notice-of-scoping-period-requesting-comments-on-environmental",
     "source": "Federal Register notices",
     "source_class": "official_agency",
     "published_utc": "2026-11-17T05:00:00+00:00",
-    "category": "Natural Gas & LNG",
+    "category": "Natural Gas",
     "published_precision": "day",
-    "relevance_score": 36,
+    "relevance_score": 39,
     "keyword_matches": 1,
     "editorial_candidate": false,
     "relevance_evidence": [
@@ -62,7 +62,7 @@
     "source": "Federal Register notices",
     "source_class": "official_agency",
     "published_utc": "2026-11-18T05:00:00+00:00",
-    "category": "Natural Gas & LNG",
+    "category": "Natural Gas",
     "published_precision": "day",
     "relevance_score": 30,
     "keyword_matches": 1,

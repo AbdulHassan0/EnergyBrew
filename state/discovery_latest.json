@@ -1,15 +1,39 @@
 {
-  "run_utc": "2026-11-19T00:35:20.582749+00:00",
+  "run_utc": "2026-11-19T02:38:38.764393+00:00",
   "provider": "GDELT DOC 2.0",
-  "status": "provider_cooldown",
-  "topics_configured": 12,
-  "topics_attempted": 0,
-  "topics_succeeded": 0,
-  "topics_pending_or_unsearched": 12,
+  "status": "degraded",
+  "topics_configured": 15,
+  "topics_attempted": 2,
+  "topics_succeeded": 1,
+  "topics_pending_or_unsearched": 13,
   "new_discovered_urls": 0,
-  "leads_in_last_24h_first_seen": 135,
-  "leads_in_7d_state": 135,
-  "provider_cooldown_until_utc": "2026-11-19T01:58:32.375488+00:00",
-  "topic_attempts": [],
+  "leads_in_last_24h_first_seen": 122,
+  "leads_in_7d_state": 145,
+  "provider_cooldown_until_utc": "2026-11-19T04:08:38.764393+00:00",
+  "topic_attempts": [
+    {
+      "topic": "geo_energy_conflict",
+      "attempted_utc": "2026-11-19T02:38:38.764393+00:00",
+      "status": "success",
+      "raw_results": 0,
+      "new_urls": 0,
+      "normalized_results": 0,
+      "rejected": {
+        "invalid_url": 0,
+        "invalid_first_seen": 0,
+        "outside_window": 0
+      },
+      "http_status": 200
+    },
+    {
+      "topic": "geo_energy_sanctions",
+      "attempted_utc": "2026-11-19T02:38:38.764393+00:00",
+      "status": "rate_limited",
+      "raw_results": 0,
+      "new_urls": 0,
+      "http_status": 429,
+      "error": "HTTP 429"
+    }
+  ],
   "notice": "Discovery index timestamps are NOT original article publication dates. All leads need publisher verification before newsletter use."
 }
