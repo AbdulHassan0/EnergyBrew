@@ -5,6 +5,24 @@ Linux volume, schedule this separate one-shot morning *news-processing* task
 at 06:38 in America/Chicago. This is independent from GitHub cron reliability
 and never sends newsletters or publishes stories.
 
+At **05:45 Central**, run an *early, unfrozen research preflight* against
+the collector's durable history. It shows editors overnight leads already
+observed, but it is never treated as a finalized edition:
+
+    docker run --rm --name energybrew-preflight \
+      --mount type=bind,source="$(pwd)/energybrew-state",target=/data \
+      --entrypoint python energybrew-collector \
+      morning_readiness.py --rss /data/articles.json \
+      --discovery /data/discovery.json \
+      --releases /data/press_releases.json \
+      --output /data/morning --preflight
+
+The host should schedule the preflight at 05:45 local and the separate final
+runner at 06:38 local. Both use America/Chicago timezone and account for
+daylight saving time. Independent heartbeats/alerts are needed because either
+run can be missed if the host is unavailable. GitHub Actions has parallel
+best-effort pilot schedules but does **not** guarantee these times.
+
 Example manual run, using the same persistent bind mount as the GAL collector:
 
     docker run --rm --name energybrew-morning \
