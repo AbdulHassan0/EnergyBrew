@@ -21,7 +21,10 @@
         "geopolitical_event:war",
         "world_context:iran"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.news4jax.com/business/2026/11/19/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy-shock-iea-says",
@@ -44,7 +47,10 @@
         "geopolitical_event:war",
         "world_context:iran"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.gjsentinel.com/news/us/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy/article_8f374c45-2a86-51b6-bf51-af7f80ca10d1.html",
@@ -67,7 +73,10 @@
         "geopolitical_event:war",
         "world_context:iran"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.dailygazette.com/ap/business/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy/article_ef13ff21-9fe2-512b-a414-cc831f1d214a.html",
@@ -90,7 +99,10 @@
         "geopolitical_event:war",
         "world_context:iran"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://isp.netscape.com:443/pf/story/0001/20261119/a53b5522e557afd5370c08aee351032b",
@@ -641,7 +653,10 @@
         "geopolitical_event:strike",
         "world_context:russia/ukraine"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.wbaltv.com/article/third-ukrainian-strike-halts-rail-traffic-russias-kerch-bridge/74474991",
@@ -664,7 +679,10 @@
         "geopolitical_event:strike",
         "world_context:russia/ukraine"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.newsday.com/news/nation/russia-ukraine-war-kerch-bridge-putin-crimea-n91153",
@@ -687,7 +705,10 @@
         "geopolitical_event:strike",
         "world_context:russia/ukraine"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://lancasteronline.com/news/world/a-third-ukrainian-strike-in-4-days-halts-rail-traffic-on-russias-kerch-bridge-to/article_0b400996-8379-55cc-b8c9-6703468a032f.html",
@@ -710,7 +731,10 @@
         "geopolitical_event:strike",
         "world_context:russia/ukraine"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.news4jax.com/news/world/2026/11/19/a-third-ukrainian-strike-in-4-days-halts-rail-traffic-on-russias-kerch-bridge",
@@ -733,7 +757,10 @@
         "geopolitical_event:strike",
         "world_context:russia/ukraine"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.americanthinker.com/blog/2026/11/why-has-jordan-kept-u-s-troops-despite-iranian-attacks",
@@ -2392,7 +2419,10 @@
         "crude oil",
         "gasoline"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.businesstoday.in/stocks/power-grid-corporation-of-india-ltd-powergrid-share-price-363940",
@@ -2558,7 +2588,10 @@
         "battery storage",
         "renewables"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70178724-tesser-atomics-and-samsung-heavy-industries-enter-exclusive-collaboration-on-a-nuclear-powered-lng-carrier-399.htm",
@@ -2579,7 +2612,10 @@
       "relevance_evidence": [
         "lng"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://biz.liga.net/ua/energy/news/yevropa-y-aziia-konkuruvatymut-za-lng-pislia-zaborony-rosiyskoho-hazu-sp-global",
@@ -2600,7 +2636,10 @@
       "relevance_evidence": [
         "lng"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.wnp.pl/przemysl/strategiczna-dla-ue-kopalnia-miedzi-w-rekach-rosjanina-w-poblizu-terminal-lng-equinora,1120825.html",
@@ -2621,7 +2660,10 @@
       "relevance_evidence": [
         "lng"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://tech.qianlong.com/2026/1119/8752925.shtml",
@@ -2954,7 +2996,10 @@
       "relevance_evidence": [
         "natural gas"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://lancasteronline.com/opinion/letters_to_editor/natural-gas-impact-fee-has-been-great-for-pennsylvania-letter/article_6f7e98b0-c262-4a01-8f2e-cba3e1fe6aab.html",
@@ -2975,7 +3020,10 @@
       "relevance_evidence": [
         "natural gas"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.pressdemocrat.com/2026/11/19/today-in-history-november-19-explosions-at-mexico-city-natural-gas-facility-kills-at-least-500",
@@ -3225,7 +3273,10 @@
       "relevance_evidence": [
         "crude oil"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.freepressjournal.in/business/indias-crude-oil-output-may-fall-20-by-2035-iea-report",
@@ -3357,7 +3408,10 @@
       "relevance_evidence": [
         "electricity"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://finance.eastmoney.com/a/202611193935225632.html",
@@ -4409,7 +4463,10 @@
       "relevance_evidence": [
         "data center"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://news.webindia123.com/news/Articles/Business/20261119/4521911.html",
@@ -4430,7 +4487,10 @@
       "relevance_evidence": [
         "transmission project"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.springfieldnewssun.com/local/thor-withdraws-legal-battle-looms-in-urbana-data-center-fight/article_ea417aa3-069c-50a9-bcc5-b1acf57c820d.html",
@@ -4451,7 +4511,10 @@
       "relevance_evidence": [
         "data center"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://sdbj.com/technology/astrea-launches-to-bring-forecasting-to-utilities-facing-data-center-demand",
@@ -4472,7 +4535,10 @@
       "relevance_evidence": [
         "data center"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.nugget.ca/press-releases/newsfile/aether-holdings-signs-binding-framework-agreement-for-jv-to-develop-ai-data-center-in-thailand",
@@ -4493,7 +4559,10 @@
       "relevance_evidence": [
         "data center"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.mikrometoxos.gr/dei-anevazei-tin-timi-stocho-sta-2520-evro-i-eurobank-equities-eos-480-evro-ana-metochi-i-axia-apo-to-data-center-tis-aws",
@@ -4514,7 +4583,10 @@
       "relevance_evidence": [
         "data center"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://710keel.com/shreveport-data-center-court-ruling",
@@ -4535,7 +4607,10 @@
       "relevance_evidence": [
         "data center"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://k945.com/ixp/180/p/shreveport-data-center-court-ruling",
@@ -6448,7 +6523,10 @@
       "relevance_evidence": [
         "offshore wind"
       ],
-      "status": "discovery_only_requires_publisher_verification"
+      "status": "discovery_only_requires_publisher_verification",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://dominicantoday.com/dominican-republic-to-launch-first-battery-energy-storage-project-in-november",
@@ -7659,6 +7737,10 @@
     "geo_energy_shipping": {
       "last_attempt_utc": "2026-11-19T11:57:16.643751+00:00",
       "consecutive_failures": 1
+    },
+    "oil_refining": {
+      "last_attempt_utc": "2026-11-19T13:28:08.320524+00:00",
+      "consecutive_failures": 1
     }
   },
   "runs": [
@@ -8101,9 +8183,17 @@
       "topics_succeeded": 0,
       "new_discovered_urls": 0,
       "leads_in_last_24h_first_seen": 293
+    },
+    {
+      "run_utc": "2026-11-19T13:28:08.320524+00:00",
+      "status": "degraded",
+      "topics_attempted": 1,
+      "topics_succeeded": 0,
+      "new_discovered_urls": 0,
+      "leads_in_last_24h_first_seen": 319
     }
   ],
-  "provider_cooldown_until_utc": "2026-11-19T13:27:16.643751+00:00",
+  "provider_cooldown_until_utc": "2026-11-19T16:28:08.320524+00:00",
   "gal_runs": [
     {
       "run_utc": "2026-11-18T18:31:26.411800+00:00",
@@ -8631,7 +8721,17 @@
       "feed_newest_index_utc": "2026-11-19T13:18:00+00:00",
       "feed_index_lag_minutes": 6.4,
       "feed_payload_sha256": "40dd4367429095bb"
+    },
+    {
+      "run_utc": "2026-11-19T13:28:18.359522+00:00",
+      "status": "ok",
+      "raw_feed_items": 6360,
+      "high_signal_items": 26,
+      "new_unique_links": 0,
+      "feed_newest_index_utc": "2026-11-19T13:18:00+00:00",
+      "feed_index_lag_minutes": 10.3,
+      "feed_payload_sha256": "40dd4367429095bb"
     }
   ],
-  "provider_throttle_streak": 1
+  "provider_throttle_streak": 2
 }

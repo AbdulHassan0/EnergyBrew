@@ -1,11 +1,11 @@
 {
-  "audit_utc": "2026-11-19T13:24:38.722046+00:00",
+  "audit_utc": "2026-11-19T13:28:30.647370+00:00",
   "status": "degraded",
   "official_feeds_connected": 15,
   "official_feeds_checked": 15,
   "rss_scan_state": "healthy",
   "rss_connection_ratio": 1.0,
-  "official_rss_last_run_utc": "2026-11-19T13:24:21.906203+00:00",
+  "official_rss_last_run_utc": "2026-11-19T13:28:05.344696+00:00",
   "timestamped_editorial_leads_24h": 21,
   "official_agency_editorial_leads_24h": 3,
   "specialist_publisher_editorial_leads_24h": 17,
@@ -32,14 +32,13 @@
   "company_announcement_publisher_dates_verified": 0,
   "rolling_gal_status": "ok",
   "rolling_gal_recent_healthy": true,
-  "rolling_gal_sampling_gap": true,
-  "discovery_latest_status": "provider_cooldown",
-  "discovery_latest_run_utc": "2026-11-19T13:24:26.223782+00:00",
+  "rolling_gal_sampling_gap": false,
+  "discovery_latest_status": "degraded",
+  "discovery_latest_run_utc": "2026-11-19T13:28:08.320524+00:00",
   "critical": [],
   "warnings": [
     "No observed high-signal stories in: Infrastructure & Investment",
-    "GDELT DOC query API is degraded or rate limited; rolling GAL backup is healthy",
-    "A missed rolling GAL sample interval was observed"
+    "GDELT DOC query API is degraded or rate limited; rolling GAL backup is healthy"
   ],
   "limitations": [
     "No result proves zero market stories or comprehensive industry coverage.",
