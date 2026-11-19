@@ -1,7 +1,7 @@
 {
-  "run_utc": "2026-11-19T13:37:10.717273+00:00",
+  "run_utc": "2026-11-19T13:40:17.499251+00:00",
   "provider": "GDELT GAL RSS",
-  "minutes_since_previous_sample": 2.5,
+  "minutes_since_previous_sample": 3.1,
   "potential_sampling_gap": false,
   "coverage": "rolling_15min_sample_only_not_full_day",
   "status": "ok",
@@ -18,7 +18,7 @@
   "historical_noise_removed": 0,
   "historical_rescored": 0,
   "feed_newest_index_utc": "2026-11-19T13:32:00+00:00",
-  "feed_index_lag_minutes": 5.2,
+  "feed_index_lag_minutes": 8.3,
   "feed_entry_count": 6926,
   "feed_timestamped_entries": 6926,
   "feed_payload_sha256": "0bb8a35902e5d1f5",

@@ -8934,6 +8934,14 @@
       "topics_succeeded": 0,
       "new_discovered_urls": 0,
       "leads_in_last_24h_first_seen": 348
+    },
+    {
+      "run_utc": "2026-11-19T13:40:17.424268+00:00",
+      "status": "provider_cooldown",
+      "topics_attempted": 0,
+      "topics_succeeded": 0,
+      "new_discovered_urls": 0,
+      "leads_in_last_24h_first_seen": 348
     }
   ],
   "provider_cooldown_until_utc": "2026-11-19T16:28:08.320524+00:00",
@@ -9513,6 +9521,16 @@
       "new_unique_links": 0,
       "feed_newest_index_utc": "2026-11-19T13:32:00+00:00",
       "feed_index_lag_minutes": 5.2,
+      "feed_payload_sha256": "0bb8a35902e5d1f5"
+    },
+    {
+      "run_utc": "2026-11-19T13:40:17.499251+00:00",
+      "status": "ok",
+      "raw_feed_items": 6926,
+      "high_signal_items": 29,
+      "new_unique_links": 0,
+      "feed_newest_index_utc": "2026-11-19T13:32:00+00:00",
+      "feed_index_lag_minutes": 8.3,
       "feed_payload_sha256": "0bb8a35902e5d1f5"
     }
   ],
