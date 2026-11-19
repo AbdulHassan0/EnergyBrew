@@ -1,18 +1,6 @@
 name: EnergyBrew live RSS collection
 on:
   workflow_dispatch:
-  # During the pilot, validate real publisher/source behavior whenever the
-  # collector itself changes. This is NOT a continuous hosted news service.
-  push:
-    branches: [main]
-    paths:
-      - "collector.py"
-      - "gal.py"
-      - "discovery.py"
-      - "research_desk.py"
-      - "press_releases.py"
-      - "public_collector_guard.py"
-      - ".github/workflows/live-collector.yml"
   schedule:
     - cron: "17 4,10,16,22 * * *"
 permissions:
