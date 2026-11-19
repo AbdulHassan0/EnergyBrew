@@ -17,6 +17,18 @@ from press_releases import collect
 from public_collector_guard import ensure_sources_public, validate_records
 
 
+def recover_abandoned_release_stage(state, staging):
+    """Recover interrupted staging only when the committed state is valid."""
+    state, staging = Path(state), Path(staging)
+    if not staging.exists():
+        return False
+    if not state.exists():
+        raise RuntimeError("Orphaned issuer stage without durable history; inspect manually")
+    validate_records(state, "leads")
+    staging.unlink()
+    return True
+
+
 def run_refresh(root, *, now=None, fetcher=None):
     now = now or datetime.now(timezone.utc)
     if now.tzinfo is None or now.utcoffset() is None:
@@ -31,8 +43,7 @@ def run_refresh(root, *, now=None, fetcher=None):
             fcntl.flock(lock.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
         except BlockingIOError as exc:
             raise RuntimeError("Another issuer release refresh is active") from exc
-        if staging.exists():
-            raise RuntimeError("Uncommitted issuer stage requires inspection")
+        recover_abandoned_release_stage(state, staging)
         if state.exists():
             shutil.copyfile(state, staging)
         try:

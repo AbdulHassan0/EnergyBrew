@@ -7,7 +7,7 @@ from unittest.mock import patch
 from datetime import datetime,timedelta,timezone
 from pathlib import Path
 
-from morning_host_runner import refresh_rss_safely, run_morning, concurrent_first_fetches
+from morning_host_runner import refresh_rss_safely, run_morning, concurrent_first_fetches, recover_abandoned_rss_stage
 
 CUTOFF=datetime(2026,11,19,12,30,tzinfo=timezone.utc)
 NOW=CUTOFF+timedelta(minutes=8)
@@ -159,6 +159,32 @@ class MorningHostTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 run_morning(root,now=NOW,fetcher=lambda _:(RSS,200),
                             completion_clock=lambda:datetime(2026,11,19,12,40))
+
+    def test_stale_rss_stage_recovered_without_mutating_committed_history(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp)
+            state=root/"articles.json"
+            refresh_rss_safely(state,root/"out",now=NOW,
+                               fetcher=lambda _:(RSS,200))
+            previous=state.read_bytes()
+            stale=root/"articles.json.morning-stage"
+            stale.write_text("partial power loss")
+            refresh_rss_safely(state,root/"out",now=NOW,
+                               fetcher=lambda _:(RSS,200))
+            self.assertEqual(state.read_bytes(),previous)
+            self.assertFalse(stale.exists())
+
+    def test_stale_rss_stage_kept_if_committed_history_is_corrupt(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp)
+            state=root/"articles.json"
+            stage=root/"articles.json.morning-stage"
+            state.write_text("corrupted")
+            stage.write_text("uncommitted")
+            with self.assertRaises(ValueError):
+                recover_abandoned_rss_stage(state)
+            self.assertEqual(state.read_text(),"corrupted")
+            self.assertTrue(stage.exists())
 
     def test_existing_rss_metadata_not_overwritten_if_invalid(self):
         with tempfile.TemporaryDirectory() as tmp:

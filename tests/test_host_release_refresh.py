@@ -4,7 +4,7 @@ import tempfile
 import unittest
 from datetime import datetime, timezone
 from pathlib import Path
-from host_release_refresh import run_refresh
+from host_release_refresh import run_refresh, recover_abandoned_release_stage
 
 NOW=datetime(2026,11,19,13,0,tzinfo=timezone.utc)
 RSS=b"""<rss><channel><item><title>US natural gas pipeline expansion approved</title>
@@ -36,6 +36,29 @@ class ReleaseHostTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 run_refresh(root,now=NOW,fetcher=lambda _:(RSS,200))
             self.assertEqual(state.read_text(),"unreadable json")
+
+    def test_recover_abandoned_issuer_stage_only_with_good_committed_state(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp)
+            state=root/"press_releases.json"
+            stage=root/"press_releases.host-stage.json"
+            run_refresh(root,now=NOW,fetcher=lambda _:(RSS,200))
+            before=state.read_bytes()
+            stage.write_text("incomplete prior write")
+            self.assertTrue(recover_abandoned_release_stage(state,stage))
+            self.assertFalse(stage.exists())
+            self.assertEqual(state.read_bytes(),before)
+
+    def test_corrupt_committed_issuer_state_retains_orphan_for_inspection(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp)
+            state=root/"press_releases.json"
+            stage=root/"press_releases.host-stage.json"
+            state.write_text("invalid json")
+            stage.write_text("orphan")
+            with self.assertRaises(ValueError):
+                recover_abandoned_release_stage(state,stage)
+            self.assertTrue(stage.exists())
 
     def test_upstream_failure_is_explicitly_degraded(self):
         with tempfile.TemporaryDirectory() as temp:

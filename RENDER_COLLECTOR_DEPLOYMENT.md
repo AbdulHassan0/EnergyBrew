@@ -64,6 +64,11 @@ never two simultaneous writers to the same state.**
   at `/data/morning/editorial_draft_YYYY-MM-DD.json`. Every story's
   summary and verification attestations remain blank; no automatic emails.
 
+Interrupted RSS/issuer staging files are cleaned up only when the last
+**committed** state is present and passes the metadata safety validator.
+If committed history is corrupt or missing, collection fails visibly instead
+of deleting or overwriting potentially recoverable evidence.
+
 One retry is permitted for transient job failure inside its short window.
 The ledger records a job as started **before** execution; process restarts
 cannot pretend a job did not start. No retry after a window has closed.

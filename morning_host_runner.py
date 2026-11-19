@@ -55,6 +55,23 @@ def concurrent_first_fetches(*, workers=5):
     return executor, fetch
 
 
+def recover_abandoned_rss_stage(state_path):
+    """Discard only interrupted staged data if durable publisher state is sound.
+
+    Call while the caller holds morning-runner.lock. Never replace the
+    committed feed with an unvalidated half-written stage after a crash.
+    """
+    state_path = Path(state_path)
+    staging = state_path.with_name(state_path.name + ".morning-stage")
+    if not staging.exists():
+        return False
+    if not state_path.exists():
+        raise RuntimeError("Orphaned RSS stage without committed history; manual inspection required")
+    validate_records(state_path, "articles")
+    staging.unlink()
+    return True
+
+
 def refresh_rss_safely(state_path, output, *, now, fetcher=None):
     """Uncommitted RSS state is validated before replacing durable history.
 
@@ -65,8 +82,7 @@ def refresh_rss_safely(state_path, output, *, now, fetcher=None):
     state_path = Path(state_path)
     state_path.parent.mkdir(parents=True, exist_ok=True)
     staging = state_path.with_name(state_path.name + ".morning-stage")
-    if staging.exists():
-        raise RuntimeError("An uncommitted morning RSS staging file requires inspection")
+    recover_abandoned_rss_stage(state_path)
     if state_path.exists():
         shutil.copyfile(state_path, staging)
     pool = None
