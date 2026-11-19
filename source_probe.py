@@ -100,7 +100,7 @@ def measure(candidates=CANDIDATES, *, now=None, fetcher=None) -> dict:
                 fresh_links_48h=sum(datetime.fromisoformat(x["published_utc"]) <= now for x in unique),
                 fresh_links_24h=sum(now - timedelta(hours=24) <= datetime.fromisoformat(x["published_utc"]) <= now for x in unique),
                 high_signal_48h=sum(bool(x["editorial_candidate"]) and datetime.fromisoformat(x["published_utc"]) <= now for x in unique),
-                future_dated_links=sum(datetime.fromisoformat(x["published_utc"]) > now for x in unique),
+                future_dated_links=rejected.get("future", 0) + sum(datetime.fromisoformat(x["published_utc"]) > now for x in unique),
                 duplicate_article_urls=len(items) - len(unique),
                 link_quality="homepage_only" if generic_only else "actionable_links" if unique else "no_recent_items",
                 rejected=rejected,
