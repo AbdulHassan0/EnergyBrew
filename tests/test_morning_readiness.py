@@ -102,7 +102,7 @@ class MorningTests(unittest.TestCase):
         a,b,c=fixtures()
         a["articles"].append({"url":"https://example.org/news/evening",
             "title":"EIA US natural gas inventories report",
-            "published_utc":time_str(-11*60),"published_precision":"timestamp"})
+            "published_utc":time_str(-14*60),"published_precision":"timestamp"})
         r=prepare(a,b,c,now=NOW)
         by_url={x["url"]:x for x in r["research_desk"]["stories"]}
         self.assertEqual(by_url["https://example.net/energy/world"]["morning_time_bucket"],
