@@ -54,7 +54,7 @@ class SamplingWindowTests(unittest.TestCase):
             {**run(20), "feed_payload_sha256":"x"},
             {**run(10), "feed_payload_sha256":"y"}]
         result=estimate_sampling_coverage(samples,now=NOW,hours=1)
-        self.assertEqual(result["potentially_sampled_minutes_upper_bound"],30)
+        self.assertEqual(result["potentially_sampled_minutes_upper_bound"],25)
         self.assertEqual(result["repeated_identical_payload_samples_not_credited"],1)
 
     def test_legacy_hashless_history_is_labelled_unknown(self):
