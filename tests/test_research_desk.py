@@ -135,7 +135,7 @@ class DeskTests(unittest.TestCase):
             ("FERC infrastructure pipeline expansion investment project", "Infrastructure & Investment"),
             ("Iranian drone attacks threaten oil tankers near Strait of Hormuz", "Geopolitics"),
         ]
-        rows=[official(url=f"https://sources.example.com/news/{i}",
+        rows=[official(url=f"https://source-{i}.example.com/news/{i}",
                        title=title) for i,(title,_) in enumerate(candidates)]
         result=assemble(rows,[],[],now=NOW,max_stories=6)
         self.assertEqual(len(result["stories"]),6)
