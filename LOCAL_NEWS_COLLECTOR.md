@@ -44,3 +44,15 @@ morning scheduling unit tests on an actual standard GitHub-hosted Windows
 runner. A passing CI test establishes platform import, path, locking and
 offline scheduler compatibility, **not** 24/7 runtime reliability, a live
 publisher connection or Task Scheduler/autostart behavior.
+
+## Local pilot health command
+
+After starting the local collector, check health from the repository folder:
+
+`py -3.12 local_pilot_report.py --root "$env:LOCALAPPDATA\EnergyBrew\NewsState"`
+
+This read-only command reports heartbeat age, most recent successful GDELT
+sample, publisher feed recency, the final Central morning job, and the upper
+bound on 24-hour sampling coverage. A newly started collector will correctly
+report that the seven-day pilot is **not** yet complete. Status never means
+subscriber email delivery or production approval.

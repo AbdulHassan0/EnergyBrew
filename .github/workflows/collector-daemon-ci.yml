@@ -24,6 +24,8 @@ on:
       - "tests/test_host_rss_refresh.py"
       - "tests/test_rss_fetch_pool.py"
       - "tests/test_portable_lock.py"
+      - "local_pilot_report.py"
+      - "tests/test_local_pilot_report.py"
       - "tests/test_host_release_refresh.py"
       - "tests/test_render_worker.py"
       - ".github/workflows/collector-daemon-ci.yml"
@@ -48,6 +50,7 @@ jobs:
           python -m unittest discover -s tests -p "test_host_rss_refresh.py" -v
           python -m unittest discover -s tests -p "test_rss_fetch_pool.py" -v
           python -m unittest discover -s tests -p "test_portable_lock.py" -v
+          python -m unittest discover -s tests -p "test_local_pilot_report.py" -v
           python -m unittest discover -s tests -p "test_host_release_refresh.py" -v
           python -m unittest discover -s tests -p "test_render_worker.py" -v
       - name: Build no-dependency Python collector image
@@ -93,6 +96,7 @@ jobs:
         run: |
           python -m unittest discover -s tests -p "test_portable_lock.py" -v
           python -m unittest discover -s tests -p "test_render_worker.py" -v
+          python -m unittest discover -s tests -p "test_local_pilot_report.py" -v
           python -m unittest discover -s tests -p "test_morning_host_runner.py" -v
           python -m unittest discover -s tests -p "test_host_rss_refresh.py" -v
           python -m unittest discover -s tests -p "test_host_release_refresh.py" -v
