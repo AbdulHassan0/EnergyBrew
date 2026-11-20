@@ -68,15 +68,17 @@ def analyze(workflows, runs, now):
         pending_ages=[(now-parse_time(r.get("created_at"))).total_seconds()/60
                       for r in entries if r.get("status") in ("queued","waiting","pending")
                       and parse_time(r.get("created_at"))]
+        stalled_pending=sum(age > GRACE.total_seconds()/60 for age in pending_ages)
         ratio=min(1,actual/nominal) if nominal else None
         hours=max(0,(end-start).total_seconds()/3600)
         state=("warming_up" if hours<3 or not nominal else
                "critical" if ratio<.4 else
-               "degraded" if ratio<.8 or bad else "observed")
+               "degraded" if ratio<.8 or bad or stalled_pending else "observed")
         rows.append({"workflow":name,"status":state,
                      "nominal_eligible_slots":nominal,
                      "schedule_runs_seen":actual,"succeeded":good,"failed":bad,
                      "cancelled":cancelled,"queued_or_in_progress":pending,
+                     "stalled_pending_runs":stalled_pending,
                      "max_observed_run_start_delay_minutes":(
                          round(max(queued_delays),1) if queued_delays else None),
                      "oldest_pending_run_minutes":(
@@ -127,10 +129,10 @@ def save(result,directory):
     p.mkdir(parents=True,exist_ok=True)
     (p/"scheduler_audit.json").write_text(json.dumps(result,indent=2)+"\n",encoding="utf-8")
     lines=["# EnergyBrew collector scheduler audit","","Status: "+result["status"],"",
-           "| Workflow | Status | Nominal slots | Scheduled run events | Successful | Failed | Cancelled | Pending/running | At least missing | Max queued-start lag (min) |",
+           "| Workflow | Status | Nominal slots | Scheduled run events | Successful | Failed | Cancelled | Pending/running | Stalled pending | At least missing | Max queued-start lag (min) |",
            "|---|---|---:|---:|---:|---:|---:|---:|---:|---:|"]
     for x in result["workflows"]:
-        lines.append("| {workflow} | {status} | {nominal_eligible_slots} | {schedule_runs_seen} | {succeeded} | {failed} | {cancelled} | {queued_or_in_progress} | {minimum_missing_events} | {max_observed_run_start_delay_minutes} |".format(**x))
+        lines.append("| {workflow} | {status} | {nominal_eligible_slots} | {schedule_runs_seen} | {succeeded} | {failed} | {cancelled} | {queued_or_in_progress} | {stalled_pending_runs} | {minimum_missing_events} | {max_observed_run_start_delay_minutes} |".format(**x))
     lines+=["",result["caution"]]
     (p/"scheduler_audit.md").write_text("\n".join(lines)+"\n",encoding="utf-8")
 
