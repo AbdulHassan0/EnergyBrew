@@ -40,7 +40,10 @@ def analyze(workflows, runs, now):
         wf=workflows.get(name)
         if not isinstance(wf,dict):
             raise ValueError("Workflow metadata missing: "+name)
-        deployed=parse_time(wf.get("updated_at")) or parse_time(wf.get("created_at"))
+        # GitHub changes updated_at whenever the workflow YAML is edited.
+        # Treating every code fix as a fresh deployment hides missing cron
+        # events for hours. Prefer original creation time for continuity.
+        deployed=parse_time(wf.get("created_at")) or parse_time(wf.get("updated_at"))
         if deployed is None:
             raise ValueError("Workflow deployment timestamp missing: "+name)
         start=max(now-timedelta(hours=24),deployed)
@@ -52,7 +55,19 @@ def analyze(workflows, runs, now):
                  and start<=t<=now]
         actual=len(entries)
         bad=sum(r.get("conclusion") in ("failure","cancelled","timed_out") for r in entries)
+        cancelled=sum(r.get("conclusion")=="cancelled" for r in entries)
         good=sum(r.get("conclusion")=="success" for r in entries)
+        pending=sum(r.get("status") in ("queued","waiting","pending","requested","in_progress")
+                    for r in entries)
+        queued_delays=[]
+        for r in entries:
+            created=parse_time(r.get("created_at"))
+            started=parse_time(r.get("run_started_at"))
+            if created and started and started >= created:
+                queued_delays.append((started-created).total_seconds()/60)
+        pending_ages=[(now-parse_time(r.get("created_at"))).total_seconds()/60
+                      for r in entries if r.get("status") in ("queued","waiting","pending")
+                      and parse_time(r.get("created_at"))]
         ratio=min(1,actual/nominal) if nominal else None
         hours=max(0,(end-start).total_seconds()/3600)
         state=("warming_up" if hours<3 or not nominal else
@@ -61,6 +76,11 @@ def analyze(workflows, runs, now):
         rows.append({"workflow":name,"status":state,
                      "nominal_eligible_slots":nominal,
                      "schedule_runs_seen":actual,"succeeded":good,"failed":bad,
+                     "cancelled":cancelled,"queued_or_in_progress":pending,
+                     "max_observed_run_start_delay_minutes":(
+                         round(max(queued_delays),1) if queued_delays else None),
+                     "oldest_pending_run_minutes":(
+                         round(max(pending_ages),1) if pending_ages else None),
                      "minimum_missing_events":max(0,nominal-actual),
                      "run_count_ratio_upper_bound":round(ratio,3) if ratio is not None else None,
                      "evaluated_hours":round(hours,2)})
@@ -69,7 +89,7 @@ def analyze(workflows, runs, now):
              "critical" if all(r["status"]=="critical" for r in mature) else
              "degraded" if any(r["status"] in ("degraded","critical") for r in mature) else "observed")
     return {"checked_utc":now.isoformat(),"status":overall,"workflows":rows,
-            "caution":"Optimistic counts of GitHub schedule events versus nominal cron slots; delayed events cannot be attributed to exact slots. Does not prove GAL article capture or complete news coverage."}
+            "caution":"Optimistic counts of GitHub schedule events versus nominal cron slots; delayed events cannot be attributed to exact slots. Queue delay measures workflow creation to runner start (not the delay of the initial cron dispatch). Workflow creation date is used as a baseline; cron-expression changes may invalidate earlier expected-slot comparisons. Does not prove GAL article capture or complete news coverage."}
 
 def request_json(url,token):
     headers={"Accept":"application/vnd.github+json","User-Agent":"EnergyBrewNewsSchedulerAudit/1"}
@@ -107,10 +127,10 @@ def save(result,directory):
     p.mkdir(parents=True,exist_ok=True)
     (p/"scheduler_audit.json").write_text(json.dumps(result,indent=2)+"\n",encoding="utf-8")
     lines=["# EnergyBrew collector scheduler audit","","Status: "+result["status"],"",
-           "| Workflow | Status | Nominal slots | Scheduled run events | Successful | Failed | At least missing |",
-           "|---|---|---:|---:|---:|---:|---:|"]
+           "| Workflow | Status | Nominal slots | Scheduled run events | Successful | Failed | Cancelled | Pending/running | At least missing | Max queued-start lag (min) |",
+           "|---|---|---:|---:|---:|---:|---:|---:|---:|---:|"]
     for x in result["workflows"]:
-        lines.append("| {workflow} | {status} | {nominal_eligible_slots} | {schedule_runs_seen} | {succeeded} | {failed} | {minimum_missing_events} |".format(**x))
+        lines.append("| {workflow} | {status} | {nominal_eligible_slots} | {schedule_runs_seen} | {succeeded} | {failed} | {cancelled} | {queued_or_in_progress} | {minimum_missing_events} | {max_observed_run_start_delay_minutes} |".format(**x))
     lines+=["",result["caution"]]
     (p/"scheduler_audit.md").write_text("\n".join(lines)+"\n",encoding="utf-8")
 
