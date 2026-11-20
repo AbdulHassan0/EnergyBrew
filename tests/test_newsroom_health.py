@@ -100,8 +100,37 @@ class NewsroomHealthTests(unittest.TestCase):
                             "potential_sampling_gap":False},now=NOW)
         self.assertTrue(x["rolling_gal_recent_healthy"])
         self.assertEqual(x["rolling_gal_status"],"ok")
-        self.assertTrue(any("GAL backup is healthy" in w for w in x["warnings"]))
+        self.assertTrue(any("recent GAL poll does not establish continuous coverage" in w
+                            for w in x["warnings"]))
+        self.assertFalse(x["rolling_gal_24h_continuity_adequate"])
         self.assertEqual(x["status"],"degraded")
+
+    def test_one_recent_gal_sample_does_not_claim_24h_continuity(self):
+        state={"articles":[rss_record(i,REQUIRED_BEATS[i%len(REQUIRED_BEATS)])
+                           for i in range(12)]}
+        gal={"status":"ok","run_utc":NOW.isoformat(),"potential_sampling_gap":False}
+        discovery={"leads":[discovery_lead(1)],
+                   "gal_runs":[{"run_utc":NOW.isoformat(),"completed_utc":NOW.isoformat(),
+                                "status":"ok","feed_payload_sha256":"one-sample"}]}
+        h=audit(state,rss_report(),discovery,broad_discovery(),
+                gal_report=gal,now=NOW)
+        self.assertTrue(h["rolling_gal_recent_healthy"])
+        self.assertFalse(h["rolling_gal_24h_continuity_adequate"])
+        self.assertLess(h["rolling_gal_24h_coverage_upper_bound_pct"],2)
+        self.assertGreater(h["rolling_gal_24h_unobserved_minutes_at_least"],1400)
+        self.assertEqual(h["status"],"degraded")
+        self.assertTrue(any("sampling continuity weak" in w for w in h["warnings"]))
+
+    def test_repeated_identical_gal_payload_does_not_inflate_health(self):
+        state={"articles":[rss_record(i,REQUIRED_BEATS[i%len(REQUIRED_BEATS)])
+                           for i in range(12)]}
+        runs=[{"run_utc":(NOW-timedelta(minutes=10*i)).isoformat(),
+               "status":"ok","feed_payload_sha256":"same-bytes"} for i in range(6)]
+        h=audit(state,rss_report(),{"leads":[discovery_lead(1)],"gal_runs":runs},
+                broad_discovery(),gal_report={"status":"ok","run_utc":NOW.isoformat()},
+                now=NOW)
+        self.assertLess(h["rolling_gal_24h_coverage_upper_bound_pct"],2)
+        self.assertEqual(h["status"],"degraded")
 
     def test_missing_gal_sample_is_reported_when_run_data_present(self):
         x=audit({"articles":[]},rss_report(),{"leads":[]},broad_discovery(),
