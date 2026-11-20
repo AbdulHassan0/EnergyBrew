@@ -13,7 +13,6 @@ from collector import SOURCES, SOURCE_FALLBACKS, clean_url
 from discovery import API as GDELT_DOC_URL
 from gal import FEED_URL as GDELT_GAL_URL
 from press_releases import URL as PRESS_FEED_URL
-from ferc_news import INDEX_URL as FERC_NEWS_INDEX
 
 # Explicit stop-list for sites with published commercial redistribution/storage
 # restrictions. Probe-only connectivity testing does not confer permission.
@@ -24,7 +23,7 @@ RIGHTS_BLOCKED_DIRECT_FEED_HOSTS = frozenset({
 
 PUBLIC_FEED_HOSTS = frozenset({
     "www.eia.gov", "www.energy.gov", "www.nrc.gov", "energy.ec.europa.eu",
-    "www.federalregister.gov", "www.ferc.gov",
+    "www.federalregister.gov",
     "www.offshore-energy.biz", "oilprice.com", "www.utilitydive.com",
     "insidelines.pjm.com",
 })
@@ -44,7 +43,7 @@ class SafetyError(ValueError):
 def ensure_sources_public() -> None:
     source_urls = [url for _, url in SOURCES]
     source_urls.extend(SOURCE_FALLBACKS.values())
-    source_urls.extend([GDELT_DOC_URL, GDELT_GAL_URL, PRESS_FEED_URL, FERC_NEWS_INDEX])
+    source_urls.extend([GDELT_DOC_URL, GDELT_GAL_URL, PRESS_FEED_URL])
     for uri in source_urls:
         parsed = urlsplit(uri)
         if parsed.scheme != "https" or parsed.username or parsed.password:
