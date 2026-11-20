@@ -9,6 +9,7 @@ import json
 from collections import Counter
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from coverage_windows import estimate_sampling_coverage
 
 
 REQUIRED_BEATS = (
@@ -103,6 +104,14 @@ def audit(rss_state, rss_report, discovery_state=None, discovery_report=None, *,
     last_gal = dt(gal_report.get("run_utc"))
     gal_recent_ok = bool(last_gal and now-last_gal <= timedelta(minutes=25)
                          and gal_report.get("status") == "ok")
+    runs = discovery_state.get("gal_runs")
+    gal_coverage = (estimate_sampling_coverage(runs, now=now, hours=24)
+                    if isinstance(runs, list) and runs else None)
+    gal_coverage_pct = (gal_coverage["potential_coverage_upper_bound_pct"]
+                        if gal_coverage else None)
+    # A healthy latest poll does not repair hours of missed rolling windows.
+    gal_continuity_adequate = bool(gal_coverage_pct is not None
+                                  and gal_coverage_pct >= 75.0)
     connected = int(rss_report.get("feeds_connected",0) or 0)
     checked = int(rss_report.get("feeds_checked",0) or 0)
     warnings=[]
@@ -129,14 +138,23 @@ def audit(rss_state, rss_report, discovery_state=None, discovery_report=None, *,
     elif now-last_discovery > timedelta(hours=MAX_RUN_AGE_HOURS):
         warnings.append("Global discovery report is older than 12h")
     elif discovery_report.get("status") not in ("ok","attempted"):
-        if gal_recent_ok:
-            warnings.append("GDELT DOC query API is degraded or rate limited; rolling GAL backup is healthy")
+        if gal_recent_ok and gal_continuity_adequate:
+            warnings.append("GDELT DOC query API is degraded or rate limited; rolling GAL backup is recently successful with measured continuity")
+        elif gal_recent_ok:
+            warnings.append("GDELT DOC query API is degraded or rate limited; recent GAL poll does not establish continuous coverage")
         else:
             warnings.append("Global discovery is degraded or rate limited")
     if gal_report and not gal_recent_ok:
         warnings.append("Rolling GDELT GAL sample failed or is older than 25 minutes")
     if gal_report.get("potential_sampling_gap"):
         warnings.append("A missed rolling GAL sample interval was observed")
+    if gal_coverage and not gal_continuity_adequate:
+        warnings.append(
+            f"Rolling GAL 24h sampling continuity weak: at most {gal_coverage_pct}% "
+            f"of windows potentially sampled; at least "
+            f"{gal_coverage['unobserved_minutes_at_least']} minutes unobserved")
+    elif gal_report and not gal_coverage:
+        warnings.append("Rolling GAL sampling continuity is unmeasured; one recent poll is not 24h coverage")
     if not research_high:
         warnings.append("No high-signal global research leads first seen within 24h")
     if release_report and release_report.get("status")!="ok":
@@ -167,6 +185,12 @@ def audit(rss_state, rss_report, discovery_state=None, discovery_report=None, *,
         "rolling_gal_status":gal_report.get("status","not_run"),
         "rolling_gal_recent_healthy":gal_recent_ok,
         "rolling_gal_sampling_gap":bool(gal_report.get("potential_sampling_gap")),
+        "rolling_gal_24h_coverage_upper_bound_pct":gal_coverage_pct,
+        "rolling_gal_24h_unobserved_minutes_at_least":(
+            gal_coverage["unobserved_minutes_at_least"] if gal_coverage else None),
+        "rolling_gal_24h_longest_unobserved_minutes":(
+            gal_coverage["longest_unobserved_minutes"] if gal_coverage else None),
+        "rolling_gal_24h_continuity_adequate":gal_continuity_adequate,
         "discovery_latest_status":discovery_report.get("status","not_run"),
         "discovery_latest_run_utc":discovery_report.get("run_utc"),
         "critical":critical,
@@ -202,7 +226,8 @@ def report(rss_state_path, rss_report_path, discovery_state_path, discovery_repo
            "GDELT publisher-verified times: **0** (requires a separate check)",
            f"Company/newswire release leads (last 24h feed date): **{result['company_announcement_links_24h']}**",
            f"Company release provider status: **{result['company_announcement_feed_status']}**",
-           f"Rolling GAL fallback status: **{result['rolling_gal_status']}** (recent and healthy: {result['rolling_gal_recent_healthy']})",
+           f"Rolling GAL latest sample: **{result['rolling_gal_status']}** (recent success: {result['rolling_gal_recent_healthy']})",
+           f"Rolling GAL 24h potential sampling coverage upper bound: **{result['rolling_gal_24h_coverage_upper_bound_pct'] if result['rolling_gal_24h_coverage_upper_bound_pct'] is not None else 'unmeasured'}%**; continuity adequate: **{result['rolling_gal_24h_continuity_adequate']}**",
            "Company release publication times and issuer claims independently verified: **0**",
            "", "## Missing coverage"]
     lines += [f"- {b}: {result['observed_beat_counts_24h'][b]} verified-source editorial leads" for b in REQUIRED_BEATS]
