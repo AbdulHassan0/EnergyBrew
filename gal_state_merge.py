@@ -92,14 +92,14 @@ def merge(base: dict, sampled: dict, *, now: datetime | None = None) -> dict:
         quality = evaluate(row.get("title", ""))
         if (quality["relevance_score"] < 22 and
             row.get("discovery_provider") == "GDELT GAL RSS" and
-            "GDELT DOC 2.0" not in row.get("discovery_providers", [])):
+            "GDELT DOC 2.0" not in (row.get("discovery_providers") or [])):
             continue
         first = _timestamp(row, "gdelt_first_seen_utc")
         if first is not None and first < age_cutoff:
             continue
         records.append(row)
     records.sort(key=lambda row: (row.get("relevance_score", 0),
-                                  row.get("gdelt_first_seen_utc", "")), reverse=True)
+                                  (row.get("gdelt_first_seen_utc") or "")), reverse=True)
     merged["leads"] = records[:4000]
 
     # The sample run may have been fetched before other writers committed.
