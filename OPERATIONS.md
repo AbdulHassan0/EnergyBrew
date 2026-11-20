@@ -37,6 +37,12 @@ This is an operating pilot for public-source news metadata collection, **not** a
 
 **Do not add GDELT links or press release claims directly to a sent newsletter.** Editors must check the actual linked source, date, business impact, facts and usage rights.
 
+## Morning editorial cutoff handoff (06:30 Central)
+
+The 06:45 editorial preparation now calls `cutoff_desk.py` against the latest saved `articles.json`, `discovery.json`, and `press_releases.json` source history. This avoids trusting a ranked desk regenerated hours earlier. Only records with a **known local first-collection timestamp at or before 06:30 Central** can enter this morning queue. Records first collected later and legacy records without a local observation clock are excluded and counted; original publisher/source timestamps must also qualify within the morning's allowable date window. GDELT index timestamps remain unverified publisher dates. This is source-evidence filtering, not editorial fact checking.
+
+The generated `MORNING_CUTOFF_DESK.json` includes readiness blockers, source-category exclusions, and a research-only status. The older periodically generated desk remains available for broader ongoing research, but is no longer the source for compiling an edition's morning pilot. The 06:45 job may generate review material even when strict overnight availability checks block `ready_for_editor_review`; this never overrides approval and email-send controls.
+
 ## Reliability thresholds and incident response
 
 - If the primary collector's last successful scan is more than 12 hours old, open its Actions history. Inspect failing source rows and retry only after identifying the reason.
