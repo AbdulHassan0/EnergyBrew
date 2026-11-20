@@ -1,11 +1,11 @@
 {
-  "generated_utc": "2026-11-20T22:28:44.182581+00:00",
-  "commit_sha": "a4a909ea4999a2e1ebbb58670575d5eaf7ee050c",
-  "run_id": "44829255513",
-  "status": "passed",
+  "generated_utc": "2026-11-20T22:29:18.787146+00:00",
+  "commit_sha": "44dcac347013e97260e064e3a88fb9482ec56d9c",
+  "run_id": "44829324397",
+  "status": "failed",
   "steps": {
     "COMPILE_OUTCOME": "success",
-    "TESTS_OUTCOME": "success",
+    "TESTS_OUTCOME": "failure",
     "POLICY_OUTCOME": "success"
   },
   "network_source_polls": false,
