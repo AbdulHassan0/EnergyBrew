@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-11-20T02:57:40.679880+00:00",
-  "commit_sha": "2d6bb1f019e0729e80bbd9917770171e6278cbc1",
-  "run_id": "44664399345",
+  "generated_utc": "2026-11-20T02:58:05.506860+00:00",
+  "commit_sha": "c8ace641af47f82968e01495c49b62ade654f539",
+  "run_id": "44664431801",
   "status": "failed",
   "steps": {
     "COMPILE_OUTCOME": "success",
@@ -10,4 +10,4 @@
   },
   "network_source_polls": false,
   "warning": "Offline code tests only; not proof that publisher feeds are reachable."
-}\n
+}
