@@ -58,9 +58,9 @@ The generated `MORNING_CUTOFF_DESK.json` includes readiness blockers, source-cat
 ## Acceptance criteria for a seven-day live pilot
 
 - Seven consecutive days of hosted observations; the report must explicitly say `seven_day_pilot_complete = true`.
-- Review actual missed scheduled polls, measured GAL gaps, longest uncovered span, 24h and seven-day potential coverage upper bounds. The pilot is **not** complete while any seven-day window remains unobserved.
+- Review actual missed scheduled polls, measured GAL gaps, longest uncovered span, and 24h/seven-day potential coverage upper bounds. Apply explicit acceptance thresholds rather than claiming complete capture: any unobserved period remains disclosed, even if the pilot qualifies on a predefined coverage target.
 - Record source connectivity separately from fresh relevant publisher-timestamped articles; distinguish agency, grid-operator primary, specialist-publisher, GDELT-first-seen, and press-release claims.
-- Report by category: Natural Gas & LNG, Power & Electricity, Oil & Energy, Infrastructure & Investment.
+- Report all six separate beats: Natural Gas, LNG, Power & Electricity, Oil & Energy, Infrastructure & Investment, and Geopolitics. Keep a missing beat visibly missing rather than inventing coverage.
 - Calculate URL duplicates separately from possible repeated reporting of the same real event.
 - Examine false positives (school energy tips, promotional releases, tag pages, unrelated keyword collisions), false negatives and multilingual headline needs.
 - Target **15–25 distinct, useful daily editorial research stories**, but **never label GDELT index-first-seen links as original publisher-timestamped stories**.
@@ -75,6 +75,8 @@ State branch commits on every scan are a convenient pilot method, **not appropri
 ## Next commercial news-source expansion
 
 Specialist energy publishers (S&P Global Energy, NGI, RBN, Argus, Reuters, etc.) offer far better headline coverage than official newsrooms. However, being able to view or subscribe to an RSS feed is not a commercial right to poll or republish it. Obtain a feed/news/API license where required. Prefer metadata/original links, original summaries based on facts, and a record of usage rights and allowed retention.
+
+**Rights-gated November 19 candidates (NOT active feeds):** S&P Global Energy publicly lists RSS subscriptions for Natural Gas, LNG, and Electric Power, but its [website terms](https://www.spglobal.com/energy/en/overview/website-app-terms-of-use) describe personal, non-commercial use. Interfax Energy's [RSS page](https://interfaxenergy.com/rss-feeds) explicitly limits the free service to individual, non-commercial use. Neither is cleared for automated commercial EnergyBrew ingestion; do not silently add the endpoints to `collector.SOURCES`. A link or working XML response is not a commercial integration license. This research did not run an internet-connected feed availability or daily-volume test.
 
 ## Workflow notifications and failure triage — November 19, 2026
 
