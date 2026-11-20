@@ -1378,6 +1378,126 @@
     ]
   },
   {
+    "url": "https://www.military.com/ukraine-reports-russian-missile-blitz-after-putin-met-with-trump",
+    "title": "Ukraine Reports Russian Missile Blitz After Putin Met With Trump",
+    "domain": "www.military.com",
+    "gdelt_first_seen_utc": "2026-11-20T17:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:missile",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T17:50:49.788778+00:00"
+  },
+  {
+    "url": "https://www.naturalnews.com/2026-11-20-iran-attacks-kuwait-after-us-strike-qeshm-island.html",
+    "title": "Iran Attacks Kuwait, Bahrain After U.S. Strike on Qeshm Island, Officials Say \u2013 NaturalNews.com",
+    "domain": "www.naturalnews.com",
+    "gdelt_first_seen_utc": "2026-11-20T17:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attacks",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T17:50:49.788778+00:00"
+  },
+  {
+    "url": "https://www.military.com/us-defense-official-rebuked-by-nato-allies-after-remarks-ukraines-deep-strikes-in-russia",
+    "title": "Pentagon Policy Chief Says Ukraine's Deep Strikes on Russia Don't Work. Germany and Britain Push Back",
+    "domain": "www.military.com",
+    "gdelt_first_seen_utc": "2026-11-20T17:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strikes",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T17:50:49.788778+00:00"
+  },
+  {
+    "url": "https://www.theamericanconservative.com/iran-war-day-266-houthis-threaten-major-attacks-on-saudi-arabia",
+    "title": "Iran War Day 266: Houthis Threaten Major Attacks on Saudi Arabia",
+    "domain": "www.theamericanconservative.com",
+    "gdelt_first_seen_utc": "2026-11-20T17:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attacks",
+      "world_context:iran/saudi arabia"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T17:50:49.788778+00:00"
+  },
+  {
+    "url": "https://econotimes.com/Trump-Delays-Iran-Strike-Decision-as-Israeli-Media-Reports-Push-for-New-Operation-1780424",
+    "title": "Trump Delays Iran Strike Decision as Israeli Media Reports Push for New Operation | EconoTimes",
+    "domain": "econotimes.com",
+    "gdelt_first_seen_utc": "2026-11-20T17:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:iran/israel"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T17:50:49.788778+00:00"
+  },
+  {
     "url": "https://www.mitchellrepublic.com/news/national/congress-struggles-to-avert-us-shutdown-as-iran-war-divides-lawmakers",
     "title": "Congress struggles to avert US shutdown as Iran war divides lawmakers",
     "domain": "www.mitchellrepublic.com",
@@ -4379,6 +4499,29 @@
     "status": "discovery_only_requires_publisher_verification"
   },
   {
+    "url": "https://www.azernews.az/business/267805.html",
+    "title": "Azerbaijan's wind power generation surges 13-fold despite decline in overall electricity output",
+    "domain": "www.azernews.az",
+    "gdelt_first_seen_utc": "2026-11-20T17:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 60,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity",
+      "power generation"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T17:50:49.788778+00:00"
+  },
+  {
     "url": "https://peakoil.com/consumption/api-shows-substantial-crude-oil-gasoline-inventory-builds",
     "title": "API Shows Substantial Crude Oil, Gasoline Inventory Builds | Peak Oil News and Message Boards",
     "domain": "peakoil.com",
@@ -4592,6 +4735,50 @@
     "discovery_providers": [
       "GDELT GAL RSS"
     ]
+  },
+  {
+    "url": "https://www.businessincameroon.com/energy/2011-17236-golar-lng-records-cfa3-23-billion-in-employee-exit-costs-after-cameroon-operations-end",
+    "title": "Golar LNG Records CFA3.23 Billion in Employee Exit Costs After Cameroon Operations End - Business in Cameroon",
+    "domain": "www.businessincameroon.com",
+    "gdelt_first_seen_utc": "2026-11-20T17:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 45,
+    "category": "LNG",
+    "relevance_evidence": [
+      "lng"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T17:50:49.788778+00:00"
+  },
+  {
+    "url": "https://www.poslovni.hr/trzista/americki-izvoznici-lng-a-skloniji-dugorocnim-ugovorima-s-europom-4565171",
+    "title": "Ameri\u010dki izvoznici LNG-a skloniji dugoro\u010dnim ugovorima s Europom",
+    "domain": "www.poslovni.hr",
+    "gdelt_first_seen_utc": "2026-11-20T17:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 45,
+    "category": "LNG",
+    "relevance_evidence": [
+      "lng"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T17:50:49.788778+00:00"
   },
   {
     "url": "https://www.902.gr/eidisi/politiki/433401/synodos-ptec-sti-varsovia-stin-proothisi-toy-amerikanikoy-lng-pros-tin-eyropi",
@@ -5432,6 +5619,72 @@
       "gas storage"
     ],
     "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.kono1011.com/news/how-gas-prices-have/ZSYCNXXUTE5GJAW53T2EWEOD4Q",
+    "title": "How gas prices have changed in Texas in the last week",
+    "domain": "www.kono1011.com",
+    "gdelt_first_seen_utc": "2026-11-20T17:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T17:50:49.788778+00:00"
+  },
+  {
+    "url": "https://24-ore.com/anija-sizmike-ramform-tethys-mberrin-ne-jonin-jugor-chevron-dhe-helleniq-nisin-kerkimet-per-nafte-e-gaz-ne-ditet-ne-vijim",
+    "title": "Anija sizmike Ramform Tethys mb\u00ebrrin n\u00eb Jonin jugor, Chevron dhe HELLENiQ nisin k\u00ebrkimet p\u00ebr naft\u00eb e gaz n\u00eb dit\u00ebt n\u00eb vijim",
+    "domain": "24-ore.com",
+    "gdelt_first_seen_utc": "2026-11-20T17:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "chevron"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T17:50:49.788778+00:00"
+  },
+  {
+    "url": "https://us105fm.com/ixp/195/p/texas-gas-prices-1120",
+    "title": "Texas Gas Prices Just Took a Big Drop Right Before Thanksgiving Travel",
+    "domain": "us105fm.com",
+    "gdelt_first_seen_utc": "2026-11-20T17:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T17:50:49.788778+00:00"
   },
   {
     "url": "https://www.b985.com/news/how-gas-prices-have/TUGNVC7XQA5VVG4KEUUO5WYCMI",
@@ -7234,6 +7487,50 @@
       "gas supply"
     ],
     "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "http://www.vietnamtribune.com/news/279445376/konst-at-data-center-asia-in-kuala-lumpur-advancing-its-southeast-asia-token-factory-strategy-with-flagship-projects-in-cyberjaya-and-jakarta",
+    "title": "KONST at Data Center Asia in Kuala Lumpur: Advancing Its Southeast Asia Token Factory Strategy with Flagship Projects in Cyberjaya and Jakarta",
+    "domain": "www.vietnamtribune.com",
+    "gdelt_first_seen_utc": "2026-11-20T17:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T17:50:49.788778+00:00"
+  },
+  {
+    "url": "https://www.zazoom.it/2026-11-20/boom-di-data-center-per-seguire-la-corsa-allia-linflazione-nazionale-e-al-limite/19954917",
+    "title": "Boom di data center | per seguire la corsa all\u2019IA l\u2019inflazione nazionale \u00e8 al limite",
+    "domain": "www.zazoom.it",
+    "gdelt_first_seen_utc": "2026-11-20T17:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T17:50:49.788778+00:00"
   },
   {
     "url": "https://963xke.com/2026/11/20/103077",
