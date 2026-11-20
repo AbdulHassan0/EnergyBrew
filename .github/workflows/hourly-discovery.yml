@@ -43,10 +43,6 @@ jobs:
         id: sample
         continue-on-error: true
         run: python gal.py --state state/discovery.json --output output/gal
-      - name: Audit live coverage after the new sample
-        if: always()
-        run: |
-          python newsroom_health.py --rss-state state/articles.json --rss-run state/latest.json --discovery-state state/discovery.json --discovery-run state/discovery_latest.json --releases-state state/press_releases.json --releases-run state/releases_latest.json --output output/health
       - name: Report result
         if: always()
         run: |
@@ -55,13 +51,9 @@ jobs:
           else
             echo "No GAL report generated; check job logs" >> "$GITHUB_STEP_SUMMARY"
           fi
-          if test -s output/health/health.md; then
-            echo "" >> "$GITHUB_STEP_SUMMARY"
-            cat output/health/health.md >> "$GITHUB_STEP_SUMMARY"
-          fi
       - name: Verify public metadata before branch update
         id: metadata_guard
-        if: always()
+        if: always() && steps.sample.outcome != 'skipped'
         run: python public_collector_guard.py --sanitize-legacy --rss state/articles.json --discovery state/discovery.json --releases state/press_releases.json
       - name: Persist staggered GAL discovery history
         if: steps.metadata_guard.outcome == 'success'
@@ -89,10 +81,6 @@ jobs:
             cp "$GITHUB_WORKSPACE/output/gal/latest.md" state/gal_latest.md
             cp "$GITHUB_WORKSPACE/output/gal/leads_24h.json" state/research_leads_24h.json
             cp "$GITHUB_WORKSPACE/output/gal/leads_7d.json" state/research_leads_7d.json
-          fi
-          if test -s "$GITHUB_WORKSPACE/output/health/health.json"; then
-            cp "$GITHUB_WORKSPACE/output/health/health.json" state/health_latest.json
-            cp "$GITHUB_WORKSPACE/output/health/health.md" state/health_latest.md
           fi
           git config user.name "EnergyBrew discovery"
           git config user.email "energybrew-bot@users.noreply.github.com"
