@@ -80,13 +80,13 @@ class FercNewsTests(unittest.TestCase):
             saved=json.loads(state.read_text())
             self.assertEqual(len(saved["articles"]),2)
             self.assertEqual(saved["articles"][0],existing)
-            stored=next(x for x in saved["articles"] if x["source"]==SOURCE_NAME)
+            stored=next(x for x in saved["articles"] if x.get("source")==SOURCE_NAME)
             self.assertEqual(stored["first_collector_observed_utc"],NOW.isoformat())
             second=collect(state,Path(temp)/"out",
                            now=NOW+timedelta(minutes=10),fetcher=fetching)
             self.assertEqual(second["new_links"],0)
             again=json.loads(state.read_text())
-            self.assertEqual(next(x for x in again["articles"] if x["source"]==SOURCE_NAME)
+            self.assertEqual(next(x for x in again["articles"] if x.get("source")==SOURCE_NAME)
                              ["first_collector_observed_utc"],NOW.isoformat())
 
     def test_request_finishing_after_cutoff_is_not_credited_early(self):
