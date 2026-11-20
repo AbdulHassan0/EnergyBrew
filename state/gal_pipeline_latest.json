@@ -1,0 +1,14 @@
+{
+  "run_utc": "2026-11-20T22:31:21.653214+00:00",
+  "commit_sha": "dea8e99bd873a104a0a718d9aa70a0f4105978ef",
+  "run_id": "44829607585",
+  "network_poll": "success",
+  "serialized_merge_simulation": "success",
+  "source_status": "ok",
+  "sample_completed_utc": "2026-11-20T22:31:20.111652+00:00",
+  "raw_feed_items": 3954,
+  "high_signal_items": 24,
+  "status": "passed",
+  "no_shared_state_commits": true,
+  "warning": "One successful poll is not evidence of complete 24-hour coverage."
+}
