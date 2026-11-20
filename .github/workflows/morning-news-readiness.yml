@@ -6,9 +6,8 @@ on:
     - cron: "38 11,12 * * *" # 06:38 Chicago final, DST-aware local gate
 permissions:
   contents: read
-concurrency:
-  group: energybrew-live-collector
-  cancel-in-progress: false
+# Read-only research can safely fetch the last committed source snapshot
+# without holding the writer lock or delaying rapid GAL sampling.
 jobs:
   research-only:
     runs-on: ubuntu-latest
