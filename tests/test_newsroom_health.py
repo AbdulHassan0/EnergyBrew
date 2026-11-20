@@ -174,6 +174,31 @@ class NewsroomHealthTests(unittest.TestCase):
         self.assertEqual(x["status"],"degraded")
         self.assertTrue(any("announcement feed" in w for w in x["warnings"]))
 
+    def test_ferc_date_only_source_is_visible_but_not_in_timed_rss_counts(self):
+        state={"articles":[{
+            "url":"https://www.ferc.gov/news-events/news/ferc-gas-infrastructure",
+            "title":"FERC approves major gas infrastructure facilities",
+            "source":"FERC News Releases","published_precision":"day",
+            "published_utc":"2026-11-18T00:00:00+00:00",
+            "first_collector_observed_utc":NOW.isoformat(),
+            "editorial_candidate":False}]}
+        h=audit(state,rss_report(),{"leads":[]},broad_discovery(),
+                ferc_report={"status":"ok","run_utc":NOW.isoformat()},now=NOW)
+        self.assertEqual(h["ferc_news_status"],"ok")
+        self.assertEqual(h["ferc_news_day_only_links_retained"],1)
+        self.assertEqual(h["ferc_news_day_only_links_first_collected_24h"],1)
+        self.assertEqual(h["timestamped_editorial_leads_24h"],0)
+
+    def test_ferc_outage_degrades_health_without_erasing_other_leads(self):
+        state={"articles":[rss_record(i,REQUIRED_BEATS[i%len(REQUIRED_BEATS)])
+                           for i in range(12)]}
+        h=audit(state,rss_report(),{"leads":[discovery_lead(1)]},
+                broad_discovery(),ferc_report={"status":"degraded"},
+                now=NOW)
+        self.assertEqual(h["status"],"degraded")
+        self.assertEqual(h["timestamped_editorial_leads_24h"],12)
+        self.assertTrue(any("FERC primary newsroom" in w for w in h["warnings"]))
+
     def test_persists_report_even_when_critical(self):
         with tempfile.TemporaryDirectory() as d:
             out=Path(d)/"out"
