@@ -1,0 +1,13 @@
+{
+  "generated_utc": "2026-11-20T02:57:40.679880+00:00",
+  "commit_sha": "2d6bb1f019e0729e80bbd9917770171e6278cbc1",
+  "run_id": "44664399345",
+  "status": "failed",
+  "steps": {
+    "COMPILE_OUTCOME": "success",
+    "TESTS_OUTCOME": "failure",
+    "POLICY_OUTCOME": "success"
+  },
+  "network_source_polls": false,
+  "warning": "Offline code tests only; not proof that publisher feeds are reachable."
+}\n
