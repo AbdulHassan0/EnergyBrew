@@ -127,6 +127,53 @@ class MorningTests(unittest.TestCase):
         self.assertIn("FERC News Releases",
                       {x["source"] for x in result["background_context"]})
 
+    def test_material_federal_register_pipeline_notice_reaches_morning_queue(self):
+        a,b,c=fixtures()
+        notice={
+            "url":"https://www.federalregister.gov/documents/2026/11/18/2026-23442/pipeline-assessment",
+            "title":"Natural Gas Pipeline of America, LLC; Notice of Environmental Assessment for the North Extension Project",
+            "source":"Federal Register notices",
+            "source_class":"official_agency",
+            "published_precision":"day",
+            "published_utc":"2026-11-18T00:00:00+00:00",
+            "first_collector_observed_utc":time_str(-14*60)}
+        a["articles"].append(notice)
+        result=prepare(a,b,c,now=NOW)
+        found=next(x for x in result["research_desk"]["stories"]
+                   if x["url"]==notice["url"])
+        self.assertEqual(found["time_basis"],"official_publication_date_only")
+        self.assertFalse(found["publisher_time_verified"])
+        self.assertEqual(found["morning_time_bucket"],
+                         "date_only_prior_day_observed_since_previous_cutoff")
+
+    def test_regulatory_paperwork_not_promoted_to_morning_lead(self):
+        a,b,c=fixtures()
+        notice={
+            "url":"https://www.federalregister.gov/documents/2026/11/18/2026-23443/form-request",
+            "title":"Natural Gas Pipeline Information Collection Activities; Comment Request; Extension",
+            "source":"Federal Register notices",
+            "published_precision":"day",
+            "published_utc":"2026-11-18T00:00:00+00:00",
+            "first_collector_observed_utc":time_str(-14*60)}
+        a["articles"].append(notice)
+        result=prepare(a,b,c,now=NOW)
+        self.assertNotIn(notice["url"],
+                         {x["url"] for x in result["research_desk"]["stories"]})
+
+    def test_late_collected_material_notice_cannot_rewrite_morning_history(self):
+        a,b,c=fixtures()
+        notice={
+            "url":"https://www.federalregister.gov/documents/2026/11/18/2026-23442/late-pipeline",
+            "title":"Northwest Pipeline Notice of Environmental Assessment Project",
+            "source":"Federal Register notices",
+            "published_precision":"day",
+            "published_utc":"2026-11-18T00:00:00+00:00",
+            "first_collector_observed_utc":time_str(+2)}
+        a["articles"].append(notice)
+        result=prepare(a,b,c,now=NOW)
+        self.assertNotIn(notice["url"],
+                         {x["url"] for x in result["research_desk"]["stories"]})
+
     def test_older_publisher_dated_article_first_seen_after_cutoff_is_excluded(self):
         a,b,c=fixtures()
         a["articles"].append({
