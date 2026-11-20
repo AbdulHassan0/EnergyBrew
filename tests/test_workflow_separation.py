@@ -44,6 +44,18 @@ class WorkflowSeparationTests(unittest.TestCase):
         self.assertNotIn("group: energybrew-live-collector",readonly)
         self.assertNotIn("git push origin HEAD:collector-state",readonly)
 
+    def test_blocked_ferc_html_endpoint_is_not_automatically_polled(self):
+        for filename in ("live-collector.yml","precutoff-rss.yml"):
+            with self.subTest(filename=filename):
+                flow=workflow(filename)
+                self.assertNotIn("python ferc_news.py",flow)
+                self.assertIn("python collector.py --state state/articles.json",flow)
+        probe=workflow("ferc-source-smoke.yml")
+        self.assertIn("workflow_dispatch:",probe)
+        self.assertNotIn("\n  push:",probe)
+        from public_collector_guard import PUBLIC_FEED_HOSTS
+        self.assertNotIn("www.ferc.gov",PUBLIC_FEED_HOSTS)
+
     def test_precutoff_scan_does_not_waste_narrow_window_on_tests(self):
         flow=workflow("precutoff-rss.yml")
         self.assertNotIn("python -m unittest",flow)
