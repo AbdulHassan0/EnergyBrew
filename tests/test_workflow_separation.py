@@ -43,13 +43,30 @@ class WorkflowSeparationTests(unittest.TestCase):
         self.assertIn("if: success() && steps.metadata_guard.outcome == 'success'",s)
         self.assertIn("No successful live RSS response",s)
 
-    def test_free_collection_paths_publish_gap_diagnostics_without_email(self):
-        for path in ("live-collector.yml","frequent-gal.yml"):
-            s=workflow(path)
-            self.assertIn("python source_gap_audit.py --",s)
-            self.assertIn("state/source_gap_latest.json",s)
-            self.assertNotIn("newsletter_delivery.py",s)
-            self.assertIn("public_collector_guard.py",s)
+    def test_full_collector_owns_heavy_gap_diagnostics(self):
+        full=workflow("live-collector.yml")
+        self.assertIn("python source_gap_audit.py --",full)
+        self.assertIn("python ops_metrics.py --",full)
+        self.assertIn("state/source_gap_latest.json",full)
+        for path in ("live-collector.yml","frequent-gal.yml","hourly-discovery.yml"):
+            self.assertNotIn("newsletter_delivery.py",workflow(path))
+            self.assertIn("public_collector_guard.py",workflow(path))
+
+    def test_frequent_gal_sampling_has_no_heavy_reporting_before_persistence(self):
+        for name in ("frequent-gal.yml","hourly-discovery.yml"):
+            with self.subTest(name=name):
+                yml=workflow(name)
+                self.assertIn("python gal.py --state state/discovery.json",yml)
+                self.assertIn("git push origin HEAD:collector-state",yml)
+                self.assertNotIn("python research_desk.py",yml)
+                self.assertNotIn("python ops_metrics.py",yml)
+                self.assertNotIn("python source_gap_audit.py",yml)
+                self.assertNotIn("python newsroom_health.py",yml)
+                self.assertLess(yml.index("python gal.py --state state/discovery.json"),
+                                yml.index("public_collector_guard.py --sanitize-legacy"))
+                self.assertLess(yml.index("public_collector_guard.py --sanitize-legacy"),
+                                yml.index("git push origin HEAD:collector-state"))
+                self.assertIn("steps.metadata_guard.outcome == 'success'",yml)
 
     def test_final_morning_preparation_never_polls_after_cutoff(self):
         s=workflow("morning-news-readiness.yml")
