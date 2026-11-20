@@ -1,5 +1,5 @@
 {
-  "run_utc": "2026-11-20T23:24:42.410731+00:00",
+  "run_utc": "2026-11-20T23:24:42.809882+00:00",
   "provider": "GDELT GAL RSS",
   "minutes_since_previous_sample": null,
   "potential_sampling_gap": false,
@@ -25,6 +25,6 @@
   "upstream_stale": false,
   "identical_payload_to_previous_success": false,
   "http_status": 200,
-  "completed_utc": "2026-11-20T23:24:49.054436+00:00",
+  "completed_utc": "2026-11-20T23:24:49.587827+00:00",
   "combined_research_leads_24h": 16
 }

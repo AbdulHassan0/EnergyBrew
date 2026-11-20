@@ -1,6 +1,6 @@
 # GDELT Global Article List — sampled backup
 
-Run: 2026-11-20T23:24:42.410731+00:00
+Run: 2026-11-20T23:24:42.809882+00:00
 Status: **ok**
 RSS entries examined: **3383**
 Latest GDELT index timestamp: **2026-11-20T23:17:00+00:00**

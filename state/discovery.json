@@ -46,7 +46,10 @@
         "world_context:india"
       ],
       "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00"
+      "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.cubaheadlines.com/articles/346235",
@@ -70,7 +73,10 @@
         "world_context:u.s."
       ],
       "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00"
+      "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-sanctions-iranian-oil-trustees-it-accuses-evading-sanctions",
@@ -94,7 +100,10 @@
         "world_context:iranian"
       ],
       "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00"
+      "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.altoonamirror.com/news/local-business/2026/11/iea-report-iranwar-energyshock-reshaping-how-world-powers-itself",
@@ -1471,7 +1480,10 @@
         "natural gas"
       ],
       "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00"
+      "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.fool.com/investing/2026/11/20/spacex-plans-to-spend-usd2-8-billion-on-gas-turbines-here-s-what-that-much-natural-gas-demand-means-for-pipeline-investors?source=iedfolrf0000001",
@@ -1542,7 +1554,10 @@
         "world_context:iran/united states"
       ],
       "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00"
+      "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.canberratimes.com.au/story/9395697/fears-growing-of-return-to-all-out-war-between-us-iran",
@@ -1566,7 +1581,10 @@
         "world_context:iran/united states"
       ],
       "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00"
+      "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.arabtimesonline.com/news/us-missile-strikes-outskirts-of-qeshm-island-in-southern-iran",
@@ -1590,7 +1608,10 @@
         "world_context:iran/united states"
       ],
       "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00"
+      "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.digbycourier.ca/russia-says-ukraine-fired-missiles-at-moscow-drone-strikes-in-crimea",
@@ -5043,7 +5064,10 @@
         "lng"
       ],
       "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00"
+      "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.manilatimes.net/2026/11/21/tmt-newswire/globenewswire/dynagas-lng-partners-lp-reports-results-for-the-three-and-nine-months-ended-september-30-2026/2475317",
@@ -5993,7 +6017,10 @@
         "wti"
       ],
       "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00"
+      "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.tnp.no/norway/economy/5108-sharp-fall-in-oil-prices-continues-to-affect-norway",
@@ -6015,7 +6042,10 @@
         "oil prices"
       ],
       "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00"
+      "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.oedigital.com/news/544508-chevron-vessel-begins-gas-survey-offshore-greece",
@@ -7927,7 +7957,10 @@
         "data center"
       ],
       "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00"
+      "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.mv-voice.com/technology/2026/11/20/nasa-ames-moffett-field-data-center",
@@ -7949,7 +7982,10 @@
         "data center"
       ],
       "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00"
+      "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://it.blastingnews.com/tecnologia/2026/11/trump-data-center-allestero-per-i-big-tech-arriveranno-tasse-pesanti-004208897.html",
@@ -7971,7 +8007,10 @@
         "data center"
       ],
       "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00"
+      "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://cedarnews.net/newstasks/1172805/appeals-court-upholds-shreveport-data-center-permit",
@@ -10799,7 +10838,10 @@
         "bpd"
       ],
       "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00"
+      "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.popularmechanics.com/home/g62047915/best-smart-thermostats",
@@ -10821,7 +10863,10 @@
         "energy bills"
       ],
       "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00"
+      "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.thebatavian.com/brianquinn/alabama-battery-energy-storage-law-taking-shape/649994",
@@ -12189,7 +12234,10 @@
         "renewables"
       ],
       "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00"
+      "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://www.homelandsecuritynewswire.com/dr20261120-how-insider-threats-reshape-cybersecurity-risks-in-power-grids",
@@ -14147,6 +14195,18 @@
     {
       "run_utc": "2026-11-20T23:24:42.410731+00:00",
       "completed_utc": "2026-11-20T23:24:49.054436+00:00",
+      "status": "ok",
+      "raw_feed_items": 3383,
+      "high_signal_items": 16,
+      "new_unique_links": 16,
+      "feed_newest_index_utc": "2026-11-20T23:17:00+00:00",
+      "feed_index_lag_minutes": 7.7,
+      "feed_payload_sha256": "6d45285bb56846a0",
+      "identical_payload_to_previous_success": false
+    },
+    {
+      "run_utc": "2026-11-20T23:24:42.809882+00:00",
+      "completed_utc": "2026-11-20T23:24:49.587827+00:00",
       "status": "ok",
       "raw_feed_items": 3383,
       "high_signal_items": 16,
