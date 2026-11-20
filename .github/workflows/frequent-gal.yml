@@ -82,35 +82,7 @@ jobs:
           test -s snapshot/state/discovery.json
           test -s snapshot/output/gal/latest.json
           python gal_state_merge.py --base state/discovery.json --sample snapshot/state/discovery.json --output state/discovery.json
-          python - <<'PY'
-          import json
-          from pathlib import Path
-          from research_desk import as_time
-          import shutil
-          old=Path("state/gal_latest.json")
-          new=Path("snapshot/output/gal/latest.json")
-          fresh=json.loads(new.read_text(encoding="utf-8"))
-          older=json.loads(old.read_text(encoding="utf-8")) if old.exists() else {}
-          fresh_time=as_time(fresh.get("completed_utc") or fresh.get("run_utc"))
-          old_time=as_time(older.get("completed_utc") or older.get("run_utc"))
-          if fresh_time is None:
-              raise ValueError("GAL snapshot lacks completion-time evidence")
-          if old_time is None or fresh_time >= old_time:
-              for frm,to in (("latest.json","gal_latest.json"),
-                             ("latest.md","gal_latest.md")):
-                  src=Path("snapshot/output/gal")/frm
-                  if not src.is_file():
-                      raise FileNotFoundError(src)
-                  shutil.copyfile(src, Path("state")/to)
-          merged=json.loads(Path("state/discovery.json").read_text(encoding="utf-8"))
-          all_links=merged["leads"]
-          now=fresh_time
-          rows=[x for x in all_links if as_time(x.get("gdelt_first_seen_utc"))]
-          rows.sort(key=lambda x:x.get("gdelt_first_seen_utc",""),reverse=True)
-          Path("state/research_leads_7d.json").write_text(json.dumps(rows,indent=2)+"\n",encoding="utf-8")
-          recent=[x for x in rows if as_time(x.get("gdelt_first_seen_utc")) >= now.replace(hour=0,minute=0,second=0,microsecond=0)-__import__("datetime").timedelta(hours=24)]
-          Path("state/research_leads_24h.json").write_text(json.dumps(recent,indent=2)+"\n",encoding="utf-8")
-          PY
+          python gal_persist_report.py --merged state/discovery.json --sample-report snapshot/output/gal/latest.json --sample-dir snapshot/output/gal --previous-report state/gal_latest.json --output state
       - name: Enforce public-metadata policy on merged state before committing
         id: metadata_guard
         run: python public_collector_guard.py --sanitize-legacy --rss state/articles.json --discovery state/discovery.json --releases state/press_releases.json
