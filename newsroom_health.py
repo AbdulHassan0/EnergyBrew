@@ -227,7 +227,7 @@ def report(rss_state_path, rss_report_path, discovery_state_path, discovery_repo
            f"Company/newswire release leads (last 24h feed date): **{result['company_announcement_links_24h']}**",
            f"Company release provider status: **{result['company_announcement_feed_status']}**",
            f"Rolling GAL latest sample: **{result['rolling_gal_status']}** (recent success: {result['rolling_gal_recent_healthy']})",
-           f"Rolling GAL 24h potential sampling coverage upper bound: **{result['rolling_gal_24h_coverage_upper_bound_pct'] if result['rolling_gal_24h_coverage_upper_bound_pct'] is not None else 'unmeasured'}%**; continuity adequate: **{result['rolling_gal_24h_continuity_adequate']}**",
+           f"Rolling GAL 24h potential sampling coverage upper bound: **{str(result['rolling_gal_24h_coverage_upper_bound_pct']) + '%' if result['rolling_gal_24h_coverage_upper_bound_pct'] is not None else 'unmeasured'}**; continuity adequate: **{result['rolling_gal_24h_continuity_adequate']}**",
            "Company release publication times and issuer claims independently verified: **0**",
            "", "## Missing coverage"]
     lines += [f"- {b}: {result['observed_beat_counts_24h'][b]} verified-source editorial leads" for b in REQUIRED_BEATS]
