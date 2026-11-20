@@ -1,12 +1,12 @@
 {
-  "generated_utc": "2026-11-20T21:25:17.879868+00:00",
-  "commit_sha": "fc0b4f67b71364401845e8c7860bb7b8a5c661ba",
-  "run_id": "44820136289",
-  "status": "passed",
+  "generated_utc": "2026-11-20T21:25:33.882298+00:00",
+  "commit_sha": "d3348cbcdd0811175fcc65c6ae23e55ce69b131f",
+  "run_id": "44820170856",
+  "status": "failed",
   "steps": {
-    "COMPILE_OUTCOME": "success",
-    "TESTS_OUTCOME": "success",
-    "POLICY_OUTCOME": "success"
+    "COMPILE_OUTCOME": "skipped",
+    "TESTS_OUTCOME": "skipped",
+    "POLICY_OUTCOME": "skipped"
   },
   "network_source_polls": false,
   "warning": "Offline code tests only; not proof that publisher feeds are reachable."
