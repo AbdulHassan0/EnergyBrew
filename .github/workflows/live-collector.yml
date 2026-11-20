@@ -49,11 +49,6 @@ jobs:
         id: ingest
         continue-on-error: true
         run: python collector.py --state state/articles.json --output output/collector --hours 48
-      - name: Capture FERC primary newsroom titles and date-only release records
-        id: ferc
-        if: steps.ingest.outcome == 'success'
-        continue-on-error: true
-        run: python ferc_news.py --state state/articles.json --output output/ferc
       - name: Search broader global energy coverage (unverified leads only)
         id: discovery
         continue-on-error: true
@@ -93,10 +88,6 @@ jobs:
           else
             echo "Discovery report missing; no verified GDELT findings" >> "$GITHUB_STEP_SUMMARY"
           fi
-          echo "FERC newsroom index outcome: ${{ steps.ferc.outcome }} (day-only headlines, not publisher times)" >> "$GITHUB_STEP_SUMMARY"
-          if test -f output/ferc/latest.json; then
-            cat output/ferc/latest.json >> "$GITHUB_STEP_SUMMARY"
-          fi
           echo "GAL sampled-feed outcome: ${{ steps.gal.outcome }}" >> "$GITHUB_STEP_SUMMARY"
           if test -f output/gal/latest.md; then
             echo "" >> "$GITHUB_STEP_SUMMARY"
@@ -129,7 +120,6 @@ jobs:
           name: energybrew-news-${{ github.run_id }}-${{ github.run_attempt }}
           path: |
             output/collector/
-            output/ferc/
             output/discovery/
             output/health/
             output/gal/
@@ -160,9 +150,6 @@ jobs:
           fi
           mkdir -p state
           cp "$GITHUB_WORKSPACE/state/articles.json" state/articles.json
-          if test -f "$GITHUB_WORKSPACE/output/ferc/latest.json"; then
-            cp "$GITHUB_WORKSPACE/output/ferc/latest.json" state/ferc_latest.json
-          fi
           if test -f "$GITHUB_WORKSPACE/output/collector/latest.json"; then
             cp "$GITHUB_WORKSPACE/output/collector/latest.json" state/latest.json
             cp "$GITHUB_WORKSPACE/output/collector/latest.md" state/latest.md
@@ -226,7 +213,7 @@ jobs:
             git push origin HEAD:collector-state
           }
       - name: Explicitly report unrecovered collector component errors
-        if: always() && steps.metadata_guard.outcome == 'success' && (steps.ferc.outcome == 'failure' || steps.gal.outcome == 'failure' || steps.releasefeed.outcome == 'failure' || steps.discovery.outcome == 'failure')
+        if: always() && steps.metadata_guard.outcome == 'success' && (steps.gal.outcome == 'failure' || steps.releasefeed.outcome == 'failure' || steps.discovery.outcome == 'failure')
         run: |
           echo "A collection provider failed or its response was unparseable; retained history and diagnostics were preserved." >> "$GITHUB_STEP_SUMMARY"
           # The GDELT DOC provider may be rate-limited by design. A failed
