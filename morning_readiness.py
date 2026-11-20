@@ -207,15 +207,15 @@ def prepare(rss, discovery, releases, *, now=None, edition_date=None,
     def material_federal_register_notice(title):
         t = (title or "").lower()
         market_asset = re.search(
-            r"\\b(?:pipeline|natural gas|lng|liquefied natural gas|"
-            r"electric transmission|interstate transmission)\\b", t)
+            r"\b(?:pipeline|natural gas|lng|liquefied natural gas|"
+            r"electric transmission|interstate transmission)\b", t)
         market_action = re.search(
-            r"\\b(?:project|construction|capacity|certificat(?:e|ion)|"
+            r"\b(?:project|construction|capacity|certificat(?:e|ion)|"
             r"approval|authorization|environmental assessment|"
-            r"environmental impact statement|scoping|extension)\\b", t)
+            r"environmental impact statement|scoping|extension)\b", t)
         paperwork_only = re.search(
-            r"\\b(?:information collection|comment request|"
-            r"paperwork reduction|burden estimate)\\b", t)
+            r"\b(?:information collection|comment request|"
+            r"paperwork reduction|burden estimate)\b", t)
         return bool(market_asset and market_action and not paperwork_only)
 
     def observed_material_official_date_only(x):
