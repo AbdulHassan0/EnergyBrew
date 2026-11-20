@@ -10,6 +10,7 @@ import argparse
 import hashlib
 import json
 import os
+import re
 from datetime import date, datetime, time, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -199,21 +200,43 @@ def prepare(rss, discovery, releases, *, now=None, edition_date=None,
     previous_day = edition_local_day - timedelta(days=1)
     prior_cutoff = datetime.combine(previous_day, CUTOFF_LOCAL, tzinfo=tz).astimezone(timezone.utc)
     overnight_start = datetime.combine(previous_day, time(18,0), tzinfo=tz).astimezone(timezone.utc)
-    # FERC's newsroom provides official publication DAYS, not hours. A
-    # relevant release can still enter the next morning's RESEARCH queue if
-    # EnergyBrew demonstrably observed it after yesterday's cutoff and before
-    # today's cutoff. Never call that a timestamped publisher article.
-    def observed_ferc_release(x):
+    # Date-only agency records lack a reliable release CLOCK. But a
+    # high-impact Federal Register gas/pipeline action observed before 06:30
+    # is valuable source-linked RESEARCH for the next edition. Routine form
+    # notices and data collection renewals must not displace market news.
+    def material_federal_register_notice(title):
+        t = (title or "").lower()
+        market_asset = re.search(
+            r"\\b(?:pipeline|natural gas|lng|liquefied natural gas|"
+            r"electric transmission|interstate transmission)\\b", t)
+        market_action = re.search(
+            r"\\b(?:project|construction|capacity|certificat(?:e|ion)|"
+            r"approval|authorization|environmental assessment|"
+            r"environmental impact statement|scoping|extension)\\b", t)
+        paperwork_only = re.search(
+            r"\\b(?:information collection|comment request|"
+            r"paperwork reduction|burden estimate)\\b", t)
+        return bool(market_asset and market_action and not paperwork_only)
+
+    def observed_material_official_date_only(x):
         first = as_time(x.get("first_collector_observed_utc") or
                         x.get("first_collected_utc"))
-        return (x.get("source") == "FERC News Releases"
-                and x.get("published_precision") == "day"
-                and first is not None and prior_cutoff <= first <= observed_cutoff)
+        if x.get("published_precision") != "day" or first is None:
+            return False
+        if not prior_cutoff <= first <= observed_cutoff:
+            return False
+        return (
+            x.get("source") == "FERC News Releases"
+            or (
+                x.get("source") == "Federal Register notices"
+                and material_federal_register_notice(x.get("title", ""))
+            )
+        )
     fresh_rss = [
         x for x in rss_articles
         if (x.get("published_precision") != "day" and
             (record_time(x,"rss") or datetime.min.replace(tzinfo=timezone.utc)) >= prior_cutoff)
-        or observed_ferc_release(x)
+        or observed_material_official_date_only(x)
     ]
     fresh_discovery = [x for x in discovered if (record_time(x,"discovery") or datetime.min.replace(tzinfo=timezone.utc)) >= prior_cutoff]
     fresh_release = [x for x in released if (record_time(x,"release") or datetime.min.replace(tzinfo=timezone.utc)) >= prior_cutoff]
