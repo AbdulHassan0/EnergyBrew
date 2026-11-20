@@ -37,9 +37,8 @@ jobs:
           with open(os.environ["GITHUB_OUTPUT"],"a") as out:
               out.write("active="+("true" if active else "false")+"\n")
           PY
-      - name: Validate parser before network requests
-        if: ${{ steps.gate.outputs.active == 'true' }}
-        run: python -m unittest discover -s tests -p "test_collector.py" -q
+      # Offline collector tests run on main pushes in news-logic-ci.yml.
+      # Spend the 06:10-06:30 Central window on actual source collection.
       - name: Restore previously committed public research
         if: ${{ steps.gate.outputs.active == 'true' }}
         run: |
