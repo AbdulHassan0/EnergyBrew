@@ -1,0 +1,81 @@
+name: EnergyBrew GAL fetch-merge live smoke (NO SHARED STATE WRITES)
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/gal-pipeline-smoke.yml"
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Collect one real public GDELT GAL snapshot
+        id: gal
+        continue-on-error: true
+        run: python gal.py --state sample/discovery.json --output output/gal
+      - name: Merge with latest committed metadata, without writing shared state
+        id: merge
+        if: steps.gal.outcome == 'success'
+        continue-on-error: true
+        run: |
+          mkdir -p state
+          git fetch --no-tags origin collector-state
+          for name in discovery.json articles.json press_releases.json gal_latest.json; do
+            if git cat-file -e "FETCH_HEAD:state/$name" 2>/dev/null; then
+              git show "FETCH_HEAD:state/$name" > "state/$name"
+            fi
+          done
+          if test ! -s state/discovery.json; then
+            printf '{"leads":[],"gal_runs":[],"runs":[],"topics":{}}\n' > state/discovery.json
+          fi
+          python gal_state_merge.py --base state/discovery.json --sample sample/discovery.json --output state/discovery.json
+          python gal_persist_report.py --merged state/discovery.json --sample-report output/gal/latest.json --sample-dir output/gal --previous-report state/gal_latest.json --output state
+          python public_collector_guard.py --sanitize-legacy --rss state/articles.json --discovery state/discovery.json --releases state/press_releases.json
+      - name: Record validation evidence without retaining publisher text
+        if: always()
+        env:
+          GAL_OUTCOME: ${{ steps.gal.outcome }}
+          MERGE_OUTCOME: ${{ steps.merge.outcome }}
+        run: |
+          mkdir -p output/smoke
+          python - <<'PY'
+          import json,os
+          from datetime import datetime,timezone
+          from pathlib import Path
+          gal=Path("output/gal/latest.json")
+          summary=json.loads(gal.read_text()) if gal.exists() else {}
+          result={
+             "run_utc":datetime.now(timezone.utc).isoformat(),
+             "commit_sha":os.environ["GITHUB_SHA"],
+             "run_id":os.environ["GITHUB_RUN_ID"],
+             "network_poll":os.environ["GAL_OUTCOME"],
+             "serialized_merge_simulation":os.environ["MERGE_OUTCOME"],
+             "source_status":summary.get("status","unavailable"),
+             "sample_completed_utc":summary.get("completed_utc"),
+             "raw_feed_items":summary.get("raw_feed_items"),
+             "high_signal_items":summary.get("high_signal_items"),
+             "status":"passed" if os.environ["GAL_OUTCOME"]=="success"
+                                and os.environ["MERGE_OUTCOME"]=="success" else "failed",
+             "no_shared_state_commits":True,
+             "warning":"One successful poll is not evidence of complete 24-hour coverage.",
+          }
+          Path("output/smoke/gal_pipeline.json").write_text(
+              json.dumps(result,indent=2)+"\n")
+          print(json.dumps(result,indent=2))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: energybrew-gal-pipeline-smoke-${{ github.run_id }}
+          path: output/smoke/gal_pipeline.json
+          retention-days: 7
+      - name: Fail visibly on network, merge, or metadata-policy failure
+        if: steps.gal.outcome != 'success' || steps.merge.outcome != 'success'
+        run: exit 1
