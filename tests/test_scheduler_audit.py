@@ -59,6 +59,20 @@ class AuditTests(unittest.TestCase):
         self.assertEqual(first["max_observed_run_start_delay_minutes"],13)
         self.assertEqual(first["oldest_pending_run_minutes"],15)
 
+    def test_stalled_pending_runs_degrade_even_when_slots_filled(self):
+        full=[run(i) for i in range(142)]
+        full[3]["status"]="queued"
+        full[3]["conclusion"]=None
+        result=analyze(config(),{
+            "frequent-gal.yml":full,
+            "hourly-discovery.yml":[run(i) for i in range(142)]
+        },NOW)
+        primary=result["workflows"][0]
+        self.assertEqual(primary["run_count_ratio_upper_bound"],1)
+        self.assertEqual(primary["stalled_pending_runs"],1)
+        self.assertEqual(primary["status"],"degraded")
+        self.assertEqual(result["status"],"degraded")
+
     def test_write_public_diagnostics(self):
         with tempfile.TemporaryDirectory() as d:
             save(analyze(config(),{},NOW),d)
