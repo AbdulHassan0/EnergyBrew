@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "newsletter.py"
+      - "cutoff_desk.py"
       - "pilot_audit.py"
       - "brief_compiler.py"
       - "newsletter/briefs/**"
@@ -37,7 +38,9 @@ jobs:
           from zoneinfo import ZoneInfo
           now = datetime.now(ZoneInfo("America/Chicago"))
           active = now.hour == 6 and 40 <= now.minute < 55
-          print("run=" + ("yes" if os.environ.get("GITHUB_EVENT_NAME") in ("workflow_dispatch", "push") or active else "no"))
+          event = os.environ.get("GITHUB_EVENT_NAME")
+          post_cutoff = now.hour > 6 or (now.hour == 6 and now.minute >= 30)
+          print("run=" + ("yes" if active or (event in ("workflow_dispatch", "push") and post_cutoff) else "no"))
           PY
       - name: Run focused pilot editorial QA; complete suite runs on code pushes
         if: steps.window.outputs.run == 'yes'
@@ -50,7 +53,7 @@ jobs:
         run: |
           mkdir -p latest-state
           git fetch --no-tags origin collector-state
-          git show FETCH_HEAD:state/desk_latest.json > latest-state/cutoff_desk.json
+          # Build the edition desk from saved source history, not a stale ranked snapshot.
           # Audit against complete saved source history, not just a ranked
           # 32-story desk which may omit otherwise legitimate publisher links.
           for file in articles.json discovery.json press_releases.json; do
@@ -60,6 +63,7 @@ jobs:
         if: steps.window.outputs.run == 'yes'
         run: |
           python cutoff_desk.py --rss latest-state/articles.json --discovery latest-state/discovery.json --releases latest-state/press_releases.json --output latest-state/cutoff_desk.json --zone America/Chicago
+          mkdir -p output/newsletter
           cp latest-state/cutoff_desk.json output/newsletter/MORNING_CUTOFF_DESK.json
       - name: Make complete source-evidence packet for authoring future briefs
         if: steps.window.outputs.run == 'yes'
