@@ -45,6 +45,36 @@ The 06:45 editorial preparation now calls `cutoff_desk.py` against the latest sa
 
 The generated `MORNING_CUTOFF_DESK.json` includes readiness blockers, source-category exclusions, and a research-only status. The older periodically generated desk remains available for broader ongoing research, but is no longer the source for compiling an edition's morning pilot. The 06:45 job may generate review material even when strict overnight availability checks block `ready_for_editor_review`; this never overrides approval and email-send controls.
 
+## FERC source coverage gap and proven alternative — November 19, 2026
+
+**Blocked direct page:** The FERC official newsroom at
+`https://www.ferc.gov/news-events/news/news-releases-headlines` returned
+**HTTP 403** when requested from an internet-connected GitHub Actions runner
+on November 19 (run 44663876873). The optional parser lives in
+`ferc_news.py`, but direct scheduled FERC polling has been **disabled** in
+`live-collector.yml` and `precutoff-rss.yml`. The independent source probe
+is now manual-only. Do not evade FERC's site access controls, mislabel the
+experimental parser as connected, or claim that this important coverage gap
+has been closed. Official FERC releases, including major gas infrastructure
+announcements, are currently not guaranteed to be captured.
+
+**Existing working route:** The configured Federal Register notices RSS is
+an official, dated source covering many pipeline filings and regulatory
+actions. Substantive notices with known local pre-cutoff collection evidence
+can now enter the next morning **research** queue; form renewals and routine
+paperwork are held out. Its date-only record is never converted to a
+verified publisher release hour. This is a partial regulatory-coverage
+improvement, **not a replacement for the blocked FERC newsroom**. Acquire
+permission or an officially supported feed/API before re-enabling FERC.
+
+**CI evidence:** The `news-logic-ci.yml` workflow now persists its own
+machine-readable compile, Python test, and source-policy outcomes at
+`ci-evidence:state/news_logic_latest.json` (a branch separate from both
+application code and collected public news). A passing code suite does not
+prove scheduled polling, source access, a seven-day pilot, or newsletter
+readiness. Inspect the commit SHA and report timestamp before claiming
+verification.
+
 ## Reliability thresholds and incident response
 
 - If the primary collector's last successful scan is more than 12 hours old, open its Actions history. Inspect failing source rows and retry only after identifying the reason.
