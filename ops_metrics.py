@@ -188,6 +188,22 @@ def create(rss, discovery, releases=None, *, now=None):
             "age_hours":age_hours,"activity":activity,
             "last_successful_scan_utc":row.get("last_success_utc")
         })
+    # Poll health and publisher publication activity are separate dimensions.
+    stale_source_polls = []
+    for row in publication_activity:
+        last = as_time(row["last_successful_scan_utc"])
+        if last is None:
+            row["poll_status"] = "never_successfully_polled"
+        elif last > now + timedelta(minutes=5):
+            row["poll_status"] = "future_scan_timestamp"
+        elif now - last > timedelta(hours=MAX_RSS_AGE_HOURS):
+            row["poll_status"] = "stale_successful_poll"
+        else:
+            row["poll_status"] = "recent_successful_poll"
+        if row["poll_status"] != "recent_successful_poll":
+            stale_source_polls.append(row["source"])
+    if stale_source_polls:
+        warnings.append(f"{len(stale_source_polls)} individual RSS sources have missing, future or stale successful poll timestamps")
     publication_activity.sort(key=lambda x:(x["age_hours"] is not None,
                                              -(x["age_hours"] or 0), x["source"]))
     activity_counts=Counter(x["activity"] for x in publication_activity)
@@ -220,6 +236,7 @@ def create(rss, discovery, releases=None, *, now=None):
         "latest_rss_recovered_sources":recovered_sources,
         "feed_publication_activity":publication_activity,
         "feed_publication_activity_counts":dict(activity_counts),
+        "stale_source_polls":stale_source_polls,
         "official_failed_scans":len(r_runs)-len(successful_r_runs),
         "gal_sample_runs":len(g_runs),
         "gal_successful_samples":len(successful_g_runs),
@@ -251,6 +268,7 @@ def report(rss_path, discovery_path, releases_path, outdir, *, now=None):
            f"Seven-day pilot complete: **{r['seven_day_pilot_complete']}**",
            f"Observed history span: **{r['history_span_days']} days**",
            f"RSS scans: **{r['official_scan_runs']}** (above 80% feed quorum: {r['official_successful_scans']}, all feeds connected: {r['official_fully_connected_scans']}, below quorum: {r['official_failed_scans']})",
+           f"Sources with missing or stale successful polls: **{len(r['stale_source_polls'])}**",
            f"Sources whose newest publisher item is within seven days: **{r['feed_publication_activity_counts'].get('publication_within_7d',0)}** / {len(r['feed_publication_activity'])}",
             f"RSS transient retries in retained scan history: **{r['rss_transient_retries_8d']}**; recovered source events: **{r['rss_recovered_sources_8d']}**",
            f"GDELT GAL samples: **{r['gal_sample_runs']}** (successful: {r['gal_successful_samples']}, degraded: {r['gal_failed_samples']}, repeated payload fingerprints: {r['gal_repeated_feed_payloads']})",
@@ -267,10 +285,10 @@ def report(rss_path, discovery_path, releases_path, outdir, *, now=None):
     for x in r["daily"]:
         lines.append(f"| {x['date_utc']} | {x['official_scans']} | {x['gal_samples']} | {x['publisher_timestamped_official_links']} | {x['specialist_publisher_timestamped_links']} | {x['grid_operator_primary_timestamped_links']} | {x['high_signal_official_links']} | {x['gdelt_index_first_seen_urls']} | {x['press_release_feed_date_urls']} |")
     lines+=["","## Feed content age — independent of network connectivity","",
-            "| Feed | Most recent item in feed | Age (h) | Publication activity |",
-            "|---|---|---:|---|"]
+            "| Feed | Most recent item in feed | Age (h) | Publication activity | Poll status |",
+            "|---|---|---:|---|---|"]
     for source in r["feed_publication_activity"]:
-        lines.append(f"| {source['source']} | {source['newest_feed_published_utc'] or 'unknown'} | {source['age_hours'] if source['age_hours'] is not None else '-'} | {source['activity']} |")
+        lines.append(f"| {source['source']} | {source['newest_feed_published_utc'] or 'unknown'} | {source['age_hours'] if source['age_hours'] is not None else '-'} | {source['activity']} | {source['poll_status']} |")
     lines += ["", "Some regulator and testimony feeds are naturally intermittent; an old item does not imply collection failure.", ""]
     lines += ["", "## Sources recovered on latest RSS run"] + ([
         f"- {x['source']}: {x['last_transient_retry_count']} retries (attempts: {x['last_request_attempts']})"
