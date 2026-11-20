@@ -1,5 +1,29 @@
 [
   {
+    "url": "https://www.rte.ie/news/business/2026/1120/1599964-world-oil-prices",
+    "title": "Oil up as Houthi attacks on Riyadh raise supply concerns",
+    "domain": "www.rte.ie",
+    "gdelt_first_seen_utc": "2026-11-20T09:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:oil",
+      "geopolitical_event:attacks",
+      "world_context:houthi"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+  },
+  {
     "url": "https://www.livemint.com/market/us-sour-crude-s-war-premium-vanishes-as-supply-surges-11795121544365.html",
     "title": "US Sour Crude\u2019s War Premium Vanishes as Supply Surges | Stock Market News",
     "domain": "www.livemint.com",
@@ -1181,6 +1205,222 @@
     "discovery_providers": [
       "GDELT GAL RSS"
     ]
+  },
+  {
+    "url": "https://sputnikglobe.com/20261120/russia-forces-continues-strikes-against-infrastructure-used-by-ukrainian-forces-1125116799.html",
+    "title": "Russia Forces Continues Strikes Against Infrastructure Used by Ukrainian Forces",
+    "domain": "sputnikglobe.com",
+    "gdelt_first_seen_utc": "2026-11-20T09:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strikes",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+  },
+  {
+    "url": "https://home.nzcity.co.nz/news/article.aspx?id=458380&fm=psp%2Ctsf",
+    "title": "Ukraine's destruction of Crimean Bridge delivered major hit to Putin's influence and Russia's war effort - 20-Nov-2026",
+    "domain": "home.nzcity.co.nz",
+    "gdelt_first_seen_utc": "2026-11-20T09:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:war",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+  },
+  {
+    "url": "http://www.arabherald.com/news/279444572/we-will-settle-the-war-once-and-for-all-iran-tells-us-to-accept-its-terms-or-face-battlefield-decision",
+    "title": "\"We will settle the war once and for all\": Iran tells US to accept its terms or face battlefield decision",
+    "domain": "www.arabherald.com",
+    "gdelt_first_seen_utc": "2026-11-20T09:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:war",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+  },
+  {
+    "url": "https://home.nzcity.co.nz/news/article.aspx?id=458380&fm=psp%2Ctst",
+    "title": "Ukraine's destruction of Crimean Bridge delivered major hit to Putin's influence and Russia's war effort - 20-Nov-2026",
+    "domain": "home.nzcity.co.nz",
+    "gdelt_first_seen_utc": "2026-11-20T09:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:war",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+  },
+  {
+    "url": "https://www.kyivpost.com/post/90677",
+    "title": "Ukraine Targets Russian Explosives Supply Chain in Strike on Fertilizer Giant",
+    "domain": "www.kyivpost.com",
+    "gdelt_first_seen_utc": "2026-11-20T09:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+  },
+  {
+    "url": "https://aa.com.tr/en/americas/trump-questions-european-military-aid-to-ukraine-says-russia-ready-for-peace-talks-report/4131836",
+    "title": "Trump questions European military aid to Ukraine, says Russia ready for peace talks: Report",
+    "domain": "aa.com.tr",
+    "gdelt_first_seen_utc": "2026-11-20T09:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:military",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+  },
+  {
+    "url": "https://www.kyivpost.com/post/90676",
+    "title": "Poland Probes Possible Russian Airspace Breach as Ukrainian Regions Come Under Attack, 8 Killed Reported",
+    "domain": "www.kyivpost.com",
+    "gdelt_first_seen_utc": "2026-11-20T09:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+  },
+  {
+    "url": "https://www.bbc.co.uk/news/articles/c6x29gn4pdn9o",
+    "title": "Ukraine: Three Kyiv bridges hit during major Russian missile attack",
+    "domain": "www.bbc.co.uk",
+    "gdelt_first_seen_utc": "2026-11-20T09:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+  },
+  {
+    "url": "http://www.europesun.com/news/279444859/russia-pounds-military-targets-across-ukraine-mod",
+    "title": "Russia pounds military targets across Ukraine - MOD",
+    "domain": "www.europesun.com",
+    "gdelt_first_seen_utc": "2026-11-20T09:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:military",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
   },
   {
     "url": "https://www.breitbart.com/middle-east/2026/11/18/iran-fires-on-kuwait-after-u-s-self-defense-strike-on-iranian-island",
@@ -3964,6 +4204,28 @@
     ]
   },
   {
+    "url": "https://www.902.gr/eidisi/politiki/433401/synodos-ptec-sti-varsovia-stin-proothisi-toy-amerikanikoy-lng-pros-tin-eyropi",
+    "title": "\u03a3\u03cd\u03bd\u03bf\u03b4\u03bf\u03c2 P-TEC \u03a3\u03a4\u0397 \u0392\u03b1\u03c1\u03c3\u03bf\u03b2\u03af\u03b1: \u03a3\u03c4\u03b7\u03bd \u03c0\u03c1\u03bf\u03ce\u03b8\u03b7\u03c3\u03b7 \u03c4\u03bf\u03c5 \u03b1\u03bc\u03b5\u03c1\u03b9\u03ba\u03b1\u03bd\u03b9\u03ba\u03bf\u03cd LNG \u03c0\u03c1\u03bf\u03c2 \u03c4\u03b7\u03bd \u0395\u03c5\u03c1\u03ce\u03c0\u03b7 \u03c0\u03c1\u03c9\u03c4\u03b1\u03b3\u03c9\u03bd\u03b9\u03c3\u03c4\u03b5\u03af \u03b7 \u03b5\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ae \u03ba\u03c5\u03b2\u03ad\u03c1\u03bd\u03b7\u03c3\u03b7",
+    "domain": "www.902.gr",
+    "gdelt_first_seen_utc": "2026-11-20T09:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 45,
+    "category": "LNG",
+    "relevance_evidence": [
+      "lng"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+  },
+  {
     "url": "https://www.hellenicshippingnews.com/asia-lng-moc-performance-deliveries-conclude-for-record-volume-of-148-5-tbtu-during-august-moc",
     "title": "ASIA LNG MOC PERFORMANCE: Deliveries conclude for record volume of 148.5 TBtu during August MOC",
     "domain": "www.hellenicshippingnews.com",
@@ -4733,6 +4995,116 @@
       "gas storage"
     ],
     "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.trend.az/azerbaijan/4248672.html",
+    "title": "Azerbaijan's electricity exports to Iran rise 52.8% in January-September",
+    "domain": "www.trend.az",
+    "gdelt_first_seen_utc": "2026-11-20T09:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+  },
+  {
+    "url": "https://www.swissinfo.ch/eng/swiss-ai/data-centres-will-account-for-10-per-cent-of-switzerlands-electricity-consumption/92411117",
+    "title": "Data centres will need 10% of Swiss electricity by 20250",
+    "domain": "www.swissinfo.ch",
+    "gdelt_first_seen_utc": "2026-11-20T09:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+  },
+  {
+    "url": "https://www.voria.gr/article/eftase-seismografiko-skafos-ramform-tethys-sto-notio-ionio-xekinoyn-oi-ereynes-gia",
+    "title": "\u0391\u03c1\u03c7\u03af\u03b6\u03bf\u03c5\u03bd \u03bf\u03b9 \u03ad\u03c1\u03b5\u03c5\u03bd\u03b5\u03c2 Chevron-HELLENiQ \u03c3\u03c4\u03bf \u039d\u03cc\u03c4\u03b9\u03bf \u0399\u03cc\u03bd\u03b9\u03bf, \u03c3\u03c4\u03b7\u03bd \u0395\u03bb\u03bb\u03ac\u03b4\u03b1 \u03c4\u03bf \u03c3\u03b5\u03b9\u03c3\u03bc\u03bf\u03b3\u03c1\u03b1\u03c6\u03b9\u03ba\u03cc Ramform Tethys",
+    "domain": "www.voria.gr",
+    "gdelt_first_seen_utc": "2026-11-20T09:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "chevron"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+  },
+  {
+    "url": "https://www.inewsgr.com/35/xekinoun-oi-seismikes-erevnes-Chevron-HELLENiQ-ENERGY-sto-notio-ionio.htm",
+    "title": "\u039e\u03b5\u03ba\u03b9\u03bd\u03bf\u03cd\u03bd \u03bf\u03b9 \u03c3\u03b5\u03b9\u03c3\u03bc\u03b9\u03ba\u03ad\u03c2 \u03ad\u03c1\u03b5\u03c5\u03bd\u03b5\u03c2 Chevron-HELLENiQ ENERGY \u03c3\u03c4\u03bf \u039d\u03cc\u03c4\u03b9\u03bf \u0399\u03cc\u03bd\u03b9\u03bf",
+    "domain": "www.inewsgr.com",
+    "gdelt_first_seen_utc": "2026-11-20T09:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "chevron"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+  },
+  {
+    "url": "https://www.naftemporiki.gr/finance/economy/2191896/ydrogonanthrakes-xekinoyn-oi-seismikes-ereynes-chevron-helleniq-energy-sto-notio-ionio",
+    "title": "\u03a5\u03b4\u03c1\u03bf\u03b3\u03bf\u03bd\u03ac\u03bd\u03b8\u03c1\u03b1\u03ba\u03b5\u03c2: \u039e\u03b5\u03ba\u03b9\u03bd\u03bf\u03cd\u03bd \u03bf\u03b9 \u03c3\u03b5\u03b9\u03c3\u03bc\u03b9\u03ba\u03ad\u03c2 \u03ad\u03c1\u03b5\u03c5\u03bd\u03b5\u03c2 Chevron - HELLENiQ ENERGY \u03c3\u03c4\u03bf \u03bd\u03cc\u03c4\u03b9\u03bf \u0399\u03cc\u03bd\u03b9\u03bf",
+    "domain": "www.naftemporiki.gr",
+    "gdelt_first_seen_utc": "2026-11-20T09:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "chevron"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
   },
   {
     "url": "https://www.wabi.tv:443/2026/11/19/heating-oil-prices-maine-dip-third-consecutive-week",
@@ -6234,6 +6606,50 @@
       "gas supply"
     ],
     "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.trend.az/azerbaijan/4248739.html",
+    "title": "Azerbaijan helped Vietnam build its oil and gas industry - Trend's special correspondent (VIDEO)",
+    "domain": "www.trend.az",
+    "gdelt_first_seen_utc": "2026-11-20T09:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "oil and gas"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+  },
+  {
+    "url": "https://www.ilfattoquotidiano.it/2026/11/20/data-center-peru-reattori-nucleari-usa-notizie/8573672",
+    "title": "Gli Usa delocalizzano Data center in Per\u00f9: nucleare e terre rare",
+    "domain": "www.ilfattoquotidiano.it",
+    "gdelt_first_seen_utc": "2026-11-20T09:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
   },
   {
     "url": "http://northcountrynow.com/stories/packed-house-at-massena-town-board-as-akwesasne-mohawk-tribe-calls-for-data-center-moratorium,401332",
@@ -8836,6 +9252,160 @@
       "vistra"
     ],
     "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.deraktionaer.de/artikel/maerkte-forex-zinsen/dax-abverkauf-nimmt-fahrt-auf-siemens-energy-co-im-fokus-20447306.html",
+    "title": "DAX-Abverkauf nimmt Fahrt auf \u2013 Siemens Energy & Co im Fokus",
+    "domain": "www.deraktionaer.de",
+    "gdelt_first_seen_utc": "2026-11-20T09:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "siemens energy"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+  },
+  {
+    "url": "https://www.intelligencer.ca/press-releases/globe-newswire/sigenergy-earns-double-bloombergnef-tier-1-recognition-for-power-inverters-and-energy-storage-in-q4-2026",
+    "title": "Sigenergy Earns Double BloombergNEF Tier 1 Recognition for Power Inverters and Energy Storage in Q4 2026",
+    "domain": "www.intelligencer.ca",
+    "gdelt_first_seen_utc": "2026-11-20T09:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "energy storage"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+  },
+  {
+    "url": "https://www.derbytelegraph.co.uk/news/uk-world-news/andy-burnham-government-issues-energy-11248840",
+    "title": "Andy Burnham government issues energy bills scheme affecting 20 million homes",
+    "domain": "www.derbytelegraph.co.uk",
+    "gdelt_first_seen_utc": "2026-11-20T09:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "energy bills"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+  },
+  {
+    "url": "https://www.boersennews.de/markt/aktien/detail/de000ener6y0",
+    "title": "Siemens Energy Aktie \u2022 DE000ENER6Y0",
+    "domain": "www.boersennews.de",
+    "gdelt_first_seen_utc": "2026-11-20T09:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "siemens energy"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+  },
+  {
+    "url": "https://www.boerse-express.com/news/articles/siemens-energy-aktie-auftragsbuch-so-dick-wie-nie-964957",
+    "title": "Siemens Energy Aktie: Auftragsbuch so dick wie nie",
+    "domain": "www.boerse-express.com",
+    "gdelt_first_seen_utc": "2026-11-20T09:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "siemens energy"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+  },
+  {
+    "url": "https://www.deraktionaer.de/aktien/kurse/siemensenergyag-de000ener6y0.html",
+    "title": "Siemens Energy Aktie | ENER6Y | DE000ENER6Y0",
+    "domain": "www.deraktionaer.de",
+    "gdelt_first_seen_utc": "2026-11-20T09:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "siemens energy"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+  },
+  {
+    "url": "https://www.deraktionaer.de/artikel/mobilitaet-oel-energie/siemens-energy-ki-rutsch-aktie-wieder-auf-talfahrt-20447349.html",
+    "title": "Siemens Energy: KI-Rutsch \u2013 Aktie wieder auf Talfahrt",
+    "domain": "www.deraktionaer.de",
+    "gdelt_first_seen_utc": "2026-11-20T09:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "siemens energy"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
   },
   {
     "url": "https://avn.info.ve/presidenta-anuncia-que-produccion-petrolera-alcanza-1-269-000-bpd-y-economia-crece-742-en-tercer-trimestre",
