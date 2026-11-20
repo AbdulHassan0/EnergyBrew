@@ -56,6 +56,21 @@ class EventDedupTests(unittest.TestCase):
         b=item("Shell and Chevron announce natural gas supply expansion investment project", "https://b.test/b")
         self.assertFalse(same_event(a,b))
 
+    def test_signed_then_cancelled_lng_agreement_remain_two_events(self):
+        signed=item("Venture Global and China Gas signed LNG supply agreement", "https://a.test/signed")
+        cancelled=item("Venture Global and China Gas cancelled LNG supply agreement", "https://b.test/cancelled")
+        self.assertFalse(same_event(signed, cancelled))
+
+    def test_approved_then_revoked_energy_permit_remain_two_events(self):
+        approved=item("FERC approved major natural gas pipeline expansion project in Texas", "https://a.test/approved")
+        revoked=item("FERC revoked major natural gas pipeline expansion project in Texas", "https://b.test/revoked")
+        self.assertFalse(same_event(approved, revoked))
+
+    def test_two_reports_of_same_signed_deal_still_merge(self):
+        a=item("Venture Global and China Gas signed LNG supply agreement", "https://a.test/a")
+        b=item("China Gas and Venture Global signed LNG supply agreement", "https://b.test/b")
+        self.assertTrue(same_event(a, b))
+
     def test_markers(self):
         self.assertIn("venture global",entities("Venture Global shipping LNG"))
         self.assertEqual(family("Venture Global LNG supply agreement"),"lng_contract")
