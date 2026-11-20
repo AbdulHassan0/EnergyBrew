@@ -83,6 +83,18 @@ class GalStateMergeTests(unittest.TestCase):
         self.assertEqual(len(twice["gal_runs"]), 1)
         self.assertEqual(len(twice["leads"]), 1)
 
+    def test_legacy_nullable_index_fields_do_not_break_merge(self):
+        base={"leads":[{"url":"https://site.test/unverified","title":"LNG export",
+                        "gdelt_first_seen_utc":None,
+                        "discovery_provider":"GDELT GAL RSS",
+                        "discovery_providers":None}],
+              "gal_runs":[]}
+        sample={"leads":[lead("https://site.test/new",-2)],
+                "gal_runs":[run(-2,"new")]}
+        result=merge(base,sample,now=NOW)
+        self.assertTrue(any(x["url"]=="https://site.test/new"
+                            for x in result["leads"]))
+
     def test_corrupt_or_missing_data_fails_closed(self):
         with self.assertRaisesRegex(ValueError, "list of leads"):
             merge({}, {"leads": []}, now=NOW)
