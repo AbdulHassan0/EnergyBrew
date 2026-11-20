@@ -45,7 +45,9 @@ jobs:
         continue-on-error: true
         run: python -c "from public_collector_guard import ensure_sources_public; ensure_sources_public(); print('Source-policy configuration valid')"
       - name: Persist inspectable CI results separately from source history
-        if: always()
+        # A cancelled, superseded push may skip validation. Never let such
+        # a run replace the most recent genuine code test verdict.
+        if: always() && steps.compile.outcome != 'skipped' && steps.tests.outcome != 'skipped' && steps.source_policy.outcome != 'skipped'
         env:
           COMPILE_OUTCOME: ${{ steps.compile.outcome }}
           TESTS_OUTCOME: ${{ steps.tests.outcome }}
@@ -98,7 +100,7 @@ jobs:
           retention-days: 14
           if-no-files-found: warn
       - name: Report genuine code validation failure
-        if: steps.compile.outcome != 'success' || steps.tests.outcome != 'success' || steps.source_policy.outcome != 'success'
+        if: always() && !cancelled() && (steps.compile.outcome != 'success' || steps.tests.outcome != 'success' || steps.source_policy.outcome != 'success')
         run: exit 1
       - name: Distinguish code validation from live feed availability
         run: echo "No publisher feeds were polled by this CI workflow."
