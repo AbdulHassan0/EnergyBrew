@@ -25,7 +25,7 @@ MAX_BYTES = 2_000_000
 MONTHS = ("January", "February", "March", "April", "May", "June", "July",
           "August", "September", "October", "November", "December")
 DATE_PATTERN = re.compile(
-    r"\\b(" + "|".join(MONTHS) + r")\\s+(\\d{1,2}),?\\s+(20\\d{2})\\b",
+    r"\b(" + "|".join(MONTHS) + r")\s+(\d{1,2}),?\s+(20\d{2})\b",
     re.IGNORECASE,
 )
 REJECT_SLUGS = {"news-releases-headlines", "news", "headlines", "news-releases"}
