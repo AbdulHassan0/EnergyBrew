@@ -104,6 +104,18 @@ class WorkflowSeparationTests(unittest.TestCase):
         self.assertNotIn("newsletter_delivery.py",research)
         self.assertNotIn("newsletter_delivery.py",editorial)
 
+    def test_editorial_pipeline_rebuilds_cutoff_desk_from_source_history(self):
+        editorial=workflow("morning-editorial.yml")
+        self.assertIn("python cutoff_desk.py --rss latest-state/articles.json", editorial)
+        self.assertIn("latest-state/cutoff_desk.json", editorial)
+        self.assertIn("MORNING_CUTOFF_DESK.json", editorial)
+        self.assertNotIn("git show FETCH_HEAD:state/desk_latest.json", editorial)
+        self.assertNotIn("--desk latest-state/desk_latest.json", editorial)
+        self.assertIn("post_cutoff = now.hour > 6", editorial)
+        self.assertLess(editorial.index("python cutoff_desk.py --rss"),
+                        editorial.index("python newsletter.py prepare --desk"))
+        self.assertNotIn("newsletter_delivery.py", editorial)
+
     def test_pilot_editorial_action_renders_complete_email_without_sending(self):
         flow=workflow("morning-editorial.yml")
         self.assertIn("python pilot_audit.py --pilot",flow)
