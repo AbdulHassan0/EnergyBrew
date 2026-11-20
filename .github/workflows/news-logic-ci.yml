@@ -68,7 +68,7 @@ jobs:
               "warning":"Offline code tests only; not proof that publisher feeds are reachable."
           }
           Path("output/news-ci/latest.json").write_text(
-              json.dumps(data,indent=2)+"\\n",encoding="utf-8")
+              json.dumps(data,indent=2)+"\n",encoding="utf-8")
           print(json.dumps(data,indent=2))
           PY
           STATE_DIR="$RUNNER_TEMP/energybrew-ci-evidence"
