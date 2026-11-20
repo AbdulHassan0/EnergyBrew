@@ -35,6 +35,9 @@ class WorkflowSeparationTests(unittest.TestCase):
             with self.subTest(name=name):
                 flow=workflow(name)
                 self.assertIn("group: energybrew-live-collector",flow)
+                if name in ("frequent-gal.yml","hourly-discovery.yml"):
+                    self.assertNotIn("\nconcurrency:\n",flow)
+                    self.assertIn("    concurrency:\n      group: energybrew-live-collector",flow)
                 self.assertIn("cancel-in-progress: false",flow)
                 self.assertIn("queue: max",flow)
                 self.assertIn("git push origin HEAD:collector-state",flow)
@@ -122,11 +125,21 @@ class WorkflowSeparationTests(unittest.TestCase):
                 self.assertNotIn('python -m unittest',sampler)
                 self.assertIn('python gal.py --state state/discovery.json',sampler)
                 self.assertIn('public_collector_guard.py --sanitize-legacy',sampler)
-                # Always restore retained state first; never poll with an
-                # empty history when a prior branch exists.
-                self.assertLess(sampler.index("git fetch --no-tags origin collector-state"),
-                                sampler.index("python gal.py --state state/discovery.json"))
-                # The metadata guard must still run before state persistence.
+                # Network sampling now starts BEFORE any potentially blocked
+                # shared branch fetch. Writer lock applies only to persist job.
+                self.assertIn("  sample:",sampler)
+                self.assertIn("  persist:",sampler)
+                self.assertLess(sampler.index("python gal.py --state state/discovery.json"),
+                                sampler.index("git fetch --no-tags origin collector-state"))
+                self.assertLess(sampler.index("python gal.py --state state/discovery.json"),
+                                sampler.index("group: energybrew-live-collector"))
+                self.assertIn("python gal_state_merge.py --base",sampler)
+                self.assertIn("actions/upload-artifact@v4",sampler)
+                self.assertIn("actions/download-artifact@v4",sampler)
+                self.assertIn("needs: sample",sampler)
+                # Metadata validation protects the newly merged latest state.
+                self.assertLess(sampler.index('python gal_state_merge.py --base'),
+                                sampler.index('public_collector_guard.py --sanitize-legacy'))
                 self.assertLess(sampler.index('public_collector_guard.py --sanitize-legacy'),
                                 sampler.index('git push origin HEAD:collector-state'))
 
