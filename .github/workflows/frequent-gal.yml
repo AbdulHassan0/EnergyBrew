@@ -2,67 +2,127 @@ name: EnergyBrew frequent global news discovery
 on:
   workflow_dispatch:
   schedule:
-    # The GDELT GAL feed represents a rolling ~15-minute sample.
-    # Ten-minute overlap reduces gaps in ~15-minute rolling news indexing.
-    # GitHub delays can still cause missing windows: NOT guaranteed full coverage.
+    # An on-time dispatch is NOT guaranteed on free GitHub Actions.
+    # GAL is a rolling ~15-minute index. A late sample cannot recover earlier slots.
     - cron: "6,16,26,36,46,56 * * * *"
-
 permissions:
   contents: write
 
-# Same concurrency group as the main collector prevents state-branch races.
-# Shared state writers must never replace another waiting polling run.
-# GitHub Actions defaults to cancelling an existing pending run; queue:max
-# retains up to 100 queued runs, while preserving serial branch writes.
-concurrency:
-  group: energybrew-live-collector
-  cancel-in-progress: false
-  queue: max
-
+# CRITICAL: no workflow-level writer lock. The time-sensitive HTTP fetch must
+# be allowed to start while a full RSS collection is persisting state.
 jobs:
-  gal-sample:
+  sample:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 4
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      # Keep the scheduled path lean: news-logic-ci.yml runs the entire offline
-      # suite on each code push. Do not spend the narrow rolling GAL window
-      # rerunning tests before making the network request.
-      - name: Restore shared research history
+      - name: Fetch rolling global article index immediately, independent of shared branch
+        id: gal
+        continue-on-error: true
+        run: python gal.py --state state/discovery.json --output output/gal
+      - name: Save raw sample's metadata and completion-time evidence
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: energybrew-gal-snapshot-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            state/discovery.json
+            output/gal/
+          if-no-files-found: error
+          retention-days: 3
+      - name: Summarize sample
+        if: always()
+        run: |
+          if test -s output/gal/latest.md; then
+            cat output/gal/latest.md >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "GAL fetch/parse produced no sample; do not claim covered time." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+  persist:
+    needs: sample
+    if: always() && needs.sample.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    # Only the state-writing stage must serialize against full RSS and
+    # morning RSS state writers. Polling already finished in the independent job.
+    concurrency:
+      group: energybrew-live-collector
+      cancel-in-progress: false
+      queue: max
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Retrieve exact independently fetched GAL snapshot
+        uses: actions/download-artifact@v4
+        with:
+          name: energybrew-gal-snapshot-${{ github.run_id }}-${{ github.run_attempt }}
+          path: snapshot
+      - name: Restore newest committed source history (inside writer lock)
         run: |
           mkdir -p state
           if git ls-remote --exit-code --heads origin collector-state >/dev/null 2>&1; then
             git fetch --no-tags origin collector-state
-            for name in discovery.json articles.json press_releases.json; do
+            for name in discovery.json articles.json press_releases.json gal_latest.json; do
               if git cat-file -e "FETCH_HEAD:state/$name" 2>/dev/null; then
                 git show "FETCH_HEAD:state/$name" > "state/$name"
               fi
             done
           fi
-      - name: Sample rolling global article list
-        id: gal
-        continue-on-error: true
-        run: python gal.py --state state/discovery.json --output output/gal
-      - name: Verify public metadata before branch update
+          if test ! -s state/discovery.json; then
+            printf '{"leads":[],"gal_runs":[],"runs":[],"topics":{}}\n' > state/discovery.json
+          fi
+      - name: Merge sample with latest state rather than replacing other writers
+        run: |
+          test -s snapshot/state/discovery.json
+          test -s snapshot/output/gal/latest.json
+          python gal_state_merge.py --base state/discovery.json --sample snapshot/state/discovery.json --output state/discovery.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from research_desk import as_time
+          import shutil
+          old=Path("state/gal_latest.json")
+          new=Path("snapshot/output/gal/latest.json")
+          fresh=json.loads(new.read_text(encoding="utf-8"))
+          older=json.loads(old.read_text(encoding="utf-8")) if old.exists() else {}
+          fresh_time=as_time(fresh.get("completed_utc") or fresh.get("run_utc"))
+          old_time=as_time(older.get("completed_utc") or older.get("run_utc"))
+          if fresh_time is None:
+              raise ValueError("GAL snapshot lacks completion-time evidence")
+          if old_time is None or fresh_time >= old_time:
+              for frm,to in (("latest.json","gal_latest.json"),
+                             ("latest.md","gal_latest.md")):
+                  src=Path("snapshot/output/gal")/frm
+                  if not src.is_file():
+                      raise FileNotFoundError(src)
+                  shutil.copyfile(src, Path("state")/to)
+          merged=json.loads(Path("state/discovery.json").read_text(encoding="utf-8"))
+          all_links=merged["leads"]
+          now=fresh_time
+          rows=[x for x in all_links if as_time(x.get("gdelt_first_seen_utc"))]
+          rows.sort(key=lambda x:x.get("gdelt_first_seen_utc",""),reverse=True)
+          Path("state/research_leads_7d.json").write_text(json.dumps(rows,indent=2)+"\n",encoding="utf-8")
+          recent=[x for x in rows if as_time(x.get("gdelt_first_seen_utc")) >= now.replace(hour=0,minute=0,second=0,microsecond=0)-__import__("datetime").timedelta(hours=24)]
+          Path("state/research_leads_24h.json").write_text(json.dumps(recent,indent=2)+"\n",encoding="utf-8")
+          PY
+      - name: Enforce public-metadata policy on merged state before committing
         id: metadata_guard
-        if: always() && steps.gal.outcome != 'skipped'
         run: python public_collector_guard.py --sanitize-legacy --rss state/articles.json --discovery state/discovery.json --releases state/press_releases.json
-      - name: Persist shared discovery history and gap diagnostics
+      - name: Persist merged GAL history without overwriting publisher state
         if: steps.metadata_guard.outcome == 'success'
         run: |
-          if test ! -s state/discovery.json; then
-            echo "No valid discovery history to persist"
-            exit 0
-          fi
-          STATE_DIR="$RUNNER_TEMP/energybrew-gal-state"
+          STATE_DIR="$RUNNER_TEMP/energybrew-frequent-writer"
           if git ls-remote --exit-code --heads origin collector-state >/dev/null 2>&1; then
             git fetch --no-tags origin collector-state
             git worktree add --detach "$STATE_DIR" FETCH_HEAD
             cd "$STATE_DIR"
-            git switch -c "update-gal-${GITHUB_RUN_ID}"
+            git switch -c "gal-frequent-${GITHUB_RUN_ID}"
           else
             git worktree add --detach "$STATE_DIR" HEAD
             cd "$STATE_DIR"
@@ -70,37 +130,24 @@ jobs:
             git rm -rf . >/dev/null 2>&1 || true
           fi
           mkdir -p state
-          cp "$GITHUB_WORKSPACE/state/discovery.json" state/discovery.json
-          if test -f "$GITHUB_WORKSPACE/output/gal/latest.json"; then
-            cp "$GITHUB_WORKSPACE/output/gal/latest.json" state/gal_latest.json
-            cp "$GITHUB_WORKSPACE/output/gal/latest.md" state/gal_latest.md
-            cp "$GITHUB_WORKSPACE/output/gal/leads_24h.json" state/research_leads_24h.json
-            cp "$GITHUB_WORKSPACE/output/gal/leads_7d.json" state/research_leads_7d.json
-          fi
+          for file in discovery.json gal_latest.json gal_latest.md research_leads_24h.json research_leads_7d.json; do
+            if test -f "$GITHUB_WORKSPACE/state/$file"; then
+              cp "$GITHUB_WORKSPACE/state/$file" "state/$file"
+            fi
+          done
           git config user.name "EnergyBrew collector"
           git config user.email "energybrew-bot@users.noreply.github.com"
           git add -f state/
           if ! git diff --cached --quiet; then
-            git commit -m "Record frequent GDELT sample ${GITHUB_RUN_ID}"
+            git commit -m "Merge independent frequent GAL sample ${GITHUB_RUN_ID}"
             git push origin HEAD:collector-state
           fi
-      - name: Summarize sampled window
-        if: always()
+      - name: Fail visibly if sampled GAL source was degraded
         run: |
-          if test -f output/gal/latest.md; then
-            cat output/gal/latest.md >> "$GITHUB_STEP_SUMMARY"
-          else
-            echo "GAL sample did not produce a report" >> "$GITHUB_STEP_SUMMARY"
-          fi
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: energybrew-gal-${{ github.run_id }}-${{ github.run_attempt }}
-          path: output/gal/
-          if-no-files-found: warn
-          retention-days: 3
-      - name: Fail visibly if global sample did not succeed
-        if: steps.gal.outcome == 'failure'
-        run: |
-          echo "GDELT global sample failed; see attached diagnostics" >&2
-          exit 1
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          s=json.loads(Path("snapshot/output/gal/latest.json").read_text())
+          if s.get("status") != "ok":
+              raise SystemExit("GAL source degraded; recorded the attempt without granting successful coverage")
+          PY
