@@ -154,7 +154,9 @@ def fetch_listing(url=INDEX_URL):
         return body, response.status
 
 
-def collect(state_path: Path, output: Path, *, now=None, fetcher=None):
+def collect(state_path: Path, output: Path, *, now=None, fetcher=None,
+            completion_clock=None):
+    injected_clock = now is not None
     now = now or datetime.now(timezone.utc)
     if now.tzinfo is None or now.utcoffset() is None:
         raise ValueError("FERC completion timestamp must be timezone-aware")
@@ -173,6 +175,14 @@ def collect(state_path: Path, output: Path, *, now=None, fetcher=None):
     if not isinstance(status, int) or not 200 <= status < 300:
         raise ValueError(f"FERC returned HTTP {status}")
     items = parse_listing(raw, now=now)
+    completed = (completion_clock() if completion_clock else
+                 now if injected_clock else datetime.now(timezone.utc))
+    if completed.tzinfo is None or completed.utcoffset() is None:
+        raise ValueError("FERC completion time must be timezone-aware")
+    completed = completed.astimezone(timezone.utc)
+    # A headline is not locally observed until the request and parsing end.
+    for item in items:
+        item["first_collector_observed_utc"] = completed.isoformat()
     existing = {}
     for row in state["articles"]:
         if not isinstance(row, dict):
@@ -200,7 +210,7 @@ def collect(state_path: Path, output: Path, *, now=None, fetcher=None):
         raise ValueError("RSS state has malformed source-health information")
     source_health[SOURCE_NAME] = {
         "connected": True,
-        "last_successful_scan_utc": now.astimezone(timezone.utc).isoformat(),
+        "last_successful_scan_utc": completed.isoformat(),
         "last_relevant_listing_links": len(items),
         "publication_precision": "day_only",
     }
@@ -211,6 +221,7 @@ def collect(state_path: Path, output: Path, *, now=None, fetcher=None):
     temp.replace(state_path)
     summary = {
         "run_utc": now.astimezone(timezone.utc).isoformat(),
+        "completed_utc": completed.isoformat(),
         "status": "ok", "source": SOURCE_NAME,
         "official_day_only_links": len(items), "new_links": added,
         "not_article_publication_timestamp": True,
