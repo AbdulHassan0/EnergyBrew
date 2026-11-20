@@ -28,6 +28,22 @@ class WorkflowSeparationTests(unittest.TestCase):
                 self.assertIn("\n  schedule:",s)
                 self.assertNotIn("\n  push:",s)
 
+    def test_shared_writer_concurrency_queues_instead_of_replacing_pending_polls(self):
+        writers=("frequent-gal.yml","hourly-discovery.yml",
+                 "live-collector.yml","precutoff-rss.yml")
+        for name in writers:
+            with self.subTest(name=name):
+                flow=workflow(name)
+                self.assertIn("group: energybrew-live-collector",flow)
+                self.assertIn("cancel-in-progress: false",flow)
+                self.assertIn("queue: max",flow)
+                self.assertIn("git push origin HEAD:collector-state",flow)
+        # A read-only preparation consumes no write lock. Branch fetches
+        # are atomic; stalled morning research must not starve polling.
+        readonly=workflow("morning-news-readiness.yml")
+        self.assertNotIn("group: energybrew-live-collector",readonly)
+        self.assertNotIn("git push origin HEAD:collector-state",readonly)
+
     def test_regression_ci_is_code_push_only_not_source_poller(self):
         s=workflow("news-logic-ci.yml")
         self.assertIn("\n  push:",s)
