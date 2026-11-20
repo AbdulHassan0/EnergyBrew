@@ -253,7 +253,7 @@ def main(argv=None):
         }
         args.output.mkdir(parents=True, exist_ok=True)
         (args.output / "latest.json").write_text(
-            json.dumps(summary, indent=2) + "\\n", encoding="utf-8")
+            json.dumps(summary, indent=2) + "\n", encoding="utf-8")
         code = 2
     print(json.dumps(summary, indent=2))
     return code
