@@ -2,8 +2,8 @@
 
 **Research links only. Not fact-checked, approved, or ready for publication.**
 
-Generated (UTC): 2026-11-19T23:06:36.551927+00:00
-Distinct relevant URLs in retained data: **487**
+Generated (UTC): 2026-11-20T01:26:00.075413+00:00
+Distinct relevant URLs in retained data: **502**
 Selected diverse research leads: **32**
 Publisher-timestamped official leads within 24h: **0**
 Specialist-publisher timestamped links within 24h: **8**
@@ -76,8 +76,8 @@ Discovery publisher dates verified: **0**
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T10:47:00+00:00). Editorial status: **unapproved**.
 30. **[Woodside and Trafigura sign off on decade-long LNG deal](https://www.offshore-energy.biz/2026/11/18/woodside-and-trafigura-sign-off-on-decade-long-lng-deal)** — LNG | official_rss | score 45
    - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-18T09:16:02+00:00). Editorial status: **unapproved**.
-31. **[Tesser Atomics and Samsung Heavy Industries Enter Exclusive Collaboration on a Nuclear-Powered LNG Carrier](https://www.manilatimes.net/2026/11/19/tmt-newswire/globenewswire/tesser-atomics-and-samsung-heavy-industries-enter-exclusive-collaboration-on-a-nuclear-powered-lng-carrier/2474074)** — LNG | global_discovery | score 45
-   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T13:32:00+00:00). Editorial status: **unapproved**.
+31. **[ASIA LNG MOC PERFORMANCE: Deliveries conclude for record volume of 148.5 TBtu during August MOC](https://www.hellenicshippingnews.com/asia-lng-moc-performance-deliveries-conclude-for-record-volume-of-148-5-tbtu-during-august-moc)** — LNG | global_discovery | score 45
+   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-20T01:16:00+00:00). Editorial status: **unapproved**.
 32. **[Final investment decision on Azerbaijan's Karabakh field expected in 2027](https://en.apa.az/energy-and-industry/final-investment-decision-on-azerbaijans-karabakh-field-expected-in-2027-537196)** — Infrastructure & Investment | global_discovery | score 36
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T11:01:00+00:00). Editorial status: **unapproved**.
 

@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-19T23:06:39.038056+00:00",
+  "generated_utc": "2026-11-20T01:26:02.009138+00:00",
   "status": "source_gap_triage_not_a_verified_recall_score",
   "publisher_dated_direct_rss_links_24h": 8,
   "publisher_dated_direct_source_classes_24h": {
@@ -19,12 +19,12 @@
     "Geopolitics": 0
   },
   "indexed_candidate_category_counts_24h": {
-    "Natural Gas": 26,
-    "LNG": 5,
-    "Power & Electricity": 77,
-    "Oil & Energy": 43,
+    "Natural Gas": 31,
+    "LNG": 6,
+    "Power & Electricity": 68,
+    "Oil & Energy": 41,
     "Infrastructure & Investment": 4,
-    "Geopolitics": 136
+    "Geopolitics": 141
   },
   "high_priority_discovery_only_leads_for_review": [
     {
@@ -127,22 +127,22 @@
       "requires_original_publisher_verification": true
     },
     {
-      "title": "A Victorian Coalition win will deepen fractures in national power grid",
-      "url": "https://www.afr.com/policy/energy-and-climate/a-victorian-coalition-win-will-deepen-fractures-in-national-power-grid-20261119-p61fcl",
-      "domain": "www.afr.com",
+      "title": "NY faces statewide electricity shortage and has nation's oldest grid",
+      "url": "https://auburnpub.com/news/state-regional/article_7acbcf28-f649-46c6-b4ed-6ec22cc39ef5.html",
+      "domain": "auburnpub.com",
       "category": "Power & Electricity",
-      "gdelt_first_seen_utc": "2026-11-19T00:17:00+00:00",
+      "gdelt_first_seen_utc": "2026-11-19T19:47:00+00:00",
       "relevance_score": 57,
       "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
       "editorial_status": "unverified_research_lead_not_approved",
       "requires_original_publisher_verification": true
     },
     {
-      "title": "Power Grid Corporation of India Ltd Share Price Today,, POWERGRID Share Price NSE, BSE",
-      "url": "https://www.businesstoday.in/stocks/power-grid-corporation-of-india-ltd-powergrid-share-price-363940",
-      "domain": "www.businesstoday.in",
+      "title": "Can one mega grid really power Southeast Asia? The ASEAN Power Grid",
+      "url": "https://dotchuoinon.com/2026/11/19/can-one-mega-grid-really-power-southeast-asia-the-asean-power-grid",
+      "domain": "dotchuoinon.com",
       "category": "Power & Electricity",
-      "gdelt_first_seen_utc": "2026-11-19T11:47:00+00:00",
+      "gdelt_first_seen_utc": "2026-11-19T23:02:00+00:00",
       "relevance_score": 57,
       "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
       "editorial_status": "unverified_research_lead_not_approved",
@@ -232,7 +232,7 @@
       "feed_url": "https://www.energy.gov/rss/energygov/2193718",
       "last_success_utc": "2026-11-19T23:06:23.762345+00:00",
       "newest_feed_published_utc": "2026-11-18T18:06:31+00:00",
-      "hours_since_newest_publisher_item": 29.0,
+      "hours_since_newest_publisher_item": 31.3,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "recent_publisher_activity"
@@ -242,7 +242,7 @@
       "feed_url": "https://www.energy.gov/rss/oe/4819948",
       "last_success_utc": "2026-11-19T23:06:23.762345+00:00",
       "newest_feed_published_utc": "2026-10-30T14:42:15+00:00",
-      "hours_since_newest_publisher_item": 488.4,
+      "hours_since_newest_publisher_item": 490.7,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "no_publisher_item_in_7d"
@@ -252,7 +252,7 @@
       "feed_url": "https://www.energy.gov/rss/hgeo/2283029",
       "last_success_utc": "2026-11-19T23:06:23.762345+00:00",
       "newest_feed_published_utc": "2026-10-29T20:16:57+00:00",
-      "hours_since_newest_publisher_item": 506.8,
+      "hours_since_newest_publisher_item": 509.2,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "no_publisher_item_in_7d"
@@ -262,7 +262,7 @@
       "feed_url": "https://www.energy.gov/rss/hgeo/2282977",
       "last_success_utc": "2026-11-19T23:06:23.762345+00:00",
       "newest_feed_published_utc": "2026-11-04T05:00:00+00:00",
-      "hours_since_newest_publisher_item": 378.1,
+      "hours_since_newest_publisher_item": 380.4,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "no_publisher_item_in_7d"
@@ -272,7 +272,7 @@
       "feed_url": "https://www.eia.gov/rss/testimony.xml",
       "last_success_utc": "2026-11-19T23:06:23.762345+00:00",
       "newest_feed_published_utc": "2021-11-16T14:00:00+00:00",
-      "hours_since_newest_publisher_item": 43905.1,
+      "hours_since_newest_publisher_item": 43907.4,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "no_publisher_item_in_7d"
@@ -282,7 +282,7 @@
       "feed_url": "https://www.eia.gov/rss/presentations.xml",
       "last_success_utc": "2026-11-19T23:06:23.762345+00:00",
       "newest_feed_published_utc": "2026-03-04T14:00:00+00:00",
-      "hours_since_newest_publisher_item": 6249.1,
+      "hours_since_newest_publisher_item": 6251.4,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "no_publisher_item_in_7d"
@@ -292,7 +292,7 @@
       "feed_url": "https://www.eia.gov/rss/press_rss.xml",
       "last_success_utc": "2026-11-19T23:06:23.762345+00:00",
       "newest_feed_published_utc": "2026-11-10T17:00:00+00:00",
-      "hours_since_newest_publisher_item": 222.1,
+      "hours_since_newest_publisher_item": 224.4,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "no_publisher_item_in_7d"
@@ -302,7 +302,7 @@
       "feed_url": "https://www.eia.gov/rss/todayinenergy.xml",
       "last_success_utc": "2026-11-19T23:06:23.762345+00:00",
       "newest_feed_published_utc": "2026-11-19T14:00:00+00:00",
-      "hours_since_newest_publisher_item": 9.1,
+      "hours_since_newest_publisher_item": 11.4,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "recent_publisher_activity"
@@ -312,7 +312,7 @@
       "feed_url": "https://energy.ec.europa.eu/node/2/rss_en",
       "last_success_utc": "2026-11-19T23:06:23.762345+00:00",
       "newest_feed_published_utc": "2026-11-18T23:00:00+00:00",
-      "hours_since_newest_publisher_item": 24.1,
+      "hours_since_newest_publisher_item": 26.4,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "recent_publisher_activity"
@@ -322,7 +322,7 @@
       "feed_url": "https://www.federalregister.gov/api/v1/documents.rss?conditions%5Bagencies%5D%5B%5D=federal-energy-regulatory-commission",
       "last_success_utc": "2026-11-19T23:06:23.762345+00:00",
       "newest_feed_published_utc": "2026-11-19T05:00:00+00:00",
-      "hours_since_newest_publisher_item": 18.1,
+      "hours_since_newest_publisher_item": 20.4,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "recent_publisher_activity"
@@ -332,7 +332,7 @@
       "feed_url": "https://insidelines.pjm.com/feed/",
       "last_success_utc": "2026-11-19T23:06:23.762345+00:00",
       "newest_feed_published_utc": "2026-11-18T18:56:18+00:00",
-      "hours_since_newest_publisher_item": 28.2,
+      "hours_since_newest_publisher_item": 30.5,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "recent_publisher_activity"
@@ -342,7 +342,7 @@
       "feed_url": "https://www.nrc.gov/public-involve/rss?feed=news",
       "last_success_utc": "2026-11-19T23:06:23.762345+00:00",
       "newest_feed_published_utc": "2026-11-12T10:00:00+00:00",
-      "hours_since_newest_publisher_item": 181.1,
+      "hours_since_newest_publisher_item": 183.4,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "no_publisher_item_in_7d"
@@ -352,7 +352,7 @@
       "feed_url": "https://www.offshore-energy.biz/feed",
       "last_success_utc": "2026-11-19T23:06:23.762345+00:00",
       "newest_feed_published_utc": "2026-11-19T16:23:56+00:00",
-      "hours_since_newest_publisher_item": 6.7,
+      "hours_since_newest_publisher_item": 9.0,
       "timestamped_article_links_24h": 2,
       "consecutive_failures": 0,
       "activity": "recent_publisher_activity"
@@ -362,7 +362,7 @@
       "feed_url": "https://www.utilitydive.com/feeds/news/",
       "last_success_utc": "2026-11-19T23:06:23.762345+00:00",
       "newest_feed_published_utc": "2026-11-19T17:58:42+00:00",
-      "hours_since_newest_publisher_item": 5.1,
+      "hours_since_newest_publisher_item": 7.5,
       "timestamped_article_links_24h": 2,
       "consecutive_failures": 0,
       "activity": "recent_publisher_activity"
@@ -372,7 +372,7 @@
       "feed_url": "https://oilprice.com/rss.xml",
       "last_success_utc": "2026-11-19T23:06:23.762345+00:00",
       "newest_feed_published_utc": "2026-11-19T23:00:00+00:00",
-      "hours_since_newest_publisher_item": 0.1,
+      "hours_since_newest_publisher_item": 2.4,
       "timestamped_article_links_24h": 4,
       "consecutive_failures": 0,
       "activity": "recent_publisher_activity"

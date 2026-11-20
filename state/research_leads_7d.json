@@ -1183,6 +1183,126 @@
     ]
   },
   {
+    "url": "https://irannewsupdate.com/news/terrorism/u-s-indicts-three-iran-backed-operatives-over-nearly-20-terrorist-attacks-in-europe-and-america",
+    "title": "U.S. Indicts Three Iran-Backed Operatives Over Nearly 20 Terrorist Attacks in Europe and America - Iran News Update",
+    "domain": "irannewsupdate.com",
+    "gdelt_first_seen_utc": "2026-11-20T01:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attacks",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T01:25:59.988101+00:00"
+  },
+  {
+    "url": "https://www.maitlandmercury.com.au/story/9395127/us-senate-rejects-curbing-trumps-iran-war-powers",
+    "title": "US Senate rejects curbing Trump's Iran war powers",
+    "domain": "www.maitlandmercury.com.au",
+    "gdelt_first_seen_utc": "2026-11-20T01:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:war",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T01:25:59.988101+00:00"
+  },
+  {
+    "url": "https://www.digbycourier.ca/russia-fires-missiles-at-ukraine-live-updates",
+    "title": "Russia Fires Missiles at Ukraine: Live Updates",
+    "domain": "www.digbycourier.ca",
+    "gdelt_first_seen_utc": "2026-11-20T01:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:missiles",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T01:25:59.988101+00:00"
+  },
+  {
+    "url": "https://www.illawarramercury.com.au/story/9395127/us-senate-rejects-curbing-trumps-iran-war-powers",
+    "title": "US Senate rejects curbing Trump's Iran war powers",
+    "domain": "www.illawarramercury.com.au",
+    "gdelt_first_seen_utc": "2026-11-20T01:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:war",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T01:25:59.988101+00:00"
+  },
+  {
+    "url": "https://foreignpolicy.com/2026/11/19/us-iran-strikes-bahrain-kuwait-trump",
+    "title": "The U.S. and Iran Are Back to Trading Strikes",
+    "domain": "foreignpolicy.com",
+    "gdelt_first_seen_utc": "2026-11-20T01:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strikes",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T01:25:59.988101+00:00"
+  },
+  {
     "url": "https://www.canberratimes.com.au/story/9395127/us-senate-rejects-curbing-trumps-iran-war-powers",
     "title": "US Senate rejects curbing Trump's Iran war powers",
     "domain": "www.canberratimes.com.au",
@@ -3628,31 +3748,6 @@
     "first_collector_observed_utc": "2026-11-19T20:02:38.725241+00:00"
   },
   {
-    "url": "https://www.businesstoday.in/stocks/power-grid-corporation-of-india-ltd-powergrid-share-price-363940",
-    "title": "Power Grid Corporation of India Ltd Share Price Today,, POWERGRID Share Price NSE, BSE",
-    "domain": "www.businesstoday.in",
-    "gdelt_first_seen_utc": "2026-11-19T11:47:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 57,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "grid",
-      "power grid"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "discovery_providers": [
-      "GDELT GAL RSS"
-    ]
-  },
-  {
     "url": "https://www.afr.com/policy/energy-and-climate/a-victorian-coalition-win-will-deepen-fractures-in-national-power-grid-20261119-p61fcl",
     "title": "A Victorian Coalition win will deepen fractures in national power grid",
     "domain": "www.afr.com",
@@ -3795,6 +3890,28 @@
     "discovery_providers": [
       "GDELT GAL RSS"
     ]
+  },
+  {
+    "url": "https://www.hellenicshippingnews.com/asia-lng-moc-performance-deliveries-conclude-for-record-volume-of-148-5-tbtu-during-august-moc",
+    "title": "ASIA LNG MOC PERFORMANCE: Deliveries conclude for record volume of 148.5 TBtu during August MOC",
+    "domain": "www.hellenicshippingnews.com",
+    "gdelt_first_seen_utc": "2026-11-20T01:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 45,
+    "category": "LNG",
+    "relevance_evidence": [
+      "lng"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T01:25:59.988101+00:00"
   },
   {
     "url": "https://www.manilatimes.net/2026/11/19/tmt-newswire/globenewswire/tesser-atomics-and-samsung-heavy-industries-enter-exclusive-collaboration-on-a-nuclear-powered-lng-carrier/2474074",
@@ -3945,29 +4062,6 @@
     "title": "\u00c7exiya AB\u015e-d\u0259n 15-20 il m\u00fcdd\u0259tin\u0259 LNG t\u0259dar\u00fck\u00fc bar\u0259d\u0259 raz\u0131la\u015fma \u0259ld\u0259 edib",
     "domain": "az.trend.az",
     "gdelt_first_seen_utc": "2026-11-18T21:31:00+00:00",
-    "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 45,
-    "category": "LNG",
-    "relevance_evidence": [
-      "lng"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "discovery_providers": [
-      "GDELT GAL RSS"
-    ]
-  },
-  {
-    "url": "https://financialpost.com/category/energy/lng",
-    "title": "LNG News, Stories and Headlines on the Financial Post",
-    "domain": "financialpost.com",
-    "gdelt_first_seen_utc": "2026-11-18T21:17:00+00:00",
     "index_timestamp_source": "GAL RSS pubDate (not publisher publication date)",
     "publisher_published_utc": null,
     "published_time_verified": false,
@@ -4203,6 +4297,28 @@
       "lng"
     ],
     "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.wgal.com/article/pa-elizabethtown-residents-asked-to-conserve-natural-gas-pipeline-damage/74481100",
+    "title": "Residents asked to conserve natural gas after pipeline damage",
+    "domain": "www.wgal.com",
+    "gdelt_first_seen_utc": "2026-11-20T01:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 39,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "natural gas"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T01:25:59.988101+00:00"
   },
   {
     "url": "https://www.manilatimes.net/2026/11/19/tmt-newswire/globenewswire/alpha-compute-completes-asset-acquisitions-for-alpha-energy-02-campus-in-western-pennsylvania-securing-430mw-of-natural-gas-power/2474091",
@@ -4545,6 +4661,72 @@
       "gas storage"
     ],
     "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.wgal.com/article/will-president-trumps-agreement-with-putin-and-xi-bring-down-gas-prices/74481612",
+    "title": "Will President Trump's agreement with Putin and Xi bring down gas prices?",
+    "domain": "www.wgal.com",
+    "gdelt_first_seen_utc": "2026-11-20T01:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T01:25:59.988101+00:00"
+  },
+  {
+    "url": "https://www.hellenicshippingnews.com/mideast-needs-over-200bln-to-boost-gas-supply-infrastructure-say-experts",
+    "title": "Mideast needs over $200bln to boost gas supply, infrastructure, say experts | Hellenic Shipping News Worldwide",
+    "domain": "www.hellenicshippingnews.com",
+    "gdelt_first_seen_utc": "2026-11-20T01:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas supply"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T01:25:59.988101+00:00"
+  },
+  {
+    "url": "https://www.wapt.com/article/will-president-trumps-agreement-with-putin-and-xi-bring-down-gas-prices/74481612",
+    "title": "Will President Trump's agreement with Putin and Xi bring down gas prices?",
+    "domain": "www.wapt.com",
+    "gdelt_first_seen_utc": "2026-11-20T01:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T01:25:59.988101+00:00"
   },
   {
     "url": "https://www.prrecordgazette.com:443/business/energy/bill-42-utility-fees-alberta-fort-mcmurray-electricty/wcm/31b188e3-0935-4327-8ff5-d1cee0a4d203",
@@ -5936,6 +6118,72 @@
       "gas supply"
     ],
     "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://republicmonitor.com/",
+    "title": "Home - Perryville Republic Monitor",
+    "domain": "republicmonitor.com",
+    "gdelt_first_seen_utc": "2026-11-20T01:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "perryville"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T01:25:59.988101+00:00"
+  },
+  {
+    "url": "https://abc13.com/story/texas-commission-environmental-quality-resumes-data-center-permits-before-ordered-review-is-completed/20057236",
+    "title": "TCEQ resumes data center permits before ordered review is completed",
+    "domain": "abc13.com",
+    "gdelt_first_seen_utc": "2026-11-20T01:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T01:25:59.988101+00:00"
+  },
+  {
+    "url": "https://indiankanoon.org/doc/79726178",
+    "title": "Sandeep Gautam vs Mangalore Refinery And Petrochemicals ... on 15 November, 2026",
+    "domain": "indiankanoon.org",
+    "gdelt_first_seen_utc": "2026-11-20T01:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "refinery"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T01:25:59.988101+00:00"
   },
   {
     "url": "https://www.azfamily.com/2026/11/19/ag-mayes-asks-cochise-county-delay-vote-50b-spacex-data-center",
@@ -8406,6 +8654,94 @@
       "vistra"
     ],
     "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://bismarcktribune.com/news/local/teen-of-the-week/collection_b62818e3-fbdb-41bc-9254-e0f2761b239b.html",
+    "title": "2026-2027 ND Petroleum Foundation Teen of the Week",
+    "domain": "bismarcktribune.com",
+    "gdelt_first_seen_utc": "2026-11-20T01:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "petroleum"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T01:25:59.988101+00:00"
+  },
+  {
+    "url": "https://indiankanoon.org/doc/24404368",
+    "title": "Ram Narayan Sambasivan vs Bharat Petroleum Corporation Limited ... on 17 November, 2026",
+    "domain": "indiankanoon.org",
+    "gdelt_first_seen_utc": "2026-11-20T01:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "petroleum"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T01:25:59.988101+00:00"
+  },
+  {
+    "url": "https://indiankanoon.org/doc/178005303",
+    "title": "Anil Gautam vs Hindustan Petroleum Corporation ... on 16 November, 2026",
+    "domain": "indiankanoon.org",
+    "gdelt_first_seen_utc": "2026-11-20T01:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "petroleum"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T01:25:59.988101+00:00"
+  },
+  {
+    "url": "https://www.neuquenalinstante.com.ar/noticias/2026/11/19/148416-el-boom-de-vaca-muerta-atrae-nuevas-cadenas-gastronomicas-y-acelera-el-negocio-de-las-franquicias",
+    "title": "El boom de Vaca Muerta atrae nuevas cadenas gastron\u00f3micas y acelera el negocio de las franquicias",
+    "domain": "www.neuquenalinstante.com.ar",
+    "gdelt_first_seen_utc": "2026-11-20T01:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "vaca muerta"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T01:25:59.988101+00:00"
   },
   {
     "url": "https://www.journalgazette.net/local/indiana/company-eyeing-leap-district-site-says-its-plans-won-t-include-nuclear-power-generation/article_450947d7-94fc-47af-bb06-9e6ebc4c207f.html",

@@ -1,6 +1,6 @@
 # EnergyBrew free-source reconciliation (editorial review only)
 
-Generated: 2026-11-19T23:06:39.038056+00:00
+Generated: 2026-11-20T01:26:02.009138+00:00
 **This is not proof of complete news coverage or publisher publication time.**
 
 Publisher-dated direct RSS links (24h): **8**
@@ -18,8 +18,8 @@ GDELT original publisher dates verified: **0**
 7. [Tanzania, Uganda fast-track crude oil pipeline completion - Channel Africa](https://www.channelafrica.co.za/channelafrica/news/tanzania-uganda-fast-track-crude-oil-pipeline-completion) — Oil & Energy | www.channelafrica.co.za (GDELT index-only timestamp; unverified)
 8. [India's Crude Oil Production Set To Fall 20% By 2035: IEA - BW Businessworld](https://www.businessworld.in/article/india-s-crude-oil-production-set-to-fall-20-by-2035-iea-634356) — Oil & Energy | www.businessworld.in (GDELT index-only timestamp; unverified)
 9. [Data center electricity use could double by 2030, IEA says](https://www.cnbc.com/2026/11/19/data-center-electricity-demand-iea.html) — Power & Electricity | www.cnbc.com (GDELT index-only timestamp; unverified)
-10. [A Victorian Coalition win will deepen fractures in national power grid](https://www.afr.com/policy/energy-and-climate/a-victorian-coalition-win-will-deepen-fractures-in-national-power-grid-20261119-p61fcl) — Power & Electricity | www.afr.com (GDELT index-only timestamp; unverified)
-11. [Power Grid Corporation of India Ltd Share Price Today,, POWERGRID Share Price NSE, BSE](https://www.businesstoday.in/stocks/power-grid-corporation-of-india-ltd-powergrid-share-price-363940) — Power & Electricity | www.businesstoday.in (GDELT index-only timestamp; unverified)
+10. [NY faces statewide electricity shortage and has nation's oldest grid](https://auburnpub.com/news/state-regional/article_7acbcf28-f649-46c6-b4ed-6ec22cc39ef5.html) — Power & Electricity | auburnpub.com (GDELT index-only timestamp; unverified)
+11. [Can one mega grid really power Southeast Asia? The ASEAN Power Grid](https://dotchuoinon.com/2026/11/19/can-one-mega-grid-really-power-southeast-asia-the-asean-power-grid) — Power & Electricity | dotchuoinon.com (GDELT index-only timestamp; unverified)
 12. [NIPSCO settlement proposes refunds for thousands of overcharged natural gas customers](https://wkvi.com/2026/11/nipsco-settlement-proposes-refunds-for-thousands-of-overcharged-natural-gas-customers) — Natural Gas | wkvi.com (GDELT index-only timestamp; unverified)
 13. [Natural gas impact fee has been great for Pennsylvania letter](https://lancasteronline.com/opinion/letters_to_editor/natural-gas-impact-fee-has-been-great-for-pennsylvania-letter/article_6f7e98b0-c262-4a01-8f2e-cba3e1fe6aab.html) — Natural Gas | lancasteronline.com (GDELT index-only timestamp; unverified)
 14. [Azerbaijan increases natural gas exports to Georgia](https://www.azernews.az/oil_and_gas/267733.html) — Natural Gas | www.azernews.az (GDELT index-only timestamp; unverified)
@@ -32,32 +32,32 @@ GDELT original publisher dates verified: **0**
 
 | Beat | Direct RSS | GDELT index |
 |---|---:|---:|
-| Natural Gas | 0 | 26 |
-| LNG | 1 | 5 |
-| Power & Electricity | 3 | 77 |
-| Oil & Energy | 4 | 43 |
+| Natural Gas | 0 | 31 |
+| LNG | 1 | 6 |
+| Power & Electricity | 3 | 68 |
+| Oil & Energy | 4 | 41 |
 | Infrastructure & Investment | 0 | 4 |
-| Geopolitics | 0 | 136 |
+| Geopolitics | 0 | 141 |
 
 ## Feed liveness
 
 | Feed | Publisher links (24h) | Latest item age (h) | Consecutive failures | Activity |
 |---|---:|---:|---:|---|
-| DOE Energy News | 0 | 29.0 | 0 | recent_publisher_activity |
-| DOE Grid Deployment | 0 | 488.4 | 0 | no_publisher_item_in_7d |
-| DOE Hydrocarbons Blog | 0 | 506.8 | 0 | no_publisher_item_in_7d |
-| DOE Hydrocarbons Releases | 0 | 378.1 | 0 | no_publisher_item_in_7d |
-| EIA Congressional Testimony | 0 | 43905.1 | 0 | no_publisher_item_in_7d |
-| EIA Presentations | 0 | 6249.1 | 0 | no_publisher_item_in_7d |
-| EIA Press Releases | 0 | 222.1 | 0 | no_publisher_item_in_7d |
-| EIA Today in Energy | 0 | 9.1 | 0 | recent_publisher_activity |
-| European Commission DG Energy | 0 | 24.1 | 0 | recent_publisher_activity |
-| Federal Register notices | 0 | 18.1 | 0 | recent_publisher_activity |
-| PJM Inside Lines | 0 | 28.2 | 0 | recent_publisher_activity |
-| US NRC Nuclear News | 0 | 181.1 | 0 | no_publisher_item_in_7d |
-| Offshore Energy News | 2 | 6.7 | 0 | recent_publisher_activity |
-| Utility Dive News | 2 | 5.1 | 0 | recent_publisher_activity |
-| OilPrice.com News | 4 | 0.1 | 0 | recent_publisher_activity |
+| DOE Energy News | 0 | 31.3 | 0 | recent_publisher_activity |
+| DOE Grid Deployment | 0 | 490.7 | 0 | no_publisher_item_in_7d |
+| DOE Hydrocarbons Blog | 0 | 509.2 | 0 | no_publisher_item_in_7d |
+| DOE Hydrocarbons Releases | 0 | 380.4 | 0 | no_publisher_item_in_7d |
+| EIA Congressional Testimony | 0 | 43907.4 | 0 | no_publisher_item_in_7d |
+| EIA Presentations | 0 | 6251.4 | 0 | no_publisher_item_in_7d |
+| EIA Press Releases | 0 | 224.4 | 0 | no_publisher_item_in_7d |
+| EIA Today in Energy | 0 | 11.4 | 0 | recent_publisher_activity |
+| European Commission DG Energy | 0 | 26.4 | 0 | recent_publisher_activity |
+| Federal Register notices | 0 | 20.4 | 0 | recent_publisher_activity |
+| PJM Inside Lines | 0 | 30.5 | 0 | recent_publisher_activity |
+| US NRC Nuclear News | 0 | 183.4 | 0 | no_publisher_item_in_7d |
+| Offshore Energy News | 2 | 9.0 | 0 | recent_publisher_activity |
+| Utility Dive News | 2 | 7.5 | 0 | recent_publisher_activity |
+| OilPrice.com News | 4 | 2.4 | 0 | recent_publisher_activity |
 
 ## Interpretation
 

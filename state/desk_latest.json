@@ -1,14 +1,14 @@
 {
-  "generated_utc": "2026-11-19T23:06:36.551927+00:00",
+  "generated_utc": "2026-11-20T01:26:00.075413+00:00",
   "status": "research_only_not_approved",
-  "unique_relevant_urls_7d": 487,
+  "unique_relevant_urls_7d": 502,
   "selected_research_links": 32,
   "unique_domains_in_selection": 18,
   "queue_counts": {
     "older_official_context": 36,
     "specialist_publisher_24h": 8,
     "regulatory_date_only": 6,
-    "discovery_unverified": 413,
+    "discovery_unverified": 428,
     "company_release_unverified": 24
   },
   "selected_category_counts": {
@@ -1166,11 +1166,11 @@
       "rank": 75
     },
     {
-      "title": "Tesser Atomics and Samsung Heavy Industries Enter Exclusive Collaboration on a Nuclear-Powered LNG Carrier",
-      "url": "https://www.manilatimes.net/2026/11/19/tmt-newswire/globenewswire/tesser-atomics-and-samsung-heavy-industries-enter-exclusive-collaboration-on-a-nuclear-powered-lng-carrier/2474074",
-      "domain": "www.manilatimes.net",
-      "first_collector_observed_utc": null,
-      "local_collection_time_known": false,
+      "title": "ASIA LNG MOC PERFORMANCE: Deliveries conclude for record volume of 148.5 TBtu during August MOC",
+      "url": "https://www.hellenicshippingnews.com/asia-lng-moc-performance-deliveries-conclude-for-record-volume-of-148-5-tbtu-during-august-moc",
+      "domain": "www.hellenicshippingnews.com",
+      "first_collector_observed_utc": "2026-11-20T01:25:59.988101+00:00",
+      "local_collection_time_known": true,
       "source": "GDELT GAL RSS",
       "source_class": "unclassified",
       "category": "LNG",
@@ -1183,7 +1183,7 @@
       ],
       "origin": "global_discovery",
       "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-19T13:32:00+00:00",
+      "observed_time_utc": "2026-11-20T01:16:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
