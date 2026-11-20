@@ -89,6 +89,21 @@ class FercNewsTests(unittest.TestCase):
             self.assertEqual(next(x for x in again["articles"] if x["source"]==SOURCE_NAME)
                              ["first_collector_observed_utc"],NOW.isoformat())
 
+    def test_request_finishing_after_cutoff_is_not_credited_early(self):
+        with tempfile.TemporaryDirectory() as temp:
+            state=Path(temp)/"articles.json"
+            state.write_text(json.dumps({"articles":[],"runs":[]}))
+            started=datetime(2026,11,19,12,24,tzinfo=timezone.utc)
+            completed=datetime(2026,11,19,12,34,tzinfo=timezone.utc)
+            collect(state,Path(temp)/"out",now=started,
+                    fetcher=lambda _:(page([FERC_RELEASE]),200),
+                    completion_clock=lambda: completed)
+            stored=json.loads(state.read_text())
+            self.assertEqual(stored["articles"][0]["first_collector_observed_utc"],
+                             completed.isoformat())
+            self.assertEqual(json.loads((Path(temp)/"out"/"latest.json").read_text())
+                             ["completed_utc"],completed.isoformat())
+
     def test_upstream_failure_keeps_original_state_bytes(self):
         with tempfile.TemporaryDirectory() as d:
             state=Path(d)/"articles.json"
