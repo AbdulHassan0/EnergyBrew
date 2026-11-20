@@ -236,9 +236,27 @@ def main(argv=None):
     p.add_argument("--state", type=Path, default=Path("state/articles.json"))
     p.add_argument("--output", type=Path, default=Path("output/ferc"))
     args = p.parse_args(argv)
-    summary = collect(args.state, args.output)
+    try:
+        summary = collect(args.state, args.output)
+        code = 0
+    except (OSError, ValueError) as exc:
+        # Preserve all existing source records. Persist a separate failure
+        # report so a previous healthy FERC poll cannot masquerade as current.
+        summary = {
+            "run_utc": datetime.now(timezone.utc).isoformat(),
+            "status": "degraded",
+            "source": SOURCE_NAME,
+            "official_day_only_links": 0,
+            "new_links": 0,
+            "error": f"{type(exc).__name__}: {str(exc)[:200]}",
+            "not_article_publication_timestamp": True,
+        }
+        args.output.mkdir(parents=True, exist_ok=True)
+        (args.output / "latest.json").write_text(
+            json.dumps(summary, indent=2) + "\\n", encoding="utf-8")
+        code = 2
     print(json.dumps(summary, indent=2))
-    return 0
+    return code
 
 
 if __name__ == "__main__":
