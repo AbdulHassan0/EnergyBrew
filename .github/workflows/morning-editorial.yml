@@ -50,12 +50,17 @@ jobs:
         run: |
           mkdir -p latest-state
           git fetch --no-tags origin collector-state
-          git show FETCH_HEAD:state/desk_latest.json > latest-state/desk_latest.json
+          git show FETCH_HEAD:state/desk_latest.json > latest-state/cutoff_desk.json
           # Audit against complete saved source history, not just a ranked
           # 32-story desk which may omit otherwise legitimate publisher links.
           for file in articles.json discovery.json press_releases.json; do
             git show "FETCH_HEAD:state/$file" > "latest-state/$file"
           done
+      - name: Rebuild source-linked queue from records actually collected by 06:30 Central
+        if: steps.window.outputs.run == 'yes'
+        run: |
+          python cutoff_desk.py --rss latest-state/articles.json --discovery latest-state/discovery.json --releases latest-state/press_releases.json --output latest-state/cutoff_desk.json --zone America/Chicago
+          cp latest-state/cutoff_desk.json output/newsletter/MORNING_CUTOFF_DESK.json
       - name: Make complete source-evidence packet for authoring future briefs
         if: steps.window.outputs.run == 'yes'
         run: |
@@ -63,7 +68,7 @@ jobs:
       - name: Preserve collected source headlines for the editor
         if: steps.window.outputs.run == 'yes'
         run: |
-          python newsletter.py prepare --desk latest-state/desk_latest.json --out output/newsletter/review_queue.json
+          python newsletter.py prepare --desk latest-state/cutoff_desk.json --out output/newsletter/review_queue.json
       - name: Render fully written pilot email when today's curated issue exists
         if: steps.window.outputs.run == 'yes'
         run: |
@@ -74,13 +79,13 @@ jobs:
           PILOT=""
           if test -f "newsletter/briefs/${TODAY}.json"; then
             # Compile only source-backed, already-authored briefs.
-            python brief_compiler.py --desk latest-state/desk_latest.json --briefs "newsletter/briefs/${TODAY}.json" --rss latest-state/articles.json --discovery latest-state/discovery.json --releases latest-state/press_releases.json --out output/newsletter/COMPILED_PILOT.json
+            python brief_compiler.py --desk latest-state/cutoff_desk.json --briefs "newsletter/briefs/${TODAY}.json" --rss latest-state/articles.json --discovery latest-state/discovery.json --releases latest-state/press_releases.json --out output/newsletter/COMPILED_PILOT.json
             PILOT=output/newsletter/COMPILED_PILOT.json
           elif test -f "newsletter/pilots/${TODAY}.json"; then
             PILOT="newsletter/pilots/${TODAY}.json"
           fi
           if test -n "$PILOT"; then
-            python pilot_audit.py --pilot "$PILOT" --desk latest-state/desk_latest.json --rss latest-state/articles.json --discovery latest-state/discovery.json --releases latest-state/press_releases.json --output output/newsletter/PILOT_QUALITY_REPORT.json
+            python pilot_audit.py --pilot "$PILOT" --desk latest-state/cutoff_desk.json --rss latest-state/articles.json --discovery latest-state/discovery.json --releases latest-state/press_releases.json --output output/newsletter/PILOT_QUALITY_REPORT.json
             python newsletter.py pilot-preview --edition "$PILOT" --html output/newsletter/PILOT_email_preview.html --text output/newsletter/PILOT_email_preview.txt
             sed -n '1,38p' output/newsletter/PILOT_QUALITY_REPORT.md >> "$GITHUB_STEP_SUMMARY"
             echo "PILOT preview generated with complete copy; NO email sent." >> "$GITHUB_STEP_SUMMARY"
