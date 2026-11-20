@@ -72,7 +72,8 @@ def event_direction(title):
 
 
 def same_event(a, b):
-    if a.get("url") == b.get("url"):
+    # Missing URLs are never evidence of the same news event.
+    if a.get("url") and a.get("url") == b.get("url"):
         return True
     try:
         dt_a=datetime.fromisoformat(a["observed_time_utc"].replace("Z","+00:00"))
