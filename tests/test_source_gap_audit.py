@@ -71,6 +71,7 @@ class GapAuditTests(unittest.TestCase):
         selected=report["high_priority_discovery_only_leads_for_review"]
         self.assertEqual(len(selected),1)
         self.assertEqual(report["gdelt_observed_unique_urls_24h"],3)
+        self.assertEqual(report["additional_links_suppressed_as_possible_same_event_in_review"],2)
         self.assertEqual(selected[0]["editorial_status"],
                          "unverified_research_lead_not_approved")
 
