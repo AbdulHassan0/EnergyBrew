@@ -50,6 +50,27 @@ def family(title):
     return None
 
 
+def event_direction(title):
+    """Identify explicit opposite developments; unknown titles remain unclassified.
+
+    This is deliberately narrow: ambiguous headlines should not be assigned an
+    invented status just to increase deduplication.
+    """
+    t = (title or "").lower()
+    adverse = re.search(
+        r"\b(cancelled|canceled|cancels|terminates?|terminated|scrapped|"
+        r"suspended|suspends|halted|halts|withdrawn|withdraws|revoked|"
+        r"rejected|blocked)\b", t)
+    positive = re.search(
+        r"\b(signed|signs|approved|approves|resumed|resumes|restarted|"
+        r"restarts|secured|awarded|greenlit|completed)\b", t)
+    if adverse and not positive:
+        return "adverse"
+    if positive and not adverse:
+        return "positive"
+    return None
+
+
 def same_event(a, b):
     if a.get("url") == b.get("url"):
         return True
@@ -61,6 +82,12 @@ def same_event(a, b):
         if abs((dt_a-dt_b).total_seconds())>48*3600:
             return False
     except (KeyError,ValueError,TypeError):
+        return False
+    # A deal being cancelled, a permit being revoked, or production halting
+    # is not the same news development as its signing, approval or restart.
+    direction_a = event_direction(a.get("title", ""))
+    direction_b = event_direction(b.get("title", ""))
+    if direction_a and direction_b and direction_a != direction_b:
         return False
     name_a=entities(a.get("title",""))
     name_b=entities(b.get("title",""))
