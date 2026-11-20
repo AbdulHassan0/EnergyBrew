@@ -94,7 +94,10 @@ def mark_morning_research(stories, prior_cutoff, overnight_start, previous_resea
     for story in stories:
         stamp = as_time(story["observed_time_utc"])
         if story["time_basis"] == "official_publication_date_only":
-            bucket = "date_only_prior_day_context"
+            first_seen = as_time(story.get("first_collector_observed_utc"))
+            bucket = ("date_only_prior_day_observed_since_previous_cutoff"
+                      if first_seen and prior_cutoff <= first_seen
+                      else "date_only_prior_day_context")
         elif stamp and stamp >= overnight_start:
             bucket = "overnight_on_source_time_basis"
         elif stamp and stamp >= prior_cutoff:
@@ -196,8 +199,22 @@ def prepare(rss, discovery, releases, *, now=None, edition_date=None,
     previous_day = edition_local_day - timedelta(days=1)
     prior_cutoff = datetime.combine(previous_day, CUTOFF_LOCAL, tzinfo=tz).astimezone(timezone.utc)
     overnight_start = datetime.combine(previous_day, time(18,0), tzinfo=tz).astimezone(timezone.utc)
-    fresh_rss = [x for x in rss_articles if x.get("published_precision") != "day"
-                 and (record_time(x,"rss") or datetime.min.replace(tzinfo=timezone.utc)) >= prior_cutoff]
+    # FERC's newsroom provides official publication DAYS, not hours. A
+    # relevant release can still enter the next morning's RESEARCH queue if
+    # EnergyBrew demonstrably observed it after yesterday's cutoff and before
+    # today's cutoff. Never call that a timestamped publisher article.
+    def observed_ferc_release(x):
+        first = as_time(x.get("first_collector_observed_utc") or
+                        x.get("first_collected_utc"))
+        return (x.get("source") == "FERC News Releases"
+                and x.get("published_precision") == "day"
+                and first is not None and prior_cutoff <= first <= observed_cutoff)
+    fresh_rss = [
+        x for x in rss_articles
+        if (x.get("published_precision") != "day" and
+            (record_time(x,"rss") or datetime.min.replace(tzinfo=timezone.utc)) >= prior_cutoff)
+        or observed_ferc_release(x)
+    ]
     fresh_discovery = [x for x in discovered if (record_time(x,"discovery") or datetime.min.replace(tzinfo=timezone.utc)) >= prior_cutoff]
     fresh_release = [x for x in released if (record_time(x,"release") or datetime.min.replace(tzinfo=timezone.utc)) >= prior_cutoff]
     desk = assemble(fresh_rss,fresh_discovery,fresh_release,now=observed_cutoff,max_stories=max_stories)
