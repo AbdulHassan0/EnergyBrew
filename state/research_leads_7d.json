@@ -21,7 +21,10 @@
       "world_context:houthi"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.livemint.com/market/us-sour-crude-s-war-premium-vanishes-as-supply-surges-11795121544365.html",
@@ -1228,7 +1231,10 @@
       "world_context:russia/ukraine"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://home.nzcity.co.nz/news/article.aspx?id=458380&fm=psp%2Ctsf",
@@ -1252,7 +1258,10 @@
       "world_context:russia/ukraine"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "http://www.arabherald.com/news/279444572/we-will-settle-the-war-once-and-for-all-iran-tells-us-to-accept-its-terms-or-face-battlefield-decision",
@@ -1276,7 +1285,10 @@
       "world_context:iran/united states"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://home.nzcity.co.nz/news/article.aspx?id=458380&fm=psp%2Ctst",
@@ -1300,7 +1312,10 @@
       "world_context:russia/ukraine"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.kyivpost.com/post/90677",
@@ -1324,7 +1339,10 @@
       "world_context:russia/ukraine"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://aa.com.tr/en/americas/trump-questions-european-military-aid-to-ukraine-says-russia-ready-for-peace-talks-report/4131836",
@@ -1348,7 +1366,10 @@
       "world_context:russia/ukraine"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.kyivpost.com/post/90676",
@@ -1372,7 +1393,10 @@
       "world_context:russia/ukraine"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.bbc.co.uk/news/articles/c6x29gn4pdn9o",
@@ -1396,7 +1420,10 @@
       "world_context:russia/ukraine"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "http://www.europesun.com/news/279444859/russia-pounds-military-targets-across-ukraine-mod",
@@ -1420,7 +1447,10 @@
       "world_context:russia/ukraine"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.breitbart.com/middle-east/2026/11/18/iran-fires-on-kuwait-after-u-s-self-defense-strike-on-iranian-island",
@@ -4223,7 +4253,10 @@
       "lng"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.hellenicshippingnews.com/asia-lng-moc-performance-deliveries-conclude-for-record-volume-of-148-5-tbtu-during-august-moc",
@@ -5016,7 +5049,10 @@
       "electricity"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.swissinfo.ch/eng/swiss-ai/data-centres-will-account-for-10-per-cent-of-switzerlands-electricity-consumption/92411117",
@@ -5038,7 +5074,10 @@
       "electricity"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.voria.gr/article/eftase-seismografiko-skafos-ramform-tethys-sto-notio-ionio-xekinoyn-oi-ereynes-gia",
@@ -5060,7 +5099,10 @@
       "chevron"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.inewsgr.com/35/xekinoun-oi-seismikes-erevnes-Chevron-HELLENiQ-ENERGY-sto-notio-ionio.htm",
@@ -5082,7 +5124,10 @@
       "chevron"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.naftemporiki.gr/finance/economy/2191896/ydrogonanthrakes-xekinoyn-oi-seismikes-ereynes-chevron-helleniq-energy-sto-notio-ionio",
@@ -5104,7 +5149,10 @@
       "chevron"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.wabi.tv:443/2026/11/19/heating-oil-prices-maine-dip-third-consecutive-week",
@@ -6627,7 +6675,10 @@
       "oil and gas"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.ilfattoquotidiano.it/2026/11/20/data-center-peru-reattori-nucleari-usa-notizie/8573672",
@@ -6649,7 +6700,10 @@
       "data center"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "http://northcountrynow.com/stories/packed-house-at-massena-town-board-as-akwesasne-mohawk-tribe-calls-for-data-center-moratorium,401332",
@@ -9273,7 +9327,10 @@
       "siemens energy"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.intelligencer.ca/press-releases/globe-newswire/sigenergy-earns-double-bloombergnef-tier-1-recognition-for-power-inverters-and-energy-storage-in-q4-2026",
@@ -9295,7 +9352,10 @@
       "energy storage"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.derbytelegraph.co.uk/news/uk-world-news/andy-burnham-government-issues-energy-11248840",
@@ -9317,7 +9377,10 @@
       "energy bills"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.boersennews.de/markt/aktien/detail/de000ener6y0",
@@ -9339,7 +9402,10 @@
       "siemens energy"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.boerse-express.com/news/articles/siemens-energy-aktie-auftragsbuch-so-dick-wie-nie-964957",
@@ -9361,7 +9427,10 @@
       "siemens energy"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.deraktionaer.de/aktien/kurse/siemensenergyag-de000ener6y0.html",
@@ -9383,7 +9452,10 @@
       "siemens energy"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.deraktionaer.de/artikel/mobilitaet-oel-energie/siemens-energy-ki-rutsch-aktie-wieder-auf-talfahrt-20447349.html",
@@ -9405,7 +9477,10 @@
       "siemens energy"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00"
+    "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://avn.info.ve/presidenta-anuncia-que-produccion-petrolera-alcanza-1-269-000-bpd-y-economia-crece-742-en-tercer-trimestre",
