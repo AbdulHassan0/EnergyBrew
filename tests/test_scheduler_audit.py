@@ -30,6 +30,35 @@ class AuditTests(unittest.TestCase):
     def test_failures_are_not_successful_runs(self):
         r=analyze(config(),{"frequent-gal.yml":[run(i,"failure") for i in range(1,142)]},NOW)
         self.assertEqual(r["workflows"][0]["failed"],141)
+    def test_routine_workflow_edit_does_not_reset_schedule_window(self):
+        workflows={name:{
+            "created_at":(NOW-timedelta(days=10)).isoformat(),
+            "updated_at":(NOW-timedelta(minutes=30)).isoformat()}
+            for name in ("frequent-gal.yml","hourly-discovery.yml")}
+        result=analyze(workflows,{},NOW)
+        self.assertEqual(result["status"],"critical")
+        self.assertGreater(result["workflows"][0]["nominal_eligible_slots"],100)
+
+    def test_pending_queue_and_run_start_delay_are_exposed(self):
+        workflows=config()
+        entries=[{
+            "created_at":(NOW-timedelta(minutes=20)).isoformat(),
+            "run_started_at":(NOW-timedelta(minutes=7)).isoformat(),
+            "event":"schedule","status":"completed","conclusion":"success",
+        },{
+            "created_at":(NOW-timedelta(minutes=15)).isoformat(),
+            "event":"schedule","status":"queued","conclusion":None,
+        },{
+            "created_at":(NOW-timedelta(minutes=8)).isoformat(),
+            "event":"schedule","status":"completed","conclusion":"cancelled",
+        }]
+        result=analyze(workflows,{"frequent-gal.yml":entries},NOW)
+        first=result["workflows"][0]
+        self.assertEqual(first["cancelled"],1)
+        self.assertEqual(first["queued_or_in_progress"],1)
+        self.assertEqual(first["max_observed_run_start_delay_minutes"],13)
+        self.assertEqual(first["oldest_pending_run_minutes"],15)
+
     def test_write_public_diagnostics(self):
         with tempfile.TemporaryDirectory() as d:
             save(analyze(config(),{},NOW),d)
