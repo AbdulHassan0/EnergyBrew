@@ -95,6 +95,38 @@ class MorningTests(unittest.TestCase):
         record=next(x for x in result["background_context"] if x["url"]==urls[0])
         self.assertEqual(record["morning_time_bucket"],"date_only_prior_day_context")
 
+    def test_ferc_day_only_release_observed_since_last_cutoff_is_morning_candidate(self):
+        a,b,c=fixtures()
+        a["articles"].append({
+            "url":"https://www.ferc.gov/news-events/news/ferc-approves-gas-infrastructure",
+            "title":"FERC Approves Major Gas Infrastructure Facilities to Get American Energy Moving",
+            "source":"FERC News Releases","source_class":"official_agency",
+            "published_precision":"day",
+            "published_utc":"2026-11-18T00:00:00+00:00",
+            "first_collector_observed_utc":time_str(-14*60)})
+        result=prepare(a,b,c,now=NOW)
+        stories=result["research_desk"]["stories"]
+        ferc=next(x for x in stories if x["source"]=="FERC News Releases")
+        self.assertEqual(ferc["time_basis"],"official_publication_date_only")
+        self.assertFalse(ferc["publisher_time_verified"])
+        self.assertEqual(ferc["morning_time_bucket"],
+                         "date_only_prior_day_observed_since_previous_cutoff")
+        self.assertIn(ferc["category"],
+                      ("Natural Gas","Infrastructure & Investment"))
+
+    def test_ferc_legacy_unknown_observation_stays_background(self):
+        a,b,c=fixtures()
+        a["articles"].append({
+            "url":"https://www.ferc.gov/news-events/news/ferc-approves-gas-infrastructure",
+            "title":"FERC Approves Major Gas Infrastructure Facilities to Get American Energy Moving",
+            "source":"FERC News Releases", "published_precision":"day",
+            "published_utc":"2026-11-18T00:00:00+00:00"})
+        result=prepare(a,b,c,now=NOW)
+        self.assertNotIn("FERC News Releases",
+                         {x["source"] for x in result["research_desk"]["stories"]})
+        self.assertIn("FERC News Releases",
+                      {x["source"] for x in result["background_context"]})
+
     def test_older_publisher_dated_article_first_seen_after_cutoff_is_excluded(self):
         a,b,c=fixtures()
         a["articles"].append({
