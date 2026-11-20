@@ -1,0 +1,8 @@
+{
+  "run_utc": "2026-11-20T02:52:55.440539+00:00",
+  "commit_sha": "348a396cb8600dc93260b934f738887b099db61d",
+  "run_id": "44663876873",
+  "fixture_tests": "failure",
+  "live_probe": "failure",
+  "status": "failed"
+}
