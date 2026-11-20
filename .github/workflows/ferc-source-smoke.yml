@@ -1,0 +1,116 @@
+name: EnergyBrew FERC primary-source smoke test (NO COLLECTION STATE)
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "ferc_news.py"
+      - "tests/test_ferc_news.py"
+      - ".github/workflows/ferc-source-smoke.yml"
+permissions:
+  contents: write
+
+concurrency:
+  group: energybrew-ferc-source-smoke
+  cancel-in-progress: false
+  queue: max
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check offline FERC parsing and state preservation
+        id: tests
+        continue-on-error: true
+        run: python -m unittest discover -s tests -p "test_ferc_news.py" -v
+      - name: Probe live FERC listing HEADLINES (no article pages or bodies)
+        id: probe
+        continue-on-error: true
+        run: |
+          mkdir -p output/source_smoke
+          python - <<'PY'
+          import json
+          from datetime import datetime, timezone
+          from pathlib import Path
+          from ferc_news import INDEX_URL, fetch_listing, parse_listing
+          now=datetime.now(timezone.utc)
+          raw,status=fetch_listing(INDEX_URL)
+          if status < 200 or status >= 300:
+              raise ValueError(f"FERC HTTP {status}")
+          rows=parse_listing(raw,now=now)
+          data={
+              "checked_utc":datetime.now(timezone.utc).isoformat(),
+              "source":"FERC official newsroom listing",
+              "http_status":status,
+              "dated_relevant_headlines":len(rows),
+              "day_only":True,
+              "headline_sample":[
+                  {"title":x["title"],"url":x["url"],"day":x["published_utc"][:10]}
+                  for x in rows[:8]
+              ],
+              "article_bodies_fetched":False,
+              "warning":"Official newsroom DAY labels and our poll time are different observations. No publisher release hour or source reuse rights were inferred.",
+          }
+          Path("output/source_smoke/ferc_probe.json").write_text(
+              json.dumps(data,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+          print(json.dumps(data,indent=2))
+          PY
+      - name: Save source probe result independent of collector state
+        if: always()
+        env:
+          TEST_STATUS: ${{ steps.tests.outcome }}
+          PROBE_STATUS: ${{ steps.probe.outcome }}
+        run: |
+          python - <<'PY'
+          import json,os
+          from datetime import datetime,timezone
+          from pathlib import Path
+          path=Path("output/source_smoke/ferc_probe.json")
+          data=json.loads(path.read_text()) if path.exists() else {}
+          data.update({
+              "run_utc":datetime.now(timezone.utc).isoformat(),
+              "commit_sha":os.environ["GITHUB_SHA"],
+              "run_id":os.environ["GITHUB_RUN_ID"],
+              "fixture_tests":os.environ["TEST_STATUS"],
+              "live_probe":os.environ["PROBE_STATUS"],
+              "status":"passed" if os.environ["TEST_STATUS"]=="success"
+                                 and os.environ["PROBE_STATUS"]=="success" else "failed",
+          })
+          path.parent.mkdir(parents=True,exist_ok=True)
+          path.write_text(json.dumps(data,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
+          print("FERC source validation:",data["status"])
+          PY
+          STATE_DIR="$RUNNER_TEMP/energybrew-source-evidence"
+          if git ls-remote --exit-code --heads origin source-evidence >/dev/null 2>&1; then
+            git fetch --no-tags origin source-evidence
+            git worktree add --detach "$STATE_DIR" FETCH_HEAD
+            cd "$STATE_DIR"
+            git switch -c "source-check-$GITHUB_RUN_ID"
+          else
+            git worktree add --detach "$STATE_DIR" HEAD
+            cd "$STATE_DIR"
+            git switch --orphan source-evidence
+            git rm -rf . >/dev/null 2>&1 || true
+          fi
+          mkdir -p state
+          cp "$GITHUB_WORKSPACE/output/source_smoke/ferc_probe.json" state/ferc_probe_latest.json
+          git config user.name "EnergyBrew source validation"
+          git config user.email "energybrew-bot@users.noreply.github.com"
+          git add -f state/ferc_probe_latest.json
+          git commit -m "Record FERC real-source smoke test $GITHUB_RUN_ID"
+          git push origin HEAD:source-evidence
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: energybrew-ferc-source-check-${{ github.run_id }}
+          path: output/source_smoke/ferc_probe.json
+          retention-days: 14
+          if-no-files-found: warn
+      - name: Fail visibly if the real newsroom cannot be parsed
+        if: steps.tests.outcome != 'success' || steps.probe.outcome != 'success'
+        run: exit 1
