@@ -226,9 +226,9 @@ jobs:
             git push origin HEAD:collector-state
           }
       - name: Explicitly report unrecovered collector component errors
-        if: always() && steps.metadata_guard.outcome == 'success' && (steps.gal.outcome == 'failure' || steps.releasefeed.outcome == 'failure' || steps.discovery.outcome == 'failure')
+        if: always() && steps.metadata_guard.outcome == 'success' && (steps.ferc.outcome == 'failure' || steps.gal.outcome == 'failure' || steps.releasefeed.outcome == 'failure' || steps.discovery.outcome == 'failure')
         run: |
-          echo "A collection provider failed; its state and diagnostics were preserved." >> "$GITHUB_STEP_SUMMARY"
+          echo "A collection provider failed or its response was unparseable; retained history and diagnostics were preserved." >> "$GITHUB_STEP_SUMMARY"
           # The GDELT DOC provider may be rate-limited by design. A failed
           # optional provider is degraded coverage, not a fabricated success.
           echo "Provider degradation remains recorded in operational metrics."
