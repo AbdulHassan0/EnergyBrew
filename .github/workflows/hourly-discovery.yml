@@ -13,9 +13,13 @@ permissions:
 
 # A shared lock serializes the backup writer with the full RSS/GAL workflow.
 # Both persist their separate state in the same collector-state branch.
+# Shared state writers must never replace another waiting polling run.
+# GitHub Actions defaults to cancelling an existing pending run; queue:max
+# retains up to 100 queued runs, while preserving serial branch writes.
 concurrency:
   group: energybrew-live-collector
   cancel-in-progress: false
+  queue: max
 
 jobs:
   sample:
