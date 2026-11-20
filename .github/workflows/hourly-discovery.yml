@@ -26,8 +26,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Validate GAL collector before live sampling
-        run: python -m unittest discover -s tests -p "test_gal.py" -v
+      # Offline tests run in news-logic-ci.yml on main pushes. The staggered
+      # backup must poll first, not spend its narrow window on tests.
       - name: Restore previous discovery history
         run: |
           mkdir -p state
