@@ -43,7 +43,7 @@ def load_json(path, *, default=None):
         return default
 
 
-def audit(rss_state, rss_report, discovery_state=None, discovery_report=None, *, release_state=None, release_report=None, gal_report=None, now=None):
+def audit(rss_state, rss_report, discovery_state=None, discovery_report=None, *, release_state=None, release_report=None, gal_report=None, ferc_report=None, now=None):
     now = now or datetime.now(timezone.utc)
     if now.tzinfo is None:
         raise ValueError("now must be timezone aware")
@@ -54,9 +54,21 @@ def audit(rss_state, rss_report, discovery_state=None, discovery_report=None, *,
     release_state = release_state if isinstance(release_state, dict) else {}
     release_report = release_report if isinstance(release_report, dict) else {}
     gal_report = gal_report if isinstance(gal_report, dict) else {}
+    ferc_report = ferc_report if isinstance(ferc_report, dict) else {}
     cutoff = now-timedelta(hours=24)
     articles = rss_state.get("articles") if isinstance(rss_state.get("articles"),list) else []
     discovery = discovery_state.get("leads") if isinstance(discovery_state.get("leads"),list) else []
+    ferc_date_only = [
+        item for item in articles
+        if isinstance(item,dict) and item.get("source") == "FERC News Releases"
+        and item.get("published_precision") == "day"
+    ]
+    ferc_observed_24h = sum(
+        bool(stamp and cutoff <= stamp <= now)
+        for item in ferc_date_only
+        if (stamp := dt(item.get("first_collector_observed_utc")
+                        or item.get("first_collected_utc"))) is not None
+    )
     candidates = {}
     for article in articles:
         if not isinstance(article, dict):
@@ -157,6 +169,8 @@ def audit(rss_state, rss_report, discovery_state=None, discovery_report=None, *,
         warnings.append("Rolling GAL sampling continuity is unmeasured; one recent poll is not 24h coverage")
     if not research_high:
         warnings.append("No high-signal global research leads first seen within 24h")
+    if ferc_report and ferc_report.get("status")!="ok":
+        warnings.append("FERC primary newsroom headline lane failed or is degraded")
     if release_report and release_report.get("status")!="ok":
         warnings.append("Energy company-announcement feed is degraded or unavailable")
     summary={
@@ -181,6 +195,10 @@ def audit(rss_state, rss_report, discovery_state=None, discovery_report=None, *,
         "research_publisher_dates_verified":0,
         "company_announcement_links_24h":len(release_links),
         "company_announcement_feed_status":release_report.get("status","not_run"),
+        "ferc_news_status":ferc_report.get("status","not_run"),
+        "ferc_news_last_run_utc":ferc_report.get("run_utc"),
+        "ferc_news_day_only_links_retained":len(ferc_date_only),
+        "ferc_news_day_only_links_first_collected_24h":ferc_observed_24h,
         "company_announcement_publisher_dates_verified":0,
         "rolling_gal_status":gal_report.get("status","not_run"),
         "rolling_gal_recent_healthy":gal_recent_ok,
@@ -206,14 +224,14 @@ def audit(rss_state, rss_report, discovery_state=None, discovery_report=None, *,
     return summary
 
 
-def report(rss_state_path, rss_report_path, discovery_state_path, discovery_report_path, output_dir, *, release_state_path=None, release_report_path=None, gal_report_path=None, now=None):
+def report(rss_state_path, rss_report_path, discovery_state_path, discovery_report_path, output_dir, *, release_state_path=None, release_report_path=None, gal_report_path=None, ferc_report_path=None, now=None):
     result=audit(load_json(rss_state_path),
                  load_json(rss_report_path),
                  load_json(discovery_state_path),
                  load_json(discovery_report_path),
                  release_state=load_json(release_state_path),
                  release_report=load_json(release_report_path),
-                 gal_report=load_json(gal_report_path),now=now)
+                 gal_report=load_json(gal_report_path),ferc_report=load_json(ferc_report_path),now=now)
     output_dir=Path(output_dir)
     output_dir.mkdir(parents=True,exist_ok=True)
     (output_dir/"health.json").write_text(json.dumps(result,indent=2)+"\n",encoding="utf-8")
@@ -226,11 +244,12 @@ def report(rss_state_path, rss_report_path, discovery_state_path, discovery_repo
            "GDELT publisher-verified times: **0** (requires a separate check)",
            f"Company/newswire release leads (last 24h feed date): **{result['company_announcement_links_24h']}**",
            f"Company release provider status: **{result['company_announcement_feed_status']}**",
+           f"FERC official newsroom: **{result['ferc_news_status']}**; publication DATE only; retained links: **{result['ferc_news_day_only_links_retained']}**; first collected in last 24h: **{result['ferc_news_day_only_links_first_collected_24h']}**",
            f"Rolling GAL latest sample: **{result['rolling_gal_status']}** (recent success: {result['rolling_gal_recent_healthy']})",
            f"Rolling GAL 24h potential sampling coverage upper bound: **{str(result['rolling_gal_24h_coverage_upper_bound_pct']) + '%' if result['rolling_gal_24h_coverage_upper_bound_pct'] is not None else 'unmeasured'}**; continuity adequate: **{result['rolling_gal_24h_continuity_adequate']}**",
            "Company release publication times and issuer claims independently verified: **0**",
            "", "## Missing coverage"]
-    lines += [f"- {b}: {result['observed_beat_counts_24h'][b]} verified-source editorial leads" for b in REQUIRED_BEATS]
+    lines += [f"- {b}: {result['observed_beat_counts_24h'][b]} publisher-feed timestamped editorial leads" for b in REQUIRED_BEATS]
     lines += ["", "## Critical problems"]
     lines += ["- "+s for s in result["critical"]] or ["- None detected"]
     lines += ["", "## Warnings"]
@@ -249,11 +268,12 @@ def main(argv=None):
     p.add_argument("--releases-state",default="state/press_releases.json")
     p.add_argument("--releases-run",default="output/releases/latest.json")
     p.add_argument("--gal-run",default="output/gal/latest.json")
+    p.add_argument("--ferc-run",default="output/ferc/latest.json")
     p.add_argument("--output",default="output/health")
     args=p.parse_args(argv)
     r=report(args.rss_state,args.rss_run,args.discovery_state,args.discovery_run,args.output,
              release_state_path=args.releases_state,release_report_path=args.releases_run,
-             gal_report_path=args.gal_run)
+             gal_report_path=args.gal_run,ferc_report_path=args.ferc_run)
     print(json.dumps({k:r[k] for k in ("status","official_feeds_connected",
         "timestamped_editorial_leads_24h","research_first_seen_links_24h",
         "research_high_signal_links_24h","company_announcement_links_24h",
