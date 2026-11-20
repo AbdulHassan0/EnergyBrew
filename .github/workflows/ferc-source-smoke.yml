@@ -1,12 +1,8 @@
 name: EnergyBrew FERC primary-source smoke test (NO COLLECTION STATE)
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - "ferc_news.py"
-      - "tests/test_ferc_news.py"
-      - ".github/workflows/ferc-source-smoke.yml"
+  # Manual only. The November 19 hosted probe received HTTP 403.
+  # No repeated automated attempts against a site that blocks bot requests.
 permissions:
   contents: write
 
