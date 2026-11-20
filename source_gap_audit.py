@@ -96,6 +96,7 @@ def reconcile(rss, discovery, releases=None, *, now=None):
                                       item["observed_time_utc"],item["url"]),
                     reverse=False)
     selected = []
+    selected_raw = []  # Preserve observation times for same-event comparisons.
     beat_caps = Counter()
     domain_caps = Counter()
     for item in candidates:
@@ -104,10 +105,11 @@ def reconcile(rss, discovery, releases=None, *, now=None):
         beat, domain = item["category"], item["domain"]
         if beat_caps[beat] >= MAX_PER_CATEGORY or domain_caps[domain] >= MAX_PER_DOMAIN:
             continue
-        if _nearby(selected,item):
+        if _nearby(selected_raw,item):
             continue
         beat_caps[beat] += 1
         domain_caps[domain] += 1
+        selected_raw.append(item)
         selected.append({
             "title": item["title"], "url": item["url"],
             "domain": domain, "category": beat,
