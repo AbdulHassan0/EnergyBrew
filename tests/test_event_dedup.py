@@ -71,6 +71,11 @@ class EventDedupTests(unittest.TestCase):
         b=item("China Gas and Venture Global signed LNG supply agreement", "https://b.test/b")
         self.assertTrue(same_event(a, b))
 
+    def test_missing_urls_are_not_identity_evidence(self):
+        a=item("Iran tanker disruption lifts crude oil prices",None)
+        b=item("FERC approves new natural gas pipeline project",None)
+        self.assertFalse(same_event(a,b))
+
     def test_markers(self):
         self.assertIn("venture global",entities("Venture Global shipping LNG"))
         self.assertEqual(family("Venture Global LNG supply agreement"),"lng_contract")
