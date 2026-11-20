@@ -55,6 +55,11 @@ jobs:
         if: ${{ steps.gate.outputs.active == 'true' }}
         continue-on-error: true
         run: python collector.py --state state/articles.json --output output/precutoff-rss --hours 48
+      - name: Capture FERC agency newsroom headlines before the cutoff
+        id: ferc
+        if: ${{ steps.gate.outputs.active == 'true' && steps.rss.outcome == 'success' }}
+        continue-on-error: true
+        run: python ferc_news.py --state state/articles.json --output output/ferc
       - name: Validate safe public headline metadata
         id: guard
         if: ${{ steps.gate.outputs.active == 'true' && steps.rss.outcome == 'success' }}
@@ -69,11 +74,15 @@ jobs:
           git switch -c "precutoff-$GITHUB_RUN_ID"
           mkdir -p state
           cp "$GITHUB_WORKSPACE/state/articles.json" state/articles.json
+          if test -f "$GITHUB_WORKSPACE/output/ferc/latest.json"; then
+            cp "$GITHUB_WORKSPACE/output/ferc/latest.json" state/ferc_latest.json
+          fi
           cp "$GITHUB_WORKSPACE/output/precutoff-rss/latest.json" state/latest.json
           cp "$GITHUB_WORKSPACE/output/precutoff-rss/latest.md" state/latest.md
           git config user.name "EnergyBrew publisher collector"
           git config user.email "energybrew-bot@users.noreply.github.com"
           git add -f state/articles.json state/latest.json state/latest.md
+          if test -f state/ferc_latest.json; then git add -f state/ferc_latest.json; fi
           if ! git diff --cached --quiet; then
             git commit -m "Save pre-cutoff RSS $GITHUB_RUN_ID"
             git push origin HEAD:collector-state
@@ -82,7 +91,7 @@ jobs:
         if: always()
         run: |
           echo "No email sent. Late scheduled attempts are never counted as timely pre-cutoff news scans." >> "$GITHUB_STEP_SUMMARY"
-          echo "Window: ${{ steps.gate.outputs.active }}, RSS: ${{ steps.rss.outcome }}, metadata guard: ${{ steps.guard.outcome }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "Window: ${{ steps.gate.outputs.active }}, RSS: ${{ steps.rss.outcome }}, FERC: ${{ steps.ferc.outcome }}, metadata guard: ${{ steps.guard.outcome }}" >> "$GITHUB_STEP_SUMMARY"
           if test -s output/precutoff-rss/latest.md; then
             sed -n '1,30p' output/precutoff-rss/latest.md >> "$GITHUB_STEP_SUMMARY"
           else
@@ -92,7 +101,9 @@ jobs:
         if: ${{ steps.gate.outputs.active == 'true' }}
         with:
           name: energybrew-precutoff-rss-${{ github.run_id }}
-          path: output/precutoff-rss/
+          path: |
+            output/precutoff-rss/
+            output/ferc/
           retention-days: 7
           if-no-files-found: warn
       - name: Signal failed attempted collection
