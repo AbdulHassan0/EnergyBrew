@@ -5,9 +5,13 @@ on:
     - cron: "17 4,10,16,22 * * *"
 permissions:
   contents: write
+# Shared state writers must never replace another waiting polling run.
+# GitHub Actions defaults to cancelling an existing pending run; queue:max
+# retains up to 100 queued runs, while preserving serial branch writes.
 concurrency:
   group: energybrew-live-collector
   cancel-in-progress: false
+  queue: max
 
 jobs:
   collect:
