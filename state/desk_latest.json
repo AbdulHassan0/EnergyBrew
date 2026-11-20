@@ -1,15 +1,16 @@
 {
-  "generated_utc": "2026-11-20T01:26:00.075413+00:00",
+  "generated_utc": "2026-11-20T13:08:59.984311+00:00",
   "status": "research_only_not_approved",
-  "unique_relevant_urls_7d": 502,
+  "unique_relevant_urls_7d": 572,
   "selected_research_links": 32,
-  "unique_domains_in_selection": 18,
+  "unique_domains_in_selection": 17,
   "queue_counts": {
-    "older_official_context": 36,
-    "specialist_publisher_24h": 8,
+    "older_official_context": 38,
+    "specialist_publisher_24h": 14,
     "regulatory_date_only": 6,
-    "discovery_unverified": 428,
-    "company_release_unverified": 24
+    "discovery_unverified": 482,
+    "timestamped_official": 1,
+    "company_release_unverified": 31
   },
   "selected_category_counts": {
     "Natural Gas": 4,
@@ -23,15 +24,15 @@
     "Natural Gas": 4,
     "LNG": 7,
     "Power & Electricity": 8,
-    "Oil & Energy": 8,
+    "Oil & Energy": 10,
     "Infrastructure & Investment": 14,
     "Geopolitics": 8
   },
   "missing_categories": [],
-  "publisher_timestamped_official_24h": 0,
-  "publisher_timestamped_specialist_24h": 8,
+  "publisher_timestamped_official_24h": 1,
+  "publisher_timestamped_specialist_24h": 14,
   "system_operator_primary_24h": 0,
-  "likely_same_event_links_suppressed": 28,
+  "likely_same_event_links_suppressed": 3,
   "discovery_publisher_dates_verified": 0,
   "promotional_or_language_review_count": 0,
   "stories": [
@@ -67,6 +68,101 @@
       "independent_corroboration_verified": false,
       "queue": "older_official_context",
       "rank": 150
+    },
+    {
+      "title": "Trump’s Ukraine Energy Truce Unravels as Russian Missiles Hit Kyiv",
+      "url": "https://oilprice.com/Energy/Energy-General/Trumps-Ukraine-Energy-Truce-Unravels-as-Russian-Missiles-Hit-Kyiv.html",
+      "domain": "oilprice.com",
+      "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00",
+      "local_collection_time_known": true,
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:energy",
+        "geopolitical_event:missiles",
+        "world_context:russian"
+      ],
+      "origin": "official_rss",
+      "time_basis": "specialist_publisher_rss_timestamp",
+      "observed_time_utc": "2026-11-20T12:30:00+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "specialist_publisher_24h",
+      "rank": 145
+    },
+    {
+      "title": "Iran Steps Up Hormuz Tanker Attacks as Oil Prices Slide",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Steps-Up-Hormuz-Tanker-Attacks-as-Oil-Prices-Slide.html",
+      "domain": "oilprice.com",
+      "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00",
+      "local_collection_time_known": true,
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics",
+        "Oil & Energy"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:oil",
+        "geopolitical_event:attacks",
+        "world_context:iran"
+      ],
+      "origin": "official_rss",
+      "time_basis": "specialist_publisher_rss_timestamp",
+      "observed_time_utc": "2026-11-20T12:30:00+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "specialist_publisher_24h",
+      "rank": 145
+    },
+    {
+      "title": "Iran Moves to Restart Oil Exports Despite U.S. Naval Blockade",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Moves-to-Restart-Oil-Exports-Despite-US-Naval-Blockade.html",
+      "domain": "oilprice.com",
+      "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00",
+      "local_collection_time_known": true,
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics",
+        "Oil & Energy"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:oil",
+        "geopolitical_event:blockade",
+        "world_context:iran"
+      ],
+      "origin": "official_rss",
+      "time_basis": "specialist_publisher_rss_timestamp",
+      "observed_time_utc": "2026-11-20T09:00:00+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "specialist_publisher_24h",
+      "rank": 145
     },
     {
       "title": "PJM Board Approves Transmission Project Changes to Support Grid Reliability",
@@ -163,53 +259,6 @@
       "rank": 136
     },
     {
-      "title": "China Gas Upsizes Long-Term LNG Supply with U.S. Venture Global",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/China-Gas-Upsizes-Long-Term-LNG-Supply-with-US-Venture-Global.html",
-      "domain": "oilprice.com",
-      "first_collector_observed_utc": null,
-      "local_collection_time_known": false,
-      "source": "OilPrice.com News",
-      "source_class": "specialist_publisher",
-      "category": "LNG",
-      "coverage_themes": [
-        "LNG"
-      ],
-      "relevance_score": 100,
-      "relevance_evidence": [
-        "lng",
-        "lng supply",
-        "venture global"
-      ],
-      "origin": "official_rss",
-      "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-18T15:30:00+00:00",
-      "publisher_time_verified": true,
-      "date_confidence": "publisher_rss_timestamp",
-      "within_24h_on_own_time_basis": false,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "older_official_context",
-      "rank": 130,
-      "related_reports": [
-        {
-          "title": "Venture Global’s bigger LNG deal with China Gas adds 500,000 tons annually",
-          "url": "https://www.offshore-energy.biz/2026/11/18/venture-globals-bigger-lng-deal-with-china-gas-adds-500000-tons-annually",
-          "source": "Offshore Energy News",
-          "origin": "official_rss",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "Venture Global and China Gas Announce Increased Long-Term LNG Agreement",
-          "url": "https://finance.yahoo.com/energy/articles/venture-global-china-gas-announce-000000135.html",
-          "source": "Press Release Feed",
-          "origin": "company_announcement",
-          "note": "Potential same-event source link; not independently corroborated"
-        }
-      ]
-    },
-    {
       "title": "Grid operators file closely watched large load interconnection reforms at FERC",
       "url": "https://www.utilitydive.com/news/pjm-rto-large-load-interconnection-ferc-show-cause/874872",
       "domain": "www.utilitydive.com",
@@ -264,76 +313,13 @@
       "observed_time_utc": "2026-11-19T05:00:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "date_only",
-      "within_24h_on_own_time_basis": true,
+      "within_24h_on_own_time_basis": false,
       "needs_editor_review": [],
       "editorial_status": "research_only_not_approved",
       "other_origins": [],
       "independent_corroboration_verified": false,
       "queue": "regulatory_date_only",
       "rank": 121
-    },
-    {
-      "title": "China Burns Less Oil and Coal as the Iran War Reshapes Its Energy Mix",
-      "url": "https://oilprice.com/Energy/Energy-General/China-Burns-Less-Oil-and-Coal-as-the-Iran-War-Reshapes-Its-Energy-Mix.html",
-      "domain": "oilprice.com",
-      "first_collector_observed_utc": null,
-      "local_collection_time_known": false,
-      "source": "OilPrice.com News",
-      "source_class": "specialist_publisher",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics",
-        "Oil & Energy"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:oil",
-        "geopolitical_event:war",
-        "world_context:iran"
-      ],
-      "origin": "official_rss",
-      "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-18T22:00:00+00:00",
-      "publisher_time_verified": true,
-      "date_confidence": "publisher_rss_timestamp",
-      "within_24h_on_own_time_basis": false,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "older_official_context",
-      "rank": 120
-    },
-    {
-      "title": "Iran War Set to Hike 2027 UK Energy Bills to Four-Year High",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-War-Set-to-Hike-2027-UK-Energy-Bills-to-Four-Year-High.html",
-      "domain": "oilprice.com",
-      "first_collector_observed_utc": null,
-      "local_collection_time_known": false,
-      "source": "OilPrice.com News",
-      "source_class": "specialist_publisher",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:energy",
-        "geopolitical_event:war",
-        "world_context:iran"
-      ],
-      "origin": "official_rss",
-      "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-18T16:30:00+00:00",
-      "publisher_time_verified": true,
-      "date_confidence": "publisher_rss_timestamp",
-      "within_24h_on_own_time_basis": false,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "older_official_context",
-      "rank": 120
     },
     {
       "title": "Fourth floating LNG terminal put into operation mode to fuel Germany’s energy security",
@@ -395,6 +381,77 @@
       "independent_corroboration_verified": false,
       "queue": "specialist_publisher_24h",
       "rank": 115
+    },
+    {
+      "title": "Venture Global’s bigger LNG deal with China Gas adds 500,000 tons annually",
+      "url": "https://www.offshore-energy.biz/2026/11/18/venture-globals-bigger-lng-deal-with-china-gas-adds-500000-tons-annually",
+      "domain": "www.offshore-energy.biz",
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00",
+      "local_collection_time_known": true,
+      "source": "Offshore Energy News",
+      "source_class": "specialist_publisher",
+      "category": "LNG",
+      "coverage_themes": [
+        "LNG"
+      ],
+      "relevance_score": 84,
+      "relevance_evidence": [
+        "lng",
+        "venture global"
+      ],
+      "origin": "official_rss",
+      "time_basis": "specialist_publisher_rss_timestamp",
+      "observed_time_utc": "2026-11-18T13:01:15+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
+      "within_24h_on_own_time_basis": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "older_official_context",
+      "rank": 114,
+      "related_reports": [
+        {
+          "title": "Venture Global and China Gas Announce Increased Long-Term LNG Agreement",
+          "url": "https://finance.yahoo.com/energy/articles/venture-global-china-gas-announce-000000135.html",
+          "source": "Press Release Feed",
+          "origin": "company_announcement",
+          "note": "Potential same-event source link; not independently corroborated"
+        }
+      ]
+    },
+    {
+      "title": "Cheniere Gets Federal Approval for Major Sabine Pass LNG Expansion",
+      "url": "https://www.oedigital.com/news/544490-cheniere-gets-federal-approval-for-major-sabine-pass-lng-expansion",
+      "domain": "www.oedigital.com",
+      "first_collector_observed_utc": "2026-11-20T13:08:58.711900+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "LNG",
+      "coverage_themes": [
+        "LNG",
+        "Infrastructure & Investment"
+      ],
+      "relevance_score": 100,
+      "relevance_evidence": [
+        "cheniere",
+        "lng",
+        "sabine pass"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-20T13:01:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 112
     },
     {
       "title": "How National Grid, Eversource are using VPPs to solve local-level constraints",
@@ -551,6 +608,134 @@
       "rank": 106
     },
     {
+      "title": "Houthis Warn of Attacks on Saudi Red Sea Ports",
+      "url": "http://www.maritimeprofessional.com/news/houthis-warn-attacks-saudi-ports-424449",
+      "domain": "www.maritimeprofessional.com",
+      "first_collector_observed_utc": "2026-11-20T13:08:58.711900+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:red sea",
+        "geopolitical_event:attacks",
+        "world_context:houthis"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-20T13:01:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
+    },
+    {
+      "title": "Ukrainian drones targeted oil terminal on Kola Peninsula",
+      "url": "https://www.thebarentsobserver.com/news/ukrainian-drones-targeted-oil-terminal-on-kola-peninsula/462305",
+      "domain": "www.thebarentsobserver.com",
+      "first_collector_observed_utc": "2026-11-20T13:08:58.711900+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics",
+        "Infrastructure & Investment",
+        "Oil & Energy"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:oil",
+        "geopolitical_event:drones",
+        "world_context:ukrainian"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-20T13:01:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
+    },
+    {
+      "title": "Oil Prices Rise as Houthi Strikes Revive Supply Disruption Fears",
+      "url": "https://www.oedigital.com/news/544488-oil-prices-rise-as-houthi-strikes-revive-supply-disruption-fears",
+      "domain": "www.oedigital.com",
+      "first_collector_observed_utc": "2026-11-20T13:08:58.711900+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics",
+        "Oil & Energy"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:oil",
+        "geopolitical_event:strikes",
+        "world_context:houthi"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-20T13:01:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
+    },
+    {
+      "title": "Oil up as Houthi attacks on Riyadh raise supply concerns",
+      "url": "https://www.rte.ie/news/business/2026/1120/1599964-world-oil-prices",
+      "domain": "www.rte.ie",
+      "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics",
+        "Oil & Energy"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:oil",
+        "geopolitical_event:attacks",
+        "world_context:houthi"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-20T09:01:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
+    },
+    {
       "title": "US Sour Crude’s War Premium Vanishes as Supply Surges | Stock Market News",
       "url": "https://www.livemint.com/market/us-sour-crude-s-war-premium-vanishes-as-supply-surges-11795121544365.html",
       "domain": "www.livemint.com",
@@ -572,335 +757,6 @@
       "origin": "global_discovery",
       "time_basis": "gdelt_gal_rss_provider_time_unverified",
       "observed_time_utc": "2026-11-19T23:02:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102
-    },
-    {
-      "title": "Rapidan Energy: Crumbling \"Peak Demand\" Narrative and Iran War Reshape the Long-Term Investment Map",
-      "url": "https://peakoil.com/generalideas/rapidan-energy-crumbling-peak-demand-narrative-and-iran-war-reshape-the-long-term-investment-map",
-      "domain": "peakoil.com",
-      "first_collector_observed_utc": "2026-11-19T23:06:34.942486+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics",
-        "Infrastructure & Investment"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:energy",
-        "geopolitical_event:war",
-        "world_context:iran"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-19T23:02:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102
-    },
-    {
-      "title": "US stocks fall, oil rises on Middle East conflict",
-      "url": "https://www.digbycourier.ca/us-stocks-fall-oil-rises-on-middle-east-conflict",
-      "domain": "www.digbycourier.ca",
-      "first_collector_observed_utc": "2026-11-19T23:06:34.942486+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics",
-        "Oil & Energy"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:oil",
-        "geopolitical_event:conflict",
-        "world_context:us"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-19T23:02:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102
-    },
-    {
-      "title": "There is no going back ‘to the way it was before’ the Iran war’s energy shock, IEA says",
-      "url": "https://www.pilotonline.com/2026/11/19/iran-war-energy-shock-iea",
-      "domain": "www.pilotonline.com",
-      "first_collector_observed_utc": "2026-11-19T20:02:38.725241+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:energy",
-        "geopolitical_event:war",
-        "world_context:iran"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-19T19:47:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102,
-      "related_reports": [
-        {
-          "title": "There is no going back 'to the way it was before' the Iran War's energy shock, IEA says",
-          "url": "https://www.wyff4.com/article/iran-war-energy-shock-long-term-impact-iea/74479995",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "There is no going back 'to the way it was before' the Iran War's energy shock, IEA says",
-          "url": "https://www.wesh.com/article/iran-war-energy-shock-long-term-impact-iea/74479995",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "There is no going back 'to the way it was before' the Iran War's energy shock, IEA says",
-          "url": "https://www.wxii12.com/article/iran-war-energy-shock-long-term-impact-iea/74479995",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "There is no going back 'to the way it was before' the Iran War's energy shock, IEA says",
-          "url": "https://www.kmbc.com/article/iran-war-energy-shock-long-term-impact-iea/74479995",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
-          "url": "https://www.ksat.com/business/2026/11/19/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy-shock-iea-says",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "There is no going back 'to the way it was before' the Iran War's energy shock, IEA says",
-          "url": "https://www.kcci.com/article/iran-war-energy-shock-long-term-impact-iea/74479995",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "There is no going back 'to the way it was before' the Iran War's energy shock, IEA says",
-          "url": "https://www.wmur.com/article/iran-war-energy-shock-long-term-impact-iea/74479995",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "There is no going back 'to the way it was before' the Iran War's energy shock, IEA says",
-          "url": "https://www.gulfcoastnewsnow.com/article/iran-war-energy-shock-long-term-impact-iea/74479995",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says - Newsday",
-          "url": "https://www.newsday.com/business/cop31-turkey-climate-change-energy-y82979",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
-          "url": "https://www.news4jax.com/business/2026/11/19/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy-shock-iea-says",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
-          "url": "https://www.gjsentinel.com/news/us/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy/article_8f374c45-2a86-51b6-bf51-af7f80ca10d1.html",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
-          "url": "https://www.dailygazette.com/ap/business/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy/article_ef13ff21-9fe2-512b-a414-cc831f1d214a.html",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
-          "url": "https://isp.netscape.com:443/pf/story/0001/20261119/a53b5522e557afd5370c08aee351032b",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
-          "url": "https://isp.netscape.com:443/news/world/story/0001/20261119/a53b5522e557afd5370c08aee351032b",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
-          "url": "https://www.clickorlando.com/business/2026/11/19/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy-shock-iea-says",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "There is no going back ‘to the way it was before’ the Iran war’s energy shock, IEA says",
-          "url": "https://www.therecord.com/business/there-is-no-going-back-to-the-way-it-was-before-the-iran-war-s-energy-shock-iea-says/article_66e3bb2c-44d0-500b-802b-ef9ee7dfb210.html",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
-          "url": "https://www.messenger-inquirer.com/ap/ap_national_news/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy/article_2f8406e2-c01c-5e66-854d-7715603bd582.html",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
-          "url": "http://www.wdtimes.com/news/national/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy/article_f31935de-68c8-5d16-bbc8-c49a7c3330bf.html",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
-          "url": "http://www.gazettextra.com/news/nation_world/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy/article_5c4eb20c-1159-5064-a8ba-9c22c92c10b6.html",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
-          "url": "https://www.winnipegfreepress.com/arts-and-life/life/greenpage/2026/11/19/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy-shock-iea-says",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
-          "url": "https://www.ktvo.com/news/nation-world/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy/article_700273e3-39b2-59a1-8b62-97b3313798cf.html",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
-          "url": "https://kdhnews.com/news/nation/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy/article_7c74bad0-b589-5647-ae81-0bfd0aedc630.html",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
-          "url": "https://www.couriernews.com/news/business/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy/article_baf9fbb9-0b63-50ee-805a-73089f8418a8.html",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "There is no going back 'to the way it was before' the Iran war's energy shock, IEA says",
-          "url": "https://www.thesunchronicle.com/business/there-is-no-going-back-to-the-way-it-was-before-the-iran-wars-energy/article_8799d6a5-5a86-5b36-9fc1-58b76eed83f2.html",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        }
-      ]
-    },
-    {
-      "title": "Iran conflict sparks historic energy security threat, IEA warns",
-      "url": "https://www.euronews.com/2026/11/19/middle-east-conflict-poses-biggest-threat-to-global-energy-security-in-history-iea-warns",
-      "domain": "www.euronews.com",
-      "first_collector_observed_utc": "2026-11-19T19:27:51.223785+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:energy",
-        "geopolitical_event:conflict",
-        "world_context:iran"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-19T19:17:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102
-    },
-    {
-      "title": "Houthis Attack Saudi Oil Pipeline Pumping Station",
-      "url": "http://www.maritimeprofessional.com/news/houthis-attack-saudi-pipeline-pumping-424289",
-      "domain": "www.maritimeprofessional.com",
-      "first_collector_observed_utc": null,
-      "local_collection_time_known": false,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics",
-        "Infrastructure & Investment",
-        "Oil & Energy"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:oil",
-        "geopolitical_event:attack",
-        "world_context:houthis"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-19T13:31:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
@@ -941,11 +797,11 @@
       "rank": 89
     },
     {
-      "title": "Oil Prices Steady as Hormuz Tanker Threats Offset Supply Glut Fears",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Steady-as-Hormuz-Tanker-Threats-Offset-Supply-Glut-Fears.html",
+      "title": "WTI Crude Sinks More Than 5% as Global Oil Glut Fears Grow",
+      "url": "https://oilprice.com/Energy/Energy-General/WTI-Crude-Sinks-More-Than-5-as-Global-Oil-Glut-Fears-Grow.html",
       "domain": "oilprice.com",
-      "first_collector_observed_utc": null,
-      "local_collection_time_known": false,
+      "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00",
+      "local_collection_time_known": true,
       "source": "OilPrice.com News",
       "source_class": "specialist_publisher",
       "category": "Oil & Energy",
@@ -954,11 +810,40 @@
       ],
       "relevance_score": 33,
       "relevance_evidence": [
-        "oil prices"
+        "wti"
       ],
       "origin": "official_rss",
       "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-19T06:00:00+00:00",
+      "observed_time_utc": "2026-11-20T12:30:00+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "specialist_publisher_24h",
+      "rank": 88
+    },
+    {
+      "title": "Nexans completes deep-water cable laying ops off Australia for Chevron",
+      "url": "https://www.offshore-energy.biz/2026/11/20/nexans-completes-deep-water-cable-laying-ops-off-australia-for-chevron",
+      "domain": "www.offshore-energy.biz",
+      "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00",
+      "local_collection_time_known": true,
+      "source": "Offshore Energy News",
+      "source_class": "specialist_publisher",
+      "category": "Oil & Energy",
+      "coverage_themes": [
+        "Oil & Energy"
+      ],
+      "relevance_score": 33,
+      "relevance_evidence": [
+        "chevron"
+      ],
+      "origin": "official_rss",
+      "time_basis": "specialist_publisher_rss_timestamp",
+      "observed_time_utc": "2026-11-20T12:22:36+00:00",
       "publisher_time_verified": true,
       "date_confidence": "publisher_rss_timestamp",
       "within_24h_on_own_time_basis": true,
@@ -1017,35 +902,6 @@
       ]
     },
     {
-      "title": "$960 million deal enabling NEO NEXT+ to bring EnQuest’s UK North Sea business into its fold",
-      "url": "https://www.offshore-energy.biz/2026/11/19/dollar960-million-deal-enabling-neo-next-to-bring-enquests-uk-north-sea-business-into-its-fold",
-      "domain": "www.offshore-energy.biz",
-      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00",
-      "local_collection_time_known": true,
-      "source": "Offshore Energy News",
-      "source_class": "specialist_publisher",
-      "category": "Oil & Energy",
-      "coverage_themes": [
-        "Oil & Energy"
-      ],
-      "relevance_score": 27,
-      "relevance_evidence": [
-        "enquest"
-      ],
-      "origin": "official_rss",
-      "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-19T16:23:56+00:00",
-      "publisher_time_verified": true,
-      "date_confidence": "publisher_rss_timestamp",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "specialist_publisher_24h",
-      "rank": 82
-    },
-    {
       "title": "Eastern Shore Natural Gas Company; Notice of Scoping Period Requesting Comments on Environmental Issues for the Proposed Delmar Regional Enhancement Project",
       "url": "https://www.federalregister.gov/documents/2026/11/17/2026-23361/eastern-shore-natural-gas-company-notice-of-scoping-period-requesting-comments-on-environmental",
       "domain": "www.federalregister.gov",
@@ -1097,7 +953,7 @@
       "observed_time_utc": "2026-11-19T11:01:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
+      "within_24h_on_own_time_basis": false,
       "needs_editor_review": [],
       "editorial_status": "research_only_not_approved",
       "other_origins": [],
@@ -1128,42 +984,13 @@
       "observed_time_utc": "2026-11-19T10:47:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
+      "within_24h_on_own_time_basis": false,
       "needs_editor_review": [],
       "editorial_status": "research_only_not_approved",
       "other_origins": [],
       "independent_corroboration_verified": false,
       "queue": "discovery_unverified",
       "rank": 78
-    },
-    {
-      "title": "Woodside and Trafigura sign off on decade-long LNG deal",
-      "url": "https://www.offshore-energy.biz/2026/11/18/woodside-and-trafigura-sign-off-on-decade-long-lng-deal",
-      "domain": "www.offshore-energy.biz",
-      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00",
-      "local_collection_time_known": true,
-      "source": "Offshore Energy News",
-      "source_class": "specialist_publisher",
-      "category": "LNG",
-      "coverage_themes": [
-        "LNG"
-      ],
-      "relevance_score": 45,
-      "relevance_evidence": [
-        "lng"
-      ],
-      "origin": "official_rss",
-      "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-18T09:16:02+00:00",
-      "publisher_time_verified": true,
-      "date_confidence": "publisher_rss_timestamp",
-      "within_24h_on_own_time_basis": false,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "older_official_context",
-      "rank": 75
     },
     {
       "title": "ASIA LNG MOC PERFORMANCE: Deliveries conclude for record volume of 148.5 TBtu during August MOC",
@@ -1215,7 +1042,7 @@
       "observed_time_utc": "2026-11-19T11:01:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
+      "within_24h_on_own_time_basis": false,
       "needs_editor_review": [],
       "editorial_status": "research_only_not_approved",
       "other_origins": [],

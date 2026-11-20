@@ -1,5 +1,5 @@
 {
-  "run_utc": "2026-11-19T23:06:23.762345+00:00",
+  "run_utc": "2026-11-20T13:08:35.485290+00:00",
   "days": [
     {
       "publication_date_utc": "2026-11-16",
@@ -21,9 +21,15 @@
     },
     {
       "publication_date_utc": "2026-11-19",
-      "source_links": 41,
-      "editorial_candidates": 8,
+      "source_links": 43,
+      "editorial_candidates": 9,
       "regulatory_date_only_leads": 4
+    },
+    {
+      "publication_date_utc": "2026-11-20",
+      "source_links": 17,
+      "editorial_candidates": 8,
+      "regulatory_date_only_leads": 6
     }
   ],
   "definitions": "Publisher-date link counts, not unique independently verified events or collection-day counts."
