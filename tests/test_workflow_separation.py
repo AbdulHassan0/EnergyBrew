@@ -44,6 +44,16 @@ class WorkflowSeparationTests(unittest.TestCase):
         self.assertNotIn("group: energybrew-live-collector",readonly)
         self.assertNotIn("git push origin HEAD:collector-state",readonly)
 
+    def test_precutoff_scan_does_not_waste_narrow_window_on_tests(self):
+        flow=workflow("precutoff-rss.yml")
+        self.assertNotIn("python -m unittest",flow)
+        self.assertIn("python collector.py --state state/articles.json",flow)
+        self.assertIn("public_collector_guard.py --sanitize-legacy",flow)
+        self.assertIn("queue: max",flow)
+        self.assertLess(flow.index("python collector.py --state"),
+                        flow.index("public_collector_guard.py --sanitize-legacy"))
+        self.assertIn("steps.rss.outcome == 'success'",flow)
+
     def test_regression_ci_is_code_push_only_not_source_poller(self):
         s=workflow("news-logic-ci.yml")
         self.assertIn("\n  push:",s)
