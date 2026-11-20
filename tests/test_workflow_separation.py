@@ -58,14 +58,22 @@ class WorkflowSeparationTests(unittest.TestCase):
         self.assertNotIn("python gal.py --",s)
         self.assertIn("saved source state only",s)
 
-    def test_frequent_free_gal_does_not_repeat_full_suite_on_every_poll(self):
-        frequent=workflow("frequent-gal.yml")
+    def test_rolling_gal_samplers_do_not_block_on_pre_poll_tests(self):
         offline=workflow("news-logic-ci.yml")
-        self.assertIn('test_gal.py',frequent)
-        self.assertIn('test_public_collector_guard.py',frequent)
-        self.assertIn('test_coverage_windows.py',frequent)
-        self.assertNotIn('python -m unittest discover -s tests -q',frequent)
         self.assertIn('python -m unittest discover -s tests -v',offline)
+        for filename in ("frequent-gal.yml","hourly-discovery.yml"):
+            with self.subTest(filename=filename):
+                sampler=workflow(filename)
+                self.assertNotIn('python -m unittest',sampler)
+                self.assertIn('python gal.py --state state/discovery.json',sampler)
+                self.assertIn('public_collector_guard.py --sanitize-legacy',sampler)
+                # Always restore retained state first; never poll with an
+                # empty history when a prior branch exists.
+                self.assertLess(sampler.index("git fetch --no-tags origin collector-state"),
+                                sampler.index("python gal.py --state state/discovery.json"))
+                # The metadata guard must still run before state persistence.
+                self.assertLess(sampler.index('public_collector_guard.py --sanitize-legacy'),
+                                sampler.index('git push origin HEAD:collector-state'))
 
     def test_morning_workflows_export_evidence_without_inventing_summary(self):
         research=workflow("morning-news-readiness.yml")
