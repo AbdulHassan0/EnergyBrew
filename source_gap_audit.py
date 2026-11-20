@@ -97,6 +97,7 @@ def reconcile(rss, discovery, releases=None, *, now=None):
                     reverse=False)
     selected = []
     selected_raw = []  # Preserve observation times for same-event comparisons.
+    suppressed_possible_same_event = 0
     beat_caps = Counter()
     domain_caps = Counter()
     for item in candidates:
@@ -106,6 +107,7 @@ def reconcile(rss, discovery, releases=None, *, now=None):
         if beat_caps[beat] >= MAX_PER_CATEGORY or domain_caps[domain] >= MAX_PER_DOMAIN:
             continue
         if _nearby(selected_raw,item):
+            suppressed_possible_same_event += 1
             continue
         beat_caps[beat] += 1
         domain_caps[domain] += 1
@@ -158,6 +160,7 @@ def reconcile(rss, discovery, releases=None, *, now=None):
         "direct_publisher_category_counts_24h": {x:direct_beats[x] for x in CATEGORY_ORDER},
         "indexed_candidate_category_counts_24h": {x:discovered_beats[x] for x in CATEGORY_ORDER},
         "high_priority_discovery_only_leads_for_review": selected,
+        "additional_links_suppressed_as_possible_same_event_in_review": suppressed_possible_same_event,
         "feed_liveness": feed_liveness,
         "warnings": [
             "Discovery-only does not establish a missed news event, editorial importance, or original publication date.",
@@ -188,7 +191,9 @@ def write_report(report, directory):
         "",
         f"Publisher-dated direct RSS links (24h): **{report['publisher_dated_direct_rss_links_24h']}**",
         f"GDELT index-first-seen distinct URLs (24h): **{report['gdelt_observed_unique_urls_24h']}**",
-        f"GDELT original publisher dates verified: **0**","",
+        f"GDELT original publisher dates verified: **0**",
+        f"Additional GDELT links suppressed as possible same-event copies in review: **{report['additional_links_suppressed_as_possible_same_event_in_review']}**",
+        "",
         "## Potential direct-feed gaps requiring verification",
         "",
     ]
