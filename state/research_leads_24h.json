@@ -1113,6 +1113,78 @@
     "first_collector_observed_utc": "2026-11-19T20:02:38.725241+00:00"
   },
   {
+    "url": "https://www.breitbart.com/middle-east/2026/11/18/iran-fires-on-kuwait-after-u-s-self-defense-strike-on-iranian-island",
+    "title": "Iran Fires on Kuwait After U.S. Self-Defense Strike on Iranian Island",
+    "domain": "www.breitbart.com",
+    "gdelt_first_seen_utc": "2026-11-20T01:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T01:45:10.490184+00:00"
+  },
+  {
+    "url": "https://www.digbycourier.ca/russia-wont-renew-grain-supply-until-west-meets-its-demands-putin-tells-erdogan-russia-ukraine-war-news",
+    "title": "Russia won't renew grain supply until West meets its demands, Putin tells Erdogan | Russia-Ukraine War News",
+    "domain": "www.digbycourier.ca",
+    "gdelt_first_seen_utc": "2026-11-20T01:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:war",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T01:45:10.490184+00:00"
+  },
+  {
+    "url": "https://www.centralwesterndaily.com.au/story/9395127/us-senate-rejects-curbing-trumps-iran-war-powers",
+    "title": "US Senate rejects curbing Trump's Iran war powers",
+    "domain": "www.centralwesterndaily.com.au",
+    "gdelt_first_seen_utc": "2026-11-20T01:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:war",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T01:45:10.490184+00:00"
+  },
+  {
     "url": "https://irannewsupdate.com/news/terrorism/u-s-indicts-three-iran-backed-operatives-over-nearly-20-terrorist-attacks-in-europe-and-america",
     "title": "U.S. Indicts Three Iran-Backed Operatives Over Nearly 20 Terrorist Attacks in Europe and America - Iran News Update",
     "domain": "irannewsupdate.com",
@@ -4156,6 +4228,50 @@
     "status": "discovery_only_requires_publisher_verification"
   },
   {
+    "url": "https://www.wabi.tv:443/2026/11/19/heating-oil-prices-maine-dip-third-consecutive-week",
+    "title": "Heating oil prices in Maine dip for third consecutive week",
+    "domain": "www.wabi.tv:443",
+    "gdelt_first_seen_utc": "2026-11-20T01:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "oil prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T01:45:10.490184+00:00"
+  },
+  {
+    "url": "https://inmaricopa.com/gas-prices-fall-nationwide-but-maricopa-drivers-are-still-paying-more",
+    "title": "Gas prices fall nationwide, but Maricopa drivers are still paying more",
+    "domain": "inmaricopa.com",
+    "gdelt_first_seen_utc": "2026-11-20T01:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T01:45:10.490184+00:00"
+  },
+  {
     "url": "https://www.wgal.com/article/will-president-trumps-agreement-with-putin-and-xi-bring-down-gas-prices/74481612",
     "title": "Will President Trump's agreement with Putin and Xi bring down gas prices?",
     "domain": "www.wgal.com",
@@ -5126,6 +5242,72 @@
     "discovery_providers": [
       "GDELT GAL RSS"
     ]
+  },
+  {
+    "url": "http://northcountrynow.com/stories/packed-house-at-massena-town-board-as-akwesasne-mohawk-tribe-calls-for-data-center-moratorium,401332",
+    "title": "Packed house at Massena Town Board as Akwesasne Mohawk Tribe calls for data center moratorium - North Country Now",
+    "domain": "northcountrynow.com",
+    "gdelt_first_seen_utc": "2026-11-20T01:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T01:45:10.490184+00:00"
+  },
+  {
+    "url": "https://www.wfyi.org/wfyi-news/2026-11-19/marion-county-indianapolis-data-center-committee-meeting-schedule-zoning-rules",
+    "title": "Here's how to give input on data center zoning rules in Indianapolis",
+    "domain": "www.wfyi.org",
+    "gdelt_first_seen_utc": "2026-11-20T01:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T01:45:10.490184+00:00"
+  },
+  {
+    "url": "https://www.wsfa.com/2026/11/20/montgomery-restaurant-owner-shares-experience-appearing-meta-ad-campaign-promoting-data-center",
+    "title": "Montgomery restaurant owner shares experience appearing in Meta ad campaign promoting data center",
+    "domain": "www.wsfa.com",
+    "gdelt_first_seen_utc": "2026-11-20T01:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T01:45:10.490184+00:00"
   },
   {
     "url": "https://republicmonitor.com/",
@@ -6361,6 +6543,28 @@
     "discovery_providers": [
       "GDELT GAL RSS"
     ]
+  },
+  {
+    "url": "https://avn.info.ve/presidenta-anuncia-que-produccion-petrolera-alcanza-1-269-000-bpd-y-economia-crece-742-en-tercer-trimestre",
+    "title": "Presidenta anuncia que producci\u00f3n petrolera alcanza 1 mill\u00f3n 269 mil bpd y econom\u00eda crece 7,42 % en tercer trimestre - Agencia Venezolana de Noticias",
+    "domain": "avn.info.ve",
+    "gdelt_first_seen_utc": "2026-11-20T01:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "bpd"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T01:45:10.490184+00:00"
   },
   {
     "url": "https://bismarcktribune.com/news/local/teen-of-the-week/collection_b62818e3-fbdb-41bc-9254-e0f2761b239b.html",
