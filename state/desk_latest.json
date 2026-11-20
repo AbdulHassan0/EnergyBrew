@@ -1,38 +1,38 @@
 {
-  "generated_utc": "2026-11-20T13:08:59.984311+00:00",
+  "generated_utc": "2026-11-20T22:42:03.689970+00:00",
   "status": "research_only_not_approved",
-  "unique_relevant_urls_7d": 572,
+  "unique_relevant_urls_7d": 617,
   "selected_research_links": 32,
-  "unique_domains_in_selection": 17,
+  "unique_domains_in_selection": 18,
   "queue_counts": {
-    "older_official_context": 38,
-    "specialist_publisher_24h": 14,
+    "older_official_context": 43,
+    "specialist_publisher_24h": 13,
     "regulatory_date_only": 6,
-    "discovery_unverified": 482,
-    "timestamped_official": 1,
-    "company_release_unverified": 31
+    "discovery_unverified": 518,
+    "timestamped_official": 2,
+    "company_release_unverified": 35
   },
   "selected_category_counts": {
-    "Natural Gas": 4,
-    "LNG": 7,
+    "Natural Gas": 6,
+    "LNG": 6,
     "Power & Electricity": 8,
-    "Oil & Energy": 4,
+    "Oil & Energy": 3,
     "Infrastructure & Investment": 1,
     "Geopolitics": 8
   },
   "selected_topic_coverage_counts": {
-    "Natural Gas": 4,
-    "LNG": 7,
+    "Natural Gas": 6,
+    "LNG": 6,
     "Power & Electricity": 8,
-    "Oil & Energy": 10,
+    "Oil & Energy": 8,
     "Infrastructure & Investment": 14,
     "Geopolitics": 8
   },
   "missing_categories": [],
-  "publisher_timestamped_official_24h": 1,
-  "publisher_timestamped_specialist_24h": 14,
+  "publisher_timestamped_official_24h": 2,
+  "publisher_timestamped_specialist_24h": 13,
   "system_operator_primary_24h": 0,
-  "likely_same_event_links_suppressed": 3,
+  "likely_same_event_links_suppressed": 5,
   "discovery_publisher_dates_verified": 0,
   "promotional_or_language_review_count": 0,
   "stories": [
@@ -133,38 +133,6 @@
       "rank": 145
     },
     {
-      "title": "Iran Moves to Restart Oil Exports Despite U.S. Naval Blockade",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Moves-to-Restart-Oil-Exports-Despite-US-Naval-Blockade.html",
-      "domain": "oilprice.com",
-      "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00",
-      "local_collection_time_known": true,
-      "source": "OilPrice.com News",
-      "source_class": "specialist_publisher",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics",
-        "Oil & Energy"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:oil",
-        "geopolitical_event:blockade",
-        "world_context:iran"
-      ],
-      "origin": "official_rss",
-      "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-20T09:00:00+00:00",
-      "publisher_time_verified": true,
-      "date_confidence": "publisher_rss_timestamp",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "specialist_publisher_24h",
-      "rank": 145
-    },
-    {
       "title": "PJM Board Approves Transmission Project Changes to Support Grid Reliability",
       "url": "https://insidelines.pjm.com/pjm-board-approves-transmission-project-changes-to-support-grid-reliability-2",
       "domain": "insidelines.pjm.com",
@@ -197,66 +165,51 @@
       "rank": 137
     },
     {
-      "title": "Grid operators need data center ride-through rules that protect reliability",
-      "url": "https://www.utilitydive.com/news/grid-operators-data-center-ride-through-rules-ercot-nerc/873466",
-      "domain": "www.utilitydive.com",
-      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00",
-      "local_collection_time_known": true,
-      "source": "Utility Dive News",
-      "source_class": "specialist_publisher",
-      "category": "Power & Electricity",
-      "coverage_themes": [
-        "Power & Electricity"
-      ],
-      "relevance_score": 81,
-      "relevance_evidence": [
-        "data center",
-        "grid",
-        "grid operators"
-      ],
-      "origin": "official_rss",
-      "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-19T17:13:16+00:00",
-      "publisher_time_verified": true,
-      "date_confidence": "publisher_rss_timestamp",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "specialist_publisher_24h",
-      "rank": 136
-    },
-    {
-      "title": "McDermott-Baker Hughes consortium picks up work on Australian LNG project",
-      "url": "https://www.offshore-energy.biz/2026/11/19/mcdermott-baker-hughes-consortium-picks-up-work-on-australian-lng-project",
-      "domain": "www.offshore-energy.biz",
-      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00",
-      "local_collection_time_known": true,
-      "source": "Offshore Energy News",
+      "title": "China Gas Upsizes Long-Term LNG Supply with U.S. Venture Global",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/China-Gas-Upsizes-Long-Term-LNG-Supply-with-US-Venture-Global.html",
+      "domain": "oilprice.com",
+      "first_collector_observed_utc": null,
+      "local_collection_time_known": false,
+      "source": "OilPrice.com News",
       "source_class": "specialist_publisher",
       "category": "LNG",
       "coverage_themes": [
-        "LNG",
-        "Infrastructure & Investment"
+        "LNG"
       ],
-      "relevance_score": 81,
+      "relevance_score": 100,
       "relevance_evidence": [
         "lng",
-        "lng project"
+        "lng supply",
+        "venture global"
       ],
       "origin": "official_rss",
       "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-19T14:06:41+00:00",
+      "observed_time_utc": "2026-11-18T15:30:00+00:00",
       "publisher_time_verified": true,
       "date_confidence": "publisher_rss_timestamp",
-      "within_24h_on_own_time_basis": true,
+      "within_24h_on_own_time_basis": false,
       "needs_editor_review": [],
       "editorial_status": "research_only_not_approved",
       "other_origins": [],
       "independent_corroboration_verified": false,
-      "queue": "specialist_publisher_24h",
-      "rank": 136
+      "queue": "older_official_context",
+      "rank": 130,
+      "related_reports": [
+        {
+          "title": "Venture Global’s bigger LNG deal with China Gas adds 500,000 tons annually",
+          "url": "https://www.offshore-energy.biz/2026/11/18/venture-globals-bigger-lng-deal-with-china-gas-adds-500000-tons-annually",
+          "source": "Offshore Energy News",
+          "origin": "official_rss",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "Venture Global and China Gas Announce Increased Long-Term LNG Agreement",
+          "url": "https://finance.yahoo.com/energy/articles/venture-global-china-gas-announce-000000135.html",
+          "source": "Press Release Feed",
+          "origin": "company_announcement",
+          "note": "Potential same-event source link; not independently corroborated"
+        }
+      ]
     },
     {
       "title": "Grid operators file closely watched large load interconnection reforms at FERC",
@@ -353,75 +306,6 @@
       "rank": 117
     },
     {
-      "title": "PJM urged to delay base capacity auction until data centers cut from forecast",
-      "url": "https://www.utilitydive.com/news/ratepayer-advocates-pjm-market-monitor-capacity-auction/875165",
-      "domain": "www.utilitydive.com",
-      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00",
-      "local_collection_time_known": true,
-      "source": "Utility Dive News",
-      "source_class": "specialist_publisher",
-      "category": "Power & Electricity",
-      "coverage_themes": [
-        "Power & Electricity"
-      ],
-      "relevance_score": 60,
-      "relevance_evidence": [
-        "capacity auction",
-        "pjm"
-      ],
-      "origin": "official_rss",
-      "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-19T14:29:26+00:00",
-      "publisher_time_verified": true,
-      "date_confidence": "publisher_rss_timestamp",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "specialist_publisher_24h",
-      "rank": 115
-    },
-    {
-      "title": "Venture Global’s bigger LNG deal with China Gas adds 500,000 tons annually",
-      "url": "https://www.offshore-energy.biz/2026/11/18/venture-globals-bigger-lng-deal-with-china-gas-adds-500000-tons-annually",
-      "domain": "www.offshore-energy.biz",
-      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00",
-      "local_collection_time_known": true,
-      "source": "Offshore Energy News",
-      "source_class": "specialist_publisher",
-      "category": "LNG",
-      "coverage_themes": [
-        "LNG"
-      ],
-      "relevance_score": 84,
-      "relevance_evidence": [
-        "lng",
-        "venture global"
-      ],
-      "origin": "official_rss",
-      "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-18T13:01:15+00:00",
-      "publisher_time_verified": true,
-      "date_confidence": "publisher_rss_timestamp",
-      "within_24h_on_own_time_basis": false,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "older_official_context",
-      "rank": 114,
-      "related_reports": [
-        {
-          "title": "Venture Global and China Gas Announce Increased Long-Term LNG Agreement",
-          "url": "https://finance.yahoo.com/energy/articles/venture-global-china-gas-announce-000000135.html",
-          "source": "Press Release Feed",
-          "origin": "company_announcement",
-          "note": "Potential same-event source link; not independently corroborated"
-        }
-      ]
-    },
-    {
       "title": "Cheniere Gets Federal Approval for Major Sabine Pass LNG Expansion",
       "url": "https://www.oedigital.com/news/544490-cheniere-gets-federal-approval-for-major-sabine-pass-lng-expansion",
       "domain": "www.oedigital.com",
@@ -452,6 +336,97 @@
       "independent_corroboration_verified": false,
       "queue": "discovery_unverified",
       "rank": 112
+    },
+    {
+      "title": "Gas Coordination Group confirms EU’s winter preparedness, importance of gas storage through the winter",
+      "url": "https://energy.ec.europa.eu/news/gas-coordination-group-confirms-eus-winter-preparedness-importance-gas-storage-through-winter-2026-11-20_en",
+      "domain": "energy.ec.europa.eu",
+      "first_collector_observed_utc": "2026-11-20T22:41:52.748655+00:00",
+      "local_collection_time_known": true,
+      "source": "European Commission DG Energy",
+      "source_class": "official_agency",
+      "category": "Natural Gas",
+      "coverage_themes": [
+        "Natural Gas"
+      ],
+      "relevance_score": 36,
+      "relevance_evidence": [
+        "gas storage"
+      ],
+      "origin": "official_rss",
+      "time_basis": "publisher_feed_publication_time",
+      "observed_time_utc": "2026-11-19T23:00:00+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "timestamped_official",
+      "rank": 111
+    },
+    {
+      "title": "Grid operators need data center ride-through rules that protect reliability",
+      "url": "https://www.utilitydive.com/news/grid-operators-data-center-ride-through-rules-ercot-nerc/873466",
+      "domain": "www.utilitydive.com",
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00",
+      "local_collection_time_known": true,
+      "source": "Utility Dive News",
+      "source_class": "specialist_publisher",
+      "category": "Power & Electricity",
+      "coverage_themes": [
+        "Power & Electricity"
+      ],
+      "relevance_score": 81,
+      "relevance_evidence": [
+        "data center",
+        "grid",
+        "grid operators"
+      ],
+      "origin": "official_rss",
+      "time_basis": "specialist_publisher_rss_timestamp",
+      "observed_time_utc": "2026-11-19T17:13:16+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
+      "within_24h_on_own_time_basis": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "older_official_context",
+      "rank": 111
+    },
+    {
+      "title": "McDermott-Baker Hughes consortium picks up work on Australian LNG project",
+      "url": "https://www.offshore-energy.biz/2026/11/19/mcdermott-baker-hughes-consortium-picks-up-work-on-australian-lng-project",
+      "domain": "www.offshore-energy.biz",
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00",
+      "local_collection_time_known": true,
+      "source": "Offshore Energy News",
+      "source_class": "specialist_publisher",
+      "category": "LNG",
+      "coverage_themes": [
+        "LNG",
+        "Infrastructure & Investment"
+      ],
+      "relevance_score": 81,
+      "relevance_evidence": [
+        "lng",
+        "lng project"
+      ],
+      "origin": "official_rss",
+      "time_basis": "specialist_publisher_rss_timestamp",
+      "observed_time_utc": "2026-11-19T14:06:41+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
+      "within_24h_on_own_time_basis": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "older_official_context",
+      "rank": 111
     },
     {
       "title": "How National Grid, Eversource are using VPPs to solve local-level constraints",
@@ -608,10 +583,41 @@
       "rank": 106
     },
     {
+      "title": "No Going Back: Iran war’s energy shock reshaping how world powers itself, IEA says",
+      "url": "https://www.altoonamirror.com/news/local-business/2026/11/iea-report-iranwar-energyshock-reshaping-how-world-powers-itself",
+      "domain": "www.altoonamirror.com",
+      "first_collector_observed_utc": "2026-11-20T22:42:02.396153+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:energy",
+        "geopolitical_event:war",
+        "world_context:iran"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-20T22:32:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
+    },
+    {
       "title": "Houthis Warn of Attacks on Saudi Red Sea Ports",
-      "url": "http://www.maritimeprofessional.com/news/houthis-warn-attacks-saudi-ports-424449",
-      "domain": "www.maritimeprofessional.com",
-      "first_collector_observed_utc": "2026-11-20T13:08:58.711900+00:00",
+      "url": "https://www.marinelink.com/news/houthis-warn-attacks-saudi-red-sea-ports-544498",
+      "domain": "www.marinelink.com",
+      "first_collector_observed_utc": "2026-11-20T17:45:21.318029+00:00",
       "local_collection_time_known": true,
       "source": "GDELT GAL RSS",
       "source_class": "unclassified",
@@ -627,7 +633,80 @@
       ],
       "origin": "global_discovery",
       "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-20T13:01:00+00:00",
+      "observed_time_utc": "2026-11-20T17:32:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102,
+      "related_reports": [
+        {
+          "title": "Houthis Warn of Attacks on Saudi Red Sea Ports",
+          "url": "http://www.maritimeprofessional.com/news/houthis-warn-attacks-saudi-ports-424449",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        }
+      ]
+    },
+    {
+      "title": "Tanker hit in Strait of Hormuz as missile strikes Iran's Qeshm Island",
+      "url": "https://www.arabnews.com/middle-east/tanker-hit-in-strait-of-hormuz-as-missile-strikes-irans-qeshm-island-3013176",
+      "domain": "www.arabnews.com",
+      "first_collector_observed_utc": "2026-11-20T17:45:21.318029+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics",
+        "Oil & Energy"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:tanker",
+        "geopolitical_event:strikes",
+        "world_context:iran"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-20T17:32:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
+    },
+    {
+      "title": "Iranian foreign minister says US naval blockade must be broken to resume oil exports",
+      "url": "https://www.middleeastmonitor.com/20261120-iranian-foreign-minister-says-us-naval-blockade-must-be-broken-to-resume-oil-exports",
+      "domain": "www.middleeastmonitor.com",
+      "first_collector_observed_utc": "2026-11-20T17:45:21.318029+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics",
+        "Oil & Energy"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:oil",
+        "geopolitical_event:blockade",
+        "world_context:iranian"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-20T17:32:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
@@ -704,67 +783,32 @@
       "rank": 102
     },
     {
-      "title": "Oil up as Houthi attacks on Riyadh raise supply concerns",
-      "url": "https://www.rte.ie/news/business/2026/1120/1599964-world-oil-prices",
-      "domain": "www.rte.ie",
-      "first_collector_observed_utc": "2026-11-20T09:04:25.624729+00:00",
+      "title": "EU backs global compact to cut energy bills and emissions from buildings",
+      "url": "https://energy.ec.europa.eu/news/eu-backs-global-compact-cut-energy-bills-and-emissions-buildings-2026-11-20_en",
+      "domain": "energy.ec.europa.eu",
+      "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00",
       "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
+      "source": "European Commission DG Energy",
+      "source_class": "official_agency",
+      "category": "Power & Electricity",
       "coverage_themes": [
-        "Geopolitics",
-        "Oil & Energy"
+        "Power & Electricity"
       ],
-      "relevance_score": 90,
+      "relevance_score": 27,
       "relevance_evidence": [
-        "energy_market_hook:oil",
-        "geopolitical_event:attacks",
-        "world_context:houthi"
+        "energy bills"
       ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-20T09:01:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
+      "origin": "official_rss",
+      "time_basis": "publisher_feed_publication_time",
+      "observed_time_utc": "2026-11-19T23:00:00+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
       "within_24h_on_own_time_basis": true,
       "needs_editor_review": [],
       "editorial_status": "research_only_not_approved",
       "other_origins": [],
       "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102
-    },
-    {
-      "title": "US Sour Crude’s War Premium Vanishes as Supply Surges | Stock Market News",
-      "url": "https://www.livemint.com/market/us-sour-crude-s-war-premium-vanishes-as-supply-surges-11795121544365.html",
-      "domain": "www.livemint.com",
-      "first_collector_observed_utc": "2026-11-19T23:06:34.942486+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics",
-        "Oil & Energy"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:crude",
-        "geopolitical_event:war",
-        "world_context:us"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-19T23:02:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
+      "queue": "timestamped_official",
       "rank": 102
     },
     {
@@ -797,10 +841,10 @@
       "rank": 89
     },
     {
-      "title": "WTI Crude Sinks More Than 5% as Global Oil Glut Fears Grow",
-      "url": "https://oilprice.com/Energy/Energy-General/WTI-Crude-Sinks-More-Than-5-as-Global-Oil-Glut-Fears-Grow.html",
+      "title": "U.S. Oil Drillers Pick Up the Pace Just as Oil Prices Fall",
+      "url": "https://oilprice.com/Energy/Energy-General/US-Oil-Drillers-Pick-Up-the-Pace-Just-as-Oil-Prices-Fall.html",
       "domain": "oilprice.com",
-      "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00",
+      "first_collector_observed_utc": "2026-11-20T22:41:52.748655+00:00",
       "local_collection_time_known": true,
       "source": "OilPrice.com News",
       "source_class": "specialist_publisher",
@@ -810,11 +854,11 @@
       ],
       "relevance_score": 33,
       "relevance_evidence": [
-        "wti"
+        "oil prices"
       ],
       "origin": "official_rss",
       "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-20T12:30:00+00:00",
+      "observed_time_utc": "2026-11-20T18:09:09+00:00",
       "publisher_time_verified": true,
       "date_confidence": "publisher_rss_timestamp",
       "within_24h_on_own_time_basis": true,
@@ -877,7 +921,7 @@
       "observed_time_utc": "2026-11-19T19:47:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
+      "within_24h_on_own_time_basis": false,
       "needs_editor_review": [],
       "editorial_status": "research_only_not_approved",
       "other_origins": [],
@@ -900,6 +944,37 @@
           "note": "Potential same-event source link; not independently corroborated"
         }
       ]
+    },
+    {
+      "title": "SpaceX Plans to Spend $2.8 Billion on Gas Turbines. Here’s What That Much Natural Gas Demand Means for Pipeline Investors. | The Motley Fool",
+      "url": "https://www.fool.com/investing/2026/11/20/spacex-plans-to-spend-usd2-8-billion-on-gas-turbines-here-s-what-that-much-natural-gas-demand-means-for-pipeline-investors?source=iedfolrf0000001",
+      "domain": "www.fool.com",
+      "first_collector_observed_utc": "2026-11-20T22:42:02.396153+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Natural Gas",
+      "coverage_themes": [
+        "Natural Gas",
+        "Infrastructure & Investment"
+      ],
+      "relevance_score": 72,
+      "relevance_evidence": [
+        "gas demand",
+        "natural gas"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-20T22:32:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 84
     },
     {
       "title": "Eastern Shore Natural Gas Company; Notice of Scoping Period Requesting Comments on Environmental Issues for the Proposed Delmar Regional Enhancement Project",
@@ -960,66 +1035,6 @@
       "independent_corroboration_verified": false,
       "queue": "discovery_unverified",
       "rank": 78
-    },
-    {
-      "title": "Tanzania, Uganda fast-track crude oil pipeline completion - Channel Africa",
-      "url": "https://www.channelafrica.co.za/channelafrica/news/tanzania-uganda-fast-track-crude-oil-pipeline-completion",
-      "domain": "www.channelafrica.co.za",
-      "first_collector_observed_utc": null,
-      "local_collection_time_known": false,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Oil & Energy",
-      "coverage_themes": [
-        "Oil & Energy",
-        "Infrastructure & Investment"
-      ],
-      "relevance_score": 66,
-      "relevance_evidence": [
-        "crude oil",
-        "oil pipeline"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-19T10:47:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": false,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 78
-    },
-    {
-      "title": "ASIA LNG MOC PERFORMANCE: Deliveries conclude for record volume of 148.5 TBtu during August MOC",
-      "url": "https://www.hellenicshippingnews.com/asia-lng-moc-performance-deliveries-conclude-for-record-volume-of-148-5-tbtu-during-august-moc",
-      "domain": "www.hellenicshippingnews.com",
-      "first_collector_observed_utc": "2026-11-20T01:25:59.988101+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "LNG",
-      "coverage_themes": [
-        "LNG"
-      ],
-      "relevance_score": 45,
-      "relevance_evidence": [
-        "lng"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-20T01:16:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 57
     },
     {
       "title": "Final investment decision on Azerbaijan's Karabakh field expected in 2027",

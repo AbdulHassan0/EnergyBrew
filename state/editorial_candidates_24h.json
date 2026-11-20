@@ -17,6 +17,7 @@
       "world_context:russian"
     ],
     "status": "research_only_unverified",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-20T13:08:36.677674+00:00",
     "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00"
   },
@@ -84,49 +85,6 @@
     "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00"
   },
   {
-    "id": "de359ff62a99594accce6100",
-    "title": "Grid operators need data center ride-through rules that protect reliability",
-    "url": "https://www.utilitydive.com/news/grid-operators-data-center-ride-through-rules-ercot-nerc/873466",
-    "source": "Utility Dive News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-19T17:13:16+00:00",
-    "category": "Power & Electricity",
-    "published_precision": "timestamp",
-    "relevance_score": 81,
-    "keyword_matches": 3,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "data center",
-      "grid",
-      "grid operators"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collected_utc": "2026-11-19T23:06:25.262021+00:00",
-    "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
-  },
-  {
-    "id": "e69e12886a535aeeee9f3129",
-    "title": "McDermott-Baker Hughes consortium picks up work on Australian LNG project",
-    "url": "https://www.offshore-energy.biz/2026/11/19/mcdermott-baker-hughes-consortium-picks-up-work-on-australian-lng-project",
-    "source": "Offshore Energy News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-19T14:06:41+00:00",
-    "category": "LNG",
-    "published_precision": "timestamp",
-    "relevance_score": 81,
-    "keyword_matches": 2,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "lng",
-      "lng project"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collected_utc": "2026-11-19T17:18:44.403286+00:00",
-    "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
-  },
-  {
     "id": "2a65bbebb59cf651fe387f3c",
     "title": "Iran Refuses Nuclear Inspections as U.S. Military Threats Mount",
     "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Refuses-Nuclear-Inspections-as-US-Military-Threats-Mount.html",
@@ -148,25 +106,61 @@
     "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00"
   },
   {
-    "id": "32dc83129ba55f1a37a05375",
-    "title": "PJM urged to delay base capacity auction until data centers cut from forecast",
-    "url": "https://www.utilitydive.com/news/ratepayer-advocates-pjm-market-monitor-capacity-auction/875165",
+    "id": "60aa9200ecb65f02de1925f0",
+    "title": "Texas finalizes ERCOT CEO contract extension, pay raise tied to performance",
+    "url": "https://www.utilitydive.com/news/texas-finalizes-ercot-ceo-contract-extension-pay-raise-tied-to-performance/875318",
     "source": "Utility Dive News",
     "source_class": "specialist_publisher",
-    "published_utc": "2026-11-19T14:29:26+00:00",
+    "published_utc": "2026-11-20T13:49:50+00:00",
     "category": "Power & Electricity",
     "published_precision": "timestamp",
-    "relevance_score": 60,
-    "keyword_matches": 2,
+    "relevance_score": 36,
+    "keyword_matches": 1,
     "editorial_candidate": true,
     "relevance_evidence": [
-      "capacity auction",
-      "pjm"
+      "ercot"
     ],
     "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collected_utc": "2026-11-19T23:06:25.262021+00:00",
-    "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
+    "first_collected_utc": "2026-11-20T22:41:52.748655+00:00",
+    "first_collector_observed_utc": "2026-11-20T22:41:52.748655+00:00"
+  },
+  {
+    "id": "b3b31cf7bdd2cc4fc9d928f8",
+    "title": "Gas Coordination Group confirms EU\u2019s winter preparedness, importance of gas storage through the winter",
+    "url": "https://energy.ec.europa.eu/news/gas-coordination-group-confirms-eus-winter-preparedness-importance-gas-storage-through-winter-2026-11-20_en",
+    "source": "European Commission DG Energy",
+    "source_class": "official_agency",
+    "published_utc": "2026-11-19T23:00:00+00:00",
+    "category": "Natural Gas",
+    "published_precision": "timestamp",
+    "relevance_score": 36,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "gas storage"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-20T22:41:52.748655+00:00",
+    "first_collector_observed_utc": "2026-11-20T22:41:52.748655+00:00"
+  },
+  {
+    "id": "f98dc9e2612c11688b0ec1e1",
+    "title": "U.S. Oil Drillers Pick Up the Pace Just as Oil Prices Fall",
+    "url": "https://oilprice.com/Energy/Energy-General/US-Oil-Drillers-Pick-Up-the-Pace-Just-as-Oil-Prices-Fall.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-20T18:09:09+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 33,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "oil prices"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-20T22:41:52.748655+00:00",
+    "first_collector_observed_utc": "2026-11-20T22:41:52.748655+00:00"
   },
   {
     "id": "1c587f31f36dc427367bee50",
@@ -184,6 +178,7 @@
       "wti"
     ],
     "status": "research_only_unverified",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-20T13:08:36.677674+00:00",
     "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00"
   },
@@ -203,28 +198,28 @@
       "chevron"
     ],
     "status": "research_only_unverified",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-20T13:08:36.677674+00:00",
     "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00"
   },
   {
-    "id": "784ea8b254d669166f14fe51",
-    "title": "AI Jitters Haven't Slowed the Bet on U.S. Power Demand",
-    "url": "https://oilprice.com/Energy/Energy-General/AI-Jitters-Havent-Slowed-the-Bet-on-US-Power-Demand.html",
+    "id": "1c11f80a2dfc5285aa087d15",
+    "title": "US Data Center Boom Faces a New Political Reality",
+    "url": "https://oilprice.com/Energy/Energy-General/US-Data-Center-Boom-Faces-a-New-Political-Reality.html",
     "source": "OilPrice.com News",
     "source_class": "specialist_publisher",
-    "published_utc": "2026-11-19T16:00:00+00:00",
+    "published_utc": "2026-11-20T19:00:00+00:00",
     "category": "Power & Electricity",
     "published_precision": "timestamp",
-    "relevance_score": 33,
+    "relevance_score": 30,
     "keyword_matches": 1,
     "editorial_candidate": true,
     "relevance_evidence": [
-      "power demand"
+      "data center"
     ],
     "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collected_utc": "2026-11-19T17:18:44.403286+00:00",
-    "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
+    "first_collected_utc": "2026-11-20T22:41:52.748655+00:00",
+    "first_collector_observed_utc": "2026-11-20T22:41:52.748655+00:00"
   },
   {
     "id": "61b9d26a87de4193551fc12b",
@@ -266,6 +261,25 @@
     "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
   },
   {
+    "id": "b6a4678714d68bae18b2bd31",
+    "title": "China\u2019s Oil Imports from Persian Gulf Jump to Wartime High",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Chinas-Oil-Imports-from-Persian-Gulf-Jump-to-Wartime-High.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-20T15:36:00+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 27,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "oil imports"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-20T22:41:52.748655+00:00",
+    "first_collector_observed_utc": "2026-11-20T22:41:52.748655+00:00"
+  },
+  {
     "id": "ece583cedb365e54a043bf5e",
     "title": "EU backs global compact to cut energy bills and emissions from buildings",
     "url": "https://energy.ec.europa.eu/news/eu-backs-global-compact-cut-energy-bills-and-emissions-buildings-2026-11-20_en",
@@ -281,27 +295,8 @@
       "energy bills"
     ],
     "status": "research_only_unverified",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-20T13:08:36.677674+00:00",
     "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00"
-  },
-  {
-    "id": "acba60beecdcbd9ab285c37f",
-    "title": "$960 million deal enabling NEO NEXT+ to bring EnQuest\u2019s UK North Sea business into its fold",
-    "url": "https://www.offshore-energy.biz/2026/11/19/dollar960-million-deal-enabling-neo-next-to-bring-enquests-uk-north-sea-business-into-its-fold",
-    "source": "Offshore Energy News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-19T16:23:56+00:00",
-    "category": "Oil & Energy",
-    "published_precision": "timestamp",
-    "relevance_score": 27,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "enquest"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collected_utc": "2026-11-19T17:18:44.403286+00:00",
-    "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
   }
 ]

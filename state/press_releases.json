@@ -1,6 +1,86 @@
 {
   "leads": [
     {
+      "url": "https://finance.yahoo.com/energy/articles/six-energy-star-r-certifications-212000796.html",
+      "title": "Six ENERGY STAR(R) Certifications Add to Marathon Petroleum's Legacy of Energy Efficiency",
+      "feed_creator_label": "ACCESS Newswire",
+      "named_issuer_verified": false,
+      "feed_source_url": "https://finance.yahoo.com/energy/articles/six-energy-star-r-certifications-212000796.html",
+      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+      "feed_published_utc": "2026-11-20T21:20:00+00:00",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "category": "Oil & Energy",
+      "relevance_score": 27,
+      "relevance_evidence": [
+        "petroleum"
+      ],
+      "provider": "Press Release Feed",
+      "content_kind": "company_or_newswire_press_release",
+      "status": "promotional_issuer_claim_requires_editorial_verification",
+      "first_collector_observed_utc": "2026-11-20T22:42:03.588401+00:00"
+    },
+    {
+      "url": "https://www.webwire.com/ViewPressRel.asp?aId=364483",
+      "title": "GE Vernova CEO Scott Strazik to speak at Goldman Sachs Industrials and Materials Conference",
+      "feed_creator_label": "WebWire",
+      "named_issuer_verified": false,
+      "feed_source_url": "https://www.webwire.com/ViewPressRel.asp?aId=364483",
+      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+      "feed_published_utc": "2026-11-20T16:11:47+00:00",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "category": "Power & Electricity",
+      "relevance_score": 27,
+      "relevance_evidence": [
+        "ge vernova"
+      ],
+      "provider": "Press Release Feed",
+      "content_kind": "company_or_newswire_press_release",
+      "status": "promotional_issuer_claim_requires_editorial_verification",
+      "first_collector_observed_utc": "2026-11-20T22:42:03.588401+00:00"
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/11/20/3407668/28124/en/energy-insurance-market-size-share-trends-and-forecast-2026-2033-market-to-reach-usd-9-1-billion-as-renewables-climate-risk-and-ai-reshape-coverage.html",
+      "title": "Energy Insurance Market Size, Share, Trends, and Forecast, 2026-2033 | Market to Reach USD 9.1 Billion as Renewables, Climate Risk, and AI Reshape Coverage",
+      "feed_creator_label": "GlobeNewswire",
+      "named_issuer_verified": false,
+      "feed_source_url": "https://www.globenewswire.com/news-release/2026/11/20/3407668/28124/en/energy-insurance-market-size-share-trends-and-forecast-2026-2033-market-to-reach-usd-9-1-billion-as-renewables-climate-risk-and-ai-reshape-coverage.html",
+      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+      "feed_published_utc": "2026-11-20T16:00:00+00:00",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "category": "Power & Electricity",
+      "relevance_score": 24,
+      "relevance_evidence": [
+        "renewables"
+      ],
+      "provider": "Press Release Feed",
+      "content_kind": "company_or_newswire_press_release",
+      "status": "promotional_issuer_claim_requires_editorial_verification",
+      "first_collector_observed_utc": "2026-11-20T22:42:03.588401+00:00"
+    },
+    {
+      "url": "https://finance.yahoo.com/energy/articles/clean-energy-helps-close-latin-121800300.html",
+      "title": "Clean Energy Helps Close Latin America's Electricity Gap",
+      "feed_creator_label": "ACCESS Newswire",
+      "named_issuer_verified": false,
+      "feed_source_url": "https://finance.yahoo.com/energy/articles/clean-energy-helps-close-latin-121800300.html",
+      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+      "feed_published_utc": "2026-11-20T12:18:00+00:00",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "category": "Power & Electricity",
+      "relevance_score": 33,
+      "relevance_evidence": [
+        "electricity"
+      ],
+      "provider": "Press Release Feed",
+      "content_kind": "company_or_newswire_press_release",
+      "status": "promotional_issuer_claim_requires_editorial_verification",
+      "first_collector_observed_utc": "2026-11-20T22:42:03.588401+00:00"
+    },
+    {
       "url": "https://energycapitalandpower.africa-newsroom.com/press/bp-backs-msgbc-2026-as-platinum-sponsor-amid-3-mtpa-greater-tortue-ahmeyim-gta-phase-2-lng-push?lang=en",
       "title": "bp Backs MSGBC 2026 as Platinum Sponsor Amid 3 million tons per annum (mtpa) Greater Tortue Ahmeyim (GTA) Phase 2 LNG Push",
       "feed_creator_label": "APO Group",
@@ -990,6 +1070,14 @@
       "raw_feed_entries": 100,
       "high_signal_company_releases": 10,
       "new_unique_links": 7
+    },
+    {
+      "run_utc": "2026-11-20T22:42:02.503101+00:00",
+      "completed_utc": "2026-11-20T22:42:03.588401+00:00",
+      "status": "ok",
+      "raw_feed_entries": 100,
+      "high_signal_company_releases": 9,
+      "new_unique_links": 4
     }
   ]
 }
