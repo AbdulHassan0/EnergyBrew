@@ -59,6 +59,31 @@ class GapAuditTests(unittest.TestCase):
                             "LNG export contract supply expansion",mins=1600)]},now=NOW)
         self.assertEqual(a["gdelt_observed_unique_urls_24h"],0)
 
+    def test_same_syndicated_iea_headline_keeps_only_one_review_lead(self):
+        title="There is no going back to the way it was before the Iran war's energy shock, IEA says"
+        urls=[
+            "https://www.dailygazette.com/ap/business/iran-energy-shock.html",
+            "https://www.gjsentinel.com/news/us/iran-energy-shock.html",
+            "https://www.news4jax.com/business/2026/11/19/iran-energy-shock.html",
+        ]
+        observations=[index(url,title,mins=25+i) for i,url in enumerate(urls)]
+        report=reconcile({},{"leads":observations},now=NOW)
+        selected=report["high_priority_discovery_only_leads_for_review"]
+        self.assertEqual(len(selected),1)
+        self.assertEqual(report["gdelt_observed_unique_urls_24h"],3)
+        self.assertEqual(selected[0]["editorial_status"],
+                         "unverified_research_lead_not_approved")
+
+    def test_distinct_similar_developments_not_merged(self):
+        rows=[
+            index("https://a.test/approved",
+                  "FERC approved Cheniere major Sabine Pass LNG expansion project"),
+            index("https://b.test/revoked",
+                  "FERC revoked Cheniere major Sabine Pass LNG expansion project"),
+        ]
+        report=reconcile({},{"leads":rows},now=NOW)
+        self.assertEqual(len(report["high_priority_discovery_only_leads_for_review"]),2)
+
     def test_unique_index_url_not_counted_twice(self):
         entry=index("https://www.example.com/one","Natural gas pipeline expansion project")
         a=reconcile({},{"leads":[entry,entry]},now=NOW)
