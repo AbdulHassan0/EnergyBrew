@@ -2,9 +2,10 @@ name: EnergyBrew free pre-cutoff publisher scan (NO EMAIL)
 on:
   workflow_dispatch:
   schedule:
-    # Exactly one attempt at 06:10 America/Chicago in either CST or CDT.
-    # GitHub cron may be late or skipped; late attempts do not fake coverage.
-    - cron: "10 11,12 * * *"
+    # Three opportunities at 05:12, 05:42 and 06:12 America/Chicago.
+    # Both UTC hours are scheduled for DST compatibility; a local-time gate
+    # rejects inactive hours and late dispatches without faking coverage.
+    - cron: "12,42 10,11,12 * * 1-5"
 permissions:
   contents: write
 # Shared state writers must never replace another waiting polling run.
@@ -32,13 +33,13 @@ jobs:
           from zoneinfo import ZoneInfo
           now=datetime.now(ZoneInfo("America/Chicago"))
           wall=now.time().replace(tzinfo=None)
-          active=time(6,5)<=wall<time(6,25)
+          active=time(5,5)<=wall<time(6,25)
           print("Local:",now.isoformat(),"precutoff RSS:",active)
           with open(os.environ["GITHUB_OUTPUT"],"a") as out:
               out.write("active="+("true" if active else "false")+"\n")
           PY
       # Offline collector tests run on main pushes in news-logic-ci.yml.
-      # Spend the 06:10-06:30 Central window on actual source collection.
+      # Spend the 05:12-06:30 Central opportunities on actual collection.
       - name: Restore previously committed public research
         if: ${{ steps.gate.outputs.active == 'true' }}
         run: |
@@ -49,7 +50,7 @@ jobs:
               git show "FETCH_HEAD:state/$name" > "state/$name"
             fi
           done
-      - name: Poll publisher RSS before 06:30
+      - name: Poll publisher RSS before 06:30 (three daily opportunities)
         id: rss
         if: ${{ steps.gate.outputs.active == 'true' }}
         continue-on-error: true
@@ -80,7 +81,7 @@ jobs:
       - name: Report actual scan or explicit no-op
         if: always()
         run: |
-          echo "No email sent. A late scheduled run is not a pre-cutoff news scan." >> "$GITHUB_STEP_SUMMARY"
+          echo "No email sent. Late scheduled attempts are never counted as timely pre-cutoff news scans." >> "$GITHUB_STEP_SUMMARY"
           echo "Window: ${{ steps.gate.outputs.active }}, RSS: ${{ steps.rss.outcome }}, metadata guard: ${{ steps.guard.outcome }}" >> "$GITHUB_STEP_SUMMARY"
           if test -s output/precutoff-rss/latest.md; then
             sed -n '1,30p' output/precutoff-rss/latest.md >> "$GITHUB_STEP_SUMMARY"
@@ -90,7 +91,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: ${{ steps.gate.outputs.active == 'true' }}
         with:
-          name: energybrew-precutoff-rss
+          name: energybrew-precutoff-rss-${{ github.run_id }}
           path: output/precutoff-rss/
           retention-days: 7
           if-no-files-found: warn
