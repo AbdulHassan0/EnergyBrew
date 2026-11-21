@@ -25,6 +25,30 @@
       "first_collector_observed_utc": "2026-11-20T13:08:58.711900+00:00"
     },
     {
+      "url": "https://abcnews.com/Business/wireStory/iran-strikes-3-tankers-shows-off-missile-launchers-138345075",
+      "title": "Iran strikes 3 tankers as it shows off missile launchers, and other Mideast news",
+      "domain": "abcnews.com",
+      "gdelt_first_seen_utc": "2026-11-21T19:47:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 90,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_hook:tankers",
+        "geopolitical_event:strikes",
+        "world_context:iran"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-21T19:54:02.760562+00:00"
+    },
+    {
       "url": "https://www.middleeastmonitor.com/20261121-us-sanctions-iranian-oil-traders-government-insiders-over-alleged-oil-revenue-scheme",
       "title": "US sanctions Iranian oil traders, government insiders over alleged oil revenue scheme",
       "domain": "www.middleeastmonitor.com",
@@ -1806,6 +1830,54 @@
       "discovery_providers": [
         "GDELT GAL RSS"
       ]
+    },
+    {
+      "url": "https://www.theyeshivaworld.com/news/israel-news/2626048/iran-showdown-u-s-and-israel-considering-new-strikes-on-iran-within-days-cbs-reports.html",
+      "title": "IRAN SHOWDOWN: U.S. And Israel Considering New Strikes On Iran Within Days, CBS Reports",
+      "domain": "www.theyeshivaworld.com",
+      "gdelt_first_seen_utc": "2026-11-21T19:47:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:strikes",
+        "world_context:iran/israel"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-21T19:54:02.760562+00:00"
+    },
+    {
+      "url": "https://www.digbycourier.ca/zhankoy-crimea-ukraines-defense-ministry-says-russian-kalibre-missiles-were-destroyed-in-the-attack",
+      "title": "Zhankoy, Crimea: Ukraine's Defense Ministry says Russian 'Kalibre' missiles were destroyed in the attack.",
+      "domain": "www.digbycourier.ca",
+      "gdelt_first_seen_utc": "2026-11-21T19:46:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:attack",
+        "world_context:russia/ukraine"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-21T19:54:02.760562+00:00"
     },
     {
       "url": "https://bdnews24.com/aviation/ylyignbzij",
@@ -5683,6 +5755,50 @@
       ]
     },
     {
+      "url": "https://www.hellenicshippingnews.com/asia-lng-moc-performance-deliveries-conclude-for-record-volume-of-148-5-tbtu-during-august-moc-2",
+      "title": "ASIA LNG MOC PERFORMANCE: Deliveries conclude for record volume of 148.5 TBtu during August MOC",
+      "domain": "www.hellenicshippingnews.com",
+      "gdelt_first_seen_utc": "2026-11-21T19:46:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 45,
+      "category": "LNG",
+      "relevance_evidence": [
+        "lng"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-21T19:54:02.760562+00:00"
+    },
+    {
+      "url": "http://www.critica.com.mx/vernoticias.php?artid=120571&mas=1",
+      "title": "Juzgado federal modifica suspensión y permite a AMIGO LNG reanudar trámites y obras en Guaymas",
+      "domain": "www.critica.com.mx",
+      "gdelt_first_seen_utc": "2026-11-21T19:46:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 45,
+      "category": "LNG",
+      "relevance_evidence": [
+        "lng"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-21T19:54:02.760562+00:00"
+    },
+    {
       "url": "https://nieuws.nl/economie/argentinie-komt-met-stimuleringsmaatregelen-voor-fors-lng-project",
       "title": "Argentinië komt met stimuleringsmaatregelen voor fors lng-project",
       "domain": "nieuws.nl",
@@ -6697,6 +6813,28 @@
         "gas storage"
       ],
       "status": "discovery_only_requires_publisher_verification"
+    },
+    {
+      "url": "https://www.nigerianeye.com/2026/11/i-guarantee-you-improvement-in.html",
+      "title": "I guarantee you improvement in electricity, Tinubu tells Nigerians",
+      "domain": "www.nigerianeye.com",
+      "gdelt_first_seen_utc": "2026-11-21T19:47:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 33,
+      "category": "Power & Electricity",
+      "relevance_evidence": [
+        "electricity"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-21T19:54:02.760562+00:00"
     },
     {
       "url": "https://gr.euronews.com/2026/11/20/us-chevron-ksekina-erevnes-gia-hydrocarbons",
@@ -8729,6 +8867,50 @@
       "status": "discovery_only_requires_publisher_verification"
     },
     {
+      "url": "https://en.shafaqna.com/492695/shares-of-chip-and-data-center-firms-tumble",
+      "title": "Shares of chip and data center firms tumble - Shafaqna English | International Shia News & Fatwas",
+      "domain": "en.shafaqna.com",
+      "gdelt_first_seen_utc": "2026-11-21T19:46:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 30,
+      "category": "Power & Electricity",
+      "relevance_evidence": [
+        "data center"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-21T19:54:02.760562+00:00"
+    },
+    {
+      "url": "https://www.ilgiorno.it/milano/cronaca/corteo-contro-data-center-dznbscs2",
+      "title": "Milano, corteo contro i Data center: “Un pericolo per ambiente e salute, si preferisce la legge di mercato”",
+      "domain": "www.ilgiorno.it",
+      "gdelt_first_seen_utc": "2026-11-21T19:46:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 30,
+      "category": "Power & Electricity",
+      "relevance_evidence": [
+        "data center"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-21T19:54:02.760562+00:00"
+    },
+    {
       "url": "https://www.meteoweb.eu/2026/11/data-center-nello-spazio-google-sceglie-blue-origin-i-satelliti-ai-partiranno-nel-2029/1002006389",
       "title": "Data center nello spazio, Google sceglie Blue Origin: i satelliti AI partiranno nel 2029",
       "domain": "www.meteoweb.eu",
@@ -9305,7 +9487,10 @@
         "perryville"
       ],
       "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-20T01:25:59.988101+00:00"
+      "first_collector_observed_utc": "2026-11-20T01:25:59.988101+00:00",
+      "discovery_providers": [
+        "GDELT GAL RSS"
+      ]
     },
     {
       "url": "https://abc13.com/story/texas-commission-environmental-quality-resumes-data-center-permits-before-ordered-review-is-completed/20057236",
@@ -16260,6 +16445,18 @@
       "feed_newest_index_utc": "2026-11-21T19:32:00+00:00",
       "feed_index_lag_minutes": 12.5,
       "feed_payload_sha256": "3b6f3bb53863ffe8",
+      "identical_payload_to_previous_success": false
+    },
+    {
+      "run_utc": "2026-11-21T19:53:58.196969+00:00",
+      "completed_utc": "2026-11-21T19:54:02.760562+00:00",
+      "status": "ok",
+      "raw_feed_items": 3374,
+      "high_signal_items": 9,
+      "new_unique_links": 9,
+      "feed_newest_index_utc": "2026-11-21T19:47:00+00:00",
+      "feed_index_lag_minutes": 7.0,
+      "feed_payload_sha256": "0b57e77c672f900d",
       "identical_payload_to_previous_success": false
     }
   ],
