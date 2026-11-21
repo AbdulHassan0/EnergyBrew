@@ -24,6 +24,351 @@
     "first_collector_observed_utc": "2026-11-20T13:08:58.711900+00:00"
   },
   {
+    "url": "https://www.middleeastmonitor.com/20261121-us-sanctions-iranian-oil-traders-government-insiders-over-alleged-oil-revenue-scheme",
+    "title": "US sanctions Iranian oil traders, government insiders over alleged oil revenue scheme",
+    "domain": "www.middleeastmonitor.com",
+    "gdelt_first_seen_utc": "2026-11-21T12:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:oil",
+      "geopolitical_event:sanctions",
+      "world_context:iranian"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00"
+  },
+  {
+    "url": "https://www.middleeasteye.net/news/iran-says-newly-developed-air-defence-system-intercepted-us-drone-over-hormuz",
+    "title": "Iran says new air defence system intercepted US Reaper drone over Hormuz",
+    "domain": "www.middleeasteye.net",
+    "gdelt_first_seen_utc": "2026-11-21T12:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:hormuz",
+      "geopolitical_event:drone",
+      "world_context:iran"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00"
+  },
+  {
+    "url": "https://www.ketv.com/article/lewis-pugh-strait-of-hormuz-swim-iran-war/74497133",
+    "title": "Endurance athlete swims in Strait of Hormuz to highlight Iran war's impact on wildlife",
+    "domain": "www.ketv.com",
+    "gdelt_first_seen_utc": "2026-11-21T12:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:strait of hormuz",
+      "geopolitical_event:war",
+      "world_context:iran"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00"
+  },
+  {
+    "url": "https://www.aol.co.uk/articles/briton-swims-strait-hormuz-highlight-120534000.html",
+    "title": "Briton swims in Strait of Hormuz to highlight \u2018environmental cost of war\u2019 - AOL",
+    "domain": "www.aol.co.uk",
+    "gdelt_first_seen_utc": "2026-11-21T12:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:strait of hormuz",
+      "geopolitical_event:war",
+      "world_context:strait of hormuz"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00"
+  },
+  {
+    "url": "https://kxly920.com/2026/11/21/strait-of-hormuz-attacks-have-increased-to-highest-level-since-iran-war-began",
+    "title": "Strait of Hormuz attacks have increased to highest level since Iran war began",
+    "domain": "kxly920.com",
+    "gdelt_first_seen_utc": "2026-11-21T12:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:strait of hormuz",
+      "geopolitical_event:attacks",
+      "world_context:iran"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:32:19.802770+00:00"
+  },
+  {
+    "url": "https://www.newarkadvertiser.co.uk/national/briton-swims-in-strait-of-hormuz-to-highlight-environmental-cost-of-war-174588",
+    "title": "Briton swims in Strait of Hormuz to highlight \u2018environmental cost of war\u2019",
+    "domain": "www.newarkadvertiser.co.uk",
+    "gdelt_first_seen_utc": "2026-11-21T12:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:strait of hormuz",
+      "geopolitical_event:war",
+      "world_context:strait of hormuz"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:32:19.802770+00:00"
+  },
+  {
+    "url": "https://www.newburytoday.co.uk/national/briton-swims-in-strait-of-hormuz-to-highlight-environmental-cost-of-war-174588",
+    "title": "Briton swims in Strait of Hormuz to highlight \u2018environmental cost of war\u2019",
+    "domain": "www.newburytoday.co.uk",
+    "gdelt_first_seen_utc": "2026-11-21T12:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:strait of hormuz",
+      "geopolitical_event:war",
+      "world_context:strait of hormuz"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:32:19.802770+00:00"
+  },
+  {
+    "url": "https://www.ksbw.com/article/lewis-pugh-strait-of-hormuz-swim-iran-war/74497133",
+    "title": "Endurance athlete swims in Strait of Hormuz to highlight Iran war's impact on wildlife",
+    "domain": "www.ksbw.com",
+    "gdelt_first_seen_utc": "2026-11-21T12:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:strait of hormuz",
+      "geopolitical_event:war",
+      "world_context:iran"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:32:19.802770+00:00"
+  },
+  {
+    "url": "https://www.kake.com/news/national/strait-of-hormuz-attacks-have-increased-to-highest-level-since-iran-war-began/article_a4749f3d-3247-4907-a39d-6795d12d82f0.html",
+    "title": "Strait of Hormuz attacks have increased to highest level since Iran war began",
+    "domain": "www.kake.com",
+    "gdelt_first_seen_utc": "2026-11-21T12:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:strait of hormuz",
+      "geopolitical_event:attacks",
+      "world_context:iran"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:32:19.802770+00:00"
+  },
+  {
+    "url": "https://kxly920.com/2026/11/21/russian-attacks-on-ukraines-energy-grid-intensify-ahead-of-winter",
+    "title": "Russian attacks on Ukraine\u2019s energy grid intensify ahead of winter",
+    "domain": "kxly920.com",
+    "gdelt_first_seen_utc": "2026-11-21T12:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:energy",
+      "geopolitical_event:attacks",
+      "world_context:russian"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:32:19.802770+00:00"
+  },
+  {
+    "url": "http://www.indiagazette.com/news/279446319/india-condemns-attacks-on-commercial-shipping-in-strait-of-hormuz-calls-for-freedom-of-navigation",
+    "title": "India condemns attacks on commercial shipping in Strait of Hormuz, calls for freedom of navigation",
+    "domain": "www.indiagazette.com",
+    "gdelt_first_seen_utc": "2026-11-20T23:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:shipping",
+      "geopolitical_event:attacks",
+      "world_context:india"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
+  },
+  {
+    "url": "https://www.cubaheadlines.com/articles/346235",
+    "title": "GAESA Moves Shipping Empire from Liechtenstein to Cyprus Amid Intensified U.S. Sanctions",
+    "domain": "www.cubaheadlines.com",
+    "gdelt_first_seen_utc": "2026-11-20T23:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:shipping",
+      "geopolitical_event:sanctions",
+      "world_context:u.s."
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
+  },
+  {
+    "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-sanctions-iranian-oil-trustees-it-accuses-evading-sanctions",
+    "title": "US sanctions Iranian 'oil trustees' it accuses of evading sanctions",
+    "domain": "www.middleeasteye.net",
+    "gdelt_first_seen_utc": "2026-11-20T23:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:oil",
+      "geopolitical_event:sanctions",
+      "world_context:iranian"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
+  },
+  {
+    "url": "https://www.altoonamirror.com/news/local-business/2026/11/iea-report-iranwar-energyshock-reshaping-how-world-powers-itself",
+    "title": "No Going Back: Iran war\u2019s energy shock reshaping how world powers itself, IEA says",
+    "domain": "www.altoonamirror.com",
+    "gdelt_first_seen_utc": "2026-11-20T22:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:energy",
+      "geopolitical_event:war",
+      "world_context:iran"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T22:42:02.396153+00:00"
+  },
+  {
     "url": "https://www.marinelink.com/news/houthis-warn-attacks-saudi-red-sea-ports-544498",
     "title": "Houthis Warn of Attacks on Saudi Red Sea Ports",
     "domain": "www.marinelink.com",
@@ -1354,6 +1699,55 @@
     "first_collector_observed_utc": "2026-11-19T20:02:38.725241+00:00"
   },
   {
+    "url": "https://www.aol.com/articles/spacex-plans-spend-2-8-221502000.html",
+    "title": "SpaceX Plans to Spend $2.8 Billion on Gas Turbines. Here\u2019s What That Much Natural Gas Demand Means for Pipeline Investors. - AOL",
+    "domain": "www.aol.com",
+    "gdelt_first_seen_utc": "2026-11-20T23:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 72,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas demand",
+      "natural gas"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
+  },
+  {
+    "url": "https://www.fool.com/investing/2026/11/20/spacex-plans-to-spend-usd2-8-billion-on-gas-turbines-here-s-what-that-much-natural-gas-demand-means-for-pipeline-investors?source=iedfolrf0000001",
+    "title": "SpaceX Plans to Spend $2.8 Billion on Gas Turbines. Here\u2019s What That Much Natural Gas Demand Means for Pipeline Investors. | The Motley Fool",
+    "domain": "www.fool.com",
+    "gdelt_first_seen_utc": "2026-11-20T22:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 72,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas demand",
+      "natural gas"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T22:42:02.396153+00:00"
+  },
+  {
     "url": "https://www.ibtimes.co.in/rupee-gains-31-paise-against-us-dollar-amid-falling-crude-oil-prices-908439",
     "title": "Rupee gains 31 paise against US dollar amid falling crude oil prices",
     "domain": "www.ibtimes.co.in",
@@ -1376,6 +1770,375 @@
     "discovery_providers": [
       "GDELT GAL RSS"
     ]
+  },
+  {
+    "url": "https://www.middleeastmonitor.com/20261121-iran-urges-world-to-remember-scores-of-children-killed-in-us-airstrikes-on-school",
+    "title": "Iran urges world to remember scores of children killed in US airstrikes on school",
+    "domain": "www.middleeastmonitor.com",
+    "gdelt_first_seen_utc": "2026-11-21T12:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:airstrikes",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00"
+  },
+  {
+    "url": "https://laotimes.com/republican-senator-lindsey-graham-called-for-more-us-military-action-against-iran",
+    "title": "Republican Senator Lindsey Graham called for more US military action against Iran \u2013 The Lao Times",
+    "domain": "laotimes.com",
+    "gdelt_first_seen_utc": "2026-11-21T12:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:military",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00"
+  },
+  {
+    "url": "https://www.garoweonline.com/en/news/world/israel-rejects-trump-s-gaza-plan-signals-the-unilateral-strikes-on-iran-remain-on-table",
+    "title": "Israel rejects Trump\u2019s Gaza plan, signals the unilateral strikes on Iran remain on table | Garowe Online",
+    "domain": "www.garoweonline.com",
+    "gdelt_first_seen_utc": "2026-11-21T12:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strikes",
+      "world_context:iran/israel"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:32:19.802770+00:00"
+  },
+  {
+    "url": "https://tribune.com.pk/story/2641517/us-vice-president-vance-declines-to-say-he-would-have-ordered-iran-strikes",
+    "title": "US Vice President Vance declines to say he would have ordered Iran strikes | The Express Tribune",
+    "domain": "tribune.com.pk",
+    "gdelt_first_seen_utc": "2026-11-21T12:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strikes",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:32:19.802770+00:00"
+  },
+  {
+    "url": "https://www.bankingnews.gr/diethni/articles/912461/alarm-in-sicily-as-massive-us-kc-135-stratotanker-diverts-from-sigonella-anti-iran-drone-base-over-mystery-uav%20title=",
+    "title": "Alarm in Sicily as massive US KC-135 Stratotanker diverts from Sigonella anti-Iran drone base over mystery UAV",
+    "domain": "www.bankingnews.gr",
+    "gdelt_first_seen_utc": "2026-11-21T12:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:drone",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:32:19.802770+00:00"
+  },
+  {
+    "url": "https://news.az/news/live-russia-launches-deadly-missile-barrage-on-ukraine",
+    "title": "LIVE: Russia launches deadly missile barrage on Ukraine | News.az",
+    "domain": "news.az",
+    "gdelt_first_seen_utc": "2026-11-21T12:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:missile",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:32:19.802770+00:00"
+  },
+  {
+    "url": "https://www.bankingnews.gr/diethni/articles/912461/alarm-in-sicily-as-massive-us-kc-135-stratotanker-diverts-from-sigonella-anti-iran-drone-base-over-mystery-uav",
+    "title": "Alarm in Sicily as massive US KC-135 Stratotanker diverts from Sigonella anti-Iran drone base over mystery UAV",
+    "domain": "www.bankingnews.gr",
+    "gdelt_first_seen_utc": "2026-11-21T12:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:drone",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:32:19.802770+00:00"
+  },
+  {
+    "url": "https://www.bankingnews.gr/diethni/articles/912456/ominous-reversal-iran-issues-nuclear-ultimatum-against-us-after-downing-58-mq-drones-as-f-16-sends-sos",
+    "title": "Ominous reversal! Iran issues nuclear ultimatum against US after downing 58 MQ drones as F-16 sends SOS",
+    "domain": "www.bankingnews.gr",
+    "gdelt_first_seen_utc": "2026-11-21T12:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:drones",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:32:19.802770+00:00"
+  },
+  {
+    "url": "https://www.garoweonline.com/en/news/world/netanyahu-says-iran-is-developing-missiles-capable-of-reaching-u-s-territory",
+    "title": "Netanyahu Says Iran Is Developing Missiles Capable of Reaching U.S. Territory | Garowe Online",
+    "domain": "www.garoweonline.com",
+    "gdelt_first_seen_utc": "2026-11-21T12:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:missiles",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:32:19.802770+00:00"
+  },
+  {
+    "url": "https://www.jpost.com/middle-east/iran-news/article-915613",
+    "title": "Iran still hopes diplomacy can end war with US, FM Araghchi says | The Jerusalem Post",
+    "domain": "www.jpost.com",
+    "gdelt_first_seen_utc": "2026-11-20T23:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:war",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
+  },
+  {
+    "url": "https://www.canberratimes.com.au/story/9395697/fears-growing-of-return-to-all-out-war-between-us-iran",
+    "title": "Fears growing of return to all-out war between US, Iran",
+    "domain": "www.canberratimes.com.au",
+    "gdelt_first_seen_utc": "2026-11-20T23:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:war",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
+  },
+  {
+    "url": "https://www.arabtimesonline.com/news/us-missile-strikes-outskirts-of-qeshm-island-in-southern-iran",
+    "title": "US Missile Strikes Outskirts of Qeshm Island in Southern Iran",
+    "domain": "www.arabtimesonline.com",
+    "gdelt_first_seen_utc": "2026-11-20T23:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strikes",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
+  },
+  {
+    "url": "https://www.digbycourier.ca/russia-says-ukraine-fired-missiles-at-moscow-drone-strikes-in-crimea",
+    "title": "Russia says Ukraine fired missiles at Moscow, drone strikes in Crimea",
+    "domain": "www.digbycourier.ca",
+    "gdelt_first_seen_utc": "2026-11-20T22:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strikes",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T22:42:02.396153+00:00"
+  },
+  {
+    "url": "https://www.omanobserver.om/article/1199977/world/europe/russia-strikes-ukraine-as-missiles-land-in-poland",
+    "title": "Russia strikes Ukraine as missiles land in Poland",
+    "domain": "www.omanobserver.om",
+    "gdelt_first_seen_utc": "2026-11-20T22:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strikes",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T22:42:02.396153+00:00"
+  },
+  {
+    "url": "https://www.digbycourier.ca/drones-continue-to-target-moscow-region-ukraine-russia-updates",
+    "title": "Drones Continue to Target Moscow Region: Ukraine-Russia Updates",
+    "domain": "www.digbycourier.ca",
+    "gdelt_first_seen_utc": "2026-11-20T22:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:drones",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T22:42:02.396153+00:00"
   },
   {
     "url": "https://www.military.com/ukraine-reports-russian-missile-blitz-after-putin-met-with-trump",
@@ -4547,6 +5310,27 @@
     ]
   },
   {
+    "url": "https://www.straitstimes.com/singapore/environment/asean-power-grid-can-boost-regions-economy-bring-in-couple-of-trillions-tan-see-leng",
+    "title": "ASEAN Power Grid could boost economy and investment",
+    "domain": "www.straitstimes.com",
+    "gdelt_first_seen_utc": "2026-11-20T06:45:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 57,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "grid",
+      "power grid"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
     "url": "https://dotchuoinon.com/2026/11/19/can-one-mega-grid-really-power-southeast-asia-the-asean-power-grid",
     "title": "Can one mega grid really power Southeast Asia? The ASEAN Power Grid",
     "domain": "dotchuoinon.com",
@@ -4735,6 +5519,97 @@
     "discovery_providers": [
       "GDELT GAL RSS"
     ]
+  },
+  {
+    "url": "https://nieuws.nl/economie/argentinie-komt-met-stimuleringsmaatregelen-voor-fors-lng-project",
+    "title": "Argentini\u00eb komt met stimuleringsmaatregelen voor fors lng-project",
+    "domain": "nieuws.nl",
+    "gdelt_first_seen_utc": "2026-11-21T12:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 45,
+    "category": "LNG",
+    "relevance_evidence": [
+      "lng"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:32:19.802770+00:00"
+  },
+  {
+    "url": "https://www.minutouno.com/economia/aprobaron-el-rigi-del-proyecto-argentina-lng-una-inversion-historica-mas-usd-50000-millones-n6347794",
+    "title": "Aprobaron el RIGI del proyecto Argentina LNG, con una inversi\u00f3n hist\u00f3rica de m\u00e1s de USD 50.000 millones",
+    "domain": "www.minutouno.com",
+    "gdelt_first_seen_utc": "2026-11-20T23:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 45,
+    "category": "LNG",
+    "relevance_evidence": [
+      "lng"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
+  },
+  {
+    "url": "https://www.manilatimes.net/2026/11/21/tmt-newswire/globenewswire/dynagas-lng-partners-lp-reports-results-for-the-three-and-nine-months-ended-september-30-2026/2475317",
+    "title": "Dynagas LNG Partners LP Reports Results for the Three and Nine Months Ended September 30, 2026",
+    "domain": "www.manilatimes.net",
+    "gdelt_first_seen_utc": "2026-11-20T22:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 45,
+    "category": "LNG",
+    "relevance_evidence": [
+      "lng"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T22:42:02.396153+00:00"
+  },
+  {
+    "url": "https://www.losandes.com.ar/economia/el-gobierno-aprobo-el-rigi-argentina-lng-una-inversion-us-50750-millones-y-la-firma-sera-el-30-noviembre-n6015088",
+    "title": "El Gobierno aprob\u00f3 el RIGI para Argentina LNG: una inversi\u00f3n de US$ 50.750 millones y la firma ser\u00e1 el 30 de noviembre",
+    "domain": "www.losandes.com.ar",
+    "gdelt_first_seen_utc": "2026-11-20T22:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 45,
+    "category": "LNG",
+    "relevance_evidence": [
+      "lng"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T22:42:02.396153+00:00"
   },
   {
     "url": "https://www.businessincameroon.com/energy/2011-17236-golar-lng-records-cfa3-23-billion-in-employee-exit-costs-after-cameroon-operations-end",
@@ -5235,6 +6110,46 @@
     "first_collector_observed_utc": "2026-11-20T13:08:58.711900+00:00"
   },
   {
+    "url": "https://www.straitstimes.com/singapore/environment/diversifying-energy-sources-and-fuel-suppliers-key-to-self-sufficiency-in-spore-tan-see-leng",
+    "title": "Singapore energy security : Diversification and natural gas",
+    "domain": "www.straitstimes.com",
+    "gdelt_first_seen_utc": "2026-11-20T06:45:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 39,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "natural gas"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://peakoil.com/publicpolicy/congressman-langworthy-to-governor-hochul-end-natural-gas-ban-reopen-dunkirk-power-plant",
+    "title": "Congressman Langworthy to Governor Hochul : End natural gas ban , reopen Dunkirk power plant",
+    "domain": "peakoil.com",
+    "gdelt_first_seen_utc": "2026-11-20T03:45:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 39,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "natural gas"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
     "url": "https://www.wgal.com/article/pa-elizabethtown-residents-asked-to-conserve-natural-gas-pipeline-damage/74481100",
     "title": "Residents asked to conserve natural gas after pipeline damage",
     "domain": "www.wgal.com",
@@ -5246,7 +6161,8 @@
     "discovery_provider": "GDELT GAL RSS",
     "discovery_topic": "gal_rolling_sample",
     "topics": [
-      "gal_rolling_sample"
+      "gal_rolling_sample",
+      "us_natural_gas"
     ],
     "relevance_score": 39,
     "category": "Natural Gas",
@@ -5621,6 +6537,125 @@
     "status": "discovery_only_requires_publisher_verification"
   },
   {
+    "url": "https://gr.euronews.com/2026/11/20/us-chevron-ksekina-erevnes-gia-hydrocarbons",
+    "title": "\u0397 \u03b1\u03bc\u03b5\u03c1\u03b9\u03ba\u03b1\u03bd\u03b9\u03ba\u03ae Chevron \u03be\u03b5\u03ba\u03b9\u03bd\u03ac \u03ad\u03c1\u03b5\u03c5\u03bd\u03b5\u03c2 \u03b3\u03b9\u03b1 \u03c5\u03b4\u03c1\u03bf\u03b3\u03bf\u03bd\u03ac\u03bd\u03b8\u03c1\u03b1\u03ba\u03b5\u03c2 \u03c3\u03c4\u03bf \u03bd\u03cc\u03c4\u03b9\u03bf \u0399\u03cc\u03bd\u03b9\u03bf",
+    "domain": "gr.euronews.com",
+    "gdelt_first_seen_utc": "2026-11-21T12:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "chevron"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00"
+  },
+  {
+    "url": "https://www.moneycontrol.com/us-markets/stockpricequote/chevron/CVX",
+    "title": "Chevron Share Price Live Today: CVX Stock Price Live, News, Quotes & Chart - Moneycontrol",
+    "domain": "www.moneycontrol.com",
+    "gdelt_first_seen_utc": "2026-11-21T04:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "chevron"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T04:07:13.117963+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
+  },
+  {
+    "url": "https://www.soldionline.it/notizie/forex-commodities/petrolio-in-rialzo-a-new-york-cosa-sta-spingendo-il-wti-a-8403-dollari",
+    "title": "Petrolio in rialzo a New York: cosa sta spingendo il Wti a 84,03 dollari - SoldiOnline.it",
+    "domain": "www.soldionline.it",
+    "gdelt_first_seen_utc": "2026-11-20T23:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "wti"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
+  },
+  {
+    "url": "https://www.tnp.no/norway/economy/5108-sharp-fall-in-oil-prices-continues-to-affect-norway",
+    "title": "Sharp Fall in Oil Prices Continues to Affect Norway - The Nordic Page",
+    "domain": "www.tnp.no",
+    "gdelt_first_seen_utc": "2026-11-20T23:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "oil prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
+  },
+  {
+    "url": "https://www.oedigital.com/news/544508-chevron-vessel-begins-gas-survey-offshore-greece",
+    "title": "Chevron Vessel Begins Gas Survey Offshore Greece",
+    "domain": "www.oedigital.com",
+    "gdelt_first_seen_utc": "2026-11-20T22:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "chevron"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T22:42:02.396153+00:00"
+  },
+  {
     "url": "https://www.kono1011.com/news/how-gas-prices-have/ZSYCNXXUTE5GJAW53T2EWEOD4Q",
     "title": "How gas prices have changed in Texas in the last week",
     "domain": "www.kono1011.com",
@@ -5986,6 +7021,46 @@
     "discovery_providers": [
       "GDELT GAL RSS"
     ]
+  },
+  {
+    "url": "https://whig.com/2026/11/19/illinois-regulators-release-major-grid-reliability-reports",
+    "title": "Illinois regulators release major grid reliability reports",
+    "domain": "whig.com",
+    "gdelt_first_seen_utc": "2026-11-20T03:45:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "grid reliability"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.rigzone.com/news/wire/oil_prices_swing_on_middle_east_uncertainty-19-nov-2026-185129-article",
+    "title": "Oil Prices Swing on Middle East Uncertainty",
+    "domain": "www.rigzone.com",
+    "gdelt_first_seen_utc": "2026-11-20T02:30:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "oil prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
   },
   {
     "url": "https://www.wabi.tv:443/2026/11/19/heating-oil-prices-maine-dip-third-consecutive-week",
@@ -7489,6 +8564,231 @@
     "status": "discovery_only_requires_publisher_verification"
   },
   {
+    "url": "https://www.samaa.tv/2087360721-ogdcl-partners-with-baker-hughes-to-boost-oil-gas-production",
+    "title": "OGDCL, Baker Hughes partner to boost oil and gas output",
+    "domain": "www.samaa.tv",
+    "gdelt_first_seen_utc": "2026-11-21T12:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "oil and gas"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:32:19.802770+00:00"
+  },
+  {
+    "url": "https://www.upr.org/show/behind-the-headlines/2026-11-20/carbon-county-data-center-slc-mayor",
+    "title": "Carbon County data center, Salt Lake mayor's race, and more on Behind the Headlines",
+    "domain": "www.upr.org",
+    "gdelt_first_seen_utc": "2026-11-20T23:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
+  },
+  {
+    "url": "https://www.mv-voice.com/technology/2026/11/20/nasa-ames-moffett-field-data-center",
+    "title": "NASA eyes Moffett Field as site for massive data center",
+    "domain": "www.mv-voice.com",
+    "gdelt_first_seen_utc": "2026-11-20T23:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
+  },
+  {
+    "url": "https://it.blastingnews.com/tecnologia/2026/11/trump-data-center-allestero-per-i-big-tech-arriveranno-tasse-pesanti-004208897.html",
+    "title": "Trump: 'Data center all'estero per i big tech? Arriveranno tasse pesanti'",
+    "domain": "it.blastingnews.com",
+    "gdelt_first_seen_utc": "2026-11-20T23:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
+  },
+  {
+    "url": "https://cedarnews.net/newstasks/1172805/appeals-court-upholds-shreveport-data-center-permit",
+    "title": "Appeals court upholds Shreveport data center permit | Cedar News",
+    "domain": "cedarnews.net",
+    "gdelt_first_seen_utc": "2026-11-20T22:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T22:42:02.396153+00:00"
+  },
+  {
+    "url": "https://www.paloaltoonline.com/technology/2026/11/20/nasa-ames-moffett-field-data-center",
+    "title": "NASA eyes Moffett Field as site for massive data center",
+    "domain": "www.paloaltoonline.com",
+    "gdelt_first_seen_utc": "2026-11-20T22:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T22:42:02.396153+00:00"
+  },
+  {
+    "url": "https://www.notiziegeopolitiche.net/trump-minaccia-una-tassa-enorme-alle-aziende-usa-con-data-center-allestero-il-suo-staff-non-sapeva-nulla",
+    "title": "Trump minaccia una \u00abtassa enorme\u00bb alle aziende Usa con data center all\u2019estero: il suo staff non sapeva nulla",
+    "domain": "www.notiziegeopolitiche.net",
+    "gdelt_first_seen_utc": "2026-11-20T22:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T22:42:02.396153+00:00"
+  },
+  {
+    "url": "https://www.litaliano.it/trump-avverte-teheran-e-sfida-pechino-sullai-vogliamo-un-vero-accordo-con-liran-tasse-pesanti-sui-data-center-allestero",
+    "title": "Trump avverte Teheran e sfida Pechino sull'AI: \u00abVogliamo un vero accordo con l'Iran. Tasse pesanti sui data center all'estero\u00bb \u2013 L'ITALIANO",
+    "domain": "www.litaliano.it",
+    "gdelt_first_seen_utc": "2026-11-20T22:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T22:42:02.396153+00:00"
+  },
+  {
+    "url": "https://www.postandcourier.com/pee-dee/news/florence-sc-data-center-confusion-regulation-public-forum/article_e1f4da50-3194-40ff-b22b-4e3e64961f25.html",
+    "title": "Florence data center forum draws crowd from online confusion",
+    "domain": "www.postandcourier.com",
+    "gdelt_first_seen_utc": "2026-11-20T21:45:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.floydct.com/news/kentucky-power-files-to-support-grayson-data-center-provide-rate-offsets-winter-bill-credits-for/article_b5b798ab-bdbb-4da8-bac4-b70d51a9bccf.html",
+    "title": "Kentucky Power files to support Grayson data center , provide rate offsets , winter bill credits for residential customers",
+    "domain": "www.floydct.com",
+    "gdelt_first_seen_utc": "2026-11-20T21:45:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
     "url": "http://www.vietnamtribune.com/news/279445376/konst-at-data-center-asia-in-kuala-lumpur-advancing-its-southeast-asia-token-factory-strategy-with-flagship-projects-in-cyberjaya-and-jakarta",
     "title": "KONST at Data Center Asia in Kuala Lumpur: Advancing Its Southeast Asia Token Factory Strategy with Flagship Projects in Cyberjaya and Jakarta",
     "domain": "www.vietnamtribune.com",
@@ -7603,6 +8903,46 @@
     "discovery_providers": [
       "GDELT GAL RSS"
     ]
+  },
+  {
+    "url": "https://www.kltv.com/2026/11/20/swepco-bring-new-life-retired-pirkey-power-plant-hallsville",
+    "title": "SWEPCO to bring new life to retired Pirkey power plant in Hallsville",
+    "domain": "www.kltv.com",
+    "gdelt_first_seen_utc": "2026-11-20T06:45:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "power plant"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.kold.com/2026/11/19/ag-mayes-asks-cochise-county-delay-vote-50b-spacex-data-center",
+    "title": "AG Mayes asks Cochise County to delay vote on $50B SpaceX data center",
+    "domain": "www.kold.com",
+    "gdelt_first_seen_utc": "2026-11-20T03:45:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
   },
   {
     "url": "http://northcountrynow.com/stories/packed-house-at-massena-town-board-as-akwesasne-mohawk-tribe-calls-for-data-center-moratorium,401332",
@@ -10207,6 +11547,103 @@
     "status": "discovery_only_requires_publisher_verification"
   },
   {
+    "url": "https://www.hawaiitribune-herald.com/2026/11/21/nation-world-news/big-oil-says-recycled-fracking-wastewater-is-safe-texas-is-about-to-test-it",
+    "title": "Big oil says recycled fracking wastewater is safe. Texas is about to test it. - Hawaii Tribune-Herald",
+    "domain": "www.hawaiitribune-herald.com",
+    "gdelt_first_seen_utc": "2026-11-21T12:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "fracking"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00"
+  },
+  {
+    "url": "https://africanreview.com/ict/linx-expands-interconnection-at-paix-nairobi",
+    "title": "LINX expands interconnection at PAIX Nairobi",
+    "domain": "africanreview.com",
+    "gdelt_first_seen_utc": "2026-11-21T04:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "interconnection"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T04:07:13.117963+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
+  },
+  {
+    "url": "https://bakersfieldnow.com/news/local/bpd-abc-ramps-up-holiday-alcohol-law-enforcement-with-education-prevention-operations",
+    "title": "BPD & ABC ramps up holiday alcohol law enforcement with education, prevention & operations",
+    "domain": "bakersfieldnow.com",
+    "gdelt_first_seen_utc": "2026-11-20T23:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "bpd"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
+  },
+  {
+    "url": "https://www.popularmechanics.com/home/g62047915/best-smart-thermostats",
+    "title": "We Tested the Best Smart Thermostats That Can Slash Your Energy Bills",
+    "domain": "www.popularmechanics.com",
+    "gdelt_first_seen_utc": "2026-11-20T23:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "energy bills"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
+  },
+  {
     "url": "https://www.thebatavian.com/brianquinn/alabama-battery-energy-storage-law-taking-shape/649994",
     "title": "Alabama battery energy storage law taking shape",
     "domain": "www.thebatavian.com",
@@ -11553,6 +12990,53 @@
     "status": "discovery_only_requires_publisher_verification"
   },
   {
+    "url": "https://naija247news.com/category/energy-commodities/power-renewables",
+    "title": "Power & Renewables Archives | Naija247news",
+    "domain": "naija247news.com",
+    "gdelt_first_seen_utc": "2026-11-20T23:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 24,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "renewables"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
+  },
+  {
+    "url": "https://www.homelandsecuritynewswire.com/dr20261120-how-insider-threats-reshape-cybersecurity-risks-in-power-grids",
+    "title": "Grid, power-grid resilience, power cables, insider threat | Homeland Security Newswire",
+    "domain": "www.homelandsecuritynewswire.com",
+    "gdelt_first_seen_utc": "2026-11-20T22:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 24,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "grid"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-20T22:42:02.396153+00:00"
+  },
+  {
     "url": "https://capitalfm.africa/frontier-minerals-eyes-local-refining-of-mrima-hill-rare-earths-to-boost-kenyas-mineral-value",
     "title": "Frontier Minerals eyes local refining of Mrima Hill rare earths to boost Kenya\u2019s mineral value",
     "domain": "capitalfm.africa",
@@ -11708,6 +13192,26 @@
     ]
   },
   {
+    "url": "https://www.utilitydive.com/news/western-northeast-market-reforms-drought-grid-ferc/875311",
+    "title": "Market reforms bolster grid , may lower costs this winter : FERC",
+    "domain": "www.utilitydive.com",
+    "gdelt_first_seen_utc": "2026-11-20T21:45:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 21,
+    "category": "Infrastructure & Investment",
+    "relevance_evidence": [
+      "ferc"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
     "url": "https://hpr1.com/diesel-the-fuel-that-affects-everything",
     "title": "Diesel : The fuel that affects everything",
     "domain": "hpr1.com",
@@ -11725,6 +13229,890 @@
       "diesel"
     ],
     "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.miragenews.com/tokyos-hidden-methane-1781075",
+    "title": "Tokyo Hidden Methane",
+    "domain": "www.miragenews.com",
+    "gdelt_first_seen_utc": "2026-11-20T05:30:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 18,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "methane"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.sungazette.com/news/top-news/2026/11/plan-expected-to-improve-firefighter-safety-at-old-lycoming-township-volunteer-fire-company",
+    "title": "Plan expected to improve firefighter safety at Old Lycoming Township Volunteer Fire Company",
+    "domain": "www.sungazette.com",
+    "gdelt_first_seen_utc": "2026-11-21T06:45:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.sungazette.com/news/top-news/2026/11/2027-lycoming-county-real-estate-taxes-to-remain-at-7-mills",
+    "title": "2027 Lycoming County real estate taxes to remain at 7 mills - Williamsport Sun - Gazette",
+    "domain": "www.sungazette.com",
+    "gdelt_first_seen_utc": "2026-11-21T06:45:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.dailypress.net/opinion/editorial/2026/11/carbon-monoxide-poisoning-a-real-danger-in-winter",
+    "title": "Carbon monoxide poisoning a real danger in winter",
+    "domain": "www.dailypress.net",
+    "gdelt_first_seen_utc": "2026-11-21T06:45:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://maritime-executive.com/article/turkish-seismic-research-ship-to-restart-pakistan-s-oil-exploration-efforts",
+    "title": "Turkish Seismic Research Ship to Restart Pakistan Oil Exploration Efforts",
+    "domain": "maritime-executive.com",
+    "gdelt_first_seen_utc": "2026-11-21T00:30:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.lex18.com/science-and-tech/artificial-intelligence/meta-rethinks-its-2030-climate-goal-as-ai-emissions-soar",
+    "title": "Meta rethinks its 2030 climate goal as AI emissions soar",
+    "domain": "www.lex18.com",
+    "gdelt_first_seen_utc": "2026-11-20T21:45:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "http://www.goskagit.com/news/world/un-climate-talks-slammed-by-activists-and-leaders-as-fossil-fuels-go-unmentioned-in-draft/article_6cf0d3a9-2bf2-54d5-977a-1cedbc195b21.html",
+    "title": "UN climate talks slammed by activists and leaders as fossil fuels go unmentioned in draft deal",
+    "domain": "www.goskagit.com",
+    "gdelt_first_seen_utc": "2026-11-20T21:45:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.kxxv.com/science-and-tech/artificial-intelligence/meta-rethinks-its-2030-climate-goal-as-ai-emissions-soar",
+    "title": "Meta rethinks its 2030 climate goal as AI emissions soar",
+    "domain": "www.kxxv.com",
+    "gdelt_first_seen_utc": "2026-11-20T21:45:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.kxlf.com/science-and-tech/artificial-intelligence/meta-rethinks-its-2030-climate-goal-as-ai-emissions-soar",
+    "title": "Meta rethinks its 2030 climate goal as AI emissions soar",
+    "domain": "www.kxlf.com",
+    "gdelt_first_seen_utc": "2026-11-20T21:45:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.wcpo.com/science-and-tech/artificial-intelligence/meta-rethinks-its-2030-climate-goal-as-ai-emissions-soar",
+    "title": "Meta rethinks its 2030 climate goal as AI emissions soar",
+    "domain": "www.wcpo.com",
+    "gdelt_first_seen_utc": "2026-11-20T21:45:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.trend.az/casia/uzbekistan/4248633.html",
+    "title": "Uzbekistan , Kazanc\u0131 Holding discuss Samarkand power network management",
+    "domain": "www.trend.az",
+    "gdelt_first_seen_utc": "2026-11-20T06:45:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.hindustantimes.com/india-news/iea-warns-of-lasting-hormuz-shock-hails-india-s-clean-push-in-2026-outlook-101795152562692.html",
+    "title": "IEA warns of lasting Hormuz shock , hails India clean push in 2026 outlook",
+    "domain": "www.hindustantimes.com",
+    "gdelt_first_seen_utc": "2026-11-20T06:45:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.wgauradio.com/news/politics/senate-vote-bill/5RF7CIRIZE76NIQ34TA3EZUJD4",
+    "title": "Senate approves bipartisan bill to overhaul US energy sectors",
+    "domain": "www.wgauradio.com",
+    "gdelt_first_seen_utc": "2026-11-20T06:45:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.asiaone.com:443/singapore/nuclear-power-small-modular-reactors-tan-see-leng",
+    "title": "No option off the table : Tan See Leng points to high standard of safety in next - generation nuclear fuel as Singapore studies energy mix",
+    "domain": "www.asiaone.com:443",
+    "gdelt_first_seen_utc": "2026-11-20T06:45:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://ghanaiantimes.com.gh/producer-inflation-rises-to-5-2-on-mining-sector-pressures",
+    "title": "Producer inflation rises to 5 . 2 % on mining sector pressures",
+    "domain": "ghanaiantimes.com.gh",
+    "gdelt_first_seen_utc": "2026-11-20T06:45:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://allafrica.com/stories/202611200060.html",
+    "title": "Nigeria : CBN , NNPCL Sign Pact On Oil Revenue Oversight",
+    "domain": "allafrica.com",
+    "gdelt_first_seen_utc": "2026-11-20T06:30:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.kob.com/new-mexico/albuquerque-metro/senate-approves-bill-to-speed-up-permitting-reviews-force-data-centers-to-pay-for-energy-costs",
+    "title": "Senate approves bill to speed up permitting reviews , force data centers to pay for energy costs",
+    "domain": "www.kob.com",
+    "gdelt_first_seen_utc": "2026-11-20T06:15:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.wlwt.com/article/senate-permitting-bill-data-centers-pay-energy-costs/74484453",
+    "title": "Senate backs bill to speed up permitting reviews",
+    "domain": "www.wlwt.com",
+    "gdelt_first_seen_utc": "2026-11-20T06:15:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.businesstimes.com.sg/international/asean/singapore-takes-prosper-thy-neighbour-approach-asean-energy-trade-tan-see-leng",
+    "title": "Singapore takes prosper thy neighbour approach to Asean energy trade : Tan See Leng",
+    "domain": "www.businesstimes.com.sg",
+    "gdelt_first_seen_utc": "2026-11-20T05:45:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.koat.com/article/senate-permitting-bill-data-centers-pay-energy-costs/74484453",
+    "title": "Senate backs bill to speed up permitting reviews",
+    "domain": "www.koat.com",
+    "gdelt_first_seen_utc": "2026-11-20T05:45:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.wyff4.com/article/senate-permitting-bill-data-centers-pay-energy-costs/74484453",
+    "title": "Senate backs bill to speed up permitting reviews",
+    "domain": "www.wyff4.com",
+    "gdelt_first_seen_utc": "2026-11-20T05:30:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.clickondetroit.com/news/politics/2026/11/20/senate-to-vote-on-bill-to-speed-up-permitting-reviews-force-data-centers-to-pay-for-energy-costs",
+    "title": "Senate approves bill to speed up permitting reviews , force data centers to pay for energy costs",
+    "domain": "www.clickondetroit.com",
+    "gdelt_first_seen_utc": "2026-11-20T05:15:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.wokv.com/news/politics/senate-vote-bill/5RF7CIRIZE76NIQ34TA3EZUJD4",
+    "title": "Senate approves bipartisan bill to overhaul US energy sectors",
+    "domain": "www.wokv.com",
+    "gdelt_first_seen_utc": "2026-11-20T05:15:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.union-bulletin.com/news/national/senate-approves-bill-to-speed-up-permitting-reviews-force-data-centers-to-pay-for-energy/article_922aa0fa-ebc9-5bce-8ffc-758803a11fd2.html",
+    "title": "Senate approves bill to speed up permitting reviews , force data centers to pay for energy costs",
+    "domain": "www.union-bulletin.com",
+    "gdelt_first_seen_utc": "2026-11-20T05:15:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.shippingtribune.com/news/shipping/Two+supertankers+struck+mines+in+Strait+of+Hormuz,+Iran%E2%80%99s+Revolutionary+Guard+says",
+    "title": "Shipping Tribune",
+    "domain": "www.shippingtribune.com",
+    "gdelt_first_seen_utc": "2026-11-20T04:30:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.koco.com/article/senate-permitting-bill-data-centers-pay-energy-costs/74484453",
+    "title": "Senate backs bill to speed up permitting reviews",
+    "domain": "www.koco.com",
+    "gdelt_first_seen_utc": "2026-11-20T04:30:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.cbsnews.com/news/senate-bipartisan-permitting-reform-bill-energy-baaja-trump",
+    "title": "Senate passes bipartisan permitting reform bill designed to boost energy projects",
+    "domain": "www.cbsnews.com",
+    "gdelt_first_seen_utc": "2026-11-20T04:15:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.businesstoday.in/india/story/indias-lpg-imports-may-hit-1-million-barrels-a-day-by-2035-why-the-hormuz-crisis-is-a-warning-sign-568655-2026-11-20",
+    "title": "India LPG imports may hit 1 million barrels a day by 2035 : Why the Hormuz crisis is a warning sign",
+    "domain": "www.businesstoday.in",
+    "gdelt_first_seen_utc": "2026-11-20T04:15:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.clarksvilleonline.com/2026/11/19/clarksville-gas-and-water-department-plans-dalton-smith-court-water-outage",
+    "title": "Clarksville Gas and Water Department plans Dalton Smith Court Water Outage - Clarksville Online - Clarksville News , Sports , Events and Information",
+    "domain": "www.clarksvilleonline.com",
+    "gdelt_first_seen_utc": "2026-11-20T03:45:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.therecord.com/business/senate-to-vote-on-bill-to-speed-up-permitting-reviews-force-data-centers-to-pay-for-energy-costs/article_ff2e04ec-4edc-5659-83ca-79c27db303a1.html",
+    "title": "Senate backs bill to speed up permitting reviews , force data centers to pay for energy costs",
+    "domain": "www.therecord.com",
+    "gdelt_first_seen_utc": "2026-11-20T03:45:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.wfmj.com/news/political/senate-to-vote-on-bill-to-speed-up-permitting-reviews-force-data-centers-to-pay/article_bcc63f54-c7c3-5ba8-8cda-3ff60e64a364.html",
+    "title": "Senate to vote on bill to speed up permitting reviews , force data centers to pay for energy costs",
+    "domain": "www.wfmj.com",
+    "gdelt_first_seen_utc": "2026-11-20T03:45:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.thisdaylive.com/2026/11/20/what-nigeria-should-demand-at-cop31",
+    "title": "What Nigeria Should Demand at COP31 \u2013 THISDAYLIVE",
+    "domain": "www.thisdaylive.com",
+    "gdelt_first_seen_utc": "2026-11-20T03:30:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "http://www.leadertelegram.com/news/nation-world/senate-to-vote-on-bill-to-speed-up-permitting-reviews-force-data-centers-to-pay/article_af9a251a-29dd-5f9e-996a-7de58ccf663b.html",
+    "title": "Senate to vote on bill to speed up permitting reviews , force data centers to pay for energy costs",
+    "domain": "www.leadertelegram.com",
+    "gdelt_first_seen_utc": "2026-11-20T03:30:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://mymotherlode.com/news/state/11324879/soaking-storms-shift-north-to-floridas-space-coast-and-prompts-water-rescues-of-humans-and-horses.html",
+    "title": "Soaking storms shift north to Florida Space Coast and prompt water rescues of humans and horses",
+    "domain": "mymotherlode.com",
+    "gdelt_first_seen_utc": "2026-11-20T03:30:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.winknews.com/news/lee/cape-coral-trash-bills-set-to-drop-with-fcc-service-worries-continue/article_c2a526a5-1b48-44ee-8337-83a8b61cc4e0.html",
+    "title": "Cape Coral trash bills set to drop with FCC , service worries continue",
+    "domain": "www.winknews.com",
+    "gdelt_first_seen_utc": "2026-11-20T03:30:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.eurasiareview.com/20112026-israel-italy-and-the-eastern-med-strategic-assets-for-european-energy-eecurity-in-a-geopolitical-contested-area-of-hybrid-competition-analysis",
+    "title": "Israel , Italy And The Eastern Med : Strategic Assets For European Energy Security In A Geopolitical Contested Area Of Hybrid Competition - Analysis",
+    "domain": "www.eurasiareview.com",
+    "gdelt_first_seen_utc": "2026-11-20T03:15:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.wdbo.com/news/politics/senate-vote-bill/5RF7CIRIZE76NIQ34TA3EZUJD4",
+    "title": "Senate bill to overhaul US energy sectors , but critics want safeguards",
+    "domain": "www.wdbo.com",
+    "gdelt_first_seen_utc": "2026-11-20T02:45:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.komu.com/weather/winter_weather/income-eligible-utility-assistance-programs-available-to-offset-rising-winter-bills/article_349b3c1b-789e-43ed-980d-821951741f42.html",
+    "title": "Income - based assistance can help offset winter utility bills | First Alert Winter Weather Special",
+    "domain": "www.komu.com",
+    "gdelt_first_seen_utc": "2026-11-20T02:45:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.jamaicaobserver.com/2026/11/19/six-dead-gas-blast-collapses-georgia-apartment-block",
+    "title": "Six dead as gas blast collapses Georgia apartment block",
+    "domain": "www.jamaicaobserver.com",
+    "gdelt_first_seen_utc": "2026-11-20T02:45:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.winnipegfreepress.com/arts-and-life/life/greenpage/2026/11/19/senate-to-vote-on-bill-to-speed-up-permitting-reviews-force-data-centers-to-pay-for-energy-costs",
+    "title": "Senate to vote on bill to speed up permitting reviews , force data centers to pay for energy costs \u2013 Winnipeg Free Press",
+    "domain": "www.winnipegfreepress.com",
+    "gdelt_first_seen_utc": "2026-11-20T02:45:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.bbc.co.uk/news/articles/cmx2q223z1jlo",
+    "title": "Why Canada is embracing AI data centres while the US pushes back",
+    "domain": "www.bbc.co.uk",
+    "gdelt_first_seen_utc": "2026-11-20T02:45:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.wgal.com/article/pa-mechanicsburg-woman-accused-of-embezzling-woodforest-national-bank/74481156",
+    "title": "Mechanicsburg , Pa ., woman accused of embezzling $16 , 000 from bank",
+    "domain": "www.wgal.com",
+    "gdelt_first_seen_utc": "2026-11-20T01:30:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.wglt.org/illinois/2026-11-19/regulators-struck-103m-from-peoples-gas-rate-hike-request",
+    "title": "Regulators struck $103M from Peoples Gas rate hike request",
+    "domain": "www.wglt.org",
+    "gdelt_first_seen_utc": "2026-11-20T01:30:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.hellenicshippingnews.com/iea-as-an-unprecedented-shock-reshapes-the-energy-world-its-duration-will-determine-the-scale-of-the-change",
+    "title": "IEA : As an unprecedented shock reshapes the energy world , its duration will determine the scale of the change",
+    "domain": "www.hellenicshippingnews.com",
+    "gdelt_first_seen_utc": "2026-11-20T01:30:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://arktimes.com/arkansas-blog/2026/11/19/gov-sanders-is-busy-these-days-so-were-here-to-help",
+    "title": "Gov . Sanders is busy these days , so were here to help",
+    "domain": "arktimes.com",
+    "gdelt_first_seen_utc": "2026-11-20T01:30:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.clevelandjewishnews.com/news/local_news/proposed-move-of-school-bus-depot-frustrates-residents/article_ce3ed9f4-e8cd-40ba-8111-55f89e3af32f.html",
+    "title": "Proposed move of school bus depot frustrates residents",
+    "domain": "www.clevelandjewishnews.com",
+    "gdelt_first_seen_utc": "2026-11-20T01:15:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.aljazeera.com/news/2026/11/19/six-killed-in-suspected-gas-explosion-at-georgia-apartment-building",
+    "title": "Six killed in suspected gas explosion at Georgia apartment building",
+    "domain": "www.aljazeera.com",
+    "gdelt_first_seen_utc": "2026-11-20T01:15:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://www.taylorvilledailynews.com/us-court-ruling-jeopardizes-sentinel-midstreams-license-for-deepwater-oil-export-project",
+    "title": "US court ruling jeopardizes Sentinel Midstream license for deepwater oil export project",
+    "domain": "www.taylorvilledailynews.com",
+    "gdelt_first_seen_utc": "2026-11-20T01:15:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
+  },
+  {
+    "url": "https://grenadachronicle.com/six-killed-in-suspected-gas-explosion-at-georgia-apartment-building",
+    "title": "Six killed in suspected gas explosion at Georgia apartment building - Grenada Chronicle \u2013 Daily Grenada And Caribbean News",
+    "domain": "grenadachronicle.com",
+    "gdelt_first_seen_utc": "2026-11-20T01:15:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT DOC 2.0",
+    "discovery_topic": "us_natural_gas",
+    "topics": [
+      "us_natural_gas"
+    ],
+    "relevance_score": 0,
+    "category": "Cross-sector",
+    "relevance_evidence": [],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
   },
   {
     "url": "https://en.interfax.com.ua/news/press-release/1238792.html",

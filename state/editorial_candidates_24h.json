@@ -1,111 +1,5 @@
 [
   {
-    "id": "aca189fec4aeade0541da816",
-    "title": "Trump\u2019s Ukraine Energy Truce Unravels as Russian Missiles Hit Kyiv",
-    "url": "https://oilprice.com/Energy/Energy-General/Trumps-Ukraine-Energy-Truce-Unravels-as-Russian-Missiles-Hit-Kyiv.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-20T12:30:00+00:00",
-    "category": "Geopolitics",
-    "published_precision": "timestamp",
-    "relevance_score": 90,
-    "keyword_matches": 3,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "energy_market_hook:energy",
-      "geopolitical_event:missiles",
-      "world_context:russian"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collected_utc": "2026-11-20T13:08:36.677674+00:00",
-    "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00"
-  },
-  {
-    "id": "fe1a986c782c6e169a842426",
-    "title": "Iran Steps Up Hormuz Tanker Attacks as Oil Prices Slide",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Steps-Up-Hormuz-Tanker-Attacks-as-Oil-Prices-Slide.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-20T12:30:00+00:00",
-    "category": "Geopolitics",
-    "published_precision": "timestamp",
-    "relevance_score": 90,
-    "keyword_matches": 3,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "energy_market_hook:oil",
-      "geopolitical_event:attacks",
-      "world_context:iran"
-    ],
-    "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-20T13:08:36.677674+00:00",
-    "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00"
-  },
-  {
-    "id": "0dabae77a043428019b74744",
-    "title": "Iran Moves to Restart Oil Exports Despite U.S. Naval Blockade",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Moves-to-Restart-Oil-Exports-Despite-US-Naval-Blockade.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-20T09:00:00+00:00",
-    "category": "Geopolitics",
-    "published_precision": "timestamp",
-    "relevance_score": 90,
-    "keyword_matches": 3,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "energy_market_hook:oil",
-      "geopolitical_event:blockade",
-      "world_context:iran"
-    ],
-    "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-20T13:08:36.677674+00:00",
-    "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00"
-  },
-  {
-    "id": "0ae7ec9763a757f4626a6f7b",
-    "title": "Oil Prices Rebound as Houthi Attacks Reignite Middle East Supply Fears",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Rebound-as-Houthi-Attacks-Reignite-Middle-East-Supply-Fears.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-20T05:51:00+00:00",
-    "category": "Geopolitics",
-    "published_precision": "timestamp",
-    "relevance_score": 90,
-    "keyword_matches": 3,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "energy_market_hook:oil",
-      "geopolitical_event:attacks",
-      "world_context:houthi"
-    ],
-    "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-20T13:08:36.677674+00:00",
-    "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00"
-  },
-  {
-    "id": "2a65bbebb59cf651fe387f3c",
-    "title": "Iran Refuses Nuclear Inspections as U.S. Military Threats Mount",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Refuses-Nuclear-Inspections-as-US-Military-Threats-Mount.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-20T11:30:00+00:00",
-    "category": "Geopolitics",
-    "published_precision": "timestamp",
-    "relevance_score": 68,
-    "keyword_matches": 3,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:military",
-      "world_context:iran/united states"
-    ],
-    "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-20T13:08:36.677674+00:00",
-    "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00"
-  },
-  {
     "id": "60aa9200ecb65f02de1925f0",
     "title": "Texas finalizes ERCOT CEO contract extension, pay raise tied to performance",
     "url": "https://www.utilitydive.com/news/texas-finalizes-ercot-ceo-contract-extension-pay-raise-tied-to-performance/875318",
@@ -121,27 +15,28 @@
       "ercot"
     ],
     "status": "research_only_unverified",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-20T22:41:52.748655+00:00",
     "first_collector_observed_utc": "2026-11-20T22:41:52.748655+00:00"
   },
   {
-    "id": "b3b31cf7bdd2cc4fc9d928f8",
-    "title": "Gas Coordination Group confirms EU\u2019s winter preparedness, importance of gas storage through the winter",
-    "url": "https://energy.ec.europa.eu/news/gas-coordination-group-confirms-eus-winter-preparedness-importance-gas-storage-through-winter-2026-11-20_en",
-    "source": "European Commission DG Energy",
-    "source_class": "official_agency",
-    "published_utc": "2026-11-19T23:00:00+00:00",
-    "category": "Natural Gas",
+    "id": "ba84295befe06fabdcff5fe4",
+    "title": "Oil Prices Caught Between a Looming Glut and Middle East Turmoil",
+    "url": "https://oilprice.com/Energy/Energy-General/Oil-Prices-Caught-Between-a-Looming-Glut-and-Middle-East-Turmoil.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-21T00:00:00+00:00",
+    "category": "Oil & Energy",
     "published_precision": "timestamp",
-    "relevance_score": 36,
+    "relevance_score": 33,
     "keyword_matches": 1,
     "editorial_candidate": true,
     "relevance_evidence": [
-      "gas storage"
+      "oil prices"
     ],
     "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-20T22:41:52.748655+00:00",
-    "first_collector_observed_utc": "2026-11-20T22:41:52.748655+00:00"
+    "first_collected_utc": "2026-11-21T12:47:08.112036+00:00",
+    "first_collector_observed_utc": "2026-11-21T12:47:08.112036+00:00"
   },
   {
     "id": "f98dc9e2612c11688b0ec1e1",
@@ -159,48 +54,9 @@
       "oil prices"
     ],
     "status": "research_only_unverified",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-20T22:41:52.748655+00:00",
     "first_collector_observed_utc": "2026-11-20T22:41:52.748655+00:00"
-  },
-  {
-    "id": "1c587f31f36dc427367bee50",
-    "title": "WTI Crude Sinks More Than 5% as Global Oil Glut Fears Grow",
-    "url": "https://oilprice.com/Energy/Energy-General/WTI-Crude-Sinks-More-Than-5-as-Global-Oil-Glut-Fears-Grow.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-20T12:30:00+00:00",
-    "category": "Oil & Energy",
-    "published_precision": "timestamp",
-    "relevance_score": 33,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "wti"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collected_utc": "2026-11-20T13:08:36.677674+00:00",
-    "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00"
-  },
-  {
-    "id": "390bfb3c2f6bbe89fe2c9625",
-    "title": "Nexans completes deep-water cable laying ops off Australia for Chevron",
-    "url": "https://www.offshore-energy.biz/2026/11/20/nexans-completes-deep-water-cable-laying-ops-off-australia-for-chevron",
-    "source": "Offshore Energy News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-20T12:22:36+00:00",
-    "category": "Oil & Energy",
-    "published_precision": "timestamp",
-    "relevance_score": 33,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "chevron"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collected_utc": "2026-11-20T13:08:36.677674+00:00",
-    "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00"
   },
   {
     "id": "1c11f80a2dfc5285aa087d15",
@@ -218,47 +74,9 @@
       "data center"
     ],
     "status": "research_only_unverified",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-20T22:41:52.748655+00:00",
     "first_collector_observed_utc": "2026-11-20T22:41:52.748655+00:00"
-  },
-  {
-    "id": "61b9d26a87de4193551fc12b",
-    "title": "US Oil and Gas Deal Boom Lures BMO Back Into the Market",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Oil-and-Gas-Deal-Boom-Lures-BMO-Back-Into-the-Market.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-20T01:00:00+00:00",
-    "category": "Natural Gas",
-    "published_precision": "timestamp",
-    "relevance_score": 30,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "gas deal"
-    ],
-    "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-20T13:08:36.677674+00:00",
-    "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00"
-  },
-  {
-    "id": "82400098b8a19fba9b3af1d0",
-    "title": "Hormuz Oil Exports Could Decline amid Inbound Tanker Shortage",
-    "url": "https://oilprice.com/Energy/Crude-Oil/Hormuz-Oil-Exports-Could-Decline-amid-Inbound-Tanker-Shortage.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-19T23:00:00+00:00",
-    "category": "Oil & Energy",
-    "published_precision": "timestamp",
-    "relevance_score": 30,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "oil exports"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collected_utc": "2026-11-19T23:06:25.262021+00:00",
-    "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
   },
   {
     "id": "b6a4678714d68bae18b2bd31",
@@ -276,27 +94,8 @@
       "oil imports"
     ],
     "status": "research_only_unverified",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-20T22:41:52.748655+00:00",
     "first_collector_observed_utc": "2026-11-20T22:41:52.748655+00:00"
-  },
-  {
-    "id": "ece583cedb365e54a043bf5e",
-    "title": "EU backs global compact to cut energy bills and emissions from buildings",
-    "url": "https://energy.ec.europa.eu/news/eu-backs-global-compact-cut-energy-bills-and-emissions-buildings-2026-11-20_en",
-    "source": "European Commission DG Energy",
-    "source_class": "official_agency",
-    "published_utc": "2026-11-19T23:00:00+00:00",
-    "category": "Power & Electricity",
-    "published_precision": "timestamp",
-    "relevance_score": 27,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "energy bills"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collected_utc": "2026-11-20T13:08:36.677674+00:00",
-    "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00"
   }
 ]
