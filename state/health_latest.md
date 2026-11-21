@@ -1,23 +1,23 @@
 # EnergyBrew Newsroom Collection Health
 
-Audit time: 2026-11-21T12:47:51.642341+00:00
+Audit time: 2026-11-21T21:43:31.539380+00:00
 Status: **degraded**
 Official feeds connected: **15/15**
-Timestamped high-signal editorial leads (24h): **5** / target 12 (agency: 0, grid operator: 0, specialist RSS: 5)
-GDELT links first seen (24h): **109**, of which **99** headline-score as high signal
+Timestamped high-signal editorial leads (24h): **2** / target 12 (agency: 0, grid operator: 0, specialist RSS: 2)
+GDELT links first seen (24h): **92**, of which **82** headline-score as high signal
 GDELT publisher-verified times: **0** (requires a separate check)
-Company/newswire release leads (last 24h feed date): **5**
+Company/newswire release leads (last 24h feed date): **3**
 Company release provider status: **ok**
 FERC official newsroom: **not_run**; publication DATE only; retained links: **0**; first collected in last 24h: **0**
 Rolling GAL latest sample: **ok** (recent success: True)
-Rolling GAL 24h potential sampling coverage upper bound: **7.6%**; continuity adequate: **False**
+Rolling GAL 24h potential sampling coverage upper bound: **7.88%**; continuity adequate: **False**
 Company release publication times and issuer claims independently verified: **0**
 
 ## Missing coverage
-- Natural Gas: 0 publisher-feed timestamped editorial leads
+- Natural Gas: 1 publisher-feed timestamped editorial leads
 - LNG: 0 publisher-feed timestamped editorial leads
-- Power & Electricity: 2 publisher-feed timestamped editorial leads
-- Oil & Energy: 3 publisher-feed timestamped editorial leads
+- Power & Electricity: 0 publisher-feed timestamped editorial leads
+- Oil & Energy: 1 publisher-feed timestamped editorial leads
 - Infrastructure & Investment: 0 publisher-feed timestamped editorial leads
 - Geopolitics: 0 publisher-feed timestamped editorial leads
 
@@ -25,9 +25,10 @@ Company release publication times and issuer claims independently verified: **0*
 - None detected
 
 ## Warnings
-- Only 5 editorial leads within 24h; target 12
-- No observed high-signal stories in: Natural Gas, LNG, Infrastructure & Investment
+- Only 2 editorial leads within 24h; target 12
+- No observed high-signal stories in: LNG, Power & Electricity, Infrastructure & Investment
 - GDELT DOC query API is degraded or rate limited; recent GAL poll does not establish continuous coverage
-- Rolling GAL 24h sampling continuity weak: at most 7.6% of windows potentially sampled; at least 1330.5 minutes unobserved
+- A missed rolling GAL sample interval was observed
+- Rolling GAL 24h sampling continuity weak: at most 7.88% of windows potentially sampled; at least 1326.6 minutes unobserved
 
 These are coverage observations, not proof of article correctness or licensing.

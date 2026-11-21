@@ -24,6 +24,30 @@
     "first_collector_observed_utc": "2026-11-20T13:08:58.711900+00:00"
   },
   {
+    "url": "https://abcnews.com/Business/wireStory/iran-strikes-3-tankers-shows-off-missile-launchers-138345075",
+    "title": "Iran strikes 3 tankers as it shows off missile launchers, and other Mideast news",
+    "domain": "abcnews.com",
+    "gdelt_first_seen_utc": "2026-11-21T19:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:tankers",
+      "geopolitical_event:strikes",
+      "world_context:iran"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T19:54:02.760562+00:00"
+  },
+  {
     "url": "https://www.middleeastmonitor.com/20261121-us-sanctions-iranian-oil-traders-government-insiders-over-alleged-oil-revenue-scheme",
     "title": "US sanctions Iranian oil traders, government insiders over alleged oil revenue scheme",
     "domain": "www.middleeastmonitor.com",
@@ -45,7 +69,10 @@
       "world_context:iranian"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00"
+    "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.middleeasteye.net/news/iran-says-newly-developed-air-defence-system-intercepted-us-drone-over-hormuz",
@@ -69,7 +96,10 @@
       "world_context:iran"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00"
+    "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.ketv.com/article/lewis-pugh-strait-of-hormuz-swim-iran-war/74497133",
@@ -93,7 +123,10 @@
       "world_context:iran"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00"
+    "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.aol.co.uk/articles/briton-swims-strait-hormuz-highlight-120534000.html",
@@ -117,7 +150,10 @@
       "world_context:strait of hormuz"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00"
+    "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://kxly920.com/2026/11/21/strait-of-hormuz-attacks-have-increased-to-highest-level-since-iran-war-began",
@@ -1748,6 +1784,29 @@
     "first_collector_observed_utc": "2026-11-20T22:42:02.396153+00:00"
   },
   {
+    "url": "http://www.haberport.com/piyasa/BRENT",
+    "title": "Brent Crude Oil Last Day Financ | Piyasa | Haberport",
+    "domain": "www.haberport.com",
+    "gdelt_first_seen_utc": "2026-11-21T19:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 69,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "brent",
+      "crude oil"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T19:44:36.805901+00:00"
+  },
+  {
     "url": "https://www.ibtimes.co.in/rupee-gains-31-paise-against-us-dollar-amid-falling-crude-oil-prices-908439",
     "title": "Rupee gains 31 paise against US dollar amid falling crude oil prices",
     "domain": "www.ibtimes.co.in",
@@ -1772,6 +1831,174 @@
     ]
   },
   {
+    "url": "https://www.theyeshivaworld.com/news/israel-news/2626048/iran-showdown-u-s-and-israel-considering-new-strikes-on-iran-within-days-cbs-reports.html",
+    "title": "IRAN SHOWDOWN: U.S. And Israel Considering New Strikes On Iran Within Days, CBS Reports",
+    "domain": "www.theyeshivaworld.com",
+    "gdelt_first_seen_utc": "2026-11-21T19:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strikes",
+      "world_context:iran/israel"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T19:54:02.760562+00:00"
+  },
+  {
+    "url": "https://www.digbycourier.ca/zhankoy-crimea-ukraines-defense-ministry-says-russian-kalibre-missiles-were-destroyed-in-the-attack",
+    "title": "Zhankoy, Crimea: Ukraine's Defense Ministry says Russian 'Kalibre' missiles were destroyed in the attack.",
+    "domain": "www.digbycourier.ca",
+    "gdelt_first_seen_utc": "2026-11-21T19:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T19:54:02.760562+00:00"
+  },
+  {
+    "url": "https://bdnews24.com/aviation/ylyignbzij",
+    "title": "US denies Iranian account that missile damaged F-16 over Gulf",
+    "domain": "bdnews24.com",
+    "gdelt_first_seen_utc": "2026-11-21T19:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:missile",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T19:44:36.805901+00:00"
+  },
+  {
+    "url": "http://www.iranherald.com/news/279447293/iran-army-says-air-defense-missile-damages-us-f-16-fighter-jet-over-gulf-as-us-denies-claim",
+    "title": "Iran's army says air defense missile damages U.S. F-16 fighter jet over Gulf as U.S. denies claim",
+    "domain": "www.iranherald.com",
+    "gdelt_first_seen_utc": "2026-11-21T19:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:missile",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T19:44:36.805901+00:00"
+  },
+  {
+    "url": "https://thefrontierpost.com/us-denies-iranian-account-that-missile-damaged-f-16-over-gulf",
+    "title": "US denies Iranian account that missile damaged F-16 over Gulf",
+    "domain": "thefrontierpost.com",
+    "gdelt_first_seen_utc": "2026-11-21T19:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:missile",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T19:44:36.805901+00:00"
+  },
+  {
+    "url": "https://www.pakistantimes.com/us-denies-irans-claim-that-missile-damaged-f-16-over-gulf-16754",
+    "title": "US denies Iran\u2019s claim that missile damaged F-16 over Gulf - Pakistan Times",
+    "domain": "www.pakistantimes.com",
+    "gdelt_first_seen_utc": "2026-11-21T19:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:missile",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T19:44:36.805901+00:00"
+  },
+  {
+    "url": "https://www.dailykos.com/stories/2026/11/21/800131623/community/russian-stuff-blowing-up",
+    "title": "Russian stuff blowing up: Ukraine strikes Russian weapons ship near Finland",
+    "domain": "www.dailykos.com",
+    "gdelt_first_seen_utc": "2026-11-21T19:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strikes",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T19:44:36.805901+00:00"
+  },
+  {
     "url": "https://www.middleeastmonitor.com/20261121-iran-urges-world-to-remember-scores-of-children-killed-in-us-airstrikes-on-school",
     "title": "Iran urges world to remember scores of children killed in US airstrikes on school",
     "domain": "www.middleeastmonitor.com",
@@ -1793,7 +2020,10 @@
       "world_context:iran/united states"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00"
+    "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://laotimes.com/republican-senator-lindsey-graham-called-for-more-us-military-action-against-iran",
@@ -1817,7 +2047,10 @@
       "world_context:iran/united states"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00"
+    "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.garoweonline.com/en/news/world/israel-rejects-trump-s-gaza-plan-signals-the-unilateral-strikes-on-iran-remain-on-table",
@@ -5521,6 +5754,50 @@
     ]
   },
   {
+    "url": "https://www.hellenicshippingnews.com/asia-lng-moc-performance-deliveries-conclude-for-record-volume-of-148-5-tbtu-during-august-moc-2",
+    "title": "ASIA LNG MOC PERFORMANCE: Deliveries conclude for record volume of 148.5 TBtu during August MOC",
+    "domain": "www.hellenicshippingnews.com",
+    "gdelt_first_seen_utc": "2026-11-21T19:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 45,
+    "category": "LNG",
+    "relevance_evidence": [
+      "lng"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T19:54:02.760562+00:00"
+  },
+  {
+    "url": "http://www.critica.com.mx/vernoticias.php?artid=120571&mas=1",
+    "title": "Juzgado federal modifica suspensi\u00f3n y permite a AMIGO LNG reanudar tr\u00e1mites y obras en Guaymas",
+    "domain": "www.critica.com.mx",
+    "gdelt_first_seen_utc": "2026-11-21T19:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 45,
+    "category": "LNG",
+    "relevance_evidence": [
+      "lng"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T19:54:02.760562+00:00"
+  },
+  {
     "url": "https://nieuws.nl/economie/argentinie-komt-met-stimuleringsmaatregelen-voor-fors-lng-project",
     "title": "Argentini\u00eb komt met stimuleringsmaatregelen voor fors lng-project",
     "domain": "nieuws.nl",
@@ -6537,6 +6814,28 @@
     "status": "discovery_only_requires_publisher_verification"
   },
   {
+    "url": "https://www.nigerianeye.com/2026/11/i-guarantee-you-improvement-in.html",
+    "title": "I guarantee you improvement in electricity, Tinubu tells Nigerians",
+    "domain": "www.nigerianeye.com",
+    "gdelt_first_seen_utc": "2026-11-21T19:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T19:54:02.760562+00:00"
+  },
+  {
     "url": "https://gr.euronews.com/2026/11/20/us-chevron-ksekina-erevnes-gia-hydrocarbons",
     "title": "\u0397 \u03b1\u03bc\u03b5\u03c1\u03b9\u03ba\u03b1\u03bd\u03b9\u03ba\u03ae Chevron \u03be\u03b5\u03ba\u03b9\u03bd\u03ac \u03ad\u03c1\u03b5\u03c5\u03bd\u03b5\u03c2 \u03b3\u03b9\u03b1 \u03c5\u03b4\u03c1\u03bf\u03b3\u03bf\u03bd\u03ac\u03bd\u03b8\u03c1\u03b1\u03ba\u03b5\u03c2 \u03c3\u03c4\u03bf \u03bd\u03cc\u03c4\u03b9\u03bf \u0399\u03cc\u03bd\u03b9\u03bf",
     "domain": "gr.euronews.com",
@@ -6556,7 +6855,10 @@
       "chevron"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00"
+    "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://www.moneycontrol.com/us-markets/stockpricequote/chevron/CVX",
@@ -8564,6 +8866,160 @@
     "status": "discovery_only_requires_publisher_verification"
   },
   {
+    "url": "https://en.shafaqna.com/492695/shares-of-chip-and-data-center-firms-tumble",
+    "title": "Shares of chip and data center firms tumble - Shafaqna English | International Shia News & Fatwas",
+    "domain": "en.shafaqna.com",
+    "gdelt_first_seen_utc": "2026-11-21T19:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T19:54:02.760562+00:00"
+  },
+  {
+    "url": "https://www.ilgiorno.it/milano/cronaca/corteo-contro-data-center-dznbscs2",
+    "title": "Milano, corteo contro i Data center: \u201cUn pericolo per ambiente e salute, si preferisce la legge di mercato\u201d",
+    "domain": "www.ilgiorno.it",
+    "gdelt_first_seen_utc": "2026-11-21T19:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T19:54:02.760562+00:00"
+  },
+  {
+    "url": "https://www.meteoweb.eu/2026/11/data-center-nello-spazio-google-sceglie-blue-origin-i-satelliti-ai-partiranno-nel-2029/1002006389",
+    "title": "Data center nello spazio, Google sceglie Blue Origin: i satelliti AI partiranno nel 2029",
+    "domain": "www.meteoweb.eu",
+    "gdelt_first_seen_utc": "2026-11-21T19:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T19:44:36.805901+00:00"
+  },
+  {
+    "url": "https://www.businessinsider.com/loudoun-county-virginia-data-center-alley-ai-boom-pause-2026-11",
+    "title": "The county at the heart of America's data center boom hits pause on new projects",
+    "domain": "www.businessinsider.com",
+    "gdelt_first_seen_utc": "2026-11-21T19:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T19:44:36.805901+00:00"
+  },
+  {
+    "url": "https://www.foreignpolicyjournal.com/2026/11/21/chronoscale-nasdaq-chrn-ceos-new-7-5-billion-data-center-deal-funnels-200-million-to-supermicro-smci-amid-chip-smuggling-fallout",
+    "title": "ChronoScale (NASDAQ: CHRN) CEO's New $7.5 Billion Data Center Deal Funnels $200 Million To Supermicro (SMCI) Amid Chip Smuggling Fallout",
+    "domain": "www.foreignpolicyjournal.com",
+    "gdelt_first_seen_utc": "2026-11-21T19:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T19:44:36.805901+00:00"
+  },
+  {
+    "url": "https://www.ganderbeacon.ca/saudi-arabia-extends-opec-deal-to-2024-to-cut-oil-output-in-july",
+    "title": "Saudi Arabia extends OPEC deal to 2024 to cut oil output in July",
+    "domain": "www.ganderbeacon.ca",
+    "gdelt_first_seen_utc": "2026-11-21T19:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "opec"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T19:44:36.805901+00:00"
+  },
+  {
+    "url": "https://www.foreignpolicyjournal.com/2026/11/21/banned-chinese-telecoms-still-hold-data-center-footholds-prompting-1m-a-day-penalty-bill",
+    "title": "Banned Chinese Telecoms Still Hold Data Center Footholds, Prompting $1M-A-Day Penalty Bill",
+    "domain": "www.foreignpolicyjournal.com",
+    "gdelt_first_seen_utc": "2026-11-21T19:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T19:44:36.805901+00:00"
+  },
+  {
     "url": "https://www.samaa.tv/2087360721-ogdcl-partners-with-baker-hughes-to-boost-oil-gas-production",
     "title": "OGDCL, Baker Hughes partner to boost oil and gas output",
     "domain": "www.samaa.tv",
@@ -9030,7 +9486,10 @@
       "perryville"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-20T01:25:59.988101+00:00"
+    "first_collector_observed_utc": "2026-11-20T01:25:59.988101+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://abc13.com/story/texas-commission-environmental-quality-resumes-data-center-permits-before-ordered-review-is-completed/20057236",
@@ -11566,7 +12025,10 @@
       "fracking"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00"
+    "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://africanreview.com/ict/linx-expands-interconnection-at-paix-nairobi",

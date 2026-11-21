@@ -1,5 +1,25 @@
 [
   {
+    "url": "https://www.einpresswire.com/article/958120434/substation-transformers-for-middle-east-oil-and-gas-high-ambient-thermal-margin-and-short-circuit-engineering-by",
+    "title": "Substation Transformers for Middle East Oil and Gas: High-Ambient Thermal Margin and Short-Circuit Engineering by",
+    "feed_creator_label": "EIN Presswire",
+    "named_issuer_verified": false,
+    "feed_source_url": "https://www.einpresswire.com/article/958120434/substation-transformers-for-middle-east-oil-and-gas-high-ambient-thermal-margin-and-short-circuit-engineering-by",
+    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+    "feed_published_utc": "2026-11-21T15:08:01+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "category": "Oil & Energy",
+    "relevance_score": 30,
+    "relevance_evidence": [
+      "oil and gas"
+    ],
+    "provider": "Press Release Feed",
+    "content_kind": "company_or_newswire_press_release",
+    "status": "promotional_issuer_claim_requires_editorial_verification",
+    "first_collector_observed_utc": "2026-11-21T21:43:26.774222+00:00"
+  },
+  {
     "url": "https://pressreach.com/tidewater-renewables-ltd-announces-the-filing-of-the-management-information-circular-for-its-special-meeting-of-shareholders-in-connection-with-the-proposed-plan-of-arrangement-with-tidewater-midstr",
     "title": "TIDEWATER RENEWABLES LTD. ANNOUNCES THE FILING OF THE MANAGEMENT INFORMATION CIRCULAR FOR ITS SPECIAL MEETING OF SHAREHOLDERS, IN CONNECTION WITH THE PROPOSED PLAN OF ARRANGEMENT WITH TIDEWATER MIDSTREAM AND INFRASTRUCTURE LTD.",
     "feed_creator_label": "Tidewater Renewables Ltd Featured Image: Megapixl @ erikdegraaf Disclaimer",
@@ -38,65 +58,5 @@
     "content_kind": "company_or_newswire_press_release",
     "status": "promotional_issuer_claim_requires_editorial_verification",
     "first_collector_observed_utc": "2026-11-21T12:47:48.427736+00:00"
-  },
-  {
-    "url": "https://finance.yahoo.com/energy/articles/six-energy-star-r-certifications-212000796.html",
-    "title": "Six ENERGY STAR(R) Certifications Add to Marathon Petroleum's Legacy of Energy Efficiency",
-    "feed_creator_label": "ACCESS Newswire",
-    "named_issuer_verified": false,
-    "feed_source_url": "https://finance.yahoo.com/energy/articles/six-energy-star-r-certifications-212000796.html",
-    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-    "feed_published_utc": "2026-11-20T21:20:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "category": "Oil & Energy",
-    "relevance_score": 27,
-    "relevance_evidence": [
-      "petroleum"
-    ],
-    "provider": "Press Release Feed",
-    "content_kind": "company_or_newswire_press_release",
-    "status": "promotional_issuer_claim_requires_editorial_verification",
-    "first_collector_observed_utc": "2026-11-20T22:42:03.588401+00:00"
-  },
-  {
-    "url": "https://www.webwire.com/ViewPressRel.asp?aId=364483",
-    "title": "GE Vernova CEO Scott Strazik to speak at Goldman Sachs Industrials and Materials Conference",
-    "feed_creator_label": "WebWire",
-    "named_issuer_verified": false,
-    "feed_source_url": "https://www.webwire.com/ViewPressRel.asp?aId=364483",
-    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-    "feed_published_utc": "2026-11-20T16:11:47+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "category": "Power & Electricity",
-    "relevance_score": 27,
-    "relevance_evidence": [
-      "ge vernova"
-    ],
-    "provider": "Press Release Feed",
-    "content_kind": "company_or_newswire_press_release",
-    "status": "promotional_issuer_claim_requires_editorial_verification",
-    "first_collector_observed_utc": "2026-11-20T22:42:03.588401+00:00"
-  },
-  {
-    "url": "https://www.globenewswire.com/news-release/2026/11/20/3407668/28124/en/energy-insurance-market-size-share-trends-and-forecast-2026-2033-market-to-reach-usd-9-1-billion-as-renewables-climate-risk-and-ai-reshape-coverage.html",
-    "title": "Energy Insurance Market Size, Share, Trends, and Forecast, 2026-2033 | Market to Reach USD 9.1 Billion as Renewables, Climate Risk, and AI Reshape Coverage",
-    "feed_creator_label": "GlobeNewswire",
-    "named_issuer_verified": false,
-    "feed_source_url": "https://www.globenewswire.com/news-release/2026/11/20/3407668/28124/en/energy-insurance-market-size-share-trends-and-forecast-2026-2033-market-to-reach-usd-9-1-billion-as-renewables-climate-risk-and-ai-reshape-coverage.html",
-    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-    "feed_published_utc": "2026-11-20T16:00:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "category": "Power & Electricity",
-    "relevance_score": 24,
-    "relevance_evidence": [
-      "renewables"
-    ],
-    "provider": "Press Release Feed",
-    "content_kind": "company_or_newswire_press_release",
-    "status": "promotional_issuer_claim_requires_editorial_verification",
-    "first_collector_observed_utc": "2026-11-20T22:42:03.588401+00:00"
   }
 ]

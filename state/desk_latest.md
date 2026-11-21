@@ -2,11 +2,11 @@
 
 **Research links only. Not fact-checked, approved, or ready for publication.**
 
-Generated (UTC): 2026-11-21T12:47:48.505661+00:00
-Distinct relevant URLs in retained data: **670**
+Generated (UTC): 2026-11-21T21:43:26.865417+00:00
+Distinct relevant URLs in retained data: **698**
 Selected diverse research leads: **32**
 Publisher-timestamped official leads within 24h: **0**
-Specialist-publisher timestamped links within 24h: **5**
+Specialist-publisher timestamped links within 24h: **2**
 Grid-operator original timestamped links within 24h: **0**
 Likely duplicate links suppressed in the selection: **9**
 Discovery publisher dates verified: **0**
@@ -46,21 +46,21 @@ Discovery publisher dates verified: **0**
    - Timestamp basis: system_operator_rss_timestamp (2026-11-16T22:24:16+00:00). Editorial status: **unapproved**.
 16. **[Algonquin Gas Transmission, LLC; Notice of Application and Establishing Intervention Deadline](https://www.federalregister.gov/documents/2026/11/18/2026-23446/algonquin-gas-transmission-llc-notice-of-application-and-establishing-intervention-deadline)** — Natural Gas | regulatory_notice | score 66
    - Timestamp basis: official_publication_date_only (2026-11-18T05:00:00+00:00). Editorial status: **unapproved**.
-17. **[US sanctions Iranian oil traders, government insiders over alleged oil revenue scheme](https://www.middleeastmonitor.com/20261121-us-sanctions-iranian-oil-traders-government-insiders-over-alleged-oil-revenue-scheme)** — Geopolitics | global_discovery | score 90
+17. **[Iran strikes 3 tankers as it shows off missile launchers, and other Mideast news](https://abcnews.com/Business/wireStory/iran-strikes-3-tankers-shows-off-missile-launchers-138345075)** — Geopolitics | global_discovery | score 90
+   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-21T19:47:00+00:00). Editorial status: **unapproved**.
+18. **[US sanctions Iranian oil traders, government insiders over alleged oil revenue scheme](https://www.middleeastmonitor.com/20261121-us-sanctions-iranian-oil-traders-government-insiders-over-alleged-oil-revenue-scheme)** — Geopolitics | global_discovery | score 90
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-21T12:32:00+00:00). Editorial status: **unapproved**.
-18. **[Iran says new air defence system intercepted US Reaper drone over Hormuz](https://www.middleeasteye.net/news/iran-says-newly-developed-air-defence-system-intercepted-us-drone-over-hormuz)** — Geopolitics | global_discovery | score 90
+19. **[Iran says new air defence system intercepted US Reaper drone over Hormuz](https://www.middleeasteye.net/news/iran-says-newly-developed-air-defence-system-intercepted-us-drone-over-hormuz)** — Geopolitics | global_discovery | score 90
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-21T12:31:00+00:00). Editorial status: **unapproved**.
-19. **[Endurance athlete swims in Strait of Hormuz to highlight Iran war's impact on wildlife](https://www.ketv.com/article/lewis-pugh-strait-of-hormuz-swim-iran-war/74497133)** — Geopolitics | global_discovery | score 90
+20. **[Endurance athlete swims in Strait of Hormuz to highlight Iran war's impact on wildlife](https://www.ketv.com/article/lewis-pugh-strait-of-hormuz-swim-iran-war/74497133)** — Geopolitics | global_discovery | score 90
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-21T12:31:00+00:00). Editorial status: **unapproved**.
    - 1 likely same-event publisher links preserved for review (not independent corroboration).
-20. **[Briton swims in Strait of Hormuz to highlight ‘environmental cost of war’ - AOL](https://www.aol.co.uk/articles/briton-swims-strait-hormuz-highlight-120534000.html)** — Geopolitics | global_discovery | score 90
+21. **[Briton swims in Strait of Hormuz to highlight ‘environmental cost of war’ - AOL](https://www.aol.co.uk/articles/briton-swims-strait-hormuz-highlight-120534000.html)** — Geopolitics | global_discovery | score 90
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-21T12:31:00+00:00). Editorial status: **unapproved**.
    - 2 likely same-event publisher links preserved for review (not independent corroboration).
-21. **[Strait of Hormuz attacks have increased to highest level since Iran war began](https://kxly920.com/2026/11/21/strait-of-hormuz-attacks-have-increased-to-highest-level-since-iran-war-began)** — Geopolitics | global_discovery | score 90
+22. **[Strait of Hormuz attacks have increased to highest level since Iran war began](https://kxly920.com/2026/11/21/strait-of-hormuz-attacks-have-increased-to-highest-level-since-iran-war-began)** — Geopolitics | global_discovery | score 90
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-21T12:17:00+00:00). Editorial status: **unapproved**.
    - 1 likely same-event publisher links preserved for review (not independent corroboration).
-22. **[Russian attacks on Ukraine’s energy grid intensify ahead of winter](https://kxly920.com/2026/11/21/russian-attacks-on-ukraines-energy-grid-intensify-ahead-of-winter)** — Geopolitics | global_discovery | score 90
-   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-21T12:16:00+00:00). Editorial status: **unapproved**.
 23. **[Exelon Corporation v. PJM Interconnection, L.L.C.; Notice Establishing Comment Period](https://www.federalregister.gov/documents/2026/11/19/2026-23611/exelon-corporation-v-pjm-interconnection-llc-notice-establishing-comment-period)** — Power & Electricity | regulatory_notice | score 57
    - Timestamp basis: official_publication_date_only (2026-11-19T05:00:00+00:00). Editorial status: **unapproved**.
 24. **[U.S. natural gas inventories end injection season above normal levels](https://www.eia.gov/todayinenergy/detail.php?id=68484)** — Natural Gas | official_rss | score 39
@@ -75,12 +75,12 @@ Discovery publisher dates verified: **0**
 28. **[SpaceX Plans to Spend $2.8 Billion on Gas Turbines. Here’s What That Much Natural Gas Demand Means for Pipeline Investors. - AOL](https://www.aol.com/articles/spacex-plans-spend-2-8-221502000.html)** — Natural Gas | global_discovery | score 72
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-20T23:17:00+00:00). Editorial status: **unapproved**.
    - 1 likely same-event publisher links preserved for review (not independent corroboration).
-29. **[India's Crude Oil Production Set To Fall 20% By 2035: IEA - BW Businessworld](https://www.businessworld.in/article/india-s-crude-oil-production-set-to-fall-20-by-2035-iea-634356)** — Oil & Energy | global_discovery | score 66
+29. **[Brent Crude Oil Last Day Financ / Piyasa / Haberport](http://www.haberport.com/piyasa/BRENT)** — Oil & Energy | global_discovery | score 69
+   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-21T19:31:00+00:00). Editorial status: **unapproved**.
+30. **[India's Crude Oil Production Set To Fall 20% By 2035: IEA - BW Businessworld](https://www.businessworld.in/article/india-s-crude-oil-production-set-to-fall-20-by-2035-iea-634356)** — Oil & Energy | global_discovery | score 66
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T11:01:00+00:00). Editorial status: **unapproved**.
-30. **[Tanzania, Uganda fast-track crude oil pipeline completion - Channel Africa](https://www.channelafrica.co.za/channelafrica/news/tanzania-uganda-fast-track-crude-oil-pipeline-completion)** — Oil & Energy | global_discovery | score 66
+31. **[Tanzania, Uganda fast-track crude oil pipeline completion - Channel Africa](https://www.channelafrica.co.za/channelafrica/news/tanzania-uganda-fast-track-crude-oil-pipeline-completion)** — Oil & Energy | global_discovery | score 66
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T10:47:00+00:00). Editorial status: **unapproved**.
-31. **[Woodside and Trafigura sign off on decade-long LNG deal](https://www.offshore-energy.biz/2026/11/18/woodside-and-trafigura-sign-off-on-decade-long-lng-deal)** — LNG | official_rss | score 45
-   - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-18T09:16:02+00:00). Editorial status: **unapproved**.
 32. **[Final investment decision on Azerbaijan's Karabakh field expected in 2027](https://en.apa.az/energy-and-industry/final-investment-decision-on-azerbaijans-karabakh-field-expected-in-2027-537196)** — Infrastructure & Investment | global_discovery | score 36
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T11:01:00+00:00). Editorial status: **unapproved**.
 

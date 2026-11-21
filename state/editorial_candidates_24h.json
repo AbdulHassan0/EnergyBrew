@@ -1,23 +1,22 @@
 [
   {
-    "id": "60aa9200ecb65f02de1925f0",
-    "title": "Texas finalizes ERCOT CEO contract extension, pay raise tied to performance",
-    "url": "https://www.utilitydive.com/news/texas-finalizes-ercot-ceo-contract-extension-pay-raise-tied-to-performance/875318",
-    "source": "Utility Dive News",
+    "id": "9255a0ba1f7567f25373f7fb",
+    "title": "Thanksgiving Gas Prices Could Break a Record Despite Recent Plunge",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Thanksgiving-Gas-Prices-Could-Break-a-Record-Despite-Recent-Plunge.html",
+    "source": "OilPrice.com News",
     "source_class": "specialist_publisher",
-    "published_utc": "2026-11-20T13:49:50+00:00",
-    "category": "Power & Electricity",
+    "published_utc": "2026-11-21T19:10:00+00:00",
+    "category": "Natural Gas",
     "published_precision": "timestamp",
-    "relevance_score": 36,
+    "relevance_score": 33,
     "keyword_matches": 1,
     "editorial_candidate": true,
     "relevance_evidence": [
-      "ercot"
+      "gas prices"
     ],
     "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collected_utc": "2026-11-20T22:41:52.748655+00:00",
-    "first_collector_observed_utc": "2026-11-20T22:41:52.748655+00:00"
+    "first_collected_utc": "2026-11-21T21:43:07.712456+00:00",
+    "first_collector_observed_utc": "2026-11-21T21:43:07.712456+00:00"
   },
   {
     "id": "ba84295befe06fabdcff5fe4",
@@ -35,67 +34,8 @@
       "oil prices"
     ],
     "status": "research_only_unverified",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-21T12:47:08.112036+00:00",
     "first_collector_observed_utc": "2026-11-21T12:47:08.112036+00:00"
-  },
-  {
-    "id": "f98dc9e2612c11688b0ec1e1",
-    "title": "U.S. Oil Drillers Pick Up the Pace Just as Oil Prices Fall",
-    "url": "https://oilprice.com/Energy/Energy-General/US-Oil-Drillers-Pick-Up-the-Pace-Just-as-Oil-Prices-Fall.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-20T18:09:09+00:00",
-    "category": "Oil & Energy",
-    "published_precision": "timestamp",
-    "relevance_score": 33,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "oil prices"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collected_utc": "2026-11-20T22:41:52.748655+00:00",
-    "first_collector_observed_utc": "2026-11-20T22:41:52.748655+00:00"
-  },
-  {
-    "id": "1c11f80a2dfc5285aa087d15",
-    "title": "US Data Center Boom Faces a New Political Reality",
-    "url": "https://oilprice.com/Energy/Energy-General/US-Data-Center-Boom-Faces-a-New-Political-Reality.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-20T19:00:00+00:00",
-    "category": "Power & Electricity",
-    "published_precision": "timestamp",
-    "relevance_score": 30,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "data center"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collected_utc": "2026-11-20T22:41:52.748655+00:00",
-    "first_collector_observed_utc": "2026-11-20T22:41:52.748655+00:00"
-  },
-  {
-    "id": "b6a4678714d68bae18b2bd31",
-    "title": "China\u2019s Oil Imports from Persian Gulf Jump to Wartime High",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/Chinas-Oil-Imports-from-Persian-Gulf-Jump-to-Wartime-High.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-20T15:36:00+00:00",
-    "category": "Oil & Energy",
-    "published_precision": "timestamp",
-    "relevance_score": 27,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "oil imports"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collected_utc": "2026-11-20T22:41:52.748655+00:00",
-    "first_collector_observed_utc": "2026-11-20T22:41:52.748655+00:00"
   }
 ]
