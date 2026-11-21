@@ -19,7 +19,10 @@
       "chevron"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T04:07:13.117963+00:00"
+    "first_collector_observed_utc": "2026-11-21T04:07:13.117963+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "https://africanreview.com/ict/linx-expands-interconnection-at-paix-nairobi",
@@ -41,7 +44,10 @@
       "interconnection"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T04:07:13.117963+00:00"
+    "first_collector_observed_utc": "2026-11-21T04:07:13.117963+00:00",
+    "discovery_providers": [
+      "GDELT GAL RSS"
+    ]
   },
   {
     "url": "http://www.indiagazette.com/news/279446319/india-condemns-attacks-on-commercial-shipping-in-strait-of-hormuz-calls-for-freedom-of-navigation",
