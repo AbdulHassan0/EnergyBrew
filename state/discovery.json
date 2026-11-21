@@ -25,6 +25,102 @@
       "first_collector_observed_utc": "2026-11-20T13:08:58.711900+00:00"
     },
     {
+      "url": "https://www.middleeastmonitor.com/20261121-us-sanctions-iranian-oil-traders-government-insiders-over-alleged-oil-revenue-scheme",
+      "title": "US sanctions Iranian oil traders, government insiders over alleged oil revenue scheme",
+      "domain": "www.middleeastmonitor.com",
+      "gdelt_first_seen_utc": "2026-11-21T12:32:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 90,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_hook:oil",
+        "geopolitical_event:sanctions",
+        "world_context:iranian"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00"
+    },
+    {
+      "url": "https://www.middleeasteye.net/news/iran-says-newly-developed-air-defence-system-intercepted-us-drone-over-hormuz",
+      "title": "Iran says new air defence system intercepted US Reaper drone over Hormuz",
+      "domain": "www.middleeasteye.net",
+      "gdelt_first_seen_utc": "2026-11-21T12:31:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 90,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_hook:hormuz",
+        "geopolitical_event:drone",
+        "world_context:iran"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00"
+    },
+    {
+      "url": "https://www.ketv.com/article/lewis-pugh-strait-of-hormuz-swim-iran-war/74497133",
+      "title": "Endurance athlete swims in Strait of Hormuz to highlight Iran war's impact on wildlife",
+      "domain": "www.ketv.com",
+      "gdelt_first_seen_utc": "2026-11-21T12:31:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 90,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_hook:strait of hormuz",
+        "geopolitical_event:war",
+        "world_context:iran"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00"
+    },
+    {
+      "url": "https://www.aol.co.uk/articles/briton-swims-strait-hormuz-highlight-120534000.html",
+      "title": "Briton swims in Strait of Hormuz to highlight ‘environmental cost of war’ - AOL",
+      "domain": "www.aol.co.uk",
+      "gdelt_first_seen_utc": "2026-11-21T12:31:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 90,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_hook:strait of hormuz",
+        "geopolitical_event:war",
+        "world_context:strait of hormuz"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00"
+    },
+    {
       "url": "https://kxly920.com/2026/11/21/strait-of-hormuz-attacks-have-increased-to-highest-level-since-iran-war-began",
       "title": "Strait of Hormuz attacks have increased to highest level since Iran war began",
       "domain": "kxly920.com",
@@ -1675,6 +1771,54 @@
       "discovery_providers": [
         "GDELT GAL RSS"
       ]
+    },
+    {
+      "url": "https://www.middleeastmonitor.com/20261121-iran-urges-world-to-remember-scores-of-children-killed-in-us-airstrikes-on-school",
+      "title": "Iran urges world to remember scores of children killed in US airstrikes on school",
+      "domain": "www.middleeastmonitor.com",
+      "gdelt_first_seen_utc": "2026-11-21T12:32:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:airstrikes",
+        "world_context:iran/united states"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00"
+    },
+    {
+      "url": "https://laotimes.com/republican-senator-lindsey-graham-called-for-more-us-military-action-against-iran",
+      "title": "Republican Senator Lindsey Graham called for more US military action against Iran – The Lao Times",
+      "domain": "laotimes.com",
+      "gdelt_first_seen_utc": "2026-11-21T12:32:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:military",
+        "world_context:iran/united states"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00"
     },
     {
       "url": "https://www.garoweonline.com/en/news/world/israel-rejects-trump-s-gaza-plan-signals-the-unilateral-strikes-on-iran-remain-on-table",
@@ -6330,6 +6474,28 @@
         "gas storage"
       ],
       "status": "discovery_only_requires_publisher_verification"
+    },
+    {
+      "url": "https://gr.euronews.com/2026/11/20/us-chevron-ksekina-erevnes-gia-hydrocarbons",
+      "title": "Η αμερικανική Chevron ξεκινά έρευνες για υδρογονάνθρακες στο νότιο Ιόνιο",
+      "domain": "gr.euronews.com",
+      "gdelt_first_seen_utc": "2026-11-21T12:31:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 33,
+      "category": "Oil & Energy",
+      "relevance_evidence": [
+        "chevron"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00"
     },
     {
       "url": "https://www.moneycontrol.com/us-markets/stockpricequote/chevron/CVX",
@@ -11200,6 +11366,28 @@
       "status": "discovery_only_requires_publisher_verification"
     },
     {
+      "url": "https://www.hawaiitribune-herald.com/2026/11/21/nation-world-news/big-oil-says-recycled-fracking-wastewater-is-safe-texas-is-about-to-test-it",
+      "title": "Big oil says recycled fracking wastewater is safe. Texas is about to test it. - Hawaii Tribune-Herald",
+      "domain": "www.hawaiitribune-herald.com",
+      "gdelt_first_seen_utc": "2026-11-21T12:31:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 27,
+      "category": "Oil & Energy",
+      "relevance_evidence": [
+        "fracking"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00"
+    },
+    {
       "url": "https://africanreview.com/ict/linx-expands-interconnection-at-paix-nairobi",
       "title": "LINX expands interconnection at PAIX Nairobi",
       "domain": "africanreview.com",
@@ -14656,6 +14844,18 @@
       "feed_newest_index_utc": "2026-11-21T12:17:00+00:00",
       "feed_index_lag_minutes": 15.2,
       "feed_payload_sha256": "531852d04da56c90",
+      "identical_payload_to_previous_success": false
+    },
+    {
+      "run_utc": "2026-11-21T12:46:14.801880+00:00",
+      "completed_utc": "2026-11-21T12:46:20.769058+00:00",
+      "status": "ok",
+      "raw_feed_items": 4209,
+      "high_signal_items": 8,
+      "new_unique_links": 8,
+      "feed_newest_index_utc": "2026-11-21T12:32:00+00:00",
+      "feed_index_lag_minutes": 14.2,
+      "feed_payload_sha256": "562cdab9dd941316",
       "identical_payload_to_previous_success": false
     }
   ],
