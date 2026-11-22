@@ -1,5 +1,97 @@
 [
   {
+    "url": "https://sputnikglobe.com/20261122/russian-drones-strike-ukrainian-energy-and-port-infrastructure-overnight-1125129869.html",
+    "title": "Russian Drones Strike Ukrainian Energy and Port Infrastructure Overnight",
+    "domain": "sputnikglobe.com",
+    "gdelt_first_seen_utc": "2026-11-22T06:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:energy",
+      "geopolitical_event:strike",
+      "world_context:russian"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T06:57:26.126178+00:00"
+  },
+  {
+    "url": "https://www.outlookindia.com/international/iran-attacks-bahrain-industrial-facility-us-bases-missile-drone-strikes",
+    "title": "Iran Attacks Bahrain: Industrial Facility Hit, US Bases Targeted | Outlook India",
+    "domain": "www.outlookindia.com",
+    "gdelt_first_seen_utc": "2026-11-22T06:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attacks",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T06:57:26.126178+00:00"
+  },
+  {
+    "url": "https://www.business-standard.com/economy/news/oil-gas-import-bill-up-60-in-oct-as-brent-surges-lpg-use-declines-126112200197_1.html",
+    "title": "Oil, gas import bill up 60% in Oct as Brent surges, LPG use declines",
+    "domain": "www.business-standard.com",
+    "gdelt_first_seen_utc": "2026-11-22T06:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "brent"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T06:57:26.126178+00:00"
+  },
+  {
+    "url": "https://www.inewsgr.com/292/nikos-tsafos-ta-diadochika-lathi-apo-tin-tourkiki-dimokratia-tis-voreias-kyprou-sta-omologa-tis-ExxonMobil---giati-vrisketai-sto-mati-tou-kyklona.htm",
+    "title": "Νίκος Τσάφος: Τα διαδοχικά λάθη από την \"Τουρκική Δημοκρατία της Βόρειας Κύπρου\" στα ομόλογα της ExxonMobil - Γιατί βρίσκεται στο μάτι του κυκλώνα",
+    "domain": "www.inewsgr.com",
+    "gdelt_first_seen_utc": "2026-11-22T06:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "exxonmobil"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T06:57:26.126178+00:00"
+  },
+  {
     "url": "https://www.cubaheadlines.com/articles/346344",
     "title": "U.S. Confirms: Approved Shipments of Food and Medicine Can Continue Through Mariel Despite Sanctions on Cuba's Maritime Sector",
     "domain": "www.cubaheadlines.com",

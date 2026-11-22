@@ -1,10 +1,10 @@
 # GDELT Global Article List — sampled backup
 
-Run: 2026-11-22T04:42:31.776190+00:00
+Run: 2026-11-22T06:57:22.324564+00:00
 Status: **ok**
-RSS entries examined: **2118**
-Latest GDELT index timestamp: **2026-11-22T04:32:00+00:00**
-Index lag (minutes): **10.5**
+RSS entries examined: **2916**
+Latest GDELT index timestamp: **2026-11-22T06:47:00+00:00**
+Index lag (minutes): **10.4**
 Upstream feed stale: **False**
 High-signal sampled entries: **4**
 Minutes since previous scheduled sample: **None**
