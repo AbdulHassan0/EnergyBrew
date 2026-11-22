@@ -23,6 +23,33 @@ def fixture_fetch(url):
     return sample(url=f"https://example.gov/unique-story/{unique}"), 200
 
 class CollectorTests(unittest.TestCase):
+    def test_source_activity_excludes_future_feed_dates_but_preserves_older_real_date(self):
+        from collector import feed_newest_published
+        xml = b"""<rss version="2.0"><channel>
+          <item><title>Future timestamp</title><pubDate>Mon, 23 Nov 2026 18:00:00 GMT</pubDate></item>
+          <item><title>Valid publisher timestamp</title><pubDate>Sat, 21 Nov 2026 18:00:00 GMT</pubDate></item>
+        </channel></rss>"""
+        self.assertEqual(feed_newest_published(xml, now=datetime(2026, 11, 22, 12, tzinfo=timezone.utc)),
+                         "2026-11-21T18:00:00+00:00")
+
+    def test_source_activity_future_date_only_not_intraday_freshness(self):
+        from collector import feed_newest_published
+        now = datetime(2026, 11, 22, 12, tzinfo=timezone.utc)
+        future = b"""<rss version="2.0"><channel><item>
+          <title>Tomorrow's government notice</title><pubDate>2026-11-23</pubDate>
+        </item></channel></rss>"""
+        today = future.replace(b"2026-11-23", b"2026-11-22")
+        self.assertIsNone(feed_newest_published(future, now=now))
+        self.assertEqual(feed_newest_published(today, now=now), "2026-11-22T00:00:00+00:00")
+
+    def test_source_activity_rejects_future_only_timestamp(self):
+        from collector import feed_newest_published
+        now = datetime(2026, 11, 22, 12, tzinfo=timezone.utc)
+        xml = b"""<rss version="2.0"><channel><item>
+          <title>Future oil headline</title><pubDate>Mon, 23 Nov 2026 18:00:00 GMT</pubDate>
+        </item></channel></rss>"""
+        self.assertIsNone(feed_newest_published(xml, now=now))
+
     def test_pjm_last_resort_atom_fallback_after_three_malformed_primary_responses(self):
         with tempfile.TemporaryDirectory() as tmp:
             primary="https://insidelines.pjm.com/feed/"

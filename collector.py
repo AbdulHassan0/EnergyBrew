@@ -109,16 +109,29 @@ def publication_day_only(node):
     return None
 
 
-def feed_newest_published(xml_bytes):
-    """Read the publisher-provided newest date independent of a 48-hour selection."""
-    root=ET.fromstring(xml_bytes)
-    stamps=[]
+def feed_newest_published(xml_bytes, now=None):
+    """Newest plausible publisher date, not an upstream future-clock anomaly.
+
+    A feed can be reachable yet contain future-dated items. Such items must
+    not make source activity look fresh. Date-only records are compared at
+    calendar-day precision; they are not evidence of an intraday release.
+    """
+    now = now or datetime.now(timezone.utc)
+    root = ET.fromstring(xml_bytes)
+    stamps = []
     for node in root.iter():
-        if local(node.tag) not in ("item","entry"):
+        if local(node.tag) not in ("item", "entry"):
             continue
-        dt=published_date(node) or publication_day_only(node)
-        if dt:
-            stamps.append(dt)
+        day_only = publication_day_only(node)
+        dt = published_date(node) or day_only
+        if dt is None:
+            continue
+        if day_only is not None and dt == day_only:
+            if dt.date() > now.date():
+                continue
+        elif dt > now + timedelta(minutes=10):
+            continue
+        stamps.append(dt)
     return max(stamps).isoformat() if stamps else None
 
 
@@ -298,7 +311,7 @@ def collect(state_path, outdir, hours=48, now=None, fetcher=None, completion_clo
                     raise FeedHTTPStatusError(status)
                 date_precision = "day" if name in DAY_PRECISION_SOURCES else "timestamp"
                 items, rejected, seen = parse_feed(raw, name, now, hours, date_precision=date_precision)
-                newest_stamp = feed_newest_published(raw)
+                newest_stamp = feed_newest_published(raw, now=now)
                 # Only record a connected source after the entire response is
                 # parsed. Previous articles remain intact across retry attempts.
                 row.update({
