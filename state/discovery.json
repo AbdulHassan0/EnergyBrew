@@ -25,6 +25,78 @@
       "first_collector_observed_utc": "2026-11-20T13:08:58.711900+00:00"
     },
     {
+      "url": "https://kvia.com/news/us-world/cnn-world/2026/11/22/iranian-attacks-in-the-strait-of-hormuz-are-at-the-highest-levels-since-the-conflict-began",
+      "title": "Iranian attacks in the Strait of Hormuz are at the highest levels since the conflict began",
+      "domain": "kvia.com",
+      "gdelt_first_seen_utc": "2026-11-22T20:02:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 90,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_hook:strait of hormuz",
+        "geopolitical_event:attacks",
+        "world_context:iranian"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
+    },
+    {
+      "url": "https://abc17news.com/news/national-world/cnn-world/2026/11/22/iranian-attacks-in-the-strait-of-hormuz-are-at-the-highest-levels-since-the-conflict-began",
+      "title": "Iranian attacks in the Strait of Hormuz are at the highest levels since the conflict began",
+      "domain": "abc17news.com",
+      "gdelt_first_seen_utc": "2026-11-22T20:01:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 90,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_hook:strait of hormuz",
+        "geopolitical_event:attacks",
+        "world_context:iranian"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
+    },
+    {
+      "url": "https://www.latimes.com/world-nation/story/2026-11-22/endurance-athlete-swims-in-strait-of-hormuz-to-highlight-iran-wars-impact-on-wildlife",
+      "title": "Endurance athlete swims in Strait of Hormuz to highlight Iran war's impact on wildlife",
+      "domain": "www.latimes.com",
+      "gdelt_first_seen_utc": "2026-11-22T20:01:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 90,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_hook:strait of hormuz",
+        "geopolitical_event:war",
+        "world_context:iran"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
+    },
+    {
       "url": "https://littleapplepost.com/posts/2155de1c-ecfa-40d8-a281-5a8e5f6ed5a7",
       "title": "Iran strikes 3 oil tankers as it shows off new missile launchers",
       "domain": "littleapplepost.com",
@@ -2096,6 +2168,29 @@
       "first_collector_observed_utc": "2026-11-20T22:42:02.396153+00:00"
     },
     {
+      "url": "https://www.joplinglobe.com/region/national_business/natural-gas-pipeline-fire-shoots-flames-into-the-air-in-alabama-cause-is-under-investigation/article_420efc4d-5c1c-5e98-8f6f-f409f798ecfd.html",
+      "title": "Natural gas pipeline fire shoots flames into the air in Alabama, cause is under investigation",
+      "domain": "www.joplinglobe.com",
+      "gdelt_first_seen_utc": "2026-11-22T20:02:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 69,
+      "category": "Natural Gas",
+      "relevance_evidence": [
+        "gas pipeline",
+        "natural gas"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
+    },
+    {
       "url": "http://www.haberport.com/piyasa/BRENT",
       "title": "Brent Crude Oil Last Day Financ | Piyasa | Haberport",
       "domain": "www.haberport.com",
@@ -2141,6 +2236,486 @@
       "discovery_providers": [
         "GDELT GAL RSS"
       ]
+    },
+    {
+      "url": "https://www.southwalesargus.co.uk/news/national/26751822.three-killed-russian-attack-near-ukraines-capital-strikes-apartment-building",
+      "title": "Three killed after Russian attack near Ukraine’s capital strikes apartment building",
+      "domain": "www.southwalesargus.co.uk",
+      "gdelt_first_seen_utc": "2026-11-22T20:02:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:attack",
+        "world_context:russia/ukraine"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
+    },
+    {
+      "url": "https://www.chelmsfordcitynews.co.uk/news/national/26751822.three-killed-russian-attack-near-ukraines-capital-strikes-apartment-building",
+      "title": "Three killed after Russian attack near Ukraine’s capital strikes apartment building",
+      "domain": "www.chelmsfordcitynews.co.uk",
+      "gdelt_first_seen_utc": "2026-11-22T20:02:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:attack",
+        "world_context:russia/ukraine"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
+    },
+    {
+      "url": "https://www.gazetteherald.co.uk/news/national/26751822.three-killed-russian-attack-near-ukraines-capital-strikes-apartment-building",
+      "title": "Three killed after Russian attack near Ukraine’s capital strikes apartment building",
+      "domain": "www.gazetteherald.co.uk",
+      "gdelt_first_seen_utc": "2026-11-22T20:02:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:attack",
+        "world_context:russia/ukraine"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
+    },
+    {
+      "url": "https://www.oxfordmail.co.uk/news/national/26751822.three-killed-russian-attack-near-ukraines-capital-strikes-apartment-building",
+      "title": "Three killed after Russian attack near Ukraine’s capital strikes apartment building",
+      "domain": "www.oxfordmail.co.uk",
+      "gdelt_first_seen_utc": "2026-11-22T20:02:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:attack",
+        "world_context:russia/ukraine"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
+    },
+    {
+      "url": "https://www.bordertelegraph.com/news/national/26751822.three-killed-russian-attack-near-ukraines-capital-strikes-apartment-building",
+      "title": "Three killed after Russian attack near Ukraine’s capital strikes apartment building",
+      "domain": "www.bordertelegraph.com",
+      "gdelt_first_seen_utc": "2026-11-22T20:02:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:attack",
+        "world_context:russia/ukraine"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
+    },
+    {
+      "url": "https://www.theboltonnews.co.uk/news/national/26751822.three-killed-russian-attack-near-ukraines-capital-strikes-apartment-building",
+      "title": "Three killed after Russian attack near Ukraine’s capital strikes apartment building",
+      "domain": "www.theboltonnews.co.uk",
+      "gdelt_first_seen_utc": "2026-11-22T20:02:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:attack",
+        "world_context:russia/ukraine"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
+    },
+    {
+      "url": "https://www.youralaskalink.com/news/national/president-donald-trump-and-secretary-of-defense-pete-hegseth-salute-as-u-s-army-members/image_c2c08b77-e0dd-5acb-8f2c-51a4a2976484.html",
+      "title": "President Donald Trump and Secretary of Defense Pete Hegseth salute as U.S. Army members move a transfer case containing the remains of Pvt. Isabella Gonzales, killed in Iranian strike on Jordan, on July 22, 2026, at Dover Air Force Base, Del.",
+      "domain": "www.youralaskalink.com",
+      "gdelt_first_seen_utc": "2026-11-22T20:02:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:strike",
+        "world_context:iran/united states"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
+    },
+    {
+      "url": "https://www.theage.com.au/world/europe/russian-warship-goes-up-in-flames-at-libyan-port-in-suspected-ukraine-sea-drone-attack-20261123-p61gbo.html",
+      "title": "Russian warship goes up in flames at Libyan port in suspected Ukraine sea drone attack",
+      "domain": "www.theage.com.au",
+      "gdelt_first_seen_utc": "2026-11-22T20:02:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:attack",
+        "world_context:russia/ukraine"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
+    },
+    {
+      "url": "https://www.eagletribune.com/region/suspected-ukrainian-sea-drones-hit-russian-warship-at-benghazi-naval-base-libyan-officials-say/article_dbc9c76d-4118-5b0f-8d5a-bad2f9e298d8.html",
+      "title": "Suspected Ukrainian sea drones hit Russian warship at Benghazi naval base, Libyan officials say",
+      "domain": "www.eagletribune.com",
+      "gdelt_first_seen_utc": "2026-11-22T20:02:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:drones",
+        "world_context:russia/ukraine"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
+    },
+    {
+      "url": "https://www.yakimaherald.com/news/nation_and_world/business/suspected-ukrainian-sea-drones-hit-russian-warship-at-benghazi-naval-base-libyan-officials-say/article_211a36e3-162b-53ab-87be-fd7b931f7046.html",
+      "title": "Suspected Ukrainian sea drones hit Russian warship at Benghazi naval base, Libyan officials say",
+      "domain": "www.yakimaherald.com",
+      "gdelt_first_seen_utc": "2026-11-22T20:01:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:drones",
+        "world_context:russia/ukraine"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
+    },
+    {
+      "url": "https://www.chicagotribune.com/2026/11/22/suspected-ukrainian-sea-drones-hit-russian-warship-benghazi-naval-base",
+      "title": "Suspected Ukrainian sea drones hit Russian warship at Benghazi naval base, Libyan officials say",
+      "domain": "www.chicagotribune.com",
+      "gdelt_first_seen_utc": "2026-11-22T20:01:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:drones",
+        "world_context:russia/ukraine"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
+    },
+    {
+      "url": "https://www.ipswichstar.co.uk/news/national/26751822.three-killed-russian-attack-near-ukraines-capital-strikes-apartment-building",
+      "title": "Three killed after Russian attack near Ukraine’s capital strikes apartment building",
+      "domain": "www.ipswichstar.co.uk",
+      "gdelt_first_seen_utc": "2026-11-22T20:01:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:attack",
+        "world_context:russia/ukraine"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
+    },
+    {
+      "url": "http://www.asiabulletin.com/news/279449171/appreciate-pm-modi-appeal-to-russia-to-stop-ukraine-war-return-to-talks-netherlands-fm",
+      "title": "Appreciate PM Modi's appeal to Russia to stop Ukraine war, return to talks: Netherlands FM",
+      "domain": "www.asiabulletin.com",
+      "gdelt_first_seen_utc": "2026-11-22T20:01:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:war",
+        "world_context:russia/ukraine"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
+    },
+    {
+      "url": "https://www.hindustantimes.com/world-news/poland-identifies-russian-cruise-missiles-behind-strikes-near-ukraine-border-nato-to-hold-discussions-101795373162372.html",
+      "title": "Poland identifies Russian cruise missiles behind strikes near Ukraine border; NATO to hold discussions",
+      "domain": "www.hindustantimes.com",
+      "gdelt_first_seen_utc": "2026-11-22T20:01:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:strikes",
+        "world_context:russia/ukraine"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
+    },
+    {
+      "url": "https://www.elystandard.co.uk/news/national/26751822.three-killed-russian-attack-near-ukraines-capital-strikes-apartment-building",
+      "title": "Three killed after Russian attack near Ukraine’s capital strikes apartment building",
+      "domain": "www.elystandard.co.uk",
+      "gdelt_first_seen_utc": "2026-11-22T20:01:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:attack",
+        "world_context:russia/ukraine"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
+    },
+    {
+      "url": "https://www.huntspost.co.uk/news/national/26751822.three-killed-russian-attack-near-ukraines-capital-strikes-apartment-building",
+      "title": "Three killed after Russian attack near Ukraine’s capital strikes apartment building",
+      "domain": "www.huntspost.co.uk",
+      "gdelt_first_seen_utc": "2026-11-22T20:01:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:attack",
+        "world_context:russia/ukraine"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
+    },
+    {
+      "url": "https://www.2news.com/news/national/suspected-ukrainian-sea-drones-hit-russian-warship-at-benghazi-naval-base-libyan-officials-say/article_efc6df49-a8c6-53a1-a1ab-2e5b304174cb.html",
+      "title": "Suspected Ukrainian sea drones hit Russian warship at Benghazi naval base, Libyan officials say",
+      "domain": "www.2news.com",
+      "gdelt_first_seen_utc": "2026-11-22T20:01:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:drones",
+        "world_context:russia/ukraine"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
+    },
+    {
+      "url": "https://www.cambstimes.co.uk/news/national/26751822.three-killed-russian-attack-near-ukraines-capital-strikes-apartment-building",
+      "title": "Three killed after Russian attack near Ukraine’s capital strikes apartment building",
+      "domain": "www.cambstimes.co.uk",
+      "gdelt_first_seen_utc": "2026-11-22T20:01:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:attack",
+        "world_context:russia/ukraine"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
+    },
+    {
+      "url": "https://www.clickorlando.com/news/2026/11/22/suspected-ukrainian-sea-drones-hit-russian-warship-at-benghazi-naval-base-libyan-officials-say",
+      "title": "Suspected Ukrainian sea drones hit Russian warship at Benghazi naval base, Libyan officials say",
+      "domain": "www.clickorlando.com",
+      "gdelt_first_seen_utc": "2026-11-22T20:01:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:drones",
+        "world_context:russia/ukraine"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
+    },
+    {
+      "url": "https://www.joplinglobe.com/region/national_business/suspected-ukrainian-sea-drones-hit-russian-warship-at-benghazi-naval-base-libyan-officials-say/article_65631004-2112-51d8-b93e-e44e43d94950.html",
+      "title": "Suspected Ukrainian sea drones hit Russian warship at Benghazi naval base, Libyan officials say",
+      "domain": "www.joplinglobe.com",
+      "gdelt_first_seen_utc": "2026-11-22T20:01:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:drones",
+        "world_context:russia/ukraine"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
     },
     {
       "url": "https://www.kxlh.com/world/russian-attack-near-ukraines-capital-strikes-apartment-building-killing-2",
@@ -6524,6 +7099,29 @@
       ]
     },
     {
+      "url": "https://www.equitybulls.com/news/379404/united-drilling-tools-wins-1-73-crore-order",
+      "title": "United Drilling Tools Wins ₹1.73 Crore Order From Vedanta Oil and Gas",
+      "domain": "www.equitybulls.com",
+      "gdelt_first_seen_utc": "2026-11-22T20:02:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 51,
+      "category": "Oil & Energy",
+      "relevance_evidence": [
+        "drilling",
+        "oil and gas"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
+    },
+    {
       "url": "https://www.prnewswire.com/news-releases/national-wealth-fund-and-matrix-renewables-announce-major-scotland-battery-storage-partnership-302945481.html",
       "title": "National Wealth Fund and Matrix Renewables announce major Scotland battery storage partnership",
       "domain": "www.prnewswire.com",
@@ -10035,6 +10633,28 @@
       "status": "discovery_only_requires_publisher_verification"
     },
     {
+      "url": "https://www.jpost.com/middle-east/article-915746",
+      "title": "Iran-aligned Houthis say they targeted Saudi Rabigh oil refinery | The Jerusalem Post",
+      "domain": "www.jpost.com",
+      "gdelt_first_seen_utc": "2026-11-22T20:02:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 30,
+      "category": "Oil & Energy",
+      "relevance_evidence": [
+        "refinery"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
+    },
+    {
       "url": "https://www.ilgazzettino.it:443/esteri/intelligenza_artificiale_disastro_clima_data_center-9906265.html",
       "title": "L'intelligenza artificiale sta diventando un disastro per il clima: i data center inquinano quanto interi Paesi VIDEO",
       "domain": "www.ilgazzettino.it:443",
@@ -13349,6 +13969,50 @@
         "vistra"
       ],
       "status": "discovery_only_requires_publisher_verification"
+    },
+    {
+      "url": "https://www.equitybulls.com/news/379391/acme-solar-commissions-35-81-mw-148-645",
+      "title": "ACME Solar Commissions 35.81 MW / 148.645 MWh Battery Storage Capacity in Rajasthan",
+      "domain": "www.equitybulls.com",
+      "gdelt_first_seen_utc": "2026-11-22T20:01:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 27,
+      "category": "Power & Electricity",
+      "relevance_evidence": [
+        "battery storage"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
+    },
+    {
+      "url": "https://www.equitybulls.com/news/379392/acme-solar-adds-16-06-mw-69-678",
+      "title": "ACME Solar Adds 16.06 MW / 69.678 MWh Battery Storage Capacity in Rajasthan",
+      "domain": "www.equitybulls.com",
+      "gdelt_first_seen_utc": "2026-11-22T20:01:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 27,
+      "category": "Power & Electricity",
+      "relevance_evidence": [
+        "battery storage"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
     },
     {
       "url": "https://www.tnp.no/norway/economy/3214-dnv-launches-innovation-concept-for-efficient-offshore-power-generation",
@@ -18219,6 +18883,18 @@
       "feed_newest_index_utc": "2026-11-22T15:02:00+00:00",
       "feed_index_lag_minutes": 12.0,
       "feed_payload_sha256": "4d8533f3dd63d095",
+      "identical_payload_to_previous_success": false
+    },
+    {
+      "run_utc": "2026-11-22T20:04:53.434791+00:00",
+      "completed_utc": "2026-11-22T20:05:00.728993+00:00",
+      "status": "ok",
+      "raw_feed_items": 3660,
+      "high_signal_items": 28,
+      "new_unique_links": 28,
+      "feed_newest_index_utc": "2026-11-22T20:02:00+00:00",
+      "feed_index_lag_minutes": 2.9,
+      "feed_payload_sha256": "d4f44b1aa739c1d8",
       "identical_payload_to_previous_success": false
     }
   ],
