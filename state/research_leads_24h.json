@@ -1,5 +1,207 @@
 [
   {
+    "url": "https://www.bbc.com/news/articles/c95y1gr27xplo",
+    "title": "Strait of Hormuz swim highlights environmental cost of war",
+    "domain": "www.bbc.com",
+    "gdelt_first_seen_utc": "2026-11-22T00:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:strait of hormuz",
+      "geopolitical_event:war",
+      "world_context:strait of hormuz"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T00:08:33.881087+00:00"
+  },
+  {
+    "url": "https://jowhar.com/russian-vessel-ablaze-in-baltic-sea-after-ukrainian-strike",
+    "title": "Russian Vessel Ablaze in Baltic Sea After Ukrainian Strike - Jowhar News Leader | Somali News",
+    "domain": "jowhar.com",
+    "gdelt_first_seen_utc": "2026-11-22T00:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T00:08:33.881087+00:00"
+  },
+  {
+    "url": "https://punchng.com/geometric-power-model-can-transform-nigerias-electricity-sector-nnaji",
+    "title": "Geometric Power model can transform Nigeria’s electricity sector — Nnaji",
+    "domain": "punchng.com",
+    "gdelt_first_seen_utc": "2026-11-22T00:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T00:08:33.881087+00:00"
+  },
+  {
+    "url": "https://www.koat.com/article/gas-prices-down-186-from-a-month-ago-ahead-of-thanksgiving/74498547",
+    "title": "Gas prices down 18.6% from a month ago ahead of Thanksgiving",
+    "domain": "www.koat.com",
+    "gdelt_first_seen_utc": "2026-11-22T00:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T00:08:33.881087+00:00"
+  },
+  {
+    "url": "https://www.investimentosenoticias.com.br/noticias/mercado/producao-de-petroleo-na-guiana-atinge-mil-barris-por-dia-em-novembro-impulsionada-pela-exxon-mobil-xom",
+    "title": "Produção de Petróleo na Guiana Atinge 894 mil Barris por Dia em Novembro, Impulsionada pela Exxon Mobil (XOM) - Investimentos e Notícias",
+    "domain": "www.investimentosenoticias.com.br",
+    "gdelt_first_seen_utc": "2026-11-22T00:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "exxon mobil"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T00:08:33.881087+00:00"
+  },
+  {
+    "url": "https://www.moroccoworldnews.com/2026/11/347629/morocco-launches-construction-of-mad-3-million-solar-power-plant-in-jerada",
+    "title": "Morocco Launches Construction of MAD $3 Million Solar Power Plant in Jerada",
+    "domain": "www.moroccoworldnews.com",
+    "gdelt_first_seen_utc": "2026-11-22T00:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "power plant"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T00:08:33.881087+00:00"
+  },
+  {
+    "url": "https://www.spokanepublicradio.org/regional-news/2026-11-21/proposed-transmission-line-under-the-columbia-river-raises-concerns-opportunities",
+    "title": "Proposed transmission line under the Columbia River raises concerns, opportunities",
+    "domain": "www.spokanepublicradio.org",
+    "gdelt_first_seen_utc": "2026-11-22T00:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "transmission line"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T00:08:33.881087+00:00"
+  },
+  {
+    "url": "https://www.stock-world.de/petrobras-aktie-foerderziel-fuer-2026-ist-hochgeschraubt",
+    "title": "Petrobras Aktie: Förderziel für 2026 ist hochgeschraubt",
+    "domain": "www.stock-world.de",
+    "gdelt_first_seen_utc": "2026-11-22T00:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "petrobras"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T00:08:33.881087+00:00"
+  },
+  {
+    "url": "https://www.stock-world.de/aktie/petrobras-brpetracnpr6",
+    "title": "Petrobras Aktie - Kurs, Chart & Analyse | BRPETRACNPR6",
+    "domain": "www.stock-world.de",
+    "gdelt_first_seen_utc": "2026-11-22T00:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "petrobras"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T00:08:33.881087+00:00"
+  },
+  {
     "url": "https://www.moonofalabama.org/2026/11/war-on-iran-tanker-convoy-will-challenge-u-s-blockade.html/comment-page-4",
     "title": "War On Iran: – Tanker Convoy Will Challenge U.S. Blockade – Moon of Alabama",
     "domain": "www.moonofalabama.org",
