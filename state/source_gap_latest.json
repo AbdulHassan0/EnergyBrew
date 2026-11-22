@@ -1,17 +1,15 @@
 {
-  "generated_utc": "2026-11-22T12:41:35.303637+00:00",
+  "generated_utc": "2026-11-22T21:53:48.918596+00:00",
   "status": "source_gap_triage_not_a_verified_recall_score",
-  "publisher_dated_direct_rss_links_24h": 1,
-  "publisher_dated_direct_source_classes_24h": {
-    "specialist_publisher": 1
-  },
-  "gdelt_observed_unique_urls_24h": 53,
+  "publisher_dated_direct_rss_links_24h": 0,
+  "publisher_dated_direct_source_classes_24h": {},
+  "gdelt_observed_unique_urls_24h": 110,
   "gdelt_publisher_date_verified": 0,
   "cross_origin_classifications": {
-    "discovery_only_needs_source_verification": 53
+    "discovery_only_needs_source_verification": 110
   },
   "direct_publisher_category_counts_24h": {
-    "Natural Gas": 1,
+    "Natural Gas": 0,
     "LNG": 0,
     "Power & Electricity": 0,
     "Oil & Energy": 0,
@@ -19,25 +17,14 @@
     "Geopolitics": 0
   },
   "indexed_candidate_category_counts_24h": {
-    "Natural Gas": 3,
-    "LNG": 1,
-    "Power & Electricity": 18,
-    "Oil & Energy": 8,
+    "Natural Gas": 5,
+    "LNG": 4,
+    "Power & Electricity": 21,
+    "Oil & Energy": 10,
     "Infrastructure & Investment": 0,
-    "Geopolitics": 23
+    "Geopolitics": 70
   },
   "high_priority_discovery_only_leads_for_review": [
-    {
-      "title": "Iran strikes 3 tankers as it shows off missile launchers, and other Mideast news",
-      "url": "https://abcnews.com/Business/wireStory/iran-strikes-3-tankers-shows-off-missile-launchers-138345075",
-      "domain": "abcnews.com",
-      "category": "Geopolitics",
-      "gdelt_first_seen_utc": "2026-11-21T19:47:00+00:00",
-      "relevance_score": 90,
-      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
-      "editorial_status": "unverified_research_lead_not_approved",
-      "requires_original_publisher_verification": true
-    },
     {
       "title": "War On Iran: – Tanker Convoy Will Challenge U.S. Blockade – Moon of Alabama",
       "url": "https://www.moonofalabama.org/2026/11/war-on-iran-tanker-convoy-will-challenge-u-s-blockade.html/comment-page-4",
@@ -61,22 +48,66 @@
       "requires_original_publisher_verification": true
     },
     {
-      "title": "Brent Crude Oil Last Day Financ | Piyasa | Haberport",
-      "url": "http://www.haberport.com/piyasa/BRENT",
-      "domain": "www.haberport.com",
-      "category": "Oil & Energy",
-      "gdelt_first_seen_utc": "2026-11-21T19:31:00+00:00",
+      "title": "U.S. Confirms: Approved Shipments of Food and Medicine Can Continue Through Mariel Despite Sanctions on Cuba's Maritime Sector",
+      "url": "https://www.cubaheadlines.com/articles/346344",
+      "domain": "www.cubaheadlines.com",
+      "category": "Geopolitics",
+      "gdelt_first_seen_utc": "2026-11-22T04:31:00+00:00",
+      "relevance_score": 90,
+      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
+      "editorial_status": "unverified_research_lead_not_approved",
+      "requires_original_publisher_verification": true
+    },
+    {
+      "title": "BASS Wins BW LNG Contract for BASSnet Neo Cloud-Native Solution",
+      "url": "https://maritime-executive.com/corporate/bass-wins-bw-lng-contract-for-bassnet-neo-cloud-native-solution",
+      "domain": "maritime-executive.com",
+      "category": "LNG",
+      "gdelt_first_seen_utc": "2026-11-22T12:46:00+00:00",
+      "relevance_score": 87,
+      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
+      "editorial_status": "unverified_research_lead_not_approved",
+      "requires_original_publisher_verification": true
+    },
+    {
+      "title": "Nikkiso Delivers Dry Dock Overhaul for LNG Tanker",
+      "url": "http://www.maritimeprofessional.com/news/nikkiso-delivers-dock-overhaul-tanker-424305",
+      "domain": "www.maritimeprofessional.com",
+      "category": "LNG",
+      "gdelt_first_seen_utc": "2026-11-22T21:46:00+00:00",
+      "relevance_score": 81,
+      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
+      "editorial_status": "unverified_research_lead_not_approved",
+      "requires_original_publisher_verification": true
+    },
+    {
+      "title": "Natural gas pipeline fire shoots flames into the air in Alabama, cause is under investigation",
+      "url": "https://www.joplinglobe.com/region/national_business/natural-gas-pipeline-fire-shoots-flames-into-the-air-in-alabama-cause-is-under-investigation/article_420efc4d-5c1c-5e98-8f6f-f409f798ecfd.html",
+      "domain": "www.joplinglobe.com",
+      "category": "Natural Gas",
+      "gdelt_first_seen_utc": "2026-11-22T20:02:00+00:00",
       "relevance_score": 69,
       "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
       "editorial_status": "unverified_research_lead_not_approved",
       "requires_original_publisher_verification": true
     },
     {
-      "title": "ASIA LNG MOC PERFORMANCE: Deliveries conclude for record volume of 148.5 TBtu during August MOC",
-      "url": "https://www.hellenicshippingnews.com/asia-lng-moc-performance-deliveries-conclude-for-record-volume-of-148-5-tbtu-during-august-moc-2",
-      "domain": "www.hellenicshippingnews.com",
+      "title": "United Drilling Tools Wins ₹1.73 Crore Order From Vedanta Oil and Gas",
+      "url": "https://www.equitybulls.com/news/379404/united-drilling-tools-wins-1-73-crore-order",
+      "domain": "www.equitybulls.com",
+      "category": "Oil & Energy",
+      "gdelt_first_seen_utc": "2026-11-22T20:02:00+00:00",
+      "relevance_score": 51,
+      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
+      "editorial_status": "unverified_research_lead_not_approved",
+      "requires_original_publisher_verification": true
+    },
+    {
+      "title": "China Delivers Its Largest LNG Carrier as It Seeks to Rival Korean Builders",
+      "url": "https://maritime-executive.com/article/china-delivers-its-largest-lng-carrier-as-it-seeks-to-rival-korean-builders",
+      "domain": "maritime-executive.com",
       "category": "LNG",
-      "gdelt_first_seen_utc": "2026-11-21T19:46:00+00:00",
+      "gdelt_first_seen_utc": "2026-11-22T12:46:00+00:00",
       "relevance_score": 45,
       "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
       "editorial_status": "unverified_research_lead_not_approved",
@@ -94,55 +125,22 @@
       "requires_original_publisher_verification": true
     },
     {
-      "title": "I guarantee you improvement in electricity, Tinubu tells Nigerians",
-      "url": "https://www.nigerianeye.com/2026/11/i-guarantee-you-improvement-in.html",
-      "domain": "www.nigerianeye.com",
-      "category": "Power & Electricity",
-      "gdelt_first_seen_utc": "2026-11-21T19:47:00+00:00",
-      "relevance_score": 33,
-      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
-      "editorial_status": "unverified_research_lead_not_approved",
-      "requires_original_publisher_verification": true
-    },
-    {
-      "title": "A Thanksgiving treat in the offing: Lower gas prices - The Daily Chronicle",
-      "url": "http://www.chronline.com/stories/a-thanksgiving-treat-in-the-offing-lower-gas-prices,412176",
-      "domain": "www.chronline.com",
-      "category": "Natural Gas",
-      "gdelt_first_seen_utc": "2026-11-21T21:31:00+00:00",
-      "relevance_score": 33,
-      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
-      "editorial_status": "unverified_research_lead_not_approved",
-      "requires_original_publisher_verification": true
-    },
-    {
-      "title": "How secure will the electricity supply in Kosovo be during this winter? - Albeu.com",
-      "url": "https://albeu.com/english/how-secure-will-the-electricity-supply-in-kosovo-be-during-this-winter/1109862",
-      "domain": "albeu.com",
-      "category": "Power & Electricity",
-      "gdelt_first_seen_utc": "2026-11-21T21:31:00+00:00",
-      "relevance_score": 33,
-      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
-      "editorial_status": "unverified_research_lead_not_approved",
-      "requires_original_publisher_verification": true
-    },
-    {
-      "title": "Mickoski warns of a difficult winter and high market prices for electricity and fuels - Albeu.com",
-      "url": "https://albeu.com/english/mickoski-warns-of-a-difficult-winter-and-high-market-prices-for-electricity-and-fuels/1110714",
-      "domain": "albeu.com",
-      "category": "Power & Electricity",
-      "gdelt_first_seen_utc": "2026-11-21T21:31:00+00:00",
-      "relevance_score": 33,
-      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
-      "editorial_status": "unverified_research_lead_not_approved",
-      "requires_original_publisher_verification": true
-    },
-    {
       "title": "Easing oil prices fail to lift PSX | The Express Tribune",
       "url": "https://tribune.com.pk/story/2641579/easing-oil-prices-fail-to-lift-psx",
       "domain": "tribune.com.pk",
       "category": "Oil & Energy",
       "gdelt_first_seen_utc": "2026-11-21T23:46:00+00:00",
+      "relevance_score": 33,
+      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
+      "editorial_status": "unverified_research_lead_not_approved",
+      "requires_original_publisher_verification": true
+    },
+    {
+      "title": "Geometric Power model can transform Nigeria’s electricity sector — Nnaji",
+      "url": "https://punchng.com/geometric-power-model-can-transform-nigerias-electricity-sector-nnaji",
+      "domain": "punchng.com",
+      "category": "Power & Electricity",
+      "gdelt_first_seen_utc": "2026-11-22T00:01:00+00:00",
       "relevance_score": 33,
       "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
       "editorial_status": "unverified_research_lead_not_approved",
@@ -160,11 +158,33 @@
       "requires_original_publisher_verification": true
     },
     {
+      "title": "Iran To Ration Electricity As World Awaits Trump's Next Move",
+      "url": "http://www.middleeaststar.com/news/279447830/iran-to-ration-electricity-as-world-awaits-trump-next-move",
+      "domain": "www.middleeaststar.com",
+      "category": "Power & Electricity",
+      "gdelt_first_seen_utc": "2026-11-22T02:17:00+00:00",
+      "relevance_score": 33,
+      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
+      "editorial_status": "unverified_research_lead_not_approved",
+      "requires_original_publisher_verification": true
+    },
+    {
       "title": "Oil, gas import bill up 60% in Oct as Brent surges, LPG use declines",
       "url": "https://www.business-standard.com/economy/news/oil-gas-import-bill-up-60-in-oct-as-brent-surges-lpg-use-declines-126112200197_1.html",
       "domain": "www.business-standard.com",
       "category": "Oil & Energy",
       "gdelt_first_seen_utc": "2026-11-22T06:46:00+00:00",
+      "relevance_score": 33,
+      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
+      "editorial_status": "unverified_research_lead_not_approved",
+      "requires_original_publisher_verification": true
+    },
+    {
+      "title": "India's core sector growth hits 10.9% in October, led by electricity and coal",
+      "url": "https://dailypioneer.com/india/indias-core-sector-growth-hits-109-in-october-led-by-electricity-and-coal",
+      "domain": "dailypioneer.com",
+      "category": "Power & Electricity",
+      "gdelt_first_seen_utc": "2026-11-22T12:46:00+00:00",
       "relevance_score": 33,
       "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
       "editorial_status": "unverified_research_lead_not_approved",
@@ -176,9 +196,9 @@
     {
       "source": "DOE Energy News",
       "feed_url": "https://www.energy.gov/rss/energygov/2193718",
-      "last_success_utc": "2026-11-22T12:41:10.461770+00:00",
+      "last_success_utc": "2026-11-22T21:53:40.364545+00:00",
       "newest_feed_published_utc": "2026-11-20T22:49:34+00:00",
-      "hours_since_newest_publisher_item": 37.9,
+      "hours_since_newest_publisher_item": 47.1,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "recent_publisher_activity"
@@ -186,9 +206,9 @@
     {
       "source": "DOE Grid Deployment",
       "feed_url": "https://www.energy.gov/rss/oe/4819948",
-      "last_success_utc": "2026-11-22T12:41:10.461770+00:00",
+      "last_success_utc": "2026-11-22T21:53:40.364545+00:00",
       "newest_feed_published_utc": "2026-10-30T14:42:15+00:00",
-      "hours_since_newest_publisher_item": 550.0,
+      "hours_since_newest_publisher_item": 559.2,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "no_publisher_item_in_7d"
@@ -196,9 +216,9 @@
     {
       "source": "DOE Hydrocarbons Blog",
       "feed_url": "https://www.energy.gov/rss/hgeo/2283029",
-      "last_success_utc": "2026-11-22T12:41:10.461770+00:00",
+      "last_success_utc": "2026-11-22T21:53:40.364545+00:00",
       "newest_feed_published_utc": "2026-10-29T20:16:57+00:00",
-      "hours_since_newest_publisher_item": 568.4,
+      "hours_since_newest_publisher_item": 577.6,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "no_publisher_item_in_7d"
@@ -206,9 +226,9 @@
     {
       "source": "DOE Hydrocarbons Releases",
       "feed_url": "https://www.energy.gov/rss/hgeo/2282977",
-      "last_success_utc": "2026-11-22T12:41:10.461770+00:00",
+      "last_success_utc": "2026-11-22T21:53:40.364545+00:00",
       "newest_feed_published_utc": "2026-11-04T05:00:00+00:00",
-      "hours_since_newest_publisher_item": 439.7,
+      "hours_since_newest_publisher_item": 448.9,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "no_publisher_item_in_7d"
@@ -216,9 +236,9 @@
     {
       "source": "EIA Congressional Testimony",
       "feed_url": "https://www.eia.gov/rss/testimony.xml",
-      "last_success_utc": "2026-11-22T12:41:10.461770+00:00",
+      "last_success_utc": "2026-11-22T21:53:40.364545+00:00",
       "newest_feed_published_utc": "2021-11-16T14:00:00+00:00",
-      "hours_since_newest_publisher_item": 43966.7,
+      "hours_since_newest_publisher_item": 43975.9,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "no_publisher_item_in_7d"
@@ -226,9 +246,9 @@
     {
       "source": "EIA Presentations",
       "feed_url": "https://www.eia.gov/rss/presentations.xml",
-      "last_success_utc": "2026-11-22T12:41:10.461770+00:00",
+      "last_success_utc": "2026-11-22T21:53:40.364545+00:00",
       "newest_feed_published_utc": "2026-03-04T14:00:00+00:00",
-      "hours_since_newest_publisher_item": 6310.7,
+      "hours_since_newest_publisher_item": 6319.9,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "no_publisher_item_in_7d"
@@ -236,9 +256,9 @@
     {
       "source": "EIA Press Releases",
       "feed_url": "https://www.eia.gov/rss/press_rss.xml",
-      "last_success_utc": "2026-11-22T12:41:10.461770+00:00",
+      "last_success_utc": "2026-11-22T21:53:40.364545+00:00",
       "newest_feed_published_utc": "2026-11-10T17:00:00+00:00",
-      "hours_since_newest_publisher_item": 283.7,
+      "hours_since_newest_publisher_item": 292.9,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "no_publisher_item_in_7d"
@@ -246,9 +266,9 @@
     {
       "source": "EIA Today in Energy",
       "feed_url": "https://www.eia.gov/rss/todayinenergy.xml",
-      "last_success_utc": "2026-11-22T12:41:10.461770+00:00",
+      "last_success_utc": "2026-11-22T21:53:40.364545+00:00",
       "newest_feed_published_utc": "2026-11-19T14:00:00+00:00",
-      "hours_since_newest_publisher_item": 70.7,
+      "hours_since_newest_publisher_item": 79.9,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "recent_publisher_activity"
@@ -256,9 +276,9 @@
     {
       "source": "European Commission DG Energy",
       "feed_url": "https://energy.ec.europa.eu/node/2/rss_en",
-      "last_success_utc": "2026-11-22T12:41:10.461770+00:00",
+      "last_success_utc": "2026-11-22T21:53:40.364545+00:00",
       "newest_feed_published_utc": "2026-11-19T23:00:00+00:00",
-      "hours_since_newest_publisher_item": 61.7,
+      "hours_since_newest_publisher_item": 70.9,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "recent_publisher_activity"
@@ -266,9 +286,9 @@
     {
       "source": "Federal Register notices",
       "feed_url": "https://www.federalregister.gov/api/v1/documents.rss?conditions%5Bagencies%5D%5B%5D=federal-energy-regulatory-commission",
-      "last_success_utc": "2026-11-22T12:41:10.461770+00:00",
+      "last_success_utc": "2026-11-22T21:53:40.364545+00:00",
       "newest_feed_published_utc": "2026-11-23T05:00:00+00:00",
-      "hours_since_newest_publisher_item": -16.3,
+      "hours_since_newest_publisher_item": -7.1,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "future_publisher_date_anomaly"
@@ -276,39 +296,9 @@
     {
       "source": "Offshore Energy News",
       "feed_url": "https://www.offshore-energy.biz/feed",
-      "last_success_utc": "2026-11-22T12:41:10.461770+00:00",
+      "last_success_utc": "2026-11-22T21:53:40.364545+00:00",
       "newest_feed_published_utc": "2026-11-20T14:41:21+00:00",
-      "hours_since_newest_publisher_item": 46.0,
-      "timestamped_article_links_24h": 0,
-      "consecutive_failures": 0,
-      "activity": "recent_publisher_activity"
-    },
-    {
-      "source": "PJM Inside Lines",
-      "feed_url": "https://insidelines.pjm.com/feed/",
-      "last_success_utc": "2026-11-22T12:41:10.461770+00:00",
-      "newest_feed_published_utc": "2026-11-18T18:56:18+00:00",
-      "hours_since_newest_publisher_item": 89.8,
-      "timestamped_article_links_24h": 0,
-      "consecutive_failures": 0,
-      "activity": "recent_publisher_activity"
-    },
-    {
-      "source": "US NRC Nuclear News",
-      "feed_url": "https://www.nrc.gov/public-involve/rss?feed=news",
-      "last_success_utc": "2026-11-22T12:41:10.461770+00:00",
-      "newest_feed_published_utc": "2026-11-12T10:00:00+00:00",
-      "hours_since_newest_publisher_item": 242.7,
-      "timestamped_article_links_24h": 0,
-      "consecutive_failures": 0,
-      "activity": "no_publisher_item_in_7d"
-    },
-    {
-      "source": "Utility Dive News",
-      "feed_url": "https://www.utilitydive.com/feeds/news/",
-      "last_success_utc": "2026-11-22T12:41:10.461770+00:00",
-      "newest_feed_published_utc": "2026-11-20T15:48:13+00:00",
-      "hours_since_newest_publisher_item": 44.9,
+      "hours_since_newest_publisher_item": 55.2,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "recent_publisher_activity"
@@ -316,10 +306,40 @@
     {
       "source": "OilPrice.com News",
       "feed_url": "https://oilprice.com/rss.xml",
-      "last_success_utc": "2026-11-22T12:41:10.461770+00:00",
-      "newest_feed_published_utc": "2026-11-22T00:00:00+00:00",
-      "hours_since_newest_publisher_item": 12.7,
-      "timestamped_article_links_24h": 1,
+      "last_success_utc": "2026-11-22T21:53:40.364545+00:00",
+      "newest_feed_published_utc": "2026-11-22T20:00:00+00:00",
+      "hours_since_newest_publisher_item": 1.9,
+      "timestamped_article_links_24h": 0,
+      "consecutive_failures": 0,
+      "activity": "recent_publisher_activity"
+    },
+    {
+      "source": "PJM Inside Lines",
+      "feed_url": "https://insidelines.pjm.com/feed/",
+      "last_success_utc": "2026-11-22T21:53:40.364545+00:00",
+      "newest_feed_published_utc": "2026-11-18T18:56:18+00:00",
+      "hours_since_newest_publisher_item": 99.0,
+      "timestamped_article_links_24h": 0,
+      "consecutive_failures": 0,
+      "activity": "recent_publisher_activity"
+    },
+    {
+      "source": "US NRC Nuclear News",
+      "feed_url": "https://www.nrc.gov/public-involve/rss?feed=news",
+      "last_success_utc": "2026-11-22T21:53:40.364545+00:00",
+      "newest_feed_published_utc": "2026-11-12T10:00:00+00:00",
+      "hours_since_newest_publisher_item": 251.9,
+      "timestamped_article_links_24h": 0,
+      "consecutive_failures": 0,
+      "activity": "no_publisher_item_in_7d"
+    },
+    {
+      "source": "Utility Dive News",
+      "feed_url": "https://www.utilitydive.com/feeds/news/",
+      "last_success_utc": "2026-11-22T21:53:40.364545+00:00",
+      "newest_feed_published_utc": "2026-11-20T15:48:13+00:00",
+      "hours_since_newest_publisher_item": 54.1,
+      "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "recent_publisher_activity"
     }

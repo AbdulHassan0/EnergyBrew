@@ -1,37 +1,36 @@
 {
-  "generated_utc": "2026-11-22T12:41:32.778728+00:00",
+  "generated_utc": "2026-11-22T21:53:47.239838+00:00",
   "status": "research_only_not_approved",
-  "unique_relevant_urls_7d": 733,
+  "unique_relevant_urls_7d": 817,
   "selected_research_links": 32,
-  "unique_domains_in_selection": 21,
+  "unique_domains_in_selection": 20,
   "queue_counts": {
-    "older_official_context": 59,
+    "older_official_context": 60,
     "regulatory_date_only": 6,
-    "discovery_unverified": 626,
-    "specialist_publisher_24h": 1,
+    "discovery_unverified": 710,
     "company_release_unverified": 41
   },
   "selected_category_counts": {
-    "Natural Gas": 5,
-    "LNG": 6,
+    "Natural Gas": 6,
+    "LNG": 8,
     "Power & Electricity": 8,
-    "Oil & Energy": 4,
+    "Oil & Energy": 1,
     "Infrastructure & Investment": 1,
     "Geopolitics": 8
   },
   "selected_topic_coverage_counts": {
-    "Natural Gas": 5,
-    "LNG": 6,
+    "Natural Gas": 6,
+    "LNG": 8,
     "Power & Electricity": 8,
-    "Oil & Energy": 7,
-    "Infrastructure & Investment": 15,
+    "Oil & Energy": 4,
+    "Infrastructure & Investment": 14,
     "Geopolitics": 8
   },
   "missing_categories": [],
   "publisher_timestamped_official_24h": 0,
-  "publisher_timestamped_specialist_24h": 1,
+  "publisher_timestamped_specialist_24h": 0,
   "system_operator_primary_24h": 0,
-  "likely_same_event_links_suppressed": 5,
+  "likely_same_event_links_suppressed": 9,
   "discovery_publisher_dates_verified": 0,
   "promotional_or_language_review_count": 0,
   "stories": [
@@ -585,10 +584,10 @@
       "rank": 106
     },
     {
-      "title": "UK man swims in Hormuz for three days to highlight Iran war impact",
-      "url": "https://www.siasat.com/uk-man-swims-in-hormuz-for-three-days-to-highlight-iran-war-impact-3583938",
-      "domain": "www.siasat.com",
-      "first_collector_observed_utc": "2026-11-22T12:41:31.863243+00:00",
+      "title": "Iranian attacks in the Strait of Hormuz reach highest levels since the conflict began",
+      "url": "https://www.komu.com/news/nationworld/iranian-attacks-in-the-strait-of-hormuz-reach-highest-levels-since-the-conflict-began/article_d0c1043a-aeaa-5380-a980-a0ceb5aebbf6.html",
+      "domain": "www.komu.com",
+      "first_collector_observed_utc": "2026-11-22T21:06:47.900538+00:00",
       "local_collection_time_known": true,
       "source": "GDELT GAL RSS",
       "source_class": "unclassified",
@@ -598,13 +597,13 @@
       ],
       "relevance_score": 90,
       "relevance_evidence": [
-        "energy_market_hook:hormuz",
-        "geopolitical_event:war",
-        "world_context:iran"
+        "energy_market_hook:strait of hormuz",
+        "geopolitical_event:attacks",
+        "world_context:iranian"
       ],
       "origin": "global_discovery",
       "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-22T12:32:00+00:00",
+      "observed_time_utc": "2026-11-22T21:02:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
@@ -613,30 +612,93 @@
       "other_origins": [],
       "independent_corroboration_verified": false,
       "queue": "discovery_unverified",
-      "rank": 102
+      "rank": 102,
+      "related_reports": [
+        {
+          "title": "Iranian attacks in the Strait of Hormuz are at the highest levels since the conflict began",
+          "url": "https://kvia.com/news/us-world/cnn-world/2026/11/22/iranian-attacks-in-the-strait-of-hormuz-are-at-the-highest-levels-since-the-conflict-began",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "Iranian attacks in the Strait of Hormuz are at the highest levels since the conflict began",
+          "url": "https://abc17news.com/news/national-world/cnn-world/2026/11/22/iranian-attacks-in-the-strait-of-hormuz-are-at-the-highest-levels-since-the-conflict-began",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        }
+      ]
     },
     {
-      "title": "Russian Drones Strike Ukrainian Energy and Port Infrastructure Overnight",
-      "url": "https://sputnikglobe.com/20261122/russian-drones-strike-ukrainian-energy-and-port-infrastructure-overnight-1125129869.html",
-      "domain": "sputnikglobe.com",
-      "first_collector_observed_utc": "2026-11-22T06:57:26.126178+00:00",
+      "title": "Endurance athlete swims in Strait of Hormuz to highlight Iran war's impact on wildlife",
+      "url": "https://www.latimes.com/world-nation/story/2026-11-22/endurance-athlete-swims-in-strait-of-hormuz-to-highlight-iran-wars-impact-on-wildlife",
+      "domain": "www.latimes.com",
+      "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:strait of hormuz",
+        "geopolitical_event:war",
+        "world_context:iran"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-22T20:01:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102,
+      "related_reports": [
+        {
+          "title": "Endurance athlete swims in Strait of Hormuz to highlight Iran war's impact on wildlife",
+          "url": "https://www.ketv.com/article/lewis-pugh-strait-of-hormuz-swim-iran-war/74497133",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "Endurance athlete swims in Strait of Hormuz to highlight Iran war's impact on wildlife",
+          "url": "https://www.ksbw.com/article/lewis-pugh-strait-of-hormuz-swim-iran-war/74497133",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        }
+      ]
+    },
+    {
+      "title": "Iran strikes 3 oil tankers as it shows off new missile launchers",
+      "url": "https://littleapplepost.com/posts/2155de1c-ecfa-40d8-a281-5a8e5f6ed5a7",
+      "domain": "littleapplepost.com",
+      "first_collector_observed_utc": "2026-11-22T15:14:06.105288+00:00",
       "local_collection_time_known": true,
       "source": "GDELT GAL RSS",
       "source_class": "unclassified",
       "category": "Geopolitics",
       "coverage_themes": [
         "Geopolitics",
-        "Infrastructure & Investment"
+        "Oil & Energy"
       ],
       "relevance_score": 90,
       "relevance_evidence": [
-        "energy_market_hook:energy",
-        "geopolitical_event:strike",
-        "world_context:russian"
+        "energy_market_hook:oil",
+        "geopolitical_event:strikes",
+        "world_context:iran"
       ],
       "origin": "global_discovery",
       "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-22T06:46:00+00:00",
+      "observed_time_utc": "2026-11-22T15:01:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
@@ -648,10 +710,10 @@
       "rank": 102
     },
     {
-      "title": "U.S. Confirms: Approved Shipments of Food and Medicine Can Continue Through Mariel Despite Sanctions on Cuba's Maritime Sector",
-      "url": "https://www.cubaheadlines.com/articles/346344",
-      "domain": "www.cubaheadlines.com",
-      "first_collector_observed_utc": "2026-11-22T04:42:36.026385+00:00",
+      "title": "Empty Tankers Are Extending Iran's Ability to Wait Out the U.S. Blockade",
+      "url": "https://maritime-executive.com/article/empty-tankers-are-extending-iran-s-ability-to-wait-out-the-u-s-blockade",
+      "domain": "maritime-executive.com",
+      "first_collector_observed_utc": "2026-11-22T12:53:40.757928+00:00",
       "local_collection_time_known": true,
       "source": "GDELT GAL RSS",
       "source_class": "unclassified",
@@ -661,13 +723,13 @@
       ],
       "relevance_score": 90,
       "relevance_evidence": [
-        "energy_market_hook:shipments",
-        "geopolitical_event:sanctions",
-        "world_context:u.s."
+        "energy_market_hook:tankers",
+        "geopolitical_event:blockade",
+        "world_context:iran"
       ],
       "origin": "global_discovery",
       "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-22T04:31:00+00:00",
+      "observed_time_utc": "2026-11-22T12:47:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
@@ -679,10 +741,10 @@
       "rank": 102
     },
     {
-      "title": "Strait of Hormuz swim highlights environmental cost of war",
-      "url": "https://www.bbc.com/news/articles/c95y1gr27xplo",
-      "domain": "www.bbc.com",
-      "first_collector_observed_utc": "2026-11-22T00:08:33.881087+00:00",
+      "title": "Endurance swimmer completes three-day swim across Strait of Hormuz amid war",
+      "url": "http://thepeninsulaqatar.com/article/22/11/2026/endurance-swimmer-completes-three-day-swim-across-strait-of-hormuz-amid-war",
+      "domain": "thepeninsulaqatar.com",
+      "first_collector_observed_utc": "2026-11-22T12:53:40.757928+00:00",
       "local_collection_time_known": true,
       "source": "GDELT GAL RSS",
       "source_class": "unclassified",
@@ -698,7 +760,7 @@
       ],
       "origin": "global_discovery",
       "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-22T00:01:00+00:00",
+      "observed_time_utc": "2026-11-22T12:47:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
@@ -710,27 +772,25 @@
       "rank": 102
     },
     {
-      "title": "War On Iran: – Tanker Convoy Will Challenge U.S. Blockade – Moon of Alabama",
-      "url": "https://www.moonofalabama.org/2026/11/war-on-iran-tanker-convoy-will-challenge-u-s-blockade.html/comment-page-4",
-      "domain": "www.moonofalabama.org",
-      "first_collector_observed_utc": "2026-11-21T23:56:58.797771+00:00",
+      "title": "BASS Wins BW LNG Contract for BASSnet Neo Cloud-Native Solution",
+      "url": "https://maritime-executive.com/corporate/bass-wins-bw-lng-contract-for-bassnet-neo-cloud-native-solution",
+      "domain": "maritime-executive.com",
+      "first_collector_observed_utc": "2026-11-22T12:53:40.757928+00:00",
       "local_collection_time_known": true,
       "source": "GDELT GAL RSS",
       "source_class": "unclassified",
-      "category": "Geopolitics",
+      "category": "LNG",
       "coverage_themes": [
-        "Geopolitics",
-        "Oil & Energy"
+        "LNG"
       ],
-      "relevance_score": 90,
+      "relevance_score": 87,
       "relevance_evidence": [
-        "energy_market_hook:tanker",
-        "geopolitical_event:blockade",
-        "world_context:iran"
+        "lng",
+        "lng contract"
       ],
       "origin": "global_discovery",
       "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-21T23:47:00+00:00",
+      "observed_time_utc": "2026-11-22T12:46:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
@@ -739,7 +799,7 @@
       "other_origins": [],
       "independent_corroboration_verified": false,
       "queue": "discovery_unverified",
-      "rank": 102
+      "rank": 99
     },
     {
       "title": "Exelon Corporation v. PJM Interconnection, L.L.C.; Notice Establishing Comment Period",
@@ -771,6 +831,36 @@
       "independent_corroboration_verified": false,
       "queue": "regulatory_date_only",
       "rank": 97
+    },
+    {
+      "title": "Nikkiso Delivers Dry Dock Overhaul for LNG Tanker",
+      "url": "http://www.maritimeprofessional.com/news/nikkiso-delivers-dock-overhaul-tanker-424305",
+      "domain": "www.maritimeprofessional.com",
+      "first_collector_observed_utc": "2026-11-22T21:53:46.210700+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "LNG",
+      "coverage_themes": [
+        "LNG"
+      ],
+      "relevance_score": 81,
+      "relevance_evidence": [
+        "lng",
+        "lng tanker"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-22T21:46:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 93
     },
     {
       "title": "U.S. natural gas inventories end injection season above normal levels",
@@ -949,25 +1039,26 @@
       ]
     },
     {
-      "title": "Brent Crude Oil Last Day Financ | Piyasa | Haberport",
-      "url": "http://www.haberport.com/piyasa/BRENT",
-      "domain": "www.haberport.com",
-      "first_collector_observed_utc": "2026-11-21T19:44:36.805901+00:00",
+      "title": "Natural gas pipeline fire shoots flames into the air in Alabama, cause is under investigation",
+      "url": "https://www.joplinglobe.com/region/national_business/natural-gas-pipeline-fire-shoots-flames-into-the-air-in-alabama-cause-is-under-investigation/article_420efc4d-5c1c-5e98-8f6f-f409f798ecfd.html",
+      "domain": "www.joplinglobe.com",
+      "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00",
       "local_collection_time_known": true,
       "source": "GDELT GAL RSS",
       "source_class": "unclassified",
-      "category": "Oil & Energy",
+      "category": "Natural Gas",
       "coverage_themes": [
-        "Oil & Energy"
+        "Natural Gas",
+        "Infrastructure & Investment"
       ],
       "relevance_score": 69,
       "relevance_evidence": [
-        "brent",
-        "crude oil"
+        "gas pipeline",
+        "natural gas"
       ],
       "origin": "global_discovery",
       "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-21T19:31:00+00:00",
+      "observed_time_utc": "2026-11-22T20:02:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
@@ -977,67 +1068,6 @@
       "independent_corroboration_verified": false,
       "queue": "discovery_unverified",
       "rank": 81
-    },
-    {
-      "title": "India's Crude Oil Production Set To Fall 20% By 2035: IEA - BW Businessworld",
-      "url": "https://www.businessworld.in/article/india-s-crude-oil-production-set-to-fall-20-by-2035-iea-634356",
-      "domain": "www.businessworld.in",
-      "first_collector_observed_utc": null,
-      "local_collection_time_known": false,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Oil & Energy",
-      "coverage_themes": [
-        "Oil & Energy"
-      ],
-      "relevance_score": 66,
-      "relevance_evidence": [
-        "crude oil",
-        "oil production"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-19T11:01:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": false,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 78
-    },
-    {
-      "title": "Tanzania, Uganda fast-track crude oil pipeline completion - Channel Africa",
-      "url": "https://www.channelafrica.co.za/channelafrica/news/tanzania-uganda-fast-track-crude-oil-pipeline-completion",
-      "domain": "www.channelafrica.co.za",
-      "first_collector_observed_utc": null,
-      "local_collection_time_known": false,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Oil & Energy",
-      "coverage_themes": [
-        "Oil & Energy",
-        "Infrastructure & Investment"
-      ],
-      "relevance_score": 66,
-      "relevance_evidence": [
-        "crude oil",
-        "oil pipeline"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-19T10:47:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": false,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 78
     },
     {
       "title": "Final investment decision on Azerbaijan's Karabakh field expected in 2027",
