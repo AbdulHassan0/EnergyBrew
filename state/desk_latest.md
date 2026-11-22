@@ -2,8 +2,8 @@
 
 **Research links only. Not fact-checked, approved, or ready for publication.**
 
-Generated (UTC): 2026-11-22T02:20:12.597081+00:00
-Distinct relevant URLs in retained data: **715**
+Generated (UTC): 2026-11-22T12:41:32.778728+00:00
+Distinct relevant URLs in retained data: **733**
 Selected diverse research leads: **32**
 Publisher-timestamped official leads within 24h: **0**
 Specialist-publisher timestamped links within 24h: **1**
@@ -48,36 +48,36 @@ Discovery publisher dates verified: **0**
    - Timestamp basis: system_operator_rss_timestamp (2026-11-16T22:24:16+00:00). Editorial status: **unapproved**.
 17. **[Algonquin Gas Transmission, LLC; Notice of Application and Establishing Intervention Deadline](https://www.federalregister.gov/documents/2026/11/18/2026-23446/algonquin-gas-transmission-llc-notice-of-application-and-establishing-intervention-deadline)** — Natural Gas | regulatory_notice | score 66
    - Timestamp basis: official_publication_date_only (2026-11-18T05:00:00+00:00). Editorial status: **unapproved**.
-18. **[Strait of Hormuz swim highlights environmental cost of war](https://www.bbc.com/news/articles/c95y1gr27xplo)** — Geopolitics | global_discovery | score 90
+18. **[UK man swims in Hormuz for three days to highlight Iran war impact](https://www.siasat.com/uk-man-swims-in-hormuz-for-three-days-to-highlight-iran-war-impact-3583938)** — Geopolitics | global_discovery | score 90
+   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-22T12:32:00+00:00). Editorial status: **unapproved**.
+19. **[Russian Drones Strike Ukrainian Energy and Port Infrastructure Overnight](https://sputnikglobe.com/20261122/russian-drones-strike-ukrainian-energy-and-port-infrastructure-overnight-1125129869.html)** — Geopolitics | global_discovery | score 90
+   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-22T06:46:00+00:00). Editorial status: **unapproved**.
+20. **[U.S. Confirms: Approved Shipments of Food and Medicine Can Continue Through Mariel Despite Sanctions on Cuba's Maritime Sector](https://www.cubaheadlines.com/articles/346344)** — Geopolitics | global_discovery | score 90
+   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-22T04:31:00+00:00). Editorial status: **unapproved**.
+21. **[Strait of Hormuz swim highlights environmental cost of war](https://www.bbc.com/news/articles/c95y1gr27xplo)** — Geopolitics | global_discovery | score 90
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-22T00:01:00+00:00). Editorial status: **unapproved**.
-19. **[War On Iran: – Tanker Convoy Will Challenge U.S. Blockade – Moon of Alabama](https://www.moonofalabama.org/2026/11/war-on-iran-tanker-convoy-will-challenge-u-s-blockade.html/comment-page-4)** — Geopolitics | global_discovery | score 90
+22. **[War On Iran: – Tanker Convoy Will Challenge U.S. Blockade – Moon of Alabama](https://www.moonofalabama.org/2026/11/war-on-iran-tanker-convoy-will-challenge-u-s-blockade.html/comment-page-4)** — Geopolitics | global_discovery | score 90
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-21T23:47:00+00:00). Editorial status: **unapproved**.
-20. **[Iran strikes 3 tankers as it shows off missile launchers, and other Mideast news](https://abcnews.com/Business/wireStory/iran-strikes-3-tankers-shows-off-missile-launchers-138345075)** — Geopolitics | global_discovery | score 90
-   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-21T19:47:00+00:00). Editorial status: **unapproved**.
-21. **[US sanctions Iranian oil traders, government insiders over alleged oil revenue scheme](https://www.middleeastmonitor.com/20261121-us-sanctions-iranian-oil-traders-government-insiders-over-alleged-oil-revenue-scheme)** — Geopolitics | global_discovery | score 90
-   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-21T12:32:00+00:00). Editorial status: **unapproved**.
-22. **[Iran says new air defence system intercepted US Reaper drone over Hormuz](https://www.middleeasteye.net/news/iran-says-newly-developed-air-defence-system-intercepted-us-drone-over-hormuz)** — Geopolitics | global_discovery | score 90
-   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-21T12:31:00+00:00). Editorial status: **unapproved**.
 23. **[Exelon Corporation v. PJM Interconnection, L.L.C.; Notice Establishing Comment Period](https://www.federalregister.gov/documents/2026/11/19/2026-23611/exelon-corporation-v-pjm-interconnection-llc-notice-establishing-comment-period)** — Power & Electricity | regulatory_notice | score 57
    - Timestamp basis: official_publication_date_only (2026-11-19T05:00:00+00:00). Editorial status: **unapproved**.
 24. **[U.S. natural gas inventories end injection season above normal levels](https://www.eia.gov/todayinenergy/detail.php?id=68484)** — Natural Gas | official_rss | score 39
    - Timestamp basis: publisher_feed_publication_time (2026-11-18T14:00:00+00:00). Editorial status: **unapproved**.
-25. **[Federal regulators approve Cheniere’s Sabine Pass expansion project](https://mymixfm.com/2026/11/19/federal-regulators-approve-chenieres-sabine-pass-expansion-project)** — LNG | global_discovery | score 75
+25. **[Organization of the Petroleum Exporting Countries (OPEC), African Continental Free Trade Area (AfCFTA) and Dangote Refinery Join South Sudanese Ministers on the South Sudan Oil & Power (SSOP) 2026 Keynote Stage](https://energycapitalandpower.africa-newsroom.com/press/organization-of-the-petroleum-exporting-countries-opec-african-continental-free-trade-area-afcfta-and-dangote-refinery-join-south-sudanese-ministers-on-the-south-sudan-oil-and-power-ssop-2026-keynote-stage?lang=en)** — Oil & Energy | company_announcement | score 87
+   - Timestamp basis: third_party_release_feed_date_unverified (2026-11-22T08:00:08+00:00). Editorial status: **unapproved**.
+26. **[Federal regulators approve Cheniere’s Sabine Pass expansion project](https://mymixfm.com/2026/11/19/federal-regulators-approve-chenieres-sabine-pass-expansion-project)** — LNG | global_discovery | score 75
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T19:47:00+00:00). Editorial status: **unapproved**.
    - 2 likely same-event publisher links preserved for review (not independent corroboration).
-26. **[Gas Coordination Group confirms EU’s winter preparedness, importance of gas storage through the winter](https://energy.ec.europa.eu/news/gas-coordination-group-confirms-eus-winter-preparedness-importance-gas-storage-through-winter-2026-11-20_en)** — Natural Gas | official_rss | score 36
+27. **[Gas Coordination Group confirms EU’s winter preparedness, importance of gas storage through the winter](https://energy.ec.europa.eu/news/gas-coordination-group-confirms-eus-winter-preparedness-importance-gas-storage-through-winter-2026-11-20_en)** — Natural Gas | official_rss | score 36
    - Timestamp basis: publisher_feed_publication_time (2026-11-19T23:00:00+00:00). Editorial status: **unapproved**.
-27. **[SpaceX Plans to Spend $2.8 Billion on Gas Turbines. Here’s What That Much Natural Gas Demand Means for Pipeline Investors. - AOL](https://www.aol.com/articles/spacex-plans-spend-2-8-221502000.html)** — Natural Gas | global_discovery | score 72
+28. **[SpaceX Plans to Spend $2.8 Billion on Gas Turbines. Here’s What That Much Natural Gas Demand Means for Pipeline Investors. - AOL](https://www.aol.com/articles/spacex-plans-spend-2-8-221502000.html)** — Natural Gas | global_discovery | score 72
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-20T23:17:00+00:00). Editorial status: **unapproved**.
    - 1 likely same-event publisher links preserved for review (not independent corroboration).
-28. **[Brent Crude Oil Last Day Financ / Piyasa / Haberport](http://www.haberport.com/piyasa/BRENT)** — Oil & Energy | global_discovery | score 69
+29. **[Brent Crude Oil Last Day Financ / Piyasa / Haberport](http://www.haberport.com/piyasa/BRENT)** — Oil & Energy | global_discovery | score 69
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-21T19:31:00+00:00). Editorial status: **unapproved**.
-29. **[India's Crude Oil Production Set To Fall 20% By 2035: IEA - BW Businessworld](https://www.businessworld.in/article/india-s-crude-oil-production-set-to-fall-20-by-2035-iea-634356)** — Oil & Energy | global_discovery | score 66
+30. **[India's Crude Oil Production Set To Fall 20% By 2035: IEA - BW Businessworld](https://www.businessworld.in/article/india-s-crude-oil-production-set-to-fall-20-by-2035-iea-634356)** — Oil & Energy | global_discovery | score 66
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T11:01:00+00:00). Editorial status: **unapproved**.
-30. **[Tanzania, Uganda fast-track crude oil pipeline completion - Channel Africa](https://www.channelafrica.co.za/channelafrica/news/tanzania-uganda-fast-track-crude-oil-pipeline-completion)** — Oil & Energy | global_discovery | score 66
+31. **[Tanzania, Uganda fast-track crude oil pipeline completion - Channel Africa](https://www.channelafrica.co.za/channelafrica/news/tanzania-uganda-fast-track-crude-oil-pipeline-completion)** — Oil & Energy | global_discovery | score 66
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T10:47:00+00:00). Editorial status: **unapproved**.
-31. **[Woodside and Trafigura sign off on decade-long LNG deal](https://www.offshore-energy.biz/2026/11/18/woodside-and-trafigura-sign-off-on-decade-long-lng-deal)** — LNG | official_rss | score 45
-   - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-18T09:16:02+00:00). Editorial status: **unapproved**.
 32. **[Final investment decision on Azerbaijan's Karabakh field expected in 2027](https://en.apa.az/energy-and-industry/final-investment-decision-on-azerbaijans-karabakh-field-expected-in-2027-537196)** — Infrastructure & Investment | global_discovery | score 36
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T11:01:00+00:00). Editorial status: **unapproved**.
 

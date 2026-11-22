@@ -1,30 +1,30 @@
 {
-  "generated_utc": "2026-11-22T02:20:12.597081+00:00",
+  "generated_utc": "2026-11-22T12:41:32.778728+00:00",
   "status": "research_only_not_approved",
-  "unique_relevant_urls_7d": 715,
+  "unique_relevant_urls_7d": 733,
   "selected_research_links": 32,
-  "unique_domains_in_selection": 20,
+  "unique_domains_in_selection": 21,
   "queue_counts": {
     "older_official_context": 59,
     "regulatory_date_only": 6,
-    "discovery_unverified": 611,
+    "discovery_unverified": 626,
     "specialist_publisher_24h": 1,
-    "company_release_unverified": 38
+    "company_release_unverified": 41
   },
   "selected_category_counts": {
     "Natural Gas": 5,
-    "LNG": 7,
+    "LNG": 6,
     "Power & Electricity": 8,
-    "Oil & Energy": 3,
+    "Oil & Energy": 4,
     "Infrastructure & Investment": 1,
     "Geopolitics": 8
   },
   "selected_topic_coverage_counts": {
     "Natural Gas": 5,
-    "LNG": 7,
+    "LNG": 6,
     "Power & Electricity": 8,
     "Oil & Energy": 7,
-    "Infrastructure & Investment": 14,
+    "Infrastructure & Investment": 15,
     "Geopolitics": 8
   },
   "missing_categories": [],
@@ -585,6 +585,100 @@
       "rank": 106
     },
     {
+      "title": "UK man swims in Hormuz for three days to highlight Iran war impact",
+      "url": "https://www.siasat.com/uk-man-swims-in-hormuz-for-three-days-to-highlight-iran-war-impact-3583938",
+      "domain": "www.siasat.com",
+      "first_collector_observed_utc": "2026-11-22T12:41:31.863243+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:hormuz",
+        "geopolitical_event:war",
+        "world_context:iran"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-22T12:32:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
+    },
+    {
+      "title": "Russian Drones Strike Ukrainian Energy and Port Infrastructure Overnight",
+      "url": "https://sputnikglobe.com/20261122/russian-drones-strike-ukrainian-energy-and-port-infrastructure-overnight-1125129869.html",
+      "domain": "sputnikglobe.com",
+      "first_collector_observed_utc": "2026-11-22T06:57:26.126178+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics",
+        "Infrastructure & Investment"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:energy",
+        "geopolitical_event:strike",
+        "world_context:russian"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-22T06:46:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
+    },
+    {
+      "title": "U.S. Confirms: Approved Shipments of Food and Medicine Can Continue Through Mariel Despite Sanctions on Cuba's Maritime Sector",
+      "url": "https://www.cubaheadlines.com/articles/346344",
+      "domain": "www.cubaheadlines.com",
+      "first_collector_observed_utc": "2026-11-22T04:42:36.026385+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:shipments",
+        "geopolitical_event:sanctions",
+        "world_context:u.s."
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-22T04:31:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
+    },
+    {
       "title": "Strait of Hormuz swim highlights environmental cost of war",
       "url": "https://www.bbc.com/news/articles/c95y1gr27xplo",
       "domain": "www.bbc.com",
@@ -637,100 +731,6 @@
       "origin": "global_discovery",
       "time_basis": "gdelt_gal_rss_provider_time_unverified",
       "observed_time_utc": "2026-11-21T23:47:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102
-    },
-    {
-      "title": "Iran strikes 3 tankers as it shows off missile launchers, and other Mideast news",
-      "url": "https://abcnews.com/Business/wireStory/iran-strikes-3-tankers-shows-off-missile-launchers-138345075",
-      "domain": "abcnews.com",
-      "first_collector_observed_utc": "2026-11-21T19:54:02.760562+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:tankers",
-        "geopolitical_event:strikes",
-        "world_context:iran"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-21T19:47:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102
-    },
-    {
-      "title": "US sanctions Iranian oil traders, government insiders over alleged oil revenue scheme",
-      "url": "https://www.middleeastmonitor.com/20261121-us-sanctions-iranian-oil-traders-government-insiders-over-alleged-oil-revenue-scheme",
-      "domain": "www.middleeastmonitor.com",
-      "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics",
-        "Oil & Energy"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:oil",
-        "geopolitical_event:sanctions",
-        "world_context:iranian"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-21T12:32:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102
-    },
-    {
-      "title": "Iran says new air defence system intercepted US Reaper drone over Hormuz",
-      "url": "https://www.middleeasteye.net/news/iran-says-newly-developed-air-defence-system-intercepted-us-drone-over-hormuz",
-      "domain": "www.middleeasteye.net",
-      "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:hormuz",
-        "geopolitical_event:drone",
-        "world_context:iran"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-21T12:31:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
@@ -800,6 +800,37 @@
       "independent_corroboration_verified": false,
       "queue": "older_official_context",
       "rank": 89
+    },
+    {
+      "title": "Organization of the Petroleum Exporting Countries (OPEC), African Continental Free Trade Area (AfCFTA) and Dangote Refinery Join South Sudanese Ministers on the South Sudan Oil & Power (SSOP) 2026 Keynote Stage",
+      "url": "https://energycapitalandpower.africa-newsroom.com/press/organization-of-the-petroleum-exporting-countries-opec-african-continental-free-trade-area-afcfta-and-dangote-refinery-join-south-sudanese-ministers-on-the-south-sudan-oil-and-power-ssop-2026-keynote-stage?lang=en",
+      "domain": "energycapitalandpower.africa-newsroom.com",
+      "first_collector_observed_utc": "2026-11-22T12:41:32.676834+00:00",
+      "local_collection_time_known": true,
+      "source": "Press Release Feed",
+      "source_class": "unclassified",
+      "category": "Oil & Energy",
+      "coverage_themes": [
+        "Oil & Energy"
+      ],
+      "relevance_score": 87,
+      "relevance_evidence": [
+        "opec",
+        "petroleum",
+        "refinery"
+      ],
+      "origin": "company_announcement",
+      "time_basis": "third_party_release_feed_date_unverified",
+      "observed_time_utc": "2026-11-22T08:00:08+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "feed_only",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "company_release_unverified",
+      "rank": 87
     },
     {
       "title": "Federal regulators approve Cheniere’s Sabine Pass expansion project",
@@ -1007,35 +1038,6 @@
       "independent_corroboration_verified": false,
       "queue": "discovery_unverified",
       "rank": 78
-    },
-    {
-      "title": "Woodside and Trafigura sign off on decade-long LNG deal",
-      "url": "https://www.offshore-energy.biz/2026/11/18/woodside-and-trafigura-sign-off-on-decade-long-lng-deal",
-      "domain": "www.offshore-energy.biz",
-      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00",
-      "local_collection_time_known": true,
-      "source": "Offshore Energy News",
-      "source_class": "specialist_publisher",
-      "category": "LNG",
-      "coverage_themes": [
-        "LNG"
-      ],
-      "relevance_score": 45,
-      "relevance_evidence": [
-        "lng"
-      ],
-      "origin": "official_rss",
-      "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-18T09:16:02+00:00",
-      "publisher_time_verified": true,
-      "date_confidence": "publisher_rss_timestamp",
-      "within_24h_on_own_time_basis": false,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "older_official_context",
-      "rank": 75
     },
     {
       "title": "Final investment decision on Azerbaijan's Karabakh field expected in 2027",

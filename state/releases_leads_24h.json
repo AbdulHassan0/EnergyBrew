@@ -1,5 +1,68 @@
 [
   {
+    "url": "https://www.africa-newsroom.com/press/electricity-and-energy-committee-receives-update-on-decommissioning-of-komati-power-station?lang=en",
+    "title": "South Africa: Electricity and Energy Committee Receives Update on Decommissioning of Komati Power Station",
+    "feed_creator_label": "APO Group",
+    "named_issuer_verified": false,
+    "feed_source_url": "https://www.africa-newsroom.com/press/electricity-and-energy-committee-receives-update-on-decommissioning-of-komati-power-station?lang=en",
+    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+    "feed_published_utc": "2026-11-22T08:16:22+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "category": "Power & Electricity",
+    "relevance_score": 33,
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "provider": "Press Release Feed",
+    "content_kind": "company_or_newswire_press_release",
+    "status": "promotional_issuer_claim_requires_editorial_verification",
+    "first_collector_observed_utc": "2026-11-22T12:41:32.676834+00:00"
+  },
+  {
+    "url": "https://energycapitalandpower.africa-newsroom.com/press/organization-of-the-petroleum-exporting-countries-opec-african-continental-free-trade-area-afcfta-and-dangote-refinery-join-south-sudanese-ministers-on-the-south-sudan-oil-and-power-ssop-2026-keynote-stage?lang=en",
+    "title": "Organization of the Petroleum Exporting Countries (OPEC), African Continental Free Trade Area (AfCFTA) and Dangote Refinery Join South Sudanese Ministers on the South Sudan Oil & Power (SSOP) 2026 Keynote Stage",
+    "feed_creator_label": "APO Group",
+    "named_issuer_verified": false,
+    "feed_source_url": "https://energycapitalandpower.africa-newsroom.com/press/organization-of-the-petroleum-exporting-countries-opec-african-continental-free-trade-area-afcfta-and-dangote-refinery-join-south-sudanese-ministers-on-the-south-sudan-oil-and-power-ssop-2026-keynote-stage?lang=en",
+    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+    "feed_published_utc": "2026-11-22T08:00:08+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "category": "Oil & Energy",
+    "relevance_score": 87,
+    "relevance_evidence": [
+      "opec",
+      "petroleum",
+      "refinery"
+    ],
+    "provider": "Press Release Feed",
+    "content_kind": "company_or_newswire_press_release",
+    "status": "promotional_issuer_claim_requires_editorial_verification",
+    "first_collector_observed_utc": "2026-11-22T12:41:32.676834+00:00"
+  },
+  {
+    "url": "https://www.globenewswire.com/news-release/2026/11/22/3407937/0/en/trungnam-and-ansaldo-energia-sign-contract-to-supply-gas-turbines-for-ca-na-lng-power-plant.html",
+    "title": "Trungnam and Ansaldo Energia Sign Contract to Supply Gas Turbines for Ca Na LNG Power Plant",
+    "feed_creator_label": "GlobeNewswire",
+    "named_issuer_verified": false,
+    "feed_source_url": "https://www.globenewswire.com/news-release/2026/11/22/3407937/0/en/trungnam-and-ansaldo-energia-sign-contract-to-supply-gas-turbines-for-ca-na-lng-power-plant.html",
+    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+    "feed_published_utc": "2026-11-22T07:06:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "category": "Power & Electricity",
+    "relevance_score": 57,
+    "relevance_evidence": [
+      "gas turbines",
+      "power plant"
+    ],
+    "provider": "Press Release Feed",
+    "content_kind": "company_or_newswire_press_release",
+    "status": "promotional_issuer_claim_requires_editorial_verification",
+    "first_collector_observed_utc": "2026-11-22T12:41:32.676834+00:00"
+  },
+  {
     "url": "https://www.einpresswire.com/article/958120434/substation-transformers-for-middle-east-oil-and-gas-high-ambient-thermal-margin-and-short-circuit-engineering-by",
     "title": "Substation Transformers for Middle East Oil and Gas: High-Ambient Thermal Margin and Short-Circuit Engineering by",
     "feed_creator_label": "EIN Presswire",
@@ -18,45 +81,5 @@
     "content_kind": "company_or_newswire_press_release",
     "status": "promotional_issuer_claim_requires_editorial_verification",
     "first_collector_observed_utc": "2026-11-21T21:43:26.774222+00:00"
-  },
-  {
-    "url": "https://pressreach.com/tidewater-renewables-ltd-announces-the-filing-of-the-management-information-circular-for-its-special-meeting-of-shareholders-in-connection-with-the-proposed-plan-of-arrangement-with-tidewater-midstr",
-    "title": "TIDEWATER RENEWABLES LTD. ANNOUNCES THE FILING OF THE MANAGEMENT INFORMATION CIRCULAR FOR ITS SPECIAL MEETING OF SHAREHOLDERS, IN CONNECTION WITH THE PROPOSED PLAN OF ARRANGEMENT WITH TIDEWATER MIDSTREAM AND INFRASTRUCTURE LTD.",
-    "feed_creator_label": "Tidewater Renewables Ltd Featured Image: Megapixl @ erikdegraaf Disclaimer",
-    "named_issuer_verified": false,
-    "feed_source_url": "https://pressreach.com/tidewater-renewables-ltd-announces-the-filing-of-the-management-information-circular-for-its-special-meeting-of-shareholders-in-connection-with-the-proposed-plan-of-arrangement-with-tidewater-midstr",
-    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-    "feed_published_utc": "2026-11-21T06:31:01+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "category": "Power & Electricity",
-    "relevance_score": 24,
-    "relevance_evidence": [
-      "renewables"
-    ],
-    "provider": "Press Release Feed",
-    "content_kind": "company_or_newswire_press_release",
-    "status": "promotional_issuer_claim_requires_editorial_verification",
-    "first_collector_observed_utc": "2026-11-21T12:47:48.427736+00:00"
-  },
-  {
-    "url": "https://pressreach.com/tidewater-midstream-and-infrastructure-ltd-announces-the-filing-of-the-management-information-circular-for-its-special-meeting-of-shareholders-in-connection-with-the-proposed-plan-of-arrangement-wit",
-    "title": "TIDEWATER MIDSTREAM AND INFRASTRUCTURE LTD. ANNOUNCES THE FILING OF THE MANAGEMENT INFORMATION CIRCULAR FOR ITS SPECIAL MEETING OF SHAREHOLDERS, IN CONNECTION WITH THE PROPOSED PLAN OF ARRANGEMENT WITH TIDEWATER RENEWABLES LTD.",
-    "feed_creator_label": "Tidewater Midstream and Infrastructure Ltd. Featured Image: Depositphotos @ Jod Helihead Disclaimer",
-    "named_issuer_verified": false,
-    "feed_source_url": "https://pressreach.com/tidewater-midstream-and-infrastructure-ltd-announces-the-filing-of-the-management-information-circular-for-its-special-meeting-of-shareholders-in-connection-with-the-proposed-plan-of-arrangement-wit",
-    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-    "feed_published_utc": "2026-11-21T06:01:08+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "category": "Power & Electricity",
-    "relevance_score": 24,
-    "relevance_evidence": [
-      "renewables"
-    ],
-    "provider": "Press Release Feed",
-    "content_kind": "company_or_newswire_press_release",
-    "status": "promotional_issuer_claim_requires_editorial_verification",
-    "first_collector_observed_utc": "2026-11-21T12:47:48.427736+00:00"
   }
 ]

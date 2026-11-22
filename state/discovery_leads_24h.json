@@ -1,5 +1,53 @@
 [
   {
+    "url": "https://sputnikglobe.com/20261122/russian-drones-strike-ukrainian-energy-and-port-infrastructure-overnight-1125129869.html",
+    "title": "Russian Drones Strike Ukrainian Energy and Port Infrastructure Overnight",
+    "domain": "sputnikglobe.com",
+    "gdelt_first_seen_utc": "2026-11-22T06:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:energy",
+      "geopolitical_event:strike",
+      "world_context:russian"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T06:57:26.126178+00:00"
+  },
+  {
+    "url": "https://www.cubaheadlines.com/articles/346344",
+    "title": "U.S. Confirms: Approved Shipments of Food and Medicine Can Continue Through Mariel Despite Sanctions on Cuba's Maritime Sector",
+    "domain": "www.cubaheadlines.com",
+    "gdelt_first_seen_utc": "2026-11-22T04:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:shipments",
+      "geopolitical_event:sanctions",
+      "world_context:u.s."
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T04:42:36.026385+00:00"
+  },
+  {
     "url": "https://www.bbc.com/news/articles/c95y1gr27xplo",
     "title": "Strait of Hormuz swim highlights environmental cost of war",
     "domain": "www.bbc.com",
@@ -72,258 +120,6 @@
     "first_collector_observed_utc": "2026-11-21T19:54:02.760562+00:00"
   },
   {
-    "url": "https://www.middleeastmonitor.com/20261121-us-sanctions-iranian-oil-traders-government-insiders-over-alleged-oil-revenue-scheme",
-    "title": "US sanctions Iranian oil traders, government insiders over alleged oil revenue scheme",
-    "domain": "www.middleeastmonitor.com",
-    "gdelt_first_seen_utc": "2026-11-21T12:32:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 90,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_hook:oil",
-      "geopolitical_event:sanctions",
-      "world_context:iranian"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00",
-    "discovery_providers": [
-      "GDELT GAL RSS"
-    ]
-  },
-  {
-    "url": "https://www.middleeasteye.net/news/iran-says-newly-developed-air-defence-system-intercepted-us-drone-over-hormuz",
-    "title": "Iran says new air defence system intercepted US Reaper drone over Hormuz",
-    "domain": "www.middleeasteye.net",
-    "gdelt_first_seen_utc": "2026-11-21T12:31:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 90,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_hook:hormuz",
-      "geopolitical_event:drone",
-      "world_context:iran"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00",
-    "discovery_providers": [
-      "GDELT GAL RSS"
-    ]
-  },
-  {
-    "url": "https://www.ketv.com/article/lewis-pugh-strait-of-hormuz-swim-iran-war/74497133",
-    "title": "Endurance athlete swims in Strait of Hormuz to highlight Iran war's impact on wildlife",
-    "domain": "www.ketv.com",
-    "gdelt_first_seen_utc": "2026-11-21T12:31:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 90,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_hook:strait of hormuz",
-      "geopolitical_event:war",
-      "world_context:iran"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00",
-    "discovery_providers": [
-      "GDELT GAL RSS"
-    ]
-  },
-  {
-    "url": "https://www.aol.co.uk/articles/briton-swims-strait-hormuz-highlight-120534000.html",
-    "title": "Briton swims in Strait of Hormuz to highlight \u2018environmental cost of war\u2019 - AOL",
-    "domain": "www.aol.co.uk",
-    "gdelt_first_seen_utc": "2026-11-21T12:31:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 90,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_hook:strait of hormuz",
-      "geopolitical_event:war",
-      "world_context:strait of hormuz"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00",
-    "discovery_providers": [
-      "GDELT GAL RSS"
-    ]
-  },
-  {
-    "url": "https://kxly920.com/2026/11/21/strait-of-hormuz-attacks-have-increased-to-highest-level-since-iran-war-began",
-    "title": "Strait of Hormuz attacks have increased to highest level since Iran war began",
-    "domain": "kxly920.com",
-    "gdelt_first_seen_utc": "2026-11-21T12:17:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 90,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_hook:strait of hormuz",
-      "geopolitical_event:attacks",
-      "world_context:iran"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:32:19.802770+00:00"
-  },
-  {
-    "url": "https://www.newarkadvertiser.co.uk/national/briton-swims-in-strait-of-hormuz-to-highlight-environmental-cost-of-war-174588",
-    "title": "Briton swims in Strait of Hormuz to highlight \u2018environmental cost of war\u2019",
-    "domain": "www.newarkadvertiser.co.uk",
-    "gdelt_first_seen_utc": "2026-11-21T12:17:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 90,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_hook:strait of hormuz",
-      "geopolitical_event:war",
-      "world_context:strait of hormuz"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:32:19.802770+00:00"
-  },
-  {
-    "url": "https://www.newburytoday.co.uk/national/briton-swims-in-strait-of-hormuz-to-highlight-environmental-cost-of-war-174588",
-    "title": "Briton swims in Strait of Hormuz to highlight \u2018environmental cost of war\u2019",
-    "domain": "www.newburytoday.co.uk",
-    "gdelt_first_seen_utc": "2026-11-21T12:16:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 90,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_hook:strait of hormuz",
-      "geopolitical_event:war",
-      "world_context:strait of hormuz"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:32:19.802770+00:00"
-  },
-  {
-    "url": "https://www.ksbw.com/article/lewis-pugh-strait-of-hormuz-swim-iran-war/74497133",
-    "title": "Endurance athlete swims in Strait of Hormuz to highlight Iran war's impact on wildlife",
-    "domain": "www.ksbw.com",
-    "gdelt_first_seen_utc": "2026-11-21T12:16:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 90,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_hook:strait of hormuz",
-      "geopolitical_event:war",
-      "world_context:iran"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:32:19.802770+00:00"
-  },
-  {
-    "url": "https://www.kake.com/news/national/strait-of-hormuz-attacks-have-increased-to-highest-level-since-iran-war-began/article_a4749f3d-3247-4907-a39d-6795d12d82f0.html",
-    "title": "Strait of Hormuz attacks have increased to highest level since Iran war began",
-    "domain": "www.kake.com",
-    "gdelt_first_seen_utc": "2026-11-21T12:16:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 90,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_hook:strait of hormuz",
-      "geopolitical_event:attacks",
-      "world_context:iran"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:32:19.802770+00:00"
-  },
-  {
-    "url": "https://kxly920.com/2026/11/21/russian-attacks-on-ukraines-energy-grid-intensify-ahead-of-winter",
-    "title": "Russian attacks on Ukraine\u2019s energy grid intensify ahead of winter",
-    "domain": "kxly920.com",
-    "gdelt_first_seen_utc": "2026-11-21T12:16:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 90,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_hook:energy",
-      "geopolitical_event:attacks",
-      "world_context:russian"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:32:19.802770+00:00"
-  },
-  {
     "url": "http://www.haberport.com/piyasa/BRENT",
     "title": "Brent Crude Oil Last Day Financ | Piyasa | Haberport",
     "domain": "www.haberport.com",
@@ -345,6 +141,126 @@
     ],
     "status": "discovery_only_requires_publisher_verification",
     "first_collector_observed_utc": "2026-11-21T19:44:36.805901+00:00"
+  },
+  {
+    "url": "https://www.outlookindia.com/international/iran-attacks-bahrain-industrial-facility-us-bases-missile-drone-strikes",
+    "title": "Iran Attacks Bahrain: Industrial Facility Hit, US Bases Targeted | Outlook India",
+    "domain": "www.outlookindia.com",
+    "gdelt_first_seen_utc": "2026-11-22T06:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attacks",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T06:57:26.126178+00:00"
+  },
+  {
+    "url": "https://politicaldog101.com/2026/11/ukrainerussia-war-evening-day-number-1733-putin-wants-all-of-the-ukraine-they-are-just-hunkering-down",
+    "title": "Ukraine\u2026Russia War Evening\u2026 Day Number 1,733\u2026Putin wants ALL of the Ukraine\u2026They are just hunkering Down\u2026.",
+    "domain": "politicaldog101.com",
+    "gdelt_first_seen_utc": "2026-11-22T04:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:war",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T04:42:36.026385+00:00"
+  },
+  {
+    "url": "https://www.deccanchronicle.com/world/iran-claims-missile-drone-strikes-targeted-us-patriot-radars-in-bahrain-2006791",
+    "title": "Iran Claims Strikes on US Patriot Radars in Bahrain",
+    "domain": "www.deccanchronicle.com",
+    "gdelt_first_seen_utc": "2026-11-22T04:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strikes",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T04:42:36.026385+00:00"
+  },
+  {
+    "url": "http://www.middleeaststar.com/news/279447971/iran-claims-attack-on-us-patriot-systems-in-bahrain",
+    "title": "Iran claims attack on US Patriot systems in Bahrain",
+    "domain": "www.middleeaststar.com",
+    "gdelt_first_seen_utc": "2026-11-22T02:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T02:20:10.938918+00:00"
+  },
+  {
+    "url": "http://www.middleeaststar.com/news/279447730/iran-irgc-says-targeted-us-positions-at-2-bases-in-bahrain-with-missiles-drones",
+    "title": "Iran's IRGC says targeted U.S. positions at 2 bases in Bahrain with missiles, drones",
+    "domain": "www.middleeaststar.com",
+    "gdelt_first_seen_utc": "2026-11-22T02:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:missiles",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T02:20:10.938918+00:00"
   },
   {
     "url": "https://jowhar.com/russian-vessel-ablaze-in-baltic-sea-after-ukrainian-strike",
@@ -635,228 +551,6 @@
     "first_collector_observed_utc": "2026-11-21T19:44:36.805901+00:00"
   },
   {
-    "url": "https://www.middleeastmonitor.com/20261121-iran-urges-world-to-remember-scores-of-children-killed-in-us-airstrikes-on-school",
-    "title": "Iran urges world to remember scores of children killed in US airstrikes on school",
-    "domain": "www.middleeastmonitor.com",
-    "gdelt_first_seen_utc": "2026-11-21T12:32:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:airstrikes",
-      "world_context:iran/united states"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00",
-    "discovery_providers": [
-      "GDELT GAL RSS"
-    ]
-  },
-  {
-    "url": "https://laotimes.com/republican-senator-lindsey-graham-called-for-more-us-military-action-against-iran",
-    "title": "Republican Senator Lindsey Graham called for more US military action against Iran \u2013 The Lao Times",
-    "domain": "laotimes.com",
-    "gdelt_first_seen_utc": "2026-11-21T12:32:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:military",
-      "world_context:iran/united states"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00",
-    "discovery_providers": [
-      "GDELT GAL RSS"
-    ]
-  },
-  {
-    "url": "https://www.garoweonline.com/en/news/world/israel-rejects-trump-s-gaza-plan-signals-the-unilateral-strikes-on-iran-remain-on-table",
-    "title": "Israel rejects Trump\u2019s Gaza plan, signals the unilateral strikes on Iran remain on table | Garowe Online",
-    "domain": "www.garoweonline.com",
-    "gdelt_first_seen_utc": "2026-11-21T12:17:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:strikes",
-      "world_context:iran/israel"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:32:19.802770+00:00"
-  },
-  {
-    "url": "https://tribune.com.pk/story/2641517/us-vice-president-vance-declines-to-say-he-would-have-ordered-iran-strikes",
-    "title": "US Vice President Vance declines to say he would have ordered Iran strikes | The Express Tribune",
-    "domain": "tribune.com.pk",
-    "gdelt_first_seen_utc": "2026-11-21T12:16:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:strikes",
-      "world_context:iran/united states"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:32:19.802770+00:00"
-  },
-  {
-    "url": "https://www.bankingnews.gr/diethni/articles/912461/alarm-in-sicily-as-massive-us-kc-135-stratotanker-diverts-from-sigonella-anti-iran-drone-base-over-mystery-uav%20title=",
-    "title": "Alarm in Sicily as massive US KC-135 Stratotanker diverts from Sigonella anti-Iran drone base over mystery UAV",
-    "domain": "www.bankingnews.gr",
-    "gdelt_first_seen_utc": "2026-11-21T12:16:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:drone",
-      "world_context:iran/united states"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:32:19.802770+00:00"
-  },
-  {
-    "url": "https://news.az/news/live-russia-launches-deadly-missile-barrage-on-ukraine",
-    "title": "LIVE: Russia launches deadly missile barrage on Ukraine | News.az",
-    "domain": "news.az",
-    "gdelt_first_seen_utc": "2026-11-21T12:16:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:missile",
-      "world_context:russia/ukraine"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:32:19.802770+00:00"
-  },
-  {
-    "url": "https://www.bankingnews.gr/diethni/articles/912461/alarm-in-sicily-as-massive-us-kc-135-stratotanker-diverts-from-sigonella-anti-iran-drone-base-over-mystery-uav",
-    "title": "Alarm in Sicily as massive US KC-135 Stratotanker diverts from Sigonella anti-Iran drone base over mystery UAV",
-    "domain": "www.bankingnews.gr",
-    "gdelt_first_seen_utc": "2026-11-21T12:16:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:drone",
-      "world_context:iran/united states"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:32:19.802770+00:00"
-  },
-  {
-    "url": "https://www.bankingnews.gr/diethni/articles/912456/ominous-reversal-iran-issues-nuclear-ultimatum-against-us-after-downing-58-mq-drones-as-f-16-sends-sos",
-    "title": "Ominous reversal! Iran issues nuclear ultimatum against US after downing 58 MQ drones as F-16 sends SOS",
-    "domain": "www.bankingnews.gr",
-    "gdelt_first_seen_utc": "2026-11-21T12:16:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:drones",
-      "world_context:iran/united states"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:32:19.802770+00:00"
-  },
-  {
-    "url": "https://www.garoweonline.com/en/news/world/netanyahu-says-iran-is-developing-missiles-capable-of-reaching-u-s-territory",
-    "title": "Netanyahu Says Iran Is Developing Missiles Capable of Reaching U.S. Territory | Garowe Online",
-    "domain": "www.garoweonline.com",
-    "gdelt_first_seen_utc": "2026-11-21T12:16:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:missiles",
-      "world_context:iran/united states"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:32:19.802770+00:00"
-  },
-  {
     "url": "https://www.hellenicshippingnews.com/asia-lng-moc-performance-deliveries-conclude-for-record-volume-of-148-5-tbtu-during-august-moc-2",
     "title": "ASIA LNG MOC PERFORMANCE: Deliveries conclude for record volume of 148.5 TBtu during August MOC",
     "domain": "www.hellenicshippingnews.com",
@@ -901,10 +595,10 @@
     "first_collector_observed_utc": "2026-11-21T19:54:02.760562+00:00"
   },
   {
-    "url": "https://nieuws.nl/economie/argentinie-komt-met-stimuleringsmaatregelen-voor-fors-lng-project",
-    "title": "Argentini\u00eb komt met stimuleringsmaatregelen voor fors lng-project",
-    "domain": "nieuws.nl",
-    "gdelt_first_seen_utc": "2026-11-21T12:17:00+00:00",
+    "url": "https://www.business-standard.com/economy/news/oil-gas-import-bill-up-60-in-oct-as-brent-surges-lpg-use-declines-126112200197_1.html",
+    "title": "Oil, gas import bill up 60% in Oct as Brent surges, LPG use declines",
+    "domain": "www.business-standard.com",
+    "gdelt_first_seen_utc": "2026-11-22T06:46:00+00:00",
     "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
     "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
     "publisher_published_utc": null,
@@ -914,13 +608,57 @@
     "topics": [
       "gal_rolling_sample"
     ],
-    "relevance_score": 45,
-    "category": "LNG",
+    "relevance_score": 33,
+    "category": "Oil & Energy",
     "relevance_evidence": [
-      "lng"
+      "brent"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:32:19.802770+00:00"
+    "first_collector_observed_utc": "2026-11-22T06:57:26.126178+00:00"
+  },
+  {
+    "url": "https://www.inewsgr.com/292/nikos-tsafos-ta-diadochika-lathi-apo-tin-tourkiki-dimokratia-tis-voreias-kyprou-sta-omologa-tis-ExxonMobil---giati-vrisketai-sto-mati-tou-kyklona.htm",
+    "title": "\u039d\u03af\u03ba\u03bf\u03c2 \u03a4\u03c3\u03ac\u03c6\u03bf\u03c2: \u03a4\u03b1 \u03b4\u03b9\u03b1\u03b4\u03bf\u03c7\u03b9\u03ba\u03ac \u03bb\u03ac\u03b8\u03b7 \u03b1\u03c0\u03cc \u03c4\u03b7\u03bd \"\u03a4\u03bf\u03c5\u03c1\u03ba\u03b9\u03ba\u03ae \u0394\u03b7\u03bc\u03bf\u03ba\u03c1\u03b1\u03c4\u03af\u03b1 \u03c4\u03b7\u03c2 \u0392\u03cc\u03c1\u03b5\u03b9\u03b1\u03c2 \u039a\u03cd\u03c0\u03c1\u03bf\u03c5\" \u03c3\u03c4\u03b1 \u03bf\u03bc\u03cc\u03bb\u03bf\u03b3\u03b1 \u03c4\u03b7\u03c2 ExxonMobil - \u0393\u03b9\u03b1\u03c4\u03af \u03b2\u03c1\u03af\u03c3\u03ba\u03b5\u03c4\u03b1\u03b9 \u03c3\u03c4\u03bf \u03bc\u03ac\u03c4\u03b9 \u03c4\u03bf\u03c5 \u03ba\u03c5\u03ba\u03bb\u03ce\u03bd\u03b1",
+    "domain": "www.inewsgr.com",
+    "gdelt_first_seen_utc": "2026-11-22T06:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "exxonmobil"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T06:57:26.126178+00:00"
+  },
+  {
+    "url": "http://www.middleeaststar.com/news/279447830/iran-to-ration-electricity-as-world-awaits-trump-next-move",
+    "title": "Iran To Ration Electricity As World Awaits Trump's Next Move",
+    "domain": "www.middleeaststar.com",
+    "gdelt_first_seen_utc": "2026-11-22T02:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T02:20:10.938918+00:00"
   },
   {
     "url": "https://punchng.com/geometric-power-model-can-transform-nigerias-electricity-sector-nnaji",
@@ -1099,10 +837,10 @@
     "first_collector_observed_utc": "2026-11-21T19:54:02.760562+00:00"
   },
   {
-    "url": "https://gr.euronews.com/2026/11/20/us-chevron-ksekina-erevnes-gia-hydrocarbons",
-    "title": "\u0397 \u03b1\u03bc\u03b5\u03c1\u03b9\u03ba\u03b1\u03bd\u03b9\u03ba\u03ae Chevron \u03be\u03b5\u03ba\u03b9\u03bd\u03ac \u03ad\u03c1\u03b5\u03c5\u03bd\u03b5\u03c2 \u03b3\u03b9\u03b1 \u03c5\u03b4\u03c1\u03bf\u03b3\u03bf\u03bd\u03ac\u03bd\u03b8\u03c1\u03b1\u03ba\u03b5\u03c2 \u03c3\u03c4\u03bf \u03bd\u03cc\u03c4\u03b9\u03bf \u0399\u03cc\u03bd\u03b9\u03bf",
-    "domain": "gr.euronews.com",
-    "gdelt_first_seen_utc": "2026-11-21T12:31:00+00:00",
+    "url": "https://www.sundaytimes.lk/261122/business-times/sinopec-retreat-affects-refinery-future-plans-664357.html",
+    "title": "Sinopec retreat affects refinery future plans",
+    "domain": "www.sundaytimes.lk",
+    "gdelt_first_seen_utc": "2026-11-22T04:31:00+00:00",
     "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
     "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
     "publisher_published_utc": null,
@@ -1112,41 +850,13 @@
     "topics": [
       "gal_rolling_sample"
     ],
-    "relevance_score": 33,
+    "relevance_score": 30,
     "category": "Oil & Energy",
     "relevance_evidence": [
-      "chevron"
+      "refinery"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00",
-    "discovery_providers": [
-      "GDELT GAL RSS"
-    ]
-  },
-  {
-    "url": "https://www.moneycontrol.com/us-markets/stockpricequote/chevron/CVX",
-    "title": "Chevron Share Price Live Today: CVX Stock Price Live, News, Quotes & Chart - Moneycontrol",
-    "domain": "www.moneycontrol.com",
-    "gdelt_first_seen_utc": "2026-11-21T04:01:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 33,
-    "category": "Oil & Energy",
-    "relevance_evidence": [
-      "chevron"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T04:07:13.117963+00:00",
-    "discovery_providers": [
-      "GDELT GAL RSS"
-    ]
+    "first_collector_observed_utc": "2026-11-22T04:42:36.026385+00:00"
   },
   {
     "url": "https://www.moroccoworldnews.com/2026/11/347629/morocco-launches-construction-of-mad-3-million-solar-power-plant-in-jerada",
@@ -1369,10 +1079,10 @@
     "first_collector_observed_utc": "2026-11-21T19:44:36.805901+00:00"
   },
   {
-    "url": "https://www.samaa.tv/2087360721-ogdcl-partners-with-baker-hughes-to-boost-oil-gas-production",
-    "title": "OGDCL, Baker Hughes partner to boost oil and gas output",
-    "domain": "www.samaa.tv",
-    "gdelt_first_seen_utc": "2026-11-21T12:16:00+00:00",
+    "url": "https://www.tnp.no/norway/economy/5240-110-billion-decline-in-petroleum-revenues-of-norway",
+    "title": "110 Billion Decline in Petroleum Revenues of Norway - The Nordic Page",
+    "domain": "www.tnp.no",
+    "gdelt_first_seen_utc": "2026-11-22T02:17:00+00:00",
     "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
     "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
     "publisher_published_utc": null,
@@ -1382,13 +1092,13 @@
     "topics": [
       "gal_rolling_sample"
     ],
-    "relevance_score": 30,
+    "relevance_score": 27,
     "category": "Oil & Energy",
     "relevance_evidence": [
-      "oil and gas"
+      "petroleum"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:32:19.802770+00:00"
+    "first_collector_observed_utc": "2026-11-22T02:20:10.938918+00:00"
   },
   {
     "url": "https://www.spokanepublicradio.org/regional-news/2026-11-21/proposed-transmission-line-under-the-columbia-river-raises-concerns-opportunities",
@@ -1455,109 +1165,5 @@
     ],
     "status": "discovery_only_requires_publisher_verification",
     "first_collector_observed_utc": "2026-11-22T00:08:33.881087+00:00"
-  },
-  {
-    "url": "https://www.hawaiitribune-herald.com/2026/11/21/nation-world-news/big-oil-says-recycled-fracking-wastewater-is-safe-texas-is-about-to-test-it",
-    "title": "Big oil says recycled fracking wastewater is safe. Texas is about to test it. - Hawaii Tribune-Herald",
-    "domain": "www.hawaiitribune-herald.com",
-    "gdelt_first_seen_utc": "2026-11-21T12:31:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 27,
-    "category": "Oil & Energy",
-    "relevance_evidence": [
-      "fracking"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00",
-    "discovery_providers": [
-      "GDELT GAL RSS"
-    ]
-  },
-  {
-    "url": "https://africanreview.com/ict/linx-expands-interconnection-at-paix-nairobi",
-    "title": "LINX expands interconnection at PAIX Nairobi",
-    "domain": "africanreview.com",
-    "gdelt_first_seen_utc": "2026-11-21T04:01:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 27,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "interconnection"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T04:07:13.117963+00:00",
-    "discovery_providers": [
-      "GDELT GAL RSS"
-    ]
-  },
-  {
-    "url": "https://www.sungazette.com/news/top-news/2026/11/plan-expected-to-improve-firefighter-safety-at-old-lycoming-township-volunteer-fire-company",
-    "title": "Plan expected to improve firefighter safety at Old Lycoming Township Volunteer Fire Company",
-    "domain": "www.sungazette.com",
-    "gdelt_first_seen_utc": "2026-11-21T06:45:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "us_natural_gas",
-    "topics": [
-      "us_natural_gas"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
-  },
-  {
-    "url": "https://www.sungazette.com/news/top-news/2026/11/2027-lycoming-county-real-estate-taxes-to-remain-at-7-mills",
-    "title": "2027 Lycoming County real estate taxes to remain at 7 mills - Williamsport Sun - Gazette",
-    "domain": "www.sungazette.com",
-    "gdelt_first_seen_utc": "2026-11-21T06:45:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "us_natural_gas",
-    "topics": [
-      "us_natural_gas"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
-  },
-  {
-    "url": "https://www.dailypress.net/opinion/editorial/2026/11/carbon-monoxide-poisoning-a-real-danger-in-winter",
-    "title": "Carbon monoxide poisoning a real danger in winter",
-    "domain": "www.dailypress.net",
-    "gdelt_first_seen_utc": "2026-11-21T06:45:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "us_natural_gas",
-    "topics": [
-      "us_natural_gas"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
   }
 ]
