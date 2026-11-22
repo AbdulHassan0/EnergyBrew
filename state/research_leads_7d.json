@@ -1,5 +1,237 @@
 [
   {
+    "url": "https://littleapplepost.com/posts/2155de1c-ecfa-40d8-a281-5a8e5f6ed5a7",
+    "title": "Iran strikes 3 oil tankers as it shows off new missile launchers",
+    "domain": "littleapplepost.com",
+    "gdelt_first_seen_utc": "2026-11-22T15:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:oil",
+      "geopolitical_event:strikes",
+      "world_context:iran"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T15:14:06.105288+00:00"
+  },
+  {
+    "url": "https://www.kxlh.com/world/russian-attack-near-ukraines-capital-strikes-apartment-building-killing-2",
+    "title": "Russian attack near Ukraine's capital strikes apartment building, killing 2",
+    "domain": "www.kxlh.com",
+    "gdelt_first_seen_utc": "2026-11-22T15:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T15:14:06.105288+00:00"
+  },
+  {
+    "url": "https://www.wsls.com/business/2026/11/22/air-alert-sounds-in-kaliningrad-as-finland-tries-to-extinguish-fire-aboard-russian-cargo-ship",
+    "title": "Russian attack near Ukraine's capital strikes apartment building, killing 2 and wounding 4 others",
+    "domain": "www.wsls.com",
+    "gdelt_first_seen_utc": "2026-11-22T15:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T15:14:06.105288+00:00"
+  },
+  {
+    "url": "https://www.lex18.com/world/russian-attack-near-ukraines-capital-strikes-apartment-building-killing-2",
+    "title": "Russian attack near Ukraine's capital strikes apartment building, killing 2",
+    "domain": "www.lex18.com",
+    "gdelt_first_seen_utc": "2026-11-22T15:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T15:14:06.105288+00:00"
+  },
+  {
+    "url": "https://www.clickorlando.com/business/2026/11/22/air-alert-sounds-in-kaliningrad-as-finland-tries-to-extinguish-fire-aboard-russian-cargo-ship",
+    "title": "Russian attack near Ukraine's capital strikes apartment building, killing 2 and wounding 4 others",
+    "domain": "www.clickorlando.com",
+    "gdelt_first_seen_utc": "2026-11-22T15:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T15:14:06.105288+00:00"
+  },
+  {
+    "url": "https://www.kxlf.com/world/russian-attack-near-ukraines-capital-strikes-apartment-building-killing-2",
+    "title": "Russian attack near Ukraine's capital strikes apartment building, killing 2",
+    "domain": "www.kxlf.com",
+    "gdelt_first_seen_utc": "2026-11-22T15:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T15:14:06.105288+00:00"
+  },
+  {
+    "url": "https://koran-jakarta.com/2026-11-22/proyek-lng-abadi-masela-buka-peluang-kerja-ribuan-warga-kepulauan-tanimbar",
+    "title": "Proyek LNG Abadi Masela Buka Peluang Kerja Ribuan Warga Kepulauan Tanimbar",
+    "domain": "koran-jakarta.com",
+    "gdelt_first_seen_utc": "2026-11-22T15:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 45,
+    "category": "LNG",
+    "relevance_evidence": [
+      "lng"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T15:14:06.105288+00:00"
+  },
+  {
+    "url": "https://www.ilgazzettino.it:443/esteri/intelligenza_artificiale_disastro_clima_data_center-9906265.html",
+    "title": "L'intelligenza artificiale sta diventando un disastro per il clima: i data center inquinano quanto interi Paesi VIDEO",
+    "domain": "www.ilgazzettino.it:443",
+    "gdelt_first_seen_utc": "2026-11-22T15:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T15:14:06.105288+00:00"
+  },
+  {
+    "url": "https://www.tnp.no/norway/economy/3214-dnv-launches-innovation-concept-for-efficient-offshore-power-generation",
+    "title": "DNV Launches Innovation Concept for Efficient Offshore Power Generation - The Nordic Page",
+    "domain": "www.tnp.no",
+    "gdelt_first_seen_utc": "2026-11-22T15:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "power generation"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T15:14:06.105288+00:00"
+  },
+  {
+    "url": "https://journalstar.com/news/local/business/article_fedff3ed-a7f5-47b8-bbb1-77a980917269.html",
+    "title": "NextEra proposing new Lancaster County solar farm. Neighbors have concerns.",
+    "domain": "journalstar.com",
+    "gdelt_first_seen_utc": "2026-11-22T15:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "nextera"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T15:14:06.105288+00:00"
+  },
+  {
     "url": "https://maritime-executive.com/article/empty-tankers-are-extending-iran-s-ability-to-wait-out-the-u-s-blockade",
     "title": "Empty Tankers Are Extending Iran's Ability to Wait Out the U.S. Blockade",
     "domain": "maritime-executive.com",
