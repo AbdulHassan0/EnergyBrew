@@ -24,6 +24,54 @@
     "first_collector_observed_utc": "2026-11-20T13:08:58.711900+00:00"
   },
   {
+    "url": "https://www.bbc.com/news/articles/c95y1gr27xplo",
+    "title": "Strait of Hormuz swim highlights environmental cost of war",
+    "domain": "www.bbc.com",
+    "gdelt_first_seen_utc": "2026-11-22T00:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:strait of hormuz",
+      "geopolitical_event:war",
+      "world_context:strait of hormuz"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T00:08:33.881087+00:00"
+  },
+  {
+    "url": "https://www.moonofalabama.org/2026/11/war-on-iran-tanker-convoy-will-challenge-u-s-blockade.html/comment-page-4",
+    "title": "War On Iran: \u2013 Tanker Convoy Will Challenge U.S. Blockade \u2013 Moon of Alabama",
+    "domain": "www.moonofalabama.org",
+    "gdelt_first_seen_utc": "2026-11-21T23:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:tanker",
+      "geopolitical_event:blockade",
+      "world_context:iran"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T23:56:58.797771+00:00"
+  },
+  {
     "url": "https://abcnews.com/Business/wireStory/iran-strikes-3-tankers-shows-off-missile-launchers-138345075",
     "title": "Iran strikes 3 tankers as it shows off missile launchers, and other Mideast news",
     "domain": "abcnews.com",
@@ -1829,6 +1877,126 @@
     "discovery_providers": [
       "GDELT GAL RSS"
     ]
+  },
+  {
+    "url": "https://jowhar.com/russian-vessel-ablaze-in-baltic-sea-after-ukrainian-strike",
+    "title": "Russian Vessel Ablaze in Baltic Sea After Ukrainian Strike - Jowhar News Leader | Somali News",
+    "domain": "jowhar.com",
+    "gdelt_first_seen_utc": "2026-11-22T00:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T00:08:33.881087+00:00"
+  },
+  {
+    "url": "https://kesq.com/news/national-world/cnn-world/2026/11/21/russian-triple-tap-attack-in-ukraine-kills-emergency-worker-and-7-year-old-in-zelenskys-home-city-2",
+    "title": "Russian \u2018triple-tap\u2019 attack in Ukraine kills emergency worker and 7-year-old in Zelensky\u2019s home city",
+    "domain": "kesq.com",
+    "gdelt_first_seen_utc": "2026-11-21T23:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T23:56:58.797771+00:00"
+  },
+  {
+    "url": "https://tribune.com.pk/story/2641554/iranian-army-claims-it-targeted-us-f-16-jet-with-missile-over-gulf",
+    "title": "Iranian army claims it targeted US F-16 jet with missile over Gulf | The Express Tribune",
+    "domain": "tribune.com.pk",
+    "gdelt_first_seen_utc": "2026-11-21T21:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:missile",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T21:43:25.473269+00:00"
+  },
+  {
+    "url": "https://www.breitbart.com/news/russian-cargo-ship-hit-by-drone-in-baltic-finland-says",
+    "title": "Russian cargo ship catches fire after Ukrainian strike in Baltic - Breitbart",
+    "domain": "www.breitbart.com",
+    "gdelt_first_seen_utc": "2026-11-21T21:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T21:43:25.473269+00:00"
+  },
+  {
+    "url": "https://www.winnipegsun.com/news/world/russian-cargo-ship-catches-fire-after-ukrainian-strike-in-baltic/article_2682e826-3f1d-5302-ac84-a720776ead33.html",
+    "title": "Russian cargo ship catches fire after Ukrainian strike in Baltic",
+    "domain": "www.winnipegsun.com",
+    "gdelt_first_seen_utc": "2026-11-21T21:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T21:43:25.473269+00:00"
   },
   {
     "url": "https://www.theyeshivaworld.com/news/israel-news/2626048/iran-showdown-u-s-and-israel-considering-new-strikes-on-iran-within-days-cbs-reports.html",
@@ -6814,6 +6982,160 @@
     "status": "discovery_only_requires_publisher_verification"
   },
   {
+    "url": "https://punchng.com/geometric-power-model-can-transform-nigerias-electricity-sector-nnaji",
+    "title": "Geometric Power model can transform Nigeria\u2019s electricity sector \u2014 Nnaji",
+    "domain": "punchng.com",
+    "gdelt_first_seen_utc": "2026-11-22T00:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T00:08:33.881087+00:00"
+  },
+  {
+    "url": "https://www.koat.com/article/gas-prices-down-186-from-a-month-ago-ahead-of-thanksgiving/74498547",
+    "title": "Gas prices down 18.6% from a month ago ahead of Thanksgiving",
+    "domain": "www.koat.com",
+    "gdelt_first_seen_utc": "2026-11-22T00:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T00:08:33.881087+00:00"
+  },
+  {
+    "url": "https://www.investimentosenoticias.com.br/noticias/mercado/producao-de-petroleo-na-guiana-atinge-mil-barris-por-dia-em-novembro-impulsionada-pela-exxon-mobil-xom",
+    "title": "Produ\u00e7\u00e3o de Petr\u00f3leo na Guiana Atinge 894 mil Barris por Dia em Novembro, Impulsionada pela Exxon Mobil (XOM) - Investimentos e Not\u00edcias",
+    "domain": "www.investimentosenoticias.com.br",
+    "gdelt_first_seen_utc": "2026-11-22T00:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "exxon mobil"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T00:08:33.881087+00:00"
+  },
+  {
+    "url": "https://tribune.com.pk/story/2641579/easing-oil-prices-fail-to-lift-psx",
+    "title": "Easing oil prices fail to lift PSX | The Express Tribune",
+    "domain": "tribune.com.pk",
+    "gdelt_first_seen_utc": "2026-11-21T23:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "oil prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T23:56:58.797771+00:00"
+  },
+  {
+    "url": "https://albeu.com/english/mickoski-warns-of-a-difficult-winter-and-high-market-prices-for-electricity-and-fuels/1110714",
+    "title": "Mickoski warns of a difficult winter and high market prices for electricity and fuels - Albeu.com",
+    "domain": "albeu.com",
+    "gdelt_first_seen_utc": "2026-11-21T21:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T21:43:25.473269+00:00"
+  },
+  {
+    "url": "https://albeu.com/english/how-secure-will-the-electricity-supply-in-kosovo-be-during-this-winter/1109862",
+    "title": "How secure will the electricity supply in Kosovo be during this winter? - Albeu.com",
+    "domain": "albeu.com",
+    "gdelt_first_seen_utc": "2026-11-21T21:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T21:43:25.473269+00:00"
+  },
+  {
+    "url": "http://www.chronline.com/stories/a-thanksgiving-treat-in-the-offing-lower-gas-prices,412176",
+    "title": "A Thanksgiving treat in the offing: Lower gas prices - The Daily Chronicle",
+    "domain": "www.chronline.com",
+    "gdelt_first_seen_utc": "2026-11-21T21:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T21:43:25.473269+00:00"
+  },
+  {
     "url": "https://www.nigerianeye.com/2026/11/i-guarantee-you-improvement-in.html",
     "title": "I guarantee you improvement in electricity, Tinubu tells Nigerians",
     "domain": "www.nigerianeye.com",
@@ -8864,6 +9186,72 @@
       "gas supply"
     ],
     "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.moroccoworldnews.com/2026/11/347629/morocco-launches-construction-of-mad-3-million-solar-power-plant-in-jerada",
+    "title": "Morocco Launches Construction of MAD $3 Million Solar Power Plant in Jerada",
+    "domain": "www.moroccoworldnews.com",
+    "gdelt_first_seen_utc": "2026-11-22T00:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "power plant"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T00:08:33.881087+00:00"
+  },
+  {
+    "url": "https://www.newser.com/story/400237/could-geothermal-energy-be-a-data-center-power-solution.html",
+    "title": "Could Geothermal Energy Be a Data Center Power Solution?",
+    "domain": "www.newser.com",
+    "gdelt_first_seen_utc": "2026-11-21T23:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T23:56:58.797771+00:00"
+  },
+  {
+    "url": "https://www.greanvillepost.com/breaking-ansarallah-hammers-saudi-power-plant-and-key-port-w-lt-col-anthony-aguilar",
+    "title": "BREAKING: ANSARALLAH HAMMERS SAUDI POWER PLANT AND KEY PORT \u2013 w/ Lt Col. Anthony Aguilar",
+    "domain": "www.greanvillepost.com",
+    "gdelt_first_seen_utc": "2026-11-21T21:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "power plant"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-21T21:43:25.473269+00:00"
   },
   {
     "url": "https://en.shafaqna.com/492695/shares-of-chip-and-data-center-firms-tumble",
@@ -12004,6 +12392,72 @@
       "vistra"
     ],
     "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.spokanepublicradio.org/regional-news/2026-11-21/proposed-transmission-line-under-the-columbia-river-raises-concerns-opportunities",
+    "title": "Proposed transmission line under the Columbia River raises concerns, opportunities",
+    "domain": "www.spokanepublicradio.org",
+    "gdelt_first_seen_utc": "2026-11-22T00:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "transmission line"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T00:08:33.881087+00:00"
+  },
+  {
+    "url": "https://www.stock-world.de/petrobras-aktie-foerderziel-fuer-2026-ist-hochgeschraubt",
+    "title": "Petrobras Aktie: F\u00f6rderziel f\u00fcr 2026 ist hochgeschraubt",
+    "domain": "www.stock-world.de",
+    "gdelt_first_seen_utc": "2026-11-22T00:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "petrobras"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T00:08:33.881087+00:00"
+  },
+  {
+    "url": "https://www.stock-world.de/aktie/petrobras-brpetracnpr6",
+    "title": "Petrobras Aktie - Kurs, Chart & Analyse | BRPETRACNPR6",
+    "domain": "www.stock-world.de",
+    "gdelt_first_seen_utc": "2026-11-22T00:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "petrobras"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T00:08:33.881087+00:00"
   },
   {
     "url": "https://www.hawaiitribune-herald.com/2026/11/21/nation-world-news/big-oil-says-recycled-fracking-wastewater-is-safe-texas-is-about-to-test-it",

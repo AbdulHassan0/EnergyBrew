@@ -1,37 +1,37 @@
 {
-  "generated_utc": "2026-11-21T21:43:26.865417+00:00",
+  "generated_utc": "2026-11-22T02:20:12.597081+00:00",
   "status": "research_only_not_approved",
-  "unique_relevant_urls_7d": 698,
+  "unique_relevant_urls_7d": 715,
   "selected_research_links": 32,
-  "unique_domains_in_selection": 21,
+  "unique_domains_in_selection": 20,
   "queue_counts": {
-    "older_official_context": 58,
+    "older_official_context": 59,
     "regulatory_date_only": 6,
-    "discovery_unverified": 594,
-    "specialist_publisher_24h": 2,
+    "discovery_unverified": 611,
+    "specialist_publisher_24h": 1,
     "company_release_unverified": 38
   },
   "selected_category_counts": {
     "Natural Gas": 5,
-    "LNG": 6,
+    "LNG": 7,
     "Power & Electricity": 8,
-    "Oil & Energy": 4,
+    "Oil & Energy": 3,
     "Infrastructure & Investment": 1,
     "Geopolitics": 8
   },
   "selected_topic_coverage_counts": {
     "Natural Gas": 5,
-    "LNG": 6,
+    "LNG": 7,
     "Power & Electricity": 8,
-    "Oil & Energy": 6,
+    "Oil & Energy": 7,
     "Infrastructure & Investment": 14,
     "Geopolitics": 8
   },
   "missing_categories": [],
   "publisher_timestamped_official_24h": 0,
-  "publisher_timestamped_specialist_24h": 2,
+  "publisher_timestamped_specialist_24h": 1,
   "system_operator_primary_24h": 0,
-  "likely_same_event_links_suppressed": 9,
+  "likely_same_event_links_suppressed": 5,
   "discovery_publisher_dates_verified": 0,
   "promotional_or_language_review_count": 0,
   "stories": [
@@ -263,6 +263,38 @@
       "origin": "official_rss",
       "time_basis": "specialist_publisher_rss_timestamp",
       "observed_time_utc": "2026-11-20T12:30:00+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
+      "within_24h_on_own_time_basis": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "older_official_context",
+      "rank": 120
+    },
+    {
+      "title": "Iran Moves to Restart Oil Exports Despite U.S. Naval Blockade",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Moves-to-Restart-Oil-Exports-Despite-US-Naval-Blockade.html",
+      "domain": "oilprice.com",
+      "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00",
+      "local_collection_time_known": true,
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics",
+        "Oil & Energy"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:oil",
+        "geopolitical_event:blockade",
+        "world_context:iran"
+      ],
+      "origin": "official_rss",
+      "time_basis": "specialist_publisher_rss_timestamp",
+      "observed_time_utc": "2026-11-20T09:00:00+00:00",
       "publisher_time_verified": true,
       "date_confidence": "publisher_rss_timestamp",
       "within_24h_on_own_time_basis": false,
@@ -553,6 +585,69 @@
       "rank": 106
     },
     {
+      "title": "Strait of Hormuz swim highlights environmental cost of war",
+      "url": "https://www.bbc.com/news/articles/c95y1gr27xplo",
+      "domain": "www.bbc.com",
+      "first_collector_observed_utc": "2026-11-22T00:08:33.881087+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:strait of hormuz",
+        "geopolitical_event:war",
+        "world_context:strait of hormuz"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-22T00:01:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
+    },
+    {
+      "title": "War On Iran: – Tanker Convoy Will Challenge U.S. Blockade – Moon of Alabama",
+      "url": "https://www.moonofalabama.org/2026/11/war-on-iran-tanker-convoy-will-challenge-u-s-blockade.html/comment-page-4",
+      "domain": "www.moonofalabama.org",
+      "first_collector_observed_utc": "2026-11-21T23:56:58.797771+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics",
+        "Oil & Energy"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:tanker",
+        "geopolitical_event:blockade",
+        "world_context:iran"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-21T23:47:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
+    },
+    {
       "title": "Iran strikes 3 tankers as it shows off missile launchers, and other Mideast news",
       "url": "https://abcnews.com/Business/wireStory/iran-strikes-3-tankers-shows-off-missile-launchers-138345075",
       "domain": "abcnews.com",
@@ -647,133 +742,6 @@
       "rank": 102
     },
     {
-      "title": "Endurance athlete swims in Strait of Hormuz to highlight Iran war's impact on wildlife",
-      "url": "https://www.ketv.com/article/lewis-pugh-strait-of-hormuz-swim-iran-war/74497133",
-      "domain": "www.ketv.com",
-      "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:strait of hormuz",
-        "geopolitical_event:war",
-        "world_context:iran"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-21T12:31:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102,
-      "related_reports": [
-        {
-          "title": "Endurance athlete swims in Strait of Hormuz to highlight Iran war's impact on wildlife",
-          "url": "https://www.ksbw.com/article/lewis-pugh-strait-of-hormuz-swim-iran-war/74497133",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        }
-      ]
-    },
-    {
-      "title": "Briton swims in Strait of Hormuz to highlight ‘environmental cost of war’ - AOL",
-      "url": "https://www.aol.co.uk/articles/briton-swims-strait-hormuz-highlight-120534000.html",
-      "domain": "www.aol.co.uk",
-      "first_collector_observed_utc": "2026-11-21T12:46:20.769058+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:strait of hormuz",
-        "geopolitical_event:war",
-        "world_context:strait of hormuz"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-21T12:31:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102,
-      "related_reports": [
-        {
-          "title": "Briton swims in Strait of Hormuz to highlight ‘environmental cost of war’",
-          "url": "https://www.newarkadvertiser.co.uk/national/briton-swims-in-strait-of-hormuz-to-highlight-environmental-cost-of-war-174588",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "Briton swims in Strait of Hormuz to highlight ‘environmental cost of war’",
-          "url": "https://www.newburytoday.co.uk/national/briton-swims-in-strait-of-hormuz-to-highlight-environmental-cost-of-war-174588",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        }
-      ]
-    },
-    {
-      "title": "Strait of Hormuz attacks have increased to highest level since Iran war began",
-      "url": "https://kxly920.com/2026/11/21/strait-of-hormuz-attacks-have-increased-to-highest-level-since-iran-war-began",
-      "domain": "kxly920.com",
-      "first_collector_observed_utc": "2026-11-21T12:32:19.802770+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:strait of hormuz",
-        "geopolitical_event:attacks",
-        "world_context:iran"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-21T12:17:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102,
-      "related_reports": [
-        {
-          "title": "Strait of Hormuz attacks have increased to highest level since Iran war began",
-          "url": "https://www.kake.com/news/national/strait-of-hormuz-attacks-have-increased-to-highest-level-since-iran-war-began/article_a4749f3d-3247-4907-a39d-6795d12d82f0.html",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        }
-      ]
-    },
-    {
       "title": "Exelon Corporation v. PJM Interconnection, L.L.C.; Notice Establishing Comment Period",
       "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23611/exelon-corporation-v-pjm-interconnection-llc-notice-establishing-comment-period",
       "domain": "www.federalregister.gov",
@@ -832,35 +800,6 @@
       "independent_corroboration_verified": false,
       "queue": "older_official_context",
       "rank": 89
-    },
-    {
-      "title": "Oil Prices Caught Between a Looming Glut and Middle East Turmoil",
-      "url": "https://oilprice.com/Energy/Energy-General/Oil-Prices-Caught-Between-a-Looming-Glut-and-Middle-East-Turmoil.html",
-      "domain": "oilprice.com",
-      "first_collector_observed_utc": "2026-11-21T12:47:08.112036+00:00",
-      "local_collection_time_known": true,
-      "source": "OilPrice.com News",
-      "source_class": "specialist_publisher",
-      "category": "Oil & Energy",
-      "coverage_themes": [
-        "Oil & Energy"
-      ],
-      "relevance_score": 33,
-      "relevance_evidence": [
-        "oil prices"
-      ],
-      "origin": "official_rss",
-      "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-21T00:00:00+00:00",
-      "publisher_time_verified": true,
-      "date_confidence": "publisher_rss_timestamp",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "specialist_publisher_24h",
-      "rank": 88
     },
     {
       "title": "Federal regulators approve Cheniere’s Sabine Pass expansion project",
@@ -961,7 +900,7 @@
       "observed_time_utc": "2026-11-20T23:17:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
+      "within_24h_on_own_time_basis": false,
       "needs_editor_review": [],
       "editorial_status": "research_only_not_approved",
       "other_origins": [],
@@ -1068,6 +1007,35 @@
       "independent_corroboration_verified": false,
       "queue": "discovery_unverified",
       "rank": 78
+    },
+    {
+      "title": "Woodside and Trafigura sign off on decade-long LNG deal",
+      "url": "https://www.offshore-energy.biz/2026/11/18/woodside-and-trafigura-sign-off-on-decade-long-lng-deal",
+      "domain": "www.offshore-energy.biz",
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00",
+      "local_collection_time_known": true,
+      "source": "Offshore Energy News",
+      "source_class": "specialist_publisher",
+      "category": "LNG",
+      "coverage_themes": [
+        "LNG"
+      ],
+      "relevance_score": 45,
+      "relevance_evidence": [
+        "lng"
+      ],
+      "origin": "official_rss",
+      "time_basis": "specialist_publisher_rss_timestamp",
+      "observed_time_utc": "2026-11-18T09:16:02+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
+      "within_24h_on_own_time_basis": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "older_official_context",
+      "rank": 75
     },
     {
       "title": "Final investment decision on Azerbaijan's Karabakh field expected in 2027",

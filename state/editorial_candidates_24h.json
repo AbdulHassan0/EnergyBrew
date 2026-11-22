@@ -15,27 +15,8 @@
       "gas prices"
     ],
     "status": "research_only_unverified",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-21T21:43:07.712456+00:00",
     "first_collector_observed_utc": "2026-11-21T21:43:07.712456+00:00"
-  },
-  {
-    "id": "ba84295befe06fabdcff5fe4",
-    "title": "Oil Prices Caught Between a Looming Glut and Middle East Turmoil",
-    "url": "https://oilprice.com/Energy/Energy-General/Oil-Prices-Caught-Between-a-Looming-Glut-and-Middle-East-Turmoil.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-21T00:00:00+00:00",
-    "category": "Oil & Energy",
-    "published_precision": "timestamp",
-    "relevance_score": 33,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "oil prices"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collected_utc": "2026-11-21T12:47:08.112036+00:00",
-    "first_collector_observed_utc": "2026-11-21T12:47:08.112036+00:00"
   }
 ]
