@@ -1,5 +1,99 @@
 [
   {
+    "url": "https://www.businesstimes.com.sg/companies-markets/wti-crude-oil-prices-may-trend-lower",
+    "title": "WTI crude oil prices may trend lower",
+    "domain": "www.businesstimes.com.sg",
+    "gdelt_first_seen_utc": "2026-11-23T01:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 100,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "crude oil",
+      "oil prices",
+      "wti"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T01:47:28.987172+00:00"
+  },
+  {
+    "url": "https://yalibnan.com/2026/11/23/iran-war-live-updates-tankers-set-ablaze-in-hormuz-as-irgc-warns-of-unrest-threat",
+    "title": "Iran war live updates: Tankers set ablaze in Hormuz as IRGC warns of unrest threat – Ya Libnan",
+    "domain": "yalibnan.com",
+    "gdelt_first_seen_utc": "2026-11-23T01:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:tankers",
+      "geopolitical_event:war",
+      "world_context:iran"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T01:47:28.987172+00:00"
+  },
+  {
+    "url": "https://yalibnan.com/2026/11/23/russian-warship-hit-by-suspected-ukrainian-drone-at-benghazi-naval-base-libyan-officials-say",
+    "title": "Russian warship hit by suspected Ukrainian drone at Benghazi naval base, Libyan officials say – Ya Libnan",
+    "domain": "yalibnan.com",
+    "gdelt_first_seen_utc": "2026-11-23T01:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:drone",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T01:47:28.987172+00:00"
+  },
+  {
+    "url": "https://fox56.com/news/local/nepa-gas-prices-continue-to-decrease-average-below-4-per-gallon",
+    "title": "NEPA gas prices continue to decrease, average below $4 per gallon",
+    "domain": "fox56.com",
+    "gdelt_first_seen_utc": "2026-11-23T01:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T01:47:28.987172+00:00"
+  },
+  {
     "url": "https://www.digbycourier.ca/russia-ukraine-war-zelensky-summons-vatican-ambassador-against-popes-white-flag-comment",
     "title": "Russia-Ukraine War: Zelensky Summons Vatican Ambassador Against Pope's 'White Flag' Comment!",
     "domain": "www.digbycourier.ca",
