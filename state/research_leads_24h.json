@@ -1,9 +1,9 @@
 [
   {
-    "url": "https://www.businesstimes.com.sg/companies-markets/wti-crude-oil-prices-may-trend-lower",
-    "title": "WTI crude oil prices may trend lower",
-    "domain": "www.businesstimes.com.sg",
-    "gdelt_first_seen_utc": "2026-11-23T01:31:00+00:00",
+    "url": "https://www.arabnews.com/middle-east/attacks-on-grain-ships-hormuz-crisis-drive-hunger-in-yemen-and-sudan-un-food-agency-boss-warns-3013773",
+    "title": "Attacks on grain ships, Hormuz crisis drive hunger in Yemen and Sudan, UN food agency boss warns",
+    "domain": "www.arabnews.com",
+    "gdelt_first_seen_utc": "2026-11-23T20:17:00+00:00",
     "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
     "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
     "publisher_published_utc": null,
@@ -13,15 +13,490 @@
     "topics": [
       "gal_rolling_sample"
     ],
-    "relevance_score": 100,
-    "category": "Oil & Energy",
+    "relevance_score": 90,
+    "category": "Geopolitics",
     "relevance_evidence": [
-      "crude oil",
-      "oil prices",
-      "wti"
+      "energy_market_hook:hormuz",
+      "geopolitical_event:attacks",
+      "world_context:yemen"
     ],
     "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T01:47:28.987172+00:00"
+    "first_collector_observed_utc": "2026-11-23T20:20:11.358933+00:00"
+  },
+  {
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Storms-and-Drones-Disrupt-Russias-Oil-Exports.html",
+    "title": "Storms and Drones Disrupt Russia’s Oil Exports | OilPrice.com",
+    "domain": "oilprice.com",
+    "gdelt_first_seen_utc": "2026-11-23T20:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:oil",
+      "geopolitical_event:drones",
+      "world_context:russia"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T20:20:11.358933+00:00"
+  },
+  {
+    "url": "https://www.marinelink.com/news/vitol-start-construction-b-south-african-544540",
+    "title": "Vitol to Start Construction on $2.3b South African LNG Project in 2028",
+    "domain": "www.marinelink.com",
+    "gdelt_first_seen_utc": "2026-11-23T20:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 81,
+    "category": "LNG",
+    "relevance_evidence": [
+      "lng",
+      "lng project"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T20:20:11.358933+00:00"
+  },
+  {
+    "url": "https://www.klcc.org/npr-news/2026-11-23/zelenskyy-hails-ukraines-attack-on-a-russian-warship-docked-at-a-naval-base-in-libya",
+    "title": "Zelenskyy hails Ukraine's attack on a Russian warship docked at a naval base in Libya",
+    "domain": "www.klcc.org",
+    "gdelt_first_seen_utc": "2026-11-23T20:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T20:20:11.358933+00:00"
+  },
+  {
+    "url": "https://www.khqa.com/news/nation-world/ukrainian-naval-drones-strike-a-new-russian-warship-in-libya-and-other-mideast-news/article_0fb3869a-6ed4-5fa5-aa54-09620c241fb9.html",
+    "title": "Ukrainian naval drones strike a new Russian warship in Libya, and other Mideast news",
+    "domain": "www.khqa.com",
+    "gdelt_first_seen_utc": "2026-11-23T20:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T20:20:11.358933+00:00"
+  },
+  {
+    "url": "https://valdostadailytimes.com/syndicated/how-gas-prices-have-changed-in-albany-georgia-in-the-last-week",
+    "title": "How gas prices have changed in Albany, Georgia in the last week | Valdosta Daily Times",
+    "domain": "valdostadailytimes.com",
+    "gdelt_first_seen_utc": "2026-11-23T20:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T20:20:11.358933+00:00"
+  },
+  {
+    "url": "https://clarksvillenow.com/local/how-gas-prices-have-changed-in-clarksville-in-the-last-week",
+    "title": "How gas prices have changed in Clarksville in the last week - ClarksvilleNow.com",
+    "domain": "clarksvillenow.com",
+    "gdelt_first_seen_utc": "2026-11-23T20:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T20:20:11.358933+00:00"
+  },
+  {
+    "url": "https://valdostadailytimes.com/syndicated/how-gas-prices-have-changed-in-atlanta-in-the-last-week",
+    "title": "How gas prices have changed in Atlanta in the last week | Valdosta Daily Times",
+    "domain": "valdostadailytimes.com",
+    "gdelt_first_seen_utc": "2026-11-23T20:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T20:20:11.358933+00:00"
+  },
+  {
+    "url": "https://www.marinelink.com/news/oil-prices-fall-middle-east-flows-544538",
+    "title": "Oil Prices Fall As Middle East Flows Increase",
+    "domain": "www.marinelink.com",
+    "gdelt_first_seen_utc": "2026-11-23T20:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "oil prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T20:20:11.358933+00:00"
+  },
+  {
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Japans-Electricity-Prices-Surge-to-2022-High-as-Cold-Weather-Arrives.html",
+    "title": "Japan’s Electricity Prices Surge to 2022 High as Cold Weather Arrives | OilPrice.com",
+    "domain": "oilprice.com",
+    "gdelt_first_seen_utc": "2026-11-23T20:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T20:20:11.358933+00:00"
+  },
+  {
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/ConocoPhillips-to-Exit-Norway-in-443-Billion-Deal-with-Vaar-Energi.html",
+    "title": "ConocoPhillips to Exit Norway in $4.43 Billion Deal with Vaar Energi | OilPrice.com",
+    "domain": "oilprice.com",
+    "gdelt_first_seen_utc": "2026-11-23T20:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "conocophillips"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T20:20:11.358933+00:00"
+  },
+  {
+    "url": "https://starherald.com/news/state-regional/nebraska/article_9a86fe4e-ccc9-52b0-b3de-892be645fca4.html",
+    "title": "Gas prices in Nebraska keep dropping as Thanksgiving approaches",
+    "domain": "starherald.com",
+    "gdelt_first_seen_utc": "2026-11-23T20:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T20:20:11.358933+00:00"
+  },
+  {
+    "url": "https://www.tnp.no/norway/economy/3483-norway-expects-a-decrease-in-oil-production-in-2013",
+    "title": "Norway Expects a Decrease in Oil production in 2013 - The Nordic Page",
+    "domain": "www.tnp.no",
+    "gdelt_first_seen_utc": "2026-11-23T20:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "oil production"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T20:20:11.358933+00:00"
+  },
+  {
+    "url": "https://www.brentwoodlive.co.uk/news/national/uk-today/26754713.martin-lewis-warns-energy-prices-reach-record-high",
+    "title": "Martin Lewis warns energy bills to be 'more for the same energy use than ever before'",
+    "domain": "www.brentwoodlive.co.uk",
+    "gdelt_first_seen_utc": "2026-11-23T20:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "energy bills"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T20:20:11.358933+00:00"
+  },
+  {
+    "url": "https://www.deraktionaer.de/aktien/kurse/diamondbackenergyinc-us25278x1090.html",
+    "title": "Diamondback Energy Inc Aktie | A1J6Y4 | US25278X1090",
+    "domain": "www.deraktionaer.de",
+    "gdelt_first_seen_utc": "2026-11-23T20:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "diamondback energy"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T20:20:11.358933+00:00"
+  },
+  {
+    "url": "https://www.ypradio.org/npr-news/2026-11-23/zelenskyy-hails-ukraines-attack-on-a-russian-warship-docked-at-a-naval-base-in-libya",
+    "title": "Zelenskyy hails Ukraine's attack on a Russian warship docked at a naval base in Libya",
+    "domain": "www.ypradio.org",
+    "gdelt_first_seen_utc": "2026-11-23T20:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T20:20:11.358933+00:00"
+  },
+  {
+    "url": "https://nationalpost.com/news/world/ukraine-sinks-russian-warship-off-libyan-coast-as-war-widens",
+    "title": "Ukraine sinks Russian warship off Libyan coast as war widens",
+    "domain": "nationalpost.com",
+    "gdelt_first_seen_utc": "2026-11-23T20:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:war",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T20:20:11.358933+00:00"
+  },
+  {
+    "url": "https://www.iowapublicradio.org/news-from-npr/2026-11-23/zelenskyy-hails-ukraines-attack-on-a-russian-warship-docked-at-a-naval-base-in-libya",
+    "title": "Zelenskyy hails Ukraine's attack on a Russian warship docked at a naval base in Libya",
+    "domain": "www.iowapublicradio.org",
+    "gdelt_first_seen_utc": "2026-11-23T20:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T20:20:11.358933+00:00"
+  },
+  {
+    "url": "https://valdostadailytimes.com/syndicated/how-gas-prices-have-changed-in-athens-in-the-last-week",
+    "title": "How gas prices have changed in Athens in the last week | Valdosta Daily Times",
+    "domain": "valdostadailytimes.com",
+    "gdelt_first_seen_utc": "2026-11-23T20:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T20:20:11.358933+00:00"
+  },
+  {
+    "url": "https://www.govtech.com/artificial-intelligence/texas-lawmakers-will-scrutinize-data-center-permitting-costs",
+    "title": "Texas Lawmakers Will Scrutinize Data Center Permitting, Costs",
+    "domain": "www.govtech.com",
+    "gdelt_first_seen_utc": "2026-11-23T20:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T20:20:11.358933+00:00"
+  },
+  {
+    "url": "https://www.dcvelocity.com/logistics/warehousing/data-center-boom-is-driving-warehouse-and-logistics-demand-cushman-wakefield-says",
+    "title": "Data center boom is driving warehouse and logistics demand, Cushman & Wakefield says",
+    "domain": "www.dcvelocity.com",
+    "gdelt_first_seen_utc": "2026-11-23T20:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T20:20:11.358933+00:00"
+  },
+  {
+    "url": "https://www.wrdw.com/2026/11/23/planning-commission-hear-data-center-proposal-south-augusta-today",
+    "title": "Planning Commission hears data center proposal in south Augusta",
+    "domain": "www.wrdw.com",
+    "gdelt_first_seen_utc": "2026-11-23T20:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T20:20:11.358933+00:00"
   },
   {
     "url": "https://abc7.com/story/strait-hormuz-attacks-have-increased-highest-level-iran-war-began/20069523",
@@ -46,316 +521,6 @@
     ],
     "status": "discovery_only_requires_publisher_verification",
     "first_collector_observed_utc": "2026-11-23T14:54:25.565116+00:00"
-  },
-  {
-    "url": "https://www.newdelhitimes.com/strait-hormuz-shipping-slows-tanker-attacks-november-23-2026",
-    "title": "Strait of Hormuz Shipping Slows Sharply After Tanker Attacks, Tracking Data Shows",
-    "domain": "www.newdelhitimes.com",
-    "gdelt_first_seen_utc": "2026-11-23T14:46:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 90,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_hook:tanker",
-      "geopolitical_event:attacks",
-      "world_context:strait of hormuz"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T14:54:25.565116+00:00"
-  },
-  {
-    "url": "https://www.kyivpost.com/post/90874",
-    "title": "Ukrainian Drones Set Russian Oil Infrastructure Ablaze in Twin Strikes Deep Inside Russia",
-    "domain": "www.kyivpost.com",
-    "gdelt_first_seen_utc": "2026-11-23T08:16:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 90,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_hook:oil",
-      "geopolitical_event:strikes",
-      "world_context:russia"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T08:18:54.579463+00:00"
-  },
-  {
-    "url": "https://www.naturalnews.com/2026-11-22-houthi-attacks-undermine-saudi-vision-2030-trade.html",
-    "title": "Red Sea in Turmoil: Houthi Attacks Undermine Saudi Vision 2030 and Regional Trade \u2013 NaturalNews.com",
-    "domain": "www.naturalnews.com",
-    "gdelt_first_seen_utc": "2026-11-23T02:46:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 90,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_hook:red sea",
-      "geopolitical_event:attacks",
-      "world_context:houthi"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T02:54:13.059849+00:00"
-  },
-  {
-    "url": "https://www.eurasiareview.com/23112026-bahrain-says-two-injured-in-iranian-attack-on-industrial-site-as-tankers-hit-in-hormuz",
-    "title": "Bahrain Says Two Injured In Iranian Attack On Industrial Site, As Tankers Hit In Hormuz - Eurasia Review",
-    "domain": "www.eurasiareview.com",
-    "gdelt_first_seen_utc": "2026-11-23T02:46:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 90,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_hook:tankers",
-      "geopolitical_event:attack",
-      "world_context:iranian"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T02:54:13.059849+00:00"
-  },
-  {
-    "url": "https://yalibnan.com/2026/11/23/iran-war-live-updates-tankers-set-ablaze-in-hormuz-as-irgc-warns-of-unrest-threat",
-    "title": "Iran war live updates: Tankers set ablaze in Hormuz as IRGC warns of unrest threat \u2013 Ya Libnan",
-    "domain": "yalibnan.com",
-    "gdelt_first_seen_utc": "2026-11-23T01:31:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 90,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_hook:tankers",
-      "geopolitical_event:war",
-      "world_context:iran"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T01:47:28.987172+00:00"
-  },
-  {
-    "url": "https://www.komu.com/news/nationworld/iranian-attacks-in-the-strait-of-hormuz-reach-highest-levels-since-the-conflict-began/article_d0c1043a-aeaa-5380-a980-a0ceb5aebbf6.html",
-    "title": "Iranian attacks in the Strait of Hormuz reach highest levels since the conflict began",
-    "domain": "www.komu.com",
-    "gdelt_first_seen_utc": "2026-11-22T21:02:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 90,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_hook:strait of hormuz",
-      "geopolitical_event:attacks",
-      "world_context:iranian"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T21:06:47.900538+00:00"
-  },
-  {
-    "url": "https://kvia.com/news/us-world/cnn-world/2026/11/22/iranian-attacks-in-the-strait-of-hormuz-are-at-the-highest-levels-since-the-conflict-began",
-    "title": "Iranian attacks in the Strait of Hormuz are at the highest levels since the conflict began",
-    "domain": "kvia.com",
-    "gdelt_first_seen_utc": "2026-11-22T20:02:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 90,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_hook:strait of hormuz",
-      "geopolitical_event:attacks",
-      "world_context:iranian"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
-  },
-  {
-    "url": "https://abc17news.com/news/national-world/cnn-world/2026/11/22/iranian-attacks-in-the-strait-of-hormuz-are-at-the-highest-levels-since-the-conflict-began",
-    "title": "Iranian attacks in the Strait of Hormuz are at the highest levels since the conflict began",
-    "domain": "abc17news.com",
-    "gdelt_first_seen_utc": "2026-11-22T20:01:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 90,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_hook:strait of hormuz",
-      "geopolitical_event:attacks",
-      "world_context:iranian"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
-  },
-  {
-    "url": "https://www.latimes.com/world-nation/story/2026-11-22/endurance-athlete-swims-in-strait-of-hormuz-to-highlight-iran-wars-impact-on-wildlife",
-    "title": "Endurance athlete swims in Strait of Hormuz to highlight Iran war's impact on wildlife",
-    "domain": "www.latimes.com",
-    "gdelt_first_seen_utc": "2026-11-22T20:01:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 90,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_hook:strait of hormuz",
-      "geopolitical_event:war",
-      "world_context:iran"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
-  },
-  {
-    "url": "https://littleapplepost.com/posts/2155de1c-ecfa-40d8-a281-5a8e5f6ed5a7",
-    "title": "Iran strikes 3 oil tankers as it shows off new missile launchers",
-    "domain": "littleapplepost.com",
-    "gdelt_first_seen_utc": "2026-11-22T15:01:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 90,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_hook:oil",
-      "geopolitical_event:strikes",
-      "world_context:iran"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T15:14:06.105288+00:00"
-  },
-  {
-    "url": "https://www.trend.az/azerbaijan/4249663.html",
-    "title": "SOCAR explores energy storage technologies for Azerbaijan's power grid",
-    "domain": "www.trend.az",
-    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 84,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "energy storage",
-      "grid",
-      "power grid"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
-  },
-  {
-    "url": "http://www.maritimeprofessional.com/news/nikkiso-delivers-dock-overhaul-tanker-424305",
-    "title": "Nikkiso Delivers Dry Dock Overhaul for LNG Tanker",
-    "domain": "www.maritimeprofessional.com",
-    "gdelt_first_seen_utc": "2026-11-22T21:46:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 81,
-    "category": "LNG",
-    "relevance_evidence": [
-      "lng",
-      "lng tanker"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T21:53:46.210700+00:00"
-  },
-  {
-    "url": "https://www.joplinglobe.com/region/national_business/natural-gas-pipeline-fire-shoots-flames-into-the-air-in-alabama-cause-is-under-investigation/article_420efc4d-5c1c-5e98-8f6f-f409f798ecfd.html",
-    "title": "Natural gas pipeline fire shoots flames into the air in Alabama, cause is under investigation",
-    "domain": "www.joplinglobe.com",
-    "gdelt_first_seen_utc": "2026-11-22T20:02:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 69,
-    "category": "Natural Gas",
-    "relevance_evidence": [
-      "gas pipeline",
-      "natural gas"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
   },
   {
     "url": "https://www.capjournal.com/news/national/iran-says-it-will-use-all-its-tools-to-confront-us-naval-blockade",
@@ -622,6 +787,252 @@
     "first_collector_observed_utc": "2026-11-23T14:54:25.565116+00:00"
   },
   {
+    "url": "https://www.standardmedia.co.ke/business/business/article/2001562558/kenya-moves-closer-to-naming-its-crude-oil-ahead-of-first-oil-production",
+    "title": "Kenya moves closer to naming its crude oil ahead of first oil production",
+    "domain": "www.standardmedia.co.ke",
+    "gdelt_first_seen_utc": "2026-11-23T14:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 66,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "crude oil",
+      "oil production"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T14:54:25.565116+00:00"
+  },
+  {
+    "url": "https://www.webwire.com/ViewPressRel.asp?aId=364522",
+    "title": "Siemens and Enexis accelerate expansion of Dutch Power Grid",
+    "domain": "www.webwire.com",
+    "gdelt_first_seen_utc": "2026-11-23T14:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 57,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "grid",
+      "power grid"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T14:54:25.565116+00:00"
+  },
+  {
+    "url": "https://www.clickondetroit.com/news/local/2026/11/23/gas-prices-fall-in-michigan-us-ahead-of-thanksgiving-travel-frenzy",
+    "title": "Gas prices fall in Michigan, US ahead of Thanksgiving travel frenzy",
+    "domain": "www.clickondetroit.com",
+    "gdelt_first_seen_utc": "2026-11-23T14:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T14:54:25.565116+00:00"
+  },
+  {
+    "url": "https://www.k923orlando.com/news/are-gas-prices-new/HXPCHIFOK444FOEHGOSV6QE5XQ",
+    "title": "Are gas prices the new Grinch? How fuel costs are reshaping the holidays",
+    "domain": "www.k923orlando.com",
+    "gdelt_first_seen_utc": "2026-11-23T14:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T14:54:25.565116+00:00"
+  },
+  {
+    "url": "https://www.realclearpolitics.com/technology/links/data-center-backlash-and-a-continued-expansion-2026-11-23",
+    "title": "Data Center Backlash and a Continued Expansion - RealClearPolitics",
+    "domain": "www.realclearpolitics.com",
+    "gdelt_first_seen_utc": "2026-11-23T14:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T14:54:25.565116+00:00"
+  },
+  {
+    "url": "https://www.insidermonkey.com/news/press-releases/nocera-signs-binding-letter-of-intent-to-invest-22-million-for-an-approximately-44-stake-in-bitrock-a-self-powered-ai-data-center-developer-in-alberta-1868848",
+    "title": "Nocera Signs Binding Letter of Intent to Invest $22 Million for an Approximately 44% Stake in BitRock, a Self-Powered AI Data Center Developer in Alberta",
+    "domain": "www.insidermonkey.com",
+    "gdelt_first_seen_utc": "2026-11-23T14:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T14:54:25.565116+00:00"
+  },
+  {
+    "url": "https://www.corrierecomunicazioni.it/data-center/data-center-trump-minacca-di-tassare-chi-investe-fuori-dagli-usa",
+    "title": "Data center, Trump minacca di tassare chi investe fuori dagli Usa - CorCom",
+    "domain": "www.corrierecomunicazioni.it",
+    "gdelt_first_seen_utc": "2026-11-23T14:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T14:54:25.565116+00:00"
+  },
+  {
+    "url": "https://www.qualenergia.it/pro/articoli-pro/capacity-market-meno-picchi-ma-prezzi-elettrici-ancora-alti",
+    "title": "Capacity Market, meno picchi ma prezzi elettrici ancora alti",
+    "domain": "www.qualenergia.it",
+    "gdelt_first_seen_utc": "2026-11-23T14:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "capacity market"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T14:54:25.565116+00:00"
+  },
+  {
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70205620-pta-cms-siemens-energy-ag-bekanntmachung-nach-art-5-abs-1-lit-b-abs-3-der-verordnung-eu-nr-596-2014-erwerb-eigener-aktien-9-zwischenme-015.htm",
+    "title": "PTA-CMS: Siemens Energy AG: Bekanntmachung nach Art. 5 Abs. 1 lit. b), Abs. 3 der Verordnung (EU) Nr. 596/2014 - Erwerb eigener Aktien - 9. Zwischenmeldung",
+    "domain": "www.finanznachrichten.de",
+    "gdelt_first_seen_utc": "2026-11-23T14:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "siemens energy"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T14:54:25.565116+00:00"
+  },
+  {
+    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70205711-energy-transfer-wie-ein-mautstellen-geschaeftsmodell-steigende-ausschuettungen-aus-dem-us-energiemarkt-presst-013.htm",
+    "title": "Energy Transfer: Wie ein Mautstellen-Geschäftsmodell steigende Ausschüttungen aus dem US?Energiemarkt presst",
+    "domain": "www.finanznachrichten.de",
+    "gdelt_first_seen_utc": "2026-11-23T14:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Infrastructure & Investment",
+    "relevance_evidence": [
+      "energy transfer"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T14:54:25.565116+00:00"
+  },
+  {
+    "url": "https://www.newdelhitimes.com/strait-hormuz-shipping-slows-tanker-attacks-november-23-2026",
+    "title": "Strait of Hormuz Shipping Slows Sharply After Tanker Attacks, Tracking Data Shows",
+    "domain": "www.newdelhitimes.com",
+    "gdelt_first_seen_utc": "2026-11-23T14:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:tanker",
+      "geopolitical_event:attacks",
+      "world_context:strait of hormuz"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T14:54:25.565116+00:00"
+  },
+  {
     "url": "https://www.nbcbayarea.com/news/national-international/ukraine-drone-attack-hits-russian-warship-in-libya/4180394",
     "title": "Ukrainian drones hit Russian warship at naval base in Libya, Zelenskyy says",
     "domain": "www.nbcbayarea.com",
@@ -742,6 +1153,50 @@
     "first_collector_observed_utc": "2026-11-23T14:54:25.565116+00:00"
   },
   {
+    "url": "https://www.mykxlg.com/news/state/lower-gas-prices-mean-good-news-for-thanksgiving-travelers/article_82cd927e-a52d-4e67-b1d7-b06694d5f1ff.html",
+    "title": "Lower Gas Prices Mean Good News for Thanksgiving Travelers",
+    "domain": "www.mykxlg.com",
+    "gdelt_first_seen_utc": "2026-11-23T14:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T14:54:25.565116+00:00"
+  },
+  {
+    "url": "https://www.power-technology.com/news/downer-728m-hunter-transmission-project-contract",
+    "title": "Downer wins $728m Hunter Transmission Project contract",
+    "domain": "www.power-technology.com",
+    "gdelt_first_seen_utc": "2026-11-23T14:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Infrastructure & Investment",
+    "relevance_evidence": [
+      "transmission project"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T14:54:25.565116+00:00"
+  },
+  {
     "url": "https://www.thewestmorlandgazette.co.uk/news/national/26752283.zelensky-confirms-ukraine-behind-attack-sank-russian-warship-off-libya",
     "title": "Zelensky confirms Ukraine behind attack that sank Russian warship off Libya",
     "domain": "www.thewestmorlandgazette.co.uk",
@@ -809,6 +1264,96 @@
       "energy_market_exposure:inferred_high_risk_region",
       "geopolitical_event:attack",
       "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://www.spokesman.com/stories/2026/nov/23/getting-there-holiday-travel-outlook-gets-boost-by",
+    "title": "Getting There: Holiday travel outlook gets boost by lower gas prices",
+    "domain": "www.spokesman.com",
+    "gdelt_first_seen_utc": "2026-11-23T10:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://www.boersennews.de/nachrichten/partner/wh-selfinvest/nvidia-siemens-energy-und-palo-alto-3-ki-aktien-im-grossen-boersencheck/5363280",
+    "title": "NVIDIA, Siemens Energy & Palo Alto: 3 KI-Aktien im großen Börsencheck",
+    "domain": "www.boersennews.de",
+    "gdelt_first_seen_utc": "2026-11-23T10:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "siemens energy"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://www.boersennews.de/nachrichten/artikel/boersennews/siemens-energy-hat-der-abverkauf-gerade-erst-begonnen/5363667",
+    "title": "Siemens Energy: Hat der Abverkauf gerade erst begonnen?",
+    "domain": "www.boersennews.de",
+    "gdelt_first_seen_utc": "2026-11-23T10:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "siemens energy"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://www.trend.az/azerbaijan/4249663.html",
+    "title": "SOCAR explores energy storage technologies for Azerbaijan's power grid",
+    "domain": "www.trend.az",
+    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 84,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "energy storage",
+      "grid",
+      "power grid"
     ],
     "status": "discovery_only_requires_publisher_verification",
     "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
@@ -887,7 +1432,7 @@
   },
   {
     "url": "https://sputnikglobe.com/20261120/russian-strikes-on-kiev-bridges-cripple-ukraines-western-supply-routes--expert-1125122564.html",
-    "title": "Russian Strikes on Kiev Bridges Cripple Ukraine\u2019s Western Supply Routes \u2013 Expert",
+    "title": "Russian Strikes on Kiev Bridges Cripple Ukraine’s Western Supply Routes – Expert",
     "domain": "sputnikglobe.com",
     "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
     "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
@@ -1196,6 +1741,206 @@
     ],
     "status": "discovery_only_requires_publisher_verification",
     "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://www.middleeasteye.net/live-blog/live-blog-update/south-korea-asks-qatar-priority-supply-lng-supplies-once-transits",
+    "title": "South Korea asks Qatar for priority supply of LNG supplies once transits through Hormuz Strait return to normal",
+    "domain": "www.middleeasteye.net",
+    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 45,
+    "category": "LNG",
+    "relevance_evidence": [
+      "lng"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://www.trend.az/iran/4249608.html",
+    "title": "Iran's Homa gas gathering center ready to help boost gas supply",
+    "domain": "www.trend.az",
+    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas supply"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://www.irishexaminer.com/world/arid-41941251.html",
+    "title": "Gas prices in Europe surge as forecast cold snap feeds supply shortage fears",
+    "domain": "www.irishexaminer.com",
+    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://www.upstreamonline.com/finance/vaar-energi-to-acquire-conocophillips-norway-business-and-teesside-asset-for-4-4-billion/2-1-2077865",
+    "title": "Vaar Energi to acquire ConocoPhillips’ Norway business and Teesside asset for $4.4 billion",
+    "domain": "www.upstreamonline.com",
+    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "conocophillips"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://finance.eastmoney.com/a/202611233937333910.html",
+    "title": "WTI原油期货跌幅扩大至1% _ 东方财富网",
+    "domain": "finance.eastmoney.com",
+    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "wti"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://www.ibtimes.com.au/elon-musk-warns-ai-industry-cash-shortage-1879221",
+    "title": "Elon Musk Warns AI Cash Crunch Will Be Nuts Next Year as Data Center Delays Threaten Hundreds of Billions",
+    "domain": "www.ibtimes.com.au",
+    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://www.trend.az/iran/4249482.html",
+    "title": "Iran drills 78 oil and gas wells across 10 provinces in eight months",
+    "domain": "www.trend.az",
+    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "oil and gas"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://www.recorder.ca/press-releases/globe-newswire/international-petroleum-corporation-announces-results-of-normal-course-issuer-bid-9",
+    "title": "International Petroleum Corporation Announces Results of Normal Course Issuer Bid",
+    "domain": "www.recorder.ca",
+    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "petroleum"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://www.kyivpost.com/post/90874",
+    "title": "Ukrainian Drones Set Russian Oil Infrastructure Ablaze in Twin Strikes Deep Inside Russia",
+    "domain": "www.kyivpost.com",
+    "gdelt_first_seen_utc": "2026-11-23T08:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:oil",
+      "geopolitical_event:strikes",
+      "world_context:russia"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T08:18:54.579463+00:00"
   },
   {
     "url": "https://www.hertsad.co.uk/news/national/26752283.zelensky-confirms-ukraine-behind-attack-sank-russian-warship-off-libya",
@@ -1510,6 +2255,142 @@
     "first_collector_observed_utc": "2026-11-23T08:18:54.579463+00:00"
   },
   {
+    "url": "https://biz.chosun.com/industry/company/2026/11/23/IDTN6OWUUBGLDKZFSAAP4BFHCM",
+    "title": "가스공사, LNG 트레이딩·냉열 사업 전담조직 신설",
+    "domain": "biz.chosun.com",
+    "gdelt_first_seen_utc": "2026-11-23T08:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 45,
+    "category": "LNG",
+    "relevance_evidence": [
+      "lng"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T08:18:54.579463+00:00"
+  },
+  {
+    "url": "https://sana.sy/en/economic/2361066",
+    "title": "Oil prices slip as global market sell-off outweighs Gulf shipping risks",
+    "domain": "sana.sy",
+    "gdelt_first_seen_utc": "2026-11-23T08:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "oil prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T08:18:54.579463+00:00"
+  },
+  {
+    "url": "https://www.oilandgasonline.com/doc/exxonmobil-advances-next-phase-of-guyana-development-with-longtail-0001",
+    "title": "ExxonMobil Advances Next Phase Of Guyana Development With Longtail",
+    "domain": "www.oilandgasonline.com",
+    "gdelt_first_seen_utc": "2026-11-23T08:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "exxonmobil"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T08:18:54.579463+00:00"
+  },
+  {
+    "url": "https://www.riotimesonline.com/angola-first-gold-refinery-viana-endiama",
+    "title": "Angola Opens First Gold Refinery in Luanda",
+    "domain": "www.riotimesonline.com",
+    "gdelt_first_seen_utc": "2026-11-23T08:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "refinery"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T08:18:54.579463+00:00"
+  },
+  {
+    "url": "https://www.naturalnews.com/2026-11-22-houthi-attacks-undermine-saudi-vision-2030-trade.html",
+    "title": "Red Sea in Turmoil: Houthi Attacks Undermine Saudi Vision 2030 and Regional Trade – NaturalNews.com",
+    "domain": "www.naturalnews.com",
+    "gdelt_first_seen_utc": "2026-11-23T02:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:red sea",
+      "geopolitical_event:attacks",
+      "world_context:houthi"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T02:54:13.059849+00:00"
+  },
+  {
+    "url": "https://www.eurasiareview.com/23112026-bahrain-says-two-injured-in-iranian-attack-on-industrial-site-as-tankers-hit-in-hormuz",
+    "title": "Bahrain Says Two Injured In Iranian Attack On Industrial Site, As Tankers Hit In Hormuz - Eurasia Review",
+    "domain": "www.eurasiareview.com",
+    "gdelt_first_seen_utc": "2026-11-23T02:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:tankers",
+      "geopolitical_event:attack",
+      "world_context:iranian"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T02:54:13.059849+00:00"
+  },
+  {
     "url": "http://www.kenyastar.com/news/279449395/iranian-leaders-consider-democrats-weak-trump-claims-iran-intensified-attacks-after-us-midterm-elections",
     "title": "\"Iranian leaders consider Democrats weak\": Trump claims Iran intensified attacks after US midterm elections",
     "domain": "www.kenyastar.com",
@@ -1582,8 +2463,166 @@
     "first_collector_observed_utc": "2026-11-23T02:54:13.059849+00:00"
   },
   {
+    "url": "https://www.naturalnews.com/2026-11-22-3-emergency-heating-options-keep-family-warm.html",
+    "title": "No Electricity, No Heat? These 3 Emergency Heating Options Could Keep Your Family Warm – NaturalNews.com",
+    "domain": "www.naturalnews.com",
+    "gdelt_first_seen_utc": "2026-11-23T02:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T02:54:13.059849+00:00"
+  },
+  {
+    "url": "https://www.fool.com/investing/2026/11/22/stifel-says-spacex-could-buy-stalled-data-centers-for-one-reason-their-power-heres-why-electricity-is-the-real-asset",
+    "title": "Stifel Says SpaceX Could Buy Stalled Data Centers for One Reason: Their Power. Here’s Why Electricity Is the Real Asset. | The Motley Fool",
+    "domain": "www.fool.com",
+    "gdelt_first_seen_utc": "2026-11-23T02:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T02:54:13.059849+00:00"
+  },
+  {
+    "url": "https://www.ktiv.com/2026/11/22/gas-prices-decline-thanksgiving-travel-approaches",
+    "title": "Gas prices decline as Thanksgiving travel approaches",
+    "domain": "www.ktiv.com",
+    "gdelt_first_seen_utc": "2026-11-23T02:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T02:54:13.059849+00:00"
+  },
+  {
+    "url": "https://vietnamnet.vn/en/hcmc-food-prices-stay-high-despite-lower-fuel-and-power-2574049.html",
+    "title": "Why HCMC food prices are still high despite cheaper fuel and electricity",
+    "domain": "vietnamnet.vn",
+    "gdelt_first_seen_utc": "2026-11-23T02:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T02:54:13.059849+00:00"
+  },
+  {
+    "url": "https://revistaforum.com.br/blogs/o-cafezinho/a-petrobras-transformou-o-pre-sal-na-salvacao-do-brasil",
+    "title": "A Petrobras transformou o pré-sal na salvação do Brasil - Revista Fórum",
+    "domain": "revistaforum.com.br",
+    "gdelt_first_seen_utc": "2026-11-23T02:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "petrobras"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T02:54:13.059849+00:00"
+  },
+  {
+    "url": "https://www.businesstimes.com.sg/companies-markets/wti-crude-oil-prices-may-trend-lower",
+    "title": "WTI crude oil prices may trend lower",
+    "domain": "www.businesstimes.com.sg",
+    "gdelt_first_seen_utc": "2026-11-23T01:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 100,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "crude oil",
+      "oil prices",
+      "wti"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T01:47:28.987172+00:00"
+  },
+  {
+    "url": "https://yalibnan.com/2026/11/23/iran-war-live-updates-tankers-set-ablaze-in-hormuz-as-irgc-warns-of-unrest-threat",
+    "title": "Iran war live updates: Tankers set ablaze in Hormuz as IRGC warns of unrest threat – Ya Libnan",
+    "domain": "yalibnan.com",
+    "gdelt_first_seen_utc": "2026-11-23T01:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:tankers",
+      "geopolitical_event:war",
+      "world_context:iran"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T01:47:28.987172+00:00"
+  },
+  {
     "url": "https://yalibnan.com/2026/11/23/russian-warship-hit-by-suspected-ukrainian-drone-at-benghazi-naval-base-libyan-officials-say",
-    "title": "Russian warship hit by suspected Ukrainian drone at Benghazi naval base, Libyan officials say \u2013 Ya Libnan",
+    "title": "Russian warship hit by suspected Ukrainian drone at Benghazi naval base, Libyan officials say – Ya Libnan",
     "domain": "yalibnan.com",
     "gdelt_first_seen_utc": "2026-11-23T01:31:00+00:00",
     "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
@@ -1601,6 +2640,28 @@
       "energy_market_exposure:inferred_high_risk_region",
       "geopolitical_event:drone",
       "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T01:47:28.987172+00:00"
+  },
+  {
+    "url": "https://fox56.com/news/local/nepa-gas-prices-continue-to-decrease-average-below-4-per-gallon",
+    "title": "NEPA gas prices continue to decrease, average below $4 per gallon",
+    "domain": "fox56.com",
+    "gdelt_first_seen_utc": "2026-11-23T01:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas prices"
     ],
     "status": "discovery_only_requires_publisher_verification",
     "first_collector_observed_utc": "2026-11-23T01:47:28.987172+00:00"
@@ -1630,8 +2691,74 @@
     "first_collector_observed_utc": "2026-11-23T00:47:09.840880+00:00"
   },
   {
+    "url": "https://www.worldoil.com/news/2026/10/21/woodside-s-scarborough-hits-99-complete-first-lng-on-track-for-q4",
+    "title": "Woodside’s Scarborough hits 99% complete, first LNG on track for Q4",
+    "domain": "www.worldoil.com",
+    "gdelt_first_seen_utc": "2026-11-23T00:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 45,
+    "category": "LNG",
+    "relevance_evidence": [
+      "lng"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T00:47:09.840880+00:00"
+  },
+  {
+    "url": "https://baomoi.com/lng-t26554816.epi",
+    "title": "Tin tức LNG - Hình ảnh và video clip nóng mới nhất",
+    "domain": "baomoi.com",
+    "gdelt_first_seen_utc": "2026-11-23T00:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 45,
+    "category": "LNG",
+    "relevance_evidence": [
+      "lng"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T00:47:09.840880+00:00"
+  },
+  {
+    "url": "https://www.aol.com/articles/four-ways-keep-energy-bills-130714000.html",
+    "title": "Energy bills will soar - here's how you can ease the pain - AOL",
+    "domain": "www.aol.com",
+    "gdelt_first_seen_utc": "2026-11-23T00:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "energy bills"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T00:47:09.840880+00:00"
+  },
+  {
     "url": "https://www.wandsworthguardian.co.uk/news/national/26751822.three-killed-russian-attack-near-ukraines-capital-strikes-apartment-building",
-    "title": "Three killed after Russian attack near Ukraine\u2019s capital strikes apartment building",
+    "title": "Three killed after Russian attack near Ukraine’s capital strikes apartment building",
     "domain": "www.wandsworthguardian.co.uk",
     "gdelt_first_seen_utc": "2026-11-22T21:47:00+00:00",
     "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
@@ -1673,6 +2800,29 @@
       "energy_market_exposure:inferred_high_risk_region",
       "geopolitical_event:missile",
       "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T21:53:46.210700+00:00"
+  },
+  {
+    "url": "http://www.maritimeprofessional.com/news/nikkiso-delivers-dock-overhaul-tanker-424305",
+    "title": "Nikkiso Delivers Dry Dock Overhaul for LNG Tanker",
+    "domain": "www.maritimeprofessional.com",
+    "gdelt_first_seen_utc": "2026-11-22T21:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 81,
+    "category": "LNG",
+    "relevance_evidence": [
+      "lng",
+      "lng tanker"
     ],
     "status": "discovery_only_requires_publisher_verification",
     "first_collector_observed_utc": "2026-11-22T21:53:46.210700+00:00"
@@ -1727,7 +2877,7 @@
   },
   {
     "url": "https://www.royston-crow.co.uk/news/national/26751822.three-killed-russian-attack-near-ukraines-capital-strikes-apartment-building",
-    "title": "Three killed after Russian attack near Ukraine\u2019s capital strikes apartment building",
+    "title": "Three killed after Russian attack near Ukraine’s capital strikes apartment building",
     "domain": "www.royston-crow.co.uk",
     "gdelt_first_seen_utc": "2026-11-22T21:46:00+00:00",
     "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
@@ -1751,7 +2901,7 @@
   },
   {
     "url": "https://www.bridportnews.co.uk/news/national/26751822.three-killed-russian-attack-near-ukraines-capital-strikes-apartment-building",
-    "title": "Three killed after Russian attack near Ukraine\u2019s capital strikes apartment building",
+    "title": "Three killed after Russian attack near Ukraine’s capital strikes apartment building",
     "domain": "www.bridportnews.co.uk",
     "gdelt_first_seen_utc": "2026-11-22T21:46:00+00:00",
     "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
@@ -1775,7 +2925,7 @@
   },
   {
     "url": "https://www.greenocktelegraph.co.uk/news/national/26751822.three-killed-russian-attack-near-ukraines-capital-strikes-apartment-building",
-    "title": "Three killed after Russian attack near Ukraine\u2019s capital strikes apartment building",
+    "title": "Three killed after Russian attack near Ukraine’s capital strikes apartment building",
     "domain": "www.greenocktelegraph.co.uk",
     "gdelt_first_seen_utc": "2026-11-22T21:46:00+00:00",
     "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
@@ -1823,7 +2973,7 @@
   },
   {
     "url": "https://www.hamhigh.co.uk/news/national/26751822.three-killed-russian-attack-near-ukraines-capital-strikes-apartment-building",
-    "title": "Three killed after Russian attack near Ukraine\u2019s capital strikes apartment building",
+    "title": "Three killed after Russian attack near Ukraine’s capital strikes apartment building",
     "domain": "www.hamhigh.co.uk",
     "gdelt_first_seen_utc": "2026-11-22T21:46:00+00:00",
     "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
@@ -1844,6 +2994,30 @@
     ],
     "status": "discovery_only_requires_publisher_verification",
     "first_collector_observed_utc": "2026-11-22T21:53:46.210700+00:00"
+  },
+  {
+    "url": "https://www.komu.com/news/nationworld/iranian-attacks-in-the-strait-of-hormuz-reach-highest-levels-since-the-conflict-began/article_d0c1043a-aeaa-5380-a980-a0ceb5aebbf6.html",
+    "title": "Iranian attacks in the Strait of Hormuz reach highest levels since the conflict began",
+    "domain": "www.komu.com",
+    "gdelt_first_seen_utc": "2026-11-22T21:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:strait of hormuz",
+      "geopolitical_event:attacks",
+      "world_context:iranian"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T21:06:47.900538+00:00"
   },
   {
     "url": "https://www.ksat.com/news/2026/11/22/suspected-ukrainian-sea-drones-hit-russian-warship-at-benghazi-naval-base-libyan-officials-say",
@@ -1942,8 +3116,52 @@
     "first_collector_observed_utc": "2026-11-22T21:06:47.900538+00:00"
   },
   {
+    "url": "https://www.aol.com/articles/elon-musk-warns-data-center-174956000.html",
+    "title": "Elon Musk warns data center delays could leave AI companies short on cash: 'Going to be nuts' - AOL",
+    "domain": "www.aol.com",
+    "gdelt_first_seen_utc": "2026-11-22T21:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T21:06:47.900538+00:00"
+  },
+  {
+    "url": "https://www.tnp.no/norway/economy/4802-oil-and-gas-still-largest-contributor-to-norway-economy",
+    "title": "Oil and Gas Still Largest Contributor to Norway Economy - The Nordic Page",
+    "domain": "www.tnp.no",
+    "gdelt_first_seen_utc": "2026-11-22T21:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "oil and gas"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-22T21:06:47.900538+00:00"
+  },
+  {
     "url": "https://www.kilburntimes.co.uk/news/national/26751822.three-killed-russian-attack-near-ukraines-capital-strikes-apartment-building",
-    "title": "Three killed after Russian attack near Ukraine\u2019s capital strikes apartment building",
+    "title": "Three killed after Russian attack near Ukraine’s capital strikes apartment building",
     "domain": "www.kilburntimes.co.uk",
     "gdelt_first_seen_utc": "2026-11-22T21:01:00+00:00",
     "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
@@ -1967,7 +3185,7 @@
   },
   {
     "url": "https://www.richmondandtwickenhamtimes.co.uk/news/national/26751822.three-killed-russian-attack-near-ukraines-capital-strikes-apartment-building",
-    "title": "Three killed after Russian attack near Ukraine\u2019s capital strikes apartment building",
+    "title": "Three killed after Russian attack near Ukraine’s capital strikes apartment building",
     "domain": "www.richmondandtwickenhamtimes.co.uk",
     "gdelt_first_seen_utc": "2026-11-22T21:01:00+00:00",
     "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
@@ -2015,7 +3233,7 @@
   },
   {
     "url": "https://garoweonline.com/en/news/world/israel-rejects-trump-s-gaza-plan-signals-the-unilateral-strikes-on-iran-remain-on-table",
-    "title": "Israel rejects Trump\u2019s Gaza plan, signals the unilateral strikes on Iran remain on table | Garowe Online",
+    "title": "Israel rejects Trump’s Gaza plan, signals the unilateral strikes on Iran remain on table | Garowe Online",
     "domain": "garoweonline.com",
     "gdelt_first_seen_utc": "2026-11-22T21:01:00+00:00",
     "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
@@ -2038,1115 +3256,6 @@
     "first_collector_observed_utc": "2026-11-22T21:06:47.900538+00:00"
   },
   {
-    "url": "https://www.southwalesargus.co.uk/news/national/26751822.three-killed-russian-attack-near-ukraines-capital-strikes-apartment-building",
-    "title": "Three killed after Russian attack near Ukraine\u2019s capital strikes apartment building",
-    "domain": "www.southwalesargus.co.uk",
-    "gdelt_first_seen_utc": "2026-11-22T20:02:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:attack",
-      "world_context:russia/ukraine"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
-  },
-  {
-    "url": "https://www.chelmsfordcitynews.co.uk/news/national/26751822.three-killed-russian-attack-near-ukraines-capital-strikes-apartment-building",
-    "title": "Three killed after Russian attack near Ukraine\u2019s capital strikes apartment building",
-    "domain": "www.chelmsfordcitynews.co.uk",
-    "gdelt_first_seen_utc": "2026-11-22T20:02:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:attack",
-      "world_context:russia/ukraine"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
-  },
-  {
-    "url": "https://www.gazetteherald.co.uk/news/national/26751822.three-killed-russian-attack-near-ukraines-capital-strikes-apartment-building",
-    "title": "Three killed after Russian attack near Ukraine\u2019s capital strikes apartment building",
-    "domain": "www.gazetteherald.co.uk",
-    "gdelt_first_seen_utc": "2026-11-22T20:02:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:attack",
-      "world_context:russia/ukraine"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
-  },
-  {
-    "url": "https://www.oxfordmail.co.uk/news/national/26751822.three-killed-russian-attack-near-ukraines-capital-strikes-apartment-building",
-    "title": "Three killed after Russian attack near Ukraine\u2019s capital strikes apartment building",
-    "domain": "www.oxfordmail.co.uk",
-    "gdelt_first_seen_utc": "2026-11-22T20:02:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:attack",
-      "world_context:russia/ukraine"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
-  },
-  {
-    "url": "https://www.bordertelegraph.com/news/national/26751822.three-killed-russian-attack-near-ukraines-capital-strikes-apartment-building",
-    "title": "Three killed after Russian attack near Ukraine\u2019s capital strikes apartment building",
-    "domain": "www.bordertelegraph.com",
-    "gdelt_first_seen_utc": "2026-11-22T20:02:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:attack",
-      "world_context:russia/ukraine"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
-  },
-  {
-    "url": "https://www.theboltonnews.co.uk/news/national/26751822.three-killed-russian-attack-near-ukraines-capital-strikes-apartment-building",
-    "title": "Three killed after Russian attack near Ukraine\u2019s capital strikes apartment building",
-    "domain": "www.theboltonnews.co.uk",
-    "gdelt_first_seen_utc": "2026-11-22T20:02:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:attack",
-      "world_context:russia/ukraine"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
-  },
-  {
-    "url": "https://www.youralaskalink.com/news/national/president-donald-trump-and-secretary-of-defense-pete-hegseth-salute-as-u-s-army-members/image_c2c08b77-e0dd-5acb-8f2c-51a4a2976484.html",
-    "title": "President Donald Trump and Secretary of Defense Pete Hegseth salute as U.S. Army members move a transfer case containing the remains of Pvt. Isabella Gonzales, killed in Iranian strike on Jordan, on July 22, 2026, at Dover Air Force Base, Del.",
-    "domain": "www.youralaskalink.com",
-    "gdelt_first_seen_utc": "2026-11-22T20:02:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:strike",
-      "world_context:iran/united states"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
-  },
-  {
-    "url": "https://www.theage.com.au/world/europe/russian-warship-goes-up-in-flames-at-libyan-port-in-suspected-ukraine-sea-drone-attack-20261123-p61gbo.html",
-    "title": "Russian warship goes up in flames at Libyan port in suspected Ukraine sea drone attack",
-    "domain": "www.theage.com.au",
-    "gdelt_first_seen_utc": "2026-11-22T20:02:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:attack",
-      "world_context:russia/ukraine"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
-  },
-  {
-    "url": "https://www.eagletribune.com/region/suspected-ukrainian-sea-drones-hit-russian-warship-at-benghazi-naval-base-libyan-officials-say/article_dbc9c76d-4118-5b0f-8d5a-bad2f9e298d8.html",
-    "title": "Suspected Ukrainian sea drones hit Russian warship at Benghazi naval base, Libyan officials say",
-    "domain": "www.eagletribune.com",
-    "gdelt_first_seen_utc": "2026-11-22T20:02:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:drones",
-      "world_context:russia/ukraine"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
-  },
-  {
-    "url": "https://www.yakimaherald.com/news/nation_and_world/business/suspected-ukrainian-sea-drones-hit-russian-warship-at-benghazi-naval-base-libyan-officials-say/article_211a36e3-162b-53ab-87be-fd7b931f7046.html",
-    "title": "Suspected Ukrainian sea drones hit Russian warship at Benghazi naval base, Libyan officials say",
-    "domain": "www.yakimaherald.com",
-    "gdelt_first_seen_utc": "2026-11-22T20:01:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:drones",
-      "world_context:russia/ukraine"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
-  },
-  {
-    "url": "https://www.chicagotribune.com/2026/11/22/suspected-ukrainian-sea-drones-hit-russian-warship-benghazi-naval-base",
-    "title": "Suspected Ukrainian sea drones hit Russian warship at Benghazi naval base, Libyan officials say",
-    "domain": "www.chicagotribune.com",
-    "gdelt_first_seen_utc": "2026-11-22T20:01:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:drones",
-      "world_context:russia/ukraine"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
-  },
-  {
-    "url": "https://www.ipswichstar.co.uk/news/national/26751822.three-killed-russian-attack-near-ukraines-capital-strikes-apartment-building",
-    "title": "Three killed after Russian attack near Ukraine\u2019s capital strikes apartment building",
-    "domain": "www.ipswichstar.co.uk",
-    "gdelt_first_seen_utc": "2026-11-22T20:01:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:attack",
-      "world_context:russia/ukraine"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
-  },
-  {
-    "url": "http://www.asiabulletin.com/news/279449171/appreciate-pm-modi-appeal-to-russia-to-stop-ukraine-war-return-to-talks-netherlands-fm",
-    "title": "Appreciate PM Modi's appeal to Russia to stop Ukraine war, return to talks: Netherlands FM",
-    "domain": "www.asiabulletin.com",
-    "gdelt_first_seen_utc": "2026-11-22T20:01:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:war",
-      "world_context:russia/ukraine"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
-  },
-  {
-    "url": "https://www.hindustantimes.com/world-news/poland-identifies-russian-cruise-missiles-behind-strikes-near-ukraine-border-nato-to-hold-discussions-101795373162372.html",
-    "title": "Poland identifies Russian cruise missiles behind strikes near Ukraine border; NATO to hold discussions",
-    "domain": "www.hindustantimes.com",
-    "gdelt_first_seen_utc": "2026-11-22T20:01:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:strikes",
-      "world_context:russia/ukraine"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
-  },
-  {
-    "url": "https://www.elystandard.co.uk/news/national/26751822.three-killed-russian-attack-near-ukraines-capital-strikes-apartment-building",
-    "title": "Three killed after Russian attack near Ukraine\u2019s capital strikes apartment building",
-    "domain": "www.elystandard.co.uk",
-    "gdelt_first_seen_utc": "2026-11-22T20:01:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:attack",
-      "world_context:russia/ukraine"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
-  },
-  {
-    "url": "https://www.huntspost.co.uk/news/national/26751822.three-killed-russian-attack-near-ukraines-capital-strikes-apartment-building",
-    "title": "Three killed after Russian attack near Ukraine\u2019s capital strikes apartment building",
-    "domain": "www.huntspost.co.uk",
-    "gdelt_first_seen_utc": "2026-11-22T20:01:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:attack",
-      "world_context:russia/ukraine"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
-  },
-  {
-    "url": "https://www.2news.com/news/national/suspected-ukrainian-sea-drones-hit-russian-warship-at-benghazi-naval-base-libyan-officials-say/article_efc6df49-a8c6-53a1-a1ab-2e5b304174cb.html",
-    "title": "Suspected Ukrainian sea drones hit Russian warship at Benghazi naval base, Libyan officials say",
-    "domain": "www.2news.com",
-    "gdelt_first_seen_utc": "2026-11-22T20:01:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:drones",
-      "world_context:russia/ukraine"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
-  },
-  {
-    "url": "https://www.cambstimes.co.uk/news/national/26751822.three-killed-russian-attack-near-ukraines-capital-strikes-apartment-building",
-    "title": "Three killed after Russian attack near Ukraine\u2019s capital strikes apartment building",
-    "domain": "www.cambstimes.co.uk",
-    "gdelt_first_seen_utc": "2026-11-22T20:01:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:attack",
-      "world_context:russia/ukraine"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
-  },
-  {
-    "url": "https://www.clickorlando.com/news/2026/11/22/suspected-ukrainian-sea-drones-hit-russian-warship-at-benghazi-naval-base-libyan-officials-say",
-    "title": "Suspected Ukrainian sea drones hit Russian warship at Benghazi naval base, Libyan officials say",
-    "domain": "www.clickorlando.com",
-    "gdelt_first_seen_utc": "2026-11-22T20:01:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:drones",
-      "world_context:russia/ukraine"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
-  },
-  {
-    "url": "https://www.joplinglobe.com/region/national_business/suspected-ukrainian-sea-drones-hit-russian-warship-at-benghazi-naval-base-libyan-officials-say/article_65631004-2112-51d8-b93e-e44e43d94950.html",
-    "title": "Suspected Ukrainian sea drones hit Russian warship at Benghazi naval base, Libyan officials say",
-    "domain": "www.joplinglobe.com",
-    "gdelt_first_seen_utc": "2026-11-22T20:01:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:drones",
-      "world_context:russia/ukraine"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
-  },
-  {
-    "url": "https://www.kxlh.com/world/russian-attack-near-ukraines-capital-strikes-apartment-building-killing-2",
-    "title": "Russian attack near Ukraine's capital strikes apartment building, killing 2",
-    "domain": "www.kxlh.com",
-    "gdelt_first_seen_utc": "2026-11-22T15:01:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:attack",
-      "world_context:russia/ukraine"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T15:14:06.105288+00:00"
-  },
-  {
-    "url": "https://www.wsls.com/business/2026/11/22/air-alert-sounds-in-kaliningrad-as-finland-tries-to-extinguish-fire-aboard-russian-cargo-ship",
-    "title": "Russian attack near Ukraine's capital strikes apartment building, killing 2 and wounding 4 others",
-    "domain": "www.wsls.com",
-    "gdelt_first_seen_utc": "2026-11-22T15:01:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:attack",
-      "world_context:russia/ukraine"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T15:14:06.105288+00:00"
-  },
-  {
-    "url": "https://www.lex18.com/world/russian-attack-near-ukraines-capital-strikes-apartment-building-killing-2",
-    "title": "Russian attack near Ukraine's capital strikes apartment building, killing 2",
-    "domain": "www.lex18.com",
-    "gdelt_first_seen_utc": "2026-11-22T15:01:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:attack",
-      "world_context:russia/ukraine"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T15:14:06.105288+00:00"
-  },
-  {
-    "url": "https://www.clickorlando.com/business/2026/11/22/air-alert-sounds-in-kaliningrad-as-finland-tries-to-extinguish-fire-aboard-russian-cargo-ship",
-    "title": "Russian attack near Ukraine's capital strikes apartment building, killing 2 and wounding 4 others",
-    "domain": "www.clickorlando.com",
-    "gdelt_first_seen_utc": "2026-11-22T15:01:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:attack",
-      "world_context:russia/ukraine"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T15:14:06.105288+00:00"
-  },
-  {
-    "url": "https://www.kxlf.com/world/russian-attack-near-ukraines-capital-strikes-apartment-building-killing-2",
-    "title": "Russian attack near Ukraine's capital strikes apartment building, killing 2",
-    "domain": "www.kxlf.com",
-    "gdelt_first_seen_utc": "2026-11-22T15:01:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:attack",
-      "world_context:russia/ukraine"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T15:14:06.105288+00:00"
-  },
-  {
-    "url": "https://www.standardmedia.co.ke/business/business/article/2001562558/kenya-moves-closer-to-naming-its-crude-oil-ahead-of-first-oil-production",
-    "title": "Kenya moves closer to naming its crude oil ahead of first oil production",
-    "domain": "www.standardmedia.co.ke",
-    "gdelt_first_seen_utc": "2026-11-23T14:47:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 66,
-    "category": "Oil & Energy",
-    "relevance_evidence": [
-      "crude oil",
-      "oil production"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T14:54:25.565116+00:00"
-  },
-  {
-    "url": "https://www.webwire.com/ViewPressRel.asp?aId=364522",
-    "title": "Siemens and Enexis accelerate expansion of Dutch Power Grid",
-    "domain": "www.webwire.com",
-    "gdelt_first_seen_utc": "2026-11-23T14:47:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 57,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "grid",
-      "power grid"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T14:54:25.565116+00:00"
-  },
-  {
-    "url": "https://www.equitybulls.com/news/379404/united-drilling-tools-wins-1-73-crore-order",
-    "title": "United Drilling Tools Wins \u20b91.73 Crore Order From Vedanta Oil and Gas",
-    "domain": "www.equitybulls.com",
-    "gdelt_first_seen_utc": "2026-11-22T20:02:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 51,
-    "category": "Oil & Energy",
-    "relevance_evidence": [
-      "drilling",
-      "oil and gas"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
-  },
-  {
-    "url": "https://www.middleeasteye.net/live-blog/live-blog-update/south-korea-asks-qatar-priority-supply-lng-supplies-once-transits",
-    "title": "South Korea asks Qatar for priority supply of LNG supplies once transits through Hormuz Strait return to normal",
-    "domain": "www.middleeasteye.net",
-    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 45,
-    "category": "LNG",
-    "relevance_evidence": [
-      "lng"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
-  },
-  {
-    "url": "https://biz.chosun.com/industry/company/2026/11/23/IDTN6OWUUBGLDKZFSAAP4BFHCM",
-    "title": "\uac00\uc2a4\uacf5\uc0ac, LNG \ud2b8\ub808\uc774\ub529\u00b7\ub0c9\uc5f4 \uc0ac\uc5c5 \uc804\ub2f4\uc870\uc9c1 \uc2e0\uc124",
-    "domain": "biz.chosun.com",
-    "gdelt_first_seen_utc": "2026-11-23T08:16:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 45,
-    "category": "LNG",
-    "relevance_evidence": [
-      "lng"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T08:18:54.579463+00:00"
-  },
-  {
-    "url": "https://www.worldoil.com/news/2026/10/21/woodside-s-scarborough-hits-99-complete-first-lng-on-track-for-q4",
-    "title": "Woodside\u2019s Scarborough hits 99% complete, first LNG on track for Q4",
-    "domain": "www.worldoil.com",
-    "gdelt_first_seen_utc": "2026-11-23T00:31:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 45,
-    "category": "LNG",
-    "relevance_evidence": [
-      "lng"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T00:47:09.840880+00:00"
-  },
-  {
-    "url": "https://baomoi.com/lng-t26554816.epi",
-    "title": "Tin t\u1ee9c LNG - H\u00ecnh \u1ea3nh v\u00e0 video clip n\u00f3ng m\u1edbi nh\u1ea5t",
-    "domain": "baomoi.com",
-    "gdelt_first_seen_utc": "2026-11-23T00:31:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 45,
-    "category": "LNG",
-    "relevance_evidence": [
-      "lng"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T00:47:09.840880+00:00"
-  },
-  {
-    "url": "https://koran-jakarta.com/2026-11-22/proyek-lng-abadi-masela-buka-peluang-kerja-ribuan-warga-kepulauan-tanimbar",
-    "title": "Proyek LNG Abadi Masela Buka Peluang Kerja Ribuan Warga Kepulauan Tanimbar",
-    "domain": "koran-jakarta.com",
-    "gdelt_first_seen_utc": "2026-11-22T15:01:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 45,
-    "category": "LNG",
-    "relevance_evidence": [
-      "lng"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T15:14:06.105288+00:00"
-  },
-  {
-    "url": "https://www.clickondetroit.com/news/local/2026/11/23/gas-prices-fall-in-michigan-us-ahead-of-thanksgiving-travel-frenzy",
-    "title": "Gas prices fall in Michigan, US ahead of Thanksgiving travel frenzy",
-    "domain": "www.clickondetroit.com",
-    "gdelt_first_seen_utc": "2026-11-23T14:47:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 33,
-    "category": "Natural Gas",
-    "relevance_evidence": [
-      "gas prices"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T14:54:25.565116+00:00"
-  },
-  {
-    "url": "https://www.k923orlando.com/news/are-gas-prices-new/HXPCHIFOK444FOEHGOSV6QE5XQ",
-    "title": "Are gas prices the new Grinch? How fuel costs are reshaping the holidays",
-    "domain": "www.k923orlando.com",
-    "gdelt_first_seen_utc": "2026-11-23T14:47:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 33,
-    "category": "Natural Gas",
-    "relevance_evidence": [
-      "gas prices"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T14:54:25.565116+00:00"
-  },
-  {
-    "url": "https://www.mykxlg.com/news/state/lower-gas-prices-mean-good-news-for-thanksgiving-travelers/article_82cd927e-a52d-4e67-b1d7-b06694d5f1ff.html",
-    "title": "Lower Gas Prices Mean Good News for Thanksgiving Travelers",
-    "domain": "www.mykxlg.com",
-    "gdelt_first_seen_utc": "2026-11-23T14:46:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 33,
-    "category": "Natural Gas",
-    "relevance_evidence": [
-      "gas prices"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T14:54:25.565116+00:00"
-  },
-  {
-    "url": "https://www.spokesman.com/stories/2026/nov/23/getting-there-holiday-travel-outlook-gets-boost-by",
-    "title": "Getting There: Holiday travel outlook gets boost by lower gas prices",
-    "domain": "www.spokesman.com",
-    "gdelt_first_seen_utc": "2026-11-23T10:02:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 33,
-    "category": "Natural Gas",
-    "relevance_evidence": [
-      "gas prices"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
-  },
-  {
-    "url": "https://www.trend.az/iran/4249608.html",
-    "title": "Iran's Homa gas gathering center ready to help boost gas supply",
-    "domain": "www.trend.az",
-    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 33,
-    "category": "Natural Gas",
-    "relevance_evidence": [
-      "gas supply"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
-  },
-  {
-    "url": "https://www.irishexaminer.com/world/arid-41941251.html",
-    "title": "Gas prices in Europe surge as forecast cold snap feeds supply shortage fears",
-    "domain": "www.irishexaminer.com",
-    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 33,
-    "category": "Natural Gas",
-    "relevance_evidence": [
-      "gas prices"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
-  },
-  {
-    "url": "https://www.upstreamonline.com/finance/vaar-energi-to-acquire-conocophillips-norway-business-and-teesside-asset-for-4-4-billion/2-1-2077865",
-    "title": "Vaar Energi to acquire ConocoPhillips\u2019 Norway business and Teesside asset for $4.4 billion",
-    "domain": "www.upstreamonline.com",
-    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 33,
-    "category": "Oil & Energy",
-    "relevance_evidence": [
-      "conocophillips"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
-  },
-  {
-    "url": "https://finance.eastmoney.com/a/202611233937333910.html",
-    "title": "WTI\u539f\u6cb9\u671f\u8d27\u8dcc\u5e45\u6269\u5927\u81f31% _ \u4e1c\u65b9\u8d22\u5bcc\u7f51",
-    "domain": "finance.eastmoney.com",
-    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 33,
-    "category": "Oil & Energy",
-    "relevance_evidence": [
-      "wti"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
-  },
-  {
-    "url": "https://sana.sy/en/economic/2361066",
-    "title": "Oil prices slip as global market sell-off outweighs Gulf shipping risks",
-    "domain": "sana.sy",
-    "gdelt_first_seen_utc": "2026-11-23T08:16:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 33,
-    "category": "Oil & Energy",
-    "relevance_evidence": [
-      "oil prices"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T08:18:54.579463+00:00"
-  },
-  {
-    "url": "https://www.oilandgasonline.com/doc/exxonmobil-advances-next-phase-of-guyana-development-with-longtail-0001",
-    "title": "ExxonMobil Advances Next Phase Of Guyana Development With Longtail",
-    "domain": "www.oilandgasonline.com",
-    "gdelt_first_seen_utc": "2026-11-23T08:16:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 33,
-    "category": "Oil & Energy",
-    "relevance_evidence": [
-      "exxonmobil"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T08:18:54.579463+00:00"
-  },
-  {
-    "url": "https://www.naturalnews.com/2026-11-22-3-emergency-heating-options-keep-family-warm.html",
-    "title": "No Electricity, No Heat? These 3 Emergency Heating Options Could Keep Your Family Warm \u2013 NaturalNews.com",
-    "domain": "www.naturalnews.com",
-    "gdelt_first_seen_utc": "2026-11-23T02:46:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 33,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "electricity"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T02:54:13.059849+00:00"
-  },
-  {
-    "url": "https://www.fool.com/investing/2026/11/22/stifel-says-spacex-could-buy-stalled-data-centers-for-one-reason-their-power-heres-why-electricity-is-the-real-asset",
-    "title": "Stifel Says SpaceX Could Buy Stalled Data Centers for One Reason: Their Power. Here\u2019s Why Electricity Is the Real Asset. | The Motley Fool",
-    "domain": "www.fool.com",
-    "gdelt_first_seen_utc": "2026-11-23T02:46:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 33,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "electricity"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T02:54:13.059849+00:00"
-  },
-  {
-    "url": "https://www.ktiv.com/2026/11/22/gas-prices-decline-thanksgiving-travel-approaches",
-    "title": "Gas prices decline as Thanksgiving travel approaches",
-    "domain": "www.ktiv.com",
-    "gdelt_first_seen_utc": "2026-11-23T02:46:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 33,
-    "category": "Natural Gas",
-    "relevance_evidence": [
-      "gas prices"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T02:54:13.059849+00:00"
-  },
-  {
-    "url": "https://vietnamnet.vn/en/hcmc-food-prices-stay-high-despite-lower-fuel-and-power-2574049.html",
-    "title": "Why HCMC food prices are still high despite cheaper fuel and electricity",
-    "domain": "vietnamnet.vn",
-    "gdelt_first_seen_utc": "2026-11-23T02:46:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 33,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "electricity"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T02:54:13.059849+00:00"
-  },
-  {
-    "url": "https://fox56.com/news/local/nepa-gas-prices-continue-to-decrease-average-below-4-per-gallon",
-    "title": "NEPA gas prices continue to decrease, average below $4 per gallon",
-    "domain": "fox56.com",
-    "gdelt_first_seen_utc": "2026-11-23T01:31:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 33,
-    "category": "Natural Gas",
-    "relevance_evidence": [
-      "gas prices"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T01:47:28.987172+00:00"
-  },
-  {
     "url": "https://witl.com/michigan-thanksgiving-gas-prices",
     "title": "Michigan Gas Prices Are Dropping, but Check Out How Much Cheaper It Is Just Outside the State",
     "domain": "witl.com",
@@ -3164,226 +3273,6 @@
     "category": "Natural Gas",
     "relevance_evidence": [
       "gas prices"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T21:06:47.900538+00:00"
-  },
-  {
-    "url": "https://www.realclearpolitics.com/technology/links/data-center-backlash-and-a-continued-expansion-2026-11-23",
-    "title": "Data Center Backlash and a Continued Expansion - RealClearPolitics",
-    "domain": "www.realclearpolitics.com",
-    "gdelt_first_seen_utc": "2026-11-23T14:47:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 30,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "data center"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T14:54:25.565116+00:00"
-  },
-  {
-    "url": "https://www.insidermonkey.com/news/press-releases/nocera-signs-binding-letter-of-intent-to-invest-22-million-for-an-approximately-44-stake-in-bitrock-a-self-powered-ai-data-center-developer-in-alberta-1868848",
-    "title": "Nocera Signs Binding Letter of Intent to Invest $22 Million for an Approximately 44% Stake in BitRock, a Self-Powered AI Data Center Developer in Alberta",
-    "domain": "www.insidermonkey.com",
-    "gdelt_first_seen_utc": "2026-11-23T14:47:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 30,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "data center"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T14:54:25.565116+00:00"
-  },
-  {
-    "url": "https://www.corrierecomunicazioni.it/data-center/data-center-trump-minacca-di-tassare-chi-investe-fuori-dagli-usa",
-    "title": "Data center, Trump minacca di tassare chi investe fuori dagli Usa - CorCom",
-    "domain": "www.corrierecomunicazioni.it",
-    "gdelt_first_seen_utc": "2026-11-23T14:47:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 30,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "data center"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T14:54:25.565116+00:00"
-  },
-  {
-    "url": "https://www.qualenergia.it/pro/articoli-pro/capacity-market-meno-picchi-ma-prezzi-elettrici-ancora-alti",
-    "title": "Capacity Market, meno picchi ma prezzi elettrici ancora alti",
-    "domain": "www.qualenergia.it",
-    "gdelt_first_seen_utc": "2026-11-23T14:47:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 30,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "capacity market"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T14:54:25.565116+00:00"
-  },
-  {
-    "url": "https://www.power-technology.com/news/downer-728m-hunter-transmission-project-contract",
-    "title": "Downer wins $728m Hunter Transmission Project contract",
-    "domain": "www.power-technology.com",
-    "gdelt_first_seen_utc": "2026-11-23T14:46:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 30,
-    "category": "Infrastructure & Investment",
-    "relevance_evidence": [
-      "transmission project"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T14:54:25.565116+00:00"
-  },
-  {
-    "url": "https://www.ibtimes.com.au/elon-musk-warns-ai-industry-cash-shortage-1879221",
-    "title": "Elon Musk Warns AI Cash Crunch Will Be Nuts Next Year as Data Center Delays Threaten Hundreds of Billions",
-    "domain": "www.ibtimes.com.au",
-    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 30,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "data center"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
-  },
-  {
-    "url": "https://www.trend.az/iran/4249482.html",
-    "title": "Iran drills 78 oil and gas wells across 10 provinces in eight months",
-    "domain": "www.trend.az",
-    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 30,
-    "category": "Oil & Energy",
-    "relevance_evidence": [
-      "oil and gas"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
-  },
-  {
-    "url": "https://www.riotimesonline.com/angola-first-gold-refinery-viana-endiama",
-    "title": "Angola Opens First Gold Refinery in Luanda",
-    "domain": "www.riotimesonline.com",
-    "gdelt_first_seen_utc": "2026-11-23T08:16:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 30,
-    "category": "Oil & Energy",
-    "relevance_evidence": [
-      "refinery"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T08:18:54.579463+00:00"
-  },
-  {
-    "url": "https://www.aol.com/articles/elon-musk-warns-data-center-174956000.html",
-    "title": "Elon Musk warns data center delays could leave AI companies short on cash: 'Going to be nuts' - AOL",
-    "domain": "www.aol.com",
-    "gdelt_first_seen_utc": "2026-11-22T21:02:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 30,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "data center"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T21:06:47.900538+00:00"
-  },
-  {
-    "url": "https://www.tnp.no/norway/economy/4802-oil-and-gas-still-largest-contributor-to-norway-economy",
-    "title": "Oil and Gas Still Largest Contributor to Norway Economy - The Nordic Page",
-    "domain": "www.tnp.no",
-    "gdelt_first_seen_utc": "2026-11-22T21:02:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 30,
-    "category": "Oil & Energy",
-    "relevance_evidence": [
-      "oil and gas"
     ],
     "status": "discovery_only_requires_publisher_verification",
     "first_collector_observed_utc": "2026-11-22T21:06:47.900538+00:00"
@@ -3431,291 +3320,5 @@
     ],
     "status": "discovery_only_requires_publisher_verification",
     "first_collector_observed_utc": "2026-11-22T21:06:47.900538+00:00"
-  },
-  {
-    "url": "https://www.jpost.com/middle-east/article-915746",
-    "title": "Iran-aligned Houthis say they targeted Saudi Rabigh oil refinery | The Jerusalem Post",
-    "domain": "www.jpost.com",
-    "gdelt_first_seen_utc": "2026-11-22T20:02:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 30,
-    "category": "Oil & Energy",
-    "relevance_evidence": [
-      "refinery"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
-  },
-  {
-    "url": "https://www.ilgazzettino.it:443/esteri/intelligenza_artificiale_disastro_clima_data_center-9906265.html",
-    "title": "L'intelligenza artificiale sta diventando un disastro per il clima: i data center inquinano quanto interi Paesi VIDEO",
-    "domain": "www.ilgazzettino.it:443",
-    "gdelt_first_seen_utc": "2026-11-22T15:01:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 30,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "data center"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T15:14:06.105288+00:00"
-  },
-  {
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70205620-pta-cms-siemens-energy-ag-bekanntmachung-nach-art-5-abs-1-lit-b-abs-3-der-verordnung-eu-nr-596-2014-erwerb-eigener-aktien-9-zwischenme-015.htm",
-    "title": "PTA-CMS: Siemens Energy AG: Bekanntmachung nach Art. 5 Abs. 1 lit. b), Abs. 3 der Verordnung (EU) Nr. 596/2014 - Erwerb eigener Aktien - 9. Zwischenmeldung",
-    "domain": "www.finanznachrichten.de",
-    "gdelt_first_seen_utc": "2026-11-23T14:47:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 27,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "siemens energy"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T14:54:25.565116+00:00"
-  },
-  {
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70205711-energy-transfer-wie-ein-mautstellen-geschaeftsmodell-steigende-ausschuettungen-aus-dem-us-energiemarkt-presst-013.htm",
-    "title": "Energy Transfer: Wie ein Mautstellen-Gesch\u00e4ftsmodell steigende Aussch\u00fcttungen aus dem US?Energiemarkt presst",
-    "domain": "www.finanznachrichten.de",
-    "gdelt_first_seen_utc": "2026-11-23T14:47:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 27,
-    "category": "Infrastructure & Investment",
-    "relevance_evidence": [
-      "energy transfer"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T14:54:25.565116+00:00"
-  },
-  {
-    "url": "https://www.boersennews.de/nachrichten/partner/wh-selfinvest/nvidia-siemens-energy-und-palo-alto-3-ki-aktien-im-grossen-boersencheck/5363280",
-    "title": "NVIDIA, Siemens Energy & Palo Alto: 3 KI-Aktien im gro\u00dfen B\u00f6rsencheck",
-    "domain": "www.boersennews.de",
-    "gdelt_first_seen_utc": "2026-11-23T10:02:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 27,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "siemens energy"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
-  },
-  {
-    "url": "https://www.boersennews.de/nachrichten/artikel/boersennews/siemens-energy-hat-der-abverkauf-gerade-erst-begonnen/5363667",
-    "title": "Siemens Energy: Hat der Abverkauf gerade erst begonnen?",
-    "domain": "www.boersennews.de",
-    "gdelt_first_seen_utc": "2026-11-23T10:02:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 27,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "siemens energy"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
-  },
-  {
-    "url": "https://www.recorder.ca/press-releases/globe-newswire/international-petroleum-corporation-announces-results-of-normal-course-issuer-bid-9",
-    "title": "International Petroleum Corporation Announces Results of Normal Course Issuer Bid",
-    "domain": "www.recorder.ca",
-    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 27,
-    "category": "Oil & Energy",
-    "relevance_evidence": [
-      "petroleum"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
-  },
-  {
-    "url": "https://revistaforum.com.br/blogs/o-cafezinho/a-petrobras-transformou-o-pre-sal-na-salvacao-do-brasil",
-    "title": "A Petrobras transformou o pr\u00e9-sal na salva\u00e7\u00e3o do Brasil - Revista F\u00f3rum",
-    "domain": "revistaforum.com.br",
-    "gdelt_first_seen_utc": "2026-11-23T02:46:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 27,
-    "category": "Oil & Energy",
-    "relevance_evidence": [
-      "petrobras"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T02:54:13.059849+00:00"
-  },
-  {
-    "url": "https://www.aol.com/articles/four-ways-keep-energy-bills-130714000.html",
-    "title": "Energy bills will soar - here's how you can ease the pain - AOL",
-    "domain": "www.aol.com",
-    "gdelt_first_seen_utc": "2026-11-23T00:31:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 27,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "energy bills"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-23T00:47:09.840880+00:00"
-  },
-  {
-    "url": "https://www.equitybulls.com/news/379391/acme-solar-commissions-35-81-mw-148-645",
-    "title": "ACME Solar Commissions 35.81 MW / 148.645 MWh Battery Storage Capacity in Rajasthan",
-    "domain": "www.equitybulls.com",
-    "gdelt_first_seen_utc": "2026-11-22T20:01:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 27,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "battery storage"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
-  },
-  {
-    "url": "https://www.equitybulls.com/news/379392/acme-solar-adds-16-06-mw-69-678",
-    "title": "ACME Solar Adds 16.06 MW / 69.678 MWh Battery Storage Capacity in Rajasthan",
-    "domain": "www.equitybulls.com",
-    "gdelt_first_seen_utc": "2026-11-22T20:01:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 27,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "battery storage"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
-  },
-  {
-    "url": "https://www.tnp.no/norway/economy/3214-dnv-launches-innovation-concept-for-efficient-offshore-power-generation",
-    "title": "DNV Launches Innovation Concept for Efficient Offshore Power Generation - The Nordic Page",
-    "domain": "www.tnp.no",
-    "gdelt_first_seen_utc": "2026-11-22T15:01:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 27,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "power generation"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T15:14:06.105288+00:00"
-  },
-  {
-    "url": "https://journalstar.com/news/local/business/article_fedff3ed-a7f5-47b8-bbb1-77a980917269.html",
-    "title": "NextEra proposing new Lancaster County solar farm. Neighbors have concerns.",
-    "domain": "journalstar.com",
-    "gdelt_first_seen_utc": "2026-11-22T15:01:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 27,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "nextera"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-22T15:14:06.105288+00:00"
   }
 ]
