@@ -1,15 +1,15 @@
 # GDELT Global Article List — sampled backup
 
-Run: 2026-11-23T08:18:49.403710+00:00
+Run: 2026-11-23T10:08:49.548580+00:00
 Status: **ok**
-RSS entries examined: **2574**
-Latest GDELT index timestamp: **2026-11-23T08:16:00+00:00**
-Index lag (minutes): **2.8**
+RSS entries examined: **5480**
+Latest GDELT index timestamp: **2026-11-23T10:02:00+00:00**
+Index lag (minutes): **6.8**
 Upstream feed stale: **False**
-High-signal sampled entries: **18**
+High-signal sampled entries: **31**
 Minutes since previous scheduled sample: **None**
 Potential gap in rolling feed sampling: **False**
-New unique URLs in research state: **18**
+New unique URLs in research state: **31**
 Identical to prior successful feed payload: **False**
 Previously stored non-article pages removed: **0**
 Previously stored scores corrected: **0**
