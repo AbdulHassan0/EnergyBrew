@@ -1,16 +1,16 @@
 # EnergyBrew Newsroom Collection Health
 
-Audit time: 2026-11-22T21:53:50.343463+00:00
+Audit time: 2026-11-23T02:54:19.199524+00:00
 Status: **degraded**
 Official feeds connected: **15/15**
 Timestamped high-signal editorial leads (24h): **0** / target 12 (agency: 0, grid operator: 0, specialist RSS: 0)
-GDELT links first seen (24h): **116**, of which **116** headline-score as high signal
+GDELT links first seen (24h): **117**, of which **117** headline-score as high signal
 GDELT publisher-verified times: **0** (requires a separate check)
 Company/newswire release leads (last 24h feed date): **3**
 Company release provider status: **ok**
 FERC official newsroom: **not_run**; publication DATE only; retained links: **0**; first collected in last 24h: **0**
 Rolling GAL latest sample: **ok** (recent success: True)
-Rolling GAL 24h potential sampling coverage upper bound: **11.02%**; continuity adequate: **False**
+Rolling GAL 24h potential sampling coverage upper bound: **11.26%**; continuity adequate: **False**
 Company release publication times and issuer claims independently verified: **0**
 
 ## Missing coverage
@@ -29,6 +29,6 @@ Company release publication times and issuer claims independently verified: **0*
 - No observed high-signal stories in: Natural Gas, LNG, Power & Electricity, Oil & Energy, Infrastructure & Investment
 - GDELT DOC query API is degraded or rate limited; recent GAL poll does not establish continuous coverage
 - A missed rolling GAL sample interval was observed
-- Rolling GAL 24h sampling continuity weak: at most 11.02% of windows potentially sampled; at least 1281.3 minutes unobserved
+- Rolling GAL 24h sampling continuity weak: at most 11.26% of windows potentially sampled; at least 1277.9 minutes unobserved
 
 These are coverage observations, not proof of article correctness or licensing.
