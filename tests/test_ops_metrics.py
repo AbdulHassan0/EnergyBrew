@@ -201,6 +201,21 @@ class MetricsTests(unittest.TestCase):
         self.assertFalse(r["seven_day_pilot_complete"])
         self.assertTrue(any("sampled-window" in warning for warning in r["warnings"]))
 
+    def test_gap_total_is_not_truncated_to_recent_thirty(self):
+        # Forty-one separated samples produce forty gaps; retain only thirty
+        # detail rows without understating the total outage count.
+        gal={"gal_runs":[{"run_utc":stamp(35*i),"status":"ok"}
+                         for i in range(41)]}
+        result=create({},gal,now=NOW)
+        self.assertEqual(result["observed_sampling_gap_count"],40)
+        self.assertEqual(len(result["observed_sampling_gaps"]),30)
+        self.assertEqual(result["longest_observed_sampling_gap_minutes"],35)
+
+    def test_gap_summary_zero_when_no_successful_samples(self):
+        result=create({},{"gal_runs":[{"run_utc":stamp(3),"status":"degraded"}]},now=NOW)
+        self.assertEqual(result["observed_sampling_gap_count"],0)
+        self.assertEqual(result["longest_observed_sampling_gap_minutes"],0)
+
     def test_report_outputs_readable_files(self):
         with tempfile.TemporaryDirectory() as d:
             root=Path(d)
