@@ -1,36 +1,37 @@
 {
-  "generated_utc": "2026-11-23T02:54:14.311489+00:00",
+  "generated_utc": "2026-11-23T14:54:26.718415+00:00",
   "status": "research_only_not_approved",
-  "unique_relevant_urls_7d": 835,
+  "unique_relevant_urls_7d": 936,
   "selected_research_links": 32,
-  "unique_domains_in_selection": 21,
+  "unique_domains_in_selection": 20,
   "queue_counts": {
     "older_official_context": 60,
+    "specialist_publisher_24h": 6,
     "regulatory_date_only": 6,
-    "discovery_unverified": 728,
-    "company_release_unverified": 41
+    "discovery_unverified": 807,
+    "company_release_unverified": 57
   },
   "selected_category_counts": {
-    "Natural Gas": 5,
+    "Natural Gas": 4,
     "LNG": 8,
     "Power & Electricity": 8,
-    "Oil & Energy": 2,
+    "Oil & Energy": 3,
     "Infrastructure & Investment": 1,
     "Geopolitics": 8
   },
   "selected_topic_coverage_counts": {
-    "Natural Gas": 5,
+    "Natural Gas": 4,
     "LNG": 8,
     "Power & Electricity": 8,
-    "Oil & Energy": 4,
-    "Infrastructure & Investment": 13,
+    "Oil & Energy": 6,
+    "Infrastructure & Investment": 14,
     "Geopolitics": 8
   },
   "missing_categories": [],
   "publisher_timestamped_official_24h": 0,
-  "publisher_timestamped_specialist_24h": 0,
+  "publisher_timestamped_specialist_24h": 6,
   "system_operator_primary_24h": 0,
-  "likely_same_event_links_suppressed": 7,
+  "likely_same_event_links_suppressed": 1,
   "discovery_publisher_dates_verified": 0,
   "promotional_or_language_review_count": 0,
   "stories": [
@@ -173,6 +174,36 @@
       "rank": 130
     },
     {
+      "title": "European Natural Gas Prices Surge 8.6% as Cold Snap Looms",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/European-Natural-Gas-Prices-Surge-86-as-Cold-Snap-Looms.html",
+      "domain": "oilprice.com",
+      "first_collector_observed_utc": "2026-11-23T14:54:05.913764+00:00",
+      "local_collection_time_known": true,
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "category": "Natural Gas",
+      "coverage_themes": [
+        "Natural Gas"
+      ],
+      "relevance_score": 72,
+      "relevance_evidence": [
+        "gas prices",
+        "natural gas"
+      ],
+      "origin": "official_rss",
+      "time_basis": "specialist_publisher_rss_timestamp",
+      "observed_time_utc": "2026-11-23T08:30:00+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "specialist_publisher_24h",
+      "rank": 127
+    },
+    {
       "title": "Freeport LNG Development, L.P., FLNG Liquefaction, LLC, FLNG Liquefaction 2, LLC, FLNG Liquefaction 3, LLC, FLNG Liquefaction 4, LLC; Notice of Application and Establishing Intervention Deadline",
       "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23609/freeport-lng-development-lp-flng-liquefaction-llc-flng-liquefaction-2-llc-flng-liquefaction-3-llc",
       "domain": "www.federalregister.gov",
@@ -255,38 +286,6 @@
       "origin": "official_rss",
       "time_basis": "specialist_publisher_rss_timestamp",
       "observed_time_utc": "2026-11-20T12:30:00+00:00",
-      "publisher_time_verified": true,
-      "date_confidence": "publisher_rss_timestamp",
-      "within_24h_on_own_time_basis": false,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "older_official_context",
-      "rank": 120
-    },
-    {
-      "title": "Iran Moves to Restart Oil Exports Despite U.S. Naval Blockade",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Moves-to-Restart-Oil-Exports-Despite-US-Naval-Blockade.html",
-      "domain": "oilprice.com",
-      "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00",
-      "local_collection_time_known": true,
-      "source": "OilPrice.com News",
-      "source_class": "specialist_publisher",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics",
-        "Oil & Energy"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:oil",
-        "geopolitical_event:blockade",
-        "world_context:iran"
-      ],
-      "origin": "official_rss",
-      "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-20T09:00:00+00:00",
       "publisher_time_verified": true,
       "date_confidence": "publisher_rss_timestamp",
       "within_24h_on_own_time_basis": false,
@@ -608,6 +607,102 @@
       "rank": 106
     },
     {
+      "title": "Strait of Hormuz attacks have increased to highest level since Iran war began",
+      "url": "https://abc7.com/story/strait-hormuz-attacks-have-increased-highest-level-iran-war-began/20069523",
+      "domain": "abc7.com",
+      "first_collector_observed_utc": "2026-11-23T14:54:25.565116+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:strait of hormuz",
+        "geopolitical_event:attacks",
+        "world_context:iran"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-23T14:47:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
+    },
+    {
+      "title": "Strait of Hormuz Shipping Slows Sharply After Tanker Attacks, Tracking Data Shows",
+      "url": "https://www.newdelhitimes.com/strait-hormuz-shipping-slows-tanker-attacks-november-23-2026",
+      "domain": "www.newdelhitimes.com",
+      "first_collector_observed_utc": "2026-11-23T14:54:25.565116+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics",
+        "Oil & Energy"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:tanker",
+        "geopolitical_event:attacks",
+        "world_context:strait of hormuz"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-23T14:46:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
+    },
+    {
+      "title": "Ukrainian Drones Set Russian Oil Infrastructure Ablaze in Twin Strikes Deep Inside Russia",
+      "url": "https://www.kyivpost.com/post/90874",
+      "domain": "www.kyivpost.com",
+      "first_collector_observed_utc": "2026-11-23T08:18:54.579463+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics",
+        "Infrastructure & Investment",
+        "Oil & Energy"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:oil",
+        "geopolitical_event:strikes",
+        "world_context:russia"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-23T08:16:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
+    },
+    {
       "title": "Red Sea in Turmoil: Houthi Attacks Undermine Saudi Vision 2030 and Regional Trade – NaturalNews.com",
       "url": "https://www.naturalnews.com/2026-11-22-houthi-attacks-undermine-saudi-vision-2030-trade.html",
       "domain": "www.naturalnews.com",
@@ -701,100 +796,6 @@
       "rank": 102
     },
     {
-      "title": "Iranian attacks in the Strait of Hormuz reach highest levels since the conflict began",
-      "url": "https://www.komu.com/news/nationworld/iranian-attacks-in-the-strait-of-hormuz-reach-highest-levels-since-the-conflict-began/article_d0c1043a-aeaa-5380-a980-a0ceb5aebbf6.html",
-      "domain": "www.komu.com",
-      "first_collector_observed_utc": "2026-11-22T21:06:47.900538+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:strait of hormuz",
-        "geopolitical_event:attacks",
-        "world_context:iranian"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-22T21:02:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102,
-      "related_reports": [
-        {
-          "title": "Iranian attacks in the Strait of Hormuz are at the highest levels since the conflict began",
-          "url": "https://kvia.com/news/us-world/cnn-world/2026/11/22/iranian-attacks-in-the-strait-of-hormuz-are-at-the-highest-levels-since-the-conflict-began",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "Iranian attacks in the Strait of Hormuz are at the highest levels since the conflict began",
-          "url": "https://abc17news.com/news/national-world/cnn-world/2026/11/22/iranian-attacks-in-the-strait-of-hormuz-are-at-the-highest-levels-since-the-conflict-began",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        }
-      ]
-    },
-    {
-      "title": "Endurance athlete swims in Strait of Hormuz to highlight Iran war's impact on wildlife",
-      "url": "https://www.latimes.com/world-nation/story/2026-11-22/endurance-athlete-swims-in-strait-of-hormuz-to-highlight-iran-wars-impact-on-wildlife",
-      "domain": "www.latimes.com",
-      "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:strait of hormuz",
-        "geopolitical_event:war",
-        "world_context:iran"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-22T20:01:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102,
-      "related_reports": [
-        {
-          "title": "Endurance athlete swims in Strait of Hormuz to highlight Iran war's impact on wildlife",
-          "url": "https://www.ketv.com/article/lewis-pugh-strait-of-hormuz-swim-iran-war/74497133",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "Endurance athlete swims in Strait of Hormuz to highlight Iran war's impact on wildlife",
-          "url": "https://www.ksbw.com/article/lewis-pugh-strait-of-hormuz-swim-iran-war/74497133",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        }
-      ]
-    },
-    {
       "title": "BASS Wins BW LNG Contract for BASSnet Neo Cloud-Native Solution",
       "url": "https://maritime-executive.com/corporate/bass-wins-bw-lng-contract-for-bassnet-neo-cloud-native-solution",
       "domain": "maritime-executive.com",
@@ -816,7 +817,7 @@
       "observed_time_utc": "2026-11-22T12:46:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
+      "within_24h_on_own_time_basis": false,
       "needs_editor_review": [],
       "editorial_status": "research_only_not_approved",
       "other_origins": [],
@@ -915,6 +916,36 @@
       "rank": 89
     },
     {
+      "title": "$4.4 billion play for ConocoPhillips’ Norwegian oil & gas assets and UK infrastructure expands Vår Energi’s North Sea footprint",
+      "url": "https://www.offshore-energy.biz/2026/11/23/dollar44-billion-play-for-conocophillips-norwegian-oil-and-gas-assets-and-uk-infrastructure-expands-var-energis-north-sea-footprint",
+      "domain": "www.offshore-energy.biz",
+      "first_collector_observed_utc": "2026-11-23T14:54:05.913764+00:00",
+      "local_collection_time_known": true,
+      "source": "Offshore Energy News",
+      "source_class": "specialist_publisher",
+      "category": "Oil & Energy",
+      "coverage_themes": [
+        "Oil & Energy",
+        "Infrastructure & Investment"
+      ],
+      "relevance_score": 33,
+      "relevance_evidence": [
+        "conocophillips"
+      ],
+      "origin": "official_rss",
+      "time_basis": "specialist_publisher_rss_timestamp",
+      "observed_time_utc": "2026-11-23T08:39:00+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "specialist_publisher_24h",
+      "rank": 88
+    },
+    {
       "title": "Organization of the Petroleum Exporting Countries (OPEC), African Continental Free Trade Area (AfCFTA) and Dangote Refinery Join South Sudanese Ministers on the South Sudan Oil & Power (SSOP) 2026 Keynote Stage",
       "url": "https://energycapitalandpower.africa-newsroom.com/press/organization-of-the-petroleum-exporting-countries-opec-african-continental-free-trade-area-afcfta-and-dangote-refinery-join-south-sudanese-ministers-on-the-south-sudan-oil-and-power-ssop-2026-keynote-stage?lang=en",
       "domain": "energycapitalandpower.africa-newsroom.com",
@@ -937,7 +968,7 @@
       "observed_time_utc": "2026-11-22T08:00:08+00:00",
       "publisher_time_verified": false,
       "date_confidence": "feed_only",
-      "within_24h_on_own_time_basis": true,
+      "within_24h_on_own_time_basis": false,
       "needs_editor_review": [],
       "editorial_status": "research_only_not_approved",
       "other_origins": [],
@@ -974,83 +1005,7 @@
       "other_origins": [],
       "independent_corroboration_verified": false,
       "queue": "discovery_unverified",
-      "rank": 87,
-      "related_reports": [
-        {
-          "title": "Federal regulators approve Cheniere’s Sabine Pass expansion project",
-          "url": "https://www.933thedrive.com/2026/11/19/federal-regulators-approve-chenieres-sabine-pass-expansion-project",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "Federal regulators approve Cheniere’s Sabine Pass expansion project",
-          "url": "https://wsau.com/2026/11/19/federal-regulators-approve-chenieres-sabine-pass-expansion-project",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        }
-      ]
-    },
-    {
-      "title": "Gas Coordination Group confirms EU’s winter preparedness, importance of gas storage through the winter",
-      "url": "https://energy.ec.europa.eu/news/gas-coordination-group-confirms-eus-winter-preparedness-importance-gas-storage-through-winter-2026-11-20_en",
-      "domain": "energy.ec.europa.eu",
-      "first_collector_observed_utc": "2026-11-20T22:41:52.748655+00:00",
-      "local_collection_time_known": true,
-      "source": "European Commission DG Energy",
-      "source_class": "official_agency",
-      "category": "Natural Gas",
-      "coverage_themes": [
-        "Natural Gas"
-      ],
-      "relevance_score": 36,
-      "relevance_evidence": [
-        "gas storage"
-      ],
-      "origin": "official_rss",
-      "time_basis": "publisher_feed_publication_time",
-      "observed_time_utc": "2026-11-19T23:00:00+00:00",
-      "publisher_time_verified": true,
-      "date_confidence": "publisher_rss_timestamp",
-      "within_24h_on_own_time_basis": false,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "older_official_context",
-      "rank": 86
-    },
-    {
-      "title": "SpaceX Plans to Spend $2.8 Billion on Gas Turbines. Here’s What That Much Natural Gas Demand Means for Pipeline Investors. - AOL",
-      "url": "https://www.aol.com/articles/spacex-plans-spend-2-8-221502000.html",
-      "domain": "www.aol.com",
-      "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Natural Gas",
-      "coverage_themes": [
-        "Natural Gas",
-        "Infrastructure & Investment"
-      ],
-      "relevance_score": 72,
-      "relevance_evidence": [
-        "gas demand",
-        "natural gas"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-20T23:17:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": false,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 84
+      "rank": 87
     },
     {
       "title": "Final investment decision on Azerbaijan's Karabakh field expected in 2027",

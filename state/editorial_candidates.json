@@ -331,6 +331,26 @@
     "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
   },
   {
+    "id": "9d0041e5cad02447711a531f",
+    "title": "European Natural Gas Prices Surge 8.6% as Cold Snap Looms",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/European-Natural-Gas-Prices-Surge-86-as-Cold-Snap-Looms.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-23T08:30:00+00:00",
+    "category": "Natural Gas",
+    "published_precision": "timestamp",
+    "relevance_score": 72,
+    "keyword_matches": 2,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "gas prices",
+      "natural gas"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-23T14:54:05.913764+00:00",
+    "first_collector_observed_utc": "2026-11-23T14:54:05.913764+00:00"
+  },
+  {
     "id": "2a65bbebb59cf651fe387f3c",
     "title": "Iran Refuses Nuclear Inspections as U.S. Military Threats Mount",
     "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Refuses-Nuclear-Inspections-as-US-Military-Threats-Mount.html",
@@ -470,6 +490,25 @@
     "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
   },
   {
+    "id": "e5e57ea2bd6bb76c607defe1",
+    "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-23T13:30:00+00:00",
+    "category": "LNG",
+    "published_precision": "timestamp",
+    "relevance_score": 45,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "lng"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-23T14:54:05.913764+00:00",
+    "first_collector_observed_utc": "2026-11-23T14:54:05.913764+00:00"
+  },
+  {
     "id": "a556bd0d67d095de25e62318",
     "title": "Mozambique Approves Exxon\u2019s Redesigned $30 Billion Rovuma LNG Plan",
     "url": "https://oilprice.com/Latest-Energy-News/World-News/Mozambique-Approves-Exxons-Redesigned-30-Billion-Rovuma-LNG-Plan.html",
@@ -582,6 +621,82 @@
     ],
     "status": "research_only_unverified",
     "also_seen_in": []
+  },
+  {
+    "id": "ad7c35e1d8499453e1ac01e4",
+    "title": "Brent Drops Below $90 as Wall Street Splits on 2027 Oil Outlook",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Brent-Drops-Below-90-as-Wall-Street-Splits-on-2027-Oil-Outlook.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-23T14:30:00+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 33,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "brent"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-23T14:54:05.913764+00:00",
+    "first_collector_observed_utc": "2026-11-23T14:54:05.913764+00:00"
+  },
+  {
+    "id": "8d8ad5a0c384342b736da5ff",
+    "title": "ConocoPhillips to Exit Norway in $4.4 Billion Deal With V\u00e5r Energi",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/ConocoPhillips-to-Exit-Norway-in-44-Billion-Deal-With-Vr-Energi.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-23T11:00:00+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 33,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "conocophillips"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-23T14:54:05.913764+00:00",
+    "first_collector_observed_utc": "2026-11-23T14:54:05.913764+00:00"
+  },
+  {
+    "id": "9877da4fbc7e0205626dc7bc",
+    "title": "$4.4 billion play for ConocoPhillips\u2019 Norwegian oil & gas assets and UK infrastructure expands V\u00e5r Energi\u2019s North Sea footprint",
+    "url": "https://www.offshore-energy.biz/2026/11/23/dollar44-billion-play-for-conocophillips-norwegian-oil-and-gas-assets-and-uk-infrastructure-expands-var-energis-north-sea-footprint",
+    "source": "Offshore Energy News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-23T08:39:00+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 33,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "conocophillips"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-23T14:54:05.913764+00:00",
+    "first_collector_observed_utc": "2026-11-23T14:54:05.913764+00:00"
+  },
+  {
+    "id": "0bd93b77a1d6f74dbca62485",
+    "title": "Oil Prices Slide as AI Bubble Fears Rattle Global Markets",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Slide-as-AI-Bubble-Fears-Rattle-Global-Markets.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-23T05:50:00+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 33,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "oil prices"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-23T14:54:05.913764+00:00",
+    "first_collector_observed_utc": "2026-11-23T14:54:05.913764+00:00"
   },
   {
     "id": "9255a0ba1f7567f25373f7fb",

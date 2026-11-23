@@ -2,13 +2,13 @@
 
 **Research links only. Not fact-checked, approved, or ready for publication.**
 
-Generated (UTC): 2026-11-23T02:54:14.311489+00:00
-Distinct relevant URLs in retained data: **835**
+Generated (UTC): 2026-11-23T14:54:26.718415+00:00
+Distinct relevant URLs in retained data: **936**
 Selected diverse research leads: **32**
 Publisher-timestamped official leads within 24h: **0**
-Specialist-publisher timestamped links within 24h: **0**
+Specialist-publisher timestamped links within 24h: **6**
 Grid-operator original timestamped links within 24h: **0**
-Likely duplicate links suppressed in the selection: **7**
+Likely duplicate links suppressed in the selection: **1**
 Discovery publisher dates verified: **0**
 
 ## Candidate list
@@ -22,14 +22,14 @@ Discovery publisher dates verified: **0**
    - 1 likely same-event publisher links preserved for review (not independent corroboration).
 4. **[Grid operators file closely watched large load interconnection reforms at FERC](https://www.utilitydive.com/news/pjm-rto-large-load-interconnection-ferc-show-cause/874872)** — Power & Electricity | official_rss | score 100
    - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-17T14:28:30+00:00). Editorial status: **unapproved**.
-5. **[Freeport LNG Development, L.P., FLNG Liquefaction, LLC, FLNG Liquefaction 2, LLC, FLNG Liquefaction 3, LLC, FLNG Liquefaction 4, LLC; Notice of Application and Establishing Intervention Deadline](https://www.federalregister.gov/documents/2026/11/19/2026-23609/freeport-lng-development-lp-flng-liquefaction-llc-flng-liquefaction-2-llc-flng-liquefaction-3-llc)** — LNG | regulatory_notice | score 81
+5. **[European Natural Gas Prices Surge 8.6% as Cold Snap Looms](https://oilprice.com/Latest-Energy-News/World-News/European-Natural-Gas-Prices-Surge-86-as-Cold-Snap-Looms.html)** — Natural Gas | official_rss | score 72
+   - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-23T08:30:00+00:00). Editorial status: **unapproved**.
+6. **[Freeport LNG Development, L.P., FLNG Liquefaction, LLC, FLNG Liquefaction 2, LLC, FLNG Liquefaction 3, LLC, FLNG Liquefaction 4, LLC; Notice of Application and Establishing Intervention Deadline](https://www.federalregister.gov/documents/2026/11/19/2026-23609/freeport-lng-development-lp-flng-liquefaction-llc-flng-liquefaction-2-llc-flng-liquefaction-3-llc)** — LNG | regulatory_notice | score 81
    - Timestamp basis: official_publication_date_only (2026-11-19T05:00:00+00:00). Editorial status: **unapproved**.
-6. **[Trump’s Ukraine Energy Truce Unravels as Russian Missiles Hit Kyiv](https://oilprice.com/Energy/Energy-General/Trumps-Ukraine-Energy-Truce-Unravels-as-Russian-Missiles-Hit-Kyiv.html)** — Geopolitics | official_rss | score 90
+7. **[Trump’s Ukraine Energy Truce Unravels as Russian Missiles Hit Kyiv](https://oilprice.com/Energy/Energy-General/Trumps-Ukraine-Energy-Truce-Unravels-as-Russian-Missiles-Hit-Kyiv.html)** — Geopolitics | official_rss | score 90
    - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-20T12:30:00+00:00). Editorial status: **unapproved**.
-7. **[Iran Steps Up Hormuz Tanker Attacks as Oil Prices Slide](https://oilprice.com/Latest-Energy-News/World-News/Iran-Steps-Up-Hormuz-Tanker-Attacks-as-Oil-Prices-Slide.html)** — Geopolitics | official_rss | score 90
+8. **[Iran Steps Up Hormuz Tanker Attacks as Oil Prices Slide](https://oilprice.com/Latest-Energy-News/World-News/Iran-Steps-Up-Hormuz-Tanker-Attacks-as-Oil-Prices-Slide.html)** — Geopolitics | official_rss | score 90
    - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-20T12:30:00+00:00). Editorial status: **unapproved**.
-8. **[Iran Moves to Restart Oil Exports Despite U.S. Naval Blockade](https://oilprice.com/Latest-Energy-News/World-News/Iran-Moves-to-Restart-Oil-Exports-Despite-US-Naval-Blockade.html)** — Geopolitics | official_rss | score 90
-   - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-20T09:00:00+00:00). Editorial status: **unapproved**.
 9. **[Fourth floating LNG terminal put into operation mode to fuel Germany’s energy security](https://www.offshore-energy.biz/2026/11/17/fourth-floating-lng-terminal-put-into-operation-mode-to-fuel-germanys-energy-security)** — LNG | official_rss | score 87
    - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-17T10:41:15+00:00). Editorial status: **unapproved**.
 10. **[WTI crude oil prices may trend lower](https://www.businesstimes.com.sg/companies-markets/wti-crude-oil-prices-may-trend-lower)** — Oil & Energy | global_discovery | score 100
@@ -50,35 +50,32 @@ Discovery publisher dates verified: **0**
    - Timestamp basis: system_operator_rss_timestamp (2026-11-16T22:24:16+00:00). Editorial status: **unapproved**.
 18. **[Algonquin Gas Transmission, LLC; Notice of Application and Establishing Intervention Deadline](https://www.federalregister.gov/documents/2026/11/18/2026-23446/algonquin-gas-transmission-llc-notice-of-application-and-establishing-intervention-deadline)** — Natural Gas | regulatory_notice | score 66
    - Timestamp basis: official_publication_date_only (2026-11-18T05:00:00+00:00). Editorial status: **unapproved**.
-19. **[Red Sea in Turmoil: Houthi Attacks Undermine Saudi Vision 2030 and Regional Trade – NaturalNews.com](https://www.naturalnews.com/2026-11-22-houthi-attacks-undermine-saudi-vision-2030-trade.html)** — Geopolitics | global_discovery | score 90
+19. **[Strait of Hormuz attacks have increased to highest level since Iran war began](https://abc7.com/story/strait-hormuz-attacks-have-increased-highest-level-iran-war-began/20069523)** — Geopolitics | global_discovery | score 90
+   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-23T14:47:00+00:00). Editorial status: **unapproved**.
+20. **[Strait of Hormuz Shipping Slows Sharply After Tanker Attacks, Tracking Data Shows](https://www.newdelhitimes.com/strait-hormuz-shipping-slows-tanker-attacks-november-23-2026)** — Geopolitics | global_discovery | score 90
+   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-23T14:46:00+00:00). Editorial status: **unapproved**.
+21. **[Ukrainian Drones Set Russian Oil Infrastructure Ablaze in Twin Strikes Deep Inside Russia](https://www.kyivpost.com/post/90874)** — Geopolitics | global_discovery | score 90
+   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-23T08:16:00+00:00). Editorial status: **unapproved**.
+22. **[Red Sea in Turmoil: Houthi Attacks Undermine Saudi Vision 2030 and Regional Trade – NaturalNews.com](https://www.naturalnews.com/2026-11-22-houthi-attacks-undermine-saudi-vision-2030-trade.html)** — Geopolitics | global_discovery | score 90
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-23T02:46:00+00:00). Editorial status: **unapproved**.
-20. **[Bahrain Says Two Injured In Iranian Attack On Industrial Site, As Tankers Hit In Hormuz - Eurasia Review](https://www.eurasiareview.com/23112026-bahrain-says-two-injured-in-iranian-attack-on-industrial-site-as-tankers-hit-in-hormuz)** — Geopolitics | global_discovery | score 90
+23. **[Bahrain Says Two Injured In Iranian Attack On Industrial Site, As Tankers Hit In Hormuz - Eurasia Review](https://www.eurasiareview.com/23112026-bahrain-says-two-injured-in-iranian-attack-on-industrial-site-as-tankers-hit-in-hormuz)** — Geopolitics | global_discovery | score 90
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-23T02:46:00+00:00). Editorial status: **unapproved**.
-21. **[Iran war live updates: Tankers set ablaze in Hormuz as IRGC warns of unrest threat – Ya Libnan](https://yalibnan.com/2026/11/23/iran-war-live-updates-tankers-set-ablaze-in-hormuz-as-irgc-warns-of-unrest-threat)** — Geopolitics | global_discovery | score 90
+24. **[Iran war live updates: Tankers set ablaze in Hormuz as IRGC warns of unrest threat – Ya Libnan](https://yalibnan.com/2026/11/23/iran-war-live-updates-tankers-set-ablaze-in-hormuz-as-irgc-warns-of-unrest-threat)** — Geopolitics | global_discovery | score 90
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-23T01:31:00+00:00). Editorial status: **unapproved**.
-22. **[Iranian attacks in the Strait of Hormuz reach highest levels since the conflict began](https://www.komu.com/news/nationworld/iranian-attacks-in-the-strait-of-hormuz-reach-highest-levels-since-the-conflict-began/article_d0c1043a-aeaa-5380-a980-a0ceb5aebbf6.html)** — Geopolitics | global_discovery | score 90
-   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-22T21:02:00+00:00). Editorial status: **unapproved**.
-   - 2 likely same-event publisher links preserved for review (not independent corroboration).
-23. **[Endurance athlete swims in Strait of Hormuz to highlight Iran war's impact on wildlife](https://www.latimes.com/world-nation/story/2026-11-22/endurance-athlete-swims-in-strait-of-hormuz-to-highlight-iran-wars-impact-on-wildlife)** — Geopolitics | global_discovery | score 90
-   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-22T20:01:00+00:00). Editorial status: **unapproved**.
-   - 2 likely same-event publisher links preserved for review (not independent corroboration).
-24. **[BASS Wins BW LNG Contract for BASSnet Neo Cloud-Native Solution](https://maritime-executive.com/corporate/bass-wins-bw-lng-contract-for-bassnet-neo-cloud-native-solution)** — LNG | global_discovery | score 87
+25. **[BASS Wins BW LNG Contract for BASSnet Neo Cloud-Native Solution](https://maritime-executive.com/corporate/bass-wins-bw-lng-contract-for-bassnet-neo-cloud-native-solution)** — LNG | global_discovery | score 87
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-22T12:46:00+00:00). Editorial status: **unapproved**.
-25. **[Exelon Corporation v. PJM Interconnection, L.L.C.; Notice Establishing Comment Period](https://www.federalregister.gov/documents/2026/11/19/2026-23611/exelon-corporation-v-pjm-interconnection-llc-notice-establishing-comment-period)** — Power & Electricity | regulatory_notice | score 57
+26. **[Exelon Corporation v. PJM Interconnection, L.L.C.; Notice Establishing Comment Period](https://www.federalregister.gov/documents/2026/11/19/2026-23611/exelon-corporation-v-pjm-interconnection-llc-notice-establishing-comment-period)** — Power & Electricity | regulatory_notice | score 57
    - Timestamp basis: official_publication_date_only (2026-11-19T05:00:00+00:00). Editorial status: **unapproved**.
-26. **[Nikkiso Delivers Dry Dock Overhaul for LNG Tanker](http://www.maritimeprofessional.com/news/nikkiso-delivers-dock-overhaul-tanker-424305)** — LNG | global_discovery | score 81
+27. **[Nikkiso Delivers Dry Dock Overhaul for LNG Tanker](http://www.maritimeprofessional.com/news/nikkiso-delivers-dock-overhaul-tanker-424305)** — LNG | global_discovery | score 81
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-22T21:46:00+00:00). Editorial status: **unapproved**.
-27. **[U.S. natural gas inventories end injection season above normal levels](https://www.eia.gov/todayinenergy/detail.php?id=68484)** — Natural Gas | official_rss | score 39
+28. **[U.S. natural gas inventories end injection season above normal levels](https://www.eia.gov/todayinenergy/detail.php?id=68484)** — Natural Gas | official_rss | score 39
    - Timestamp basis: publisher_feed_publication_time (2026-11-18T14:00:00+00:00). Editorial status: **unapproved**.
-28. **[Organization of the Petroleum Exporting Countries (OPEC), African Continental Free Trade Area (AfCFTA) and Dangote Refinery Join South Sudanese Ministers on the South Sudan Oil & Power (SSOP) 2026 Keynote Stage](https://energycapitalandpower.africa-newsroom.com/press/organization-of-the-petroleum-exporting-countries-opec-african-continental-free-trade-area-afcfta-and-dangote-refinery-join-south-sudanese-ministers-on-the-south-sudan-oil-and-power-ssop-2026-keynote-stage?lang=en)** — Oil & Energy | company_announcement | score 87
+29. **[$4.4 billion play for ConocoPhillips’ Norwegian oil & gas assets and UK infrastructure expands Vår Energi’s North Sea footprint](https://www.offshore-energy.biz/2026/11/23/dollar44-billion-play-for-conocophillips-norwegian-oil-and-gas-assets-and-uk-infrastructure-expands-var-energis-north-sea-footprint)** — Oil & Energy | official_rss | score 33
+   - Timestamp basis: specialist_publisher_rss_timestamp (2026-11-23T08:39:00+00:00). Editorial status: **unapproved**.
+30. **[Organization of the Petroleum Exporting Countries (OPEC), African Continental Free Trade Area (AfCFTA) and Dangote Refinery Join South Sudanese Ministers on the South Sudan Oil & Power (SSOP) 2026 Keynote Stage](https://energycapitalandpower.africa-newsroom.com/press/organization-of-the-petroleum-exporting-countries-opec-african-continental-free-trade-area-afcfta-and-dangote-refinery-join-south-sudanese-ministers-on-the-south-sudan-oil-and-power-ssop-2026-keynote-stage?lang=en)** — Oil & Energy | company_announcement | score 87
    - Timestamp basis: third_party_release_feed_date_unverified (2026-11-22T08:00:08+00:00). Editorial status: **unapproved**.
-29. **[Federal regulators approve Cheniere’s Sabine Pass expansion project](https://mymixfm.com/2026/11/19/federal-regulators-approve-chenieres-sabine-pass-expansion-project)** — LNG | global_discovery | score 75
+31. **[Federal regulators approve Cheniere’s Sabine Pass expansion project](https://mymixfm.com/2026/11/19/federal-regulators-approve-chenieres-sabine-pass-expansion-project)** — LNG | global_discovery | score 75
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T19:47:00+00:00). Editorial status: **unapproved**.
-   - 2 likely same-event publisher links preserved for review (not independent corroboration).
-30. **[Gas Coordination Group confirms EU’s winter preparedness, importance of gas storage through the winter](https://energy.ec.europa.eu/news/gas-coordination-group-confirms-eus-winter-preparedness-importance-gas-storage-through-winter-2026-11-20_en)** — Natural Gas | official_rss | score 36
-   - Timestamp basis: publisher_feed_publication_time (2026-11-19T23:00:00+00:00). Editorial status: **unapproved**.
-31. **[SpaceX Plans to Spend $2.8 Billion on Gas Turbines. Here’s What That Much Natural Gas Demand Means for Pipeline Investors. - AOL](https://www.aol.com/articles/spacex-plans-spend-2-8-221502000.html)** — Natural Gas | global_discovery | score 72
-   - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-20T23:17:00+00:00). Editorial status: **unapproved**.
 32. **[Final investment decision on Azerbaijan's Karabakh field expected in 2027](https://en.apa.az/energy-and-industry/final-investment-decision-on-azerbaijans-karabakh-field-expected-in-2027-537196)** — Infrastructure & Investment | global_discovery | score 36
    - Timestamp basis: gdelt_gal_rss_provider_time_unverified (2026-11-19T11:01:00+00:00). Editorial status: **unapproved**.
 

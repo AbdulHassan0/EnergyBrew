@@ -1,5 +1,5 @@
 {
-  "run_utc": "2026-11-23T02:53:56.545330+00:00",
+  "run_utc": "2026-11-23T14:54:05.990749+00:00",
   "provider": "GDELT DOC 2.0",
   "status": "degraded",
   "topics_configured": 15,
@@ -7,21 +7,21 @@
   "topics_succeeded": 0,
   "topics_pending_or_unsearched": 14,
   "new_discovered_urls": 0,
-  "leads_in_last_24h_first_seen": 107,
-  "leads_in_7d_state": 796,
-  "provider_cooldown_until_utc": "2026-11-23T14:53:56.545330+00:00",
-  "provider_throttle_streak": 5,
+  "leads_in_last_24h_first_seen": 129,
+  "leads_in_7d_state": 855,
+  "provider_cooldown_until_utc": "2026-11-24T02:54:05.990749+00:00",
+  "provider_throttle_streak": 6,
   "topic_attempts": [
     {
-      "topic": "gas_pipelines",
-      "attempted_utc": "2026-11-23T02:53:56.545330+00:00",
+      "topic": "lng_exports",
+      "attempted_utc": "2026-11-23T14:54:05.990749+00:00",
       "status": "rate_limited",
       "raw_results": 0,
       "new_urls": 0,
       "http_status": 429,
       "error": "HTTP 429",
       "backoff_seconds": 43200,
-      "throttle_streak": 5
+      "throttle_streak": 6
     }
   ],
   "notice": "Discovery index timestamps are NOT original article publication dates. All leads need publisher verification before newsletter use."

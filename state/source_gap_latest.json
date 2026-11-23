@@ -1,28 +1,30 @@
 {
-  "generated_utc": "2026-11-23T02:54:16.953750+00:00",
+  "generated_utc": "2026-11-23T14:54:28.448041+00:00",
   "status": "source_gap_triage_not_a_verified_recall_score",
-  "publisher_dated_direct_rss_links_24h": 0,
-  "publisher_dated_direct_source_classes_24h": {},
-  "gdelt_observed_unique_urls_24h": 111,
+  "publisher_dated_direct_rss_links_24h": 6,
+  "publisher_dated_direct_source_classes_24h": {
+    "specialist_publisher": 6
+  },
+  "gdelt_observed_unique_urls_24h": 153,
   "gdelt_publisher_date_verified": 0,
   "cross_origin_classifications": {
-    "discovery_only_needs_source_verification": 111
+    "discovery_only_needs_source_verification": 153
   },
   "direct_publisher_category_counts_24h": {
-    "Natural Gas": 0,
-    "LNG": 0,
+    "Natural Gas": 1,
+    "LNG": 1,
     "Power & Electricity": 0,
-    "Oil & Energy": 0,
+    "Oil & Energy": 4,
     "Infrastructure & Investment": 0,
     "Geopolitics": 0
   },
   "indexed_candidate_category_counts_24h": {
-    "Natural Gas": 6,
-    "LNG": 5,
+    "Natural Gas": 11,
+    "LNG": 4,
     "Power & Electricity": 20,
-    "Oil & Energy": 8,
-    "Infrastructure & Investment": 0,
-    "Geopolitics": 72
+    "Oil & Energy": 11,
+    "Infrastructure & Investment": 1,
+    "Geopolitics": 106
   },
   "high_priority_discovery_only_leads_for_review": [
     {
@@ -37,45 +39,45 @@
       "requires_original_publisher_verification": true
     },
     {
-      "title": "U.S. Confirms: Approved Shipments of Food and Medicine Can Continue Through Mariel Despite Sanctions on Cuba's Maritime Sector",
-      "url": "https://www.cubaheadlines.com/articles/346344",
-      "domain": "www.cubaheadlines.com",
+      "title": "Iran strikes 3 oil tankers as it shows off new missile launchers",
+      "url": "https://littleapplepost.com/posts/2155de1c-ecfa-40d8-a281-5a8e5f6ed5a7",
+      "domain": "littleapplepost.com",
       "category": "Geopolitics",
-      "gdelt_first_seen_utc": "2026-11-22T04:31:00+00:00",
+      "gdelt_first_seen_utc": "2026-11-22T15:01:00+00:00",
       "relevance_score": 90,
       "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
       "editorial_status": "unverified_research_lead_not_approved",
       "requires_original_publisher_verification": true
     },
     {
-      "title": "Russian Drones Strike Ukrainian Energy and Port Infrastructure Overnight",
-      "url": "https://sputnikglobe.com/20261122/russian-drones-strike-ukrainian-energy-and-port-infrastructure-overnight-1125129869.html",
-      "domain": "sputnikglobe.com",
+      "title": "Iranian attacks in the Strait of Hormuz are at the highest levels since the conflict began",
+      "url": "https://abc17news.com/news/national-world/cnn-world/2026/11/22/iranian-attacks-in-the-strait-of-hormuz-are-at-the-highest-levels-since-the-conflict-began",
+      "domain": "abc17news.com",
       "category": "Geopolitics",
-      "gdelt_first_seen_utc": "2026-11-22T06:46:00+00:00",
+      "gdelt_first_seen_utc": "2026-11-22T20:01:00+00:00",
       "relevance_score": 90,
       "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
       "editorial_status": "unverified_research_lead_not_approved",
       "requires_original_publisher_verification": true
     },
     {
-      "title": "UK man swims in Hormuz for three days to highlight Iran war impact",
-      "url": "https://www.siasat.com/uk-man-swims-in-hormuz-for-three-days-to-highlight-iran-war-impact-3583938",
-      "domain": "www.siasat.com",
+      "title": "Endurance athlete swims in Strait of Hormuz to highlight Iran war's impact on wildlife",
+      "url": "https://www.latimes.com/world-nation/story/2026-11-22/endurance-athlete-swims-in-strait-of-hormuz-to-highlight-iran-wars-impact-on-wildlife",
+      "domain": "www.latimes.com",
       "category": "Geopolitics",
-      "gdelt_first_seen_utc": "2026-11-22T12:32:00+00:00",
+      "gdelt_first_seen_utc": "2026-11-22T20:01:00+00:00",
       "relevance_score": 90,
       "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
       "editorial_status": "unverified_research_lead_not_approved",
       "requires_original_publisher_verification": true
     },
     {
-      "title": "BASS Wins BW LNG Contract for BASSnet Neo Cloud-Native Solution",
-      "url": "https://maritime-executive.com/corporate/bass-wins-bw-lng-contract-for-bassnet-neo-cloud-native-solution",
-      "domain": "maritime-executive.com",
-      "category": "LNG",
-      "gdelt_first_seen_utc": "2026-11-22T12:46:00+00:00",
-      "relevance_score": 87,
+      "title": "SOCAR explores energy storage technologies for Azerbaijan's power grid",
+      "url": "https://www.trend.az/azerbaijan/4249663.html",
+      "domain": "www.trend.az",
+      "category": "Power & Electricity",
+      "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
+      "relevance_score": 84,
       "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
       "editorial_status": "unverified_research_lead_not_approved",
       "requires_original_publisher_verification": true
@@ -103,6 +105,28 @@
       "requires_original_publisher_verification": true
     },
     {
+      "title": "Kenya moves closer to naming its crude oil ahead of first oil production",
+      "url": "https://www.standardmedia.co.ke/business/business/article/2001562558/kenya-moves-closer-to-naming-its-crude-oil-ahead-of-first-oil-production",
+      "domain": "www.standardmedia.co.ke",
+      "category": "Oil & Energy",
+      "gdelt_first_seen_utc": "2026-11-23T14:47:00+00:00",
+      "relevance_score": 66,
+      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
+      "editorial_status": "unverified_research_lead_not_approved",
+      "requires_original_publisher_verification": true
+    },
+    {
+      "title": "Siemens and Enexis accelerate expansion of Dutch Power Grid",
+      "url": "https://www.webwire.com/ViewPressRel.asp?aId=364522",
+      "domain": "www.webwire.com",
+      "category": "Power & Electricity",
+      "gdelt_first_seen_utc": "2026-11-23T14:47:00+00:00",
+      "relevance_score": 57,
+      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
+      "editorial_status": "unverified_research_lead_not_approved",
+      "requires_original_publisher_verification": true
+    },
+    {
       "title": "United Drilling Tools Wins ₹1.73 Crore Order From Vedanta Oil and Gas",
       "url": "https://www.equitybulls.com/news/379404/united-drilling-tools-wins-1-73-crore-order",
       "domain": "www.equitybulls.com",
@@ -114,45 +138,23 @@
       "requires_original_publisher_verification": true
     },
     {
-      "title": "China Delivers Its Largest LNG Carrier as It Seeks to Rival Korean Builders",
-      "url": "https://maritime-executive.com/article/china-delivers-its-largest-lng-carrier-as-it-seeks-to-rival-korean-builders",
-      "domain": "maritime-executive.com",
+      "title": "Proyek LNG Abadi Masela Buka Peluang Kerja Ribuan Warga Kepulauan Tanimbar",
+      "url": "https://koran-jakarta.com/2026-11-22/proyek-lng-abadi-masela-buka-peluang-kerja-ribuan-warga-kepulauan-tanimbar",
+      "domain": "koran-jakarta.com",
       "category": "LNG",
-      "gdelt_first_seen_utc": "2026-11-22T12:46:00+00:00",
+      "gdelt_first_seen_utc": "2026-11-22T15:01:00+00:00",
       "relevance_score": 45,
       "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
       "editorial_status": "unverified_research_lead_not_approved",
       "requires_original_publisher_verification": true
     },
     {
-      "title": "Duke Energy customers to see 9.5% rate hike. Utility to increase use of coal, natural gas",
-      "url": "https://statesville.com/news/local/article_027d1b99-9948-507e-a4e9-19b62095ffdf.html",
-      "domain": "statesville.com",
-      "category": "Natural Gas",
-      "gdelt_first_seen_utc": "2026-11-22T12:32:00+00:00",
-      "relevance_score": 39,
-      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
-      "editorial_status": "unverified_research_lead_not_approved",
-      "requires_original_publisher_verification": true
-    },
-    {
-      "title": "Oil, gas import bill up 60% in Oct as Brent surges, LPG use declines",
-      "url": "https://www.business-standard.com/economy/news/oil-gas-import-bill-up-60-in-oct-as-brent-surges-lpg-use-declines-126112200197_1.html",
-      "domain": "www.business-standard.com",
-      "category": "Oil & Energy",
-      "gdelt_first_seen_utc": "2026-11-22T06:46:00+00:00",
-      "relevance_score": 33,
-      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
-      "editorial_status": "unverified_research_lead_not_approved",
-      "requires_original_publisher_verification": true
-    },
-    {
-      "title": "India's core sector growth hits 10.9% in October, led by electricity and coal",
-      "url": "https://dailypioneer.com/india/indias-core-sector-growth-hits-109-in-october-led-by-electricity-and-coal",
-      "domain": "dailypioneer.com",
-      "category": "Power & Electricity",
-      "gdelt_first_seen_utc": "2026-11-22T12:46:00+00:00",
-      "relevance_score": 33,
+      "title": "Woodside’s Scarborough hits 99% complete, first LNG on track for Q4",
+      "url": "https://www.worldoil.com/news/2026/10/21/woodside-s-scarborough-hits-99-complete-first-lng-on-track-for-q4",
+      "domain": "www.worldoil.com",
+      "category": "LNG",
+      "gdelt_first_seen_utc": "2026-11-23T00:31:00+00:00",
+      "relevance_score": 45,
       "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
       "editorial_status": "unverified_research_lead_not_approved",
       "requires_original_publisher_verification": true
@@ -163,6 +165,17 @@
       "domain": "witl.com",
       "category": "Natural Gas",
       "gdelt_first_seen_utc": "2026-11-22T21:01:00+00:00",
+      "relevance_score": 33,
+      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
+      "editorial_status": "unverified_research_lead_not_approved",
+      "requires_original_publisher_verification": true
+    },
+    {
+      "title": "NEPA gas prices continue to decrease, average below $4 per gallon",
+      "url": "https://fox56.com/news/local/nepa-gas-prices-continue-to-decrease-average-below-4-per-gallon",
+      "domain": "fox56.com",
+      "category": "Natural Gas",
+      "gdelt_first_seen_utc": "2026-11-23T01:31:00+00:00",
       "relevance_score": 33,
       "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
       "editorial_status": "unverified_research_lead_not_approved",
@@ -180,12 +193,12 @@
       "requires_original_publisher_verification": true
     },
     {
-      "title": "Stifel Says SpaceX Could Buy Stalled Data Centers for One Reason: Their Power. Here’s Why Electricity Is the Real Asset. | The Motley Fool",
-      "url": "https://www.fool.com/investing/2026/11/22/stifel-says-spacex-could-buy-stalled-data-centers-for-one-reason-their-power-heres-why-electricity-is-the-real-asset",
-      "domain": "www.fool.com",
-      "category": "Power & Electricity",
-      "gdelt_first_seen_utc": "2026-11-23T02:46:00+00:00",
-      "relevance_score": 33,
+      "title": "Downer wins $728m Hunter Transmission Project contract",
+      "url": "https://www.power-technology.com/news/downer-728m-hunter-transmission-project-contract",
+      "domain": "www.power-technology.com",
+      "category": "Infrastructure & Investment",
+      "gdelt_first_seen_utc": "2026-11-23T14:46:00+00:00",
+      "relevance_score": 30,
       "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
       "editorial_status": "unverified_research_lead_not_approved",
       "requires_original_publisher_verification": true
@@ -196,9 +209,9 @@
     {
       "source": "DOE Energy News",
       "feed_url": "https://www.energy.gov/rss/energygov/2193718",
-      "last_success_utc": "2026-11-23T02:53:54.516863+00:00",
+      "last_success_utc": "2026-11-23T14:54:04.734406+00:00",
       "newest_feed_published_utc": "2026-11-20T22:49:34+00:00",
-      "hours_since_newest_publisher_item": 52.1,
+      "hours_since_newest_publisher_item": 64.1,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "recent_publisher_activity"
@@ -206,9 +219,9 @@
     {
       "source": "DOE Grid Deployment",
       "feed_url": "https://www.energy.gov/rss/oe/4819948",
-      "last_success_utc": "2026-11-23T02:53:54.516863+00:00",
+      "last_success_utc": "2026-11-23T14:54:04.734406+00:00",
       "newest_feed_published_utc": "2026-10-30T14:42:15+00:00",
-      "hours_since_newest_publisher_item": 564.2,
+      "hours_since_newest_publisher_item": 576.2,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "no_publisher_item_in_7d"
@@ -216,9 +229,9 @@
     {
       "source": "DOE Hydrocarbons Blog",
       "feed_url": "https://www.energy.gov/rss/hgeo/2283029",
-      "last_success_utc": "2026-11-23T02:53:54.516863+00:00",
+      "last_success_utc": "2026-11-23T14:54:04.734406+00:00",
       "newest_feed_published_utc": "2026-10-29T20:16:57+00:00",
-      "hours_since_newest_publisher_item": 582.6,
+      "hours_since_newest_publisher_item": 594.6,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "no_publisher_item_in_7d"
@@ -226,9 +239,9 @@
     {
       "source": "DOE Hydrocarbons Releases",
       "feed_url": "https://www.energy.gov/rss/hgeo/2282977",
-      "last_success_utc": "2026-11-23T02:53:54.516863+00:00",
+      "last_success_utc": "2026-11-23T14:54:04.734406+00:00",
       "newest_feed_published_utc": "2026-11-04T05:00:00+00:00",
-      "hours_since_newest_publisher_item": 453.9,
+      "hours_since_newest_publisher_item": 465.9,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "no_publisher_item_in_7d"
@@ -236,9 +249,9 @@
     {
       "source": "EIA Congressional Testimony",
       "feed_url": "https://www.eia.gov/rss/testimony.xml",
-      "last_success_utc": "2026-11-23T02:53:54.516863+00:00",
+      "last_success_utc": "2026-11-23T14:54:04.734406+00:00",
       "newest_feed_published_utc": "2021-11-16T14:00:00+00:00",
-      "hours_since_newest_publisher_item": 43980.9,
+      "hours_since_newest_publisher_item": 43992.9,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "no_publisher_item_in_7d"
@@ -246,9 +259,9 @@
     {
       "source": "EIA Presentations",
       "feed_url": "https://www.eia.gov/rss/presentations.xml",
-      "last_success_utc": "2026-11-23T02:53:54.516863+00:00",
+      "last_success_utc": "2026-11-23T14:54:04.734406+00:00",
       "newest_feed_published_utc": "2026-03-04T14:00:00+00:00",
-      "hours_since_newest_publisher_item": 6324.9,
+      "hours_since_newest_publisher_item": 6336.9,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "no_publisher_item_in_7d"
@@ -256,9 +269,9 @@
     {
       "source": "EIA Press Releases",
       "feed_url": "https://www.eia.gov/rss/press_rss.xml",
-      "last_success_utc": "2026-11-23T02:53:54.516863+00:00",
+      "last_success_utc": "2026-11-23T14:54:04.734406+00:00",
       "newest_feed_published_utc": "2026-11-10T17:00:00+00:00",
-      "hours_since_newest_publisher_item": 297.9,
+      "hours_since_newest_publisher_item": 309.9,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "no_publisher_item_in_7d"
@@ -266,9 +279,9 @@
     {
       "source": "EIA Today in Energy",
       "feed_url": "https://www.eia.gov/rss/todayinenergy.xml",
-      "last_success_utc": "2026-11-23T02:53:54.516863+00:00",
+      "last_success_utc": "2026-11-23T14:54:04.734406+00:00",
       "newest_feed_published_utc": "2026-11-19T14:00:00+00:00",
-      "hours_since_newest_publisher_item": 84.9,
+      "hours_since_newest_publisher_item": 96.9,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "recent_publisher_activity"
@@ -276,9 +289,9 @@
     {
       "source": "European Commission DG Energy",
       "feed_url": "https://energy.ec.europa.eu/node/2/rss_en",
-      "last_success_utc": "2026-11-23T02:53:54.516863+00:00",
+      "last_success_utc": "2026-11-23T14:54:04.734406+00:00",
       "newest_feed_published_utc": "2026-11-19T23:00:00+00:00",
-      "hours_since_newest_publisher_item": 75.9,
+      "hours_since_newest_publisher_item": 87.9,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "recent_publisher_activity"
@@ -286,29 +299,9 @@
     {
       "source": "Federal Register notices",
       "feed_url": "https://www.federalregister.gov/api/v1/documents.rss?conditions%5Bagencies%5D%5B%5D=federal-energy-regulatory-commission",
-      "last_success_utc": "2026-11-23T02:53:54.516863+00:00",
+      "last_success_utc": "2026-11-23T14:54:04.734406+00:00",
       "newest_feed_published_utc": "2026-11-23T05:00:00+00:00",
-      "hours_since_newest_publisher_item": -2.1,
-      "timestamped_article_links_24h": 0,
-      "consecutive_failures": 0,
-      "activity": "future_publisher_date_anomaly"
-    },
-    {
-      "source": "Offshore Energy News",
-      "feed_url": "https://www.offshore-energy.biz/feed",
-      "last_success_utc": "2026-11-23T02:53:54.516863+00:00",
-      "newest_feed_published_utc": "2026-11-20T14:41:21+00:00",
-      "hours_since_newest_publisher_item": 60.2,
-      "timestamped_article_links_24h": 0,
-      "consecutive_failures": 0,
-      "activity": "recent_publisher_activity"
-    },
-    {
-      "source": "OilPrice.com News",
-      "feed_url": "https://oilprice.com/rss.xml",
-      "last_success_utc": "2026-11-23T02:53:54.516863+00:00",
-      "newest_feed_published_utc": "2026-11-23T00:00:00+00:00",
-      "hours_since_newest_publisher_item": 2.9,
+      "hours_since_newest_publisher_item": 9.9,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "recent_publisher_activity"
@@ -316,9 +309,9 @@
     {
       "source": "PJM Inside Lines",
       "feed_url": "https://insidelines.pjm.com/feed/",
-      "last_success_utc": "2026-11-23T02:53:54.516863+00:00",
+      "last_success_utc": "2026-11-23T14:54:04.734406+00:00",
       "newest_feed_published_utc": "2026-11-18T18:56:18+00:00",
-      "hours_since_newest_publisher_item": 104.0,
+      "hours_since_newest_publisher_item": 116.0,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "recent_publisher_activity"
@@ -326,9 +319,9 @@
     {
       "source": "US NRC Nuclear News",
       "feed_url": "https://www.nrc.gov/public-involve/rss?feed=news",
-      "last_success_utc": "2026-11-23T02:53:54.516863+00:00",
+      "last_success_utc": "2026-11-23T14:54:04.734406+00:00",
       "newest_feed_published_utc": "2026-11-12T10:00:00+00:00",
-      "hours_since_newest_publisher_item": 256.9,
+      "hours_since_newest_publisher_item": 268.9,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "no_publisher_item_in_7d"
@@ -336,10 +329,30 @@
     {
       "source": "Utility Dive News",
       "feed_url": "https://www.utilitydive.com/feeds/news/",
-      "last_success_utc": "2026-11-23T02:53:54.516863+00:00",
-      "newest_feed_published_utc": "2026-11-20T15:48:13+00:00",
-      "hours_since_newest_publisher_item": 59.1,
+      "last_success_utc": "2026-11-23T14:54:04.734406+00:00",
+      "newest_feed_published_utc": "2026-11-23T10:00:00+00:00",
+      "hours_since_newest_publisher_item": 4.9,
       "timestamped_article_links_24h": 0,
+      "consecutive_failures": 0,
+      "activity": "recent_publisher_activity"
+    },
+    {
+      "source": "Offshore Energy News",
+      "feed_url": "https://www.offshore-energy.biz/feed",
+      "last_success_utc": "2026-11-23T14:54:04.734406+00:00",
+      "newest_feed_published_utc": "2026-11-23T14:46:08+00:00",
+      "hours_since_newest_publisher_item": 0.1,
+      "timestamped_article_links_24h": 1,
+      "consecutive_failures": 0,
+      "activity": "recent_publisher_activity"
+    },
+    {
+      "source": "OilPrice.com News",
+      "feed_url": "https://oilprice.com/rss.xml",
+      "last_success_utc": "2026-11-23T14:54:04.734406+00:00",
+      "newest_feed_published_utc": "2026-11-23T14:30:00+00:00",
+      "hours_since_newest_publisher_item": 0.4,
+      "timestamped_article_links_24h": 5,
       "consecutive_failures": 0,
       "activity": "recent_publisher_activity"
     }

@@ -1,11 +1,11 @@
 {
-  "generated_utc": "2026-11-23T02:54:16.863553+00:00",
+  "generated_utc": "2026-11-23T14:54:28.374840+00:00",
   "status": "degraded",
   "seven_day_pilot_complete": false,
-  "history_span_days": 4.64,
-  "official_scan_runs": 81,
-  "official_successful_scans": 81,
-  "official_fully_connected_scans": 74,
+  "history_span_days": 5.14,
+  "official_scan_runs": 82,
+  "official_successful_scans": 82,
+  "official_fully_connected_scans": 75,
   "failing_sources": [],
   "rss_transient_retries_8d": 8,
   "rss_recovered_sources_8d": 0,
@@ -14,135 +14,119 @@
     {
       "source": "EIA Congressional Testimony",
       "newest_feed_published_utc": "2021-11-16T14:00:00+00:00",
-      "age_hours": 43980.9,
+      "age_hours": 43992.9,
       "activity": "no_publication_in_7d",
-      "last_successful_scan_utc": "2026-11-23T02:53:54.516863+00:00"
+      "last_successful_scan_utc": "2026-11-23T14:54:04.734406+00:00"
     },
     {
       "source": "EIA Presentations",
       "newest_feed_published_utc": "2026-03-04T14:00:00+00:00",
-      "age_hours": 6324.9,
+      "age_hours": 6336.9,
       "activity": "no_publication_in_7d",
-      "last_successful_scan_utc": "2026-11-23T02:53:54.516863+00:00"
+      "last_successful_scan_utc": "2026-11-23T14:54:04.734406+00:00"
     },
     {
       "source": "DOE Hydrocarbons Blog",
       "newest_feed_published_utc": "2026-10-29T20:16:57+00:00",
-      "age_hours": 582.6,
+      "age_hours": 594.6,
       "activity": "no_publication_in_7d",
-      "last_successful_scan_utc": "2026-11-23T02:53:54.516863+00:00"
+      "last_successful_scan_utc": "2026-11-23T14:54:04.734406+00:00"
     },
     {
       "source": "DOE Grid Deployment",
       "newest_feed_published_utc": "2026-10-30T14:42:15+00:00",
-      "age_hours": 564.2,
+      "age_hours": 576.2,
       "activity": "no_publication_in_7d",
-      "last_successful_scan_utc": "2026-11-23T02:53:54.516863+00:00"
+      "last_successful_scan_utc": "2026-11-23T14:54:04.734406+00:00"
     },
     {
       "source": "DOE Hydrocarbons Releases",
       "newest_feed_published_utc": "2026-11-04T05:00:00+00:00",
-      "age_hours": 453.9,
+      "age_hours": 465.9,
       "activity": "no_publication_in_7d",
-      "last_successful_scan_utc": "2026-11-23T02:53:54.516863+00:00"
+      "last_successful_scan_utc": "2026-11-23T14:54:04.734406+00:00"
     },
     {
       "source": "EIA Press Releases",
       "newest_feed_published_utc": "2026-11-10T17:00:00+00:00",
-      "age_hours": 297.9,
+      "age_hours": 309.9,
       "activity": "no_publication_in_7d",
-      "last_successful_scan_utc": "2026-11-23T02:53:54.516863+00:00"
+      "last_successful_scan_utc": "2026-11-23T14:54:04.734406+00:00"
     },
     {
       "source": "US NRC Nuclear News",
       "newest_feed_published_utc": "2026-11-12T10:00:00+00:00",
-      "age_hours": 256.9,
+      "age_hours": 268.9,
       "activity": "no_publication_in_7d",
-      "last_successful_scan_utc": "2026-11-23T02:53:54.516863+00:00"
+      "last_successful_scan_utc": "2026-11-23T14:54:04.734406+00:00"
     },
     {
       "source": "PJM Inside Lines",
       "newest_feed_published_utc": "2026-11-18T18:56:18+00:00",
-      "age_hours": 104.0,
+      "age_hours": 116.0,
       "activity": "publication_within_7d",
-      "last_successful_scan_utc": "2026-11-23T02:53:54.516863+00:00"
+      "last_successful_scan_utc": "2026-11-23T14:54:04.734406+00:00"
     },
     {
       "source": "EIA Today in Energy",
       "newest_feed_published_utc": "2026-11-19T14:00:00+00:00",
-      "age_hours": 84.9,
+      "age_hours": 96.9,
       "activity": "publication_within_7d",
-      "last_successful_scan_utc": "2026-11-23T02:53:54.516863+00:00"
+      "last_successful_scan_utc": "2026-11-23T14:54:04.734406+00:00"
     },
     {
       "source": "European Commission DG Energy",
       "newest_feed_published_utc": "2026-11-19T23:00:00+00:00",
-      "age_hours": 75.9,
+      "age_hours": 87.9,
       "activity": "publication_within_7d",
-      "last_successful_scan_utc": "2026-11-23T02:53:54.516863+00:00"
-    },
-    {
-      "source": "Offshore Energy News",
-      "newest_feed_published_utc": "2026-11-20T14:41:21+00:00",
-      "age_hours": 60.2,
-      "activity": "publication_within_7d",
-      "last_successful_scan_utc": "2026-11-23T02:53:54.516863+00:00"
-    },
-    {
-      "source": "Utility Dive News",
-      "newest_feed_published_utc": "2026-11-20T15:48:13+00:00",
-      "age_hours": 59.1,
-      "activity": "publication_within_7d",
-      "last_successful_scan_utc": "2026-11-23T02:53:54.516863+00:00"
+      "last_successful_scan_utc": "2026-11-23T14:54:04.734406+00:00"
     },
     {
       "source": "DOE Energy News",
       "newest_feed_published_utc": "2026-11-20T22:49:34+00:00",
-      "age_hours": 52.1,
+      "age_hours": 64.1,
       "activity": "publication_within_7d",
-      "last_successful_scan_utc": "2026-11-23T02:53:54.516863+00:00"
-    },
-    {
-      "source": "OilPrice.com News",
-      "newest_feed_published_utc": "2026-11-23T00:00:00+00:00",
-      "age_hours": 2.9,
-      "activity": "publication_within_7d",
-      "last_successful_scan_utc": "2026-11-23T02:53:54.516863+00:00"
+      "last_successful_scan_utc": "2026-11-23T14:54:04.734406+00:00"
     },
     {
       "source": "Federal Register notices",
       "newest_feed_published_utc": "2026-11-23T05:00:00+00:00",
-      "age_hours": -2.1,
-      "activity": "future_dated_anomaly",
-      "last_successful_scan_utc": "2026-11-23T02:53:54.516863+00:00"
+      "age_hours": 9.9,
+      "activity": "publication_within_7d",
+      "last_successful_scan_utc": "2026-11-23T14:54:04.734406+00:00"
+    },
+    {
+      "source": "Utility Dive News",
+      "newest_feed_published_utc": "2026-11-23T10:00:00+00:00",
+      "age_hours": 4.9,
+      "activity": "publication_within_7d",
+      "last_successful_scan_utc": "2026-11-23T14:54:04.734406+00:00"
+    },
+    {
+      "source": "OilPrice.com News",
+      "newest_feed_published_utc": "2026-11-23T14:30:00+00:00",
+      "age_hours": 0.4,
+      "activity": "publication_within_7d",
+      "last_successful_scan_utc": "2026-11-23T14:54:04.734406+00:00"
+    },
+    {
+      "source": "Offshore Energy News",
+      "newest_feed_published_utc": "2026-11-23T14:46:08+00:00",
+      "age_hours": 0.1,
+      "activity": "publication_within_7d",
+      "last_successful_scan_utc": "2026-11-23T14:54:04.734406+00:00"
     }
   ],
   "feed_publication_activity_counts": {
     "no_publication_in_7d": 7,
-    "publication_within_7d": 7,
-    "future_dated_anomaly": 1
+    "publication_within_7d": 8
   },
   "official_failed_scans": 0,
-  "gal_sample_runs": 107,
-  "gal_successful_samples": 107,
+  "gal_sample_runs": 110,
+  "gal_successful_samples": 110,
   "gal_repeated_feed_payloads": 19,
   "gal_failed_samples": 0,
   "observed_sampling_gaps": [
-    {
-      "from_utc": "2026-11-19T11:04:24.334119+00:00",
-      "to_utc": "2026-11-19T11:57:27.144981+00:00",
-      "minutes": 53.0
-    },
-    {
-      "from_utc": "2026-11-19T11:58:33.136001+00:00",
-      "to_utc": "2026-11-19T12:49:06.128650+00:00",
-      "minutes": 50.5
-    },
-    {
-      "from_utc": "2026-11-19T12:54:45.067157+00:00",
-      "to_utc": "2026-11-19T13:24:26.308411+00:00",
-      "minutes": 29.7
-    },
     {
       "from_utc": "2026-11-19T13:40:17.499251+00:00",
       "to_utc": "2026-11-19T17:18:58.722322+00:00",
@@ -277,34 +261,34 @@
       "from_utc": "2026-11-23T01:47:28.987172+00:00",
       "to_utc": "2026-11-23T02:54:13.059849+00:00",
       "minutes": 66.7
+    },
+    {
+      "from_utc": "2026-11-23T02:54:13.059849+00:00",
+      "to_utc": "2026-11-23T08:18:54.579463+00:00",
+      "minutes": 324.7
+    },
+    {
+      "from_utc": "2026-11-23T08:18:54.579463+00:00",
+      "to_utc": "2026-11-23T10:08:55.863460+00:00",
+      "minutes": 110.0
+    },
+    {
+      "from_utc": "2026-11-23T10:08:55.863460+00:00",
+      "to_utc": "2026-11-23T14:54:25.565116+00:00",
+      "minutes": 285.5
     }
   ],
   "gal_sampled_window_24h": {
     "horizon_hours": 24,
     "rolling_window_assumed_minutes": 15,
-    "potentially_sampled_minutes_upper_bound": 162.1,
-    "unobserved_minutes_at_least": 1277.9,
-    "potential_coverage_upper_bound_pct": 11.26,
+    "potentially_sampled_minutes_upper_bound": 150.0,
+    "unobserved_minutes_at_least": 1290.0,
+    "potential_coverage_upper_bound_pct": 10.42,
     "unobserved_time_spans": [
       {
-        "from_utc": "2026-11-22T02:54:16.863553+00:00",
-        "to_utc": "2026-11-22T04:27:36.026385+00:00",
-        "minutes": 93.3
-      },
-      {
-        "from_utc": "2026-11-22T04:42:36.026385+00:00",
-        "to_utc": "2026-11-22T06:42:26.126178+00:00",
-        "minutes": 119.8
-      },
-      {
-        "from_utc": "2026-11-22T06:57:26.126178+00:00",
-        "to_utc": "2026-11-22T12:26:31.863243+00:00",
-        "minutes": 329.1
-      },
-      {
-        "from_utc": "2026-11-22T12:53:40.757928+00:00",
+        "from_utc": "2026-11-22T14:54:28.374840+00:00",
         "to_utc": "2026-11-22T14:59:06.105288+00:00",
-        "minutes": 125.4
+        "minutes": 4.6
       },
       {
         "from_utc": "2026-11-22T15:14:06.105288+00:00",
@@ -338,12 +322,27 @@
       },
       {
         "from_utc": "2026-11-23T02:54:13.059849+00:00",
-        "to_utc": "2026-11-23T02:54:16.863553+00:00",
-        "minutes": 0.1
+        "to_utc": "2026-11-23T08:03:54.579463+00:00",
+        "minutes": 309.7
+      },
+      {
+        "from_utc": "2026-11-23T08:18:54.579463+00:00",
+        "to_utc": "2026-11-23T09:53:55.863460+00:00",
+        "minutes": 95.0
+      },
+      {
+        "from_utc": "2026-11-23T10:08:55.863460+00:00",
+        "to_utc": "2026-11-23T14:39:25.565116+00:00",
+        "minutes": 270.5
+      },
+      {
+        "from_utc": "2026-11-23T14:54:25.565116+00:00",
+        "to_utc": "2026-11-23T14:54:28.374840+00:00",
+        "minutes": 0.0
       }
     ],
-    "longest_unobserved_minutes": 329.1,
-    "successfully_timestamped_run_count": 11,
+    "longest_unobserved_minutes": 309.7,
+    "successfully_timestamped_run_count": 10,
     "repeated_identical_payload_samples_not_credited": 0,
     "samples_without_payload_fingerprint": 0,
     "warning": "Conservative upper bound of distinct rolling-feed responses; identical payloads receive no additional window credit. Legacy samples without a hash cannot be checked. This is not verified publisher coverage or recovered news."
@@ -351,14 +350,14 @@
   "gal_sampled_window_7d": {
     "horizon_hours": 168,
     "rolling_window_assumed_minutes": 15,
-    "potentially_sampled_minutes_upper_bound": 762.4,
-    "unobserved_minutes_at_least": 9317.6,
-    "potential_coverage_upper_bound_pct": 7.56,
+    "potentially_sampled_minutes_upper_bound": 807.4,
+    "unobserved_minutes_at_least": 9272.6,
+    "potential_coverage_upper_bound_pct": 8.01,
     "unobserved_time_spans": [
       {
-        "from_utc": "2026-11-16T02:54:16.863553+00:00",
+        "from_utc": "2026-11-16T14:54:28.374840+00:00",
         "to_utc": "2026-11-18T18:16:26.411800+00:00",
-        "minutes": 3802.2
+        "minutes": 3082.0
       },
       {
         "from_utc": "2026-11-18T19:12:58.126745+00:00",
@@ -552,23 +551,38 @@
       },
       {
         "from_utc": "2026-11-23T02:54:13.059849+00:00",
-        "to_utc": "2026-11-23T02:54:16.863553+00:00",
-        "minutes": 0.1
+        "to_utc": "2026-11-23T08:03:54.579463+00:00",
+        "minutes": 309.7
+      },
+      {
+        "from_utc": "2026-11-23T08:18:54.579463+00:00",
+        "to_utc": "2026-11-23T09:53:55.863460+00:00",
+        "minutes": 95.0
+      },
+      {
+        "from_utc": "2026-11-23T10:08:55.863460+00:00",
+        "to_utc": "2026-11-23T14:39:25.565116+00:00",
+        "minutes": 270.5
+      },
+      {
+        "from_utc": "2026-11-23T14:54:25.565116+00:00",
+        "to_utc": "2026-11-23T14:54:28.374840+00:00",
+        "minutes": 0.0
       }
     ],
-    "longest_unobserved_minutes": 3802.2,
-    "successfully_timestamped_run_count": 88,
+    "longest_unobserved_minutes": 3082.0,
+    "successfully_timestamped_run_count": 91,
     "repeated_identical_payload_samples_not_credited": 19,
     "samples_without_payload_fingerprint": 41,
     "warning": "Conservative upper bound of distinct rolling-feed responses; identical payloads receive no additional window credit. Legacy samples without a hash cannot be checked. This is not verified publisher coverage or recovered news."
   },
-  "seven_day_start_gap_minutes": 3817.2,
-  "latest_gal_age_minutes": 0.1,
+  "seven_day_start_gap_minutes": 3097.0,
+  "latest_gal_age_minutes": 0.0,
   "expected_gal_interval_minutes": 10,
-  "latest_official_scan_utc": "2026-11-23T02:53:56.454985+00:00",
-  "latest_official_attempt_utc": "2026-11-23T02:53:54.516863+00:00",
-  "latest_gal_attempt_utc": "2026-11-23T02:54:06.917645+00:00",
-  "latest_gal_sample_utc": "2026-11-23T02:54:13.059849+00:00",
+  "latest_official_scan_utc": "2026-11-23T14:54:05.913764+00:00",
+  "latest_official_attempt_utc": "2026-11-23T14:54:04.734406+00:00",
+  "latest_gal_attempt_utc": "2026-11-23T14:54:17.573849+00:00",
+  "latest_gal_sample_utc": "2026-11-23T14:54:25.565116+00:00",
   "daily": [
     {
       "date_utc": "2026-11-17",
@@ -662,23 +676,23 @@
     },
     {
       "date_utc": "2026-11-23",
-      "official_scans": 1,
-      "gal_samples": 3,
+      "official_scans": 2,
+      "gal_samples": 6,
       "publisher_timestamped_official_links": 0,
-      "specialist_publisher_timestamped_links": 1,
+      "specialist_publisher_timestamped_links": 16,
       "grid_operator_primary_timestamped_links": 0,
       "high_signal_official_links": 0,
-      "gdelt_index_first_seen_urls": 18,
-      "press_release_feed_date_urls": 0,
+      "gdelt_index_first_seen_urls": 97,
+      "press_release_feed_date_urls": 16,
       "scanning_observed": true,
-      "successful_official_scans": 1,
-      "successful_gal_samples": 3,
+      "successful_official_scans": 2,
+      "successful_gal_samples": 6,
       "successful_scanning_observed": true
     }
   ],
   "warnings": [
-    "37 observed GAL intervals exceeded 15 minutes",
-    "24h GAL sampled-window coverage upper bound is 11.26% (1277.9 min not sampled)",
+    "40 observed GAL intervals exceeded 15 minutes",
+    "24h GAL sampled-window coverage upper bound is 10.42% (1290.0 min not sampled)",
     "7 RSS scans had incomplete source connectivity",
     "Seven-day operating pilot is not yet complete"
   ],

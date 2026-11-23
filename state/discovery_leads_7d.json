@@ -48,6 +48,78 @@
     "first_collector_observed_utc": "2026-11-20T13:08:58.711900+00:00"
   },
   {
+    "url": "https://www.kyivpost.com/post/90874",
+    "title": "Ukrainian Drones Set Russian Oil Infrastructure Ablaze in Twin Strikes Deep Inside Russia",
+    "domain": "www.kyivpost.com",
+    "gdelt_first_seen_utc": "2026-11-23T08:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:oil",
+      "geopolitical_event:strikes",
+      "world_context:russia"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T08:18:54.579463+00:00"
+  },
+  {
+    "url": "https://www.naturalnews.com/2026-11-22-houthi-attacks-undermine-saudi-vision-2030-trade.html",
+    "title": "Red Sea in Turmoil: Houthi Attacks Undermine Saudi Vision 2030 and Regional Trade \u2013 NaturalNews.com",
+    "domain": "www.naturalnews.com",
+    "gdelt_first_seen_utc": "2026-11-23T02:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:red sea",
+      "geopolitical_event:attacks",
+      "world_context:houthi"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T02:54:13.059849+00:00"
+  },
+  {
+    "url": "https://www.eurasiareview.com/23112026-bahrain-says-two-injured-in-iranian-attack-on-industrial-site-as-tankers-hit-in-hormuz",
+    "title": "Bahrain Says Two Injured In Iranian Attack On Industrial Site, As Tankers Hit In Hormuz - Eurasia Review",
+    "domain": "www.eurasiareview.com",
+    "gdelt_first_seen_utc": "2026-11-23T02:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:tankers",
+      "geopolitical_event:attack",
+      "world_context:iranian"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T02:54:13.059849+00:00"
+  },
+  {
     "url": "https://yalibnan.com/2026/11/23/iran-war-live-updates-tankers-set-ablaze-in-hormuz-as-irgc-warns-of-unrest-threat",
     "title": "Iran war live updates: Tankers set ablaze in Hormuz as IRGC warns of unrest threat \u2013 Ya Libnan",
     "domain": "yalibnan.com",
@@ -2121,6 +2193,30 @@
     "first_collector_observed_utc": "2026-11-22T12:53:40.757928+00:00"
   },
   {
+    "url": "https://www.trend.az/azerbaijan/4249663.html",
+    "title": "SOCAR explores energy storage technologies for Azerbaijan's power grid",
+    "domain": "www.trend.az",
+    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 84,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "energy storage",
+      "grid",
+      "power grid"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
     "url": "http://www.maritimeprofessional.com/news/nikkiso-delivers-dock-overhaul-tanker-424305",
     "title": "Nikkiso Delivers Dry Dock Overhaul for LNG Tanker",
     "domain": "www.maritimeprofessional.com",
@@ -2330,6 +2426,846 @@
     "discovery_providers": [
       "GDELT GAL RSS"
     ]
+  },
+  {
+    "url": "https://www.thewestmorlandgazette.co.uk/news/national/26752283.zelensky-confirms-ukraine-behind-attack-sank-russian-warship-off-libya",
+    "title": "Zelensky confirms Ukraine behind attack that sank Russian warship off Libya",
+    "domain": "www.thewestmorlandgazette.co.uk",
+    "gdelt_first_seen_utc": "2026-11-23T10:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://www.keighleynews.co.uk/news/national/26752283.zelensky-confirms-ukraine-behind-attack-sank-russian-warship-off-libya",
+    "title": "Zelensky confirms Ukraine behind attack that sank Russian warship off Libya",
+    "domain": "www.keighleynews.co.uk",
+    "gdelt_first_seen_utc": "2026-11-23T10:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://www.theboltonnews.co.uk/news/national/26752283.zelensky-confirms-ukraine-behind-attack-sank-russian-warship-off-libya",
+    "title": "Zelensky confirms Ukraine behind attack that sank Russian warship off Libya",
+    "domain": "www.theboltonnews.co.uk",
+    "gdelt_first_seen_utc": "2026-11-23T10:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://www.clickondetroit.com/news/world/2026/11/23/zelenskyy-confirms-ukraine-was-behind-drone-attack-that-struck-russian-warship-at-libya-naval-base",
+    "title": "Zelenskyy says Ukraine carried out drone attack that hit Russian warship at naval base in Libya",
+    "domain": "www.clickondetroit.com",
+    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "http://www.goskagit.com/news/world/zelenskyy-says-ukraine-carried-out-drone-attack-that-hit-russian-warship-at-naval-base-in/article_c358fe6e-3680-5d62-bcb4-4f37c1cfd1f4.html",
+    "title": "Zelenskyy says Ukraine carried out drone attack that hit Russian warship at naval base in Libya",
+    "domain": "www.goskagit.com",
+    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://www.romfordrecorder.co.uk/news/national/26752283.zelensky-confirms-ukraine-behind-attack-sank-russian-warship-off-libya",
+    "title": "Zelensky confirms Ukraine behind attack that sank Russian warship off Libya",
+    "domain": "www.romfordrecorder.co.uk",
+    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://sputnikglobe.com/20261120/russian-strikes-on-kiev-bridges-cripple-ukraines-western-supply-routes--expert-1125122564.html",
+    "title": "Russian Strikes on Kiev Bridges Cripple Ukraine\u2019s Western Supply Routes \u2013 Expert",
+    "domain": "sputnikglobe.com",
+    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strikes",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://www.london-now.co.uk/news/national/26752283.zelensky-confirms-ukraine-behind-attack-sank-russian-warship-off-libya",
+    "title": "Zelensky confirms Ukraine behind attack that sank Russian warship off Libya",
+    "domain": "www.london-now.co.uk",
+    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://www.newstalk.com/podcasts/highlights-from-newstalk-breakfast/is-the-russia-ukraine-war-spilling-into-the-rest-of-europe",
+    "title": "Is the Russia-Ukraine war spilling into the rest of Europe? | Newstalk",
+    "domain": "www.newstalk.com",
+    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:war",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://www.gazetteherald.co.uk/news/national/26752283.zelensky-confirms-ukraine-behind-attack-sank-russian-warship-off-libya",
+    "title": "Zelensky confirms Ukraine behind attack that sank Russian warship off Libya",
+    "domain": "www.gazetteherald.co.uk",
+    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://www.barryanddistrictnews.co.uk/news/national/26752283.zelensky-confirms-ukraine-behind-attack-sank-russian-warship-off-libya",
+    "title": "Zelensky confirms Ukraine behind attack that sank Russian warship off Libya",
+    "domain": "www.barryanddistrictnews.co.uk",
+    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://www.kgou.org/world/2026-11-23/nato-to-meet-after-russia-ukraine-war-once-again-inches-onto-european-territory",
+    "title": "NATO to meet after Russia-Ukraine war once again inches onto European territory",
+    "domain": "www.kgou.org",
+    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:war",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://www.midweekherald.co.uk/news/national/26752283.zelensky-confirms-ukraine-behind-attack-sank-russian-warship-off-libya",
+    "title": "Zelensky confirms Ukraine behind attack that sank Russian warship off Libya",
+    "domain": "www.midweekherald.co.uk",
+    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "http://www.dailyadvance.com/news/world/zelenskyy-says-ukraine-carried-out-drone-attack-that-hit-russian-warship-at-naval-base-in/article_476a7eea-4386-58f3-8732-4af1a0632d83.html",
+    "title": "Zelenskyy says Ukraine carried out drone attack that hit Russian warship at naval base in Libya",
+    "domain": "www.dailyadvance.com",
+    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://www.thisiswiltshire.co.uk/news/national/26752283.zelensky-confirms-ukraine-behind-attack-sank-russian-warship-off-libya",
+    "title": "Zelensky confirms Ukraine behind attack that sank Russian warship off Libya",
+    "domain": "www.thisiswiltshire.co.uk",
+    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://www.bournemouthecho.co.uk/news/national/26752283.zelensky-confirms-ukraine-behind-attack-sank-russian-warship-off-libya",
+    "title": "Zelensky confirms Ukraine behind attack that sank Russian warship off Libya",
+    "domain": "www.bournemouthecho.co.uk",
+    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://www.newhamrecorder.co.uk/news/national/26752283.zelensky-confirms-ukraine-behind-attack-sank-russian-warship-off-libya",
+    "title": "Zelensky confirms Ukraine behind attack that sank Russian warship off Libya",
+    "domain": "www.newhamrecorder.co.uk",
+    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://www.irishexaminer.com/world/arid-41941212.html",
+    "title": "Zelensky confirms Ukraine behind attack that sank Russian warship off Libya",
+    "domain": "www.irishexaminer.com",
+    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://www.wisbechstandard.co.uk/news/national/26752283.zelensky-confirms-ukraine-behind-attack-sank-russian-warship-off-libya",
+    "title": "Zelensky confirms Ukraine behind attack that sank Russian warship off Libya",
+    "domain": "www.wisbechstandard.co.uk",
+    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://www.hertsad.co.uk/news/national/26752283.zelensky-confirms-ukraine-behind-attack-sank-russian-warship-off-libya",
+    "title": "Zelensky confirms Ukraine behind attack that sank Russian warship off Libya",
+    "domain": "www.hertsad.co.uk",
+    "gdelt_first_seen_utc": "2026-11-23T08:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T08:18:54.579463+00:00"
+  },
+  {
+    "url": "https://www.worcesternews.co.uk/news/national/26752283.zelensky-confirms-ukraine-behind-attack-sank-russian-warship-off-libya",
+    "title": "Zelensky confirms Ukraine behind attack that sank Russian warship off Libya",
+    "domain": "www.worcesternews.co.uk",
+    "gdelt_first_seen_utc": "2026-11-23T08:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T08:18:54.579463+00:00"
+  },
+  {
+    "url": "https://www.naroomanewsonline.com.au/story/9396102/ship-sunk-in-libya-in-apparent-ukraine-strike-to-russia",
+    "title": "Ship sunk in Libya in apparent Ukraine strike to Russia",
+    "domain": "www.naroomanewsonline.com.au",
+    "gdelt_first_seen_utc": "2026-11-23T08:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T08:18:54.579463+00:00"
+  },
+  {
+    "url": "https://www.salisburyjournal.co.uk/news/national/26752283.zelensky-confirms-ukraine-behind-attack-sank-russian-warship-off-libya",
+    "title": "Zelensky confirms Ukraine behind attack that sank Russian warship off Libya",
+    "domain": "www.salisburyjournal.co.uk",
+    "gdelt_first_seen_utc": "2026-11-23T08:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T08:18:54.579463+00:00"
+  },
+  {
+    "url": "https://ksevradio.com/iran-says-it-will-use-all-available-tools-to-confront-us-naval-blockade",
+    "title": "Iran says it will use all available tools to confront US naval blockade - KSEV Radio 700",
+    "domain": "ksevradio.com",
+    "gdelt_first_seen_utc": "2026-11-23T08:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:blockade",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T08:18:54.579463+00:00"
+  },
+  {
+    "url": "https://www.newcastleherald.com.au/story/9396102/ship-sunk-in-libya-in-apparent-ukraine-strike-to-russia",
+    "title": "Ship sunk in Libya in apparent Ukraine strike to Russia",
+    "domain": "www.newcastleherald.com.au",
+    "gdelt_first_seen_utc": "2026-11-23T08:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T08:18:54.579463+00:00"
+  },
+  {
+    "url": "https://www.bendigoadvertiser.com.au/story/9396102/ship-sunk-in-libya-in-apparent-ukraine-strike-to-russia",
+    "title": "Ship sunk in Libya in apparent Ukraine strike to Russia",
+    "domain": "www.bendigoadvertiser.com.au",
+    "gdelt_first_seen_utc": "2026-11-23T08:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T08:18:54.579463+00:00"
+  },
+  {
+    "url": "https://www.winnipegfreepress.com/world/2026/11/23/ukrainian-president-zelenskyy-confirms-ukraine-was-behind-attack-that-sank-russian-warship-off-libya",
+    "title": "Ukrainian President Zelenskyy confirms Ukraine was behind attack that sank Russian warship off Libya",
+    "domain": "www.winnipegfreepress.com",
+    "gdelt_first_seen_utc": "2026-11-23T08:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T08:18:54.579463+00:00"
+  },
+  {
+    "url": "https://www.eppingforestguardian.co.uk/news/national/26752283.zelensky-confirms-ukraine-behind-attack-sank-russian-warship-off-libya",
+    "title": "Zelensky confirms Ukraine behind attack that sank Russian warship off Libya",
+    "domain": "www.eppingforestguardian.co.uk",
+    "gdelt_first_seen_utc": "2026-11-23T08:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T08:18:54.579463+00:00"
+  },
+  {
+    "url": "https://www.northerndailyleader.com.au/story/9396102/ship-sunk-in-libya-in-apparent-ukraine-strike-to-russia",
+    "title": "Ship sunk in Libya in apparent Ukraine strike to Russia",
+    "domain": "www.northerndailyleader.com.au",
+    "gdelt_first_seen_utc": "2026-11-23T08:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T08:18:54.579463+00:00"
+  },
+  {
+    "url": "https://www.thetottenhamindependent.co.uk/news/national/26752283.zelensky-confirms-ukraine-behind-attack-sank-russian-warship-off-libya",
+    "title": "Zelensky confirms Ukraine behind attack that sank Russian warship off Libya",
+    "domain": "www.thetottenhamindependent.co.uk",
+    "gdelt_first_seen_utc": "2026-11-23T08:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T08:18:54.579463+00:00"
+  },
+  {
+    "url": "https://www.leaderlive.co.uk/news/national/26752283.zelensky-confirms-ukraine-behind-attack-sank-russian-warship-off-libya",
+    "title": "Zelensky confirms Ukraine behind attack that sank Russian warship off Libya",
+    "domain": "www.leaderlive.co.uk",
+    "gdelt_first_seen_utc": "2026-11-23T08:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T08:18:54.579463+00:00"
+  },
+  {
+    "url": "https://www.echo-news.co.uk/news/national/26752283.zelensky-confirms-ukraine-behind-attack-sank-russian-warship-off-libya",
+    "title": "Zelensky confirms Ukraine behind attack that sank Russian warship off Libya",
+    "domain": "www.echo-news.co.uk",
+    "gdelt_first_seen_utc": "2026-11-23T08:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T08:18:54.579463+00:00"
+  },
+  {
+    "url": "http://www.kenyastar.com/news/279449395/iranian-leaders-consider-democrats-weak-trump-claims-iran-intensified-attacks-after-us-midterm-elections",
+    "title": "\"Iranian leaders consider Democrats weak\": Trump claims Iran intensified attacks after US midterm elections",
+    "domain": "www.kenyastar.com",
+    "gdelt_first_seen_utc": "2026-11-23T02:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attacks",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T02:54:13.059849+00:00"
+  },
+  {
+    "url": "https://www.eurasiareview.com/23112026-libya-says-suspected-drone-boat-hit-russian-ship-near-benghazi-amid-ukraine-speculation",
+    "title": "Libya Says Suspected Drone Boat Hit Russian Ship Near Benghazi Amid Ukraine Speculation - Eurasia Review",
+    "domain": "www.eurasiareview.com",
+    "gdelt_first_seen_utc": "2026-11-23T02:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:drone",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T02:54:13.059849+00:00"
+  },
+  {
+    "url": "http://www.middleeaststar.com/news/279449395/iranian-leaders-consider-democrats-weak-trump-claims-iran-intensified-attacks-after-us-midterm-elections",
+    "title": "\"Iranian leaders consider Democrats weak\": Trump claims Iran intensified attacks after US midterm elections",
+    "domain": "www.middleeaststar.com",
+    "gdelt_first_seen_utc": "2026-11-23T02:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attacks",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T02:54:13.059849+00:00"
   },
   {
     "url": "https://yalibnan.com/2026/11/23/russian-warship-hit-by-suspected-ukrainian-drone-at-benghazi-naval-base-libyan-officials-say",
@@ -7697,6 +8633,50 @@
     ]
   },
   {
+    "url": "https://www.middleeasteye.net/live-blog/live-blog-update/south-korea-asks-qatar-priority-supply-lng-supplies-once-transits",
+    "title": "South Korea asks Qatar for priority supply of LNG supplies once transits through Hormuz Strait return to normal",
+    "domain": "www.middleeasteye.net",
+    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 45,
+    "category": "LNG",
+    "relevance_evidence": [
+      "lng"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://biz.chosun.com/industry/company/2026/11/23/IDTN6OWUUBGLDKZFSAAP4BFHCM",
+    "title": "\uac00\uc2a4\uacf5\uc0ac, LNG \ud2b8\ub808\uc774\ub529\u00b7\ub0c9\uc5f4 \uc0ac\uc5c5 \uc804\ub2f4\uc870\uc9c1 \uc2e0\uc124",
+    "domain": "biz.chosun.com",
+    "gdelt_first_seen_utc": "2026-11-23T08:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 45,
+    "category": "LNG",
+    "relevance_evidence": [
+      "lng"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T08:18:54.579463+00:00"
+  },
+  {
     "url": "https://www.worldoil.com/news/2026/10/21/woodside-s-scarborough-hits-99-complete-first-lng-on-track-for-q4",
     "title": "Woodside\u2019s Scarborough hits 99% complete, first LNG on track for Q4",
     "domain": "www.worldoil.com",
@@ -8887,6 +9867,248 @@
       "gas storage"
     ],
     "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.spokesman.com/stories/2026/nov/23/getting-there-holiday-travel-outlook-gets-boost-by",
+    "title": "Getting There: Holiday travel outlook gets boost by lower gas prices",
+    "domain": "www.spokesman.com",
+    "gdelt_first_seen_utc": "2026-11-23T10:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://www.trend.az/iran/4249608.html",
+    "title": "Iran's Homa gas gathering center ready to help boost gas supply",
+    "domain": "www.trend.az",
+    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas supply"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://www.irishexaminer.com/world/arid-41941251.html",
+    "title": "Gas prices in Europe surge as forecast cold snap feeds supply shortage fears",
+    "domain": "www.irishexaminer.com",
+    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://www.upstreamonline.com/finance/vaar-energi-to-acquire-conocophillips-norway-business-and-teesside-asset-for-4-4-billion/2-1-2077865",
+    "title": "Vaar Energi to acquire ConocoPhillips\u2019 Norway business and Teesside asset for $4.4 billion",
+    "domain": "www.upstreamonline.com",
+    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "conocophillips"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://finance.eastmoney.com/a/202611233937333910.html",
+    "title": "WTI\u539f\u6cb9\u671f\u8d27\u8dcc\u5e45\u6269\u5927\u81f31% _ \u4e1c\u65b9\u8d22\u5bcc\u7f51",
+    "domain": "finance.eastmoney.com",
+    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "wti"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://sana.sy/en/economic/2361066",
+    "title": "Oil prices slip as global market sell-off outweighs Gulf shipping risks",
+    "domain": "sana.sy",
+    "gdelt_first_seen_utc": "2026-11-23T08:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "oil prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T08:18:54.579463+00:00"
+  },
+  {
+    "url": "https://www.oilandgasonline.com/doc/exxonmobil-advances-next-phase-of-guyana-development-with-longtail-0001",
+    "title": "ExxonMobil Advances Next Phase Of Guyana Development With Longtail",
+    "domain": "www.oilandgasonline.com",
+    "gdelt_first_seen_utc": "2026-11-23T08:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "exxonmobil"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T08:18:54.579463+00:00"
+  },
+  {
+    "url": "https://www.naturalnews.com/2026-11-22-3-emergency-heating-options-keep-family-warm.html",
+    "title": "No Electricity, No Heat? These 3 Emergency Heating Options Could Keep Your Family Warm \u2013 NaturalNews.com",
+    "domain": "www.naturalnews.com",
+    "gdelt_first_seen_utc": "2026-11-23T02:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T02:54:13.059849+00:00"
+  },
+  {
+    "url": "https://www.fool.com/investing/2026/11/22/stifel-says-spacex-could-buy-stalled-data-centers-for-one-reason-their-power-heres-why-electricity-is-the-real-asset",
+    "title": "Stifel Says SpaceX Could Buy Stalled Data Centers for One Reason: Their Power. Here\u2019s Why Electricity Is the Real Asset. | The Motley Fool",
+    "domain": "www.fool.com",
+    "gdelt_first_seen_utc": "2026-11-23T02:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T02:54:13.059849+00:00"
+  },
+  {
+    "url": "https://www.ktiv.com/2026/11/22/gas-prices-decline-thanksgiving-travel-approaches",
+    "title": "Gas prices decline as Thanksgiving travel approaches",
+    "domain": "www.ktiv.com",
+    "gdelt_first_seen_utc": "2026-11-23T02:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T02:54:13.059849+00:00"
+  },
+  {
+    "url": "https://vietnamnet.vn/en/hcmc-food-prices-stay-high-despite-lower-fuel-and-power-2574049.html",
+    "title": "Why HCMC food prices are still high despite cheaper fuel and electricity",
+    "domain": "vietnamnet.vn",
+    "gdelt_first_seen_utc": "2026-11-23T02:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T02:54:13.059849+00:00"
   },
   {
     "url": "https://fox56.com/news/local/nepa-gas-prices-continue-to-decrease-average-below-4-per-gallon",
@@ -11270,6 +12492,72 @@
       "gas supply"
     ],
     "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.ibtimes.com.au/elon-musk-warns-ai-industry-cash-shortage-1879221",
+    "title": "Elon Musk Warns AI Cash Crunch Will Be Nuts Next Year as Data Center Delays Threaten Hundreds of Billions",
+    "domain": "www.ibtimes.com.au",
+    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://www.trend.az/iran/4249482.html",
+    "title": "Iran drills 78 oil and gas wells across 10 provinces in eight months",
+    "domain": "www.trend.az",
+    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "oil and gas"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://www.riotimesonline.com/angola-first-gold-refinery-viana-endiama",
+    "title": "Angola Opens First Gold Refinery in Luanda",
+    "domain": "www.riotimesonline.com",
+    "gdelt_first_seen_utc": "2026-11-23T08:16:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "refinery"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T08:18:54.579463+00:00"
   },
   {
     "url": "https://www.aol.com/articles/elon-musk-warns-data-center-174956000.html",
@@ -14696,6 +15984,94 @@
       "vistra"
     ],
     "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.boersennews.de/nachrichten/partner/wh-selfinvest/nvidia-siemens-energy-und-palo-alto-3-ki-aktien-im-grossen-boersencheck/5363280",
+    "title": "NVIDIA, Siemens Energy & Palo Alto: 3 KI-Aktien im gro\u00dfen B\u00f6rsencheck",
+    "domain": "www.boersennews.de",
+    "gdelt_first_seen_utc": "2026-11-23T10:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "siemens energy"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://www.boersennews.de/nachrichten/artikel/boersennews/siemens-energy-hat-der-abverkauf-gerade-erst-begonnen/5363667",
+    "title": "Siemens Energy: Hat der Abverkauf gerade erst begonnen?",
+    "domain": "www.boersennews.de",
+    "gdelt_first_seen_utc": "2026-11-23T10:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "siemens energy"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://www.recorder.ca/press-releases/globe-newswire/international-petroleum-corporation-announces-results-of-normal-course-issuer-bid-9",
+    "title": "International Petroleum Corporation Announces Results of Normal Course Issuer Bid",
+    "domain": "www.recorder.ca",
+    "gdelt_first_seen_utc": "2026-11-23T10:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "petroleum"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00"
+  },
+  {
+    "url": "https://revistaforum.com.br/blogs/o-cafezinho/a-petrobras-transformou-o-pre-sal-na-salvacao-do-brasil",
+    "title": "A Petrobras transformou o pr\u00e9-sal na salva\u00e7\u00e3o do Brasil - Revista F\u00f3rum",
+    "domain": "revistaforum.com.br",
+    "gdelt_first_seen_utc": "2026-11-23T02:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "petrobras"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-23T02:54:13.059849+00:00"
   },
   {
     "url": "https://www.aol.com/articles/four-ways-keep-energy-bills-130714000.html",
