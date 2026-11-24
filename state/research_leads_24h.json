@@ -1,5 +1,71 @@
 [
   {
+    "url": "https://isp.netscape.com:443/pf/story/0001/20261124/9d13d96cc3e4bac8f334f9145c718e42",
+    "title": "US consumer confidence soars with elections in the rearview mirror and gas prices in retreat",
+    "domain": "isp.netscape.com:443",
+    "gdelt_first_seen_utc": "2026-11-24T17:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T17:33:31.361388+00:00"
+  },
+  {
+    "url": "https://www.ealingtimes.co.uk/news/national/uk-today/26737748.martin-lewis-hits-ofgem-market-stabilisation-charge",
+    "title": "Martin Lewis hits out at Ofgem over energy bills as new warning issued to households",
+    "domain": "www.ealingtimes.co.uk",
+    "gdelt_first_seen_utc": "2026-11-24T17:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "energy bills"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T17:33:31.361388+00:00"
+  },
+  {
+    "url": "https://mmb.moneycontrol.com/forum-topics/stocks/chennai-petroleum-3602.html",
+    "title": "chennai petroleum Forum Discussion on Market View, Business sectors,Stocks, Commodity, Personal Finance & More",
+    "domain": "mmb.moneycontrol.com",
+    "gdelt_first_seen_utc": "2026-11-24T17:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "petroleum"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T17:33:31.361388+00:00"
+  },
+  {
     "url": "https://www.jpost.com/middle-east/article-915961",
     "title": "Projectiles strike three vessels in Strait of Hormuz on Monday, UKMTO says | The Jerusalem Post",
     "domain": "www.jpost.com",
