@@ -80,22 +80,99 @@
     "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
   },
   {
-    "id": "892d8fe0c9f3d2a933e8a821",
-    "title": "Eastern Shore Natural Gas Company; Notice of Scoping Period Requesting Comments on Environmental Issues for the Proposed Delmar Regional Enhancement Project",
-    "url": "https://www.federalregister.gov/documents/2026/11/17/2026-23361/eastern-shore-natural-gas-company-notice-of-scoping-period-requesting-comments-on-environmental",
+    "id": "01e75e698a6a88783a934a30",
+    "title": "Tres Palacios Gas Storage LLC; Notice of Schedule for the Preparation of an Environmental Assessment for the Tres Palacios Smith Cavern Expansion Project",
+    "url": "https://www.federalregister.gov/documents/2026/11/24/2026-23835/tres-palacios-gas-storage-llc-notice-of-schedule-for-the-preparation-of-an-environmental-assessment",
     "source": "Federal Register notices",
     "source_class": "official_agency",
-    "published_utc": "2026-11-17T05:00:00+00:00",
+    "published_utc": "2026-11-24T05:00:00+00:00",
     "category": "Natural Gas",
     "published_precision": "day",
-    "relevance_score": 39,
+    "relevance_score": 36,
     "keyword_matches": 1,
     "editorial_candidate": false,
     "relevance_evidence": [
-      "natural gas"
+      "gas storage"
     ],
     "status": "research_date_only",
-    "also_seen_in": []
+    "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
+    "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
+  },
+  {
+    "id": "81adc024c869006aeab20848",
+    "title": "Southern Star Central Gas Pipeline, Inc.; Notice of Schedule for the Preparation of an Environmental Assessment for the Evergy Mcnew Power Plant Delivery Project",
+    "url": "https://www.federalregister.gov/documents/2026/11/24/2026-23894/southern-star-central-gas-pipeline-inc-notice-of-schedule-for-the-preparation-of-an-environmental",
+    "source": "Federal Register notices",
+    "source_class": "official_agency",
+    "published_utc": "2026-11-24T05:00:00+00:00",
+    "category": "Natural Gas",
+    "published_precision": "day",
+    "relevance_score": 30,
+    "keyword_matches": 1,
+    "editorial_candidate": false,
+    "relevance_evidence": [
+      "gas pipeline"
+    ],
+    "status": "research_date_only",
+    "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
+    "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
+  },
+  {
+    "id": "ca9ccd13c21567c6a015931b",
+    "title": "Eastern Gas Transmission and Storage, Inc.; Notice of Application and Establishing Intervention Deadline",
+    "url": "https://www.federalregister.gov/documents/2026/11/24/2026-23893/eastern-gas-transmission-and-storage-inc-notice-of-application-and-establishing-intervention",
+    "source": "Federal Register notices",
+    "source_class": "official_agency",
+    "published_utc": "2026-11-24T05:00:00+00:00",
+    "category": "Natural Gas",
+    "published_precision": "day",
+    "relevance_score": 30,
+    "keyword_matches": 1,
+    "editorial_candidate": false,
+    "relevance_evidence": [
+      "gas transmission"
+    ],
+    "status": "research_date_only",
+    "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
+    "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
+  },
+  {
+    "id": "3eb6e0d995d2dd22b2e31be2",
+    "title": "Columbia Gas Transmission, LLC; Notice of Request Under Blanket Authorization and Establishing Intervention and Protest Deadline",
+    "url": "https://www.federalregister.gov/documents/2026/11/24/2026-23892/columbia-gas-transmission-llc-notice-of-request-under-blanket-authorization-and-establishing",
+    "source": "Federal Register notices",
+    "source_class": "official_agency",
+    "published_utc": "2026-11-24T05:00:00+00:00",
+    "category": "Natural Gas",
+    "published_precision": "day",
+    "relevance_score": 30,
+    "keyword_matches": 1,
+    "editorial_candidate": false,
+    "relevance_evidence": [
+      "gas transmission"
+    ],
+    "status": "research_date_only",
+    "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
+    "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
+  },
+  {
+    "id": "d43dfbd5317a985856317ec2",
+    "title": "Enable Gas Transmission, LLC; Notice of Request Under Blanket Authorization and Establishing Intervention and Protest Deadline",
+    "url": "https://www.federalregister.gov/documents/2026/11/24/2026-23891/enable-gas-transmission-llc-notice-of-request-under-blanket-authorization-and-establishing",
+    "source": "Federal Register notices",
+    "source_class": "official_agency",
+    "published_utc": "2026-11-24T05:00:00+00:00",
+    "category": "Natural Gas",
+    "published_precision": "day",
+    "relevance_score": 30,
+    "keyword_matches": 1,
+    "editorial_candidate": false,
+    "relevance_evidence": [
+      "gas transmission"
+    ],
+    "status": "research_date_only",
+    "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
+    "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
   },
   {
     "id": "98cf091cac76154ba0c0feae",

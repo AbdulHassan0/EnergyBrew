@@ -48,6 +48,30 @@
     "first_collector_observed_utc": "2026-11-20T13:08:58.711900+00:00"
   },
   {
+    "url": "https://kenya-today.com/report-strait-of-hormuz-sees-peak-attacks-since-war-began-uk-maritime-monitor-reports-31979",
+    "title": "Strait of Hormuz sees peak attacks since war began, UK maritime monitor reports",
+    "domain": "kenya-today.com",
+    "gdelt_first_seen_utc": "2026-11-24T04:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:strait of hormuz",
+      "geopolitical_event:attacks",
+      "world_context:strait of hormuz"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T04:51:47.648452+00:00"
+  },
+  {
     "url": "https://www.rttnews.com/3717243/crude-oil-slumps-as-trump-gives-diplomacy-more-time-to-end-u-s-iran-conflict.aspx",
     "title": "Crude Oil Slumps As Trump Gives Diplomacy More Time To End U.S.-Iran Conflict",
     "domain": "www.rttnews.com",
@@ -2616,6 +2640,198 @@
     "discovery_providers": [
       "GDELT GAL RSS"
     ]
+  },
+  {
+    "url": "https://www.aol.co.uk/articles/ukraine-war-briefing-kyiv-strike-010835000.html",
+    "title": "Ukraine war briefing: Kyiv\u2019s strike on Russian ships in Benghazi condemned by Libya\u2019s UN-backed government - AOL",
+    "domain": "www.aol.co.uk",
+    "gdelt_first_seen_utc": "2026-11-24T05:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T05:58:18.328200+00:00"
+  },
+  {
+    "url": "http://www.chinanationalnews.com/news/279451359/russian-security-council-dy-chairman-claims-ukraine-and-nato-actions-have-triggered-nuclear-strike-considerations",
+    "title": "Russian Security Council Dy Chairman claims Ukraine and NATO actions have triggered nuclear strike considerations",
+    "domain": "www.chinanationalnews.com",
+    "gdelt_first_seen_utc": "2026-11-24T05:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T05:58:18.328200+00:00"
+  },
+  {
+    "url": "https://original.antiwar.com/trita-parsi/2026/11/23/israels-ambassador-tells-americans-when-their-loves-ones-will-be-allowed-to-come-home-from-the-iran-war",
+    "title": "Israel\u2019s Ambassador Tells Americans When Their Loves Ones Will be Allowed To Come Home From the Iran War",
+    "domain": "original.antiwar.com",
+    "gdelt_first_seen_utc": "2026-11-24T04:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:war",
+      "world_context:iran/israel"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T04:51:47.648452+00:00"
+  },
+  {
+    "url": "https://article.wn.com/view/2026/11/24/Iran_vows_to_break_the_US_naval_blockade_as_Trump_fails_to_m",
+    "title": "Iran vows to break the US naval blockade as Trump fails to make a call ...",
+    "domain": "article.wn.com",
+    "gdelt_first_seen_utc": "2026-11-24T04:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:blockade",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T04:51:47.648452+00:00"
+  },
+  {
+    "url": "https://www.ghanamma.com/2026/11/23/russian-warship-hit-by-suspected-ukrainian-drone-at-benghazi-naval-base-libyan-officials-say-2",
+    "title": "Russian warship hit by suspected Ukrainian drone at Benghazi naval base, Libyan officials say \u2013 Ghanamma.com",
+    "domain": "www.ghanamma.com",
+    "gdelt_first_seen_utc": "2026-11-24T02:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:drone",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T02:57:09.776777+00:00"
+  },
+  {
+    "url": "https://www.kyivpost.com/post/90982",
+    "title": "Ukraine Faces Renewed Russian Strike Threat Amid Patriot Missile Shortages",
+    "domain": "www.kyivpost.com",
+    "gdelt_first_seen_utc": "2026-11-24T02:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T02:57:09.776777+00:00"
+  },
+  {
+    "url": "https://www.kyivpost.com/post/90983",
+    "title": "Ukraine Challenges Russia Over Civilian Attacks and Rejection of Ceasefire",
+    "domain": "www.kyivpost.com",
+    "gdelt_first_seen_utc": "2026-11-24T02:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attacks",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T02:57:09.776777+00:00"
+  },
+  {
+    "url": "https://www.kyivpost.com/post/90985",
+    "title": "Russian Drone Violates Polish Airspace During Attack on Ukraine in \u2018Another Provocation,\u2019 Warsaw Says",
+    "domain": "www.kyivpost.com",
+    "gdelt_first_seen_utc": "2026-11-24T02:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T02:57:09.776777+00:00"
   },
   {
     "url": "https://www.wcsufm.org/latest-from-npr/2026-11-23/zelenskyy-hails-ukraines-attack-on-a-russian-warship-docked-at-a-naval-base-in-libya",
@@ -9260,6 +9476,52 @@
     ]
   },
   {
+    "url": "https://www.koreaherald.com/article/10947563",
+    "title": "Posco Group completes acquisition of US shale gas field",
+    "domain": "www.koreaherald.com",
+    "gdelt_first_seen_utc": "2026-11-24T05:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 57,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas field",
+      "shale gas"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T05:58:18.328200+00:00"
+  },
+  {
+    "url": "https://barbadostoday.bb/2026/11/23/1mw-pilot-in-plan-to-shore-up-power-grid",
+    "title": "1MW pilot in plan to shore up power grid - Barbados Today",
+    "domain": "barbadostoday.bb",
+    "gdelt_first_seen_utc": "2026-11-24T04:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 57,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "grid",
+      "power grid"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T04:51:47.648452+00:00"
+  },
+  {
     "url": "https://www.webwire.com/ViewPressRel.asp?aId=364522",
     "title": "Siemens and Enexis accelerate expansion of Dutch Power Grid",
     "domain": "www.webwire.com",
@@ -10791,6 +11053,336 @@
       "gas storage"
     ],
     "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://wgme.com/news/local/gas-prices-continue-to-drop-in-maine-11-24-2026",
+    "title": "Gas prices continue to drop in Maine",
+    "domain": "wgme.com",
+    "gdelt_first_seen_utc": "2026-11-24T05:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T05:58:18.328200+00:00"
+  },
+  {
+    "url": "https://www.simcoereformer.ca/press-releases/pr-newswire/when-water-meets-electricity-how-elegrp-advances-electrical-safety",
+    "title": "When Water Meets Electricity: How ELEGRP Advances Electrical Safety",
+    "domain": "www.simcoereformer.ca",
+    "gdelt_first_seen_utc": "2026-11-24T05:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T05:58:18.328200+00:00"
+  },
+  {
+    "url": "https://www.cubaheadlines.com/articles/346486",
+    "title": "Three Cubans Arrested Over Suspected Marijuana Cultivation in Maine: Electricity Bills Raise Suspicion",
+    "domain": "www.cubaheadlines.com",
+    "gdelt_first_seen_utc": "2026-11-24T05:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T05:58:18.328200+00:00"
+  },
+  {
+    "url": "https://financialpost.com/press-releases/pr-newswire/when-water-meets-electricity-how-elegrp-advances-electrical-safety",
+    "title": "When Water Meets Electricity: How ELEGRP Advances Electrical Safety",
+    "domain": "financialpost.com",
+    "gdelt_first_seen_utc": "2026-11-24T05:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T05:58:18.328200+00:00"
+  },
+  {
+    "url": "https://www.fox32chicago.com/news/gas-prices-fall-3-5-million-illinoisans-prepare-drive-thanksgiving",
+    "title": "Gas prices fall as 3.5 million Illinoisans prepare to drive for Thanksgiving",
+    "domain": "www.fox32chicago.com",
+    "gdelt_first_seen_utc": "2026-11-24T04:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T04:51:47.648452+00:00"
+  },
+  {
+    "url": "https://www.rtoinsider.com/152036-permitting-bill-house-rejection-would-leave-electricity-networks-groping-for-answers",
+    "title": "Permitting Bill: House Rejection Would Leave Electricity Networks Groping for Answers",
+    "domain": "www.rtoinsider.com",
+    "gdelt_first_seen_utc": "2026-11-24T04:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T04:51:47.648452+00:00"
+  },
+  {
+    "url": "https://www.oneindia.com/new-delhi/delhi-free-electricity-scheme-consumers-must-register-online-from-december-to-get-subsidy-8268291.html",
+    "title": "Delhi Free Electricity Scheme: Consumers Must Register Online From December To Get Subsidy",
+    "domain": "www.oneindia.com",
+    "gdelt_first_seen_utc": "2026-11-24T04:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T04:51:47.648452+00:00"
+  },
+  {
+    "url": "https://www.ktvq.com/news/cheaper-thanksgiving-road-trips-gas-prices-fall-ahead-of-holiday-travel",
+    "title": "Cheaper Thanksgiving road trips? Gas prices fall ahead of holiday travel",
+    "domain": "www.ktvq.com",
+    "gdelt_first_seen_utc": "2026-11-24T02:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T02:57:09.776777+00:00"
+  },
+  {
+    "url": "https://www.abc57.com/news/michigan-gas-prices-soar-despite-wholesale-prices-going-down-drivers-find-relief-in-indiana",
+    "title": "Michigan gas prices soar despite wholesale prices going down, drivers find relief in Indiana",
+    "domain": "www.abc57.com",
+    "gdelt_first_seen_utc": "2026-11-24T02:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T02:57:09.776777+00:00"
+  },
+  {
+    "url": "https://www.newson6.com/ooo/full-special-oklahoma-linemen-electricity-guatemala",
+    "title": "FULL SPECIAL: Lighting the Way | Oklahoma linemen bring electricity to Guatemala",
+    "domain": "www.newson6.com",
+    "gdelt_first_seen_utc": "2026-11-24T02:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T02:57:09.776777+00:00"
+  },
+  {
+    "url": "https://www.ksl.com:443/article/51647744/utah-gas-prices-drop-sharply-over-past-month-as-economist-predicts-additional-decline",
+    "title": "Utah gas prices drop sharply over past month as economist predicts additional decline",
+    "domain": "www.ksl.com:443",
+    "gdelt_first_seen_utc": "2026-11-24T02:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T02:57:09.776777+00:00"
+  },
+  {
+    "url": "https://www.kotatv.com/2026/11/23/south-dakota-gas-prices-fall-27-cents-ahead-thanksgiving",
+    "title": "South Dakota gas prices fall 27 cents ahead of Thanksgiving",
+    "domain": "www.kotatv.com",
+    "gdelt_first_seen_utc": "2026-11-24T02:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T02:57:09.776777+00:00"
+  },
+  {
+    "url": "https://en.shafaqna.com/492692/us-data-centers-trim-electricity-bills-via-short-cuts",
+    "title": "US: Data centers trim electricity bills via short cuts - Shafaqna English | International Shia News & Fatwas",
+    "domain": "en.shafaqna.com",
+    "gdelt_first_seen_utc": "2026-11-24T02:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T02:57:09.776777+00:00"
+  },
+  {
+    "url": "https://www.dakotanewsnow.com/2026/11/24/busy-roads-slightly-lower-gas-prices-shape-south-dakota-thanksgiving-travel",
+    "title": "Busy roads, slightly lower gas prices shape South Dakota Thanksgiving travel",
+    "domain": "www.dakotanewsnow.com",
+    "gdelt_first_seen_utc": "2026-11-24T02:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T02:57:09.776777+00:00"
+  },
+  {
+    "url": "https://www.insidehalton.com/news/ontario-gas-price-prediction-for-nov-25/article_e8483d32-f4eb-54d9-9591-0c57fe40e920.html",
+    "title": "Ontario gas prices keep falling: Here's when to fill up",
+    "domain": "www.insidehalton.com",
+    "gdelt_first_seen_utc": "2026-11-24T02:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T02:57:09.776777+00:00"
   },
   {
     "url": "https://www.etoday.co.kr/news/view/2651918",
@@ -13746,6 +14338,204 @@
       "gas supply"
     ],
     "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://arizonadailyindependent.com/2026/11/23/neighborhood-sues-phoenix-over-ahwatukee-data-center",
+    "title": "Neighborhood Sues Phoenix Over Ahwatukee Data Center",
+    "domain": "arizonadailyindependent.com",
+    "gdelt_first_seen_utc": "2026-11-24T05:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T05:58:18.328200+00:00"
+  },
+  {
+    "url": "https://www.kpcnews.com/thestar/article_8c90626d-9fcf-4be8-b6dc-4215294c5503.html",
+    "title": "Commissioners approve data center ordinance",
+    "domain": "www.kpcnews.com",
+    "gdelt_first_seen_utc": "2026-11-24T05:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T05:58:18.328200+00:00"
+  },
+  {
+    "url": "https://newschannel9.com/news/local/dade-county-commissioners-cancel-monday-meeting-on-proposed-data-center-amid-protest",
+    "title": "Dade County commissioners cancel Monday meeting on proposed data center amid protest",
+    "domain": "newschannel9.com",
+    "gdelt_first_seen_utc": "2026-11-24T05:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T05:58:18.328200+00:00"
+  },
+  {
+    "url": "https://www.inewsgr.com/162/To-schedio-tis-dei-kai-tis-Amazon-gia-to-data-center-ton-300-MW-stin-kozani-ti-provlepei-i-meleti.htm",
+    "title": "T\u03bf \u03c3\u03c7\u03ad\u03b4\u03b9\u03bf \u03c4\u03b7\u03c2 \u0394\u0395\u0397 \u03ba\u03b1\u03b9 \u03c4\u03b7\u03c2 Amazon \u03b3\u03b9\u03b1 \u03c4\u03bf data center \u03c4\u03c9\u03bd 300 MW \u03c3\u03c4\u03b7\u03bd \u039a\u03bf\u03b6\u03ac\u03bd\u03b7, \u03c4\u03b9 \u03c0\u03c1\u03bf\u03b2\u03bb\u03ad\u03c0\u03b5\u03b9 \u03b7 \u03bc\u03b5\u03bb\u03ad\u03c4\u03b7",
+    "domain": "www.inewsgr.com",
+    "gdelt_first_seen_utc": "2026-11-24T05:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T05:58:18.328200+00:00"
+  },
+  {
+    "url": "https://www.rtoinsider.com/152134-pjm-consumer-advocates-monitor-request-2029-30-auction-be-delayed",
+    "title": "PJM Consumer Advocates, Monitor Request 2029/30 Auction be Delayed",
+    "domain": "www.rtoinsider.com",
+    "gdelt_first_seen_utc": "2026-11-24T04:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "pjm"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T04:51:47.648452+00:00"
+  },
+  {
+    "url": "https://www.ilgiorno.it/legnano/cronaca/data-center-il-comitato-incalza-ad5a3d5a",
+    "title": "Data center, il Comitato incalza: verifiche sulle altezza fuori norma",
+    "domain": "www.ilgiorno.it",
+    "gdelt_first_seen_utc": "2026-11-24T04:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T04:51:47.648452+00:00"
+  },
+  {
+    "url": "https://www.wyso.org/2026-11-23/data-center-action-one-question-facing-ohio-lawmakers-during-lame-duck",
+    "title": "Data center action one question facing Ohio lawmakers during lame duck",
+    "domain": "www.wyso.org",
+    "gdelt_first_seen_utc": "2026-11-24T02:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T02:57:09.776777+00:00"
+  },
+  {
+    "url": "https://dailycaller.com/2026/11/23/texas-lawmakers-data-center-tax-exemptions-existing-projects",
+    "title": "Texas Lawmakers Target Data Center Tax Breaks, But One Big Divide Remains",
+    "domain": "dailycaller.com",
+    "gdelt_first_seen_utc": "2026-11-24T02:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T02:57:09.776777+00:00"
+  },
+  {
+    "url": "https://rapidcityjournal.com/news/local/government-politics/article_4795e1ca-ca7e-48ed-a6c5-1375522d3dad.html",
+    "title": "Pennington County Planning Commission delays data center permit vote until January",
+    "domain": "rapidcityjournal.com",
+    "gdelt_first_seen_utc": "2026-11-24T02:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T02:57:09.776777+00:00"
   },
   {
     "url": "https://wset.com/news/local/judge-rules-botetourt-county-google-data-center-deal-violated-law-halts-construction-november-2026",
@@ -17502,6 +18292,116 @@
       "vistra"
     ],
     "status": "discovery_only_requires_publisher_verification"
+  },
+  {
+    "url": "https://www.rtoinsider.com/questions-on-culture-continue-to-crop-up-in-dominion-nextera-hearing",
+    "title": "Questions on \u2018Culture\u2019 Continue to Crop up in Dominion-NextEra Hearing",
+    "domain": "www.rtoinsider.com",
+    "gdelt_first_seen_utc": "2026-11-24T04:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "nextera"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T04:51:47.648452+00:00"
+  },
+  {
+    "url": "https://www.rtoinsider.com/152129-bpa-proposes-28-substations-for-fast-track-large-load-connections",
+    "title": "BPA Proposes 28 Substations for Fast-track Large Load Connections",
+    "domain": "www.rtoinsider.com",
+    "gdelt_first_seen_utc": "2026-11-24T04:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "large load"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T04:51:47.648452+00:00"
+  },
+  {
+    "url": "https://www.iraq-businessnews.com/2026/11/24/oil-ministry-announces-7th-licensing-round-10m-bpd-target",
+    "title": "Oil Ministry announces 7th Licensing Round, 10m bpd Target | Iraq Business News",
+    "domain": "www.iraq-businessnews.com",
+    "gdelt_first_seen_utc": "2026-11-24T04:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "bpd"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T04:51:47.648452+00:00"
+  },
+  {
+    "url": "https://www.santacruzsentinel.com/2026/11/23/guest-commentary-why-state-should-not-allow-watsonville-battery-storage-project",
+    "title": "Guest Commentary | Why state should not allow Watsonville battery storage project",
+    "domain": "www.santacruzsentinel.com",
+    "gdelt_first_seen_utc": "2026-11-24T02:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "battery storage"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T02:57:09.776777+00:00"
+  },
+  {
+    "url": "https://jc.uol.com.br/economia/2026/11/23/petrobras-preve-investir-uss-122-bi-ate-2031-e-anuncia-dividendos-extras.html",
+    "title": "Petrobras prev\u00ea investir US$ 122 bi at\u00e9 2031 e anuncia dividendos extras",
+    "domain": "jc.uol.com.br",
+    "gdelt_first_seen_utc": "2026-11-24T02:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "petrobras"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T02:57:09.776777+00:00"
   },
   {
     "url": "https://www.infomoney.com.br/mercados/petrobras-petr3petr4-3-fatores-que-fizeram-as-acoes-cairem-mais-de-3-nesta-2a",

@@ -1,6 +1,166 @@
 {
   "leads": [
     {
+      "url": "https://www.globenewswire.com/news-release/2026/11/24/3409353/28124/en/mexico-data-center-market-size-investment-analysis-and-growth-opportunities-2026-2031-global-cloud-providers-expanding-their-mexican-operations-as-enterprise-and-consumer-demand-in.html",
+      "title": "Mexico Data Center Market Size - Investment Analysis and Growth Opportunities 2026-2031 | Global Cloud Providers Expanding Their Mexican Operations as Enterprise and Consumer Demand Increases",
+      "feed_creator_label": "GlobeNewswire",
+      "named_issuer_verified": false,
+      "feed_source_url": "https://www.globenewswire.com/news-release/2026/11/24/3409353/28124/en/mexico-data-center-market-size-investment-analysis-and-growth-opportunities-2026-2031-global-cloud-providers-expanding-their-mexican-operations-as-enterprise-and-consumer-demand-in.html",
+      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+      "feed_published_utc": "2026-11-24T14:08:00+00:00",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "category": "Power & Electricity",
+      "relevance_score": 30,
+      "relevance_evidence": [
+        "data center"
+      ],
+      "provider": "Press Release Feed",
+      "content_kind": "company_or_newswire_press_release",
+      "status": "promotional_issuer_claim_requires_editorial_verification",
+      "first_collector_observed_utc": "2026-11-24T14:58:39.592382+00:00"
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/11/24/3409241/0/en/green-rain-energy-s-green-rain-development-division-announces-distribution-agreement-with-orbey-power-inc-for-solar-powered-bidirectional-ev-charging-and-battery-storage-solutions.html",
+      "title": "Green Rain Energy's Green Rain Development Division Announces Distribution Agreement with Orbey Power Inc. for Solar-Powered Bidirectional EV Charging and Battery Storage Solutions",
+      "feed_creator_label": "GlobeNewswire",
+      "named_issuer_verified": false,
+      "feed_source_url": "https://www.globenewswire.com/news-release/2026/11/24/3409241/0/en/green-rain-energy-s-green-rain-development-division-announces-distribution-agreement-with-orbey-power-inc-for-solar-powered-bidirectional-ev-charging-and-battery-storage-solutions.html",
+      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+      "feed_published_utc": "2026-11-24T13:10:00+00:00",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "category": "Power & Electricity",
+      "relevance_score": 27,
+      "relevance_evidence": [
+        "battery storage"
+      ],
+      "provider": "Press Release Feed",
+      "content_kind": "company_or_newswire_press_release",
+      "status": "promotional_issuer_claim_requires_editorial_verification",
+      "first_collector_observed_utc": "2026-11-24T14:58:39.592382+00:00"
+    },
+    {
+      "url": "https://express-press-release.net/news/2026/11/24/1786180",
+      "title": "Energy Storage Systems Market Size: USD 521.7 Billion by 2034, 7.9% CAGR",
+      "feed_creator_label": "Express Press Release",
+      "named_issuer_verified": false,
+      "feed_source_url": "https://express-press-release.net/news/2026/11/24/1786180",
+      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+      "feed_published_utc": "2026-11-24T11:02:43+00:00",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "category": "Power & Electricity",
+      "relevance_score": 27,
+      "relevance_evidence": [
+        "energy storage"
+      ],
+      "provider": "Press Release Feed",
+      "content_kind": "company_or_newswire_press_release",
+      "status": "promotional_issuer_claim_requires_editorial_verification",
+      "first_collector_observed_utc": "2026-11-24T14:58:39.592382+00:00"
+    },
+    {
+      "url": "https://www.einpresswire.com/article/958690816/ranked-comparison-five-chinese-3300-kw-data-center-standby-generator-makers",
+      "title": "Ranked Comparison: Five Chinese 3300 kW Data Center Standby Generator Makers",
+      "feed_creator_label": "EIN Presswire",
+      "named_issuer_verified": false,
+      "feed_source_url": "https://www.einpresswire.com/article/958690816/ranked-comparison-five-chinese-3300-kw-data-center-standby-generator-makers",
+      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+      "feed_published_utc": "2026-11-24T08:00:10+00:00",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "category": "Power & Electricity",
+      "relevance_score": 30,
+      "relevance_evidence": [
+        "data center"
+      ],
+      "provider": "Press Release Feed",
+      "content_kind": "company_or_newswire_press_release",
+      "status": "promotional_issuer_claim_requires_editorial_verification",
+      "first_collector_observed_utc": "2026-11-24T14:58:39.592382+00:00"
+    },
+    {
+      "url": "https://express-press-release.net/news/2026/11/24/1785970",
+      "title": "Natural Gas Market Forecast to Attain USD 1,113.88 Billion by 2034, Witnessing Growth at a CAGR of 2.5%.",
+      "feed_creator_label": "Express Press Release",
+      "named_issuer_verified": false,
+      "feed_source_url": "https://express-press-release.net/news/2026/11/24/1785970",
+      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+      "feed_published_utc": "2026-11-24T07:09:28+00:00",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "category": "Natural Gas",
+      "relevance_score": 39,
+      "relevance_evidence": [
+        "natural gas"
+      ],
+      "provider": "Press Release Feed",
+      "content_kind": "company_or_newswire_press_release",
+      "status": "promotional_issuer_claim_requires_editorial_verification",
+      "first_collector_observed_utc": "2026-11-24T14:58:39.592382+00:00"
+    },
+    {
+      "url": "https://express-press-release.net/news/2026/11/24/1785802",
+      "title": "Data Center Coolant Distribution Units Market Forecast Highlights USD 13.95 Billion Valuation by 2034 at 33.39% CAGR",
+      "feed_creator_label": "Express Press Release",
+      "named_issuer_verified": false,
+      "feed_source_url": "https://express-press-release.net/news/2026/11/24/1785802",
+      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+      "feed_published_utc": "2026-11-24T05:59:14+00:00",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "category": "Power & Electricity",
+      "relevance_score": 30,
+      "relevance_evidence": [
+        "data center"
+      ],
+      "provider": "Press Release Feed",
+      "content_kind": "company_or_newswire_press_release",
+      "status": "promotional_issuer_claim_requires_editorial_verification",
+      "first_collector_observed_utc": "2026-11-24T14:58:39.592382+00:00"
+    },
+    {
+      "url": "https://express-press-release.net/news/2026/11/24/1785792",
+      "title": "Bio-LNG Market Expansion Projected at 40.51% CAGR, Reaching USD 61.99 Billion by 2034",
+      "feed_creator_label": "Express Press Release",
+      "named_issuer_verified": false,
+      "feed_source_url": "https://express-press-release.net/news/2026/11/24/1785792",
+      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+      "feed_published_utc": "2026-11-24T05:52:15+00:00",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "category": "LNG",
+      "relevance_score": 45,
+      "relevance_evidence": [
+        "lng"
+      ],
+      "provider": "Press Release Feed",
+      "content_kind": "company_or_newswire_press_release",
+      "status": "promotional_issuer_claim_requires_editorial_verification",
+      "first_collector_observed_utc": "2026-11-24T14:58:39.592382+00:00"
+    },
+    {
+      "url": "https://express-press-release.net/news/2026/11/24/1785700",
+      "title": "U.S. Microgrid Market: Driving Energy Resilience Through Smart Grid Technologies and Decentralized Power Systems",
+      "feed_creator_label": "Express Press Release",
+      "named_issuer_verified": false,
+      "feed_source_url": "https://express-press-release.net/news/2026/11/24/1785700",
+      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+      "feed_published_utc": "2026-11-24T05:15:13+00:00",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "category": "Power & Electricity",
+      "relevance_score": 24,
+      "relevance_evidence": [
+        "grid"
+      ],
+      "provider": "Press Release Feed",
+      "content_kind": "company_or_newswire_press_release",
+      "status": "promotional_issuer_claim_requires_editorial_verification",
+      "first_collector_observed_utc": "2026-11-24T14:58:39.592382+00:00"
+    },
+    {
       "url": "https://finance.yahoo.com/energy/articles/eco-atlantic-oil-gas-ltd-173000944.html",
       "title": "Eco (Atlantic) Oil and Gas Ltd Announces Notice of Annual General Meeting",
       "feed_creator_label": "ACCESS Newswire",
@@ -1667,6 +1827,14 @@
       "raw_feed_entries": 100,
       "high_signal_company_releases": 16,
       "new_unique_links": 4
+    },
+    {
+      "run_utc": "2026-11-24T14:58:38.403449+00:00",
+      "completed_utc": "2026-11-24T14:58:39.592382+00:00",
+      "status": "ok",
+      "raw_feed_entries": 100,
+      "high_signal_company_releases": 10,
+      "new_unique_links": 8
     }
   ]
 }

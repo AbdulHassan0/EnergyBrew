@@ -1,16 +1,16 @@
 {
-  "generated_utc": "2026-11-24T02:57:10.997965+00:00",
+  "generated_utc": "2026-11-24T14:58:39.689642+00:00",
   "status": "research_only_not_approved",
-  "unique_relevant_urls_7d": 1001,
+  "unique_relevant_urls_7d": 1072,
   "selected_research_links": 32,
-  "unique_domains_in_selection": 20,
+  "unique_domains_in_selection": 21,
   "queue_counts": {
-    "specialist_publisher_24h": 13,
-    "older_official_context": 57,
-    "regulatory_date_only": 6,
-    "discovery_unverified": 863,
+    "specialist_publisher_24h": 17,
+    "older_official_context": 58,
+    "regulatory_date_only": 10,
+    "discovery_unverified": 917,
     "system_operator_primary_24h": 1,
-    "company_release_unverified": 61
+    "company_release_unverified": 69
   },
   "selected_category_counts": {
     "Natural Gas": 4,
@@ -24,13 +24,13 @@
     "Natural Gas": 4,
     "LNG": 8,
     "Power & Electricity": 8,
-    "Oil & Energy": 7,
-    "Infrastructure & Investment": 13,
+    "Oil & Energy": 6,
+    "Infrastructure & Investment": 9,
     "Geopolitics": 8
   },
   "missing_categories": [],
   "publisher_timestamped_official_24h": 0,
-  "publisher_timestamped_specialist_24h": 13,
+  "publisher_timestamped_specialist_24h": 17,
   "system_operator_primary_24h": 1,
   "likely_same_event_links_suppressed": 1,
   "discovery_publisher_dates_verified": 0,
@@ -143,69 +143,6 @@
       ]
     },
     {
-      "title": "Grid operators file closely watched large load interconnection reforms at FERC",
-      "url": "https://www.utilitydive.com/news/pjm-rto-large-load-interconnection-ferc-show-cause/874872",
-      "domain": "www.utilitydive.com",
-      "first_collector_observed_utc": null,
-      "local_collection_time_known": false,
-      "source": "Utility Dive News",
-      "source_class": "specialist_publisher",
-      "category": "Power & Electricity",
-      "coverage_themes": [
-        "Power & Electricity",
-        "Infrastructure & Investment"
-      ],
-      "relevance_score": 100,
-      "relevance_evidence": [
-        "grid",
-        "grid operators",
-        "interconnection",
-        "large load"
-      ],
-      "origin": "official_rss",
-      "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-17T14:28:30+00:00",
-      "publisher_time_verified": true,
-      "date_confidence": "publisher_rss_timestamp",
-      "within_24h_on_own_time_basis": false,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "older_official_context",
-      "rank": 130
-    },
-    {
-      "title": "European Natural Gas Prices Surge 8.6% as Cold Snap Looms",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/European-Natural-Gas-Prices-Surge-86-as-Cold-Snap-Looms.html",
-      "domain": "oilprice.com",
-      "first_collector_observed_utc": "2026-11-23T14:54:05.913764+00:00",
-      "local_collection_time_known": true,
-      "source": "OilPrice.com News",
-      "source_class": "specialist_publisher",
-      "category": "Natural Gas",
-      "coverage_themes": [
-        "Natural Gas"
-      ],
-      "relevance_score": 72,
-      "relevance_evidence": [
-        "gas prices",
-        "natural gas"
-      ],
-      "origin": "official_rss",
-      "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-23T08:30:00+00:00",
-      "publisher_time_verified": true,
-      "date_confidence": "publisher_rss_timestamp",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "specialist_publisher_24h",
-      "rank": 127
-    },
-    {
       "title": "Freeport LNG Development, L.P., FLNG Liquefaction, LLC, FLNG Liquefaction 2, LLC, FLNG Liquefaction 3, LLC, FLNG Liquefaction 4, LLC; Notice of Application and Establishing Intervention Deadline",
       "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23609/freeport-lng-development-lp-flng-liquefaction-llc-flng-liquefaction-2-llc-flng-liquefaction-3-llc",
       "domain": "www.federalregister.gov",
@@ -267,26 +204,27 @@
       "rank": 120
     },
     {
-      "title": "Fourth floating LNG terminal put into operation mode to fuel Germany’s energy security",
-      "url": "https://www.offshore-energy.biz/2026/11/17/fourth-floating-lng-terminal-put-into-operation-mode-to-fuel-germanys-energy-security",
-      "domain": "www.offshore-energy.biz",
-      "first_collector_observed_utc": null,
-      "local_collection_time_known": false,
-      "source": "Offshore Energy News",
+      "title": "Iran Steps Up Hormuz Tanker Attacks as Oil Prices Slide",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Steps-Up-Hormuz-Tanker-Attacks-as-Oil-Prices-Slide.html",
+      "domain": "oilprice.com",
+      "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00",
+      "local_collection_time_known": true,
+      "source": "OilPrice.com News",
       "source_class": "specialist_publisher",
-      "category": "LNG",
+      "category": "Geopolitics",
       "coverage_themes": [
-        "LNG",
-        "Infrastructure & Investment"
+        "Geopolitics",
+        "Oil & Energy"
       ],
-      "relevance_score": 87,
+      "relevance_score": 90,
       "relevance_evidence": [
-        "lng",
-        "lng terminal"
+        "energy_market_hook:oil",
+        "geopolitical_event:attacks",
+        "world_context:iran"
       ],
       "origin": "official_rss",
       "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-17T10:41:15+00:00",
+      "observed_time_utc": "2026-11-20T12:30:00+00:00",
       "publisher_time_verified": true,
       "date_confidence": "publisher_rss_timestamp",
       "within_24h_on_own_time_basis": false,
@@ -295,38 +233,7 @@
       "other_origins": [],
       "independent_corroboration_verified": false,
       "queue": "older_official_context",
-      "rank": 117
-    },
-    {
-      "title": "FERC approves MISO plan to speed legacy interconnection study process",
-      "url": "https://www.utilitydive.com/news/ferc-miso-interconnection-queue-study/875449",
-      "domain": "www.utilitydive.com",
-      "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00",
-      "local_collection_time_known": true,
-      "source": "Utility Dive News",
-      "source_class": "specialist_publisher",
-      "category": "Power & Electricity",
-      "coverage_themes": [
-        "Power & Electricity",
-        "Infrastructure & Investment"
-      ],
-      "relevance_score": 57,
-      "relevance_evidence": [
-        "interconnection",
-        "miso"
-      ],
-      "origin": "official_rss",
-      "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-23T14:05:36+00:00",
-      "publisher_time_verified": true,
-      "date_confidence": "publisher_rss_timestamp",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "specialist_publisher_24h",
-      "rank": 112
+      "rank": 120
     },
     {
       "title": "WTI crude oil prices may trend lower",
@@ -547,6 +454,36 @@
       "rank": 107
     },
     {
+      "title": "NKT starts power cable production for IJmuiden Ver Beta offshore wind grid connection",
+      "url": "https://www.offshore-energy.biz/2026/11/24/nkt-starts-power-cable-production-for-ijmuiden-ver-beta-offshore-wind-grid-connection",
+      "domain": "www.offshore-energy.biz",
+      "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00",
+      "local_collection_time_known": true,
+      "source": "Offshore Energy News",
+      "source_class": "specialist_publisher",
+      "category": "Power & Electricity",
+      "coverage_themes": [
+        "Power & Electricity"
+      ],
+      "relevance_score": 51,
+      "relevance_evidence": [
+        "grid",
+        "offshore wind"
+      ],
+      "origin": "official_rss",
+      "time_basis": "specialist_publisher_rss_timestamp",
+      "observed_time_utc": "2026-11-24T10:49:49+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "specialist_publisher_24h",
+      "rank": 106
+    },
+    {
       "title": "Algonquin Gas Transmission, LLC; Notice of Application and Establishing Intervention Deadline",
       "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23446/algonquin-gas-transmission-llc-notice-of-application-and-establishing-intervention-deadline",
       "domain": "www.federalregister.gov",
@@ -604,6 +541,68 @@
       "independent_corroboration_verified": false,
       "queue": "system_operator_primary_24h",
       "rank": 105
+    },
+    {
+      "title": "Pakistan Petroleum dealers threaten nationwide strike over daily fuel pricing",
+      "url": "http://www.southeastasiapost.com/news/279451792/pakistan-petroleum-dealers-threaten-nationwide-strike-over-daily-fuel-pricing",
+      "domain": "www.southeastasiapost.com",
+      "first_collector_observed_utc": "2026-11-24T14:58:38.290540+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:petroleum",
+        "geopolitical_event:strike",
+        "world_context:pakistan"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-24T14:47:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
+    },
+    {
+      "title": "Strait of Hormuz sees peak attacks since war began, UK maritime monitor reports",
+      "url": "https://kenya-today.com/report-strait-of-hormuz-sees-peak-attacks-since-war-began-uk-maritime-monitor-reports-31979",
+      "domain": "kenya-today.com",
+      "first_collector_observed_utc": "2026-11-24T04:51:47.648452+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:strait of hormuz",
+        "geopolitical_event:attacks",
+        "world_context:strait of hormuz"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-24T04:46:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
     },
     {
       "title": "Crude Oil Slumps As Trump Gives Diplomacy More Time To End U.S.-Iran Conflict",
@@ -700,100 +699,34 @@
       "rank": 102
     },
     {
-      "title": "Strait of Hormuz attacks have increased to highest level since Iran war began",
-      "url": "https://abc7.com/story/strait-hormuz-attacks-have-increased-highest-level-iran-war-began/20069523",
-      "domain": "abc7.com",
-      "first_collector_observed_utc": "2026-11-23T14:54:25.565116+00:00",
+      "title": "$2.3 billion integrated LNG-to-power project on the development agenda in South Africa",
+      "url": "https://www.offshore-energy.biz/2026/11/24/dollar23-billion-integrated-lng-to-power-project-on-the-development-agenda-in-south-africa",
+      "domain": "www.offshore-energy.biz",
+      "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00",
       "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
+      "source": "Offshore Energy News",
+      "source_class": "specialist_publisher",
+      "category": "LNG",
       "coverage_themes": [
-        "Geopolitics"
+        "LNG",
+        "Infrastructure & Investment"
       ],
-      "relevance_score": 90,
+      "relevance_score": 45,
       "relevance_evidence": [
-        "energy_market_hook:strait of hormuz",
-        "geopolitical_event:attacks",
-        "world_context:iran"
+        "lng"
       ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-23T14:47:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
+      "origin": "official_rss",
+      "time_basis": "specialist_publisher_rss_timestamp",
+      "observed_time_utc": "2026-11-24T10:06:57+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
       "within_24h_on_own_time_basis": true,
       "needs_editor_review": [],
       "editorial_status": "research_only_not_approved",
       "other_origins": [],
       "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102
-    },
-    {
-      "title": "Strait of Hormuz Shipping Slows Sharply After Tanker Attacks, Tracking Data Shows",
-      "url": "https://www.newdelhitimes.com/strait-hormuz-shipping-slows-tanker-attacks-november-23-2026",
-      "domain": "www.newdelhitimes.com",
-      "first_collector_observed_utc": "2026-11-23T14:54:25.565116+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics",
-        "Oil & Energy"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:tanker",
-        "geopolitical_event:attacks",
-        "world_context:strait of hormuz"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-23T14:46:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102
-    },
-    {
-      "title": "Ukrainian Drones Set Russian Oil Infrastructure Ablaze in Twin Strikes Deep Inside Russia",
-      "url": "https://www.kyivpost.com/post/90874",
-      "domain": "www.kyivpost.com",
-      "first_collector_observed_utc": "2026-11-23T08:18:54.579463+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics",
-        "Infrastructure & Investment",
-        "Oil & Energy"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:oil",
-        "geopolitical_event:strikes",
-        "world_context:russia"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-23T08:16:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102
+      "queue": "specialist_publisher_24h",
+      "rank": 100
     },
     {
       "title": "BASS Wins BW LNG Contract for BASSnet Neo Cloud-Native Solution",
@@ -855,6 +788,37 @@
       "independent_corroboration_verified": false,
       "queue": "regulatory_date_only",
       "rank": 97
+    },
+    {
+      "title": "SOCAR explores energy storage technologies for Azerbaijan's power grid",
+      "url": "https://www.trend.az/azerbaijan/4249663.html",
+      "domain": "www.trend.az",
+      "first_collector_observed_utc": "2026-11-23T10:08:55.863460+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Power & Electricity",
+      "coverage_themes": [
+        "Power & Electricity"
+      ],
+      "relevance_score": 84,
+      "relevance_evidence": [
+        "energy storage",
+        "grid",
+        "power grid"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-23T10:01:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 96
     },
     {
       "title": "Vitol to Start Construction on $2.3b South African LNG Project in 2028",
@@ -947,25 +911,24 @@
       "rank": 89
     },
     {
-      "title": "$4.4 billion play for ConocoPhillips’ Norwegian oil & gas assets and UK infrastructure expands Vår Energi’s North Sea footprint",
-      "url": "https://www.offshore-energy.biz/2026/11/23/dollar44-billion-play-for-conocophillips-norwegian-oil-and-gas-assets-and-uk-infrastructure-expands-var-energis-north-sea-footprint",
+      "title": "ExxonMobil signs off on $4 billion FID as new discovery signals more oil potential at Angolan offshore block",
+      "url": "https://www.offshore-energy.biz/2026/11/24/exxonmobil-signs-off-on-dollar4-billion-fid-as-new-discovery-signals-more-oil-potential-at-angolan-offshore-block",
       "domain": "www.offshore-energy.biz",
-      "first_collector_observed_utc": "2026-11-23T14:54:05.913764+00:00",
+      "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00",
       "local_collection_time_known": true,
       "source": "Offshore Energy News",
       "source_class": "specialist_publisher",
       "category": "Oil & Energy",
       "coverage_themes": [
-        "Oil & Energy",
-        "Infrastructure & Investment"
+        "Oil & Energy"
       ],
       "relevance_score": 33,
       "relevance_evidence": [
-        "conocophillips"
+        "exxonmobil"
       ],
       "origin": "official_rss",
       "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-23T15:10:00+00:00",
+      "observed_time_utc": "2026-11-24T14:44:31+00:00",
       "publisher_time_verified": true,
       "date_confidence": "publisher_rss_timestamp",
       "within_24h_on_own_time_basis": true,
@@ -1006,6 +969,35 @@
       "independent_corroboration_verified": false,
       "queue": "company_release_unverified",
       "rank": 87
+    },
+    {
+      "title": "Gas Coordination Group confirms EU’s winter preparedness, importance of gas storage through the winter",
+      "url": "https://energy.ec.europa.eu/news/gas-coordination-group-confirms-eus-winter-preparedness-importance-gas-storage-through-winter-2026-11-20_en",
+      "domain": "energy.ec.europa.eu",
+      "first_collector_observed_utc": "2026-11-20T22:41:52.748655+00:00",
+      "local_collection_time_known": true,
+      "source": "European Commission DG Energy",
+      "source_class": "official_agency",
+      "category": "Natural Gas",
+      "coverage_themes": [
+        "Natural Gas"
+      ],
+      "relevance_score": 36,
+      "relevance_evidence": [
+        "gas storage"
+      ],
+      "origin": "official_rss",
+      "time_basis": "publisher_feed_publication_time",
+      "observed_time_utc": "2026-11-19T23:00:00+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
+      "within_24h_on_own_time_basis": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "older_official_context",
+      "rank": 86
     },
     {
       "title": "Final investment decision on Azerbaijan's Karabakh field expected in 2027",

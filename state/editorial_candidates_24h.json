@@ -21,52 +21,32 @@
     "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00"
   },
   {
-    "id": "9d0041e5cad02447711a531f",
-    "title": "European Natural Gas Prices Surge 8.6% as Cold Snap Looms",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/European-Natural-Gas-Prices-Surge-86-as-Cold-Snap-Looms.html",
-    "source": "OilPrice.com News",
+    "id": "ff6674cca1e53f04e77c0124",
+    "title": "NKT starts power cable production for IJmuiden Ver Beta offshore wind grid connection",
+    "url": "https://www.offshore-energy.biz/2026/11/24/nkt-starts-power-cable-production-for-ijmuiden-ver-beta-offshore-wind-grid-connection",
+    "source": "Offshore Energy News",
     "source_class": "specialist_publisher",
-    "published_utc": "2026-11-23T08:30:00+00:00",
-    "category": "Natural Gas",
-    "published_precision": "timestamp",
-    "relevance_score": 72,
-    "keyword_matches": 2,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "gas prices",
-      "natural gas"
-    ],
-    "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-23T14:54:05.913764+00:00",
-    "first_collector_observed_utc": "2026-11-23T14:54:05.913764+00:00"
-  },
-  {
-    "id": "b7e0ee57968aae827ece5a85",
-    "title": "FERC approves MISO plan to speed legacy interconnection study process",
-    "url": "https://www.utilitydive.com/news/ferc-miso-interconnection-queue-study/875449",
-    "source": "Utility Dive News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-23T14:05:36+00:00",
+    "published_utc": "2026-11-24T10:49:49+00:00",
     "category": "Power & Electricity",
     "published_precision": "timestamp",
-    "relevance_score": 57,
+    "relevance_score": 51,
     "keyword_matches": 2,
     "editorial_candidate": true,
     "relevance_evidence": [
-      "interconnection",
-      "miso"
+      "grid",
+      "offshore wind"
     ],
     "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-24T02:56:38.844495+00:00",
-    "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00"
+    "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
+    "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
   },
   {
-    "id": "e5e57ea2bd6bb76c607defe1",
-    "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
+    "id": "7b0b60e0044d99baf3922976",
+    "title": "Japan Poised to Ramp Up LNG Buying as Power Prices Surge",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Japan-Poised-to-Ramp-Up-LNG-Buying-as-Power-Prices-Surge.html",
     "source": "OilPrice.com News",
     "source_class": "specialist_publisher",
-    "published_utc": "2026-11-23T13:30:00+00:00",
+    "published_utc": "2026-11-24T10:35:00+00:00",
     "category": "LNG",
     "published_precision": "timestamp",
     "relevance_score": 45,
@@ -76,8 +56,103 @@
       "lng"
     ],
     "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-23T14:54:05.913764+00:00",
-    "first_collector_observed_utc": "2026-11-23T14:54:05.913764+00:00"
+    "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
+    "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
+  },
+  {
+    "id": "9d2718094f3a01e6bb119fff",
+    "title": "$2.3 billion integrated LNG-to-power project on the development agenda in South Africa",
+    "url": "https://www.offshore-energy.biz/2026/11/24/dollar23-billion-integrated-lng-to-power-project-on-the-development-agenda-in-south-africa",
+    "source": "Offshore Energy News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-24T10:06:57+00:00",
+    "category": "LNG",
+    "published_precision": "timestamp",
+    "relevance_score": 45,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "lng"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
+    "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
+  },
+  {
+    "id": "29ae87e44b3c50e262f99473",
+    "title": "ExxonMobil signs off on $4 billion FID as new discovery signals more oil potential at Angolan offshore block",
+    "url": "https://www.offshore-energy.biz/2026/11/24/exxonmobil-signs-off-on-dollar4-billion-fid-as-new-discovery-signals-more-oil-potential-at-angolan-offshore-block",
+    "source": "Offshore Energy News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-24T14:44:31+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 33,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "exxonmobil"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
+    "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
+  },
+  {
+    "id": "8c8f673a57ba9552474def7a",
+    "title": "European Gas Prices Climb as Cold Snap Threatens Depleted Reserves",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/European-Gas-Prices-Climb-as-Cold-Snap-Threatens-Depleted-Reserves.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-24T11:45:00+00:00",
+    "category": "Natural Gas",
+    "published_precision": "timestamp",
+    "relevance_score": 33,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
+    "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
+  },
+  {
+    "id": "727df4aec2c8949cde3152e1",
+    "title": "Equinor Locks In Longest Gas Supply Deal in 40 Years",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Equinor-Locks-In-Longest-Gas-Supply-Deal-in-40-Years.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-24T09:25:00+00:00",
+    "category": "Natural Gas",
+    "published_precision": "timestamp",
+    "relevance_score": 33,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "gas supply"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
+    "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
+  },
+  {
+    "id": "4a2db5af775cce758e16d8a5",
+    "title": "Oil Prices Hold Near Three-Month Lows Despite Hormuz Mine Claims",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Hold-Near-Three-Month-Lows-Despite-Hormuz-Mine-Claims.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-24T07:05:00+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 33,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "oil prices"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
+    "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
   },
   {
     "id": "19d070b44557535f7b93eb50",
@@ -95,6 +170,7 @@
       "conocophillips"
     ],
     "status": "research_only_unverified",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-24T02:56:38.844495+00:00",
     "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00"
   },
@@ -138,63 +214,6 @@
     "first_collector_observed_utc": "2026-11-23T14:54:05.913764+00:00"
   },
   {
-    "id": "ad7c35e1d8499453e1ac01e4",
-    "title": "Brent Drops Below $90 as Wall Street Splits on 2027 Oil Outlook",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/Brent-Drops-Below-90-as-Wall-Street-Splits-on-2027-Oil-Outlook.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-23T14:30:00+00:00",
-    "category": "Oil & Energy",
-    "published_precision": "timestamp",
-    "relevance_score": 33,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "brent"
-    ],
-    "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-23T14:54:05.913764+00:00",
-    "first_collector_observed_utc": "2026-11-23T14:54:05.913764+00:00"
-  },
-  {
-    "id": "8d8ad5a0c384342b736da5ff",
-    "title": "ConocoPhillips to Exit Norway in $4.4 Billion Deal With V\u00e5r Energi",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/ConocoPhillips-to-Exit-Norway-in-44-Billion-Deal-With-Vr-Energi.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-23T11:00:00+00:00",
-    "category": "Oil & Energy",
-    "published_precision": "timestamp",
-    "relevance_score": 33,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "conocophillips"
-    ],
-    "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-23T14:54:05.913764+00:00",
-    "first_collector_observed_utc": "2026-11-23T14:54:05.913764+00:00"
-  },
-  {
-    "id": "0bd93b77a1d6f74dbca62485",
-    "title": "Oil Prices Slide as AI Bubble Fears Rattle Global Markets",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Slide-as-AI-Bubble-Fears-Rattle-Global-Markets.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-23T05:50:00+00:00",
-    "category": "Oil & Energy",
-    "published_precision": "timestamp",
-    "relevance_score": 33,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "oil prices"
-    ],
-    "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-23T14:54:05.913764+00:00",
-    "first_collector_observed_utc": "2026-11-23T14:54:05.913764+00:00"
-  },
-  {
     "id": "67e712cc960bd6a72cf4ada7",
     "title": "PJM Announces Governmental and Member Services Leadership Changes",
     "url": "https://insidelines.pjm.com/pjm-announces-governmental-and-member-services-leadership-changes",
@@ -210,8 +229,47 @@
       "pjm"
     ],
     "status": "research_only_unverified",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-24T02:56:38.844495+00:00",
     "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00"
+  },
+  {
+    "id": "86f2a71329116df5674a252a",
+    "title": "Saipem staying on subsea inspection and intervention duty at Equinor\u2019s oil & gas field through 2034",
+    "url": "https://www.offshore-energy.biz/2026/11/24/saipem-staying-on-subsea-inspection-and-intervention-duty-at-equinors-oil-and-gas-field-through-2034",
+    "source": "Offshore Energy News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-24T11:48:33+00:00",
+    "category": "Natural Gas",
+    "published_precision": "timestamp",
+    "relevance_score": 27,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "gas field"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
+    "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
+  },
+  {
+    "id": "b644452f3c1ddc4710ec920b",
+    "title": "LS Marine Solution selects NjordGuard cable protection for South Korean offshore wind farm",
+    "url": "https://www.offshore-energy.biz/2026/11/24/ls-marine-solution-selects-njordguard-cable-protection-for-south-korean-offshore-wind-farm",
+    "source": "Offshore Energy News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-24T09:19:46+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 27,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "offshore wind"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
+    "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
   },
   {
     "id": "212680d9070227daa7581d7b",
@@ -229,8 +287,28 @@
       "gas turbines"
     ],
     "status": "research_only_unverified",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-24T02:56:38.844495+00:00",
     "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00"
+  },
+  {
+    "id": "a51cb95cd0ec665964193363",
+    "title": "DOJ closes NextEra-Dominion antitrust probe as state hearings continue",
+    "url": "https://www.utilitydive.com/news/doj-closes-nextera-dominion-antitrust-probe-as-state-hearings-continue/875489",
+    "source": "Utility Dive News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-23T16:27:12+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 27,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "nextera"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
+    "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
   },
   {
     "id": "332ef499b6782e11ba5d00c4",
@@ -248,6 +326,7 @@
       "gasoline"
     ],
     "status": "research_only_unverified",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-24T02:56:38.844495+00:00",
     "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00"
   },
@@ -267,6 +346,7 @@
       "grid"
     ],
     "status": "research_only_unverified",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-24T02:56:38.844495+00:00",
     "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00"
   }
