@@ -1,5 +1,252 @@
 [
   {
+    "url": "https://arizonadailyindependent.com/2026/11/23/neighborhood-sues-phoenix-over-ahwatukee-data-center",
+    "title": "Neighborhood Sues Phoenix Over Ahwatukee Data Center",
+    "domain": "arizonadailyindependent.com",
+    "gdelt_first_seen_utc": "2026-11-24T05:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T05:58:18.328200+00:00"
+  },
+  {
+    "url": "https://www.aol.co.uk/articles/ukraine-war-briefing-kyiv-strike-010835000.html",
+    "title": "Ukraine war briefing: Kyiv’s strike on Russian ships in Benghazi condemned by Libya’s UN-backed government - AOL",
+    "domain": "www.aol.co.uk",
+    "gdelt_first_seen_utc": "2026-11-24T05:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T05:58:18.328200+00:00"
+  },
+  {
+    "url": "http://www.chinanationalnews.com/news/279451359/russian-security-council-dy-chairman-claims-ukraine-and-nato-actions-have-triggered-nuclear-strike-considerations",
+    "title": "Russian Security Council Dy Chairman claims Ukraine and NATO actions have triggered nuclear strike considerations",
+    "domain": "www.chinanationalnews.com",
+    "gdelt_first_seen_utc": "2026-11-24T05:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T05:58:18.328200+00:00"
+  },
+  {
+    "url": "https://www.koreaherald.com/article/10947563",
+    "title": "Posco Group completes acquisition of US shale gas field",
+    "domain": "www.koreaherald.com",
+    "gdelt_first_seen_utc": "2026-11-24T05:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 57,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas field",
+      "shale gas"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T05:58:18.328200+00:00"
+  },
+  {
+    "url": "https://wgme.com/news/local/gas-prices-continue-to-drop-in-maine-11-24-2026",
+    "title": "Gas prices continue to drop in Maine",
+    "domain": "wgme.com",
+    "gdelt_first_seen_utc": "2026-11-24T05:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T05:58:18.328200+00:00"
+  },
+  {
+    "url": "https://www.simcoereformer.ca/press-releases/pr-newswire/when-water-meets-electricity-how-elegrp-advances-electrical-safety",
+    "title": "When Water Meets Electricity: How ELEGRP Advances Electrical Safety",
+    "domain": "www.simcoereformer.ca",
+    "gdelt_first_seen_utc": "2026-11-24T05:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T05:58:18.328200+00:00"
+  },
+  {
+    "url": "https://www.cubaheadlines.com/articles/346486",
+    "title": "Three Cubans Arrested Over Suspected Marijuana Cultivation in Maine: Electricity Bills Raise Suspicion",
+    "domain": "www.cubaheadlines.com",
+    "gdelt_first_seen_utc": "2026-11-24T05:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T05:58:18.328200+00:00"
+  },
+  {
+    "url": "https://financialpost.com/press-releases/pr-newswire/when-water-meets-electricity-how-elegrp-advances-electrical-safety",
+    "title": "When Water Meets Electricity: How ELEGRP Advances Electrical Safety",
+    "domain": "financialpost.com",
+    "gdelt_first_seen_utc": "2026-11-24T05:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T05:58:18.328200+00:00"
+  },
+  {
+    "url": "https://www.kpcnews.com/thestar/article_8c90626d-9fcf-4be8-b6dc-4215294c5503.html",
+    "title": "Commissioners approve data center ordinance",
+    "domain": "www.kpcnews.com",
+    "gdelt_first_seen_utc": "2026-11-24T05:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T05:58:18.328200+00:00"
+  },
+  {
+    "url": "https://newschannel9.com/news/local/dade-county-commissioners-cancel-monday-meeting-on-proposed-data-center-amid-protest",
+    "title": "Dade County commissioners cancel Monday meeting on proposed data center amid protest",
+    "domain": "newschannel9.com",
+    "gdelt_first_seen_utc": "2026-11-24T05:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T05:58:18.328200+00:00"
+  },
+  {
+    "url": "https://www.inewsgr.com/162/To-schedio-tis-dei-kai-tis-Amazon-gia-to-data-center-ton-300-MW-stin-kozani-ti-provlepei-i-meleti.htm",
+    "title": "Tο σχέδιο της ΔΕΗ και της Amazon για το data center των 300 MW στην Κοζάνη, τι προβλέπει η μελέτη",
+    "domain": "www.inewsgr.com",
+    "gdelt_first_seen_utc": "2026-11-24T05:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-24T05:58:18.328200+00:00"
+  },
+  {
     "url": "https://kenya-today.com/report-strait-of-hormuz-sees-peak-attacks-since-war-began-uk-maritime-monitor-reports-31979",
     "title": "Strait of Hormuz sees peak attacks since war began, UK maritime monitor reports",
     "domain": "kenya-today.com",
