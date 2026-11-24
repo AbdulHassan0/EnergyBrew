@@ -1,15 +1,16 @@
 {
-  "generated_utc": "2026-11-23T14:54:26.718415+00:00",
+  "generated_utc": "2026-11-24T02:57:10.997965+00:00",
   "status": "research_only_not_approved",
-  "unique_relevant_urls_7d": 936,
+  "unique_relevant_urls_7d": 1001,
   "selected_research_links": 32,
   "unique_domains_in_selection": 20,
   "queue_counts": {
-    "older_official_context": 60,
-    "specialist_publisher_24h": 6,
+    "specialist_publisher_24h": 13,
+    "older_official_context": 57,
     "regulatory_date_only": 6,
-    "discovery_unverified": 807,
-    "company_release_unverified": 57
+    "discovery_unverified": 863,
+    "system_operator_primary_24h": 1,
+    "company_release_unverified": 61
   },
   "selected_category_counts": {
     "Natural Gas": 4,
@@ -23,50 +24,51 @@
     "Natural Gas": 4,
     "LNG": 8,
     "Power & Electricity": 8,
-    "Oil & Energy": 6,
-    "Infrastructure & Investment": 14,
+    "Oil & Energy": 7,
+    "Infrastructure & Investment": 13,
     "Geopolitics": 8
   },
   "missing_categories": [],
   "publisher_timestamped_official_24h": 0,
-  "publisher_timestamped_specialist_24h": 6,
-  "system_operator_primary_24h": 0,
+  "publisher_timestamped_specialist_24h": 13,
+  "system_operator_primary_24h": 1,
   "likely_same_event_links_suppressed": 1,
   "discovery_publisher_dates_verified": 0,
   "promotional_or_language_review_count": 0,
   "stories": [
     {
-      "title": "PJM Proposes New Rules to Protect Grid Reliability as Data Center Demand Grows",
-      "url": "https://insidelines.pjm.com/pjm-proposes-new-rules-to-protect-grid-reliability-as-data-center-demand-grows",
-      "domain": "insidelines.pjm.com",
-      "first_collector_observed_utc": null,
-      "local_collection_time_known": false,
-      "source": "PJM Inside Lines",
-      "source_class": "system_operator_primary",
-      "category": "Power & Electricity",
+      "title": "Storms and Drones Disrupt Russia’s Oil Exports",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Storms-and-Drones-Disrupt-Russias-Oil-Exports.html",
+      "domain": "oilprice.com",
+      "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00",
+      "local_collection_time_known": true,
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "category": "Geopolitics",
       "coverage_themes": [
-        "Power & Electricity",
-        "Infrastructure & Investment"
+        "Geopolitics",
+        "Oil & Energy"
       ],
-      "relevance_score": 100,
+      "relevance_score": 90,
       "relevance_evidence": [
-        "data center",
-        "grid",
-        "grid reliability",
-        "pjm"
+        "energy_market_hook:oil",
+        "geopolitical_event:drones",
+        "world_context:russia"
       ],
       "origin": "official_rss",
-      "time_basis": "system_operator_rss_timestamp",
-      "observed_time_utc": "2026-11-16T21:31:15+00:00",
+      "time_basis": "specialist_publisher_rss_timestamp",
+      "observed_time_utc": "2026-11-23T16:30:00+00:00",
       "publisher_time_verified": true,
       "date_confidence": "publisher_rss_timestamp",
-      "within_24h_on_own_time_basis": false,
+      "within_24h_on_own_time_basis": true,
       "needs_editor_review": [],
       "editorial_status": "research_only_not_approved",
-      "other_origins": [],
+      "other_origins": [
+        "global_discovery"
+      ],
       "independent_corroboration_verified": false,
-      "queue": "older_official_context",
-      "rank": 150
+      "queue": "specialist_publisher_24h",
+      "rank": 145
     },
     {
       "title": "PJM Board Approves Transmission Project Changes to Support Grid Reliability",
@@ -265,38 +267,6 @@
       "rank": 120
     },
     {
-      "title": "Iran Steps Up Hormuz Tanker Attacks as Oil Prices Slide",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Steps-Up-Hormuz-Tanker-Attacks-as-Oil-Prices-Slide.html",
-      "domain": "oilprice.com",
-      "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00",
-      "local_collection_time_known": true,
-      "source": "OilPrice.com News",
-      "source_class": "specialist_publisher",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics",
-        "Oil & Energy"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:oil",
-        "geopolitical_event:attacks",
-        "world_context:iran"
-      ],
-      "origin": "official_rss",
-      "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-20T12:30:00+00:00",
-      "publisher_time_verified": true,
-      "date_confidence": "publisher_rss_timestamp",
-      "within_24h_on_own_time_basis": false,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "older_official_context",
-      "rank": 120
-    },
-    {
       "title": "Fourth floating LNG terminal put into operation mode to fuel Germany’s energy security",
       "url": "https://www.offshore-energy.biz/2026/11/17/fourth-floating-lng-terminal-put-into-operation-mode-to-fuel-germanys-energy-security",
       "domain": "www.offshore-energy.biz",
@@ -328,6 +298,37 @@
       "rank": 117
     },
     {
+      "title": "FERC approves MISO plan to speed legacy interconnection study process",
+      "url": "https://www.utilitydive.com/news/ferc-miso-interconnection-queue-study/875449",
+      "domain": "www.utilitydive.com",
+      "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00",
+      "local_collection_time_known": true,
+      "source": "Utility Dive News",
+      "source_class": "specialist_publisher",
+      "category": "Power & Electricity",
+      "coverage_themes": [
+        "Power & Electricity",
+        "Infrastructure & Investment"
+      ],
+      "relevance_score": 57,
+      "relevance_evidence": [
+        "interconnection",
+        "miso"
+      ],
+      "origin": "official_rss",
+      "time_basis": "specialist_publisher_rss_timestamp",
+      "observed_time_utc": "2026-11-23T14:05:36+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "specialist_publisher_24h",
+      "rank": 112
+    },
+    {
       "title": "WTI crude oil prices may trend lower",
       "url": "https://www.businesstimes.com.sg/companies-markets/wti-crude-oil-prices-may-trend-lower",
       "domain": "www.businesstimes.com.sg",
@@ -350,7 +351,7 @@
       "observed_time_utc": "2026-11-23T01:31:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
+      "within_24h_on_own_time_basis": false,
       "needs_editor_review": [],
       "editorial_status": "research_only_not_approved",
       "other_origins": [],
@@ -546,37 +547,6 @@
       "rank": 107
     },
     {
-      "title": "PJM Plan Would Cut Interconnection Process Time in Half",
-      "url": "https://insidelines.pjm.com/pjm-proposal-would-cut-interconnection-process-time-in-half",
-      "domain": "insidelines.pjm.com",
-      "first_collector_observed_utc": null,
-      "local_collection_time_known": false,
-      "source": "PJM Inside Lines",
-      "source_class": "system_operator_primary",
-      "category": "Power & Electricity",
-      "coverage_themes": [
-        "Power & Electricity",
-        "Infrastructure & Investment"
-      ],
-      "relevance_score": 57,
-      "relevance_evidence": [
-        "interconnection",
-        "pjm"
-      ],
-      "origin": "official_rss",
-      "time_basis": "system_operator_rss_timestamp",
-      "observed_time_utc": "2026-11-16T22:24:16+00:00",
-      "publisher_time_verified": true,
-      "date_confidence": "publisher_rss_timestamp",
-      "within_24h_on_own_time_basis": false,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "older_official_context",
-      "rank": 107
-    },
-    {
       "title": "Algonquin Gas Transmission, LLC; Notice of Application and Establishing Intervention Deadline",
       "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23446/algonquin-gas-transmission-llc-notice-of-application-and-establishing-intervention-deadline",
       "domain": "www.federalregister.gov",
@@ -605,6 +575,129 @@
       "independent_corroboration_verified": false,
       "queue": "regulatory_date_only",
       "rank": 106
+    },
+    {
+      "title": "PJM Announces Governmental and Member Services Leadership Changes",
+      "url": "https://insidelines.pjm.com/pjm-announces-governmental-and-member-services-leadership-changes",
+      "domain": "insidelines.pjm.com",
+      "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00",
+      "local_collection_time_known": true,
+      "source": "PJM Inside Lines",
+      "source_class": "system_operator_primary",
+      "category": "Power & Electricity",
+      "coverage_themes": [
+        "Power & Electricity"
+      ],
+      "relevance_score": 30,
+      "relevance_evidence": [
+        "pjm"
+      ],
+      "origin": "official_rss",
+      "time_basis": "system_operator_rss_timestamp",
+      "observed_time_utc": "2026-11-23T18:31:53+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "system_operator_primary_24h",
+      "rank": 105
+    },
+    {
+      "title": "Crude Oil Slumps As Trump Gives Diplomacy More Time To End U.S.-Iran Conflict",
+      "url": "https://www.rttnews.com/3717243/crude-oil-slumps-as-trump-gives-diplomacy-more-time-to-end-u-s-iran-conflict.aspx",
+      "domain": "www.rttnews.com",
+      "first_collector_observed_utc": "2026-11-23T22:04:47.558900+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics",
+        "Oil & Energy"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:oil",
+        "geopolitical_event:conflict",
+        "world_context:iran"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-23T22:01:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
+    },
+    {
+      "title": "Egypt and Iraq pledge closer energy and military ties as Al Zaidi makes first Cairo visit | The National",
+      "url": "https://www.thenationalnews.com/news/mena/2026/11/23/egypt-and-iraq-pledge-closer-energy-and-military-ties-as-al-zaidi-makes-first-cairo-visit",
+      "domain": "www.thenationalnews.com",
+      "first_collector_observed_utc": "2026-11-23T22:04:47.558900+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:energy",
+        "geopolitical_event:military",
+        "world_context:iraq"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-23T22:01:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
+    },
+    {
+      "title": "Attacks on grain ships, Hormuz crisis drive hunger in Yemen and Sudan, UN food agency boss warns",
+      "url": "https://www.arabnews.com/middle-east/attacks-on-grain-ships-hormuz-crisis-drive-hunger-in-yemen-and-sudan-un-food-agency-boss-warns-3013773",
+      "domain": "www.arabnews.com",
+      "first_collector_observed_utc": "2026-11-23T20:20:11.358933+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:hormuz",
+        "geopolitical_event:attacks",
+        "world_context:yemen"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-23T20:17:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
     },
     {
       "title": "Strait of Hormuz attacks have increased to highest level since Iran war began",
@@ -703,99 +796,6 @@
       "rank": 102
     },
     {
-      "title": "Red Sea in Turmoil: Houthi Attacks Undermine Saudi Vision 2030 and Regional Trade – NaturalNews.com",
-      "url": "https://www.naturalnews.com/2026-11-22-houthi-attacks-undermine-saudi-vision-2030-trade.html",
-      "domain": "www.naturalnews.com",
-      "first_collector_observed_utc": "2026-11-23T02:54:13.059849+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:red sea",
-        "geopolitical_event:attacks",
-        "world_context:houthi"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-23T02:46:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102
-    },
-    {
-      "title": "Bahrain Says Two Injured In Iranian Attack On Industrial Site, As Tankers Hit In Hormuz - Eurasia Review",
-      "url": "https://www.eurasiareview.com/23112026-bahrain-says-two-injured-in-iranian-attack-on-industrial-site-as-tankers-hit-in-hormuz",
-      "domain": "www.eurasiareview.com",
-      "first_collector_observed_utc": "2026-11-23T02:54:13.059849+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:tankers",
-        "geopolitical_event:attack",
-        "world_context:iranian"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-23T02:46:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102
-    },
-    {
-      "title": "Iran war live updates: Tankers set ablaze in Hormuz as IRGC warns of unrest threat – Ya Libnan",
-      "url": "https://yalibnan.com/2026/11/23/iran-war-live-updates-tankers-set-ablaze-in-hormuz-as-irgc-warns-of-unrest-threat",
-      "domain": "yalibnan.com",
-      "first_collector_observed_utc": "2026-11-23T01:47:28.987172+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:tankers",
-        "geopolitical_event:war",
-        "world_context:iran"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-23T01:31:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102
-    },
-    {
       "title": "BASS Wins BW LNG Contract for BASSnet Neo Cloud-Native Solution",
       "url": "https://maritime-executive.com/corporate/bass-wins-bw-lng-contract-for-bassnet-neo-cloud-native-solution",
       "domain": "maritime-executive.com",
@@ -857,6 +857,37 @@
       "rank": 97
     },
     {
+      "title": "Vitol to Start Construction on $2.3b South African LNG Project in 2028",
+      "url": "https://www.marinelink.com/news/vitol-start-construction-b-south-african-544540",
+      "domain": "www.marinelink.com",
+      "first_collector_observed_utc": "2026-11-23T20:20:11.358933+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "LNG",
+      "coverage_themes": [
+        "LNG",
+        "Infrastructure & Investment"
+      ],
+      "relevance_score": 81,
+      "relevance_evidence": [
+        "lng",
+        "lng project"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-23T20:17:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 93
+    },
+    {
       "title": "Nikkiso Delivers Dry Dock Overhaul for LNG Tanker",
       "url": "http://www.maritimeprofessional.com/news/nikkiso-delivers-dock-overhaul-tanker-424305",
       "domain": "www.maritimeprofessional.com",
@@ -878,7 +909,7 @@
       "observed_time_utc": "2026-11-22T21:46:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
+      "within_24h_on_own_time_basis": false,
       "needs_editor_review": [],
       "editorial_status": "research_only_not_approved",
       "other_origins": [],
@@ -934,7 +965,7 @@
       ],
       "origin": "official_rss",
       "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-23T08:39:00+00:00",
+      "observed_time_utc": "2026-11-23T15:10:00+00:00",
       "publisher_time_verified": true,
       "date_confidence": "publisher_rss_timestamp",
       "within_24h_on_own_time_basis": true,
@@ -974,37 +1005,6 @@
       "other_origins": [],
       "independent_corroboration_verified": false,
       "queue": "company_release_unverified",
-      "rank": 87
-    },
-    {
-      "title": "Federal regulators approve Cheniere’s Sabine Pass expansion project",
-      "url": "https://mymixfm.com/2026/11/19/federal-regulators-approve-chenieres-sabine-pass-expansion-project",
-      "domain": "mymixfm.com",
-      "first_collector_observed_utc": "2026-11-19T20:02:38.725241+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "LNG",
-      "coverage_themes": [
-        "LNG",
-        "Infrastructure & Investment"
-      ],
-      "relevance_score": 75,
-      "relevance_evidence": [
-        "cheniere",
-        "sabine pass"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-19T19:47:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": false,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
       "rank": 87
     },
     {

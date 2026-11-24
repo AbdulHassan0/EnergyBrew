@@ -1,5 +1,26 @@
 [
   {
+    "id": "89fe8371c75919e5aeefabfb",
+    "title": "Storms and Drones Disrupt Russia\u2019s Oil Exports",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Storms-and-Drones-Disrupt-Russias-Oil-Exports.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-23T16:30:00+00:00",
+    "category": "Geopolitics",
+    "published_precision": "timestamp",
+    "relevance_score": 90,
+    "keyword_matches": 3,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "energy_market_hook:oil",
+      "geopolitical_event:drones",
+      "world_context:russia"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-24T02:56:38.844495+00:00",
+    "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00"
+  },
+  {
     "id": "9d0041e5cad02447711a531f",
     "title": "European Natural Gas Prices Surge 8.6% as Cold Snap Looms",
     "url": "https://oilprice.com/Latest-Energy-News/World-News/European-Natural-Gas-Prices-Surge-86-as-Cold-Snap-Looms.html",
@@ -20,6 +41,26 @@
     "first_collector_observed_utc": "2026-11-23T14:54:05.913764+00:00"
   },
   {
+    "id": "b7e0ee57968aae827ece5a85",
+    "title": "FERC approves MISO plan to speed legacy interconnection study process",
+    "url": "https://www.utilitydive.com/news/ferc-miso-interconnection-queue-study/875449",
+    "source": "Utility Dive News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-23T14:05:36+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 57,
+    "keyword_matches": 2,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "interconnection",
+      "miso"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-24T02:56:38.844495+00:00",
+    "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00"
+  },
+  {
     "id": "e5e57ea2bd6bb76c607defe1",
     "title": "South Korea Asks Qatar for Priority LNG Once Hormuz Reopens",
     "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Korea-Asks-Qatar-for-Priority-LNG-Once-Hormuz-Reopens.html",
@@ -35,6 +76,64 @@
       "lng"
     ],
     "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-23T14:54:05.913764+00:00",
+    "first_collector_observed_utc": "2026-11-23T14:54:05.913764+00:00"
+  },
+  {
+    "id": "19d070b44557535f7b93eb50",
+    "title": "ConocoPhillips to Exit Norway in $4.43 Billion Deal with Vaar Energi",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/ConocoPhillips-to-Exit-Norway-in-443-Billion-Deal-with-Vaar-Energi.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-23T19:30:00+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 33,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "conocophillips"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-24T02:56:38.844495+00:00",
+    "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00"
+  },
+  {
+    "id": "e16ce691ad176c7ac6acd4ca",
+    "title": "Japan\u2019s Electricity Prices Surge to 2022 High as Cold Weather Arrives",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Japans-Electricity-Prices-Surge-to-2022-High-as-Cold-Weather-Arrives.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-23T17:30:00+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 33,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-24T02:56:38.844495+00:00",
+    "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00"
+  },
+  {
+    "id": "9877da4fbc7e0205626dc7bc",
+    "title": "$4.4 billion play for ConocoPhillips\u2019 Norwegian oil & gas assets and UK infrastructure expands V\u00e5r Energi\u2019s North Sea footprint",
+    "url": "https://www.offshore-energy.biz/2026/11/23/dollar44-billion-play-for-conocophillips-norwegian-oil-and-gas-assets-and-uk-infrastructure-expands-var-energis-north-sea-footprint",
+    "source": "Offshore Energy News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-23T15:10:00+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 33,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "conocophillips"
+    ],
+    "status": "research_only_unverified",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-23T14:54:05.913764+00:00",
     "first_collector_observed_utc": "2026-11-23T14:54:05.913764+00:00"
   },
@@ -77,25 +176,6 @@
     "first_collector_observed_utc": "2026-11-23T14:54:05.913764+00:00"
   },
   {
-    "id": "9877da4fbc7e0205626dc7bc",
-    "title": "$4.4 billion play for ConocoPhillips\u2019 Norwegian oil & gas assets and UK infrastructure expands V\u00e5r Energi\u2019s North Sea footprint",
-    "url": "https://www.offshore-energy.biz/2026/11/23/dollar44-billion-play-for-conocophillips-norwegian-oil-and-gas-assets-and-uk-infrastructure-expands-var-energis-north-sea-footprint",
-    "source": "Offshore Energy News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-23T08:39:00+00:00",
-    "category": "Oil & Energy",
-    "published_precision": "timestamp",
-    "relevance_score": 33,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "conocophillips"
-    ],
-    "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-23T14:54:05.913764+00:00",
-    "first_collector_observed_utc": "2026-11-23T14:54:05.913764+00:00"
-  },
-  {
     "id": "0bd93b77a1d6f74dbca62485",
     "title": "Oil Prices Slide as AI Bubble Fears Rattle Global Markets",
     "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Slide-as-AI-Bubble-Fears-Rattle-Global-Markets.html",
@@ -113,5 +193,81 @@
     "status": "research_only_unverified",
     "first_collected_utc": "2026-11-23T14:54:05.913764+00:00",
     "first_collector_observed_utc": "2026-11-23T14:54:05.913764+00:00"
+  },
+  {
+    "id": "67e712cc960bd6a72cf4ada7",
+    "title": "PJM Announces Governmental and Member Services Leadership Changes",
+    "url": "https://insidelines.pjm.com/pjm-announces-governmental-and-member-services-leadership-changes",
+    "source": "PJM Inside Lines",
+    "source_class": "system_operator_primary",
+    "published_utc": "2026-11-23T18:31:53+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 30,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "pjm"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-24T02:56:38.844495+00:00",
+    "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00"
+  },
+  {
+    "id": "212680d9070227daa7581d7b",
+    "title": "Will Batteries Kill Off Gas Turbines at Data Centers",
+    "url": "https://oilprice.com/Alternative-Energy/Renewable-Energy/Will-Batteries-Kill-Off-Gas-Turbines-at-Data-Centers.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-23T21:00:00+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 27,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "gas turbines"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-24T02:56:38.844495+00:00",
+    "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00"
+  },
+  {
+    "id": "332ef499b6782e11ba5d00c4",
+    "title": "America's Refiners Drowned Their Own Gasoline Windfall",
+    "url": "https://oilprice.com/Energy/Crude-Oil/Americas-Refiners-Drowned-Their-Own-Gasoline-Windfall.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-24T01:00:00+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 24,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "gasoline"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-24T02:56:38.844495+00:00",
+    "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00"
+  },
+  {
+    "id": "56e1ce6af2efea2b5a9d6aa9",
+    "title": "Off-grid costs will push data centers back to utilities: Mitsubishi Heavy Industries CEO",
+    "url": "https://www.utilitydive.com/news/data-centers-mitsubishi-gas-turbines-earnings/875146",
+    "source": "Utility Dive News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-23T18:00:00+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 24,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "grid"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-24T02:56:38.844495+00:00",
+    "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00"
   }
 ]

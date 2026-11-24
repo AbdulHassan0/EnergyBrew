@@ -1,5 +1,86 @@
 [
   {
+    "url": "https://finance.yahoo.com/energy/articles/eco-atlantic-oil-gas-ltd-173000944.html",
+    "title": "Eco (Atlantic) Oil and Gas Ltd Announces Notice of Annual General Meeting",
+    "feed_creator_label": "ACCESS Newswire",
+    "named_issuer_verified": false,
+    "feed_source_url": "https://finance.yahoo.com/energy/articles/eco-atlantic-oil-gas-ltd-173000944.html",
+    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+    "feed_published_utc": "2026-11-23T17:30:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "category": "Oil & Energy",
+    "relevance_score": 30,
+    "relevance_evidence": [
+      "oil and gas"
+    ],
+    "provider": "Press Release Feed",
+    "content_kind": "company_or_newswire_press_release",
+    "status": "promotional_issuer_claim_requires_editorial_verification",
+    "first_collector_observed_utc": "2026-11-24T02:57:10.934073+00:00"
+  },
+  {
+    "url": "https://www.globenewswire.com/news-release/2026/11/23/3408738/0/en/deme-awarded-marine-works-for-the-prince-rupert-gas-transmission-pipeline-in-canada.html",
+    "title": "DEME awarded marine works for the Prince Rupert Gas Transmission pipeline in Canada",
+    "feed_creator_label": "GlobeNewswire",
+    "named_issuer_verified": false,
+    "feed_source_url": "https://www.globenewswire.com/news-release/2026/11/23/3408738/0/en/deme-awarded-marine-works-for-the-prince-rupert-gas-transmission-pipeline-in-canada.html",
+    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+    "feed_published_utc": "2026-11-23T16:40:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "category": "Natural Gas",
+    "relevance_score": 30,
+    "relevance_evidence": [
+      "gas transmission"
+    ],
+    "provider": "Press Release Feed",
+    "content_kind": "company_or_newswire_press_release",
+    "status": "promotional_issuer_claim_requires_editorial_verification",
+    "first_collector_observed_utc": "2026-11-24T02:57:10.934073+00:00"
+  },
+  {
+    "url": "https://www.globenewswire.com/news-release/2026/11/23/3408576/28124/en/nuclear-power-plant-fuel-rods-market-global-industry-analysis-and-forecast-2026-2032-advanced-reactor-fuels-and-supply-chain-resilience-drive-6-83-cagr-and-a-usd-1-65-billion-oppor.html",
+    "title": "Nuclear Power Plant Fuel Rods Market - Global Industry Analysis and Forecast 2026-2032 | Advanced Reactor Fuels and Supply-Chain Resilience Drive 6.83% CAGR and a USD 1.65 Billion Opportunity",
+    "feed_creator_label": "GlobeNewswire",
+    "named_issuer_verified": false,
+    "feed_source_url": "https://www.globenewswire.com/news-release/2026/11/23/3408576/28124/en/nuclear-power-plant-fuel-rods-market-global-industry-analysis-and-forecast-2026-2032-advanced-reactor-fuels-and-supply-chain-resilience-drive-6-83-cagr-and-a-usd-1-65-billion-oppor.html",
+    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+    "feed_published_utc": "2026-11-23T15:06:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "category": "Power & Electricity",
+    "relevance_score": 30,
+    "relevance_evidence": [
+      "power plant"
+    ],
+    "provider": "Press Release Feed",
+    "content_kind": "company_or_newswire_press_release",
+    "status": "promotional_issuer_claim_requires_editorial_verification",
+    "first_collector_observed_utc": "2026-11-24T02:57:10.934073+00:00"
+  },
+  {
+    "url": "https://www.webwire.com/ViewPressRel.asp?aId=364522",
+    "title": "Siemens and Enexis accelerate expansion of Dutch Power Grid",
+    "feed_creator_label": "WebWire",
+    "named_issuer_verified": false,
+    "feed_source_url": "https://www.webwire.com/ViewPressRel.asp?aId=364522",
+    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+    "feed_published_utc": "2026-11-23T14:37:14+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "category": "Power & Electricity",
+    "relevance_score": 57,
+    "relevance_evidence": [
+      "grid",
+      "power grid"
+    ],
+    "provider": "Press Release Feed",
+    "content_kind": "company_or_newswire_press_release",
+    "status": "promotional_issuer_claim_requires_editorial_verification",
+    "first_collector_observed_utc": "2026-11-24T02:57:10.934073+00:00"
+  },
+  {
     "url": "https://financewire.com/2026/11/23/nocera-signs-binding-letter-of-intent-to-invest-22-million-for-an-approximately-44-stake-in-bitrock-a-self-powered-ai-data-center-developer-in-alberta",
     "title": "Nocera Signs Binding Letter of Intent to Invest $22 Million for an Approximately 44% Stake in BitRock, a Self-Powered AI Data Center Developer in Alberta",
     "feed_creator_label": "FinanceWire",

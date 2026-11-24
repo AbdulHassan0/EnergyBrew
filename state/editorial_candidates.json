@@ -41,25 +41,25 @@
     "also_seen_in": []
   },
   {
-    "id": "4ab08cf5edc2645191ac619c",
-    "title": "PJM Proposes New Rules to Protect Grid Reliability as Data Center Demand Grows",
-    "url": "https://insidelines.pjm.com/pjm-proposes-new-rules-to-protect-grid-reliability-as-data-center-demand-grows",
-    "source": "PJM Inside Lines",
-    "source_class": "system_operator_primary",
-    "published_utc": "2026-11-16T21:31:15+00:00",
-    "category": "Power & Electricity",
+    "id": "89fe8371c75919e5aeefabfb",
+    "title": "Storms and Drones Disrupt Russia\u2019s Oil Exports",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Storms-and-Drones-Disrupt-Russias-Oil-Exports.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-23T16:30:00+00:00",
+    "category": "Geopolitics",
     "published_precision": "timestamp",
-    "relevance_score": 100,
+    "relevance_score": 90,
     "keyword_matches": 3,
     "editorial_candidate": true,
     "relevance_evidence": [
-      "data center",
-      "grid",
-      "grid reliability",
-      "pjm"
+      "energy_market_hook:oil",
+      "geopolitical_event:drones",
+      "world_context:russia"
     ],
     "status": "research_only_unverified",
-    "also_seen_in": []
+    "first_collected_utc": "2026-11-24T02:56:38.844495+00:00",
+    "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00"
   },
   {
     "id": "aca189fec4aeade0541da816",
@@ -413,6 +413,26 @@
     "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
   },
   {
+    "id": "b7e0ee57968aae827ece5a85",
+    "title": "FERC approves MISO plan to speed legacy interconnection study process",
+    "url": "https://www.utilitydive.com/news/ferc-miso-interconnection-queue-study/875449",
+    "source": "Utility Dive News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-23T14:05:36+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 57,
+    "keyword_matches": 2,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "interconnection",
+      "miso"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-24T02:56:38.844495+00:00",
+    "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00"
+  },
+  {
     "id": "a86b6bed4d391a5877a630e8",
     "title": "Energy Department Announces $2.8 Billion Loan to Strengthen Grid Reliability and Help Lower Costs in Wyoming",
     "url": "https://www.energy.gov/articles/energy-department-announces-28-billion-loan-strengthen-grid-reliability-and-help-lower",
@@ -427,25 +447,6 @@
     "relevance_evidence": [
       "grid",
       "grid reliability"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": []
-  },
-  {
-    "id": "9ac450c745073b19124309ac",
-    "title": "PJM Plan Would Cut Interconnection Process Time in Half",
-    "url": "https://insidelines.pjm.com/pjm-proposal-would-cut-interconnection-process-time-in-half",
-    "source": "PJM Inside Lines",
-    "source_class": "system_operator_primary",
-    "published_utc": "2026-11-16T22:24:16+00:00",
-    "category": "Power & Electricity",
-    "published_precision": "timestamp",
-    "relevance_score": 57,
-    "keyword_matches": 2,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "interconnection",
-      "pjm"
     ],
     "status": "research_only_unverified",
     "also_seen_in": []
@@ -623,6 +624,64 @@
     "also_seen_in": []
   },
   {
+    "id": "19d070b44557535f7b93eb50",
+    "title": "ConocoPhillips to Exit Norway in $4.43 Billion Deal with Vaar Energi",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/ConocoPhillips-to-Exit-Norway-in-443-Billion-Deal-with-Vaar-Energi.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-23T19:30:00+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 33,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "conocophillips"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-24T02:56:38.844495+00:00",
+    "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00"
+  },
+  {
+    "id": "e16ce691ad176c7ac6acd4ca",
+    "title": "Japan\u2019s Electricity Prices Surge to 2022 High as Cold Weather Arrives",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Japans-Electricity-Prices-Surge-to-2022-High-as-Cold-Weather-Arrives.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-23T17:30:00+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 33,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-24T02:56:38.844495+00:00",
+    "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00"
+  },
+  {
+    "id": "9877da4fbc7e0205626dc7bc",
+    "title": "$4.4 billion play for ConocoPhillips\u2019 Norwegian oil & gas assets and UK infrastructure expands V\u00e5r Energi\u2019s North Sea footprint",
+    "url": "https://www.offshore-energy.biz/2026/11/23/dollar44-billion-play-for-conocophillips-norwegian-oil-and-gas-assets-and-uk-infrastructure-expands-var-energis-north-sea-footprint",
+    "source": "Offshore Energy News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-23T15:10:00+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 33,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "conocophillips"
+    ],
+    "status": "research_only_unverified",
+    "also_seen_in": [],
+    "first_collected_utc": "2026-11-23T14:54:05.913764+00:00",
+    "first_collector_observed_utc": "2026-11-23T14:54:05.913764+00:00"
+  },
+  {
     "id": "ad7c35e1d8499453e1ac01e4",
     "title": "Brent Drops Below $90 as Wall Street Splits on 2027 Oil Outlook",
     "url": "https://oilprice.com/Latest-Energy-News/World-News/Brent-Drops-Below-90-as-Wall-Street-Splits-on-2027-Oil-Outlook.html",
@@ -648,25 +707,6 @@
     "source": "OilPrice.com News",
     "source_class": "specialist_publisher",
     "published_utc": "2026-11-23T11:00:00+00:00",
-    "category": "Oil & Energy",
-    "published_precision": "timestamp",
-    "relevance_score": 33,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "conocophillips"
-    ],
-    "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-23T14:54:05.913764+00:00",
-    "first_collector_observed_utc": "2026-11-23T14:54:05.913764+00:00"
-  },
-  {
-    "id": "9877da4fbc7e0205626dc7bc",
-    "title": "$4.4 billion play for ConocoPhillips\u2019 Norwegian oil & gas assets and UK infrastructure expands V\u00e5r Energi\u2019s North Sea footprint",
-    "url": "https://www.offshore-energy.biz/2026/11/23/dollar44-billion-play-for-conocophillips-norwegian-oil-and-gas-assets-and-uk-infrastructure-expands-var-energis-north-sea-footprint",
-    "source": "Offshore Energy News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-23T08:39:00+00:00",
     "category": "Oil & Energy",
     "published_precision": "timestamp",
     "relevance_score": 33,
@@ -892,6 +932,25 @@
     "also_seen_in": []
   },
   {
+    "id": "67e712cc960bd6a72cf4ada7",
+    "title": "PJM Announces Governmental and Member Services Leadership Changes",
+    "url": "https://insidelines.pjm.com/pjm-announces-governmental-and-member-services-leadership-changes",
+    "source": "PJM Inside Lines",
+    "source_class": "system_operator_primary",
+    "published_utc": "2026-11-23T18:31:53+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 30,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "pjm"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-24T02:56:38.844495+00:00",
+    "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00"
+  },
+  {
     "id": "1c11f80a2dfc5285aa087d15",
     "title": "US Data Center Boom Faces a New Political Reality",
     "url": "https://oilprice.com/Energy/Energy-General/US-Data-Center-Boom-Faces-a-New-Political-Reality.html",
@@ -1004,6 +1063,25 @@
     ],
     "status": "research_only_unverified",
     "also_seen_in": []
+  },
+  {
+    "id": "212680d9070227daa7581d7b",
+    "title": "Will Batteries Kill Off Gas Turbines at Data Centers",
+    "url": "https://oilprice.com/Alternative-Energy/Renewable-Energy/Will-Batteries-Kill-Off-Gas-Turbines-at-Data-Centers.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-23T21:00:00+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 27,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "gas turbines"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-24T02:56:38.844495+00:00",
+    "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00"
   },
   {
     "id": "b6a4678714d68bae18b2bd31",
@@ -1248,22 +1326,42 @@
     "status": "research_only_unverified"
   },
   {
-    "id": "341efc196ccfef7af0271025",
-    "title": "Commission approves \u20ac9.5 billion Dutch State aid to support offshore wind energy",
-    "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2457",
-    "source": "European Commission DG Energy",
-    "source_class": "official_agency",
-    "published_utc": "2026-11-16T23:00:00+00:00",
-    "category": "Power & Electricity",
+    "id": "332ef499b6782e11ba5d00c4",
+    "title": "America's Refiners Drowned Their Own Gasoline Windfall",
+    "url": "https://oilprice.com/Energy/Crude-Oil/Americas-Refiners-Drowned-Their-Own-Gasoline-Windfall.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-24T01:00:00+00:00",
+    "category": "Oil & Energy",
     "published_precision": "timestamp",
-    "relevance_score": 27,
+    "relevance_score": 24,
     "keyword_matches": 1,
     "editorial_candidate": true,
     "relevance_evidence": [
-      "offshore wind"
+      "gasoline"
     ],
     "status": "research_only_unverified",
-    "also_seen_in": []
+    "first_collected_utc": "2026-11-24T02:56:38.844495+00:00",
+    "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00"
+  },
+  {
+    "id": "56e1ce6af2efea2b5a9d6aa9",
+    "title": "Off-grid costs will push data centers back to utilities: Mitsubishi Heavy Industries CEO",
+    "url": "https://www.utilitydive.com/news/data-centers-mitsubishi-gas-turbines-earnings/875146",
+    "source": "Utility Dive News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-23T18:00:00+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 24,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "grid"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-24T02:56:38.844495+00:00",
+    "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00"
   },
   {
     "id": "08c2f3b512606a6b7a68c0c7",

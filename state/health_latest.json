@@ -1,37 +1,33 @@
 {
-  "audit_utc": "2026-11-23T14:54:30.028824+00:00",
+  "audit_utc": "2026-11-24T02:57:14.290271+00:00",
   "status": "degraded",
   "official_feeds_connected": 15,
   "official_feeds_checked": 15,
   "rss_scan_state": "healthy",
   "rss_connection_ratio": 1.0,
-  "official_rss_last_run_utc": "2026-11-23T14:54:04.734406+00:00",
-  "timestamped_editorial_leads_24h": 6,
+  "official_rss_last_run_utc": "2026-11-24T02:56:37.805980+00:00",
+  "timestamped_editorial_leads_24h": 14,
   "official_agency_editorial_leads_24h": 0,
-  "specialist_publisher_editorial_leads_24h": 6,
-  "system_operator_primary_editorial_leads_24h": 0,
+  "specialist_publisher_editorial_leads_24h": 13,
+  "system_operator_primary_editorial_leads_24h": 1,
   "editorial_target_24h": 12,
   "observed_beat_counts_24h": {
     "Natural Gas": 1,
     "LNG": 1,
-    "Power & Electricity": 0,
-    "Oil & Energy": 4,
+    "Power & Electricity": 5,
+    "Oil & Energy": 6,
     "Infrastructure & Investment": 0,
-    "Geopolitics": 0
+    "Geopolitics": 1
   },
   "unobserved_beats": [
-    "Power & Electricity",
-    "Infrastructure & Investment",
-    "Geopolitics"
+    "Infrastructure & Investment"
   ],
-  "event_driven_beats_with_no_observed_stories": [
-    "Geopolitics"
-  ],
-  "geopolitical_energy_leads_24h": 0,
-  "research_first_seen_links_24h": 159,
-  "research_high_signal_links_24h": 159,
+  "event_driven_beats_with_no_observed_stories": [],
+  "geopolitical_energy_leads_24h": 1,
+  "research_first_seen_links_24h": 140,
+  "research_high_signal_links_24h": 138,
   "research_publisher_dates_verified": 0,
-  "company_announcement_links_24h": 16,
+  "company_announcement_links_24h": 20,
   "company_announcement_feed_status": "ok",
   "ferc_news_status": "not_run",
   "ferc_news_last_run_utc": null,
@@ -41,19 +37,18 @@
   "rolling_gal_status": "ok",
   "rolling_gal_recent_healthy": true,
   "rolling_gal_sampling_gap": true,
-  "rolling_gal_24h_coverage_upper_bound_pct": 10.42,
-  "rolling_gal_24h_unobserved_minutes_at_least": 1290.0,
-  "rolling_gal_24h_longest_unobserved_minutes": 309.7,
+  "rolling_gal_24h_coverage_upper_bound_pct": 6.25,
+  "rolling_gal_24h_unobserved_minutes_at_least": 1350.0,
+  "rolling_gal_24h_longest_unobserved_minutes": 310.8,
   "rolling_gal_24h_continuity_adequate": false,
   "discovery_latest_status": "degraded",
-  "discovery_latest_run_utc": "2026-11-23T14:54:05.990749+00:00",
+  "discovery_latest_run_utc": "2026-11-24T02:56:38.908504+00:00",
   "critical": [],
   "warnings": [
-    "Only 6 editorial leads within 24h; target 12",
-    "No observed high-signal stories in: Power & Electricity, Infrastructure & Investment",
+    "No observed high-signal stories in: Infrastructure & Investment",
     "GDELT DOC query API is degraded or rate limited; recent GAL poll does not establish continuous coverage",
     "A missed rolling GAL sample interval was observed",
-    "Rolling GAL 24h sampling continuity weak: at most 10.42% of windows potentially sampled; at least 1290.0 minutes unobserved"
+    "Rolling GAL 24h sampling continuity weak: at most 6.25% of windows potentially sampled; at least 1350.0 minutes unobserved"
   ],
   "limitations": [
     "No result proves zero market stories or comprehensive industry coverage.",
