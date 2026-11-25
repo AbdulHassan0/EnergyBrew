@@ -95,6 +95,7 @@
       "gas storage"
     ],
     "status": "research_date_only",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
     "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
   },
@@ -114,6 +115,7 @@
       "gas pipeline"
     ],
     "status": "research_date_only",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
     "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
   },
@@ -133,6 +135,7 @@
       "gas transmission"
     ],
     "status": "research_date_only",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
     "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
   },
@@ -152,6 +155,7 @@
       "gas transmission"
     ],
     "status": "research_date_only",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
     "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
   },
@@ -171,6 +175,7 @@
       "gas transmission"
     ],
     "status": "research_date_only",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
     "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
   },

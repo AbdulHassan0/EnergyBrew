@@ -1,74 +1,70 @@
 {
-  "generated_utc": "2026-11-24T14:58:39.689642+00:00",
+  "generated_utc": "2026-11-25T00:52:30.763726+00:00",
   "status": "research_only_not_approved",
-  "unique_relevant_urls_7d": 1072,
+  "unique_relevant_urls_7d": 1147,
   "selected_research_links": 32,
-  "unique_domains_in_selection": 21,
+  "unique_domains_in_selection": 19,
   "queue_counts": {
-    "specialist_publisher_24h": 17,
-    "older_official_context": 58,
+    "specialist_publisher_24h": 18,
+    "older_official_context": 64,
     "regulatory_date_only": 10,
-    "discovery_unverified": 917,
-    "system_operator_primary_24h": 1,
-    "company_release_unverified": 69
+    "discovery_unverified": 978,
+    "company_release_unverified": 77
   },
   "selected_category_counts": {
-    "Natural Gas": 4,
+    "Natural Gas": 3,
     "LNG": 8,
     "Power & Electricity": 8,
-    "Oil & Energy": 3,
+    "Oil & Energy": 4,
     "Infrastructure & Investment": 1,
     "Geopolitics": 8
   },
   "selected_topic_coverage_counts": {
-    "Natural Gas": 4,
+    "Natural Gas": 3,
     "LNG": 8,
     "Power & Electricity": 8,
-    "Oil & Energy": 6,
+    "Oil & Energy": 5,
     "Infrastructure & Investment": 9,
     "Geopolitics": 8
   },
   "missing_categories": [],
   "publisher_timestamped_official_24h": 0,
-  "publisher_timestamped_specialist_24h": 17,
-  "system_operator_primary_24h": 1,
-  "likely_same_event_links_suppressed": 1,
+  "publisher_timestamped_specialist_24h": 18,
+  "system_operator_primary_24h": 0,
+  "likely_same_event_links_suppressed": 10,
   "discovery_publisher_dates_verified": 0,
   "promotional_or_language_review_count": 0,
   "stories": [
     {
-      "title": "Storms and Drones Disrupt Russia’s Oil Exports",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Storms-and-Drones-Disrupt-Russias-Oil-Exports.html",
+      "title": "US Crude Oil Inventories Inches Up as Gasoline Holds Steady",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Crude-Oil-Inventories-Inches-Up-as-Gasoline-Holds-Steady.html",
       "domain": "oilprice.com",
-      "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00",
+      "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00",
       "local_collection_time_known": true,
       "source": "OilPrice.com News",
       "source_class": "specialist_publisher",
-      "category": "Geopolitics",
+      "category": "Oil & Energy",
       "coverage_themes": [
-        "Geopolitics",
         "Oil & Energy"
       ],
-      "relevance_score": 90,
+      "relevance_score": 96,
       "relevance_evidence": [
-        "energy_market_hook:oil",
-        "geopolitical_event:drones",
-        "world_context:russia"
+        "crude oil",
+        "gasoline",
+        "oil inventories"
       ],
       "origin": "official_rss",
       "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-23T16:30:00+00:00",
+      "observed_time_utc": "2026-11-24T22:00:00+00:00",
       "publisher_time_verified": true,
       "date_confidence": "publisher_rss_timestamp",
       "within_24h_on_own_time_basis": true,
       "needs_editor_review": [],
       "editorial_status": "research_only_not_approved",
-      "other_origins": [
-        "global_discovery"
-      ],
+      "other_origins": [],
       "independent_corroboration_verified": false,
       "queue": "specialist_publisher_24h",
-      "rank": 145
+      "rank": 151
     },
     {
       "title": "PJM Board Approves Transmission Project Changes to Support Grid Reliability",
@@ -173,6 +169,40 @@
       "rank": 121
     },
     {
+      "title": "Storms and Drones Disrupt Russia’s Oil Exports",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Storms-and-Drones-Disrupt-Russias-Oil-Exports.html",
+      "domain": "oilprice.com",
+      "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00",
+      "local_collection_time_known": true,
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics",
+        "Oil & Energy"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:oil",
+        "geopolitical_event:drones",
+        "world_context:russia"
+      ],
+      "origin": "official_rss",
+      "time_basis": "specialist_publisher_rss_timestamp",
+      "observed_time_utc": "2026-11-23T16:30:00+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
+      "within_24h_on_own_time_basis": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [
+        "global_discovery"
+      ],
+      "independent_corroboration_verified": false,
+      "queue": "older_official_context",
+      "rank": 120
+    },
+    {
       "title": "Trump’s Ukraine Energy Truce Unravels as Russian Missiles Hit Kyiv",
       "url": "https://oilprice.com/Energy/Energy-General/Trumps-Ukraine-Energy-Truce-Unravels-as-Russian-Missiles-Hit-Kyiv.html",
       "domain": "oilprice.com",
@@ -204,36 +234,34 @@
       "rank": 120
     },
     {
-      "title": "Iran Steps Up Hormuz Tanker Attacks as Oil Prices Slide",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Steps-Up-Hormuz-Tanker-Attacks-as-Oil-Prices-Slide.html",
-      "domain": "oilprice.com",
-      "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00",
+      "title": "Midterms provide clarity on data center development: Vistra CEO",
+      "url": "https://www.utilitydive.com/news/vistra-midterms-data-center-ercot-pjm/875626",
+      "domain": "www.utilitydive.com",
+      "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00",
       "local_collection_time_known": true,
-      "source": "OilPrice.com News",
+      "source": "Utility Dive News",
       "source_class": "specialist_publisher",
-      "category": "Geopolitics",
+      "category": "Power & Electricity",
       "coverage_themes": [
-        "Geopolitics",
-        "Oil & Energy"
+        "Power & Electricity"
       ],
-      "relevance_score": 90,
+      "relevance_score": 60,
       "relevance_evidence": [
-        "energy_market_hook:oil",
-        "geopolitical_event:attacks",
-        "world_context:iran"
+        "data center",
+        "vistra"
       ],
       "origin": "official_rss",
       "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-20T12:30:00+00:00",
+      "observed_time_utc": "2026-11-24T15:54:55+00:00",
       "publisher_time_verified": true,
       "date_confidence": "publisher_rss_timestamp",
-      "within_24h_on_own_time_basis": false,
+      "within_24h_on_own_time_basis": true,
       "needs_editor_review": [],
       "editorial_status": "research_only_not_approved",
       "other_origins": [],
       "independent_corroboration_verified": false,
-      "queue": "older_official_context",
-      "rank": 120
+      "queue": "specialist_publisher_24h",
+      "rank": 115
     },
     {
       "title": "WTI crude oil prices may trend lower",
@@ -423,37 +451,6 @@
       "rank": 109
     },
     {
-      "title": "Energy Department Announces $2.8 Billion Loan to Strengthen Grid Reliability and Help Lower Costs in Wyoming",
-      "url": "https://www.energy.gov/articles/energy-department-announces-28-billion-loan-strengthen-grid-reliability-and-help-lower",
-      "domain": "www.energy.gov",
-      "first_collector_observed_utc": null,
-      "local_collection_time_known": false,
-      "source": "DOE Energy News",
-      "source_class": "official_agency",
-      "category": "Power & Electricity",
-      "coverage_themes": [
-        "Power & Electricity",
-        "Infrastructure & Investment"
-      ],
-      "relevance_score": 57,
-      "relevance_evidence": [
-        "grid",
-        "grid reliability"
-      ],
-      "origin": "official_rss",
-      "time_basis": "publisher_feed_publication_time",
-      "observed_time_utc": "2026-11-17T18:10:03+00:00",
-      "publisher_time_verified": true,
-      "date_confidence": "publisher_rss_timestamp",
-      "within_24h_on_own_time_basis": false,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "older_official_context",
-      "rank": 107
-    },
-    {
       "title": "NKT starts power cable production for IJmuiden Ver Beta offshore wind grid connection",
       "url": "https://www.offshore-energy.biz/2026/11/24/nkt-starts-power-cable-production-for-ijmuiden-ver-beta-offshore-wind-grid-connection",
       "domain": "www.offshore-energy.biz",
@@ -514,33 +511,227 @@
       "rank": 106
     },
     {
-      "title": "PJM Announces Governmental and Member Services Leadership Changes",
-      "url": "https://insidelines.pjm.com/pjm-announces-governmental-and-member-services-leadership-changes",
-      "domain": "insidelines.pjm.com",
-      "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00",
+      "title": "How tariffs, fuel and fertilizer costs are squeezing the U.S.'s biggest apple region",
+      "url": "https://www.wxxinews.org/npr-news/2026-11-24/how-tariffs-fuel-and-fertilizer-costs-are-squeezing-the-u-s-s-biggest-apple-region",
+      "domain": "www.wxxinews.org",
+      "first_collector_observed_utc": "2026-11-25T00:52:29.608330+00:00",
       "local_collection_time_known": true,
-      "source": "PJM Inside Lines",
-      "source_class": "system_operator_primary",
-      "category": "Power & Electricity",
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
       "coverage_themes": [
-        "Power & Electricity"
+        "Geopolitics"
       ],
-      "relevance_score": 30,
+      "relevance_score": 90,
       "relevance_evidence": [
-        "pjm"
+        "energy_market_hook:fuel",
+        "geopolitical_event:tariffs",
+        "world_context:u.s."
       ],
-      "origin": "official_rss",
-      "time_basis": "system_operator_rss_timestamp",
-      "observed_time_utc": "2026-11-23T18:31:53+00:00",
-      "publisher_time_verified": true,
-      "date_confidence": "publisher_rss_timestamp",
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-25T00:47:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
       "needs_editor_review": [],
       "editorial_status": "research_only_not_approved",
       "other_origins": [],
       "independent_corroboration_verified": false,
-      "queue": "system_operator_primary_24h",
-      "rank": 105
+      "queue": "discovery_unverified",
+      "rank": 102,
+      "related_reports": [
+        {
+          "title": "How tariffs, fuel and fertilizer costs are squeezing the U.S.'s biggest apple region",
+          "url": "https://www.wemu.org/npr-national-news/2026-11-24/how-tariffs-fuel-and-fertilizer-costs-are-squeezing-the-u-s-s-biggest-apple-region",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "How tariffs, fuel and fertilizer costs are squeezing the U.S.'s biggest apple region",
+          "url": "https://www.wfae.org/united-states-world/2026-11-24/how-tariffs-fuel-and-fertilizer-costs-are-squeezing-the-u-s-s-biggest-apple-region",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "How tariffs, fuel and fertilizer costs are squeezing the U.S.'s biggest apple region",
+          "url": "https://www.kazu.org/npr-news/2026-11-24/how-tariffs-fuel-and-fertilizer-costs-are-squeezing-the-u-s-s-biggest-apple-region",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "How tariffs, fuel and fertilizer costs are squeezing the U.S.'s biggest apple region",
+          "url": "https://www.kjzz.org/npr-top-stories/2026-11-24/how-tariffs-fuel-and-fertilizer-costs-are-squeezing-the-u-s-s-biggest-apple-region",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "How tariffs, fuel and fertilizer costs are squeezing the U.S.'s biggest apple region",
+          "url": "https://www.kmxt.org/2026-11-24/how-tariffs-fuel-and-fertilizer-costs-are-squeezing-the-u-s-s-biggest-apple-region",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "How tariffs, fuel and fertilizer costs are squeezing the U.S.'s biggest apple region",
+          "url": "https://www.krwg.org/national-news/2026-11-24/how-tariffs-fuel-and-fertilizer-costs-are-squeezing-the-u-s-s-biggest-apple-region",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "How tariffs, fuel and fertilizer costs are squeezing the U.S.'s biggest apple region",
+          "url": "https://www.kclu.org/arts-culture/2026-11-24/how-tariffs-fuel-and-fertilizer-costs-are-squeezing-the-u-s-s-biggest-apple-region",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "How tariffs, fuel and fertilizer costs are squeezing the U.S.'s biggest apple region",
+          "url": "https://www.kwit.org/2026-11-24/how-tariffs-fuel-and-fertilizer-costs-are-squeezing-the-u-s-s-biggest-apple-region",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        }
+      ]
+    },
+    {
+      "title": "Houthis threaten to attack Red Sea ports, Saudis issue warning | The Jerusalem Post",
+      "url": "https://www.jpost.com/middle-east/article-916028",
+      "domain": "www.jpost.com",
+      "first_collector_observed_utc": "2026-11-25T00:52:29.608330+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:red sea",
+        "geopolitical_event:attack",
+        "world_context:houthis"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-25T00:47:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102,
+      "related_reports": [
+        {
+          "title": "Houthis threaten to attack Red Sea ports, Saudis issue warning | The Jerusalem Post",
+          "url": "http://www.jpost.com/middle-east/article-916028",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        }
+      ]
+    },
+    {
+      "title": "Saudi-led coalition strikes Yemen's Hodeidah Port after Houthis threaten Red Sea ports",
+      "url": "https://aninews.in/news/world/middle-east/saudi-led-coalition-strikes-yemens-hodeidah-port-after-houthis-threaten-red-sea-ports20261125050245",
+      "domain": "aninews.in",
+      "first_collector_observed_utc": "2026-11-25T00:52:29.608330+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:red sea",
+        "geopolitical_event:strikes",
+        "world_context:yemen"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-25T00:46:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
+    },
+    {
+      "title": "Projectiles strike three vessels in Strait of Hormuz on Monday, UKMTO says | The Jerusalem Post",
+      "url": "https://www.jpost.com/middle-east/article-915961",
+      "domain": "www.jpost.com",
+      "first_collector_observed_utc": "2026-11-24T15:28:27.188181+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics",
+        "Infrastructure & Investment"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:strait of hormuz",
+        "geopolitical_event:strike",
+        "world_context:strait of hormuz"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-24T15:17:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
+    },
+    {
+      "title": "Spain's energy companies see record profits amid Iran conflict while over half of firms lose profitability | Sur in English",
+      "url": "https://www.surinenglish.com/spain/energy-companies-raking-20261124000500-nt.html",
+      "domain": "www.surinenglish.com",
+      "first_collector_observed_utc": "2026-11-24T15:28:27.188181+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:energy",
+        "geopolitical_event:conflict",
+        "world_context:iran"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-24T15:16:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
     },
     {
       "title": "Pakistan Petroleum dealers threaten nationwide strike over daily fuel pricing",
@@ -563,131 +754,6 @@
       "origin": "global_discovery",
       "time_basis": "gdelt_gal_rss_provider_time_unverified",
       "observed_time_utc": "2026-11-24T14:47:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102
-    },
-    {
-      "title": "Strait of Hormuz sees peak attacks since war began, UK maritime monitor reports",
-      "url": "https://kenya-today.com/report-strait-of-hormuz-sees-peak-attacks-since-war-began-uk-maritime-monitor-reports-31979",
-      "domain": "kenya-today.com",
-      "first_collector_observed_utc": "2026-11-24T04:51:47.648452+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:strait of hormuz",
-        "geopolitical_event:attacks",
-        "world_context:strait of hormuz"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-24T04:46:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102
-    },
-    {
-      "title": "Crude Oil Slumps As Trump Gives Diplomacy More Time To End U.S.-Iran Conflict",
-      "url": "https://www.rttnews.com/3717243/crude-oil-slumps-as-trump-gives-diplomacy-more-time-to-end-u-s-iran-conflict.aspx",
-      "domain": "www.rttnews.com",
-      "first_collector_observed_utc": "2026-11-23T22:04:47.558900+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics",
-        "Oil & Energy"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:oil",
-        "geopolitical_event:conflict",
-        "world_context:iran"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-23T22:01:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102
-    },
-    {
-      "title": "Egypt and Iraq pledge closer energy and military ties as Al Zaidi makes first Cairo visit | The National",
-      "url": "https://www.thenationalnews.com/news/mena/2026/11/23/egypt-and-iraq-pledge-closer-energy-and-military-ties-as-al-zaidi-makes-first-cairo-visit",
-      "domain": "www.thenationalnews.com",
-      "first_collector_observed_utc": "2026-11-23T22:04:47.558900+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:energy",
-        "geopolitical_event:military",
-        "world_context:iraq"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-23T22:01:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102
-    },
-    {
-      "title": "Attacks on grain ships, Hormuz crisis drive hunger in Yemen and Sudan, UN food agency boss warns",
-      "url": "https://www.arabnews.com/middle-east/attacks-on-grain-ships-hormuz-crisis-drive-hunger-in-yemen-and-sudan-un-food-agency-boss-warns-3013773",
-      "domain": "www.arabnews.com",
-      "first_collector_observed_utc": "2026-11-23T20:20:11.358933+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:hormuz",
-        "geopolitical_event:attacks",
-        "world_context:yemen"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-23T20:17:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
@@ -843,7 +909,7 @@
       "observed_time_utc": "2026-11-23T20:17:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
+      "within_24h_on_own_time_basis": false,
       "needs_editor_review": [],
       "editorial_status": "research_only_not_approved",
       "other_origins": [],
@@ -880,6 +946,36 @@
       "independent_corroboration_verified": false,
       "queue": "discovery_unverified",
       "rank": 93
+    },
+    {
+      "title": "PJM urged to delay base capacity auction until data centers cut from forecast",
+      "url": "https://www.utilitydive.com/news/ratepayer-advocates-pjm-market-monitor-capacity-auction/875165",
+      "domain": "www.utilitydive.com",
+      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00",
+      "local_collection_time_known": true,
+      "source": "Utility Dive News",
+      "source_class": "specialist_publisher",
+      "category": "Power & Electricity",
+      "coverage_themes": [
+        "Power & Electricity"
+      ],
+      "relevance_score": 60,
+      "relevance_evidence": [
+        "capacity auction",
+        "pjm"
+      ],
+      "origin": "official_rss",
+      "time_basis": "specialist_publisher_rss_timestamp",
+      "observed_time_utc": "2026-11-19T14:29:26+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
+      "within_24h_on_own_time_basis": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "older_official_context",
+      "rank": 90
     },
     {
       "title": "U.S. natural gas inventories end injection season above normal levels",
@@ -969,35 +1065,6 @@
       "independent_corroboration_verified": false,
       "queue": "company_release_unverified",
       "rank": 87
-    },
-    {
-      "title": "Gas Coordination Group confirms EU’s winter preparedness, importance of gas storage through the winter",
-      "url": "https://energy.ec.europa.eu/news/gas-coordination-group-confirms-eus-winter-preparedness-importance-gas-storage-through-winter-2026-11-20_en",
-      "domain": "energy.ec.europa.eu",
-      "first_collector_observed_utc": "2026-11-20T22:41:52.748655+00:00",
-      "local_collection_time_known": true,
-      "source": "European Commission DG Energy",
-      "source_class": "official_agency",
-      "category": "Natural Gas",
-      "coverage_themes": [
-        "Natural Gas"
-      ],
-      "relevance_score": 36,
-      "relevance_evidence": [
-        "gas storage"
-      ],
-      "origin": "official_rss",
-      "time_basis": "publisher_feed_publication_time",
-      "observed_time_utc": "2026-11-19T23:00:00+00:00",
-      "publisher_time_verified": true,
-      "date_confidence": "publisher_rss_timestamp",
-      "within_24h_on_own_time_basis": false,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "older_official_context",
-      "rank": 86
     },
     {
       "title": "Final investment decision on Azerbaijan's Karabakh field expected in 2027",

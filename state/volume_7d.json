@@ -1,12 +1,6 @@
 {
-  "run_utc": "2026-11-24T14:58:12.346192+00:00",
+  "run_utc": "2026-11-25T00:52:03.757060+00:00",
   "days": [
-    {
-      "publication_date_utc": "2026-11-17",
-      "source_links": 8,
-      "editorial_candidates": 2,
-      "regulatory_date_only_leads": 0
-    },
     {
       "publication_date_utc": "2026-11-18",
       "source_links": 38,
@@ -39,15 +33,21 @@
     },
     {
       "publication_date_utc": "2026-11-23",
-      "source_links": 35,
+      "source_links": 37,
       "editorial_candidates": 14,
       "regulatory_date_only_leads": 3
     },
     {
       "publication_date_utc": "2026-11-24",
-      "source_links": 17,
-      "editorial_candidates": 10,
+      "source_links": 35,
+      "editorial_candidates": 18,
       "regulatory_date_only_leads": 15
+    },
+    {
+      "publication_date_utc": "2026-11-25",
+      "source_links": 1,
+      "editorial_candidates": 0,
+      "regulatory_date_only_leads": 0
     }
   ],
   "definitions": "Publisher-date link counts, not unique independently verified events or collection-day counts."

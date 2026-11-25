@@ -1,24 +1,44 @@
 [
   {
-    "id": "89fe8371c75919e5aeefabfb",
-    "title": "Storms and Drones Disrupt Russia\u2019s Oil Exports",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/Storms-and-Drones-Disrupt-Russias-Oil-Exports.html",
+    "id": "60edded142c1854182368703",
+    "title": "US Crude Oil Inventories Inches Up as Gasoline Holds Steady",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Crude-Oil-Inventories-Inches-Up-as-Gasoline-Holds-Steady.html",
     "source": "OilPrice.com News",
     "source_class": "specialist_publisher",
-    "published_utc": "2026-11-23T16:30:00+00:00",
-    "category": "Geopolitics",
+    "published_utc": "2026-11-24T22:00:00+00:00",
+    "category": "Oil & Energy",
     "published_precision": "timestamp",
-    "relevance_score": 90,
+    "relevance_score": 96,
     "keyword_matches": 3,
     "editorial_candidate": true,
     "relevance_evidence": [
-      "energy_market_hook:oil",
-      "geopolitical_event:drones",
-      "world_context:russia"
+      "crude oil",
+      "gasoline",
+      "oil inventories"
     ],
     "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-24T02:56:38.844495+00:00",
-    "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00"
+    "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
+    "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
+  },
+  {
+    "id": "5c8dd49bf771f1b91226988c",
+    "title": "Midterms provide clarity on data center development: Vistra CEO",
+    "url": "https://www.utilitydive.com/news/vistra-midterms-data-center-ercot-pjm/875626",
+    "source": "Utility Dive News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-24T15:54:55+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 60,
+    "keyword_matches": 2,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "data center",
+      "vistra"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
+    "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
   },
   {
     "id": "ff6674cca1e53f04e77c0124",
@@ -37,6 +57,7 @@
       "offshore wind"
     ],
     "status": "research_only_unverified",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
     "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
   },
@@ -75,8 +96,66 @@
       "lng"
     ],
     "status": "research_only_unverified",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
     "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
+  },
+  {
+    "id": "827092c04fc49930a95cbe36",
+    "title": "Iran Faces a Deepening Natural Gas Crisis Ahead of Winter",
+    "url": "https://oilprice.com/Energy/Energy-General/Iran-Faces-a-Deepening-Natural-Gas-Crisis-Ahead-of-Winter.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-24T15:00:00+00:00",
+    "category": "Natural Gas",
+    "published_precision": "timestamp",
+    "relevance_score": 39,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "natural gas"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
+    "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
+  },
+  {
+    "id": "3b8231eebf800b256b83592a",
+    "title": "Central Asia Pushes Ahead With Regional Electricity Market",
+    "url": "https://oilprice.com/Energy/Energy-General/Central-Asia-Pushes-Ahead-With-Regional-Electricity-Market.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-24T19:00:00+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 33,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
+    "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
+  },
+  {
+    "id": "0cc7f5eb156135d70d2bbd19",
+    "title": "Europe\u2019s Gas Prices Jumped 163% in a Year",
+    "url": "https://oilprice.com/Energy/Natural-Gas/Europes-Gas-Prices-Jumped-163-in-a-Year.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-24T17:00:00+00:00",
+    "category": "Natural Gas",
+    "published_precision": "timestamp",
+    "relevance_score": 33,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "gas prices"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
+    "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
   },
   {
     "id": "29ae87e44b3c50e262f99473",
@@ -94,6 +173,7 @@
       "exxonmobil"
     ],
     "status": "research_only_unverified",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
     "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
   },
@@ -155,83 +235,61 @@
     "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
   },
   {
-    "id": "19d070b44557535f7b93eb50",
-    "title": "ConocoPhillips to Exit Norway in $4.43 Billion Deal with Vaar Energi",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/ConocoPhillips-to-Exit-Norway-in-443-Billion-Deal-with-Vaar-Energi.html",
+    "id": "f8e9b5e3c0939826e41ca241",
+    "title": "Where Does Texas' Data Center Boom Go From Here?",
+    "url": "https://oilprice.com/Energy/Energy-General/Where-Does-Texas-Data-Center-Boom-Go-From-Here.html",
     "source": "OilPrice.com News",
     "source_class": "specialist_publisher",
-    "published_utc": "2026-11-23T19:30:00+00:00",
-    "category": "Oil & Energy",
-    "published_precision": "timestamp",
-    "relevance_score": 33,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "conocophillips"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collected_utc": "2026-11-24T02:56:38.844495+00:00",
-    "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00"
-  },
-  {
-    "id": "e16ce691ad176c7ac6acd4ca",
-    "title": "Japan\u2019s Electricity Prices Surge to 2022 High as Cold Weather Arrives",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/Japans-Electricity-Prices-Surge-to-2022-High-as-Cold-Weather-Arrives.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-23T17:30:00+00:00",
-    "category": "Power & Electricity",
-    "published_precision": "timestamp",
-    "relevance_score": 33,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "electricity"
-    ],
-    "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-24T02:56:38.844495+00:00",
-    "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00"
-  },
-  {
-    "id": "9877da4fbc7e0205626dc7bc",
-    "title": "$4.4 billion play for ConocoPhillips\u2019 Norwegian oil & gas assets and UK infrastructure expands V\u00e5r Energi\u2019s North Sea footprint",
-    "url": "https://www.offshore-energy.biz/2026/11/23/dollar44-billion-play-for-conocophillips-norwegian-oil-and-gas-assets-and-uk-infrastructure-expands-var-energis-north-sea-footprint",
-    "source": "Offshore Energy News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-23T15:10:00+00:00",
-    "category": "Oil & Energy",
-    "published_precision": "timestamp",
-    "relevance_score": 33,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "conocophillips"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collected_utc": "2026-11-23T14:54:05.913764+00:00",
-    "first_collector_observed_utc": "2026-11-23T14:54:05.913764+00:00"
-  },
-  {
-    "id": "67e712cc960bd6a72cf4ada7",
-    "title": "PJM Announces Governmental and Member Services Leadership Changes",
-    "url": "https://insidelines.pjm.com/pjm-announces-governmental-and-member-services-leadership-changes",
-    "source": "PJM Inside Lines",
-    "source_class": "system_operator_primary",
-    "published_utc": "2026-11-23T18:31:53+00:00",
+    "published_utc": "2026-11-24T21:00:00+00:00",
     "category": "Power & Electricity",
     "published_precision": "timestamp",
     "relevance_score": 30,
     "keyword_matches": 1,
     "editorial_candidate": true,
     "relevance_evidence": [
-      "pjm"
+      "data center"
     ],
     "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collected_utc": "2026-11-24T02:56:38.844495+00:00",
-    "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00"
+    "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
+    "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
+  },
+  {
+    "id": "e13ff861566b3fe74e1b6326",
+    "title": "Iraq Refuses to Accept OPEC+ Assessment of its Production Capacity",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Iraq-Refuses-to-Accept-OPEC-Assessment-of-its-Production-Capacity.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-24T18:30:00+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 30,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "opec"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
+    "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
+  },
+  {
+    "id": "5de1e900a3ad2d8cfb376f80",
+    "title": "TVA touts $1.7B data center deal under new large-load tariff",
+    "url": "https://www.utilitydive.com/news/tva-touts-17b-data-center-deal-under-new-large-load-tariff/875630",
+    "source": "Utility Dive News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-24T16:11:04+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 30,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
+    "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
   },
   {
     "id": "86f2a71329116df5674a252a",
@@ -249,6 +307,7 @@
       "gas field"
     ],
     "status": "research_only_unverified",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
     "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
   },
@@ -268,45 +327,7 @@
       "offshore wind"
     ],
     "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
-    "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
-  },
-  {
-    "id": "212680d9070227daa7581d7b",
-    "title": "Will Batteries Kill Off Gas Turbines at Data Centers",
-    "url": "https://oilprice.com/Alternative-Energy/Renewable-Energy/Will-Batteries-Kill-Off-Gas-Turbines-at-Data-Centers.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-23T21:00:00+00:00",
-    "category": "Power & Electricity",
-    "published_precision": "timestamp",
-    "relevance_score": 27,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "gas turbines"
-    ],
-    "status": "research_only_unverified",
     "also_seen_in": [],
-    "first_collected_utc": "2026-11-24T02:56:38.844495+00:00",
-    "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00"
-  },
-  {
-    "id": "a51cb95cd0ec665964193363",
-    "title": "DOJ closes NextEra-Dominion antitrust probe as state hearings continue",
-    "url": "https://www.utilitydive.com/news/doj-closes-nextera-dominion-antitrust-probe-as-state-hearings-continue/875489",
-    "source": "Utility Dive News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-23T16:27:12+00:00",
-    "category": "Power & Electricity",
-    "published_precision": "timestamp",
-    "relevance_score": 27,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "nextera"
-    ],
-    "status": "research_only_unverified",
     "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
     "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
   },
@@ -324,26 +345,6 @@
     "editorial_candidate": true,
     "relevance_evidence": [
       "gasoline"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collected_utc": "2026-11-24T02:56:38.844495+00:00",
-    "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00"
-  },
-  {
-    "id": "56e1ce6af2efea2b5a9d6aa9",
-    "title": "Off-grid costs will push data centers back to utilities: Mitsubishi Heavy Industries CEO",
-    "url": "https://www.utilitydive.com/news/data-centers-mitsubishi-gas-turbines-earnings/875146",
-    "source": "Utility Dive News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-23T18:00:00+00:00",
-    "category": "Power & Electricity",
-    "published_precision": "timestamp",
-    "relevance_score": 24,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "grid"
     ],
     "status": "research_only_unverified",
     "also_seen_in": [],

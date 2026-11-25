@@ -1,6 +1,352 @@
 {
   "articles": [
     {
+      "id": "3c6f3f609337d8b4ce78de4d",
+      "title": "Senate Investigates Vance\u2019s Alleged Role in Venezuela Oil Deal",
+      "url": "https://oilprice.com/Energy/Crude-Oil/Senate-Investigates-Vances-Alleged-Role-in-Venezuela-Oil-Deal.html",
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-25T00:00:00+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified",
+      "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
+      "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
+    },
+    {
+      "id": "fd4e5b31b193bfde2e5378a3",
+      "title": "Washington Is Buying Its Way Out of China's Tungsten Grip",
+      "url": "https://oilprice.com/Metals/Commodities/Washington-Is-Buying-Its-Way-Out-of-Chinas-Tungsten-Grip.html",
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-24T23:00:00+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified",
+      "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
+      "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
+    },
+    {
+      "id": "cb38462e8335df9630f8f59c",
+      "title": "Why Trump's Flagship Lithium Project Now Costs 31% More Than Planned",
+      "url": "https://oilprice.com/Metals/Commodities/Why-Trumps-Flagship-Lithium-Project-Now-Costs-31-More-Than-Planned.html",
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-24T22:00:00+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified",
+      "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
+      "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
+    },
+    {
+      "id": "60edded142c1854182368703",
+      "title": "US Crude Oil Inventories Inches Up as Gasoline Holds Steady",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Crude-Oil-Inventories-Inches-Up-as-Gasoline-Holds-Steady.html",
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-24T22:00:00+00:00",
+      "category": "Oil & Energy",
+      "published_precision": "timestamp",
+      "relevance_score": 96,
+      "keyword_matches": 3,
+      "editorial_candidate": true,
+      "relevance_evidence": [
+        "crude oil",
+        "gasoline",
+        "oil inventories"
+      ],
+      "status": "research_only_unverified",
+      "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
+      "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
+    },
+    {
+      "id": "f8e9b5e3c0939826e41ca241",
+      "title": "Where Does Texas' Data Center Boom Go From Here?",
+      "url": "https://oilprice.com/Energy/Energy-General/Where-Does-Texas-Data-Center-Boom-Go-From-Here.html",
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-24T21:00:00+00:00",
+      "category": "Power & Electricity",
+      "published_precision": "timestamp",
+      "relevance_score": 30,
+      "keyword_matches": 1,
+      "editorial_candidate": true,
+      "relevance_evidence": [
+        "data center"
+      ],
+      "status": "research_only_unverified",
+      "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
+      "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
+    },
+    {
+      "id": "449a97e8de69df352ce34fec",
+      "title": "Is This Tiny Oil Giant The Real Crown Jewel Of Trump\u2019s New World Order?",
+      "url": "https://oilprice.com/Energy/Crude-Oil/Is-This-Tiny-Oil-Giant-The-Real-Crown-Jewel-Of-Trumps-New-World-Order.html",
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-24T20:00:00+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified",
+      "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
+      "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
+    },
+    {
+      "id": "3b8231eebf800b256b83592a",
+      "title": "Central Asia Pushes Ahead With Regional Electricity Market",
+      "url": "https://oilprice.com/Energy/Energy-General/Central-Asia-Pushes-Ahead-With-Regional-Electricity-Market.html",
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-24T19:00:00+00:00",
+      "category": "Power & Electricity",
+      "published_precision": "timestamp",
+      "relevance_score": 33,
+      "keyword_matches": 1,
+      "editorial_candidate": true,
+      "relevance_evidence": [
+        "electricity"
+      ],
+      "status": "research_only_unverified",
+      "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
+      "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
+    },
+    {
+      "id": "e13ff861566b3fe74e1b6326",
+      "title": "Iraq Refuses to Accept OPEC+ Assessment of its Production Capacity",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Iraq-Refuses-to-Accept-OPEC-Assessment-of-its-Production-Capacity.html",
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-24T18:30:00+00:00",
+      "category": "Oil & Energy",
+      "published_precision": "timestamp",
+      "relevance_score": 30,
+      "keyword_matches": 1,
+      "editorial_candidate": true,
+      "relevance_evidence": [
+        "opec"
+      ],
+      "status": "research_only_unverified",
+      "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
+      "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
+    },
+    {
+      "id": "738e93aae800fd7b64b8da07",
+      "title": "Canada\u2019s Oilfield Services Sector Is Gearing Up for a Stronger 2027",
+      "url": "https://oilprice.com/Energy/Energy-General/Canadas-Oilfield-Services-Sector-Is-Gearing-Up-for-a-Stronger-2027.html",
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-24T18:00:00+00:00",
+      "category": "Oil & Energy",
+      "published_precision": "timestamp",
+      "relevance_score": 21,
+      "keyword_matches": 1,
+      "editorial_candidate": false,
+      "relevance_evidence": [
+        "oilfield"
+      ],
+      "status": "research_only_unverified",
+      "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
+      "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
+    },
+    {
+      "id": "60e99f983b54d2b1f1ad73c1",
+      "title": "FirstEnergy utilities get approval for $2.5B gas plant in West Virginia",
+      "url": "https://www.utilitydive.com/news/firstenergy-utilities-get-approval-for-25b-gas-plant-in-west-virginia/875646",
+      "source": "Utility Dive News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-24T17:26:49+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified",
+      "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
+      "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
+    },
+    {
+      "id": "0cc7f5eb156135d70d2bbd19",
+      "title": "Europe\u2019s Gas Prices Jumped 163% in a Year",
+      "url": "https://oilprice.com/Energy/Natural-Gas/Europes-Gas-Prices-Jumped-163-in-a-Year.html",
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-24T17:00:00+00:00",
+      "category": "Natural Gas",
+      "published_precision": "timestamp",
+      "relevance_score": 33,
+      "keyword_matches": 1,
+      "editorial_candidate": true,
+      "relevance_evidence": [
+        "gas prices"
+      ],
+      "status": "research_only_unverified",
+      "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
+      "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
+    },
+    {
+      "id": "623d9c488670c0472d405a5b",
+      "title": "Saudi Arabia Sees Smaller Economic Slump as More Oil Reaches Market",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Sees-Smaller-Economic-Slump-as-More-Oil-Reaches-Market.html",
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-24T17:00:00+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified",
+      "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
+      "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
+    },
+    {
+      "id": "5de1e900a3ad2d8cfb376f80",
+      "title": "TVA touts $1.7B data center deal under new large-load tariff",
+      "url": "https://www.utilitydive.com/news/tva-touts-17b-data-center-deal-under-new-large-load-tariff/875630",
+      "source": "Utility Dive News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-24T16:11:04+00:00",
+      "category": "Power & Electricity",
+      "published_precision": "timestamp",
+      "relevance_score": 30,
+      "keyword_matches": 1,
+      "editorial_candidate": true,
+      "relevance_evidence": [
+        "data center"
+      ],
+      "status": "research_only_unverified",
+      "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
+      "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
+    },
+    {
+      "id": "c9e6c2a551a233771b8a60af",
+      "title": "FERC must take action to protect ratepayers from higher transmission costs in SPP",
+      "url": "https://www.utilitydive.com/news/spp-decision-to-prevent-transmission-competition-escalates-electric-prices/874143",
+      "source": "Utility Dive News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-24T16:03:19+00:00",
+      "category": "Infrastructure & Investment",
+      "published_precision": "timestamp",
+      "relevance_score": 21,
+      "keyword_matches": 1,
+      "editorial_candidate": false,
+      "relevance_evidence": [
+        "ferc"
+      ],
+      "status": "research_only_unverified",
+      "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
+      "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
+    },
+    {
+      "id": "5c8dd49bf771f1b91226988c",
+      "title": "Midterms provide clarity on data center development: Vistra CEO",
+      "url": "https://www.utilitydive.com/news/vistra-midterms-data-center-ercot-pjm/875626",
+      "source": "Utility Dive News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-24T15:54:55+00:00",
+      "category": "Power & Electricity",
+      "published_precision": "timestamp",
+      "relevance_score": 60,
+      "keyword_matches": 2,
+      "editorial_candidate": true,
+      "relevance_evidence": [
+        "data center",
+        "vistra"
+      ],
+      "status": "research_only_unverified",
+      "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
+      "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
+    },
+    {
+      "id": "d062f13bb6514f2176f24b49",
+      "title": "African expansion on the cards for Eco Wave Power with potential 100 MW development",
+      "url": "https://www.offshore-energy.biz/2026/11/24/african-expansion-on-the-cards-for-eco-wave-power-with-potential-100-mw-development",
+      "source": "Offshore Energy News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-24T15:38:31+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified",
+      "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
+      "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
+    },
+    {
+      "id": "b57151c7fb45775505a36cd9",
+      "title": "EU to Seek Overhaul of UN Climate Consensus Decisions After COP31 Failure",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/EU-to-Seek-Overhaul-of-UN-Climate-Consensus-Decisions-After-COP31-Failure.html",
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-24T15:30:00+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified",
+      "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
+      "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
+    },
+    {
+      "id": "95a12263e72d48258b962127",
+      "title": "Libya and Iraq Could Be the Next Big Headache for Oil Markets",
+      "url": "https://oilprice.com/Energy/Crude-Oil/Libya-and-Iraq-Could-Be-the-Next-Big-Headache-for-Oil-Markets.html",
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-24T15:21:00+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified",
+      "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
+      "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
+    },
+    {
+      "id": "827092c04fc49930a95cbe36",
+      "title": "Iran Faces a Deepening Natural Gas Crisis Ahead of Winter",
+      "url": "https://oilprice.com/Energy/Energy-General/Iran-Faces-a-Deepening-Natural-Gas-Crisis-Ahead-of-Winter.html",
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-24T15:00:00+00:00",
+      "category": "Natural Gas",
+      "published_precision": "timestamp",
+      "relevance_score": 39,
+      "keyword_matches": 1,
+      "editorial_candidate": true,
+      "relevance_evidence": [
+        "natural gas"
+      ],
+      "status": "research_only_unverified",
+      "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
+      "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
+    },
+    {
       "id": "29ae87e44b3c50e262f99473",
       "title": "ExxonMobil signs off on $4 billion FID as new discovery signals more oil potential at Angolan offshore block",
       "url": "https://www.offshore-energy.biz/2026/11/24/exxonmobil-signs-off-on-dollar4-billion-fid-as-new-discovery-signals-more-oil-potential-at-angolan-offshore-block",
@@ -16,6 +362,7 @@
         "exxonmobil"
       ],
       "status": "research_only_unverified",
+      "also_seen_in": [],
       "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
       "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
     },
@@ -33,6 +380,7 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_only_unverified",
+      "also_seen_in": [],
       "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
       "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
     },
@@ -50,6 +398,7 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_only_unverified",
+      "also_seen_in": [],
       "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
       "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
     },
@@ -67,6 +416,7 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_only_unverified",
+      "also_seen_in": [],
       "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
       "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
     },
@@ -103,6 +453,7 @@
         "gas field"
       ],
       "status": "research_only_unverified",
+      "also_seen_in": [],
       "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
       "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
     },
@@ -142,6 +493,7 @@
         "offshore wind"
       ],
       "status": "research_only_unverified",
+      "also_seen_in": [],
       "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
       "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
     },
@@ -180,6 +532,7 @@
         "lng"
       ],
       "status": "research_only_unverified",
+      "also_seen_in": [],
       "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
       "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
     },
@@ -218,6 +571,7 @@
         "offshore wind"
       ],
       "status": "research_only_unverified",
+      "also_seen_in": [],
       "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
       "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
     },
@@ -235,6 +589,7 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_only_unverified",
+      "also_seen_in": [],
       "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
       "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
     },
@@ -290,6 +645,7 @@
         "gas pipeline"
       ],
       "status": "research_date_only",
+      "also_seen_in": [],
       "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
       "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
     },
@@ -309,6 +665,7 @@
         "gas transmission"
       ],
       "status": "research_date_only",
+      "also_seen_in": [],
       "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
       "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
     },
@@ -328,6 +685,7 @@
         "gas transmission"
       ],
       "status": "research_date_only",
+      "also_seen_in": [],
       "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
       "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
     },
@@ -347,6 +705,7 @@
         "gas transmission"
       ],
       "status": "research_date_only",
+      "also_seen_in": [],
       "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
       "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
     },
@@ -364,6 +723,7 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_date_only",
+      "also_seen_in": [],
       "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
       "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
     },
@@ -381,6 +741,7 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_date_only",
+      "also_seen_in": [],
       "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
       "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
     },
@@ -398,6 +759,7 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_date_only",
+      "also_seen_in": [],
       "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
       "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
     },
@@ -415,6 +777,7 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_date_only",
+      "also_seen_in": [],
       "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
       "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
     },
@@ -432,6 +795,7 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_date_only",
+      "also_seen_in": [],
       "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
       "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
     },
@@ -449,6 +813,7 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_date_only",
+      "also_seen_in": [],
       "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
       "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
     },
@@ -468,6 +833,7 @@
         "gas storage"
       ],
       "status": "research_date_only",
+      "also_seen_in": [],
       "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
       "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
     },
@@ -485,6 +851,7 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_date_only",
+      "also_seen_in": [],
       "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
       "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
     },
@@ -504,6 +871,7 @@
         "ferc"
       ],
       "status": "research_date_only",
+      "also_seen_in": [],
       "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
       "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
     },
@@ -521,6 +889,7 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_date_only",
+      "also_seen_in": [],
       "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
       "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
     },
@@ -538,6 +907,7 @@
       "editorial_candidate": false,
       "relevance_evidence": [],
       "status": "research_date_only",
+      "also_seen_in": [],
       "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
       "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
     },
@@ -596,6 +966,23 @@
       "also_seen_in": [],
       "first_collected_utc": "2026-11-24T02:56:38.844495+00:00",
       "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00"
+    },
+    {
+      "id": "5200a85bec6d92621ccc9387",
+      "title": "Commissioner J\u00f8rgensen in Ireland to advance work on energy and housing affordability",
+      "url": "https://energy.ec.europa.eu/news/commissioner-jorgensen-ireland-advance-work-energy-and-housing-affordability-2026-11-24_en",
+      "source": "European Commission DG Energy",
+      "source_class": "official_agency",
+      "published_utc": "2026-11-23T23:00:00+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified",
+      "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
+      "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
     },
     {
       "id": "9e8f05db037e827ebf995e42",
@@ -838,6 +1225,7 @@
         "nextera"
       ],
       "status": "research_only_unverified",
+      "also_seen_in": [],
       "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
       "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
     },
@@ -858,6 +1246,23 @@
       "also_seen_in": [],
       "first_collected_utc": "2026-11-24T02:56:38.844495+00:00",
       "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00"
+    },
+    {
+      "id": "9f19ea4d3bd64bfad3329cfa",
+      "title": "$251M electric bus facility opens in Miami-Dade County",
+      "url": "https://www.utilitydive.com/news/miami-dade-transit-operations-center-electric-bus-facility/875590",
+      "source": "Utility Dive News",
+      "source_class": "specialist_publisher",
+      "published_utc": "2026-11-23T16:12:00+00:00",
+      "category": "Cross-sector",
+      "published_precision": "timestamp",
+      "relevance_score": 0,
+      "keyword_matches": 0,
+      "editorial_candidate": false,
+      "relevance_evidence": [],
+      "status": "research_only_unverified",
+      "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
+      "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
     },
     {
       "id": "fb6237347cf38781f2cebdcb",
@@ -3998,141 +4403,6 @@
       "status": "research_date_only",
       "also_seen_in": [],
       "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
-    },
-    {
-      "id": "08d34946ed67ba0847803fdd",
-      "title": "EU endorses Global Electrification Pledge at COP31",
-      "url": "https://ec.europa.eu/commission/presscorner/detail/en/jp_26_2465",
-      "source": "European Commission DG Energy",
-      "source_class": "official_agency",
-      "published_utc": "2026-11-17T23:00:00+00:00",
-      "category": "Power & Electricity",
-      "published_precision": "timestamp",
-      "relevance_score": 15,
-      "keyword_matches": 1,
-      "editorial_candidate": false,
-      "relevance_evidence": [
-        "electrification"
-      ],
-      "status": "research_only_unverified",
-      "also_seen_in": []
-    },
-    {
-      "id": "b71e65618f150209f9cf4a13",
-      "title": "Commissioner J\u00f8rgensen in Poland to discuss energy and housing priorities",
-      "url": "https://energy.ec.europa.eu/news/commissioner-jorgensen-poland-discuss-energy-and-housing-priorities-2026-11-18_en",
-      "source": "European Commission DG Energy",
-      "source_class": "official_agency",
-      "published_utc": "2026-11-17T23:00:00+00:00",
-      "category": "Cross-sector",
-      "published_precision": "timestamp",
-      "relevance_score": 0,
-      "keyword_matches": 0,
-      "editorial_candidate": false,
-      "relevance_evidence": [],
-      "status": "research_only_unverified",
-      "also_seen_in": []
-    },
-    {
-      "id": "0316553476cd350aeb58e704",
-      "title": "Commission welcomes political agreement on faster and simpler permitting for grids, clean energy projects",
-      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2450",
-      "source": "European Commission DG Energy",
-      "source_class": "official_agency",
-      "published_utc": "2026-11-17T23:00:00+00:00",
-      "category": "Cross-sector",
-      "published_precision": "timestamp",
-      "relevance_score": 0,
-      "keyword_matches": 0,
-      "editorial_candidate": false,
-      "relevance_evidence": [],
-      "status": "research_only_unverified",
-      "also_seen_in": []
-    },
-    {
-      "id": "a86b6bed4d391a5877a630e8",
-      "title": "Energy Department Announces $2.8 Billion Loan to Strengthen Grid Reliability and Help Lower Costs in Wyoming",
-      "url": "https://www.energy.gov/articles/energy-department-announces-28-billion-loan-strengthen-grid-reliability-and-help-lower",
-      "source": "DOE Energy News",
-      "source_class": "official_agency",
-      "published_utc": "2026-11-17T18:10:03+00:00",
-      "category": "Power & Electricity",
-      "published_precision": "timestamp",
-      "relevance_score": 57,
-      "keyword_matches": 2,
-      "editorial_candidate": true,
-      "relevance_evidence": [
-        "grid",
-        "grid reliability"
-      ],
-      "status": "research_only_unverified",
-      "also_seen_in": []
-    },
-    {
-      "id": "88adb9f4729c548ccfad41ff",
-      "title": "Data center slowdown would raise risks for utility investments",
-      "url": "https://www.utilitydive.com/news/data-center-slowdown-raises-risks-for-utility-investments/874924",
-      "source": "Utility Dive News",
-      "source_class": "specialist_publisher",
-      "published_utc": "2026-11-17T18:10:00+00:00",
-      "category": "Power & Electricity",
-      "published_precision": "timestamp",
-      "relevance_score": 30,
-      "keyword_matches": 1,
-      "editorial_candidate": true,
-      "relevance_evidence": [
-        "data center"
-      ],
-      "status": "research_only_unverified",
-      "also_seen_in": []
-    },
-    {
-      "id": "2f81175edc7909b59c28c598",
-      "title": "Most states fail \u2018community power\u2019 test, advocacy group says",
-      "url": "https://www.utilitydive.com/news/most-states-fail-community-power-test-advocacy-group-says/874915",
-      "source": "Utility Dive News",
-      "source_class": "specialist_publisher",
-      "published_utc": "2026-11-17T16:43:41+00:00",
-      "category": "Cross-sector",
-      "published_precision": "timestamp",
-      "relevance_score": 0,
-      "keyword_matches": 0,
-      "editorial_candidate": false,
-      "relevance_evidence": [],
-      "status": "research_only_unverified",
-      "also_seen_in": []
-    },
-    {
-      "id": "be8eff9ebd3a8fb655f66aaf",
-      "title": "Batteries included: A practical checklist for storage owners, operators to boost reliability",
-      "url": "https://www.utilitydive.com/news/battery-storage-markets-ercot-xpansiv/873451",
-      "source": "Utility Dive News",
-      "source_class": "specialist_publisher",
-      "published_utc": "2026-11-17T15:44:48+00:00",
-      "category": "Cross-sector",
-      "published_precision": "timestamp",
-      "relevance_score": 0,
-      "keyword_matches": 0,
-      "editorial_candidate": false,
-      "relevance_evidence": [],
-      "status": "research_only_unverified",
-      "also_seen_in": []
-    },
-    {
-      "id": "6f6a60b2a0a9499d845b46ae",
-      "title": "New York eyes 2030 storage goal with second bulk procurement",
-      "url": "https://www.utilitydive.com/news/nyserda-bulk-energy-storage-solicitation/874888",
-      "source": "Utility Dive News",
-      "source_class": "specialist_publisher",
-      "published_utc": "2026-11-17T15:32:15+00:00",
-      "category": "Cross-sector",
-      "published_precision": "timestamp",
-      "relevance_score": 0,
-      "keyword_matches": 0,
-      "editorial_candidate": false,
-      "relevance_evidence": [],
-      "status": "research_only_unverified",
-      "also_seen_in": []
     }
   ],
   "runs": [
@@ -4877,15 +5147,27 @@
       "new_article_links": 31,
       "transient_retries": 0,
       "feeds_recovered_after_retry": 0
+    },
+    {
+      "run_utc": "2026-11-25T00:52:03.757060+00:00",
+      "completed_utc": "2026-11-25T00:52:09.355050+00:00",
+      "feeds_connected": 14,
+      "feeds_checked": 15,
+      "feeds_failed": 1,
+      "scan_state": "degraded",
+      "fresh_entries": 42,
+      "new_article_links": 21,
+      "transient_retries": 3,
+      "feeds_recovered_after_retry": 0
     }
   ],
   "source_health": {
     "EIA Today in Energy": {
-      "last_attempt_utc": "2026-11-24T14:58:12.346192+00:00",
-      "last_success_utc": "2026-11-24T14:58:12.346192+00:00",
+      "last_attempt_utc": "2026-11-25T00:52:03.757060+00:00",
+      "last_success_utc": "2026-11-25T00:52:03.757060+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 45,
+      "consecutive_successes": 46,
       "last_items_seen": 31,
       "newest_feed_published_utc": "2026-11-24T14:00:00+00:00",
       "last_error_type": null,
@@ -4898,11 +5180,11 @@
       "total_recoveries": 0
     },
     "EIA Press Releases": {
-      "last_attempt_utc": "2026-11-24T14:58:12.346192+00:00",
-      "last_success_utc": "2026-11-24T14:58:12.346192+00:00",
+      "last_attempt_utc": "2026-11-25T00:52:03.757060+00:00",
+      "last_success_utc": "2026-11-25T00:52:03.757060+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 45,
+      "consecutive_successes": 46,
       "last_items_seen": 13,
       "newest_feed_published_utc": "2026-11-10T17:00:00+00:00",
       "last_error_type": null,
@@ -4915,11 +5197,11 @@
       "total_recoveries": 0
     },
     "EIA Congressional Testimony": {
-      "last_attempt_utc": "2026-11-24T14:58:12.346192+00:00",
-      "last_success_utc": "2026-11-24T14:58:12.346192+00:00",
+      "last_attempt_utc": "2026-11-25T00:52:03.757060+00:00",
+      "last_success_utc": "2026-11-25T00:52:03.757060+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 45,
+      "consecutive_successes": 46,
       "last_items_seen": 1,
       "newest_feed_published_utc": "2021-11-16T14:00:00+00:00",
       "last_error_type": null,
@@ -4932,11 +5214,11 @@
       "total_recoveries": 0
     },
     "EIA Presentations": {
-      "last_attempt_utc": "2026-11-24T14:58:12.346192+00:00",
-      "last_success_utc": "2026-11-24T14:58:12.346192+00:00",
+      "last_attempt_utc": "2026-11-25T00:52:03.757060+00:00",
+      "last_success_utc": "2026-11-25T00:52:03.757060+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 45,
+      "consecutive_successes": 46,
       "last_items_seen": 1,
       "newest_feed_published_utc": "2026-03-04T14:00:00+00:00",
       "last_error_type": null,
@@ -4949,11 +5231,11 @@
       "total_recoveries": 0
     },
     "DOE Energy News": {
-      "last_attempt_utc": "2026-11-24T14:58:12.346192+00:00",
-      "last_success_utc": "2026-11-24T14:58:12.346192+00:00",
+      "last_attempt_utc": "2026-11-25T00:52:03.757060+00:00",
+      "last_success_utc": "2026-11-25T00:52:03.757060+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 45,
+      "consecutive_successes": 46,
       "last_items_seen": 10,
       "newest_feed_published_utc": "2026-11-20T22:49:34+00:00",
       "last_error_type": null,
@@ -4966,11 +5248,11 @@
       "total_recoveries": 0
     },
     "DOE Grid Deployment": {
-      "last_attempt_utc": "2026-11-24T14:58:12.346192+00:00",
-      "last_success_utc": "2026-11-24T14:58:12.346192+00:00",
+      "last_attempt_utc": "2026-11-25T00:52:03.757060+00:00",
+      "last_success_utc": "2026-11-25T00:52:03.757060+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 45,
+      "consecutive_successes": 46,
       "last_items_seen": 10,
       "newest_feed_published_utc": "2026-10-30T14:42:15+00:00",
       "last_error_type": null,
@@ -4983,13 +5265,13 @@
       "total_recoveries": 0
     },
     "US NRC Nuclear News": {
-      "last_attempt_utc": "2026-11-24T14:58:12.346192+00:00",
-      "last_success_utc": "2026-11-24T14:58:12.346192+00:00",
+      "last_attempt_utc": "2026-11-25T00:52:03.757060+00:00",
+      "last_success_utc": "2026-11-25T00:52:03.757060+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 45,
-      "last_items_seen": 164,
-      "newest_feed_published_utc": "2026-09-14T08:00:00+00:00",
+      "consecutive_successes": 46,
+      "last_items_seen": 173,
+      "newest_feed_published_utc": "2026-11-12T10:00:00+00:00",
       "last_error_type": null,
       "last_request_attempts": 1,
       "last_fallback_used": false,
@@ -5000,11 +5282,11 @@
       "total_recoveries": 0
     },
     "DOE Hydrocarbons Releases": {
-      "last_attempt_utc": "2026-11-24T14:58:12.346192+00:00",
-      "last_success_utc": "2026-11-24T14:58:12.346192+00:00",
+      "last_attempt_utc": "2026-11-25T00:52:03.757060+00:00",
+      "last_success_utc": "2026-11-25T00:52:03.757060+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 45,
+      "consecutive_successes": 46,
       "last_items_seen": 10,
       "newest_feed_published_utc": "2026-11-04T05:00:00+00:00",
       "last_error_type": null,
@@ -5017,11 +5299,11 @@
       "total_recoveries": 0
     },
     "DOE Hydrocarbons Blog": {
-      "last_attempt_utc": "2026-11-24T14:58:12.346192+00:00",
-      "last_success_utc": "2026-11-24T14:58:12.346192+00:00",
+      "last_attempt_utc": "2026-11-25T00:52:03.757060+00:00",
+      "last_success_utc": "2026-11-25T00:52:03.757060+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 45,
+      "consecutive_successes": 46,
       "last_items_seen": 10,
       "newest_feed_published_utc": "2026-10-29T20:16:57+00:00",
       "last_error_type": null,
@@ -5034,13 +5316,13 @@
       "total_recoveries": 0
     },
     "European Commission DG Energy": {
-      "last_attempt_utc": "2026-11-24T14:58:12.346192+00:00",
-      "last_success_utc": "2026-11-24T14:58:12.346192+00:00",
+      "last_attempt_utc": "2026-11-25T00:52:03.757060+00:00",
+      "last_success_utc": "2026-11-25T00:52:03.757060+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 45,
+      "consecutive_successes": 46,
       "last_items_seen": 30,
-      "newest_feed_published_utc": "2026-11-19T23:00:00+00:00",
+      "newest_feed_published_utc": "2026-11-23T23:00:00+00:00",
       "last_error_type": null,
       "last_request_attempts": 1,
       "last_fallback_used": false,
@@ -5051,11 +5333,11 @@
       "total_recoveries": 0
     },
     "Federal Register notices": {
-      "last_attempt_utc": "2026-11-24T14:58:12.346192+00:00",
-      "last_success_utc": "2026-11-24T14:58:12.346192+00:00",
+      "last_attempt_utc": "2026-11-25T00:52:03.757060+00:00",
+      "last_success_utc": "2026-11-25T00:52:03.757060+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 45,
+      "consecutive_successes": 46,
       "last_items_seen": 142,
       "newest_feed_published_utc": "2026-11-24T05:00:00+00:00",
       "last_error_type": null,
@@ -5068,13 +5350,13 @@
       "total_recoveries": 0
     },
     "Offshore Energy News": {
-      "last_attempt_utc": "2026-11-24T14:58:12.346192+00:00",
-      "last_success_utc": "2026-11-24T14:58:12.346192+00:00",
+      "last_attempt_utc": "2026-11-25T00:52:03.757060+00:00",
+      "last_success_utc": "2026-11-25T00:52:03.757060+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 45,
+      "consecutive_successes": 46,
       "last_items_seen": 50,
-      "newest_feed_published_utc": "2026-11-24T14:44:31+00:00",
+      "newest_feed_published_utc": "2026-11-24T15:38:31+00:00",
       "last_error_type": null,
       "last_request_attempts": 1,
       "last_fallback_used": false,
@@ -5085,13 +5367,13 @@
       "total_recoveries": 0
     },
     "OilPrice.com News": {
-      "last_attempt_utc": "2026-11-24T14:58:12.346192+00:00",
-      "last_success_utc": "2026-11-24T14:58:12.346192+00:00",
+      "last_attempt_utc": "2026-11-25T00:52:03.757060+00:00",
+      "last_success_utc": "2026-11-25T00:52:03.757060+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 45,
+      "consecutive_successes": 46,
       "last_items_seen": 15,
-      "newest_feed_published_utc": "2026-11-24T14:00:00+00:00",
+      "newest_feed_published_utc": "2026-11-25T00:00:00+00:00",
       "last_error_type": null,
       "last_request_attempts": 1,
       "last_fallback_used": false,
@@ -5102,13 +5384,13 @@
       "total_recoveries": 0
     },
     "Utility Dive News": {
-      "last_attempt_utc": "2026-11-24T14:58:12.346192+00:00",
-      "last_success_utc": "2026-11-24T14:58:12.346192+00:00",
+      "last_attempt_utc": "2026-11-25T00:52:03.757060+00:00",
+      "last_success_utc": "2026-11-25T00:52:03.757060+00:00",
       "last_failure_utc": null,
       "consecutive_failures": 0,
-      "consecutive_successes": 45,
+      "consecutive_successes": 46,
       "last_items_seen": 10,
-      "newest_feed_published_utc": "2026-11-23T18:00:00+00:00",
+      "newest_feed_published_utc": "2026-11-24T17:26:49+00:00",
       "last_error_type": null,
       "last_request_attempts": 1,
       "last_fallback_used": false,
@@ -5119,19 +5401,19 @@
       "total_recoveries": 0
     },
     "PJM Inside Lines": {
-      "last_attempt_utc": "2026-11-24T14:58:12.346192+00:00",
+      "last_attempt_utc": "2026-11-25T00:52:03.757060+00:00",
       "last_success_utc": "2026-11-24T14:58:12.346192+00:00",
-      "last_failure_utc": "2026-11-19T13:40:11.146097+00:00",
-      "consecutive_failures": 0,
-      "consecutive_successes": 13,
+      "last_failure_utc": "2026-11-25T00:52:03.757060+00:00",
+      "consecutive_failures": 1,
+      "consecutive_successes": 0,
       "last_items_seen": 10,
       "newest_feed_published_utc": "2026-11-23T18:31:53+00:00",
-      "last_error_type": null,
-      "last_request_attempts": 1,
+      "last_error_type": "ParseError",
+      "last_request_attempts": 4,
       "last_fallback_used": false,
-      "last_actual_feed_url": "https://insidelines.pjm.com/feed/",
+      "last_actual_feed_url": null,
       "total_fallback_recoveries": 0,
-      "last_transient_retry_count": 0,
+      "last_transient_retry_count": 3,
       "last_recovered_after_retry": false,
       "total_recoveries": 0
     }
