@@ -1,5 +1,903 @@
 [
   {
+    "url": "https://www.themoscowtimes.com/2026/11/25/one-killed-in-samara-region-as-ukraine-strikes-oil-refinery-a94368",
+    "title": "One Killed in Samara Region as Ukraine Strikes Oil Refinery - The Moscow Times",
+    "domain": "www.themoscowtimes.com",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:oil",
+      "geopolitical_event:strikes",
+      "world_context:ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://www.al-monitor.com/originals/2026/11/yemens-houthis-say-they-attacked-saudi-oil-refinery-and-riyadh-financial-district",
+    "title": "Yemen's Houthis say they attacked Saudi oil refinery and Riyadh financial district",
+    "domain": "www.al-monitor.com",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:oil",
+      "geopolitical_event:attacked",
+      "world_context:yemen"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://www.themoscowtimes.com/2026/11/25/us-shelves-plans-for-business-deals-with-russia-to-end-ukraine-war-ft-a94370",
+    "title": "U.S. Shelves Plans for Business Deals With Russia to End Ukraine War – FT - The Moscow Times",
+    "domain": "www.themoscowtimes.com",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:war",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://nt.am/en/news/363785",
+    "title": "Iran is developing chemical weapons, Israel and the US are preparing for a possible attack: Katz",
+    "domain": "nt.am",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:iran/israel"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://english.aawsat.com/world/5345440-eisenkot-ally-says-israel-need-not-strike-iran-now-over-chemical-weapons",
+    "title": "Eisenkot Ally Says Israel Need Not Strike Iran Now Over Chemical Weapons",
+    "domain": "english.aawsat.com",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:iran/israel"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://www.hindustantimes.com/ht-explainers/ukraine-sea-drone-attack-russian-warship-libya-benghazi-explained-101795599651749.html",
+    "title": "The sinking of a Russian warship in Libya and Ukraine’s drone strikes far from home",
+    "domain": "www.hindustantimes.com",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strikes",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://www.al-monitor.com/originals/2026/11/iran-says-it-prepared-withstand-us-blockade-seeks-curb-price-rises",
+    "title": "Iran says it is prepared to withstand US blockade, seeks to curb price rises",
+    "domain": "www.al-monitor.com",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:blockade",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://english.aawsat.com/world/5345437-iran-says-it-prepared-withstand-us-blockade-seeks-curb-price-rises",
+    "title": "Iran Says It Is Prepared to Withstand US Blockade, Seeks to Curb Price Rises",
+    "domain": "english.aawsat.com",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:blockade",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-says-it-not-concerned-about-us-naval-blockade-report",
+    "title": "Iran says it is not concerned about US naval blockade: Report",
+    "domain": "www.middleeasteye.net",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:blockade",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://www.opinionnigeria.com/petrol-imports-drop-52-as-crude-oil-wheat-dominate-lagos-ports",
+    "title": "Petrol Imports Drop 52% as Crude Oil, Wheat Dominate Lagos Ports",
+    "domain": "www.opinionnigeria.com",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 36,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "crude oil"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://www.greatlakesadvocate.com.au/story/9398398/huge-greenhouse-gas-plume-at-chevron-plant-deliberate",
+    "title": "Huge greenhouse gas plume at Chevron plant deliberate",
+    "domain": "www.greatlakesadvocate.com.au",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "chevron"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://www.theadvocate.com.au/story/9398398/huge-greenhouse-gas-plume-at-chevron-plant-deliberate",
+    "title": "Huge greenhouse gas plume at Chevron plant deliberate",
+    "domain": "www.theadvocate.com.au",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "chevron"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://pragativadi.com/high-voltage-drama-in-bhubaneswar-pipili-desperate-retrenched-power-workers-scale-electricity-towers",
+    "title": "Odisha Contractual Electricity Workers Threaten Suicide on High-Tension Towers Amid Retrenchment Row",
+    "domain": "pragativadi.com",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://www.singletonargus.com.au/story/9398398/huge-greenhouse-gas-plume-at-chevron-plant-deliberate",
+    "title": "Huge greenhouse gas plume at Chevron plant deliberate",
+    "domain": "www.singletonargus.com.au",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "chevron"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://www.madhyamam.com/technology/news/how-much-electricity-does-a-mobile-phone-charger-use-1575705",
+    "title": "ദിവസവും ഫോൺ ചാർജ് ചെയ്യുന്നത് വൈദ്യുതി ബിൽ കൂട്ടുമോ? ഒരു മാസം എത്ര രൂപ ചെലവാകും? അറിയാം വിശദമായി | How much electricity does a mobile phone charger use | Madhyamam",
+    "domain": "www.madhyamam.com",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://www.newswit.com/en/ien0yygqccz2k0ewzlc4rez2h0hs3rd3",
+    "title": "Delta Electronics Highlights Its Future-Ready AI Containerized Data Center, Industrial Automation and Energy Infrastructure Solutions at IIEE Expo 2026 in the Philippines",
+    "domain": "www.newswit.com",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://businesspl.com:443/index.php/wiadomosci/20494-chlodzenie-data-center-dlaczego-precyzyjna-kontrola-temperatury-jest-tak-wazna",
+    "title": "Chłodzenie data center - dlaczego precyzyjna kontrola temperatury jest tak ważna?",
+    "domain": "businesspl.com:443",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://www.rtbf.be/article/farciennes-google-poursuit-les-travaux-d-un-data-center-sans-permis-denonce-greenpeace-11820807",
+    "title": "Farciennes : Google poursuit les travaux d'un data center sans permis, dénonce Greenpeace - RTBF Actus",
+    "domain": "www.rtbf.be",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://www.wharfedaleobserver.co.uk/news/national/26760098.misery-households-energy-bills-jump-26-january",
+    "title": "Misery for households as energy bills to jump 26 in January",
+    "domain": "www.wharfedaleobserver.co.uk",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "energy bills"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://www.businesstoday.in/markets/stocks/story/lt-shares-gain-on-order-for-battery-energy-storage-system-in-gujarat-569353-2026-11-25",
+    "title": "L&T shares gain over 2% on order for Battery Energy Storage System in Gujarat - BusinessToday",
+    "domain": "www.businesstoday.in",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "energy storage"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://www.thenorthernecho.co.uk/news/national/26760527.energy-bills-going-can",
+    "title": "Why are energy bills going up and what can I do about it?",
+    "domain": "www.thenorthernecho.co.uk",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "energy bills"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://www.brentwoodlive.co.uk/news/national/26760527.energy-bills-going-can",
+    "title": "Why are energy bills going up and what can I do about it?",
+    "domain": "www.brentwoodlive.co.uk",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "energy bills"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://www.northwalespioneer.co.uk/news/national/26760527.energy-bills-going-can",
+    "title": "Why are energy bills going up and what can I do about it?",
+    "domain": "www.northwalespioneer.co.uk",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "energy bills"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://www.wimbledonguardian.co.uk/news/national/26760098.misery-households-energy-bills-jump-26-january",
+    "title": "Misery for households as energy bills to jump 26 in January",
+    "domain": "www.wimbledonguardian.co.uk",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "energy bills"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://www.brentwoodlive.co.uk/news/national/26760098.misery-households-energy-bills-jump-26-january",
+    "title": "Misery for households as energy bills to jump 26 in January",
+    "domain": "www.brentwoodlive.co.uk",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "energy bills"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://www.elystandard.co.uk/news/national/26760527.energy-bills-going-can",
+    "title": "Why are energy bills going up and what can I do about it?",
+    "domain": "www.elystandard.co.uk",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "energy bills"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://www.northwalespioneer.co.uk/news/national/26760098.misery-households-energy-bills-jump-26-january",
+    "title": "Misery for households as energy bills to jump 26 in January",
+    "domain": "www.northwalespioneer.co.uk",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "energy bills"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://www.mirror.co.uk/tv/tv-news/martin-lewis-energy-bills-rise-37912607",
+    "title": "Martin Lewis 'emotional' in impassioned plea amid energy bills rise",
+    "domain": "www.mirror.co.uk",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "energy bills"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://www.cravenherald.co.uk/news/national/26760527.energy-bills-going-can",
+    "title": "Why are energy bills going up and what can I do about it?",
+    "domain": "www.cravenherald.co.uk",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "energy bills"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://www.wharfedaleobserver.co.uk/news/national/26760527.energy-bills-going-can",
+    "title": "Why are energy bills going up and what can I do about it?",
+    "domain": "www.wharfedaleobserver.co.uk",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "energy bills"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://www.hampshirechronicle.co.uk/news/national/26760098.misery-households-energy-bills-jump-26-january",
+    "title": "Misery for households as energy bills to jump 26 in January",
+    "domain": "www.hampshirechronicle.co.uk",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "energy bills"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://www.dailypost.co.uk/news/north-wales-news/households-misery-energy-bills-jump-34962113",
+    "title": "Households misery as energy bills to jump 26% in January",
+    "domain": "www.dailypost.co.uk",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "energy bills"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://www.elystandard.co.uk/news/national/26760098.misery-households-energy-bills-jump-26-january",
+    "title": "Misery for households as energy bills to jump 26 in January",
+    "domain": "www.elystandard.co.uk",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "energy bills"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://www.euronews.com/2026/11/25/british-households-energy-bills-to-rise-to-70-above-eu-average-as-energy-price-cap-rises-2",
+    "title": "UK households' energy bills to rise to 70% above EU average",
+    "domain": "www.euronews.com",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "energy bills"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://www.hampshirechronicle.co.uk/news/national/26760527.energy-bills-going-can",
+    "title": "Why are energy bills going up and what can I do about it?",
+    "domain": "www.hampshirechronicle.co.uk",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "energy bills"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://cedarnews.net/newstasks/1193639/i-only-use-washing-machine-sunday-were",
+    "title": "'I only use the washing machine on a Sunday' - how we're keeping our energy bills down | Cedar News",
+    "domain": "cedarnews.net",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "energy bills"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://www.brentwoodlive.co.uk/news/national/uk-today/26760120.ofgem-energy-price-cap-households-face-2-166-bills-january",
+    "title": "'This is a very serious situation' urgent warning as energy bills soar in January",
+    "domain": "www.brentwoodlive.co.uk",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "energy bills"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://www.wharfedaleobserver.co.uk/news/national/uk-today/26760120.ofgem-energy-price-cap-households-face-2-166-bills-january",
+    "title": "'This is a very serious situation' urgent warning as energy bills soar in January",
+    "domain": "www.wharfedaleobserver.co.uk",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "energy bills"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://www.wimbledonguardian.co.uk/news/national/26760527.energy-bills-going-can",
+    "title": "Why are energy bills going up and what can I do about it?",
+    "domain": "www.wimbledonguardian.co.uk",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "energy bills"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
+    "url": "https://www.welt.de/finanzen/boerse/article6b06b1f3cd4642ba2eb18206/siemens-energy-aktie-handelsstart-mit-leichtem-minus.html",
+    "title": "Siemens Energy-Aktie: Handelsstart mit leichtem Minus - WELT",
+    "domain": "www.welt.de",
+    "gdelt_first_seen_utc": "2026-11-25T10:17:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "siemens energy"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-25T10:28:34.096214+00:00"
+  },
+  {
     "url": "https://www.almontasaf.net/news153609.html",
     "title": "Drone Strikes Claim Lives in Russia and Ukraine | المنتصف نت",
     "domain": "www.almontasaf.net",
