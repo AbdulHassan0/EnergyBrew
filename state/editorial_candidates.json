@@ -37,8 +37,51 @@
       "oil inventories"
     ],
     "status": "research_only_unverified",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
     "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
+  },
+  {
+    "id": "7afa81c4cabb3f8b8f0162e3",
+    "title": "Iran War Is Pushing Record Numbers of Fuel Tankers Into Crude Trade",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-War-Is-Pushing-Record-Numbers-of-Fuel-Tankers-Into-Crude-Trade.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-25T13:00:00+00:00",
+    "category": "Geopolitics",
+    "published_precision": "timestamp",
+    "relevance_score": 90,
+    "keyword_matches": 3,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "energy_market_hook:crude",
+      "geopolitical_event:war",
+      "world_context:iran"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-25T14:34:16.503193+00:00",
+    "first_collector_observed_utc": "2026-11-25T14:34:16.503193+00:00"
+  },
+  {
+    "id": "37be572da20e4f168b89a211",
+    "title": "Iran Reports Fresh Tanker Explosions as Hormuz Attacks Intensify",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Reports-Fresh-Tanker-Explosions-as-Hormuz-Attacks-Intensify.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-25T09:30:00+00:00",
+    "category": "Geopolitics",
+    "published_precision": "timestamp",
+    "relevance_score": 90,
+    "keyword_matches": 3,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "energy_market_hook:tanker",
+      "geopolitical_event:attacks",
+      "world_context:iran"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-25T14:34:16.503193+00:00",
+    "first_collector_observed_utc": "2026-11-25T14:34:16.503193+00:00"
   },
   {
     "id": "89fe8371c75919e5aeefabfb",
@@ -187,26 +230,6 @@
     "also_seen_in": []
   },
   {
-    "id": "0e60962e4349037dfa1fbcfd",
-    "title": "ADNOC Ship Attacked in Hormuz as Maritime Security Risks Rise",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/ADNOC-Ship-Attacked-in-Hormuz-as-Maritime-Security-Risks-Rise.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T10:00:00+00:00",
-    "category": "Geopolitics",
-    "published_precision": "timestamp",
-    "relevance_score": 90,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "energy_market_hook:hormuz",
-      "geopolitical_event:attacked",
-      "world_context:hormuz"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": []
-  },
-  {
     "id": "6c922e4edba15f1f787245dd",
     "title": "PJM Board Approves Transmission Project Changes to Support Grid Reliability",
     "url": "https://insidelines.pjm.com/pjm-board-approves-transmission-project-changes-to-support-grid-reliability-2",
@@ -228,12 +251,12 @@
     "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
   },
   {
-    "id": "d021b967b58c90a0b5d9efad",
-    "title": "Venture Global\u2019s bigger LNG deal with China Gas adds 500,000 tons annually",
-    "url": "https://www.offshore-energy.biz/2026/11/18/venture-globals-bigger-lng-deal-with-china-gas-adds-500000-tons-annually",
-    "source": "Offshore Energy News",
+    "id": "c291f6e73165e7eba5334ebf",
+    "title": "Global LNG Supply Crunch Set to Spill Into 2027",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Global-LNG-Supply-Crunch-Set-to-Spill-Into-2027.html",
+    "source": "OilPrice.com News",
     "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T13:01:15+00:00",
+    "published_utc": "2026-11-25T08:30:00+00:00",
     "category": "LNG",
     "published_precision": "timestamp",
     "relevance_score": 84,
@@ -241,11 +264,11 @@
     "editorial_candidate": true,
     "relevance_evidence": [
       "lng",
-      "venture global"
+      "lng supply"
     ],
     "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
+    "first_collected_utc": "2026-11-25T14:34:16.503193+00:00",
+    "first_collector_observed_utc": "2026-11-25T14:34:16.503193+00:00"
   },
   {
     "id": "de359ff62a99594accce6100",
@@ -312,6 +335,26 @@
     "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
   },
   {
+    "id": "ed3ccd229ef5d6e8b5884289",
+    "title": "Goldman Sachs Sees U.S. Natural Gas Demand Surging on Data Center Boom",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Goldman-Sachs-Sees-US-Natural-Gas-Demand-Surging-on-Data-Center-Boom.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-25T06:45:00+00:00",
+    "category": "Natural Gas",
+    "published_precision": "timestamp",
+    "relevance_score": 72,
+    "keyword_matches": 2,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "gas demand",
+      "natural gas"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-25T14:34:16.503193+00:00",
+    "first_collector_observed_utc": "2026-11-25T14:34:16.503193+00:00"
+  },
+  {
     "id": "9d0041e5cad02447711a531f",
     "title": "European Natural Gas Prices Surge 8.6% as Cold Snap Looms",
     "url": "https://oilprice.com/Latest-Energy-News/World-News/European-Natural-Gas-Prices-Surge-86-as-Cold-Snap-Looms.html",
@@ -353,26 +396,6 @@
     "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00"
   },
   {
-    "id": "33b7c622f7d6734f22075838",
-    "title": "U.S.-Iran Conflict Flares Again as Gulf Nations Brace for Attacks",
-    "url": "https://oilprice.com/Geopolitics/Middle-East/US-Iran-Conflict-Flares-Again-as-Gulf-Nations-Brace-for-Attacks.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T14:30:00+00:00",
-    "category": "Geopolitics",
-    "published_precision": "timestamp",
-    "relevance_score": 68,
-    "keyword_matches": 0,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:attacks",
-      "world_context:iran/united states"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": []
-  },
-  {
     "id": "5c8dd49bf771f1b91226988c",
     "title": "Midterms provide clarity on data center development: Vistra CEO",
     "url": "https://www.utilitydive.com/news/vistra-midterms-data-center-ercot-pjm/875626",
@@ -389,6 +412,7 @@
       "vistra"
     ],
     "status": "research_only_unverified",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
     "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
   },
@@ -552,25 +576,6 @@
     "also_seen_in": []
   },
   {
-    "id": "ece006e7c63756cac601b5cc",
-    "title": "Woodside and Trafigura sign off on decade-long LNG deal",
-    "url": "https://www.offshore-energy.biz/2026/11/18/woodside-and-trafigura-sign-off-on-decade-long-lng-deal",
-    "source": "Offshore Energy News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T09:16:02+00:00",
-    "category": "LNG",
-    "published_precision": "timestamp",
-    "relevance_score": 45,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "lng"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
-  },
-  {
     "id": "827092c04fc49930a95cbe36",
     "title": "Iran Faces a Deepening Natural Gas Crisis Ahead of Winter",
     "url": "https://oilprice.com/Energy/Energy-General/Iran-Faces-a-Deepening-Natural-Gas-Crisis-Ahead-of-Winter.html",
@@ -588,25 +593,6 @@
     "status": "research_only_unverified",
     "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
     "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
-  },
-  {
-    "id": "a4c390e9c48b4825355d9bf6",
-    "title": "U.S. natural gas inventories end injection season above normal levels",
-    "url": "https://www.eia.gov/todayinenergy/detail.php?id=68484",
-    "source": "EIA Today in Energy",
-    "source_class": "official_agency",
-    "published_utc": "2026-11-18T14:00:00+00:00",
-    "category": "Natural Gas",
-    "published_precision": "timestamp",
-    "relevance_score": 39,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "natural gas"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
   },
   {
     "id": "60aa9200ecb65f02de1925f0",
@@ -665,6 +651,45 @@
     ],
     "status": "research_only_unverified",
     "also_seen_in": []
+  },
+  {
+    "id": "41ee440d15205b02d80cf16a",
+    "title": "Almost 60% of primary energy used for electricity is lost to conversion and transmission",
+    "url": "https://www.eia.gov/todayinenergy/detail.php?id=68504",
+    "source": "EIA Today in Energy",
+    "source_class": "official_agency",
+    "published_utc": "2026-11-25T14:00:00+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 33,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "research_only_unverified",
+    "also_seen_in": [],
+    "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
+    "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
+  },
+  {
+    "id": "fe723f77b60375385d0f279a",
+    "title": "Oil Prices Slide Despite Mounting Threats in the Strait of Hormuz",
+    "url": "https://oilprice.com/Energy/Energy-General/Oil-Prices-Slide-Despite-Mounting-Threats-in-the-Strait-of-Hormuz.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-25T05:50:00+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 33,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "oil prices"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-25T14:34:16.503193+00:00",
+    "first_collector_observed_utc": "2026-11-25T14:34:16.503193+00:00"
   },
   {
     "id": "3b8231eebf800b256b83592a",
@@ -1055,6 +1080,44 @@
     "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
   },
   {
+    "id": "40c06bd49c3d06ee6d3d93c3",
+    "title": "Big Oil and Big Tech Lobby EU for Faster Gas-Fired Data Center Permits",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Big-Oil-and-Big-Tech-Lobby-EU-for-Faster-Gas-Fired-Data-Center-Permits.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-25T14:00:00+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 30,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-25T14:34:16.503193+00:00",
+    "first_collector_observed_utc": "2026-11-25T14:34:16.503193+00:00"
+  },
+  {
+    "id": "1eaf499a3a25914d3652bd9b",
+    "title": "Dangote Refinery Set to Become Africa\u2019s Most Valuable Listed Company",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Dangote-Refinery-Set-to-Become-Africas-Most-Valuable-Listed-Company.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-25T11:00:00+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 30,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "refinery"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-25T14:34:16.503193+00:00",
+    "first_collector_observed_utc": "2026-11-25T14:34:16.503193+00:00"
+  },
+  {
     "id": "f8e9b5e3c0939826e41ca241",
     "title": "Where Does Texas' Data Center Boom Go From Here?",
     "url": "https://oilprice.com/Energy/Energy-General/Where-Does-Texas-Data-Center-Boom-Go-From-Here.html",
@@ -1070,6 +1133,7 @@
       "data center"
     ],
     "status": "research_only_unverified",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
     "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
   },
@@ -1108,6 +1172,7 @@
       "data center"
     ],
     "status": "research_only_unverified",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
     "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
   },
@@ -1439,115 +1504,6 @@
     "status": "research_only_unverified",
     "also_seen_in": [],
     "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
-  },
-  {
-    "id": "86772b4f506d95c18071e2c0",
-    "title": "DOE-funded transmission projects could boost East-West transfer capacity 440%",
-    "url": "https://www.utilitydive.com/news/doe-funded-transmission-projects-could-boost-east-west-transfer-capacity-40/875021",
-    "source": "Utility Dive News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T14:23:48+00:00",
-    "category": "Power & Electricity",
-    "published_precision": "timestamp",
-    "relevance_score": 27,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "transmission projects"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
-  },
-  {
-    "id": "6e8bef55b58dac69c9908e52",
-    "title": "Fracking Giants Tapped to Drill Gas Project in Western Australia",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/Fracking-Giants-Tapped-to-Drill-Gas-Project-in-Western-Australia.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T13:30:00+00:00",
-    "category": "Natural Gas",
-    "published_precision": "timestamp",
-    "relevance_score": 27,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "gas project"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": []
-  },
-  {
-    "id": "3b0edb75f4c14407fb406a2d",
-    "title": "EnQuest Exits UK North Sea in $960 Million Deal",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/EnQuest-Exits-UK-North-Sea-in-960-Million-Deal.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T12:30:00+00:00",
-    "category": "Oil & Energy",
-    "published_precision": "timestamp",
-    "relevance_score": 27,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "enquest"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": []
-  },
-  {
-    "id": "fdd2223f847233e1029794d6",
-    "title": "Small Vessel Trade Thrives in Hormuz as Iran Targets Supertankers",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/Small-Vessel-Trade-Thrives-in-Hormuz-as-Iran-Targets-Supertankers.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T11:30:00+00:00",
-    "category": "Oil & Energy",
-    "published_precision": "timestamp",
-    "relevance_score": 27,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "supertankers"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": []
-  },
-  {
-    "id": "18df0d39e9013d6b917315a6",
-    "title": "PLSV under construction to work for Petrobras from end of 2028",
-    "url": "https://www.offshore-energy.biz/2026/11/18/plsv-under-construction-to-work-for-petrobras-from-end-of-2028",
-    "source": "Offshore Energy News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T09:26:31+00:00",
-    "category": "Oil & Energy",
-    "published_precision": "timestamp",
-    "relevance_score": 27,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "petrobras"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
-  },
-  {
-    "id": "5579e2a2230c578d14ebd744",
-    "title": "EU Moves to Fast-Track Renewables as Oil Import Costs Soar",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/EU-Moves-to-Fast-Track-Renewables-as-Oil-Import-Costs-Soar.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T08:45:00+00:00",
-    "category": "Oil & Energy",
-    "published_precision": "timestamp",
-    "relevance_score": 27,
-    "keyword_matches": 0,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "oil import"
-    ],
-    "status": "research_only_unverified"
   },
   {
     "id": "332ef499b6782e11ba5d00c4",

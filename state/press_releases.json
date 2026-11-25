@@ -1,6 +1,206 @@
 {
   "leads": [
     {
+      "url": "https://energycapitalandpower.africa-newsroom.com/press/nigers-petroleum-minister-hamadou-tini-confirmed-for-msgbc-conference?lang=en",
+      "title": "Niger\u2019s Petroleum Minister Hamadou Tini Confirmed for MSGBC Conference",
+      "feed_creator_label": "APO Group",
+      "named_issuer_verified": false,
+      "feed_source_url": "https://energycapitalandpower.africa-newsroom.com/press/nigers-petroleum-minister-hamadou-tini-confirmed-for-msgbc-conference?lang=en",
+      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+      "feed_published_utc": "2026-11-25T13:58:00+00:00",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "category": "Oil & Energy",
+      "relevance_score": 27,
+      "relevance_evidence": [
+        "petroleum"
+      ],
+      "provider": "Press Release Feed",
+      "content_kind": "company_or_newswire_press_release",
+      "status": "promotional_issuer_claim_requires_editorial_verification",
+      "first_collector_observed_utc": "2026-11-25T14:35:21.141764+00:00"
+    },
+    {
+      "url": "https://energycapitalandpower.africa-newsroom.com/press/gambian-minister-of-petroleum-energy-and-mines-nani-juwara-joins-msgbc-2026-ministerial-lineup?lang=en",
+      "title": "Gambian Minister of Petroleum, Energy and Mines Nani Juwara Joins MSGBC 2026 Ministerial Lineup",
+      "feed_creator_label": "APO Group",
+      "named_issuer_verified": false,
+      "feed_source_url": "https://energycapitalandpower.africa-newsroom.com/press/gambian-minister-of-petroleum-energy-and-mines-nani-juwara-joins-msgbc-2026-ministerial-lineup?lang=en",
+      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+      "feed_published_utc": "2026-11-25T13:55:41+00:00",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "category": "Oil & Energy",
+      "relevance_score": 27,
+      "relevance_evidence": [
+        "petroleum"
+      ],
+      "provider": "Press Release Feed",
+      "content_kind": "company_or_newswire_press_release",
+      "status": "promotional_issuer_claim_requires_editorial_verification",
+      "first_collector_observed_utc": "2026-11-25T14:35:21.141764+00:00"
+    },
+    {
+      "url": "https://express-press-release.net/news/2026/11/25/1786615",
+      "title": "LNG Storage Tanks Market: Rising Energy Demand, Infrastructure Developments, and Market Growth Outlook",
+      "feed_creator_label": "Express Press Release",
+      "named_issuer_verified": false,
+      "feed_source_url": "https://express-press-release.net/news/2026/11/25/1786615",
+      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+      "feed_published_utc": "2026-11-25T07:37:01+00:00",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "category": "LNG",
+      "relevance_score": 45,
+      "relevance_evidence": [
+        "lng"
+      ],
+      "provider": "Press Release Feed",
+      "content_kind": "company_or_newswire_press_release",
+      "status": "promotional_issuer_claim_requires_editorial_verification",
+      "first_collector_observed_utc": "2026-11-25T14:35:21.141764+00:00"
+    },
+    {
+      "url": "https://express-press-release.net/news/2026/11/25/1786567",
+      "title": "Iron Air Battery Market: Energy Storage Innovations, Market Trends, and Future Growth Prospects",
+      "feed_creator_label": "Express Press Release",
+      "named_issuer_verified": false,
+      "feed_source_url": "https://express-press-release.net/news/2026/11/25/1786567",
+      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+      "feed_published_utc": "2026-11-25T07:05:54+00:00",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "category": "Power & Electricity",
+      "relevance_score": 27,
+      "relevance_evidence": [
+        "energy storage"
+      ],
+      "provider": "Press Release Feed",
+      "content_kind": "company_or_newswire_press_release",
+      "status": "promotional_issuer_claim_requires_editorial_verification",
+      "first_collector_observed_utc": "2026-11-25T14:35:21.141764+00:00"
+    },
+    {
+      "url": "https://express-press-release.net/news/2026/11/25/1786558",
+      "title": "Data Center Transformation Market Forecast Reveals USD 45.03 Billion Opportunity by 2034 at 8.8% CAGR",
+      "feed_creator_label": "Express Press Release",
+      "named_issuer_verified": false,
+      "feed_source_url": "https://express-press-release.net/news/2026/11/25/1786558",
+      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+      "feed_published_utc": "2026-11-25T06:54:20+00:00",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "category": "Power & Electricity",
+      "relevance_score": 30,
+      "relevance_evidence": [
+        "data center"
+      ],
+      "provider": "Press Release Feed",
+      "content_kind": "company_or_newswire_press_release",
+      "status": "promotional_issuer_claim_requires_editorial_verification",
+      "first_collector_observed_utc": "2026-11-25T14:35:21.141764+00:00"
+    },
+    {
+      "url": "https://express-press-release.net/news/2026/11/25/1786547",
+      "title": "AI Data Center Switchgear Market to Achieve USD 9.02 Billion by 2034, Supported by 18.8% CAGR",
+      "feed_creator_label": "Express Press Release",
+      "named_issuer_verified": false,
+      "feed_source_url": "https://express-press-release.net/news/2026/11/25/1786547",
+      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+      "feed_published_utc": "2026-11-25T06:46:13+00:00",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "category": "Power & Electricity",
+      "relevance_score": 30,
+      "relevance_evidence": [
+        "data center"
+      ],
+      "provider": "Press Release Feed",
+      "content_kind": "company_or_newswire_press_release",
+      "status": "promotional_issuer_claim_requires_editorial_verification",
+      "first_collector_observed_utc": "2026-11-25T14:35:21.141764+00:00"
+    },
+    {
+      "url": "https://express-press-release.net/news/2026/11/25/1786513",
+      "title": "Nuclear Power Plant Equipment Market Projected to Record USD 28.06 Billion Valuation by 2034 with 3.14% CAGR",
+      "feed_creator_label": "Express Press Release",
+      "named_issuer_verified": false,
+      "feed_source_url": "https://express-press-release.net/news/2026/11/25/1786513",
+      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+      "feed_published_utc": "2026-11-25T06:24:09+00:00",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "category": "Power & Electricity",
+      "relevance_score": 30,
+      "relevance_evidence": [
+        "power plant"
+      ],
+      "provider": "Press Release Feed",
+      "content_kind": "company_or_newswire_press_release",
+      "status": "promotional_issuer_claim_requires_editorial_verification",
+      "first_collector_observed_utc": "2026-11-25T14:35:21.141764+00:00"
+    },
+    {
+      "url": "https://express-press-release.net/news/2026/11/25/1786444",
+      "title": "Data Center Power and Energy Management Market: Driving Smarter Energy Optimization for Next-Generation Digital Infrastructure",
+      "feed_creator_label": "Express Press Release",
+      "named_issuer_verified": false,
+      "feed_source_url": "https://express-press-release.net/news/2026/11/25/1786444",
+      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+      "feed_published_utc": "2026-11-25T05:43:34+00:00",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "category": "Power & Electricity",
+      "relevance_score": 30,
+      "relevance_evidence": [
+        "data center"
+      ],
+      "provider": "Press Release Feed",
+      "content_kind": "company_or_newswire_press_release",
+      "status": "promotional_issuer_claim_requires_editorial_verification",
+      "first_collector_observed_utc": "2026-11-25T14:35:21.141764+00:00"
+    },
+    {
+      "url": "https://express-press-release.net/news/2026/11/25/1786443",
+      "title": "800 VDC Data Center Power Architecture Market: Powering the Next Generation of AI-Driven Data Center Infrastructure",
+      "feed_creator_label": "Express Press Release",
+      "named_issuer_verified": false,
+      "feed_source_url": "https://express-press-release.net/news/2026/11/25/1786443",
+      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+      "feed_published_utc": "2026-11-25T05:43:32+00:00",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "category": "Power & Electricity",
+      "relevance_score": 30,
+      "relevance_evidence": [
+        "data center"
+      ],
+      "provider": "Press Release Feed",
+      "content_kind": "company_or_newswire_press_release",
+      "status": "promotional_issuer_claim_requires_editorial_verification",
+      "first_collector_observed_utc": "2026-11-25T14:35:21.141764+00:00"
+    },
+    {
+      "url": "https://express-press-release.net/news/2026/11/25/1786417",
+      "title": "Data Center Air Handling Units Market: Driving Energy Efficiency and Advanced Cooling Innovation in Next-Generation Data Centers",
+      "feed_creator_label": "Express Press Release",
+      "named_issuer_verified": false,
+      "feed_source_url": "https://express-press-release.net/news/2026/11/25/1786417",
+      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+      "feed_published_utc": "2026-11-25T05:32:24+00:00",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "category": "Power & Electricity",
+      "relevance_score": 30,
+      "relevance_evidence": [
+        "data center"
+      ],
+      "provider": "Press Release Feed",
+      "content_kind": "company_or_newswire_press_release",
+      "status": "promotional_issuer_claim_requires_editorial_verification",
+      "first_collector_observed_utc": "2026-11-25T14:35:21.141764+00:00"
+    },
+    {
       "url": "https://www.globenewswire.com/news-release/2026/11/24/3409936/937/en/montauk-renewables-inc-investigation-continues-investors-may-contact-kirby-mcinerney-llp-a-securities-fraud-law-firm-if-you-lost-money-on-your-mntk-investments.html",
       "title": "Montauk Renewables, Inc. Investigation Continues: Investors May Contact Kirby McInerney LLP, a Securities Fraud Law Firm, If You Lost Money On Your MNTK Investments",
       "feed_creator_label": "GlobeNewswire",
@@ -1418,121 +1618,6 @@
       "provider": "Press Release Feed",
       "content_kind": "company_or_newswire_press_release",
       "status": "promotional_issuer_claim_requires_editorial_verification"
-    },
-    {
-      "url": "https://www.newmediawire.com/news/angkor-resources-enercam-completes-its-final-hosting-of-potential-drilling-contractors-on-block-viii-oil-gas-field-7091402",
-      "title": "Angkor Resources' Enercam Completes Its Final Hosting of Potential Drilling Contractors on Block VIII Oil & Gas Field",
-      "feed_creator_label": "NewMediaWire",
-      "named_issuer_verified": false,
-      "feed_source_url": "https://www.newmediawire.com/news/angkor-resources-enercam-completes-its-final-hosting-of-potential-drilling-contractors-on-block-viii-oil-gas-field-7091402",
-      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-      "feed_published_utc": "2026-11-18T14:00:00+00:00",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "category": "Natural Gas",
-      "relevance_score": 27,
-      "relevance_evidence": [
-        "gas field"
-      ],
-      "provider": "Press Release Feed",
-      "content_kind": "company_or_newswire_press_release",
-      "status": "promotional_issuer_claim_requires_editorial_verification"
-    },
-    {
-      "url": "https://finance.yahoo.com/energy/articles/molten-industries-commissions-world-first-130000214.html",
-      "title": "Molten Industries Commissions World\u2019s First Plant to Produce Battery-Grade Graphite from Natural Gas",
-      "feed_creator_label": "Business Wire",
-      "named_issuer_verified": false,
-      "feed_source_url": "https://finance.yahoo.com/energy/articles/molten-industries-commissions-world-first-130000214.html",
-      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-      "feed_published_utc": "2026-11-18T13:00:00+00:00",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "category": "Natural Gas",
-      "relevance_score": 39,
-      "relevance_evidence": [
-        "natural gas"
-      ],
-      "provider": "Press Release Feed",
-      "content_kind": "company_or_newswire_press_release",
-      "status": "promotional_issuer_claim_requires_editorial_verification"
-    },
-    {
-      "url": "https://www.globenewswire.com/news-release/2026/11/18/3405465/0/en/first-atlantic-s-awaruite-concentrate-achieves-98-nickel-and-82-cobalt-extraction-in-20-minutes-using-new-cerium-refining-technology-outperforming-u-s-tamarack-nickel-sulfide-conce.html",
-      "title": "First Atlantic\u2019s Awaruite Concentrate Achieves 98% Nickel and 82% Cobalt Extraction in 20 Minutes Using New Cerium Refining Technology, Outperforming U.S. Tamarack Nickel Sulfide Concentrate in Peer-Reviewed Columbia University Research Funded by the U.S. Department of Energy ARPA-E MINER Program",
-      "feed_creator_label": "GlobeNewswire",
-      "named_issuer_verified": false,
-      "feed_source_url": "https://www.globenewswire.com/news-release/2026/11/18/3405465/0/en/first-atlantic-s-awaruite-concentrate-achieves-98-nickel-and-82-cobalt-extraction-in-20-minutes-using-new-cerium-refining-technology-outperforming-u-s-tamarack-nickel-sulfide-conce.html",
-      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-      "feed_published_utc": "2026-11-18T11:00:00+00:00",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "category": "Oil & Energy",
-      "relevance_score": 24,
-      "relevance_evidence": [
-        "refining"
-      ],
-      "provider": "Press Release Feed",
-      "content_kind": "company_or_newswire_press_release",
-      "status": "promotional_issuer_claim_requires_editorial_verification"
-    },
-    {
-      "url": "https://www.webwire.com/ViewPressRel.asp?aId=364352",
-      "title": "ACCIONA Energ\ufffda to supply electricity to universities and research centers in Catalonia and Madrid",
-      "feed_creator_label": "WebWire",
-      "named_issuer_verified": false,
-      "feed_source_url": "https://www.webwire.com/ViewPressRel.asp?aId=364352",
-      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-      "feed_published_utc": "2026-11-18T10:19:55+00:00",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "category": "Power & Electricity",
-      "relevance_score": 33,
-      "relevance_evidence": [
-        "electricity"
-      ],
-      "provider": "Press Release Feed",
-      "content_kind": "company_or_newswire_press_release",
-      "status": "promotional_issuer_claim_requires_editorial_verification"
-    },
-    {
-      "url": "https://www.webwire.com/ViewPressRel.asp?aId=364349",
-      "title": "LEGO Manufacturing Vietnam powers on battery energy storage system",
-      "feed_creator_label": "WebWire",
-      "named_issuer_verified": false,
-      "feed_source_url": "https://www.webwire.com/ViewPressRel.asp?aId=364349",
-      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-      "feed_published_utc": "2026-11-18T10:05:40+00:00",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "category": "Power & Electricity",
-      "relevance_score": 27,
-      "relevance_evidence": [
-        "energy storage"
-      ],
-      "provider": "Press Release Feed",
-      "content_kind": "company_or_newswire_press_release",
-      "status": "promotional_issuer_claim_requires_editorial_verification"
-    },
-    {
-      "url": "https://financewire.com/2026/11/18/vestafund-releases-sector-analysis-examining-physical-infrastructure-power-grid-constraints",
-      "title": "VestaFund Releases Sector Analysis Examining Physical Infrastructure, Power Grid Constraints",
-      "feed_creator_label": "FinanceWire",
-      "named_issuer_verified": false,
-      "feed_source_url": "https://financewire.com/2026/11/18/vestafund-releases-sector-analysis-examining-physical-infrastructure-power-grid-constraints",
-      "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-      "feed_published_utc": "2026-11-18T04:19:27+00:00",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "category": "Power & Electricity",
-      "relevance_score": 57,
-      "relevance_evidence": [
-        "grid",
-        "power grid"
-      ],
-      "provider": "Press Release Feed",
-      "content_kind": "company_or_newswire_press_release",
-      "status": "promotional_issuer_claim_requires_editorial_verification"
     }
   ],
   "runs": [
@@ -2003,6 +2088,14 @@
       "raw_feed_entries": 100,
       "high_signal_company_releases": 14,
       "new_unique_links": 9
+    },
+    {
+      "run_utc": "2026-11-25T14:35:19.845779+00:00",
+      "completed_utc": "2026-11-25T14:35:21.141764+00:00",
+      "status": "ok",
+      "raw_feed_entries": 100,
+      "high_signal_company_releases": 17,
+      "new_unique_links": 10
     }
   ]
 }

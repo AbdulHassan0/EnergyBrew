@@ -1,15 +1,16 @@
 {
-  "generated_utc": "2026-11-25T00:52:30.763726+00:00",
+  "generated_utc": "2026-11-25T14:35:21.241157+00:00",
   "status": "research_only_not_approved",
-  "unique_relevant_urls_7d": 1147,
+  "unique_relevant_urls_7d": 1250,
   "selected_research_links": 32,
-  "unique_domains_in_selection": 19,
+  "unique_domains_in_selection": 23,
   "queue_counts": {
-    "specialist_publisher_24h": 18,
-    "older_official_context": 64,
-    "regulatory_date_only": 10,
-    "discovery_unverified": 978,
-    "company_release_unverified": 77
+    "specialist_publisher_24h": 16,
+    "older_official_context": 62,
+    "regulatory_date_only": 7,
+    "discovery_unverified": 1083,
+    "timestamped_official": 1,
+    "company_release_unverified": 81
   },
   "selected_category_counts": {
     "Natural Gas": 3,
@@ -21,17 +22,17 @@
   },
   "selected_topic_coverage_counts": {
     "Natural Gas": 3,
-    "LNG": 8,
+    "LNG": 9,
     "Power & Electricity": 8,
-    "Oil & Energy": 5,
-    "Infrastructure & Investment": 9,
+    "Oil & Energy": 9,
+    "Infrastructure & Investment": 7,
     "Geopolitics": 8
   },
   "missing_categories": [],
-  "publisher_timestamped_official_24h": 0,
-  "publisher_timestamped_specialist_24h": 18,
+  "publisher_timestamped_official_24h": 1,
+  "publisher_timestamped_specialist_24h": 16,
   "system_operator_primary_24h": 0,
-  "likely_same_event_links_suppressed": 10,
+  "likely_same_event_links_suppressed": 0,
   "discovery_publisher_dates_verified": 0,
   "promotional_or_language_review_count": 0,
   "stories": [
@@ -67,6 +68,68 @@
       "rank": 151
     },
     {
+      "title": "Iran War Is Pushing Record Numbers of Fuel Tankers Into Crude Trade",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-War-Is-Pushing-Record-Numbers-of-Fuel-Tankers-Into-Crude-Trade.html",
+      "domain": "oilprice.com",
+      "first_collector_observed_utc": "2026-11-25T14:34:16.503193+00:00",
+      "local_collection_time_known": true,
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics",
+        "Oil & Energy"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:crude",
+        "geopolitical_event:war",
+        "world_context:iran"
+      ],
+      "origin": "official_rss",
+      "time_basis": "specialist_publisher_rss_timestamp",
+      "observed_time_utc": "2026-11-25T13:00:00+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "specialist_publisher_24h",
+      "rank": 145
+    },
+    {
+      "title": "Global LNG Supply Crunch Set to Spill Into 2027",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Global-LNG-Supply-Crunch-Set-to-Spill-Into-2027.html",
+      "domain": "oilprice.com",
+      "first_collector_observed_utc": "2026-11-25T14:34:16.503193+00:00",
+      "local_collection_time_known": true,
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "category": "LNG",
+      "coverage_themes": [
+        "LNG"
+      ],
+      "relevance_score": 84,
+      "relevance_evidence": [
+        "lng",
+        "lng supply"
+      ],
+      "origin": "official_rss",
+      "time_basis": "specialist_publisher_rss_timestamp",
+      "observed_time_utc": "2026-11-25T08:30:00+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "specialist_publisher_24h",
+      "rank": 139
+    },
+    {
       "title": "PJM Board Approves Transmission Project Changes to Support Grid Reliability",
       "url": "https://insidelines.pjm.com/pjm-board-approves-transmission-project-changes-to-support-grid-reliability-2",
       "domain": "insidelines.pjm.com",
@@ -99,44 +162,34 @@
       "rank": 137
     },
     {
-      "title": "China Gas Upsizes Long-Term LNG Supply with U.S. Venture Global",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/China-Gas-Upsizes-Long-Term-LNG-Supply-with-US-Venture-Global.html",
+      "title": "Goldman Sachs Sees U.S. Natural Gas Demand Surging on Data Center Boom",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Goldman-Sachs-Sees-US-Natural-Gas-Demand-Surging-on-Data-Center-Boom.html",
       "domain": "oilprice.com",
-      "first_collector_observed_utc": null,
-      "local_collection_time_known": false,
+      "first_collector_observed_utc": "2026-11-25T14:34:16.503193+00:00",
+      "local_collection_time_known": true,
       "source": "OilPrice.com News",
       "source_class": "specialist_publisher",
-      "category": "LNG",
+      "category": "Natural Gas",
       "coverage_themes": [
-        "LNG"
+        "Natural Gas"
       ],
-      "relevance_score": 100,
+      "relevance_score": 72,
       "relevance_evidence": [
-        "lng",
-        "lng supply",
-        "venture global"
+        "gas demand",
+        "natural gas"
       ],
       "origin": "official_rss",
       "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-18T15:30:00+00:00",
+      "observed_time_utc": "2026-11-25T06:45:00+00:00",
       "publisher_time_verified": true,
       "date_confidence": "publisher_rss_timestamp",
-      "within_24h_on_own_time_basis": false,
+      "within_24h_on_own_time_basis": true,
       "needs_editor_review": [],
       "editorial_status": "research_only_not_approved",
       "other_origins": [],
       "independent_corroboration_verified": false,
-      "queue": "older_official_context",
-      "rank": 130,
-      "related_reports": [
-        {
-          "title": "Venture Global’s bigger LNG deal with China Gas adds 500,000 tons annually",
-          "url": "https://www.offshore-energy.biz/2026/11/18/venture-globals-bigger-lng-deal-with-china-gas-adds-500000-tons-annually",
-          "source": "Offshore Energy News",
-          "origin": "official_rss",
-          "note": "Potential same-event source link; not independently corroborated"
-        }
-      ]
+      "queue": "specialist_publisher_24h",
+      "rank": 127
     },
     {
       "title": "Freeport LNG Development, L.P., FLNG Liquefaction, LLC, FLNG Liquefaction 2, LLC, FLNG Liquefaction 3, LLC, FLNG Liquefaction 4, LLC; Notice of Application and Establishing Intervention Deadline",
@@ -167,71 +220,6 @@
       "independent_corroboration_verified": false,
       "queue": "regulatory_date_only",
       "rank": 121
-    },
-    {
-      "title": "Storms and Drones Disrupt Russia’s Oil Exports",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Storms-and-Drones-Disrupt-Russias-Oil-Exports.html",
-      "domain": "oilprice.com",
-      "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00",
-      "local_collection_time_known": true,
-      "source": "OilPrice.com News",
-      "source_class": "specialist_publisher",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics",
-        "Oil & Energy"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:oil",
-        "geopolitical_event:drones",
-        "world_context:russia"
-      ],
-      "origin": "official_rss",
-      "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-23T16:30:00+00:00",
-      "publisher_time_verified": true,
-      "date_confidence": "publisher_rss_timestamp",
-      "within_24h_on_own_time_basis": false,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [
-        "global_discovery"
-      ],
-      "independent_corroboration_verified": false,
-      "queue": "older_official_context",
-      "rank": 120
-    },
-    {
-      "title": "Trump’s Ukraine Energy Truce Unravels as Russian Missiles Hit Kyiv",
-      "url": "https://oilprice.com/Energy/Energy-General/Trumps-Ukraine-Energy-Truce-Unravels-as-Russian-Missiles-Hit-Kyiv.html",
-      "domain": "oilprice.com",
-      "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00",
-      "local_collection_time_known": true,
-      "source": "OilPrice.com News",
-      "source_class": "specialist_publisher",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:energy",
-        "geopolitical_event:missiles",
-        "world_context:russian"
-      ],
-      "origin": "official_rss",
-      "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-20T12:30:00+00:00",
-      "publisher_time_verified": true,
-      "date_confidence": "publisher_rss_timestamp",
-      "within_24h_on_own_time_basis": false,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "older_official_context",
-      "rank": 120
     },
     {
       "title": "Midterms provide clarity on data center development: Vistra CEO",
@@ -420,56 +408,24 @@
       "rank": 111
     },
     {
-      "title": "Natural Gas Pipeline of America, LLC; Horizon Pipeline Company, LLC; Notice of Schedule for the Preparation of an Environmental Assessment for the North Extension Project",
-      "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23442/natural-gas-pipeline-of-america-llc-horizon-pipeline-company-llc-notice-of-schedule-for-the",
-      "domain": "www.federalregister.gov",
-      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00",
-      "local_collection_time_known": true,
-      "source": "Federal Register notices",
-      "source_class": "official_agency",
-      "category": "Natural Gas",
-      "coverage_themes": [
-        "Natural Gas",
-        "Infrastructure & Investment"
-      ],
-      "relevance_score": 69,
-      "relevance_evidence": [
-        "gas pipeline",
-        "natural gas"
-      ],
-      "origin": "regulatory_notice",
-      "time_basis": "official_publication_date_only",
-      "observed_time_utc": "2026-11-18T05:00:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "date_only",
-      "within_24h_on_own_time_basis": false,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "regulatory_date_only",
-      "rank": 109
-    },
-    {
-      "title": "NKT starts power cable production for IJmuiden Ver Beta offshore wind grid connection",
-      "url": "https://www.offshore-energy.biz/2026/11/24/nkt-starts-power-cable-production-for-ijmuiden-ver-beta-offshore-wind-grid-connection",
-      "domain": "www.offshore-energy.biz",
+      "title": "Almost 60% of primary energy used for electricity is lost to conversion and transmission",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68504",
+      "domain": "www.eia.gov",
       "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00",
       "local_collection_time_known": true,
-      "source": "Offshore Energy News",
-      "source_class": "specialist_publisher",
+      "source": "EIA Today in Energy",
+      "source_class": "official_agency",
       "category": "Power & Electricity",
       "coverage_themes": [
         "Power & Electricity"
       ],
-      "relevance_score": 51,
+      "relevance_score": 33,
       "relevance_evidence": [
-        "grid",
-        "offshore wind"
+        "electricity"
       ],
       "origin": "official_rss",
-      "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-24T10:49:49+00:00",
+      "time_basis": "publisher_feed_publication_time",
+      "observed_time_utc": "2026-11-25T14:00:00+00:00",
       "publisher_time_verified": true,
       "date_confidence": "publisher_rss_timestamp",
       "within_24h_on_own_time_basis": true,
@@ -477,44 +433,14 @@
       "editorial_status": "research_only_not_approved",
       "other_origins": [],
       "independent_corroboration_verified": false,
-      "queue": "specialist_publisher_24h",
-      "rank": 106
+      "queue": "timestamped_official",
+      "rank": 108
     },
     {
-      "title": "Algonquin Gas Transmission, LLC; Notice of Application and Establishing Intervention Deadline",
-      "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23446/algonquin-gas-transmission-llc-notice-of-application-and-establishing-intervention-deadline",
-      "domain": "www.federalregister.gov",
-      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00",
-      "local_collection_time_known": true,
-      "source": "Federal Register notices",
-      "source_class": "official_agency",
-      "category": "Natural Gas",
-      "coverage_themes": [
-        "Natural Gas"
-      ],
-      "relevance_score": 66,
-      "relevance_evidence": [
-        "algonquin gas transmission",
-        "gas transmission"
-      ],
-      "origin": "regulatory_notice",
-      "time_basis": "official_publication_date_only",
-      "observed_time_utc": "2026-11-18T05:00:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "date_only",
-      "within_24h_on_own_time_basis": false,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "regulatory_date_only",
-      "rank": 106
-    },
-    {
-      "title": "How tariffs, fuel and fertilizer costs are squeezing the U.S.'s biggest apple region",
-      "url": "https://www.wxxinews.org/npr-news/2026-11-24/how-tariffs-fuel-and-fertilizer-costs-are-squeezing-the-u-s-s-biggest-apple-region",
-      "domain": "www.wxxinews.org",
-      "first_collector_observed_utc": "2026-11-25T00:52:29.608330+00:00",
+      "title": "CUBA: WHO urges end to US fuel blockade as life expectancy falls",
+      "url": "https://www.latinnews.com/component/legacyk2/item/112376-cuba-who-urges-end-to-us-fuel-blockade-as-life-expectancy-falls?catid=840685",
+      "domain": "www.latinnews.com",
+      "first_collector_observed_utc": "2026-11-25T14:35:19.718785+00:00",
       "local_collection_time_known": true,
       "source": "GDELT GAL RSS",
       "source_class": "unclassified",
@@ -525,141 +451,12 @@
       "relevance_score": 90,
       "relevance_evidence": [
         "energy_market_hook:fuel",
-        "geopolitical_event:tariffs",
-        "world_context:u.s."
+        "geopolitical_event:blockade",
+        "world_context:us"
       ],
       "origin": "global_discovery",
       "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-25T00:47:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102,
-      "related_reports": [
-        {
-          "title": "How tariffs, fuel and fertilizer costs are squeezing the U.S.'s biggest apple region",
-          "url": "https://www.wemu.org/npr-national-news/2026-11-24/how-tariffs-fuel-and-fertilizer-costs-are-squeezing-the-u-s-s-biggest-apple-region",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "How tariffs, fuel and fertilizer costs are squeezing the U.S.'s biggest apple region",
-          "url": "https://www.wfae.org/united-states-world/2026-11-24/how-tariffs-fuel-and-fertilizer-costs-are-squeezing-the-u-s-s-biggest-apple-region",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "How tariffs, fuel and fertilizer costs are squeezing the U.S.'s biggest apple region",
-          "url": "https://www.kazu.org/npr-news/2026-11-24/how-tariffs-fuel-and-fertilizer-costs-are-squeezing-the-u-s-s-biggest-apple-region",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "How tariffs, fuel and fertilizer costs are squeezing the U.S.'s biggest apple region",
-          "url": "https://www.kjzz.org/npr-top-stories/2026-11-24/how-tariffs-fuel-and-fertilizer-costs-are-squeezing-the-u-s-s-biggest-apple-region",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "How tariffs, fuel and fertilizer costs are squeezing the U.S.'s biggest apple region",
-          "url": "https://www.kmxt.org/2026-11-24/how-tariffs-fuel-and-fertilizer-costs-are-squeezing-the-u-s-s-biggest-apple-region",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "How tariffs, fuel and fertilizer costs are squeezing the U.S.'s biggest apple region",
-          "url": "https://www.krwg.org/national-news/2026-11-24/how-tariffs-fuel-and-fertilizer-costs-are-squeezing-the-u-s-s-biggest-apple-region",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "How tariffs, fuel and fertilizer costs are squeezing the U.S.'s biggest apple region",
-          "url": "https://www.kclu.org/arts-culture/2026-11-24/how-tariffs-fuel-and-fertilizer-costs-are-squeezing-the-u-s-s-biggest-apple-region",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "How tariffs, fuel and fertilizer costs are squeezing the U.S.'s biggest apple region",
-          "url": "https://www.kwit.org/2026-11-24/how-tariffs-fuel-and-fertilizer-costs-are-squeezing-the-u-s-s-biggest-apple-region",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        }
-      ]
-    },
-    {
-      "title": "Houthis threaten to attack Red Sea ports, Saudis issue warning | The Jerusalem Post",
-      "url": "https://www.jpost.com/middle-east/article-916028",
-      "domain": "www.jpost.com",
-      "first_collector_observed_utc": "2026-11-25T00:52:29.608330+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:red sea",
-        "geopolitical_event:attack",
-        "world_context:houthis"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-25T00:47:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102,
-      "related_reports": [
-        {
-          "title": "Houthis threaten to attack Red Sea ports, Saudis issue warning | The Jerusalem Post",
-          "url": "http://www.jpost.com/middle-east/article-916028",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        }
-      ]
-    },
-    {
-      "title": "Saudi-led coalition strikes Yemen's Hodeidah Port after Houthis threaten Red Sea ports",
-      "url": "https://aninews.in/news/world/middle-east/saudi-led-coalition-strikes-yemens-hodeidah-port-after-houthis-threaten-red-sea-ports20261125050245",
-      "domain": "aninews.in",
-      "first_collector_observed_utc": "2026-11-25T00:52:29.608330+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:red sea",
-        "geopolitical_event:strikes",
-        "world_context:yemen"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-25T00:46:00+00:00",
+      "observed_time_utc": "2026-11-25T14:32:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
@@ -671,27 +468,27 @@
       "rank": 102
     },
     {
-      "title": "Projectiles strike three vessels in Strait of Hormuz on Monday, UKMTO says | The Jerusalem Post",
-      "url": "https://www.jpost.com/middle-east/article-915961",
-      "domain": "www.jpost.com",
-      "first_collector_observed_utc": "2026-11-24T15:28:27.188181+00:00",
+      "title": "Ukraine launches drone attacks on two Russian oil refineries sparking massive blaze - AOL",
+      "url": "https://www.aol.co.uk/articles/ukraine-launches-drone-attacks-two-141040000.html",
+      "domain": "www.aol.co.uk",
+      "first_collector_observed_utc": "2026-11-25T14:35:19.718785+00:00",
       "local_collection_time_known": true,
       "source": "GDELT GAL RSS",
       "source_class": "unclassified",
       "category": "Geopolitics",
       "coverage_themes": [
         "Geopolitics",
-        "Infrastructure & Investment"
+        "Oil & Energy"
       ],
       "relevance_score": 90,
       "relevance_evidence": [
-        "energy_market_hook:strait of hormuz",
-        "geopolitical_event:strike",
-        "world_context:strait of hormuz"
+        "energy_market_hook:oil",
+        "geopolitical_event:attacks",
+        "world_context:russian"
       ],
       "origin": "global_discovery",
       "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-24T15:17:00+00:00",
+      "observed_time_utc": "2026-11-25T14:32:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
@@ -703,10 +500,74 @@
       "rank": 102
     },
     {
-      "title": "Spain's energy companies see record profits amid Iran conflict while over half of firms lose profitability | Sur in English",
-      "url": "https://www.surinenglish.com/spain/energy-companies-raking-20261124000500-nt.html",
-      "domain": "www.surinenglish.com",
-      "first_collector_observed_utc": "2026-11-24T15:28:27.188181+00:00",
+      "title": "Ukraine steps up Russian oil attacks amid US defence delays",
+      "url": "https://www.mirror.co.uk/news/world-news/putin-zelensky-streeting-ukraine-russia-37913939",
+      "domain": "www.mirror.co.uk",
+      "first_collector_observed_utc": "2026-11-25T14:35:19.718785+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics",
+        "Oil & Energy"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:oil",
+        "geopolitical_event:attacks",
+        "world_context:russian"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-25T14:32:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
+    },
+    {
+      "title": "Yemen's Houthis Say They Attacked Saudi Arabia's Ras Tanura Refinery",
+      "url": "https://www.insurancejournal.com/news/international/2026/11/25/893737.htm",
+      "domain": "www.insurancejournal.com",
+      "first_collector_observed_utc": "2026-11-25T14:35:19.718785+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics",
+        "Oil & Energy"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:refinery",
+        "geopolitical_event:attacked",
+        "world_context:saudi arabia"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-25T14:32:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
+    },
+    {
+      "title": "Iran vows tighter surveillance of Hormuz amid surge in vessel attacks | News.az",
+      "url": "https://news.az/news/iran-vows-tighter-surveillance-of-hormuz-amid-surge-in-vessel-attacks",
+      "domain": "news.az",
+      "first_collector_observed_utc": "2026-11-25T14:35:19.718785+00:00",
       "local_collection_time_known": true,
       "source": "GDELT GAL RSS",
       "source_class": "unclassified",
@@ -716,13 +577,13 @@
       ],
       "relevance_score": 90,
       "relevance_evidence": [
-        "energy_market_hook:energy",
-        "geopolitical_event:conflict",
+        "energy_market_hook:hormuz",
+        "geopolitical_event:attacks",
         "world_context:iran"
       ],
       "origin": "global_discovery",
       "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-24T15:16:00+00:00",
+      "observed_time_utc": "2026-11-25T14:32:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
@@ -734,26 +595,27 @@
       "rank": 102
     },
     {
-      "title": "Pakistan Petroleum dealers threaten nationwide strike over daily fuel pricing",
-      "url": "http://www.southeastasiapost.com/news/279451792/pakistan-petroleum-dealers-threaten-nationwide-strike-over-daily-fuel-pricing",
-      "domain": "www.southeastasiapost.com",
-      "first_collector_observed_utc": "2026-11-24T14:58:38.290540+00:00",
+      "title": "Brent Surges As Escalating Houthi-Saudi Conflict Revives War Risk Premium",
+      "url": "http://www.zerohedge.com/energy/brent-surge-escalating-houthi-saudi-conflict-revives-war-risk-premium",
+      "domain": "www.zerohedge.com",
+      "first_collector_observed_utc": "2026-11-25T14:35:19.718785+00:00",
       "local_collection_time_known": true,
       "source": "GDELT GAL RSS",
       "source_class": "unclassified",
       "category": "Geopolitics",
       "coverage_themes": [
-        "Geopolitics"
+        "Geopolitics",
+        "Oil & Energy"
       ],
       "relevance_score": 90,
       "relevance_evidence": [
-        "energy_market_hook:petroleum",
-        "geopolitical_event:strike",
-        "world_context:pakistan"
+        "energy_market_hook:brent",
+        "geopolitical_event:war",
+        "world_context:houthi"
       ],
       "origin": "global_discovery",
       "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-24T14:47:00+00:00",
+      "observed_time_utc": "2026-11-25T14:32:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
@@ -765,34 +627,36 @@
       "rank": 102
     },
     {
-      "title": "$2.3 billion integrated LNG-to-power project on the development agenda in South Africa",
-      "url": "https://www.offshore-energy.biz/2026/11/24/dollar23-billion-integrated-lng-to-power-project-on-the-development-agenda-in-south-africa",
-      "domain": "www.offshore-energy.biz",
-      "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00",
+      "title": "Qatar LNG Exports Hit Busiest Month Since Start of Iran War, Despite Insurance Costs",
+      "url": "https://www.insurancejournal.com/news/international/2026/11/25/893748.htm",
+      "domain": "www.insurancejournal.com",
+      "first_collector_observed_utc": "2026-11-25T14:35:19.718785+00:00",
       "local_collection_time_known": true,
-      "source": "Offshore Energy News",
-      "source_class": "specialist_publisher",
-      "category": "LNG",
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
       "coverage_themes": [
-        "LNG",
-        "Infrastructure & Investment"
+        "Geopolitics",
+        "LNG"
       ],
-      "relevance_score": 45,
+      "relevance_score": 90,
       "relevance_evidence": [
-        "lng"
+        "energy_market_hook:lng",
+        "geopolitical_event:war",
+        "world_context:iran"
       ],
-      "origin": "official_rss",
-      "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-24T10:06:57+00:00",
-      "publisher_time_verified": true,
-      "date_confidence": "publisher_rss_timestamp",
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-25T14:31:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
       "needs_editor_review": [],
       "editorial_status": "research_only_not_approved",
       "other_origins": [],
       "independent_corroboration_verified": false,
-      "queue": "specialist_publisher_24h",
-      "rank": 100
+      "queue": "discovery_unverified",
+      "rank": 102
     },
     {
       "title": "BASS Wins BW LNG Contract for BASSnet Neo Cloud-Native Solution",
@@ -887,6 +751,37 @@
       "rank": 96
     },
     {
+      "title": "Trungnam to supply gas turbine for Ca Na LNG project",
+      "url": "https://www.lngindustry.com/liquid-natural-gas/25112026/trungnam-to-supply-gas-turbine-for-ca-na-lng-project",
+      "domain": "www.lngindustry.com",
+      "first_collector_observed_utc": "2026-11-25T14:35:19.718785+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "LNG",
+      "coverage_themes": [
+        "LNG",
+        "Infrastructure & Investment"
+      ],
+      "relevance_score": 81,
+      "relevance_evidence": [
+        "lng",
+        "lng project"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-25T14:31:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 93
+    },
+    {
       "title": "Vitol to Start Construction on $2.3b South African LNG Project in 2028",
       "url": "https://www.marinelink.com/news/vitol-start-construction-b-south-african-544540",
       "domain": "www.marinelink.com",
@@ -978,35 +873,6 @@
       "rank": 90
     },
     {
-      "title": "U.S. natural gas inventories end injection season above normal levels",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68484",
-      "domain": "www.eia.gov",
-      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00",
-      "local_collection_time_known": true,
-      "source": "EIA Today in Energy",
-      "source_class": "official_agency",
-      "category": "Natural Gas",
-      "coverage_themes": [
-        "Natural Gas"
-      ],
-      "relevance_score": 39,
-      "relevance_evidence": [
-        "natural gas"
-      ],
-      "origin": "official_rss",
-      "time_basis": "publisher_feed_publication_time",
-      "observed_time_utc": "2026-11-18T14:00:00+00:00",
-      "publisher_time_verified": true,
-      "date_confidence": "publisher_rss_timestamp",
-      "within_24h_on_own_time_basis": false,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "older_official_context",
-      "rank": 89
-    },
-    {
       "title": "ExxonMobil signs off on $4 billion FID as new discovery signals more oil potential at Angolan offshore block",
       "url": "https://www.offshore-energy.biz/2026/11/24/exxonmobil-signs-off-on-dollar4-billion-fid-as-new-discovery-signals-more-oil-potential-at-angolan-offshore-block",
       "domain": "www.offshore-energy.biz",
@@ -1065,6 +931,65 @@
       "independent_corroboration_verified": false,
       "queue": "company_release_unverified",
       "rank": 87
+    },
+    {
+      "title": "Gas Coordination Group confirms EU’s winter preparedness, importance of gas storage through the winter",
+      "url": "https://energy.ec.europa.eu/news/gas-coordination-group-confirms-eus-winter-preparedness-importance-gas-storage-through-winter-2026-11-20_en",
+      "domain": "energy.ec.europa.eu",
+      "first_collector_observed_utc": "2026-11-20T22:41:52.748655+00:00",
+      "local_collection_time_known": true,
+      "source": "European Commission DG Energy",
+      "source_class": "official_agency",
+      "category": "Natural Gas",
+      "coverage_themes": [
+        "Natural Gas"
+      ],
+      "relevance_score": 36,
+      "relevance_evidence": [
+        "gas storage"
+      ],
+      "origin": "official_rss",
+      "time_basis": "publisher_feed_publication_time",
+      "observed_time_utc": "2026-11-19T23:00:00+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
+      "within_24h_on_own_time_basis": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "older_official_context",
+      "rank": 86
+    },
+    {
+      "title": "Renewable natural gas production facility planned for Randolph County - Inside INdiana Business",
+      "url": "https://www.insideindianabusiness.com/articles/renewable-natural-gas-production-facility-planned-for-randolph-county",
+      "domain": "www.insideindianabusiness.com",
+      "first_collector_observed_utc": "2026-11-24T23:59:51.981510+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Natural Gas",
+      "coverage_themes": [
+        "Natural Gas"
+      ],
+      "relevance_score": 72,
+      "relevance_evidence": [
+        "gas production",
+        "natural gas"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-24T23:46:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 84
     },
     {
       "title": "Final investment decision on Azerbaijan's Karabakh field expected in 2027",

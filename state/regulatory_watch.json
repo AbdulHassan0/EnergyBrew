@@ -20,46 +20,6 @@
     "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
   },
   {
-    "id": "ea327fca2f5987c8cb30074d",
-    "title": "Natural Gas Pipeline of America, LLC; Horizon Pipeline Company, LLC; Notice of Schedule for the Preparation of an Environmental Assessment for the North Extension Project",
-    "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23442/natural-gas-pipeline-of-america-llc-horizon-pipeline-company-llc-notice-of-schedule-for-the",
-    "source": "Federal Register notices",
-    "source_class": "official_agency",
-    "published_utc": "2026-11-18T05:00:00+00:00",
-    "category": "Natural Gas",
-    "published_precision": "day",
-    "relevance_score": 69,
-    "keyword_matches": 2,
-    "editorial_candidate": false,
-    "relevance_evidence": [
-      "gas pipeline",
-      "natural gas"
-    ],
-    "status": "research_date_only",
-    "also_seen_in": [],
-    "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
-  },
-  {
-    "id": "e4ec4d63fc6d664805180f16",
-    "title": "Algonquin Gas Transmission, LLC; Notice of Application and Establishing Intervention Deadline",
-    "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23446/algonquin-gas-transmission-llc-notice-of-application-and-establishing-intervention-deadline",
-    "source": "Federal Register notices",
-    "source_class": "official_agency",
-    "published_utc": "2026-11-18T05:00:00+00:00",
-    "category": "Natural Gas",
-    "published_precision": "day",
-    "relevance_score": 66,
-    "keyword_matches": 2,
-    "editorial_candidate": false,
-    "relevance_evidence": [
-      "algonquin gas transmission",
-      "gas transmission"
-    ],
-    "status": "research_date_only",
-    "also_seen_in": [],
-    "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
-  },
-  {
     "id": "2d3e231e081ec3e22ad84514",
     "title": "Exelon Corporation v. PJM Interconnection, L.L.C.; Notice Establishing Comment Period",
     "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23611/exelon-corporation-v-pjm-interconnection-llc-notice-establishing-comment-period",
@@ -178,24 +138,5 @@
     "also_seen_in": [],
     "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
     "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
-  },
-  {
-    "id": "98cf091cac76154ba0c0feae",
-    "title": "Northwest Pipeline, LLC; Notice of Scoping Period Requesting Comments on Environmental Issues for the Planned Silver Spur Project and Notice of Public Scoping Sessions",
-    "url": "https://www.federalregister.gov/documents/2026/11/18/2026-23441/northwest-pipeline-llc-notice-of-scoping-period-requesting-comments-on-environmental-issues-for-the",
-    "source": "Federal Register notices",
-    "source_class": "official_agency",
-    "published_utc": "2026-11-18T05:00:00+00:00",
-    "category": "Natural Gas",
-    "published_precision": "day",
-    "relevance_score": 30,
-    "keyword_matches": 1,
-    "editorial_candidate": false,
-    "relevance_evidence": [
-      "northwest pipeline"
-    ],
-    "status": "research_date_only",
-    "also_seen_in": [],
-    "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
   }
 ]
