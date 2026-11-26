@@ -49,6 +49,30 @@
       "first_collector_observed_utc": "2026-11-20T13:08:58.711900+00:00"
     },
     {
+      "url": "https://gulfnews.com/world/mena/middle-east-conflict-saudi-refinery-attack-kills-worker-iran-denies-deadly-kuwait-strike-1.500761343",
+      "title": "Middle East conflict: Saudi refinery attack kills worker, Iran denies deadly Kuwait strike",
+      "domain": "gulfnews.com",
+      "gdelt_first_seen_utc": "2026-11-26T21:17:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 90,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_hook:refinery",
+        "geopolitical_event:attack",
+        "world_context:iran"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-26T21:25:13.564766+00:00"
+    },
+    {
       "url": "https://www.arabnews.com/saudi-arabia/houthi-attack-on-saudi-arabias-jazan-refinery-kills-nepali-worker-3014153",
       "title": "Houthi attack on Saudi Arabia's Jazan refinery kills Nepali worker",
       "domain": "www.arabnews.com",
@@ -2509,246 +2533,6 @@
       "first_collector_observed_utc": "2026-11-19T23:06:34.942486+00:00"
     },
     {
-      "url": "https://cbs12.com/news/nation-world/iran-war-could-leave-consumers-facing-years-of-uncertainty-over-energy-costs",
-      "title": "Iran war could leave consumers facing years of uncertainty over energy costs",
-      "domain": "cbs12.com",
-      "gdelt_first_seen_utc": "2026-11-19T19:47:00+00:00",
-      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT GAL RSS",
-      "discovery_topic": "gal_rolling_sample",
-      "topics": [
-        "gal_rolling_sample"
-      ],
-      "relevance_score": 90,
-      "category": "Geopolitics",
-      "relevance_evidence": [
-        "energy_market_hook:energy",
-        "geopolitical_event:war",
-        "world_context:iran"
-      ],
-      "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-19T20:02:38.725241+00:00"
-    },
-    {
-      "url": "https://www.pilotonline.com/2026/11/19/iran-war-energy-shock-iea",
-      "title": "There is no going back ‘to the way it was before’ the Iran war’s energy shock, IEA says",
-      "domain": "www.pilotonline.com",
-      "gdelt_first_seen_utc": "2026-11-19T19:47:00+00:00",
-      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT GAL RSS",
-      "discovery_topic": "gal_rolling_sample",
-      "topics": [
-        "gal_rolling_sample"
-      ],
-      "relevance_score": 90,
-      "category": "Geopolitics",
-      "relevance_evidence": [
-        "energy_market_hook:energy",
-        "geopolitical_event:war",
-        "world_context:iran"
-      ],
-      "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-19T20:02:38.725241+00:00"
-    },
-    {
-      "url": "https://local21news.com/news/nation-world/iran-war-could-leave-consumers-facing-years-of-uncertainty-over-energy-costs",
-      "title": "Iran war could leave consumers facing years of uncertainty over energy costs",
-      "domain": "local21news.com",
-      "gdelt_first_seen_utc": "2026-11-19T19:47:00+00:00",
-      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT GAL RSS",
-      "discovery_topic": "gal_rolling_sample",
-      "topics": [
-        "gal_rolling_sample"
-      ],
-      "relevance_score": 90,
-      "category": "Geopolitics",
-      "relevance_evidence": [
-        "energy_market_hook:energy",
-        "geopolitical_event:war",
-        "world_context:iran"
-      ],
-      "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-19T20:02:38.725241+00:00"
-    },
-    {
-      "url": "https://www.wyff4.com/article/iran-war-energy-shock-long-term-impact-iea/74479995",
-      "title": "There is no going back 'to the way it was before' the Iran War's energy shock, IEA says",
-      "domain": "www.wyff4.com",
-      "gdelt_first_seen_utc": "2026-11-19T19:47:00+00:00",
-      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT GAL RSS",
-      "discovery_topic": "gal_rolling_sample",
-      "topics": [
-        "gal_rolling_sample"
-      ],
-      "relevance_score": 90,
-      "category": "Geopolitics",
-      "relevance_evidence": [
-        "energy_market_hook:energy",
-        "geopolitical_event:war",
-        "world_context:iran"
-      ],
-      "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-19T20:02:38.725241+00:00"
-    },
-    {
-      "url": "https://kfdm.com/news/nation-world/iran-war-could-leave-consumers-facing-years-of-uncertainty-over-energy-costs",
-      "title": "Iran war could leave consumers facing years of uncertainty over energy costs",
-      "domain": "kfdm.com",
-      "gdelt_first_seen_utc": "2026-11-19T19:47:00+00:00",
-      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT GAL RSS",
-      "discovery_topic": "gal_rolling_sample",
-      "topics": [
-        "gal_rolling_sample"
-      ],
-      "relevance_score": 90,
-      "category": "Geopolitics",
-      "relevance_evidence": [
-        "energy_market_hook:energy",
-        "geopolitical_event:war",
-        "world_context:iran"
-      ],
-      "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-19T20:02:38.725241+00:00"
-    },
-    {
-      "url": "https://www.wesh.com/article/iran-war-energy-shock-long-term-impact-iea/74479995",
-      "title": "There is no going back 'to the way it was before' the Iran War's energy shock, IEA says",
-      "domain": "www.wesh.com",
-      "gdelt_first_seen_utc": "2026-11-19T19:47:00+00:00",
-      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT GAL RSS",
-      "discovery_topic": "gal_rolling_sample",
-      "topics": [
-        "gal_rolling_sample"
-      ],
-      "relevance_score": 90,
-      "category": "Geopolitics",
-      "relevance_evidence": [
-        "energy_market_hook:energy",
-        "geopolitical_event:war",
-        "world_context:iran"
-      ],
-      "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-19T20:02:38.725241+00:00"
-    },
-    {
-      "url": "https://www.ibtimes.com/iea-worst-oil-supply-disruption-iran-war-3809973",
-      "title": "Iran War Wipes Out 2.8 Billion Barrels Of Oil Supply. Why Are Crude Prices Falling?",
-      "domain": "www.ibtimes.com",
-      "gdelt_first_seen_utc": "2026-11-19T19:47:00+00:00",
-      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT GAL RSS",
-      "discovery_topic": "gal_rolling_sample",
-      "topics": [
-        "gal_rolling_sample"
-      ],
-      "relevance_score": 90,
-      "category": "Geopolitics",
-      "relevance_evidence": [
-        "energy_market_hook:oil",
-        "geopolitical_event:war",
-        "world_context:iran"
-      ],
-      "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-19T20:02:38.725241+00:00"
-    },
-    {
-      "url": "https://www.wxii12.com/article/iran-war-energy-shock-long-term-impact-iea/74479995",
-      "title": "There is no going back 'to the way it was before' the Iran War's energy shock, IEA says",
-      "domain": "www.wxii12.com",
-      "gdelt_first_seen_utc": "2026-11-19T19:47:00+00:00",
-      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT GAL RSS",
-      "discovery_topic": "gal_rolling_sample",
-      "topics": [
-        "gal_rolling_sample"
-      ],
-      "relevance_score": 90,
-      "category": "Geopolitics",
-      "relevance_evidence": [
-        "energy_market_hook:energy",
-        "geopolitical_event:war",
-        "world_context:iran"
-      ],
-      "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-19T20:02:38.725241+00:00"
-    },
-    {
-      "url": "https://www.kmbc.com/article/iran-war-energy-shock-long-term-impact-iea/74479995",
-      "title": "There is no going back 'to the way it was before' the Iran War's energy shock, IEA says",
-      "domain": "www.kmbc.com",
-      "gdelt_first_seen_utc": "2026-11-19T19:47:00+00:00",
-      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT GAL RSS",
-      "discovery_topic": "gal_rolling_sample",
-      "topics": [
-        "gal_rolling_sample"
-      ],
-      "relevance_score": 90,
-      "category": "Geopolitics",
-      "relevance_evidence": [
-        "energy_market_hook:energy",
-        "geopolitical_event:war",
-        "world_context:iran"
-      ],
-      "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-19T20:02:38.725241+00:00"
-    },
-    {
-      "url": "https://wgxa.tv/news/nation-world/iran-war-could-leave-consumers-facing-years-of-uncertainty-over-energy-costs",
-      "title": "Iran war could leave consumers facing years of uncertainty over energy costs",
-      "domain": "wgxa.tv",
-      "gdelt_first_seen_utc": "2026-11-19T19:46:00+00:00",
-      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT GAL RSS",
-      "discovery_topic": "gal_rolling_sample",
-      "topics": [
-        "gal_rolling_sample"
-      ],
-      "relevance_score": 90,
-      "category": "Geopolitics",
-      "relevance_evidence": [
-        "energy_market_hook:energy",
-        "geopolitical_event:war",
-        "world_context:iran"
-      ],
-      "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-19T20:02:38.725241+00:00"
-    },
-    {
       "url": "https://maritime-executive.com/corporate/bass-wins-bw-lng-contract-for-bassnet-neo-cloud-native-solution",
       "title": "BASS Wins BW LNG Contract for BASSnet Neo Cloud-Native Solution",
       "domain": "maritime-executive.com",
@@ -2910,75 +2694,6 @@
       ],
       "status": "discovery_only_requires_publisher_verification",
       "first_collector_observed_utc": "2026-11-22T21:53:46.210700+00:00"
-    },
-    {
-      "url": "https://mymixfm.com/2026/11/19/federal-regulators-approve-chenieres-sabine-pass-expansion-project",
-      "title": "Federal regulators approve Cheniere’s Sabine Pass expansion project",
-      "domain": "mymixfm.com",
-      "gdelt_first_seen_utc": "2026-11-19T19:47:00+00:00",
-      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT GAL RSS",
-      "discovery_topic": "gal_rolling_sample",
-      "topics": [
-        "gal_rolling_sample"
-      ],
-      "relevance_score": 75,
-      "category": "LNG",
-      "relevance_evidence": [
-        "cheniere",
-        "sabine pass"
-      ],
-      "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-19T20:02:38.725241+00:00"
-    },
-    {
-      "url": "https://www.933thedrive.com/2026/11/19/federal-regulators-approve-chenieres-sabine-pass-expansion-project",
-      "title": "Federal regulators approve Cheniere’s Sabine Pass expansion project",
-      "domain": "www.933thedrive.com",
-      "gdelt_first_seen_utc": "2026-11-19T19:47:00+00:00",
-      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT GAL RSS",
-      "discovery_topic": "gal_rolling_sample",
-      "topics": [
-        "gal_rolling_sample"
-      ],
-      "relevance_score": 75,
-      "category": "LNG",
-      "relevance_evidence": [
-        "cheniere",
-        "sabine pass"
-      ],
-      "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-19T20:02:38.725241+00:00"
-    },
-    {
-      "url": "https://wsau.com/2026/11/19/federal-regulators-approve-chenieres-sabine-pass-expansion-project",
-      "title": "Federal regulators approve Cheniere’s Sabine Pass expansion project",
-      "domain": "wsau.com",
-      "gdelt_first_seen_utc": "2026-11-19T19:46:00+00:00",
-      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT GAL RSS",
-      "discovery_topic": "gal_rolling_sample",
-      "topics": [
-        "gal_rolling_sample"
-      ],
-      "relevance_score": 75,
-      "category": "LNG",
-      "relevance_evidence": [
-        "cheniere",
-        "sabine pass"
-      ],
-      "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-19T20:02:38.725241+00:00"
     },
     {
       "url": "https://www.finanzen.ch/nachrichten/rohstoffe/u-s-crude-oil-inventories-see-further-upside-1036800531",
@@ -3166,6 +2881,78 @@
       ],
       "status": "discovery_only_requires_publisher_verification",
       "first_collector_observed_utc": "2026-11-21T19:44:36.805901+00:00"
+    },
+    {
+      "url": "https://www.dailymail.com/news/article-16325015/Ukraine-shoots-Russian-drone-laser-world-first.html",
+      "title": "Ukraine 'shoots down Russian drone with a laser in world first'",
+      "domain": "www.dailymail.com",
+      "gdelt_first_seen_utc": "2026-11-26T21:17:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:drone",
+        "world_context:russia/ukraine"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-26T21:25:13.564766+00:00"
+    },
+    {
+      "url": "https://www.dailyindependent.com/national/israeli-strikes-kill-10-in-gaza-as-iranian-drones-kill-2-italians-in-kuwait-and/article_328e527b-3fe6-575d-bc88-bdffd3267196.html",
+      "title": "Israeli strikes kill 10 in Gaza as Iranian drones kill 2 Italians in Kuwait, and other Mideast news",
+      "domain": "www.dailyindependent.com",
+      "gdelt_first_seen_utc": "2026-11-26T21:17:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:strikes",
+        "world_context:iran/israel"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-26T21:25:13.564766+00:00"
+    },
+    {
+      "url": "https://www.jagran.com/world/russia-russian-attack-on-two-ships-carrying-100000-tonnes-of-grain-near-the-ukrainian-coast-40449789.html",
+      "title": "यूक्रेन युद्ध का खौफनाक मोड़: एक लाख टन अनाज से भरे दो जहाजों पर रूसी हमला, रातभर बरसाईं मिसाइलें - russian attack on two ships carrying 100000 tonnes of grain near the ukrainian coast",
+      "domain": "www.jagran.com",
+      "gdelt_first_seen_utc": "2026-11-26T21:17:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:attack",
+        "world_context:russia/ukraine"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-26T21:25:13.564766+00:00"
     },
     {
       "url": "https://www.digbycourier.ca/crimea-ukraine-attacked-russias-black-sea-naval-headquarters-official-says",
@@ -9330,78 +9117,6 @@
       "first_collector_observed_utc": "2026-11-19T23:06:34.942486+00:00"
     },
     {
-      "url": "http://www.iranherald.com/news/279434460/iran-claims-drone-attack-on-us-military-airbase-in-bahrain",
-      "title": "Iran claims drone attack on US military airbase in Bahrain",
-      "domain": "www.iranherald.com",
-      "gdelt_first_seen_utc": "2026-11-19T19:47:00+00:00",
-      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT GAL RSS",
-      "discovery_topic": "gal_rolling_sample",
-      "topics": [
-        "gal_rolling_sample"
-      ],
-      "relevance_score": 68,
-      "category": "Geopolitics",
-      "relevance_evidence": [
-        "energy_market_exposure:inferred_high_risk_region",
-        "geopolitical_event:attack",
-        "world_context:iran/united states"
-      ],
-      "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-19T20:02:38.725241+00:00"
-    },
-    {
-      "url": "https://www.adn.com/nation-world/2026/11/19/kushner-says-russia-is-comfortable-with-nato-like-security-guarantees-for-ukraine-to-end-war",
-      "title": "Kushner says Russia is ‘comfortable’ with NATO-like security guarantees for Ukraine to end war",
-      "domain": "www.adn.com",
-      "gdelt_first_seen_utc": "2026-11-19T19:46:00+00:00",
-      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT GAL RSS",
-      "discovery_topic": "gal_rolling_sample",
-      "topics": [
-        "gal_rolling_sample"
-      ],
-      "relevance_score": 68,
-      "category": "Geopolitics",
-      "relevance_evidence": [
-        "energy_market_exposure:inferred_high_risk_region",
-        "geopolitical_event:war",
-        "world_context:russia/ukraine"
-      ],
-      "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-19T20:02:38.725241+00:00"
-    },
-    {
-      "url": "https://cedarnews.net/newstasks/1141680/europe-ready-talks-russia-ending-war-ukraine",
-      "title": "Europe ready for talks with Russia on ending war in Ukraine, leaders say | Cedar News",
-      "domain": "cedarnews.net",
-      "gdelt_first_seen_utc": "2026-11-19T19:46:00+00:00",
-      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT GAL RSS",
-      "discovery_topic": "gal_rolling_sample",
-      "topics": [
-        "gal_rolling_sample"
-      ],
-      "relevance_score": 68,
-      "category": "Geopolitics",
-      "relevance_evidence": [
-        "energy_market_exposure:inferred_high_risk_region",
-        "geopolitical_event:war",
-        "world_context:russia/ukraine"
-      ],
-      "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-19T20:02:38.725241+00:00"
-    },
-    {
       "url": "https://mignews.com.ua/rizne/cziny-na-naftu-24-lystopada-2026-roku-skilky-koshtuyut-brent-wti-ta-urals-sogodni.html",
       "title": "Ціни на нафту 24 листопада 2026 року: скільки коштують Brent, WTI та Urals сьогодні",
       "domain": "mignews.com.ua",
@@ -9722,29 +9437,6 @@
       "first_collector_observed_utc": "2026-11-19T23:06:34.942486+00:00"
     },
     {
-      "url": "https://auburnpub.com/news/state-regional/article_7acbcf28-f649-46c6-b4ed-6ec22cc39ef5.html",
-      "title": "NY faces statewide electricity shortage and has nation's oldest grid",
-      "domain": "auburnpub.com",
-      "gdelt_first_seen_utc": "2026-11-19T19:47:00+00:00",
-      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT GAL RSS",
-      "discovery_topic": "gal_rolling_sample",
-      "topics": [
-        "gal_rolling_sample"
-      ],
-      "relevance_score": 57,
-      "category": "Power & Electricity",
-      "relevance_evidence": [
-        "electricity",
-        "grid"
-      ],
-      "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-19T20:02:38.725241+00:00"
-    },
-    {
       "url": "https://dailypost.ng/2026/11/26/dangote-refinery-reduces-diesel-price-by-n125-per-litre-after-petrol-price-cut",
       "title": "BREAKING: Dangote Refinery reduces diesel price by N125 per litre after petrol price cut",
       "domain": "dailypost.ng",
@@ -9789,6 +9481,72 @@
       ],
       "status": "discovery_only_requires_publisher_verification",
       "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
+    },
+    {
+      "url": "https://cedarnews.net/newstasks/1201271/ottawas-two-week-subsidy-lng-spending-spree",
+      "title": "Ottawa’s two-week, two-subsidy LNG spending spree — Canada | Cedar News",
+      "domain": "cedarnews.net",
+      "gdelt_first_seen_utc": "2026-11-26T21:17:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 45,
+      "category": "LNG",
+      "relevance_evidence": [
+        "lng"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-26T21:25:13.564766+00:00"
+    },
+    {
+      "url": "https://www.winnipegfreepress.com/business/2026/11/26/168m-loan-guarantee-provided-for-first-nations-investment-in-lng-pipeline",
+      "title": "$168M loan guarantee provided for First Nations' investment in LNG pipeline",
+      "domain": "www.winnipegfreepress.com",
+      "gdelt_first_seen_utc": "2026-11-26T21:17:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 45,
+      "category": "LNG",
+      "relevance_evidence": [
+        "lng"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-26T21:25:13.564766+00:00"
+    },
+    {
+      "url": "https://www.brandonsun.com/business/2026/11/26/168m-loan-guarantee-provided-for-first-nations-investment-in-lng-pipeline",
+      "title": "$168M loan guarantee provided for First Nations' investment in LNG pipeline",
+      "domain": "www.brandonsun.com",
+      "gdelt_first_seen_utc": "2026-11-26T21:17:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 45,
+      "category": "LNG",
+      "relevance_evidence": [
+        "lng"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-26T21:25:13.564766+00:00"
     },
     {
       "url": "https://portal.sina.com.hk/technology/sina/2026/11/26/1998193/%E6%BB%AC%E6%9D%B1%E4%B8%AD%E8%8F%AF%E4%BA%A4%E4%BB%98%E7%AC%AC12%E8%89%98%E5%A4%A7%E5%9E%8Blng%E8%88%B9%EF%BC%8C%E5%88%B7%E6%96%B0%E5%9C%8B%E5%85%A7%E5%B9%B4%E5%BA%A6%E4%BA%A4%E4%BB%98%E9%87%8F",
@@ -10558,6 +10316,28 @@
       ],
       "status": "discovery_only_requires_publisher_verification",
       "first_collector_observed_utc": "2026-11-20T17:45:21.318029+00:00"
+    },
+    {
+      "url": "https://en.shafaqna.com/494219/oil-prices-dip-amid-focus-on-middle-east",
+      "title": "Oil prices dip amid focus on Middle East - Shafaqna English | International Shia News & Fatwas",
+      "domain": "en.shafaqna.com",
+      "gdelt_first_seen_utc": "2026-11-26T21:17:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 33,
+      "category": "Oil & Energy",
+      "relevance_evidence": [
+        "oil prices"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-26T21:25:13.564766+00:00"
     },
     {
       "url": "https://krcgtv.com/news/nation-world/gas-prices-ease-ahead-of-thanksgiving-but-drivers-still-pay-more-than-last-year",
@@ -14025,10 +13805,10 @@
       "first_collector_observed_utc": "2026-11-19T23:06:34.942486+00:00"
     },
     {
-      "url": "https://wcbm.com/local-story/two-thirds-of-americans-plan-thanksgiving-road-trips-despite-higher-gas-prices-gasbuddy",
-      "title": "Two-thirds of Americans plan Thanksgiving road trips despite higher gas prices: GasBuddy",
-      "domain": "wcbm.com",
-      "gdelt_first_seen_utc": "2026-11-19T19:47:00+00:00",
+      "url": "https://natlawreview.com/article/israel-draws-us-data-center-capital-power-will-decide-winners",
+      "title": "Israel Draws US Data Center Capital, But Power Will Decide the Winners",
+      "domain": "natlawreview.com",
+      "gdelt_first_seen_utc": "2026-11-26T21:17:00+00:00",
       "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
       "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
       "publisher_published_utc": null,
@@ -14038,41 +13818,19 @@
       "topics": [
         "gal_rolling_sample"
       ],
-      "relevance_score": 33,
-      "category": "Natural Gas",
-      "relevance_evidence": [
-        "gas prices"
-      ],
-      "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-19T20:02:38.725241+00:00"
-    },
-    {
-      "url": "https://promptnewsonline.com/actor-kevin-ikeduba-fumes-over-poor-electricity-questions-nigerians-silence",
-      "title": "Actor Kevin Ikeduba Fumes Over Poor Electricity, Questions Nigerians’ Silence",
-      "domain": "promptnewsonline.com",
-      "gdelt_first_seen_utc": "2026-11-19T19:47:00+00:00",
-      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT GAL RSS",
-      "discovery_topic": "gal_rolling_sample",
-      "topics": [
-        "gal_rolling_sample"
-      ],
-      "relevance_score": 33,
+      "relevance_score": 30,
       "category": "Power & Electricity",
       "relevance_evidence": [
-        "electricity"
+        "data center"
       ],
       "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-19T20:02:38.725241+00:00"
+      "first_collector_observed_utc": "2026-11-26T21:25:13.564766+00:00"
     },
     {
-      "url": "https://www.motor1.com/features/773137/highest-lowest-gas-prices-usa",
-      "title": "Gas Prices Are Finally Dropping",
-      "domain": "www.motor1.com",
-      "gdelt_first_seen_utc": "2026-11-19T19:47:00+00:00",
+      "url": "https://www.lanouvellerepublique.fr/parthenay/c-est-une-opportunite-enorme-un-data-center-devrait-voir-le-jour-dans-cette-commune-des-deux-sevres-1795710859",
+      "title": "« C’est une opportunité énorme ! » : un data center devrait voir le jour dans cette commune des Deux-Sèvres",
+      "domain": "www.lanouvellerepublique.fr",
+      "gdelt_first_seen_utc": "2026-11-26T21:17:00+00:00",
       "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
       "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
       "publisher_published_utc": null,
@@ -14082,57 +13840,13 @@
       "topics": [
         "gal_rolling_sample"
       ],
-      "relevance_score": 33,
-      "category": "Natural Gas",
+      "relevance_score": 30,
+      "category": "Power & Electricity",
       "relevance_evidence": [
-        "gas prices"
+        "data center"
       ],
       "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-19T20:02:38.725241+00:00"
-    },
-    {
-      "url": "https://squatchrocks.com/ixp/719/p/minnesota-thanksgiving-gas-prices-2026",
-      "title": "Minnesota Gas Prices Have Dropped, But Here's the Bad News",
-      "domain": "squatchrocks.com",
-      "gdelt_first_seen_utc": "2026-11-19T19:47:00+00:00",
-      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT GAL RSS",
-      "discovery_topic": "gal_rolling_sample",
-      "topics": [
-        "gal_rolling_sample"
-      ],
-      "relevance_score": 33,
-      "category": "Natural Gas",
-      "relevance_evidence": [
-        "gas prices"
-      ],
-      "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-19T20:02:38.725241+00:00"
-    },
-    {
-      "url": "https://sana.sy/fr/economy/2342793",
-      "title": "La compagnie syrienne du pétrole et Chevron examinent l’exécution des projets",
-      "domain": "sana.sy",
-      "gdelt_first_seen_utc": "2026-11-19T19:47:00+00:00",
-      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT GAL RSS",
-      "discovery_topic": "gal_rolling_sample",
-      "topics": [
-        "gal_rolling_sample"
-      ],
-      "relevance_score": 33,
-      "category": "Oil & Energy",
-      "relevance_evidence": [
-        "chevron"
-      ],
-      "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-19T20:02:38.725241+00:00"
+      "first_collector_observed_utc": "2026-11-26T21:25:13.564766+00:00"
     },
     {
       "url": "https://infotechlead.com/data-center/top-data-center-power-management-platforms-in-2026-ai-infrastructure-projects-major-customers-and-energy-efficiency-challenges-99925",
@@ -16854,10 +16568,10 @@
       "first_collector_observed_utc": "2026-11-19T23:06:34.942486+00:00"
     },
     {
-      "url": "https://www.933thedrive.com/2026/11/19/exclusive-canadas-bmo-returning-to-us-oil-and-gas-investment-banking-sources-say",
-      "title": "Exclusive-Canada’s BMO returning to US oil and gas investment banking, sources say",
-      "domain": "www.933thedrive.com",
-      "gdelt_first_seen_utc": "2026-11-19T19:47:00+00:00",
+      "url": "https://www.tnp.no/norway/panorama/1980-bellona-requires-petroleum-free-areas",
+      "title": "Bellona Requires Petroleum-Free Areas - The Nordic Page",
+      "domain": "www.tnp.no",
+      "gdelt_first_seen_utc": "2026-11-26T21:17:00+00:00",
       "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
       "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
       "publisher_published_utc": null,
@@ -16867,57 +16581,13 @@
       "topics": [
         "gal_rolling_sample"
       ],
-      "relevance_score": 30,
+      "relevance_score": 27,
       "category": "Oil & Energy",
       "relevance_evidence": [
-        "oil and gas"
+        "petroleum"
       ],
       "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-19T20:02:38.725241+00:00"
-    },
-    {
-      "url": "http://www.wdtimes.com/news/local/on-edge-residents-voice-concerns-over-proposed-data-center/article_638d41d6-9ef3-42e6-ae10-d90c9d8f71bf.html",
-      "title": "On edge: Residents voice concerns over proposed data center",
-      "domain": "www.wdtimes.com",
-      "gdelt_first_seen_utc": "2026-11-19T19:47:00+00:00",
-      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT GAL RSS",
-      "discovery_topic": "gal_rolling_sample",
-      "topics": [
-        "gal_rolling_sample"
-      ],
-      "relevance_score": 30,
-      "category": "Power & Electricity",
-      "relevance_evidence": [
-        "data center"
-      ],
-      "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-19T20:02:38.725241+00:00"
-    },
-    {
-      "url": "https://mymixfm.com/2026/11/19/houston-refinery-restart-tests-trumps-push-to-boost-us-fuel-output",
-      "title": "Houston refinery restart tests Trump’s push to boost US fuel output",
-      "domain": "mymixfm.com",
-      "gdelt_first_seen_utc": "2026-11-19T19:46:00+00:00",
-      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT GAL RSS",
-      "discovery_topic": "gal_rolling_sample",
-      "topics": [
-        "gal_rolling_sample"
-      ],
-      "relevance_score": 30,
-      "category": "Oil & Energy",
-      "relevance_evidence": [
-        "refinery"
-      ],
-      "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-19T20:02:38.725241+00:00"
+      "first_collector_observed_utc": "2026-11-26T21:25:13.564766+00:00"
     },
     {
       "url": "https://economictimes.indiatimes.com/news/international/world-news/adnoc-limits-oil-tanker-entry-after-gulf-attacks/articleshow/136202135.cms",
@@ -19992,138 +19662,6 @@
       "first_collector_observed_utc": "2026-11-19T23:06:34.942486+00:00"
     },
     {
-      "url": "https://www.citizensvoice.com/2026/11/19/dep-to-hold-hearing-friday-in-scranton-on-ppl-upgrade-of-transmission-line",
-      "title": "DEP to hold hearing Friday in Scranton on PPL upgrade of transmission line",
-      "domain": "www.citizensvoice.com",
-      "gdelt_first_seen_utc": "2026-11-19T19:47:00+00:00",
-      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT GAL RSS",
-      "discovery_topic": "gal_rolling_sample",
-      "topics": [
-        "gal_rolling_sample"
-      ],
-      "relevance_score": 27,
-      "category": "Power & Electricity",
-      "relevance_evidence": [
-        "transmission line"
-      ],
-      "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-19T20:02:38.725241+00:00"
-    },
-    {
-      "url": "https://cfotech.news/story/from-the-driver-s-seat-to-the-control-room-what-motor-telematics-can-teach-power-generation-insurance",
-      "title": "From the driver's seat to the control room: what motor telematics can teach power generation insurance",
-      "domain": "cfotech.news",
-      "gdelt_first_seen_utc": "2026-11-19T19:47:00+00:00",
-      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT GAL RSS",
-      "discovery_topic": "gal_rolling_sample",
-      "topics": [
-        "gal_rolling_sample"
-      ],
-      "relevance_score": 27,
-      "category": "Power & Electricity",
-      "relevance_evidence": [
-        "power generation"
-      ],
-      "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-19T20:02:38.725241+00:00"
-    },
-    {
-      "url": "https://www.inquirer.com/news/pennsylvania/democrats-pennsylvania-trifecta-environmental-laws-data-centers-energy-fracking-20261104.html",
-      "title": "Data centers, energy costs, and fracking loom as Democrats finally get full control of Pa. legislature",
-      "domain": "www.inquirer.com",
-      "gdelt_first_seen_utc": "2026-11-19T19:47:00+00:00",
-      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT GAL RSS",
-      "discovery_topic": "gal_rolling_sample",
-      "topics": [
-        "gal_rolling_sample"
-      ],
-      "relevance_score": 27,
-      "category": "Oil & Energy",
-      "relevance_evidence": [
-        "fracking"
-      ],
-      "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-19T20:02:38.725241+00:00"
-    },
-    {
-      "url": "https://baystreet.ca/articles/commodities/125297/India-Boosts-Gulf-Oil-Imports-as-Russian-Crude-Loses-Its-Price-Advantage",
-      "title": "India Boosts Gulf Oil Imports as Russian Crude Loses Its Price Advantage",
-      "domain": "baystreet.ca",
-      "gdelt_first_seen_utc": "2026-11-19T19:47:00+00:00",
-      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT GAL RSS",
-      "discovery_topic": "gal_rolling_sample",
-      "topics": [
-        "gal_rolling_sample"
-      ],
-      "relevance_score": 27,
-      "category": "Oil & Energy",
-      "relevance_evidence": [
-        "oil imports"
-      ],
-      "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-19T20:02:38.725241+00:00"
-    },
-    {
-      "url": "https://eer.ru/article/obshchestvo/u64/2023/02/02/11720",
-      "title": "Shell подписала документы с \"Газпром нефтью\" о продаже 50% в Salym Petroleum Development",
-      "domain": "eer.ru",
-      "gdelt_first_seen_utc": "2026-11-19T19:47:00+00:00",
-      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT GAL RSS",
-      "discovery_topic": "gal_rolling_sample",
-      "topics": [
-        "gal_rolling_sample"
-      ],
-      "relevance_score": 27,
-      "category": "Oil & Energy",
-      "relevance_evidence": [
-        "petroleum"
-      ],
-      "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-19T20:02:38.725241+00:00"
-    },
-    {
-      "url": "https://247wallst.com/companies/mpc",
-      "title": "Marathon Petroleum (MPC) Stock Price, News & Analysis | 24/7 Wall St.",
-      "domain": "247wallst.com",
-      "gdelt_first_seen_utc": "2026-11-19T19:46:00+00:00",
-      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT GAL RSS",
-      "discovery_topic": "gal_rolling_sample",
-      "topics": [
-        "gal_rolling_sample"
-      ],
-      "relevance_score": 27,
-      "category": "Oil & Energy",
-      "relevance_evidence": [
-        "petroleum"
-      ],
-      "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-19T20:02:38.725241+00:00"
-    },
-    {
       "url": "https://diario.aw/categories/noticia/general/bank-fees-a-pone-cu-gasoline-stations-lo-acepta-placa-cash-solamente",
       "title": "‘Bank-Fees’ a pone cu Gasoline Stations lo acepta placa cash solamente",
       "domain": "diario.aw",
@@ -22533,55 +22071,6 @@
   "provider_cooldown_until_utc": "2026-11-26T19:59:56.790321+00:00",
   "gal_runs": [
     {
-      "run_utc": "2026-11-18T19:37:21.469201+00:00",
-      "status": "ok",
-      "raw_feed_items": 5562,
-      "high_signal_items": 7,
-      "new_unique_links": 7
-    },
-    {
-      "run_utc": "2026-11-18T20:55:27.932996+00:00",
-      "status": "ok",
-      "raw_feed_items": 4904,
-      "high_signal_items": 8,
-      "new_unique_links": 8
-    },
-    {
-      "run_utc": "2026-11-18T20:56:24.102868+00:00",
-      "status": "ok",
-      "raw_feed_items": 4904,
-      "high_signal_items": 8,
-      "new_unique_links": 0
-    },
-    {
-      "run_utc": "2026-11-18T20:58:51.845913+00:00",
-      "status": "ok",
-      "raw_feed_items": 4904,
-      "high_signal_items": 8,
-      "new_unique_links": 0
-    },
-    {
-      "run_utc": "2026-11-18T21:03:53.059772+00:00",
-      "status": "ok",
-      "raw_feed_items": 2070,
-      "high_signal_items": 4,
-      "new_unique_links": 4
-    },
-    {
-      "run_utc": "2026-11-18T21:05:53.130911+00:00",
-      "status": "ok",
-      "raw_feed_items": 4282,
-      "high_signal_items": 15,
-      "new_unique_links": 11
-    },
-    {
-      "run_utc": "2026-11-18T21:11:36.452821+00:00",
-      "status": "ok",
-      "raw_feed_items": 4282,
-      "high_signal_items": 15,
-      "new_unique_links": 0
-    },
-    {
       "run_utc": "2026-11-18T21:26:35.753795+00:00",
       "status": "ok",
       "raw_feed_items": 4587,
@@ -23686,6 +23175,18 @@
       "feed_newest_index_utc": "2026-11-26T19:17:00+00:00",
       "feed_index_lag_minutes": 15.2,
       "feed_payload_sha256": "c09c898b48d00230",
+      "identical_payload_to_previous_success": false
+    },
+    {
+      "run_utc": "2026-11-26T21:25:06.347116+00:00",
+      "completed_utc": "2026-11-26T21:25:13.564766+00:00",
+      "status": "ok",
+      "raw_feed_items": 3645,
+      "high_signal_items": 12,
+      "new_unique_links": 12,
+      "feed_newest_index_utc": "2026-11-26T21:17:00+00:00",
+      "feed_index_lag_minutes": 8.1,
+      "feed_payload_sha256": "316703a337a951cd",
       "identical_payload_to_previous_success": false
     }
   ],
