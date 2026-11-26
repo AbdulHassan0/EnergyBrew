@@ -22,6 +22,27 @@
     "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
   },
   {
+    "id": "86c377b0933cd9dad095624f",
+    "title": "Oil Rallies as Hormuz Mine Strikes Rattle Global Markets",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Rallies-as-Hormuz-Mine-Strikes-Rattle-Global-Markets.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-26T05:18:59+00:00",
+    "category": "Geopolitics",
+    "published_precision": "timestamp",
+    "relevance_score": 90,
+    "keyword_matches": 3,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "energy_market_hook:oil",
+      "geopolitical_event:strikes",
+      "world_context:hormuz"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-26T13:59:56.723996+00:00",
+    "first_collector_observed_utc": "2026-11-26T13:59:56.723996+00:00"
+  },
+  {
     "id": "1d80a4fb32374cdc6c3d56de",
     "title": "Oil Jumps Over 2% as Saudi Arabia Downs Drones Over Ras Tanura",
     "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Jumps-Over-2-as-Saudi-Arabia-Downs-Drones-Over-Ras-Tanura.html",
@@ -420,6 +441,25 @@
     "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
   },
   {
+    "id": "73bd3ef187fd50af210b7d09",
+    "title": "Iran Says LNG Carrier Exploded After Hitting a Mine in Hormuz",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Says-LNG-Carrier-Exploded-After-Hitting-a-Mine-in-Hormuz.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-26T12:30:00+00:00",
+    "category": "LNG",
+    "published_precision": "timestamp",
+    "relevance_score": 45,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "lng"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-26T13:59:56.723996+00:00",
+    "first_collector_observed_utc": "2026-11-26T13:59:56.723996+00:00"
+  },
+  {
     "id": "ebf62b904fa23d3aaeba4e4e",
     "title": "Cheaper Gasoline Won't Fix the Diesel Squeeze Hitting Freight Costs",
     "url": "https://oilprice.com/Energy/Gas-Prices/Cheaper-Gasoline-Wont-Fix-the-Diesel-Squeeze-Hitting-Freight-Costs.html",
@@ -574,6 +614,25 @@
     "also_seen_in": [],
     "first_collected_utc": "2026-11-20T22:41:52.748655+00:00",
     "first_collector_observed_utc": "2026-11-20T22:41:52.748655+00:00"
+  },
+  {
+    "id": "298c9db15144764a70e4c227",
+    "title": "Oil Prices Rebound as Middle East Supply Fears Return",
+    "url": "https://oilprice.com/Energy/Energy-General/Oil-Prices-Rebound-as-Middle-East-Supply-Fears-Return.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-26T12:30:00+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 33,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "oil prices"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-26T13:59:56.723996+00:00",
+    "first_collector_observed_utc": "2026-11-26T13:59:56.723996+00:00"
   },
   {
     "id": "41ee440d15205b02d80cf16a",
@@ -966,22 +1025,42 @@
     "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
   },
   {
-    "id": "8d63312521323ff165f0737e",
-    "title": "Oil Prices Steady as Hormuz Tanker Threats Offset Supply Glut Fears",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Steady-as-Hormuz-Tanker-Threats-Offset-Supply-Glut-Fears.html",
+    "id": "10b86cc50b16f767c6310172",
+    "title": "Turkmenistan Nears Major Milestone in $10 Billion TAPI Gas Pipeline",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Turkmenistan-Nears-Major-Milestone-in-10-Billion-TAPI-Gas-Pipeline.html",
     "source": "OilPrice.com News",
     "source_class": "specialist_publisher",
-    "published_utc": "2026-11-19T06:00:00+00:00",
-    "category": "Oil & Energy",
+    "published_utc": "2026-11-26T11:40:00+00:00",
+    "category": "Natural Gas",
     "published_precision": "timestamp",
-    "relevance_score": 33,
+    "relevance_score": 30,
     "keyword_matches": 1,
     "editorial_candidate": true,
     "relevance_evidence": [
-      "oil prices"
+      "gas pipeline"
     ],
     "status": "research_only_unverified",
-    "also_seen_in": []
+    "first_collected_utc": "2026-11-26T13:59:56.723996+00:00",
+    "first_collector_observed_utc": "2026-11-26T13:59:56.723996+00:00"
+  },
+  {
+    "id": "c7840a35c6938713fabfb4bf",
+    "title": "Labor Shortages Could Derail Canada\u2019s Oil and Gas Growth Momentum",
+    "url": "https://oilprice.com/Energy/Energy-General/Labor-Shortages-Could-Derail-Canadas-Oil-and-Gas-Growth-Momentum.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-26T01:00:00+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 30,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "oil and gas"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-26T13:59:56.723996+00:00",
+    "first_collector_observed_utc": "2026-11-26T13:59:56.723996+00:00"
   },
   {
     "id": "cb6d67259f763abe630cbf65",
@@ -999,6 +1078,7 @@
       "oil production"
     ],
     "status": "research_only_unverified",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-26T00:31:04.600618+00:00",
     "first_collector_observed_utc": "2026-11-26T00:31:04.600618+00:00"
   },
@@ -1056,6 +1136,7 @@
       "data center"
     ],
     "status": "research_only_unverified",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-26T00:31:04.600618+00:00",
     "first_collector_observed_utc": "2026-11-26T00:31:04.600618+00:00"
   },
@@ -1374,24 +1455,6 @@
     "also_seen_in": [],
     "first_collected_utc": "2026-11-19T17:18:44.403286+00:00",
     "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
-  },
-  {
-    "id": "b7d6d9a018a30f85c260796a",
-    "title": "India\u2019s Oil Imports Hit Record High as Saudi Shipments Surge",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/Indias-Oil-Imports-Hit-Record-High-as-Saudi-Shipments-Surge.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-19T10:30:00+00:00",
-    "category": "Oil & Energy",
-    "published_precision": "timestamp",
-    "relevance_score": 27,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "oil imports"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": []
   },
   {
     "id": "332ef499b6782e11ba5d00c4",

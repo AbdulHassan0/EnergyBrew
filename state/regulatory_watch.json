@@ -1,45 +1,5 @@
 [
   {
-    "id": "a9ba8d5a0c56a228a404417e",
-    "title": "Freeport LNG Development, L.P., FLNG Liquefaction, LLC, FLNG Liquefaction 2, LLC, FLNG Liquefaction 3, LLC, FLNG Liquefaction 4, LLC; Notice of Application and Establishing Intervention Deadline",
-    "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23609/freeport-lng-development-lp-flng-liquefaction-llc-flng-liquefaction-2-llc-flng-liquefaction-3-llc",
-    "source": "Federal Register notices",
-    "source_class": "official_agency",
-    "published_utc": "2026-11-19T05:00:00+00:00",
-    "category": "LNG",
-    "published_precision": "day",
-    "relevance_score": 81,
-    "keyword_matches": 2,
-    "editorial_candidate": false,
-    "relevance_evidence": [
-      "freeport lng",
-      "lng"
-    ],
-    "status": "research_date_only",
-    "also_seen_in": [],
-    "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
-  },
-  {
-    "id": "2d3e231e081ec3e22ad84514",
-    "title": "Exelon Corporation v. PJM Interconnection, L.L.C.; Notice Establishing Comment Period",
-    "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23611/exelon-corporation-v-pjm-interconnection-llc-notice-establishing-comment-period",
-    "source": "Federal Register notices",
-    "source_class": "official_agency",
-    "published_utc": "2026-11-19T05:00:00+00:00",
-    "category": "Power & Electricity",
-    "published_precision": "day",
-    "relevance_score": 57,
-    "keyword_matches": 2,
-    "editorial_candidate": false,
-    "relevance_evidence": [
-      "interconnection",
-      "pjm"
-    ],
-    "status": "research_date_only",
-    "also_seen_in": [],
-    "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
-  },
-  {
     "id": "01e75e698a6a88783a934a30",
     "title": "Tres Palacios Gas Storage LLC; Notice of Schedule for the Preparation of an Environmental Assessment for the Tres Palacios Smith Cavern Expansion Project",
     "url": "https://www.federalregister.gov/documents/2026/11/24/2026-23835/tres-palacios-gas-storage-llc-notice-of-schedule-for-the-preparation-of-an-environmental-assessment",

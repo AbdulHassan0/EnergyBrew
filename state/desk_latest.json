@@ -1,46 +1,45 @@
 {
-  "generated_utc": "2026-11-26T00:31:54.082506+00:00",
+  "generated_utc": "2026-11-26T14:00:17.636018+00:00",
   "status": "research_only_not_approved",
-  "unique_relevant_urls_7d": 1200,
+  "unique_relevant_urls_7d": 1049,
   "selected_research_links": 32,
-  "unique_domains_in_selection": 25,
+  "unique_domains_in_selection": 26,
   "queue_counts": {
-    "specialist_publisher_24h": 15,
-    "older_official_context": 56,
-    "regulatory_date_only": 7,
-    "discovery_unverified": 1043,
-    "timestamped_official": 1,
-    "company_release_unverified": 78
+    "specialist_publisher_24h": 13,
+    "older_official_context": 62,
+    "discovery_unverified": 892,
+    "company_release_unverified": 77,
+    "regulatory_date_only": 5
   },
   "selected_category_counts": {
     "Natural Gas": 4,
     "LNG": 8,
-    "Power & Electricity": 7,
-    "Oil & Energy": 4,
+    "Power & Electricity": 6,
+    "Oil & Energy": 5,
     "Infrastructure & Investment": 1,
     "Geopolitics": 8
   },
   "selected_topic_coverage_counts": {
     "Natural Gas": 4,
     "LNG": 8,
-    "Power & Electricity": 7,
-    "Oil & Energy": 8,
-    "Infrastructure & Investment": 8,
+    "Power & Electricity": 6,
+    "Oil & Energy": 10,
+    "Infrastructure & Investment": 7,
     "Geopolitics": 8
   },
   "missing_categories": [],
-  "publisher_timestamped_official_24h": 1,
-  "publisher_timestamped_specialist_24h": 15,
+  "publisher_timestamped_official_24h": 0,
+  "publisher_timestamped_specialist_24h": 13,
   "system_operator_primary_24h": 0,
-  "likely_same_event_links_suppressed": 0,
+  "likely_same_event_links_suppressed": 2,
   "discovery_publisher_dates_verified": 0,
   "promotional_or_language_review_count": 0,
   "stories": [
     {
-      "title": "Oil Jumps Over 2% as Saudi Arabia Downs Drones Over Ras Tanura",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Jumps-Over-2-as-Saudi-Arabia-Downs-Drones-Over-Ras-Tanura.html",
+      "title": "Oil Rallies as Hormuz Mine Strikes Rattle Global Markets",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Rallies-as-Hormuz-Mine-Strikes-Rattle-Global-Markets.html",
       "domain": "oilprice.com",
-      "first_collector_observed_utc": "2026-11-26T00:31:04.600618+00:00",
+      "first_collector_observed_utc": "2026-11-26T13:59:56.723996+00:00",
       "local_collection_time_known": true,
       "source": "OilPrice.com News",
       "source_class": "specialist_publisher",
@@ -52,12 +51,12 @@
       "relevance_score": 90,
       "relevance_evidence": [
         "energy_market_hook:oil",
-        "geopolitical_event:drones",
-        "world_context:saudi arabia"
+        "geopolitical_event:strikes",
+        "world_context:hormuz"
       ],
       "origin": "official_rss",
       "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-25T15:30:00+00:00",
+      "observed_time_utc": "2026-11-26T05:18:59+00:00",
       "publisher_time_verified": true,
       "date_confidence": "publisher_rss_timestamp",
       "within_24h_on_own_time_basis": true,
@@ -67,66 +66,6 @@
       "independent_corroboration_verified": false,
       "queue": "specialist_publisher_24h",
       "rank": 145
-    },
-    {
-      "title": "Global LNG Supply Crunch Set to Spill Into 2027",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Global-LNG-Supply-Crunch-Set-to-Spill-Into-2027.html",
-      "domain": "oilprice.com",
-      "first_collector_observed_utc": "2026-11-25T14:34:16.503193+00:00",
-      "local_collection_time_known": true,
-      "source": "OilPrice.com News",
-      "source_class": "specialist_publisher",
-      "category": "LNG",
-      "coverage_themes": [
-        "LNG"
-      ],
-      "relevance_score": 84,
-      "relevance_evidence": [
-        "lng",
-        "lng supply"
-      ],
-      "origin": "official_rss",
-      "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-25T08:30:00+00:00",
-      "publisher_time_verified": true,
-      "date_confidence": "publisher_rss_timestamp",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "specialist_publisher_24h",
-      "rank": 139
-    },
-    {
-      "title": "Goldman Sachs Sees U.S. Natural Gas Demand Surging on Data Center Boom",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Goldman-Sachs-Sees-US-Natural-Gas-Demand-Surging-on-Data-Center-Boom.html",
-      "domain": "oilprice.com",
-      "first_collector_observed_utc": "2026-11-25T14:34:16.503193+00:00",
-      "local_collection_time_known": true,
-      "source": "OilPrice.com News",
-      "source_class": "specialist_publisher",
-      "category": "Natural Gas",
-      "coverage_themes": [
-        "Natural Gas"
-      ],
-      "relevance_score": 72,
-      "relevance_evidence": [
-        "gas demand",
-        "natural gas"
-      ],
-      "origin": "official_rss",
-      "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-25T06:45:00+00:00",
-      "publisher_time_verified": true,
-      "date_confidence": "publisher_rss_timestamp",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "specialist_publisher_24h",
-      "rank": 127
     },
     {
       "title": "US Crude Oil Inventories Inches Up as Gasoline Holds Steady",
@@ -160,34 +99,34 @@
       "rank": 126
     },
     {
-      "title": "Freeport LNG Development, L.P., FLNG Liquefaction, LLC, FLNG Liquefaction 2, LLC, FLNG Liquefaction 3, LLC, FLNG Liquefaction 4, LLC; Notice of Application and Establishing Intervention Deadline",
-      "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23609/freeport-lng-development-lp-flng-liquefaction-llc-flng-liquefaction-2-llc-flng-liquefaction-3-llc",
-      "domain": "www.federalregister.gov",
-      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00",
+      "title": "Global LNG Supply Crunch Set to Spill Into 2027",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Global-LNG-Supply-Crunch-Set-to-Spill-Into-2027.html",
+      "domain": "oilprice.com",
+      "first_collector_observed_utc": "2026-11-25T14:34:16.503193+00:00",
       "local_collection_time_known": true,
-      "source": "Federal Register notices",
-      "source_class": "official_agency",
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
       "category": "LNG",
       "coverage_themes": [
         "LNG"
       ],
-      "relevance_score": 81,
+      "relevance_score": 84,
       "relevance_evidence": [
-        "freeport lng",
-        "lng"
+        "lng",
+        "lng supply"
       ],
-      "origin": "regulatory_notice",
-      "time_basis": "official_publication_date_only",
-      "observed_time_utc": "2026-11-19T05:00:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "date_only",
+      "origin": "official_rss",
+      "time_basis": "specialist_publisher_rss_timestamp",
+      "observed_time_utc": "2026-11-25T08:30:00+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
       "within_24h_on_own_time_basis": false,
       "needs_editor_review": [],
       "editorial_status": "research_only_not_approved",
       "other_origins": [],
       "independent_corroboration_verified": false,
-      "queue": "regulatory_date_only",
-      "rank": 121
+      "queue": "older_official_context",
+      "rank": 114
     },
     {
       "title": "WTI crude oil prices may trend lower",
@@ -315,33 +254,170 @@
       "rank": 111
     },
     {
-      "title": "Almost 60% of primary energy used for electricity is lost to conversion and transmission",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68504",
-      "domain": "www.eia.gov",
-      "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00",
+      "title": "Oil prices fall as Brent slips below $94 after Saudi refinery attack, Hormuz shipping fears",
+      "url": "https://www.hindustantimes.com/world-news/us-news/oil-prices-fall-as-brent-slips-below-94-after-saudi-refinery-attack-hormuz-shipping-fears-101795698223341.html",
+      "domain": "www.hindustantimes.com",
+      "first_collector_observed_utc": "2026-11-26T14:00:16.781900+00:00",
       "local_collection_time_known": true,
-      "source": "EIA Today in Energy",
-      "source_class": "official_agency",
-      "category": "Power & Electricity",
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
       "coverage_themes": [
-        "Power & Electricity"
+        "Geopolitics",
+        "Oil & Energy"
       ],
-      "relevance_score": 33,
+      "relevance_score": 90,
       "relevance_evidence": [
-        "electricity"
+        "energy_market_hook:oil",
+        "geopolitical_event:attack",
+        "world_context:hormuz"
       ],
-      "origin": "official_rss",
-      "time_basis": "publisher_feed_publication_time",
-      "observed_time_utc": "2026-11-25T14:00:00+00:00",
-      "publisher_time_verified": true,
-      "date_confidence": "publisher_rss_timestamp",
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-26T13:47:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
       "needs_editor_review": [],
       "editorial_status": "research_only_not_approved",
       "other_origins": [],
       "independent_corroboration_verified": false,
-      "queue": "timestamped_official",
-      "rank": 108
+      "queue": "discovery_unverified",
+      "rank": 102
+    },
+    {
+      "title": "Oil prices fall as supply concerns linger after Iran claims mine strikes on ships",
+      "url": "https://www.asiaone.com/world/oil-prices-dip-after-iran-claims-hormuz-mine-strikes",
+      "domain": "www.asiaone.com",
+      "first_collector_observed_utc": "2026-11-26T14:00:16.781900+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics",
+        "Oil & Energy"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:oil",
+        "geopolitical_event:strikes",
+        "world_context:iran"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-26T13:47:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102,
+      "related_reports": [
+        {
+          "title": "Oil prices fall as supply concerns linger after Iran claims mine strikes on ships",
+          "url": "https://www.theglobeandmail.com/investing/article-oil-prices-fall-as-supply-concerns-linger-after-iran-claims-mine",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        }
+      ]
+    },
+    {
+      "title": "Iran grapples with deepening energy crisis amid war deadlock - World News",
+      "url": "https://www.hurriyetdailynews.com/iran-grapples-with-deepening-energy-crisis-amid-war-deadlock-229877",
+      "domain": "www.hurriyetdailynews.com",
+      "first_collector_observed_utc": "2026-11-26T14:00:16.781900+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:energy",
+        "geopolitical_event:war",
+        "world_context:iran"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-26T13:46:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
+    },
+    {
+      "title": "Briton who swam Strait of Hormuz – dodging burning tankers and missile strikes",
+      "url": "https://www.mirror.co.uk/news/uk-news/lewis-pugh-straits-of-hormuz-37914400",
+      "domain": "www.mirror.co.uk",
+      "first_collector_observed_utc": "2026-11-26T11:57:02.219456+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:tankers",
+        "geopolitical_event:strikes",
+        "world_context:strait of hormuz"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-26T11:46:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
+    },
+    {
+      "title": "WHO head urges US to end Cuba fuel blockade - Shafaqna English | International Shia News & Fatwas",
+      "url": "https://en.shafaqna.com/494721/who-head-urges-us-to-end-cuba-fuel-blockade",
+      "domain": "en.shafaqna.com",
+      "first_collector_observed_utc": "2026-11-26T10:03:59.895528+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:fuel",
+        "geopolitical_event:blockade",
+        "world_context:us"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-26T10:01:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
     },
     {
       "title": "Brent crude jumps over 3% to $94.3 on Saudi drone attack, smaller US stock build",
@@ -408,159 +484,33 @@
       "rank": 102
     },
     {
-      "title": "Energy bills to rise by 26% as Iran war causes surge in gas prices",
-      "url": "https://www.channel4.com/news/energy-bills-to-rise-by-26-as-iran-war-causes-surge-in-gas-prices",
-      "domain": "www.channel4.com",
-      "first_collector_observed_utc": "2026-11-25T20:08:55.678619+00:00",
+      "title": "Goldman Sachs Sees U.S. Natural Gas Demand Surging on Data Center Boom",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Goldman-Sachs-Sees-US-Natural-Gas-Demand-Surging-on-Data-Center-Boom.html",
+      "domain": "oilprice.com",
+      "first_collector_observed_utc": "2026-11-25T14:34:16.503193+00:00",
       "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "category": "Natural Gas",
       "coverage_themes": [
-        "Geopolitics"
+        "Natural Gas"
       ],
-      "relevance_score": 90,
+      "relevance_score": 72,
       "relevance_evidence": [
-        "energy_market_hook:energy",
-        "geopolitical_event:war",
-        "world_context:iran"
+        "gas demand",
+        "natural gas"
       ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-25T20:01:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
+      "origin": "official_rss",
+      "time_basis": "specialist_publisher_rss_timestamp",
+      "observed_time_utc": "2026-11-25T06:45:00+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
+      "within_24h_on_own_time_basis": false,
       "needs_editor_review": [],
       "editorial_status": "research_only_not_approved",
       "other_origins": [],
       "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102
-    },
-    {
-      "title": "Feature: A war movie to his right, a nature documentary to his left -- a swimmer's view of Hormuz",
-      "url": "https://english.news.cn/20261126/b1399c0ba12a4a27a6be3319dbf76e56/c.html",
-      "domain": "english.news.cn",
-      "first_collector_observed_utc": "2026-11-25T18:10:16.041317+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:hormuz",
-        "geopolitical_event:war",
-        "world_context:hormuz"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-25T18:02:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102
-    },
-    {
-      "title": "Iran Braces For Winter Gas Shortages As War Damage Deepens Energy Crisis",
-      "url": "https://www.rferl.org/a/iran-gas-shortages-winter-energy-crisis-war/33904024.html",
-      "domain": "www.rferl.org",
-      "first_collector_observed_utc": "2026-11-25T18:10:16.041317+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:energy",
-        "geopolitical_event:war",
-        "world_context:iran"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-25T18:02:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102
-    },
-    {
-      "title": "CUBA: WHO urges end to US fuel blockade as life expectancy falls",
-      "url": "https://www.latinnews.com/component/legacyk2/item/112376-cuba-who-urges-end-to-us-fuel-blockade-as-life-expectancy-falls?catid=840685",
-      "domain": "www.latinnews.com",
-      "first_collector_observed_utc": "2026-11-25T14:35:19.718785+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:fuel",
-        "geopolitical_event:blockade",
-        "world_context:us"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-25T14:32:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102
-    },
-    {
-      "title": "Ukraine launches drone attacks on two Russian oil refineries sparking massive blaze - AOL",
-      "url": "https://www.aol.co.uk/articles/ukraine-launches-drone-attacks-two-141040000.html",
-      "domain": "www.aol.co.uk",
-      "first_collector_observed_utc": "2026-11-25T14:35:19.718785+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics",
-        "Oil & Energy"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:oil",
-        "geopolitical_event:attacks",
-        "world_context:russian"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-25T14:32:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
+      "queue": "older_official_context",
       "rank": 102
     },
     {
@@ -592,37 +542,6 @@
       "independent_corroboration_verified": false,
       "queue": "discovery_unverified",
       "rank": 99
-    },
-    {
-      "title": "Exelon Corporation v. PJM Interconnection, L.L.C.; Notice Establishing Comment Period",
-      "url": "https://www.federalregister.gov/documents/2026/11/19/2026-23611/exelon-corporation-v-pjm-interconnection-llc-notice-establishing-comment-period",
-      "domain": "www.federalregister.gov",
-      "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00",
-      "local_collection_time_known": true,
-      "source": "Federal Register notices",
-      "source_class": "official_agency",
-      "category": "Power & Electricity",
-      "coverage_themes": [
-        "Power & Electricity",
-        "Infrastructure & Investment"
-      ],
-      "relevance_score": 57,
-      "relevance_evidence": [
-        "interconnection",
-        "pjm"
-      ],
-      "origin": "regulatory_notice",
-      "time_basis": "official_publication_date_only",
-      "observed_time_utc": "2026-11-19T05:00:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "date_only",
-      "within_24h_on_own_time_basis": false,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "regulatory_date_only",
-      "rank": 97
     },
     {
       "title": "SOCAR explores energy storage technologies for Azerbaijan's power grid",
@@ -737,6 +656,36 @@
       "origin": "global_discovery",
       "time_basis": "gdelt_gal_rss_provider_time_unverified",
       "observed_time_utc": "2026-11-23T20:17:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 93
+    },
+    {
+      "title": "Nikkiso Delivers Dry Dock Overhaul for LNG Tanker",
+      "url": "http://www.maritimeprofessional.com/news/nikkiso-delivers-dock-overhaul-tanker-424305",
+      "domain": "www.maritimeprofessional.com",
+      "first_collector_observed_utc": "2026-11-22T21:53:46.210700+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "LNG",
+      "coverage_themes": [
+        "LNG"
+      ],
+      "relevance_score": 81,
+      "relevance_evidence": [
+        "lng",
+        "lng tanker"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-22T21:46:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": false,
@@ -987,27 +936,95 @@
       "other_origins": [],
       "independent_corroboration_verified": false,
       "queue": "discovery_unverified",
-      "rank": 84
+      "rank": 84,
+      "related_reports": [
+        {
+          "title": "SpaceX Plans to Spend $2.8 Billion on Gas Turbines. Here’s What That Much Natural Gas Demand Means for Pipeline Investors. | The Motley Fool",
+          "url": "https://www.fool.com/investing/2026/11/20/spacex-plans-to-spend-usd2-8-billion-on-gas-turbines-here-s-what-that-much-natural-gas-demand-means-for-pipeline-investors?source=iedfolrf0000001",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        }
+      ]
     },
     {
-      "title": "Final investment decision on Azerbaijan's Karabakh field expected in 2027",
-      "url": "https://en.apa.az/energy-and-industry/final-investment-decision-on-azerbaijans-karabakh-field-expected-in-2027-537196",
-      "domain": "en.apa.az",
-      "first_collector_observed_utc": null,
-      "local_collection_time_known": false,
+      "title": "Almost 60% of primary energy used for electricity is lost to conversion and transmission",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68504",
+      "domain": "www.eia.gov",
+      "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00",
+      "local_collection_time_known": true,
+      "source": "EIA Today in Energy",
+      "source_class": "official_agency",
+      "category": "Power & Electricity",
+      "coverage_themes": [
+        "Power & Electricity"
+      ],
+      "relevance_score": 33,
+      "relevance_evidence": [
+        "electricity"
+      ],
+      "origin": "official_rss",
+      "time_basis": "publisher_feed_publication_time",
+      "observed_time_utc": "2026-11-25T14:00:00+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
+      "within_24h_on_own_time_basis": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "older_official_context",
+      "rank": 83
+    },
+    {
+      "title": "Buy BPCL, IOCL shares as crude oil prices fall, risk reward favourable, says Jefferies - BusinessToday",
+      "url": "https://www.businesstoday.in/markets/stocks/story/buy-bpcl-iocl-shares-as-crude-oil-prices-fall-risk-reward-favourable-says-jefferies-569567-2026-11-26",
+      "domain": "www.businesstoday.in",
+      "first_collector_observed_utc": "2026-11-26T02:53:22.608087+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Oil & Energy",
+      "coverage_themes": [
+        "Oil & Energy"
+      ],
+      "relevance_score": 69,
+      "relevance_evidence": [
+        "crude oil",
+        "oil prices"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-26T02:47:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 81
+    },
+    {
+      "title": "Downer wins $728m Hunter Transmission Project contract",
+      "url": "https://www.power-technology.com/news/downer-728m-hunter-transmission-project-contract",
+      "domain": "www.power-technology.com",
+      "first_collector_observed_utc": "2026-11-23T14:54:25.565116+00:00",
+      "local_collection_time_known": true,
       "source": "GDELT GAL RSS",
       "source_class": "unclassified",
       "category": "Infrastructure & Investment",
       "coverage_themes": [
         "Infrastructure & Investment"
       ],
-      "relevance_score": 36,
+      "relevance_score": 30,
       "relevance_evidence": [
-        "final investment decision"
+        "transmission project"
       ],
       "origin": "global_discovery",
       "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-19T11:01:00+00:00",
+      "observed_time_utc": "2026-11-23T14:46:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": false,
@@ -1016,7 +1033,7 @@
       "other_origins": [],
       "independent_corroboration_verified": false,
       "queue": "discovery_unverified",
-      "rank": 48
+      "rank": 42
     }
   ],
   "definitions": {
