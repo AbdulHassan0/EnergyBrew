@@ -1,5 +1,186 @@
 [
   {
+    "url": "https://www.businesstoday.in/markets/stocks/story/buy-bpcl-iocl-shares-as-crude-oil-prices-fall-risk-reward-favourable-says-jefferies-569567-2026-11-26",
+    "title": "Buy BPCL, IOCL shares as crude oil prices fall, risk reward favourable, says Jefferies - BusinessToday",
+    "domain": "www.businesstoday.in",
+    "gdelt_first_seen_utc": "2026-11-26T02:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 69,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "crude oil",
+      "oil prices"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-26T02:53:22.608087+00:00"
+  },
+  {
+    "url": "https://www.breitbart.com/europe/2026/11/25/melania-trump-facilitates-reunification-of-nine-more-children-displaced-in-russia-ukraine-war-with-families",
+    "title": "Melania Trump Facilitates Reunification of Nine More Children Displaced in Russia-Ukraine War with Families",
+    "domain": "www.breitbart.com",
+    "gdelt_first_seen_utc": "2026-11-26T02:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:war",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-26T02:53:22.608087+00:00"
+  },
+  {
+    "url": "https://www.breitbart.com/politics/2026/11/25/kurdish-leader-on-game-changer-win-available-global-economy-ending-u-s-iran-war-i-still-believe-president-trump-can-make-this-deal",
+    "title": "Kurdish Leader on ‘Game Changer’ Win Available for ‘Global Economy’ in Ending U.S.-Iran War: ‘I Still Believe President Trump Can Make This Deal’",
+    "domain": "www.breitbart.com",
+    "gdelt_first_seen_utc": "2026-11-26T02:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:war",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-26T02:53:22.608087+00:00"
+  },
+  {
+    "url": "https://portal.sina.com.hk/technology/sina/2026/11/26/1998193/%E6%BB%AC%E6%9D%B1%E4%B8%AD%E8%8F%AF%E4%BA%A4%E4%BB%98%E7%AC%AC12%E8%89%98%E5%A4%A7%E5%9E%8Blng%E8%88%B9%EF%BC%8C%E5%88%B7%E6%96%B0%E5%9C%8B%E5%85%A7%E5%B9%B4%E5%BA%A6%E4%BA%A4%E4%BB%98%E9%87%8F",
+    "title": "滬東中華交付第12艘大型LNG船，刷新國內年度交付量紀錄",
+    "domain": "portal.sina.com.hk",
+    "gdelt_first_seen_utc": "2026-11-26T02:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 45,
+    "category": "LNG",
+    "relevance_evidence": [
+      "lng"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-26T02:53:22.608087+00:00"
+  },
+  {
+    "url": "https://finance.sina.com.cn/tech/shenji/2026-11-26/doc-inizzmzi9071825.shtml",
+    "title": "沪东中华交付第12艘大型LNG船，刷新国内年度交付量纪录",
+    "domain": "finance.sina.com.cn",
+    "gdelt_first_seen_utc": "2026-11-26T02:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 45,
+    "category": "LNG",
+    "relevance_evidence": [
+      "lng"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-26T02:53:22.608087+00:00"
+  },
+  {
+    "url": "https://torino.repubblica.it/cronaca/2026/11/26/news/chivasso_contro_l_assedio_del_quadrilatero_di_data_center_non_lasciate_soli_noi_sindaci-425750630",
+    "title": "Chivasso contro l’assedio del “quadrilatero” di data center: “Non lasciate soli noi sindaci”",
+    "domain": "torino.repubblica.it",
+    "gdelt_first_seen_utc": "2026-11-26T02:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-26T02:53:22.608087+00:00"
+  },
+  {
+    "url": "https://www.bulgariagazette.com/rwe-wins-bid-for-49-of-bulgarias-belene-nuclear-plant",
+    "title": "RWE wins bid for 49% of Bulgaria’s Belene nuclear plant - Bulgaria Gazette - News from Bulgaria",
+    "domain": "www.bulgariagazette.com",
+    "gdelt_first_seen_utc": "2026-11-26T02:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "nuclear plant"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-26T02:53:22.608087+00:00"
+  },
+  {
+    "url": "https://executivedigest.sapo.pt/venezuela-e-siemens-energy-assinam-parceria-para-recuperar-sistema-eletrico",
+    "title": "Venezuela e Siemens Energy assinam parceria para recuperar sistema elétrico",
+    "domain": "executivedigest.sapo.pt",
+    "gdelt_first_seen_utc": "2026-11-26T02:47:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "siemens energy"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-26T02:53:22.608087+00:00"
+  },
+  {
     "url": "https://www.jamaicaobserver.com/2026/11/25/gas-prices-diesel-2-94",
     "title": "Gas prices and diesel down $2.94 - Jamaica Observer",
     "domain": "www.jamaicaobserver.com",
@@ -4103,386 +4284,6 @@
     "title": "Asian stocks retreat as AI rebound stumbles",
     "domain": "www.freemalaysiatoday.com",
     "gdelt_first_seen_utc": "2026-11-25T03:15:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "geo_energy_shipping",
-    "topics": [
-      "geo_energy_shipping"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-25T14:34:45.752741+00:00"
-  },
-  {
-    "url": "https://news.antiwar.com/2026/11/24/iran-continues-targeting-ships-in-strait-of-hormuz-as-us-ramps-up-sanctions",
-    "title": "Iran Continues Targeting Ships in Strait of Hormuz as US Ramps Up Sanctions",
-    "domain": "news.antiwar.com",
-    "gdelt_first_seen_utc": "2026-11-25T02:45:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "geo_energy_shipping",
-    "topics": [
-      "geo_energy_shipping"
-    ],
-    "relevance_score": 90,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_hook:strait of hormuz",
-      "geopolitical_event:sanctions",
-      "world_context:iran"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-25T14:34:45.752741+00:00"
-  },
-  {
-    "url": "https://oilprice.com/Energy/Energy-General/The-Diesel-Crunch-Isnt-Over-Yet.html",
-    "title": "The Diesel Crunch Isnt Over Yet",
-    "domain": "oilprice.com",
-    "gdelt_first_seen_utc": "2026-11-25T02:45:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "geo_energy_shipping",
-    "topics": [
-      "geo_energy_shipping"
-    ],
-    "relevance_score": 21,
-    "category": "Oil & Energy",
-    "relevance_evidence": [
-      "diesel"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-25T14:34:45.752741+00:00"
-  },
-  {
-    "url": "http://www.middleeaststar.com/news/279452793/us-secretary-of-state-rubio-condemns-houthi-attacks-in-call-with-saudi-fm",
-    "title": "US Secretary of State Rubio condemns Houthi attacks in call with Saudi FM",
-    "domain": "www.middleeaststar.com",
-    "gdelt_first_seen_utc": "2026-11-25T02:45:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "geo_energy_shipping",
-    "topics": [
-      "geo_energy_shipping"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-25T14:34:45.752741+00:00"
-  },
-  {
-    "url": "https://www.prokerala.com/news/articles/a1840754.html",
-    "title": "Next war against Iran not necessarily limited to region : IRGC chief",
-    "domain": "www.prokerala.com",
-    "gdelt_first_seen_utc": "2026-11-25T02:45:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "geo_energy_shipping",
-    "topics": [
-      "geo_energy_shipping"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-25T14:34:45.752741+00:00"
-  },
-  {
-    "url": "https://dailycaller.com/2026/11/24/europe-american-energy-exports-iran-war-prices-crude-lng-chris-wright",
-    "title": "Iran War Prices Drove Most Of Europe Surge In American Energy Buying",
-    "domain": "dailycaller.com",
-    "gdelt_first_seen_utc": "2026-11-25T02:30:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "geo_energy_shipping",
-    "topics": [
-      "geo_energy_shipping"
-    ],
-    "relevance_score": 90,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_hook:energy",
-      "geopolitical_event:war",
-      "world_context:iran"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-25T14:34:45.752741+00:00"
-  },
-  {
-    "url": "https://www.aljazeera.com/news/2026/11/25/poll-finds-us-voters-want-government-to-end-iran-war-regardless-of-terms",
-    "title": "Poll finds US voters want government to end Iran war regardless of terms",
-    "domain": "www.aljazeera.com",
-    "gdelt_first_seen_utc": "2026-11-25T02:30:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "geo_energy_shipping",
-    "topics": [
-      "geo_energy_shipping"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:war",
-      "world_context:iran/united states"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-25T14:34:45.752741+00:00"
-  },
-  {
-    "url": "https://peakoil.com/consumption/europe-cant-afford-another-harsh-winter-as-gas-prices-surge-200-storage-plunges-and-factories-close",
-    "title": "Europe cant afford another harsh winter as gas prices surge 200 %, storage plunges and factories close",
-    "domain": "peakoil.com",
-    "gdelt_first_seen_utc": "2026-11-25T02:30:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "geo_energy_shipping",
-    "topics": [
-      "geo_energy_shipping"
-    ],
-    "relevance_score": 33,
-    "category": "Natural Gas",
-    "relevance_evidence": [
-      "gas prices"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-25T14:34:45.752741+00:00"
-  },
-  {
-    "url": "https://dnd.com.pk/pakistan-russia-relations-set-for-major-economic-shift-as-pm-shehbaz-visits-moscow-says-ambassador-tirmizi/330839",
-    "title": "Pakistan - Russia relations set for major economic shift as PM Shehbaz visits Moscow , says Ambassador Tirmizi",
-    "domain": "dnd.com.pk",
-    "gdelt_first_seen_utc": "2026-11-25T02:30:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "geo_energy_shipping",
-    "topics": [
-      "geo_energy_shipping"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-25T14:34:45.752741+00:00"
-  },
-  {
-    "url": "https://newrepublic.com/post/218339/donald-trump-turkey-pardon-speech-election-fraud",
-    "title": "Trump Uses Turkey Pardon Speech to Cry Election Fraud",
-    "domain": "newrepublic.com",
-    "gdelt_first_seen_utc": "2026-11-25T02:30:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "geo_energy_shipping",
-    "topics": [
-      "geo_energy_shipping"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-25T14:34:45.752741+00:00"
-  },
-  {
-    "url": "https://www.finanzen.ch/nachrichten/aktien/indonesia-stock-market-may-halt-winning-streak-1036797888",
-    "title": "Indonesia Stock Market May Halt Winning Streak",
-    "domain": "www.finanzen.ch",
-    "gdelt_first_seen_utc": "2026-11-25T02:30:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "geo_energy_shipping",
-    "topics": [
-      "geo_energy_shipping"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-25T14:34:45.752741+00:00"
-  },
-  {
-    "url": "https://www.finanzen.ch/nachrichten/aktien/thai-stock-market-may-open-under-pressure-on-wednesday-1036797904",
-    "title": "Thai Stock Market May Open Under Pressure On Wednesday",
-    "domain": "www.finanzen.ch",
-    "gdelt_first_seen_utc": "2026-11-25T02:30:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "geo_energy_shipping",
-    "topics": [
-      "geo_energy_shipping"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-25T14:34:45.752741+00:00"
-  },
-  {
-    "url": "https://www.whmi.com/news/fox/trump-administration-weighs-targeting-irans-top-regime-leaders-bid-end-war-report",
-    "title": "Radio Station WHMI 93 . 5 FM Livingston County Michigan News , Weather , Traffic , Sports , School Updates , and the Best Classic Hit",
-    "domain": "www.whmi.com",
-    "gdelt_first_seen_utc": "2026-11-25T02:30:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "geo_energy_shipping",
-    "topics": [
-      "geo_energy_shipping"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-25T14:34:45.752741+00:00"
-  },
-  {
-    "url": "https://www.aol.com/articles/stocks-retreat-ai-rebound-stumbles-015033000.html",
-    "title": "Stocks retreat as AI rebound stumbles , tariff threats loom",
-    "domain": "www.aol.com",
-    "gdelt_first_seen_utc": "2026-11-25T02:30:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "geo_energy_shipping",
-    "topics": [
-      "geo_energy_shipping"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-25T14:34:45.752741+00:00"
-  },
-  {
-    "url": "https://www.finanzen.ch/nachrichten/aktien/australian-market-notably-lower-1036797887",
-    "title": "Australian Market Notably Lower",
-    "domain": "www.finanzen.ch",
-    "gdelt_first_seen_utc": "2026-11-25T02:30:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "geo_energy_shipping",
-    "topics": [
-      "geo_energy_shipping"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-25T14:34:45.752741+00:00"
-  },
-  {
-    "url": "http://www.kenyastar.com/news/279452793/us-secretary-of-state-rubio-condemns-houthi-attacks-in-call-with-saudi-fm",
-    "title": "US Secretary of State Rubio condemns Houthi attacks in call with Saudi FM",
-    "domain": "www.kenyastar.com",
-    "gdelt_first_seen_utc": "2026-11-25T02:30:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "geo_energy_shipping",
-    "topics": [
-      "geo_energy_shipping"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-25T14:34:45.752741+00:00"
-  },
-  {
-    "url": "https://news.az/news/why-are-oil-prices-falling-despite-strait-of-hormuz-threats-and-what-could-happen-next",
-    "title": "Why are oil prices falling despite Strait of Hormuz threats , and what could happen next ?",
-    "domain": "news.az",
-    "gdelt_first_seen_utc": "2026-11-25T02:15:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "geo_energy_shipping",
-    "topics": [
-      "geo_energy_shipping"
-    ],
-    "relevance_score": 33,
-    "category": "Oil & Energy",
-    "relevance_evidence": [
-      "oil prices"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-25T14:34:45.752741+00:00"
-  },
-  {
-    "url": "https://ktvz.com/news/gas-prices/2026/11/24/a-side-of-savings-aaa-says-gas-and-diesel-prices-are-falling-ahead-of-thanksgiving-still-above-last-year",
-    "title": "A side of saving : AAA says gas and diesel prices are falling ahead of Thanksgiving , still above last year",
-    "domain": "ktvz.com",
-    "gdelt_first_seen_utc": "2026-11-25T02:15:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "geo_energy_shipping",
-    "topics": [
-      "geo_energy_shipping"
-    ],
-    "relevance_score": 21,
-    "category": "Oil & Energy",
-    "relevance_evidence": [
-      "diesel"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-25T14:34:45.752741+00:00"
-  },
-  {
-    "url": "http://www.austinglobe.com/news/279452793/us-secretary-of-state-rubio-condemns-houthi-attacks-in-call-with-saudi-fm",
-    "title": "US Secretary of State Rubio condemns Houthi attacks in call with Saudi FM",
-    "domain": "www.austinglobe.com",
-    "gdelt_first_seen_utc": "2026-11-25T02:15:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "geo_energy_shipping",
-    "topics": [
-      "geo_energy_shipping"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-25T14:34:45.752741+00:00"
-  },
-  {
-    "url": "https://www.krcu.org/2026-11-24/oil-slicks-in-the-strait-of-hormuz-are-harming-the-environment",
-    "title": "Oil slicks in the Strait of Hormuz are harming the environment",
-    "domain": "www.krcu.org",
-    "gdelt_first_seen_utc": "2026-11-25T02:15:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "geo_energy_shipping",
-    "topics": [
-      "geo_energy_shipping"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-25T14:34:45.752741+00:00"
-  },
-  {
-    "url": "https://www.texarkanagazette.com/news/2026/nov/24/houthi-rebels-close-in-on-aden-as-yemeni-forces",
-    "title": "Houthi rebels close in on Aden as Yemeni forces dig in behind a fortified line",
-    "domain": "www.texarkanagazette.com",
-    "gdelt_first_seen_utc": "2026-11-25T02:15:00+00:00",
     "publisher_published_utc": null,
     "published_time_verified": false,
     "discovery_provider": "GDELT DOC 2.0",
