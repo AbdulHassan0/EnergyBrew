@@ -1,25 +1,5 @@
 [
   {
-    "id": "dbb75ca8064473f97e60db15",
-    "title": "China Gas Upsizes Long-Term LNG Supply with U.S. Venture Global",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/China-Gas-Upsizes-Long-Term-LNG-Supply-with-US-Venture-Global.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T15:30:00+00:00",
-    "category": "LNG",
-    "published_precision": "timestamp",
-    "relevance_score": 100,
-    "keyword_matches": 3,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "lng",
-      "lng supply",
-      "venture global"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": []
-  },
-  {
     "id": "60edded142c1854182368703",
     "title": "US Crude Oil Inventories Inches Up as Gasoline Holds Steady",
     "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Crude-Oil-Inventories-Inches-Up-as-Gasoline-Holds-Steady.html",
@@ -40,6 +20,48 @@
     "also_seen_in": [],
     "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
     "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
+  },
+  {
+    "id": "1d80a4fb32374cdc6c3d56de",
+    "title": "Oil Jumps Over 2% as Saudi Arabia Downs Drones Over Ras Tanura",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Jumps-Over-2-as-Saudi-Arabia-Downs-Drones-Over-Ras-Tanura.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-25T15:30:00+00:00",
+    "category": "Geopolitics",
+    "published_precision": "timestamp",
+    "relevance_score": 90,
+    "keyword_matches": 3,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "energy_market_hook:oil",
+      "geopolitical_event:drones",
+      "world_context:saudi arabia"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-26T00:31:04.600618+00:00",
+    "first_collector_observed_utc": "2026-11-26T00:31:04.600618+00:00"
+  },
+  {
+    "id": "72a34b6fed97b93f5a9c3a9d",
+    "title": "UK Energy Bills Set to Soar 26% as Iran War Drives Up Gas Prices",
+    "url": "https://oilprice.com/Energy/Energy-General/UK-Energy-Bills-Set-to-Soar-26-as-Iran-War-Drives-Up-Gas-Prices.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-25T15:00:00+00:00",
+    "category": "Geopolitics",
+    "published_precision": "timestamp",
+    "relevance_score": 90,
+    "keyword_matches": 3,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "energy_market_hook:energy",
+      "geopolitical_event:war",
+      "world_context:iran"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-26T00:31:04.600618+00:00",
+    "first_collector_observed_utc": "2026-11-26T00:31:04.600618+00:00"
   },
   {
     "id": "7afa81c4cabb3f8b8f0162e3",
@@ -190,67 +212,6 @@
     "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00"
   },
   {
-    "id": "cd2beda6e00bf50792701f74",
-    "title": "China Burns Less Oil and Coal as the Iran War Reshapes Its Energy Mix",
-    "url": "https://oilprice.com/Energy/Energy-General/China-Burns-Less-Oil-and-Coal-as-the-Iran-War-Reshapes-Its-Energy-Mix.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T22:00:00+00:00",
-    "category": "Geopolitics",
-    "published_precision": "timestamp",
-    "relevance_score": 90,
-    "keyword_matches": 3,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "energy_market_hook:oil",
-      "geopolitical_event:war",
-      "world_context:iran"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": []
-  },
-  {
-    "id": "b5493c2967d5c68d6c2f94b5",
-    "title": "Iran War Set to Hike 2027 UK Energy Bills to Four-Year High",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-War-Set-to-Hike-2027-UK-Energy-Bills-to-Four-Year-High.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T16:30:00+00:00",
-    "category": "Geopolitics",
-    "published_precision": "timestamp",
-    "relevance_score": 90,
-    "keyword_matches": 3,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "energy_market_hook:energy",
-      "geopolitical_event:war",
-      "world_context:iran"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": []
-  },
-  {
-    "id": "6c922e4edba15f1f787245dd",
-    "title": "PJM Board Approves Transmission Project Changes to Support Grid Reliability",
-    "url": "https://insidelines.pjm.com/pjm-board-approves-transmission-project-changes-to-support-grid-reliability-2",
-    "source": "PJM Inside Lines",
-    "source_class": "system_operator_primary",
-    "published_utc": "2026-11-18T18:56:18+00:00",
-    "category": "Power & Electricity",
-    "published_precision": "timestamp",
-    "relevance_score": 87,
-    "keyword_matches": 3,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "grid",
-      "grid reliability",
-      "pjm"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
-  },
-  {
     "id": "c291f6e73165e7eba5334ebf",
     "title": "Global LNG Supply Crunch Set to Spill Into 2027",
     "url": "https://oilprice.com/Latest-Energy-News/World-News/Global-LNG-Supply-Crunch-Set-to-Spill-Into-2027.html",
@@ -311,27 +272,6 @@
     "status": "research_only_unverified",
     "also_seen_in": [],
     "first_collected_utc": "2026-11-19T17:18:44.403286+00:00",
-    "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
-  },
-  {
-    "id": "68f2f4fe9ba50ace39b28345",
-    "title": "How National Grid, Eversource are using VPPs to solve local-level constraints",
-    "url": "https://www.utilitydive.com/news/national-grid-eversource-vpp-demand-response/875039",
-    "source": "Utility Dive News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T15:31:06+00:00",
-    "category": "Power & Electricity",
-    "published_precision": "timestamp",
-    "relevance_score": 81,
-    "keyword_matches": 3,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "eversource",
-      "national grid",
-      "vpps"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": [],
     "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
   },
   {
@@ -480,24 +420,24 @@
     "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
   },
   {
-    "id": "3bd4f9b4ba7eab7921694801",
-    "title": "The grid will fall short of AI\u2019s power needs. These 6 resources can close the gap.",
-    "url": "https://www.utilitydive.com/news/the-grid-will-fall-short-of-ais-power-needs-6-resources-close-the-gap/874125",
-    "source": "Utility Dive News",
+    "id": "ebf62b904fa23d3aaeba4e4e",
+    "title": "Cheaper Gasoline Won't Fix the Diesel Squeeze Hitting Freight Costs",
+    "url": "https://oilprice.com/Energy/Gas-Prices/Cheaper-Gasoline-Wont-Fix-the-Diesel-Squeeze-Hitting-Freight-Costs.html",
+    "source": "OilPrice.com News",
     "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T15:57:17+00:00",
-    "category": "Power & Electricity",
+    "published_utc": "2026-11-25T20:00:00+00:00",
+    "category": "Oil & Energy",
     "published_precision": "timestamp",
-    "relevance_score": 51,
+    "relevance_score": 45,
     "keyword_matches": 2,
     "editorial_candidate": true,
     "relevance_evidence": [
-      "grid",
-      "power needs"
+      "diesel",
+      "gasoline"
     ],
     "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
+    "first_collected_utc": "2026-11-26T00:31:04.600618+00:00",
+    "first_collector_observed_utc": "2026-11-26T00:31:04.600618+00:00"
   },
   {
     "id": "7b0b60e0044d99baf3922976",
@@ -558,24 +498,6 @@
     "first_collector_observed_utc": "2026-11-23T14:54:05.913764+00:00"
   },
   {
-    "id": "a556bd0d67d095de25e62318",
-    "title": "Mozambique Approves Exxon\u2019s Redesigned $30 Billion Rovuma LNG Plan",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/Mozambique-Approves-Exxons-Redesigned-30-Billion-Rovuma-LNG-Plan.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T17:30:00+00:00",
-    "category": "LNG",
-    "published_precision": "timestamp",
-    "relevance_score": 45,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "lng"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": []
-  },
-  {
     "id": "827092c04fc49930a95cbe36",
     "title": "Iran Faces a Deepening Natural Gas Crisis Ahead of Winter",
     "url": "https://oilprice.com/Energy/Energy-General/Iran-Faces-a-Deepening-Natural-Gas-Crisis-Ahead-of-Winter.html",
@@ -593,6 +515,25 @@
     "status": "research_only_unverified",
     "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
     "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
+  },
+  {
+    "id": "e14df782f719683f56a667e2",
+    "title": "Oil Inventories Continue to Rise in the US",
+    "url": "https://oilprice.com/Energy/Crude-Oil/Oil-Inventories-Continue-to-Rise-in-the-US.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-25T15:42:56+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 36,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "oil inventories"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-26T00:31:04.600618+00:00",
+    "first_collector_observed_utc": "2026-11-26T00:31:04.600618+00:00"
   },
   {
     "id": "60aa9200ecb65f02de1925f0",
@@ -633,24 +574,6 @@
     "also_seen_in": [],
     "first_collected_utc": "2026-11-20T22:41:52.748655+00:00",
     "first_collector_observed_utc": "2026-11-20T22:41:52.748655+00:00"
-  },
-  {
-    "id": "12c9ad8c1b37d3c4d5621721",
-    "title": "US Oil Inventories On the Rise",
-    "url": "https://oilprice.com/Energy/Crude-Oil/US-Oil-Inventories-On-the-Rise.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T15:39:53+00:00",
-    "category": "Oil & Energy",
-    "published_precision": "timestamp",
-    "relevance_score": 36,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "oil inventories"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": []
   },
   {
     "id": "41ee440d15205b02d80cf16a",
@@ -1061,23 +984,80 @@
     "also_seen_in": []
   },
   {
-    "id": "adae1615af6e22fc7fe9837a",
-    "title": "EU spending on electricity support measures reached \u20ac12 billion, as reliance grows",
-    "url": "https://www.acer.europa.eu/news/eu-spending-electricity-support-measures-reaches-eur12-billion-2025-reliance-grows",
-    "source": "European Commission DG Energy",
-    "source_class": "official_agency",
-    "published_utc": "2026-11-18T23:00:00+00:00",
-    "category": "Power & Electricity",
+    "id": "cb6d67259f763abe630cbf65",
+    "title": "U.S. Rig Count Holds Steady as Oil Production Hits Fifth Straight Record",
+    "url": "https://oilprice.com/Energy/Crude-Oil/US-Rig-Count-Holds-Steady-as-Oil-Production-Hits-Fifth-Straight-Record.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-25T21:06:52+00:00",
+    "category": "Oil & Energy",
     "published_precision": "timestamp",
-    "relevance_score": 33,
+    "relevance_score": 30,
     "keyword_matches": 1,
     "editorial_candidate": true,
     "relevance_evidence": [
-      "electricity"
+      "oil production"
     ],
     "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
+    "first_collected_utc": "2026-11-26T00:31:04.600618+00:00",
+    "first_collector_observed_utc": "2026-11-26T00:31:04.600618+00:00"
+  },
+  {
+    "id": "b37957d96faa7baef4bb7858",
+    "title": "Kazakhstan Joins Iraq in Pushing OPEC+ for a Higher Capacity Rating",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Kazakhstan-Joins-Iraq-in-Pushing-OPEC-for-a-Higher-Capacity-Rating.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-25T17:30:00+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 30,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "opec"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-26T00:31:04.600618+00:00",
+    "first_collector_observed_utc": "2026-11-26T00:31:04.600618+00:00"
+  },
+  {
+    "id": "79bd3bfbee77218a72e85cbf",
+    "title": "U.S. Diplomatic Push Revives Hopes for Trans-Caspian Gas Pipeline",
+    "url": "https://oilprice.com/Energy/Energy-General/US-Diplomatic-Push-Revives-Hopes-for-Trans-Caspian-Gas-Pipeline.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-25T17:00:00+00:00",
+    "category": "Natural Gas",
+    "published_precision": "timestamp",
+    "relevance_score": 30,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "gas pipeline"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-26T00:31:04.600618+00:00",
+    "first_collector_observed_utc": "2026-11-26T00:31:04.600618+00:00"
+  },
+  {
+    "id": "f0e9b6feef8d64143747495a",
+    "title": "Bright Horizon utility lands Microsoft data center deals amid Wyoming buildout",
+    "url": "https://www.utilitydive.com/news/cheyenne-light-microsoft-google-data-center-bright-horizon/875739",
+    "source": "Utility Dive News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-25T15:00:39+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 30,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-26T00:31:04.600618+00:00",
+    "first_collector_observed_utc": "2026-11-26T00:31:04.600618+00:00"
   },
   {
     "id": "40c06bd49c3d06ee6d3d93c3",
@@ -1256,43 +1236,6 @@
     "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
   },
   {
-    "id": "3e03c81f3a66fa9866b99bd4",
-    "title": "China Secures Major Gas Deal as Its Influence Grows Across Central Asia",
-    "url": "https://oilprice.com/Energy/Energy-General/China-Secures-Major-Gas-Deal-as-Its-Influence-Grows-Across-Central-Asia.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T19:00:00+00:00",
-    "category": "Natural Gas",
-    "published_precision": "timestamp",
-    "relevance_score": 30,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "gas deal"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": []
-  },
-  {
-    "id": "9b59cf44df724a0879698bfa",
-    "title": "Orlen spreads its wings across Central and Eastern Europe with new gas pacts",
-    "url": "https://www.offshore-energy.biz/2026/11/18/orlen-spreads-its-wings-across-central-and-eastern-europe-with-new-gas-pacts",
-    "source": "Offshore Energy News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T15:07:53+00:00",
-    "category": "Natural Gas",
-    "published_precision": "timestamp",
-    "relevance_score": 30,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "gas pacts"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
-  },
-  {
     "id": "86f2a71329116df5674a252a",
     "title": "Saipem staying on subsea inspection and intervention duty at Equinor\u2019s oil & gas field through 2034",
     "url": "https://www.offshore-energy.biz/2026/11/24/saipem-staying-on-subsea-inspection-and-intervention-duty-at-equinors-oil-and-gas-field-through-2034",
@@ -1451,61 +1394,6 @@
     "also_seen_in": []
   },
   {
-    "id": "0dad76f8aa1370117b07fc49",
-    "title": "Thiel Doubles Down on Vaca Muerta as Trump Calls Venezuela an \u201cAcquisition\u201d",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/Thiel-Doubles-Down-on-Vaca-Muerta-as-Trump-Calls-Venezuela-an-Acquisition.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T17:30:00+00:00",
-    "category": "Oil & Energy",
-    "published_precision": "timestamp",
-    "relevance_score": 27,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "vaca muerta"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": []
-  },
-  {
-    "id": "d4fe066912643785ea2ffd16",
-    "title": "Democrats Could Slow Venezuela\u2019s Push Toward 3 Million Bpd",
-    "url": "https://oilprice.com/Energy/Energy-General/Democrats-Could-Slow-Venezuelas-Push-Toward-3-Million-Bpd.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T17:00:00+00:00",
-    "category": "Oil & Energy",
-    "published_precision": "timestamp",
-    "relevance_score": 27,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "bpd"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": []
-  },
-  {
-    "id": "7de2ab9619d2f9b5ce722f10",
-    "title": "NextEra-Dominion merger hearings kick off with focus on scope",
-    "url": "https://www.utilitydive.com/news/nextera-dominion-merger-virginia-scc-hearing/875046",
-    "source": "Utility Dive News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-18T15:50:14+00:00",
-    "category": "Power & Electricity",
-    "published_precision": "timestamp",
-    "relevance_score": 27,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "nextera"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
-  },
-  {
     "id": "332ef499b6782e11ba5d00c4",
     "title": "America's Refiners Drowned Their Own Gasoline Windfall",
     "url": "https://oilprice.com/Energy/Crude-Oil/Americas-Refiners-Drowned-Their-Own-Gasoline-Windfall.html",
@@ -1544,24 +1432,5 @@
     "also_seen_in": [],
     "first_collected_utc": "2026-11-24T02:56:38.844495+00:00",
     "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00"
-  },
-  {
-    "id": "08c2f3b512606a6b7a68c0c7",
-    "title": "Energy Secretary Acts to Protect Mid-Atlantic Grid",
-    "url": "https://www.energy.gov/articles/energy-secretary-acts-protect-mid-atlantic-grid-0",
-    "source": "DOE Energy News",
-    "source_class": "official_agency",
-    "published_utc": "2026-11-18T18:06:31+00:00",
-    "category": "Power & Electricity",
-    "published_precision": "timestamp",
-    "relevance_score": 24,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "grid"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collector_observed_utc": "2026-11-19T23:06:25.262021+00:00"
   }
 ]

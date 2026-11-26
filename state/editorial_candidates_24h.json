@@ -1,25 +1,45 @@
 [
   {
-    "id": "60edded142c1854182368703",
-    "title": "US Crude Oil Inventories Inches Up as Gasoline Holds Steady",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Crude-Oil-Inventories-Inches-Up-as-Gasoline-Holds-Steady.html",
+    "id": "1d80a4fb32374cdc6c3d56de",
+    "title": "Oil Jumps Over 2% as Saudi Arabia Downs Drones Over Ras Tanura",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Jumps-Over-2-as-Saudi-Arabia-Downs-Drones-Over-Ras-Tanura.html",
     "source": "OilPrice.com News",
     "source_class": "specialist_publisher",
-    "published_utc": "2026-11-24T22:00:00+00:00",
-    "category": "Oil & Energy",
+    "published_utc": "2026-11-25T15:30:00+00:00",
+    "category": "Geopolitics",
     "published_precision": "timestamp",
-    "relevance_score": 96,
+    "relevance_score": 90,
     "keyword_matches": 3,
     "editorial_candidate": true,
     "relevance_evidence": [
-      "crude oil",
-      "gasoline",
-      "oil inventories"
+      "energy_market_hook:oil",
+      "geopolitical_event:drones",
+      "world_context:saudi arabia"
     ],
     "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
-    "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
+    "first_collected_utc": "2026-11-26T00:31:04.600618+00:00",
+    "first_collector_observed_utc": "2026-11-26T00:31:04.600618+00:00"
+  },
+  {
+    "id": "72a34b6fed97b93f5a9c3a9d",
+    "title": "UK Energy Bills Set to Soar 26% as Iran War Drives Up Gas Prices",
+    "url": "https://oilprice.com/Energy/Energy-General/UK-Energy-Bills-Set-to-Soar-26-as-Iran-War-Drives-Up-Gas-Prices.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-25T15:00:00+00:00",
+    "category": "Geopolitics",
+    "published_precision": "timestamp",
+    "relevance_score": 90,
+    "keyword_matches": 3,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "energy_market_hook:energy",
+      "geopolitical_event:war",
+      "world_context:iran"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-26T00:31:04.600618+00:00",
+    "first_collector_observed_utc": "2026-11-26T00:31:04.600618+00:00"
   },
   {
     "id": "7afa81c4cabb3f8b8f0162e3",
@@ -104,44 +124,43 @@
     "first_collector_observed_utc": "2026-11-25T14:34:16.503193+00:00"
   },
   {
-    "id": "5c8dd49bf771f1b91226988c",
-    "title": "Midterms provide clarity on data center development: Vistra CEO",
-    "url": "https://www.utilitydive.com/news/vistra-midterms-data-center-ercot-pjm/875626",
-    "source": "Utility Dive News",
+    "id": "ebf62b904fa23d3aaeba4e4e",
+    "title": "Cheaper Gasoline Won't Fix the Diesel Squeeze Hitting Freight Costs",
+    "url": "https://oilprice.com/Energy/Gas-Prices/Cheaper-Gasoline-Wont-Fix-the-Diesel-Squeeze-Hitting-Freight-Costs.html",
+    "source": "OilPrice.com News",
     "source_class": "specialist_publisher",
-    "published_utc": "2026-11-24T15:54:55+00:00",
-    "category": "Power & Electricity",
+    "published_utc": "2026-11-25T20:00:00+00:00",
+    "category": "Oil & Energy",
     "published_precision": "timestamp",
-    "relevance_score": 60,
+    "relevance_score": 45,
     "keyword_matches": 2,
     "editorial_candidate": true,
     "relevance_evidence": [
-      "data center",
-      "vistra"
+      "diesel",
+      "gasoline"
     ],
     "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
-    "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
+    "first_collected_utc": "2026-11-26T00:31:04.600618+00:00",
+    "first_collector_observed_utc": "2026-11-26T00:31:04.600618+00:00"
   },
   {
-    "id": "827092c04fc49930a95cbe36",
-    "title": "Iran Faces a Deepening Natural Gas Crisis Ahead of Winter",
-    "url": "https://oilprice.com/Energy/Energy-General/Iran-Faces-a-Deepening-Natural-Gas-Crisis-Ahead-of-Winter.html",
+    "id": "e14df782f719683f56a667e2",
+    "title": "Oil Inventories Continue to Rise in the US",
+    "url": "https://oilprice.com/Energy/Crude-Oil/Oil-Inventories-Continue-to-Rise-in-the-US.html",
     "source": "OilPrice.com News",
     "source_class": "specialist_publisher",
-    "published_utc": "2026-11-24T15:00:00+00:00",
-    "category": "Natural Gas",
+    "published_utc": "2026-11-25T15:42:56+00:00",
+    "category": "Oil & Energy",
     "published_precision": "timestamp",
-    "relevance_score": 39,
+    "relevance_score": 36,
     "keyword_matches": 1,
     "editorial_candidate": true,
     "relevance_evidence": [
-      "natural gas"
+      "oil inventories"
     ],
     "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
-    "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
+    "first_collected_utc": "2026-11-26T00:31:04.600618+00:00",
+    "first_collector_observed_utc": "2026-11-26T00:31:04.600618+00:00"
   },
   {
     "id": "41ee440d15205b02d80cf16a",
@@ -183,62 +202,80 @@
     "first_collector_observed_utc": "2026-11-25T14:34:16.503193+00:00"
   },
   {
-    "id": "3b8231eebf800b256b83592a",
-    "title": "Central Asia Pushes Ahead With Regional Electricity Market",
-    "url": "https://oilprice.com/Energy/Energy-General/Central-Asia-Pushes-Ahead-With-Regional-Electricity-Market.html",
+    "id": "cb6d67259f763abe630cbf65",
+    "title": "U.S. Rig Count Holds Steady as Oil Production Hits Fifth Straight Record",
+    "url": "https://oilprice.com/Energy/Crude-Oil/US-Rig-Count-Holds-Steady-as-Oil-Production-Hits-Fifth-Straight-Record.html",
     "source": "OilPrice.com News",
     "source_class": "specialist_publisher",
-    "published_utc": "2026-11-24T19:00:00+00:00",
-    "category": "Power & Electricity",
-    "published_precision": "timestamp",
-    "relevance_score": 33,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "electricity"
-    ],
-    "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
-    "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
-  },
-  {
-    "id": "0cc7f5eb156135d70d2bbd19",
-    "title": "Europe\u2019s Gas Prices Jumped 163% in a Year",
-    "url": "https://oilprice.com/Energy/Natural-Gas/Europes-Gas-Prices-Jumped-163-in-a-Year.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-24T17:00:00+00:00",
-    "category": "Natural Gas",
-    "published_precision": "timestamp",
-    "relevance_score": 33,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "gas prices"
-    ],
-    "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
-    "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
-  },
-  {
-    "id": "29ae87e44b3c50e262f99473",
-    "title": "ExxonMobil signs off on $4 billion FID as new discovery signals more oil potential at Angolan offshore block",
-    "url": "https://www.offshore-energy.biz/2026/11/24/exxonmobil-signs-off-on-dollar4-billion-fid-as-new-discovery-signals-more-oil-potential-at-angolan-offshore-block",
-    "source": "Offshore Energy News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-24T14:44:31+00:00",
+    "published_utc": "2026-11-25T21:06:52+00:00",
     "category": "Oil & Energy",
     "published_precision": "timestamp",
-    "relevance_score": 33,
+    "relevance_score": 30,
     "keyword_matches": 1,
     "editorial_candidate": true,
     "relevance_evidence": [
-      "exxonmobil"
+      "oil production"
     ],
     "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
-    "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
+    "first_collected_utc": "2026-11-26T00:31:04.600618+00:00",
+    "first_collector_observed_utc": "2026-11-26T00:31:04.600618+00:00"
+  },
+  {
+    "id": "b37957d96faa7baef4bb7858",
+    "title": "Kazakhstan Joins Iraq in Pushing OPEC+ for a Higher Capacity Rating",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Kazakhstan-Joins-Iraq-in-Pushing-OPEC-for-a-Higher-Capacity-Rating.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-25T17:30:00+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 30,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "opec"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-26T00:31:04.600618+00:00",
+    "first_collector_observed_utc": "2026-11-26T00:31:04.600618+00:00"
+  },
+  {
+    "id": "79bd3bfbee77218a72e85cbf",
+    "title": "U.S. Diplomatic Push Revives Hopes for Trans-Caspian Gas Pipeline",
+    "url": "https://oilprice.com/Energy/Energy-General/US-Diplomatic-Push-Revives-Hopes-for-Trans-Caspian-Gas-Pipeline.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-25T17:00:00+00:00",
+    "category": "Natural Gas",
+    "published_precision": "timestamp",
+    "relevance_score": 30,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "gas pipeline"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-26T00:31:04.600618+00:00",
+    "first_collector_observed_utc": "2026-11-26T00:31:04.600618+00:00"
+  },
+  {
+    "id": "f0e9b6feef8d64143747495a",
+    "title": "Bright Horizon utility lands Microsoft data center deals amid Wyoming buildout",
+    "url": "https://www.utilitydive.com/news/cheyenne-light-microsoft-google-data-center-bright-horizon/875739",
+    "source": "Utility Dive News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-25T15:00:39+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 30,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-26T00:31:04.600618+00:00",
+    "first_collector_observed_utc": "2026-11-26T00:31:04.600618+00:00"
   },
   {
     "id": "40c06bd49c3d06ee6d3d93c3",
@@ -277,64 +314,5 @@
     "status": "research_only_unverified",
     "first_collected_utc": "2026-11-25T14:34:16.503193+00:00",
     "first_collector_observed_utc": "2026-11-25T14:34:16.503193+00:00"
-  },
-  {
-    "id": "f8e9b5e3c0939826e41ca241",
-    "title": "Where Does Texas' Data Center Boom Go From Here?",
-    "url": "https://oilprice.com/Energy/Energy-General/Where-Does-Texas-Data-Center-Boom-Go-From-Here.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-24T21:00:00+00:00",
-    "category": "Power & Electricity",
-    "published_precision": "timestamp",
-    "relevance_score": 30,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "data center"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
-    "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
-  },
-  {
-    "id": "e13ff861566b3fe74e1b6326",
-    "title": "Iraq Refuses to Accept OPEC+ Assessment of its Production Capacity",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/Iraq-Refuses-to-Accept-OPEC-Assessment-of-its-Production-Capacity.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-24T18:30:00+00:00",
-    "category": "Oil & Energy",
-    "published_precision": "timestamp",
-    "relevance_score": 30,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "opec"
-    ],
-    "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
-    "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
-  },
-  {
-    "id": "5de1e900a3ad2d8cfb376f80",
-    "title": "TVA touts $1.7B data center deal under new large-load tariff",
-    "url": "https://www.utilitydive.com/news/tva-touts-17b-data-center-deal-under-new-large-load-tariff/875630",
-    "source": "Utility Dive News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-24T16:11:04+00:00",
-    "category": "Power & Electricity",
-    "published_precision": "timestamp",
-    "relevance_score": 30,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "data center"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collected_utc": "2026-11-25T00:52:09.355050+00:00",
-    "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
   }
 ]

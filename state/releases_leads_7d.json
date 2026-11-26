@@ -1,5 +1,107 @@
 [
   {
+    "url": "https://www.webwire.com/ViewPressRel.asp?aId=364673",
+    "title": "Eni Announces the Commissioning of the 120 MW Gas Power Plant of the Mangystau Hybrid Power Plant Project",
+    "feed_creator_label": "WebWire",
+    "named_issuer_verified": false,
+    "feed_source_url": "https://www.webwire.com/ViewPressRel.asp?aId=364673",
+    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+    "feed_published_utc": "2026-11-25T23:41:57+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "category": "Power & Electricity",
+    "relevance_score": 30,
+    "relevance_evidence": [
+      "power plant"
+    ],
+    "provider": "Press Release Feed",
+    "content_kind": "company_or_newswire_press_release",
+    "status": "promotional_issuer_claim_requires_editorial_verification",
+    "first_collector_observed_utc": "2026-11-26T00:31:53.994625+00:00"
+  },
+  {
+    "url": "https://finance.yahoo.com/energy/articles/constellation-completes-divestiture-legacy-calpine-213000879.html",
+    "title": "Constellation Completes Divestiture of Legacy Calpine PJM Generation Assets to LS Power",
+    "feed_creator_label": "Constellation",
+    "named_issuer_verified": false,
+    "feed_source_url": "https://finance.yahoo.com/energy/articles/constellation-completes-divestiture-legacy-calpine-213000879.html",
+    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+    "feed_published_utc": "2026-11-25T21:30:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "category": "Power & Electricity",
+    "relevance_score": 60,
+    "relevance_evidence": [
+      "calpine",
+      "pjm"
+    ],
+    "provider": "Press Release Feed",
+    "content_kind": "company_or_newswire_press_release",
+    "status": "promotional_issuer_claim_requires_editorial_verification",
+    "first_collector_observed_utc": "2026-11-26T00:31:53.994625+00:00"
+  },
+  {
+    "url": "https://www.globenewswire.com/news-release/2026/11/25/3410513/9788/en/montauk-renewables-inc-nasdaq-mntk-investors-class-action-lawsuit-filed-lead-plaintiff-deadline-january-25-2027-contact-bronstein-gewirtz-grossman.html",
+    "title": "Montauk Renewables, Inc. (NASDAQ: MNTK) Investors: Class Action Lawsuit Filed \u2013 Lead Plaintiff Deadline January 25, 2027 \u2013 Contact Bronstein, Gewirtz & Grossman",
+    "feed_creator_label": "GlobeNewswire",
+    "named_issuer_verified": false,
+    "feed_source_url": "https://www.globenewswire.com/news-release/2026/11/25/3410513/9788/en/montauk-renewables-inc-nasdaq-mntk-investors-class-action-lawsuit-filed-lead-plaintiff-deadline-january-25-2027-contact-bronstein-gewirtz-grossman.html",
+    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+    "feed_published_utc": "2026-11-25T18:00:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "category": "Power & Electricity",
+    "relevance_score": 24,
+    "relevance_evidence": [
+      "renewables"
+    ],
+    "provider": "Press Release Feed",
+    "content_kind": "company_or_newswire_press_release",
+    "status": "promotional_issuer_claim_requires_editorial_verification",
+    "first_collector_observed_utc": "2026-11-26T00:31:53.994625+00:00"
+  },
+  {
+    "url": "https://energycapitalandpower.africa-newsroom.com/press/kenya-targets-20000-barrels-per-day-bpd-by-december-as-regional-producers-push-for-energy-integration?lang=en",
+    "title": "Kenya Targets 20,000 Barrels per Day (BPD) by December as Regional Producers Push for Energy Integration",
+    "feed_creator_label": "APO Group",
+    "named_issuer_verified": false,
+    "feed_source_url": "https://energycapitalandpower.africa-newsroom.com/press/kenya-targets-20000-barrels-per-day-bpd-by-december-as-regional-producers-push-for-energy-integration?lang=en",
+    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+    "feed_published_utc": "2026-11-25T15:45:50+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "category": "Oil & Energy",
+    "relevance_score": 27,
+    "relevance_evidence": [
+      "bpd"
+    ],
+    "provider": "Press Release Feed",
+    "content_kind": "company_or_newswire_press_release",
+    "status": "promotional_issuer_claim_requires_editorial_verification",
+    "first_collector_observed_utc": "2026-11-26T00:31:53.994625+00:00"
+  },
+  {
+    "url": "https://afreximbank.africa-newsroom.com/press/ibom-lng-partners-with-afreximbank-to-support-us15-billion-lng-project-in-akwa-ibom?lang=en",
+    "title": "Ibom LNG Partners with Afreximbank to support US$1.5 billion LNG project in Akwa Ibom",
+    "feed_creator_label": "APO Group",
+    "named_issuer_verified": false,
+    "feed_source_url": "https://afreximbank.africa-newsroom.com/press/ibom-lng-partners-with-afreximbank-to-support-us15-billion-lng-project-in-akwa-ibom?lang=en",
+    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+    "feed_published_utc": "2026-11-25T14:34:41+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "category": "LNG",
+    "relevance_score": 81,
+    "relevance_evidence": [
+      "lng",
+      "lng project"
+    ],
+    "provider": "Press Release Feed",
+    "content_kind": "company_or_newswire_press_release",
+    "status": "promotional_issuer_claim_requires_editorial_verification",
+    "first_collector_observed_utc": "2026-11-26T00:31:53.994625+00:00"
+  },
+  {
     "url": "https://energycapitalandpower.africa-newsroom.com/press/nigers-petroleum-minister-hamadou-tini-confirmed-for-msgbc-conference?lang=en",
     "title": "Niger\u2019s Petroleum Minister Hamadou Tini Confirmed for MSGBC Conference",
     "feed_creator_label": "APO Group",
@@ -1464,158 +1566,5 @@
     "content_kind": "company_or_newswire_press_release",
     "status": "promotional_issuer_claim_requires_editorial_verification",
     "first_collector_observed_utc": "2026-11-19T23:06:36.458319+00:00"
-  },
-  {
-    "url": "https://finance.yahoo.com/energy/articles/ugi-corporation-announces-plan-pursue-230100078.html",
-    "title": "UGI Corporation Announces Plan to Pursue the Separation of Its Global Liquefied Petroleum Gas Business Into a Standalone Public Company",
-    "feed_creator_label": "UGI Corporation",
-    "named_issuer_verified": false,
-    "feed_source_url": "https://finance.yahoo.com/energy/articles/ugi-corporation-announces-plan-pursue-230100078.html",
-    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-    "feed_published_utc": "2026-11-18T23:01:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "category": "LNG",
-    "relevance_score": 33,
-    "relevance_evidence": [
-      "liquefied"
-    ],
-    "provider": "Press Release Feed",
-    "content_kind": "company_or_newswire_press_release",
-    "status": "promotional_issuer_claim_requires_editorial_verification"
-  },
-  {
-    "url": "https://www.newswire.com/news/jericho-energy-ventures-provides-update-on-oil-and-gas-joint-venture-22890825",
-    "title": "Jericho Energy Ventures Provides Update on Oil and Gas Joint Venture Credit Facility",
-    "feed_creator_label": "Newswire.com",
-    "named_issuer_verified": false,
-    "feed_source_url": "https://www.newswire.com/news/jericho-energy-ventures-provides-update-on-oil-and-gas-joint-venture-22890825",
-    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-    "feed_published_utc": "2026-11-18T22:30:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "category": "Oil & Energy",
-    "relevance_score": 30,
-    "relevance_evidence": [
-      "oil and gas"
-    ],
-    "provider": "Press Release Feed",
-    "content_kind": "company_or_newswire_press_release",
-    "status": "promotional_issuer_claim_requires_editorial_verification"
-  },
-  {
-    "url": "https://finance.yahoo.com/energy/articles/jericho-energy-ventures-provides-oil-223000281.html",
-    "title": "Jericho Energy Ventures Provides Update on Oil and Gas Joint Venture Credit Facility",
-    "feed_creator_label": "ACCESS Newswire",
-    "named_issuer_verified": false,
-    "feed_source_url": "https://finance.yahoo.com/energy/articles/jericho-energy-ventures-provides-oil-223000281.html",
-    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-    "feed_published_utc": "2026-11-18T22:30:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "category": "Oil & Energy",
-    "relevance_score": 30,
-    "relevance_evidence": [
-      "oil and gas"
-    ],
-    "provider": "Press Release Feed",
-    "content_kind": "company_or_newswire_press_release",
-    "status": "promotional_issuer_claim_requires_editorial_verification"
-  },
-  {
-    "url": "https://www.globenewswire.com/news-release/2026/11/18/3406181/0/en/xos-enters-energy-generation-with-the-xos-solar-system-bringing-grid-independent-power-to-any-site-in-days.html",
-    "title": "Xos Enters Energy Generation with the Xos Solar System, Bringing Grid-Independent Power to Any Site in Days",
-    "feed_creator_label": "GlobeNewswire",
-    "named_issuer_verified": false,
-    "feed_source_url": "https://www.globenewswire.com/news-release/2026/11/18/3406181/0/en/xos-enters-energy-generation-with-the-xos-solar-system-bringing-grid-independent-power-to-any-site-in-days.html",
-    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-    "feed_published_utc": "2026-11-18T21:30:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "category": "Power & Electricity",
-    "relevance_score": 24,
-    "relevance_evidence": [
-      "grid"
-    ],
-    "provider": "Press Release Feed",
-    "content_kind": "company_or_newswire_press_release",
-    "status": "promotional_issuer_claim_requires_editorial_verification"
-  },
-  {
-    "url": "https://www.globenewswire.com/news-release/2026/11/18/3406111/0/en/cmblu-and-imperial-irrigation-district-announce-10-mw-100-mwh-echo-sands-solidflow-energy-storage-project.html",
-    "title": "CMBLU and Imperial Irrigation District Announce 10 MW / 100 MWh Echo Sands SolidFlow Energy Storage Project",
-    "feed_creator_label": "CMBlu Energy, Inc.",
-    "named_issuer_verified": false,
-    "feed_source_url": "https://www.globenewswire.com/news-release/2026/11/18/3406111/0/en/cmblu-and-imperial-irrigation-district-announce-10-mw-100-mwh-echo-sands-solidflow-energy-storage-project.html",
-    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-    "feed_published_utc": "2026-11-18T19:03:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "category": "Power & Electricity",
-    "relevance_score": 27,
-    "relevance_evidence": [
-      "energy storage"
-    ],
-    "provider": "Press Release Feed",
-    "content_kind": "company_or_newswire_press_release",
-    "status": "promotional_issuer_claim_requires_editorial_verification"
-  },
-  {
-    "url": "https://icrowdnewswire.com/2026/11/18/water-tower-research-publishes-initiation-of-coverage-report-on-neovolta-inc-us-battery-storage-platform-with-massive-growth-potential",
-    "title": "Water Tower Research Publishes Initiation of Coverage Report on NeoVolta, Inc., \u201cUS Battery Storage Platform with Massive Growth Potential\u201d",
-    "feed_creator_label": "iCrowdNewswire",
-    "named_issuer_verified": false,
-    "feed_source_url": "https://icrowdnewswire.com/2026/11/18/water-tower-research-publishes-initiation-of-coverage-report-on-neovolta-inc-us-battery-storage-platform-with-massive-growth-potential",
-    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-    "feed_published_utc": "2026-11-18T19:00:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "category": "Power & Electricity",
-    "relevance_score": 27,
-    "relevance_evidence": [
-      "battery storage"
-    ],
-    "provider": "Press Release Feed",
-    "content_kind": "company_or_newswire_press_release",
-    "status": "promotional_issuer_claim_requires_editorial_verification"
-  },
-  {
-    "url": "https://www.globenewswire.com/news-release/2026/11/18/3406044/0/en/solutions30-strengthens-its-position-in-the-power-grid-and-electric-mobility-markets-with-new-contracts-in-belgium-and-poland.html",
-    "title": "Solutions30 strengthens its position in the power grid and electric mobility markets with new contracts in Belgium and Poland",
-    "feed_creator_label": "GlobeNewswire",
-    "named_issuer_verified": false,
-    "feed_source_url": "https://www.globenewswire.com/news-release/2026/11/18/3406044/0/en/solutions30-strengthens-its-position-in-the-power-grid-and-electric-mobility-markets-with-new-contracts-in-belgium-and-poland.html",
-    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-    "feed_published_utc": "2026-11-18T17:00:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "category": "Power & Electricity",
-    "relevance_score": 57,
-    "relevance_evidence": [
-      "grid",
-      "power grid"
-    ],
-    "provider": "Press Release Feed",
-    "content_kind": "company_or_newswire_press_release",
-    "status": "promotional_issuer_claim_requires_editorial_verification"
-  },
-  {
-    "url": "https://www.globenewswire.com/news-release/2026/11/18/3406019/0/en/trident-signs-mou-to-acquire-51-controlling-stake-in-malaysia-s-guang-yao-development-entering-hydrogen-power-and-battery-energy-storage-for-data-centres.html",
-    "title": "Trident Signs MOU to Acquire 51% Controlling Stake in Malaysia\u2019s Guang Yao Development, Entering Hydrogen Power and Battery Energy Storage for Data Centres",
-    "feed_creator_label": "GlobeNewswire",
-    "named_issuer_verified": false,
-    "feed_source_url": "https://www.globenewswire.com/news-release/2026/11/18/3406019/0/en/trident-signs-mou-to-acquire-51-controlling-stake-in-malaysia-s-guang-yao-development-entering-hydrogen-power-and-battery-energy-storage-for-data-centres.html",
-    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-    "feed_published_utc": "2026-11-18T16:30:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "category": "Power & Electricity",
-    "relevance_score": 27,
-    "relevance_evidence": [
-      "energy storage"
-    ],
-    "provider": "Press Release Feed",
-    "content_kind": "company_or_newswire_press_release",
-    "status": "promotional_issuer_claim_requires_editorial_verification"
   }
 ]

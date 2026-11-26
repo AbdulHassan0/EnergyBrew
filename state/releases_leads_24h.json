@@ -1,5 +1,107 @@
 [
   {
+    "url": "https://www.webwire.com/ViewPressRel.asp?aId=364673",
+    "title": "Eni Announces the Commissioning of the 120 MW Gas Power Plant of the Mangystau Hybrid Power Plant Project",
+    "feed_creator_label": "WebWire",
+    "named_issuer_verified": false,
+    "feed_source_url": "https://www.webwire.com/ViewPressRel.asp?aId=364673",
+    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+    "feed_published_utc": "2026-11-25T23:41:57+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "category": "Power & Electricity",
+    "relevance_score": 30,
+    "relevance_evidence": [
+      "power plant"
+    ],
+    "provider": "Press Release Feed",
+    "content_kind": "company_or_newswire_press_release",
+    "status": "promotional_issuer_claim_requires_editorial_verification",
+    "first_collector_observed_utc": "2026-11-26T00:31:53.994625+00:00"
+  },
+  {
+    "url": "https://finance.yahoo.com/energy/articles/constellation-completes-divestiture-legacy-calpine-213000879.html",
+    "title": "Constellation Completes Divestiture of Legacy Calpine PJM Generation Assets to LS Power",
+    "feed_creator_label": "Constellation",
+    "named_issuer_verified": false,
+    "feed_source_url": "https://finance.yahoo.com/energy/articles/constellation-completes-divestiture-legacy-calpine-213000879.html",
+    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+    "feed_published_utc": "2026-11-25T21:30:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "category": "Power & Electricity",
+    "relevance_score": 60,
+    "relevance_evidence": [
+      "calpine",
+      "pjm"
+    ],
+    "provider": "Press Release Feed",
+    "content_kind": "company_or_newswire_press_release",
+    "status": "promotional_issuer_claim_requires_editorial_verification",
+    "first_collector_observed_utc": "2026-11-26T00:31:53.994625+00:00"
+  },
+  {
+    "url": "https://www.globenewswire.com/news-release/2026/11/25/3410513/9788/en/montauk-renewables-inc-nasdaq-mntk-investors-class-action-lawsuit-filed-lead-plaintiff-deadline-january-25-2027-contact-bronstein-gewirtz-grossman.html",
+    "title": "Montauk Renewables, Inc. (NASDAQ: MNTK) Investors: Class Action Lawsuit Filed \u2013 Lead Plaintiff Deadline January 25, 2027 \u2013 Contact Bronstein, Gewirtz & Grossman",
+    "feed_creator_label": "GlobeNewswire",
+    "named_issuer_verified": false,
+    "feed_source_url": "https://www.globenewswire.com/news-release/2026/11/25/3410513/9788/en/montauk-renewables-inc-nasdaq-mntk-investors-class-action-lawsuit-filed-lead-plaintiff-deadline-january-25-2027-contact-bronstein-gewirtz-grossman.html",
+    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+    "feed_published_utc": "2026-11-25T18:00:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "category": "Power & Electricity",
+    "relevance_score": 24,
+    "relevance_evidence": [
+      "renewables"
+    ],
+    "provider": "Press Release Feed",
+    "content_kind": "company_or_newswire_press_release",
+    "status": "promotional_issuer_claim_requires_editorial_verification",
+    "first_collector_observed_utc": "2026-11-26T00:31:53.994625+00:00"
+  },
+  {
+    "url": "https://energycapitalandpower.africa-newsroom.com/press/kenya-targets-20000-barrels-per-day-bpd-by-december-as-regional-producers-push-for-energy-integration?lang=en",
+    "title": "Kenya Targets 20,000 Barrels per Day (BPD) by December as Regional Producers Push for Energy Integration",
+    "feed_creator_label": "APO Group",
+    "named_issuer_verified": false,
+    "feed_source_url": "https://energycapitalandpower.africa-newsroom.com/press/kenya-targets-20000-barrels-per-day-bpd-by-december-as-regional-producers-push-for-energy-integration?lang=en",
+    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+    "feed_published_utc": "2026-11-25T15:45:50+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "category": "Oil & Energy",
+    "relevance_score": 27,
+    "relevance_evidence": [
+      "bpd"
+    ],
+    "provider": "Press Release Feed",
+    "content_kind": "company_or_newswire_press_release",
+    "status": "promotional_issuer_claim_requires_editorial_verification",
+    "first_collector_observed_utc": "2026-11-26T00:31:53.994625+00:00"
+  },
+  {
+    "url": "https://afreximbank.africa-newsroom.com/press/ibom-lng-partners-with-afreximbank-to-support-us15-billion-lng-project-in-akwa-ibom?lang=en",
+    "title": "Ibom LNG Partners with Afreximbank to support US$1.5 billion LNG project in Akwa Ibom",
+    "feed_creator_label": "APO Group",
+    "named_issuer_verified": false,
+    "feed_source_url": "https://afreximbank.africa-newsroom.com/press/ibom-lng-partners-with-afreximbank-to-support-us15-billion-lng-project-in-akwa-ibom?lang=en",
+    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+    "feed_published_utc": "2026-11-25T14:34:41+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "category": "LNG",
+    "relevance_score": 81,
+    "relevance_evidence": [
+      "lng",
+      "lng project"
+    ],
+    "provider": "Press Release Feed",
+    "content_kind": "company_or_newswire_press_release",
+    "status": "promotional_issuer_claim_requires_editorial_verification",
+    "first_collector_observed_utc": "2026-11-26T00:31:53.994625+00:00"
+  },
+  {
     "url": "https://energycapitalandpower.africa-newsroom.com/press/nigers-petroleum-minister-hamadou-tini-confirmed-for-msgbc-conference?lang=en",
     "title": "Niger\u2019s Petroleum Minister Hamadou Tini Confirmed for MSGBC Conference",
     "feed_creator_label": "APO Group",
@@ -198,185 +300,5 @@
     "content_kind": "company_or_newswire_press_release",
     "status": "promotional_issuer_claim_requires_editorial_verification",
     "first_collector_observed_utc": "2026-11-25T14:35:21.141764+00:00"
-  },
-  {
-    "url": "https://www.globenewswire.com/news-release/2026/11/24/3409936/937/en/montauk-renewables-inc-investigation-continues-investors-may-contact-kirby-mcinerney-llp-a-securities-fraud-law-firm-if-you-lost-money-on-your-mntk-investments.html",
-    "title": "Montauk Renewables, Inc. Investigation Continues: Investors May Contact Kirby McInerney LLP, a Securities Fraud Law Firm, If You Lost Money On Your MNTK Investments",
-    "feed_creator_label": "GlobeNewswire",
-    "named_issuer_verified": false,
-    "feed_source_url": "https://www.globenewswire.com/news-release/2026/11/24/3409936/937/en/montauk-renewables-inc-investigation-continues-investors-may-contact-kirby-mcinerney-llp-a-securities-fraud-law-firm-if-you-lost-money-on-your-mntk-investments.html",
-    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-    "feed_published_utc": "2026-11-24T23:00:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "category": "Power & Electricity",
-    "relevance_score": 24,
-    "relevance_evidence": [
-      "renewables"
-    ],
-    "provider": "Press Release Feed",
-    "content_kind": "company_or_newswire_press_release",
-    "status": "promotional_issuer_claim_requires_editorial_verification",
-    "first_collector_observed_utc": "2026-11-25T00:52:30.665375+00:00"
-  },
-  {
-    "url": "https://www.webwire.com/ViewPressRel.asp?aId=364595",
-    "title": "Alcatel Submarine Networks Successfully Deploys OptoWave PRM Project on Mero Field, Operated by Petrobras.",
-    "feed_creator_label": "WebWire",
-    "named_issuer_verified": false,
-    "feed_source_url": "https://www.webwire.com/ViewPressRel.asp?aId=364595",
-    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-    "feed_published_utc": "2026-11-24T22:12:02+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "category": "Oil & Energy",
-    "relevance_score": 27,
-    "relevance_evidence": [
-      "petrobras"
-    ],
-    "provider": "Press Release Feed",
-    "content_kind": "company_or_newswire_press_release",
-    "status": "promotional_issuer_claim_requires_editorial_verification",
-    "first_collector_observed_utc": "2026-11-25T00:52:30.665375+00:00"
-  },
-  {
-    "url": "https://finance.yahoo.com/energy/articles/people-refinerys-wildlife-inspires-employee-210500339.html",
-    "title": "Our People: Refinery's Wildlife Reserve Inspires Employee Volunteer To Carry On Decades-Long Legacy",
-    "feed_creator_label": "ACCESS Newswire",
-    "named_issuer_verified": false,
-    "feed_source_url": "https://finance.yahoo.com/energy/articles/people-refinerys-wildlife-inspires-employee-210500339.html",
-    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-    "feed_published_utc": "2026-11-24T21:05:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "category": "Oil & Energy",
-    "relevance_score": 30,
-    "relevance_evidence": [
-      "refinery"
-    ],
-    "provider": "Press Release Feed",
-    "content_kind": "company_or_newswire_press_release",
-    "status": "promotional_issuer_claim_requires_editorial_verification",
-    "first_collector_observed_utc": "2026-11-25T00:52:30.665375+00:00"
-  },
-  {
-    "url": "https://www.einpresswire.com/article/958615359/ampace-gridvest-announce-strategic-partnership-to-expand-commercial-and-industrial-energy-storage-offerings-services",
-    "title": "Ampace & GridVest Announce Strategic Partnership to Expand Commercial and Industrial Energy Storage Offerings & Services",
-    "feed_creator_label": "EIN Presswire",
-    "named_issuer_verified": false,
-    "feed_source_url": "https://www.einpresswire.com/article/958615359/ampace-gridvest-announce-strategic-partnership-to-expand-commercial-and-industrial-energy-storage-offerings-services",
-    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-    "feed_published_utc": "2026-11-24T19:00:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "category": "Power & Electricity",
-    "relevance_score": 27,
-    "relevance_evidence": [
-      "energy storage"
-    ],
-    "provider": "Press Release Feed",
-    "content_kind": "company_or_newswire_press_release",
-    "status": "promotional_issuer_claim_requires_editorial_verification",
-    "first_collector_observed_utc": "2026-11-25T00:52:30.665375+00:00"
-  },
-  {
-    "url": "https://energycapitalandpower.africa-newsroom.com/press/south-sudan-targets-400000-barrels-per-day-bpd-calls-for-investment-across-energy-value-chain-at-south-sudan-oil-and-power-ssop-2026?lang=en",
-    "title": "South Sudan Targets 400,000 Barrels per Day (BPD), Calls for Investment Across Energy Value Chain at South Sudan Oil & Power (SSOP) 2026",
-    "feed_creator_label": "APO Group",
-    "named_issuer_verified": false,
-    "feed_source_url": "https://energycapitalandpower.africa-newsroom.com/press/south-sudan-targets-400000-barrels-per-day-bpd-calls-for-investment-across-energy-value-chain-at-south-sudan-oil-and-power-ssop-2026?lang=en",
-    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-    "feed_published_utc": "2026-11-24T18:23:43+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "category": "Oil & Energy",
-    "relevance_score": 27,
-    "relevance_evidence": [
-      "bpd"
-    ],
-    "provider": "Press Release Feed",
-    "content_kind": "company_or_newswire_press_release",
-    "status": "promotional_issuer_claim_requires_editorial_verification",
-    "first_collector_observed_utc": "2026-11-25T00:52:30.665375+00:00"
-  },
-  {
-    "url": "https://finance.yahoo.com/technology/articles/ellisdon-equinix-compass-datacenters-headline-181700487.html",
-    "title": "EllisDon, Equinix and Compass Datacenters Headline Data Center World\u2019s Canadian Debut in Toronto",
-    "feed_creator_label": "Business Wire",
-    "named_issuer_verified": false,
-    "feed_source_url": "https://finance.yahoo.com/technology/articles/ellisdon-equinix-compass-datacenters-headline-181700487.html",
-    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-    "feed_published_utc": "2026-11-24T18:17:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "category": "Power & Electricity",
-    "relevance_score": 30,
-    "relevance_evidence": [
-      "data center"
-    ],
-    "provider": "Press Release Feed",
-    "content_kind": "company_or_newswire_press_release",
-    "status": "promotional_issuer_claim_requires_editorial_verification",
-    "first_collector_observed_utc": "2026-11-25T00:52:30.665375+00:00"
-  },
-  {
-    "url": "https://www.globenewswire.com/news-release/2026/11/24/3409775/1087/en/investor-alert-pomerantz-law-firm-investigates-claims-on-behalf-of-investors-of-montauk-renewables-inc-mntk.html",
-    "title": "INVESTOR ALERT: Pomerantz Law Firm Investigates Claims On Behalf of Investors of Montauk Renewables, Inc. - MNTK",
-    "feed_creator_label": "GlobeNewswire",
-    "named_issuer_verified": false,
-    "feed_source_url": "https://www.globenewswire.com/news-release/2026/11/24/3409775/1087/en/investor-alert-pomerantz-law-firm-investigates-claims-on-behalf-of-investors-of-montauk-renewables-inc-mntk.html",
-    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-    "feed_published_utc": "2026-11-24T18:07:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "category": "Power & Electricity",
-    "relevance_score": 24,
-    "relevance_evidence": [
-      "renewables"
-    ],
-    "provider": "Press Release Feed",
-    "content_kind": "company_or_newswire_press_release",
-    "status": "promotional_issuer_claim_requires_editorial_verification",
-    "first_collector_observed_utc": "2026-11-25T00:52:30.665375+00:00"
-  },
-  {
-    "url": "https://www.whitehouse.gov/releases/2026/11/gas-prices-plunge-ahead-of-thanksgiving-just-as-president-trump-predicted",
-    "title": "Gas Prices Plunge Ahead of Thanksgiving \u2014 Just as President Trump Predicted",
-    "feed_creator_label": "The White House",
-    "named_issuer_verified": false,
-    "feed_source_url": "https://www.whitehouse.gov/releases/2026/11/gas-prices-plunge-ahead-of-thanksgiving-just-as-president-trump-predicted",
-    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-    "feed_published_utc": "2026-11-24T17:18:40+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "category": "Natural Gas",
-    "relevance_score": 33,
-    "relevance_evidence": [
-      "gas prices"
-    ],
-    "provider": "Press Release Feed",
-    "content_kind": "company_or_newswire_press_release",
-    "status": "promotional_issuer_claim_requires_editorial_verification",
-    "first_collector_observed_utc": "2026-11-25T00:52:30.665375+00:00"
-  },
-  {
-    "url": "https://pressat.co.uk/releases/can-a-home-generate-nearly-six-times-the-electricity-it-uses-this-one-did-f00f0256a2613bcfb4320fd9060958a8",
-    "title": "Can a home generate nearly six times the electricity it uses? This one did",
-    "feed_creator_label": "Pressat",
-    "named_issuer_verified": false,
-    "feed_source_url": "https://pressat.co.uk/releases/can-a-home-generate-nearly-six-times-the-electricity-it-uses-this-one-did-f00f0256a2613bcfb4320fd9060958a8",
-    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-    "feed_published_utc": "2026-11-24T15:51:10+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "category": "Power & Electricity",
-    "relevance_score": 33,
-    "relevance_evidence": [
-      "electricity"
-    ],
-    "provider": "Press Release Feed",
-    "content_kind": "company_or_newswire_press_release",
-    "status": "promotional_issuer_claim_requires_editorial_verification",
-    "first_collector_observed_utc": "2026-11-25T00:52:30.665375+00:00"
   }
 ]
