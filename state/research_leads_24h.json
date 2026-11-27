@@ -1,5 +1,715 @@
 [
   {
+    "url": "https://organiser.org/2026/11/27/429257/international/houthis-attack-jazan-oil-refinery-in-saudi-arabia-nepali-worker-killed-several-injured-as-tensions-escalate-in-gulf",
+    "title": "Houthis launch fresh strikes on Jazan oil refinery in Saudi Arabia",
+    "domain": "organiser.org",
+    "gdelt_first_seen_utc": "2026-11-27T13:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:oil",
+      "geopolitical_event:strikes",
+      "world_context:saudi arabia"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00"
+  },
+  {
+    "url": "https://www.milfordmercury.co.uk/news/national/26768051.electricity-grid-operator-issues-back-up-power-call-fourth-day-running",
+    "title": "Electricity grid operator issues back-up power call for fourth day running",
+    "domain": "www.milfordmercury.co.uk",
+    "gdelt_first_seen_utc": "2026-11-27T13:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 84,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity",
+      "grid",
+      "grid operator"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00"
+  },
+  {
+    "url": "https://www.newsandstar.co.uk/news/national/26768051.electricity-grid-operator-issues-back-up-power-call-fourth-day-running",
+    "title": "Electricity grid operator issues back-up power call for fourth day running",
+    "domain": "www.newsandstar.co.uk",
+    "gdelt_first_seen_utc": "2026-11-27T13:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 84,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity",
+      "grid",
+      "grid operator"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00"
+  },
+  {
+    "url": "https://www.northsomersettimes.co.uk/news/national/26768051.electricity-grid-operator-issues-back-up-power-call-fourth-day-running",
+    "title": "Electricity grid operator issues back-up power call for fourth day running",
+    "domain": "www.northsomersettimes.co.uk",
+    "gdelt_first_seen_utc": "2026-11-27T13:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 84,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity",
+      "grid",
+      "grid operator"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00"
+  },
+  {
+    "url": "https://www.gazetteherald.co.uk/news/national/26768051.electricity-grid-operator-issues-back-up-power-call-fourth-day-running",
+    "title": "Electricity grid operator issues back-up power call for fourth day running",
+    "domain": "www.gazetteherald.co.uk",
+    "gdelt_first_seen_utc": "2026-11-27T13:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 84,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity",
+      "grid",
+      "grid operator"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00"
+  },
+  {
+    "url": "https://www.middle-east-online.com/en/israel%E2%80%99s-mossad-chief-pushes-unilateral-attack-iran",
+    "title": "Israel’s Mossad chief pushes for unilateral attack on Iran | MEO",
+    "domain": "www.middle-east-online.com",
+    "gdelt_first_seen_utc": "2026-11-27T13:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:iran/israel"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00"
+  },
+  {
+    "url": "https://www.newsbusters.org/blogs/nb/steve-malzberg/2026/11/27/cnns-keilar-silent-dem-trashes-us-were-not-good-guys-iran-war",
+    "title": "CNN's Keilar Silent As Dem Trashes US: 'We're Not The Good Guys' In Iran War, Bombing Kids",
+    "domain": "www.newsbusters.org",
+    "gdelt_first_seen_utc": "2026-11-27T13:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:war",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00"
+  },
+  {
+    "url": "http://www.iranherald.com/news/279466177/pro-war-us-senator-mistakes-north-korea-for-iran",
+    "title": "Pro-war US senator mistakes North Korea for Iran",
+    "domain": "www.iranherald.com",
+    "gdelt_first_seen_utc": "2026-11-27T13:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:war",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00"
+  },
+  {
+    "url": "https://splash247.com/japan-turns-to-south-korea-to-revive-lng-carrier-construction",
+    "title": "Japan turns to South Korea to revive LNG carrier construction - Splash247",
+    "domain": "splash247.com",
+    "gdelt_first_seen_utc": "2026-11-27T13:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 45,
+    "category": "LNG",
+    "relevance_evidence": [
+      "lng"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00"
+  },
+  {
+    "url": "https://www.standard.co.uk/business/business-news/andy-burnham-centrica-british-gas-government-b1306687.html",
+    "title": "Centrica warns over jobs after Government talks over Rough gas storage fail",
+    "domain": "www.standard.co.uk",
+    "gdelt_first_seen_utc": "2026-11-27T13:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 36,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas storage"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00"
+  },
+  {
+    "url": "https://www.milfordmercury.co.uk/news/national/26769038.centrica-warns-jobs-government-talks-rough-gas-storage-fail",
+    "title": "Centrica warns over jobs after Government talks over Rough gas storage fail",
+    "domain": "www.milfordmercury.co.uk",
+    "gdelt_first_seen_utc": "2026-11-27T13:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 36,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas storage"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00"
+  },
+  {
+    "url": "https://www.newsandstar.co.uk/news/national/26769038.centrica-warns-jobs-government-talks-rough-gas-storage-fail",
+    "title": "Centrica warns over jobs after Government talks over Rough gas storage fail",
+    "domain": "www.newsandstar.co.uk",
+    "gdelt_first_seen_utc": "2026-11-27T13:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 36,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas storage"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00"
+  },
+  {
+    "url": "https://www.northsomersettimes.co.uk/news/national/26769038.centrica-warns-jobs-government-talks-rough-gas-storage-fail",
+    "title": "Centrica warns over jobs after Government talks over Rough gas storage fail",
+    "domain": "www.northsomersettimes.co.uk",
+    "gdelt_first_seen_utc": "2026-11-27T13:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 36,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas storage"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00"
+  },
+  {
+    "url": "https://www.gazetteherald.co.uk/news/national/26769038.centrica-warns-jobs-government-talks-rough-gas-storage-fail",
+    "title": "Centrica warns over jobs after Government talks over Rough gas storage fail",
+    "domain": "www.gazetteherald.co.uk",
+    "gdelt_first_seen_utc": "2026-11-27T13:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 36,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas storage"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00"
+  },
+  {
+    "url": "https://www.ludlowadvertiser.co.uk/news/national/26769038.centrica-warns-jobs-government-talks-rough-gas-storage-fail",
+    "title": "Centrica warns over jobs after Government talks over Rough gas storage fail",
+    "domain": "www.ludlowadvertiser.co.uk",
+    "gdelt_first_seen_utc": "2026-11-27T13:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 36,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas storage"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00"
+  },
+  {
+    "url": "https://www.trend.az/azerbaijan/4251466.html",
+    "title": "Azerbaijan’s oil exports to India scale up 3.3-fold to 830,000 tons in Jan-Oct",
+    "domain": "www.trend.az",
+    "gdelt_first_seen_utc": "2026-11-27T13:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "oil exports"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00"
+  },
+  {
+    "url": "https://www.jagran.com/world/america-spacex-gets-texas-power-plant-permit-for-24b-supercomputing-40450461.html",
+    "title": "नई गवर्नर के सख्त नियमों से पहले SpaceX का बड़ा कदम, टेक्सस में नेचुरल गैस पावर प्लांट लगाने का मिला परमिट - spacex gets texas power plant permit for 24b supercomputing",
+    "domain": "www.jagran.com",
+    "gdelt_first_seen_utc": "2026-11-27T13:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "power plant"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00"
+  },
+  {
+    "url": "https://splash247.com/netherlands-opens-2gw-offshore-wind-tender",
+    "title": "Netherlands opens 2GW offshore wind tender - Splash247",
+    "domain": "splash247.com",
+    "gdelt_first_seen_utc": "2026-11-27T13:02:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "offshore wind"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00"
+  },
+  {
+    "url": "https://economictimes.indiatimes.com/markets/commodities/crude-oil-prices-near-97-as-west-asia-tensions-revive-supply-fears-opec-meeting-in-focus/articleshow/136222227.cms",
+    "title": "Crude oil prices near $97 as West Asia tensions revive supply fears; OPEC+ meeting in focus",
+    "domain": "economictimes.indiatimes.com",
+    "gdelt_first_seen_utc": "2026-11-27T13:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 99,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "crude oil",
+      "oil prices",
+      "opec"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00"
+  },
+  {
+    "url": "https://aninews.in/news/world/asia/india-says-attacks-on-maritime-shipping-and-seafarers-unacceptable-calls-for-global-response20261127182723",
+    "title": "India says attacks on maritime shipping and seafarers unacceptable, calls for global response",
+    "domain": "aninews.in",
+    "gdelt_first_seen_utc": "2026-11-27T13:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:shipping",
+      "geopolitical_event:attacks",
+      "world_context:india"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00"
+  },
+  {
+    "url": "https://english.news.cn/20261127/8b2d74cdf47f447a891e6273d6aac819/c.html",
+    "title": "Russia extends aviation fuel export ban through March 2027",
+    "domain": "english.news.cn",
+    "gdelt_first_seen_utc": "2026-11-27T13:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:fuel",
+      "geopolitical_event:export ban",
+      "world_context:russia"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00"
+  },
+  {
+    "url": "https://www.thetottenhamindependent.co.uk/news/national/26768051.electricity-grid-operator-issues-back-up-power-call-fourth-day-running",
+    "title": "Electricity grid operator issues back-up power call for fourth day running",
+    "domain": "www.thetottenhamindependent.co.uk",
+    "gdelt_first_seen_utc": "2026-11-27T13:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 84,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity",
+      "grid",
+      "grid operator"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00"
+  },
+  {
+    "url": "https://www.themoscowtimes.com/2026/11/26/trump-and-nato-chief-urge-russia-to-avoid-actions-that-widen-ukraine-war-a812374",
+    "title": "Trump and NATO Chief Urge Russia to Avoid Actions That Widen Ukraine War",
+    "domain": "www.themoscowtimes.com",
+    "gdelt_first_seen_utc": "2026-11-27T13:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:war",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00"
+  },
+  {
+    "url": "https://news.az/news/mossad-chief-pushes-for-unilateral-israeli-strike-on-iran-if-needed",
+    "title": "Mossad chief pushes for unilateral Israeli strike on Iran if needed | News.az",
+    "domain": "news.az",
+    "gdelt_first_seen_utc": "2026-11-27T13:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strike",
+      "world_context:iran/israel"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00"
+  },
+  {
+    "url": "https://splash247.com/pakistans-coal-imports-surge-51-as-lng-supplies-collapse",
+    "title": "Pakistan’s coal imports surge 51% as LNG supplies collapse - Splash247",
+    "domain": "splash247.com",
+    "gdelt_first_seen_utc": "2026-11-27T13:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 45,
+    "category": "LNG",
+    "relevance_evidence": [
+      "lng"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00"
+  },
+  {
+    "url": "https://www.haberler.com/ekonomi/gazprom-yetkilisi-2027-de-rus-lng-sinin-20468955-haberi",
+    "title": "Gazprom yetkilisi, 2027'de Rus LNG'sinin kesilmesinin fiyatları artıracağını bekliyor",
+    "domain": "www.haberler.com",
+    "gdelt_first_seen_utc": "2026-11-27T13:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 45,
+    "category": "LNG",
+    "relevance_evidence": [
+      "lng"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00"
+  },
+  {
+    "url": "https://www.thetottenhamindependent.co.uk/news/national/26769038.centrica-warns-jobs-government-talks-rough-gas-storage-fail",
+    "title": "Centrica warns over jobs after Government talks over Rough gas storage fail",
+    "domain": "www.thetottenhamindependent.co.uk",
+    "gdelt_first_seen_utc": "2026-11-27T13:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 36,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas storage"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00"
+  },
+  {
+    "url": "https://yellowscene.com/2026/11/27/hearing-scheduled-to-amend-draco-oil-and-gas-development-plan",
+    "title": "Hearing Scheduled to Amend Draco Oil and Gas Development Plan - Yellow Scene Magazine",
+    "domain": "yellowscene.com",
+    "gdelt_first_seen_utc": "2026-11-27T13:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "oil and gas"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00"
+  },
+  {
+    "url": "https://www.lettera43.it/pressioni-trump-venezuela-iraq-fuori-opec-cartello-del-petrolio",
+    "title": "Le pressioni di Trump per spingere Venezuela e Iraq fuori dall’Opec - Lettera43",
+    "domain": "www.lettera43.it",
+    "gdelt_first_seen_utc": "2026-11-27T13:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "opec"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00"
+  },
+  {
+    "url": "https://economictimes.indiatimes.com/news/new-updates/china-develops-worlds-first-600-mw-class-compressed-air-energy-storage-expander-heres-how-it-works/articleshow/136221583.cms",
+    "title": "China develops world's first 600 MW-class compressed-air energy storage expander, here's how it works",
+    "domain": "economictimes.indiatimes.com",
+    "gdelt_first_seen_utc": "2026-11-27T13:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "energy storage"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00"
+  },
+  {
+    "url": "https://www.trustedreviews.com/black-friday/anker-solarbank-4-pro-solar-panels-black-friday-deal",
+    "title": "Solar panels and battery storage for under £2000: Anker's Black Friday deal",
+    "domain": "www.trustedreviews.com",
+    "gdelt_first_seen_utc": "2026-11-27T13:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "battery storage"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00"
+  },
+  {
     "url": "https://www.hackneygazette.co.uk/news/national/26768051.electricity-grid-operator-issues-back-up-power-call-fourth-day-running",
     "title": "Electricity grid operator issues back-up power call for fourth day running",
     "domain": "www.hackneygazette.co.uk",
@@ -2637,483 +3347,5 @@
     ],
     "status": "discovery_only_requires_publisher_verification",
     "first_collector_observed_utc": "2026-11-26T14:00:16.781900+00:00"
-  },
-  {
-    "url": "https://nbcmontana.com/news/nation-world/aaa-800-airfares-higher-gas-prices-may-curb-thanksgiving-travel",
-    "title": "AAA: $800 airfares, higher gas prices may curb Thanksgiving travel",
-    "domain": "nbcmontana.com",
-    "gdelt_first_seen_utc": "2026-11-26T11:47:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 33,
-    "category": "Natural Gas",
-    "relevance_evidence": [
-      "gas prices"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-26T11:57:02.219456+00:00"
-  },
-  {
-    "url": "https://wset.com/news/nation-world/aaa-800-airfares-higher-gas-prices-may-curb-thanksgiving-travel",
-    "title": "AAA: $800 airfares, higher gas prices may curb Thanksgiving travel",
-    "domain": "wset.com",
-    "gdelt_first_seen_utc": "2026-11-26T11:47:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 33,
-    "category": "Natural Gas",
-    "relevance_evidence": [
-      "gas prices"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-26T11:57:02.219456+00:00"
-  },
-  {
-    "url": "https://wgxa.tv/news/nation-world/aaa-800-airfares-higher-gas-prices-may-curb-thanksgiving-travel",
-    "title": "AAA: $800 airfares, higher gas prices may curb Thanksgiving travel",
-    "domain": "wgxa.tv",
-    "gdelt_first_seen_utc": "2026-11-26T11:47:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 33,
-    "category": "Natural Gas",
-    "relevance_evidence": [
-      "gas prices"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-26T11:57:02.219456+00:00"
-  },
-  {
-    "url": "http://www.nepalnational.com/news/279455127/arabian-petroleum-limited-announces-h1-fy27-results",
-    "title": "Arabian Petroleum Limited Announces H1 FY27 Results",
-    "domain": "www.nepalnational.com",
-    "gdelt_first_seen_utc": "2026-11-26T11:47:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 27,
-    "category": "Oil & Energy",
-    "relevance_evidence": [
-      "petroleum"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-26T11:57:02.219456+00:00"
-  },
-  {
-    "url": "https://peakoil.com/publicpolicy/putin-says-ukraine-hits-russian-oil-plants-despite-trumps-requests-promises-retaliation",
-    "title": "Putin Says Ukraine Hits Russian Oil Plants Despite Trump's Requests, Promises Retaliation | Peak Oil News and Message Boards",
-    "domain": "peakoil.com",
-    "gdelt_first_seen_utc": "2026-11-26T11:46:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 90,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_hook:oil",
-      "geopolitical_event:retaliation",
-      "world_context:russian"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-26T11:57:02.219456+00:00"
-  },
-  {
-    "url": "https://www.theglobeandmail.com/investing/article-oil-prices-fall-as-supply-concerns-linger-after-iran-claims-mine",
-    "title": "Oil prices fall as supply concerns linger after Iran claims mine strikes on ships",
-    "domain": "www.theglobeandmail.com",
-    "gdelt_first_seen_utc": "2026-11-26T11:46:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 90,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_hook:oil",
-      "geopolitical_event:strikes",
-      "world_context:iran"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-26T11:57:02.219456+00:00"
-  },
-  {
-    "url": "https://peakoil.com/publicpolicy/houthis-strike-saudi-ports-on-red-sea",
-    "title": "Houthis Strike Saudi Ports on Red Sea | Peak Oil News and Message Boards",
-    "domain": "peakoil.com",
-    "gdelt_first_seen_utc": "2026-11-26T11:46:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 90,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_hook:oil",
-      "geopolitical_event:strike",
-      "world_context:houthis"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-26T11:57:02.219456+00:00"
-  },
-  {
-    "url": "https://www.mirror.co.uk/news/uk-news/lewis-pugh-straits-of-hormuz-37914400",
-    "title": "Briton who swam Strait of Hormuz – dodging burning tankers and missile strikes",
-    "domain": "www.mirror.co.uk",
-    "gdelt_first_seen_utc": "2026-11-26T11:46:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 90,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_hook:tankers",
-      "geopolitical_event:strikes",
-      "world_context:strait of hormuz"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-26T11:57:02.219456+00:00"
-  },
-  {
-    "url": "https://www.thenews.com.pk/latest/1425212-north-korea-halts-military-aid-to-russia-amid-ukraine-war-report",
-    "title": "North Korea halts military aid to Russia amid Ukraine war: Report",
-    "domain": "www.thenews.com.pk",
-    "gdelt_first_seen_utc": "2026-11-26T11:46:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:war",
-      "world_context:russia/ukraine"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-26T11:57:02.219456+00:00"
-  },
-  {
-    "url": "https://sputnikglobe.com/20261126/ukrainian-forces-attack-civilians-with-uav-during-evacuation-from-konstantinovka---russian-soldier--1125146151.html",
-    "title": "Ukrainian Forces Attack Civilians With UAV During Evacuation From Konstantinovka - Russian Soldier",
-    "domain": "sputnikglobe.com",
-    "gdelt_first_seen_utc": "2026-11-26T11:46:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:attack",
-      "world_context:russia/ukraine"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-26T11:57:02.219456+00:00"
-  },
-  {
-    "url": "https://www.africanews.com/2026/11/26/war-in-ukraine-russia-ignores-claims-on-troop-casualty-figures",
-    "title": "War in Ukraine: Russia ignores claims on troop casualty figures | Africanews",
-    "domain": "www.africanews.com",
-    "gdelt_first_seen_utc": "2026-11-26T11:46:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:war",
-      "world_context:russia/ukraine"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-26T11:57:02.219456+00:00"
-  },
-  {
-    "url": "https://mignews.com.ua/rizne/cziny-na-naftu-24-lystopada-2026-roku-skilky-koshtuyut-brent-wti-ta-urals-sogodni.html",
-    "title": "Ціни на нафту 24 листопада 2026 року: скільки коштують Brent, WTI та Urals сьогодні",
-    "domain": "mignews.com.ua",
-    "gdelt_first_seen_utc": "2026-11-26T11:46:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 66,
-    "category": "Oil & Energy",
-    "relevance_evidence": [
-      "brent",
-      "wti"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-26T11:57:02.219456+00:00"
-  },
-  {
-    "url": "https://www.ksmu.org/2026-11-26/court-lets-puerto-rico-governor-fire-firm-that-runs-the-islands-troubled-power-grid",
-    "title": "Court lets Puerto Rico governor fire firm that runs the island's troubled power grid",
-    "domain": "www.ksmu.org",
-    "gdelt_first_seen_utc": "2026-11-26T11:46:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 57,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "grid",
-      "power grid"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-26T11:57:02.219456+00:00"
-  },
-  {
-    "url": "https://peakoil.com/production/iran-faces-a-deepening-natural-gas-crisis-ahead-of-winter",
-    "title": "Iran Faces a Deepening Natural Gas Crisis Ahead of Winter | Peak Oil News and Message Boards",
-    "domain": "peakoil.com",
-    "gdelt_first_seen_utc": "2026-11-26T11:46:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 39,
-    "category": "Natural Gas",
-    "relevance_evidence": [
-      "natural gas"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-26T11:57:02.219456+00:00"
-  },
-  {
-    "url": "https://www.romaniapress.com/news=198331",
-    "title": "Romania: Hagag Energy expands natural gas distribution infrastructure in (…)",
-    "domain": "www.romaniapress.com",
-    "gdelt_first_seen_utc": "2026-11-26T11:46:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 39,
-    "category": "Natural Gas",
-    "relevance_evidence": [
-      "natural gas"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-26T11:57:02.219456+00:00"
-  },
-  {
-    "url": "https://markets.financialcontent.com/stocks/quote?Symbol=321%3A1281709",
-    "title": "Chevron Corp (NYSE:CVX) Stock Quote",
-    "domain": "markets.financialcontent.com",
-    "gdelt_first_seen_utc": "2026-11-26T11:46:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 33,
-    "category": "Oil & Energy",
-    "relevance_evidence": [
-      "chevron"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-26T11:57:02.219456+00:00"
-  },
-  {
-    "url": "https://www.hindustantimes.com/world-news/us-news/global-stocks-rebound-after-ai-sell-off-as-investors-assess-trumps-tariffs-oil-prices-and-inflation-risks-101795689444252.html",
-    "title": "Global stocks rebound after AI sell-off as investors assess Trump's tariffs, oil prices and inflation risks",
-    "domain": "www.hindustantimes.com",
-    "gdelt_first_seen_utc": "2026-11-26T11:46:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 33,
-    "category": "Oil & Energy",
-    "relevance_evidence": [
-      "oil prices"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-26T11:57:02.219456+00:00"
-  },
-  {
-    "url": "http://www.nepalnational.com/news/279455326/concierto-ai-is-now-live-sovereign-ai-for-every-employee-inside-the-enterprise-own-cloud-or-data-center",
-    "title": "Concierto AI Is Now Live: Sovereign AI for Every Employee, Inside the Enterprise's Own Cloud or Data Center",
-    "domain": "www.nepalnational.com",
-    "gdelt_first_seen_utc": "2026-11-26T11:46:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 30,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "data center"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-26T11:57:02.219456+00:00"
-  },
-  {
-    "url": "https://www.zazoom.it/2026-11-26/data-center-il-milione-di-satelliti-spacex-e-il-costo-di-170-miliardi/19978614",
-    "title": "Data center il milione di satelliti SpaceX e il costo di 170 miliardi",
-    "domain": "www.zazoom.it",
-    "gdelt_first_seen_utc": "2026-11-26T11:46:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 30,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "data center"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-26T11:57:02.219456+00:00"
-  },
-  {
-    "url": "https://www.finanznachrichten.de/nachrichten-2026-11/70236814-dax-am-mittag-weiter-freundlich-siemens-energy-vorn-003.htm",
-    "title": "Dax am Mittag weiter freundlich - Siemens Energy vorn",
-    "domain": "www.finanznachrichten.de",
-    "gdelt_first_seen_utc": "2026-11-26T11:46:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 27,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "siemens energy"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-26T11:57:02.219456+00:00"
-  },
-  {
-    "url": "https://www.boerse-express.com/news/articles/petrobras-aktie-jefferies-dreht-die-kursziele-runter-966972",
-    "title": "Petrobras Aktie: Jefferies dreht die Kursziele runter",
-    "domain": "www.boerse-express.com",
-    "gdelt_first_seen_utc": "2026-11-26T11:46:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 27,
-    "category": "Oil & Energy",
-    "relevance_evidence": [
-      "petrobras"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-26T11:57:02.219456+00:00"
   }
 ]
