@@ -1,21 +1,21 @@
 {
-  "run_utc": "2026-11-27T00:40:32.567403+00:00",
+  "run_utc": "2026-11-27T13:59:27.325165+00:00",
   "status": "ok",
   "provider": "Press Release Feed",
   "raw_feed_entries": 100,
-  "high_signal_company_releases": 10,
-  "new_unique_links": 5,
+  "high_signal_company_releases": 5,
+  "new_unique_links": 3,
   "error": null,
   "skipped": {
     "missing_original_source_url": 0,
     "missing_feed_timestamp": 0,
     "outside_window": 0,
-    "off_topic": 90,
+    "off_topic": 95,
     "non_article": 0,
     "marketing_only": 0
   },
   "http_status": 200,
-  "completed_utc": "2026-11-27T00:40:33.719369+00:00",
-  "company_release_leads_24h": 10,
-  "company_release_leads_7d": 77
+  "completed_utc": "2026-11-27T13:59:28.133200+00:00",
+  "company_release_leads_24h": 8,
+  "company_release_leads_7d": 74
 }

@@ -1,5 +1,65 @@
 [
   {
+    "url": "https://news.marketersmedia.com/cross-border-trade-business-facilitates-the-dual-circulation-of-domestic-and-international-lng-markets/89211146",
+    "title": "Cross-Border Trade Business Facilitates the Dual Circulation of Domestic and International LNG Markets",
+    "feed_creator_label": "MarketersMEDIA",
+    "named_issuer_verified": false,
+    "feed_source_url": "https://news.marketersmedia.com/cross-border-trade-business-facilitates-the-dual-circulation-of-domestic-and-international-lng-markets/89211146",
+    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+    "feed_published_utc": "2026-11-27T10:51:19+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "category": "LNG",
+    "relevance_score": 45,
+    "relevance_evidence": [
+      "lng"
+    ],
+    "provider": "Press Release Feed",
+    "content_kind": "company_or_newswire_press_release",
+    "status": "promotional_issuer_claim_requires_editorial_verification",
+    "first_collector_observed_utc": "2026-11-27T13:59:28.133200+00:00"
+  },
+  {
+    "url": "https://express-press-release.net/news/2026/11/27/1787891",
+    "title": "Compressed Natural Gas (CNG) Market Estimated to Reach USD 525.26 Billion by 2034 at 11.70% CAGR",
+    "feed_creator_label": "Express Press Release",
+    "named_issuer_verified": false,
+    "feed_source_url": "https://express-press-release.net/news/2026/11/27/1787891",
+    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+    "feed_published_utc": "2026-11-27T05:49:16+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "category": "Natural Gas",
+    "relevance_score": 39,
+    "relevance_evidence": [
+      "natural gas"
+    ],
+    "provider": "Press Release Feed",
+    "content_kind": "company_or_newswire_press_release",
+    "status": "promotional_issuer_claim_requires_editorial_verification",
+    "first_collector_observed_utc": "2026-11-27T13:59:28.133200+00:00"
+  },
+  {
+    "url": "https://www.globenewswire.com/news-release/2026/11/27/3411051/673/en/rosen-a-leading-national-firm-encourages-montauk-renewables-inc-investors-to-secure-counsel-before-important-deadline-in-securities-class-action-mntk.html",
+    "title": "ROSEN, A LEADING NATIONAL FIRM, Encourages Montauk Renewables, Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - MNTK",
+    "feed_creator_label": "GlobeNewswire",
+    "named_issuer_verified": false,
+    "feed_source_url": "https://www.globenewswire.com/news-release/2026/11/27/3411051/673/en/rosen-a-leading-national-firm-encourages-montauk-renewables-inc-investors-to-secure-counsel-before-important-deadline-in-securities-class-action-mntk.html",
+    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
+    "feed_published_utc": "2026-11-27T00:23:00+00:00",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "category": "Power & Electricity",
+    "relevance_score": 24,
+    "relevance_evidence": [
+      "renewables"
+    ],
+    "provider": "Press Release Feed",
+    "content_kind": "company_or_newswire_press_release",
+    "status": "promotional_issuer_claim_requires_editorial_verification",
+    "first_collector_observed_utc": "2026-11-27T13:59:28.133200+00:00"
+  },
+  {
     "url": "https://www.globenewswire.com/news-release/2026/11/26/3410926/0/en/schneider-electric-industrializes-european-liquid-cooling-manufacturing-capacity-to-underpin-ai-data-center-demand.html",
     "title": "Schneider Electric industrializes European liquid cooling manufacturing capacity to underpin AI & data center demand",
     "feed_creator_label": "GlobeNewswire",
@@ -99,105 +159,5 @@
     "content_kind": "company_or_newswire_press_release",
     "status": "promotional_issuer_claim_requires_editorial_verification",
     "first_collector_observed_utc": "2026-11-27T00:40:33.719369+00:00"
-  },
-  {
-    "url": "https://www.einpresswire.com/article/959156017/solar-wind-and-utilities-market-outlook-2030-why-renewables-will-win-on-economics-while-utility-prices-stay-high",
-    "title": "Solar, Wind and Utilities Market Outlook 2030: Why Renewables Will Win on Economics While Utility Prices Stay High",
-    "feed_creator_label": "EIN Presswire",
-    "named_issuer_verified": false,
-    "feed_source_url": "https://www.einpresswire.com/article/959156017/solar-wind-and-utilities-market-outlook-2030-why-renewables-will-win-on-economics-while-utility-prices-stay-high",
-    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-    "feed_published_utc": "2026-11-26T12:59:14+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "category": "Power & Electricity",
-    "relevance_score": 24,
-    "relevance_evidence": [
-      "renewables"
-    ],
-    "provider": "Press Release Feed",
-    "content_kind": "company_or_newswire_press_release",
-    "status": "promotional_issuer_claim_requires_editorial_verification",
-    "first_collector_observed_utc": "2026-11-26T14:00:17.565253+00:00"
-  },
-  {
-    "url": "https://pressat.co.uk/releases/innomotics-introduces-new-gen-c-generator-for-reliable-data-center-power-supply-at-sps-2026-6f96edef576beace1e08efd1a408b87a",
-    "title": "Innomotics introduces new GEN C generator for reliable data center power supply at SPS 2026",
-    "feed_creator_label": "Pressat",
-    "named_issuer_verified": false,
-    "feed_source_url": "https://pressat.co.uk/releases/innomotics-introduces-new-gen-c-generator-for-reliable-data-center-power-supply-at-sps-2026-6f96edef576beace1e08efd1a408b87a",
-    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-    "feed_published_utc": "2026-11-26T10:22:46+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "category": "Power & Electricity",
-    "relevance_score": 30,
-    "relevance_evidence": [
-      "data center"
-    ],
-    "provider": "Press Release Feed",
-    "content_kind": "company_or_newswire_press_release",
-    "status": "promotional_issuer_claim_requires_editorial_verification",
-    "first_collector_observed_utc": "2026-11-26T14:00:17.565253+00:00"
-  },
-  {
-    "url": "http://www.prleap.com/pr/315020/innomotics-introduces-new-gen-c-generator-for-reliable-data-center-power-supply-at-sps-2026",
-    "title": "Innomotics introduces new GEN C generator for reliable data center power supply at SPS 2026",
-    "feed_creator_label": "PRLeap",
-    "named_issuer_verified": false,
-    "feed_source_url": "http://www.prleap.com/pr/315020/innomotics-introduces-new-gen-c-generator-for-reliable-data-center-power-supply-at-sps-2026",
-    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-    "feed_published_utc": "2026-11-26T10:10:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "category": "Power & Electricity",
-    "relevance_score": 30,
-    "relevance_evidence": [
-      "data center"
-    ],
-    "provider": "Press Release Feed",
-    "content_kind": "company_or_newswire_press_release",
-    "status": "promotional_issuer_claim_requires_editorial_verification",
-    "first_collector_observed_utc": "2026-11-26T14:00:17.565253+00:00"
-  },
-  {
-    "url": "https://www.einpresswire.com/article/959151968/from-peak-shaving-to-seasonal-storage-insights-from-an-advanced-hydrogen-energy-storage-system-manufacturer",
-    "title": "From Peak Shaving to Seasonal Storage: Insights from an Advanced Hydrogen Energy Storage System Manufacturer",
-    "feed_creator_label": "EIN Presswire",
-    "named_issuer_verified": false,
-    "feed_source_url": "https://www.einpresswire.com/article/959151968/from-peak-shaving-to-seasonal-storage-insights-from-an-advanced-hydrogen-energy-storage-system-manufacturer",
-    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-    "feed_published_utc": "2026-11-26T09:50:27+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "category": "Power & Electricity",
-    "relevance_score": 27,
-    "relevance_evidence": [
-      "energy storage"
-    ],
-    "provider": "Press Release Feed",
-    "content_kind": "company_or_newswire_press_release",
-    "status": "promotional_issuer_claim_requires_editorial_verification",
-    "first_collector_observed_utc": "2026-11-26T14:00:17.565253+00:00"
-  },
-  {
-    "url": "https://pressreach.com/ls-power-completes-acquisition-of-4-4-gw-natural-gas-generation-assets-from-constellation",
-    "title": "LS Power Completes Acquisition of 4.4 GW Natural Gas Generation Assets from Constellation",
-    "feed_creator_label": "LS Power Featured Image: Megapixl @ Rawpixelimages Disclaimer",
-    "named_issuer_verified": false,
-    "feed_source_url": "https://pressreach.com/ls-power-completes-acquisition-of-4-4-gw-natural-gas-generation-assets-from-constellation",
-    "feed_source_url_may_be_newsroom_or_wire_mirror": true,
-    "feed_published_utc": "2026-11-26T06:00:13+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "category": "Natural Gas",
-    "relevance_score": 39,
-    "relevance_evidence": [
-      "natural gas"
-    ],
-    "provider": "Press Release Feed",
-    "content_kind": "company_or_newswire_press_release",
-    "status": "promotional_issuer_claim_requires_editorial_verification",
-    "first_collector_observed_utc": "2026-11-26T14:00:17.565253+00:00"
   }
 ]

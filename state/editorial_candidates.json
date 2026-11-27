@@ -190,91 +190,6 @@
     "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00"
   },
   {
-    "id": "aca189fec4aeade0541da816",
-    "title": "Trump\u2019s Ukraine Energy Truce Unravels as Russian Missiles Hit Kyiv",
-    "url": "https://oilprice.com/Energy/Energy-General/Trumps-Ukraine-Energy-Truce-Unravels-as-Russian-Missiles-Hit-Kyiv.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-20T12:30:00+00:00",
-    "category": "Geopolitics",
-    "published_precision": "timestamp",
-    "relevance_score": 90,
-    "keyword_matches": 3,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "energy_market_hook:energy",
-      "geopolitical_event:missiles",
-      "world_context:russian"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collected_utc": "2026-11-20T13:08:36.677674+00:00",
-    "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00"
-  },
-  {
-    "id": "fe1a986c782c6e169a842426",
-    "title": "Iran Steps Up Hormuz Tanker Attacks as Oil Prices Slide",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Steps-Up-Hormuz-Tanker-Attacks-as-Oil-Prices-Slide.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-20T12:30:00+00:00",
-    "category": "Geopolitics",
-    "published_precision": "timestamp",
-    "relevance_score": 90,
-    "keyword_matches": 3,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "energy_market_hook:oil",
-      "geopolitical_event:attacks",
-      "world_context:iran"
-    ],
-    "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-20T13:08:36.677674+00:00",
-    "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00"
-  },
-  {
-    "id": "0dabae77a043428019b74744",
-    "title": "Iran Moves to Restart Oil Exports Despite U.S. Naval Blockade",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Moves-to-Restart-Oil-Exports-Despite-US-Naval-Blockade.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-20T09:00:00+00:00",
-    "category": "Geopolitics",
-    "published_precision": "timestamp",
-    "relevance_score": 90,
-    "keyword_matches": 3,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "energy_market_hook:oil",
-      "geopolitical_event:blockade",
-      "world_context:iran"
-    ],
-    "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-20T13:08:36.677674+00:00",
-    "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00"
-  },
-  {
-    "id": "0ae7ec9763a757f4626a6f7b",
-    "title": "Oil Prices Rebound as Houthi Attacks Reignite Middle East Supply Fears",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Rebound-as-Houthi-Attacks-Reignite-Middle-East-Supply-Fears.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-20T05:51:00+00:00",
-    "category": "Geopolitics",
-    "published_precision": "timestamp",
-    "relevance_score": 90,
-    "keyword_matches": 3,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "energy_market_hook:oil",
-      "geopolitical_event:attacks",
-      "world_context:houthi"
-    ],
-    "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-20T13:08:36.677674+00:00",
-    "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00"
-  },
-  {
     "id": "c291f6e73165e7eba5334ebf",
     "title": "Global LNG Supply Crunch Set to Spill Into 2027",
     "url": "https://oilprice.com/Latest-Energy-News/World-News/Global-LNG-Supply-Crunch-Set-to-Spill-Into-2027.html",
@@ -335,27 +250,6 @@
     "first_collector_observed_utc": "2026-11-23T14:54:05.913764+00:00"
   },
   {
-    "id": "2a65bbebb59cf651fe387f3c",
-    "title": "Iran Refuses Nuclear Inspections as U.S. Military Threats Mount",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/Iran-Refuses-Nuclear-Inspections-as-US-Military-Threats-Mount.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-20T11:30:00+00:00",
-    "category": "Geopolitics",
-    "published_precision": "timestamp",
-    "relevance_score": 68,
-    "keyword_matches": 3,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:military",
-      "world_context:iran/united states"
-    ],
-    "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-20T13:08:36.677674+00:00",
-    "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00"
-  },
-  {
     "id": "5c8dd49bf771f1b91226988c",
     "title": "Midterms provide clarity on data center development: Vistra CEO",
     "url": "https://www.utilitydive.com/news/vistra-midterms-data-center-ercot-pjm/875626",
@@ -396,26 +290,6 @@
     "also_seen_in": [],
     "first_collected_utc": "2026-11-24T02:56:38.844495+00:00",
     "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00"
-  },
-  {
-    "id": "ce64f8f6dd5abb0f89c670ab",
-    "title": "Norway Pauses Data Center Grid Reservations as Requests Top Peak Demand",
-    "url": "https://oilprice.com/Energy/Energy-General/Norway-Pauses-Data-Center-Grid-Reservations-as-Requests-Top-Peak-Demand.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-26T20:00:00+00:00",
-    "category": "Power & Electricity",
-    "published_precision": "timestamp",
-    "relevance_score": 54,
-    "keyword_matches": 2,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "data center",
-      "grid"
-    ],
-    "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-27T00:40:13.483146+00:00",
-    "first_collector_observed_utc": "2026-11-27T00:40:13.483146+00:00"
   },
   {
     "id": "ff6674cca1e53f04e77c0124",
@@ -576,6 +450,25 @@
     "first_collector_observed_utc": "2026-11-25T00:52:09.355050+00:00"
   },
   {
+    "id": "a9f9c48f31a99835c1ce677e",
+    "title": "Iraq Delays Up to 30 Million Barrels of Crude Oil Shipments",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Iraq-Delays-Up-to-30-Million-Barrels-of-Crude-Oil-Shipments.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-27T08:30:00+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 36,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "crude oil"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-27T13:59:05.992895+00:00",
+    "first_collector_observed_utc": "2026-11-27T13:59:05.992895+00:00"
+  },
+  {
     "id": "e14df782f719683f56a667e2",
     "title": "Oil Inventories Continue to Rise in the US",
     "url": "https://oilprice.com/Energy/Crude-Oil/Oil-Inventories-Continue-to-Rise-in-the-US.html",
@@ -595,24 +488,42 @@
     "first_collector_observed_utc": "2026-11-26T00:31:04.600618+00:00"
   },
   {
-    "id": "60aa9200ecb65f02de1925f0",
-    "title": "Texas finalizes ERCOT CEO contract extension, pay raise tied to performance",
-    "url": "https://www.utilitydive.com/news/texas-finalizes-ercot-ceo-contract-extension-pay-raise-tied-to-performance/875318",
-    "source": "Utility Dive News",
+    "id": "0e3ed98c2febf04a9df34d18",
+    "title": "Stockpiling Will Support Oil Prices in 2027, Energy Aspects Says",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Stockpiling-Will-Support-Oil-Prices-in-2027-Energy-Aspects-Says.html",
+    "source": "OilPrice.com News",
     "source_class": "specialist_publisher",
-    "published_utc": "2026-11-20T13:49:50+00:00",
-    "category": "Power & Electricity",
+    "published_utc": "2026-11-27T12:30:00+00:00",
+    "category": "Oil & Energy",
     "published_precision": "timestamp",
-    "relevance_score": 36,
+    "relevance_score": 33,
     "keyword_matches": 1,
     "editorial_candidate": true,
     "relevance_evidence": [
-      "ercot"
+      "oil prices"
     ],
     "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collected_utc": "2026-11-20T22:41:52.748655+00:00",
-    "first_collector_observed_utc": "2026-11-20T22:41:52.748655+00:00"
+    "first_collected_utc": "2026-11-27T13:59:05.992895+00:00",
+    "first_collector_observed_utc": "2026-11-27T13:59:05.992895+00:00"
+  },
+  {
+    "id": "8a461bf1bf423945cabd354c",
+    "title": "Oil Prices Climb as Middle East Supply Risks Overshadow Glut Fears",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Climb-as-Middle-East-Supply-Risks-Overshadow-Glut-Fears.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-27T05:18:44+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 33,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "oil prices"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-27T13:59:05.992895+00:00",
+    "first_collector_observed_utc": "2026-11-27T13:59:05.992895+00:00"
   },
   {
     "id": "80c8909e0db876df2b16fca1",
@@ -630,6 +541,7 @@
       "electricity"
     ],
     "status": "research_only_unverified",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-27T00:40:13.483146+00:00",
     "first_collector_observed_utc": "2026-11-27T00:40:13.483146+00:00"
   },
@@ -984,44 +896,62 @@
     "first_collector_observed_utc": "2026-11-20T22:41:52.748655+00:00"
   },
   {
-    "id": "1c587f31f36dc427367bee50",
-    "title": "WTI Crude Sinks More Than 5% as Global Oil Glut Fears Grow",
-    "url": "https://oilprice.com/Energy/Energy-General/WTI-Crude-Sinks-More-Than-5-as-Global-Oil-Glut-Fears-Grow.html",
+    "id": "0f4706e50b144481368fe0f1",
+    "title": "South Sudan Readies Licensing Round to Boost Oil Production",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/South-Sudan-Readies-Licensing-Round-to-Boost-Oil-Production.html",
     "source": "OilPrice.com News",
     "source_class": "specialist_publisher",
-    "published_utc": "2026-11-20T12:30:00+00:00",
+    "published_utc": "2026-11-27T13:30:00+00:00",
     "category": "Oil & Energy",
     "published_precision": "timestamp",
-    "relevance_score": 33,
+    "relevance_score": 30,
     "keyword_matches": 1,
     "editorial_candidate": true,
     "relevance_evidence": [
-      "wti"
+      "oil production"
     ],
     "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collected_utc": "2026-11-20T13:08:36.677674+00:00",
-    "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00"
+    "first_collected_utc": "2026-11-27T13:59:05.992895+00:00",
+    "first_collector_observed_utc": "2026-11-27T13:59:05.992895+00:00"
   },
   {
-    "id": "390bfb3c2f6bbe89fe2c9625",
-    "title": "Nexans completes deep-water cable laying ops off Australia for Chevron",
-    "url": "https://www.offshore-energy.biz/2026/11/20/nexans-completes-deep-water-cable-laying-ops-off-australia-for-chevron",
-    "source": "Offshore Energy News",
+    "id": "fc6fa924e02691ebd17b3d85",
+    "title": "Iraq Boosts Oil Exports to 3.6 Million Barrels per Day",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Iraq-Boosts-Oil-Exports-to-36-Million-Barrels-per-Day.html",
+    "source": "OilPrice.com News",
     "source_class": "specialist_publisher",
-    "published_utc": "2026-11-20T12:22:36+00:00",
+    "published_utc": "2026-11-27T11:30:00+00:00",
     "category": "Oil & Energy",
     "published_precision": "timestamp",
-    "relevance_score": 33,
+    "relevance_score": 30,
     "keyword_matches": 1,
     "editorial_candidate": true,
     "relevance_evidence": [
-      "chevron"
+      "oil exports"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-27T13:59:05.992895+00:00",
+    "first_collector_observed_utc": "2026-11-27T13:59:05.992895+00:00"
+  },
+  {
+    "id": "ce64f8f6dd5abb0f89c670ab",
+    "title": "Norway Hits the Brakes on Its Data Center Boom",
+    "url": "https://oilprice.com/Energy/Energy-General/Norway-Pauses-Data-Center-Grid-Reservations-as-Requests-Top-Peak-Demand.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-26T20:00:00+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 30,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "data center"
     ],
     "status": "research_only_unverified",
     "also_seen_in": [],
-    "first_collected_utc": "2026-11-20T13:08:36.677674+00:00",
-    "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00"
+    "first_collected_utc": "2026-11-27T00:40:13.483146+00:00",
+    "first_collector_observed_utc": "2026-11-27T00:40:13.483146+00:00"
   },
   {
     "id": "10b86cc50b16f767c6310172",
@@ -1275,25 +1205,6 @@
     "also_seen_in": [],
     "first_collected_utc": "2026-11-20T22:41:52.748655+00:00",
     "first_collector_observed_utc": "2026-11-20T22:41:52.748655+00:00"
-  },
-  {
-    "id": "61b9d26a87de4193551fc12b",
-    "title": "US Oil and Gas Deal Boom Lures BMO Back Into the Market",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Oil-and-Gas-Deal-Boom-Lures-BMO-Back-Into-the-Market.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-20T01:00:00+00:00",
-    "category": "Natural Gas",
-    "published_precision": "timestamp",
-    "relevance_score": 30,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "gas deal"
-    ],
-    "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-20T13:08:36.677674+00:00",
-    "first_collector_observed_utc": "2026-11-20T13:08:36.677674+00:00"
   },
   {
     "id": "86f2a71329116df5674a252a",

@@ -1,29 +1,29 @@
 {
-  "generated_utc": "2026-11-27T00:40:33.789404+00:00",
+  "generated_utc": "2026-11-27T13:59:28.269800+00:00",
   "status": "research_only_not_approved",
-  "unique_relevant_urls_7d": 1000,
+  "unique_relevant_urls_7d": 1038,
   "selected_research_links": 32,
-  "unique_domains_in_selection": 28,
+  "unique_domains_in_selection": 27,
   "queue_counts": {
     "specialist_publisher_24h": 10,
-    "older_official_context": 62,
-    "discovery_unverified": 846,
-    "company_release_unverified": 77,
+    "older_official_context": 58,
+    "discovery_unverified": 891,
+    "company_release_unverified": 74,
     "regulatory_date_only": 5
   },
   "selected_category_counts": {
-    "Natural Gas": 3,
+    "Natural Gas": 4,
     "LNG": 8,
-    "Power & Electricity": 6,
+    "Power & Electricity": 5,
     "Oil & Energy": 6,
     "Infrastructure & Investment": 1,
     "Geopolitics": 8
   },
   "selected_topic_coverage_counts": {
-    "Natural Gas": 3,
+    "Natural Gas": 4,
     "LNG": 8,
-    "Power & Electricity": 6,
-    "Oil & Energy": 13,
+    "Power & Electricity": 5,
+    "Oil & Energy": 12,
     "Infrastructure & Investment": 7,
     "Geopolitics": 8
   },
@@ -31,10 +31,42 @@
   "publisher_timestamped_official_24h": 0,
   "publisher_timestamped_specialist_24h": 10,
   "system_operator_primary_24h": 0,
-  "likely_same_event_links_suppressed": 3,
+  "likely_same_event_links_suppressed": 23,
   "discovery_publisher_dates_verified": 0,
   "promotional_or_language_review_count": 0,
   "stories": [
+    {
+      "title": "Tanker Traffic at Hormuz Ticks Up Despite Intensified Attacks",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Tanker-Traffic-at-Hormuz-Ticks-Up-Despite-Intensified-Attacks.html",
+      "domain": "oilprice.com",
+      "first_collector_observed_utc": "2026-11-27T00:40:13.483146+00:00",
+      "local_collection_time_known": true,
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics",
+        "Oil & Energy"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:tanker",
+        "geopolitical_event:attacks",
+        "world_context:hormuz"
+      ],
+      "origin": "official_rss",
+      "time_basis": "specialist_publisher_rss_timestamp",
+      "observed_time_utc": "2026-11-26T16:30:00+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "specialist_publisher_24h",
+      "rank": 145
+    },
     {
       "title": "US Crude Oil Inventories Inches Up as Gasoline Holds Steady",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Crude-Oil-Inventories-Inches-Up-as-Gasoline-Holds-Steady.html",
@@ -128,89 +160,57 @@
       "rank": 112
     },
     {
-      "title": "Cheniere Gets Federal Approval for Major Sabine Pass LNG Expansion",
-      "url": "https://www.oedigital.com/news/544490-cheniere-gets-federal-approval-for-major-sabine-pass-lng-expansion",
-      "domain": "www.oedigital.com",
-      "first_collector_observed_utc": "2026-11-20T13:08:58.711900+00:00",
+      "title": "Crude oil prices near $97 as West Asia tensions revive supply fears; OPEC+ meeting in focus",
+      "url": "https://economictimes.indiatimes.com/markets/commodities/crude-oil-prices-near-97-as-west-asia-tensions-revive-supply-fears-opec-meeting-in-focus/articleshow/136222227.cms",
+      "domain": "economictimes.indiatimes.com",
+      "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00",
       "local_collection_time_known": true,
       "source": "GDELT GAL RSS",
       "source_class": "unclassified",
-      "category": "LNG",
+      "category": "Oil & Energy",
       "coverage_themes": [
-        "LNG",
-        "Infrastructure & Investment"
+        "Oil & Energy"
       ],
-      "relevance_score": 100,
+      "relevance_score": 99,
       "relevance_evidence": [
-        "cheniere",
-        "lng",
-        "sabine pass"
+        "crude oil",
+        "oil prices",
+        "opec"
       ],
       "origin": "global_discovery",
       "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-20T13:01:00+00:00",
+      "observed_time_utc": "2026-11-27T13:01:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": false,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 112
-    },
-    {
-      "title": "Norway Pauses Data Center Grid Reservations as Requests Top Peak Demand",
-      "url": "https://oilprice.com/Energy/Energy-General/Norway-Pauses-Data-Center-Grid-Reservations-as-Requests-Top-Peak-Demand.html",
-      "domain": "oilprice.com",
-      "first_collector_observed_utc": "2026-11-27T00:40:13.483146+00:00",
-      "local_collection_time_known": true,
-      "source": "OilPrice.com News",
-      "source_class": "specialist_publisher",
-      "category": "Power & Electricity",
-      "coverage_themes": [
-        "Power & Electricity"
-      ],
-      "relevance_score": 54,
-      "relevance_evidence": [
-        "data center",
-        "grid"
-      ],
-      "origin": "official_rss",
-      "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-26T20:00:00+00:00",
-      "publisher_time_verified": true,
-      "date_confidence": "publisher_rss_timestamp",
       "within_24h_on_own_time_basis": true,
       "needs_editor_review": [],
       "editorial_status": "research_only_not_approved",
       "other_origins": [],
       "independent_corroboration_verified": false,
-      "queue": "specialist_publisher_24h",
-      "rank": 109
+      "queue": "discovery_unverified",
+      "rank": 111
     },
     {
-      "title": "Nepal condoles death of citizen killed in Houthi attack on Saudi oil refinery, urges restraint",
-      "url": "http://www.bignewsnetwork.com/news/279463143/nepal-condoles-death-of-citizen-killed-in-houthi-attack-on-saudi-oil-refinery-urges-restraint",
-      "domain": "www.bignewsnetwork.com",
-      "first_collector_observed_utc": "2026-11-27T00:40:32.483700+00:00",
+      "title": "India says attacks on maritime shipping and seafarers unacceptable, calls for global response",
+      "url": "https://news.webindia123.com/news/Articles/World/20261127/4525365.html",
+      "domain": "news.webindia123.com",
+      "first_collector_observed_utc": "2026-11-27T13:59:27.227150+00:00",
       "local_collection_time_known": true,
       "source": "GDELT GAL RSS",
       "source_class": "unclassified",
       "category": "Geopolitics",
       "coverage_themes": [
-        "Geopolitics",
-        "Oil & Energy"
+        "Geopolitics"
       ],
       "relevance_score": 90,
       "relevance_evidence": [
-        "energy_market_hook:oil",
-        "geopolitical_event:attack",
-        "world_context:houthi"
+        "energy_market_hook:shipping",
+        "geopolitical_event:attacks",
+        "world_context:india"
       ],
       "origin": "global_discovery",
       "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-27T00:32:00+00:00",
+      "observed_time_utc": "2026-11-27T13:47:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
@@ -222,8 +222,8 @@
       "rank": 102,
       "related_reports": [
         {
-          "title": "Nepal condoles death of citizen killed in Houthi attack on Saudi oil refinery, urges restraint",
-          "url": "http://www.austinglobe.com/news/279463143/nepal-condoles-death-of-citizen-killed-in-houthi-attack-on-saudi-oil-refinery-urges-restraint",
+          "title": "India says attacks on maritime shipping and seafarers unacceptable, calls for global response",
+          "url": "https://aninews.in/news/world/asia/india-says-attacks-on-maritime-shipping-and-seafarers-unacceptable-calls-for-global-response20261127182723",
           "source": "GDELT GAL RSS",
           "origin": "global_discovery",
           "note": "Potential same-event source link; not independently corroborated"
@@ -231,42 +231,10 @@
       ]
     },
     {
-      "title": "Middle East conflict: Saudi refinery attack kills worker, Iran denies deadly Kuwait strike",
-      "url": "https://gulfnews.com/world/mena/middle-east-conflict-saudi-refinery-attack-kills-worker-iran-denies-deadly-kuwait-strike-1.500761343",
-      "domain": "gulfnews.com",
-      "first_collector_observed_utc": "2026-11-26T21:25:13.564766+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics",
-        "Oil & Energy"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:refinery",
-        "geopolitical_event:attack",
-        "world_context:iran"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-26T21:17:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102
-    },
-    {
-      "title": "Houthi attack on Saudi Arabia's Jazan refinery kills Nepali worker",
-      "url": "https://www.arabnews.com/saudi-arabia/houthi-attack-on-saudi-arabias-jazan-refinery-kills-nepali-worker-3014153",
-      "domain": "www.arabnews.com",
-      "first_collector_observed_utc": "2026-11-26T19:32:23.787798+00:00",
+      "title": "Saudi Arabia Vows Strong Response Following Jazan Refinery Attack",
+      "url": "https://english.globalarabnetwork.com/2026/11/27/saudi-arabia-vows-strong-response-following-jazan-refinery-attack",
+      "domain": "english.globalarabnetwork.com",
+      "first_collector_observed_utc": "2026-11-27T13:59:27.227150+00:00",
       "local_collection_time_known": true,
       "source": "GDELT GAL RSS",
       "source_class": "unclassified",
@@ -283,7 +251,7 @@
       ],
       "origin": "global_discovery",
       "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-26T19:17:00+00:00",
+      "observed_time_utc": "2026-11-27T13:47:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
@@ -295,106 +263,10 @@
       "rank": 102
     },
     {
-      "title": "Saudi-led coalition says Houthis attacked Aramco's Jazan refinery | MEO",
-      "url": "https://www.middle-east-online.com/en/saudi-led-coalition-says-houthis-attacked-aramcos-jazan-refinery",
-      "domain": "www.middle-east-online.com",
-      "first_collector_observed_utc": "2026-11-26T19:32:23.787798+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics",
-        "Oil & Energy"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:refinery",
-        "geopolitical_event:attacked",
-        "world_context:houthis"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-26T19:17:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102
-    },
-    {
-      "title": "Huge plume of black smoke seen from space after Houthis claim strike on Saudi’s biggest oil refinery",
-      "url": "https://www.cp24.com/news/world/2026/11/26/huge-plume-of-black-smoke-seen-from-space-after-houthis-claim-strike-on-saudis-biggest-oil-refinery",
-      "domain": "www.cp24.com",
-      "first_collector_observed_utc": "2026-11-26T19:32:23.787798+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics",
-        "Oil & Energy"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:oil",
-        "geopolitical_event:strike",
-        "world_context:houthis"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-26T19:17:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102
-    },
-    {
-      "title": "Oil prices fall as Brent slips below $94 after Saudi refinery attack, Hormuz shipping fears",
-      "url": "https://www.hindustantimes.com/world-news/us-news/oil-prices-fall-as-brent-slips-below-94-after-saudi-refinery-attack-hormuz-shipping-fears-101795698223341.html",
-      "domain": "www.hindustantimes.com",
-      "first_collector_observed_utc": "2026-11-26T14:00:16.781900+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics",
-        "Oil & Energy"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:oil",
-        "geopolitical_event:attack",
-        "world_context:hormuz"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-26T13:47:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102
-    },
-    {
-      "title": "Oil prices fall as supply concerns linger after Iran claims mine strikes on ships",
-      "url": "https://www.asiaone.com/world/oil-prices-dip-after-iran-claims-hormuz-mine-strikes",
-      "domain": "www.asiaone.com",
-      "first_collector_observed_utc": "2026-11-26T14:00:16.781900+00:00",
+      "title": "Houthis launch fresh strikes on Jazan oil refinery in Saudi Arabia",
+      "url": "https://organiser.org/2026/11/27/429257/international/houthis-attack-jazan-oil-refinery-in-saudi-arabia-nepali-worker-killed-several-injured-as-tensions-escalate-in-gulf",
+      "domain": "organiser.org",
+      "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00",
       "local_collection_time_known": true,
       "source": "GDELT GAL RSS",
       "source_class": "unclassified",
@@ -407,11 +279,106 @@
       "relevance_evidence": [
         "energy_market_hook:oil",
         "geopolitical_event:strikes",
+        "world_context:saudi arabia"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-27T13:02:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
+    },
+    {
+      "title": "Russia extends aviation fuel export ban through March 2027",
+      "url": "https://english.news.cn/20261127/8b2d74cdf47f447a891e6273d6aac819/c.html",
+      "domain": "english.news.cn",
+      "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:fuel",
+        "geopolitical_event:export ban",
+        "world_context:russia"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-27T13:01:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
+    },
+    {
+      "title": "Iran says it recovered two oil tankers allegedly seized by US military | News.az",
+      "url": "https://news.az/news/iran-says-it-recovered-two-oil-tankers-allegedly-seized-by-us-military",
+      "domain": "news.az",
+      "first_collector_observed_utc": "2026-11-27T11:07:37.740968+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics",
+        "Oil & Energy"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:oil",
+        "geopolitical_event:military",
         "world_context:iran"
       ],
       "origin": "global_discovery",
       "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-26T13:47:00+00:00",
+      "observed_time_utc": "2026-11-27T11:01:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
+    },
+    {
+      "title": "Nepal condoles death of citizen killed in Houthi attack on Saudi oil refinery, urges restraint",
+      "url": "http://www.laosnews.net/news/279463143/nepal-condoles-death-of-citizen-killed-in-houthi-attack-on-saudi-oil-refinery-urges-restraint",
+      "domain": "www.laosnews.net",
+      "first_collector_observed_utc": "2026-11-27T03:44:10.830110+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics",
+        "Oil & Energy"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:oil",
+        "geopolitical_event:attack",
+        "world_context:houthi"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-27T03:32:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
@@ -423,8 +390,22 @@
       "rank": 102,
       "related_reports": [
         {
-          "title": "Oil prices fall as supply concerns linger after Iran claims mine strikes on ships",
-          "url": "https://www.theglobeandmail.com/investing/article-oil-prices-fall-as-supply-concerns-linger-after-iran-claims-mine",
+          "title": "Nepal condoles death of citizen killed in Houthi attack on Saudi oil refinery, urges restraint",
+          "url": "http://www.iraqsun.com/news/279463143/nepal-condoles-death-of-citizen-killed-in-houthi-attack-on-saudi-oil-refinery-urges-restraint",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "Nepal condoles death of citizen killed in Houthi attack on Saudi oil refinery, urges restraint",
+          "url": "http://www.bignewsnetwork.com/news/279463143/nepal-condoles-death-of-citizen-killed-in-houthi-attack-on-saudi-oil-refinery-urges-restraint",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "Nepal condoles death of citizen killed in Houthi attack on Saudi oil refinery, urges restraint",
+          "url": "http://www.austinglobe.com/news/279463143/nepal-condoles-death-of-citizen-killed-in-houthi-attack-on-saudi-oil-refinery-urges-restraint",
           "source": "GDELT GAL RSS",
           "origin": "global_discovery",
           "note": "Potential same-event source link; not independently corroborated"
@@ -432,26 +413,27 @@
       ]
     },
     {
-      "title": "Iran grapples with deepening energy crisis amid war deadlock - World News",
-      "url": "https://www.hurriyetdailynews.com/iran-grapples-with-deepening-energy-crisis-amid-war-deadlock-229877",
-      "domain": "www.hurriyetdailynews.com",
-      "first_collector_observed_utc": "2026-11-26T14:00:16.781900+00:00",
+      "title": "One killed in attack on Saudi Arabia's Jazan refinery, some operations suspended- Moneycontrol.com",
+      "url": "https://www.moneycontrol.com/world/one-killed-in-attack-on-saudi-arabia-s-jazan-refinery-some-operations-suspended-article-14089920.html",
+      "domain": "www.moneycontrol.com",
+      "first_collector_observed_utc": "2026-11-27T02:23:23.286539+00:00",
       "local_collection_time_known": true,
       "source": "GDELT GAL RSS",
       "source_class": "unclassified",
       "category": "Geopolitics",
       "coverage_themes": [
-        "Geopolitics"
+        "Geopolitics",
+        "Oil & Energy"
       ],
       "relevance_score": 90,
       "relevance_evidence": [
-        "energy_market_hook:energy",
-        "geopolitical_event:war",
-        "world_context:iran"
+        "energy_market_hook:refinery",
+        "geopolitical_event:attack",
+        "world_context:saudi arabia"
       ],
       "origin": "global_discovery",
       "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-26T13:46:00+00:00",
+      "observed_time_utc": "2026-11-27T02:17:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
@@ -523,6 +505,165 @@
       "rank": 99
     },
     {
+      "title": "Electricity grid operator issues back-up power call for fourth day running",
+      "url": "https://www.milfordmercury.co.uk/news/national/26768051.electricity-grid-operator-issues-back-up-power-call-fourth-day-running",
+      "domain": "www.milfordmercury.co.uk",
+      "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Power & Electricity",
+      "coverage_themes": [
+        "Power & Electricity"
+      ],
+      "relevance_score": 84,
+      "relevance_evidence": [
+        "electricity",
+        "grid",
+        "grid operator"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-27T13:02:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 96,
+      "related_reports": [
+        {
+          "title": "Electricity grid operator issues back-up power call for fourth day running",
+          "url": "https://www.newsandstar.co.uk/news/national/26768051.electricity-grid-operator-issues-back-up-power-call-fourth-day-running",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "Electricity grid operator issues back-up power call for fourth day running",
+          "url": "https://www.northsomersettimes.co.uk/news/national/26768051.electricity-grid-operator-issues-back-up-power-call-fourth-day-running",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "Electricity grid operator issues back-up power call for fourth day running",
+          "url": "https://www.gazetteherald.co.uk/news/national/26768051.electricity-grid-operator-issues-back-up-power-call-fourth-day-running",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "Electricity grid operator issues back-up power call for fourth day running",
+          "url": "https://www.thetottenhamindependent.co.uk/news/national/26768051.electricity-grid-operator-issues-back-up-power-call-fourth-day-running",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "Electricity grid operator issues back-up power call for fourth day running",
+          "url": "https://www.hackneygazette.co.uk/news/national/26768051.electricity-grid-operator-issues-back-up-power-call-fourth-day-running",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "Electricity grid operator issues back-up power call for fourth day running",
+          "url": "https://www.theboltonnews.co.uk/news/national/26768051.electricity-grid-operator-issues-back-up-power-call-fourth-day-running",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "Electricity grid operator issues back-up power call for fourth day running",
+          "url": "https://www.yorkpress.co.uk/news/national/26768051.electricity-grid-operator-issues-back-up-power-call-fourth-day-running",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "Electricity grid operator issues back-up power call for fourth day running",
+          "url": "https://www.dunmowbroadcast.co.uk/news/national/26768051.electricity-grid-operator-issues-back-up-power-call-fourth-day-running",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "Electricity grid operator issues back-up power call for fourth day running",
+          "url": "https://www.bournemouthecho.co.uk/news/national/26768051.electricity-grid-operator-issues-back-up-power-call-fourth-day-running",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "Electricity grid operator issues back-up power call for fourth day running",
+          "url": "https://www.dailyecho.co.uk/news/national/26768051.electricity-grid-operator-issues-back-up-power-call-fourth-day-running",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "Electricity grid operator issues back-up power call for fourth day running",
+          "url": "https://www.whtimes.co.uk/news/national/26768051.electricity-grid-operator-issues-back-up-power-call-fourth-day-running",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "Electricity grid operator issues back-up power call for fourth day running",
+          "url": "https://www.glasgowtimes.co.uk/news/national/26768051.electricity-grid-operator-issues-back-up-power-call-fourth-day-running",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "Electricity grid operator issues back-up power call for fourth day running",
+          "url": "https://www.malverngazette.co.uk/news/national/26768051.electricity-grid-operator-issues-back-up-power-call-fourth-day-running",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "Electricity grid operator issues back-up power call for fourth day running",
+          "url": "https://www.eppingforestguardian.co.uk/news/national/26768051.electricity-grid-operator-issues-back-up-power-call-fourth-day-running",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "Electricity grid operator issues back-up power call for fourth day running",
+          "url": "https://www.gazetteseries.co.uk/news/national/26768051.electricity-grid-operator-issues-back-up-power-call-fourth-day-running",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "Electricity grid operator issues back-up power call for fourth day running",
+          "url": "https://www.bromsgroveadvertiser.co.uk/news/national/26768051.electricity-grid-operator-issues-back-up-power-call-fourth-day-running",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "Electricity grid operator issues back-up power call for fourth day running",
+          "url": "https://www.dunfermlinepress.com/news/national/26768051.electricity-grid-operator-issues-back-up-power-call-fourth-day-running",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        },
+        {
+          "title": "Electricity grid operator issues back-up power call for fourth day running",
+          "url": "https://www.messengernewspapers.co.uk/news/national/26768051.electricity-grid-operator-issues-back-up-power-call-fourth-day-running",
+          "source": "GDELT GAL RSS",
+          "origin": "global_discovery",
+          "note": "Potential same-event source link; not independently corroborated"
+        }
+      ]
+    },
+    {
       "title": "SOCAR explores energy storage technologies for Azerbaijan's power grid",
       "url": "https://www.trend.az/azerbaijan/4249663.html",
       "domain": "www.trend.az",
@@ -552,6 +693,37 @@
       "independent_corroboration_verified": false,
       "queue": "discovery_unverified",
       "rank": 96
+    },
+    {
+      "title": "Petronas takes FID on latest floating LNG project",
+      "url": "https://www.upstreamonline.com/field-development/petronas-takes-fid-on-latest-floating-lng-project/2-1-2080440",
+      "domain": "www.upstreamonline.com",
+      "first_collector_observed_utc": "2026-11-27T03:44:10.830110+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "LNG",
+      "coverage_themes": [
+        "LNG",
+        "Infrastructure & Investment"
+      ],
+      "relevance_score": 81,
+      "relevance_evidence": [
+        "lng",
+        "lng project"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-27T03:32:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 93
     },
     {
       "title": "Person hit by vehicle while unloading trailer in front of Cameron LNG, police say",
@@ -768,6 +940,36 @@
       "rank": 87
     },
     {
+      "title": "Russia, Türkiye extend natural gas supply deal for another three years | News.az",
+      "url": "https://news.az/news/russia-turkiye-extend-natural-gas-supply-deal-for-another-three-years",
+      "domain": "news.az",
+      "first_collector_observed_utc": "2026-11-27T11:07:37.740968+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Natural Gas",
+      "coverage_themes": [
+        "Natural Gas"
+      ],
+      "relevance_score": 72,
+      "relevance_evidence": [
+        "gas supply",
+        "natural gas"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-27T11:01:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 84
+    },
+    {
       "title": "U.S. Crude Oil Inventories See Further Upside",
       "url": "https://www.finanzen.ch/nachrichten/rohstoffe/u-s-crude-oil-inventories-see-further-upside-1036800531",
       "domain": "www.finanzen.ch",
@@ -918,7 +1120,7 @@
       "observed_time_utc": "2026-11-26T02:47:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
+      "within_24h_on_own_time_basis": false,
       "needs_editor_review": [],
       "editorial_status": "research_only_not_approved",
       "other_origins": [],
@@ -955,66 +1157,6 @@
       "other_origins": [],
       "independent_corroboration_verified": false,
       "queue": "company_release_unverified",
-      "rank": 81
-    },
-    {
-      "title": "NKT starts power cable production for IJmuiden Ver Beta offshore wind grid connection",
-      "url": "https://www.offshore-energy.biz/2026/11/24/nkt-starts-power-cable-production-for-ijmuiden-ver-beta-offshore-wind-grid-connection",
-      "domain": "www.offshore-energy.biz",
-      "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00",
-      "local_collection_time_known": true,
-      "source": "Offshore Energy News",
-      "source_class": "specialist_publisher",
-      "category": "Power & Electricity",
-      "coverage_themes": [
-        "Power & Electricity"
-      ],
-      "relevance_score": 51,
-      "relevance_evidence": [
-        "grid",
-        "offshore wind"
-      ],
-      "origin": "official_rss",
-      "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-24T10:49:49+00:00",
-      "publisher_time_verified": true,
-      "date_confidence": "publisher_rss_timestamp",
-      "within_24h_on_own_time_basis": false,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "older_official_context",
-      "rank": 81
-    },
-    {
-      "title": "Gold Soars Amid Easing Inflationary Concerns As Crude Oil Prices Slump",
-      "url": "https://www.rttnews.com/3717241/gold-soars-amid-easing-inflationary-concerns-as-crude-oil-prices-slump.aspx",
-      "domain": "www.rttnews.com",
-      "first_collector_observed_utc": "2026-11-23T22:04:47.558900+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Oil & Energy",
-      "coverage_themes": [
-        "Oil & Energy"
-      ],
-      "relevance_score": 69,
-      "relevance_evidence": [
-        "crude oil",
-        "oil prices"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-23T22:01:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": false,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
       "rank": 81
     },
     {
