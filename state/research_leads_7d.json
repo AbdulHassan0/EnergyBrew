@@ -1,5 +1,357 @@
 [
   {
+    "url": "http://www.bgnes.com/conflicts/ukraine-proposes-black-sea-ceasefire-as-russia-demands-halt-to-oil-attacks",
+    "title": "Ukraine proposes Black Sea ceasefire as Russia demands halt to oil attacks",
+    "domain": "www.bgnes.com",
+    "gdelt_first_seen_utc": "2026-11-27T22:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:oil",
+      "geopolitical_event:attacks",
+      "world_context:russia"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T22:04:08.043801+00:00"
+  },
+  {
+    "url": "https://localnews8.com/news/national-world/cnn-world/2026/11/27/putins-biggest-ally-questions-a-key-claim-russia-uses-to-justify-invasion-of-ukraine",
+    "title": "Putin’s biggest ally questions a key claim Russia uses to justify invasion of Ukraine - Local News 8",
+    "domain": "localnews8.com",
+    "gdelt_first_seen_utc": "2026-11-27T22:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:invasion",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T22:04:08.043801+00:00"
+  },
+  {
+    "url": "http://www.jpost.com/middle-east/iran-news/article-916339",
+    "title": "US military strikes ship in Gulf of Oman, says it tried to breach Iran blockade | The Jerusalem Post",
+    "domain": "www.jpost.com",
+    "gdelt_first_seen_utc": "2026-11-27T22:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:strikes",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T22:04:08.043801+00:00"
+  },
+  {
+    "url": "http://www.jpost.com/international/internationalrussia-ukraine-war/article-916342",
+    "title": "Russian flotilla to Libya turns around after Ukrainian attack on other warship | The Jerusalem Post",
+    "domain": "www.jpost.com",
+    "gdelt_first_seen_utc": "2026-11-27T22:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T22:04:08.043801+00:00"
+  },
+  {
+    "url": "https://www.independent.co.uk/news/world/americas/usa-military-gulf-of-oman-ship-iran-blockade-b3093017.html",
+    "title": "US military disables ship after attempt to breach Iranian ports blockade",
+    "domain": "www.independent.co.uk",
+    "gdelt_first_seen_utc": "2026-11-27T22:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:blockade",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T22:04:08.043801+00:00"
+  },
+  {
+    "url": "https://www.easternriverinachronicle.com.au/story/9399798/us-disables-ship-to-trying-breach-blockade-in-iran",
+    "title": "US disables ship to trying breach blockade in Iran",
+    "domain": "www.easternriverinachronicle.com.au",
+    "gdelt_first_seen_utc": "2026-11-27T22:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:blockade",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T22:04:08.043801+00:00"
+  },
+  {
+    "url": "https://www.westernadvocate.com.au/story/9399798/us-disables-ship-to-trying-breach-blockade-in-iran",
+    "title": "US disables ship to trying breach blockade in Iran",
+    "domain": "www.westernadvocate.com.au",
+    "gdelt_first_seen_utc": "2026-11-27T22:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:blockade",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T22:04:08.043801+00:00"
+  },
+  {
+    "url": "https://www.dl-online.com/news/national/us-disables-ship-trying-to-leave-iran-as-tehran-vows-to-confront-blockade",
+    "title": "US disables ship trying to leave Iran, as Tehran vows to confront blockade",
+    "domain": "www.dl-online.com",
+    "gdelt_first_seen_utc": "2026-11-27T22:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:blockade",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T22:04:08.043801+00:00"
+  },
+  {
+    "url": "https://www.republicanherald.com/2026/11/27/us-military-says-it-disabled-another-ship-that-tried-to-breach-naval-blockade-on-iranian-ports",
+    "title": "US military says it disabled another ship that tried to breach naval blockade on Iranian ports",
+    "domain": "www.republicanherald.com",
+    "gdelt_first_seen_utc": "2026-11-27T22:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:blockade",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T22:04:08.043801+00:00"
+  },
+  {
+    "url": "https://www.kztv10.com/world/middle-east/us-military-says-it-has-disabled-another-ship-trying-to-breach-its-iran-blockade",
+    "title": "US military says it has disabled another ship trying to breach its Iran blockade",
+    "domain": "www.kztv10.com",
+    "gdelt_first_seen_utc": "2026-11-27T22:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:blockade",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T22:04:08.043801+00:00"
+  },
+  {
+    "url": "https://www.algemeiner.com/2026/11/27/us-disables-ship-trying-leave-iran-tehran-vows-confront-blockade",
+    "title": "US Disables Ship Trying to Leave Iran, as Tehran Vows to Confront Blockade",
+    "domain": "www.algemeiner.com",
+    "gdelt_first_seen_utc": "2026-11-27T22:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:blockade",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T22:04:08.043801+00:00"
+  },
+  {
+    "url": "https://au.int/en/pressreleases/20261125/auc-advances-regulatory-and-institutional-readiness-continental-electricity",
+    "title": "African Union Commission Advances Eastern Africa's Regulatory and Institutional Readiness for Continental Electricity Market Integration under AfSEM",
+    "domain": "au.int",
+    "gdelt_first_seen_utc": "2026-11-27T22:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 33,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T22:04:08.043801+00:00"
+  },
+  {
+    "url": "http://www.wyomingnews.com/news/local_news/sweetwater-county-opens-public-comment-on-proposed-data-center-regulations/article_36459fb4-7041-407f-8306-34b14afdfd60.html",
+    "title": "Sweetwater County opens public comment on proposed data center regulations",
+    "domain": "www.wyomingnews.com",
+    "gdelt_first_seen_utc": "2026-11-27T22:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T22:04:08.043801+00:00"
+  },
+  {
+    "url": "https://www.wvgazettemail.com/news/energy_and_environment/appalachian-power-company-to-host-open-house-for-project-tied-to-buffalo-data-center/article_82d1c01c-753f-4b66-8412-9f1edb2d3ae4.html",
+    "title": "Appalachian Power Company to host open house for project tied to Buffalo data center",
+    "domain": "www.wvgazettemail.com",
+    "gdelt_first_seen_utc": "2026-11-27T22:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T22:04:08.043801+00:00"
+  },
+  {
+    "url": "https://bsnews.it/2026/11/27/data-center-agricoltura-e-pesca-il-consiglio-regionale-al-voto-il-30-novembre",
+    "title": "Data center, agricoltura e pesca: il Consiglio regionale al voto il 30 novembre",
+    "domain": "bsnews.it",
+    "gdelt_first_seen_utc": "2026-11-27T22:01:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T22:04:08.043801+00:00"
+  },
+  {
     "url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/iraq-reclaims-no-2-spot-in-indias-oil-imports-as-gulf-supplies-recover-despite-iran-attacks/articleshow/136232273.cms",
     "title": "Iraq reclaims No. 2 spot in India's oil imports as Gulf supplies recover despite Iran attacks",
     "domain": "economictimes.indiatimes.com",
@@ -21723,155 +22075,5 @@
     ],
     "status": "discovery_only_requires_publisher_verification",
     "first_collector_observed_utc": "2026-11-20T22:42:02.396153+00:00"
-  },
-  {
-    "url": "https://www.postandcourier.com/pee-dee/news/florence-sc-data-center-confusion-regulation-public-forum/article_e1f4da50-3194-40ff-b22b-4e3e64961f25.html",
-    "title": "Florence data center forum draws crowd from online confusion",
-    "domain": "www.postandcourier.com",
-    "gdelt_first_seen_utc": "2026-11-20T21:45:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "us_natural_gas",
-    "topics": [
-      "us_natural_gas"
-    ],
-    "relevance_score": 30,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "data center"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
-  },
-  {
-    "url": "https://www.floydct.com/news/kentucky-power-files-to-support-grayson-data-center-provide-rate-offsets-winter-bill-credits-for/article_b5b798ab-bdbb-4da8-bac4-b70d51a9bccf.html",
-    "title": "Kentucky Power files to support Grayson data center , provide rate offsets , winter bill credits for residential customers",
-    "domain": "www.floydct.com",
-    "gdelt_first_seen_utc": "2026-11-20T21:45:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "us_natural_gas",
-    "topics": [
-      "us_natural_gas"
-    ],
-    "relevance_score": 30,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "data center"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
-  },
-  {
-    "url": "https://www.utilitydive.com/news/western-northeast-market-reforms-drought-grid-ferc/875311",
-    "title": "Market reforms bolster grid , may lower costs this winter : FERC",
-    "domain": "www.utilitydive.com",
-    "gdelt_first_seen_utc": "2026-11-20T21:45:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "us_natural_gas",
-    "topics": [
-      "us_natural_gas"
-    ],
-    "relevance_score": 21,
-    "category": "Infrastructure & Investment",
-    "relevance_evidence": [
-      "ferc"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
-  },
-  {
-    "url": "https://www.lex18.com/science-and-tech/artificial-intelligence/meta-rethinks-its-2030-climate-goal-as-ai-emissions-soar",
-    "title": "Meta rethinks its 2030 climate goal as AI emissions soar",
-    "domain": "www.lex18.com",
-    "gdelt_first_seen_utc": "2026-11-20T21:45:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "us_natural_gas",
-    "topics": [
-      "us_natural_gas"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
-  },
-  {
-    "url": "http://www.goskagit.com/news/world/un-climate-talks-slammed-by-activists-and-leaders-as-fossil-fuels-go-unmentioned-in-draft/article_6cf0d3a9-2bf2-54d5-977a-1cedbc195b21.html",
-    "title": "UN climate talks slammed by activists and leaders as fossil fuels go unmentioned in draft deal",
-    "domain": "www.goskagit.com",
-    "gdelt_first_seen_utc": "2026-11-20T21:45:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "us_natural_gas",
-    "topics": [
-      "us_natural_gas"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
-  },
-  {
-    "url": "https://www.kxxv.com/science-and-tech/artificial-intelligence/meta-rethinks-its-2030-climate-goal-as-ai-emissions-soar",
-    "title": "Meta rethinks its 2030 climate goal as AI emissions soar",
-    "domain": "www.kxxv.com",
-    "gdelt_first_seen_utc": "2026-11-20T21:45:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "us_natural_gas",
-    "topics": [
-      "us_natural_gas"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
-  },
-  {
-    "url": "https://www.kxlf.com/science-and-tech/artificial-intelligence/meta-rethinks-its-2030-climate-goal-as-ai-emissions-soar",
-    "title": "Meta rethinks its 2030 climate goal as AI emissions soar",
-    "domain": "www.kxlf.com",
-    "gdelt_first_seen_utc": "2026-11-20T21:45:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "us_natural_gas",
-    "topics": [
-      "us_natural_gas"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
-  },
-  {
-    "url": "https://www.wcpo.com/science-and-tech/artificial-intelligence/meta-rethinks-its-2030-climate-goal-as-ai-emissions-soar",
-    "title": "Meta rethinks its 2030 climate goal as AI emissions soar",
-    "domain": "www.wcpo.com",
-    "gdelt_first_seen_utc": "2026-11-20T21:45:00+00:00",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT DOC 2.0",
-    "discovery_topic": "us_natural_gas",
-    "topics": [
-      "us_natural_gas"
-    ],
-    "relevance_score": 0,
-    "category": "Cross-sector",
-    "relevance_evidence": [],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
   }
 ]
