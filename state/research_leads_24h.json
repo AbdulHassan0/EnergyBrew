@@ -1,5 +1,275 @@
 [
   {
+    "url": "http://www.laosnews.net/news/279463143/nepal-condoles-death-of-citizen-killed-in-houthi-attack-on-saudi-oil-refinery-urges-restraint",
+    "title": "Nepal condoles death of citizen killed in Houthi attack on Saudi oil refinery, urges restraint",
+    "domain": "www.laosnews.net",
+    "gdelt_first_seen_utc": "2026-11-27T03:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 90,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_hook:oil",
+      "geopolitical_event:attack",
+      "world_context:houthi"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T03:44:10.830110+00:00"
+  },
+  {
+    "url": "https://www.upstreamonline.com/field-development/petronas-takes-fid-on-latest-floating-lng-project/2-1-2080440",
+    "title": "Petronas takes FID on latest floating LNG project",
+    "domain": "www.upstreamonline.com",
+    "gdelt_first_seen_utc": "2026-11-27T03:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 81,
+    "category": "LNG",
+    "relevance_evidence": [
+      "lng",
+      "lng project"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T03:44:10.830110+00:00"
+  },
+  {
+    "url": "https://dunyanews.tv/en/World/985128-russia-and-ukraine-exchange-another-272-bodies-of-soldiers-killed-in-w",
+    "title": "Russia and Ukraine exchange another 272 bodies of soldiers killed in war | Dunya News",
+    "domain": "dunyanews.tv",
+    "gdelt_first_seen_utc": "2026-11-27T03:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:war",
+      "world_context:russia/ukraine"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T03:44:10.830110+00:00"
+  },
+  {
+    "url": "https://greentechlead.com/renewable-energy/india-power-sector-investment-hits-%E2%82%B950241-crore-in-q3-2026-as-solar-battery-storage-and-grid-projects-expand-56402",
+    "title": "India Power Sector Investment Hits ₹50,241 Crore in Q3 2026 as Solar, Battery Storage and Grid Projects Expand - GreentechLead",
+    "domain": "greentechlead.com",
+    "gdelt_first_seen_utc": "2026-11-27T03:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 51,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "battery storage",
+      "grid"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T03:44:10.830110+00:00"
+  },
+  {
+    "url": "https://www.hindustantimes.com/world-news/opec-allies-face-tough-choices-as-surplus-builds-hormuz-risks-persist-101795749377763.html",
+    "title": "OPEC, Allies Face Tough Choices as Surplus Builds, Hormuz Risks Persist",
+    "domain": "www.hindustantimes.com",
+    "gdelt_first_seen_utc": "2026-11-27T03:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "opec"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T03:44:10.830110+00:00"
+  },
+  {
+    "url": "https://www.thefastmode.com/technology-solutions/51604-fcc-authorizes-spacex-to-deploy-1m-orbital-data-center-modules-for-space-based-ai-computing",
+    "title": "FCC Authorizes SpaceX to Deploy 1M Orbital Data Center Modules for Space-Based AI Computing",
+    "domain": "www.thefastmode.com",
+    "gdelt_first_seen_utc": "2026-11-27T03:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T03:44:10.830110+00:00"
+  },
+  {
+    "url": "https://www.thefastmode.com/leadership-and-management/51603-tierpoint-appoints-craig-cowden-as-ceo-to-lead-next-phase-of-data-center-ai-infrastructure-growth",
+    "title": "TierPoint Appoints Craig Cowden as CEO to Lead Next Phase of Data Center & AI Infrastructure Growth",
+    "domain": "www.thefastmode.com",
+    "gdelt_first_seen_utc": "2026-11-27T03:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T03:44:10.830110+00:00"
+  },
+  {
+    "url": "https://futures.jrj.com.cn/2026/11/27104259292826.shtml",
+    "title": "OPEC+拟延长配额至1月，静待周日“大考”！",
+    "domain": "futures.jrj.com.cn",
+    "gdelt_first_seen_utc": "2026-11-27T03:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "opec"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T03:44:10.830110+00:00"
+  },
+  {
+    "url": "https://www.webwire.com/ViewPressRel.asp?aId=364750",
+    "title": "Aveon Offshore and 2H Awarded TotalEnergies EP Nigeria/AMNI Int’l Petroleum Dev.Co.Ltd JV IMA Gas Project CSP EPCC Contract for Nigeria Offshore Development",
+    "domain": "www.webwire.com",
+    "gdelt_first_seen_utc": "2026-11-27T03:32:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 27,
+    "category": "Natural Gas",
+    "relevance_evidence": [
+      "gas project"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T03:44:10.830110+00:00"
+  },
+  {
+    "url": "https://asianews.network/fire-at-bangchak-oil-refinery-prompts-urgent-evacuation-in-bangkok",
+    "title": "Fire at Bangchak oil refinery prompts urgent evacuation in Bangkok",
+    "domain": "asianews.network",
+    "gdelt_first_seen_utc": "2026-11-27T03:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "refinery"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T03:44:10.830110+00:00"
+  },
+  {
+    "url": "https://www.thefastmode.com/expert-opinion/51245-seeing-heat-why-thermal-imaging-is-critical-to-data-center-resilience",
+    "title": "Seeing Heat: Why Thermal Imaging Is Critical to Data Center Resilience",
+    "domain": "www.thefastmode.com",
+    "gdelt_first_seen_utc": "2026-11-27T03:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T03:44:10.830110+00:00"
+  },
+  {
+    "url": "https://www.gx94radio.com/2026/11/26/innovation-saskatchewan-invests-450k-to-support-lithium-refining-technology",
+    "title": "Innovation Saskatchewan invests $450K to support lithium refining technology",
+    "domain": "www.gx94radio.com",
+    "gdelt_first_seen_utc": "2026-11-27T03:31:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 24,
+    "category": "Oil & Energy",
+    "relevance_evidence": [
+      "refining"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-27T03:44:10.830110+00:00"
+  },
+  {
     "url": "https://www.moneycontrol.com/world/one-killed-in-attack-on-saudi-arabia-s-jazan-refinery-some-operations-suspended-article-14089920.html",
     "title": "One killed in attack on Saudi Arabia's Jazan refinery, some operations suspended- Moneycontrol.com",
     "domain": "www.moneycontrol.com",
@@ -2361,186 +2631,5 @@
     ],
     "status": "discovery_only_requires_publisher_verification",
     "first_collector_observed_utc": "2026-11-26T10:03:59.895528+00:00"
-  },
-  {
-    "url": "https://www.businesstoday.in/markets/stocks/story/buy-bpcl-iocl-shares-as-crude-oil-prices-fall-risk-reward-favourable-says-jefferies-569567-2026-11-26",
-    "title": "Buy BPCL, IOCL shares as crude oil prices fall, risk reward favourable, says Jefferies - BusinessToday",
-    "domain": "www.businesstoday.in",
-    "gdelt_first_seen_utc": "2026-11-26T02:47:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 69,
-    "category": "Oil & Energy",
-    "relevance_evidence": [
-      "crude oil",
-      "oil prices"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-26T02:53:22.608087+00:00"
-  },
-  {
-    "url": "https://www.breitbart.com/europe/2026/11/25/melania-trump-facilitates-reunification-of-nine-more-children-displaced-in-russia-ukraine-war-with-families",
-    "title": "Melania Trump Facilitates Reunification of Nine More Children Displaced in Russia-Ukraine War with Families",
-    "domain": "www.breitbart.com",
-    "gdelt_first_seen_utc": "2026-11-26T02:47:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:war",
-      "world_context:russia/ukraine"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-26T02:53:22.608087+00:00"
-  },
-  {
-    "url": "https://www.breitbart.com/politics/2026/11/25/kurdish-leader-on-game-changer-win-available-global-economy-ending-u-s-iran-war-i-still-believe-president-trump-can-make-this-deal",
-    "title": "Kurdish Leader on ‘Game Changer’ Win Available for ‘Global Economy’ in Ending U.S.-Iran War: ‘I Still Believe President Trump Can Make This Deal’",
-    "domain": "www.breitbart.com",
-    "gdelt_first_seen_utc": "2026-11-26T02:47:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:war",
-      "world_context:iran/united states"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-26T02:53:22.608087+00:00"
-  },
-  {
-    "url": "https://portal.sina.com.hk/technology/sina/2026/11/26/1998193/%E6%BB%AC%E6%9D%B1%E4%B8%AD%E8%8F%AF%E4%BA%A4%E4%BB%98%E7%AC%AC12%E8%89%98%E5%A4%A7%E5%9E%8Blng%E8%88%B9%EF%BC%8C%E5%88%B7%E6%96%B0%E5%9C%8B%E5%85%A7%E5%B9%B4%E5%BA%A6%E4%BA%A4%E4%BB%98%E9%87%8F",
-    "title": "滬東中華交付第12艘大型LNG船，刷新國內年度交付量紀錄",
-    "domain": "portal.sina.com.hk",
-    "gdelt_first_seen_utc": "2026-11-26T02:47:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 45,
-    "category": "LNG",
-    "relevance_evidence": [
-      "lng"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-26T02:53:22.608087+00:00"
-  },
-  {
-    "url": "https://finance.sina.com.cn/tech/shenji/2026-11-26/doc-inizzmzi9071825.shtml",
-    "title": "沪东中华交付第12艘大型LNG船，刷新国内年度交付量纪录",
-    "domain": "finance.sina.com.cn",
-    "gdelt_first_seen_utc": "2026-11-26T02:47:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 45,
-    "category": "LNG",
-    "relevance_evidence": [
-      "lng"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-26T02:53:22.608087+00:00"
-  },
-  {
-    "url": "https://torino.repubblica.it/cronaca/2026/11/26/news/chivasso_contro_l_assedio_del_quadrilatero_di_data_center_non_lasciate_soli_noi_sindaci-425750630",
-    "title": "Chivasso contro l’assedio del “quadrilatero” di data center: “Non lasciate soli noi sindaci”",
-    "domain": "torino.repubblica.it",
-    "gdelt_first_seen_utc": "2026-11-26T02:47:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 30,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "data center"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-26T02:53:22.608087+00:00"
-  },
-  {
-    "url": "https://www.bulgariagazette.com/rwe-wins-bid-for-49-of-bulgarias-belene-nuclear-plant",
-    "title": "RWE wins bid for 49% of Bulgaria’s Belene nuclear plant - Bulgaria Gazette - News from Bulgaria",
-    "domain": "www.bulgariagazette.com",
-    "gdelt_first_seen_utc": "2026-11-26T02:47:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 27,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "nuclear plant"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-26T02:53:22.608087+00:00"
-  },
-  {
-    "url": "https://executivedigest.sapo.pt/venezuela-e-siemens-energy-assinam-parceria-para-recuperar-sistema-eletrico",
-    "title": "Venezuela e Siemens Energy assinam parceria para recuperar sistema elétrico",
-    "domain": "executivedigest.sapo.pt",
-    "gdelt_first_seen_utc": "2026-11-26T02:47:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 27,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "siemens energy"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-26T02:53:22.608087+00:00"
   }
 ]
