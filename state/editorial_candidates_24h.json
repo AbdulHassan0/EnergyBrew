@@ -1,5 +1,47 @@
 [
   {
+    "id": "acf13f7e7e318223039d00c4",
+    "title": "Tanker Traffic at Hormuz Ticks Up Despite Intensified Attacks",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/Tanker-Traffic-at-Hormuz-Ticks-Up-Despite-Intensified-Attacks.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-26T16:30:00+00:00",
+    "category": "Geopolitics",
+    "published_precision": "timestamp",
+    "relevance_score": 90,
+    "keyword_matches": 3,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "energy_market_hook:tanker",
+      "geopolitical_event:attacks",
+      "world_context:hormuz"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-27T00:40:13.483146+00:00",
+    "first_collector_observed_utc": "2026-11-27T00:40:13.483146+00:00"
+  },
+  {
+    "id": "75dd2691f101fe33745734de",
+    "title": "Iranian Hardliners Call for Tanker Convoy to Defy U.S. Blockade",
+    "url": "https://oilprice.com/Energy/Energy-General/Iranian-Hardliners-Call-for-Tanker-Convoy-to-Defy-US-Blockade.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-26T15:00:00+00:00",
+    "category": "Geopolitics",
+    "published_precision": "timestamp",
+    "relevance_score": 90,
+    "keyword_matches": 3,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "energy_market_hook:tanker",
+      "geopolitical_event:blockade",
+      "world_context:iranian"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-27T00:40:13.483146+00:00",
+    "first_collector_observed_utc": "2026-11-27T00:40:13.483146+00:00"
+  },
+  {
     "id": "86c377b0933cd9dad095624f",
     "title": "Oil Rallies as Hormuz Mine Strikes Rattle Global Markets",
     "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Rallies-as-Hormuz-Mine-Strikes-Rattle-Global-Markets.html",
@@ -21,46 +63,44 @@
     "first_collector_observed_utc": "2026-11-26T13:59:56.723996+00:00"
   },
   {
-    "id": "1d80a4fb32374cdc6c3d56de",
-    "title": "Oil Jumps Over 2% as Saudi Arabia Downs Drones Over Ras Tanura",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Jumps-Over-2-as-Saudi-Arabia-Downs-Drones-Over-Ras-Tanura.html",
+    "id": "ce64f8f6dd5abb0f89c670ab",
+    "title": "Norway Pauses Data Center Grid Reservations as Requests Top Peak Demand",
+    "url": "https://oilprice.com/Energy/Energy-General/Norway-Pauses-Data-Center-Grid-Reservations-as-Requests-Top-Peak-Demand.html",
     "source": "OilPrice.com News",
     "source_class": "specialist_publisher",
-    "published_utc": "2026-11-25T15:30:00+00:00",
-    "category": "Geopolitics",
+    "published_utc": "2026-11-26T20:00:00+00:00",
+    "category": "Power & Electricity",
     "published_precision": "timestamp",
-    "relevance_score": 90,
-    "keyword_matches": 3,
+    "relevance_score": 54,
+    "keyword_matches": 2,
     "editorial_candidate": true,
     "relevance_evidence": [
-      "energy_market_hook:oil",
-      "geopolitical_event:drones",
-      "world_context:saudi arabia"
+      "data center",
+      "grid"
     ],
     "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-26T00:31:04.600618+00:00",
-    "first_collector_observed_utc": "2026-11-26T00:31:04.600618+00:00"
+    "first_collected_utc": "2026-11-27T00:40:13.483146+00:00",
+    "first_collector_observed_utc": "2026-11-27T00:40:13.483146+00:00"
   },
   {
-    "id": "72a34b6fed97b93f5a9c3a9d",
-    "title": "UK Energy Bills Set to Soar 26% as Iran War Drives Up Gas Prices",
-    "url": "https://oilprice.com/Energy/Energy-General/UK-Energy-Bills-Set-to-Soar-26-as-Iran-War-Drives-Up-Gas-Prices.html",
+    "id": "fdfc1926571aed2ea610e420",
+    "title": "Why Gasoline Prices Are Falling While Diesel Remains Expensive",
+    "url": "https://oilprice.com/Energy/Energy-General/Why-Gasoline-Prices-Are-Falling-While-Diesel-Remains-Expensive.html",
     "source": "OilPrice.com News",
     "source_class": "specialist_publisher",
-    "published_utc": "2026-11-25T15:00:00+00:00",
-    "category": "Geopolitics",
+    "published_utc": "2026-11-26T17:00:00+00:00",
+    "category": "Oil & Energy",
     "published_precision": "timestamp",
-    "relevance_score": 90,
-    "keyword_matches": 3,
+    "relevance_score": 45,
+    "keyword_matches": 2,
     "editorial_candidate": true,
     "relevance_evidence": [
-      "energy_market_hook:energy",
-      "geopolitical_event:war",
-      "world_context:iran"
+      "diesel",
+      "gasoline"
     ],
     "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-26T00:31:04.600618+00:00",
-    "first_collector_observed_utc": "2026-11-26T00:31:04.600618+00:00"
+    "first_collected_utc": "2026-11-27T00:40:13.483146+00:00",
+    "first_collector_observed_utc": "2026-11-27T00:40:13.483146+00:00"
   },
   {
     "id": "73bd3ef187fd50af210b7d09",
@@ -78,47 +118,28 @@
       "lng"
     ],
     "status": "research_only_unverified",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-26T13:59:56.723996+00:00",
     "first_collector_observed_utc": "2026-11-26T13:59:56.723996+00:00"
   },
   {
-    "id": "ebf62b904fa23d3aaeba4e4e",
-    "title": "Cheaper Gasoline Won't Fix the Diesel Squeeze Hitting Freight Costs",
-    "url": "https://oilprice.com/Energy/Gas-Prices/Cheaper-Gasoline-Wont-Fix-the-Diesel-Squeeze-Hitting-Freight-Costs.html",
+    "id": "80c8909e0db876df2b16fca1",
+    "title": "Why Making Electricity From Seawater Has Failed",
+    "url": "https://oilprice.com/Alternative-Energy/Renewable-Energy/Why-Making-Electricity-From-Seawater-Has-Failed.html",
     "source": "OilPrice.com News",
     "source_class": "specialist_publisher",
-    "published_utc": "2026-11-25T20:00:00+00:00",
-    "category": "Oil & Energy",
+    "published_utc": "2026-11-26T21:00:00+00:00",
+    "category": "Power & Electricity",
     "published_precision": "timestamp",
-    "relevance_score": 45,
-    "keyword_matches": 2,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "diesel",
-      "gasoline"
-    ],
-    "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-26T00:31:04.600618+00:00",
-    "first_collector_observed_utc": "2026-11-26T00:31:04.600618+00:00"
-  },
-  {
-    "id": "e14df782f719683f56a667e2",
-    "title": "Oil Inventories Continue to Rise in the US",
-    "url": "https://oilprice.com/Energy/Crude-Oil/Oil-Inventories-Continue-to-Rise-in-the-US.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-25T15:42:56+00:00",
-    "category": "Oil & Energy",
-    "published_precision": "timestamp",
-    "relevance_score": 36,
+    "relevance_score": 33,
     "keyword_matches": 1,
     "editorial_candidate": true,
     "relevance_evidence": [
-      "oil inventories"
+      "electricity"
     ],
     "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-26T00:31:04.600618+00:00",
-    "first_collector_observed_utc": "2026-11-26T00:31:04.600618+00:00"
+    "first_collected_utc": "2026-11-27T00:40:13.483146+00:00",
+    "first_collector_observed_utc": "2026-11-27T00:40:13.483146+00:00"
   },
   {
     "id": "298c9db15144764a70e4c227",
@@ -136,28 +157,9 @@
       "oil prices"
     ],
     "status": "research_only_unverified",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-26T13:59:56.723996+00:00",
     "first_collector_observed_utc": "2026-11-26T13:59:56.723996+00:00"
-  },
-  {
-    "id": "41ee440d15205b02d80cf16a",
-    "title": "Almost 60% of primary energy used for electricity is lost to conversion and transmission",
-    "url": "https://www.eia.gov/todayinenergy/detail.php?id=68504",
-    "source": "EIA Today in Energy",
-    "source_class": "official_agency",
-    "published_utc": "2026-11-25T14:00:00+00:00",
-    "category": "Power & Electricity",
-    "published_precision": "timestamp",
-    "relevance_score": 33,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "electricity"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
-    "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
   },
   {
     "id": "10b86cc50b16f767c6310172",
@@ -196,102 +198,5 @@
     "status": "research_only_unverified",
     "first_collected_utc": "2026-11-26T13:59:56.723996+00:00",
     "first_collector_observed_utc": "2026-11-26T13:59:56.723996+00:00"
-  },
-  {
-    "id": "cb6d67259f763abe630cbf65",
-    "title": "U.S. Rig Count Holds Steady as Oil Production Hits Fifth Straight Record",
-    "url": "https://oilprice.com/Energy/Crude-Oil/US-Rig-Count-Holds-Steady-as-Oil-Production-Hits-Fifth-Straight-Record.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-25T21:06:52+00:00",
-    "category": "Oil & Energy",
-    "published_precision": "timestamp",
-    "relevance_score": 30,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "oil production"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collected_utc": "2026-11-26T00:31:04.600618+00:00",
-    "first_collector_observed_utc": "2026-11-26T00:31:04.600618+00:00"
-  },
-  {
-    "id": "b37957d96faa7baef4bb7858",
-    "title": "Kazakhstan Joins Iraq in Pushing OPEC+ for a Higher Capacity Rating",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/Kazakhstan-Joins-Iraq-in-Pushing-OPEC-for-a-Higher-Capacity-Rating.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-25T17:30:00+00:00",
-    "category": "Oil & Energy",
-    "published_precision": "timestamp",
-    "relevance_score": 30,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "opec"
-    ],
-    "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-26T00:31:04.600618+00:00",
-    "first_collector_observed_utc": "2026-11-26T00:31:04.600618+00:00"
-  },
-  {
-    "id": "79bd3bfbee77218a72e85cbf",
-    "title": "U.S. Diplomatic Push Revives Hopes for Trans-Caspian Gas Pipeline",
-    "url": "https://oilprice.com/Energy/Energy-General/US-Diplomatic-Push-Revives-Hopes-for-Trans-Caspian-Gas-Pipeline.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-25T17:00:00+00:00",
-    "category": "Natural Gas",
-    "published_precision": "timestamp",
-    "relevance_score": 30,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "gas pipeline"
-    ],
-    "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-26T00:31:04.600618+00:00",
-    "first_collector_observed_utc": "2026-11-26T00:31:04.600618+00:00"
-  },
-  {
-    "id": "f0e9b6feef8d64143747495a",
-    "title": "Bright Horizon utility lands Microsoft data center deals amid Wyoming buildout",
-    "url": "https://www.utilitydive.com/news/cheyenne-light-microsoft-google-data-center-bright-horizon/875739",
-    "source": "Utility Dive News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-25T15:00:39+00:00",
-    "category": "Power & Electricity",
-    "published_precision": "timestamp",
-    "relevance_score": 30,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "data center"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collected_utc": "2026-11-26T00:31:04.600618+00:00",
-    "first_collector_observed_utc": "2026-11-26T00:31:04.600618+00:00"
-  },
-  {
-    "id": "40c06bd49c3d06ee6d3d93c3",
-    "title": "Big Oil and Big Tech Lobby EU for Faster Gas-Fired Data Center Permits",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/Big-Oil-and-Big-Tech-Lobby-EU-for-Faster-Gas-Fired-Data-Center-Permits.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-25T14:00:00+00:00",
-    "category": "Power & Electricity",
-    "published_precision": "timestamp",
-    "relevance_score": 30,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "data center"
-    ],
-    "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-25T14:34:16.503193+00:00",
-    "first_collector_observed_utc": "2026-11-25T14:34:16.503193+00:00"
   }
 ]

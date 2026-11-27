@@ -1,15 +1,9 @@
 {
-  "run_utc": "2026-11-26T13:59:55.596415+00:00",
+  "run_utc": "2026-11-27T00:40:08.045676+00:00",
   "days": [
     {
-      "publication_date_utc": "2026-11-19",
-      "source_links": 25,
-      "editorial_candidates": 8,
-      "regulatory_date_only_leads": 0
-    },
-    {
       "publication_date_utc": "2026-11-20",
-      "source_links": 37,
+      "source_links": 36,
       "editorial_candidates": 12,
       "regulatory_date_only_leads": 6
     },
@@ -45,8 +39,14 @@
     },
     {
       "publication_date_utc": "2026-11-26",
-      "source_links": 10,
-      "editorial_candidates": 5,
+      "source_links": 20,
+      "editorial_candidates": 10,
+      "regulatory_date_only_leads": 0
+    },
+    {
+      "publication_date_utc": "2026-11-27",
+      "source_links": 2,
+      "editorial_candidates": 0,
       "regulatory_date_only_leads": 0
     }
   ],
