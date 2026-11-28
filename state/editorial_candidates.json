@@ -488,6 +488,25 @@
     "first_collector_observed_utc": "2026-11-26T00:31:04.600618+00:00"
   },
   {
+    "id": "741fb6ced11a18eb26726e07",
+    "title": "Global electricity generation more than doubled from 2000 to 2025",
+    "url": "https://www.eia.gov/todayinenergy/detail.php?id=68525",
+    "source": "EIA Today in Energy",
+    "source_class": "official_agency",
+    "published_utc": "2026-11-27T14:00:00+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 33,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-28T00:06:19.365071+00:00",
+    "first_collector_observed_utc": "2026-11-28T00:06:19.365071+00:00"
+  },
+  {
     "id": "0e3ed98c2febf04a9df34d18",
     "title": "Stockpiling Will Support Oil Prices in 2027, Energy Aspects Says",
     "url": "https://oilprice.com/Latest-Energy-News/World-News/Stockpiling-Will-Support-Oil-Prices-in-2027-Energy-Aspects-Says.html",
@@ -503,6 +522,7 @@
       "oil prices"
     ],
     "status": "research_only_unverified",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-27T13:59:05.992895+00:00",
     "first_collector_observed_utc": "2026-11-27T13:59:05.992895+00:00"
   },
@@ -856,44 +876,61 @@
     "first_collector_observed_utc": "2026-11-21T21:43:07.712456+00:00"
   },
   {
-    "id": "ba84295befe06fabdcff5fe4",
-    "title": "Oil Prices Caught Between a Looming Glut and Middle East Turmoil",
-    "url": "https://oilprice.com/Energy/Energy-General/Oil-Prices-Caught-Between-a-Looming-Glut-and-Middle-East-Turmoil.html",
+    "id": "bddf59be6df02dfada5dbe25",
+    "title": "Georgia Voters to Decide Fate of $17 Billion Data Center Megaproject",
+    "url": "https://oilprice.com/Energy/Energy-General/Georgia-Voters-to-Decide-Fate-of-17-Billion-Data-Center-Megaproject.html",
     "source": "OilPrice.com News",
     "source_class": "specialist_publisher",
-    "published_utc": "2026-11-21T00:00:00+00:00",
-    "category": "Oil & Energy",
+    "published_utc": "2026-11-27T19:00:00+00:00",
+    "category": "Power & Electricity",
     "published_precision": "timestamp",
-    "relevance_score": 33,
+    "relevance_score": 30,
     "keyword_matches": 1,
     "editorial_candidate": true,
     "relevance_evidence": [
-      "oil prices"
+      "data center"
     ],
     "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collected_utc": "2026-11-21T12:47:08.112036+00:00",
-    "first_collector_observed_utc": "2026-11-21T12:47:08.112036+00:00"
+    "first_collected_utc": "2026-11-28T00:06:19.365071+00:00",
+    "first_collector_observed_utc": "2026-11-28T00:06:19.365071+00:00"
   },
   {
-    "id": "f98dc9e2612c11688b0ec1e1",
-    "title": "U.S. Oil Drillers Pick Up the Pace Just as Oil Prices Fall",
-    "url": "https://oilprice.com/Energy/Energy-General/US-Oil-Drillers-Pick-Up-the-Pace-Just-as-Oil-Prices-Fall.html",
+    "id": "ccc57099583fc3f1102def8c",
+    "title": "OPEC+ Faces Growing Pressure As Iraq Pushes for Higher Quota",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/OPEC-Faces-Growing-Pressure-As-Iraq-Pushes-for-Higher-Quota.html",
     "source": "OilPrice.com News",
     "source_class": "specialist_publisher",
-    "published_utc": "2026-11-20T18:09:09+00:00",
+    "published_utc": "2026-11-27T17:30:00+00:00",
     "category": "Oil & Energy",
     "published_precision": "timestamp",
-    "relevance_score": 33,
+    "relevance_score": 30,
     "keyword_matches": 1,
     "editorial_candidate": true,
     "relevance_evidence": [
-      "oil prices"
+      "opec"
     ],
     "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collected_utc": "2026-11-20T22:41:52.748655+00:00",
-    "first_collector_observed_utc": "2026-11-20T22:41:52.748655+00:00"
+    "first_collected_utc": "2026-11-28T00:06:19.365071+00:00",
+    "first_collector_observed_utc": "2026-11-28T00:06:19.365071+00:00"
+  },
+  {
+    "id": "3d4a3692f55e28b95ff06435",
+    "title": "U.S. Encouraged Iraq and Venezuela to Leave OPEC, Sources Say",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Pushed-Iraq-and-Venezuela-to-Consider-Quitting-OPEC-Sources-Say.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-27T14:30:00+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 30,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "opec"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-28T00:06:19.365071+00:00",
+    "first_collector_observed_utc": "2026-11-28T00:06:19.365071+00:00"
   },
   {
     "id": "0f4706e50b144481368fe0f1",
@@ -911,6 +948,7 @@
       "oil production"
     ],
     "status": "research_only_unverified",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-27T13:59:05.992895+00:00",
     "first_collector_observed_utc": "2026-11-27T13:59:05.992895+00:00"
   },
@@ -930,6 +968,7 @@
       "oil exports"
     ],
     "status": "research_only_unverified",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-27T13:59:05.992895+00:00",
     "first_collector_observed_utc": "2026-11-27T13:59:05.992895+00:00"
   },
@@ -1187,26 +1226,6 @@
     "first_collector_observed_utc": "2026-11-24T02:56:38.844495+00:00"
   },
   {
-    "id": "1c11f80a2dfc5285aa087d15",
-    "title": "US Data Center Boom Faces a New Political Reality",
-    "url": "https://oilprice.com/Energy/Energy-General/US-Data-Center-Boom-Faces-a-New-Political-Reality.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-20T19:00:00+00:00",
-    "category": "Power & Electricity",
-    "published_precision": "timestamp",
-    "relevance_score": 30,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "data center"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collected_utc": "2026-11-20T22:41:52.748655+00:00",
-    "first_collector_observed_utc": "2026-11-20T22:41:52.748655+00:00"
-  },
-  {
     "id": "86f2a71329116df5674a252a",
     "title": "Saipem staying on subsea inspection and intervention duty at Equinor\u2019s oil & gas field through 2034",
     "url": "https://www.offshore-energy.biz/2026/11/24/saipem-staying-on-subsea-inspection-and-intervention-duty-at-equinors-oil-and-gas-field-through-2034",
@@ -1285,26 +1304,6 @@
     "also_seen_in": [],
     "first_collected_utc": "2026-11-24T14:58:13.354800+00:00",
     "first_collector_observed_utc": "2026-11-24T14:58:13.354800+00:00"
-  },
-  {
-    "id": "b6a4678714d68bae18b2bd31",
-    "title": "China\u2019s Oil Imports from Persian Gulf Jump to Wartime High",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/Chinas-Oil-Imports-from-Persian-Gulf-Jump-to-Wartime-High.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-20T15:36:00+00:00",
-    "category": "Oil & Energy",
-    "published_precision": "timestamp",
-    "relevance_score": 27,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "oil imports"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collected_utc": "2026-11-20T22:41:52.748655+00:00",
-    "first_collector_observed_utc": "2026-11-20T22:41:52.748655+00:00"
   },
   {
     "id": "332ef499b6782e11ba5d00c4",

@@ -1,72 +1,41 @@
 {
-  "generated_utc": "2026-11-27T13:59:28.269800+00:00",
+  "generated_utc": "2026-11-28T00:06:27.967483+00:00",
   "status": "research_only_not_approved",
-  "unique_relevant_urls_7d": 1038,
+  "unique_relevant_urls_7d": 1030,
   "selected_research_links": 32,
-  "unique_domains_in_selection": 27,
+  "unique_domains_in_selection": 24,
   "queue_counts": {
-    "specialist_publisher_24h": 10,
-    "older_official_context": 58,
-    "discovery_unverified": 891,
+    "older_official_context": 59,
+    "discovery_unverified": 883,
+    "timestamped_official": 1,
+    "specialist_publisher_24h": 8,
     "company_release_unverified": 74,
     "regulatory_date_only": 5
   },
   "selected_category_counts": {
-    "Natural Gas": 4,
-    "LNG": 8,
-    "Power & Electricity": 5,
+    "Natural Gas": 3,
+    "LNG": 7,
+    "Power & Electricity": 7,
     "Oil & Energy": 6,
     "Infrastructure & Investment": 1,
     "Geopolitics": 8
   },
   "selected_topic_coverage_counts": {
-    "Natural Gas": 4,
-    "LNG": 8,
-    "Power & Electricity": 5,
-    "Oil & Energy": 12,
-    "Infrastructure & Investment": 7,
+    "Natural Gas": 3,
+    "LNG": 7,
+    "Power & Electricity": 7,
+    "Oil & Energy": 10,
+    "Infrastructure & Investment": 5,
     "Geopolitics": 8
   },
   "missing_categories": [],
-  "publisher_timestamped_official_24h": 0,
-  "publisher_timestamped_specialist_24h": 10,
+  "publisher_timestamped_official_24h": 1,
+  "publisher_timestamped_specialist_24h": 8,
   "system_operator_primary_24h": 0,
-  "likely_same_event_links_suppressed": 23,
+  "likely_same_event_links_suppressed": 18,
   "discovery_publisher_dates_verified": 0,
   "promotional_or_language_review_count": 0,
   "stories": [
-    {
-      "title": "Tanker Traffic at Hormuz Ticks Up Despite Intensified Attacks",
-      "url": "https://oilprice.com/Latest-Energy-News/World-News/Tanker-Traffic-at-Hormuz-Ticks-Up-Despite-Intensified-Attacks.html",
-      "domain": "oilprice.com",
-      "first_collector_observed_utc": "2026-11-27T00:40:13.483146+00:00",
-      "local_collection_time_known": true,
-      "source": "OilPrice.com News",
-      "source_class": "specialist_publisher",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics",
-        "Oil & Energy"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:tanker",
-        "geopolitical_event:attacks",
-        "world_context:hormuz"
-      ],
-      "origin": "official_rss",
-      "time_basis": "specialist_publisher_rss_timestamp",
-      "observed_time_utc": "2026-11-26T16:30:00+00:00",
-      "publisher_time_verified": true,
-      "date_confidence": "publisher_rss_timestamp",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "specialist_publisher_24h",
-      "rank": 145
-    },
     {
       "title": "US Crude Oil Inventories Inches Up as Gasoline Holds Steady",
       "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Crude-Oil-Inventories-Inches-Up-as-Gasoline-Holds-Steady.html",
@@ -97,6 +66,38 @@
       "independent_corroboration_verified": false,
       "queue": "older_official_context",
       "rank": 126
+    },
+    {
+      "title": "Tanker Traffic at Hormuz Ticks Up Despite Intensified Attacks",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Tanker-Traffic-at-Hormuz-Ticks-Up-Despite-Intensified-Attacks.html",
+      "domain": "oilprice.com",
+      "first_collector_observed_utc": "2026-11-27T00:40:13.483146+00:00",
+      "local_collection_time_known": true,
+      "source": "OilPrice.com News",
+      "source_class": "specialist_publisher",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics",
+        "Oil & Energy"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:tanker",
+        "geopolitical_event:attacks",
+        "world_context:hormuz"
+      ],
+      "origin": "official_rss",
+      "time_basis": "specialist_publisher_rss_timestamp",
+      "observed_time_utc": "2026-11-26T16:30:00+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
+      "within_24h_on_own_time_basis": false,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "older_official_context",
+      "rank": 120
     },
     {
       "title": "Global LNG Supply Crunch Set to Spill Into 2027",
@@ -191,50 +192,39 @@
       "rank": 111
     },
     {
-      "title": "India says attacks on maritime shipping and seafarers unacceptable, calls for global response",
-      "url": "https://news.webindia123.com/news/Articles/World/20261127/4525365.html",
-      "domain": "news.webindia123.com",
-      "first_collector_observed_utc": "2026-11-27T13:59:27.227150+00:00",
+      "title": "Global electricity generation more than doubled from 2000 to 2025",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68525",
+      "domain": "www.eia.gov",
+      "first_collector_observed_utc": "2026-11-28T00:06:19.365071+00:00",
       "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
+      "source": "EIA Today in Energy",
+      "source_class": "official_agency",
+      "category": "Power & Electricity",
       "coverage_themes": [
-        "Geopolitics"
+        "Power & Electricity"
       ],
-      "relevance_score": 90,
+      "relevance_score": 33,
       "relevance_evidence": [
-        "energy_market_hook:shipping",
-        "geopolitical_event:attacks",
-        "world_context:india"
+        "electricity"
       ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-27T13:47:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
+      "origin": "official_rss",
+      "time_basis": "publisher_feed_publication_time",
+      "observed_time_utc": "2026-11-27T14:00:00+00:00",
+      "publisher_time_verified": true,
+      "date_confidence": "publisher_rss_timestamp",
       "within_24h_on_own_time_basis": true,
       "needs_editor_review": [],
       "editorial_status": "research_only_not_approved",
       "other_origins": [],
       "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102,
-      "related_reports": [
-        {
-          "title": "India says attacks on maritime shipping and seafarers unacceptable, calls for global response",
-          "url": "https://aninews.in/news/world/asia/india-says-attacks-on-maritime-shipping-and-seafarers-unacceptable-calls-for-global-response20261127182723",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        }
-      ]
+      "queue": "timestamped_official",
+      "rank": 108
     },
     {
-      "title": "Saudi Arabia Vows Strong Response Following Jazan Refinery Attack",
-      "url": "https://english.globalarabnetwork.com/2026/11/27/saudi-arabia-vows-strong-response-following-jazan-refinery-attack",
-      "domain": "english.globalarabnetwork.com",
-      "first_collector_observed_utc": "2026-11-27T13:59:27.227150+00:00",
+      "title": "Russia Extends Jet Fuel Export Ban as Ukrainian Strikes Hit Refineries",
+      "url": "https://www.kyivpost.com/post/91444",
+      "domain": "www.kyivpost.com",
+      "first_collector_observed_utc": "2026-11-28T00:06:26.805271+00:00",
       "local_collection_time_known": true,
       "source": "GDELT GAL RSS",
       "source_class": "unclassified",
@@ -245,13 +235,13 @@
       ],
       "relevance_score": 90,
       "relevance_evidence": [
-        "energy_market_hook:refinery",
-        "geopolitical_event:attack",
-        "world_context:saudi arabia"
+        "energy_market_hook:refineries",
+        "geopolitical_event:export ban",
+        "world_context:russia"
       ],
       "origin": "global_discovery",
       "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-27T13:47:00+00:00",
+      "observed_time_utc": "2026-11-28T00:02:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
@@ -263,42 +253,10 @@
       "rank": 102
     },
     {
-      "title": "Houthis launch fresh strikes on Jazan oil refinery in Saudi Arabia",
-      "url": "https://organiser.org/2026/11/27/429257/international/houthis-attack-jazan-oil-refinery-in-saudi-arabia-nepali-worker-killed-several-injured-as-tensions-escalate-in-gulf",
-      "domain": "organiser.org",
-      "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics",
-        "Oil & Energy"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:oil",
-        "geopolitical_event:strikes",
-        "world_context:saudi arabia"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-27T13:02:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102
-    },
-    {
-      "title": "Russia extends aviation fuel export ban through March 2027",
-      "url": "https://english.news.cn/20261127/8b2d74cdf47f447a891e6273d6aac819/c.html",
-      "domain": "english.news.cn",
-      "first_collector_observed_utc": "2026-11-27T13:12:26.016260+00:00",
+      "title": "Norse Atlantic's Norwegian unit files for bankruptcy amid soaring fuel costs linked to Iran war",
+      "url": "https://aninews.in/news/world/europe/norse-atlantics-norwegian-unit-files-for-bankruptcy-amid-soaring-fuel-costs-linked-to-iran-war20261128023225",
+      "domain": "aninews.in",
+      "first_collector_observed_utc": "2026-11-28T00:06:26.805271+00:00",
       "local_collection_time_known": true,
       "source": "GDELT GAL RSS",
       "source_class": "unclassified",
@@ -309,44 +267,12 @@
       "relevance_score": 90,
       "relevance_evidence": [
         "energy_market_hook:fuel",
-        "geopolitical_event:export ban",
-        "world_context:russia"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-27T13:01:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": true,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 102
-    },
-    {
-      "title": "Iran says it recovered two oil tankers allegedly seized by US military | News.az",
-      "url": "https://news.az/news/iran-says-it-recovered-two-oil-tankers-allegedly-seized-by-us-military",
-      "domain": "news.az",
-      "first_collector_observed_utc": "2026-11-27T11:07:37.740968+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Geopolitics",
-      "coverage_themes": [
-        "Geopolitics",
-        "Oil & Energy"
-      ],
-      "relevance_score": 90,
-      "relevance_evidence": [
-        "energy_market_hook:oil",
-        "geopolitical_event:military",
+        "geopolitical_event:war",
         "world_context:iran"
       ],
       "origin": "global_discovery",
       "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-27T11:01:00+00:00",
+      "observed_time_utc": "2026-11-28T00:02:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
@@ -358,10 +284,72 @@
       "rank": 102
     },
     {
-      "title": "Nepal condoles death of citizen killed in Houthi attack on Saudi oil refinery, urges restraint",
-      "url": "http://www.laosnews.net/news/279463143/nepal-condoles-death-of-citizen-killed-in-houthi-attack-on-saudi-oil-refinery-urges-restraint",
-      "domain": "www.laosnews.net",
-      "first_collector_observed_utc": "2026-11-27T03:44:10.830110+00:00",
+      "title": "As Europe Calls For America To Sabotage Its Own Energy Industry It Can’t Keep It’s Own Promises With Deadline Approaching",
+      "url": "https://dailycaller.com/2026/11/27/european-union-commission-climate-change-green-energy-donald-trump-paris-accord-united-nations-teresa-ribera",
+      "domain": "dailycaller.com",
+      "first_collector_observed_utc": "2026-11-28T00:06:26.805271+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:energy",
+        "geopolitical_event:sabotage",
+        "world_context:europe"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-28T00:02:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
+    },
+    {
+      "title": "Senior IRGC officials vow to break US blockade on Strait of Hormuz | The Jerusalem Post",
+      "url": "https://www.jpost.com/middle-east/iran-news/article-916347",
+      "domain": "www.jpost.com",
+      "first_collector_observed_utc": "2026-11-28T00:06:26.805271+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:strait of hormuz",
+        "geopolitical_event:blockade",
+        "world_context:us"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-28T00:01:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
+    },
+    {
+      "title": "Ukraine proposes Black Sea ceasefire as Russia demands halt to oil attacks",
+      "url": "http://www.bgnes.com/conflicts/ukraine-proposes-black-sea-ceasefire-as-russia-demands-halt-to-oil-attacks",
+      "domain": "www.bgnes.com",
+      "first_collector_observed_utc": "2026-11-27T22:04:08.043801+00:00",
       "local_collection_time_known": true,
       "source": "GDELT GAL RSS",
       "source_class": "unclassified",
@@ -373,12 +361,12 @@
       "relevance_score": 90,
       "relevance_evidence": [
         "energy_market_hook:oil",
-        "geopolitical_event:attack",
-        "world_context:houthi"
+        "geopolitical_event:attacks",
+        "world_context:russia"
       ],
       "origin": "global_discovery",
       "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-27T03:32:00+00:00",
+      "observed_time_utc": "2026-11-27T22:01:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
@@ -387,36 +375,13 @@
       "other_origins": [],
       "independent_corroboration_verified": false,
       "queue": "discovery_unverified",
-      "rank": 102,
-      "related_reports": [
-        {
-          "title": "Nepal condoles death of citizen killed in Houthi attack on Saudi oil refinery, urges restraint",
-          "url": "http://www.iraqsun.com/news/279463143/nepal-condoles-death-of-citizen-killed-in-houthi-attack-on-saudi-oil-refinery-urges-restraint",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "Nepal condoles death of citizen killed in Houthi attack on Saudi oil refinery, urges restraint",
-          "url": "http://www.bignewsnetwork.com/news/279463143/nepal-condoles-death-of-citizen-killed-in-houthi-attack-on-saudi-oil-refinery-urges-restraint",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        },
-        {
-          "title": "Nepal condoles death of citizen killed in Houthi attack on Saudi oil refinery, urges restraint",
-          "url": "http://www.austinglobe.com/news/279463143/nepal-condoles-death-of-citizen-killed-in-houthi-attack-on-saudi-oil-refinery-urges-restraint",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        }
-      ]
+      "rank": 102
     },
     {
-      "title": "One killed in attack on Saudi Arabia's Jazan refinery, some operations suspended- Moneycontrol.com",
-      "url": "https://www.moneycontrol.com/world/one-killed-in-attack-on-saudi-arabia-s-jazan-refinery-some-operations-suspended-article-14089920.html",
-      "domain": "www.moneycontrol.com",
-      "first_collector_observed_utc": "2026-11-27T02:23:23.286539+00:00",
+      "title": "Iraq reclaims No. 2 spot in India's oil imports as Gulf supplies recover despite Iran attacks",
+      "url": "https://economictimes.indiatimes.com/industry/energy/oil-gas/iraq-reclaims-no-2-spot-in-indias-oil-imports-as-gulf-supplies-recover-despite-iran-attacks/articleshow/136232273.cms",
+      "domain": "economictimes.indiatimes.com",
+      "first_collector_observed_utc": "2026-11-27T19:54:04.021644+00:00",
       "local_collection_time_known": true,
       "source": "GDELT GAL RSS",
       "source_class": "unclassified",
@@ -427,13 +392,44 @@
       ],
       "relevance_score": 90,
       "relevance_evidence": [
-        "energy_market_hook:refinery",
-        "geopolitical_event:attack",
-        "world_context:saudi arabia"
+        "energy_market_hook:oil",
+        "geopolitical_event:attacks",
+        "world_context:iran"
       ],
       "origin": "global_discovery",
       "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-27T02:17:00+00:00",
+      "observed_time_utc": "2026-11-27T19:47:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 102
+    },
+    {
+      "title": "Indian textile exporters rush US shipments to beat proposed 25% tariff",
+      "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/indian-textile-exporters-rush-us-shipments-to-beat-proposed-25-tariff/articleshow/136232544.cms",
+      "domain": "economictimes.indiatimes.com",
+      "first_collector_observed_utc": "2026-11-27T19:54:04.021644+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Geopolitics",
+      "coverage_themes": [
+        "Geopolitics"
+      ],
+      "relevance_score": 90,
+      "relevance_evidence": [
+        "energy_market_hook:shipments",
+        "geopolitical_event:tariff",
+        "world_context:us"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-27T19:47:00+00:00",
       "publisher_time_verified": false,
       "date_confidence": "not_verified",
       "within_24h_on_own_time_basis": true,
@@ -503,6 +499,37 @@
       "independent_corroboration_verified": false,
       "queue": "discovery_unverified",
       "rank": 99
+    },
+    {
+      "title": "Grid Operator Skipped Bidding On $3.8 Billion In Power Lines, Big Electricity Users Say",
+      "url": "https://dailycaller.com/2026/11/27/southwest-power-pool-ferc-complaint-competitive-bidding-transmission-lines",
+      "domain": "dailycaller.com",
+      "first_collector_observed_utc": "2026-11-28T00:06:26.805271+00:00",
+      "local_collection_time_known": true,
+      "source": "GDELT GAL RSS",
+      "source_class": "unclassified",
+      "category": "Power & Electricity",
+      "coverage_themes": [
+        "Power & Electricity"
+      ],
+      "relevance_score": 84,
+      "relevance_evidence": [
+        "electricity",
+        "grid",
+        "grid operator"
+      ],
+      "origin": "global_discovery",
+      "time_basis": "gdelt_gal_rss_provider_time_unverified",
+      "observed_time_utc": "2026-11-28T00:01:00+00:00",
+      "publisher_time_verified": false,
+      "date_confidence": "not_verified",
+      "within_24h_on_own_time_basis": true,
+      "needs_editor_review": [],
+      "editorial_status": "research_only_not_approved",
+      "other_origins": [],
+      "independent_corroboration_verified": false,
+      "queue": "discovery_unverified",
+      "rank": 96
     },
     {
       "title": "Electricity grid operator issues back-up power call for fourth day running",
@@ -1030,46 +1057,6 @@
       "rank": 84
     },
     {
-      "title": "SpaceX Plans to Spend $2.8 Billion on Gas Turbines. Here’s What That Much Natural Gas Demand Means for Pipeline Investors. - AOL",
-      "url": "https://www.aol.com/articles/spacex-plans-spend-2-8-221502000.html",
-      "domain": "www.aol.com",
-      "first_collector_observed_utc": "2026-11-20T23:24:49.054436+00:00",
-      "local_collection_time_known": true,
-      "source": "GDELT GAL RSS",
-      "source_class": "unclassified",
-      "category": "Natural Gas",
-      "coverage_themes": [
-        "Natural Gas",
-        "Infrastructure & Investment"
-      ],
-      "relevance_score": 72,
-      "relevance_evidence": [
-        "gas demand",
-        "natural gas"
-      ],
-      "origin": "global_discovery",
-      "time_basis": "gdelt_gal_rss_provider_time_unverified",
-      "observed_time_utc": "2026-11-20T23:17:00+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "not_verified",
-      "within_24h_on_own_time_basis": false,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "discovery_unverified",
-      "rank": 84,
-      "related_reports": [
-        {
-          "title": "SpaceX Plans to Spend $2.8 Billion on Gas Turbines. Here’s What That Much Natural Gas Demand Means for Pipeline Investors. | The Motley Fool",
-          "url": "https://www.fool.com/investing/2026/11/20/spacex-plans-to-spend-usd2-8-billion-on-gas-turbines-here-s-what-that-much-natural-gas-demand-means-for-pipeline-investors?source=iedfolrf0000001",
-          "source": "GDELT GAL RSS",
-          "origin": "global_discovery",
-          "note": "Potential same-event source link; not independently corroborated"
-        }
-      ]
-    },
-    {
       "title": "Almost 60% of primary energy used for electricity is lost to conversion and transmission",
       "url": "https://www.eia.gov/todayinenergy/detail.php?id=68504",
       "domain": "www.eia.gov",
@@ -1126,37 +1113,6 @@
       "other_origins": [],
       "independent_corroboration_verified": false,
       "queue": "discovery_unverified",
-      "rank": 81
-    },
-    {
-      "title": "Ibom LNG Partners with Afreximbank to support US$1.5 billion LNG project in Akwa Ibom",
-      "url": "https://afreximbank.africa-newsroom.com/press/ibom-lng-partners-with-afreximbank-to-support-us15-billion-lng-project-in-akwa-ibom?lang=en",
-      "domain": "afreximbank.africa-newsroom.com",
-      "first_collector_observed_utc": "2026-11-26T00:31:53.994625+00:00",
-      "local_collection_time_known": true,
-      "source": "Press Release Feed",
-      "source_class": "unclassified",
-      "category": "LNG",
-      "coverage_themes": [
-        "LNG",
-        "Infrastructure & Investment"
-      ],
-      "relevance_score": 81,
-      "relevance_evidence": [
-        "lng",
-        "lng project"
-      ],
-      "origin": "company_announcement",
-      "time_basis": "third_party_release_feed_date_unverified",
-      "observed_time_utc": "2026-11-25T14:34:41+00:00",
-      "publisher_time_verified": false,
-      "date_confidence": "feed_only",
-      "within_24h_on_own_time_basis": false,
-      "needs_editor_review": [],
-      "editorial_status": "research_only_not_approved",
-      "other_origins": [],
-      "independent_corroboration_verified": false,
-      "queue": "company_release_unverified",
       "rank": 81
     },
     {

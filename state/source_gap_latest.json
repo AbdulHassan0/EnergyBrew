@@ -1,14 +1,15 @@
 {
-  "generated_utc": "2026-11-27T13:59:30.593735+00:00",
+  "generated_utc": "2026-11-28T00:06:30.913996+00:00",
   "status": "source_gap_triage_not_a_verified_recall_score",
-  "publisher_dated_direct_rss_links_24h": 10,
+  "publisher_dated_direct_rss_links_24h": 9,
   "publisher_dated_direct_source_classes_24h": {
-    "specialist_publisher": 10
+    "specialist_publisher": 8,
+    "official_agency": 1
   },
-  "gdelt_observed_unique_urls_24h": 146,
+  "gdelt_observed_unique_urls_24h": 167,
   "gdelt_publisher_date_verified": 0,
   "cross_origin_classifications": {
-    "discovery_only_needs_source_verification": 142,
+    "discovery_only_needs_source_verification": 163,
     "exact_direct_publisher_link": 3,
     "possible_same_event_as_direct_publisher_link": 1
   },
@@ -16,17 +17,17 @@
     "Natural Gas": 0,
     "LNG": 0,
     "Power & Electricity": 2,
-    "Oil & Energy": 6,
+    "Oil & Energy": 7,
     "Infrastructure & Investment": 0,
-    "Geopolitics": 2
+    "Geopolitics": 0
   },
   "indexed_candidate_category_counts_24h": {
-    "Natural Gas": 27,
-    "LNG": 7,
-    "Power & Electricity": 46,
-    "Oil & Energy": 35,
+    "Natural Gas": 25,
+    "LNG": 5,
+    "Power & Electricity": 50,
+    "Oil & Energy": 32,
     "Infrastructure & Investment": 0,
-    "Geopolitics": 31
+    "Geopolitics": 55
   },
   "high_priority_discovery_only_leads_for_review": [
     {
@@ -41,45 +42,34 @@
       "requires_original_publisher_verification": true
     },
     {
-      "title": "Houthi attack on Saudi Arabia's Jazan refinery kills Nepali worker",
-      "url": "https://www.arabnews.com/saudi-arabia/houthi-attack-on-saudi-arabias-jazan-refinery-kills-nepali-worker-3014153",
-      "domain": "www.arabnews.com",
+      "title": "Nepal condoles death of citizen killed in Houthi attack on Saudi oil refinery, urges restraint",
+      "url": "http://www.austinglobe.com/news/279463143/nepal-condoles-death-of-citizen-killed-in-houthi-attack-on-saudi-oil-refinery-urges-restraint",
+      "domain": "www.austinglobe.com",
       "category": "Geopolitics",
-      "gdelt_first_seen_utc": "2026-11-26T19:17:00+00:00",
+      "gdelt_first_seen_utc": "2026-11-27T00:32:00+00:00",
       "relevance_score": 90,
       "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
       "editorial_status": "unverified_research_lead_not_approved",
       "requires_original_publisher_verification": true
     },
     {
-      "title": "Huge plume of black smoke seen from space after Houthis claim strike on Saudi’s biggest oil refinery",
-      "url": "https://www.cp24.com/news/world/2026/11/26/huge-plume-of-black-smoke-seen-from-space-after-houthis-claim-strike-on-saudis-biggest-oil-refinery",
-      "domain": "www.cp24.com",
+      "title": "Ukraine says North Korea temporarily halted missile shipments to ally Russia",
+      "url": "https://www.asiaone.com/world/ukraine-says-north-korea-temporarily-halted-missile-shipments-ally-russia",
+      "domain": "www.asiaone.com",
       "category": "Geopolitics",
-      "gdelt_first_seen_utc": "2026-11-26T19:17:00+00:00",
+      "gdelt_first_seen_utc": "2026-11-27T02:17:00+00:00",
       "relevance_score": 90,
       "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
       "editorial_status": "unverified_research_lead_not_approved",
       "requires_original_publisher_verification": true
     },
     {
-      "title": "Saudi-led coalition says Houthis attacked Aramco's Jazan refinery | MEO",
-      "url": "https://www.middle-east-online.com/en/saudi-led-coalition-says-houthis-attacked-aramcos-jazan-refinery",
-      "domain": "www.middle-east-online.com",
+      "title": "One killed in attack on Saudi Arabia's Jazan refinery, some operations suspended- Moneycontrol.com",
+      "url": "https://www.moneycontrol.com/world/one-killed-in-attack-on-saudi-arabia-s-jazan-refinery-some-operations-suspended-article-14089920.html",
+      "domain": "www.moneycontrol.com",
       "category": "Geopolitics",
-      "gdelt_first_seen_utc": "2026-11-26T19:17:00+00:00",
+      "gdelt_first_seen_utc": "2026-11-27T02:17:00+00:00",
       "relevance_score": 90,
-      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
-      "editorial_status": "unverified_research_lead_not_approved",
-      "requires_original_publisher_verification": true
-    },
-    {
-      "title": "Siemens Energy Signs Major Deal to Revive Venezuela's Power Grid | OilPrice.com",
-      "url": "https://oilprice.com/Company-News/Siemens-Energy-Signs-Major-Deal-to-Revive-Venezuelas-Power-Grid.html",
-      "domain": "oilprice.com",
-      "category": "Power & Electricity",
-      "gdelt_first_seen_utc": "2026-11-26T19:17:00+00:00",
-      "relevance_score": 84,
       "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
       "editorial_status": "unverified_research_lead_not_approved",
       "requires_original_publisher_verification": true
@@ -90,6 +80,17 @@
       "domain": "www.bromsgroveadvertiser.co.uk",
       "category": "Power & Electricity",
       "gdelt_first_seen_utc": "2026-11-27T11:01:00+00:00",
+      "relevance_score": 84,
+      "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
+      "editorial_status": "unverified_research_lead_not_approved",
+      "requires_original_publisher_verification": true
+    },
+    {
+      "title": "Grid Operator Skipped Bidding On $3.8 Billion In Power Lines, Big Electricity Users Say",
+      "url": "https://dailycaller.com/2026/11/27/southwest-power-pool-ferc-complaint-competitive-bidding-transmission-lines",
+      "domain": "dailycaller.com",
+      "category": "Power & Electricity",
+      "gdelt_first_seen_utc": "2026-11-28T00:01:00+00:00",
       "relevance_score": 84,
       "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
       "editorial_status": "unverified_research_lead_not_approved",
@@ -129,11 +130,11 @@
       "requires_original_publisher_verification": true
     },
     {
-      "title": "Ottawa’s two-week, two-subsidy LNG spending spree — Canada | Cedar News",
-      "url": "https://cedarnews.net/newstasks/1201271/ottawas-two-week-subsidy-lng-spending-spree",
-      "domain": "cedarnews.net",
-      "category": "LNG",
-      "gdelt_first_seen_utc": "2026-11-26T21:17:00+00:00",
+      "title": "Panama Gas Prices Keep Falling! Gasoline and Diesel will Drop by up to 51 Cents Per Gallon this Friday November 27. - Newsroom Panama",
+      "url": "https://newsroompanama.com/2026/11/26/panama-gas-prices-keep-falling-gasoline-and-diesel-will-drop-by-up-to-51-cents-per-gallon-this-friday-november-27",
+      "domain": "newsroompanama.com",
+      "category": "Oil & Energy",
+      "gdelt_first_seen_utc": "2026-11-27T00:31:00+00:00",
       "relevance_score": 45,
       "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
       "editorial_status": "unverified_research_lead_not_approved",
@@ -141,21 +142,21 @@
     },
     {
       "title": "$168M loan guarantee provided for First Nations' investment in LNG pipeline",
-      "url": "https://www.brandonsun.com/business/2026/11/26/168m-loan-guarantee-provided-for-first-nations-investment-in-lng-pipeline",
-      "domain": "www.brandonsun.com",
+      "url": "https://cheknews.ca/168m-loan-guarantee-provided-for-first-nations-investment-in-lng-pipeline-1364539",
+      "domain": "cheknews.ca",
       "category": "LNG",
-      "gdelt_first_seen_utc": "2026-11-26T21:17:00+00:00",
+      "gdelt_first_seen_utc": "2026-11-27T00:32:00+00:00",
       "relevance_score": 45,
       "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
       "editorial_status": "unverified_research_lead_not_approved",
       "requires_original_publisher_verification": true
     },
     {
-      "title": "Panama Gas Prices Keep Falling! Gasoline and Diesel will Drop by up to 51 Cents Per Gallon this Friday November 27. - Newsroom Panama",
-      "url": "https://newsroompanama.com/2026/11/26/panama-gas-prices-keep-falling-gasoline-and-diesel-will-drop-by-up-to-51-cents-per-gallon-this-friday-november-27",
-      "domain": "newsroompanama.com",
-      "category": "Oil & Energy",
-      "gdelt_first_seen_utc": "2026-11-27T00:31:00+00:00",
+      "title": "Pakistan’s coal imports surge 51% as LNG supplies collapse - Splash247",
+      "url": "https://splash247.com/pakistans-coal-imports-surge-51-as-lng-supplies-collapse",
+      "domain": "splash247.com",
+      "category": "LNG",
+      "gdelt_first_seen_utc": "2026-11-27T13:01:00+00:00",
       "relevance_score": 45,
       "timestamp_basis": "GDELT_index_first_seen_not_publisher_date",
       "editorial_status": "unverified_research_lead_not_approved",
@@ -195,34 +196,34 @@
       "requires_original_publisher_verification": true
     }
   ],
-  "additional_links_suppressed_as_possible_same_event_in_review": 30,
+  "additional_links_suppressed_as_possible_same_event_in_review": 32,
   "feed_liveness": [
     {
       "source": "Offshore Energy News",
       "feed_url": "https://www.offshore-energy.biz/feed",
       "last_success_utc": "2026-11-25T00:52:03.757060+00:00",
       "newest_feed_published_utc": "2026-11-24T15:38:31+00:00",
-      "hours_since_newest_publisher_item": 70.3,
+      "hours_since_newest_publisher_item": 80.5,
       "timestamped_article_links_24h": 0,
-      "consecutive_failures": 5,
+      "consecutive_failures": 6,
       "activity": "recent_publisher_activity"
     },
     {
       "source": "DOE Energy News",
       "feed_url": "https://www.energy.gov/rss/energygov/2193718",
-      "last_success_utc": "2026-11-27T13:59:04.523344+00:00",
+      "last_success_utc": "2026-11-28T00:06:18.083857+00:00",
       "newest_feed_published_utc": "2026-11-20T22:49:34+00:00",
-      "hours_since_newest_publisher_item": 159.2,
+      "hours_since_newest_publisher_item": 169.3,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
-      "activity": "recent_publisher_activity"
+      "activity": "no_publisher_item_in_7d"
     },
     {
       "source": "DOE Grid Deployment",
       "feed_url": "https://www.energy.gov/rss/oe/4819948",
-      "last_success_utc": "2026-11-27T13:59:04.523344+00:00",
+      "last_success_utc": "2026-11-28T00:06:18.083857+00:00",
       "newest_feed_published_utc": "2026-10-30T14:42:15+00:00",
-      "hours_since_newest_publisher_item": 671.3,
+      "hours_since_newest_publisher_item": 681.4,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "no_publisher_item_in_7d"
@@ -230,9 +231,9 @@
     {
       "source": "DOE Hydrocarbons Blog",
       "feed_url": "https://www.energy.gov/rss/hgeo/2283029",
-      "last_success_utc": "2026-11-27T13:59:04.523344+00:00",
+      "last_success_utc": "2026-11-28T00:06:18.083857+00:00",
       "newest_feed_published_utc": "2026-10-29T20:16:57+00:00",
-      "hours_since_newest_publisher_item": 689.7,
+      "hours_since_newest_publisher_item": 699.8,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "no_publisher_item_in_7d"
@@ -240,9 +241,9 @@
     {
       "source": "DOE Hydrocarbons Releases",
       "feed_url": "https://www.energy.gov/rss/hgeo/2282977",
-      "last_success_utc": "2026-11-27T13:59:04.523344+00:00",
+      "last_success_utc": "2026-11-28T00:06:18.083857+00:00",
       "newest_feed_published_utc": "2026-11-04T05:00:00+00:00",
-      "hours_since_newest_publisher_item": 561.0,
+      "hours_since_newest_publisher_item": 571.1,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "no_publisher_item_in_7d"
@@ -250,9 +251,9 @@
     {
       "source": "EIA Congressional Testimony",
       "feed_url": "https://www.eia.gov/rss/testimony.xml",
-      "last_success_utc": "2026-11-27T13:59:04.523344+00:00",
+      "last_success_utc": "2026-11-28T00:06:18.083857+00:00",
       "newest_feed_published_utc": "2021-11-16T14:00:00+00:00",
-      "hours_since_newest_publisher_item": 44088.0,
+      "hours_since_newest_publisher_item": 44098.1,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "no_publisher_item_in_7d"
@@ -260,9 +261,9 @@
     {
       "source": "EIA Presentations",
       "feed_url": "https://www.eia.gov/rss/presentations.xml",
-      "last_success_utc": "2026-11-27T13:59:04.523344+00:00",
+      "last_success_utc": "2026-11-28T00:06:18.083857+00:00",
       "newest_feed_published_utc": "2026-03-04T14:00:00+00:00",
-      "hours_since_newest_publisher_item": 6432.0,
+      "hours_since_newest_publisher_item": 6442.1,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "no_publisher_item_in_7d"
@@ -270,29 +271,19 @@
     {
       "source": "EIA Press Releases",
       "feed_url": "https://www.eia.gov/rss/press_rss.xml",
-      "last_success_utc": "2026-11-27T13:59:04.523344+00:00",
+      "last_success_utc": "2026-11-28T00:06:18.083857+00:00",
       "newest_feed_published_utc": "2026-11-10T17:00:00+00:00",
-      "hours_since_newest_publisher_item": 405.0,
+      "hours_since_newest_publisher_item": 415.1,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "no_publisher_item_in_7d"
     },
     {
-      "source": "EIA Today in Energy",
-      "feed_url": "https://www.eia.gov/rss/todayinenergy.xml",
-      "last_success_utc": "2026-11-27T13:59:04.523344+00:00",
-      "newest_feed_published_utc": "2026-11-25T14:00:00+00:00",
-      "hours_since_newest_publisher_item": 48.0,
-      "timestamped_article_links_24h": 0,
-      "consecutive_failures": 0,
-      "activity": "recent_publisher_activity"
-    },
-    {
       "source": "European Commission DG Energy",
       "feed_url": "https://energy.ec.europa.eu/node/2/rss_en",
-      "last_success_utc": "2026-11-27T13:59:04.523344+00:00",
+      "last_success_utc": "2026-11-28T00:06:18.083857+00:00",
       "newest_feed_published_utc": "2026-11-25T23:00:00+00:00",
-      "hours_since_newest_publisher_item": 39.0,
+      "hours_since_newest_publisher_item": 49.1,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "recent_publisher_activity"
@@ -300,9 +291,9 @@
     {
       "source": "Federal Register notices",
       "feed_url": "https://www.federalregister.gov/api/v1/documents.rss?conditions%5Bagencies%5D%5B%5D=federal-energy-regulatory-commission",
-      "last_success_utc": "2026-11-27T13:59:04.523344+00:00",
+      "last_success_utc": "2026-11-28T00:06:18.083857+00:00",
       "newest_feed_published_utc": "2026-11-27T05:00:00+00:00",
-      "hours_since_newest_publisher_item": 9.0,
+      "hours_since_newest_publisher_item": 19.1,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "recent_publisher_activity"
@@ -310,9 +301,9 @@
     {
       "source": "PJM Inside Lines",
       "feed_url": "https://insidelines.pjm.com/feed/",
-      "last_success_utc": "2026-11-27T13:59:04.523344+00:00",
+      "last_success_utc": "2026-11-28T00:06:18.083857+00:00",
       "newest_feed_published_utc": "2026-11-23T18:31:53+00:00",
-      "hours_since_newest_publisher_item": 91.5,
+      "hours_since_newest_publisher_item": 101.6,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "recent_publisher_activity"
@@ -320,9 +311,9 @@
     {
       "source": "US NRC Nuclear News",
       "feed_url": "https://www.nrc.gov/public-involve/rss?feed=news",
-      "last_success_utc": "2026-11-27T13:59:04.523344+00:00",
+      "last_success_utc": "2026-11-28T00:06:18.083857+00:00",
       "newest_feed_published_utc": "2026-11-25T10:00:00+00:00",
-      "hours_since_newest_publisher_item": 52.0,
+      "hours_since_newest_publisher_item": 62.1,
       "timestamped_article_links_24h": 0,
       "consecutive_failures": 0,
       "activity": "recent_publisher_activity"
@@ -330,20 +321,30 @@
     {
       "source": "Utility Dive News",
       "feed_url": "https://www.utilitydive.com/feeds/news/",
-      "last_success_utc": "2026-11-27T13:59:04.523344+00:00",
+      "last_success_utc": "2026-11-28T00:06:18.083857+00:00",
       "newest_feed_published_utc": "2026-11-25T16:12:22+00:00",
-      "hours_since_newest_publisher_item": 45.8,
+      "hours_since_newest_publisher_item": 55.9,
       "timestamped_article_links_24h": 0,
+      "consecutive_failures": 0,
+      "activity": "recent_publisher_activity"
+    },
+    {
+      "source": "EIA Today in Energy",
+      "feed_url": "https://www.eia.gov/rss/todayinenergy.xml",
+      "last_success_utc": "2026-11-28T00:06:18.083857+00:00",
+      "newest_feed_published_utc": "2026-11-27T14:00:00+00:00",
+      "hours_since_newest_publisher_item": 10.1,
+      "timestamped_article_links_24h": 1,
       "consecutive_failures": 0,
       "activity": "recent_publisher_activity"
     },
     {
       "source": "OilPrice.com News",
       "feed_url": "https://oilprice.com/rss.xml",
-      "last_success_utc": "2026-11-27T13:59:04.523344+00:00",
-      "newest_feed_published_utc": "2026-11-27T13:30:00+00:00",
-      "hours_since_newest_publisher_item": 0.5,
-      "timestamped_article_links_24h": 10,
+      "last_success_utc": "2026-11-28T00:06:18.083857+00:00",
+      "newest_feed_published_utc": "2026-11-28T00:00:00+00:00",
+      "hours_since_newest_publisher_item": 0.1,
+      "timestamped_article_links_24h": 8,
       "consecutive_failures": 0,
       "activity": "recent_publisher_activity"
     }

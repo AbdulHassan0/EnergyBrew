@@ -1,67 +1,5 @@
 [
   {
-    "id": "acf13f7e7e318223039d00c4",
-    "title": "Tanker Traffic at Hormuz Ticks Up Despite Intensified Attacks",
-    "url": "https://oilprice.com/Latest-Energy-News/World-News/Tanker-Traffic-at-Hormuz-Ticks-Up-Despite-Intensified-Attacks.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-26T16:30:00+00:00",
-    "category": "Geopolitics",
-    "published_precision": "timestamp",
-    "relevance_score": 90,
-    "keyword_matches": 3,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "energy_market_hook:tanker",
-      "geopolitical_event:attacks",
-      "world_context:hormuz"
-    ],
-    "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-27T00:40:13.483146+00:00",
-    "first_collector_observed_utc": "2026-11-27T00:40:13.483146+00:00"
-  },
-  {
-    "id": "75dd2691f101fe33745734de",
-    "title": "Iranian Hardliners Call for Tanker Convoy to Defy U.S. Blockade",
-    "url": "https://oilprice.com/Energy/Energy-General/Iranian-Hardliners-Call-for-Tanker-Convoy-to-Defy-US-Blockade.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-26T15:00:00+00:00",
-    "category": "Geopolitics",
-    "published_precision": "timestamp",
-    "relevance_score": 90,
-    "keyword_matches": 3,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "energy_market_hook:tanker",
-      "geopolitical_event:blockade",
-      "world_context:iranian"
-    ],
-    "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-27T00:40:13.483146+00:00",
-    "first_collector_observed_utc": "2026-11-27T00:40:13.483146+00:00"
-  },
-  {
-    "id": "fdfc1926571aed2ea610e420",
-    "title": "Why Gasoline Prices Are Falling While Diesel Remains Expensive",
-    "url": "https://oilprice.com/Energy/Energy-General/Why-Gasoline-Prices-Are-Falling-While-Diesel-Remains-Expensive.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-26T17:00:00+00:00",
-    "category": "Oil & Energy",
-    "published_precision": "timestamp",
-    "relevance_score": 45,
-    "keyword_matches": 2,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "diesel",
-      "gasoline"
-    ],
-    "status": "research_only_unverified",
-    "first_collected_utc": "2026-11-27T00:40:13.483146+00:00",
-    "first_collector_observed_utc": "2026-11-27T00:40:13.483146+00:00"
-  },
-  {
     "id": "a9f9c48f31a99835c1ce677e",
     "title": "Iraq Delays Up to 30 Million Barrels of Crude Oil Shipments",
     "url": "https://oilprice.com/Latest-Energy-News/World-News/Iraq-Delays-Up-to-30-Million-Barrels-of-Crude-Oil-Shipments.html",
@@ -81,6 +19,25 @@
     "first_collector_observed_utc": "2026-11-27T13:59:05.992895+00:00"
   },
   {
+    "id": "741fb6ced11a18eb26726e07",
+    "title": "Global electricity generation more than doubled from 2000 to 2025",
+    "url": "https://www.eia.gov/todayinenergy/detail.php?id=68525",
+    "source": "EIA Today in Energy",
+    "source_class": "official_agency",
+    "published_utc": "2026-11-27T14:00:00+00:00",
+    "category": "Power & Electricity",
+    "published_precision": "timestamp",
+    "relevance_score": 33,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "electricity"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-28T00:06:19.365071+00:00",
+    "first_collector_observed_utc": "2026-11-28T00:06:19.365071+00:00"
+  },
+  {
     "id": "0e3ed98c2febf04a9df34d18",
     "title": "Stockpiling Will Support Oil Prices in 2027, Energy Aspects Says",
     "url": "https://oilprice.com/Latest-Energy-News/World-News/Stockpiling-Will-Support-Oil-Prices-in-2027-Energy-Aspects-Says.html",
@@ -96,6 +53,7 @@
       "oil prices"
     ],
     "status": "research_only_unverified",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-27T13:59:05.992895+00:00",
     "first_collector_observed_utc": "2026-11-27T13:59:05.992895+00:00"
   },
@@ -119,24 +77,61 @@
     "first_collector_observed_utc": "2026-11-27T13:59:05.992895+00:00"
   },
   {
-    "id": "80c8909e0db876df2b16fca1",
-    "title": "Why Making Electricity From Seawater Has Failed",
-    "url": "https://oilprice.com/Alternative-Energy/Renewable-Energy/Why-Making-Electricity-From-Seawater-Has-Failed.html",
+    "id": "bddf59be6df02dfada5dbe25",
+    "title": "Georgia Voters to Decide Fate of $17 Billion Data Center Megaproject",
+    "url": "https://oilprice.com/Energy/Energy-General/Georgia-Voters-to-Decide-Fate-of-17-Billion-Data-Center-Megaproject.html",
     "source": "OilPrice.com News",
     "source_class": "specialist_publisher",
-    "published_utc": "2026-11-26T21:00:00+00:00",
+    "published_utc": "2026-11-27T19:00:00+00:00",
     "category": "Power & Electricity",
     "published_precision": "timestamp",
-    "relevance_score": 33,
+    "relevance_score": 30,
     "keyword_matches": 1,
     "editorial_candidate": true,
     "relevance_evidence": [
-      "electricity"
+      "data center"
     ],
     "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collected_utc": "2026-11-27T00:40:13.483146+00:00",
-    "first_collector_observed_utc": "2026-11-27T00:40:13.483146+00:00"
+    "first_collected_utc": "2026-11-28T00:06:19.365071+00:00",
+    "first_collector_observed_utc": "2026-11-28T00:06:19.365071+00:00"
+  },
+  {
+    "id": "ccc57099583fc3f1102def8c",
+    "title": "OPEC+ Faces Growing Pressure As Iraq Pushes for Higher Quota",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/OPEC-Faces-Growing-Pressure-As-Iraq-Pushes-for-Higher-Quota.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-27T17:30:00+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 30,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "opec"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-28T00:06:19.365071+00:00",
+    "first_collector_observed_utc": "2026-11-28T00:06:19.365071+00:00"
+  },
+  {
+    "id": "3d4a3692f55e28b95ff06435",
+    "title": "U.S. Encouraged Iraq and Venezuela to Leave OPEC, Sources Say",
+    "url": "https://oilprice.com/Latest-Energy-News/World-News/US-Pushed-Iraq-and-Venezuela-to-Consider-Quitting-OPEC-Sources-Say.html",
+    "source": "OilPrice.com News",
+    "source_class": "specialist_publisher",
+    "published_utc": "2026-11-27T14:30:00+00:00",
+    "category": "Oil & Energy",
+    "published_precision": "timestamp",
+    "relevance_score": 30,
+    "keyword_matches": 1,
+    "editorial_candidate": true,
+    "relevance_evidence": [
+      "opec"
+    ],
+    "status": "research_only_unverified",
+    "first_collected_utc": "2026-11-28T00:06:19.365071+00:00",
+    "first_collector_observed_utc": "2026-11-28T00:06:19.365071+00:00"
   },
   {
     "id": "0f4706e50b144481368fe0f1",
@@ -154,6 +149,7 @@
       "oil production"
     ],
     "status": "research_only_unverified",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-27T13:59:05.992895+00:00",
     "first_collector_observed_utc": "2026-11-27T13:59:05.992895+00:00"
   },
@@ -173,27 +169,8 @@
       "oil exports"
     ],
     "status": "research_only_unverified",
+    "also_seen_in": [],
     "first_collected_utc": "2026-11-27T13:59:05.992895+00:00",
     "first_collector_observed_utc": "2026-11-27T13:59:05.992895+00:00"
-  },
-  {
-    "id": "ce64f8f6dd5abb0f89c670ab",
-    "title": "Norway Hits the Brakes on Its Data Center Boom",
-    "url": "https://oilprice.com/Energy/Energy-General/Norway-Pauses-Data-Center-Grid-Reservations-as-Requests-Top-Peak-Demand.html",
-    "source": "OilPrice.com News",
-    "source_class": "specialist_publisher",
-    "published_utc": "2026-11-26T20:00:00+00:00",
-    "category": "Power & Electricity",
-    "published_precision": "timestamp",
-    "relevance_score": 30,
-    "keyword_matches": 1,
-    "editorial_candidate": true,
-    "relevance_evidence": [
-      "data center"
-    ],
-    "status": "research_only_unverified",
-    "also_seen_in": [],
-    "first_collected_utc": "2026-11-27T00:40:13.483146+00:00",
-    "first_collector_observed_utc": "2026-11-27T00:40:13.483146+00:00"
   }
 ]
