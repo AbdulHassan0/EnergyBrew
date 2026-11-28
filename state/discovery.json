@@ -3539,6 +3539,102 @@
       "first_collector_observed_utc": "2026-11-21T19:44:36.805901+00:00"
     },
     {
+      "url": "https://newstodaynet.com/2026/11/28/us-disables-merchant-vessel-trying-to-evade-iran-blockade",
+      "title": "US disables merchant vessel trying to evade Iran blockade - News Today | First with the news",
+      "domain": "newstodaynet.com",
+      "gdelt_first_seen_utc": "2026-11-28T10:32:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:blockade",
+        "world_context:iran/united states"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-28T10:41:46.515150+00:00"
+    },
+    {
+      "url": "https://www.standard.net.au/story/9399887/allies-in-dark-over-ukraines-attack-on-russian-ship",
+      "title": "Allies in dark over Ukraine's attack on Russian ship",
+      "domain": "www.standard.net.au",
+      "gdelt_first_seen_utc": "2026-11-28T10:32:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:attack",
+        "world_context:russia/ukraine"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-28T10:41:46.515150+00:00"
+    },
+    {
+      "url": "http://www.russiaherald.com/news/279470419/tehran-has-more-surprises-if-us-resumes-large-scale-attacks-iranian-envoy-to-pakistan-amid-slowed-down-talks",
+      "title": "Tehran has 'more surprises' if US resumes large-scale attacks: Iranian envoy to Pakistan amid slowed-down talks",
+      "domain": "www.russiaherald.com",
+      "gdelt_first_seen_utc": "2026-11-28T10:32:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:attacks",
+        "world_context:iran/united states"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-28T10:41:46.515150+00:00"
+    },
+    {
+      "url": "https://www.bordermail.com.au/story/9399887/allies-in-dark-over-ukraines-attack-on-russian-ship",
+      "title": "Allies in dark over Ukraine's attack on Russian ship",
+      "domain": "www.bordermail.com.au",
+      "gdelt_first_seen_utc": "2026-11-28T10:31:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 68,
+      "category": "Geopolitics",
+      "relevance_evidence": [
+        "energy_market_exposure:inferred_high_risk_region",
+        "geopolitical_event:attack",
+        "world_context:russia/ukraine"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-28T10:41:46.515150+00:00"
+    },
+    {
       "url": "https://www.jpost.com/middle-east/article-916352",
       "title": "Areas near Bahrain US military base largely deserted months after Iran attacks | The Jerusalem Post",
       "domain": "www.jpost.com",
@@ -10008,6 +10104,50 @@
       "first_collector_observed_utc": "2026-11-22T20:05:00.728993+00:00"
     },
     {
+      "url": "https://www.segye.com:443/newsView/20261128504509",
+      "title": "LNG 홍수 온다는데… IEA \"값 내려도 가스 수요 반등, 재생E에 막힐 수도\" [기에사]",
+      "domain": "www.segye.com:443",
+      "gdelt_first_seen_utc": "2026-11-28T10:32:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 45,
+      "category": "LNG",
+      "relevance_evidence": [
+        "lng"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-28T10:41:46.515150+00:00"
+    },
+    {
+      "url": "https://nettg.pl/swieta-barbara-z-historycznym-ladunkiem-pierwszy-lng-z-plaquemines-juz-w-polsce",
+      "title": "„Święta Barbara\" z historycznym ładunkiem. Pierwszy LNG z Plaquemines…",
+      "domain": "nettg.pl",
+      "gdelt_first_seen_utc": "2026-11-28T10:31:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 45,
+      "category": "LNG",
+      "relevance_evidence": [
+        "lng"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-28T10:41:46.515150+00:00"
+    },
+    {
       "url": "https://blueandgreentomorrow.com/environment/axa-lng-insurance-calcasieu-pass-supply-chain-emissions",
       "title": "AXA's Calcasieu Pass LNG Insurance Record",
       "domain": "blueandgreentomorrow.com",
@@ -14264,31 +14404,6 @@
       ]
     },
     {
-      "url": "https://www.moneycontrol.com/us-markets/stockpricequote/chevron/CVX",
-      "title": "Chevron Share Price Live Today: CVX Stock Price Live, News, Quotes & Chart - Moneycontrol",
-      "domain": "www.moneycontrol.com",
-      "gdelt_first_seen_utc": "2026-11-21T04:01:00+00:00",
-      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT GAL RSS",
-      "discovery_topic": "gal_rolling_sample",
-      "topics": [
-        "gal_rolling_sample"
-      ],
-      "relevance_score": 33,
-      "category": "Oil & Energy",
-      "relevance_evidence": [
-        "chevron"
-      ],
-      "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-21T04:07:13.117963+00:00",
-      "discovery_providers": [
-        "GDELT GAL RSS"
-      ]
-    },
-    {
       "url": "https://www.valleynewslive.com/2026/11/28/wahpeton-committee-recommends-negotiating-with-data-center-developer-over-city-land",
       "title": "Wahpeton committee recommends negotiating with data center developer over city land",
       "domain": "www.valleynewslive.com",
@@ -17526,6 +17641,28 @@
       "first_collector_observed_utc": "2026-11-21T12:32:19.802770+00:00"
     },
     {
+      "url": "https://ianslive.in/strait-of-hormuz-risks-may-impact-oil-import-bills-maritime-freight-rates-finance-ministry--20261128150848",
+      "title": "Strait of Hormuz risks may impact oil import bills, maritime freight rates: Finance Ministry",
+      "domain": "ianslive.in",
+      "gdelt_first_seen_utc": "2026-11-28T10:32:00+00:00",
+      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+      "publisher_published_utc": null,
+      "published_time_verified": false,
+      "discovery_provider": "GDELT GAL RSS",
+      "discovery_topic": "gal_rolling_sample",
+      "topics": [
+        "gal_rolling_sample"
+      ],
+      "relevance_score": 27,
+      "category": "Oil & Energy",
+      "relevance_evidence": [
+        "oil import"
+      ],
+      "status": "discovery_only_requires_publisher_verification",
+      "first_collector_observed_utc": "2026-11-28T10:41:46.515150+00:00"
+    },
+    {
       "url": "https://www.infomoney.com.br/mercados/com-foco-em-baterias-petrobras-avalia-entrar-em-minerais-criticos-nos-proximos-anos",
       "title": "Com foco em baterias, Petrobras avalia entrar em minerais críticos nos próximos anos",
       "domain": "www.infomoney.com.br",
@@ -20392,31 +20529,6 @@
       ]
     },
     {
-      "url": "https://africanreview.com/ict/linx-expands-interconnection-at-paix-nairobi",
-      "title": "LINX expands interconnection at PAIX Nairobi",
-      "domain": "africanreview.com",
-      "gdelt_first_seen_utc": "2026-11-21T04:01:00+00:00",
-      "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-      "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT GAL RSS",
-      "discovery_topic": "gal_rolling_sample",
-      "topics": [
-        "gal_rolling_sample"
-      ],
-      "relevance_score": 27,
-      "category": "Power & Electricity",
-      "relevance_evidence": [
-        "interconnection"
-      ],
-      "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-21T04:07:13.117963+00:00",
-      "discovery_providers": [
-        "GDELT GAL RSS"
-      ]
-    },
-    {
       "url": "https://powerstation.nz/",
       "title": "Off-Grid Solar NZ – Made in New Zealand | Power Station",
       "domain": "powerstation.nz",
@@ -21729,60 +21841,6 @@
       "relevance_evidence": [],
       "status": "discovery_only_requires_publisher_verification",
       "first_collector_observed_utc": "2026-11-24T02:56:50.262618+00:00"
-    },
-    {
-      "url": "https://www.sungazette.com/news/top-news/2026/11/plan-expected-to-improve-firefighter-safety-at-old-lycoming-township-volunteer-fire-company",
-      "title": "Plan expected to improve firefighter safety at Old Lycoming Township Volunteer Fire Company",
-      "domain": "www.sungazette.com",
-      "gdelt_first_seen_utc": "2026-11-21T06:45:00+00:00",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT DOC 2.0",
-      "discovery_topic": "us_natural_gas",
-      "topics": [
-        "us_natural_gas"
-      ],
-      "relevance_score": 0,
-      "category": "Cross-sector",
-      "relevance_evidence": [],
-      "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
-    },
-    {
-      "url": "https://www.sungazette.com/news/top-news/2026/11/2027-lycoming-county-real-estate-taxes-to-remain-at-7-mills",
-      "title": "2027 Lycoming County real estate taxes to remain at 7 mills - Williamsport Sun - Gazette",
-      "domain": "www.sungazette.com",
-      "gdelt_first_seen_utc": "2026-11-21T06:45:00+00:00",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT DOC 2.0",
-      "discovery_topic": "us_natural_gas",
-      "topics": [
-        "us_natural_gas"
-      ],
-      "relevance_score": 0,
-      "category": "Cross-sector",
-      "relevance_evidence": [],
-      "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
-    },
-    {
-      "url": "https://www.dailypress.net/opinion/editorial/2026/11/carbon-monoxide-poisoning-a-real-danger-in-winter",
-      "title": "Carbon monoxide poisoning a real danger in winter",
-      "domain": "www.dailypress.net",
-      "gdelt_first_seen_utc": "2026-11-21T06:45:00+00:00",
-      "publisher_published_utc": null,
-      "published_time_verified": false,
-      "discovery_provider": "GDELT DOC 2.0",
-      "discovery_topic": "us_natural_gas",
-      "topics": [
-        "us_natural_gas"
-      ],
-      "relevance_score": 0,
-      "category": "Cross-sector",
-      "relevance_evidence": [],
-      "status": "discovery_only_requires_publisher_verification",
-      "first_collector_observed_utc": "2026-11-21T12:47:26.335107+00:00"
     }
   ],
   "topics": {
@@ -21986,30 +22044,6 @@
   ],
   "provider_cooldown_until_utc": "2026-11-28T01:59:06.073605+00:00",
   "gal_runs": [
-    {
-      "run_utc": "2026-11-20T09:04:18.051941+00:00",
-      "completed_utc": "2026-11-20T09:04:25.624729+00:00",
-      "status": "ok",
-      "raw_feed_items": 5491,
-      "high_signal_items": 25,
-      "new_unique_links": 25,
-      "feed_newest_index_utc": "2026-11-20T09:02:00+00:00",
-      "feed_index_lag_minutes": 2.3,
-      "feed_payload_sha256": "aa0e9ddb80f3ca7c",
-      "identical_payload_to_previous_success": false
-    },
-    {
-      "run_utc": "2026-11-20T09:12:49.611233+00:00",
-      "completed_utc": "2026-11-20T09:12:58.528280+00:00",
-      "status": "ok",
-      "raw_feed_items": 5491,
-      "high_signal_items": 25,
-      "new_unique_links": 0,
-      "feed_newest_index_utc": "2026-11-20T09:02:00+00:00",
-      "feed_index_lag_minutes": 10.8,
-      "feed_payload_sha256": "aa0e9ddb80f3ca7c",
-      "identical_payload_to_previous_success": true
-    },
     {
       "run_utc": "2026-11-20T13:08:48.994551+00:00",
       "completed_utc": "2026-11-20T13:08:58.711900+00:00",
@@ -22796,6 +22830,18 @@
       "feed_newest_index_utc": "2026-11-28T03:47:00+00:00",
       "feed_index_lag_minutes": 5.6,
       "feed_payload_sha256": "1079e91ba5b0c174",
+      "identical_payload_to_previous_success": false
+    },
+    {
+      "run_utc": "2026-11-28T10:41:40.458831+00:00",
+      "completed_utc": "2026-11-28T10:41:46.515150+00:00",
+      "status": "ok",
+      "raw_feed_items": 4038,
+      "high_signal_items": 7,
+      "new_unique_links": 7,
+      "feed_newest_index_utc": "2026-11-28T10:32:00+00:00",
+      "feed_index_lag_minutes": 9.7,
+      "feed_payload_sha256": "40406c55e87d45d2",
       "identical_payload_to_previous_success": false
     }
   ],
