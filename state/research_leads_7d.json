@@ -1,5 +1,163 @@
 [
   {
+    "url": "https://www.jpost.com/middle-east/article-916352",
+    "title": "Areas near Bahrain US military base largely deserted months after Iran attacks | The Jerusalem Post",
+    "domain": "www.jpost.com",
+    "gdelt_first_seen_utc": "2026-11-28T03:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attacks",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-28T03:52:41.180957+00:00"
+  },
+  {
+    "url": "https://www.digbycourier.ca/israel-hits-back-at-unprecedented-iranian-attack-as-west-urges-netanyahu-to-avoid-war-altogether",
+    "title": "Israel hits back at unprecedented Iranian attack as West urges Netanyahu to avoid war altogether",
+    "domain": "www.digbycourier.ca",
+    "gdelt_first_seen_utc": "2026-11-28T03:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:iran/israel"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-28T03:52:41.180957+00:00"
+  },
+  {
+    "url": "https://www.rtoinsider.com/150927-ercot-expands-batch-verification-audit-medium-loads",
+    "title": "ERCOT Expands Batch Verification, Audit to Medium Loads",
+    "domain": "www.rtoinsider.com",
+    "gdelt_first_seen_utc": "2026-11-28T03:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 36,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "ercot"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-28T03:52:41.180957+00:00"
+  },
+  {
+    "url": "https://www.valleynewslive.com/2026/11/28/wahpeton-committee-recommends-negotiating-with-data-center-developer-over-city-land",
+    "title": "Wahpeton committee recommends negotiating with data center developer over city land",
+    "domain": "www.valleynewslive.com",
+    "gdelt_first_seen_utc": "2026-11-28T03:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-28T03:52:41.180957+00:00"
+  },
+  {
+    "url": "https://gwhatchet.com/2026/03/02/gw-sold-virginia-campus-for-427-million-to-amazon-for-data-center-development",
+    "title": "GW sold Virginia campus for $427 million to Amazon for data center development",
+    "domain": "gwhatchet.com",
+    "gdelt_first_seen_utc": "2026-11-28T03:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-28T03:52:41.180957+00:00"
+  },
+  {
+    "url": "https://www.rtoinsider.com/150929-bpa-urges-caiso-prioritize-edam-requirements",
+    "title": "BPA Urges CAISO to Prioritize its EDAM Requirements",
+    "domain": "www.rtoinsider.com",
+    "gdelt_first_seen_utc": "2026-11-28T03:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "caiso"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-28T03:52:41.180957+00:00"
+  },
+  {
+    "url": "https://www.repubblica.it/economia/2026/11/28/news/data_center_linee_guida_catasto_mappa_aree_idonee-425755715",
+    "title": "Data center, c’è il catasto per evitare le proteste ma la legge è ferma al Senato",
+    "domain": "www.repubblica.it",
+    "gdelt_first_seen_utc": "2026-11-28T03:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-28T03:52:41.180957+00:00"
+  },
+  {
     "url": "https://www.kyivpost.com/post/91444",
     "title": "Russia Extends Jet Fuel Export Ban as Ukrainian Strikes Hit Refineries",
     "domain": "www.kyivpost.com",

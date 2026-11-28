@@ -1,5 +1,163 @@
 [
   {
+    "url": "https://www.jpost.com/middle-east/article-916352",
+    "title": "Areas near Bahrain US military base largely deserted months after Iran attacks | The Jerusalem Post",
+    "domain": "www.jpost.com",
+    "gdelt_first_seen_utc": "2026-11-28T03:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attacks",
+      "world_context:iran/united states"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-28T03:52:41.180957+00:00"
+  },
+  {
+    "url": "https://www.digbycourier.ca/israel-hits-back-at-unprecedented-iranian-attack-as-west-urges-netanyahu-to-avoid-war-altogether",
+    "title": "Israel hits back at unprecedented Iranian attack as West urges Netanyahu to avoid war altogether",
+    "domain": "www.digbycourier.ca",
+    "gdelt_first_seen_utc": "2026-11-28T03:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 68,
+    "category": "Geopolitics",
+    "relevance_evidence": [
+      "energy_market_exposure:inferred_high_risk_region",
+      "geopolitical_event:attack",
+      "world_context:iran/israel"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-28T03:52:41.180957+00:00"
+  },
+  {
+    "url": "https://www.rtoinsider.com/150927-ercot-expands-batch-verification-audit-medium-loads",
+    "title": "ERCOT Expands Batch Verification, Audit to Medium Loads",
+    "domain": "www.rtoinsider.com",
+    "gdelt_first_seen_utc": "2026-11-28T03:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 36,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "ercot"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-28T03:52:41.180957+00:00"
+  },
+  {
+    "url": "https://www.valleynewslive.com/2026/11/28/wahpeton-committee-recommends-negotiating-with-data-center-developer-over-city-land",
+    "title": "Wahpeton committee recommends negotiating with data center developer over city land",
+    "domain": "www.valleynewslive.com",
+    "gdelt_first_seen_utc": "2026-11-28T03:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-28T03:52:41.180957+00:00"
+  },
+  {
+    "url": "https://gwhatchet.com/2026/03/02/gw-sold-virginia-campus-for-427-million-to-amazon-for-data-center-development",
+    "title": "GW sold Virginia campus for $427 million to Amazon for data center development",
+    "domain": "gwhatchet.com",
+    "gdelt_first_seen_utc": "2026-11-28T03:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-28T03:52:41.180957+00:00"
+  },
+  {
+    "url": "https://www.rtoinsider.com/150929-bpa-urges-caiso-prioritize-edam-requirements",
+    "title": "BPA Urges CAISO to Prioritize its EDAM Requirements",
+    "domain": "www.rtoinsider.com",
+    "gdelt_first_seen_utc": "2026-11-28T03:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "caiso"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-28T03:52:41.180957+00:00"
+  },
+  {
+    "url": "https://www.repubblica.it/economia/2026/11/28/news/data_center_linee_guida_catasto_mappa_aree_idonee-425755715",
+    "title": "Data center, c’è il catasto per evitare le proteste ma la legge è ferma al Senato",
+    "domain": "www.repubblica.it",
+    "gdelt_first_seen_utc": "2026-11-28T03:46:00+00:00",
+    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
+    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
+    "publisher_published_utc": null,
+    "published_time_verified": false,
+    "discovery_provider": "GDELT GAL RSS",
+    "discovery_topic": "gal_rolling_sample",
+    "topics": [
+      "gal_rolling_sample"
+    ],
+    "relevance_score": 30,
+    "category": "Power & Electricity",
+    "relevance_evidence": [
+      "data center"
+    ],
+    "status": "discovery_only_requires_publisher_verification",
+    "first_collector_observed_utc": "2026-11-28T03:52:41.180957+00:00"
+  },
+  {
     "url": "https://www.kyivpost.com/post/91444",
     "title": "Russia Extends Jet Fuel Export Ban as Ukrainian Strikes Hit Refineries",
     "domain": "www.kyivpost.com",
@@ -3370,275 +3528,5 @@
     ],
     "status": "discovery_only_requires_publisher_verification",
     "first_collector_observed_utc": "2026-11-27T11:07:37.740968+00:00"
-  },
-  {
-    "url": "http://www.laosnews.net/news/279463143/nepal-condoles-death-of-citizen-killed-in-houthi-attack-on-saudi-oil-refinery-urges-restraint",
-    "title": "Nepal condoles death of citizen killed in Houthi attack on Saudi oil refinery, urges restraint",
-    "domain": "www.laosnews.net",
-    "gdelt_first_seen_utc": "2026-11-27T03:32:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 90,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_hook:oil",
-      "geopolitical_event:attack",
-      "world_context:houthi"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-27T03:44:10.830110+00:00"
-  },
-  {
-    "url": "https://www.upstreamonline.com/field-development/petronas-takes-fid-on-latest-floating-lng-project/2-1-2080440",
-    "title": "Petronas takes FID on latest floating LNG project",
-    "domain": "www.upstreamonline.com",
-    "gdelt_first_seen_utc": "2026-11-27T03:32:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 81,
-    "category": "LNG",
-    "relevance_evidence": [
-      "lng",
-      "lng project"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-27T03:44:10.830110+00:00"
-  },
-  {
-    "url": "https://dunyanews.tv/en/World/985128-russia-and-ukraine-exchange-another-272-bodies-of-soldiers-killed-in-w",
-    "title": "Russia and Ukraine exchange another 272 bodies of soldiers killed in war | Dunya News",
-    "domain": "dunyanews.tv",
-    "gdelt_first_seen_utc": "2026-11-27T03:32:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 68,
-    "category": "Geopolitics",
-    "relevance_evidence": [
-      "energy_market_exposure:inferred_high_risk_region",
-      "geopolitical_event:war",
-      "world_context:russia/ukraine"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-27T03:44:10.830110+00:00"
-  },
-  {
-    "url": "https://greentechlead.com/renewable-energy/india-power-sector-investment-hits-%E2%82%B950241-crore-in-q3-2026-as-solar-battery-storage-and-grid-projects-expand-56402",
-    "title": "India Power Sector Investment Hits ₹50,241 Crore in Q3 2026 as Solar, Battery Storage and Grid Projects Expand - GreentechLead",
-    "domain": "greentechlead.com",
-    "gdelt_first_seen_utc": "2026-11-27T03:32:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 51,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "battery storage",
-      "grid"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-27T03:44:10.830110+00:00"
-  },
-  {
-    "url": "https://www.hindustantimes.com/world-news/opec-allies-face-tough-choices-as-surplus-builds-hormuz-risks-persist-101795749377763.html",
-    "title": "OPEC, Allies Face Tough Choices as Surplus Builds, Hormuz Risks Persist",
-    "domain": "www.hindustantimes.com",
-    "gdelt_first_seen_utc": "2026-11-27T03:32:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 30,
-    "category": "Oil & Energy",
-    "relevance_evidence": [
-      "opec"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-27T03:44:10.830110+00:00"
-  },
-  {
-    "url": "https://www.thefastmode.com/technology-solutions/51604-fcc-authorizes-spacex-to-deploy-1m-orbital-data-center-modules-for-space-based-ai-computing",
-    "title": "FCC Authorizes SpaceX to Deploy 1M Orbital Data Center Modules for Space-Based AI Computing",
-    "domain": "www.thefastmode.com",
-    "gdelt_first_seen_utc": "2026-11-27T03:32:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 30,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "data center"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-27T03:44:10.830110+00:00"
-  },
-  {
-    "url": "https://www.thefastmode.com/leadership-and-management/51603-tierpoint-appoints-craig-cowden-as-ceo-to-lead-next-phase-of-data-center-ai-infrastructure-growth",
-    "title": "TierPoint Appoints Craig Cowden as CEO to Lead Next Phase of Data Center & AI Infrastructure Growth",
-    "domain": "www.thefastmode.com",
-    "gdelt_first_seen_utc": "2026-11-27T03:32:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 30,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "data center"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-27T03:44:10.830110+00:00"
-  },
-  {
-    "url": "https://futures.jrj.com.cn/2026/11/27104259292826.shtml",
-    "title": "OPEC+拟延长配额至1月，静待周日“大考”！",
-    "domain": "futures.jrj.com.cn",
-    "gdelt_first_seen_utc": "2026-11-27T03:32:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 30,
-    "category": "Oil & Energy",
-    "relevance_evidence": [
-      "opec"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-27T03:44:10.830110+00:00"
-  },
-  {
-    "url": "https://www.webwire.com/ViewPressRel.asp?aId=364750",
-    "title": "Aveon Offshore and 2H Awarded TotalEnergies EP Nigeria/AMNI Int’l Petroleum Dev.Co.Ltd JV IMA Gas Project CSP EPCC Contract for Nigeria Offshore Development",
-    "domain": "www.webwire.com",
-    "gdelt_first_seen_utc": "2026-11-27T03:32:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 27,
-    "category": "Natural Gas",
-    "relevance_evidence": [
-      "gas project"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-27T03:44:10.830110+00:00"
-  },
-  {
-    "url": "https://asianews.network/fire-at-bangchak-oil-refinery-prompts-urgent-evacuation-in-bangkok",
-    "title": "Fire at Bangchak oil refinery prompts urgent evacuation in Bangkok",
-    "domain": "asianews.network",
-    "gdelt_first_seen_utc": "2026-11-27T03:31:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 30,
-    "category": "Oil & Energy",
-    "relevance_evidence": [
-      "refinery"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-27T03:44:10.830110+00:00"
-  },
-  {
-    "url": "https://www.thefastmode.com/expert-opinion/51245-seeing-heat-why-thermal-imaging-is-critical-to-data-center-resilience",
-    "title": "Seeing Heat: Why Thermal Imaging Is Critical to Data Center Resilience",
-    "domain": "www.thefastmode.com",
-    "gdelt_first_seen_utc": "2026-11-27T03:31:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 30,
-    "category": "Power & Electricity",
-    "relevance_evidence": [
-      "data center"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-27T03:44:10.830110+00:00"
-  },
-  {
-    "url": "https://www.gx94radio.com/2026/11/26/innovation-saskatchewan-invests-450k-to-support-lithium-refining-technology",
-    "title": "Innovation Saskatchewan invests $450K to support lithium refining technology",
-    "domain": "www.gx94radio.com",
-    "gdelt_first_seen_utc": "2026-11-27T03:31:00+00:00",
-    "index_timestamp_source": "GDELT GAL RSS pubDate: provider timestamp; could be publisher-supplied or index-observed, not independently verified",
-    "gdelt_timestamp_semantics": "provider_pubdate_origin_unverified",
-    "publisher_published_utc": null,
-    "published_time_verified": false,
-    "discovery_provider": "GDELT GAL RSS",
-    "discovery_topic": "gal_rolling_sample",
-    "topics": [
-      "gal_rolling_sample"
-    ],
-    "relevance_score": 24,
-    "category": "Oil & Energy",
-    "relevance_evidence": [
-      "refining"
-    ],
-    "status": "discovery_only_requires_publisher_verification",
-    "first_collector_observed_utc": "2026-11-27T03:44:10.830110+00:00"
   }
 ]
